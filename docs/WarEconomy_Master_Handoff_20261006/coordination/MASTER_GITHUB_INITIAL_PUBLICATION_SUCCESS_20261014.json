@@ -1,0 +1,18 @@
+{
+  "recorded_at": "2026-10-14T05:57:19.581708+09:00",
+  "user_explicit_scope_approval": "업로드 해 (after source/design/internal work/QA records ~495 MiB scope disclosed)",
+  "repository": "https://github.com/reuyu/Rimmulti",
+  "branch": "main",
+  "status": "PUSH_SUCCESS_REMOTE_HEAD_VERIFIED",
+  "uploaded_payload_commit": "128c76c540ad226740c6ea0ecbf1d7528152fe9d",
+  "verified_remote_main": "128c76c540ad226740c6ea0ecbf1d7528152fe9d",
+  "verification": "git push -u origin main exit 0; separate git ls-remote origin refs/heads/main matched local HEAD",
+  "initial_import_commit": "4b98494bd9a29111c4e8364f05736badacc2f339",
+  "initial_files": 6028,
+  "local_history_and_evidence_preserved": true,
+  "previous_auto_review_block": "Historical; superseded by explicit user payload approval and actual successful push",
+  "exclusions": ".gitignore retains local game binaries/build outputs/raw QA evidence/saves/databases/candidate copies/reference checkouts/large listed files",
+  "A_QA_gate_changes": false,
+  "automation_changes": false,
+  "limitation": "Upload is a source/document snapshot; no fullGate E2 or release approval inferred."
+}
