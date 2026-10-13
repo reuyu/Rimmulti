@@ -1,0 +1,17 @@
+{
+  "recorded_at_utc": "2026-10-07 09:00:09 UTC",
+  "recipient_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+  "status": "SENT_TOOL_CONFIRMED",
+  "tool": "send_message_to_thread",
+  "attempts": 1,
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"threadId\":\"01a1156b-97ec-7ce0-9e4a-dfc4a3acb174\"}"
+      }
+    ],
+    "isError": false
+  },
+  "master_ack_separately_observed": false
+}

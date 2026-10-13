@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-11T18:20:45.015455+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404",
+  "exact_message": "Master 승인 R24입니다. C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404\\INSTRUCTIONS.md 전체와 WP/release를 읽고 수행하세요. R23 독립 QA 정상20receipt·16snapshot PASS/식별자 결함 좁은 CLOSED를 인정했습니다. 다음 M04 역할별 UserData와 validator frontend·기동 계약을 현재 R23 동결 코드로 읽기 전용 분석하세요. 코드·빌드·실행·설치·복사 금지/ALL9 고정. 최소 정확한 구현 구간과 정상 oracle·실제 frontend 선행 조건을 지정 ACK·COMPLETION에 보고하세요.",
+  "one_actual_submit": true,
+  "new_exact_message": true,
+  "composer_empty": true,
+  "WorkingCancel": true,
+  "post_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404\\MASTER_UI_SUBMITTED.json",
+  "post_sha256": "0DE3386997FFD06CE6DE8E64BB7BC7A37419FB62B47362E04DEB199C0B89DA28",
+  "idle_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404\\MASTER_UI_IDLE.json",
+  "draft_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404\\MASTER_UI_DRAFT.json",
+  "guard_run": "MASTER-SOL-R23-COMPLETE-20261011-01",
+  "guard_pid": 34628,
+  "guard_session": 34592,
+  "production_permissions": 0
+}

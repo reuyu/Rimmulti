@@ -1,0 +1,723 @@
+--- FrozenR15Worker
++++ R17Worker
+@@ -45,6 +45,32 @@
+         {
+             try
+             {
++                // Gate05-R17: Check for operator startup config file parameter BEFORE component attach
++                if (GenCommandLine.TryGetCommandLineArg("operatorconfig", out string configPath) && !string.IsNullOrWhiteSpace(configPath))
++                {
++                    try
++                    {
++                        if (File.Exists(configPath))
++                        {
++                            string configJson = File.ReadAllText(configPath);
++                            var configObj = JsonConvert.DeserializeObject<OperatorStartupConfig>(configJson);
++                            if (configObj != null)
++                            {
++                                WorkerBridgeComponent.ConfigureOperatorStartup(configObj);
++                                Log.Message($"[WorkerBridge] Loaded operator startup config from '{configPath}' (Id='{configObj.configId}', Role='{configObj.role}')");
++                            }
++                        }
++                        else
++                        {
++                            Log.Warning($"[WorkerBridge] Operator config file not found at '{configPath}'");
++                        }
++                    }
++                    catch (Exception ex)
++                    {
++                        Log.Error($"[WorkerBridge] Failed to load operator config from '{configPath}': {ex.Message}");
++                    }
++                }
++
+                 Log.Message("[WorkerBridge] StaticConstructorOnStartup fired. Attaching GameObject...");
+                 var go = new GameObject("WorkerBridgeController");
+                 UnityEngine.Object.DontDestroyOnLoad(go);
+@@ -331,10 +357,36 @@
+     {
+         public static string? CustomSaveDataPathOverride = null;
+ 
++        // Gate05-R17: Private immutable operator startup config snapshot
++        private static OperatorStartupConfigSnapshot? _activeStartupConfig = null;
++
++        public static OperatorStartupConfigSnapshot? ActiveStartupConfig => _activeStartupConfig;
++
++        public static void ConfigureOperatorStartup(OperatorStartupConfig config)
++        {
++            if (config == null) throw new ArgumentNullException(nameof(config));
++            _activeStartupConfig = config.ToSnapshot();
++        }
++
++        public static void ConfigureOperatorStartup(OperatorStartupConfigSnapshot snapshot)
++        {
++            _activeStartupConfig = snapshot ?? throw new ArgumentNullException(nameof(snapshot));
++        }
++
++        public static void ResetOperatorStartupConfig()
++        {
++            _activeStartupConfig = null;
++        }
++
+         public static string SafeSaveDataFolderPath
+         {
+             get
+             {
++                // Gate05-R17: If operator startup config is active, route saves/tasks to worker isolated userdata directory
++                if (_activeStartupConfig != null && !string.IsNullOrEmpty(_activeStartupConfig.WorkerUserDataDirectory))
++                {
++                    return _activeStartupConfig.WorkerUserDataDirectory;
++                }
+                 if (!string.IsNullOrEmpty(CustomSaveDataPathOverride))
+                 {
+                     return CustomSaveDataPathOverride!;
+@@ -382,9 +434,42 @@
+         private string lastStagedPath = "";
+         private string lastStagedSha = "";
+ 
+-        // G05-S01 / Gate05-R2 / Gate05-R4: Operator-launched and owned fresh validator process instance
+-        public static string AdmittedOperatorValidatorExecutable = "";
+-        public static string AdmittedOperatorValidatorSha = "";
++        // G05-S01 / Gate05-R2 / Gate05-R4 / Gate05-R17: Operator-launched and owned fresh validator process instance
++        private static string _admittedOperatorValidatorExecutable = "";
++        private static string _admittedOperatorValidatorSha = "";
++
++        public static string AdmittedOperatorValidatorExecutable
++        {
++            get
++            {
++                if (_activeStartupConfig != null)
++                {
++                    return _activeStartupConfig.AdmittedValidatorExecutablePath;
++                }
++                return _admittedOperatorValidatorExecutable;
++            }
++            set
++            {
++                _admittedOperatorValidatorExecutable = value;
++            }
++        }
++
++        public static string AdmittedOperatorValidatorSha
++        {
++            get
++            {
++                if (_activeStartupConfig != null)
++                {
++                    return _activeStartupConfig.AdmittedValidatorExecutableSha256;
++                }
++                return _admittedOperatorValidatorSha;
++            }
++            set
++            {
++                _admittedOperatorValidatorSha = value;
++            }
++        }
++
+         private Process? operatorLaunchedValidatorProcess = null;
+         private int operatorLaunchedValidatorPid = 0;
+         private string operatorLaunchedValidatorStartTimeUtc = "";
+@@ -456,6 +541,13 @@
+ 
+                 // Subscribe to Unity log callback for post-load error gating
+                 Application.logMessageReceived += HandleUnityLogMessage;
++
++                // Gate05-R17: If operator startup config is present, configure expected package policy BEFORE profile evaluation
++                if (_activeStartupConfig != null && _activeStartupConfig.ExpectedPackagePolicyDeclaration != null)
++                {
++                    ContentProfileProvider.ConfigureExpectedPackagePolicy(_activeStartupConfig.ExpectedPackagePolicyDeclaration);
++                    Log.Message($"[WorkerBridge] Operator startup config applied in Awake: ConfigId='{_activeStartupConfig.ConfigId}', Role='{_activeStartupConfig.Role}', UserData='{_activeStartupConfig.WorkerUserDataDirectory}'");
++                }
+ 
+                 if (GenCommandLine.TryGetCommandLineArg("bridgeport", out string portStr) && int.TryParse(portStr, out int customPort))
+                 {
+@@ -829,6 +921,9 @@
+ 
+                 case "GET_ACTIVE_VALIDATOR_TASK":
+                     return HandleGetActiveValidatorTask();
++
++                case "GET_OPERATOR_CONFIG":
++                    return HandleGetOperatorConfig();
+ 
+                 case "EXECUTE_VALIDATOR_TASK":
+                     return HandleExecuteValidatorTask(arg);
+@@ -2075,7 +2170,7 @@
+                 if (string.IsNullOrEmpty(arg))
+                 {
+                     RevokeReadiness("Missing arguments for LAUNCH_OPERATOR_VALIDATOR.");
+-                    return "ERROR: Usage: LAUNCH_OPERATOR_VALIDATOR <operatorCapabilityNonce> [executablePath] [arguments]";
++                    return "ERROR: Usage: LAUNCH_OPERATOR_VALIDATOR <operatorCapabilityNonce> [taskIdentifier]";
+                 }
+ 
+                 // Operator capability nonce authorization check (MD-126/127)
+@@ -2090,70 +2185,66 @@
+                     return "ERROR: Unauthorized: CapabilityNonce mismatch.";
+                 }
+ 
+-                string exePath = "";
+-                string args = "";
+-                if (!string.IsNullOrEmpty(remaining))
+-                {
+-                    if (remaining.StartsWith("\""))
+-                    {
+-                        int endQuote = remaining.IndexOf('\"', 1);
+-                        if (endQuote > 1)
+-                        {
+-                            exePath = remaining.Substring(1, endQuote - 1);
+-                            args = remaining.Substring(endQuote + 1).Trim();
+-                        }
+-                        else
+-                        {
+-                            exePath = remaining.Trim('\"');
+-                        }
+-                    }
+-                    else
+-                    {
+-                        int spaceIdx = remaining.IndexOf(' ');
+-                        if (spaceIdx > 0)
+-                        {
+-                            exePath = remaining.Substring(0, spaceIdx);
+-                            args = remaining.Substring(spaceIdx + 1).Trim();
+-                        }
+-                        else
+-                        {
+-                            exePath = remaining;
+-                        }
+-                    }
+-                }
+-
+-                // Operator-admitted executable enforcement (MD-126/127, Gate05-R4)
+-                if (string.IsNullOrEmpty(exePath))
+-                {
+-                    if (!string.IsNullOrEmpty(AdmittedOperatorValidatorExecutable))
+-                    {
+-                        exePath = AdmittedOperatorValidatorExecutable;
+-                    }
+-                    else
+-                    {
+-                        RevokeReadiness("No admitted operator validator executable path configured or provided.");
+-                        return "ERROR: No admitted operator validator executable available.";
+-                    }
+-                }
+-                else if (!string.IsNullOrEmpty(AdmittedOperatorValidatorExecutable) && !string.Equals(exePath, AdmittedOperatorValidatorExecutable, StringComparison.OrdinalIgnoreCase))
+-                {
+-                    RevokeReadiness($"Caller attempted to nominate unadmitted validator executable: '{exePath}' (Admitted='{AdmittedOperatorValidatorExecutable}').");
+-                    return "ERROR: Caller cannot nominate arbitrary validator executable (MD-126/127).";
+-                }
+-
+-                if (!File.Exists(exePath))
+-                {
+-                    RevokeReadiness($"Validator executable not found at '{exePath}'.");
+-                    return $"ERROR: Validator executable not found at '{exePath}'.";
++                // Gate05-R17: Reject caller attempts to nominate executable path or arbitrary arguments (MD-126/127)
++                if (!string.IsNullOrEmpty(remaining) && remaining != currentValidatorTask.validatorTaskId)
++                {
++                    RevokeReadiness($"Caller attempted to nominate arbitrary arguments/executable in LAUNCH_OPERATOR_VALIDATOR (Provided='{remaining}'). Operator-owned configuration controls executable and arguments.");
++                    return "ERROR: Caller nomination of executable/arguments prohibited (MD-126/127).";
++                }
++
++                // Gate05-R17: Derive admitted executable, options/args, cwd strictly from private operator config
++                string exePath;
++                string exeExpectedSha;
++                string baseArgs;
++                string workingDir;
++
++                if (_activeStartupConfig != null)
++                {
++                    exePath = _activeStartupConfig.AdmittedValidatorExecutablePath;
++                    exeExpectedSha = _activeStartupConfig.AdmittedValidatorExecutableSha256;
++                    baseArgs = _activeStartupConfig.ValidatorArguments;
++                    workingDir = _activeStartupConfig.ValidatorCwd;
++                }
++                else
++                {
++                    exePath = AdmittedOperatorValidatorExecutable;
++                    exeExpectedSha = AdmittedOperatorValidatorSha;
++                    baseArgs = "";
++                    workingDir = "";
++                }
++
++                if (string.IsNullOrWhiteSpace(exePath) || string.IsNullOrWhiteSpace(exeExpectedSha))
++                {
++                    RevokeReadiness("No admitted operator validator executable and SHA configured (Fail-Closed).");
++                    return "ERROR: No admitted operator validator executable and SHA configured.";
++                }
++
++                // Preflight check BEFORE Process.Start: File existence and SHA256 match
++                var preflight = ExecutableAdmissionHelper.VerifyAdmittedExecutable(exePath, exeExpectedSha);
++                if (!preflight.isValid)
++                {
++                    RevokeReadiness($"Preflight executable admission check failed before Process.Start: {preflight.error}");
++                    return $"ERROR: Preflight executable admission check failed: {preflight.error}";
++                }
++
++                // Child arguments are strictly bound to current task and private config
++                string childArgs = $"--task-file \"{currentValidatorTaskPath}\" --nonce \"{currentValidatorTask.capabilityNonce}\"";
++                if (!string.IsNullOrWhiteSpace(baseArgs))
++                {
++                    childArgs = $"{baseArgs} {childArgs}";
+                 }
+ 
+                 var psi = new ProcessStartInfo
+                 {
+                     FileName = exePath,
+-                    Arguments = args,
++                    Arguments = childArgs,
+                     CreateNoWindow = true,
+                     UseShellExecute = false
+                 };
++                if (!string.IsNullOrWhiteSpace(workingDir) && Directory.Exists(workingDir))
++                {
++                    psi.WorkingDirectory = workingDir;
++                }
+ 
+                 Process proc = Process.Start(psi);
+                 if (proc == null || proc.HasExited)
+@@ -2167,6 +2258,22 @@
+                 {
+                     RevokeReadiness("Self-validation prohibited. Validator PID cannot equal simulator PID.");
+                     return "ERROR: Self-validation prohibited. Validator PID cannot equal simulator PID.";
++                }
++
++                // Gate05-R17: Bind actual process identity (MainModule, SHA256, PID, StartTime)
++                var identityCheck = ExecutableAdmissionHelper.VerifyProcessIdentity(
++                    proc,
++                    exePath,
++                    exeExpectedSha,
++                    expectedPid: proc.Id,
++                    expectedStartTimeUtc: null,
++                    expectedRole: "READ_ONLY");
++
++                if (!identityCheck.isValid)
++                {
++                    try { if (!proc.HasExited) proc.Kill(); } catch { }
++                    RevokeReadiness($"Validator process identity binding failed: {identityCheck.error}");
++                    return $"ERROR: Validator process identity binding failed: {identityCheck.error}";
+                 }
+ 
+                 string procStartTime = "";
+@@ -2179,13 +2286,6 @@
+                     try { if (!proc.HasExited) proc.Kill(); } catch { }
+                     RevokeReadiness($"Failed to obtain validator process StartTime (Fail-Closed): {ex.Message}");
+                     return $"ERROR: Failed to obtain validator process StartTime: {ex.Message}";
+-                }
+-
+-                if (string.IsNullOrEmpty(procStartTime))
+-                {
+-                    try { if (!proc.HasExited) proc.Kill(); } catch { }
+-                    RevokeReadiness("Validator process StartTime is empty (Fail-Closed).");
+-                    return "ERROR: Validator process StartTime is empty.";
+                 }
+ 
+                 operatorLaunchedValidatorProcess = proc;
+@@ -2227,11 +2327,28 @@
+                 return "ERROR: Self-validation prohibited.";
+             }
+ 
+-            // Gate05-R4: Validate admitted executable if configured
+-            if (!string.IsNullOrEmpty(AdmittedOperatorValidatorExecutable) && !string.Equals(exePath, AdmittedOperatorValidatorExecutable, StringComparison.OrdinalIgnoreCase))
+-            {
+-                comp.RevokeReadiness($"BindOperatorLaunchedProcess rejected unadmitted executable: '{exePath}' (Admitted='{AdmittedOperatorValidatorExecutable}')");
+-                return "ERROR: Unadmitted validator executable.";
++            string admittedExe = _activeStartupConfig != null ? _activeStartupConfig.AdmittedValidatorExecutablePath : AdmittedOperatorValidatorExecutable;
++            string admittedSha = _activeStartupConfig != null ? _activeStartupConfig.AdmittedValidatorExecutableSha256 : AdmittedOperatorValidatorSha;
++
++            if (string.IsNullOrWhiteSpace(admittedExe) || string.IsNullOrWhiteSpace(admittedSha))
++            {
++                comp.RevokeReadiness("BindOperatorLaunchedProcess rejected: No admitted validator executable or SHA configured (Fail-Closed).");
++                return "ERROR: No admitted validator executable or SHA configured.";
++            }
++
++            // Gate05-R17: Bind actual process identity (MainModule, SHA256, PID, StartTime)
++            var identityCheck = ExecutableAdmissionHelper.VerifyProcessIdentity(
++                proc,
++                admittedExe,
++                admittedSha,
++                expectedPid: proc.Id,
++                expectedStartTimeUtc: null,
++                expectedRole: "READ_ONLY");
++
++            if (!identityCheck.isValid)
++            {
++                comp.RevokeReadiness($"BindOperatorLaunchedProcess identity verification failed: {identityCheck.error}");
++                return $"ERROR: {identityCheck.error}";
+             }
+ 
+             string procStartTime = "";
+@@ -2254,14 +2371,14 @@
+             comp.operatorLaunchedValidatorProcess = proc;
+             comp.operatorLaunchedValidatorPid = proc.Id;
+             comp.operatorLaunchedValidatorStartTimeUtc = procStartTime;
+-            comp.operatorLaunchedValidatorExecutable = exePath;
++            comp.operatorLaunchedValidatorExecutable = admittedExe;
+             comp.registeredValidatorProcessId = proc.Id;
+             comp.registeredValidatorStartTime = procStartTime;
+-            comp.registeredValidatorExecutable = exePath;
++            comp.registeredValidatorExecutable = admittedExe;
+             comp.currentValidatorTask.registeredValidatorProcessId = proc.Id.ToString();
+             comp.currentValidatorTask.registeredValidatorStartTimeUtc = procStartTime;
+-            comp.currentValidatorTask.registeredValidatorExecutable = exePath;
+-            return $"OPERATOR_VALIDATOR_LAUNCHED: TaskId={comp.currentValidatorTask.validatorTaskId}, Pid={proc.Id}, StartTime={procStartTime}, Exe='{exePath}'";
++            comp.currentValidatorTask.registeredValidatorExecutable = admittedExe;
++            return $"OPERATOR_VALIDATOR_LAUNCHED: TaskId={comp.currentValidatorTask.validatorTaskId}, Pid={proc.Id}, StartTime={procStartTime}, Exe='{admittedExe}'";
+         }
+ 
+         private string HandleExecuteValidatorTask(string arg)
+@@ -2419,7 +2536,7 @@
+                     : Path.Combine(Path.GetDirectoryName(taskFilePath) ?? Path.Combine(SafeSaveDataFolderPath, "Tasks"), $"{task.validatorTaskId}.protected_result.json");
+                 File.WriteAllText(resultFile, JsonConvert.SerializeObject(result, Newtonsoft.Json.Formatting.Indented));
+ 
+-                return $"VALIDATOR_RESULT: ResultJson={JsonConvert.SerializeObject(result)}, ResultFile='{resultFile}'";
++                return $"VALIDATOR_RESULT: ResultJson={result.ToRedactedJson()}, ResultFile='{resultFile}'";
+             }
+             catch (Exception ex)
+             {
+@@ -3276,6 +3393,15 @@
+ 
+         #endregion
+ 
++        private string HandleGetOperatorConfig()
++        {
++            if (_activeStartupConfig == null)
++            {
++                return "ERROR: No operator startup config active.";
++            }
++            return _activeStartupConfig.ToRedactedJson();
++        }
++
+         void OnDestroy()
+         {
+             isRunning = false;
+@@ -3284,4 +3410,333 @@
+             try { listenerThread?.Abort(); } catch { }
+         }
+     }
++
++    #region Gate05-R17: Operator-Owned Normal Startup & Executable Admission
++
++    public class OperatorStartupConfig
++    {
++        public const string BOOTSTRAP_SCHEMA_VERSION = "WE-OPERATOR-BOOTSTRAP-V1";
++        public string schemaVersion = BOOTSTRAP_SCHEMA_VERSION;
++        public string configId = "";
++        public string admittedValidatorExecutablePath = "";
++        public string admittedValidatorExecutableSha256 = "";
++        public string validatorArguments = "";
++        public string workerUserDataDirectory = "";
++        public string validatorUserDataDirectory = "";
++        public string workerCwd = "";
++        public string validatorCwd = "";
++        public ExpectedPackagePolicyDeclaration? expectedPackagePolicyDeclaration = null;
++        public string expectedContentProfileFingerprint = "";
++        public string role = "SIMULATION"; // "SIMULATION" or "READ_ONLY"
++        public string capabilityBoundary = "LOCAL_SANDBOXED";
++        public string issuedAtUtc = "";
++
++        public OperatorStartupConfigSnapshot ToSnapshot()
++        {
++            return new OperatorStartupConfigSnapshot(this);
++        }
++    }
++
++    public sealed class OperatorStartupConfigSnapshot
++    {
++        public string SchemaVersion { get; }
++        public string ConfigId { get; }
++        public string AdmittedValidatorExecutablePath { get; }
++        public string AdmittedValidatorExecutableSha256 { get; }
++        public string ValidatorArguments { get; }
++        public string WorkerUserDataDirectory { get; }
++        public string ValidatorUserDataDirectory { get; }
++        public string WorkerCwd { get; }
++        public string ValidatorCwd { get; }
++        public ExpectedPackagePolicyDeclaration ExpectedPackagePolicyDeclaration { get; }
++        public string ExpectedContentProfileFingerprint { get; }
++        public string Role { get; }
++        public string CapabilityBoundary { get; }
++        public string IssuedAtUtc { get; }
++
++        public OperatorStartupConfigSnapshot(OperatorStartupConfig config)
++        {
++            if (config == null) throw new ArgumentNullException(nameof(config));
++            if (string.IsNullOrEmpty(config.schemaVersion) || config.schemaVersion != OperatorStartupConfig.BOOTSTRAP_SCHEMA_VERSION)
++            {
++                throw new InvalidOperationException($"Invalid bootstrap schema version: '{config.schemaVersion}'. Expected '{OperatorStartupConfig.BOOTSTRAP_SCHEMA_VERSION}'.");
++            }
++            if (string.IsNullOrEmpty(config.role) || (config.role != "SIMULATION" && config.role != "READ_ONLY"))
++            {
++                throw new InvalidOperationException($"Invalid role: '{config.role}'. Role must be 'SIMULATION' or 'READ_ONLY'.");
++            }
++            if (string.IsNullOrWhiteSpace(config.admittedValidatorExecutablePath))
++            {
++                throw new InvalidOperationException("Admitted validator executable path cannot be null or empty.");
++            }
++            string normalizedExe = Path.GetFullPath(config.admittedValidatorExecutablePath.Trim());
++            if (!Path.IsPathRooted(normalizedExe))
++            {
++                throw new InvalidOperationException("Admitted validator executable path must be an absolute path.");
++            }
++            if (string.IsNullOrWhiteSpace(config.admittedValidatorExecutableSha256) || config.admittedValidatorExecutableSha256.Trim().Length != 64)
++            {
++                throw new InvalidOperationException("Admitted validator executable SHA256 must be a valid 64-character hex string.");
++            }
++            if (string.IsNullOrWhiteSpace(config.workerUserDataDirectory))
++            {
++                throw new InvalidOperationException("Worker userdata directory cannot be null or empty.");
++            }
++            if (string.IsNullOrWhiteSpace(config.validatorUserDataDirectory))
++            {
++                throw new InvalidOperationException("Validator userdata directory cannot be null or empty.");
++            }
++            string normWorkerData = Path.GetFullPath(config.workerUserDataDirectory.Trim());
++            string normValidatorData = Path.GetFullPath(config.validatorUserDataDirectory.Trim());
++            if (string.Equals(normWorkerData, normValidatorData, StringComparison.OrdinalIgnoreCase))
++            {
++                throw new InvalidOperationException("Worker and validator userdata directories must be distinct isolated locations.");
++            }
++            if (config.expectedPackagePolicyDeclaration == null)
++            {
++                throw new InvalidOperationException("Expected package policy declaration cannot be null.");
++            }
++
++            SchemaVersion = config.schemaVersion;
++            ConfigId = config.configId ?? "";
++            AdmittedValidatorExecutablePath = normalizedExe;
++            AdmittedValidatorExecutableSha256 = config.admittedValidatorExecutableSha256.Trim().ToUpperInvariant();
++            ValidatorArguments = config.validatorArguments ?? "";
++            WorkerUserDataDirectory = normWorkerData;
++            ValidatorUserDataDirectory = normValidatorData;
++            WorkerCwd = string.IsNullOrWhiteSpace(config.workerCwd) ? "" : Path.GetFullPath(config.workerCwd.Trim());
++            ValidatorCwd = string.IsNullOrWhiteSpace(config.validatorCwd) ? "" : Path.GetFullPath(config.validatorCwd.Trim());
++
++            ExpectedPackagePolicyDeclaration = new ExpectedPackagePolicyDeclaration
++            {
++                schemaVersion = config.expectedPackagePolicyDeclaration.schemaVersion,
++                policyId = config.expectedPackagePolicyDeclaration.policyId,
++                revision = config.expectedPackagePolicyDeclaration.revision,
++                admittedPackageIds = new List<string>(config.expectedPackagePolicyDeclaration.admittedPackageIds ?? new List<string>())
++            };
++
++            ExpectedContentProfileFingerprint = config.expectedContentProfileFingerprint ?? "";
++            Role = config.role;
++            CapabilityBoundary = config.capabilityBoundary ?? "LOCAL_SANDBOXED";
++            IssuedAtUtc = string.IsNullOrWhiteSpace(config.issuedAtUtc) ? DateTime.UtcNow.ToString("O") : config.issuedAtUtc;
++        }
++
++        public string ToRedactedJson()
++        {
++            var redacted = new
++            {
++                schemaVersion = SchemaVersion,
++                configId = ConfigId,
++                role = Role,
++                admittedValidatorExecutablePath = AdmittedValidatorExecutablePath,
++                admittedValidatorExecutableSha256 = AdmittedValidatorExecutableSha256,
++                workerUserDataDirectory = WorkerUserDataDirectory,
++                validatorUserDataDirectory = ValidatorUserDataDirectory,
++                workerCwd = WorkerCwd,
++                validatorCwd = ValidatorCwd,
++                expectedPackagePolicyDeclaration = new
++                {
++                    ExpectedPackagePolicyDeclaration.schemaVersion,
++                    ExpectedPackagePolicyDeclaration.policyId,
++                    ExpectedPackagePolicyDeclaration.revision,
++                    ExpectedPackagePolicyDeclaration.admittedPackageIds
++                },
++                expectedContentProfileFingerprint = ExpectedContentProfileFingerprint,
++                capabilityBoundary = CapabilityBoundary,
++                issuedAtUtc = IssuedAtUtc
++            };
++            return JsonConvert.SerializeObject(redacted, Newtonsoft.Json.Formatting.Indented);
++        }
++    }
++
++    public static class ExecutableAdmissionHelper
++    {
++        public static string ComputeFileSha256(string filePath)
++        {
++            if (string.IsNullOrEmpty(filePath) || !File.Exists(filePath))
++            {
++                throw new FileNotFoundException($"File not found for hash calculation: '{filePath}'");
++            }
++            using (var sha = SHA256.Create())
++            using (var stream = File.Open(filePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
++            {
++                byte[] hash = sha.ComputeHash(stream);
++                StringBuilder sb = new StringBuilder(hash.Length * 2);
++                for (int i = 0; i < hash.Length; i++)
++                {
++                    sb.Append(hash[i].ToString("X2"));
++                }
++                return sb.ToString();
++            }
++        }
++
++        public static (bool isValid, string error) VerifyAdmittedExecutable(string exePath, string expectedSha256)
++        {
++            if (string.IsNullOrWhiteSpace(exePath))
++            {
++                return (false, "Executable path cannot be null or empty.");
++            }
++            if (string.IsNullOrWhiteSpace(expectedSha256) || expectedSha256.Trim().Length != 64)
++            {
++                return (false, "Expected SHA256 must be a 64-character hex string.");
++            }
++            string normalizedPath;
++            try
++            {
++                normalizedPath = Path.GetFullPath(exePath.Trim());
++            }
++            catch (Exception ex)
++            {
++                return (false, $"Invalid executable path: {ex.Message}");
++            }
++            if (!File.Exists(normalizedPath))
++            {
++                return (false, $"Admitted executable file does not exist at '{normalizedPath}'.");
++            }
++            string actualSha;
++            try
++            {
++                actualSha = ComputeFileSha256(normalizedPath);
++            }
++            catch (Exception ex)
++            {
++                return (false, $"Failed to compute executable SHA256: {ex.Message}");
++            }
++            if (!string.Equals(actualSha, expectedSha256.Trim(), StringComparison.OrdinalIgnoreCase))
++            {
++                return (false, $"Executable SHA256 mismatch. Expected='{expectedSha256.ToUpperInvariant()}', Observed='{actualSha.ToUpperInvariant()}'.");
++            }
++            return (true, string.Empty);
++        }
++
++        public static (bool isValid, string error) VerifyProcessIdentity(
++            Process proc,
++            string expectedExePath,
++            string expectedSha256,
++            int expectedPid = 0,
++            string? expectedStartTimeUtc = null,
++            string expectedRole = "READ_ONLY")
++        {
++            if (proc == null)
++            {
++                return (false, "Process object is null.");
++            }
++            if (proc.HasExited)
++            {
++                return (false, "Process has already exited.");
++            }
++            int myPid = Process.GetCurrentProcess().Id;
++            if (proc.Id == myPid)
++            {
++                return (false, "Self-validation prohibited. Target PID cannot match simulator PID.");
++            }
++            if (expectedPid > 0 && proc.Id != expectedPid)
++            {
++                return (false, $"PID mismatch. Expected={expectedPid}, Observed={proc.Id}.");
++            }
++
++            string procStartTime;
++            try
++            {
++                procStartTime = proc.StartTime.ToUniversalTime().ToString("O");
++            }
++            catch (Exception ex)
++            {
++                return (false, $"Failed to read process StartTime: {ex.Message}");
++            }
++            if (string.IsNullOrEmpty(procStartTime))
++            {
++                return (false, "Process StartTime is empty.");
++            }
++            if (!string.IsNullOrEmpty(expectedStartTimeUtc) && procStartTime != expectedStartTimeUtc)
++            {
++                return (false, $"Process StartTime mismatch. Expected={expectedStartTimeUtc}, Observed={procStartTime}.");
++            }
++
++            string mainModulePath;
++            try
++            {
++                mainModulePath = proc.MainModule?.FileName ?? "";
++            }
++            catch (Exception ex)
++            {
++                return (false, $"Failed to query process MainModule: {ex.Message}");
++            }
++            if (string.IsNullOrWhiteSpace(mainModulePath))
++            {
++                return (false, "Process MainModule FileName is empty or inaccessible.");
++            }
++            string normalizedMain;
++            try
++            {
++                normalizedMain = Path.GetFullPath(mainModulePath.Trim());
++            }
++            catch (Exception ex)
++            {
++                return (false, $"Failed to normalize process MainModule path: {ex.Message}");
++            }
++
++            string normalizedExpected;
++            try
++            {
++                normalizedExpected = Path.GetFullPath(expectedExePath.Trim());
++            }
++            catch (Exception ex)
++            {
++                return (false, $"Failed to normalize expected executable path: {ex.Message}");
++            }
++
++            if (!string.Equals(normalizedMain, normalizedExpected, StringComparison.OrdinalIgnoreCase))
++            {
++                return (false, $"Process MainModule path mismatch. Expected='{normalizedExpected}', Observed='{normalizedMain}'.");
++            }
++
++            var exeCheck = VerifyAdmittedExecutable(normalizedMain, expectedSha256);
++            if (!exeCheck.isValid)
++            {
++                return (false, $"Process MainModule executable verification failed: {exeCheck.error}");
++            }
++
++            return (true, string.Empty);
++        }
++    }
++
++    public static class ValidatorResultExtensions
++    {
++        public static string ToRedactedJson(this ValidatorResult result)
++        {
++            if (result == null) return "{}";
++            var redacted = new
++            {
++                validatorTaskId = result.validatorTaskId,
++                capabilityNonce = "[REDACTED_PROTECTED_OPERATOR_CAPABILITY]",
++                channelSecretToken = "[REDACTED_PROTECTED_CHANNEL_SECRET]",
++                validatorProcessId = result.validatorProcessId,
++                validatorProcessStartTimeUtc = result.validatorProcessStartTimeUtc,
++                validatorExecutable = result.validatorExecutable,
++                authorityId = result.authorityId,
++                storeIncarnation = result.storeIncarnation,
++                baseLineage = result.baseLineage,
++                grantId = result.grantId,
++                workerGeneration = result.workerGeneration,
++                scopeId = result.scopeId,
++                targetMapIndex = result.targetMapIndex,
++                allowedMode = result.allowedMode,
++                manifestVersion = result.manifestVersion,
++                sealedResultId = result.sealedResultId,
++                resultEpoch = result.resultEpoch,
++                sealedManifestHash = result.sealedManifestHash,
++                sourceArtifactHash = result.sourceArtifactHash,
++                validatorResult = result.validatorResult,
++                actualContentProfileFingerprint = result.actualContentProfileFingerprint,
++                actualManifestHash = result.actualManifestHash,
++                stagedSha = result.stagedSha,
++                stagedFilePath = result.stagedFilePath,
++                validatedAtUtc = result.validatedAtUtc
++            };
++            return JsonConvert.SerializeObject(redacted, Newtonsoft.Json.Formatting.Indented);
++        }
++    }
++
++    #endregion
+ }

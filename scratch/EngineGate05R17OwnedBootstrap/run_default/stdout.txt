@@ -1,0 +1,25 @@
+[R17-RUNNER] Starting Pure Managed Normal Test Battery
+[R17-RUNNER] Run Directory: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R17OwnedBootstrap\run_default
+[R17-RUNNER] Loaded Candidate: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R17OwnedBootstrap\Harness\bin\Debug\net472\WarEconomy.WorkerBridge.PoC.dll
+[R17-RUNNER] Candidate SHA256: F7946FED1F4FB896DD8F46B7C253C4DB24E6CF2AA6D9C0528CD5B59CD05DBAA3
+[R17-RUNNER] Candidate MVID:   d5a25e43-567c-414f-b7bd-4d4aa0b47050
+
+[TEST 1] Operator Startup Config & Immutable Snapshot Construction
+  -> PASS: Test 1 completed successfully.
+
+[TEST 2] Admitted Executable SHA & Path Validation Helper
+  -> PASS: Test 2 completed successfully.
+
+[TEST 3] Process Identity Binding Helper
+  -> PASS: Test 3 completed successfully.
+
+[TEST 4] Package Policy Lifecycle via ContentProfileProvider
+  -> PASS: Test 4 completed successfully.
+
+[TEST 5] Secret Redaction & Public View Boundary
+  -> PASS: Test 5 completed successfully.
+
+[R17-RUNNER] Results written to: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R17OwnedBootstrap\run_default\RESULTS.json
+[R17-RUNNER] API Ledger written to: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R17OwnedBootstrap\run_default\API_LEDGER.json
+[R17-RUNNER] Summary: Total=5, Passed=5, Failed=0, ExitCode=0
+

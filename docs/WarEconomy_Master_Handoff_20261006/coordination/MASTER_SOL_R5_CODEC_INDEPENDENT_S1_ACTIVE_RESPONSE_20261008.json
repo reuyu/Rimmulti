@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:36\",\"revision\":36,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a11ae8-7f1c-7953-9081-2bd07fb7602b\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791452806,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ac7668a83f887d08f7972a469518770\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ac7668a83f887d08f7972a469518770\",\"turnId\":\"01a11ae8-7f1c-7953-9081-2bd07fb7602b\",\"phase\":\"commentary\",\"text\":\"R5 독립 QA 지시를 받았습니다. 먼저 WP와 frozen 후보의 정확한 실행 범위를 확인한 뒤, 승인된 순수 codec·DTO만 사용하는 QA runner로 정상 데이터 검증을 진행하겠습니다.\"},\"latestToolMarkerId\":\"exec-dedf234a-f58e-4906-ad6e-f312f72e7a31\",\"latestToolMarker\":{\"id\":\"exec-dedf234a-f58e-4906-ad6e-f312f72e7a31\",\"turnId\":\"01a11ae8-7f1c-7953-9081-2bd07fb7602b\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

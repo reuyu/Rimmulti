@@ -1,0 +1,27 @@
+﻿======================================================================
+WarEconomy PoC Engine Gate05-R8 Supported Disposition Positive Pure Runner
+Running purely on positive normal DTO transport and admission contracts.
+Zero provider/cache/native/game/adverse executions.
+======================================================================
+Testing candidate DLL: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R8SupportedDisposition\Harness\bin\Debug\net472\WarEconomy.WorkerBridge.PoC.dll (SHA256: F82F3B08FF8D7D129F520DE054E7BAB666728B9909D9C9C2E955E5E583EBE9D5)
+[PASS] TC01_Lossless_Roundtrip: Serialize to canonical JSON and deserialize back, verifying field completeness and identity
+[PASS] TC02_Serialization_Determinism: Serializing the same manifest 100 times produces identical JSON and SHA256 digest
+[PASS] TC03_DefFamilies_Completeness: Verify all 8 Def families are properly projected, serialized and recovered
+[PASS] TC04_Numeric_Floating_Point_Precision: Verify float and double values preserve roundtrip precision losslessly
+[PASS] TC05_Unicode_Encoding_Fidelity: Verify Korean, special symbols and Unicode preserve encoding fidelity
+[PASS] TC06_Null_Versus_Empty_Preservation: Verify null collections and empty collections remain distinctly preserved without fabrication
+[PASS] TC07_Verbs_Stages_Comps_Order_And_Multiplicity: Verify verbs, stages, and comps maintain author order and multiplicity without deduplication or sorting
+[PASS] TC08_Stable_Sorting_Determinism: Verify Def family lists sort deterministically by defName ordinal via CanonicalNormalize
+[PASS] TC09_Unordered_Input_Normalization_Equivalence: Manifest with shuffled unordered collections produces exact identical JSON and digest as pre-sorted instance
+  Validated 8 Def families, DLCs, mods, assemblies and headers successfully with 0 contract errors.
+[PASS] TC10_ValidateContract_Positive_Compliant: ValidateContract returns true with empty failureReason on representative compliant manifest
+  Successfully admitted manifest with canonical JSON (3917 bytes).
+[PASS] TC11_TryAdmitManifest_Positive_Admission: TryAdmitManifest successfully validates and admits compliant manifest producing non-empty canonical JSON
+[PASS] TC12_Distinct_Manifests_Distinct_Digests: Changing a single scalar value must produce a distinct JSON and digest
+[PASS] TC13_Schema_Contract_Versions_And_Capability_Flags: Verify MANIFEST_SCHEMA_VERSION is ADR-006B-v5, CONTENT_CONTRACT_VERSION is ADR-006B-v5-R8, SUPPORTED_COVERAGE_PROFILE and MOD_PATCH_SUPPORT_STATUS match
+[PASS] TC14_Deterministic_Tie_Breaking: Verify assemblies and stats sort deterministically using secondary tie-breaking keys
+[PASS] TC15_Typed_Patch_And_Settings_Disposition: Verify ModPatchSettingsDispositionRecord and activeMods patch/settings dispositions are properly validated and serialized
+[PASS] TC16_Compatibility_Versus_Mod_Version_Distinction: Verify compatibilityVersionRange and modVersion are distinctly represented and synchronized
+======================================================================
+Total Tests: 16, Passed: 16, Failed: 0, Verdict: PASS
+======================================================================

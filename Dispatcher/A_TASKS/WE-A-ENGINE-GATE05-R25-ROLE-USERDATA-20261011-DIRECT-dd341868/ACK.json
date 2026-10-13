@@ -1,0 +1,23 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R25-ROLE-USERDATA-20261011-DIRECT-dd341868",
+  "wp_id": "WP_ENGINE_GATE05_R25_ROLE_USERDATA_SELECTION",
+  "wp_revision": "GATE05-R25-ROLE-USERDATA",
+  "envelope": 28,
+  "status": "ACKNOWLEDGED",
+  "task_state": "IN_PROGRESS",
+  "acknowledged_at": "2026-10-11T21:32:00+09:00",
+  "receiver": "Antigravity Development Agent A",
+  "instructions_file": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R25-ROLE-USERDATA-20261011-DIRECT-dd341868\\INSTRUCTIONS.md",
+  "wp_file": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_ENGINE_GATE05_R25_ROLE_USERDATA_SELECTION.md",
+  "release_file": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\RELEASE_ENGINE_GATE05_R25_ROLE_USERDATA_20261011.md",
+  "scope_baseline_file": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R25-ROLE-USERDATA-20261011-DIRECT-dd341868\\MASTER_R25_SCOPE_BASELINE.json",
+  "scope_policy": "OPERATOR_ROLE_USERDATA_SELECTION_PURE_HELPER_AND_SAFE_ROOT_CONNECTION_ONLY",
+  "scope_boundary": "THREE_AUTHORIZED_SPANS_FOUR_FIXED_SEGMENTS_ONLY",
+  "permitted_source_edits": [
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs"
+  ],
+  "immutable_engine_paths": [
+    "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj"
+  ]
+}

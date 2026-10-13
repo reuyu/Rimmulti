@@ -1,0 +1,72 @@
+{
+  "ManifestVersion": "1.0",
+  "WorkPackage": "WP-PROD-TRANSACTION-PIPELINE-01-REV5",
+  "TimestampUtc": "2026-10-04T12:38:00Z",
+  "Role": "Gemini 3.8 Flash A — Primary Development Agent",
+  "IndependentVerifier": "GPT-6.1 Sol",
+  "Status": "E1 PIPELINE REV5 PASS",
+  "SchemaVersion": 6,
+  "ExpectedV6SchemaSignature": "64BDB62037D70303D7F2AE15D39FC7E7DFD9F01021B5E0AA0709A51FA507E721",
+  "BinaryArtifacts": {
+    "WarEconomy.Server.dll": {
+      "RelativePath": "WarEconomyMod/Source/Server/bin/Release/net8.0/WarEconomy.Server.dll",
+      "Sha256": "1143AE62FD74F0C93F0504B48C1501D5153F40C2E903BD4D69BA9BE1E6983479",
+      "Mvid": "a5cba4c3-1e2f-4a19-a35c-0241ccf12e81"
+    },
+    "WarEconomy.Server.exe": {
+      "RelativePath": "WarEconomyMod/Source/Server/bin/Release/net8.0/WarEconomy.Server.exe",
+      "Sha256": "0C1B14510C3CDC7396848E7228660456F7F127F97E680B785A7B62665765378C"
+    },
+    "WarEconomy.Server.pdb": {
+      "RelativePath": "WarEconomyMod/Source/Server/bin/Release/net8.0/WarEconomy.Server.pdb",
+      "Sha256": "754752E0E97E5FA7ACC09B5568B7780C86CB3C57CCD8E5F82CC8C3CC31BB90F1"
+    },
+    "WarEconomy.Common.dll": {
+      "RelativePath": "WarEconomyMod/Source/Common/bin/Release/netstandard2.0/WarEconomy.Common.dll",
+      "Sha256": "2711A366D3108DE42EB5CD07EE4874DB6B332B86A63F38B36E79611CFE110BCB",
+      "Mvid": "84b7cb6b-224a-43de-b2b6-1f67e2e51cf7"
+    },
+    "WarEconomy.Common.pdb": {
+      "RelativePath": "WarEconomyMod/Source/Common/bin/Release/netstandard2.0/WarEconomy.Common.pdb",
+      "Sha256": "5119FE41A0FD3BB6B6DCA299B85FD3EEF0F91D4FB7B1AC77DAEDA762E9B2D0F0"
+    }
+  },
+  "ModifiedSourceFiles": {
+    "PipelineProbeModels.cs": {
+      "RelativePath": "WarEconomyMod/Source/Server/Pipeline/Models/PipelineProbeModels.cs",
+      "Sha256": "E545A2689898DBECF57D7FD52C257290352CFC51A312F71A0A319BF415424182"
+    },
+    "PipelineTransactionCoordinator.cs": {
+      "RelativePath": "WarEconomyMod/Source/Server/Pipeline/Coordinator/PipelineTransactionCoordinator.cs",
+      "Sha256": "9F987535E8B84C4F812884F53EFF34914555CE45A8F042769C0F8AD24E2D3456"
+    },
+    "PipelineSchemaMigration.cs": {
+      "RelativePath": "WarEconomyMod/Source/Server/Pipeline/Data/Migrations/PipelineSchemaMigration.cs",
+      "Sha256": "27273373379CA15ADB48A0C7EEE241E699663D324F21E6336845C69E9CF374D5"
+    },
+    "RecoveryReconciler.cs": {
+      "RelativePath": "WarEconomyMod/Source/Server/Pipeline/Recovery/RecoveryReconciler.cs",
+      "Sha256": "92B1B024CF6D3A67D8996D0B8D91FA523CEA9C74EACC6EE5C6B80F3390364EAC"
+    },
+    "ProbeAggregateStore.cs": {
+      "RelativePath": "WarEconomyMod/Source/Server/Pipeline/Storage/ProbeAggregateStore.cs",
+      "Sha256": "B1C34B4F57B4D1A4508FF59B318B6A9A8249217C360816141F842A9FF4C1B149"
+    },
+    "Program.cs": {
+      "RelativePath": "WarEconomyMod/Source/Server/Program.cs",
+      "Sha256": "8A4013701A1E8DC1B915E5C383560CD9D8C35E2134C376413CC584FA59F6BF2C"
+    }
+  },
+  "E1Results": {
+    "TotalTests": 21,
+    "PassedTests": 21,
+    "FailedTests": 0,
+    "RelativePath": "scratch/pipeline_e1_rev5_results.json",
+    "Sha256": "4B44749D3EBD2DFF0ABEE881620BE8E4A311B6260A233C11D3D2E713B62C9AFB"
+  },
+  "IsolatedEngineGate04": {
+    "POC_EngineHost_Semantic_Authority_Gate_04.md": "UNTOUCHED_FROZEN",
+    "WorkerBridgeMod": "UNTOUCHED_FROZEN",
+    "run_semantic_authority_gate_04.py": "UNTOUCHED_FROZEN"
+  }
+}

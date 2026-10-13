@@ -1,0 +1,34 @@
+{
+  "at": "2026-10-13T00:34:55.302989+09:00",
+  "delivery": {
+    "delivery_id": "SOL-GATE05-R32-CUSTODY-INDEPENDENT-S1-20261013-01",
+    "wp_id": "WP_QA_ENGINE_GATE05_R32_CUSTODY_INDEPENDENT",
+    "wp_revision": "S1",
+    "wp_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R32_CUSTODY_INDEPENDENT_S1.md",
+    "wp_sha256": "D1CC9DC814FE45A0084CA1EBC9423196997FF92BCC42F55419BB4D3E9F866A46",
+    "qa_root": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R32-CUSTODY-INDEPENDENT-S1-20261013",
+    "report_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R32_Custody_Independent_S1_20261013.md",
+    "baseline_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R32_STATIC_POSITIVE_QA_PROTECTED_BASELINE_20261013.json",
+    "baseline_sha256": "9A1297820ADCD3E7D52B253E73DF8C25A237642F379F63175C8CBF0DD462ABA5",
+    "protected_unique_paths": 16026,
+    "frozen_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2\\MASTER_GATE05_R32_CUSTODY_REVIEW_FREEZE_MANIFEST.json",
+    "frozen_manifest_sha256": "F5EDD5DCBC021407B3598DEBCF80276F39C158EC38FABD37D10AD15E6098E6BF",
+    "selected_sha256": "0B23C358E8C8FC16FCD02DDE654AD8AE763EA177460BB15F5F1E1B1F0CB67E26",
+    "selected_mvid": "7d436c98-659a-4df1-a085-06fe9e55a0bc",
+    "selected_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R32-64ad38e2\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "delivery_status": "APPROVED_NOT_SENT",
+    "unknown_delivery": false
+  },
+  "oracle_template_binding": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R32_FRESH_QA_ORACLE_TEMPLATE_BINDING_20261013.json",
+    "sha256": "0149D8E9B9B98848B541A0B6A75A23FCE300878E83EEF3F21E7FE352D083B318",
+    "bytes": 2345
+  },
+  "actual_monitor_pause": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R32_ACTUAL_PAUSED_CONFIG_VERIFICATION_20261013.json",
+    "sha256": "CA8AC4198F0CCC0BA61789F81C3C87188EC023D4B4EA0612F017836F5019D33D",
+    "bytes": 1046
+  },
+  "guard_session": 86751,
+  "Master_candidate_execution": 0
+}

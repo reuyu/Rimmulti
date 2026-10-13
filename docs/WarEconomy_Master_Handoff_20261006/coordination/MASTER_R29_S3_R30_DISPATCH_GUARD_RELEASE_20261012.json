@@ -1,0 +1,14 @@
+{
+  "run_id": "MASTER-R29-S3-POSTRUN-ANALYSIS-20261012-02",
+  "session_id": 2351,
+  "actual_release_confirmed": true,
+  "actual_exit_code": 0,
+  "release_tool_return": {
+    "chunk_id": "ada85c",
+    "wall_time_seconds": 0.0000422,
+    "exit_code": 0,
+    "original_token_count": 118,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R29-S3-POSTRUN-ANALYSIS-20261012-02\", \"\r\n\u001b[23;80H\"pid\": 34332, \"locked_at\": \"2026-10-12T17:05:52.350855+09:00\", \"mechanism\": \"Wind\r\n\u001b[23;80Hdows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed\r\n\u001b[23;80Hd_at\": \"2026-10-12T18:01:35.909376+09:00\", \"renewal_count\": 11, \"release_reason\":\r\n\u001b[23;80H: \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-12T18:04:42.768269+09:00\"}  \r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "old_interrupted_guard_coverage_not_retroactively_asserted": true
+}

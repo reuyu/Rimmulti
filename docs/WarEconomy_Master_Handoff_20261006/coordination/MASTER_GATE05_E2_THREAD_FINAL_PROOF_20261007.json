@@ -1,0 +1,47 @@
+{
+  "timedOut": false,
+  "wake": {
+    "reason": "turnCompleted",
+    "turnId": "01a11598-cbe3-7160-ae39-0e16e3a00e62",
+    "threadId": "01a11583-ff90-73e0-8916-d021e2bb038d",
+    "hostId": "local"
+  },
+  "polls": [
+    {
+      "schemaVersion": 1,
+      "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:11",
+      "revision": 11,
+      "changed": true,
+      "thread": {
+        "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+        "hostId": "local",
+        "status": {
+          "type": "idle"
+        }
+      },
+      "latestTurn": {
+        "id": "01a11598-cbe3-7160-ae39-0e16e3a00e62",
+        "status": "completed",
+        "error": null,
+        "startedAt": 1791363697,
+        "completedAt": 1791365984,
+        "durationMs": 2287187
+      },
+      "latestAssistantMessageId": "msg_0c6b28ae575c2341016ac61360b77887d0a21a60b83b7af93f",
+      "latestAssistantMessage": {
+        "id": "msg_0c6b28ae575c2341016ac61360b77887d0a21a60b83b7af93f",
+        "turnId": "01a11598-cbe3-7160-ae39-0e16e3a00e62",
+        "phase": "final_answer",
+        "text": "범위가 제한된 Gate05 독립 E2 판정은 FAIL이며, 마스터에게 보고했습니다. 발급자 결속과 Def fingerprint의 정적 결함을 확인했습니다. 정상 native 체인·교체·잠금 보존은 통과했고, 실행하지 않은 음성 사례는 명시했습니다. 동결 파일 2,255개는 변경되지 않았습니다. QA 보고서"
+      },
+      "latestToolMarkerId": "exec-dfdcb744-336b-4a8f-a348-3dfd3c1f7129",
+      "latestToolMarker": {
+        "id": "exec-dfdcb744-336b-4a8f-a348-3dfd3c1f7129",
+        "turnId": "01a11598-cbe3-7160-ae39-0e16e3a00e62",
+        "type": "commandExecution",
+        "name": "commandExecution",
+        "status": "completed"
+      }
+    }
+  ]
+}

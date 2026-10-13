@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-14T00:46:40.368282+09:00",
+  "guard_session": 81798,
+  "delivery_id": "SOL-GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014-01",
+  "result_id": "SOL-GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014-6ed51db08e3540c9b6b98a6a96f57e1d",
+  "failure_manifest": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R36_OWN_METADATA_SYNTAX_FAILURE_PRESERVATION_20261014.json",
+    "sha256": "95064B9781BB618D4B6ACE149461F341016BC3E921EE0EB7B2CB9FC77E798E13",
+    "bytes": 3069
+  },
+  "authorization": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R36_STATIC_METADATA_SYNTAX_R1_AUTHORIZATION_20261014.md",
+    "sha256": "C6BE20A9DF5E05B71AB4F89F90189F655A8DE890B9A795AD2667F46537A9C193",
+    "bytes": 2561
+  },
+  "review_tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review.TOOL.json",
+    "sha256": "0E5900F76A0DCEBBF7BBD0C4D718196DFB36F9749716005FF3C01D054586A672",
+    "bytes": 1018
+  },
+  "status": "BOUNDED_SAME_WP_METADATA_CORRECTION_AUTHORIZED_NOTICE_NOT_SENT",
+  "frozen43_matched": true,
+  "native_E2": "NOT_RELEASED"
+}

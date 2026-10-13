@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"bcc76e72-e33d-4898-bc7b-b558cfab470c:63\",\"revision\":63,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a136e7-25ff-79d2-ad5a-af463c194eb9\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791922480,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ace9259468887d08f6c4afe381f80ee\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ace9259468887d08f6c4afe381f80ee\",\"turnId\":\"01a136e7-25ff-79d2-ad5a-af463c194eb9\",\"phase\":\"commentary\",\"text\":\"초기 ACK를 전달했고, 보호 19,785개 경로와 동결 42개 파일이 일치합니다. 사전 등록된 기대 bundle이 기존 literal의 두 경로 문자열만 바꿔 만든 것인지도 확인했습니다. 원래 raw12를 그대로 고정하고, 각 호출의 실제 출력·SHA sidecar·출처 manifest를 이 기대값과 비교하겠습니다.\"},\"latestToolMarkerId\":\"exec-7a66bef3-8f74-4f73-95da-b5feb475ae96\",\"latestToolMarker\":{\"id\":\"exec-7a66bef3-8f74-4f73-95da-b5feb475ae96\",\"turnId\":\"01a136e7-25ff-79d2-ad5a-af463c194eb9\",\"type\":\"fileChange\",\"name\":\"fileChange\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

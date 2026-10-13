@@ -1,0 +1,78 @@
+--- Frozen R8
++++ R9
+@@ -1533,7 +1533,7 @@
+     public static class ContentProfileProvider
+     {
+         public const string MANIFEST_SCHEMA_VERSION = "ADR-006B-v5";
+-        public const string CONTENT_CONTRACT_VERSION = "ADR-006B-v5-R8";
++        public const string CONTENT_CONTRACT_VERSION = "ADR-006B-v5-R9";
+         public const string SUPPORTED_COVERAGE_PROFILE = "POC_SUPPORTED_CORE_DLC_ASSEMBLIES_V5";
+         public const string MOD_PATCH_SUPPORT_STATUS = "TYPED_OBSERVATION_EXPLICIT_DISPOSITION_V1";
+ 
+@@ -1594,14 +1594,6 @@
+                 foreach (var m in manifest.activeMods)
+                 {
+                     if (m == null) continue;
+-                    if (string.IsNullOrEmpty(m.compatibilityVersionRange) && !string.IsNullOrEmpty(m.modVersion))
+-                    {
+-                        m.compatibilityVersionRange = m.modVersion ?? "";
+-                    }
+-                    else if (string.IsNullOrEmpty(m.modVersion) && !string.IsNullOrEmpty(m.compatibilityVersionRange))
+-                    {
+-                        m.modVersion = m.compatibilityVersionRange;
+-                    }
+                     if (string.IsNullOrEmpty(m.patchDisposition))
+                     {
+                         m.patchDisposition = "COUNT_OBSERVED_RAW_AST_EXCLUDED";
+@@ -1820,7 +1812,7 @@
+                 "TACTICAL_PROBE_V4",
+                 "READ_ONLY",
+                 "SIMULATION",
+-                "GATE05_R8_SUPPORTED_DISPOSITION",
++                "GATE05_R9_VERSION_MEANING",
+                 "ADR006B_LOSSLESS_CANONICAL_CONTENT_V5"
+             };
+             foreach (var flag in requiredFlags)
+@@ -2166,7 +2158,7 @@
+                         packageId = mod.PackageIdPlayerFacing.ToLowerInvariant(),
+                         name = mod.Name ?? "",
+                         compatibilityVersionRange = compatRange,
+-                        modVersion = compatRange,
++                        modVersion = null,
+                         patchCount = patchCount,
+                         patchDisposition = "COUNT_OBSERVED_RAW_AST_EXCLUDED",
+                         settingsDisposition = "USER_MOD_SETTINGS_EXCLUDED"
+@@ -2227,7 +2219,7 @@
+                 throw new InvalidOperationException($"Active Mods / Assemblies query failed in ContentProfileProvider: {ex.Message}", ex);
+             }
+ 
+-            // 5. Eight Def Families Projection (ADR-006B-v5-R8)
++            // 5. Eight Def Families Projection (ADR-006B-v5-R9)
+             // A. ThingDef
+             if (DefDatabase<ThingDef>.AllDefsListForReading == null)
+             {
+@@ -2564,13 +2556,13 @@
+             }
+             manifest.defFamilies.researchDefs.Sort((a, b) => string.CompareOrdinal(a.defName, b.defName));
+ 
+-            // Capability flags (aligned with semantic V4 scope and ADR-006B-v5-R8)
++            // Capability flags (aligned with semantic V4 scope and ADR-006B-v5-R9)
+             manifest.capabilityFlags = new List<string>
+             {
+                 "TACTICAL_PROBE_V4",
+                 "READ_ONLY",
+                 "SIMULATION",
+-                "GATE05_R8_SUPPORTED_DISPOSITION",
++                "GATE05_R9_VERSION_MEANING",
+                 "ADR006B_LOSSLESS_CANONICAL_CONTENT_V5"
+             };
+ 
+@@ -2608,7 +2600,7 @@
+         }
+     }
+ 
+-    // Supported Typed Canonical Records (ADR-006B-v5-R8)
++    // Supported Typed Canonical Records (ADR-006B-v5-R9)
+     public class DlcExpansionRecord
+     {
+         public string defName = "";

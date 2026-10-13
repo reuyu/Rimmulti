@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "producer": "A",
+  "report_kind": "E1",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R12-PACKAGE-ORDER-20261009-DIRECT-e9dcd1e6",
+  "wp_id": "WP_ENGINE_GATE05_R12_PACKAGE_ORDER",
+  "wp_revision": "GATE05-R12-PACKAGE-ORDER",
+  "result_id": "WE-A-ENGINE-GATE05-R12-PACKAGE-ORDER-RESULT-01",
+  "run_id": "GATE05-R12-PACKAGE-ORDER-RUN-01",
+  "status": "COMPLETED",
+  "completed_at": "2026-10-09T07:15:56.0053315Z",
+  "summary": "WP_ENGINE_GATE05_R12_PACKAGE_ORDER / GATE05-R12-PACKAGE-ORDER single technical objective PACKAGE_ORDER implementation completed and developer E1 verification recorded. Successfully implemented pure package policy comparison based on declared 0-based contiguous loadOrder (0 .. count - 1), ensuring physical transport array permutation invariance while preserving distinct valid execution sequences. CheckPackagePolicy uses a copied ordered view preventing caller activeMods list/element mutation, while recording rawPhysicalPackages for diagnostic traceability alongside effective execution sequence observedPackages. TryAdmitWithPackagePolicy canonical normalization ensures identical canonical JSON and digest across physical permutations. Source-only static guards enforce non-negative, non-duplicate, contiguous loadOrder without runtime game/native execution. Updated content contract version to ADR-006B-v5-R12 and capability flag to GATE05_R12_PACKAGE_ORDER. Fixed R11 release manifest packaging defect by generating fully valid JSON via serializer and pinned candidate pre-run manifest prior to execution with unified run_id (GATE05-R12-PACKAGE-ORDER-RUN-01). Preserved R11 scoped 247 PASS, R9 version meaning semantics, Def family canonical sorting, and immutable baselines (WorkerBridge.cs, WorkerBridge.csproj, EngineHostCensus.cs prefix 72,547 bytes SHA F3C4F865...). Executed pure positive normal managed runner controls (18/18 PASS) across multiple cultures (ko-KR, en-US, de-DE) with 0 provider compute calls, 0 configuration lifecycle calls, 0 cache calls, and 0 negative/adverse tests. Bound PE MVIDs for Debug (ad4caf3c-...) and Release (7b97e307-...) candidates. Steam installed DLL incident remains UNKNOWN OPEN INCIDENT. Full Gate05 and Foundation remain HOLD pending independent Sol QA review and Master governance disposition.",
+  "e1_verdict": "SCOPED_POSITIVE_NORMAL_PASS",
+  "limitations": [
+    "STATIC_MANAGED_NORMAL_EVIDENCE_ONLY: Verification conducted strictly via isolated positive pure normal managed runner controls (18/18 PASS) with Master-approved frozen dependencies.",
+    "NATIVE_PROMOTION_FULL_E2_NOT_RELEASED: In-engine, game runtime, native execution, and operator promotion were strictly prohibited and not executed.",
+    "INSTALLED_DLL_INCIDENT_OPEN: Steam installed DLL (BB3B52...) discrepancy against archive baseline (2D64FF...) remains an UNKNOWN OPEN INCIDENT, preserved unmodified per Master policy.",
+    "POLICY_CACHE_PATCHSETTINGS_OPERATOR_SEPARATE: Policy cache generation, user mod settings/patch dynamic evaluation, and real operator provenance remain separate OPEN gates.",
+    "NO_SELF_CLOSURE: Developer A does not self-declare candidate release, E2 verification, or defect closure. Dedicated Server remains final Domain Authority; Master governs release."
+  ],
+  "artifacts": [
+    {
+      "role": "implementation_report",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_EngineHost_Content_Codec_Gate05_R12.md",
+      "sha256": "66A741AEDB662F0AF751D8350070BEE188C21EFCA38C2E43E334A8FDAF0DE139",
+      "size": 13139
+    },
+    {
+      "role": "release_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R12_PACKAGE_ORDER.json",
+      "sha256": "61B2471B80D27233C14CB39F2AFEA622F9A67FCF565B2CB8793C9A52B5C08D70",
+      "size": 5665
+    },
+    {
+      "role": "harness",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R12PackageOrder\\Harness\\Program.cs",
+      "sha256": "BDF385DC73AAA0EE3144CA093FF87D2562B2DA461F0C2CC1D3950EC1AA111ED8",
+      "size": 41818
+    },
+    {
+      "role": "harness_project",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R12PackageOrder\\Harness\\Gate05R12OrderRunner.csproj",
+      "sha256": "27CF92775667DC7480EF72CBE39E65F87E3D6D067F1F3E3A83C93A15F315345F",
+      "size": 1616
+    },
+    {
+      "role": "results",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R12PackageOrder\\results.json",
+      "sha256": "1A4097B773F5F7C6EBF8526307F088BF111756F436FDDEF2677EC9436270FDCC",
+      "size": 8150
+    },
+    {
+      "role": "raw_evidence",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R12PackageOrder\\raw_console.txt",
+      "sha256": "B69D85301510584A5321E7620CF1BD1D7BF2CB63A44DC80C13E2BAB95AE8DEA0",
+      "size": 3710
+    },
+    {
+      "role": "candidate_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "3035A0D0FDD799D42AC83B7D776998AFF07A8BDD3246959E685AA0F8D7ACF94E",
+      "size": 237568,
+      "mvid": "ad4caf3c-88bc-4971-9c2a-ab78eae395e5"
+    },
+    {
+      "role": "pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "61CDC0E8D28047027BF3EE46FD6C3349AD52FAB0846C03868FEB7FEC538E9993",
+      "size": 59924
+    },
+    {
+      "role": "alternate_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "25F6C21092CA3DDCBF7D80EBBC40B6B3E7A3758595E7B3C106D05474F95C8561",
+      "size": 225792,
+      "mvid": "7b97e307-b06f-40fc-ad6f-5530d180ebe0"
+    },
+    {
+      "role": "alternate_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "A2366CC60F889135D8A63DBD2BCF2340FF93D0229F64250F75D50E95D6AB8166",
+      "size": 43852
+    },
+    {
+      "role": "deployed_assembly",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "3035A0D0FDD799D42AC83B7D776998AFF07A8BDD3246959E685AA0F8D7ACF94E",
+      "size": 237568,
+      "mvid": "ad4caf3c-88bc-4971-9c2a-ab78eae395e5"
+    },
+    {
+      "role": "deployed_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "61CDC0E8D28047027BF3EE46FD6C3349AD52FAB0846C03868FEB7FEC538E9993",
+      "size": 59924
+    },
+    {
+      "role": "source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+      "size": 156431
+    },
+    {
+      "role": "source_census",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "5E9A4DE9A6280A887E3659CE2D80A8029C2BEF41DC615BB3F6F1BB859B1F020E",
+      "size": 157554
+    },
+    {
+      "role": "source_csproj",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "size": 1774
+    },
+    {
+      "role": "pre_run_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R12PackageOrder\\CANDIDATE_PRE_RUN_MANIFEST.json",
+      "sha256": "CA281E29566BC499D2857E6DD62139B16F1D89472C767D392D144CA84EEFA9A6",
+      "size": 9790
+    },
+    {
+      "role": "engine_freeze_before",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R12PackageOrder\\ENGINE_FREEZE_BEFORE.json",
+      "sha256": "4EA364D6D5E01A84F55DA7B25D47FE2EBF8F4450503837F8488EF44301A305EA",
+      "size": 3072
+    },
+    {
+      "role": "engine_freeze_after",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R12PackageOrder\\ENGINE_FREEZE_AFTER.json",
+      "sha256": "FC81CA6F49DC0F32D2FF53EE428EF40D6712450C5117010E03C9787B52AF1461",
+      "size": 3069
+    },
+    {
+      "role": "work_log",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R12-PACKAGE-ORDER-20261009-DIRECT-e9dcd1e6\\A_WORK_LOG.md",
+      "sha256": "1C232A022DFFFF36D5FF37A5EE35F8EB860A7270EB2978ACE45D61F92FD4DCD2",
+      "size": 6065
+    },
+    {
+      "role": "recovery_ack",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R12-PACKAGE-ORDER-20261009-DIRECT-e9dcd1e6\\A_RECOVERY_ACK.md",
+      "sha256": "262604C19F281784BAAEE578E365B0C2424FB11DFE423AD3DCF312C9363105E4",
+      "size": 3301
+    },
+    {
+      "role": "ack_json",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R12-PACKAGE-ORDER-20261009-DIRECT-e9dcd1e6\\ACK.json",
+      "sha256": "A050A9A88B5C36E5776BC5724E1F7501CE299FBAE446C05DB0718CA53960E03C",
+      "size": 2176
+    }
+  ]
+}

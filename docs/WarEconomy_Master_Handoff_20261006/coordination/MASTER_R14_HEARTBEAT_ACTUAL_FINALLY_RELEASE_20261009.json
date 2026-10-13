@@ -1,0 +1,13 @@
+{
+  "mechanism": "Actual JS try/finally executed after tool/command operations settled",
+  "run_id": "MASTER-R14-HEARTBEAT-20261009T130103Z-01",
+  "session_id": 29525,
+  "pid": 20716,
+  "actual_release_tool_result": {
+    "chunk_id": "b8a47f",
+    "wall_time_seconds": 0.0000374,
+    "exit_code": 0,
+    "original_token_count": 110,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R14-HEARTBEAT-20261009T130103Z-01\", \"pid\": 20716, \"locked_at\": \"2026-10-09T22:01:12.833304+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-09T22:13:14.015649+09:00\", \"renewal_count\": 4, \"release_reason\": \"R\r\n\u001b[23;80HRELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-09T22:13:19.095611+09:00\"}     \r\n\u001b[?9001l\u001b[?1004l"
+  }
+}

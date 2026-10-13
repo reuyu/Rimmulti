@@ -1,0 +1,155 @@
+{
+  "at": "2026-10-08T23:27:56.876832+09:00",
+  "type": "SOL_R7_CONTENT_ADMISSION_INDEPENDENT_MASTER_REVIEW",
+  "result_id": "SOL-GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008-a860491cbc81403eb91650ce707f26cc",
+  "delivery_id": "SOL-GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R7_CONTENT_ADMISSION_INDEPENDENT",
+  "wp_revision": "S1",
+  "completion_sha256": "20F6CFFAFCF14D3C46EF2F8D425D5C456493D9BD0538A6252D2A836C56CF4955",
+  "report_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R7_Content_Admission_Independent_S1_20261008.md",
+  "report_sha256": "4B295CEC1BF69CD2B8F748D58C0E0136A279D208DB73757ADC0304FB40F67134",
+  "evidence_manifest_path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008\\EVIDENCE_MANIFEST.json",
+  "evidence_manifest_sha256": "D46AD94773195957CA8178AEDD95D0212FC9D061B9A71456AB0046EBC1A1FB7F",
+  "result_index_sha256": "CB442C1A82E074B8B80523459E7F10AEA9D39355E1A3CB277CBBF0FC5AAB0935",
+  "evidence_files": 163,
+  "protected_unique_paths_master_rehashed": 2701,
+  "runs": [
+    {
+      "run_id": "RUN_SOL_R7_CODEC_S1_20261008_aa5becb085de45059c24b2210c1d2f22",
+      "culture": "en-US",
+      "prepost_files": 141,
+      "tool_exit": 0,
+      "assertions": 27,
+      "runner_sha256": "F99CF19C869793DE8ECB919F9CD7B82A6C12C756EA833636EB70EFA1DF76D9C3",
+      "runner_mvid": "98a08967-9b68-4e25-895f-00c26ed96430"
+    },
+    {
+      "run_id": "RUN_SOL_R7_CODEC_S1_20261008_ddd62f1afd964605bdaecf7e83fb9e4a",
+      "culture": "de-DE",
+      "prepost_files": 141,
+      "tool_exit": 0,
+      "assertions": 27,
+      "runner_sha256": "F99CF19C869793DE8ECB919F9CD7B82A6C12C756EA833636EB70EFA1DF76D9C3",
+      "runner_mvid": "98a08967-9b68-4e25-895f-00c26ed96430"
+    }
+  ],
+  "cases": [
+    {
+      "case": "BASE",
+      "canonical_sha256": "CE1BE1059C915FBCDD2060A54DD09A2991B7763532E9A052A9C7810E4EB8CC66",
+      "semantic_leaves": 157,
+      "cross_process_bytes_match": true
+    },
+    {
+      "case": "OPTIONAL_NULL",
+      "canonical_sha256": "6487D47E3F23CE59924945E486A1CA55F2A33878FA87EEF27102BDD051196873",
+      "semantic_leaves": 98,
+      "cross_process_bytes_match": true
+    },
+    {
+      "case": "OPTIONAL_EMPTY",
+      "canonical_sha256": "69E25231409EF8D2B827258961637266DFD75857CB36A3A99EEC19C2919D6E88",
+      "semantic_leaves": 98,
+      "cross_process_bytes_match": true
+    },
+    {
+      "case": "NORMAL_REVISION_B",
+      "canonical_sha256": "52F4021FFF3FF070E1F327BE4D8CE459F0026659B4D38C928650D0839B180C7A",
+      "semantic_leaves": 157,
+      "cross_process_bytes_match": true
+    },
+    {
+      "case": "NORMAL_SET_ORDER",
+      "canonical_sha256": "CE1BE1059C915FBCDD2060A54DD09A2991B7763532E9A052A9C7810E4EB8CC66",
+      "semantic_leaves": 157,
+      "cross_process_bytes_match": true
+    },
+    {
+      "case": "OPTIONAL_MISSING",
+      "canonical_sha256": "6487D47E3F23CE59924945E486A1CA55F2A33878FA87EEF27102BDD051196873",
+      "semantic_leaves": 96,
+      "cross_process_bytes_match": true
+    }
+  ],
+  "historical_leaf_semantics": 65,
+  "positive_helper_cases_per_run": 2,
+  "positive_try_admit_cases_per_run": 2,
+  "admitted_cases": [
+    {
+      "case": "BASE",
+      "sha256": "CE1BE1059C915FBCDD2060A54DD09A2991B7763532E9A052A9C7810E4EB8CC66",
+      "cross_process_bytes_match": true,
+      "expected_semantics_match": true,
+      "actual_utf8_bytes": 4550
+    },
+    {
+      "case": "NORMAL_REVISION_B",
+      "sha256": "52F4021FFF3FF070E1F327BE4D8CE459F0026659B4D38C928650D0839B180C7A",
+      "cross_process_bytes_match": true,
+      "expected_semantics_match": true,
+      "actual_utf8_bytes": 4544
+    }
+  ],
+  "all_actual_loaded_pre_pins_verified": true,
+  "runner_pe_metadata_master": {
+    "assembly": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008\\runner\\QaCodecRunner.exe",
+    "pdb": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008\\runner\\QaCodecRunner.pdb",
+    "mvid": "98a08967-9b68-4e25-895f-00c26ed96430",
+    "codeviewGuid": "651d71e5-30b5-425a-812c-6f08d6af33ff",
+    "pdbGuid": "651d71e5-30b5-425a-812c-6f08d6af33ff",
+    "codeviewMatched": true,
+    "documents": [
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008\\Program.cs",
+        "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+        "expected": "2413E12AD16A480FF7424923602891E8B0E782C00877F4A154661D0F52642DEF",
+        "actual": "2413E12AD16A480FF7424923602891E8B0E782C00877F4A154661D0F52642DEF",
+        "matched": true
+      }
+    ]
+  },
+  "actual_thread": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:47",
+    "revision": 47,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a11bda-0e86-7330-ad00-d21baf5fd5b0",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791468637,
+      "completedAt": 1791469476,
+      "durationMs": 838709
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ac7a7a1dc4c87d08c506935f05b5cfa",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016ac7a7a1dc4c87d08c506935f05b5cfa",
+      "turnId": "01a11bda-0e86-7330-ad00-d21baf5fd5b0",
+      "phase": "final_answer",
+      "text": "R7 독립 QA를 완료하고 마스터에게 보고했습니다. 정상 codec·admission helper 범위는 PASS이며, 정적 계약 수정과 native 검증은 남아 있습니다. QA 보고서 보호 대상 2,701개 경로를 보존했고, 다음 지시를 기다리겠습니다."
+    },
+    "latestToolMarkerId": "exec-776d14e8-37fc-46f3-a0d6-a9350c890019",
+    "latestToolMarker": {
+      "id": "exec-776d14e8-37fc-46f3-a0d6-a9350c890019",
+      "turnId": "01a11bda-0e86-7330-ad00-d21baf5fd5b0",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "direct_transport_verified": true,
+  "master_execution_builds": 0,
+  "master_review_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R7_CONTENT_ADMISSION_INDEPENDENT_S1_20261008.md",
+  "master_review_sha256": "8F686BFCDC3C479800B8B30D2147CFFEAAE20A67B9318F6DFF5940DFD177CEA8",
+  "master_verdict": "ACCEPTED_SCOPED_R7_POSITIVE_CODEC_ADMISSION_HELPER_PASS_STATIC_REVISION_REQUIRED_NATIVE_UNTESTED",
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD"
+}

@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-12T10:34:43.526571+09:00",
+  "guard_run": "MASTER-R29-S3-RECOVERY-ENCODING-20261012-01",
+  "guard_session": 8833,
+  "guard_pid": 31792,
+  "notice_sent": true,
+  "ACK_resume_pending": true,
+  "passive_display_only_exception_authorized": true,
+  "candidate_compiler_runner_retry_not_authorized": true,
+  "static_R1_allowance_not_expanded": true,
+  "initial_and_partial_files_preserved": 21,
+  "new_WP": false,
+  "normal_verdict": "PENDING",
+  "Foundation": "HOLD",
+  "native_E2": "NOT_RELEASED",
+  "closure": false,
+  "guard_finally_release": "ACTUAL_RELEASED_EXIT0",
+  "guard_release_proof": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R29_S3_RECOVERY_ENCODING_GUARD_FINALLY_RELEASE_20261012.json"
+}

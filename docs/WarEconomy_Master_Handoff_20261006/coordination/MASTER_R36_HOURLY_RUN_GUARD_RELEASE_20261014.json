@@ -1,0 +1,13 @@
+{
+  "recorded_after_release": true,
+  "guard_session": 63464,
+  "run_id": "MASTER-R36-HOURLY-20261014-0028-01",
+  "release_tool": {
+    "chunk_id": "b8b278",
+    "wall_time_seconds": 0.0000262,
+    "exit_code": 0,
+    "original_token_count": 104,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R36-HOURLY-20261014-0028-01\", \"pid\": 29704, \"locked_at\": \"2026-10-14T00:28:32.153357+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-14T00:35:24.721507+09:00\", \"renewal_count\": 3, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-14T00:35:48.530762+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "candidate_dispatch_governance_mutation_after_release": false
+}

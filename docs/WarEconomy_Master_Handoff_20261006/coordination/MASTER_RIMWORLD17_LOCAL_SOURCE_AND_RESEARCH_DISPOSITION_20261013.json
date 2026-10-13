@@ -1,0 +1,73 @@
+{
+  "at": "2026-10-13T23:04:47.626495+09:00",
+  "analysis": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_RIMWORLD_17_WAYLITH_IMPACT_ANALYSIS_20261013.md",
+    "sha256": "478BB518C424910D55B74C2962AFC53AC85D0ACE3EC9E4EA4904CCD9A61E9DBE",
+    "bytes": 8161
+  },
+  "actual_local_reads": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\요구사항_명세서.md",
+      "sha256": "4D837B98434AEA9BA208D2391D528A6B370A2C01DC851DB503A8F49D9164CE12",
+      "bytes": 55777
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\WarEconomy.Server.csproj",
+      "sha256": "CBBC43E5E06097988D533B5B054F5D6529D624E5A963E26EA786C0F6BE5D356D",
+      "bytes": 609
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\WarEconomy.Common.csproj",
+      "sha256": "E03FBDB9310E7B053840347D918642A41B8CC50E210B29DBD4BCB555AA61914B",
+      "bytes": 410
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Client\\WarEconomy.Client.csproj",
+      "sha256": "B7833B735D50672D5FDD4221D2F81ABA728D5543B6CC8236F603CBBC69FC1BB1",
+      "bytes": 2036
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\About\\About.xml",
+      "sha256": "F99A3CE33051DFF7DE5B920260B28D4AE90724A2163140E92D2DDC6F4E247568",
+      "bytes": 1684
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "544B22178F80C63FE85584BCA93ED1D7B77B59554C93762F38655B87237682FD",
+      "bytes": 276685
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "bytes": 170135
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Version.txt",
+      "sha256": "0EC56B267649FAA48E8CD6BD767B14BAFE3D1359AF44434711105DBDC4597BE3",
+      "bytes": 17
+    }
+  ],
+  "actual_version_text": "1.6.4871 rev590\n",
+  "sources": [
+    "https://ludeon.com/blog/2026/10/announcing-the-waylith-engine-and-update-1-7/",
+    "https://steamcommunity.com/games/294100/announcements/detail/672882362547178634",
+    "https://github.com/pardeike/HarmonyRimWorld",
+    "https://github.com/pardeike/HarmonyRimWorld/blob/master/BUILDING.md",
+    "https://github.com/pardeike/Harmony/releases/tag/v3.0.0-rc.2"
+  ],
+  "news_date_KST": "2026-10-13 02:17",
+  "technical_predictions": "INFERENCE_FROM_PRIMARY_SOURCES_AND_LOCAL_SOURCE_NOT_RUNTIME_TEST",
+  "adopted_current_target": "RIMWORLD_1.6_UNCHANGED",
+  "rimworld17_support": "NOT_TESTED_NOT_ADOPTED",
+  "migrationWP": "NOT_SENT",
+  "no_download_install_compile_game_execution": true,
+  "High4": "OPEN",
+  "Foundation": "HOLD",
+  "nativeE2": "NOT_RELEASED",
+  "guard_session": 7761
+}

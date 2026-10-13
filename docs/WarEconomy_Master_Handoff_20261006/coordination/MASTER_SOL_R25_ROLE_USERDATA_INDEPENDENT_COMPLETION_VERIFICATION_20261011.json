@@ -1,0 +1,229 @@
+{
+  "at": "2026-10-11T23:00:39.513901+09:00",
+  "guard_run": "MASTER-R25-QA-COMPLETE-20261011-01",
+  "guard_session": 71407,
+  "guard_pid": 32068,
+  "delivery_id": "SOL-GATE05-R25-ROLE_USERDATA-INDEPENDENT-S1-20261011-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R25_ROLE_USERDATA_INDEPENDENT",
+  "wp_revision": "S1",
+  "result_id": "SOL-GATE05-R25-ROLE_USERDATA-INDEPENDENT-S1-20261011-d7ea2f5481e84f7eb9d0f718220793ec",
+  "completion_sha256": "30CD695EA556B6AA0D0CB6E2A8F647AD2DE31254ECE603E7755184E492A54505",
+  "report": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R25_Role_UserData_Independent_S1_20261011.md",
+    "sha256": "4A01A02608E36A204074821540D42B0FA9795634C2732DA8D5427A0CCEEC26D1",
+    "bytes": 10132
+  },
+  "evidence_manifest": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R25-ROLE_USERDATA-INDEPENDENT-S1-20261011\\EVIDENCE_MANIFEST.json",
+    "sha256": "024CB746962A0CA1AE0201936AC1669FF4C1F5F18CCCE36A9BF68AF7AE45133C",
+    "bytes": 26993
+  },
+  "result_index": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R25-ROLE_USERDATA-INDEPENDENT-S1-20261011\\RESULT_INDEX.json",
+    "sha256": "12C5370FBDB6C63E093F3E2FA0F7E0E664FECCD64100759B06F28E7A62F510F2",
+    "bytes": 6454
+  },
+  "evidence_count": 88,
+  "protected_unique_paths": 13220,
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:157",
+    "revision": 157,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a12b32-7616-7e90-9eb3-dc5c1706dc46",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791726089,
+      "completedAt": 1791727020,
+      "durationMs": 930705
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acb95a9b2ac87d0afc65ec768f716b1",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016acb95a9b2ac87d0afc65ec768f716b1",
+      "turnId": "01a12b32-7616-7e90-9eb3-dc5c1706dc46",
+      "phase": "final_answer",
+      "text": "R25 QA를 완료하고 마스터에게 보고했습니다. 각 실행 결과는 32 PASS / 4 FAIL입니다. 실패는 제가 바이트 기대값에 Windows 줄바꿈을 반영하지 않은 오류이며, selector·데이터 보존 검사는 통과했습니다. 원래 결과를 보존하고 재실행하지 않았습니다. QA 보고서"
+    },
+    "latestToolMarkerId": "exec-edb826a7-e82b-4642-a08f-92bb9519bdb0",
+    "latestToolMarker": {
+      "id": "exec-edb826a7-e82b-4642-a08f-92bb9519bdb0",
+      "turnId": "01a12b32-7616-7e90-9eb3-dc5c1706dc46",
+      "type": "fileChange",
+      "name": "fileChange",
+      "status": "completed"
+    }
+  },
+  "processes": [
+    {
+      "stage": 1,
+      "pid": 1604,
+      "culture": "en-US",
+      "numeric_exit": 1,
+      "raw_pass": 32,
+      "raw_fail": 4,
+      "typed_rows": 912,
+      "typed_failed": 0,
+      "pins": 157,
+      "loaded": 10,
+      "recursive_outputs": 21
+    },
+    {
+      "stage": 2,
+      "pid": 28968,
+      "culture": "de-DE",
+      "numeric_exit": 1,
+      "raw_pass": 32,
+      "raw_fail": 4,
+      "typed_rows": 912,
+      "typed_failed": 0,
+      "pins": 157,
+      "loaded": 10,
+      "recursive_outputs": 21
+    }
+  ],
+  "typed_rows_master_checked": 1824,
+  "typed_mismatches": 0,
+  "byte_failure_diagnosis_independently_checked": [
+    {
+      "stage": 1,
+      "case_id": "SIMULATION_PLAIN",
+      "expected_sha256": "DBD5567EAF5323F09B4A3073F6FA9B3B94161AACAB6481F7C6DDE9DFB72E3F95",
+      "actual_sha256": "E84279BBEF0A424BB57DF46B96E11216E4D335910E9832C57A82A786F8C3F474",
+      "expected_bytes": 953,
+      "actual_bytes": 975,
+      "CRLF_count": 22,
+      "LF_count": 22,
+      "diagnostic_only_CRLF_to_LF_equal": true,
+      "raw_assertion_status": "FAIL_PRESERVED"
+    },
+    {
+      "stage": 1,
+      "case_id": "SIMULATION_OPAQUE",
+      "expected_sha256": "897E95F2A882CCE2B54BF66CFEEAF70E0F3AF1A53CAB0C05A35F3EDA28214A46",
+      "actual_sha256": "7D5C54F4DC4EB70BBC5C5799350EBE84DB4208F72D840932C715F12561073EC6",
+      "expected_bytes": 976,
+      "actual_bytes": 998,
+      "CRLF_count": 22,
+      "LF_count": 22,
+      "diagnostic_only_CRLF_to_LF_equal": true,
+      "raw_assertion_status": "FAIL_PRESERVED"
+    },
+    {
+      "stage": 1,
+      "case_id": "READ_ONLY_PLAIN",
+      "expected_sha256": "D3AC22B6595B2E6116AD8E90B08E3B1F63CEF0D4A6979110F3592054EEB06650",
+      "actual_sha256": "4DB952EB76614C567A0565B29BFC944E2ED147A80F53B70D0B2DFEB07DD91D76",
+      "expected_bytes": 951,
+      "actual_bytes": 973,
+      "CRLF_count": 22,
+      "LF_count": 22,
+      "diagnostic_only_CRLF_to_LF_equal": true,
+      "raw_assertion_status": "FAIL_PRESERVED"
+    },
+    {
+      "stage": 1,
+      "case_id": "READ_ONLY_OPAQUE",
+      "expected_sha256": "9B0FDFDD10ECD9BE7947D6DF374B0A270BBEE11AF215429266A49F682082E870",
+      "actual_sha256": "AB5967CD4DA9F1BC5B7CC1C3184B3B7554B5CE34CB5413C11BF0BCB7D2226159",
+      "expected_bytes": 974,
+      "actual_bytes": 996,
+      "CRLF_count": 22,
+      "LF_count": 22,
+      "diagnostic_only_CRLF_to_LF_equal": true,
+      "raw_assertion_status": "FAIL_PRESERVED"
+    },
+    {
+      "stage": 2,
+      "case_id": "SIMULATION_PLAIN",
+      "expected_sha256": "DBD5567EAF5323F09B4A3073F6FA9B3B94161AACAB6481F7C6DDE9DFB72E3F95",
+      "actual_sha256": "E84279BBEF0A424BB57DF46B96E11216E4D335910E9832C57A82A786F8C3F474",
+      "expected_bytes": 953,
+      "actual_bytes": 975,
+      "CRLF_count": 22,
+      "LF_count": 22,
+      "diagnostic_only_CRLF_to_LF_equal": true,
+      "raw_assertion_status": "FAIL_PRESERVED"
+    },
+    {
+      "stage": 2,
+      "case_id": "SIMULATION_OPAQUE",
+      "expected_sha256": "897E95F2A882CCE2B54BF66CFEEAF70E0F3AF1A53CAB0C05A35F3EDA28214A46",
+      "actual_sha256": "7D5C54F4DC4EB70BBC5C5799350EBE84DB4208F72D840932C715F12561073EC6",
+      "expected_bytes": 976,
+      "actual_bytes": 998,
+      "CRLF_count": 22,
+      "LF_count": 22,
+      "diagnostic_only_CRLF_to_LF_equal": true,
+      "raw_assertion_status": "FAIL_PRESERVED"
+    },
+    {
+      "stage": 2,
+      "case_id": "READ_ONLY_PLAIN",
+      "expected_sha256": "D3AC22B6595B2E6116AD8E90B08E3B1F63CEF0D4A6979110F3592054EEB06650",
+      "actual_sha256": "4DB952EB76614C567A0565B29BFC944E2ED147A80F53B70D0B2DFEB07DD91D76",
+      "expected_bytes": 951,
+      "actual_bytes": 973,
+      "CRLF_count": 22,
+      "LF_count": 22,
+      "diagnostic_only_CRLF_to_LF_equal": true,
+      "raw_assertion_status": "FAIL_PRESERVED"
+    },
+    {
+      "stage": 2,
+      "case_id": "READ_ONLY_OPAQUE",
+      "expected_sha256": "9B0FDFDD10ECD9BE7947D6DF374B0A270BBEE11AF215429266A49F682082E870",
+      "actual_sha256": "AB5967CD4DA9F1BC5B7CC1C3184B3B7554B5CE34CB5413C11BF0BCB7D2226159",
+      "expected_bytes": 974,
+      "actual_bytes": 996,
+      "CRLF_count": 22,
+      "LF_count": 22,
+      "diagnostic_only_CRLF_to_LF_equal": true,
+      "raw_assertion_status": "FAIL_PRESERVED"
+    }
+  ],
+  "crossculture_byte_pairs": 4,
+  "selected_sha256": "A9C31DB0EEEBDCFDF851C0160899A9E092579D8E333C030F34845A63FAAAB6E7",
+  "selected_mvid": "5553a632-0557-433f-8840-bb12875cf577",
+  "frozen_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R25-ROLE-USERDATA-20261011-DIRECT-dd341868\\MASTER_GATE05_R25_ROLE_USERDATA_REVIEW_FREEZE_MANIFEST.json",
+  "frozen_manifest_sha256": "FB436534FB8189D1BF20B2F888FAC2FDECCBBCB1C688CB6BD0ADCF7FEC9A0057",
+  "raw_os_exits": [
+    1,
+    1
+  ],
+  "raw_assertion_verdict": "FAIL_PRESERVED",
+  "verification_status": "MASTER_DISPOSED",
+  "master_candidate_build_execute": 0,
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD",
+  "scheduler_actual": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "PAUSED",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791726044984
+  },
+  "initial_metadata_schema_failure": "SOURCE_ONLY_ARCHIVED_NO_CANDIDATE_CALL",
+  "master_read_limitations": [
+    "cp949 console omittedutf8 causedmetadata print failure;rerunreadwithutf8 only",
+    "MicrosoftdocsURLs inaccessible;primaryreferencesource read instead"
+  ],
+  "master_verdict": "ACCEPTED_R25_SOURCE_NORMAL_SELECTOR_TYPED_COPY_PURITY_PASS_RAW_BYTE_FAIL_PRESERVED_QA_ORACLE_REVISION_REQUIRED_NATIVE_UNTESTED",
+  "master_review_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R25_ROLE_USERDATA_INDEPENDENT_S1_20261011.md",
+  "master_review_sha256": "F6C3DED5C187FC730CFD98A0093C2E8F8E94433E807535823A518B12E013F603",
+  "master_disposition_at": "2026-10-11T23:03:40.775802+09:00",
+  "next_action": "NEW_APPROVED_QA_S2_PROSPECTIVE_WINDOWS_CRLF_ORACLE_ONLY_NO_PRODUCTION_CHANGE"
+}

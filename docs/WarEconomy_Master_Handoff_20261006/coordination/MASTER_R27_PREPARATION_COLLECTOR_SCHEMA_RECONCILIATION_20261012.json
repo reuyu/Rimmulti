@@ -1,0 +1,12 @@
+{
+  "run_id": "MASTER-R27-SOL-PREP-COMPLETE-20261012-01",
+  "read_only_collector_errors": [
+    "First schema inventory used default cp949 read_text; corrected to explicit UTF8.",
+    "Master direct comparison initially treated old R26 named operator-option/task-invocation dictionaries as new R27 IReadOnlyList observations."
+  ],
+  "correction": "Map old named values by Master exact operator order config, SHA, origin, plan, configId, role, cap and invocation order taskPath, nonce; independently compare every value. Retain old dictionaries and new list observations unchanged.",
+  "production_changes": 0,
+  "QA_candidate_reexecution": 0,
+  "old_QA_evidence_modified": false,
+  "execution_PASS_claim": false
+}

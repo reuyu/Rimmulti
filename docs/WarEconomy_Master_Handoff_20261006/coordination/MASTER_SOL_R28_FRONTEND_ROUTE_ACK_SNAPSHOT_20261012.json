@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:174\",\"revision\":174,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a12c83-b6a5-7eb0-a4b9-4ee410a14b1b\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791748191,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016acbe94c385887d0805f2c7a631d113d\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016acbe94c385887d0805f2c7a631d113d\",\"turnId\":\"01a12c83-b6a5-7eb0-a4b9-4ee410a14b1b\",\"phase\":\"commentary\",\"text\":\"동결 자료의 식별자와 현재 전달 상태를 확인했습니다. 다음으로 게임의 명령행 파서가 받는 정확한 토큰 형식과 UserData 경로를 결정하는 시점을 IL에서 추적하겠습니다.\"},\"latestToolMarkerId\":\"exec-30aef9f3-6404-4a93-94be-b14b3fd8233a\",\"latestToolMarker\":{\"id\":\"exec-30aef9f3-6404-4a93-94be-b14b3fd8233a\",\"turnId\":\"01a12c83-b6a5-7eb0-a4b9-4ee410a14b1b\",\"type\":\"fileChange\",\"name\":\"fileChange\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"bcc76e72-e33d-4898-bc7b-b558cfab470c:39\",\"revision\":39,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a13587-b04c-70f2-b090-e41e5e9f4a1f\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791899447,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ace374c791487d0a77a35cd05231c18\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ace374c791487d0a77a35cd05231c18\",\"turnId\":\"01a13587-b04c-70f2-b090-e41e5e9f4a1f\",\"phase\":\"commentary\",\"text\":\"같은 R35 정적 WP와 result ID로 이어가겠습니다. R1 reader는 exit0으로 끝났고 partial 16개와 ACK도 보존되어 있습니다. 실패했던 복구 ACK 전달을 한 번 재시도하겠습니다. 앞선 전달은 사용량 한도로 자동 승인 검토를 완료하지 못해 실행되지 않았습니다. 안전성 거절은 아니었으며, 실패 반환을 보존했습니다.\"},\"latestToolMarkerId\":\"exec-ecb5eb7f-8342-4ab2-8af6-36b58b379366\",\"latestToolMarker\":{\"id\":\"exec-ecb5eb7f-8342-4ab2-8af6-36b58b379366\",\"turnId\":\"01a13587-b04c-70f2-b090-e41e5e9f4a1f\",\"type\":\"fileChange\",\"name\":\"fileChange\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

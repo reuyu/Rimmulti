@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "dispatch_id": "WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5",
+  "wp_id": "WP_ENGINE_GATE05_R33_RESOURCE_COMMIT",
+  "target_file": "scratch/WorkerBridgeMod/Source/WorkerBridge.cs",
+  "target_span": {
+    "id": "AWAKE_WHOLE_RESOURCE_ADMISSION_AND_FAILURE",
+    "start_byte": 39056,
+    "end_byte": 44736,
+    "original_bytes": 5680,
+    "original_sha256": "B2260895A101DE9A84FF81682B21C88EC711D25775FFD5FEC5D150AD82FEFA41"
+  },
+  "linearization_order": [
+    {
+      "step": 1,
+      "name": "EstablishRequiredPairModeFromStaticMarker",
+      "lock_held": "_startupHandoffLock",
+      "description": "Reads _staticPairModeRequired under lock before any property accesses to establish _isPairRequiredMode = true."
+    },
+    {
+      "step": 2,
+      "name": "RetainManagedOwnerSafely",
+      "lock_held": null,
+      "description": "Obtains this.gameObject in try/catch to protect against native wrapper failures and sets _retainedOwner."
+    },
+    {
+      "step": 3,
+      "name": "CheckPriorAbortUnderLock",
+      "lock_held": "_startupHandoffLock",
+      "description": "Checks _staticStartupAborted under lock before transfer; if aborted, clears matching payload and direct-returns fail-closed."
+    },
+    {
+      "step": 4,
+      "name": "TryAcquirePendingStartupHandoff",
+      "lock_held": "_startupHandoffLock (internal)",
+      "description": "Acquires pending startup handoff and cohort identity; fail-closed on mismatch."
+    },
+    {
+      "step": 5,
+      "name": "ValidateInstalledParentReceiptBeforeResources",
+      "lock_held": null,
+      "description": "Validates _activeAdmissionReceipt != null && _activeAdmissionReceipt.IsValid() BEFORE fastEcology, callback subscription, policy setup, listener, or thread. On failure, calls RevokeReadiness and throws to catch for safe owned failure cleanup."
+    },
+    {
+      "step": 6,
+      "name": "SuppressFastEcologyAndSubscribeLogCallback",
+      "lock_held": null,
+      "description": "Explicitly disables fastEcology and subscribes Application.logMessageReceived += HandleUnityLogMessage outside any lock."
+    },
+    {
+      "step": 7,
+      "name": "ConfigurePackagePolicyAndConstructResources",
+      "lock_held": null,
+      "description": "Applies package policy and constructs TcpListener and Thread outside lock. Zero I/O or configuration execution inside critical section."
+    },
+    {
+      "step": 8,
+      "name": "ResourceStartCriticalAdmissionCommit",
+      "lock_held": "_startupHandoffLock",
+      "description": "Under _startupHandoffLock, checks _staticStartupAborted. If aborted, throws to rollback and reject start. Otherwise calls listener.Start(), listenerThread.Start(), and sets _startupInitializationComplete = true atomically. Rolls back via inner catch on exception."
+    },
+    {
+      "step": 9,
+      "name": "GuardedCatchFailureRollback",
+      "lock_held": null,
+      "description": "On any exception during Awake, sets _startupInitializationComplete = false, isRunning = false, marks _staticStartupAborted = true under lock, guards Log.Error, and independently executes teardown for log callback, listener, thread, and handoff payload."
+    }
+  ],
+  "concurrency_limits": {
+    "single_mutex_discipline": "_startupHandoffLock is the sole lock; zero nested locks; zero circular wait.",
+    "no_blocking_in_lock": "Zero Thread.Join, Monitor.Wait, or thread sleep while holding lock.",
+    "no_unbound_calls_in_lock": "Zero logging, Unity engine callbacks, or custom user code executed while holding lock.",
+    "post_commit_abort_limitation": "A single entry fence guarantees that an abort published before resource admission prevents listener/thread start. Post-commit runtime abort handling remains bounded by native thread and socket lifecycle."
+  }
+}

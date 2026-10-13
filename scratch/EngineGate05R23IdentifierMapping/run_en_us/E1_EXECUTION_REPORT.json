@@ -1,0 +1,70 @@
+{
+  "runner_name": "Gate05R23IdentifierMappingRunner",
+  "culture": "en-US",
+  "timestamp_utc": "2026-10-11T08:02:17.8965793Z",
+  "candidate_asm": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\Harness\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+  "candidate_sha256": "4379BE35700337F797BB17F25D5BAC2A8014FAA9332D9878E587A12E5758A9C4",
+  "candidate_mvid": "5bdada93-1f00-40e3-ab4d-7b23f4b2d086",
+  "overall_verdict": "ALL_TESTS_PASS",
+  "tests": [
+    {
+      "name": "TEST01_OpaquePolicyDigestAndDeclarationDefaults",
+      "status": "PASS",
+      "expected_digest": "8A9C3381A041F79F300710D6EA93A5D8E08564C692AA5059337853825E1749BF",
+      "observed_digest": "8A9C3381A041F79F300710D6EA93A5D8E08564C692AA5059337853825E1749BF"
+    },
+    {
+      "name": "TEST02_AdmissionReceiptIssuanceMain8",
+      "status": "PASS",
+      "receipt_pass_count": 8,
+      "unicode_whitespace_origin_preserved": true,
+      "unicode_whitespace_plan_preserved": true
+    },
+    {
+      "name": "TEST03_DeclarationAndReceiptCallerMutationProtection",
+      "status": "PASS",
+      "pass_count": 8,
+      "total_count": 8
+    },
+    {
+      "name": "TEST04_LiteralUtcPreservationRegression8",
+      "status": "PASS",
+      "pass_count": 8,
+      "total_count": 8
+    },
+    {
+      "name": "TEST05_RoleCapEquivalenceReceipts4",
+      "status": "PASS",
+      "rolecap_receipt_pass_count": 4,
+      "caller_descriptor_unmutated": true
+    },
+    {
+      "name": "TEST06_PositiveFullyQualifiedWindowsPathHelper",
+      "status": "PASS",
+      "pass_count": 5,
+      "total_count": 5
+    },
+    {
+      "name": "TEST07_ValidatorResultAndCensusPolicyRegression",
+      "status": "PASS",
+      "digest": "0A635BB38E49F04552CEA48A5A7A41B3448AC1AF59D8CE7D80EB8706F19C12EE"
+    }
+  ],
+  "total_receipts_issued": 20,
+  "call_counts": {
+    "ParseStrict": 0,
+    "AdmitConfigBytes": 0,
+    "AdmitConfigFile": 0,
+    "IssueAdmissionReceipt": 14,
+    "IssueAdmissionReceiptFromBytes": 6,
+    "ValidateAdmissionReceipt": 28,
+    "IsFullyQualifiedWindowsPath": 5,
+    "ToSnapshot": 0,
+    "ToRedactedJsonSnapshot": 0,
+    "ToRedactedJsonReceipt": 8,
+    "ToRedactedJsonValidatorResult": 1,
+    "SerializePackagePolicy": 1,
+    "DeserializePackagePolicy": 1,
+    "ComputePackagePolicyDigest": 2
+  }
+}

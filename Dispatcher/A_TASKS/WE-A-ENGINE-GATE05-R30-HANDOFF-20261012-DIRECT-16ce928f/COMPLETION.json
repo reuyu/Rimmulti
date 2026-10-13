@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "producer": "A",
+  "report_kind": "E1",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f",
+  "wp_id": "WP_ENGINE_GATE05_R30_HANDOFF",
+  "wp_revision": "GATE05-R30-HANDOFF",
+  "envelope": 33,
+  "result_id": "WE-A-ENGINE-GATE05-R30-HANDOFF-RESULT-01",
+  "status": "COMPLETED",
+  "completed_at": "2026-10-12T09:15:52+00:00",
+  "summary": "WP_ENGINE_GATE05_R30_HANDOFF / GATE05-R30-HANDOFF (Envelope 33) implementation and developer E1 verification completed. Successfully repaired Defect ENGINE-G05-R29-HANDOFF-20261012-01 (High 1) across exact 5 authorized byte spans in scratch/WorkerBridgeMod/Source/WorkerBridge.cs: (1) BOOTSTRAP_HANDOFF_AFTER_PURE_ADMISSION: checked SetPendingStartupHandoff return bool, destroying GameObject on failure, and wrapped AddComponent in try/catch to call CleanupOwnerPendingHandoff(go) and destroy go on exception; (2) PRIVATE_OWNER_HANDOFF_STATE: bound cohort identity strictly via object.ReferenceEquals against active installed receipt and config, removing invalid receipt-vs-snapshot ReferenceEquals, added _isPairRequiredMode instance field, rejected overwriting live pending handoff, and implemented owner-scoped CleanupOwnerPendingHandoff(GameObject owner); (3) AWAKE_EARLY_PAIR_GATE: added early fail-closed gate aborting Awake() before fastEcology, log callback subscription, package policy configuration, and listener/thread creation if _isPairRequiredMode is true and _privatePairProfile is null; (4) PAIR_MODE_LAUNCH_HOLD: updated hold guard to return ERROR: M05_NOT_ADMITTED: Child launch execution withheld in R30. if _isPairRequiredMode || _privatePairProfile != null; (5) OWNER_SCOPED_DESTROY: replaced unscoped clearing with CleanupOwnerPendingHandoff(this.gameObject) preserving _isPairRequiredMode. Verified all 6 outside segments (261,380 bytes total) 100% bit-exact to pristine baseline. Preserved EngineHostCensus.cs (170,135 B), WorkerBridge.csproj (1,774 B), and publish_operator_pair.py (10,442 B) immutable. Rebuilt Debug candidate DLL (323,584 B, SHA 9142C63A..., MVID 71b83cb9-f67f-4520-b611-6b8d0d4d2860), Release candidate DLL (306,176 B, SHA D6D4EFEE..., MVID 7ffbba39-9a18-434b-ac07-93886e829c9f), and synchronized 1.6 Assemblies with Debug candidate. Executed isolated managed runner Gate05R29StartupPairRunner under en-US and de-DE with 100% PASS (exit code 0, 0 Process API calls, 0 negative probes, 0 native calls). Dedicated Server remains final Domain Authority; Foundation HOLD.",
+  "e1_verdict": "IMPLEMENTED_HANDOFF_REPAIR_PASS_NATIVE_UNTESTED",
+  "test_counts": {
+    "total_cases": 6,
+    "passed_cases": 6,
+    "failed_cases": 0,
+    "direct_admit_pair_calls_per_run": 6,
+    "direct_issue_receipt_calls_per_run": 8,
+    "direct_capture_calls_per_run": 4,
+    "prohibited_calls_executed": 0
+  },
+  "limitations": [
+    "STATIC_MANAGED_NORMAL_EVIDENCE_ONLY: Verification conducted strictly via isolated positive pure normal managed runner controls (6/6 PASS, 6 admit pair calls, 8 issue receipt calls, 4 capture calls, exit 0) with Master-approved frozen dependencies.",
+    "ZERO_PROCESS_API_CALLS_IN_MANAGED_TESTS: All C# Process, GetCurrentProcess, and VerifyProcessIdentity execution strictly excluded from runner code. Pinned child PID and exit code 0 collected exclusively by host Python telemetry.",
+    "HOST_PYTHON_TELEMETRY_CHILD_PID_AND_EXIT_CODE_ONLY: Host subprocess telemetry is operational observation, not native authority.",
+    "NATIVE_ACTUAL_COMPUTATION_PROHIBITED_AND_UNTESTED: In-engine, game runtime, native execution, Awake event loops, and operator promotion were strictly prohibited and not executed.",
+    "ZERO_REGISTRATION_SLOTS_AND_ZERO_INVALID_PROBES: Child process registration slots and CLI launcher modifications deferred per Master R28 reconciliation; all negative/rejection probes zeroed; fail-closed guards verified via static source analysis only.",
+    "M05_M06_M07_STRICTLY_DEFERRED: M05 (task tuple / channel protocol / process identity binding), M06 (content-context live XML census), and M07 (control plane promotion / revocation) remain strictly unaddressed and uncommitted.",
+    "DATA_ONLY_CONTAINER_CONFERS_ZERO_LAUNCH_AUTHORITY: OperatorStartupPairSnapshot is an immutable data container only, hard-coded with DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY.",
+    "STEAM_INSTALLED_INCIDENT_OPEN: Steam installed DLL discrepancy against archive baseline remains an UNKNOWN OPEN INCIDENT, preserved unmodified.",
+    "FINAL_DOMAIN_AUTHORITY_REMAINS_DEDICATED_SERVER: Dedicated Server remains final Domain Authority; Engine/Client produces bounded simulation proposals.",
+    "FOUNDATION_HOLD: Foundation remains HOLD pending Pipeline independent E2 PASS."
+  ],
+  "artifacts": [
+    {
+      "role": "korean_report",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\A_ENGINE_GATE05_R30_HANDOFF_REPORT_20261012.md",
+      "sha256": "09C474522602BECAC9E495DBE902133BCBC7DDBEA7BFE14BE5C46EB6054C2120",
+      "size": 10496,
+      "mvid": ""
+    },
+    {
+      "role": "implementation_report",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\IMPLEMENTATION_REPORT.md",
+      "sha256": "FE9E58F543D0F00EFB40B6395C0A7878A633C3EFF46F83C6505E2105E4E73C9F",
+      "size": 9182,
+      "mvid": ""
+    },
+    {
+      "role": "release_manifest_docs",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R30_HANDOFF.json",
+      "sha256": "B87E04F1A9C93C8EDA76F60E98D7CC57463BCC57D9156FBA59136D797EBFFC40",
+      "size": 3146,
+      "mvid": ""
+    },
+    {
+      "role": "release_manifest_task",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\RELEASE_MANIFEST.json",
+      "sha256": "F9005EA8A6F1D8DE8CF3729DD67153F1E8BE47E300AD40FF3EB76A4E2C66B3C1",
+      "size": 3145,
+      "mvid": ""
+    },
+    {
+      "role": "modified_source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "B1F8C00D1DF6E8E797EAC8E5A7F7FB462679BA06E79096D5C558C687BD413311",
+      "size": 268703,
+      "mvid": ""
+    },
+    {
+      "role": "debug_candidate_dll",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "9142C63AF18E2AE028D9E44AC36277F2FEBFFBB7AE8B6AF2437D12CED288C706",
+      "size": 323584,
+      "mvid": "71b83cb9-f67f-4520-b611-6b8d0d4d2860"
+    },
+    {
+      "role": "debug_candidate_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "4BCF43B7E9FBF84D11FF677708C050415E68032CF1A0BACADA3CF46E13B8E28A",
+      "size": 78108,
+      "mvid": ""
+    },
+    {
+      "role": "release_candidate_dll",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "D6D4EFEEDC06B90D42148F07F71EA6EA5946FDAAD8B2E7EFD11AD9D26F2FB52B",
+      "size": 306176,
+      "mvid": "7ffbba39-9a18-434b-ac07-93886e829c9f"
+    },
+    {
+      "role": "release_candidate_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "4E179AEA558E00380669437C4CE264F2AABF80AF0A5858F92C7E33481F3BF33A",
+      "size": 57084,
+      "mvid": ""
+    },
+    {
+      "role": "deployed_mod_dll",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "9142C63AF18E2AE028D9E44AC36277F2FEBFFBB7AE8B6AF2437D12CED288C706",
+      "size": 323584,
+      "mvid": "71b83cb9-f67f-4520-b611-6b8d0d4d2860"
+    },
+    {
+      "role": "deployed_mod_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "4BCF43B7E9FBF84D11FF677708C050415E68032CF1A0BACADA3CF46E13B8E28A",
+      "size": 78108,
+      "mvid": ""
+    },
+    {
+      "role": "task_ack",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\ACK.json",
+      "sha256": "556C8A7D22EE2C2275D4F83BB7AF1B18DCD2CDBD1DB54BB4C5424F65958FD7F8",
+      "size": 3908,
+      "mvid": ""
+    },
+    {
+      "role": "preservation_before",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\PRESERVATION_BEFORE.json",
+      "sha256": "384DC5DBC814C5D4C1FFF94713DDFF84EDCE3E351090B4FA7D8BE65D3AD8DC31",
+      "size": 4539,
+      "mvid": ""
+    },
+    {
+      "role": "before_after_preservation",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\BEFORE_AFTER_PRESERVATION.json",
+      "sha256": "8AA7BD185B368EEA058C73E2FE60FD04D4B754DB5956E037064C8CD89A8CA8A0",
+      "size": 4423,
+      "mvid": ""
+    },
+    {
+      "role": "source_scope_diff",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\SOURCE_SCOPE_DIFF.json",
+      "sha256": "1BA5888AA9CC1593173A9854758494AB1165C4F171F55C961F58A1B4B8AADA08",
+      "size": 4516,
+      "mvid": ""
+    },
+    {
+      "role": "handoff_control_flow_and_custody",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\HANDOFF_CONTROL_FLOW_AND_CUSTODY.json",
+      "sha256": "7ED3688B51E6C3A1C55347787EEB4F633EDCAFD6EBAFEFC498565002BA9FC6E0",
+      "size": 11280,
+      "mvid": ""
+    },
+    {
+      "role": "candidate_identity",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\CANDIDATE_IDENTITY.json",
+      "sha256": "C78D56063A6C9C22C2C9D85651D9D0E655AB2EC24E694AE7B272D3DBB588BB61",
+      "size": 4567,
+      "mvid": ""
+    },
+    {
+      "role": "final_pre_run_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\FINAL_PRE_RUN_MANIFEST.json",
+      "sha256": "A8A6E8FFDFDC857322CC64D0F38A40B46C6472037844FE6C9B6F5C0ECF6DC170",
+      "size": 17487,
+      "mvid": ""
+    },
+    {
+      "role": "full_typed_raw_copy_binding",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\FULL_TYPED_RAW_COPY_BINDING.json",
+      "sha256": "283AE9E63126DA831FDADFFAA3D8EEA6EDCAEF1679482FF9932905B87A478E17",
+      "size": 14455,
+      "mvid": ""
+    },
+    {
+      "role": "e1_normal_results",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\E1_NORMAL_RESULTS.json",
+      "sha256": "7C8D405052E8D4DDA8091FCDE3689D8DED5DFB2677F74C33F2A04826E28F729A",
+      "size": 15038,
+      "mvid": ""
+    },
+    {
+      "role": "result_index",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\RESULT_INDEX.json",
+      "sha256": "9D6BD60A2A5B8FB9B335E72A86C7294072824A59282A4BC7FEB2205EF4726006",
+      "size": 2575,
+      "mvid": ""
+    },
+    {
+      "role": "runner_project",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\Harness\\Gate05R29StartupPairRunner.csproj",
+      "sha256": "988608224B7BF8AD1654060EFE16C0E4A16242382DBE47A65198B6BA33C25EAB",
+      "size": 1697,
+      "mvid": ""
+    },
+    {
+      "role": "runner_config",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\Harness\\App.config",
+      "sha256": "1BE4F8BB988AE8DA023726B89212668036CEC313B7D44D46B4D63CF1454BA734",
+      "size": 421,
+      "mvid": ""
+    },
+    {
+      "role": "runner_source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\Harness\\Program.cs",
+      "sha256": "B20682C19025A3A8574E437E557D84BAA1F4A8500100242B547C0B589541DBE9",
+      "size": 20022,
+      "mvid": ""
+    },
+    {
+      "role": "runner_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\Harness\\bin\\Debug\\net472\\Gate05R29StartupPairRunner.exe",
+      "sha256": "8BAEABC6C09DC7A964E020E955E0E269C79EFB031026C65C436DAA6EA27AF6E3",
+      "size": 24064,
+      "mvid": ""
+    },
+    {
+      "role": "runner_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\Harness\\bin\\Debug\\net472\\Gate05R29StartupPairRunner.pdb",
+      "sha256": "CC4809AA8C97B660F91230652A6847D1708078B4B1B138ACBDA0BB92A5F305FA",
+      "size": 5192,
+      "mvid": ""
+    },
+    {
+      "role": "host_telemetry",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\HOST_TELEMETRY.json",
+      "sha256": "6060BFE4BDF818CCE3795CAC2618F1D88345D17E13208A0BD1604BE3EF7C91F9",
+      "size": 14577,
+      "mvid": ""
+    },
+    {
+      "role": "results_en_us",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_en_us\\E1_EXECUTION_REPORT.json",
+      "sha256": "75C39FDA2FDF77E5887DEB590327F60CC9D8C25805D3ACF35587A513C13123B9",
+      "size": 4988,
+      "mvid": ""
+    },
+    {
+      "role": "stdout_en_us",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_en_us\\stdout.txt",
+      "sha256": "689EBF97DFC85D247406671628A1374C018C832014C0ACFB81E65E7A88D4904B",
+      "size": 1927,
+      "mvid": ""
+    },
+    {
+      "role": "stderr_en_us",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_en_us\\stderr.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "size": 0,
+      "mvid": ""
+    },
+    {
+      "role": "results_de_de",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_de_de\\E1_EXECUTION_REPORT.json",
+      "sha256": "723606AC1479AD700A940CD5D6A8D9B9E657594240987ECADC06258025B112D9",
+      "size": 4988,
+      "mvid": ""
+    },
+    {
+      "role": "stdout_de_de",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_de_de\\stdout.txt",
+      "sha256": "5572B1621BC011BAD9DD282FEA814DF5D504C17DD01A23FB61A02CD200294C16",
+      "size": 1927,
+      "mvid": ""
+    },
+    {
+      "role": "stderr_de_de",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_de_de\\stderr.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "size": 0,
+      "mvid": ""
+    }
+  ]
+}

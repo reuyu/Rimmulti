@@ -1,0 +1,75 @@
+{
+  "at": "2026-10-12T03:59:45.548264+09:00",
+  "guard_run": "MASTER-R27-QA-DEPENDENCY-REPAIR-20261012-01",
+  "guard_pid": 26572,
+  "guard_session": 44434,
+  "delivery_id": "SOL-GATE05-R27-CHILD_CAPTURE-INDEPENDENT-S1-20261012-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R27_CHILD_CAPTURE_INDEPENDENT",
+  "wp_revision": "S1",
+  "result_id": "SOL-GATE05-R27-CHILD_CAPTURE-INDEPENDENT-S1-20261012-1687ef3c84f944d6b60786e31d1a0318",
+  "completion_sha256": "207B2E6AB263E87F812B62072AFCE7A7922704CB5D90B9CEA44273D303C9AE02",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:169",
+    "revision": 169,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a12c46-6a5f-7233-8fc0-5f8aabb2c37e",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791744174,
+      "completedAt": 1791744963,
+      "durationMs": 788778
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acbdbc1115087d0bb83f4bc3a31205b",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016acbdbc1115087d0bb83f4bc3a31205b",
+      "turnId": "01a12c46-6a5f-7233-8fc0-5f8aabb2c37e",
+      "phase": "final_answer",
+      "text": "R27 QA는 지정된 Newtonsoft.Json.dll 경로가 없어 빌드 전에 중단했습니다. 오류와 증거를 보존해 마스터에게 보고했으며, 빌드·후보 실행은 0회입니다. 경로 정정 지시를 기다리겠습니다. 중단 보고서"
+    },
+    "latestToolMarkerId": "exec-b3c9b2d4-0ebe-497d-8d9f-a6d8df343f93",
+    "latestToolMarker": {
+      "id": "exec-b3c9b2d4-0ebe-497d-8d9f-a6d8df343f93",
+      "turnId": "01a12c46-6a5f-7233-8fc0-5f8aabb2c37e",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "evidence_count": 15,
+  "protected": 13652,
+  "candidate_modify_rebuild": 0,
+  "candidate_QA_build_execute": 0,
+  "execution_verdict": "NOT_EXECUTED_NOT_CANDIDATE_FAIL_OR_PASS",
+  "master_verdict": "ACCEPTED_QA_S1_STOP_BEFORE_BUILD_MASTER_DEPENDENCY_POINTER_ERROR_NORMAL_NOT_EXECUTED_S2_CORRECTION_ADMITTED",
+  "master_review_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R27_QA_S1_DEPENDENCY_STOP_20261012.md",
+  "master_review_sha256": "735E5BF916A553C9890C6E0720024BF1DC031B027EA0E8D491ABDF8406B9FAE1",
+  "pointer_correction": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R27_FROZEN_NEWTONSOFT_POINTER_CORRECTION_20261012.json",
+    "sha256": "B094F7CBF714EB3C9C6535CAA316A85730EDB5B19FC052E46FA635BD49C02587",
+    "bytes": 2495
+  },
+  "native_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD",
+  "scheduler_actual": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "PAUSED",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791743979168
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "producer": "A",
+  "report_kind": "E1",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R22-DECLARATION-20261011-DIRECT-9be1579a",
+  "wp_id": "WP_ENGINE_GATE05_R22_EXPLICIT_DECLARATION",
+  "wp_revision": "GATE05-R22-DECLARATION",
+  "result_id": "WE-A-ENGINE-GATE05-R22-DECLARATION-RESULT-01",
+  "status": "COMPLETED",
+  "completed_at": "2026-10-11T07:55:00+09:00",
+  "summary": "WP_ENGINE_GATE05_R22_EXPLICIT_DECLARATION / GATE05-R22-DECLARATION (Envelope 25) implementation and developer E1 verification completed. Resolved the M01 explicit declaration defect by eliminating default values from OperatorLaunchDescriptor and enforcing mandatory, fail-closed verification of all 7 launch declaration fields (originId, launchPlanId, expectedConfigId, expectedRole, expectedCapabilityBoundary, expectedConfigPath, expectedConfigSha256) prior to trusted receipt issuance. At receipt factory entry, caller descriptor is cloned once and validated before file/bytes admission. Approved declaration is privately captured in immutable fields within OperatorStartupAdmissionReceipt and bound to ValidateAdmissionReceipt checks against receipt provenance and admitted bytes. Spliced strictly across 4 allowed byte regions of WorkerBridge.cs, confirming 100% byte-for-byte fidelity with Master five fixed binary segments (WORKER_FIXED_SEGMENT_0..4.bin). Preserved EngineHostCensus.cs (170,135 B, SHA 391F9645...) and WorkerBridge.csproj (1,774 B, SHA 571A58F5...) 100% immutable. Rebuilt Release candidate DLL (286,720 B, SHA BF170758..., MVID 0ad5d962-..., CodeView GUID 5bf238db-...), Release PDB (53,076 B, SHA A4C0947F...), Debug candidate DLL (303,104 B, SHA 278DA55F..., MVID 3d7d7cf7-..., CodeView GUID 35fc949d-...), Debug PDB (72,608 B, SHA 75C81993...), and synchronized 1.6 Assemblies with Debug candidate. Executed detached pure managed runner Gate05R22DeclarationRunner with ZERO C# Process APIs, ZERO live VerifyProcessIdentity calls, ZERO global WorkerBridgeComponent Configure/Reset/Awake/Harmony calls, ZERO invalid/rejection probes. Verified 7 positive-only suites passing 100% (16/16 opaque policy matrix regression, 8/8 explicit 7-field receipt battery, exact literal UTC preservation across 3 variants (.0000000Z, fractional UTC, and whole seconds UTC), caller mutation isolation post-issuance, positive-only fully-qualified Windows path helper, ValidatorResult redaction regression, and Census package policy regression). Executed host Python subprocess battery across en-US (child PID 25356, exit 0) and de-DE (child PID 29248, exit 0) cultures. Verified process isolation and stream closure (18 inventory items accounted). Full Gate05 and Foundation remain HOLD pending independent Sol QA review and Master governance disposition.",
+  "e1_verdict": "IMPLEMENTED_EXPLICIT_DECLARATION_PASS_NATIVE_UNTESTED",
+  "limitations": [
+    "STATIC_MANAGED_NORMAL_EVIDENCE_ONLY: Verification conducted strictly via isolated positive pure normal managed runner controls (7/7 PASS, 16/16 matrix pass, 8/8 receipt battery pass, 3/3 UTC literal pass, exit 0) with Master-approved frozen dependencies.",
+    "ZERO_PROCESS_API_CALLS_IN_MANAGED_TESTS: All C# Process, GetCurrentProcess, and VerifyProcessIdentity execution strictly excluded from runner code. Pinned child PID and exit code 0 collected exclusively by host Python telemetry.",
+    "HOST_PYTHON_TELEMETRY_CHILD_PID_AND_EXIT_CODE_ONLY: Host subprocess telemetry is operational observation, not native authority.",
+    "NATIVE_ACTUAL_COMPUTATION_PROHIBITED_AND_UNTESTED: In-engine, game runtime, native execution, Awake event loops, and operator promotion were strictly prohibited and not executed.",
+    "ZERO_INVALID_OR_REJECTION_PROBES: Per R22 instructions, all invalid, missing, mismatch, and rejection probes were zeroed; fail-closed paths verified via static source analysis only.",
+    "NO_CAUSAL_OVERCLAIMS: Missing assets observed are readiness gaps; historical R4 5-second kill cause remains UNKNOWN.",
+    "INSTALLED_DLL_INCIDENT_OPEN: Steam installed DLL discrepancy against archive baseline remains an UNKNOWN OPEN INCIDENT, preserved unmodified.",
+    "FINAL_DOMAIN_AUTHORITY_REMAINS_DEDICATED_SERVER: Dedicated Server remains final Domain Authority; Engine/Client produces bounded simulation proposals.",
+    "FOUNDATION_HOLD: Foundation remains HOLD pending Pipeline E2 PASS."
+  ],
+  "artifacts": [
+    {
+      "role": "implementation_report",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_EngineHost_Semantic_Authority_Gate_05_R22.md",
+      "sha256": "AA29A76A7507D9E02E9A42012F2DF0245F71A71B7BA4B1AAC59937748145C88B",
+      "size": 24125,
+      "mvid": ""
+    },
+    {
+      "role": "release_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R22_DECLARATION.json",
+      "sha256": "06B2AEE0FD02B799BFB3404DA8E377A2CC42463952F84203E0C9A13FD66C134E",
+      "size": 7036,
+      "mvid": ""
+    },
+    {
+      "role": "harness",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\Harness\\Program.cs",
+      "sha256": "4C2F0A844252FCD036628420670C759452F6C8F4EC5FC21CA774A7B66FF3BF6D",
+      "size": 43432,
+      "mvid": ""
+    },
+    {
+      "role": "harness_project",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\Harness\\Gate05R22DeclarationRunner.csproj",
+      "sha256": "3CAB74B1CD86E6C644BD8E4767B6D3B24CE5E8743D96394054D1A3900E440A81",
+      "size": 1658,
+      "mvid": ""
+    },
+    {
+      "role": "harness_config",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\Harness\\App.config",
+      "sha256": "C62ACA778E68DBA98FFEC19DFE6C3A6CE0A15EF1F833B720242E794D67413D19",
+      "size": 514,
+      "mvid": ""
+    },
+    {
+      "role": "harness_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\Harness\\bin\\Debug\\net472\\Gate05R22DeclarationRunner.exe",
+      "sha256": "12F5C2D4D8D110669C83CD8C52CB5DE02123111F355BF9A9D9AEF21AA4225FB4",
+      "size": 37376,
+      "mvid": ""
+    },
+    {
+      "role": "harness_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\Harness\\bin\\Debug\\net472\\Gate05R22DeclarationRunner.pdb",
+      "sha256": "B3E7B1CD0A55328201D8E94FD318A57DF37A3829335924C9C01A497D18EF9E40",
+      "size": 8384,
+      "mvid": ""
+    },
+    {
+      "role": "host_telemetry",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\HOST_TELEMETRY.json",
+      "sha256": "7112B5506CC5CF45B199DA4B8331AF914F5337442E22A95F0DAD0065C7BD948C",
+      "size": 2039,
+      "mvid": ""
+    },
+    {
+      "role": "results_en_us",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\run_en_us\\E1_EXECUTION_REPORT.json",
+      "sha256": "2D665A77E187683FE42D9EB1D119DC3571E6D7FC6B68E80E9B9A06F4D6F9A39A",
+      "size": 5078,
+      "mvid": ""
+    },
+    {
+      "role": "output_inventory_en_us",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\run_en_us\\OUTPUT_INVENTORY.json",
+      "sha256": "C00B4D2D455997EC6C9BDEA2C04E511F23DE763CBA7D6A32C5562FDE4DF241D3",
+      "size": 3135,
+      "mvid": ""
+    },
+    {
+      "role": "stdout_en_us",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\run_en_us\\stdout.txt",
+      "sha256": "84C73577CBF710F07E8EE8FD0CF7549CFB7D74D0585299E7B474F0B81A81879F",
+      "size": 1348,
+      "mvid": ""
+    },
+    {
+      "role": "stderr_en_us",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\run_en_us\\stderr.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "size": 0,
+      "mvid": ""
+    },
+    {
+      "role": "results_de_de",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\run_de_de\\E1_EXECUTION_REPORT.json",
+      "sha256": "DA6CB7B6E9537525F8DAD139CEA87C099023C8949CDD5779FD9ABC2501D3E669",
+      "size": 5078,
+      "mvid": ""
+    },
+    {
+      "role": "output_inventory_de_de",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\run_de_de\\OUTPUT_INVENTORY.json",
+      "sha256": "FDFCC7CF3163D84B9756C6053DFAF5B83E0134813EB8D6934BFDC041BA2BB87B",
+      "size": 3135,
+      "mvid": ""
+    },
+    {
+      "role": "stdout_de_de",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\run_de_de\\stdout.txt",
+      "sha256": "BA7CBB6420B476AEDBE735C71D9F05BAAA16C1A9E9AEBBEDC133A9135734067B",
+      "size": 1348,
+      "mvid": ""
+    },
+    {
+      "role": "stderr_de_de",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\run_de_de\\stderr.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "size": 0,
+      "mvid": ""
+    },
+    {
+      "role": "freeze_before",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R22-DECLARATION-20261011-DIRECT-9be1579a\\ENGINE_FREEZE_BEFORE.json",
+      "sha256": "C2EF0D5C295A072681EFB21C4E4D7FD57E8B7778B2C69A98D9B82AA727D5CAE7",
+      "size": 2324,
+      "mvid": ""
+    },
+    {
+      "role": "freeze_after",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R22-DECLARATION-20261011-DIRECT-9be1579a\\ENGINE_FREEZE_AFTER.json",
+      "sha256": "5CE71A93A6DFB729DFEE36302C891BA70DD4DB94F7CA5E54EEA94F4817721EB0",
+      "size": 2324,
+      "mvid": ""
+    },
+    {
+      "role": "work_log",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R22-DECLARATION-20261011-DIRECT-9be1579a\\A_WORK_LOG.md",
+      "sha256": "C073E0AD8E3534D59391DF9489A979E84A7873F4CAEF0C52303CAF4AAF6CBBB7",
+      "size": 7970,
+      "mvid": ""
+    },
+    {
+      "role": "recovery_ack",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R22-DECLARATION-20261011-DIRECT-9be1579a\\A_RECOVERY_ACK.md",
+      "sha256": "881009015655F73E391019D58F1FAA3BDC07AD53B001AE5139B2483614A43E20",
+      "size": 1579,
+      "mvid": ""
+    },
+    {
+      "role": "ack",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R22-DECLARATION-20261011-DIRECT-9be1579a\\ACK.json",
+      "sha256": "45BAE05C7961217C58AB3E635D745B5CF160877C5678BA000750085E74880295",
+      "size": 1320,
+      "mvid": ""
+    },
+    {
+      "role": "candidate_dll_debug",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "278DA55F46B3646F981E79EF83D764F19959B6FEFAD6EEC83AFD4DAB0020864D",
+      "size": 303104,
+      "mvid": "3d7d7cf7-541a-42ec-a642-b31539cc3f3f"
+    },
+    {
+      "role": "candidate_pdb_debug",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "75C81993FEB72294789BB69E611FD3AFE7647D733568D405F1A672CF1DA74D84",
+      "size": 72608,
+      "mvid": ""
+    },
+    {
+      "role": "candidate_dll_release",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "BF170758FE5998919A860A17A33F04A36780D5419D735D95D8518DF631783955",
+      "size": 286720,
+      "mvid": "0ad5d962-8354-4049-9f25-6851185a3b8c"
+    },
+    {
+      "role": "candidate_pdb_release",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "A4C0947FDD7CC7901C20951F11DF82B38FE6DF6CF73E48CB0ABD22C6E54BDEC1",
+      "size": 53076,
+      "mvid": ""
+    },
+    {
+      "role": "source_worker_bridge",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "6AA281259A5760BFFFA432E392AC4480807E16C044EE599A7D31AD4BF6C10F1E",
+      "size": 226714,
+      "mvid": ""
+    },
+    {
+      "role": "source_engine_host_census",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "size": 170135,
+      "mvid": ""
+    },
+    {
+      "role": "source_worker_bridge_csproj",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "size": 1774,
+      "mvid": ""
+    }
+  ]
+}

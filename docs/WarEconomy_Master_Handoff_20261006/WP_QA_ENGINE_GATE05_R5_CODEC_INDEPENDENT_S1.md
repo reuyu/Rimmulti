@@ -1,0 +1,32 @@
+# R5 독립 정적 및 순수 codec unit QA S1
+
+WP `WP_QA_ENGINE_GATE05_R5_CODEC_INDEPENDENT`,revision S1,delivery `SOL-GATE05-R5-CODEC-INDEPENDENT-S1-20261008-01`.
+Original Sol Review WarEconomyMod QA/local/01a11583-ff90-73e0-8916-d021e2bb038d. 준비 S1은 Master 수집/채택 완료이며 새 candidate 범위다. 다른 active WP면 중복 시작하지 않는다. Master↔Sol routine QA 사용자 승인에 따른 실제 fresh independent work다.
+
+## 정확한 후보 / 경계
+
+Root C:\Users\user\Desktop\RimMulti의 AGENTS/current governance/canonical SRS/mandatory handoff/C corrections/accepted ADR006B/MD125~132를 복구한다. Controlling review C:\Users\user\Desktop\RimMulti\docs\WarEconomy_Master_Handoff_20261006\MASTER_REVIEW_ENGINE_GATE05_R5_CODEC_E1_20261008.md와 proof coordination\MASTER_GATE05_R5_CODEC_E1_VERIFICATION_20261008.json,기존 R5 preparation matrix를 읽는다. Master findings를 정답으로 가정하지 않는다.
+
+Immutable manifest C:\Users\user\Desktop\RimMulti\Dispatcher\A_TASKS\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\MASTER_GATE05_R5_CODEC_REVIEW_FREEZE_MANIFEST.json,SHA `C8FFA291F9B67074AE4C9E916FE2761D3A10D2A691F44F96D58E05E0CDED1692`,113 files. Code/report/runner/raw/pre-run/completion은 frozen_path로만 검토한다.
+
+**선택 Debug만 정상 codec 실행 승인**: frozen source bin\Debug\net472\WarEconomy.WorkerBridge.PoC.dll,SHA `930B69D012F34BFD3BB50F97B86629BAEA082D201A3A81696549DF1450075AE8`,MVID `0e6b7cca-e02c-4af5-97da-5de31ec7aec3`,PDB SHA `06F616C6FD54E07AE87AE2B16E60B1F4AB6FA0AB664D77D71CED084ABC38D2E4`.
+Alternate Release SHA77AF633BBA063304E74C9F1D5AE7102CAE856D591201646226AFE6DD23B81EC7,**actual metadata MVID7552980a-c4e1-4126-9451-e2114be623ae**,PDBE53DE9504FE257D19D789EFD196DA907704690F3F5CD6A5914B3AC7C59E77233. Producer 원문 Debug MVID 반복 오류를 덮어쓰지 않는다. Alternate는 metadata 비교만,실행하지 않는다.
+
+Frozen Census source SHA591408E898E1663732DAF362955248CE6C33CCBD213253D75C56FCE8E999D28C,WorkerBA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718. Matching source/generated/PDB4/4를 metadata로 재대조한다. COMPlETION SHA7C272DF76C19F340C3B43398987572D0E7C0AC65E4C593287564F58C4F46C915,resultWE-A-ENGINE-GATE05-R5-CODEC-RESULT-01. 사후113 freeze는 실행 전 proof가 아니다.
+
+## 승인된 실행 / 독립 업무
+
+1. R5-M01~07 및 준비65 historical leaf/content matrix를 frozen implementation과 독립 대조한다. Typed DTO/production Serialize/Deserialize와 collector sorting/DLC exception rethrow 개선은 credit한다. Null/unknown/empty/missing normalization,child identity/order/multiplicity,patch/settings/count/Def coverage/cache admission/capability claim을 scope별 평가한다. 모든 Def field·모든 sort 금지나 owner/global schema 확정을 새로 요구하지 않는다.
+2. **Production ContentProfileProvider.SerializeCanonicalJson(ContentProfileManifest) 및 DeserializeCanonicalJson(string),그 순수 typed DTO constructors/fields만** 생성된 정상 unit inputs에 대해 호출할 수 있다. QA-owned 새 managed runner를 build/run할 수 있지만 production candidate/source/dependencies는 수정/재빌드하지 않는다. Framework/toolchain/run ID·새 runner dependency/source 및 actual loaded selected DLL SHA/MVID/entry를 결속한다. Copy 구현,whole-provider mock/hash/census/native Game fixture를 oracle로 사용하지 않는다.
+3. 독립 input expected semantics를 먼저 작성하고 production outputs의 canonical UTF8 bytes/decoded typed values/digest/raw를 저장한다. 준비 C01~C13 중 이 경계 안의 정상 representative65field roundtrip/Unicode/공백/숫자 precision/normal optional states/determinism/declared order/set mapping/두 정상 content DTO revision/coverage를 실행한다. 실제CLR field widths/enums는 frozen dependency metadata로 확인하거나 미관측으로 남긴다. 정상 unit snapshot은 SYNTHETIC_CODEC_INPUT이며 trusted loaded-content/profile 증명이 아니다. 지원되지 않거나 이번 API에서 관측 불가인 row는 UNOBSERVED/UNSUPPORTED로 명시한다.
+4. GetActualContentProfileFingerprint/ComputeActualContentProfileFingerprint/ComputeActualContentProfileManifest/InvalidateCache 등 실제 provider·cache·game getter는 **실행하지 않는다**. Original A runner/TC11 또는 기존 Gate05R1~R4 harness 실행 금지다. Unity/native/game/WorkerBridge authority/operator/task/process/channel/STEP/SEAL/STAGE/PROMOTE는 호출하지 않는다. Forged/replay/tamper/bypass/adverse 보안 fixture/공격 절차를 만들거나 실행하지 않는다. Read-only static review는 허용한다. Allowed Serialize/Deserialize가 환경상 로드 불가면 diagnostics/BLOCKED를 기록하며 actual game startup/mock/bypass로 해결하지 않는다.
+5. Producer12 PASS raw/JSON와 실제 source predicates를 static 분류한다. TC01 byte roundtrip 대65field semantic oracle,TC06 missing 범위,TC07 stages predicate,TC08 caller sort,TC10 clear helper,TC11 unexpected-success catch/actual ECall exception,TC12flags를 구분한다. Producer 소개의 R4 complete issuer/context/cache 단정과 semantic V5 capability는 controlling corrections로 대조한다. 새로운 독립 codec 결과가 A prior provenance를 소급 정당화하지 않는다.
+6. QA의 final runner build 뒤 run 전 exact selected frozen DLL/PDB/source/generated/managed dependencies/tooling/input/schema/config/run ID snapshot→raw run→post-run unchanged를 기록한다. Producer before/after18 row 개선과 Release MVID/tooling/dependency/raw byte artifact gaps를 분리한다. Framework/process 변경과 limits를 정직하게 결속한다. 증거 분류 CODEC_UNIT_ONLY/STATIC/UNTESTED_NATIVE를 유지한다.
+
+## dependency / 보존 / 산출물
+
+Manifest113에 든 frozen Newtonsoft.Json.dll 등 managed dependency는 그대로 사용한다. 추가 Game/Core/Unity/Harmony **managed** metadata/DTO loader 지원은 C:\Users\user\Desktop\RimMulti\Dispatcher\A_TASKS\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\MASTER_R5_MANAGED_QA_DEPENDENCIES_MANIFEST.json,SHA `7FCB91EEB8489365E4304AFFDC601CCD0CCE2259365FD861A785AD658C183481`의 frozen_path4개만 허용한다. Master는 원본을 읽기 전용 복사했고 native profile/runtime admission이 아니다. MVID는 QA metadata-only 확인 대상으로 아직 선언하지 않았다. 원본 Steam 설치/mod DLL/UserData·외부 saves를 읽거나 변경/restore하지 않는다. 필요 dependency가 없으면 Master에게 근거를 보고하고 unknown 임의 로드를 하지 않는다.
+
+새 root C:\Users\user\Desktop\RimMulti\QA-Tactical-Engine\GATE05-R5-CODEC-INDEPENDENT-S1-20261008;report C:\Users\user\Desktop\RimMulti\docs\QA_EngineHost_Gate05_R5_Codec_Independent_S1_20261008.md. 기존 해당 파일이 있으면 덮어쓰지 않는다. ACK/independent findings/field and coverage index/normal input oracle/canonical raw bytes/decoded semantics/digests/QA runner source+build and run raw/pre-post identity+preservation/EVIDENCE_MANIFEST/RESULT_INDEX/COMPLETION을 쓴다. Execution code/inputs/outputs는 QA root만 변경한다.
+
+R5frozen113+manageddep4/manifest,prior619/archive19/Pipeline206/QA1241 및 manifests/terminal/proof를 보존한다. Mutable production source/bin/obj를 frozen113과 혼동하지 않는다. Unique result/delivery/WP/revision/timezone/report+manifest/index absolute path/SHA/limitations 및 실행된 normal row/미실행 runtime row를 결속한다. 완료 즉시 기존 승인에 따라 Master01a1156b-97ec-7ce0-9e4a-dfc4a3acb174로 direct tools 보고한다. 이 WP의 단위 codec 검증은 full Gate05 runtime E2/release/closure가 아니다. Engine002006/Pipeline007/current schema7/G-Q1 OPEN,Foundation HOLD.

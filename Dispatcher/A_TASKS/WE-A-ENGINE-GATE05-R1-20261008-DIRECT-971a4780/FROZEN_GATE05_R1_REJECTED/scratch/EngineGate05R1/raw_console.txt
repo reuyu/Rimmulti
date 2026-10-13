@@ -1,0 +1,53 @@
+﻿================================================================================
+WarEconomy Engine Gate05-R1 E1 Technical Verification Runner
+Execution Time: 2026-10-07T16:23:01.9752935Z
+Scope: WP_ENGINE_GATE05_R1 / GATE05-R1
+================================================================================
+[Init] Harmony Log and filesystem interception patches active.
+
+--- SECTION 1: Binary Lineage & Cryptographic Provenance ---
+[PASS] PROV-01: Candidate DLL Built and Exists -- Path=C:\Users\user\Desktop\RimMulti\scratch\WorkerBridgeMod\Source\bin\Debug\net472\WarEconomy.WorkerBridge.PoC.dll, SHA256=620F7A7BB9D6BF45F149F31662CBD79B369152B2B7F2C67882BFF84240BA86AC, Size=184320
+[PASS] PROV-02: Candidate PDB Exists and Matches Debug Lineage -- Path=C:\Users\user\Desktop\RimMulti\scratch\WorkerBridgeMod\Source\bin\Debug\net472\WarEconomy.WorkerBridge.PoC.pdb, SHA256=7E3CB7DBCBA9D0020C9801B3CB0150973DC61868E8B1E78EAF1A16F3DE112FC1
+[PASS] PROV-03: Candidate MVID Bound to Module -- MVID=6e080986-9595-4d50-83f2-bc8f84994d6d
+
+--- SECTION 2: G05-S01 Issuer/Execution Binding Tests ---
+[PASS] G05-S01-01: Reject Invalid Negative PID -- Response: 'ERROR: Malformed validator PID.'
+[PASS] G05-S01-02: Reject Non-Existent Dead PID -- Response: 'ERROR: Validator process inspection failed: ID가 999999인 프로세스가 실행되고 있지 않습니다.'
+[PASS] G05-S01-03: Reject Self-PID Validator Registration -- Response: 'ERROR: Self-validation prohibited. Validator PID cannot equal simulator PID.'
+[PASS] G05-S01-04: Successful Operator Validator Process Registration -- Response: 'VALIDATOR_PROCESS_REGISTERED: TaskId=task-gate05-r1-7f430755, Pid=32284, StartTime=2026-10-07T16:23:01.9914715Z' (PID=32284)
+[PASS] G05-S01-05: STAGE_SAVE Public Response Nonce Leakage Removed -- Verified STAGED_OK return string format omits CapabilityNonce secret
+[PASS] G05-S01-06: GET_ACTIVE_VALIDATOR_TASK Nonce Redacted in Public Query -- RedactedInJson=True
+[PASS] G05-S01-07: Reject Tampered Nonce in Task Execution -- Response: 'VALIDATION_FAILED: CapabilityNonce mismatch. Unauthorized task execution.'
+[PASS] G05-S01-08: Validator Result Written to Protected Task Channel File -- Path=C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R1\MockSaveData\Tasks\task-gate05-r1-7f430755.result.json, Exists=True
+[PASS] G05-S01-09: COMPLETE_STAGE_VALIDATION Atomic Single-Use Consumption -- Response: 'STAGE_VALIDATION_ACCEPTED: ReceiptId=VR_20261007_162302_25e17d3466ee4840b9eea30b36b10e4a, ValidatorPid=32284, TaskId=task-gate05-r1-7f430755', MovedToConsumed=True
+[PASS] G05-S01-10: Reject Replay of Consumed Task Result -- Response: 'STAGE_VALIDATION_REJECTED: ValidatorTask already consumed. Replay prohibited.'
+[PASS] G05-S01-11: Deprecate and Reject Public Caller Receipt Submission -- Response: 'STAGE_VALIDATION_REJECTED: Public/caller receipt submission is deprecated and prohibited under Gate05-R1 / MD-127. Authority must originate from registered operator-owned validator task and protected channel.'
+
+--- SECTION 3: G05-S02 Loaded-Content Identity & Invalidation Tests ---
+[PASS] G05-S02-01: Manifest Schema ADR-006B-v3 Versioning -- SchemaVersion=ADR-006B-v3
+[PASS] G05-S02-02: Fail-Closed Fatal Exception on Uninitialized Components -- ThrewInvalidOperationException=True, Msg='ContentProfile computation failed: LoadedModManager.RunningModsListForReading is null or empty. Runtime content is unadmitted.'
+[PASS] G05-S02-03: REGISTER_AUTHORITY Rejection of UNKNOWN_PROFILE -- Response: 'ERROR: UNKNOWN_PROFILE is unadmitted. Full content profile required.'
+[PASS] G05-S02-04: REGISTER_AUTHORITY Rejection of Invalid Hash Format -- Response: 'ERROR: contentProfileFingerprint must be 64-char SHA256.'
+[PASS] G05-S02-05: ContentProfileProvider Explicit Cache Invalidation -- PostInvalidateCache=''
+[PASS] G05-S02-06: RESET_WORKER Triggers Profile Cache Invalidation -- PostResetCache=''
+[PASS] G05-S02-07: Expanded 8 Def Families & Deep Gameplay Census Implemented -- Has8Families=True, HasDeepGameplayFields=True
+
+--- SECTION 4: Preserved Defensive Controls (MD-128 / MD-129 / MD-131) ---
+[PASS] MD128-01: StageValidationReceipt Bound with Validator Process Instance -- PID=32284, Time=2026-10-07T16:23:01.9914715Z, Result=PASS
+[PASS] MD129-01: Control-Plane Revocation on RESET_WORKER -- SemanticState=NONE
+[PASS] MD131-01: Result Epoch Monotonicity and Reset Tracking -- EpochVal=0
+
+--- SECTION 5: Native Execution Boundary & Honest Non-Claims ---
+[PASS] NATIVE-01: Game Executable Exists -- Path=C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64.exe
+[PASS] NATIVE-02: Steam Installed DLL Frozen at Historical Gate05 SHA -- InstalledSha=2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C
+[PASS] NATIVE-03: RimWorld Mod Folder Loading Restriction Observed -- RimWorld hardcodes Mods folder path; custom mods dir CLI is unsupported on Windows without modifying Steam installation
+[PASS] NATIVE-04: Native Candidate Execution Honestly Documented as UNTESTED/BLOCKED -- Preservation invariant strictly enforced; old installed DLL not claimed as candidate execution
+
+--- SECTION 6: Preservation Invariants Verification ---
+[PASS] PRESERV-01: Pipeline REV6-R1 Candidates 17/17 Bit-Identical -- Checked=17, Preserved=True
+[PASS] PRESERV-02: Historical Gate05 Baseline Archive 19/19 Bit-Identical -- Checked=19, Preserved=True
+
+================================================================================
+Execution Summary: Total=30, Passed=30, Failed=0
+================================================================================
+[Output] Written structured test results to: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R1\results.json

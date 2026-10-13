@@ -1,0 +1,18 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R9-VERSION-MEANING-20261009-DIRECT-fbe8a43b",
+  "wp_id": "WP_ENGINE_GATE05_R9_VERSION_MEANING",
+  "wp_revision": "GATE05-R9-VERSION-MEANING",
+  "envelope": 12,
+  "producer": "A",
+  "acknowledged_at": "2026-10-09T02:28:00+09:00",
+  "status": "IN_PROGRESS",
+  "scope": "Narrow ContentProfileProvider suffix/typed version DTO-contract-helper repair: remove compatibilityVersionRange and modVersion cross-inference in CanonicalNormalize and actual projection; preserve distinct compatibility vs mod version semantics and legitimate optional unknown modVersion (null) across generic false transport, canonical true normalization, and reconstruction; retain working child fail-closed observation, composite key uniqueness, canonical set ordering, and unrelated patch/settings behavior; positive pure normal DTO/helper runner and packaging",
+  "constraints": {
+    "source_scope": "Only EngineHostCensus.cs ContentProfileProvider suffix and typed version helpers",
+    "prefix_immutability": "Fixed prefix 72547 bytes SHA F3C4F865F1E2A898BF240A2D096195870D77A52408CF2D93664FE15092A2A887 strictly preserved",
+    "workerbridge_immutability": "WorkerBridge.cs and WorkerBridge.csproj fixed current hashes preserved",
+    "execution_restrictions": "Positive pure normal DTO/helper runner only; no provider/compute/getter/cache properties/InvalidateCache/game/native/operator/old runners/rejection/adverse execution",
+    "historical_preservation": "Archive 19, Prior candidates 1029, Pipeline 206, QA 1834, managed dependencies 4, and installed Steam DLL (OPEN incident) preserved",
+    "closure_authority": "Master sole domain authority; Dedicated Server final runtime Domain Authority; no self-declared defect closure or whole-gate E2 release"
+  }
+}

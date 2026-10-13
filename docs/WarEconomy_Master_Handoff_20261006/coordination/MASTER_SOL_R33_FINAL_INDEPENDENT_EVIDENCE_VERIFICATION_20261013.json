@@ -1,0 +1,123 @@
+{
+  "at": "2026-10-13T17:49:57.350989+09:00",
+  "result_id": "SOL-GATE05-R33-RESOURCE-COMMIT-INDEPENDENT-S1-20261013-b8d8c534c6384b9d83b946bedaaaf088",
+  "delivery_id": "SOL-GATE05-R33-RESOURCE-COMMIT-INDEPENDENT-S1-20261013-01",
+  "completion": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-COMMIT-INDEPENDENT-S1-20261013\\COMPLETION.json",
+    "sha256": "5D7D69AC0AB7EB0D6ED55BB33F6BE76F86AA3CCC3AED5E297B3B2B72926CBFED",
+    "bytes": 3166
+  },
+  "report": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R33_Resource_Commit_Independent_S1_20261013.md",
+    "sha256": "235B60A1AD00354B30A8679FF085FF5B3D76FB4E6461CAD87E3E5515DB419034",
+    "bytes": 12940
+  },
+  "evidence_manifest": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-COMMIT-INDEPENDENT-S1-20261013\\EVIDENCE_MANIFEST.json",
+    "sha256": "85EA55BC4AB00165B35A86622E03C5E983BEEACDEB6F06715A7F8C99DF495C15",
+    "bytes": 285429
+  },
+  "evidence_files": 928,
+  "protected_paths": 17099,
+  "frozen_files": 71,
+  "prospective_build_inputs": 236,
+  "independent_raw_literal_bindings": 672,
+  "ordered_full_graphs": 60,
+  "crossculture_raw_pairs": 336,
+  "crossculture_graph_pairs": 30,
+  "copy_mutations_independently_compared": true,
+  "loaded_PE_MVID_filebyte_independent": true,
+  "oracle_semantics_independently_original_bound": true,
+  "runs": [
+    {
+      "run_id": "R33S1QA-ee50998f89c24311849fb648db5c35e0",
+      "culture": "en-US",
+      "pid": 9248,
+      "exit_code": 0,
+      "assertions": 438,
+      "typed_rows": 6700,
+      "raw_files": 336,
+      "graphs": 30,
+      "output_files": 407,
+      "prepost_pins": 249,
+      "loaded_counts": [
+        8,
+        10,
+        10
+      ],
+      "ledger": {
+        "primary_direct": 38,
+        "ordered_getter": 288,
+        "grouped_helper": 60,
+        "observational_helper": 180,
+        "QA_wrapper_not_publisher": 18
+      }
+    },
+    {
+      "run_id": "R33S1QA-91b26b44f8a743148d29f7ab657b3e56",
+      "culture": "de-DE",
+      "pid": 26236,
+      "exit_code": 0,
+      "assertions": 438,
+      "typed_rows": 6700,
+      "raw_files": 336,
+      "graphs": 30,
+      "output_files": 407,
+      "prepost_pins": 249,
+      "loaded_counts": [
+        8,
+        10,
+        10
+      ],
+      "ledger": {
+        "primary_direct": 38,
+        "ordered_getter": 288,
+        "grouped_helper": 60,
+        "observational_helper": 180,
+        "QA_wrapper_not_publisher": 18
+      }
+    }
+  ],
+  "own_QA_builds": 1,
+  "Master_candidate_build_execution": 0,
+  "source_High4": "OPEN",
+  "native_E2": "NOT_RELEASED",
+  "Foundation": "HOLD",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:27",
+    "revision": 27,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a1345f-cae9-7362-acf8-88de3b154fb3",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791880055,
+      "completedAt": 1791881298,
+      "durationMs": 1242962
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acdf04d850887d09acc3f1c73987435",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016acdf04d850887d09acc3f1c73987435",
+      "turnId": "01a1345f-cae9-7362-acf8-88de3b154fb3",
+      "phase": "final_answer",
+      "text": "R33 QA를 완료하고 마스터에게 보고했습니다. 두 정상 실행에서 총 876개 assertion이 통과했습니다. lock 내부 rollback은 수정 필요이며, 네이티브 검증은 미실행 상태입니다. 마스터의 다음 지시를 기다리겠습니다. QA 보고서"
+    },
+    "latestToolMarkerId": "exec-1ebaf5dd-6abc-4e08-965f-05382cdf001b",
+    "latestToolMarker": {
+      "id": "exec-1ebaf5dd-6abc-4e08-965f-05382cdf001b",
+      "turnId": "01a1345f-cae9-7362-acf8-88de3b154fb3",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "limitations": "Positive PURE only; native0; parent/sharedlock gains credited; inner Stop/Abort held-lock and duplicate outer teardown require source revision; no native deadlock observed; issuer/publisher/runtime unproved"
+}

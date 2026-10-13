@@ -1,0 +1,25 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R35-PUBLISHER-20261013-DIRECT-16a25a7e",
+  "envelope": 38,
+  "evaluated_at": "2026-10-13T10:35:13.673354+00:00",
+  "single_authorized_source": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+    "before": {
+      "bytes": 10442,
+      "sha256": "0204609D1D9D8A697B1A0B88537419D78B9E506558C771CA3EDD4C50FD49D470"
+    },
+    "after": {
+      "bytes": 22371,
+      "sha256": "9CAEA2DF0B8F3517DFCBEF080F7D26EC4343CDF4D2FD761453EFA2E4F3B86B4A"
+    },
+    "byte_delta": 11929,
+    "mutation_authorized": true
+  },
+  "all_Engine9_and_generated_fixed": {
+    "all_match": true,
+    "count": 9,
+    "builder_executions": 0,
+    "rebuild_performed": false
+  },
+  "summary": "Updated standalone publisher to enforce R35 safety contracts: non-overwrite exclusive root, strict path and reparse point guards, config14 and decl7 binding, blank validatorArguments, and atomic NTFS hardlink publication without destructive cleanup fallbacks."
+}

@@ -1,0 +1,134 @@
+{
+  "at": "2026-10-11T06:00:24.165394+09:00",
+  "guard_run": "MASTER-SOL-R20-COMPLETE-20261011-01",
+  "guard_session": 54820,
+  "guard_pid": 30204,
+  "result_id": "SOL-GATE05-R20-TRUSTED-STARTUP-INDEPENDENT-S1-20261011-4245a7b9c3a8434993de3c5f411b762a",
+  "delivery_id": "SOL-GATE05-R20-TRUSTED-STARTUP-INDEPENDENT-S1-20261011-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R20_TRUSTED_STARTUP_INDEPENDENT",
+  "completion_sha256": "7170B8090D4AC40C959D84616763CC9194C5052145BD818F337FBDA744833CA0",
+  "report_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R20_Trusted_Startup_Independent_S1_20261011.md",
+  "report_sha256": "9CF813A0DFC5542B65B8BB63E73FBF2B0042B37A8682B88D65861E95CE5FFF0D",
+  "evidence_manifest_path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R20-TRUSTED-STARTUP-INDEPENDENT-S1-20261011\\EVIDENCE_MANIFEST.json",
+  "evidence_manifest_sha256": "9B4CC99A74B9FA54451D9997158871D6ED37EF5C95ED2369FD3678AACBB9375E",
+  "result_index_sha256": "C4B6AC6D93C3AE40756E65D8B23EB1B42D22D0893F3267678233751533A879ED",
+  "evidence_files": 474,
+  "protected_paths_rehashed": 10346,
+  "runs": [
+    {
+      "run_id": "R20-03278c9de74b4160",
+      "pid": 20316,
+      "culture": "en-US",
+      "exit": 1,
+      "pass": 173,
+      "fail": 8,
+      "prepost": 192,
+      "loaded": 10,
+      "output_files": 197,
+      "direct_calls": 282,
+      "grouped_reads": 144
+    },
+    {
+      "run_id": "R20-d94bf3fab7fb42e5",
+      "pid": 9016,
+      "culture": "de-DE",
+      "exit": 1,
+      "pass": 173,
+      "fail": 8,
+      "prepost": 192,
+      "loaded": 10,
+      "output_files": 197,
+      "direct_calls": 282,
+      "grouped_reads": 144
+    }
+  ],
+  "typed_rows": 8216,
+  "typed_mismatch_rows": 16,
+  "repeatability_pairs": 90,
+  "reference_pairs": 4,
+  "reference_bindings": 68,
+  "reference_bindings_failed": 16,
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:128",
+    "revision": 128,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a12791-68d7-7433-ae1f-b5a7305c676c",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791665203,
+      "completedAt": 1791665831,
+      "durationMs": 628303
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acaa6a6578087d089f9f13c807d7b63",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016acaa6a6578087d089f9f13c807d7b63",
+      "turnId": "01a12791-68d7-7433-ae1f-b5a7305c676c",
+      "phase": "final_answer",
+      "text": "R20 QA를 완료하고 Master에게 보고했습니다. 각 실행은 173 PASS / 8 FAIL입니다. 실패는 receipt의 UTC 문자열 표현 변경이며, 정책 원문·digest·소유권 검증은 통과했습니다. Native 미검증과 Foundation HOLD를 유지합니다. QA 보고서"
+    },
+    "latestToolMarkerId": "exec-7c352aac-b196-4d61-8f57-e88d882b4d47",
+    "latestToolMarker": {
+      "id": "exec-7c352aac-b196-4d61-8f57-e88d882b4d47",
+      "turnId": "01a12791-68d7-7433-ae1f-b5a7305c676c",
+      "type": "fileChange",
+      "name": "fileChange",
+      "status": "completed"
+    }
+  },
+  "actual_thread_read": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R20_INDEPENDENT_TERMINAL_READ_20261011.json",
+  "scope_metadata_reconciliation": {
+    "result_id": "SOL-GATE05-R20-TRUSTED-STARTUP-INDEPENDENT-S1-20261011-4245a7b9c3a8434993de3c5f411b762a",
+    "candidate_calls_during_reconciliation": 0,
+    "controlling_producer_inventory_count": {
+      "Master_E1_WP_annotation_nonself": 14,
+      "actual_frozen_declared_unique_rows_each": 15,
+      "actual_frozen_nonself_files_each": 15,
+      "all15_SHA_size_match_each": true,
+      "actual_total_including_inventory_file": 16,
+      "host_reports_count15_is_not_current_include_self16": true,
+      "initial_analysis_current14_boolean_label_superseded_by_actual_rows15": true
+    },
+    "all_producer_original_manifest_raw_unchanged": true,
+    "prepin_setup_failures": {
+      "pin_missing_legacy_helper_file_exit1": true,
+      "dependent_build_wrapper_precondition_exit1_compiler_launch0": true,
+      "dependent_runpre_precondition_exit1_candidate_launch0": true,
+      "final_compiler_builds": 1,
+      "final_compiler_exit": 0
+    },
+    "toolproof_serialization_shell_parse_error_after_build": {
+      "file_write_occurred": false,
+      "compiler_rebuild_occurred": false,
+      "correct_actual_wrapper_proof_saved_with_literal_apply_patch_before_runpin": true
+    },
+    "prebuild_annotation_descriptor5_corrected7_and_receipt11_before_pin": true,
+    "oracle_values_source_runner_runoutputs_modified_after_candidate_calls": false,
+    "receipt_timestamp_lexical_FAIL_does_not_infer_different_UTC_instant_or_materialclock_fault": true,
+    "Master_authority_native_fullGateE2_not_released": true
+  },
+  "compiler_warning_stream": "COMPLETE_OWNED_RAW_24464_BYTES_EXIT0",
+  "thread_operational_status": "COMPLETED_IDLE",
+  "terminal_delivery_status": "ONE_ACTUAL_TERMINAL_SEND_ACCEPTED",
+  "artifact_terminal_status": "COMPLETED_VERIFIED_ACTUAL_THREAD_MATCHED",
+  "selected_sha256": "482166A77BF90569626A5CB27D83A4D949BD57DA85BA660F03067C833FB777F0",
+  "selected_mvid": "9e516c44-35c8-49b8-b3ec-f73ec58ba12f",
+  "verification_status": "MASTER_DISPOSED",
+  "master_execute_builds": 0,
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD",
+  "master_verdict": "ACCEPTED_R20_SCOPED_NORMAL_RECEIPT_OPAQUE_GRAPH_PASS_NESTED_UTC_LITERAL_FAIL_REVISION_REQUIRED_NATIVE_UNTESTED",
+  "master_disposition_at": "2026-10-11T06:04:23.459029+09:00",
+  "review_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R20_TRUSTED_STARTUP_INDEPENDENT_S1_20261011.md",
+  "review_sha256": "EBF1246229F78F6B3C76F0A09377BA9D3625C964F6AFC0C8DF582B8CD3C881AB",
+  "next_technical_direction": "R21_RECEIPT_UTC_LITERAL_APPROVED_NOT_SENT"
+}

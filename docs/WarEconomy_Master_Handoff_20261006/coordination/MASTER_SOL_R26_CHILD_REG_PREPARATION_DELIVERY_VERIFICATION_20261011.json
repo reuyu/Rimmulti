@@ -1,0 +1,83 @@
+{
+  "delivery_id": "SOL-GATE05-R26-CHILD_REG-PREPARATION-S1-20261011-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R26_CHILD_REGISTRATION_PREPARATION",
+  "wp_revision": "S1",
+  "wp_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R26_CHILD_REGISTRATION_PREPARATION_S1.md",
+  "wp_sha256": "90C985A42BBA414697FBE362CFEED538364AC557DC3897800FACC0161D5AB5F4",
+  "baseline_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R26_CHILD_REG_PREPARATION_PROTECTED_BASELINE_20261011.json",
+  "baseline_sha256": "7C8F9B588BE47C45C5B39B5EB1573F4B238D1EB8F75D5EBF53B714C3C69DCE2B",
+  "protected_unique_paths": 13419,
+  "qa_root": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R26-CHILD_REG-PREPARATION-S1-20261011",
+  "delivery_status": "SENT_ACTUAL_TOOL_NEW_ACTIVE_TURN",
+  "unknown_delivery": false,
+  "type": "SOL_R26_CHILD_REG_PREPARATION",
+  "actual_predispatch": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:160",
+    "revision": 160,
+    "changed": false,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a12b48-a63b-7dd3-8891-aecd70893ed0",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791727543,
+      "completedAt": 1791728371,
+      "durationMs": 827483
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acb9af17d1887d0bbd19a1479a291bc",
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": "exec-3267ac62-1280-4eb3-89cb-d9ddaf024669",
+    "latestToolMarker": null
+  },
+  "attempt_started_at": "2026-10-11T23:31:30.575034+09:00",
+  "guard_run": "MASTER-R25-S2-COMPLETE-NEXT-20261011-01",
+  "guard_pid": 24636,
+  "guard_session": 35120,
+  "at": "2026-10-11T23:32:12.224073+09:00",
+  "status": "SENT_IN_PROGRESS_ACK_PENDING",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:161",
+    "revision": 161,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a12b60-ddcd-7980-8470-acdf2663cb15",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791729131,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "scope": "R26_INDEPENDENT_READ_ONLY_SEPARATE_CHILD_DECLARATION_PRIVATE_REGISTRATION_CONTRACT",
+  "production_modify_build": 0,
+  "qa_build_execute": 0,
+  "native_e2_released": false,
+  "foundation": "HOLD",
+  "monitor": "ACTUAL_ACTIVE60MIN_AFTER_A_SENT",
+  "pre_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R26_CHILD_REG_PREPARATION_PREDISPATCH_20261011.json",
+  "pre_sha256": "270FE9C02C824B2789F7D11F313DC7AE857AC7EF523A54BB2FE9FF3DE48DEC06",
+  "tool_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R26_CHILD_REG_PREPARATION_SEND_TOOL_20261011.json",
+  "tool_sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+  "post_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R26_CHILD_REG_PREPARATION_POSTSEND_20261011.json",
+  "post_sha256": "73E7F39D1B358D3E883857596EBC44341F540F686ECD560CB61966E1E77C61C8"
+}

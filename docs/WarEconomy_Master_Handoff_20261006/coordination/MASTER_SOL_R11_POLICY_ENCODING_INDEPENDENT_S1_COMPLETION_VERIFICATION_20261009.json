@@ -1,0 +1,462 @@
+{
+  "at": "2026-10-09T14:58:17.260099+09:00",
+  "guard_run": "MASTER-SOL-R11-INDEPENDENT-COMPLETE-20261009-01",
+  "guard_session": 18842,
+  "result_id": "SOL-GATE05-R11-POLICY-ENCODING-INDEPENDENT-S1-20261009-f40542eae0de4c058bfcd11c948ba235",
+  "delivery_id": "SOL-GATE05-R11-POLICY-ENCODING-INDEPENDENT-S1-20261009-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R11_POLICY_ENCODING_INDEPENDENT",
+  "completion_sha256": "74D72F4C407E2A4653C7BAC4AAE1D553D297FF84B8D5EF28021933FE72E070B1",
+  "report_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R11_Policy_Encoding_Independent_S1_20261009.md",
+  "report_sha256": "3B3C3573E23400D3FE6AC0BA3948B033B154645EF9474E366C66E7CD65139BDE",
+  "evidence_manifest_sha256": "41CE0C572A4C1627A7E58B2042726D67B77E7823978F88D27957BA912C4B2927",
+  "result_index_sha256": "D5945CA5CA1F2D950782A41127818D3498A25C6A3BB3B91E8CC90B96D991E46E",
+  "evidence_files": 703,
+  "protected_unique_paths_master_rehashed": 4189,
+  "runs": [
+    {
+      "run_id": "RUN_SOL_R11_POLICY_ENCODING_S1_20261009_b5db2b424adc4d3ab384d1f51430c422",
+      "culture": "en-US",
+      "prepost_files": 125,
+      "tool_exit": 0,
+      "assertions_pass": 247,
+      "assertions_fail": 0,
+      "loaded_managed": 12,
+      "runner_sha256": "3C992C904085E66130362EF184FB412D4BF95B175A389ECA6EAA1B0761C50C5E",
+      "runner_mvid": "28d940e7-3bcb-49cc-89e3-09cdcfc9d821"
+    },
+    {
+      "run_id": "RUN_SOL_R11_POLICY_ENCODING_S1_20261009_cd1292dbc05649eaa8f438d8da59c0cd",
+      "culture": "de-DE",
+      "prepost_files": 125,
+      "tool_exit": 0,
+      "assertions_pass": 247,
+      "assertions_fail": 0,
+      "loaded_managed": 12,
+      "runner_sha256": "3C992C904085E66130362EF184FB412D4BF95B175A389ECA6EAA1B0761C50C5E",
+      "runner_mvid": "28d940e7-3bcb-49cc-89e3-09cdcfc9d821"
+    }
+  ],
+  "package_cases": [
+    {
+      "case": "BASE",
+      "digest": "8824FAAB259D8AC8B1F63F7B6A89DA2A7B20A64263D7F16BE8A94EDCEB3D5BFC",
+      "semantic_leaves": 171,
+      "independent_typed_declaration_full_result": "MATCHED",
+      "cross_process_bytes_match": true
+    },
+    {
+      "case": "EQUAL_SEPARATE",
+      "digest": "8824FAAB259D8AC8B1F63F7B6A89DA2A7B20A64263D7F16BE8A94EDCEB3D5BFC",
+      "semantic_leaves": 171,
+      "independent_typed_declaration_full_result": "MATCHED",
+      "cross_process_bytes_match": true
+    },
+    {
+      "case": "ID_ONLY",
+      "digest": "1E02A2803199B7DC11F801E964AB8D3ADE345A81D8F52ADE802C6695A0E13C92",
+      "semantic_leaves": 171,
+      "independent_typed_declaration_full_result": "MATCHED",
+      "cross_process_bytes_match": true
+    },
+    {
+      "case": "REV_ONLY",
+      "digest": "347B324649305DB223F717FE8E0FCA87B9C27BBF2174A4EF49F2FF83F0A1C622",
+      "semantic_leaves": 171,
+      "independent_typed_declaration_full_result": "MATCHED",
+      "cross_process_bytes_match": true
+    },
+    {
+      "case": "ORDER_ONLY",
+      "digest": "04446900D60D0314B09740AEDE9FD130D11B92BE36D5BC8BC5DC11100DF55326",
+      "semantic_leaves": 171,
+      "independent_typed_declaration_full_result": "MATCHED",
+      "cross_process_bytes_match": true
+    },
+    {
+      "case": "UNICODE_ID",
+      "digest": "2FFA7971211E575FA6A45E9118D2C72C0E67436507C2A9657601906107FF2959",
+      "semantic_leaves": 171,
+      "independent_typed_declaration_full_result": "MATCHED",
+      "cross_process_bytes_match": true
+    },
+    {
+      "case": "UNICODE_REV",
+      "digest": "8D294D2DAFC4FEA050F9EF3F57FA7D09C5D5DF4A6E8044AF11186AE90D912F95",
+      "semantic_leaves": 171,
+      "independent_typed_declaration_full_result": "MATCHED",
+      "cross_process_bytes_match": true
+    },
+    {
+      "case": "DISPLAY_ID",
+      "digest": "F4B7CC5FB68E21AA2D1C770BE6602E18289F2B67E1604E40D43635E528B6E352",
+      "semantic_leaves": 171,
+      "independent_typed_declaration_full_result": "MATCHED",
+      "cross_process_bytes_match": true
+    },
+    {
+      "case": "DISPLAY_REV",
+      "digest": "9B6F4C7C281449CA4B98F710C73FEEDC13FC8C9FA541D789906E3A1767E47413",
+      "semantic_leaves": 171,
+      "independent_typed_declaration_full_result": "MATCHED",
+      "cross_process_bytes_match": true
+    },
+    {
+      "case": "SPACED_ID",
+      "digest": "A3F679DD3CAEC1AAB2E4EF18ED790B1D39F41827CCF2DF363A172BF243C6839D",
+      "semantic_leaves": 171,
+      "independent_typed_declaration_full_result": "MATCHED",
+      "cross_process_bytes_match": true
+    },
+    {
+      "case": "SPACED_REV",
+      "digest": "4A82C8D0BDFD74966B0B1DFEDFBDF56761EB1CE717A607B56E2659A13EEF63FD",
+      "semantic_leaves": 171,
+      "independent_typed_declaration_full_result": "MATCHED",
+      "cross_process_bytes_match": true
+    },
+    {
+      "case": "CASE_ID",
+      "digest": "8584D1A577DE3B070BD5454C691546272455D23EDE17F3DA98AF71CB8F2D6650",
+      "semantic_leaves": 171,
+      "independent_typed_declaration_full_result": "MATCHED",
+      "cross_process_bytes_match": true
+    },
+    {
+      "case": "REV_NUMERIC_TEXT",
+      "digest": "CCE0386BE7CD83725AEA6D16BE00C92D5C420FDF57F45B7A284C5F337A2523D2",
+      "semantic_leaves": 171,
+      "independent_typed_declaration_full_result": "MATCHED",
+      "cross_process_bytes_match": true
+    },
+    {
+      "case": "PACKAGE_CASE_LOWER",
+      "digest": "8824FAAB259D8AC8B1F63F7B6A89DA2A7B20A64263D7F16BE8A94EDCEB3D5BFC",
+      "semantic_leaves": 171,
+      "independent_typed_declaration_full_result": "MATCHED",
+      "cross_process_bytes_match": true
+    },
+    {
+      "case": "ALTERNATE_UNIQUE_LIST",
+      "digest": "8A9BC4F4D5CC109AE9AAA508163B76755283E207C585851BED10443796711728",
+      "semantic_leaves": 171,
+      "independent_typed_declaration_full_result": "MATCHED",
+      "cross_process_bytes_match": true
+    }
+  ],
+  "typed_check_rows_verified": 37696,
+  "policy_opaque_fresh_original_limit": "NEW_OPAQUE_BINDING_AFTER_ADMISSION_NORMALIZE_AND_RECONSTRUCTION;GENERIC_FRESH_ORIGINAL_TRUE_SEPARATE",
+  "target_version_cases": [
+    {
+      "case_id": "OPTIONAL_UNKNOWN_VERSION",
+      "status": "PASS",
+      "expected": [
+        {
+          "loadOrder": 0,
+          "packageId": "example.core",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": null
+        },
+        {
+          "loadOrder": 1,
+          "packageId": "example.material",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": "1.1"
+        }
+      ],
+      "actual": [
+        {
+          "loadOrder": 0,
+          "packageId": "example.core",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": null
+        },
+        {
+          "loadOrder": 1,
+          "packageId": "example.material",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": "1.1"
+        }
+      ],
+      "views_compared": 5,
+      "positive_required_helper_invoked": false
+    },
+    {
+      "case_id": "KNOWN_DISTINCT_VERSION",
+      "status": "PASS",
+      "expected": [
+        {
+          "loadOrder": 0,
+          "packageId": "example.core",
+          "compatibilityVersionRange": "1.5;1.6",
+          "modVersion": "2.1.0"
+        },
+        {
+          "loadOrder": 1,
+          "packageId": "example.material",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": "1.1"
+        }
+      ],
+      "actual": [
+        {
+          "loadOrder": 0,
+          "packageId": "example.core",
+          "compatibilityVersionRange": "1.5;1.6",
+          "modVersion": "2.1.0"
+        },
+        {
+          "loadOrder": 1,
+          "packageId": "example.material",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": "1.1"
+        }
+      ],
+      "views_compared": 5,
+      "positive_required_helper_invoked": false
+    },
+    {
+      "case_id": "REVERSE_NO_INFERENCE_VERSION",
+      "status": "PASS",
+      "expected": [
+        {
+          "loadOrder": 0,
+          "packageId": "example.core",
+          "compatibilityVersionRange": "",
+          "modVersion": "2.1.0"
+        },
+        {
+          "loadOrder": 1,
+          "packageId": "example.material",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": "1.1"
+        }
+      ],
+      "actual": [
+        {
+          "loadOrder": 0,
+          "packageId": "example.core",
+          "compatibilityVersionRange": "",
+          "modVersion": "2.1.0"
+        },
+        {
+          "loadOrder": 1,
+          "packageId": "example.material",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": "1.1"
+        }
+      ],
+      "views_compared": 5,
+      "positive_required_helper_invoked": false
+    },
+    {
+      "case_id": "OPTIONAL_EMPTY_VERSION",
+      "status": "PASS",
+      "expected": [
+        {
+          "loadOrder": 0,
+          "packageId": "example.core",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": ""
+        },
+        {
+          "loadOrder": 1,
+          "packageId": "example.material",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": "1.1"
+        }
+      ],
+      "actual": [
+        {
+          "loadOrder": 0,
+          "packageId": "example.core",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": ""
+        },
+        {
+          "loadOrder": 1,
+          "packageId": "example.material",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": "1.1"
+        }
+      ],
+      "views_compared": 5,
+      "positive_required_helper_invoked": false
+    },
+    {
+      "case_id": "GENERIC_VERSION_TEXT",
+      "status": "PASS",
+      "expected": [
+        {
+          "loadOrder": 0,
+          "packageId": "example.core",
+          "compatibilityVersionRange": "1.6; α \t\n",
+          "modVersion": "内容:2.1.0 / (null) \t\n"
+        },
+        {
+          "loadOrder": 1,
+          "packageId": "example.material",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": "1.1"
+        }
+      ],
+      "actual": [
+        {
+          "loadOrder": 0,
+          "packageId": "example.core",
+          "compatibilityVersionRange": "1.6; α \t\n",
+          "modVersion": "内容:2.1.0 / (null) \t\n"
+        },
+        {
+          "loadOrder": 1,
+          "packageId": "example.material",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": "1.1"
+        }
+      ],
+      "views_compared": 5,
+      "positive_required_helper_invoked": false
+    },
+    {
+      "case_id": "OPTIONAL_MISSING_VERSION",
+      "status": "PASS",
+      "expected": [
+        {
+          "loadOrder": 0,
+          "packageId": "example.core",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": null
+        },
+        {
+          "loadOrder": 1,
+          "packageId": "example.material",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": "1.1"
+        }
+      ],
+      "actual": [
+        {
+          "loadOrder": 0,
+          "packageId": "example.core",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": null
+        },
+        {
+          "loadOrder": 1,
+          "packageId": "example.material",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": "1.1"
+        }
+      ],
+      "views_compared": 5,
+      "positive_required_helper_invoked": false
+    }
+  ],
+  "canonical_crossprocess_pairs": 71,
+  "runner_metadata_master": {
+    "assembly": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R11-POLICY-ENCODING-INDEPENDENT-S1-20261009\\runner\\QaCodecRunner.exe",
+    "pdb": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R11-POLICY-ENCODING-INDEPENDENT-S1-20261009\\runner\\QaCodecRunner.pdb",
+    "mvid": "28d940e7-3bcb-49cc-89e3-09cdcfc9d821",
+    "codeviewGuid": "d44e12ce-92be-4c41-9103-8ce2656f29dd",
+    "pdbGuid": "d44e12ce-92be-4c41-9103-8ce2656f29dd",
+    "codeviewMatched": true,
+    "documents": [
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R11-POLICY-ENCODING-INDEPENDENT-S1-20261009\\Program.cs",
+        "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+        "expected": "07F9107AECCE5B8817E57F178BCE33D59DD2C4C69C8D377283469B58A88CE76B",
+        "actual": "07F9107AECCE5B8817E57F178BCE33D59DD2C4C69C8D377283469B58A88CE76B",
+        "matched": true
+      }
+    ]
+  },
+  "source_scope": {
+    "at": "2026-10-09T14:49:53.002071+09:00",
+    "files": [
+      {
+        "current": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R11-bec3d350\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+          "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+          "bytes": 156431
+        },
+        "prior": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R10-81a28ecb\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+          "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+          "bytes": 156431
+        },
+        "matched": true
+      },
+      {
+        "current": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R11-bec3d350\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+          "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+          "bytes": 1774
+        },
+        "prior": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R10-81a28ecb\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+          "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+          "bytes": 1774
+        },
+        "matched": true
+      }
+    ],
+    "prefix_bytes": 72547,
+    "prefix_sha256": "F3C4F865F1E2A898BF240A2D096195870D77A52408CF2D93664FE15092A2A887",
+    "prefix_match": true,
+    "diff": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R11-POLICY-ENCODING-INDEPENDENT-S1-20261009\\SOURCE_SCOPE_DIFF.txt",
+      "sha256": "F6372A03EFC8B89910E5DC134D7D76D0A15DBC749F5C55CE55F9008544F1BA3C",
+      "bytes": 12980
+    },
+    "production_modify_builds": 0
+  },
+  "general_schema": "CURRENT_V1_ONLY_STATIC_OPEN_NOT_GENERAL_VERSION_PROOF",
+  "actual_thread": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:77",
+    "revision": 77,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a11f2c-c822-7bb3-a9e5-ae2090c2e5f9",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791524390,
+      "completedAt": 1791525329,
+      "durationMs": 938979
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ac881cfa4a087d092774106404e96f5",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016ac881cfa4a087d092774106404e96f5",
+      "turnId": "01a11f2c-c822-7bb3-a9e5-ae2090c2e5f9",
+      "phase": "final_answer",
+      "text": "R11 독립 QA를 완료하고 마스터에게 보고했습니다. 현재 정책 schema의 정상 검증은 두 프로세스에서 각각 247개 통과했습니다. 일반 schema·native 범위와 producer 포장 문제는 미해결로 기록했습니다. QA 보고서 다음 지시를 기다리겠습니다."
+    },
+    "latestToolMarkerId": "exec-14798074-891a-4cfc-b36a-d4c57307c9be",
+    "latestToolMarker": {
+      "id": "exec-14798074-891a-4cfc-b36a-d4c57307c9be",
+      "turnId": "01a11f2c-c822-7bb3-a9e5-ae2090c2e5f9",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "actual_execution_thread_read": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R11_QA_ACTUAL_THREAD_READ_20261009.json",
+  "direct_transport_verified": true,
+  "master_execution_builds": 0,
+  "verification_status": "MASTER_DISPOSED",
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD",
+  "master_disposition_at": "2026-10-09T15:57:01.386910+09:00",
+  "master_verdict": "ACCEPTED_R11_SCOPED_CURRENT_POLICY_ENCODING_OPAQUE_BINDING_PASS_STATIC_QUALIFIED_PACKAGING_REVISION_REQUIRED_NATIVE_UNTESTED",
+  "master_review_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R11_POLICY_ENCODING_INDEPENDENT_S1_20261009.md",
+  "master_review_sha256": "10AFACCD7DDA915BE671BBB45202FA656BF11CB4204219FE46A5C8815253BADC",
+  "other_defects_closed": false,
+  "next_technical_direction": "R12_PACKAGE_ORDER_APPROVED_TO_PREPARE_NOT_SENT;ORDER_CACHE_PATCH_SETTINGS_NATIVE_SEPARATE"
+}

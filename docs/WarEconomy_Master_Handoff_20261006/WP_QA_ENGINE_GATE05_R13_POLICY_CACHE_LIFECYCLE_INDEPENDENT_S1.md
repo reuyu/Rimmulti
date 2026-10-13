@@ -1,0 +1,47 @@
+# WP_QA_ENGINE_GATE05_R13_POLICY_CACHE_LIFECYCLE_INDEPENDENT / S1
+
+APPROVED scope, PREPARED NOT SENT until original Sol's R13 preparation terminal evidence is accepted and actual idle is checked. Delivery SOL-GATE05-R13-POLICY-CACHE-LIFECYCLE-INDEPENDENT-S1-20261009-01. Recipient original Review WarEconomyMod QA /01a11583-ff90-73e0-8916-d021e2bb038d/local;Master01a1156b-97ec-7ce0-9e4a-dfc4a3acb174/local. Dedicated Server final runtime DomainAuthority;Master release/closure. No new agent/model/account/Dispatcher/C task.
+
+## Exact admission
+
+Read AGENTS/canonical docs/요구사항_명세서.md/currentgovernance/C corrections/acceptedADR006B/MD125..132, Master R13 E1 review, own accepted R13 preparation and R12 independent report/reference/limitations. Native/full Gate E2 not released. R12/R11/R9 PASS is historical; fresh R13 normal regression is required.
+
+Freeze manifest: C:\Users\user\Desktop\RimMulti\Dispatcher\A_TASKS\WE-A-ENGINE-GATE05-R13-POLICY-CACHE-LIFECYCLE-20261009-DIRECT-2661a749\MASTER_GATE05_R13_POLICY_CACHE_LIFECYCLE_REVIEW_FREEZE_MANIFEST.json
+
+Manifest SHA **3F831ED136C1A499943DE5F167620D6CF3032ECEA2FF294C7B1E279307D3B098**,72 files,POST_COMPLETION_REVIEW_SNAPSHOT (not producer pre-execution chronology).
+
+Selected DLL C:\Users\user\Desktop\RimMulti\Dispatcher\CANDIDATES\G05R13-2661a749\scratch\WorkerBridgeMod\Source\bin\Debug\net472\WarEconomy.WorkerBridge.PoC.dll
+SHA **EC04C539E4B6F057238F2D1A454B517333C3C11C4307C3CB73DD623A65FE044D**,242688 bytes,MVID **48adef37-dea2-41e0-aee6-b293e329a2b5**.
+Matching same-path PDB SHA **1EE3A671782F56B66346914160EFB00524695EDFFBC75262A249055C84D409DD**,61852 bytes. Census frozen path under same prefix scratch/WorkerBridgeMod/Source/EngineHostCensus.cs SHA **94A3FC201EEB10A11F25967B7BE2E6BBB5E8E3060282C760709AD83F2127773B**,166574 bytes. Validate4/4 PDB source against frozen manifest source files; original paths may still appear in CodeView but metadata is not execution.
+
+Alternate Release SHA B066F3C6B4C6FA4E94E7E9AB86FE7AE5121183B76E789AAC52149F8614E94324/MVID94055e10-b349-4c49-a37c-cb1338d83425/PDB5F6B73... metadata-only, not the executed candidate. Frozen managed dependencies4 manifest C:\Users\user\Desktop\RimMulti\Dispatcher\A_TASKS\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\MASTER_R5_MANAGED_QA_DEPENDENCIES_MANIFEST.json, actual SHA from Master send/admitted sidecar. Do not read/copy/reload installed Steam candidate; known BB3B52... incident OPEN. Mutable production source/bin/obj must not be loaded,modified or rebuilt.
+
+## One independent verification objective
+
+Independently establish the observed normal valid policy/cache lifecycle and standalone core ownership/coherent entry semantics of selected frozen R13, plus static completeness/required correction and fresh codec/order/policy regressions. The global `_globalCache` is private; no QA publication to global provider. Standalone ContentProfileCacheCore is a separate normal instance, not canonical state. Do not mistake core PASS for actual loaded-content/profile/native execution, or process-local generation for world/adopted profile revision/fencing.
+
+Before final runner build/calls reconcile actual source/API/type/epoch/clone/contract/canonical formatter with own preparation. Mark prospective expectations corrected with source anchors; original preparation bytes remain unchanged. Define independently literal valid current-v1 policy A/B, full manifest expected carrier, exact JSON/reference UTF8 bytes/fingerprint/digest and complete typed expected snapshots. Standard Json.NET primitive formatting may be used only with declared shared-library limitation; candidate codec/normalizer/observed outputs may not manufacture the oracle. No candidate result then expectation adjustment.
+
+New QA-owned managed runner build allowed. Positive pure codec/declaration/digest/CheckPackagePolicy/admitted serialization/normal helper calls allowed. **New R13 only**: valid current-v1 Configure(record/declaration), HasConfigured/Configured snapshots, ConfigurationGeneration, Clear, explicit InvalidateCache, empty cached diagnostics/getters that do not automatically Compute. Use legitimate normal initial/Clear empty state queries; never call actual admission after Clear to manufacture rejection.
+
+Separate standalone normal instance controls: ConfigureA→capture valid current stamp→publish full matching A manifest/JSON/fingerprint→repeat coherent entry/copy queries→legitimate ConfigureB clearsA→capture new stamp→publish full matchingB→same-policy reconfigure clearsB; legitimate Clear empties configured/cache state; explicit invalidate preserves configured policy and removes entry; normal new current-stamp publication after invalidate only. Observe actual R13 generation rule (Invalidate currently keeps configuration generation) independently from the static missing invalidation-epoch problem; do not prescribe a guessed runtime rule.
+
+Full typed policy/state/entry/generation/policyId/revision/digest/contract/JSON/fingerprint/manifest order-version/multiplicity must be compared to independent expectations; preserve caller inputs separately. Test normal alias/ownership through ordinary caller input list or returned manifest/policy copies on the standalone core; mutation must not seed global provider/canonical state. Read immutable coherent entry as one snapshot; separate getters do not prove atomic cross-call state. CachedAtUtc is observed diagnostic time, not deterministic canonical bytes/world ordering.
+
+Fresh regression includes R12 all9Check result fields/rawphysical vs effectiveexecution sequence/fullcaller unchanged/fulladmitted record-versionassociation/physicalpermutation canonical equality/distinct normal execution meaning with matching policies only/fresh original policy-bearing canonicalNormalize=true BEFORE externalNormalize/admission; R11 current-v1 opaque ID/revision whitespaceUnicode independent declaration JSON/hash; R9 full version meaning; historical65 typedleaves/numeric/null-width/multiplicity. No TC20-style nonnull/firstindex oracle.
+
+## Static only obligations and prohibited execution
+
+Audit captured generation/policy at ComputeActualContentProfileFingerprint, later policy recapture in ComputeActualManifest, TryPublish refusal that still returns fingerprint, explicit invalidate without stamp advancement, cross-call getters and core separate manifest/JSON/fingerprint coherence checks. No stale/mismatched/race/invalid fixtures are constructed or executed. General schema/guard parity/patchsettings/material/operator/native remain qualified OPEN. Source findings are not executed race proof.
+
+Production/global actual GetActual/ComputeActual*/collection, native/game/operator/control-plane/promotion, producer runner replay, old/stale stamp/cross-policy mismatch/rejection/tied/gapped/unknownschema/ambiguity/negative/adverse execution forbidden. No public static Seed/Install/Override/globalcore access/private reflectionmutation/testbypass/hostile profile injection. Metadata reads are permitted; assembly reflection invocation only in admitted pure normal runner, never hidden private writes. Producer TC13 stale-stamp and TC19 cross-policy mismatch calls were out of scope and contradict report0; read frozen source/raw defensively, do not rerun/repair/recertify them.
+
+If source already demonstrates a blocker, report it. It need not prevent useful bounded normal core checks, but do not expand or prove native success. A production correction/newcandidate requires Master fresh freeze and new independent verification.
+
+## Complete new evidence graph
+
+Write exclusively QA-Tactical-Engine/GATE05-R13-POLICY-CACHE-LIFECYCLE-INDEPENDENT-S1-20261009 and docs/QA_EngineHost_Gate05_R13_Policy_Cache_Lifecycle_Independent_S1_20261009.md. ACK/result unique;dedupe/no reuse of historical result IDs. Fresh QA final source/oracle/compiler toolchain resolved framework→build(actualnumericexit)→final runner DLL/PDB/source checks→prepin→separate en-US/de-DE processes→post. Native0/productionmodification/rebuild0;actual PID/culture/argv/cwd/loaded assembly SHA-MVID/pinned dependencies/fullraw/tool numericexit must be saved. Scope evidence must enumerate actual calls, not a hardcoded0 declaration.
+
+**Each process writes into its own immutable RUN_ID directory from the beginning.** Enumerate EVERY generated sidecar/output and hash/size before starting the second process, including actual context/reference stage/policy-cache results, then verify first directory unchanged. Maintain complete inventory independent of a stale hardcoded filename list. Never overwrite first-run central sidecars. Fail/report graph incomplete rather than recreate a missing original. Cross-process canonical and typed comparisons reference retained per-case/input/reference files and exact process inventories. Derived records must state derivation and retained input references.
+
+Read protected baseline path/hash/count from actual Master send. Before/after rehash immutable baseline and selected candidate72; authorized mutableproduction/Steam excluded. Evidence manifest/resultindex/ACK_COMPLETION_BINDING/COMPLETIONlast bound to report/result/WP/S1/actual selectedcandidate. Save direct Master ACK/terminal send tool proof separately without retrochanging original ACK manifest. Master original endpoint authorized by human for routine agent communication. Complete and directly report without usercontinue. Full Gate E2 not released/no selfclosure/FoundationHOLD.

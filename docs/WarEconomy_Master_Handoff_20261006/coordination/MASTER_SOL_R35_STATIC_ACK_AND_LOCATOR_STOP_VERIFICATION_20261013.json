@@ -1,0 +1,35 @@
+{
+  "at": "2026-10-13T20:02:32.327803+09:00",
+  "delivery_id": "SOL-GATE05-R35-PUBLISHER-INDEPENDENT-STATIC-S1-20261013-01",
+  "result_id": "SOL-GATE05-R35-PUBLISHER-INDEPENDENT-STATIC-S1-20261013-dd261024fa244f6d80c2ac57e8e9a299",
+  "ACK": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R35-PUBLISHER-INDEPENDENT-STATIC-S1-20261013\\ACK_INITIAL.json",
+    "sha256": "E2EF90D0C15554347D6791B60982C17A24547109D046DE8F9A0CDB11050981C5",
+    "bytes": 2062
+  },
+  "bootstrap": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R35-PUBLISHER-INDEPENDENT-STATIC-S1-20261013\\bootstrap.TOOL.json",
+    "sha256": "ABEAA36A1C82389C9924141B694BD413CB924688F391DA60C96553BFC714F1CB",
+    "bytes": 1391
+  },
+  "bootstrap_exit0": true,
+  "first_full_stdout5804223": true,
+  "prospective_helper_interpreter_pins_checked": true,
+  "protected19229_actual_rehash": true,
+  "frozen34_actual_rehash": true,
+  "initial_before_rows_match": true,
+  "stop_notice": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R35-PUBLISHER-INDEPENDENT-STATIC-S1-20261013\\STOP_PASSIVE_LOCATOR_NOTICE.json",
+    "sha256": "794D846D86E143AEBE0D42C98FF9361E0A6A48C4A919A89766588A72C6F3CB1D",
+    "bytes": 1081
+  },
+  "own_passive_locator_exit1_not_candidateFAIL": true,
+  "failed_transcript_scope": "actual original Sol conversation retained, Master read_thread copy has explicit truncation",
+  "master_own_symbol_search_first_PowerShell_brace_expansion_parser_exit1": "read-only, no files modified; corrected explicit two file argv next exit0",
+  "actual_symbols": "WorkerBridge.cs:4581 GetExpectedPackagePolicyRecord(); EngineHostCensus.cs:3456 ExpectedPackagePolicyDeclaration; 3476 ExpectedPackagePolicyRecord. No PackagePolicyService guessed class.",
+  "candidate_compiler_publisher_native_executions": 0,
+  "guard_run": "MASTER-R35-STATIC-ACK-20261013-01",
+  "guard_session": 79169,
+  "Foundation": "HOLD",
+  "nativeE2": "NOT_RELEASED"
+}

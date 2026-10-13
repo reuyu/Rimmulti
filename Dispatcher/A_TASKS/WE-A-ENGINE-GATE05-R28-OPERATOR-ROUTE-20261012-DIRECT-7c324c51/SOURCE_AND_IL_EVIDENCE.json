@@ -1,0 +1,128 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51",
+  "wp_id": "WP_ENGINE_GATE05_R28_OPERATOR_ROUTE",
+  "wp_revision": "GATE05-R28-OPERATOR-ROUTE",
+  "envelope": 31,
+  "generated_at": "2026-10-12T04:56:00+09:00",
+  "inspected_frozen_dependencies": [
+    {
+      "assembly_name": "Assembly-CSharp.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\Assembly-CSharp.dll",
+      "sha256": "5CF1B5BE399D5B1C9C56CA72C9D35B4ECF307FEACF5859D04AC5A1AA5926356A",
+      "size_bytes": 15777280
+    },
+    {
+      "assembly_name": "UnityEngine.CoreModule.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\UnityEngine.CoreModule.dll",
+      "sha256": "C5C58EA254834291780A1D6C388C241443D07167B4A4B890A23C9494F626DDBA",
+      "size_bytes": 1386688
+    }
+  ],
+  "il_evidence_anchors": {
+    "gen_command_line_try_get_arg": {
+      "type": "Verse.GenCommandLine",
+      "method": "public static bool TryGetCommandLineArg(string key, out string value)",
+      "il_size_bytes": 96,
+      "key_opcodes": [
+        "IL_0000: call string[] [mscorlib]System.Environment::GetCommandLineArgs()",
+        "IL_000d: ldc.i4.s 61 (char '=')",
+        "IL_000f: callvirt instance bool [mscorlib]System.String::Contains(char)",
+        "IL_0014: brfalse.s IL_0051 (skip if no '=')",
+        "IL_0019: ldc.i4.s 61",
+        "IL_001b: ldc.i4.0",
+        "IL_001c: callvirt instance string[] [mscorlib]System.String::Split(char, StringSplitOptions)",
+        "IL_0025: ldc.i4.2",
+        "IL_0026: bne.un.s IL_0051 (skip if split length != 2)",
+        "IL_002b: ldarg.0",
+        "IL_002c: ldc.i4.1 (ignoreCase)",
+        "IL_002d: call int32 [mscorlib]System.String::Compare(string, string, bool)",
+        "IL_0032: brfalse.s IL_004a (match key)",
+        "IL_0037: ldstr \"-\"",
+        "IL_003c: ldarg.0",
+        "IL_003d: call string [mscorlib]System.String::Concat(string, string)",
+        "IL_0042: ldc.i4.1",
+        "IL_0043: call int32 [mscorlib]System.String::Compare(string, string, bool)",
+        "IL_0048: brtrue.s IL_0051 (match -key)",
+        "IL_004a: ldarg.1",
+        "IL_004c: ldloc.2",
+        "IL_004d: ldc.i4.1",
+        "IL_004e: ldelem.ref",
+        "IL_004f: stind.ref (assign value = split[1])",
+        "IL_0050: ldc.i4.1",
+        "IL_0051: ret (return true)"
+      ],
+      "technical_finding": "Enforces -key=value format strictly. Space-separated arguments (-key value) are completely ignored because arg does not contain '='. Values with internal '=' fail split.Length == 2 check."
+    },
+    "gen_file_paths_save_data_folder": {
+      "type": "Verse.GenFilePaths",
+      "method": "public static string get_SaveDataFolderPath()",
+      "il_size_bytes": 266,
+      "key_opcodes": [
+        "IL_0000: ldsfld string Verse.GenFilePaths::saveDataPath",
+        "IL_0005: brtrue IL_0104 (return cached path if set)",
+        "IL_000a: ldstr \"savedatafolder\"",
+        "IL_000f: ldloca.s V_0",
+        "IL_0011: call bool Verse.GenCommandLine::TryGetCommandLineArg(string, string&)",
+        "IL_0016: brfalse.s IL_006f",
+        "IL_0029: callvirt instance string [mscorlib]System.String::TrimEnd(char[])",
+        "IL_0053: ldloc.0",
+        "IL_0054: stsfld string Verse.GenFilePaths::saveDataPath",
+        "IL_0059: ldstr \"Save data folder overridden to \"",
+        "IL_0068: call void Verse.Log::Message(string)"
+      ],
+      "technical_finding": "Vanilla RimWorld natively evaluates -savedatafolder=<path> via GenCommandLine at the earliest startup stage, overrides GenFilePaths.saveDataPath, and creates the directory. Passing -savedatafolder=\"{SelectedUserDataDirectory}\" to child process satisfies frontend UserData routing natively without bytecode modification."
+    },
+    "static_constructor_on_startup_utility": {
+      "type": "Verse.StaticConstructorOnStartupUtility",
+      "method": "public static void CallAll()",
+      "il_size_bytes": 130,
+      "key_opcodes": [
+        "IL_000a: call class List<Type> Verse.GenTypes::AllTypesWithAttribute<StaticConstructorOnStartup>()",
+        "IL_0025: call void [mscorlib]System.Runtime.CompilerServices.RuntimeHelpers::RunClassConstructor(valuetype [mscorlib]System.RuntimeTypeHandle)"
+      ],
+      "technical_finding": "Invoked during PlayDataLoader.DoPlayLoad queued in LongEventHandler. Executes WorkerBridgeBootstrapper.cctor() synchronously before interactive gameplay."
+    },
+    "unity_add_component_and_awake": {
+      "type": "UnityEngine.GameObject / UnityEngine.MonoBehaviour",
+      "method": "go.AddComponent<WorkerBridgeComponent>()",
+      "technical_finding": "Unity native engine invokes MonoBehaviour.Awake synchronously on the calling thread inside AddComponent before returning. WorkerBridgeBootstrapper installs _activeAdmissionReceipt into WorkerBridgeComponent immediately before calling AddComponent, guaranteeing receipt presence in Awake."
+    }
+  },
+  "searched_source_roots_and_callsites": [
+    {
+      "root": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "B292AB846F78568F74333F58C5967ED38CAAA2F59B07393FC846F4329583E388",
+      "total_lines": 5027,
+      "analyzed_spans": [
+        {
+          "lines": "43-137",
+          "symbol": "WorkerBridgeBootstrapper.cctor()",
+          "finding": "Parses only self7 arguments (-operatorconfig, -operatorconfigsha, -operatororigin, -operatorlaunchplan, -operatorconfigid, -operatorrole, -operatorcapability) for current process. Has zero logic to receive or admit a paired child configuration."
+        },
+        {
+          "lines": "413-436",
+          "symbol": "WorkerBridgeComponent._activeAdmissionReceipt / TryInstallOperatorStartupConfig",
+          "finding": "Maintains single static slot for own startup receipt. Has zero slots for a separate admitted child receipt."
+        },
+        {
+          "lines": "2190-2345",
+          "symbol": "WorkerBridgeComponent.HandleLaunchOperatorValidator(string arg)",
+          "finding": "Reads executable, working directory, and arguments directly from parent _activeStartupConfig. Formats child arguments as '--task-file ... --nonce ...' without passing 7 operator CLI flags. Child process would immediately fail-closed in WorkerBridgeBootstrapper."
+        }
+      ]
+    },
+    {
+      "root": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Program.cs",
+      "sha256": "186F6929944A942F9943B71FF6023F09C6D3380BC7C45041DE3B098C0B8101C5",
+      "total_lines": 114,
+      "finding": "Dedicated Server hosts WorldTickManager, DiplomacyManager, DynamicMarketManager, FeudalManager, and TcpNetworkServer (port 7777). Contains zero operator producer, zero child launcher, and zero admission receipt generation code."
+    },
+    {
+      "root": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\run_semantic_authority_gate_05.py",
+      "sha256": "1052E2B89544DE5E08FD54DEFFFE32304192BCBFBE1527648BDE5223DF93FA86",
+      "total_lines": 1792,
+      "finding": "Driver script launches RimWorld with [-batchmode, -savedatafolder=..., -logFile=..., -bridgeport=...]. Does not pass operator CLI arguments."
+    }
+  ],
+  "producer_presence_determination": "MISSING_FROM_RUNTIME_SOURCE: An actual operator-owned producer that supplies a paired READ_ONLY child configuration and declaration to the live simulation worker does not exist in any live codebase root."
+}

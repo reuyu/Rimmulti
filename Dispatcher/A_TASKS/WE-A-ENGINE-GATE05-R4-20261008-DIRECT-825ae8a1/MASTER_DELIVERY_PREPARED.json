@@ -1,0 +1,124 @@
+{
+  "task": {
+    "dispatch_id": "WE-A-ENGINE-GATE05-R4-20261008-DIRECT-825ae8a1",
+    "recipient": "A",
+    "approved": true,
+    "wp_id": "WP_ENGINE_GATE05_R4",
+    "wp_revision": "GATE05-R4",
+    "delivery_envelope_revision": 7,
+    "created_at": "2026-10-08T15:59:34.755965+09:00",
+    "approved_at": "2026-10-08T15:59:34.755965+09:00",
+    "approval_source": "User automatic A follow-up routing and latest continue; Master accepted independent R3 static findings within same Engine repair scope",
+    "status": "PREPARED_NOT_SENT",
+    "delivery_status": "NOT_SENT",
+    "route": "computer-use/Antigravity",
+    "delivery_owner": "Master",
+    "instruction_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R4-20261008-DIRECT-825ae8a1\\INSTRUCTIONS.md",
+    "work_package_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_ENGINE_GATE05_R4.md",
+    "work_package_sha256": "A9185797400A258CEA765A6676C1DE7FAB6CFD640F947AEEA5CE9EA98D8E9021",
+    "release_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R3_INDEPENDENT_QA_S1_20261008.md",
+    "release_sha256": "7198E525670984E5330D2F9B1B3C8417036B8A414571BE28182708F1948AE5CB",
+    "follows_dispatch_id": "WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa",
+    "preservation_policy": {
+      "kind": "ENGINE_REPAIR_ARCHIVED_BASELINE",
+      "engine_archive_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\ENGINE_GATE05_BASELINE_BEFORE_R1_20261008\\ARCHIVE_MANIFEST.json",
+      "engine_archive_manifest_sha256": "B6AD0A70EA4C13F5040A3BAEE690DBCDDEB8735842FCB482D66352A8FB05F0F1",
+      "pipeline_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\MASTER_REV6_R1_FREEZE_MANIFEST.json",
+      "pipeline_manifest_sha256": "EBCDDBB9340DECBC9ED436845A231412B9003F42663E29D3EE767450319E53A0",
+      "allowed_changed_engine_paths": [
+        "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+        "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+        "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+        "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+        "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+        "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+        "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+        "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+        "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj"
+      ],
+      "installed_gate05_immutable": true,
+      "pipeline_original_frozen_immutable": true,
+      "prior_candidate_freeze_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa\\MASTER_GATE05_R3_REVIEW_FREEZE_MANIFEST.json",
+      "prior_candidate_freeze_manifest_sha256": "124C6AA900CB50ECE5C2F31B75BC197ACA194995BB90BDEDBD7EDA6B830E0972",
+      "additional_preserved_candidate_manifests": [
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R1-20261008-DIRECT-971a4780\\MASTER_GATE05_R1_REJECTED_FREEZE_MANIFEST.json",
+          "sha256": "1196930576154C11351387B10EAB017C51D6BB027A1686317AB8DF8DAB73022E",
+          "lineage": "R1_REJECTED147"
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R2-20261008-DIRECT-2af10708\\MASTER_GATE05_R2_REJECTED_FREEZE_MANIFEST.json",
+          "sha256": "110A796F5699495998D61503016F8F7C0430B9EC988DD20220D51416AACD421C",
+          "lineage": "R2_REJECTED107"
+        }
+      ],
+      "prior_candidate_lineage": "R3_REVIEW133",
+      "known_installed_incident": {
+        "id": "ENGINE-INSTALLED-IDENTITY-20261008-01",
+        "status": "OPEN",
+        "expected_old_sha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+        "observed_sha256_at_dispatch": "BB3B52F39F7B53B70BC9FB4CE039E7455D08B24B17B8DABB8295E0FF4584DD61",
+        "not_new_approval_to_modify_or_restore": true
+      },
+      "qa_preserved_manifests": [
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\qa-evidence-manifest.json",
+          "sha256": "504F3D59AF10151B4CE6A8F373A88C639DA76945B6BA5F67239DE88021CBC864"
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-20261007\\EVIDENCE_MANIFEST.json",
+          "sha256": "D2AC8C184A7E79D8FEB98FDBB427C08B2B1C1D40FC4F0216506B345787C7BA08"
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\EVIDENCE_MANIFEST.json",
+          "sha256": "394E4F72E4487CB0E24055470098FB120BCB26D2B27F19A3D36A6CB7FCA4100D"
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S2-20261007\\EVIDENCE_MANIFEST.json",
+          "sha256": "07C5D67D3FB4946E3C65C97817ABC3B2E447A23C8625806F9BA730B4FD624897"
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R3-QA-PREP-S1-20261008\\EVIDENCE_MANIFEST.json",
+          "sha256": "CA4177F0A12A65C47DB3D0A7DD6659EE195B1AF6D264E70ABDD44AAFB010BEE6"
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R3-INDEPENDENT-REVIEW-S1-20261008\\EVIDENCE_MANIFEST.json",
+          "sha256": "D144F88571A9A2F8BC51DBF993FDA1847C177CDC40ABF07BA8FC45E926E685F4"
+        }
+      ]
+    },
+    "ack_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R4-20261008-DIRECT-825ae8a1\\ACK.json",
+    "completion_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R4-20261008-DIRECT-825ae8a1\\COMPLETION.json",
+    "runtime_verdict": null,
+    "ack_existed_before_delivery": false,
+    "completion_existed_before_delivery": false,
+    "prerequisites": [
+      "real Master exclusive lock",
+      "fresh exact A conversation idle",
+      "no active/unknown A delivery",
+      "immutable archive/prior/Pipeline/QA bytes matched",
+      "known installed incident unchanged",
+      "actual UI submission before same hourly monitor activation"
+    ],
+    "reference_paths": [
+      "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R3_INDEPENDENT_QA_S1_20261008.md",
+      "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R3_E1_20261008.md",
+      "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R3_Independent_Review_S1_20261008.md",
+      "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R3-INDEPENDENT-REVIEW-S1-20261008\\CORRECTION_PRIORITIES.md",
+      "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R3-INDEPENDENT-REVIEW-S1-20261008\\INDEPENDENT_FINDINGS.md",
+      "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\C_REVIEW_CORRECTIONS_CONSOLIDATED.md",
+      "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\history\\MASTER_DECISION_LOG_MDR-067.md",
+      "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\REFERENCE_MOD_REUSE_ANALYSIS_20261008.md",
+      "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa\\MASTER_GATE05_R3_REVIEW_FREEZE_MANIFEST.json"
+    ],
+    "instruction_sha256": "75ADCAD758E08C98AEEC6B9FB31FBA4A23E0AAED1EC723490ABA7AE984D8C8BE",
+    "exact_message_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R4-20261008-DIRECT-825ae8a1\\UI_MESSAGE.txt",
+    "exact_message": "Master 승인 새 작업: C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R4-20261008-DIRECT-825ae8a1\\INSTRUCTIONS.md 를 전체 읽고 WP_ENGINE_GATE05_R4/GATE05-R4를 수행하세요. R3와 Sol 독립 리뷰는 완료·보존됐습니다. 먼저 새 task에 ACK.json, 마지막에 표준 COMPLETION.json을 작성하세요. 정상 native가 없으면 BLOCKED/UNTESTED로 정확히 보고하고, 다른 WP 처리 중이면 중복 시작하지 마세요.",
+    "exact_message_sha256": "75BBBC2110FE42A84D097D0C3590BF2D885E1ED8485A0936C88DB363059A1E3C",
+    "preservation_before_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R4-20261008-DIRECT-825ae8a1\\MASTER_PRESERVATION_BEFORE_DISPATCH.json",
+    "preservation_before_sha256": "4CC1B1BE65E2A98FFFCB3E875628C4DFD9AE647D101D63748EFCFD802BCD3D45"
+  },
+  "actual_delivery": false,
+  "exclusive_lock_session": 19419,
+  "monitor": "PAUSED_UNTIL_CONFIRMED_SUBMISSION"
+}

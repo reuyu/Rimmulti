@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-13T12:22:07.716801+09:00",
+  "delivery_id": "SOL-GATE05-R33-RESOURCE-NATIVE-PREP-S1-20261013-01",
+  "result_id": "SOL-GATE05-R33-RESOURCE-NATIVE-PREP-S1-20261013-9c4a33b402fc4af68d5ac55a9c97009c",
+  "resume_id": "SOL-GATE05-R33-RESOURCE-NATIVE-PREP-S1-RESUME-R1-20261013-01",
+  "actual_inactive": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R33_CONTINUE_SOL_SNAPSHOT_20261013.json",
+    "sha256": "ABBC81696D1904560C077CA28EE2DD1C32ACE489DD259B53AEEB24B094EDEA5C",
+    "bytes": 1761
+  },
+  "partial_preservation": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R33_SOL_PREP_PARTIAL_PRESERVATION_20261013.json",
+    "sha256": "8630F4EA0354341C596368E7C7E5CF26A9ACB6EE316CF3C9A7751EB143DEBE0C",
+    "bytes": 7346
+  },
+  "resume_scope": "SAME_APPROVED_PREPARATION_NEW_METADATA_FINALIZE_FILES_ONLY",
+  "new_execution_admission": false
+}

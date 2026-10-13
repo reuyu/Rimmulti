@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-12T09:59:41.625707+09:00",
+  "kind": "MASTER_OWN_POST_DISPOSITION_JOURNAL_ARGUMENT_ERROR",
+  "original_error": "TypeError: dict() got multiple values for keyword argument 'at'",
+  "failed_metadata_helper_exit": 1,
+  "already_committed": [
+    "review",
+    "S1 preservation",
+    "S2 WP/baseline",
+    "proof",
+    "communication state",
+    "dedupe receipt",
+    "A additive preservation",
+    "QA metadata defect"
+  ],
+  "journal_delta_not_yet_written": true,
+  "correction": "reuse existing committed summary once; dict(summary,event=...)",
+  "candidate_build_execute": 0,
+  "QA_artifacts_modified": 0,
+  "failed_helper_not_rerun": true
+}

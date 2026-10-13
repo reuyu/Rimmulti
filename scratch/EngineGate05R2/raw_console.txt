@@ -1,0 +1,46 @@
+================================================================================
+WarEconomy Engine Gate05-R2 E1 Technical Verification Runner
+Execution Time: 2026-10-08T01:23:04.3613750Z
+Scope: WP_ENGINE_GATE05_R2 / GATE05-R2 (Operator-Owned Validator & Lossless Content)
+================================================================================
+
+--- SECTION 1: Binary Lineage & Cryptographic Provenance ---
+[PASS] PROV-01: Selected Debug Candidate DLL Exists & Hashed -- Path=C:\Users\user\Desktop\RimMulti\scratch\WorkerBridgeMod\Source\bin\Debug\net472\WarEconomy.WorkerBridge.PoC.dll, SHA256=57A4C8B75ABC2AD43E9A3E4215A23A35741E0E5B203CB57A63AA30BB59CBF54F, Size=192000
+[PASS] PROV-02: Selected Debug Matching PDB Exists & Hashed -- Path=C:\Users\user\Desktop\RimMulti\scratch\WorkerBridgeMod\Source\bin\Debug\net472\WarEconomy.WorkerBridge.PoC.pdb, SHA256=E0A7EC813C52AF3206DA6D0AE6122453027FF6CC1CB2A509AF9B80134CCFCA6E
+[PASS] PROV-03: Candidate MVID Cryptographically Bound -- MVID=8292a8ec-4a02-49dc-88e9-2c3d93e969f5
+[PASS] PROV-04: Release Candidate Separately Tracked (Non-Selected Alternate) -- Path=C:\Users\user\Desktop\RimMulti\scratch\WorkerBridgeMod\Source\bin\Release\net472\WarEconomy.WorkerBridge.PoC.dll, SHA256=25DEE284AC85F22031614541A4335FD78D1C0490DBB95BC77A28CED5329966C7
+
+--- SECTION 2: G05-S01 Issuer/Execution Authority & Operator-Owned Validator (MD-126/127/128/129) ---
+[PASS] G05-S01-01: Prohibit Public Caller REGISTER_VALIDATOR_PROCESS (MD-126/127) -- Response: 'ERROR: REGISTER_VALIDATOR_PROCESS by public caller is prohibited under Gate05-R2 (MD-126/MD-127). Validator process must be launched and owned by operator/simulator directly.'
+[PASS] G05-S01-02: Prohibit Public Caller SUBMIT_STAGE_VALIDATION_RECEIPT (MD-127) -- Response: 'STAGE_VALIDATION_REJECTED: Public/caller receipt submission is deprecated and prohibited under Gate05-R1 / MD-127. Authority must originate from registered operator-owned validator task and protected channel.'
+[PASS] G05-S01-03: Reject Caller-Supplied Payload in COMPLETE_STAGE_VALIDATION -- Response: 'STAGE_VALIDATION_REJECTED: Caller-supplied payload prohibited under MD-127.'
+[PASS] G05-S01-04: Public GET_ACTIVE_VALIDATOR_TASK Redacts Nonce & Channel Secret -- NonceRedacted=True, SecretRedacted=True, ChannelExposed=True
+[PASS] G05-S01-05: Operator Launches and Owns Fresh Validator Process Handle -- Response: 'OPERATOR_VALIDATOR_LAUNCHED: TaskId=VT_G05R2_S01_05_5652ab5b, Pid=16164, StartTime=2026-10-08T01:23:04.4776748Z, Exe='powershell.exe'', PID=16164
+[PASS] G05-S01-06: Reject Self-PID Validator Binding (Simulator != Validator) -- Response: 'ERROR: Self-validation prohibited.'
+[PASS] G05-S01-07: Reject Tampered Nonce in Task Execution -- Response: 'VALIDATION_FAILED: CapabilityNonce mismatch. Unauthorized task execution.'
+[PASS] G05-S01-08: Reject Tampered / Forged Channel Secret Token (Channel Protection) -- Response: 'STAGE_VALIDATION_REJECTED: Channel secret token mismatch.'
+[PASS] G05-S01-09: Reject Validator Result with Unregistered PID -- Response: 'STAGE_VALIDATION_REJECTED: Unregistered validator PID.'
+[PASS] G05-S01-10: Accept Genuine Operator Result & Consume Result File (MD-128) -- Response: 'STAGE_VALIDATION_ACCEPTED: ReceiptId=VR_20261008_012304_23f8858e86454bc3b9ac3402e857802a, ValidatorPid=5520, TaskId=VT_G05R2_S01_10_479e2ea7', ResultConsumed=True
+[PASS] G05-S01-11: Prevent Replay of Consumed ValidatorTask -- Response: 'STAGE_VALIDATION_REJECTED: ValidatorTask already consumed. Replay prohibited.'
+
+--- SECTION 3: G05-S02 MD-130 Lossless Content Profile & Def Census ---
+[PASS] G05-S02-01: Content Profile Schema Version is ADR-006B-v2 -- SchemaVersion=ADR-006B-v2
+[PASS] G05-S02-02: Lossless Invariant Float/Double Formatting (CultureInfo.InvariantCulture) -- MethodExists=True, CorrectInvariant=True
+[PASS] G05-S02-03: ThingDef StatBases Lossless Encoding with DefName and Exact Values -- Verified statBases serializes DefName=Value list instead of count-only
+[PASS] G05-S02-04: Strict Non-Empty/Uninitialized Gate for All 8 Def Families -- All 8 Def families throw InvalidOperationException when uninitialized
+[PASS] G05-S02-05: Complete Elimination of Display-Only :F Float Rounding -- All float/double fields use FormatLossless rather than display roundings
+[PASS] G05-S02-06: ContentProfileProvider Cache Invalidation & Revalidation -- IsCachedAfterInvalidate=False
+
+--- SECTION 4: Native Isolation Exploration & Boundary Proof ---
+[PASS] NAT-01: Steam Licensed Base Game Exists (Read-Only Input) -- SteamExe='C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64.exe', Exists=True
+[PASS] NAT-02: Gate05 Baseline DLL Preserved Immutable in Archive -- ArchivedBaselineSHA=2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C (Matches 2D64FF9C...), InstalledSteamSHA=BB3B52F39F7B53B70BC9FB4CE039E7455D08B24B17B8DABB8295E0FF4584DD61 (Preserved untouched; overwriting Steam Mods prohibited by policy)
+[BLOCKED] NAT-03: Independent Project-Owned Runtime Execution Feasibility -- Steam DRM wrapper present (False). Standalone execution requires licensed Steam runtime context. Overwriting Steam Mods prohibited by preservation policy. Reported honestly as BLOCKED/UNTESTED boundary.
+
+================================================================================
+GATE05-R2 TECHNICAL VERIFICATION SUMMARY
+================================================================================
+Total Checkpoints: 24
+PASS: 23
+FAIL: 0
+BLOCKED: 1
+UNTESTED: 0

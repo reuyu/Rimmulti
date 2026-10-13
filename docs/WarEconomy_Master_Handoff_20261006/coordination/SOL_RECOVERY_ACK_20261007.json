@@ -1,0 +1,313 @@
+{
+  "schema_version": 1,
+  "ack_id": "SOL-RECOVERY-20261007-01",
+  "status": "RECOVERY_COMPLETE_READY_FOR_SEPARATE_GATE05_E2_RELEASE",
+  "checked_at": "2026-10-07T17:59:10.689992+09:00",
+  "timezone": "Asia/Seoul",
+  "role": "Sol / Independent QA",
+  "thread_id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+  "root": "C:\\Users\\user\\Desktop\\RimMulti",
+  "master": {
+    "thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "host_id": "local",
+    "title": "rimworld mod dev IDE Master"
+  },
+  "direct_user_authorization": {
+    "message_id": "01a11588-b7db-7752-b11c-0651aed9a300",
+    "instruction": "사용자가 이 대화에서 QA 역할과 작업 완료시 지정 Master 보고를 명시함",
+    "message_id_source": "Master recovery brief / DISPATCHER_STATE.json; corresponding user instruction visible in this chat"
+  },
+  "latest_user_instruction": "QA 담당으로 Master의 자세한 지시를 기다리고 작업 완료시 Master에 보고한다.",
+  "documents_read": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\AGENTS.md",
+      "bytes": 4495,
+      "sha256": "C0888F67FA5F1B965B37D050340536D92A62B57277FCC8CC69D68842A6FB811E",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\MASTER_GOVERNANCE_CURRENT.md",
+      "bytes": 1192,
+      "sha256": "9C9A0B1C4105755BAB534EE9C79EC819BF9537E719427853D6CC72FE984A3CE0",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\�䱸����_������.md",
+      "bytes": 55777,
+      "sha256": "4D837B98434AEA9BA208D2391D528A6B370A2C01DC851DB503A8F49D9164CE12",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\MASTER_ARCHITECTURE_CORRECTIONS_MAC-001.md",
+      "bytes": 2294,
+      "sha256": "5179843DC636B82037FAB98628F38B07C337CC2B71D9A9C8187BFF1D2DC926D1",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_EngineHost_Semantic_Authority_Gate_05.md",
+      "bytes": 29563,
+      "sha256": "8749D510D794AA08B7B0482D377C0D72EAB65CB51C58E692898EEDD01A2FC168",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Semantic_Authority_Gate_04.md",
+      "bytes": 36099,
+      "sha256": "8CB8F52D9C3338DE26A2829CC4B92C4CC5A512EDE9523C608AA6DA1EE2727E1E",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\00_START_HERE.md",
+      "bytes": 2464,
+      "sha256": "122EF036E71C34E287374480C5D46EACCC3366DC4E9C4C2EA3C2898BFA035A61",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_HANDOFF.md",
+      "bytes": 3105,
+      "sha256": "714A016A1140C64CA5817CFEAC78542958E357A52F16523766DCEE17571C1B90",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\C_REVIEW_CORRECTIONS_CONSOLIDATED.md",
+      "bytes": 6091,
+      "sha256": "F5AC1B1C5F36EF73ECE2DBC416659E8913B1E9593BE65A2F3AA2B71A86E37370",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\C_REVIEW_HISTORY_EXTRACTS.md",
+      "bytes": 94401,
+      "sha256": "8708B3E7AD4ED40F4A0F5292FDF9BDCC12938751AD2B1E1425D6E757088D4230",
+      "read_scope": "index and Gate05-relevant acceptance, authority, temporal/global, lease/grace, Foundation/registry/trade/E-B/G-Q1 corrections; historical unrelated sections not exhaustively rereviewed"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\C_SOURCE_DISPOSITION_REGISTER.md",
+      "bytes": 1421,
+      "sha256": "EA40A17CA2522FD4B4BEE5776B68B5D2C89DABB1811FB82C00A2117DBC6E9187",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_PROJECT_STATE.md",
+      "bytes": 4640,
+      "sha256": "56E264D731B6FBBAEAD7913B72371B359F53C6E39168C6B47C5490053748EAEF",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_DECISION_LOG.md",
+      "bytes": 4944,
+      "sha256": "C0B046015B7C79BCB4C1CC409DF981592F182698B09C803D518BB21619127892",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\QA_DEFECT_LEDGER.md",
+      "bytes": 2428,
+      "sha256": "8E505D85EF12A544056434875AA23F69D6BBF6BAF9ECB6AE2E2AFBD4B2043771",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_AGENT_DISPATCH_BOARD.md",
+      "bytes": 3450,
+      "sha256": "DFFAD8B34592CF7AB559E2F5D0623B414284D58CC3AE8BBC0FA65FB55D740516",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\DISPATCHER_STATE.json",
+      "bytes": 8627,
+      "sha256": "C00C941758492AB8AA31FBE0E5B33E21334441877A208A5B53708958EDB2EC75",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\DISPATCH_JOURNAL.jsonl",
+      "bytes": 5954,
+      "sha256": "D09F3CCDE720F1822F77175CAFA188FB4E0C033BA987BC1937C8D41C57EFD8D3",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\ADR_ACCEPTANCE_AND_AUTHORITY_MAP.md",
+      "bytes": 1174,
+      "sha256": "6C46B8583B33073CC54783D77A249C85CBB73C4886AE2954679DB1DC22465E80",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\IDE_BOOTSTRAP_VERIFICATION.md",
+      "bytes": 18539,
+      "sha256": "F21CCF456E2EAFD5AD7310D1AAB128451AB847214B1CC09745366D60EA0E8D5B",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_E1.md",
+      "bytes": 1639,
+      "sha256": "AD6933322B05002804533916C42309ECD93BAA573FCFC9328623625C730502CD",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\history\\MASTER_DECISION_LOG_MDR-067.md",
+      "bytes": 103410,
+      "sha256": "5E188D9CDD1C79E3666DC12AE647B6ADAC87CE1050AFA811CC717EE0AE68F6F4",
+      "read_scope": "acceptance MD-023/026/035/038; MD-056; MD-096..105; MD-113..132 and index"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\reference_adrs\\ADR-006A_Temporal_Authority_ACCEPTED.md",
+      "bytes": 7311,
+      "sha256": "8044B431A10B4965EFCDEE7A02747EF06DCFF016D494420A230CC20C1EE53AC6",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\reference_adrs\\ADR-006B_Configuration_Content_Manifest_v2.md",
+      "bytes": 10262,
+      "sha256": "D68CE6D758AD5C93450BD6767A8D3416DBD3E1946EEB0D464FF45B8CAA79FCD4",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\reference_adrs\\ADR-003_Canonical_Settlement_State_Entity_Identity_Save_Provenance_v3.md",
+      "bytes": 5950,
+      "sha256": "4BF52E85EF0A7E5EC04902B09532556E62213420635D10C8A49CB5957BC0F015",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\reference_adrs\\ADR-004_Distributed_Ownership_Transaction_Repair_v2.md",
+      "bytes": 15349,
+      "sha256": "83605B985D5C5F8E80F652B17258FF7BA4FBD6364C00CF2F3D5E4752DF2EB2C9",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\reference_adrs\\ADR-007_Ordinary_Settlement_Simulation_Authority_v4.md",
+      "bytes": 6171,
+      "sha256": "4E29479D74EC8A55A2D6C0640217514502C08436E764DA0B9324C7C687387D24",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\bootstrap\\GATE05_LOCAL_FREEZE_MANIFEST.json",
+      "bytes": 5048,
+      "sha256": "C10D02BE0991FAC753622E098B16B4A88AE0630536D6B0C3C5593F3A6E2D5AAA",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\bootstrap\\local_identity_verification.json",
+      "bytes": 406357,
+      "sha256": "6C1B8AD050FBA5A8E42BCF6DE5DF9C98B4E50C561828581E6F8D940C03310E36",
+      "read_scope": "Gate05 engine inventory and recovery summary; Pipeline records outside recovery scope not re-audited"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\bootstrap\\engine-pdb-current.json",
+      "bytes": 1489,
+      "sha256": "CF8BAB10DA4320407E55E5C5AB6C6757894DCC5FD4A0941F7E67B1CD8DD88F7E",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\bootstrap\\engine-pdb-recovered.json",
+      "bytes": 1483,
+      "sha256": "7BC1B6385492F688C045BF79DF6D1CD8B8A73958520DDF84F1E06CCBDD516CBA",
+      "read_scope": "read in-session; current deltas/controlling contract and evidence scope"
+    }
+  ],
+  "identity_evidence": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\SOL_RECOVERY_IDENTITY_20261007.json",
+    "sha256": "137F105C63EEC4F807DE81EB12EA89EEF7A012B1ABFA27E84A32F3EED249EDA4",
+    "method": "read-only SHA256/PE MVID/CodeView and portable PDB document hashes; no assembly execution",
+    "freeze_summary": {
+      "MATCHED": 19,
+      "CHANGED": 0,
+      "MISSING": 0
+    },
+    "candidate_changes_after_inventory": [],
+    "selected_binary": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+      "mvid": "12bb9237-1b3e-4b20-89a7-69ad729861e1"
+    },
+    "matching_pdb_guid": "3749afca-3905-4d55-a151-cc7e75b85649",
+    "binary_codeview_guid": "3749afca-3905-4d55-a151-cc7e75b85649",
+    "binary_pdb_guid_matched": true,
+    "pdb_source_checksums_matched": 4,
+    "pdb_source_checksums_total": 4
+  },
+  "candidate_status": "MATCHED: exact DLL/MVID, source, matching Debug PDB, fixture and 19/19 prior local freeze items",
+  "e1_report_harness_results": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\run_semantic_authority_gate_05.py",
+      "expected_report_sha256": "019CFB698EE54CF3AE92F6423C3FFBA46CE92FFD433604313B011D2503554DFD",
+      "actual_sha256": "4B7F1199BCF3181683D28B2DE7E8B3B4FF54C94F6FA11D1C591D1F36DBE529C5",
+      "status": "CHANGED",
+      "interpretation": "existing E1 report mismatch; cause not established"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\semantic_authority_gate_05_results.json",
+      "expected_report_sha256": "BE2C130AF5952CAE6370B02008E1905EAE060A6E0F89531BC50A2098495449A5",
+      "actual_sha256": "DA193776BDC61A9E4315D6E39B0B92760B3814B4C400F33F22CC9E7D7D9B855A",
+      "status": "CHANGED",
+      "interpretation": "existing E1 report mismatch; cause not established"
+    }
+  ],
+  "excluded_candidate_boundaries": [
+    "Source/bin/Release/net472 DLL is a different candidate; excluded",
+    "deployed accompanying PDB has mismatched GUID/source lineage; excluded; matching Debug PDB retained separately"
+  ],
+  "old_e2_artifact_existence": {
+    "roots": [
+      "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine",
+      "C:\\Users\\user\\Desktop\\RimMulti\\docs"
+    ],
+    "matching_paths": [
+      "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_EngineHost_Semantic_Authority_Gate_05.md",
+      "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\DISPATCH_MESSAGE_SOL_GATE05.md",
+      "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_E1.md",
+      "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05.md",
+      "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\bootstrap\\GATE05_LOCAL_FREEZE_MANIFEST.json",
+      "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\source_reports\\POC_EngineHost_Semantic_Authority_Gate_05(2).md"
+    ],
+    "independent_gate05_completed_report_found": false,
+    "limitations": "path/name based local search; no assertion about unlisted/remote/archived artifacts"
+  },
+  "previous_delivery": {
+    "id": "LOCAL-SOL-GATE05-SUBMISSION-01",
+    "status": "INTERRUPTED_CONTEXT_LOST",
+    "new_endpoint_runtime_delivery": "NOT_SENT_TO_NEW_ENDPOINT",
+    "completed_or_pass_inherited": false
+  },
+  "active_work": {
+    "current": "recovery only",
+    "other_active_qa_wp_in_this_thread": false,
+    "other_active_local_rimmulti_qa_thread_observed": false,
+    "evidence": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\SOL_RECOVERY_ENDPOINT_OBSERVATION_20261007.json",
+    "limitation": "list_threads local visible snapshot and this conversation; unrelated/remote/Antigravity work not globally certified"
+  },
+  "ready_for_next_release": true,
+  "runtime_battery_started": false,
+  "runtime_verdict": null,
+  "build_performed": false,
+  "production_or_frozen_candidate_modified": false,
+  "master_governance_modified": false,
+  "authority_and_gates": {
+    "domain_authority": "Dedicated Server",
+    "engine_output": "bounded proposal; no wholesale .rws publication",
+    "clock_contract": "W/L/G/M; one LocalClock writer; island-scoped barrier; target-scoped publication",
+    "pipeline": "REV5 E2 FAIL; 001/013 narrow tested CLOSED; 007/current V6 collation OPEN",
+    "engine": "Gate05 accepted E1 report; independent E2 pending; 002/006 OPEN",
+    "foundation": "HOLD",
+    "global_fields_and_physical_split": "OPEN",
+    "g_q1": "OPEN",
+    "dispatcher": "A only; QA direct Master route"
+  },
+  "uncertainties": [
+    "Existing E1 harness/results report SHA mismatch cause/scope remains unresolved",
+    "Live loaded-content fingerprint and native fresh-validator/task/channel authority remain unverified until separate release and new independent E2",
+    "No Git repository at current root (git rev-parse exit128); branch/HEAD/clean not certified",
+    "No completed Gate05 E2 found in local named-artifact search; unlisted/remote/archived artifacts not certified absent",
+    "Historic unrelated governance sections not exhaustively re-audited; relevant acceptance/controlling corrections read; this recovery is not a whole-project review"
+  ],
+  "release_conditions": [
+    "Master issues separate approved Gate05 E2 release",
+    "Recheck idle and exact candidate before QA runtime; use QA-owned copies/fixtures/harness",
+    "Preserve candidate; save fresh evidence/QA freeze/result index; report findings to Master without deciding defect closure"
+  ],
+  "report_delivery": {
+    "status": "SENT_TOOL_CONFIRMED",
+    "recipient_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "attempts": 1,
+    "confirmed_at_utc": "2026-10-07 09:00:09 UTC",
+    "tool_success": true,
+    "master_read_or_ack_separately_observed": false,
+    "tool_proof": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\SOL_RECOVERY_REPORT_DELIVERY_20261007.json"
+  },
+  "next_action": "Wait for separate approved Gate05 E2 release; no runtime started"
+}

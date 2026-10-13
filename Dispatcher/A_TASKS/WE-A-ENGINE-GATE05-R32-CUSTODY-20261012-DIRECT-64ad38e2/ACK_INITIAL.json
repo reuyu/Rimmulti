@@ -1,0 +1,55 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2",
+  "wp_id": "WP_ENGINE_GATE05_R32_CUSTODY",
+  "wp_revision": "GATE05-R32-CUSTODY",
+  "envelope": 35,
+  "status": "ACKNOWLEDGED",
+  "task_state": "IN_PROGRESS",
+  "acknowledged_at": "2026-10-12T23:26:00+09:00",
+  "receiver": "Antigravity Development Agent A",
+  "instructions_file": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2\\INSTRUCTIONS.md",
+  "wp_file": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_ENGINE_GATE05_R32_CUSTODY.md",
+  "release_file": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\RELEASE_ENGINE_GATE05_R32_CUSTODY_20261012.md",
+  "contract_file": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R32_MANAGED_CUSTODY_RESOURCE_CONTRACT_20261012.md",
+  "scope_baseline_file": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2\\MASTER_R32_AUTHORIZED_SOURCE_SCOPE.json",
+  "protected_baseline_file": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R32_CUSTODY_PROTECTED_BASELINE_20261012.json",
+  "master_review_file": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R31_INDEPENDENT_STATIC_S1_20261012.md",
+  "refobservation_file": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2\\MASTER_EXISTING_PROJECT_REFERENCE_OBSERVATION.json",
+  "contract_sha256": "3BC50D6D89B4F336A68155A2889FBB2BD9404F8E3FBB20315705AE69F16E227E",
+  "scope_sha256": "ECF93A72FEE19B8B2C415E3C16030584CD0009B1A26C2FE36793DE0F858F0D66",
+  "wp_sha256": "5764445D5CD30BB3E096801AE242643716F2DC1BB1AFE2A56209939C316AD011",
+  "release_sha256": "B98EB60B46554DCEDBAD1DFA9B19C7BCD5E7FE720F7FACDA9009AD3ECFA4776F",
+  "protected_baseline_sha256": "3C436C959FD215DCDE0F9BEA376593AD6D8169A06EFFD6F92AC0B6F1A9CC4623",
+  "master_review_sha256": "9AE06AA77A76EE0FF0BCBB09B7DEA45DB1B9CCA506B3491AA2F4133680562105",
+  "instructions_sha256": "10B401152366FCA08D4D0DEF2F3E013B90254220CB790CCA2FD4D5042D27E21C",
+  "refobservation_sha256": "4AB5D62F5A5B82AB19508F3872B75FE350D07FC19182FD98D37A7DC110A6B963",
+  "new_owned_e1_root": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R32Custody-64ad38e2",
+  "scope_policy": "MANAGED_CUSTODY_AND_SAFE_OWNED_RESOURCE_FAILURE_HANDLING_FOUR_SPANS_ONLY",
+  "scope_boundary": "BUILD_ONLY_PROSPECTIVE_SOURCE_AND_FIRST_BINARY_EVIDENCE_ZERO_RUNNER_ZERO_NATIVE_EXECUTION_ZERO_MODIFICATION_OUTSIDE_FOUR_SPANS",
+  "allowed_mutable_paths": [
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb"
+  ],
+  "fixed_current_files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "bytes": 170135
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+      "sha256": "0204609D1D9D8A697B1A0B88537419D78B9E506558C771CA3EDD4C50FD49D470",
+      "bytes": 10442
+    }
+  ]
+}

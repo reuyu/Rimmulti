@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:165\",\"revision\":165,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a12c2a-2ea3-72d0-84a3-c614903da878\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791742324,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016acbd178970087d0a691ffdc7102a150\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016acbd178970087d0a691ffdc7102a150\",\"turnId\":\"01a12c2a-2ea3-72d0-84a3-c614903da878\",\"phase\":\"commentary\",\"text\":\"R27 독립 QA 준비 지시를 접수했습니다. 승인된 15개 getter 계약과 API 이름 정정을 확인하고, 동결 자료만으로 정상 기대값과 소유권·실행 증거 계획을 작성하겠습니다. 진행 중인 R27 코드와 빌드 결과는 읽지 않겠습니다.\"},\"latestToolMarkerId\":\"exec-7a5fd2d1-706b-4dfc-98f8-69fdce64cdcc\",\"latestToolMarker\":{\"id\":\"exec-7a5fd2d1-706b-4dfc-98f8-69fdce64cdcc\",\"turnId\":\"01a12c2a-2ea3-72d0-84a3-c614903da878\",\"type\":\"fileChange\",\"name\":\"fileChange\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

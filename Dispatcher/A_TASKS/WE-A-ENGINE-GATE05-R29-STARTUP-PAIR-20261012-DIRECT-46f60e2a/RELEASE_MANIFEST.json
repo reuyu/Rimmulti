@@ -1,0 +1,67 @@
+{
+  "manifest_version": "1.0",
+  "work_package": "WP_ENGINE_GATE05_R29_STARTUP_PAIR",
+  "candidate_lineage": "GATE05-R29-STARTUP-PAIR",
+  "created_at_utc": "2026-10-12T00:29:41.501519+00:00",
+  "agent_role": "Antigravity A",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a",
+  "envelope": 32,
+  "selected_candidate": {
+    "configuration": "Debug",
+    "target_framework": "net472",
+    "dll_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "084C58CCD770AF90D2F2AE162FF5456C8CD2F0DB3167AE13394635BF8E567E7A",
+    "dll_bytes": 322560,
+    "pdb_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "7E76C8CEE38F98FB5B33639AAFB1AA9B4321D563DD483C35A1469A32229C1F3F",
+    "pdb_bytes": 77724,
+    "mvid": "5c410658-e435-4ae4-8aa3-d074fbcf4f5d",
+    "codeview_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "codeview_guid": "4b83c0af-9116-4158-b47e-a4d8a1581cf5",
+    "codeview_age": 1
+  },
+  "alternate_candidate": {
+    "configuration": "Release",
+    "target_framework": "net472",
+    "dll_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "4B4FBD87DDF6B4B39D419F5FDF28428F1E0869CA208E159094409A8D1102463E",
+    "dll_bytes": 305152,
+    "pdb_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "EE705B6F654BEF8A605661AD3CBFBB03541D0CCB244C24AC1323C2E3D68EED50",
+    "pdb_bytes": 56876,
+    "mvid": "3bf83c4d-c38b-43b4-8f9c-520e3e277200",
+    "codeview_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "codeview_guid": "bddd0aa3-ed8b-4253-957a-ea18011d4f36",
+    "codeview_age": 1
+  },
+  "deployed_mod_assemblies": {
+    "dll_path": "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "084C58CCD770AF90D2F2AE162FF5456C8CD2F0DB3167AE13394635BF8E567E7A",
+    "dll_bytes": 322560,
+    "pdb_path": "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "7E76C8CEE38F98FB5B33639AAFB1AA9B4321D563DD483C35A1469A32229C1F3F",
+    "pdb_bytes": 77724
+  },
+  "source_files": [
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "55441CE93DF32F5E5940D99A4A9CA8449B3F7839840CA3A3832C9DB31396FBDE",
+      "bytes": 265416
+    },
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "bytes": 170135
+    },
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    },
+    {
+      "path": "scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+      "sha256": "0204609D1D9D8A697B1A0B88537419D78B9E506558C771CA3EDD4C50FD49D470",
+      "bytes": 10442
+    }
+  ]
+}

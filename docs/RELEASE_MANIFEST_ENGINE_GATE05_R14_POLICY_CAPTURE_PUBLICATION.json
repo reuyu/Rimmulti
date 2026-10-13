@@ -1,0 +1,127 @@
+{
+  "manifest_version": "1.0",
+  "work_package": "WP_ENGINE_GATE05_R14_POLICY_CAPTURE_PUBLICATION",
+  "candidate_lineage": "GATE05-R14-POLICY-CAPTURE-PUBLICATION",
+  "created_at_utc": "2026-10-09T12:13:13.1278049Z",
+  "agent_role": "Antigravity A",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R14-POLICY-CAPTURE-PUBLICATION-20261009-DIRECT-ff285a3b",
+  "run_id": "GATE05-R14-POLICY-CAPTURE-PUBLICATION-RUN-01",
+  "selected_candidate": {
+    "configuration": "Debug",
+    "target_framework": "net472",
+    "dll_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "1A19B47232F86C3BA3A8238783EA66ED71AE61E2DB16CF3B3C5162B0F7A6FC5F",
+    "dll_bytes": 243200,
+    "pdb_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "776A277A3B8DA637A641A9289010D224A640412575EE86B15AC3BE897DEABB8A",
+    "pdb_bytes": 61996,
+    "mvid": "acab0270-bc98-4d17-b920-9941950ff024"
+  },
+  "alternate_candidate": {
+    "configuration": "Release",
+    "target_framework": "net472",
+    "dll_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "B2D6B208E149B5ACDAB32D735DA5FCB8C951CC139AD4001D614FB7ECFFDB4AAD",
+    "dll_bytes": 230912,
+    "pdb_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "33862EC6742DCA9224C5CAEAA64D4433661FC49D83B48BE784C4AF9F7CD5B624",
+    "pdb_bytes": 45472,
+    "mvid": "874a8ce6-014a-4506-aba5-4648e50abd83"
+  },
+  "deployed_mod_assemblies": {
+    "dll_path": "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "1A19B47232F86C3BA3A8238783EA66ED71AE61E2DB16CF3B3C5162B0F7A6FC5F",
+    "dll_bytes": 243200,
+    "pdb_path": "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "776A277A3B8DA637A641A9289010D224A640412575EE86B15AC3BE897DEABB8A",
+    "pdb_bytes": 61996
+  },
+  "source_files": [
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+      "bytes": 156431
+    },
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "C2E1572D837A0E698450EC5996ECA7F0E1596DED89F109A7595E8C309008B0F1",
+      "bytes": 167634,
+      "prefix_marker": "    public static class ContentProfileProvider",
+      "prefix_length": 72547,
+      "prefix_sha256": "F3C4F865F1E2A898BF240A2D096195870D77A52408CF2D93664FE15092A2A887"
+    },
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    }
+  ],
+  "verification_evidence": {
+    "runner_project": {
+      "path": "scratch\\EngineGate05R14PolicyCapturePublication\\Harness\\Gate05R14CacheRunner.csproj",
+      "sha256": "F8B32327DC93CB41B56C8465BB48D3118B174AB4979193638AEC1905B0465493",
+      "bytes": 1616
+    },
+    "runner_source": {
+      "path": "scratch\\EngineGate05R14PolicyCapturePublication\\Harness\\Program.cs",
+      "sha256": "3ACD09DB641640FEBA693DC8339E74223ECBF83E8A5558083CFAFE82CD5141B7",
+      "bytes": 50056
+    },
+    "runner_binary": {
+      "path": "scratch\\EngineGate05R14PolicyCapturePublication\\Harness\\bin\\Debug\\net472\\Gate05R14CacheRunner.exe",
+      "sha256": "A880FCB7FBC7A021C67F2EC072E7B146E61C4E36DD594A911F4E5482DC700F90",
+      "bytes": 49152
+    },
+    "runner_pdb": {
+      "path": "scratch\\EngineGate05R14PolicyCapturePublication\\Harness\\bin\\Debug\\net472\\Gate05R14CacheRunner.pdb",
+      "sha256": "CC07883A9C3DEA4F6E17A54E6B3ADDB39F75DC165057E2F9A7C92624DB525586",
+      "bytes": 10280
+    },
+    "pre_run_manifest": {
+      "path": "scratch\\EngineGate05R14PolicyCapturePublication\\CANDIDATE_PRE_RUN_MANIFEST.json",
+      "sha256": "E75F178FF37729934D646962DD8675956B44045F1A118ED4A763765AEC725ABC",
+      "bytes": 3577
+    },
+    "freeze_before": {
+      "path": "scratch\\EngineGate05R14PolicyCapturePublication\\ENGINE_FREEZE_BEFORE.json",
+      "sha256": "8D59CD0BF61C02EF29AE801B73578894E0EC51C2845FA6B14A7CB7DC554B33C5",
+      "bytes": 2096
+    },
+    "freeze_after": {
+      "path": "scratch\\EngineGate05R14PolicyCapturePublication\\ENGINE_FREEZE_AFTER.json",
+      "sha256": "2DBFEF0DE1AF7D8C69C06223D054A56D0C7463E053E2993E173D6875F2420EA8",
+      "bytes": 2100
+    },
+    "test_results": {
+      "path": "scratch\\EngineGate05R14PolicyCapturePublication\\results.json",
+      "sha256": "2BE206CCC55D60EE59FBD9CAB8881595A6049F79253BBA1036DE863CA242530B",
+      "bytes": 11085
+    },
+    "raw_console": {
+      "path": "scratch\\EngineGate05R14PolicyCapturePublication\\raw_console.txt",
+      "sha256": "66AC55550E68E3C5E3E606C0D2E5C5636EAFA75731B7FC835DC8B5A097CB2FEF",
+      "bytes": 2662
+    },
+    "e1_report": {
+      "path": "docs\\POC_EngineHost_Content_Codec_Gate05_R14.md",
+      "sha256": "F06C3516C8577D9510D31E4181E3693BC702F4258B233A16BE66598EBEBB1B69",
+      "bytes": 11780
+    }
+  },
+  "execution_summary": {
+    "total_tests": 22,
+    "passed_tests": 22,
+    "failed_tests": 0,
+    "verdict": "SCOPED_POSITIVE_NORMAL_PASS",
+    "execution_scope": "PURE_POSITIVE_NORMAL_MANAGED_ONLY"
+  },
+  "limitations": [
+    "STATIC_MANAGED_NORMAL_EVIDENCE_ONLY",
+    "PURE_INSTANCE_CORE_AND_NORMAL_CONFIGURATION_LIFECYCLE_EVIDENCE_ONLY",
+    "NATIVE_ACTUAL_COMPUTATION_PROHIBITED_AND_UNTESTED",
+    "PRODUCER_GLOBAL_PROVIDER_REAL_ENTRY_STATIC_UNTESTED",
+    "MOD_PATCH_SETTINGS_DYNAMIC_EVALUATION_SEPARATE_OPEN",
+    "NATIVE_PROMOTION_FULL_E2_NOT_RELEASED",
+    "FINAL_DOMAIN_AUTHORITY_REMAINS_DEDICATED_SERVER"
+  ]
+}

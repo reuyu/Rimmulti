@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":false,\"wake\":{\"reason\":\"turnCompleted\",\"turnId\":\"01a12d91-bb9b-71c3-8258-5349866adc44\",\"threadId\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\"},\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:181\",\"revision\":181,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"idle\"}},\"latestTurn\":{\"id\":\"01a12d91-bb9b-71c3-8258-5349866adc44\",\"status\":\"completed\",\"error\":null,\"startedAt\":1791765887,\"completedAt\":1791766324,\"durationMs\":436450},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016acc2f32166087d09c411c848a0db0cd\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016acc2f32166087d09c411c848a0db0cd\",\"turnId\":\"01a12d91-bb9b-71c3-8258-5349866adc44\",\"phase\":\"final_answer\",\"text\":\"자체 보존 도구 오류로 QA 실행 전에 중단했고, 오류 원문과 수정안을 마스터에게 보고했습니다. 후보 판정은 아직 없습니다. [작업 지시]의 재시도 금지 조건에 따라 다음 지시를 기다립니다. 중단 보고서\"},\"latestToolMarkerId\":\"exec-3380bb30-e393-4f30-9137-2be4d982b480\",\"latestToolMarker\":{\"id\":\"exec-3380bb30-e393-4f30-9137-2be4d982b480\",\"turnId\":\"01a12d91-bb9b-71c3-8258-5349866adc44\",\"type\":\"fileChange\",\"name\":\"fileChange\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

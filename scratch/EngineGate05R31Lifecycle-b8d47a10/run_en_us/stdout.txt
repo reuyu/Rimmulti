@@ -1,0 +1,28 @@
+[GATE05-R31-RUNNER] Starting Gate05-R31 OperatorStartupPair Pure Unit Suite
+[GATE05-R31-RUNNER] Culture: en-US, RunDir: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R31Lifecycle-b8d47a10\run_en_us
+
+[PAIR-TEST-CASE-1] Executing AdmitPairBytes for 'PLAIN_PLAIN' (PairId='WE-PAIR-DEV-R29-PLAIN-PLAIN-01')
+[PAIR-TEST-CASE-1] PASS: Verified scope, receipts, opaque pairId, and full detached isolation.
+
+[PAIR-TEST-CASE-2] Executing AdmitPairBytes for 'OPAQUE_OPAQUE' (PairId='WE-PAIR-DEV-R29-OPAQUE-OPAQUE-02')
+[PAIR-TEST-CASE-2] PASS: Verified scope, receipts, opaque pairId, and full detached isolation.
+
+[PAIR-TEST-CASE-3] Executing AdmitPairBytes for 'PLAIN_OPAQUE_PADDED' (PairId='WE-PAIR-DEV-R29-PLAIN-OPAQUE-03')
+[PAIR-TEST-CASE-3] PASS: Verified scope, receipts, opaque pairId, and full detached isolation.
+
+[PAIR-TEST-CASE-4] Executing AdmitPairBytes for 'OPAQUE_PLAIN_PADDED' (PairId='WE-PAIR-DEV-R29-OPAQUE-PLAIN-04')
+[PAIR-TEST-CASE-4] PASS: Verified scope, receipts, opaque pairId, and full detached isolation.
+
+[PAIR-TEST-CASE-5] Executing AdmitPairBytes for 'PAIR_ID_WITH_EQUALS' (PairId='WE=PAIR=DEV=R29=EQUALS=05')
+[PAIR-TEST-CASE-5] PASS: Verified scope, receipts, opaque pairId, and full detached isolation.
+
+[PAIR-TEST-CASE-6] Executing AdmitPairBytes for 'UNICODE_BACKSLASH_QUOTE_EQUALS' (PairId='WE-PAIR-DEV-R29-��-"QUOTE"=\BACKSLASH\-06')
+[PAIR-TEST-CASE-6] PASS: Verified scope, receipts, opaque pairId, and full detached isolation.
+
+[R27-REGRESSION] Running legacy OperatorChildLaunchInputs.Capture across 4 normal pairs...
+[R27-REGRESSION-CASE-1] PASS: 15 getters verified.
+[R27-REGRESSION-CASE-2] PASS: 15 getters verified.
+[R27-REGRESSION-CASE-3] PASS: 15 getters verified.
+[R27-REGRESSION-CASE-4] PASS: 15 getters verified.
+
+[GATE05-R31-RUNNER] COMPLETE: All tests passed with 0 errors. Report written to 'C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R31Lifecycle-b8d47a10\run_en_us'.

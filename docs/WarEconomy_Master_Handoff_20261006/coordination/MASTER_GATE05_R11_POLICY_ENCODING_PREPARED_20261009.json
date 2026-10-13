@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-09T06:09:56.653755+09:00",
+  "event_id": "WE-A-ENGINE-GATE05-R11-POLICY-ENCODING-20261009-DIRECT-bec3d350-PREPARED",
+  "type": "A_R11_POLICY_ENCODING_APPROVED_PREPARED",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R11-POLICY-ENCODING-20261009-DIRECT-bec3d350",
+  "status": "NOT_SENT",
+  "task_root": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R11-POLICY-ENCODING-20261009-DIRECT-bec3d350",
+  "counts": {
+    "archive": 19,
+    "prior_candidates": 1177,
+    "pipeline": 206,
+    "qa": 2578,
+    "managed_dependencies": 4
+  },
+  "prior_version_defect": "CLOSED_SCOPED_R9_ONLY",
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "monitor": "PAUSED60MIN"
+}

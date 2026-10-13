@@ -1,0 +1,33 @@
+--- FrozenR21Worker
++++ R23Worker
+@@ -98,9 +98,9 @@
+ 
+                 var descriptor = new OperatorLaunchDescriptor
+                 {
+-                    originId = origin.Trim(),
+-                    launchPlanId = plan.Trim(),
+-                    expectedConfigId = cfgId.Trim(),
++                    originId = origin,
++                    launchPlanId = plan,
++                    expectedConfigId = cfgId,
+                     expectedRole = role.Trim(),
+                     expectedCapabilityBoundary = cap.Trim(),
+                     expectedConfigPath = configPath.Trim(),
+@@ -4050,6 +4050,8 @@
+                 return (false, "Operator launch descriptor cannot be null for receipt issuance.", null);
+             }
+             var desc = descriptor.Clone();
++            desc.expectedRole = desc.expectedRole?.Trim() ?? "";
++            desc.expectedCapabilityBoundary = desc.expectedCapabilityBoundary?.Trim() ?? "";
+             if (string.IsNullOrWhiteSpace(desc.originId))
+             {
+                 return (false, "Operator launch descriptor originId cannot be null or whitespace.", null);
+@@ -4154,6 +4156,8 @@
+                 return (false, "Operator launch descriptor cannot be null.", null);
+             }
+             var desc = descriptor.Clone();
++            desc.expectedRole = desc.expectedRole?.Trim() ?? "";
++            desc.expectedCapabilityBoundary = desc.expectedCapabilityBoundary?.Trim() ?? "";
+             if (string.IsNullOrWhiteSpace(desc.originId))
+             {
+                 return (false, "Descriptor originId cannot be null or whitespace.", null);

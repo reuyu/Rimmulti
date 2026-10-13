@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "producer": "A",
+  "report_kind": "E1",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00",
+  "wp_id": "WP_ENGINE_GATE05_R16_OPERATOR_NATIVE_PREPARATION",
+  "wp_revision": "GATE05-R16-OPERATOR-NATIVE-PREPARATION",
+  "envelope": 19,
+  "result_id": "WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-RESULT-01",
+  "run_id": "GATE05-R16-OPERATOR-NATIVE-PREP-RUN-01",
+  "status": "COMPLETED",
+  "completed_at": "2026-10-10T02:59:00+09:00",
+  "summary": "WP_ENGINE_GATE05_R16_OPERATOR_NATIVE_PREPARATION / GATE05-R16-OPERATOR-NATIVE-PREPARATION (Envelope 19) pure read-only static analysis and readiness preparation completed. Zero production code edits applied; candidate build, game runtime, native execution, old runner execution, and adverse test probes were strictly 0. All 9 current Engine source and binary paths verified 100% identical to baseline hashes. Completed 4 technical objectives: 1) Authored OPERATOR_AUTHORITY_CALLGRAPH.md and OPERATOR_CONTEXT_MATRIX.json mapping all 16 MD128 logical context dimensions across creation, storage, carry, check, and consumption with source line anchors, proving public caller nomination prohibition and PID diagnostic bounds; 2) Conducted full recursive SHA256 and byte inventory of existing scratch\\EngineGate05R4\\RuntimeCopy (7 files, 33,030,151 bytes), diagnosing the root cause of the historical R4 child timeout kill as the complete absence of the Unity engine data package (RimWorldWin64_Data/), Mono embedding runtime, and core XML defs, authoring RUNTIME_READINESS_INVENTORY.json and RUNTIME_READINESS.md; 3) Established NORMAL_NATIVE_SLICE_PLAN.md and NEXT_IMPLEMENTATION_WRITESET.json defining ordered prerequisites, execution sequence, and fail-closed criteria for a single normal operator validation cycle while deferring promotion and MD131 atomic replacement to a subsequent slice; 4) Compiled READINESS_GAPS.json detailing 6 concrete technical blockers, licensing boundaries, and required prerequisite order. Full Gate05 and Foundation remain HOLD pending Master governance disposition.",
+  "e1_verdict": "PREPARATION_COMPLETE_NATIVE_UNTESTED",
+  "limitations": [
+    "READ_ONLY_PREPARATION_ONLY: Strictly zero code modifications applied to the 9 Engine paths; no candidate assemblies built or re-compiled.",
+    "NATIVE_EXECUTION_UNTESTED: In-engine, game runtime, child process launch, and native DefDatabase/census execution were strictly prohibited and not executed.",
+    "RUNTIME_COPY_INCOMPLETE: scratch\\EngineGate05R4\\RuntimeCopy contains only 7 top-level binaries/files (33,030,151 bytes); Unity standalone player cannot boot without RimWorldWin64_Data/ and Data/Core/ assets.",
+    "INSTALLED_DLL_INCIDENT_OPEN: Steam installed DLL (BB3B52...) discrepancy against archive baseline (2D64FF...) remains an UNKNOWN OPEN INCIDENT, preserved unmodified per Master policy.",
+    "MOD_PATCH_SETTINGS_DYNAMIC_EVALUATION_SEPARATE: Dynamic XML patch AST execution and user mod settings evaluation remain qualified boundaries under ADR-006B-v5.",
+    "MD131_ATOMIC_PROMOTION_DEFERRED: Atomic replacement of existing final saves via same-volume atomic primitives is deferred to a subsequent MD131 work package.",
+    "NO_SELF_CLOSURE: Developer A does not self-declare candidate release, E2 verification, or defect closure. Dedicated Server remains final Domain Authority; Master governs release."
+  ],
+  "artifacts": [
+    {
+      "role": "operator_callgraph",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00\\OPERATOR_AUTHORITY_CALLGRAPH.md",
+      "sha256": "88E9BC47814A4EB311CE4E0DF688A1793861F6618648231B27B4D11BCCB687F6",
+      "size": 20099
+    },
+    {
+      "role": "operator_context_matrix",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00\\OPERATOR_CONTEXT_MATRIX.json",
+      "sha256": "3ACCF3371833F3E6C9BFDE5670B37C0FBF4C6AE4FF090EBA01637EBF42F5AB09",
+      "size": 26414
+    },
+    {
+      "role": "runtime_readiness_inventory",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00\\RUNTIME_READINESS_INVENTORY.json",
+      "sha256": "3A13D3F0490A1226E2F46EB250FD07D3D93629AF3CA96C39D0A1137986FD3C76",
+      "size": 8967
+    },
+    {
+      "role": "runtime_readiness_report",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00\\RUNTIME_READINESS.md",
+      "sha256": "7C228438C2E8A9E4D9A1244056DFC513EEFD5B12C74E2ED696431F21296EA0EA",
+      "size": 9853
+    },
+    {
+      "role": "normal_native_slice_plan",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00\\NORMAL_NATIVE_SLICE_PLAN.md",
+      "sha256": "C611BB3E9D94A17256143E71F9F8610457214E29DEB683B968492A57803EED83",
+      "size": 8366
+    },
+    {
+      "role": "next_implementation_writeset",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00\\NEXT_IMPLEMENTATION_WRITESET.json",
+      "sha256": "27ED9FAD0C79C55204A73408CACC351E594F23E198298FCF8BB3DBC95B26E4D4",
+      "size": 4105
+    },
+    {
+      "role": "readiness_gaps",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00\\READINESS_GAPS.json",
+      "sha256": "5F87108D86D0F39590A159ABBD48AD01B33A1161C998CC63C52FEB8300C0B87C",
+      "size": 5175
+    },
+    {
+      "role": "work_log",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00\\A_WORK_LOG.md",
+      "sha256": "F14910C8167C78956802D7FC43FF5940410AB52DF8AE1203E9C479A20A7D4A3A",
+      "size": 5597
+    },
+    {
+      "role": "recovery_ack",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00\\A_RECOVERY_ACK.md",
+      "sha256": "98AAB0662D026C79C1F6E8277C14868D1F583C6AD18CB6992F89E0946D18CCA3",
+      "size": 3420
+    },
+    {
+      "role": "task_ack",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00\\ACK.json",
+      "sha256": "9B95C0DB6E63AC241D9FC250CE039141C5F42553183B852652AE36EEDCCDD8FB",
+      "size": 1209
+    }
+  ],
+  "fixed_current_engine_paths_verification": [
+    {
+      "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "baseline_sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+      "current_sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+      "size": 156431,
+      "status": "MATCH_BASELINE_100_PERCENT"
+    },
+    {
+      "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "baseline_sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "current_sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "size": 170135,
+      "status": "MATCH_BASELINE_100_PERCENT"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "baseline_sha256": "835E81216B850B571577677AB724FAC9A515465F79888A5CACC13C51FF832877",
+      "current_sha256": "835E81216B850B571577677AB724FAC9A515465F79888A5CACC13C51FF832877",
+      "size": 244224,
+      "status": "MATCH_BASELINE_100_PERCENT"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "baseline_sha256": "0CBC164CDAF5AD188C71E28C9AED664F066950ACEA3CE09B5F8238DAAF9630BE",
+      "current_sha256": "0CBC164CDAF5AD188C71E28C9AED664F066950ACEA3CE09B5F8238DAAF9630BE",
+      "size": 62416,
+      "status": "MATCH_BASELINE_100_PERCENT"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "baseline_sha256": "4D198076B84C3FC44EEB75CBE22FE1A2575659009293FBA7E14E937996DD0358",
+      "current_sha256": "4D198076B84C3FC44EEB75CBE22FE1A2575659009293FBA7E14E937996DD0358",
+      "size": 231936,
+      "status": "MATCH_BASELINE_100_PERCENT"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "baseline_sha256": "9BC98A4A92D7E2FA0051DCE46ED03E98CDC2A014449AA32FDDAB3DF0A9FCEE15",
+      "current_sha256": "9BC98A4A92D7E2FA0051DCE46ED03E98CDC2A014449AA32FDDAB3DF0A9FCEE15",
+      "size": 45808,
+      "status": "MATCH_BASELINE_100_PERCENT"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "baseline_sha256": "835E81216B850B571577677AB724FAC9A515465F79888A5CACC13C51FF832877",
+      "current_sha256": "835E81216B850B571577677AB724FAC9A515465F79888A5CACC13C51FF832877",
+      "size": 244224,
+      "status": "MATCH_BASELINE_100_PERCENT"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "baseline_sha256": "0CBC164CDAF5AD188C71E28C9AED664F066950ACEA3CE09B5F8238DAAF9630BE",
+      "current_sha256": "0CBC164CDAF5AD188C71E28C9AED664F066950ACEA3CE09B5F8238DAAF9630BE",
+      "size": 62416,
+      "status": "MATCH_BASELINE_100_PERCENT"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "baseline_sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "current_sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "size": 1774,
+      "status": "MATCH_BASELINE_100_PERCENT"
+    }
+  ],
+  "known_installed_incident": {
+    "id": "ENGINE-INSTALLED-IDENTITY-20261008-01",
+    "status": "OPEN",
+    "expected_old_sha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+    "observed_sha256_at_dispatch": "BB3B52F39F7B53B70BC9FB4CE039E7455D08B24B17B8DABB8295E0FF4584DD61",
+    "not_new_approval_to_modify_or_restore": true
+  }
+}

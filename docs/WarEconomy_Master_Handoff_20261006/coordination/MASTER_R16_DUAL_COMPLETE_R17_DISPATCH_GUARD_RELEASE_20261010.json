@@ -1,0 +1,18 @@
+{
+  "guard_run": "MASTER-SOL-R16-PREP-COMPLETE-20261010-01",
+  "guard_session": 25888,
+  "guard_pid": 21488,
+  "all_returned_child_sessions_settled_before_finally": true,
+  "status": "ACTUAL_RELEASED",
+  "release_tool_result": {
+    "chunk_id": "bb0d97",
+    "wall_time_seconds": 0.0000401,
+    "exit_code": 0,
+    "original_token_count": 118,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-SOL-R16-PREP-COMPLETE-20261010-01\", \"pi\r\n\u001b[23;80Hid\": 21488, \"locked_at\": \"2026-10-10T03:01:25.862543+09:00\", \"mechanism\": \"Window\r\n\u001b[23;80Hws msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_a\r\n\u001b[23;80Hat\": \"2026-10-10T03:11:53.877514+09:00\", \"renewal_count\": 5, \"release_reason\": \"R\r\n\u001b[23;80HRELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-10T03:12:06.231725+09:00\"}     \r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "r16_original_reports_preserved": true,
+  "r17_actual_sent_ack_verified": true,
+  "same_scheduler_active_hourly": true,
+  "historic_mutex_gaps_not_retroclaimed": true
+}

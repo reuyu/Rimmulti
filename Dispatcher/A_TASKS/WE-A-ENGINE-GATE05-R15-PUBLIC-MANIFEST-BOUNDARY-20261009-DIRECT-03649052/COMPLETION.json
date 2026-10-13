@@ -1,0 +1,171 @@
+﻿{
+  "schema_version": 1,
+  "producer": "A",
+  "report_kind": "E1",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-20261009-DIRECT-03649052",
+  "wp_id": "WP_ENGINE_GATE05_R15_PUBLIC_MANIFEST_BOUNDARY",
+  "wp_revision": "GATE05-R15-PUBLIC-MANIFEST-BOUNDARY",
+  "result_id": "WE-A-ENGINE-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-RESULT-01",
+  "run_id": "GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-RUN-01",
+  "status": "COMPLETED",
+  "completed_at": "2026-10-09T14:11:02.9503989Z",
+  "summary": "WP_ENGINE_GATE05_R15_PUBLIC_MANIFEST_BOUNDARY / GATE05-R15-PUBLIC-MANIFEST-BOUNDARY single technical objective PUBLIC_MANIFEST_BOUNDARY implementation completed and developer E1 verification recorded. Successfully sealed public caller-policy native collector overload into internal private helper CollectActualContentProfileManifestInternal, preventing external arbitrary policy injection. Established a single trusted provider-owned computation and success linearization helper ComputeAndPublishActualContentProfile shared by parameterless ComputeActualContentProfileManifest and ComputeActualContentProfileFingerprint. Under the single core synchronization lock, validates captured generation and configured policy identity against CURRENT provider state before returning the immutable result; refused publication or currentstamp validation throws an explicit InvalidOperationException without fallback, preventing unadmitted or stale content leakage. Maintained R14 InvalidateCache generation advance (+1), normal core ownership, defensive manifest cloning, pure codec logic, and introduced generation-scoped error protection in SetComputationError. Updated content contract version to ADR-006B-v5-R15 and capability flag to GATE05_R15_PUBLIC_MANIFEST_BOUNDARY. Preserved R14 independent scoped 339 PASS, R12 0-based order, R11 encoding, R9 version meaning semantics, Def family sorting, and immutable baselines (WorkerBridge.cs, WorkerBridge.csproj, EngineHostCensus.cs prefix 72,547 bytes SHA F3C4F865...). Executed pure positive normal managed runner controls (25/25 PASS, numeric exit 0) across isolated process directories (ko-KR, en-US, de-DE) performing 55 normal cache lifecycle calls while strictly executing 0 prohibited calls (ComputeActual = 0, GetActual = 0, native = 0, adverse/rejection = 0). Proved via reflection that no public caller-policy native collector overload exists. Bound PE MVIDs for Debug (4fb1a25f-...) and Release (58766cdc-...) candidates. Steam installed DLL incident remains UNKNOWN OPEN INCIDENT. Full Gate05 and Foundation remain HOLD pending independent Sol QA review and Master governance disposition.",
+  "e1_verdict": "SCOPED_POSITIVE_NORMAL_PASS",
+  "limitations": [
+    "STATIC_MANAGED_NORMAL_EVIDENCE_ONLY: Verification conducted strictly via isolated positive pure normal managed runner controls (25/25 PASS, exit 0) on pure instance core and normal lifecycle calls with Master-approved frozen dependencies.",
+    "PURE_INSTANCE_CORE_AND_NORMAL_CONFIGURATION_LIFECYCLE_EVIDENCE_ONLY: Cache publication, defensive copy immutability, generation advance, and reflection verification verified on standalone ContentProfileCacheCore instances and provider metadata; global provider actual compute and entry publication untested in managed harness.",
+    "NATIVE_ACTUAL_COMPUTATION_PROHIBITED_AND_UNTESTED: In-engine, game runtime, native execution, and operator promotion were strictly prohibited and not executed.",
+    "INSTALLED_DLL_INCIDENT_OPEN: Steam installed DLL (BB3B52...) discrepancy against archive baseline (2D64FF...) remains an UNKNOWN OPEN INCIDENT, preserved unmodified per Master policy.",
+    "MOD_PATCH_SETTINGS_DYNAMIC_EVALUATION_SEPARATE_OPEN: Dynamic evaluation of user mod settings/patches and real operator provenance remain separate OPEN gates.",
+    "NO_SELF_CLOSURE: Developer A does not self-declare candidate release, E2 verification, or defect closure. Dedicated Server remains final Domain Authority; Master governs release."
+  ],
+  "artifacts": [
+    {
+      "role": "implementation_report",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_EngineHost_Content_Codec_Gate05_R15.md",
+      "sha256": "C4EE001D73600E529B6051AEDDE1436BFAF4C5367C2E565FF52EC85D74FB8C67",
+      "size": 16252,
+      "mvid": ""
+    },
+    {
+      "role": "release_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R15_PUBLIC_MANIFEST_BOUNDARY.json",
+      "sha256": "8274297B860C7905D944AAEDF56CD75845D6A8C6E02A8E633B780C56C0ACB9D1",
+      "size": 5867,
+      "mvid": ""
+    },
+    {
+      "role": "harness",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R15PublicManifestBoundary\\Harness\\Program.cs",
+      "sha256": "7FF37B7C4C2B7981A4595A729AABAFE29E829E85D1A1FD853CD9AC5C41DB0A81",
+      "size": 66587,
+      "mvid": ""
+    },
+    {
+      "role": "harness_project",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R15PublicManifestBoundary\\Harness\\Gate05R15BoundaryRunner.csproj",
+      "sha256": "24C2F22902439A01DE4753A001D822424438E46F6707C3E7F688EA36E109FB04",
+      "size": 1619,
+      "mvid": ""
+    },
+    {
+      "role": "results",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R15PublicManifestBoundary\\run_default\\results.json",
+      "sha256": "3A55F2DCAD7C161C1F76A1F18D42D0ABC4612DFF0BBF6691CCD50856D045360F",
+      "size": 12568,
+      "mvid": ""
+    },
+    {
+      "role": "raw_evidence",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R15PublicManifestBoundary\\run_default\\raw_console.txt",
+      "sha256": "0067F5D34FB87341A6F96C6A407C563C0ABC6E6557D3FD5CFD677465D8DB8EBC",
+      "size": 3099,
+      "mvid": ""
+    },
+    {
+      "role": "candidate_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "835E81216B850B571577677AB724FAC9A515465F79888A5CACC13C51FF832877",
+      "size": 244224,
+      "mvid": "4fb1a25f-72c8-426d-b93f-d6cba4f9af72"
+    },
+    {
+      "role": "pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "0CBC164CDAF5AD188C71E28C9AED664F066950ACEA3CE09B5F8238DAAF9630BE",
+      "size": 62416,
+      "mvid": ""
+    },
+    {
+      "role": "alternate_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "4D198076B84C3FC44EEB75CBE22FE1A2575659009293FBA7E14E937996DD0358",
+      "size": 231936,
+      "mvid": "58766cdc-afee-4682-858a-dab68c96e36e"
+    },
+    {
+      "role": "alternate_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "9BC98A4A92D7E2FA0051DCE46ED03E98CDC2A014449AA32FDDAB3DF0A9FCEE15",
+      "size": 45808,
+      "mvid": ""
+    },
+    {
+      "role": "deployed_assembly",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "835E81216B850B571577677AB724FAC9A515465F79888A5CACC13C51FF832877",
+      "size": 244224,
+      "mvid": "4fb1a25f-72c8-426d-b93f-d6cba4f9af72"
+    },
+    {
+      "role": "deployed_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "0CBC164CDAF5AD188C71E28C9AED664F066950ACEA3CE09B5F8238DAAF9630BE",
+      "size": 62416,
+      "mvid": ""
+    },
+    {
+      "role": "source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+      "size": 156431,
+      "mvid": ""
+    },
+    {
+      "role": "source_census",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "size": 170135,
+      "mvid": ""
+    },
+    {
+      "role": "source_csproj",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "size": 1774,
+      "mvid": ""
+    },
+    {
+      "role": "pre_run_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R15PublicManifestBoundary\\CANDIDATE_PRE_RUN_MANIFEST.json",
+      "sha256": "B654B942BDBF80E741242908AED50969E108AABF0A59CF1F679B1EA88551ABA2",
+      "size": 5124,
+      "mvid": ""
+    },
+    {
+      "role": "engine_freeze_before",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R15PublicManifestBoundary\\ENGINE_FREEZE_BEFORE.json",
+      "sha256": "4D9FE08F679EAD761FA981B1FAC5775AFA90893DD4459BB22A64480BBA8EEB66",
+      "size": 3343,
+      "mvid": ""
+    },
+    {
+      "role": "engine_freeze_after",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R15PublicManifestBoundary\\ENGINE_FREEZE_AFTER.json",
+      "sha256": "0C707F972041E39A7339779E7654F6FBCD3926C84BFE2E5E3E35BD44A59EB61A",
+      "size": 3343,
+      "mvid": ""
+    },
+    {
+      "role": "work_log",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-20261009-DIRECT-03649052\\A_WORK_LOG.md",
+      "sha256": "5BE2DCFAE9E7EA0A357A100ED9339A1B80EEC291458E2F1E7D13C7BED4A2E1EC",
+      "size": 5445,
+      "mvid": ""
+    },
+    {
+      "role": "recovery_ack",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-20261009-DIRECT-03649052\\A_RECOVERY_ACK.md",
+      "sha256": "CB052FA736A432118C30CAF77409EEA182C02A9AE885A0A9035C4526C15685E2",
+      "size": 4987,
+      "mvid": ""
+    },
+    {
+      "role": "ack_json",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-20261009-DIRECT-03649052\\ACK.json",
+      "sha256": "DB0D32E1103CFC082D0FD7A6D03DC0DF42750B73BE8F41AA193911633E59D3B2",
+      "size": 2063,
+      "mvid": ""
+    }
+  ]
+}

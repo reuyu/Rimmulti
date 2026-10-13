@@ -1,0 +1,398 @@
+[
+  {
+    "sequence": 1,
+    "test_id": "TC01_Provider_InitialState_Unconfigured_Diagnostics",
+    "stage": "Stage1_Clear",
+    "api_target": "ContentProfileProvider",
+    "method_name": "ClearConfiguredExpectedPackagePolicy",
+    "call_category": "ProviderClear",
+    "outcome": "Success"
+  },
+  {
+    "sequence": 2,
+    "test_id": "TC01_Provider_InitialState_Unconfigured_Diagnostics",
+    "stage": "Stage2_Diag",
+    "api_target": "ContentProfileProvider",
+    "method_name": "get_ConfigurationGeneration",
+    "call_category": "ProviderDiagnostics",
+    "outcome": "1"
+  },
+  {
+    "sequence": 3,
+    "test_id": "TC01_Provider_InitialState_Unconfigured_Diagnostics",
+    "stage": "Stage2_Diag",
+    "api_target": "ContentProfileProvider",
+    "method_name": "get_IsCached",
+    "call_category": "ProviderDiagnostics",
+    "outcome": "False"
+  },
+  {
+    "sequence": 4,
+    "test_id": "TC01_Provider_InitialState_Unconfigured_Diagnostics",
+    "stage": "Stage2_Diag",
+    "api_target": "ContentProfileProvider",
+    "method_name": "get_CachedFingerprint",
+    "call_category": "ProviderDiagnostics",
+    "outcome": "null"
+  },
+  {
+    "sequence": 5,
+    "test_id": "TC01_Provider_InitialState_Unconfigured_Diagnostics",
+    "stage": "Stage2_Diag",
+    "api_target": "ContentProfileProvider",
+    "method_name": "get_CachedCanonicalJson",
+    "call_category": "ProviderDiagnostics",
+    "outcome": "null"
+  },
+  {
+    "sequence": 6,
+    "test_id": "TC01_Provider_InitialState_Unconfigured_Diagnostics",
+    "stage": "Stage2_Diag",
+    "api_target": "ContentProfileProvider",
+    "method_name": "get_CachedManifest",
+    "call_category": "ProviderDiagnostics",
+    "outcome": "null"
+  },
+  {
+    "sequence": 7,
+    "test_id": "TC01_Provider_InitialState_Unconfigured_Diagnostics",
+    "stage": "Stage2_Diag",
+    "api_target": "ContentProfileProvider",
+    "method_name": "get_HasConfiguredExpectedPackagePolicy",
+    "call_category": "ProviderDiagnostics",
+    "outcome": "False"
+  },
+  {
+    "sequence": 8,
+    "test_id": "TC01_Provider_InitialState_Unconfigured_Diagnostics",
+    "stage": "Stage2_Diag",
+    "api_target": "ContentProfileProvider",
+    "method_name": "get_ConfiguredExpectedPackagePolicy",
+    "call_category": "ProviderDiagnostics",
+    "outcome": "null"
+  },
+  {
+    "sequence": 9,
+    "test_id": "TC02_Provider_ConfigurePolicy_MonotonicGenerationAdvance",
+    "stage": "Stage1_PreCheck",
+    "api_target": "ContentProfileProvider",
+    "method_name": "get_ConfigurationGeneration",
+    "call_category": "ProviderDiagnostics",
+    "outcome": "1"
+  },
+  {
+    "sequence": 10,
+    "test_id": "TC02_Provider_ConfigurePolicy_MonotonicGenerationAdvance",
+    "stage": "Stage2_Configure",
+    "api_target": "ContentProfileProvider",
+    "method_name": "ConfigureExpectedPackagePolicy",
+    "call_category": "ProviderConfigure",
+    "outcome": "Success"
+  },
+  {
+    "sequence": 11,
+    "test_id": "TC02_Provider_ConfigurePolicy_MonotonicGenerationAdvance",
+    "stage": "Stage3_PostCheck",
+    "api_target": "ContentProfileProvider",
+    "method_name": "get_ConfigurationGeneration",
+    "call_category": "ProviderDiagnostics",
+    "outcome": "2"
+  },
+  {
+    "sequence": 12,
+    "test_id": "TC03_Provider_ReconfigureSamePolicy_AdvancesGeneration",
+    "stage": "Stage1_PreCheck",
+    "api_target": "ContentProfileProvider",
+    "method_name": "get_ConfigurationGeneration",
+    "call_category": "ProviderDiagnostics",
+    "outcome": "2"
+  },
+  {
+    "sequence": 13,
+    "test_id": "TC03_Provider_ReconfigureSamePolicy_AdvancesGeneration",
+    "stage": "Stage2_Reconfigure",
+    "api_target": "ContentProfileProvider",
+    "method_name": "ConfigureExpectedPackagePolicy",
+    "call_category": "ProviderConfigure",
+    "outcome": "Success"
+  },
+  {
+    "sequence": 14,
+    "test_id": "TC03_Provider_ReconfigureSamePolicy_AdvancesGeneration",
+    "stage": "Stage3_PostCheck",
+    "api_target": "ContentProfileProvider",
+    "method_name": "get_ConfigurationGeneration",
+    "call_category": "ProviderDiagnostics",
+    "outcome": "3"
+  },
+  {
+    "sequence": 15,
+    "test_id": "TC04_Provider_ExplicitInvalidate_AdvancesGeneration",
+    "stage": "Stage1_PreCheck",
+    "api_target": "ContentProfileProvider",
+    "method_name": "get_ConfigurationGeneration",
+    "call_category": "ProviderDiagnostics",
+    "outcome": "3"
+  },
+  {
+    "sequence": 16,
+    "test_id": "TC04_Provider_ExplicitInvalidate_AdvancesGeneration",
+    "stage": "Stage2_Invalidate",
+    "api_target": "ContentProfileProvider",
+    "method_name": "InvalidateCache",
+    "call_category": "ProviderInvalidate",
+    "outcome": "Success"
+  },
+  {
+    "sequence": 17,
+    "test_id": "TC04_Provider_ExplicitInvalidate_AdvancesGeneration",
+    "stage": "Stage3_PostCheck",
+    "api_target": "ContentProfileProvider",
+    "method_name": "get_ConfigurationGeneration",
+    "call_category": "ProviderDiagnostics",
+    "outcome": "4"
+  },
+  {
+    "sequence": 18,
+    "test_id": "TC05_Provider_ClearConfiguredPolicy_AdvancesGeneration",
+    "stage": "Stage1_PreCheck",
+    "api_target": "ContentProfileProvider",
+    "method_name": "get_ConfigurationGeneration",
+    "call_category": "ProviderDiagnostics",
+    "outcome": "4"
+  },
+  {
+    "sequence": 19,
+    "test_id": "TC05_Provider_ClearConfiguredPolicy_AdvancesGeneration",
+    "stage": "Stage2_Clear",
+    "api_target": "ContentProfileProvider",
+    "method_name": "ClearConfiguredExpectedPackagePolicy",
+    "call_category": "ProviderClear",
+    "outcome": "Success"
+  },
+  {
+    "sequence": 20,
+    "test_id": "TC05_Provider_ClearConfiguredPolicy_AdvancesGeneration",
+    "stage": "Stage3_PostCheck",
+    "api_target": "ContentProfileProvider",
+    "method_name": "get_ConfigurationGeneration",
+    "call_category": "ProviderDiagnostics",
+    "outcome": "5"
+  },
+  {
+    "sequence": 21,
+    "test_id": "TC06_StandaloneCore_InitialState_Clean",
+    "stage": "Stage1_Init",
+    "api_target": "ContentProfileCacheCore",
+    "method_name": "ctor",
+    "call_category": "CoreCreation",
+    "outcome": "InstanceCreated"
+  },
+  {
+    "sequence": 22,
+    "test_id": "TC07_StandaloneCore_ConfigurePolicy_GenerationAdvance",
+    "stage": "Stage1_Init",
+    "api_target": "ContentProfileCacheCore",
+    "method_name": "ctor",
+    "call_category": "CoreCreation",
+    "outcome": "InstanceCreated"
+  },
+  {
+    "sequence": 23,
+    "test_id": "TC07_StandaloneCore_ConfigurePolicy_GenerationAdvance",
+    "stage": "Stage2_Configure",
+    "api_target": "ContentProfileCacheCore",
+    "method_name": "ConfigureExpectedPackagePolicy",
+    "call_category": "CoreConfigure",
+    "outcome": "Success"
+  },
+  {
+    "sequence": 24,
+    "test_id": "TC08_StandaloneCore_CaptureStateSnapshot_MatchesGenerationAndPolicy",
+    "stage": "Stage1_Init",
+    "api_target": "ContentProfileCacheCore",
+    "method_name": "ctor",
+    "call_category": "CoreCreation",
+    "outcome": "InstanceCreated"
+  },
+  {
+    "sequence": 25,
+    "test_id": "TC08_StandaloneCore_CaptureStateSnapshot_MatchesGenerationAndPolicy",
+    "stage": "Stage2_Configure",
+    "api_target": "ContentProfileCacheCore",
+    "method_name": "ConfigureExpectedPackagePolicy",
+    "call_category": "CoreConfigure",
+    "outcome": "Success"
+  },
+  {
+    "sequence": 26,
+    "test_id": "TC08_StandaloneCore_CaptureStateSnapshot_MatchesGenerationAndPolicy",
+    "stage": "Stage3_Snapshot",
+    "api_target": "ContentProfileCacheCore",
+    "method_name": "CaptureStateSnapshot",
+    "call_category": "CoreQuery",
+    "outcome": "SnapshotCaptured"
+  },
+  {
+    "sequence": 27,
+    "test_id": "TC09_StandaloneCore_PublishCoherentEntry_NormalMatching_Success",
+    "stage": "Stage1_Init",
+    "api_target": "ContentProfileCacheCore",
+    "method_name": "ctor",
+    "call_category": "CoreCreation",
+    "outcome": "InstanceCreated"
+  },
+  {
+    "sequence": 28,
+    "test_id": "TC09_StandaloneCore_PublishCoherentEntry_NormalMatching_Success",
+    "stage": "Stage2_Configure",
+    "api_target": "ContentProfileCacheCore",
+    "method_name": "ConfigureExpectedPackagePolicy",
+    "call_category": "CoreConfigure",
+    "outcome": "Success"
+  },
+  {
+    "sequence": 29,
+    "test_id": "TC09_StandaloneCore_PublishCoherentEntry_NormalMatching_Success",
+    "stage": "Stage3_Snapshot",
+    "api_target": "ContentProfileCacheCore",
+    "method_name": "CaptureStateSnapshot",
+    "call_category": "CoreQuery",
+    "outcome": "SnapshotCaptured"
+  },
+  {
+    "sequence": 30,
+    "test_id": "TC09_StandaloneCore_PublishCoherentEntry_NormalMatching_Success",
+    "stage": "Stage4_Publish",
+    "api_target": "ContentProfileCacheCore",
+    "method_name": "TryPublishComputedEntry",
+    "call_category": "CorePublish",
+    "outcome": "True"
+  },
+  {
+    "sequence": 31,
+    "test_id": "TC10_StandaloneCore_TryGetCoherentEntry_ReturnsMatchingSnapshot",
+    "stage": "Stage1_Init",
+    "api_target": "ContentProfileCacheCore",
+    "method_name": "ctor",
+    "call_category": "CoreCreation",
+    "outcome": "InstanceCreated"
+  },
+  {
+    "sequence": 32,
+    "test_id": "TC10_StandaloneCore_TryGetCoherentEntry_ReturnsMatchingSnapshot",
+    "stage": "Stage2_Configure",
+    "api_target": "ContentProfileCacheCore",
+    "method_name": "ConfigureExpectedPackagePolicy",
+    "call_category": "CoreConfigure",
+    "outcome": "Success"
+  },
+  {
+    "sequence": 33,
+    "test_id": "TC10_StandaloneCore_TryGetCoherentEntry_ReturnsMatchingSnapshot",
+    "stage": "Stage3_Publish",
+    "api_target": "ContentProfileCacheCore",
+    "method_name": "TryPublishComputedEntry",
+    "call_category": "CorePublish",
+    "outcome": "Published"
+  },
+  {
+    "sequence": 34,
+    "test_id": "TC10_StandaloneCore_TryGetCoherentEntry_ReturnsMatchingSnapshot",
+    "stage": "Stage4_Query",
+    "api_target": "ContentProfileCacheCore",
+    "method_name": "TryGetCoherentEntry",
+    "call_category": "CoreQuery",
+    "outcome": "True"
+  },
+  {
+    "sequence": 35,
+    "test_id": "TC11_StandaloneCore_DefensiveManifestImmutability_ResistsCallerMutation",
+    "stage": "Stage1_Init",
+    "api_target": "ContentProfileCacheCore",
+    "method_name": "ctor",
+    "call_category": "CoreCreation",
+    "outcome": "InstanceCreated"
+  },
+  {
+    "sequence": 36,
+    "test_id": "TC11_StandaloneCore_DefensiveManifestImmutability_ResistsCallerMutation",
+    "stage": "Stage2_Query1",
+    "api_target": "ContentProfileCacheCore",
+    "method_name": "get_CachedManifest",
+    "call_category": "CoreQuery",
+    "outcome": "ObtainedM1"
+  },
+  {
+    "sequence": 37,
+    "test_id": "TC11_StandaloneCore_DefensiveManifestImmutability_ResistsCallerMutation",
+    "stage": "Stage3_Query2",
+    "api_target": "ContentProfileCacheCore",
+    "method_name": "get_CachedManifest",
+    "call_category": "CoreQuery",
+    "outcome": "ObtainedM2"
+  },
+  {
+    "sequence": 38,
+    "test_id": "TC12_StandaloneCore_InvalidateCache_AdvancesGeneration_ClearsEntry",
+    "stage": "Stage1_Init",
+    "api_target": "ContentProfileCacheCore",
+    "method_name": "ctor",
+    "call_category": "CoreCreation",
+    "outcome": "InstanceCreated"
+  },
+  {
+    "sequence": 39,
+    "test_id": "TC12_StandaloneCore_InvalidateCache_AdvancesGeneration_ClearsEntry",
+    "stage": "Stage2_Invalidate",
+    "api_target": "ContentProfileCacheCore",
+    "method_name": "InvalidateCache",
+    "call_category": "CoreInvalidate",
+    "outcome": "Success"
+  },
+  {
+    "sequence": 40,
+    "test_id": "TC13_StandaloneCore_ReconfigureToNewPolicy_AdvancesGeneration_ClearsOldCache",
+    "stage": "Stage2_Reconfigure",
+    "api_target": "ContentProfileCacheCore",
+    "method_name": "ConfigureExpectedPackagePolicy",
+    "call_category": "CoreConfigure",
+    "outcome": "Success"
+  },
+  {
+    "sequence": 41,
+    "test_id": "TC14_StandaloneCore_PublishNewPolicyEntry_NormalMatching_Success",
+    "stage": "Stage2_Publish",
+    "api_target": "ContentProfileCacheCore",
+    "method_name": "TryPublishComputedEntry",
+    "call_category": "CorePublish",
+    "outcome": "True"
+  },
+  {
+    "sequence": 42,
+    "test_id": "TC15_StandaloneCore_TryPublishComputedEntry_ReturnsPublishedEntryDirectly",
+    "stage": "Stage2_PublishEntry",
+    "api_target": "ContentProfileCacheCore",
+    "method_name": "TryPublishComputedEntry_WithEntryOut",
+    "call_category": "CorePublish",
+    "outcome": "True"
+  },
+  {
+    "sequence": 43,
+    "test_id": "TC16_StandaloneCore_SetComputationError_GenerationScoped_Protection",
+    "stage": "Stage1_SetErrorGen1",
+    "api_target": "ContentProfileCacheCore",
+    "method_name": "SetComputationError(gen,err)",
+    "call_category": "CoreError",
+    "outcome": "Recorded"
+  },
+  {
+    "sequence": 44,
+    "test_id": "TC16_StandaloneCore_SetComputationError_GenerationScoped_Protection",
+    "stage": "Stage2_SetStaleError",
+    "api_target": "ContentProfileCacheCore",
+    "method_name": "SetComputationError(staleGen,err)",
+    "call_category": "CoreError",
+    "outcome": "Ignored"
+  }
+]

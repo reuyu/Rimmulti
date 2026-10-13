@@ -1,0 +1,767 @@
+Window: "RimMulti - Antigravity IDE - WarEconomy.Server.pdb", App: Antigravity IDE.exe.
+	0 창 RimMulti - Antigravity IDE - WarEconomy.Server.pdb Secondary Actions: Raise
+		1 창 (disabled)
+		2 영역 RimMulti - Antigravity IDE - WarEconomy.Server.pdb
+			3 영역
+				4 영역
+					5 영역
+						6 단추 Minimize
+						7 단추 Maximize
+						8 단추 Close
+					9 영역
+						10 영역
+							11 영역
+								12 영역
+									13 문서 RimMulti - Antigravity IDE - WarEconomy.Server.pdb Value: vscode-file://vscode-app/c:/Users/user/AppData/Local/Programs/Antigravity%20IDE/resources/app/out/vs/code/electron-browser/workbench/workbench.html ID: RootWebArea
+										14 그룹
+											15 응용 프로그램
+												16 그룹
+												17 그룹
+												18 그룹
+												19 메뉴 모음
+													20 메뉴 항목 More
+												21 도구 모음
+												22 텍스트 RimMulti - Antigravity IDE - WarEconomy.Server.pdb
+												23 도구 모음 Title actions
+													24 단추 Customize Layout...
+													25 확인란 (settable, string) Toggle Primary Side Bar (Ctrl+B)
+													26 확인란 (settable, string) Toggle Panel (Ctrl+J)
+													27 확인란 (settable, string) Toggle Agent (Ctrl+Alt+B)
+													28 단추 Quick Open
+													29 단추 Open Browser (Preview)
+													30 단추 Editor-Specific Settings
+													31 단추 Profile
+														32 graphic
+														33 그룹 Profile
+															34 텍스트 
+												35 그룹
+												36 그룹
+												37 그룹
+												38 그룹
+												39 Tab Active View Switcher
+													40 탭 항목 (selectable) Explorer (Ctrl+Shift+E)
+														41 그룹 Explorer (Ctrl+Shift+E)
+													42 탭 항목 (selectable) Code Search (Ctrl+Shift+F)
+														43 그룹 Code Search (Ctrl+Shift+F)
+													44 탭 항목 (selectable) Source Control (Ctrl+Shift+G)
+														45 그룹 Source Control (Ctrl+Shift+G)
+													46 탭 항목 (selectable) Run and Debug (Ctrl+Shift+D)
+														47 그룹 Run and Debug (Ctrl+Shift+D)
+													48 탭 항목 (selectable) Remote Explorer
+														49 그룹 Remote Explorer
+													50 탭 항목 (selectable) Extensions (Ctrl+Shift+X)
+														51 그룹 Extensions (Ctrl+Shift+X)
+													52 탭 항목 (selectable) Testing
+														53 그룹 Testing
+													54 탭 항목 (selectable) cloudlatex
+														55 그룹 cloudlatex
+												56 제목 Explorer
+												57 도구 모음 Explorer actions
+													58 그룹
+														59 그룹
+															60 단추 Views and More Actions...
+												61 도구 모음
+												62 그룹
+												63 그룹
+												64 단추 Explorer Section: RimMulti
+													65 제목 Explorer Section: RimMulti
+												66 트리 Files Explorer
+													67 콘솔 트리 (selectable) master_finalize_gate05_r2_review_20261008.py ID: list_id_1_12
+														68 그룹 C:\Users\user\Desktop\RimMulti\Dispatcher\master_finalize_gate05_r2_review_20261008.py
+													69 콘솔 트리 (selectable) master_finalize_gate05_r3_dispatch_20261008.py ID: list_id_1_13
+														70 그룹 C:\Users\user\Desktop\RimMulti\Dispatcher\master_finalize_gate05_r3_dispatch_20261008.py
+													71 콘솔 트리 (selectable) master_finalize_reference_analysis_20261008.py ID: list_id_1_14
+														72 그룹 C:\Users\user\Desktop\RimMulti\Dispatcher\master_finalize_reference_analysis_20261008.py
+													73 콘솔 트리 (selectable) master_mark_gate05_r3_sent_20261008.py ID: list_id_1_15
+														74 그룹 C:\Users\user\Desktop\RimMulti\Dispatcher\master_mark_gate05_r3_sent_20261008.py
+													75 콘솔 트리 (selectable) master_monitor_guard.py ID: list_id_1_16
+														76 그룹 C:\Users\user\Desktop\RimMulti\Dispatcher\master_monitor_guard.py
+													77 콘솔 트리 (selectable) MASTER_MONITOR_INSTRUCTIONS.md ID: list_id_1_17
+														78 그룹 C:\Users\user\Desktop\RimMulti\Dispatcher\MASTER_MONITOR_INSTRUCTIONS.md
+													79 콘솔 트리 (selectable) MASTER_MONITOR_JOURNAL.jsonl ID: list_id_1_18
+														80 그룹 C:\Users\user\Desktop\RimMulti\Dispatcher\MASTER_MONITOR_JOURNAL.jsonl
+													81 콘솔 트리 (selectable) MASTER_MONITOR_LOCK_INFO.json ID: list_id_1_19
+														82 그룹 C:\Users\user\Desktop\RimMulti\Dispatcher\MASTER_MONITOR_LOCK_INFO.json
+													83 콘솔 트리 (selectable) MASTER_MONITOR_RUN.lock ID: list_id_1_20
+														84 그룹 C:\Users\user\Desktop\RimMulti\Dispatcher\MASTER_MONITOR_RUN.lock
+													85 콘솔 트리 (selectable) MASTER_MONITOR_TRIGGER.txt ID: list_id_1_21
+														86 그룹 C:\Users\user\Desktop\RimMulti\Dispatcher\MASTER_MONITOR_TRIGGER.txt
+													87 콘솔 트리 (selectable) master_prepare_gate05_r3_20261008.py ID: list_id_1_22
+														88 그룹 C:\Users\user\Desktop\RimMulti\Dispatcher\master_prepare_gate05_r3_20261008.py
+													89 콘솔 트리 (selectable) master_prepare_gate05_r4_20261008.py ID: list_id_1_23
+														90 그룹 C:\Users\user\Desktop\RimMulti\Dispatcher\master_prepare_gate05_r4_20261008.py
+													91 콘솔 트리 (selectable) MASTER_RECEIPTS.json ID: list_id_1_24
+														92 그룹 C:\Users\user\Desktop\RimMulti\Dispatcher\MASTER_RECEIPTS.json
+													93 콘솔 트리 (selectable) master_record_reference_review_context_20261008.py ID: list_id_1_25
+														94 그룹 C:\Users\user\Desktop\RimMulti\Dispatcher\master_record_reference_review_context_20261008.py
+													95 콘솔 트리 (selectable) master_reference_source_inventory_20261008.py ID: list_id_1_26
+														96 그룹 C:\Users\user\Desktop\RimMulti\Dispatcher\master_reference_source_inventory_20261008.py
+													97 콘솔 트리 (selectable) master_review_gate05_r2_20261008.py ID: list_id_1_27
+														98 그룹 C:\Users\user\Desktop\RimMulti\Dispatcher\master_review_gate05_r2_20261008.py
+													99 콘솔 트리 (selectable) master_review_gate05_r3_20261008.py ID: list_id_1_28
+														100 그룹 C:\Users\user\Desktop\RimMulti\Dispatcher\master_review_gate05_r3_20261008.py
+													101 콘솔 트리 (selectable) master_review_sol_r3_preparation_20261008.py ID: list_id_1_29
+														102 그룹 C:\Users\user\Desktop\RimMulti\Dispatcher\master_review_sol_r3_preparation_20261008.py
+													103 콘솔 트리 (selectable) MASTER_TO_A_OUTBOX.json ID: list_id_1_30
+														104 그룹 C:\Users\user\Desktop\RimMulti\Dispatcher\MASTER_TO_A_OUTBOX.json
+													105 콘솔 트리 (selectable) MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md ID: list_id_1_31
+														106 그룹 C:\Users\user\Desktop\RimMulti\Dispatcher\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md
+													107 콘솔 트리 (selectable) README.md ID: list_id_1_32
+														108 그룹 C:\Users\user\Desktop\RimMulti\Dispatcher\README.md
+													109 콘솔 트리 (selectable) docs ID: list_id_1_33
+														110 그룹 C:\Users\user\Desktop\RimMulti\docs
+													111 콘솔 트리 (selectable) Multiplayer-master ID: list_id_1_34
+														112 그룹 C:\Users\user\Desktop\RimMulti\Multiplayer-master
+													113 콘솔 트리 (selectable) QA-Baseline ID: list_id_1_35
+														114 그룹 C:\Users\user\Desktop\RimMulti\QA-Baseline
+													115 콘솔 트리 (selectable) QA-Phase2 ID: list_id_1_36
+														116 그룹 C:\Users\user\Desktop\RimMulti\QA-Phase2
+													117 콘솔 트리 (selectable) QA-Phase3 ID: list_id_1_37
+														118 그룹 C:\Users\user\Desktop\RimMulti\QA-Phase3
+													119 콘솔 트리 (selectable) QA-Tactical-Engine ID: list_id_1_38
+														120 그룹 C:\Users\user\Desktop\RimMulti\QA-Tactical-Engine
+													121 콘솔 트리 (selectable) QA-Transaction-Pipeline ID: list_id_1_39
+														122 그룹 C:\Users\user\Desktop\RimMulti\QA-Transaction-Pipeline
+													123 콘솔 트리 (selectable) Rimworld-Together-development ID: list_id_1_40
+														124 그룹 C:\Users\user\Desktop\RimMulti\Rimworld-Together-development
+													125 콘솔 트리 (selectable) scratch ID: list_id_1_41
+														126 그룹 C:\Users\user\Desktop\RimMulti\scratch
+													127 콘솔 트리 (selectable) WarEconomyMod ID: list_id_1_42
+														128 그룹 C:\Users\user\Desktop\RimMulti\WarEconomyMod
+													129 콘솔 트리 (selectable) 1.5 ID: list_id_1_43
+														130 그룹 C:\Users\user\Desktop\RimMulti\WarEconomyMod\1.5
+													131 콘솔 트리 (selectable) 1.6 ID: list_id_1_44
+														132 그룹 C:\Users\user\Desktop\RimMulti\WarEconomyMod\1.6
+													133 콘솔 트리 (selectable) About ID: list_id_1_45
+														134 그룹 C:\Users\user\Desktop\RimMulti\WarEconomyMod\About
+													135 콘솔 트리 (selectable) Source ID: list_id_1_46
+														136 그룹 C:\Users\user\Desktop\RimMulti\WarEconomyMod\Source
+													137 콘솔 트리 (selectable) Client ID: list_id_1_47
+														138 그룹 C:\Users\user\Desktop\RimMulti\WarEconomyMod\Source\Client
+													139 콘솔 트리 (selectable) Common ID: list_id_1_48
+														140 그룹 C:\Users\user\Desktop\RimMulti\WarEconomyMod\Source\Common
+													141 콘솔 트리 (selectable) Server ID: list_id_1_49
+														142 그룹 C:\Users\user\Desktop\RimMulti\WarEconomyMod\Source\Server
+													143 콘솔 트리 (selectable) bin ID: list_id_1_50
+														144 그룹 C:\Users\user\Desktop\RimMulti\WarEconomyMod\Source\Server\bin
+													145 콘솔 트리 (selectable) Debug ID: list_id_1_51
+														146 그룹 C:\Users\user\Desktop\RimMulti\WarEconomyMod\Source\Server\bin\Debug
+													147 그룹
+														148 콘솔 트리 (selectable) Dispatcher ID: list_id_1_2
+															149 그룹 C:\Users\user\Desktop\RimMulti\Dispatcher
+												150 단추 Outline Section
+													151 제목 Outline
+												152 단추 Timeline Section
+													153 제목 Timeline
+												154 그룹
+												155 기본 ID: workbench.parts.editor
+													156 그룹
+														157 Tab
+															158 탭 항목 (selectable) WarEconomy.Server.pdb, preview
+																159 그룹 WarEconomy.Server.pdb
+																160 도구 모음 Tab actions
+																	161 단추 Close (Ctrl+F4)
+														162 도구 모음 Editor actions
+															163 단추 Split Editor Right (Ctrl+\) [Alt] Split Editor Down
+															164 단추 Go Back (Alt+LeftArrow)
+															165 단추 Go Forward (Alt+RightArrow)
+															166 그룹
+																167 그룹
+																	168 단추 More Actions...
+																		169 텍스트 
+														170 LIST
+															171 목록 항목 WarEconomyModWarEcono…
+																172 그룹 C:\Users\user\Desktop\RimMulti\WarEconomyMod
+																	173 텍스트 WarEconomyMod
+																174 텍스트 
+															175 목록 항목 Source
+																176 그룹 C:\Users\user\Desktop\RimMulti\WarEconomyMod\Source
+																	177 텍스트 Source
+																178 텍스트 
+															179 목록 항목 Server
+																180 그룹 C:\Users\user\Desktop\RimMulti\WarEconomyMod\Source\Server
+																	181 텍스트 Server
+																182 텍스트 
+															183 목록 항목 bin
+																184 그룹 C:\Users\user\Desktop\RimMulti\WarEconomyMod\Source\Server\bin
+																	185 텍스트 bin
+																186 텍스트 
+															187 목록 항목 Release
+																188 그룹 C:\Users\user\Desktop\RimMulti\WarEconomyMod\Source\Server\bin\Release
+																	189 텍스트 Release
+																190 텍스트 
+															191 목록 항목 net8.0
+																192 그룹 C:\Users\user\Desktop\RimMulti\WarEconomyMod\Source\Server\bin\Release\net8.0
+																	193 텍스트 net8.0
+																194 텍스트 
+															195 목록 항목 WarEconomy.Server.pdb
+																196 그룹 C:\Users\user\Desktop\RimMulti\WarEconomyMod\Source\Server\bin\Release\net8.0\WarEconomy.Server.pdb
+																	197 텍스트 
+																	198 텍스트 WarEconomy.Server.pdb
+													199 그룹 WarEconomy.Server.pdb, preview, The file is not displayed in the text editor because it is either binary or uses an unsupported text encoding.
+														200 텍스트 
+														201 텍스트 The file is not displayed in the text editor because it is either binary or uses an unsupported text encoding.
+														202 단추 Open Anyway
+												203 상태 ID: workbench.parts.statusbar
+													204 그룹 remote ID: status.host
+														205 단추 remote
+													206 그룹 No Problems ID: status.problems
+														207 단추 No Problems
+													208 그룹 Notifications ID: status.notifications
+														209 단추 Notifications
+													210 그룹 Antigravity - Settings ID: google.antigravity.settings
+														211 단추 Antigravity - Settings
+													212 그룹 46.76KB ID: status.editor.info
+														213 단추 46.76KB
+													214 그룹 loading~spin, Select Python Interpreter ID: ms-python.vscode-python-envs.python.interpreterDisplay
+														215 단추 loading~spin, Select Python Interpreter
+												216 그룹
+													217 텍스트 WarEconomy 컨텍스트 복구 및 수행
+													218 링크
+														219 graphic
+													220 링크
+														221 graphic
+													222 단추 ID: base-ui-P0-1
+														223 링크
+															224 graphic
+													225 링크
+														226 graphic
+													227 region Agent Conversation ID: conversation
+														228 그룹
+															229 그룹 Message history
+																230 단추 Load older messages, showing 220 of 3169
+																658 문서 User message
+																	659 그룹
+																		660 텍스트 Master 승인 R15 WE-A-ENGINE-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-20261009-DIRECT-03649052입니다. C:\Users\user\Desktop\RimMulti\Dispatcher\A_TASKS\WE-A-ENGINE-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-20261009-DIRECT-03649052\INSTRUCTIONS.md 전체와 WP/release를 읽고 PUBLIC_MANIFEST_BOUNDARY 한 목표를 처리하세요. Public caller-policy collector는 private 내부 helper로 봉인하고 parameterless manifest와 fingerprint가 같은 provider-owned capture/currentstamp 성공 경계를 통과하게 하세요. Invalidate+1/정상coreownership/codec 유지. 정상 matching core/validconfig 단위검증만 허용;actualCompute/GetActual/native/globalseed/stale/mismatch/rejection/race 실행 금지. 새 perprocess 모든산출물 inventory·실제numericexit·fulltypedoracle·explicitledger를 보관하고 지정task ACK/COMPLETION을 기록하세요.
+																	661 텍스트 10:54 PM, 10/9/2026
+																	662 단추 Copy
+																		663 graphic
+																	664 단추 Undo changes up to this point
+																		665 graphic
+																666 문서 Agent response
+																	667 단추 Worked for 18m
+																		668 graphic
+																	669 텍스트 Master 승인 작업
+																	670 텍스트 R15
+																	671 텍스트 (
+																	672 텍스트 WE-A-ENGINE-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-20261009-DIRECT-03649052
+																	673 텍스트 /
+																	674 텍스트 WP_ENGINE_GATE05_R15_PUBLIC_MANIFEST_BOUNDARY
+																	675 텍스트 / Envelope 18)의 단일 기술 목표인
+																	676 텍스트 PUBLIC_MANIFEST_BOUNDARY
+																	677 텍스트 구현 및 개발자 E1 검증을 완료하였습니다.
+																	678 구분 기호
+																	679 제목 1. 단일 기술 목표 구현 (PUBLIC_MANIFEST_BOUNDARY) ID: user-content-1-단일-기술-목표-구현-public_manifest_boundary
+																	680 LIST
+																		681 목록 항목 외부 호출자 임의 정책 수집기 공개 경로 차단 및 내부 헬퍼 봉인:• R14에 노출되었던 ComputeActualContentProfileManifest(ExpectedPackagePolicyRecord) 공개(public) 오버로드를 완전히 제거.• 실제 수집 로직은 내부 전용 private static ContentProfileManifest CollectActualContentProfileManifestInternal(ExpectedPackagePolicyRecord capturedPolicy)로 봉인하여 외부 호출자의 임의 정책 주입 수집을 원천 차단.
+																			682 텍스트 외부 호출자 임의 정책 수집기 공개 경로 차단 및 내부 헬퍼 봉인
+																			683 LIST
+																				684 목록 항목 R14에 노출되었던 ComputeActualContentProfileManifest(ExpectedPackagePolicyRecord) 공개(public) 오버로드를 완전히 제거.
+																					685 텍스트 ComputeActualContentProfileManifest(ExpectedPackagePolicyRecord)
+																					686 텍스트 public
+																				687 목록 항목 실제 수집 로직은 내부 전용 private static ContentProfileManifest CollectActualContentProfileManifestInternal(ExpectedPackagePolicyRecord capturedPolicy)로 봉인하여 외부 호출자의 임의 정책 주입 수집을 원천 차단.
+																					688 텍스트 private static ContentProfileManifest CollectActualContentProfileManifestInternal(ExpectedPackagePolicyRecord capturedPolicy)
+																		689 목록 항목 단일 신뢰 프로바이더 계산 및 성공 선형화 경계 (Single Synchronized Success Linearization):• 매개변수 없는 두 공개 엔트리 포인트(ComputeActualContentProfileManifest(), ComputeActualContentProfileFingerprint())가 동일한 내부 실행 메서드 ComputeAndPublishActualContentProfile()를 공유.• 연산 시작 시 프로세스 로컬 스냅샷(long generation, ExpectedPackagePolicyRecord policy)을 1회 캡처하고, 수집/정규화/JSON/해시 생성 후 단일 코어 동기화 락 하에서 현재 프로바이더 상태(세대 및 구성 정책 다이제스트)와 캡처된 스탬프의 동일성을 검증.• 현재 스탬프 검증 및 캐시 발행 실패 시 명시적 예외(InvalidOperationException)를 발생시켜 비정상/무효화된 결과의 성공 반환을 원천 차단 (경고 후 성공 반환/폴백/재조회 금지).• 계산 결과는 ComputedContentProfileResult 객체로 반환되어 두 공개 API가 동일한 검증 성공 결과를 소비.
+																			690 텍스트 단일 신뢰 프로바이더 계산 및 성공 선형화 경계 (
+																			691 텍스트 Single Synchronized Success Linearization
+																			692 텍스트 )
+																			693 LIST
+																				694 목록 항목 매개변수 없는 두 공개 엔트리 포인트(ComputeActualContentProfileManifest(), ComputeActualContentProfileFingerprint())가 동일한 내부 실행 메서드 ComputeAndPublishActualContentProfile()를 공유.
+																					695 단추 ComputeActualContentProfileManifest() Description: c:\Users\user\Desktop\RimMulti\scratch\WorkerBridgeMod\Source\EngineHostCensus.cs
+																						696 graphic
+																					697 단추 ComputeActualContentProfileFingerprint() Description: c:\Users\user\Desktop\RimMulti\scratch\WorkerBridgeMod\Source\EngineHostCensus.cs
+																						698 graphic
+																					699 텍스트 ComputeAndPublishActualContentProfile()
+																				700 목록 항목 연산 시작 시 프로세스 로컬 스냅샷(long generation, ExpectedPackagePolicyRecord policy)을 1회 캡처하고, 수집/정규화/JSON/해시 생성 후 단일 코어 동기화 락 하에서 현재 프로바이더 상태(세대 및 구성 정책 다이제스트)와 캡처된 스탬프의 동일성을 검증.
+																					701 텍스트 long generation
+																					702 텍스트 ExpectedPackagePolicyRecord policy
+																				703 목록 항목 현재 스탬프 검증 및 캐시 발행 실패 시 명시적 예외(InvalidOperationException)를 발생시켜 비정상/무효화된 결과의 성공 반환을 원천 차단 (경고 후 성공 반환/폴백/재조회 금지).
+																					704 텍스트 InvalidOperationException
+																				705 목록 항목 계산 결과는 ComputedContentProfileResult 객체로 반환되어 두 공개 API가 동일한 검증 성공 결과를 소비.
+																					706 텍스트 ComputedContentProfileResult
+																		707 목록 항목 불변 상태 및 세대 규약 유지:• R14의 InvalidateCache() 시 세대 전진(_generation++), 순수 코어 소유권, 방어적 복사, 순수 코덱 로직 온전히 유지.• ContentProfileCacheCore.SetComputationError(long capturedGeneration, string? error)를 도입하여 이전 세대의 지연된 계산 오류가 현재 세대의 오류 상태를 덮어쓰지 않도록 세대 범위 오류 격리 적용.
+																			708 텍스트 불변 상태 및 세대 규약 유지
+																			709 LIST
+																				710 목록 항목 R14의 InvalidateCache() 시 세대 전진(_generation++), 순수 코어 소유권, 방어적 복사, 순수 코덱 로직 온전히 유지.
+																					711 텍스트 InvalidateCache()
+																					712 텍스트 _generation++
+																				713 목록 항목 ContentProfileCacheCore.SetComputationError(long capturedGeneration, string? error)를 도입하여 이전 세대의 지연된 계산 오류가 현재 세대의 오류 상태를 덮어쓰지 않도록 세대 범위 오류 격리 적용.
+																					714 텍스트 ContentProfileCacheCore.SetComputationError(long capturedGeneration, string? error)
+																		715 목록 항목 버전 및 기능 식별자 갱신:• CONTENT_CONTRACT_VERSION: "ADR-006B-v5-R15"• CONTENT_CAPABILITY_FLAGS: "GATE05_R15_PUBLIC_MANIFEST_BOUNDARY"
+																			716 텍스트 버전 및 기능 식별자 갱신
+																			717 LIST
+																				718 목록 항목 CONTENT_CONTRACT_VERSION: "ADR-006B-v5-R15"
+																					719 텍스트 CONTENT_CONTRACT_VERSION
+																					720 텍스트 "ADR-006B-v5-R15"
+																				721 목록 항목 CONTENT_CAPABILITY_FLAGS: "GATE05_R15_PUBLIC_MANIFEST_BOUNDARY"
+																					722 텍스트 CONTENT_CAPABILITY_FLAGS
+																					723 텍스트 "GATE05_R15_PUBLIC_MANIFEST_BOUNDARY"
+																	724 구분 기호
+																	725 제목 2. 소스 무결성 및 후보 바이너리 메타데이터 ID: user-content-2-소스-무결성-및-후보-바이너리-메타데이터
+																	726 LIST
+																		727 목록 항목 EngineHostCensus.cs 접두부 72,547 바이트: SHA-256 F3C4F865F1E2A898BF240A2D096195870D77A52408CF2D93664FE15092A2A887(100% 불변 보존)
+																			728 단추 EngineHostCensus.cs Description: c:\Users\user\Desktop\RimMulti\scratch\WorkerBridgeMod\Source\EngineHostCensus.cs
+																				729 graphic
+																			730 텍스트 F3C4F865F1E2A898BF240A2D096195870D77A52408CF2D93664FE15092A2A887
+																			731 텍스트 100% 불변 보존
+																		732 목록 항목 WorkerBridge.cs: SHA-256 BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718(156,431 bytes, 100% 불변 보존)
+																			733 단추 WorkerBridge.cs Description: c:\Users\user\Desktop\RimMulti\scratch\WorkerBridgeMod\Source\WorkerBridge.cs
+																				734 graphic
+																			735 텍스트 BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718
+																			736 텍스트 100% 불변 보존
+																		737 목록 항목 WorkerBridge.csproj: SHA-256 571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052(1,774 bytes, 100% 불변 보존)
+																			738 단추 WorkerBridge.csproj Description: c:\Users\user\Desktop\RimMulti\scratch\WorkerBridgeMod\Source\WorkerBridge.csproj
+																				739 graphic
+																			740 텍스트 571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052
+																			741 텍스트 100% 불변 보존
+																	742 제목 후보 빌드 PE / PDB 식별자 ID: user-content-후보-빌드-pe--pdb-식별자
+																	743 LIST
+																		744 목록 항목 Selected Debug DLL:• SHA-256: 835E81216B850B571577677AB724FAC9A515465F79888A5CACC13C51FF832877 (244,224 bytes)• MVID: 4fb1a25f-72c8-426d-b93f-d6cba4f9af72• Matching PDB: 0CBC164CDAF5AD188C71E28C9AED664F066950ACEA3CE09B5F8238DAAF9630BE (62,416 bytes)
+																			745 텍스트 Selected Debug DLL
+																			746 LIST
+																				747 목록 항목 SHA-256: 835E81216B850B571577677AB724FAC9A515465F79888A5CACC13C51FF832877 (244,224 bytes)
+																					748 텍스트 835E81216B850B571577677AB724FAC9A515465F79888A5CACC13C51FF832877
+																				749 목록 항목 MVID: 4fb1a25f-72c8-426d-b93f-d6cba4f9af72
+																					750 텍스트 4fb1a25f-72c8-426d-b93f-d6cba4f9af72
+																				751 목록 항목 Matching PDB: 0CBC164CDAF5AD188C71E28C9AED664F066950ACEA3CE09B5F8238DAAF9630BE (62,416 bytes)
+																					752 텍스트 0CBC164CDAF5AD188C71E28C9AED664F066950ACEA3CE09B5F8238DAAF9630BE
+																		753 목록 항목 Alternate Release DLL:• SHA-256: 4D198076B84C3FC44EEB75CBE22FE1A2575659009293FBA7E14E937996DD0358 (231,936 bytes)• MVID: 58766cdc-afee-4682-858a-dab68c96e36e• Matching PDB: 9BC98A4A92D7E2FA0051DCE46ED03E98CDC2A014449AA32FDDAB3DF0A9FCEE15 (45,808 bytes)
+																			754 텍스트 Alternate Release DLL
+																			755 LIST
+																				756 목록 항목 SHA-256: 4D198076B84C3FC44EEB75CBE22FE1A2575659009293FBA7E14E937996DD0358 (231,936 bytes)
+																					757 텍스트 4D198076B84C3FC44EEB75CBE22FE1A2575659009293FBA7E14E937996DD0358
+																				758 목록 항목 MVID: 58766cdc-afee-4682-858a-dab68c96e36e
+																					759 텍스트 58766cdc-afee-4682-858a-dab68c96e36e
+																				760 목록 항목 Matching PDB: 9BC98A4A92D7E2FA0051DCE46ED03E98CDC2A014449AA32FDDAB3DF0A9FCEE15 (45,808 bytes)
+																					761 텍스트 9BC98A4A92D7E2FA0051DCE46ED03E98CDC2A014449AA32FDDAB3DF0A9FCEE15
+																		762 목록 항목 배포 어셈블리(scratch\WorkerBridgeMod\1.6\Assemblies\):• Debug DLL 및 PDB와 100% 일치 동기화 완료 (835E81... / 0CBC16...).
+																			763 텍스트 배포 어셈블리
+																			764 텍스트 scratch\WorkerBridgeMod\1.6\Assemblies\
+																			765 LIST
+																				766 목록 항목 Debug DLL 및 PDB와 100% 일치 동기화 완료 (835E81... / 0CBC16...).
+																					767 텍스트 835E81...
+																					768 텍스트 0CBC16...
+																	769 구분 기호
+																	770 제목 3. 순수 긍정적 정상 통제 검증 (25/25 PASS) ID: user-content-3-순수-긍정적-정상-통제-검증-2525-pass
+																	771 텍스트 신규 독립 러너(
+																	772 단추 Gate05R15BoundaryRunner.exe Description: c:\Users\user\Desktop\RimMulti\scratch\EngineGate05R15PublicManifestBoundary\Harness\bin\Debug\net472\Gate05R15BoundaryRunner.exe
+																		773 graphic
+																	774 텍스트 )를 구축하고, 동결 관리 의존성을 참조하여 25건의 순수 정상 통제 및 리플렉션 검증을 수행하였습니다:
+																	775 TABLE
+																		776 행
+																			777 열 머리글 번호
+																			778 열 머리글 테스트 케이스 ID
+																			779 열 머리글 요약
+																			780 열 머리글 결과
+																		781 행
+																			782 항목 TC01~TC05
+																			783 항목 Provider Lifecycle & State Stamp
+																			784 항목 미구성 진단, 정책 구성 시 세대 증가(+1), 동일 정책 재구성(+1), 명시적 Invalidate(+1), Clear(+1)
+																			785 항목 PASS
+																		786 행
+																			787 항목 TC06~TC14
+																			788 항목 Standalone Core Lifecycle
+																			789 항목 초기 상태 클린, 구성, 스냅샷 캡처, 정상 일치 발행, 코히런트 스냅샷 조회, 방어적 복사 불변성, Invalidate(+1), 재구성(+1) 및 신규 엔트리 발행
+																			790 항목 PASS
+																		791 행
+																			792 항목 TC15
+																			793 항목 Standalone Core TryPublishComputedEntry Out Entry
+																			794 항목 out CoherentContentProfileCacheEntry? 오버로드가 락 하에서 발행 엔트리를 직접 반환함을 검증
+																			795 항목 PASS
+																		796 행
+																			797 항목 TC16
+																			798 항목 Standalone Core Generation-Scoped Error
+																			799 항목 SetComputationError(capturedGen)이 세대 전진 후 구 스냅샷의 지연 오류 덮어쓰기를 차단함을 검증
+																			800 항목 PASS
+																		801 행
+																			802 항목 TC17~TC20
+																			803 항목 R12 Package Order Regressions
+																			804 항목 0-based 정렬, 물리적 치환 배열 정규화 불변성, 고유 순서 매칭, 직렬화 전 정렬 보장
+																			805 항목 PASS
+																		806 행
+																			807 항목 TC21~TC22
+																			808 항목 R11 Encoding & R9 Version
+																			809 항목 컴팩트 JSON/공백/유니코드 보존, modVersion null/empty/explicit 보존
+																			810 항목 PASS
+																		811 행
+																			812 항목 TC23
+																			813 항목 Contract Version & Capability Flag
+																			814 항목 ADR-006B-v5-R15 및 GATE05_R15_PUBLIC_MANIFEST_BOUNDARY 검증
+																			815 항목 PASS
+																		816 행
+																			817 항목 TC24
+																			818 항목 Def Families Canonical Sorting
+																			819 항목 Def 패밀리 결정론적 순서 정렬 정상 동작 검증
+																			820 항목 PASS
+																		821 행
+																			822 항목 TC25
+																			823 항목 Reflection Sealed Caller-Policy Collector
+																			824 항목 공개 호출자 정책 수집기 오버로드가 제거/봉인되었으며 매개변수 없는 엔트리만 공개됨을 검증
+																			825 항목 PASS
+																	826 제목 다중 프로세스 격리 검증 결과 ID: user-content-다중-프로세스-격리-검증-결과
+																	827 LIST
+																		828 목록 항목 run_default (ko-KR, PID 24440): 25/25 PASS (ExitCode: 0, 283ms) | 인벤토리 SHA: 660D8A3C38DA820F2D852477CC5167D98A4E38C8B144A3EE1A24DAE0958E7038
+																			829 텍스트 run_default
+																			830 텍스트 ko-KR
+																			831 텍스트 25/25 PASS
+																			832 텍스트 660D8A3C38DA820F2D852477CC5167D98A4E38C8B144A3EE1A24DAE0958E7038
+																		833 목록 항목 run_en_us (en-US, PID 2432): 25/25 PASS (ExitCode: 0, 117ms) | 인벤토리 SHA: 66E401A2403E9632853B1A190C5AB006A49213B43FA5D623D75B14E2783A86B1
+																			834 텍스트 run_en_us
+																			835 텍스트 en-US
+																			836 텍스트 25/25 PASS
+																			837 텍스트 66E401A2403E9632853B1A190C5AB006A49213B43FA5D623D75B14E2783A86B1
+																		838 목록 항목 run_de_de (de-DE, PID 33632): 25/25 PASS (ExitCode: 0, 120ms) | 인벤토리 SHA: 1F16CD48C3A54382AAEF20528B243F77070CAA87092A9F311C6C1402D9949DA1
+																			839 텍스트 run_de_de
+																			840 텍스트 de-DE
+																			841 텍스트 25/25 PASS
+																			842 텍스트 1F16CD48C3A54382AAEF20528B243F77070CAA87092A9F311C6C1402D9949DA1
+																	843 제목 정밀 캐시 회계 및 API 호출 원장 ID: user-content-정밀-캐시-회계-및-api-호출-원장
+																	844 LIST
+																		845 목록 항목 총 정상 캐시 호출: 55회 (Configure: 13, Clear: 2, Invalidate: 3, Diag/Query: 27, Publish: 7, Error: 3)
+																			846 텍스트 총 정상 캐시 호출
+																			847 텍스트 55회
+																		848 목록 항목 금지 경로 호출: 0회 (ComputeActual = 0, GetActual = 0, Native = 0, Adverse = 0)
+																			849 텍스트 금지 경로 호출
+																			850 텍스트 0회
+																			851 텍스트 ComputeActual
+																			852 텍스트 GetActual
+																			853 텍스트 Native
+																			854 텍스트 Adverse
+																		855 목록 항목 API 호출 원장 (api_ledger.json): 42개 호출 단계 상세 기록.
+																			856 텍스트 API 호출 원장
+																			857 단추 api_ledger.json Description: c:\Users\user\Desktop\RimMulti\scratch\EngineGate05R15PublicManifestBoundary\run_default\api_ledger.json
+																				858 graphic
+																	859 구분 기호
+																	860 제목 4. 생성 및 갱신 아티팩트 ID: user-content-4-생성-및-갱신-아티팩트
+																	861 LIST
+																		862 목록 항목 ACK.json (Envelope 18 접수 확인)
+																			863 단추 ACK.json Description: c:\Users\user\Desktop\RimMulti\Dispatcher\A_TASKS\WE-A-ENGINE-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-20261009-DIRECT-03649052\ACK.json
+																				864 graphic
+																		865 목록 항목 A_RECOVERY_ACK.md (복구 및 지침 서약)
+																			866 단추 A_RECOVERY_ACK.md Description: c:\Users\user\Desktop\RimMulti\Dispatcher\A_TASKS\WE-A-ENGINE-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-20261009-DIRECT-03649052\A_RECOVERY_ACK.md
+																				867 graphic
+																		868 목록 항목 A_WORK_LOG.md (실행 타임라인)
+																			869 단추 A_WORK_LOG.md Description: c:\Users\user\Desktop\RimMulti\Dispatcher\A_TASKS\WE-A-ENGINE-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-20261009-DIRECT-03649052\A_WORK_LOG.md
+																				870 graphic
+																		871 목록 항목 POC_EngineHost_Content_Codec_Gate05_R15.md(E1 보고서)
+																			872 단추 POC_EngineHost_Content_Codec_Gate05_R15.md Description: c:\Users\user\Desktop\RimMulti\docs\POC_EngineHost_Content_Codec_Gate05_R15.md
+																				873 graphic
+																		874 목록 항목 RELEASE_MANIFEST_ENGINE_GATE05_R15_PUBLIC_MANIFEST_BOUNDARY.json(릴리스 매니페스트)
+																			875 단추 RELEASE_MANIFEST_ENGINE_GATE05_R15_PUBLIC_MANIFEST_BOUNDARY.json Description: c:\Users\user\Desktop\RimMulti\docs\RELEASE_MANIFEST_ENGINE_GATE05_R15_PUBLIC_MANIFEST_BOUNDARY.json
+																				876 graphic
+																		877 목록 항목 CANDIDATE_PRE_RUN_MANIFEST.json(실행 전 고정 매니페스트)
+																			878 단추 CANDIDATE_PRE_RUN_MANIFEST.json Description: c:\Users\user\Desktop\RimMulti\scratch\EngineGate05R15PublicManifestBoundary\CANDIDATE_PRE_RUN_MANIFEST.json
+																				879 graphic
+																		880 목록 항목 ENGINE_FREEZE_BEFORE.json / ENGINE_FREEZE_AFTER.json (수정 전/후 동결 대조군)
+																			881 단추 ENGINE_FREEZE_BEFORE.json Description: c:\Users\user\Desktop\RimMulti\scratch\EngineGate05R15PublicManifestBoundary\ENGINE_FREEZE_BEFORE.json
+																				882 graphic
+																			883 단추 ENGINE_FREEZE_AFTER.json Description: c:\Users\user\Desktop\RimMulti\scratch\EngineGate05R15PublicManifestBoundary\ENGINE_FREEZE_AFTER.json
+																				884 graphic
+																		885 목록 항목 COMPLETION.json (21개 핵심 아티팩트 바인딩)
+																			886 단추 COMPLETION.json Description: c:\Users\user\Desktop\RimMulti\Dispatcher\A_TASKS\WE-A-ENGINE-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-20261009-DIRECT-03649052\COMPLETION.json
+																				887 graphic
+																	888 텍스트 모든 21개 아티팩트의 해시와 파일 크기는 독립 검증 스크립트(
+																	889 단추 verify_final_artifacts.ps1 Description: c:\Users\user\Desktop\RimMulti\scratch\EngineGate05R15PublicManifestBoundary\verify_final_artifacts.ps1
+																		890 graphic
+																	891 텍스트 )를 통해 100% 일치함을 재확인하였습니다. Dedicated Server가 최종 도메인 권위이며, 게이트 종결 및 릴리스는 Master의 독립 Sol QA 결과 및 거버넌스 처분에 따릅니다. Foundation 파이프라인은 HOLD를 유지합니다.
+																	892 그룹
+																		893 텍스트 15 files changed
+																		894 텍스트 +
+																		895 텍스트 2320
+																		896 텍스트 -
+																		897 텍스트 30
+																		898 graphic
+																		899 단추 Review
+																			900 graphic
+																901 텍스트 10:54 PM, 10/9/2026
+																902 단추 Copy
+																	903 graphic
+																904 toggle button Good response
+																	905 graphic
+																906 toggle button Bad response
+																	907 graphic
+																1168 문서 User message
+																	1180 그룹
+																		1169 텍스트 Master 승인 R16 준비 작업입니다. C:\Users\user\Desktop\RimMulti\Dispatcher\A_TASKS\WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00\INSTRUCTIONS.md 전체와 WP/release를 읽으세요. 기존 R15 코드 수정·빌드·게임/네이티브/운영자 실행 없이, 운영자 발급/16개 context와 실제 RuntimeCopy 파일 준비 상태를 분석하고 다음 정상 네이티브 검증의 최소 구현·증거 계획을 작성하세요. 모든9개 Engine 경로 고정,자산 복사/설치/과거 runner/부정 프로브 금지. 지정 task ACK와 COMPLETION을 기록하세요.
+																	1170 텍스트 2:44 AM
+																	1171 단추 Copy
+																		1172 graphic
+																	1173 단추 Undo changes up to this point
+																		1174 graphic
+																1175 문서 Agent response
+																	1238 단추 Exploring 1 file, 1 folder
+																		1239 graphic
+																	1240 단추 Thought for 1s
+																		1241 graphic
+																	1242 단추 Analyzed c:\Users\user\Desktop\RimMulti\Dispatcher\A_TASKS\WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00
+																		1243 단추 c:\Users\user\Desktop\RimMulti\Dispatcher\A_TASKS\WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00
+																			1244 graphic
+																		1245 graphic
+																	1250 텍스트 Analyzed
+																	1251 단추 INSTRUCTIONS.md#L1-22
+																		1252 graphic
+																1254 텍스트 Working
+																1255 텍스트 .
+														908 그룹
+															909 그룹
+																910 graphic
+															911 그룹
+																912 graphic
+															913 그룹
+																914 graphic
+															915 그룹
+																916 graphic
+															917 그룹
+																918 graphic
+															919 텍스트 27 Files With Changes
+															920 그룹
+																921 텍스트 Reject all
+															922 그룹
+																923 텍스트 Accept all
+															924 graphic
+															925 그룹
+																926 graphic
+																927 텍스트 +
+																928 텍스트 22
+																929 텍스트 -
+																930 텍스트 0
+																931 텍스트 ACK.json
+																932 텍스트 c:\Users\user\Desktop\RimMulti\Dispatcher\A_TASKS\WE-A-ENGINE-GATE05-R14-POLICY-CAPTURE-PUBLICATION-20261009-DIRECT-ff285a3b\ACK.json
+															933 그룹
+																934 graphic
+																935 텍스트 +
+																936 텍스트 59
+																937 텍스트 -
+																938 텍스트 0
+																939 텍스트 A_RECOVERY_ACK.md
+																940 텍스트 c:\Users\user\Desktop\RimMulti\Dispatcher\A_TASKS\WE-A-ENGINE-GATE05-R14-POLICY-CAPTURE-PUBLICATION-20261009-DIRECT-ff285a3b\A_RECOVERY_ACK.md
+															941 그룹
+																942 graphic
+																943 텍스트 +
+																944 텍스트 17
+																945 텍스트 -
+																946 텍스트 0
+																947 텍스트 A_WORK_LOG.md
+																948 텍스트 c:\Users\user\Desktop\RimMulti\Dispatcher\A_TASKS\WE-A-ENGINE-GATE05-R14-POLICY-CAPTURE-PUBLICATION-20261009-DIRECT-ff285a3b\A_WORK_LOG.md
+															949 그룹
+																950 graphic
+																951 텍스트 +
+																952 텍스트 44
+																953 텍스트 -
+																954 텍스트 0
+																955 텍스트 capture_r14_freeze_before.ps1
+																956 텍스트 c:\Users\user\Desktop\RimMulti\scratch\capture_r14_freeze_before.ps1
+															957 그룹
+																958 텍스트 +
+																959 텍스트 44
+																960 텍스트 -
+																961 텍스트 21
+																962 텍스트 EngineHostCensus.cs
+																963 텍스트 c:\Users\user\Desktop\RimMulti\scratch\WorkerBridgeMod\Source\EngineHostCensus.cs
+															964 그룹
+																965 graphic
+																966 텍스트 +
+																967 텍스트 41
+																968 텍스트 -
+																969 텍스트 0
+																970 텍스트 Gate05R14CacheRunner.csproj
+																971 텍스트 c:\Users\user\Desktop\RimMulti\scratch\EngineGate05R14PolicyCapturePublication\Harness\Gate05R14CacheRunner.csproj
+															972 그룹
+																973 graphic
+																974 텍스트 +
+																975 텍스트 915
+																976 텍스트 -
+																977 텍스트 0
+																978 텍스트 Program.cs
+																979 텍스트 c:\Users\user\Desktop\RimMulti\scratch\EngineGate05R14PolicyCapturePublication\Harness\Program.cs
+															980 그룹
+																981 graphic
+																982 텍스트 +
+																983 텍스트 55
+																984 텍스트 -
+																985 텍스트 0
+																986 텍스트 pin_r14_pre_run_manifest.ps1
+																987 텍스트 c:\Users\user\Desktop\RimMulti\scratch\pin_r14_pre_run_manifest.ps1
+															988 그룹
+																989 graphic
+																990 텍스트 +
+																991 텍스트 40
+																992 텍스트 -
+																993 텍스트 0
+																994 텍스트 capture_r14_freeze_after.ps1
+																995 텍스트 c:\Users\user\Desktop\RimMulti\scratch\capture_r14_freeze_after.ps1
+															996 그룹
+																997 graphic
+																998 텍스트 +
+																999 텍스트 114
+																1000 텍스트 -
+																1001 텍스트 0
+																1002 텍스트 POC_EngineHost_Content_Codec_Gate05_R14.md
+																1003 텍스트 c:\Users\user\Desktop\RimMulti\docs\POC_EngineHost_Content_Codec_Gate05_R14.md
+															1004 그룹
+																1005 graphic
+																1006 텍스트 +
+																1007 텍스트 112
+																1008 텍스트 -
+																1009 텍스트 0
+																1010 텍스트 generate_r14_release_manifest.ps1
+																1011 텍스트 c:\Users\user\Desktop\RimMulti\scratch\generate_r14_release_manifest.ps1
+															1012 그룹
+																1013 graphic
+																1014 텍스트 +
+																1015 텍스트 80
+																1016 텍스트 -
+																1017 텍스트 0
+																1018 텍스트 generate_r14_completion.ps1
+																1019 텍스트 c:\Users\user\Desktop\RimMulti\scratch\generate_r14_completion.ps1
+															1020 그룹
+																1021 graphic
+																1022 텍스트 +
+																1023 텍스트 77
+																1024 텍스트 -
+																1025 텍스트 0
+																1026 텍스트 verify_r14_completion.ps1
+																1027 텍스트 c:\Users\user\Desktop\RimMulti\scratch\verify_r14_completion.ps1
+															1028 그룹
+																1029 graphic
+																1030 텍스트 +
+																1031 텍스트 22
+																1032 텍스트 -
+																1033 텍스트 0
+																1034 텍스트 ACK.json
+																1035 텍스트 c:\Users\user\Desktop\RimMulti\Dispatcher\A_TASKS\WE-A-ENGINE-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-20261009-DIRECT-03649052\ACK.json
+															1036 그룹
+																1037 graphic
+																1038 텍스트 +
+																1039 텍스트 60
+																1040 텍스트 -
+																1041 텍스트 0
+																1042 텍스트 A_RECOVERY_ACK.md
+																1043 텍스트 c:\Users\user\Desktop\RimMulti\Dispatcher\A_TASKS\WE-A-ENGINE-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-20261009-DIRECT-03649052\A_RECOVERY_ACK.md
+															1044 그룹
+																1045 graphic
+																1046 텍스트 +
+																1047 텍스트 17
+																1048 텍스트 -
+																1049 텍스트 0
+																1050 텍스트 A_WORK_LOG.md
+																1051 텍스트 c:\Users\user\Desktop\RimMulti\Dispatcher\A_TASKS\WE-A-ENGINE-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-20261009-DIRECT-03649052\A_WORK_LOG.md
+															1052 그룹
+																1053 graphic
+																1054 텍스트 +
+																1055 텍스트 71
+																1056 텍스트 -
+																1057 텍스트 0
+																1058 텍스트 capture_freeze_before.ps1
+																1059 텍스트 c:\Users\user\Desktop\RimMulti\scratch\EngineGate05R15PublicManifestBoundary\capture_freeze_before.ps1
+															1060 그룹
+																1061 graphic
+																1062 텍스트 +
+																1063 텍스트 30
+																1064 텍스트 -
+																1065 텍스트 0
+																1066 텍스트 inspect_candidates.ps1
+																1067 텍스트 c:\Users\user\Desktop\RimMulti\scratch\EngineGate05R15PublicManifestBoundary\inspect_candidates.ps1
+															1068 그룹
+																1069 graphic
+																1070 텍스트 +
+																1071 텍스트 41
+																1072 텍스트 -
+																1073 텍스트 0
+																1074 텍스트 Gate05R15BoundaryRunner.csproj
+																1075 텍스트 c:\Users\user\Desktop\RimMulti\scratch\EngineGate05R15PublicManifestBoundary\Harness\Gate05R15BoundaryRunner.csproj
+															1076 그룹
+																1077 graphic
+																1078 텍스트 +
+																1079 텍스트 1157
+																1080 텍스트 -
+																1081 텍스트 0
+																1082 텍스트 Program.cs
+																1083 텍스트 c:\Users\user\Desktop\RimMulti\scratch\EngineGate05R15PublicManifestBoundary\Harness\Program.cs
+															1084 그룹
+																1085 graphic
+																1086 텍스트 +
+																1087 텍스트 99
+																1088 텍스트 -
+																1089 텍스트 0
+																1090 텍스트 generate_pre_run_manifest.ps1
+																1091 텍스트 c:\Users\user\Desktop\RimMulti\scratch\EngineGate05R15PublicManifestBoundary\generate_pre_run_manifest.ps1
+															1092 그룹
+																1093 graphic
+																1094 텍스트 +
+																1095 텍스트 138
+																1096 텍스트 -
+																1097 텍스트 0
+																1098 텍스트 execute_runs.ps1
+																1099 텍스트 c:\Users\user\Desktop\RimMulti\scratch\EngineGate05R15PublicManifestBoundary\execute_runs.ps1
+															1100 그룹
+																1101 graphic
+																1102 텍스트 +
+																1103 텍스트 59
+																1104 텍스트 -
+																1105 텍스트 0
+																1106 텍스트 capture_freeze_after.ps1
+																1107 텍스트 c:\Users\user\Desktop\RimMulti\scratch\EngineGate05R15PublicManifestBoundary\capture_freeze_after.ps1
+															1108 그룹
+																1109 graphic
+																1110 텍스트 +
+																1111 텍스트 167
+																1112 텍스트 -
+																1113 텍스트 0
+																1114 텍스트 POC_EngineHost_Content_Codec_Gate05_R15.md
+																1115 텍스트 c:\Users\user\Desktop\RimMulti\docs\POC_EngineHost_Content_Codec_Gate05_R15.md
+															1116 그룹
+																1117 graphic
+																1118 텍스트 +
+																1119 텍스트 141
+																1120 텍스트 -
+																1121 텍스트 0
+																1122 텍스트 generate_release_manifest.ps1
+																1123 텍스트 c:\Users\user\Desktop\RimMulti\scratch\EngineGate05R15PublicManifestBoundary\generate_release_manifest.ps1
+															1124 그룹
+																1125 graphic
+																1126 텍스트 +
+																1127 텍스트 82
+																1128 텍스트 -
+																1129 텍스트 0
+																1130 텍스트 generate_completion.ps1
+																1131 텍스트 c:\Users\user\Desktop\RimMulti\scratch\EngineGate05R15PublicManifestBoundary\generate_completion.ps1
+															1132 그룹
+																1133 graphic
+																1134 텍스트 +
+																1135 텍스트 82
+																1136 텍스트 -
+																1137 텍스트 0
+																1138 텍스트 verify_final_artifacts.ps1
+																1139 텍스트 c:\Users\user\Desktop\RimMulti\scratch\EngineGate05R15PublicManifestBoundary\verify_final_artifacts.ps1
+															1140 콤보 상자 (settable, string) Message input
+															1178 텍스트 Ask anything, @ to mention, / for actions
+															1142 단추 Add context ID: base-ui-P0-7
+																1143 graphic
+															1144 단추 Select model, current: Gemini 3.8 Flash High ID: base-ui-P0-12
+																1145 텍스트 Gemini 3.8 Flash
+																1146 텍스트 
+																1147 텍스트 High
+																1148 graphic
+															1179 단추 Cancel (Ctrl+D)
+												1151 경고
+													1152 텍스트 Info: Do you want to install the recommended 'PowerShell' extension from ms-vscode for the PowerShell language?
+												1153 경고
+												1154 그룹
+												1155 그룹
+												1156 그룹
+													1157 이미지
+													1158 그룹
+														1159 편집 (settable, string) Terminal 1 environment is stale, run the 'Show Environment Information' command for more information
+														1160 텍스트 
+														1161 이미지
+														1162 이미지
+											1163 LIST (settable, string) Typeahead menu
+											1164 LIST (settable, string) Typeahead menu
+											1165 그룹 ID: a11y-live-announcer
+												1253 텍스트 Working...
+								1166 영역
+
+Document text: ```
+Terminal 1 environment is stale, run the 'Show Environment Information' command for more information
+```

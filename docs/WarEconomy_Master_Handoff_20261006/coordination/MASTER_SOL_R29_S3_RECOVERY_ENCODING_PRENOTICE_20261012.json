@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:192\",\"revision\":192,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a12da7-4e7b-7352-ad70-4efa4aa792ac\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791767301,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016acc3801794487d08634f7c7afe14ce3\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016acc3801794487d08634f7c7afe14ce3\",\"turnId\":\"01a12da7-4e7b-7352-ad70-4efa4aa792ac\",\"phase\":\"commentary\",\"text\":\"복구 문서를 출력하던 자체 도구가 Windows 문자 인코딩 오류로 멈췄습니다. 승인된 선택자 실행과 빌드·후보 실행은 아직 시작하지 않았습니다. 오류 원문을 보존하고, 재시도 금지 지침에 따라 마스터에게 재개 판단을 요청하겠습니다.\"},\"latestToolMarkerId\":\"exec-607ef1a2-343c-4325-99e5-1d15d4038b93\",\"latestToolMarker\":{\"id\":\"exec-607ef1a2-343c-4325-99e5-1d15d4038b93\",\"turnId\":\"01a12da7-4e7b-7352-ad70-4efa4aa792ac\",\"type\":\"mcpToolCall\",\"name\":\"wait_threads\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

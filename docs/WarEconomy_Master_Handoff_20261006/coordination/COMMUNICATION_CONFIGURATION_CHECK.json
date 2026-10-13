@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "unique_dispatch_ids": true,
+    "recipient_A_only": true,
+    "approved_actual_wp": true,
+    "a_not_sent": true,
+    "message_exact": true,
+    "all_reference_files_absolute_exist": true,
+    "wp_embedded_unchanged": true,
+    "monitor_active_correct_master": true,
+    "monitor_direct_sol_no_dispatcher_qa": true,
+    "exclusive_guard_in_prompt": true
+  },
+  "a_dispatch_id": "WE-A-PIPELINE-REV6-20261007-806c598e74a04ae9beaa9f42002383aa",
+  "automation_id": "wareconomy-master",
+  "actual_hourly_A_dispatcher": "UNVERIFIED"
+}

@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-13T19:27:40.191272+09:00",
+  "operation_id": "SOL-GATE05-R35-PUBLISHER-PREP-S1-20261013-01",
+  "recipient": "Sol",
+  "status": "DELIVERY_INTENT_NOT_SUBMITTED",
+  "message": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R35_PREP_S1_EXACT_MESSAGE_20261013.txt",
+    "sha256": "7EB684F23507456000A05F51E4FCD36E051E70B84D75151FBC099A5A0CDF167C",
+    "bytes": 2969
+  },
+  "fresh_idle": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R35_SOL_PREP_FRESH_IDLE_20261013.json",
+    "sha256": "C8BBDB884D1A5DBE763E63CBE4AE6FE10602C75EC5E217B5720C24093E329A19",
+    "bytes": 758
+  },
+  "guard_session": 58500
+}

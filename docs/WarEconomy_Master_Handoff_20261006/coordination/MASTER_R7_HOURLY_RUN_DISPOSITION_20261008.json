@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-08T23:12:12.626968+09:00",
+  "run_id": "MASTER-HOURLY-R7-20261008-225713-01",
+  "guard_session": 26688,
+  "guard_actual_renewed_before_final_mutation": true,
+  "status": "R7_TERMINAL_REVIEWED_FROZEN_MONITOR_PAUSED_FRESH_ORIGINAL_SOL_QA_SENT",
+  "a_result_id": "WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-RESULT-01",
+  "sol_delivery_id": "SOL-GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008-01",
+  "sol_turn_id": "01a11bda-0e86-7330-ad00-d21baf5fd5b0",
+  "sol_cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:45",
+  "ack": "PENDING",
+  "qa_result": "PENDING",
+  "scheduler": "PAUSED60MIN_ACTUAL_VERIFIED",
+  "master_candidate_execution": 0,
+  "master_candidate_rebuild": 0,
+  "new_a_wp": "NOT_SENT_PENDING_QA",
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD",
+  "release_requested_on_finally": true,
+  "release_observation": "Tool RELEASE response follows;not asserted in advance"
+}

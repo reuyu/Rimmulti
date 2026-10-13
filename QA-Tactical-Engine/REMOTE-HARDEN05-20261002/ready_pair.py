@@ -1,0 +1,26 @@
+from harness import *
+for port in [7792,7793]:
+ deadline=time.monotonic()+90
+ while time.monotonic()<deadline:
+  try:
+   r=send(port,json.dumps(cmd('PING')) if port==7792 else 'PING',2)
+   if 'PONG' in r['response']:break
+  except OSError:pass
+  time.sleep(1)
+ else:raise RuntimeError('Listener unavailable '+str(port))
+ print('Listener ready',port,flush=True)
+write('worker-load.json',control(cmd('LOAD_SAVE',CustomData='EngineComplexFixture',Token='QA_CONTROL_SURFACE_KEY_PRIVILEGED',Source='QA_TEST_CONTROL')))
+write('client-load.json',send(7793,'LOAD_SAVE EngineComplexFixture'))
+for port in [7792,7793]:
+ deadline=time.monotonic()+90
+ while time.monotonic()<deadline:
+  r=send(port,json.dumps(cmd('STATUS')) if port==7792 else 'STATUS',5)
+  if ('MAPS=2, PAWNS=51' in r['response']) or ('Maps=2, Pawns=51' in r['response']):break
+  time.sleep(1)
+ else:raise RuntimeError('Fixture load unavailable')
+write('connect.json',send(7793,'CONNECT_WORKER 127.0.0.1:7792'))
+write('initial-worker.json',worker(cmd('GET_SNAPSHOT')))
+write('initial-client.json',send(31801,'SNAP'))
+print('QA PAIR READY',flush=True)
+
+

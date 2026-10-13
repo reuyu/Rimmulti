@@ -1,0 +1,26 @@
+
+        internal OperatorStartupAdmissionReceipt(
+            OperatorStartupConfigSnapshot snapshot,
+            string boundConfigPath,
+            string boundConfigSha256,
+            string boundOriginId,
+            string boundLaunchPlanId,
+            string boundConfigId,
+            string boundRole,
+            string boundCapabilityBoundary,
+            string admittedAtUtc,
+            bool isTrusted)
+        {
+            ReceiptSchemaVersion = RECEIPT_SCHEMA_VERSION;
+            Snapshot = snapshot ?? throw new ArgumentNullException(nameof(snapshot));
+            BoundConfigPath = boundConfigPath ?? "";
+            BoundConfigSha256 = boundConfigSha256 ?? "";
+            BoundOriginId = boundOriginId ?? "";
+            BoundLaunchPlanId = boundLaunchPlanId ?? "";
+            BoundConfigId = boundConfigId ?? "";
+            BoundRole = boundRole ?? "";
+            BoundCapabilityBoundary = boundCapabilityBoundary ?? "";
+            AdmittedAtUtc = admittedAtUtc ?? "";
+            IsTrusted = isTrusted;
+        }
+

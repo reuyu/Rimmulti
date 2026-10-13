@@ -1,0 +1,14 @@
+{
+  "ConfigureOperatorStartupCalls": 1,
+  "ResetOperatorStartupConfigCalls": 1,
+  "SafeSaveDataFolderPathCalls": 1,
+  "AdmittedExecutablePropertyCalls": 1,
+  "AdmittedShaPropertyCalls": 1,
+  "ComputeFileSha256Calls": 2,
+  "VerifyAdmittedExecutableCalls": 2,
+  "VerifyProcessIdentityCalls": 1,
+  "ConfigureExpectedPackagePolicyCalls": 1,
+  "ClearConfiguredExpectedPackagePolicyCalls": 1,
+  "ToRedactedJsonValidatorResultCalls": 1,
+  "ToRedactedJsonSnapshotCalls": 1
+}

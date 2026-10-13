@@ -1,0 +1,117 @@
+{
+  "at": "2026-10-09T16:23:46.653000+09:00",
+  "result_id": "SOL-GATE05-R12-PACKAGE-ORDER-PREP-S1-20261009-8c52852591474a1990b0ea65594fc981",
+  "delivery_id": "SOL-GATE05-R12-PACKAGE-ORDER-PREP-S1-20261009-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R12_PACKAGE_ORDER_PREPARATION",
+  "wp_revision": "S1",
+  "completion_sha256": "298658D6AE6AF224A6D525D7B15D14B3CC493108D9EAECEA7225F38966F63B97",
+  "evidence_manifest_sha256": "D59CCBA4D792BA5FEDAF8E563082056CC6C50F655CBC416E770088AA75735794",
+  "report_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R12_Package_Order_Preparation_S1_20261009.md",
+  "report_sha256": "661A596DFAA0A2FEEE0BBE6D4B493A8E0D8A9109B3F512E209691BB2CB2AE52A",
+  "evidence_files": 94,
+  "protected_unique_paths_master_rehashed": 4901,
+  "references_verified": [
+    {
+      "case": "ALIGNED",
+      "policy_sha": "706C7E0DB89E60EE5166FECD952B0D6D1335C0812ADD0FF240FD595D1EDC9ABA",
+      "reference_files": 5,
+      "typed_semantic_leaves": 179
+    },
+    {
+      "case": "EQUAL_SEPARATE",
+      "policy_sha": "706C7E0DB89E60EE5166FECD952B0D6D1335C0812ADD0FF240FD595D1EDC9ABA",
+      "reference_files": 5,
+      "typed_semantic_leaves": 179
+    },
+    {
+      "case": "PHYSICAL_BCA",
+      "policy_sha": "706C7E0DB89E60EE5166FECD952B0D6D1335C0812ADD0FF240FD595D1EDC9ABA",
+      "reference_files": 5,
+      "typed_semantic_leaves": 179
+    },
+    {
+      "case": "PHYSICAL_CAB",
+      "policy_sha": "706C7E0DB89E60EE5166FECD952B0D6D1335C0812ADD0FF240FD595D1EDC9ABA",
+      "reference_files": 5,
+      "typed_semantic_leaves": 179
+    },
+    {
+      "case": "PHYSICAL_REVERSE",
+      "policy_sha": "706C7E0DB89E60EE5166FECD952B0D6D1335C0812ADD0FF240FD595D1EDC9ABA",
+      "reference_files": 5,
+      "typed_semantic_leaves": 179
+    },
+    {
+      "case": "EXECUTION_ACB",
+      "policy_sha": "238F31B0FFDA52D18D64066C66030FA92FC5EACC74E9FBA7B9FD37D30BDCB042",
+      "reference_files": 5,
+      "typed_semantic_leaves": 179
+    },
+    {
+      "case": "EXECUTION_ACB_PHYSICAL",
+      "policy_sha": "238F31B0FFDA52D18D64066C66030FA92FC5EACC74E9FBA7B9FD37D30BDCB042",
+      "reference_files": 5,
+      "typed_semantic_leaves": 179
+    },
+    {
+      "case": "ID_ONLY",
+      "policy_sha": "169882A8EA8702A1E31196750DEA952C8B43978F84DAAEF70B8C55DF9844B100",
+      "reference_files": 5,
+      "typed_semantic_leaves": 179
+    },
+    {
+      "case": "REV_ONLY",
+      "policy_sha": "408C270DE027ACD57547204B897269F276B8D1316BAE9771B7B6E70F4AF3C175",
+      "reference_files": 5,
+      "typed_semantic_leaves": 179
+    },
+    {
+      "case": "PACKAGE_CASE",
+      "policy_sha": "706C7E0DB89E60EE5166FECD952B0D6D1335C0812ADD0FF240FD595D1EDC9ABA",
+      "reference_files": 5,
+      "typed_semantic_leaves": 179
+    },
+    {
+      "case": "SPACED_ID",
+      "policy_sha": "46CF22343C5D5A9E695631E34F7EA484D3A2AE351F93E0D2FD6B98369F75063E",
+      "reference_files": 5,
+      "typed_semantic_leaves": 179
+    },
+    {
+      "case": "UNICODE_REV",
+      "policy_sha": "3CBF2087A2D789FD94FFC6B7B577A63576F46E1DCB04D2E7101CAC6D1D6359B8",
+      "reference_files": 5,
+      "typed_semantic_leaves": 179
+    },
+    {
+      "case": "REV007",
+      "policy_sha": "52400FC75516349EE8AB61CD417941F04C991EA0AF6B1481A4C249C92FDA549B",
+      "reference_files": 5,
+      "typed_semantic_leaves": 179
+    },
+    {
+      "case": "DISPLAY_ID",
+      "policy_sha": "13BF4795048658A6DE6CF10710DA5F31ACCCB41BCE2E894D1363CA7780A9ADC6",
+      "reference_files": 5,
+      "typed_semantic_leaves": 179
+    }
+  ],
+  "reference_files": 70,
+  "normal_criteria": 14,
+  "static_criteria": 14,
+  "source_anchors": 10,
+  "controls_build_runs": 0,
+  "master_verdict": "ACCEPTED_R12_NORMAL_ORDER_REFERENCE_PREPARATION_NO_CANDIDATE_VERDICT",
+  "r12_candidate": "NOT_REVIEWED",
+  "actual_thread_id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+  "actual_completed_turn": "01a11f7a-2db9-7ef0-85e3-d4bed33c6591",
+  "actual_cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:80",
+  "actual_thread_read": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R12_PREP_ACTUAL_THREAD_READ_20261009.json",
+  "master_review": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R12_PACKAGE_ORDER_QA_PREPARATION_S1_20261009.md",
+  "master_review_sha256": "13837595BEEE3CEA1B153B2A46C2D098F44B887B5CA9F5F7D358E3F3E4AEBB1C",
+  "guard_run": "MASTER-SOL-R12-PREP-COMPLETE-20261009-01",
+  "guard_session": 88603,
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "Foundation": "HOLD"
+}

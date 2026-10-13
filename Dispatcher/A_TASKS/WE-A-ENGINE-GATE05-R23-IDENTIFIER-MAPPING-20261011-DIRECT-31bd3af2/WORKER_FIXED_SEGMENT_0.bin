@@ -1,0 +1,100 @@
+using System;
+using System.IO;
+using System.Net;
+using System.Net.Sockets;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Xml;
+using System.Security.Cryptography;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using HarmonyLib;
+using UnityEngine;
+using Verse;
+using RimWorld;
+using RimWorld.Planet;
+
+namespace WarEconomy.WorkerBridge
+{
+    public class WorkerBridgeMod : Mod
+    {
+        public WorkerBridgeMod(ModContentPack content) : base(content)
+        {
+            Log.Message("[WorkerBridge] Mod constructor initialized. Applying Harmony patches...");
+            try
+            {
+                var harmony = new Harmony("wareconomy.workerbridge.poc");
+                harmony.PatchAll();
+                Log.Message("[WorkerBridge] All Harmony patches applied successfully.");
+            }
+            catch (Exception ex)
+            {
+                Log.Error("[WorkerBridge] Failed to apply Harmony patches: " + ex);
+            }
+        }
+    }
+
+    [StaticConstructorOnStartup]
+    public static class WorkerBridgeBootstrapper
+    {
+        static WorkerBridgeBootstrapper()
+        {
+            try
+            {
+                // Gate05-R22: Explicit 7-field declaration startup gate (M01)
+                bool hasConfigArg = GenCommandLine.TryGetCommandLineArg("operatorconfig", out string configPath) && !string.IsNullOrWhiteSpace(configPath);
+                if (!hasConfigArg)
+                {
+                    Log.Warning("[WorkerBridge] Missing required '-operatorconfig' CLI argument for operator config (Fail-Closed). Component will NOT attach.");
+                    return;
+                }
+
+                bool hasShaArg = GenCommandLine.TryGetCommandLineArg("operatorconfigsha", out string expectedSha) && !string.IsNullOrWhiteSpace(expectedSha);
+                if (!hasShaArg)
+                {
+                    Log.Error("[WorkerBridge] Missing required '-operatorconfigsha' CLI argument for operator config (Fail-Closed). Component will NOT attach.");
+                    return;
+                }
+
+                bool hasOriginArg = GenCommandLine.TryGetCommandLineArg("operatororigin", out string origin) && !string.IsNullOrWhiteSpace(origin);
+                if (!hasOriginArg)
+                {
+                    Log.Error("[WorkerBridge] Missing required '-operatororigin' CLI argument for operator config (Fail-Closed). Component will NOT attach.");
+                    return;
+                }
+
+                bool hasPlanArg = GenCommandLine.TryGetCommandLineArg("operatorlaunchplan", out string plan) && !string.IsNullOrWhiteSpace(plan);
+                if (!hasPlanArg)
+                {
+                    Log.Error("[WorkerBridge] Missing required '-operatorlaunchplan' CLI argument for operator config (Fail-Closed). Component will NOT attach.");
+                    return;
+                }
+
+                bool hasConfigIdArg = GenCommandLine.TryGetCommandLineArg("operatorconfigid", out string cfgId) && !string.IsNullOrWhiteSpace(cfgId);
+                if (!hasConfigIdArg)
+                {
+                    Log.Error("[WorkerBridge] Missing required '-operatorconfigid' CLI argument for operator config (Fail-Closed). Component will NOT attach.");
+                    return;
+                }
+
+                bool hasRoleArg = GenCommandLine.TryGetCommandLineArg("operatorrole", out string role) && !string.IsNullOrWhiteSpace(role);
+                if (!hasRoleArg)
+                {
+                    Log.Error("[WorkerBridge] Missing required '-operatorrole' CLI argument for operator config (Fail-Closed). Component will NOT attach.");
+                    return;
+                }
+
+                bool hasCapArg = GenCommandLine.TryGetCommandLineArg("operatorcapability", out string cap) && !string.IsNullOrWhiteSpace(cap);
+                if (!hasCapArg)
+                {
+                    Log.Error("[WorkerBridge] Missing required '-operatorcapability' CLI argument for operator config (Fail-Closed). Component will NOT attach.");
+                    return;
+                }
+
+                var descriptor = new OperatorLaunchDescriptor
+                {

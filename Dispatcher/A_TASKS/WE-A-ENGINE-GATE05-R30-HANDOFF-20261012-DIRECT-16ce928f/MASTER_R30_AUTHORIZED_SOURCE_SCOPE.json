@@ -1,0 +1,147 @@
+{
+  "at": "2026-10-12T17:52:42.244990+09:00",
+  "all9_before": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "55441CE93DF32F5E5940D99A4A9CA8449B3F7839840CA3A3832C9DB31396FBDE",
+      "bytes": 265416
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "bytes": 170135
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "084C58CCD770AF90D2F2AE162FF5456C8CD2F0DB3167AE13394635BF8E567E7A",
+      "bytes": 322560
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "7E76C8CEE38F98FB5B33639AAFB1AA9B4321D563DD483C35A1469A32229C1F3F",
+      "bytes": 77724
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "4B4FBD87DDF6B4B39D419F5FDF28428F1E0869CA208E159094409A8D1102463E",
+      "bytes": 305152
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "EE705B6F654BEF8A605661AD3CBFBB03541D0CCB244C24AC1323C2E3D68EED50",
+      "bytes": 56876
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "084C58CCD770AF90D2F2AE162FF5456C8CD2F0DB3167AE13394635BF8E567E7A",
+      "bytes": 322560
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "7E76C8CEE38F98FB5B33639AAFB1AA9B4321D563DD483C35A1469A32229C1F3F",
+      "bytes": 77724
+    }
+  ],
+  "Worker_original": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+    "sha256": "55441CE93DF32F5E5940D99A4A9CA8449B3F7839840CA3A3832C9DB31396FBDE",
+    "bytes": 265416
+  },
+  "allowed_mutable_paths": [
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb"
+  ],
+  "allowed_new_source_paths": [],
+  "fixed_current_files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "bytes": 170135
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+      "sha256": "0204609D1D9D8A697B1A0B88537419D78B9E506558C771CA3EDD4C50FD49D470",
+      "bytes": 10442
+    }
+  ],
+  "allowed_byte_spans": [
+    {
+      "id": "BOOTSTRAP_HANDOFF_AFTER_PURE_ADMISSION",
+      "start": 7573,
+      "end": 9072,
+      "before_sha256": "5A36AEA944DD78E9036CDBAC8615589A216926A81B731A2B8CE392DF0F6808E5",
+      "context_before_sha256": "7F7D7B9DB812CA354FDE70DD951595AB235C41AFF29911725CD2351BFCE8BF48",
+      "context_after_sha256": "26AB578FB84014E93A841D31FE665FE69C451DD3F072C54FB67A5FA37C36C1F5"
+    },
+    {
+      "id": "PRIVATE_OWNER_HANDOFF_STATE",
+      "start": 26233,
+      "end": 28118,
+      "before_sha256": "E46E4795F0671E81F85F497F0388F34EDB42C75756A6B323E9A9AA7A8D7D48CA",
+      "context_before_sha256": "3FE9374B2E48FC74E742988B74313B7B0187C4CAB93B1CFF2C71E16770627E9D",
+      "context_after_sha256": "FF0C24CD792495D9AAD697F15AA50BA0FDB60B3DBB66F6079CEAE6D1AA4ADD8F"
+    },
+    {
+      "id": "AWAKE_EARLY_PAIR_GATE",
+      "start": 32923,
+      "end": 33287,
+      "before_sha256": "4F8C62B37E38B49569A768B24C15739404437C2BBDDA6223FF78281A669B015A",
+      "context_before_sha256": "616497474420F1681A7247C8FBB86669002D4AC4FF96E7F68F370ABD22C4B80D",
+      "context_after_sha256": "E0DAEFADC78822F33F996354A49FFDE5F1F66B066A1F8156A84B3EA4CA9096DF"
+    },
+    {
+      "id": "PAIR_MODE_LAUNCH_HOLD",
+      "start": 111224,
+      "end": 111419,
+      "before_sha256": "CDE30C09A9B3E9CCA41192C139C6C7558810B6D2FA383BA85C4D81A074DA0488",
+      "context_before_sha256": "9017F8B075422F53A39309D3782C2E569D061D46356F129B069E2B44C9D2F21C",
+      "context_after_sha256": "34875FD66F65B802F316048A8391B8D799E5F154293F6EA4E5F30D3F8386628B"
+    },
+    {
+      "id": "OWNER_SCOPED_DESTROY",
+      "start": 178190,
+      "end": 178283,
+      "before_sha256": "61B0ED1D2B6F85C61227E38AF3B012965BD52E4CD55DFB131D7668568648C41A",
+      "context_before_sha256": "449DC10420B041A869251A13FAED0D327C20DD16B834DE83EAF43B4AFD0F836B",
+      "context_after_sha256": "D42BD8B02487B0D5B9250F98C2FC8DBD30E377E0EA763A7C9A58DCD25CC18DAE"
+    }
+  ],
+  "outside_spans_entire_bytes_fixed": true,
+  "protected_baseline": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R30_HANDOFF_PROTECTED_BASELINE_20261012.json",
+    "sha256": "904319B6AC64D9D1AF46449F3AA4702A8B95C1B9377839EB98E7BE3835D02418",
+    "bytes": 4677860
+  },
+  "controlling_review": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R29_STARTUP_PAIR_INDEPENDENT_S3_20261012.md",
+    "sha256": "5057F3CE6FCF7049EAAA5AD61EC9AAE2BFBE1B50CC46FB6D333963199BCC5A61",
+    "bytes": 4780
+  },
+  "contract": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R29_OPERATOR_STARTUP_PAIR_CONTRACT_20261012.md",
+    "sha256": "2EEE68E2E3B6D0FD3777D8F1F13EDDE3239D7697CD9339B03B324D108CE9A531",
+    "bytes": 6219
+  },
+  "defect": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_DEFECT_ENGINE_G05_R29_HANDOFF_20261012.json",
+    "sha256": "BBFD3FC743F14D41DE31B58BC17DA1B727421F9C1668DA0141F1AD57D6B63E34",
+    "bytes": 1367
+  },
+  "TryInstallOperatorStartupConfig_and_legacy_parent_seal_byte_fixed": true,
+  "PURE_Pair_Capture_factories_API_codec_currenttask_Census_publisher_byte_fixed": true
+}

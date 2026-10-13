@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-08T17:56:38.888012+09:00",
+  "event_id": "SOL-R5-CODEC-PREP-S1-MASTER-DISPOSITION-NOTICE-20261008-01",
+  "type": "MASTER_TO_SOL_DISPOSITION_NOTICE",
+  "status": "SENT_TOOL_RETURNED",
+  "new_wp": false,
+  "result_id": "SOL-GATE05-R5-CODEC-PREP-S1-20261008-718bbcc37d1147dc8f44476b979059a7",
+  "message_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R5_CODEC_PREP_S1_DISPOSITION_MESSAGE_20261008.txt",
+  "message_sha256": "934322F96E1236B149B1439C1325A1851B1F33C9FF4DEE41ED70590610D1413C",
+  "send_proof": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R5_CODEC_PREP_S1_DISPOSITION_SEND_TOOL_20261008.json",
+  "send_proof_sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+  "runtime_e2_released": false,
+  "closure_changed": false
+}

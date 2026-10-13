@@ -1,0 +1,150 @@
+{
+  "at": "2026-10-12T10:01:28.818396+09:00",
+  "guard_run": "MASTER-R29-QA-METADATA-CORRECTION-20261012-01",
+  "guard_session": 13411,
+  "guard_pid": 19332,
+  "delivery_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S2-20261012-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R29_STARTUP_PAIR_INDEPENDENT",
+  "wp_revision": "S2",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:182",
+    "revision": 182,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a12da0-3577-75d0-b25f-20c9c1b9d1c5",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791766836,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "send_tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R29_S2_SEND_TOOL_20261012.json",
+    "sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+    "bytes": 149
+  },
+  "exact_message": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R29_S2_EXACT_MESSAGE_20261012.json",
+    "sha256": "47A71165029BB106D16ABD02EEBCCCD98DD3DC1AE7203AA660D9EC74FC3E5FB2",
+    "bytes": 2610
+  },
+  "wp": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R29_STARTUP_PAIR_INDEPENDENT_S2.md",
+    "sha256": "288D8EBB1C760CA572949F5CB199491B44B7B3E1D6A6EFB374A48064E7C08B8B",
+    "bytes": 8195
+  },
+  "baseline": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R29_S2_PAIR_QA_PROTECTED_BASELINE_20261012.json",
+    "sha256": "31AF29450CF7CFB47F0178C2E7182B38BC93118AA1C97CDE2CA20828CF8B3176",
+    "bytes": 4384343
+  },
+  "protected_paths": 14348,
+  "frozen_files": 132,
+  "delivery_status": "SENT",
+  "ACK": "PENDING",
+  "normal_verdict": "PENDING",
+  "scheduler_actual": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "PAUSED",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791765745222
+  },
+  "native_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD",
+  "previous_endpoint_fields": {
+    "master": {
+      "thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+      "host_id": "local",
+      "route": "codex_app"
+    },
+    "a": {
+      "route": "Master Computer Use",
+      "app": "Google.AntigravityIDE",
+      "window_title": "RimMulti - Antigravity IDE",
+      "conversation_title": "WarEconomy 컨텍스트 복구 및 수행",
+      "runtime_delivery_verified": true,
+      "current_wp": "WP_ENGINE_GATE05_R29_STARTUP_PAIR",
+      "last_result_id": "WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-RESULT-01",
+      "historical_delivery_verified_before_context_reset": true,
+      "context_reset_observed_from_user_at": "2026-10-08T02:19:53.969521+09:00",
+      "current_conversation_status": "ACTUAL_R19_SUBMITTED_EMPTY_COMPOSER_WORKING_CANCEL",
+      "delivery_evidence_type": "DIRECT_HUMAN_CONFIRMATION",
+      "user_delivery_confirmed_at": "2026-10-08T02:26:55.876404+09:00",
+      "execution_phase": "TERMINAL_REVISION_REQUIRED_SCOPEDQA_PENDING",
+      "ack_verified": true,
+      "last_ui_observation_at": "2026-10-10T05:38:00.337Z",
+      "last_ui_proof": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a\\MASTER_UI_SUBMISSION_PROOF.json",
+      "recovery_progress_status": "SUPERSEDED_BY_TERMINAL_RESULT",
+      "last_master_collection_key": "MASTER-OBSERVED-R2-C1C24279EDF1626272E7A270E0BF91EBDDBF9CB6B09352CB46D9CC8371C4797C",
+      "last_result_verdict": "PUBLIC_MANIFEST_BOUNDARY_IMPLEMENTATION_CREDITED_SCOPED_NORMAL_QA_ADMITTED_PRODUCER_SCOPE_DEVIATION_PACKAGING_PARTIAL",
+      "latest_review": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R29_STARTUP_PAIR_E1_20261012.md",
+      "current_runtime_idle_verified": false,
+      "current_attempt_id": "WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa",
+      "latest_delivery_proof": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa\\MASTER_UI_SUBMISSION_CONFIRMED.json",
+      "last_verified_at": "2026-10-08T12:54:06.661748+09:00",
+      "latest_ack_proof": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_GATE05_R3_DISPATCH_MONITOR_ACTIVE_20261008.json",
+      "current_dispatch_id": "WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a",
+      "current_runtime_status": "ACTUAL_R5_SENT_WORKING_ACK_VERIFIED",
+      "latest_ack_verification": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_GATE05_R12_PACKAGE_ORDER_ACK_VERIFICATION_20261009.json"
+    },
+    "sol": {
+      "thread_id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "host_id": "local",
+      "title": "Review WarEconomyMod QA",
+      "route": "codex_app",
+      "last_verified_state": "systemError",
+      "current_wp": "WP_QA_ENGINE_GATE05_R29_STARTUP_PAIR_INDEPENDENT",
+      "recovery_status": "RECOVERY_COMPLETED_DIRECT_REPORT_RECEIVED",
+      "user_authorized_replacement": true,
+      "direct_user_report_authorization_message_id": "01a11588-b7db-7752-b11c-0651aed9a300",
+      "current_attempt_id": "SOL-GATE05-R3-INDEPENDENT-REVIEW-S1-20261008-01",
+      "last_result_id": "SOL-GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012-2b883a31352547c6bda6f398d204600f",
+      "last_verdict": "ACCEPTED_INDEPENDENT_STATIC_REVISION_REQUIRED_RUNTIME_UNTESTED",
+      "last_observation_at": "2026-10-08T15:55:38.751458+09:00",
+      "ack_verified": false,
+      "ack_sha256": "CC855D51233D16D54A0F8A8DCA1F1035DC171817308FE8D85E773A886C5E7FED",
+      "current_result_id": "SOL-GATE05-R27-CHILD_CAPTURE-INDEPENDENT-S2-20261012-bff0acad007f4167b974eb7496240425",
+      "current_status": "STATIC_QA_COMPLETED_EVIDENCE_REVIEWED_THREAD_USAGE_LIMIT_FAILED",
+      "ack_proof": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R3_INDEPENDENT_S1_ACK_VERIFICATION_20261008.json",
+      "current_delivery_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S1-20261012-01",
+      "execution_phase": "INDEPENDENT_QA_IN_PROGRESS_ACK_PENDING",
+      "runtime_delivery_verified": true,
+      "operational_ready": true,
+      "operational_ready_basis": "actual new active turn; ACK pending",
+      "current_turn_id": "01a12c59-16c6-7df1-8b63-4643d43b1833",
+      "current_runtime_status": "CURRENT_R4_ACK_AND_ACTUAL_ACTIVE_VERIFIED",
+      "latest_progress_proof": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R4_INDEPENDENT_S1_ACTIVE_RESPONSE_20261008.json",
+      "explicit_ack_pending": false,
+      "latest_review": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R29_STARTUP_PAIR_QA_PREPARATION_S1_20261012.md",
+      "current_runtime_idle_verified": false,
+      "last_runtime_observation_cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:179",
+      "latest_ack_verification": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R12_PACKAGE_ORDER_INDEPENDENT_S1_ACK_VERIFICATION_20261009.json",
+      "actual_turn_id": "01a12c59-16c6-7df1-8b63-4643d43b1833",
+      "last_cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:84",
+      "latest_notice_turn_id": "01a12af3-c4f7-70c2-bde5-a851210f1d2c",
+      "same_wp_scope_clarification": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R17_QA_HOST_LAUNCHER_TELEMETRY_SCOPE_CLARIFICATION_20261010.md",
+      "current_wp_revision": "S2"
+    }
+  }
+}

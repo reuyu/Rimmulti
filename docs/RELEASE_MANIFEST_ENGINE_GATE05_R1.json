@@ -1,0 +1,119 @@
+{
+  "ManifestVersion": "1.0",
+  "WorkPackage": "WP_ENGINE_GATE05_R1",
+  "Revision": "GATE05-R1",
+  "DispatchId": "WE-A-ENGINE-GATE05-R1-20261008-DIRECT-971a4780",
+  "TimestampUtc": "2026-10-07T16:23:02Z",
+  "Role": "Antigravity A — Primary Engine Host Development Agent",
+  "IndependentVerifier": "GPT-6.1 Sol",
+  "AuthorityDisposition": "Master (01a1156b-97ec-7ce0-9e4a-dfc4a3acb174)",
+  "Status": "E1 ENGINE SEMANTIC AUTHORITY GATE05-R1 PASS",
+  "SchemaVersion": "ADR-006B-v3",
+  "PriorHistoricalBaselineArchive": {
+    "ArchiveManifestPath": "Dispatcher/A_TASKS/ENGINE_GATE05_BASELINE_BEFORE_R1_20261008/ARCHIVE_MANIFEST.json",
+    "SelectedBinarySha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+    "SelectedMvid": "12bb9237-1b3e-4b20-89a7-69ad729861e1",
+    "Status": "ARCHIVED_UNTOUCHED_VERIFIED_19_OF_19"
+  },
+  "BinaryArtifacts": {
+    "CandidateDebugDll": {
+      "RelativePath": "scratch/WorkerBridgeMod/Source/bin/Debug/net472/WarEconomy.WorkerBridge.PoC.dll",
+      "Sha256": "620F7A7BB9D6BF45F149F31662CBD79B369152B2B7F2C67882BFF84240BA86AC",
+      "SizeBytes": 184320,
+      "Mvid": "6e080986-9595-4d50-83f2-bc8f84994d6d",
+      "TargetLineage": "Debug net472",
+      "MatchingPdb": "scratch/WorkerBridgeMod/Source/bin/Debug/net472/WarEconomy.WorkerBridge.PoC.pdb"
+    },
+    "CandidateDebugPdb": {
+      "RelativePath": "scratch/WorkerBridgeMod/Source/bin/Debug/net472/WarEconomy.WorkerBridge.PoC.pdb",
+      "Sha256": "7E3CB7DBCBA9D0020C9801B3CB0150973DC61868E8B1E78EAF1A16F3DE112FC1",
+      "SizeBytes": 45696
+    },
+    "ReleaseDll": {
+      "RelativePath": "scratch/WorkerBridgeMod/Source/bin/Release/net472/WarEconomy.WorkerBridge.PoC.dll",
+      "Sha256": "C7B0A9F427C33CA20DA00EDD944E888AD643D392F3A81B875067D989A61E93A8",
+      "SizeBytes": 175616,
+      "TargetLineage": "Release net472",
+      "MatchingPdb": "scratch/WorkerBridgeMod/Source/bin/Release/net472/WarEconomy.WorkerBridge.PoC.pdb"
+    },
+    "ReleasePdb": {
+      "RelativePath": "scratch/WorkerBridgeMod/Source/bin/Release/net472/WarEconomy.WorkerBridge.PoC.pdb",
+      "Sha256": "FBAEEE9870D24FB1FADBADC9D1F4BD9672B36393B7F6D7ADDC63664D6C8B1127",
+      "SizeBytes": 34680
+    }
+  },
+  "ModifiedSourceFiles": {
+    "EngineHostCensus.cs": {
+      "RelativePath": "scratch/WorkerBridgeMod/Source/EngineHostCensus.cs",
+      "Sha256": "F80B966B087DEFA0027451005EC8499F24447C98B04FA901CDBC84A1FFE32B46",
+      "SizeBytes": 85886
+    },
+    "WorkerBridge.cs": {
+      "RelativePath": "scratch/WorkerBridgeMod/Source/WorkerBridge.cs",
+      "Sha256": "E86B54B2077B36D1E8D24879B9CB88B58E79725BAEBD8BCCDDD8DA5930961235",
+      "SizeBytes": 136686
+    },
+    "WorkerBridge.csproj": {
+      "RelativePath": "scratch/WorkerBridgeMod/Source/WorkerBridge.csproj",
+      "Sha256": "B3CF8D675F1041625E9BF1D71463D1F2822A38D1719995E62A5551E28A869492",
+      "SizeBytes": 1743
+    }
+  },
+  "RunnerAndEvidenceArtifacts": {
+    "Gate05R1TestRunner.exe": {
+      "RelativePath": "scratch/EngineGate05R1/bin/Release/net472/Gate05R1TestRunner.exe",
+      "Sha256": "279440C2C1F990890E903A8E8F690927FB5208838E0F68F27442E0B1B029449F",
+      "SizeBytes": 40960
+    },
+    "Gate05R1TestRunner.pdb": {
+      "RelativePath": "scratch/EngineGate05R1/bin/Release/net472/Gate05R1TestRunner.pdb",
+      "Sha256": "92441BF2CA9A6C1579211209AD75B1B61012244F1C2DBFE83765D1C0EF30D84C",
+      "SizeBytes": 13520
+    },
+    "Program.cs": {
+      "RelativePath": "scratch/EngineGate05R1/Program.cs",
+      "Sha256": "5242767FC464A91F2479774EBA7468B30CD1F198D66516D3CB72B5E47AE25C00",
+      "SizeBytes": 36745
+    },
+    "Gate05R1TestRunner.csproj": {
+      "RelativePath": "scratch/EngineGate05R1/Gate05R1TestRunner.csproj",
+      "Sha256": "320CF5CDE99EE98628077DA3DE8A0C5433FE2BBF8171739A9C50A052418B31F4",
+      "SizeBytes": 1645
+    },
+    "results.json": {
+      "RelativePath": "scratch/EngineGate05R1/results.json",
+      "Sha256": "D044FA0F96287F3D0652672BE57FDD495FB1C7F0A61E4C74105B3AB1B014CF21",
+      "SizeBytes": 9784
+    },
+    "raw_console.txt": {
+      "RelativePath": "scratch/EngineGate05R1/raw_console.txt",
+      "Sha256": "E56BEF36E2CC679204AE6003594C8C23D5A88C2203018EF1EE0FF220443C8E45",
+      "SizeBytes": 5736
+    }
+  },
+  "NativeRuntimeStatus": {
+    "ExecutionVerdict": "UNTESTED_BY_FROZEN_INSTALLED_BOUNDARY",
+    "Reason": "RimWorld engine hardcodes Mods folder path to Steam installation directory. Installed mod DLL is strictly frozen at historical SHA 2D64FF9C... per Master invariant. Modifying frozen installation is prohibited. Candidate is verified via dedicated .NET E1 suite; native execution is honestly reported as UNTESTED.",
+    "InstalledDllSha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+    "InstalledDllFrozenMatch": true
+  },
+  "PreservationInvariants": {
+    "PipelineRev6R1": {
+      "Status": "VERIFIED_17_OF_17_BIT_IDENTICAL",
+      "SourceTask": "WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01"
+    },
+    "HistoricalGate05Archive": {
+      "Status": "VERIFIED_19_OF_19_BIT_IDENTICAL",
+      "ArchiveLocation": "Dispatcher/A_TASKS/ENGINE_GATE05_BASELINE_BEFORE_R1_20261008"
+    }
+  },
+  "Summary": {
+    "TotalTests": 30,
+    "Passed": 30,
+    "Failed": 0,
+    "G05_S01_Status": "CLOSED",
+    "G05_S02_Status": "CLOSED",
+    "PreservationStatus": "PASS",
+    "NativeRuntimeClaim": "HONEST_NON_CLAIM_UNTESTED"
+  }
+}

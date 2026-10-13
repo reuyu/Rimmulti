@@ -1,0 +1,635 @@
+{
+  "workOrder": "WP-POC-ENGINE-HOST-SEMANTIC-AUTHORITY-GATE-03",
+  "timestamp": "2026-10-03 21:07:16",
+  "classification": "E1 ENGINE SEMANTIC AUTHORITY GATE PASS",
+  "provenance": {
+    "engineVersion": "RimWorld 1.6.4871 rev591 Win64",
+    "activeMods": [
+      "brrainz.harmony",
+      "ludeon.rimworld",
+      "ludeon.rimworld.royalty",
+      "ludeon.rimworld.ideology",
+      "ludeon.rimworld.biotech",
+      "ludeon.rimworld.anomaly",
+      "ludeon.rimworld.odyssey",
+      "wareconomy.hybridmultiplayer",
+      "wareconomy.workerbridge.poc",
+      "qacodex.engine02.probe"
+    ],
+    "binaries": {
+      "exe": {
+        "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64.exe",
+        "sha256": "4C30E2105B49F2D0130F5D861947FBE82B866042299DA48EF1C8CF6979A8564D"
+      },
+      "assemblyCSharp": {
+        "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\Assembly-CSharp.dll",
+        "sha256": "5CF1B5BE399D5B1C9C56CA72C9D35B4ECF307FEACF5859D04AC5A1AA5926356A",
+        "mvid": "61e41735-6189-4da4-9d21-0260257b5097"
+      },
+      "workerBridgeDll": {
+        "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\WarEconomy.WorkerBridge.PoC\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+        "sha256": "A95B324EC7DA26155ACF75E64D5B122CF987903157A24C984AAE05D4EE7972CC",
+        "mvid": "5ea0cf12-3e06-44e2-966a-87f320133bde"
+      }
+    },
+    "sourceFiles": {
+      "WorkerBridge.cs": {
+        "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+        "sha256": "E6DA162AC188818DA7C0BA57E840764C581B7D1D696CC6E2163F6C53B0948BDD"
+      },
+      "EngineHostCensus.cs": {
+        "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+        "sha256": "98B487574BBA45081135A32E67325F33B6DAC97560B5914B151A3F4BFB073EAC"
+      }
+    },
+    "fixtures": {
+      "CleanSettlementFixture.rws": {
+        "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\CleanSettlementFixture.rws",
+        "bytes": 25896703,
+        "sha256": "BCDEA94EFEE63A609EA6652B24B8913CD8C74A5ABB1A36489D386E892FC44FC4"
+      },
+      "TargetSettlement_Clean_ContextB.rws": {
+        "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\TargetSettlement_Clean_ContextB.rws",
+        "bytes": 14015618,
+        "sha256": "EA8A02D4EC41CE79E285A7D386F3534EB5E192682FC061A8E008116B2B3DF34B"
+      }
+    },
+    "cleanBaselineManifestHash": "98F7817C57C57D05C43BABEC5B3A110163EED48A1B8878F4A135EBECDFF1423A"
+  },
+  "negativeBattery1_InputAdmission": {
+    "allRejected": true,
+    "allSimulationBlocked": true,
+    "casesCount": 15,
+    "passCount": 15,
+    "cases": [
+      {
+        "tag": "01_held_item_stack",
+        "description": "MedicineIndustrial stack count mutated 5 -> 4",
+        "fixture": "Corrupted_01_held_item_stack.rws",
+        "fixtureSha256": "757B503003FCDDA293AA0075022096B38DDDB6775359626BDC4675FBF9E69067",
+        "authorityRegistered": true,
+        "approveSemanticRejected": true,
+        "candidateCensusEvidenceWritten": true,
+        "candidateSelfApprovalRejected": true,
+        "inputRejected": true,
+        "validationResponse": "INPUT_REJECTED: Hash mismatch. Expected 98F7817C57C57D05C43BABEC5B3A110163EED48A1B8878F4A135EBECDFF1423A, got E576C7718C29278F98BDC689803284DDCBD67FA879C8F19639C326EF46C44027",
+        "simulationReadyFalse": true,
+        "stepTicksBlocked": true,
+        "startSimulationBlocked": true,
+        "sealResultBlocked": true,
+        "stageSaveBlocked": true,
+        "exportSaveBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "02_pawn_skill",
+        "description": "Strange Shooting skill mutated 10 -> 15",
+        "fixture": "Corrupted_02_pawn_skill.rws",
+        "fixtureSha256": "86DA0C9CA0976F764E2B46BFF3350985F8B1C737BF38C2647822923F9F9C73D2",
+        "authorityRegistered": true,
+        "approveSemanticRejected": true,
+        "candidateCensusEvidenceWritten": true,
+        "candidateSelfApprovalRejected": true,
+        "inputRejected": true,
+        "validationResponse": "INPUT_REJECTED: Hash mismatch. Expected 98F7817C57C57D05C43BABEC5B3A110163EED48A1B8878F4A135EBECDFF1423A, got 504EDD5F8B486610C21ED793FBD8B918602780CF626D30401D260075D7742632",
+        "simulationReadyFalse": true,
+        "stepTicksBlocked": true,
+        "startSimulationBlocked": true,
+        "sealResultBlocked": true,
+        "stageSaveBlocked": true,
+        "exportSaveBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "03_hediff_severity",
+        "description": "Strange Stab severity mutated 3.0 -> 1.0",
+        "fixture": "Corrupted_03_hediff_severity.rws",
+        "fixtureSha256": "FA8BA0BBBB8487675F3A2AF476101A9B9BD64854E1366EBBE5F6A9AC6E02F813",
+        "authorityRegistered": true,
+        "approveSemanticRejected": true,
+        "candidateCensusEvidenceWritten": true,
+        "candidateSelfApprovalRejected": true,
+        "inputRejected": true,
+        "validationResponse": "INPUT_REJECTED: Hash mismatch. Expected 98F7817C57C57D05C43BABEC5B3A110163EED48A1B8878F4A135EBECDFF1423A, got 959BEC39E660CA4C097C1AB56DF7B47D5DF2F00F7C54353C8BAF1B78525F79DA",
+        "simulationReadyFalse": true,
+        "stepTicksBlocked": true,
+        "startSimulationBlocked": true,
+        "sealResultBlocked": true,
+        "stageSaveBlocked": true,
+        "exportSaveBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "04_hediff_removal",
+        "description": "Strange BionicTongue removed",
+        "fixture": "Corrupted_04_hediff_removal.rws",
+        "fixtureSha256": "8025459F81B378F674CF8F90199F7432E02ECE50057D00ADEAB9B45DB5F48841",
+        "authorityRegistered": true,
+        "approveSemanticRejected": true,
+        "candidateCensusEvidenceWritten": true,
+        "candidateSelfApprovalRejected": true,
+        "inputRejected": true,
+        "validationResponse": "INPUT_REJECTED: Hash mismatch. Expected 98F7817C57C57D05C43BABEC5B3A110163EED48A1B8878F4A135EBECDFF1423A, got C5037FB56C8442AC08CB894AC52A5C1957BBF6664C248CDE32EA6B98C6A473BB",
+        "simulationReadyFalse": true,
+        "stepTicksBlocked": true,
+        "startSimulationBlocked": true,
+        "sealResultBlocked": true,
+        "stageSaveBlocked": true,
+        "exportSaveBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "05_animal_master_follow",
+        "description": "Labrador master cleared, followDrafted False",
+        "fixture": "Corrupted_05_animal_master_follow.rws",
+        "fixtureSha256": "570C8548D25436E4744B49D1D92B473E1E8B0A4109DA373D1F2A2922AC97A37B",
+        "authorityRegistered": true,
+        "approveSemanticRejected": true,
+        "candidateCensusEvidenceWritten": true,
+        "candidateSelfApprovalRejected": true,
+        "inputRejected": true,
+        "validationResponse": "INPUT_REJECTED: Hash mismatch. Expected 98F7817C57C57D05C43BABEC5B3A110163EED48A1B8878F4A135EBECDFF1423A, got 0249EF988B9C3D658F9BC6F580487AE9EDCF80C455E0A757FB1AB7F663905239",
+        "simulationReadyFalse": true,
+        "stepTicksBlocked": true,
+        "startSimulationBlocked": true,
+        "sealResultBlocked": true,
+        "stageSaveBlocked": true,
+        "exportSaveBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "06_bill_change",
+        "description": "Sculpting bill targetCount mutated 10 -> 25",
+        "fixture": "Corrupted_06_bill_change.rws",
+        "fixtureSha256": "1B5F329BD202A20583E3CE38CA9EC1BAEA8EF07C763F09B4A23F7276D4B801E8",
+        "authorityRegistered": true,
+        "approveSemanticRejected": true,
+        "candidateCensusEvidenceWritten": true,
+        "candidateSelfApprovalRejected": true,
+        "inputRejected": true,
+        "validationResponse": "INPUT_REJECTED: Hash mismatch. Expected 98F7817C57C57D05C43BABEC5B3A110163EED48A1B8878F4A135EBECDFF1423A, got 442C5257DFA721D1A26B391A02659C026160024C71194597624EF49CDF558488",
+        "simulationReadyFalse": true,
+        "stepTicksBlocked": true,
+        "startSimulationBlocked": true,
+        "sealResultBlocked": true,
+        "stageSaveBlocked": true,
+        "exportSaveBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "07_zone_cell",
+        "description": "Growing zone cell moved (139, 0, 145) -> (139, 0, 146)",
+        "fixture": "Corrupted_07_zone_cell.rws",
+        "fixtureSha256": "2A9730C16155BF812309375BD59EF1C957C48CB056A2C0D306E9B0A0A967E8D8",
+        "authorityRegistered": true,
+        "approveSemanticRejected": true,
+        "candidateCensusEvidenceWritten": true,
+        "candidateSelfApprovalRejected": true,
+        "inputRejected": true,
+        "validationResponse": "INPUT_REJECTED: Hash mismatch. Expected 98F7817C57C57D05C43BABEC5B3A110163EED48A1B8878F4A135EBECDFF1423A, got C715A88B514E51D5678875E530A0681DE20801E2F14EFC06583AD34CEC6A4A54",
+        "simulationReadyFalse": true,
+        "stepTicksBlocked": true,
+        "startSimulationBlocked": true,
+        "sealResultBlocked": true,
+        "stageSaveBlocked": true,
+        "exportSaveBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "08_designation_change",
+        "description": "Mine designation moved (150, 0, 150) -> (150, 0, 151)",
+        "fixture": "Corrupted_08_designation_change.rws",
+        "fixtureSha256": "AF7639F5D7F2D67339F3DBFD25455D6DEA3E44DFDB3015495FC64183503D8A58",
+        "authorityRegistered": true,
+        "approveSemanticRejected": true,
+        "candidateCensusEvidenceWritten": true,
+        "candidateSelfApprovalRejected": true,
+        "inputRejected": true,
+        "validationResponse": "INPUT_REJECTED: Hash mismatch. Expected 98F7817C57C57D05C43BABEC5B3A110163EED48A1B8878F4A135EBECDFF1423A, got B74C96CBA85E89BA10EEC2E20E8F0DA4411C6D17B7511416FA67B31660640B04",
+        "simulationReadyFalse": true,
+        "stepTicksBlocked": true,
+        "startSimulationBlocked": true,
+        "sealResultBlocked": true,
+        "stageSaveBlocked": true,
+        "exportSaveBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "09_fire_size",
+        "description": "Fire fireSize mutated 0.45 -> 0.90",
+        "fixture": "Corrupted_09_fire_size.rws",
+        "fixtureSha256": "8D88ED32F86E4F899CDCD6D89BE594B295960947D6DDAB6CEF48B2BA123A761B",
+        "authorityRegistered": true,
+        "approveSemanticRejected": true,
+        "candidateCensusEvidenceWritten": true,
+        "candidateSelfApprovalRejected": true,
+        "inputRejected": true,
+        "validationResponse": "INPUT_REJECTED: Hash mismatch. Expected 98F7817C57C57D05C43BABEC5B3A110163EED48A1B8878F4A135EBECDFF1423A, got 2671159DC6AD8B3C20FA6794A925A4D605727B700D049CECCAD9E2C3403E843A",
+        "simulationReadyFalse": true,
+        "stepTicksBlocked": true,
+        "startSimulationBlocked": true,
+        "sealResultBlocked": true,
+        "stageSaveBlocked": true,
+        "exportSaveBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "10_plant_growth",
+        "description": "Rice growth mutated 0.50 -> 0.25",
+        "fixture": "Corrupted_10_plant_growth.rws",
+        "fixtureSha256": "923E0BCAA3B0C8C40C4E498C500A0DA4B3292894DA8AF4275E2A04060CA5B965",
+        "authorityRegistered": true,
+        "approveSemanticRejected": true,
+        "candidateCensusEvidenceWritten": true,
+        "candidateSelfApprovalRejected": true,
+        "inputRejected": true,
+        "validationResponse": "INPUT_REJECTED: Hash mismatch. Expected 98F7817C57C57D05C43BABEC5B3A110163EED48A1B8878F4A135EBECDFF1423A, got A32E25253D1E436F66186F0EFC49699A5219EC6B23A3777C2EB18D32BD92F332",
+        "simulationReadyFalse": true,
+        "stepTicksBlocked": true,
+        "startSimulationBlocked": true,
+        "sealResultBlocked": true,
+        "stageSaveBlocked": true,
+        "exportSaveBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "11_condition_duration",
+        "description": "Aurora duration mutated 60000 -> 12000",
+        "fixture": "Corrupted_11_condition_duration.rws",
+        "fixtureSha256": "2DB3DA54928429CBDD6F032ED42857443E9B0F6B722C83C6A36810B38E608364",
+        "authorityRegistered": true,
+        "approveSemanticRejected": true,
+        "candidateCensusEvidenceWritten": true,
+        "candidateSelfApprovalRejected": true,
+        "inputRejected": true,
+        "validationResponse": "INPUT_REJECTED: Hash mismatch. Expected 98F7817C57C57D05C43BABEC5B3A110163EED48A1B8878F4A135EBECDFF1423A, got 26803A3E5C4A9FF09194FC14640E469AA3591DCAB031A197467BE15073552EB5",
+        "simulationReadyFalse": true,
+        "stepTicksBlocked": true,
+        "startSimulationBlocked": true,
+        "sealResultBlocked": true,
+        "stageSaveBlocked": true,
+        "exportSaveBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "12_bed_assignment",
+        "description": "Bed990012 assignment cleared",
+        "fixture": "Corrupted_12_bed_assignment.rws",
+        "fixtureSha256": "B32697927CFC7FE37712D5A28D567A89DBAA82F5A0C22C77027549C42435A8C2",
+        "authorityRegistered": true,
+        "approveSemanticRejected": true,
+        "candidateCensusEvidenceWritten": true,
+        "candidateSelfApprovalRejected": true,
+        "inputRejected": true,
+        "validationResponse": "INPUT_REJECTED: Hash mismatch. Expected 98F7817C57C57D05C43BABEC5B3A110163EED48A1B8878F4A135EBECDFF1423A, got 83B56E26808D06EC1F11A6675729D43F14A824D55F4252E457E1525B4E7BD943",
+        "simulationReadyFalse": true,
+        "stepTicksBlocked": true,
+        "startSimulationBlocked": true,
+        "sealResultBlocked": true,
+        "stageSaveBlocked": true,
+        "exportSaveBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "13_external_pawn_relation",
+        "description": "Spouse relation mutated to ExSpouse",
+        "fixture": "Corrupted_13_external_pawn_relation.rws",
+        "fixtureSha256": "DD963FFD8DCB2586F2307BBF6CD9E5BDA6E9496D00A36B599488371C1360F241",
+        "authorityRegistered": true,
+        "approveSemanticRejected": true,
+        "candidateCensusEvidenceWritten": true,
+        "candidateSelfApprovalRejected": true,
+        "inputRejected": true,
+        "validationResponse": "INPUT_REJECTED: Hash mismatch. Expected 98F7817C57C57D05C43BABEC5B3A110163EED48A1B8878F4A135EBECDFF1423A, got A83D7C6A3C50290155234136C3FC69635A5CB93A2CE6BD9A09EDE31BF874F120",
+        "simulationReadyFalse": true,
+        "stepTicksBlocked": true,
+        "startSimulationBlocked": true,
+        "sealResultBlocked": true,
+        "stageSaveBlocked": true,
+        "exportSaveBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "14_power_scalar",
+        "description": "Battery509102 storedPower mutated 600 -> 200",
+        "fixture": "Corrupted_14_power_scalar.rws",
+        "fixtureSha256": "F22064791BAD3DB2B5F42A81744B5D36EC4697E53BE77F6235FB422CDF3EDBE8",
+        "authorityRegistered": true,
+        "approveSemanticRejected": true,
+        "candidateCensusEvidenceWritten": true,
+        "candidateSelfApprovalRejected": true,
+        "inputRejected": true,
+        "validationResponse": "INPUT_REJECTED: Hash mismatch. Expected 98F7817C57C57D05C43BABEC5B3A110163EED48A1B8878F4A135EBECDFF1423A, got 12C8C61436226F721981EB006A2DED8CB872FCB506B342FC8D9A6915EA40890C",
+        "simulationReadyFalse": true,
+        "stepTicksBlocked": true,
+        "startSimulationBlocked": true,
+        "sealResultBlocked": true,
+        "stageSaveBlocked": true,
+        "exportSaveBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "15_nested_holder_content",
+        "description": "MinifiedThing inner item def mutated Stool -> WoodLog",
+        "fixture": "Corrupted_15_nested_holder_content.rws",
+        "fixtureSha256": "69077447651292EA17C650B800E56842CEBB702E64367A21B43883EB26677C13",
+        "authorityRegistered": true,
+        "approveSemanticRejected": true,
+        "candidateCensusEvidenceWritten": true,
+        "candidateSelfApprovalRejected": true,
+        "inputRejected": true,
+        "validationResponse": "INPUT_REJECTED: Hash mismatch. Expected 98F7817C57C57D05C43BABEC5B3A110163EED48A1B8878F4A135EBECDFF1423A, got FF2BDE511981C44107849A75B781FBFEAFC1197259B4B6C5FBC49A4D8CFDB71F",
+        "simulationReadyFalse": true,
+        "stepTicksBlocked": true,
+        "startSimulationBlocked": true,
+        "sealResultBlocked": true,
+        "stageSaveBlocked": true,
+        "exportSaveBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      }
+    ]
+  },
+  "negativeBattery2_AuthorityAttacks": {
+    "casesCount": 8,
+    "passCount": 8,
+    "allPassed": true,
+    "cases": [
+      {
+        "attack": "Malformed JSON",
+        "response": "ERROR: RegisterAuthority exception: Unexpected end while parsing unquoted property name. Path '', line 1, position 13.",
+        "pass": true
+      },
+      {
+        "attack": "Unsupported Manifest Version",
+        "response": "ERROR: Unsupported manifest version '2.0' (Expected: 3.0).",
+        "pass": true
+      },
+      {
+        "attack": "Invalid Hash Length",
+        "response": "ERROR: AuthorityBundle requires a valid 64-char SHA-256 ExpectedManifestHash.",
+        "pass": true
+      },
+      {
+        "attack": "Validate Without Authority",
+        "response": "ERROR: No AuthorityBundle registered. Control plane must register authority before input admission.",
+        "pass": true
+      },
+      {
+        "attack": "Generation Mismatch",
+        "response": "ERROR: Authority generation mismatch (AuthorityGen=99, CurrentGen=1).",
+        "pass": true
+      },
+      {
+        "attack": "Target Map Mismatch",
+        "response": "ERROR: Authority target map mismatch (AuthorityMap=5, CurrentMap=0).",
+        "pass": true
+      },
+      {
+        "attack": "Source Artifact SHA Mismatch",
+        "response": "LOAD_REJECTED: Source artifact SHA mismatch. Expected 0000000000000000000000000000000000000000000000000000000000000000, got EA8A02D4EC41CE79E285A7D386F3534EB5E192682FC061A8E008116B2B3DF34B",
+        "pass": true
+      },
+      {
+        "attack": "Quarantined RUN_TICKS",
+        "response": "ERROR: RUN_TICKS has been quarantined from normal Tactical Worker protocol due to monolithic main-thread starvation (QA-ENGINE-003). Use cooperative STEP_TICKS or START_SIMULATION. For explicit diagnostic QA only, use QA_DIAGNOSTIC_RUN_TICKS.",
+        "pass": true
+      }
+    ]
+  },
+  "negativeBattery3_LiveMutation": {
+    "casesCount": 11,
+    "passCount": 11,
+    "allBlocked": true,
+    "cases": [
+      {
+        "target": "skill",
+        "description": "Shooting skill 10 -> 15",
+        "mutationCommand": "skill Shooting 15",
+        "mutationResponse": "OK: Mutated live skill 'Shooting' of Human302 to 15. TicksGame=1823",
+        "stageResponse": "STAGE_BLOCKED: Live state mutated after result was sealed! SealedHash=, CurrentLiveHash=504EDD5F8B486610C21ED793FBD8B918602780CF626D30401D260075D7742632",
+        "stageBlocked": true,
+        "semanticInvalidated": true,
+        "zeroBytesStaged": true,
+        "casePass": true
+      },
+      {
+        "target": "hediff",
+        "description": "Stab severity 3.0 -> 1.0",
+        "mutationCommand": "hediff 1.0",
+        "mutationResponse": "OK: Mutated live hediff Stab severity to 1.00. TicksGame=1823",
+        "stageResponse": "STAGE_BLOCKED: Live state mutated after result was sealed! SealedHash=, CurrentLiveHash=959BEC39E660CA4C097C1AB56DF7B47D5DF2F00F7C54353C8BAF1B78525F79DA",
+        "stageBlocked": true,
+        "semanticInvalidated": true,
+        "zeroBytesStaged": true,
+        "casePass": true
+      },
+      {
+        "target": "inventory",
+        "description": "MedicineIndustrial count 5 -> 4",
+        "mutationCommand": "inventory 4",
+        "mutationResponse": "OK: Mutated live inventory MedicineIndustrial count to 4. TicksGame=1823",
+        "stageResponse": "STAGE_BLOCKED: Live state mutated after result was sealed! SealedHash=, CurrentLiveHash=E576C7718C29278F98BDC689803284DDCBD67FA879C8F19639C326EF46C44027",
+        "stageBlocked": true,
+        "semanticInvalidated": true,
+        "zeroBytesStaged": true,
+        "casePass": true
+      },
+      {
+        "target": "zone",
+        "description": "Remove cell from Growing Zone",
+        "mutationCommand": "zone",
+        "mutationResponse": "OK: Removed cell (139, 0, 145) from Growing Zone. TicksGame=1823",
+        "stageResponse": "STAGE_BLOCKED: Live state mutated after result was sealed! SealedHash=, CurrentLiveHash=D8F2AD169EC3B2FF0977790F863FBEC3EE6AFC2BD8269E161DB98B3F2C624987",
+        "stageBlocked": true,
+        "semanticInvalidated": true,
+        "zeroBytesStaged": true,
+        "casePass": true
+      },
+      {
+        "target": "designation",
+        "description": "Remove Mine designation",
+        "mutationCommand": "designation",
+        "mutationResponse": "OK: Removed Mine designation. TicksGame=1823",
+        "stageResponse": "STAGE_BLOCKED: Live state mutated after result was sealed! SealedHash=, CurrentLiveHash=BE3E283DAEEE080366D2B3554019522DAAEEF7C02E3EA3C592B48C539D344728",
+        "stageBlocked": true,
+        "semanticInvalidated": true,
+        "zeroBytesStaged": true,
+        "casePass": true
+      },
+      {
+        "target": "relation",
+        "description": "Remove Spouse relation",
+        "mutationCommand": "relation",
+        "mutationResponse": "OK: Removed Spouse relation. TicksGame=1823",
+        "stageResponse": "STAGE_BLOCKED: Live state mutated after result was sealed! SealedHash=, CurrentLiveHash=63D360DA0DF36C8726F9F6421AB1D2E987EE4C1C7CF70E39B3C8433FF5ECF245",
+        "stageBlocked": true,
+        "semanticInvalidated": true,
+        "zeroBytesStaged": true,
+        "casePass": true
+      },
+      {
+        "target": "bed",
+        "description": "Unclaim owned bed",
+        "mutationCommand": "bed",
+        "mutationResponse": "OK: Unclaimed owned bed for Human302. TicksGame=1823",
+        "stageResponse": "STAGE_BLOCKED: Live state mutated after result was sealed! SealedHash=, CurrentLiveHash=83B56E26808D06EC1F11A6675729D43F14A824D55F4252E457E1525B4E7BD943",
+        "stageBlocked": true,
+        "semanticInvalidated": true,
+        "zeroBytesStaged": true,
+        "casePass": true
+      },
+      {
+        "target": "animal",
+        "description": "Set dog followFieldwork=false",
+        "mutationCommand": "animal",
+        "mutationResponse": "OK: Toggled followFieldwork=True for Boomrat3383. TicksGame=1823",
+        "stageResponse": "STAGE_BLOCKED: Live state mutated after result was sealed! SealedHash=, CurrentLiveHash=5BBC180E56D8EDFF81B2DB3DD90E2FDA914756A3CFCB0457B37A2D9187899EAB",
+        "stageBlocked": true,
+        "semanticInvalidated": true,
+        "zeroBytesStaged": true,
+        "casePass": true
+      },
+      {
+        "target": "plant",
+        "description": "Set rice plant age to 12001",
+        "mutationCommand": "plant age 12001",
+        "mutationResponse": "OK: Set plant Plant_Rice990011 Age to 12001. TicksGame=1823",
+        "stageResponse": "STAGE_BLOCKED: Live state mutated after result was sealed! SealedHash=, CurrentLiveHash=3A55747C2236BF207ADF45C7CC26BADD95658D97AC98B9852A0AC19169C0012F",
+        "stageBlocked": true,
+        "semanticInvalidated": true,
+        "zeroBytesStaged": true,
+        "casePass": true
+      },
+      {
+        "target": "bill",
+        "description": "Set worktable bill suspended=true",
+        "mutationCommand": "bill",
+        "mutationResponse": "OK: Set bill Make_SculptureSmall suspended=true. TicksGame=1823",
+        "stageResponse": "STAGE_BLOCKED: Live state mutated after result was sealed! SealedHash=, CurrentLiveHash=F571B61731134C7EA309E46862B06875AC3EF23AF94636179C5893C8054A1C03",
+        "stageBlocked": true,
+        "semanticInvalidated": true,
+        "zeroBytesStaged": true,
+        "casePass": true
+      },
+      {
+        "target": "pre_promotion_live_recensus",
+        "description": "Live state mutated after STAGE_SAVE but before PROMOTE_STAGED",
+        "stagedOk": true,
+        "promotionBlocked": true,
+        "promotionResponse": "PROMOTION_BLOCKED: Live state mutated before promotion! SealedHash=98F7817C57C57D05C43BABEC5B3A110163EED48A1B8878F4A135EBECDFF1423A, CurrentLiveHash=504EDD5F8B486610C21ED793FBD8B918602780CF626D30401D260075D7742632",
+        "zeroFinalArtifact": true,
+        "casePass": true
+      }
+    ]
+  },
+  "negativeBattery4_SavedByteProof": {
+    "casesCount": 2,
+    "passCount": 2,
+    "allPassed": true,
+    "cases": [
+      {
+        "attack": "Direct Staged XML Content Tampering",
+        "response": "PROMOTION_BLOCKED: Staged file SHA altered since validation! Expected D0954F1A7786A5270CF8DB4E58938B05EDBE25F4B2FBBF780862C0B1ACF539BF, got B2AA8CECDA78F5CCE1462C37F44174FE0821860128C752026DDFB3EB476A04D0",
+        "blocked": true,
+        "pass": true
+      },
+      {
+        "attack": "Staged XML Truncation / Malformed EOF",
+        "response": "PROMOTION_BLOCKED: Staged file SHA altered since validation! Expected D0954F1A7786A5270CF8DB4E58938B05EDBE25F4B2FBBF780862C0B1ACF539BF, got B6063F0923D73C91374F0D4D482574899DDABB70CF401B9A6A0454E81B7FF942",
+        "blocked": true,
+        "pass": true
+      }
+    ]
+  },
+  "negativeBattery5_PromotionRace": {
+    "attack": "Promotion Attempt After State / Tick Advance",
+    "response": "PROMOTION_BLOCKED: Invalid semantic state 'INPUT_VALIDATED'. Must be STAGED_VALIDATED.",
+    "blocked": true,
+    "pass": true
+  },
+  "freshProcessPositive": {
+    "processA": {
+      "pid": 15560,
+      "status": "STATE: READY, SemanticState=LOADED_UNTRUSTED, SimulationReady=False, SealedHash=None, Gen=1, Maps=1, TicksGame=1823, SimActive=True, TargetMap=0, TicksSim=0, IsRealtime=False, RemainingStep=0, LastFailure=''",
+      "validation": "INPUT_VALIDATED: AuthorityId=AUTH-GRANT-PROC-A, ManifestHash=98F7817C57C57D05C43BABEC5B3A110163EED48A1B8878F4A135EBECDFF1423A, SimulationReady=true",
+      "ticksSimulated": 100,
+      "sealResponse": "RESULT_SEALED: Epoch=1, Grant=GRANT-PROC-A-001, ManifestHash=37CD3112CB2048B476E5213F47EA9060064C9CC3A5FABABEBDE5D1A5EC660B05, Ticks=1923, Gen=1",
+      "sealedManifestHash": "37CD3112CB2048B476E5213F47EA9060064C9CC3A5FABABEBDE5D1A5EC660B05",
+      "stagingResponse": "STAGED_OK: File='c:\\Users\\user\\Desktop\\RimMulti\\scratch\\Profiles\\Profile_Pos_A\\Saves\\Staging_A_Promoted_20261003_121202828.rws', StagingName='Staging_A_Promoted_20261003_121202828', StagedSha=1B5471D89E889E283A828F3C6366F84DAA63152AB9DB6FC6B819C3098FD45F0F, ManifestHash=37CD3112CB2048B476E5213F47EA9060064C9CC3A5FABABEBDE5D1A5EC660B05, Epoch=1",
+      "promotionResponse": "ARTIFACT_APPROVED: File='c:\\Users\\user\\Desktop\\RimMulti\\scratch\\Profiles\\Profile_Pos_A\\Saves\\TargetSettlement_Promoted_A.rws', Name='TargetSettlement_Promoted_A', Size=14041726 bytes, SHA256=1B5471D89E889E283A828F3C6366F84DAA63152AB9DB6FC6B819C3098FD45F0F, SealedManifestHash=37CD3112CB2048B476E5213F47EA9060064C9CC3A5FABABEBDE5D1A5EC660B05, Epoch=1",
+      "artifact": {
+        "file": "TargetSettlement_Promoted_A.rws",
+        "bytes": 14041726,
+        "sha256": "1B5471D89E889E283A828F3C6366F84DAA63152AB9DB6FC6B819C3098FD45F0F"
+      }
+    },
+    "processB": {
+      "pid": 30732,
+      "status": "STATE: READY, SemanticState=LOADED_UNTRUSTED, SimulationReady=False, SealedHash=None, Gen=1, Maps=1, TicksGame=1923, SimActive=True, TargetMap=0, TicksSim=0, IsRealtime=False, RemainingStep=0, LastFailure=''",
+      "authoritySourceShaVerified": true,
+      "validation": "INPUT_VALIDATED: AuthorityId=AUTH-GRANT-PROC-B, ManifestHash=37CD3112CB2048B476E5213F47EA9060064C9CC3A5FABABEBDE5D1A5EC660B05, SimulationReady=true",
+      "ticksSimulated": 100,
+      "sealResponse": "RESULT_SEALED: Epoch=1, Grant=GRANT-PROC-B-001, ManifestHash=09AB3C8C9717DAA516456C6107E06FCA715877A457C602E847B0E61DA870B615, Ticks=2023, Gen=1",
+      "sealedManifestHash": "09AB3C8C9717DAA516456C6107E06FCA715877A457C602E847B0E61DA870B615",
+      "stagingResponse": "STAGED_OK: File='c:\\Users\\user\\Desktop\\RimMulti\\scratch\\Profiles\\Profile_Pos_B\\Saves\\Staging_B_Promoted_20261003_121228455.rws', StagingName='Staging_B_Promoted_20261003_121228455', StagedSha=F90A4E3032BDCBE12A2F84955037FAC5FCB25D291C197E8B4386EEAE1D460EC6, ManifestHash=09AB3C8C9717DAA516456C6107E06FCA715877A457C602E847B0E61DA870B615, Epoch=1",
+      "promotionResponse": "ARTIFACT_APPROVED: File='c:\\Users\\user\\Desktop\\RimMulti\\scratch\\Profiles\\Profile_Pos_B\\Saves\\TargetSettlement_Promoted_B.rws', Name='TargetSettlement_Promoted_B', Size=14043493 bytes, SHA256=F90A4E3032BDCBE12A2F84955037FAC5FCB25D291C197E8B4386EEAE1D460EC6, SealedManifestHash=09AB3C8C9717DAA516456C6107E06FCA715877A457C602E847B0E61DA870B615, Epoch=1",
+      "artifact": {
+        "file": "TargetSettlement_Promoted_B.rws",
+        "bytes": 14043493,
+        "sha256": "F90A4E3032BDCBE12A2F84955037FAC5FCB25D291C197E8B4386EEAE1D460EC6"
+      }
+    },
+    "processC": {
+      "pid": 30572,
+      "status": "STATE: READY, SemanticState=LOADED_UNTRUSTED, SimulationReady=False, SealedHash=None, Gen=1, Maps=1, TicksGame=2023, SimActive=True, TargetMap=0, TicksSim=0, IsRealtime=False, RemainingStep=0, LastFailure=''",
+      "authoritySourceShaVerified": true,
+      "validation": "INPUT_VALIDATED: AuthorityId=AUTH-GRANT-PROC-C-VALIDATOR, ManifestHash=09AB3C8C9717DAA516456C6107E06FCA715877A457C602E847B0E61DA870B615, SimulationReady=true",
+      "validationPass": true,
+      "liveManifestHash": "09AB3C8C9717DAA516456C6107E06FCA715877A457C602E847B0E61DA870B615",
+      "hashMatchesSealedB": true
+    },
+    "cleanChainPass": true
+  },
+  "contextAnalysis": {
+    "contextName": "Pruned Target-Map Owner Context",
+    "gQ1ResolutionStatus": "PRESERVED_OPEN_PER_HARD_BOUNDARIES",
+    "note": "Official term remains 'Pruned Target-Map Owner Context'. Minimal context closure is not claimed; G-Q1 remains unresolved per work order instructions.",
+    "inventory": {
+      "provenRequired": [
+        "World FactionManager with PlayerColony and referenced factions",
+        "Parent WorldObject matching Map.info.parent",
+        "Active DefDatabase registries across all 17 declared semantic domains"
+      ],
+      "retainedUnknown": [
+        "Unspawned WorldPawns referenced in directRelations (e.g. Spouse Human309)",
+        "Global TaleManager entries associated with colonist historical events",
+        "World Grid Tile coordinate attributes for celestial day/night calculations"
+      ],
+      "reconstructible": [
+        "WeatherManager.tickedLastWeather transient state",
+        "Transient JobDriver pointers",
+        "Local lighting grid and pathfinding cache tables"
+      ],
+      "futurePlayerGlobalCandidate": [
+        "Colony faction research manager and unlocked tech trees",
+        "Cross-settlement shared currency / silver accounts",
+        "Global quest states and empire goodwill ratings"
+      ]
+    }
+  }
+}

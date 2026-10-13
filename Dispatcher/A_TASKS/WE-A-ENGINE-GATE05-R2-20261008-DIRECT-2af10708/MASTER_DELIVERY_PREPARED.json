@@ -1,0 +1,61 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R2-20261008-DIRECT-2af10708",
+  "recipient": "A",
+  "approved": true,
+  "wp_id": "WP_ENGINE_GATE05_R2",
+  "wp_revision": "GATE05-R2",
+  "delivery_envelope_revision": 5,
+  "created_at": "2026-10-08T02:10:33.625680+09:00",
+  "approved_at": "2026-10-08T02:10:33.625680+09:00",
+  "approval_source": "Master corrective release for same accepted Engine issuer/content repair under routine direct A authorization",
+  "status": "PREPARED_NOT_SENT",
+  "delivery_owner": "Master",
+  "route": "computer-use/Antigravity",
+  "instruction_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R2-20261008-DIRECT-2af10708\\INSTRUCTIONS.md",
+  "instruction_sha256": "14B84D5CA1E5AFC7BCB76FB016E16CA3EF6D4780B5F4B81D0C12741F37FA55A5",
+  "work_package_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_ENGINE_GATE05_R2.md",
+  "work_package_sha256": "D9CEF6CDBD3C0D7FDD486FBCEF8642F614032149D853FDCA1E6093D9ED518802",
+  "release_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R1_E1_20261008.md",
+  "reference_paths": [
+    "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R1-20261008-DIRECT-971a4780\\MASTER_GATE05_R1_REJECTED_FREEZE_MANIFEST.json",
+    "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Semantic_Authority_Gate_05.md",
+    "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_E2_20261007.md"
+  ],
+  "exact_message_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R2-20261008-DIRECT-2af10708\\UI_MESSAGE.txt",
+  "exact_message": "Master 지시: C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R2-20261008-DIRECT-2af10708\\INSTRUCTIONS.md 를 읽고 승인된 Gate05-R2 보완을 수행하세요. R1은 리뷰 후 별도 보존했습니다. 구 설치/Pipeline/기존 증거는 유지하고, 새 폴더에 ACK.json과 마지막 COMPLETION.json을 기록하세요. 다른 WP 진행 중이면 중복 시작하지 마세요.",
+  "ack_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R2-20261008-DIRECT-2af10708\\ACK.json",
+  "completion_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R2-20261008-DIRECT-2af10708\\COMPLETION.json",
+  "ack_existed_before_delivery": false,
+  "completion_existed_before_delivery": false,
+  "preservation_policy": {
+    "kind": "ENGINE_REPAIR_ARCHIVED_BASELINE",
+    "engine_archive_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\ENGINE_GATE05_BASELINE_BEFORE_R1_20261008\\ARCHIVE_MANIFEST.json",
+    "engine_archive_manifest_sha256": "B6AD0A70EA4C13F5040A3BAEE690DBCDDEB8735842FCB482D66352A8FB05F0F1",
+    "pipeline_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\MASTER_REV6_R1_FREEZE_MANIFEST.json",
+    "pipeline_manifest_sha256": "EBCDDBB9340DECBC9ED436845A231412B9003F42663E29D3EE767450319E53A0",
+    "allowed_changed_engine_paths": [
+      "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj"
+    ],
+    "installed_gate05_immutable": true,
+    "pipeline_original_frozen_immutable": true,
+    "prior_candidate_freeze_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R1-20261008-DIRECT-971a4780\\MASTER_GATE05_R1_REJECTED_FREEZE_MANIFEST.json",
+    "prior_candidate_freeze_manifest_sha256": "1196930576154C11351387B10EAB017C51D6BB027A1686317AB8DF8DAB73022E"
+  },
+  "prerequisites": [
+    "Master real exclusive lock",
+    "correct original A conversation/idle",
+    "no active or uncertain delivery",
+    "archive19/R1frozen147/Pipeline103 preserved",
+    "approved exact WP"
+  ],
+  "follows_dispatch_id": "WE-A-ENGINE-GATE05-R1-20261008-DIRECT-971a4780",
+  "runtime_verdict": null
+}

@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-08T18:50:44.477927+09:00",
+  "delivery_id": "SOL-GATE05-R5-CODEC-INDEPENDENT-S1-20261008-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R5_CODEC_INDEPENDENT",
+  "wp_revision": "S1",
+  "result_id": "SOL-GATE05-R5-CODEC-INDEPENDENT-S1-20261008-2b7ccd63bcd44eb5ab0c2bd9adb4b959",
+  "status": "ACK_VERIFIED_INDEPENDENT_R5_STATIC_AND_PURE_CODEC_QA_IN_PROGRESS",
+  "ack_path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R5-CODEC-INDEPENDENT-S1-20261008\\ACK.json",
+  "ack_sha256": "2BB22243D9D52E263AAF5828ED7297DA01D34C4DF8DDE72C9F19385DEC431BF5",
+  "actual_snapshot": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R5_CODEC_INDEPENDENT_S1_ACK_SNAPSHOT_20261008.json",
+  "actual_snapshot_sha256": "74B90CDA56C8CF34A49CD99E63678BE86B0061C87CD3F8CCA2F151239D92FE33",
+  "actual_turn_id": "01a11ae8-7f1c-7953-9081-2bd07fb7602b",
+  "actual_cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:37",
+  "protected_unique_paths_master_rehashed": 2233,
+  "qa_lineage_path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R5-CODEC-INDEPENDENT-S1-20261008\\R5_LINEAGE.json",
+  "qa_lineage_sha256": "B372EF4B302D9DC69110CA886D5542489AB2D8F399D786B2AE2D883B2F27D0C5",
+  "scope": "Exact selected Debug pure production Serialize/Deserialize +DTO normal unit;QA-owned runner build permitted;no production rebuild/modification/native/game/provider/cache/adverse",
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "scheduler_changed": false,
+  "direct_report_received": true
+}

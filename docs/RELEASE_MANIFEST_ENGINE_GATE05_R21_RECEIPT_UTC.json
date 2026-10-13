@@ -1,0 +1,160 @@
+{
+  "manifest_version": "1.0",
+  "work_package": "WP_ENGINE_GATE05_R21_RECEIPT_UTC_LITERAL",
+  "candidate_lineage": "GATE05-R21-RECEIPT-UTC",
+  "created_at_utc": "2026-10-10T21:18:00Z",
+  "agent_role": "Antigravity A",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R21-RECEIPT-UTC-20261011-DIRECT-49256586",
+  "selected_candidate": {
+    "configuration": "Debug",
+    "target_framework": "net472",
+    "dll_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "31D7A2508ACFADE1B9430F43E6F3D2ACF3E9822C787D00DAF55C9E44CF8E5AC4",
+    "dll_bytes": 295424,
+    "pdb_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "84C1F2D2BC339DFD00A9BBA29AEA655E92CBD6F77C64A27D0D54A4433370CDD8",
+    "pdb_bytes": 71192,
+    "mvid": "7a8b444a-3a07-4dee-9d37-4fa7ed3c461c",
+    "codeview_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "codeview_guid": "8d435f4d-06a1-4b6a-a50a-b2fa31d92bbb",
+    "codeview_age": 1
+  },
+  "alternate_candidate": {
+    "configuration": "Release",
+    "target_framework": "net472",
+    "dll_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "A2C4C5AD66E082C5F7BEC25A91FA8E7B237121398B94A59E5D60E3B401D0F840",
+    "dll_bytes": 279552,
+    "pdb_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "41330A059B468E9011C284068AAF0DA100EA7C5CBC1DCDCB56802E797E0E3A1E",
+    "pdb_bytes": 52172,
+    "mvid": "28abd2eb-3220-4e97-aa99-c4ff1edb5900",
+    "codeview_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "codeview_guid": "1123d112-6825-4f2d-9f34-54aaf6c32f03",
+    "codeview_age": 1
+  },
+  "deployed_mod_assemblies": {
+    "dll_path": "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "31D7A2508ACFADE1B9430F43E6F3D2ACF3E9822C787D00DAF55C9E44CF8E5AC4",
+    "dll_bytes": 295424,
+    "pdb_path": "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "84C1F2D2BC339DFD00A9BBA29AEA655E92CBD6F77C64A27D0D54A4433370CDD8",
+    "pdb_bytes": 71192
+  },
+  "source_files": [
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "CD3FBAB2F3BEA22A2E81B8687352451CC695D477069FE1A788291A78A6F85E5D",
+      "bytes": 214277
+    },
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "bytes": 170135,
+      "prefix_marker": "    public static class ContentProfileProvider",
+      "prefix_length": 72547,
+      "prefix_sha256": "F3C4F865F1E2A898BF240A2D096195870D77A52408CF2D93664FE15092A2A887"
+    },
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    }
+  ],
+  "verification_evidence": {
+    "runner_project": {
+      "path": "scratch\\EngineGate05R21ReceiptUtc\\Harness\\Gate05R21ReceiptUtcRunner.csproj",
+      "sha256": "71A6A3F3633A6D9A585FD7DDCF276925B3F293AE5425A5B2270D8930E4CA1839",
+      "bytes": 1657
+    },
+    "runner_config": {
+      "path": "scratch\\EngineGate05R21ReceiptUtc\\Harness\\App.config",
+      "sha256": "C62ACA778E68DBA98FFEC19DFE6C3A6CE0A15EF1F833B720242E794D67413D19",
+      "bytes": 514
+    },
+    "runner_source": {
+      "path": "scratch\\EngineGate05R21ReceiptUtc\\Harness\\Program.cs",
+      "sha256": "DAB63B21CB46985823DC692AD62D466A3168805543ED070CAFFDF0FAE241C10C",
+      "bytes": 52069
+    },
+    "runner_binary": {
+      "path": "scratch\\EngineGate05R21ReceiptUtc\\Harness\\bin\\Debug\\net472\\Gate05R21ReceiptUtcRunner.exe",
+      "sha256": "B5FC0260440B29E5631148F1682BF952B35CF96B6C2C5204C66F1DB73D83F6E9",
+      "bytes": 40448
+    },
+    "runner_pdb": {
+      "path": "scratch\\EngineGate05R21ReceiptUtc\\Harness\\bin\\Debug\\net472\\Gate05R21ReceiptUtcRunner.pdb",
+      "sha256": "CA04C13A0166A1D392698611A832C432AC86999F57199BECE69405FC4E438415",
+      "bytes": 9484
+    },
+    "freeze_before": {
+      "path": "Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R21-RECEIPT-UTC-20261011-DIRECT-49256586\\ENGINE_FREEZE_BEFORE.json",
+      "sha256": "8B2534CB29A95E138443D40DCB7F3C03F865C063AA9CF361D598AF708118319F",
+      "bytes": 2321
+    },
+    "freeze_after": {
+      "path": "Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R21-RECEIPT-UTC-20261011-DIRECT-49256586\\ENGINE_FREEZE_AFTER.json",
+      "sha256": "04DD50CE7F616C2A1710CF770EE22AF06371F45890D77C2F1F40B2F6BA0DA6EE",
+      "bytes": 2321
+    },
+    "host_telemetry": {
+      "path": "scratch\\EngineGate05R21ReceiptUtc\\HOST_TELEMETRY.json",
+      "sha256": "16967AC23F8830D81A749E74F647A4396394DFA823C834A850098E33A15282FD",
+      "bytes": 1998
+    },
+    "run_en_us": {
+      "results": {
+        "path": "scratch\\EngineGate05R21ReceiptUtc\\run_en_us\\RESULTS.json",
+        "sha256": "7C624E8DE74AC945F89B68B4E295594C5CEBF7A4F1DCCBDDC8DA317D24E2FDD7",
+        "bytes": 4652
+      },
+      "api_ledger": {
+        "path": "scratch\\EngineGate05R21ReceiptUtc\\run_en_us\\API_LEDGER.json",
+        "sha256": "4A246AA75CD7B12349F29CBADB7881A087AB6C3A61F551C146FDD6707A2928EA",
+        "bytes": 830
+      },
+      "output_inventory": {
+        "path": "scratch\\EngineGate05R21ReceiptUtc\\run_en_us\\OUTPUT_INVENTORY.json",
+        "sha256": "1A2282E771E350CD4D5F31C3C5FBBB444986C15AE9B37C64AB1E138211C622CB",
+        "bytes": 2914
+      },
+      "stdout": {
+        "path": "scratch\\EngineGate05R21ReceiptUtc\\run_en_us\\stdout.txt",
+        "sha256": "013950DAEA34C52159CC95BBE04E5A9CA4EA03BB194FAD57F05AEC332B4830A2",
+        "bytes": 1123
+      },
+      "stderr": {
+        "path": "scratch\\EngineGate05R21ReceiptUtc\\run_en_us\\stderr.txt",
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "bytes": 0
+      }
+    },
+    "run_de_de": {
+      "results": {
+        "path": "scratch\\EngineGate05R21ReceiptUtc\\run_de_de\\RESULTS.json",
+        "sha256": "9FCBDC57123D8148DD190E138010EE7E44DBC02A66547D94479FAFDBD7B9D3BD",
+        "bytes": 4652
+      },
+      "api_ledger": {
+        "path": "scratch\\EngineGate05R21ReceiptUtc\\run_de_de\\API_LEDGER.json",
+        "sha256": "4A246AA75CD7B12349F29CBADB7881A087AB6C3A61F551C146FDD6707A2928EA",
+        "bytes": 830
+      },
+      "output_inventory": {
+        "path": "scratch\\EngineGate05R21ReceiptUtc\\run_de_de\\OUTPUT_INVENTORY.json",
+        "sha256": "0DFD1B28383E7ECEC325DCC23AC99BAE7817F50B7C5FC05111F126FD927156ED",
+        "bytes": 2914
+      },
+      "stdout": {
+        "path": "scratch\\EngineGate05R21ReceiptUtc\\run_de_de\\stdout.txt",
+        "sha256": "88786670714FCC91FACE93E6347307939ACC70661365D82FCB71FF86F8AFE978",
+        "bytes": 1123
+      },
+      "stderr": {
+        "path": "scratch\\EngineGate05R21ReceiptUtc\\run_de_de\\stderr.txt",
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "bytes": 0
+      }
+    }
+  }
+}

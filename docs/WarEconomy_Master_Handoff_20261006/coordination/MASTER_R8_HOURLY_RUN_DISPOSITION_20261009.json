@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-09T00:45:09.768197+09:00",
+  "run_id": "MASTER-HOURLY-R8-20261009-003544-01",
+  "guard_session": 83368,
+  "guard_pid": 35284,
+  "status": "R8_TERMINAL_REVIEWED_FROZEN_MONITOR_PAUSED_NEW_ORIGINAL_SOL_QA_SENT",
+  "a_result_id": "WE-A-ENGINE-GATE05-R8-SUPPORTED-DISPOSITION-RESULT-01",
+  "sol_delivery_id": "SOL-GATE05-R8-SUPPORTED-DISPOSITION-INDEPENDENT-S1-20261009-01",
+  "sol_turn_id": "01a11c2f-b048-73b0-a61d-a1eccf88b883",
+  "sol_cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:50",
+  "ack": "PENDING",
+  "qa_result": "PENDING",
+  "monitor": "PAUSED60MIN_ACTUAL_VERIFIED",
+  "master_candidate_execution": 0,
+  "master_candidate_rebuild": 0,
+  "new_a_wp": "NOT_SENT_PENDING_QA",
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD",
+  "guard_renewed_before_mutation": true,
+  "release_requested_on_finally": true
+}

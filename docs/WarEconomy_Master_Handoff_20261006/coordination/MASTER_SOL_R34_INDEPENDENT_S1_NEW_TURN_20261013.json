@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"bcc76e72-e33d-4898-bc7b-b558cfab470c:28\",\"revision\":28,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a134b5-45ec-7781-b030-5c0b89158728\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791885657,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ace0160a81887d0b65612b2a6796add\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ace0160a81887d0b65612b2a6796add\",\"turnId\":\"01a134b5-45ec-7781-b030-5c0b89158728\",\"phase\":\"commentary\",\"text\":\"R34의 새 승인 범위로 시작하겠습니다. WP와 최신 마스터 기록, 고정 후보를 확인하고 초기 ACK를 보고한 뒤, 정적 rollback 리뷰와 두 문화권의 새 정상 검증을 수행하겠습니다.\"},\"latestToolMarkerId\":\"exec-6444ff57-8608-4972-a999-02738e73af06\",\"latestToolMarker\":{\"id\":\"exec-6444ff57-8608-4972-a999-02738e73af06\",\"turnId\":\"01a134b5-45ec-7781-b030-5c0b89158728\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

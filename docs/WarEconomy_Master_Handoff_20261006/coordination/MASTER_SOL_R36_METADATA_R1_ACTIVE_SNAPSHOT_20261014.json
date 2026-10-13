@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"bcc76e72-e33d-4898-bc7b-b558cfab470c:46\",\"revision\":46,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a135e6-e62b-73a1-a02d-0794937f58ea\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791905687,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ace524423d087d09b2148979686454a\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ace524423d087d09b2148979686454a\",\"turnId\":\"01a135e6-e62b-73a1-a02d-0794937f58ea\",\"phase\":\"commentary\",\"text\":\"수정한 QA 도구가 exit0으로 완료됐습니다. 원래 6개 사례와 12개 raw 입력은 두 상위 원본과 일치하며, 소스상 표현 가능함을 확인했습니다. 다만 경로 검사, 실제 spec 입력의 출처 증거, 날짜 경계 조건이 아직 충족되지 않아 publication 실행은 보류입니다. 보고서와 보존 검증을 마무리하겠습니다.\"},\"latestToolMarkerId\":\"exec-7bb3bca0-9bea-4fcc-a2cc-4c8b9499ecdb\",\"latestToolMarker\":{\"id\":\"exec-7bb3bca0-9bea-4fcc-a2cc-4c8b9499ecdb\",\"turnId\":\"01a135e6-e62b-73a1-a02d-0794937f58ea\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

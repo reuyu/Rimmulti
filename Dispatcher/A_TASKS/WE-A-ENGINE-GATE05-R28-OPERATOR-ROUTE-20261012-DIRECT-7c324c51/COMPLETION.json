@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "producer": "A",
+  "report_kind": "E1",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51",
+  "wp_id": "WP_ENGINE_GATE05_R28_OPERATOR_ROUTE",
+  "wp_revision": "GATE05-R28-OPERATOR-ROUTE",
+  "envelope": 31,
+  "result_id": "WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-RESULT-01",
+  "status": "COMPLETED",
+  "completed_at": "2026-10-12T04:59:00+09:00",
+  "summary": "WP_ENGINE_GATE05_R28_OPERATOR_ROUTE / GATE05-R28-OPERATOR-ROUTE (Envelope 31) read-only integration design and patch proposal completed. Executed systematic source audit across real source roots and driver scripts, proving that an actual operator-owned producer that independently supplies a paired READ_ONLY child configuration and declaration is MISSING from the live runtime code. Disassembled and inspected frozen managed dependencies (Assembly-CSharp.dll, UnityEngine.CoreModule.dll), pinning: (1) GenCommandLine.TryGetCommandLineArg strictly enforces -key=value format with split.Length == 2 (space-separated arguments are skipped); (2) GenFilePaths.get_SaveDataFolderPath natively evaluates -savedatafolder=<path> at early startup, creating and overriding saveDataPath; (3) StaticConstructorOnStartupUtility.CallAll executes synchronously before interactive gameplay; (4) Unity invokes MonoBehaviour.Awake synchronously inside AddComponent. Formulated ONE concrete recommended route (OPERATOR_PAIRED_BOOTSTRAP_CLI_AND_CAPTURE_ROUTE) where the primary worker receives both self7 (SIMULATION) and child7 (READ_ONLY) at bootstrap, stores both in private static custody, and invokes OperatorChildLaunchInputs.Capture during HandleLaunchOperatorValidator to format child CLI arguments natively using -savedatafolder and 7 operator flags. Produced complete unapplied patch proposal IMPLEMENTATION_PATCH_PROPOSAL.diff, SOURCE_AND_IL_EVIDENCE.json, PRODUCER_AND_FRONTEND_ROUTE.json, IMPLEMENTATION_PREREQUISITES.json, and Korean technical report A_ENGINE_GATE05_R28_OPERATOR_ROUTE_REPORT_20261012.md. Production code mutations = 0, compiler build calls = 0, native execution calls = 0. All 9 candidate files verified 100% byte-identical before and after. Dedicated Server remains final Domain Authority; Foundation remains HOLD.",
+  "e1_verdict": "READ_ONLY_CONNECTED_ROUTE_PROPOSAL_NOT_IMPLEMENTED",
+  "execution_metrics": {
+    "production_code_mutations": 0,
+    "compiler_build_calls": 0,
+    "candidate_and_native_execution_calls": 0
+  },
+  "report": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\A_ENGINE_GATE05_R28_OPERATOR_ROUTE_REPORT_20261012.md",
+    "sha256": "FF1B09E74BC3BD16DE7920DCEAA8DC59E9407BE493C6E475D6D1D01A672D3941",
+    "bytes": 14864
+  },
+  "artifact_manifest": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51\\EVIDENCE_MANIFEST.json",
+    "sha256": "6CEC8705F51A47BF8F41152A8322474A5A31E374FE7A20A4ED369E8A020A504B",
+    "bytes": 4477
+  },
+  "limitations": [
+    "READ_ONLY_PROPOSAL_ONLY_ZERO_CODE_CHANGES_APPLIED: This deliverable is strictly an architectural design, frozen IL inspection, and text-only patch proposal. Zero production lines were modified, zero binaries built, and zero native executions performed.",
+    "PROPOSED_ROUTE_REQUIRES_EXPLICIT_MASTER_ADOPTION: The paired child CLI carrier (-childoperatorconfig=..., etc.) is a proposed design awaiting Master review and formal scope authorization in a subsequent work package.",
+    "M05_M06_M07_STRICTLY_DEFERRED: M05 (task tuple authority / process identity binding), M06 (content-context live XML census), and M07 (control plane promotion / revocation) remain strictly unaddressed and uncommitted.",
+    "INSTALLED_DLL_INCIDENT_OPEN: Steam installed DLL discrepancy against archive baseline remains an UNKNOWN OPEN INCIDENT, preserved unmodified.",
+    "FINAL_DOMAIN_AUTHORITY_REMAINS_DEDICATED_SERVER: Dedicated Server remains final Domain Authority; Engine/Client produces bounded simulation proposals.",
+    "FOUNDATION_HOLD: Foundation remains HOLD pending Pipeline independent E2 PASS."
+  ],
+  "artifacts": [
+    {
+      "role": "task_ack",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51\\ACK.json",
+      "sha256": "F7EFE9E42F1CF1D897184AD31A1143B383C1CCA9A5E50DB51543BF869036CFF1",
+      "size": 4121
+    },
+    {
+      "role": "preservation_before",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51\\PRESERVATION_BEFORE.json",
+      "sha256": "736C428BE459DC6A38F9D39CF58E6A40FC9A31BFA3485CBACA00DE9C78BB523B",
+      "size": 3826
+    },
+    {
+      "role": "preservation_after",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51\\PRESERVATION_AFTER.json",
+      "sha256": "F8C841D463B85DC9A171E5C3066EC4AAF27CA43880A025C2FE7C486D6C95A296",
+      "size": 3826
+    },
+    {
+      "role": "source_and_il_evidence",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51\\SOURCE_AND_IL_EVIDENCE.json",
+      "sha256": "E076A5D5FDF293D618F9162396BCFF740EFE88FC4E44403F05EC4BB497B4CECD",
+      "size": 7603
+    },
+    {
+      "role": "producer_and_frontend_route",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51\\PRODUCER_AND_FRONTEND_ROUTE.json",
+      "sha256": "E0FAE9CE28BD7DDBAA60EC595B405B08505847C5EC340204ED382403AA3F3D58",
+      "size": 6929
+    },
+    {
+      "role": "implementation_patch_proposal",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51\\IMPLEMENTATION_PATCH_PROPOSAL.diff",
+      "sha256": "C646C7C8E85BECCFFAC6B87D33772A85D5C31134D410E49FA4B4B592F126A82A",
+      "size": 10002
+    },
+    {
+      "role": "implementation_prerequisites",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51\\IMPLEMENTATION_PREREQUISITES.json",
+      "sha256": "163FB5E9958221D81FDB799DF3A3C386508D670C027BDDA1708EBC1A15964A63",
+      "size": 2819
+    },
+    {
+      "role": "evidence_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51\\EVIDENCE_MANIFEST.json",
+      "sha256": "6CEC8705F51A47BF8F41152A8322474A5A31E374FE7A20A4ED369E8A020A504B",
+      "size": 4477
+    },
+    {
+      "role": "result_index",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51\\RESULT_INDEX.json",
+      "sha256": "BBE778FED48865C7C964DCC5E6683BF5772EE95ABDF49EFD55394C04502A18F7",
+      "size": 2162
+    },
+    {
+      "role": "technical_report",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\A_ENGINE_GATE05_R28_OPERATOR_ROUTE_REPORT_20261012.md",
+      "sha256": "FF1B09E74BC3BD16DE7920DCEAA8DC59E9407BE493C6E475D6D1D01A672D3941",
+      "size": 14864
+    }
+  ]
+}

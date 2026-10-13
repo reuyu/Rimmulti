@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-13T19:50:50.840679+09:00",
+  "original": {
+    "path": "Dispatcher\\Tools\\master_verify_r35_preparation_publisher_20261013_attempt1.py",
+    "sha256": "B6835FCBF428738921FF3DC2F14338F39D3D4DD243620939EC90D1548FE2DFDE",
+    "bytes": 6455
+  },
+  "actual_exit1": "21d501: own checker compared sidecar rawbytes object to digest string; assertion before proof/state mutation",
+  "correction": "verify sidecar utf8_text plus its own raw SHA/bytes/hex; original QA oracle unchanged",
+  "candidate_publisher_execution": 0
+}

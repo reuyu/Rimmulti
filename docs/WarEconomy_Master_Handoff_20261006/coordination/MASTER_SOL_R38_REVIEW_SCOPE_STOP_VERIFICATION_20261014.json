@@ -1,0 +1,88 @@
+{
+  "at": "2026-10-14T04:58:28.373680+09:00",
+  "guard_session": 11480,
+  "delivery_id": "SOL-GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014-01",
+  "result_id": "SOL-GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014-c19c6459fa484d5bbee9c08ffe13caa4",
+  "stop": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\STOP_REVIEW_SCOPE_KEY_NOTICE.json",
+    "sha256": "7565B41F2C066C8D7880EC4CA0E71D4A23CB6232D395CD84E868790C3466CDF8",
+    "bytes": 1473
+  },
+  "partial_inventory": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\STOP_REVIEW_PARTIAL_INVENTORY.json",
+    "sha256": "9411A49C3003302A8A59433B5B507F36CEF117D56CE502084EC5C59A149B2EA9",
+    "bytes": 15344
+  },
+  "partial55_actual_SHA_bytes_match": true,
+  "full19676_Master_actual_rehash": true,
+  "frozen42_Master_actual_rehash": true,
+  "failed_review_tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review.TOOL.json",
+    "sha256": "091FA70519EFE1389D1641B15888E3F77B9E48FE139450ACEF7DF4DA8A51B62B",
+    "bytes": 1255
+  },
+  "raws": {
+    "stdout": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review.STDOUT.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    "stderr": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review.STDERR.txt",
+      "sha256": "5748E4514F58EAD279EDD1576E11E82E55DDC44EA0FEFAA35C9100F0CE10D3FB",
+      "bytes": 1915
+    },
+    "input_manifest": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review.INPUT.json",
+      "sha256": "D269DD33CE14296E1507A1786E9CD256482CE715084C7D6A8563F1ADC1B7FAF4",
+      "bytes": 21501
+    },
+    "preflight": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review.PREFLIGHT_TOOL.json",
+      "sha256": "1A3BC33780BDD885F290EC33E658652BA812EFB2DBE92E34997FDB8122409456",
+      "bytes": 821
+    }
+  },
+  "actual_error": "Traceback (most recent call last):\n  File \"C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review.py\", line 60, in <module>\n    out('MINIMAL_NEXT_PUBLISHER_CORRECTIVE_REQUIREMENTS',dict(requirements=[dict(id=f['id'],requirement=f['description'],exact_normal6_blocker=f['original6_blocker']) for f in findings]+[dict(id='R38-EVIDENCE-GRAPH',requirement='Correct three prose authority SHAs; explicitly delimit module sampling/child context/helper preflight graph/first outer streams; enumerate finite owned inventory with selfcycle/postseal exclusions; no retro-pins')],scope='Publisher-only and new producer-owned metadata, all Engine/generated/install/oracle/oldQA fixed',separate_normal6=readiness,closure_authority='MASTER_ONLY',High4='OPEN',Foundation='HOLD'))\n    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review.py\", line 9, in out\n    def out(name,data):write(Q/(name+'.json'),dict(at=now(),publisher=row(S),scope='SOURCE_ONLY_NOT_RUNTIME_TEST',**data))\n                                              ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: dict() got multiple values for keyword argument 'scope'\n",
+  "initial_ACK_unchanged": true,
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:59",
+    "revision": 59,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a136c9-418d-7781-83d0-90d2df9b7565",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791920521,
+      "completedAt": 1791921431,
+      "durationMs": 909912
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ace8d1664bc87d0bdcff5a8b68c6257",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016ace8d1664bc87d0bdcff5a8b68c6257",
+      "turnId": "01a136c9-418d-7781-83d0-90d2df9b7565",
+      "phase": "final_answer",
+      "text": "QA 메타데이터 작성 오류로 중단했으며, 오류 로그와 부분 결과를 보존해 Master에게 보고했습니다. 후보 실행·수정은 없었습니다. Master의 제한된 복구 지시를 기다리겠습니다."
+    },
+    "latestToolMarkerId": "exec-33e05c4f-fe03-4208-ab24-fcbb12791632",
+    "latestToolMarker": {
+      "id": "exec-33e05c4f-fe03-4208-ab24-fcbb12791632",
+      "turnId": "01a136c9-418d-7781-83d0-90d2df9b7565",
+      "type": "mcpToolCall",
+      "name": "wait_threads",
+      "status": "completed"
+    }
+  },
+  "candidate_failure": false,
+  "candidate_verdict": "PENDING_NO_COMPLETION",
+  "all_candidate_execution": 0,
+  "no_original_review_body_replay": true
+}

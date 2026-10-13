@@ -1,0 +1,44 @@
+# R7 content admission 독립 QA S1
+
+**관측한 정상 codec·positive admission helper 범위 PASS / 정적 계약 수정 필요 / native UNTESTED**. 새 후보의 실제 validator linkage와3개 contract field binding 개선을 정적으로 인정한다. 정상 synthetic6case를 en-US/de-DE의 새 process2에서 실행해 각27assertion·대표65field·BASE157leaf를 확인했다. Positive ValidateContract와 TryAdmitManifest 각각2case/run이 true/empty reason이며 admission JSON이 독립 지정한 정상 semantics와 canonical bytes에 맞았다. Actual loaded content/프로필 authority/full Gate05 E2는 미검증이다.
+
+| Identity / execution | 관측값 |
+|---|---|
+| WP / revision | WP_QA_ENGINE_GATE05_R7_CONTENT_ADMISSION_INDEPENDENT / S1 |
+| Delivery | SOL-GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008-01 |
+| Unique result | SOL-GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008-a860491cbc81403eb91650ce707f26cc |
+| 작성 시각 | 2026-10-08T23:20:56.344055+09:00 / Asia/Seoul;최종 completed_at은 COMPLETION.json |
+| Selected Debug | 223B4055C0AFAA6F30488C9787AE6F68D65D62F395CFCA722EDA83674975CD2A / MVID bdf94567-be4d-4270-9a70-dbf2df9b5b4a |
+| Matching Debug PDB | 146C5667DF4BB3C4C3F48328FD054A6C4BC87D22FEB5F010534A4428C8DA1579 |
+| New QA runner | SHA F99CF19C869793DE8ECB919F9CD7B82A6C12C756EA833636EB70EFA1DF76D9C3 / MVID 98a08967-9b68-4e25-895f-00c26ed96430 |
+| Actual counts | QA build1 / positive managed runs2 / 각27PASS / real tool exit0,0 |
+| Toolchain | observed SDK10.0.201/Roslyn5.3.0-2.26153.122/net472 refs/CLR4.0.30319.42000 |
+| Forbidden counts | Production modification/build0;provider/compute/getter/cache/game/native/operator/old A·QA runner/rejection/adverse0 |
+| Gate | Full runtime E2 NOT_RELEASED;Engine002006/Pipeline007/current schema/G-Q1 OPEN;Foundation HOLD |
+
+Immutable [freeze manifest](C:/Users/user/Desktop/RimMulti/Dispatcher/A_TASKS/WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-20261008-DIRECT-8524bf02/MASTER_GATE05_R7_CONTENT_ADMISSION_REVIEW_FREEZE_MANIFEST.json) SHA **DE49655C30976C254F59B022C7DD768806B90EB6F566055936B05EAFFE3F13CF**의110 frozen_path만 후보로 사용했다. Valid root는 `C:\Users\user\Desktop\RimMulti\Dispatcher\CANDIDATES\G05R7-8524bf02`. Additional managed loader/metadata는 승인된 frozen4 manifest SHA7FCB91EE…와R7frozen Newtonsoft.Json이며 원본 Steam/game/mod/UserData/save나 mutable Source/bin/obj·old long-path partial은 사용하지 않았다. Alternate Release는 metadata-only:SHA E9E409E95E225552B59D34FA1DE9D5AB021764988F1FADD25FDC11235CF87F35/MVID db8d92c1-a284-4e67-8bcc-708e279944c1/PDB 07C79C3C651EEB32BC0EFE56F552E90F414ED7F3AFFBDCCD8541B5CA49980188. 각CodeView/portable PDB/generated+source document4/4가 frozen byte checksum과 맞는다([R7_LINEAGE.json](C:/Users/user/Desktop/RimMulti/QA-Tactical-Engine/GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008/R7_LINEAGE.json)). Worker/csproj 및72547byteprefix도R6 immutable와 일치한다([FIXED_SOURCE_SCOPE.json](C:/Users/user/Desktop/RimMulti/QA-Tactical-Engine/GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008/FIXED_SOURCE_SCOPE.json)).
+
+[INPUT_EXPECTED_SEMANTICS.json](C:/Users/user/Desktop/RimMulti/QA-Tactical-Engine/GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008/INPUT_EXPECTED_SEMANTICS.json)의 새 R7 input/expected normalization을 final build 전에 작성했다. 역사 input layout/mapping은 설계 참고이며 prior runner binary/PASS 실행·승계0.3개R7contract fields/정상 required class/category/enum strings를 지정했다. 기대값은 production output으로 만들지 않았다. Mod declared loadOrder,ordinal normal unique keys와 assembly secondary names의 예상 순서를 별도 지정했고 verbs/stages/comps/multiplicity는 유지했다. JSON property order/숫자 lexical 표현을 독립 byte oracle로 전수 인증했다는 주장은 하지 않으며,typed semantic oracle와 저장된 canonical byte reconstruction/culture determinism을 구분한다.
+
+| 독립 정상 관측 | 결과·제한 |
+|---|---|
+| Representative fields | Historical65leaf·current DTO Single/Int32/Int64/string/bool/List metadata 및BASE157 expected leaves PASS |
+| String/number | Unicode/quotes/backslash/공백/tab/newline/literal '(null)',선택 finiteFloat32 exact bits·integer·Int64 9007199254740993 보존;모든bit/all-content 인증 아님 |
+| Optional generic transport | 정상 explicit null/empty 구분,optional missing→constructor null/empty default 관측;missing-required/unavailable material 인증 아님 |
+| Canonical / false transport | Normalize/Serialize(true) 정상 unordered permutation 동일bytes;false supplied order/typed values 유지 |
+| Ordered data | Declared modloadOrder 및verbs/stages/comps 순서·Comp multiplicity 유지;actual native material noninterference 미관측 |
+| Positive Validate/TryAdmit | BASE/NORMAL_REVISION_B 각각true/empty reason;admission JSON의expected semantics/canonical equality/UTF8 bytes·SHA 기록 |
+| Caller mutation | Normalize/Serialize(true)/TryAdmit의same DTO before/after list change를실제기록;report의in-place 선언과 일치 |
+| Fresh process/culture | Codec6canonical pairs와admitted2pairs가en-US/de-DE byte equality;같은final build 사용 |
+| Normal revisions | 두 정상 scalar/version content revision의bytes/digest 변화;general collision-resistance 증명 아님 |
+| Static-only | Tied keys/unsupported/rejection/missing-required/native/cache/provider/operator 실행0,UNOBSERVED/STATIC/UNTESTED |
+
+Raw canonical UTF8/false transport/decoded semantics/expected checks/digests와positive admission checks·before/after observation을 case별 보존했다. [FIELD_COVERAGE_INDEX.json](C:/Users/user/Desktop/RimMulti/QA-Tactical-Engine/GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008/FIELD_COVERAGE_INDEX.json)와[INDEPENDENT_COVERAGE_INDEX.json](C:/Users/user/Desktop/RimMulti/QA-Tactical-Engine/GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008/INDEPENDENT_COVERAGE_INDEX.json)는 실제관측·미관측을구분한다. Native Job damage/food preference enum metadata는허용된managed copy에서읽었지만 모든upstream type name/enum/class identity/admission을인증하지않는다. Synthetic core/version/class strings는actual trusted inventory가아니다.
+
+[INDEPENDENT_FINDINGS.md](C:/Users/user/Desktop/RimMulti/QA-Tactical-Engine/GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008/INDEPENDENT_FINDINGS.md)의R7-M01~07이Master findings와독립source/evidence 대조를담는다. R6unwired helper는수정됐고 R7serialized/validated contract fields binding도개선됐다. 잔여핵심은actual patch/settings support enforcement,source child filtering을앞서는required/optional/unknown/unavailable disposition,observed-empty inventory 상태,modVersion의compatibility-range 의미,완전한supportedkey/multiplicity정책이다. Blanket every-null/all-Def rejection이나새globalschema를요구하지않는다. Whole-gateissuer/native/operator는별도후속범위다.
+
+Producer14raw/JSON PASS IDs·order·countmatch. R7TC11positiveTryAdmit와TC13headerflag는oldR6거부/cache와구분했다. TC03/04/06/12/14의실제predicate범위를각각65leaf/all-bit/missing/collision/fulltieclaim과분리했다. `json.Length bytes`는UTF16 length다. Producer21artifacts·18beforeafter·actualDebug/ReleaseMVID/PDB개선과dynamic timestamp/SDKquery를인정하지만producerlast-build/compiler/framework/loadeddep/runner/oracle/canonical/numericexitgraph는미완성이다. [PRODUCER_COVERAGE_INDEX.json](C:/Users/user/Desktop/RimMulti/QA-Tactical-Engine/GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008/PRODUCER_COVERAGE_INDEX.json)/[PRODUCER_PACKAGING_INDEX.json](C:/Users/user/Desktop/RimMulti/QA-Tactical-Engine/GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008/PRODUCER_PACKAGING_INDEX.json). Producerrunner실행·원문수정0이며QA증거로producerchronology를소급인증하지않는다.
+
+Final QA build→pre-run→positive process→post-rungraph는[Program.cs](C:/Users/user/Desktop/RimMulti/QA-Tactical-Engine/GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008/Program.cs),[TOOLCHAIN_OBSERVED.json](C:/Users/user/Desktop/RimMulti/QA-Tactical-Engine/GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008/TOOLCHAIN_OBSERVED.json),BUILD_RAW/BUILD_TOOL_PROOF,[PRE_RUN1_MANIFEST.json](C:/Users/user/Desktop/RimMulti/QA-Tactical-Engine/GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008/PRE_RUN1_MANIFEST.json)/[PRE_RUN2_MANIFEST.json](C:/Users/user/Desktop/RimMulti/QA-Tactical-Engine/GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008/PRE_RUN2_MANIFEST.json),RUN1/2RAW·TOOL_PROOF,[POST_RUN1_IDENTITY.json](C:/Users/user/Desktop/RimMulti/QA-Tactical-Engine/GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008/POST_RUN1_IDENTITY.json)/[POST_RUN2_IDENTITY.json](C:/Users/user/Desktop/RimMulti/QA-Tactical-Engine/GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008/POST_RUN2_IDENTITY.json)에있다. 각141pre/postinputhash·sizeunchanged,runnerPDB1sourcechecksum/actualMVID결속. [ACTUAL_LOADED_PREPIN_BINDING.json](C:/Users/user/Desktop/RimMulti/QA-Tactical-Engine/GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008/ACTUAL_LOADED_PREPIN_BINDING.json)의모든실제loadedmanagedSHA가pre-pin과맞았다. RUN1_ARCHIVE는첫freshR7의completecaseevidence를보존한것이며incomplete/provisional/oldR6결과가아니다. Buildwarnings25는raw보존,actualcompilerexit0. 추가test실행불필요.
+
+Masterbaseline2701uniqueprotectedpath를전후SHA·size로확인한다(PRESERVATION_BEFORE/AFTER). R7frozen110/prior844/archive19/Pipeline206/QA1489/managed4및manifest·terminalbinding을보존한다. 기존externalinstalledincidentOPEN/actorUNKNOWN은변경·재독취·restore·정상화0. 최종EVIDENCE_MANIFEST/RESULT_INDEX/ACK_COMPLETION_BINDING/COMPLETION으로보고서·산출물을연결하고,directMaster1회return은별도RETURN_TOOL_PROOF/DELIVERY_STATUS에저장한다. Masterdisposition과freshnativegate가없으므로FoundationHOLD다.

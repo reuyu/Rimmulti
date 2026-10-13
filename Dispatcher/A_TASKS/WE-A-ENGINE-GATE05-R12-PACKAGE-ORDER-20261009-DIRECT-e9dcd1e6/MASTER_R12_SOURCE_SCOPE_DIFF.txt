@@ -1,0 +1,112 @@
+--- Frozen R11
++++ R12
+@@ -1533,7 +1533,7 @@
+     public static class ContentProfileProvider
+     {
+         public const string MANIFEST_SCHEMA_VERSION = "ADR-006B-v5";
+-        public const string CONTENT_CONTRACT_VERSION = "ADR-006B-v5-R11";
++        public const string CONTENT_CONTRACT_VERSION = "ADR-006B-v5-R12";
+         public const string SUPPORTED_COVERAGE_PROFILE = "POC_SUPPORTED_CORE_DLC_ASSEMBLIES_V5";
+         public const string MOD_PATCH_SUPPORT_STATUS = "TYPED_OBSERVATION_EXPLICIT_DISPOSITION_V1";
+ 
+@@ -1979,7 +1979,10 @@
+                 return false;
+             }
+ 
+-            checkResult.observedPackages = new List<string>();
++            int modCount = manifest.activeMods.Count;
++            checkResult.rawPhysicalPackages = new List<string>(modCount);
++            var seenLoadOrders = new HashSet<int>();
++
+             foreach (var m in manifest.activeMods)
+             {
+                 if (m == null || string.IsNullOrEmpty(m.packageId))
+@@ -1989,6 +1992,40 @@
+                     checkResult.failureReason = failureReason;
+                     return false;
+                 }
++                checkResult.rawPhysicalPackages.Add(m.packageId.ToLowerInvariant());
++
++                if (m.loadOrder < 0)
++                {
++                    failureReason = $"Active mod '{m.packageId}' has negative loadOrder {m.loadOrder}.";
++                    checkResult.status = "NEGATIVE_LOAD_ORDER";
++                    checkResult.failureReason = failureReason;
++                    return false;
++                }
++                if (!seenLoadOrders.Add(m.loadOrder))
++                {
++                    failureReason = $"Duplicate mod loadOrder {m.loadOrder} for mod '{m.packageId}'.";
++                    checkResult.status = "DUPLICATE_LOAD_ORDER";
++                    checkResult.failureReason = failureReason;
++                    return false;
++                }
++            }
++
++            for (int i = 0; i < modCount; i++)
++            {
++                if (!seenLoadOrders.Contains(i))
++                {
++                    failureReason = $"Active mods loadOrder sequence is not contiguous 0-based: missing ordinal {i}.";
++                    checkResult.status = "GAPPED_OR_INVALID_LOAD_ORDER";
++                    checkResult.failureReason = failureReason;
++                    return false;
++                }
++            }
++
++            // Copy and order by declared loadOrder without mutating caller's manifest.activeMods
++            var orderedView = manifest.activeMods.OrderBy(m => m.loadOrder).ToList();
++            checkResult.observedPackages = new List<string>(modCount);
++            foreach (var m in orderedView)
++            {
+                 checkResult.observedPackages.Add(m.packageId.ToLowerInvariant());
+             }
+ 
+@@ -2175,7 +2212,7 @@
+                 "TACTICAL_PROBE_V4",
+                 "READ_ONLY",
+                 "SIMULATION",
+-                "GATE05_R11_POLICY_ENCODING",
++                "GATE05_R12_PACKAGE_ORDER",
+                 "ADR006B_LOSSLESS_CANONICAL_CONTENT_V5"
+             };
+             foreach (var flag in requiredFlags)
+@@ -2290,6 +2327,14 @@
+                 if (string.IsNullOrEmpty(m.settingsDisposition)) { failureReason = $"Active mod '{m.packageId}' has null or empty settingsDisposition."; return false; }
+                 if (!modPackageIds.Add(m.packageId)) { failureReason = $"Duplicate mod packageId '{m.packageId}'."; return false; }
+                 if (!modLoadOrders.Add(m.loadOrder)) { failureReason = $"Duplicate mod loadOrder {m.loadOrder} for mod '{m.packageId}'."; return false; }
++            }
++            for (int i = 0; i < manifest.activeMods.Count; i++)
++            {
++                if (!modLoadOrders.Contains(i))
++                {
++                    failureReason = $"Active mods loadOrder sequence is not contiguous 0-based: missing ordinal {i}.";
++                    return false;
++                }
+             }
+ 
+             // 6. Loaded Assemblies Validation
+@@ -2961,13 +3006,13 @@
+             }
+             manifest.defFamilies.researchDefs.Sort((a, b) => string.CompareOrdinal(a.defName, b.defName));
+ 
+-            // Capability flags (aligned with semantic V4 scope and ADR-006B-v5-R11)
++            // Capability flags (aligned with semantic V4 scope and ADR-006B-v5-R12)
+             manifest.capabilityFlags = new List<string>
+             {
+                 "TACTICAL_PROBE_V4",
+                 "READ_ONLY",
+                 "SIMULATION",
+-                "GATE05_R11_POLICY_ENCODING",
++                "GATE05_R12_PACKAGE_ORDER",
+                 "ADR006B_LOSSLESS_CANONICAL_CONTENT_V5"
+             };
+ 
+@@ -3122,6 +3167,7 @@
+         public string failureReason = "";
+         public List<string> expectedPackages = new List<string>();
+         public List<string> observedPackages = new List<string>();
++        public List<string> rawPhysicalPackages = new List<string>();
+     }
+ 
+     public class LoadedAssemblyRecord

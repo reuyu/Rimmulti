@@ -1,0 +1,96 @@
+{
+  "type": "SOL_R15_PUBLIC_MANIFEST_BOUNDARY_INDEPENDENT",
+  "delivery_id": "SOL-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R15_PUBLIC_MANIFEST_BOUNDARY_INDEPENDENT",
+  "wp_revision": "S1",
+  "delivery_status": "SENT_ACTUAL_TOOL_NEW_ACTIVE_TURN",
+  "unknown_delivery": false,
+  "wp_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R15_PUBLIC_MANIFEST_BOUNDARY_INDEPENDENT_S1.md",
+  "wp_sha256": "991B50388CCBD932C8C4F83D8B76D72012C94F014084013B1687489EDCBB1FE7",
+  "baseline_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R15_QA_INDEPENDENT_PROTECTED_BASELINE_20261010.json",
+  "baseline_sha256": "31800C456401B3BDA72054586B2D740D6737CF61FF1B8F76C7A137E0748A02E4",
+  "protected_unique_paths": 7994,
+  "guard_run": "MASTER-R15-HEARTBEAT-20261009T165837Z-01",
+  "guard_session": 12883,
+  "guard_pid": 26552,
+  "actual_predispatch": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:98",
+    "revision": 98,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "notLoaded"
+      }
+    },
+    "latestTurn": {
+      "id": "01a120cd-940b-7561-8c58-454439174272",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791551706,
+      "completedAt": 1791553522,
+      "durationMs": 1816773
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ac8eff1ea5487d0b4cc28259201aaea",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016ac8eff1ea5487d0b4cc28259201aaea",
+      "turnId": "01a120cd-940b-7561-8c58-454439174272",
+      "phase": "final_answer",
+      "text": "R14 독립 QA를 완료하고 마스터에게 보고했습니다. 두 실행에서 각각 339개 검증이 통과했습니다. 정상 무효화·캐시·코덱은 PASS이며, 공개 manifest 경로에는 정적 수정 요구가 남아 있습니다. 전체 런타임 검증·릴리스는 보류입니다. QA 보고서"
+    },
+    "latestToolMarkerId": "exec-885eea86-1fa7-4865-9120-b1321f95184f",
+    "latestToolMarker": {
+      "id": "exec-885eea86-1fa7-4865-9120-b1321f95184f",
+      "turnId": "01a120cd-940b-7561-8c58-454439174272",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "attempt_started_at": "2026-10-10T02:08:05.930184+09:00",
+  "at": "2026-10-10T02:08:13.499147+09:00",
+  "status": "SENT_IN_PROGRESS_ACK_PENDING",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:99",
+    "revision": 99,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a121a2-fc67-73b2-8d9a-64ab6a15e2ca",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791565692,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "protected_paths_master_rehashed": 7994,
+  "normal_execution_verdict": "PENDING",
+  "production_modify_builds": 0,
+  "qa_runner_builds_allowed": true,
+  "scope": "FROZEN_R14_STATIC_AND_POSITIVE_NORMAL_LIFECYCLE_STANDALONE_CORE_CODEC_ONLY",
+  "full_runtime_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD",
+  "monitor": "ACTUAL_PAUSED60MIN",
+  "pre_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R15_PUBLIC_MANIFEST_BOUNDARY_INDEPENDENT_PREDISPATCH_20261010.json",
+  "pre_sha256": "44E2EAC80A4B17934F019F2F0C0E2CF7F8278EBAE0A68773BEA294EF953697AB",
+  "tool_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R15_PUBLIC_MANIFEST_BOUNDARY_INDEPENDENT_SEND_TOOL_20261010.json",
+  "tool_sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+  "post_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R15_PUBLIC_MANIFEST_BOUNDARY_INDEPENDENT_POSTSEND_20261010.json",
+  "post_sha256": "BD87D4A5FE56BEF5F16F5A27DD77CC208CDE5F0236E9901467BC63937B4200D7"
+}

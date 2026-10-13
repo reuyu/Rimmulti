@@ -1,0 +1,440 @@
+{
+  "at": "2026-10-09T20:17:21.829181+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R13-POLICY-CACHE-LIFECYCLE-20261009-DIRECT-2661a749",
+  "kind": "POST_COMPLETION_REVIEW_SNAPSHOT_NOT_PRE_EXECUTION_PROOF",
+  "files": [
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R13-POLICY-CACHE-LIFECYCLE-20261009-DIRECT-2661a749\\A_RECOVERY_ACK.md",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R13-POLICY-CACHE-LIFECYCLE-20261009-DIRECT-2661a749\\A_RECOVERY_ACK.md",
+      "sha256": "7491C5717C88AAE97D4900BC6F79A4260BBEF8C05F1E4B29616DADA171CDDCD0",
+      "size": 4179
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R13-POLICY-CACHE-LIFECYCLE-20261009-DIRECT-2661a749\\A_WORK_LOG.md",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R13-POLICY-CACHE-LIFECYCLE-20261009-DIRECT-2661a749\\A_WORK_LOG.md",
+      "sha256": "C546D3F1C77D9B94ABB60EE2909FE71431A9B95EAEF8AE9F529D254DE29D8BF8",
+      "size": 4900
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R13-POLICY-CACHE-LIFECYCLE-20261009-DIRECT-2661a749\\ACK.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R13-POLICY-CACHE-LIFECYCLE-20261009-DIRECT-2661a749\\ACK.json",
+      "sha256": "A7C7D6B890CAB9774C581EDF18B02C87C82587E096FE305BCDDD5148F63C4587",
+      "size": 1587
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R13-POLICY-CACHE-LIFECYCLE-20261009-DIRECT-2661a749\\COMPLETION.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R13-POLICY-CACHE-LIFECYCLE-20261009-DIRECT-2661a749\\COMPLETION.json",
+      "sha256": "A87ADAEB20C6E687DB955A04411E89FA6C3BD17DD202C7E0827D1339E6A70739",
+      "size": 9978
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R13-POLICY-CACHE-LIFECYCLE-20261009-DIRECT-2661a749\\INSTRUCTIONS.md",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R13-POLICY-CACHE-LIFECYCLE-20261009-DIRECT-2661a749\\INSTRUCTIONS.md",
+      "sha256": "00B93925B0CFDC35D1251AE9077A81C86042DEAEE918B5ABEE030D9DF62C2D37",
+      "size": 5452
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R13-POLICY-CACHE-LIFECYCLE-20261009-DIRECT-2661a749\\UI_MESSAGE.txt",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R13-POLICY-CACHE-LIFECYCLE-20261009-DIRECT-2661a749\\UI_MESSAGE.txt",
+      "sha256": "617EF1A3D407A0E327E31E8AFBFA6456936B9E55DDA7A362DC391FEFAAE6AA29",
+      "size": 922
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_EngineHost_Content_Codec_Gate05_R13.md",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\docs\\POC_EngineHost_Content_Codec_Gate05_R13.md",
+      "sha256": "56FC265385C9D6140FCD606085C55CA41FCD0634B7A8BF8DDCA987A38D70649D",
+      "size": 13045
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R13_POLICY_CACHE_LIFECYCLE.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R13_POLICY_CACHE_LIFECYCLE.json",
+      "sha256": "D2E5CF48EF767EAB83C065F10E06BE55C54A6478EF2BF13684F894FCD44F51F8",
+      "size": 5802
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\CANDIDATE_PRE_RUN_MANIFEST.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\CANDIDATE_PRE_RUN_MANIFEST.json",
+      "sha256": "D913A239AC21EB8745D81D35218CA7981374B0B5CBBFE076ABDD0D77864D23D1",
+      "size": 9980
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\ENGINE_FREEZE_AFTER.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\ENGINE_FREEZE_AFTER.json",
+      "sha256": "5255C5C1C8509733F168F728AFF74962E5F8E4C8432832044EF980354C3A3C34",
+      "size": 3069
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\ENGINE_FREEZE_BEFORE.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\ENGINE_FREEZE_BEFORE.json",
+      "sha256": "461387A047224B9672EE003B7F08D506871BF65C48CBAB0A564377F7BF0E829A",
+      "size": 3069
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\bin\\Debug\\net472\\Gate05R13CacheRunner.exe",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\bin\\Debug\\net472\\Gate05R13CacheRunner.exe",
+      "sha256": "3E1179AC945AE71DE5419DBCB6AF984672FB09AAA726FA9D346B3CFFC911F7E9",
+      "size": 47104
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\bin\\Debug\\net472\\Gate05R13CacheRunner.exe.config",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\bin\\Debug\\net472\\Gate05R13CacheRunner.exe.config",
+      "sha256": "AD8267122C40D37DCD9D99E1412D763187A1825732F378DB8867F3ECF675CF70",
+      "size": 176
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\bin\\Debug\\net472\\Gate05R13CacheRunner.pdb",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\bin\\Debug\\net472\\Gate05R13CacheRunner.pdb",
+      "sha256": "79BE6F7A25BDE2E71E526D4896896C6624CD45FFF6FB4A7D95994AA76096FBEB",
+      "size": 9384
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\bin\\Debug\\net472\\Newtonsoft.Json.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\bin\\Debug\\net472\\Newtonsoft.Json.dll",
+      "sha256": "E1E27AF7B07EEEDF5CE71A9255F0422816A6FC5849A483C6714E1B472044FA9D",
+      "size": 711952
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "EC04C539E4B6F057238F2D1A454B517333C3C11C4307C3CB73DD623A65FE044D",
+      "size": 242688
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "1EE3A671782F56B66346914160EFB00524695EDFFBC75262A249055C84D409DD",
+      "size": 61852
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\Gate05R13CacheRunner.csproj",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\Gate05R13CacheRunner.csproj",
+      "sha256": "635684C1B78FF97A55162654B92383ACC505F5E56D67C492B59A50EC3ECA06FB",
+      "size": 1616
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Debug\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Debug\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+      "sha256": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+      "size": 214
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Debug\\net472\\Gate05R1.D3C36970.Up2Date",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Debug\\net472\\Gate05R1.D3C36970.Up2Date",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "size": 0
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Debug\\net472\\Gate05R13CacheRunner.AssemblyInfo.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Debug\\net472\\Gate05R13CacheRunner.AssemblyInfo.cs",
+      "sha256": "CC2CBDBDA2864855AA9FEFD54B69733288DDF4F8A4AA7183E46765A9DF08DEFD",
+      "size": 1008
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Debug\\net472\\Gate05R13CacheRunner.AssemblyInfoInputs.cache",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Debug\\net472\\Gate05R13CacheRunner.AssemblyInfoInputs.cache",
+      "sha256": "DA267C80D351EF98F84A92AF29A5F237D2F8B11908DBE191FDB00D7EF67C70F7",
+      "size": 66
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Debug\\net472\\Gate05R13CacheRunner.assets.cache",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Debug\\net472\\Gate05R13CacheRunner.assets.cache",
+      "sha256": "9B2BF592EB1CF2547C606A0CAB878C8426D6FFEDB7F5F68A673E49ED9F1485FC",
+      "size": 151
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Debug\\net472\\Gate05R13CacheRunner.csproj.AssemblyReference.cache",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Debug\\net472\\Gate05R13CacheRunner.csproj.AssemblyReference.cache",
+      "sha256": "0F7FEAD1580A7703B928EFDDECE3A233323F1359B8FE4D6DD44D40B69E0E9126",
+      "size": 12840
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Debug\\net472\\Gate05R13CacheRunner.csproj.CoreCompileInputs.cache",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Debug\\net472\\Gate05R13CacheRunner.csproj.CoreCompileInputs.cache",
+      "sha256": "A4EB9B13E40C6492869222EE0F999AF506C06E77F7B618B33D836FCE90855050",
+      "size": 66
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Debug\\net472\\Gate05R13CacheRunner.csproj.FileListAbsolute.txt",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Debug\\net472\\Gate05R13CacheRunner.csproj.FileListAbsolute.txt",
+      "sha256": "A32B39D7B286089AB4AAF30C4CD100C57E9F33D451997C398BD3A02E40CD8102",
+      "size": 1906
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Debug\\net472\\Gate05R13CacheRunner.exe",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Debug\\net472\\Gate05R13CacheRunner.exe",
+      "sha256": "3E1179AC945AE71DE5419DBCB6AF984672FB09AAA726FA9D346B3CFFC911F7E9",
+      "size": 47104
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Debug\\net472\\Gate05R13CacheRunner.exe.withSupportedRuntime.config",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Debug\\net472\\Gate05R13CacheRunner.exe.withSupportedRuntime.config",
+      "sha256": "AD8267122C40D37DCD9D99E1412D763187A1825732F378DB8867F3ECF675CF70",
+      "size": 176
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Debug\\net472\\Gate05R13CacheRunner.GeneratedMSBuildEditorConfig.editorconfig",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Debug\\net472\\Gate05R13CacheRunner.GeneratedMSBuildEditorConfig.editorconfig",
+      "sha256": "B36B90FBE12227CBEA0D18E186431068C94E4734A253762BB192AF5D3A8F7803",
+      "size": 445
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Debug\\net472\\Gate05R13CacheRunner.pdb",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Debug\\net472\\Gate05R13CacheRunner.pdb",
+      "sha256": "79BE6F7A25BDE2E71E526D4896896C6624CD45FFF6FB4A7D95994AA76096FBEB",
+      "size": 9384
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Gate05R13CacheRunner.csproj.nuget.dgspec.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Gate05R13CacheRunner.csproj.nuget.dgspec.json",
+      "sha256": "58BF5150465F2EBDAB6480F6E2F1F0343649C36C2DFFD43DFD76935C099186AE",
+      "size": 1978
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Gate05R13CacheRunner.csproj.nuget.g.props",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Gate05R13CacheRunner.csproj.nuget.g.props",
+      "sha256": "AE798ECD59E8BBE02B1D481634BF4DABD064DD30E798B67E1316D1CB345E8B8C",
+      "size": 1133
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Gate05R13CacheRunner.csproj.nuget.g.targets",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\Gate05R13CacheRunner.csproj.nuget.g.targets",
+      "sha256": "971CC9B535384849B5C661D776CD7A80833A416265E32E8968E06C367368B8B5",
+      "size": 150
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\project.assets.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\project.assets.json",
+      "sha256": "E158915CD174232E07DD796C49DE6C3A699C5A222034986B5F2F190B64370D8C",
+      "size": 1887
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\project.nuget.cache",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\obj\\project.nuget.cache",
+      "sha256": "D3B5BDF7DC5A8E75F9044BF74D83761316943F4086BB7296C9905E4D1259FA8D",
+      "size": 263
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\Program.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\Program.cs",
+      "sha256": "9C5255408F7D4B748C8A6C1B72D9205CC9D8E24023384227C0240918A5B5014C",
+      "size": 50671
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\raw_console.txt",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\raw_console.txt",
+      "sha256": "1E941A131C9086BEC48284FFE6267E6267B751743651C945E06F370BF7264815",
+      "size": 4866
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\results.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\EngineGate05R13PolicyCacheLifecycle\\results.json",
+      "sha256": "C88F293439F5765673273BF7C8A8D60EAA09481ADCED207BB28D0E2DC579DC1F",
+      "size": 11205
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "EC04C539E4B6F057238F2D1A454B517333C3C11C4307C3CB73DD623A65FE044D",
+      "size": 242688
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "1EE3A671782F56B66346914160EFB00524695EDFFBC75262A249055C84D409DD",
+      "size": 61852
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "EC04C539E4B6F057238F2D1A454B517333C3C11C4307C3CB73DD623A65FE044D",
+      "size": 242688
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "1EE3A671782F56B66346914160EFB00524695EDFFBC75262A249055C84D409DD",
+      "size": 61852
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "B066F3C6B4C6FA4E94E7E9AB86FE7AE5121183B76E789AAC52149F8614E94324",
+      "size": 230400
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "5F6B73E03A769D74F54B21E1A8A898D44171094871C3054331C063F2B5C3346D",
+      "size": 45380
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "94A3FC201EEB10A11F25967B7BE2E6BBB5E8E3060282C760709AD83F2127773B",
+      "size": 166574
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+      "sha256": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+      "size": 214
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "EC04C539E4B6F057238F2D1A454B517333C3C11C4307C3CB73DD623A65FE044D",
+      "size": 242688
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "1EE3A671782F56B66346914160EFB00524695EDFFBC75262A249055C84D409DD",
+      "size": 61852
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.AssemblyInfo.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.AssemblyInfo.cs",
+      "sha256": "8C7180C5E4D3004DE53926C1039C107C3059053C470CF73F82CF974EAF7D5681",
+      "size": 1029
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.AssemblyInfoInputs.cache",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.AssemblyInfoInputs.cache",
+      "sha256": "AB13C50C9DC50FD0899D45845F95DFE2AB4A94D6D90AC2B8E046422E8E25740E",
+      "size": 66
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.assets.cache",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.assets.cache",
+      "sha256": "392A04109CC65571CF55817BBD6EFE3B3EF8DBBDE732F15E5FF2BE9455872752",
+      "size": 151
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.csproj.AssemblyReference.cache",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.csproj.AssemblyReference.cache",
+      "sha256": "CC236987CCE627AB000406742C4FABB0461A5867DBF59C6229D63EA3C8385F6F",
+      "size": 53065
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.csproj.CoreCompileInputs.cache",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.csproj.CoreCompileInputs.cache",
+      "sha256": "463B9651EE240035F13402445DEDCE8DDE9DD882A17275F3F2639CB8D0650AD4",
+      "size": 66
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.csproj.FileListAbsolute.txt",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.csproj.FileListAbsolute.txt",
+      "sha256": "11E18885930E2050FD0FC16BD59094BC66A707DC5341DC22FBD2FCE5599DD6D4",
+      "size": 1058
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.GeneratedMSBuildEditorConfig.editorconfig",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.GeneratedMSBuildEditorConfig.editorconfig",
+      "sha256": "63FFCEDEE1E15A375EDD4D700BD5A652C3BBA8205DBB461C6E9B6816DE2C530C",
+      "size": 414
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\project.assets.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\obj\\project.assets.json",
+      "sha256": "51D36A82A8275AD6C9685A9E44E2A6E67B2ACE136A7ACE4F9F5CAFA77845BC05",
+      "size": 1687
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\project.nuget.cache",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\obj\\project.nuget.cache",
+      "sha256": "2DED0731BA3CF3AFB2EDA4C37F39A26AB62B3E250AFB6F1CACA82A618BB04ED1",
+      "size": 234
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+      "sha256": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+      "size": 214
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "B066F3C6B4C6FA4E94E7E9AB86FE7AE5121183B76E789AAC52149F8614E94324",
+      "size": 230400
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "5F6B73E03A769D74F54B21E1A8A898D44171094871C3054331C063F2B5C3346D",
+      "size": 45380
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.AssemblyInfo.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.AssemblyInfo.cs",
+      "sha256": "80492D41167FD5D58508DFC29A09E3624EC6374EF4048B2FF2D2C5EE86562743",
+      "size": 1031
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.AssemblyInfoInputs.cache",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.AssemblyInfoInputs.cache",
+      "sha256": "47E887C8880287562480A12B4C5D32A4D94FA769661FFD6940AD4D51DC8ADD39",
+      "size": 66
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.assets.cache",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.assets.cache",
+      "sha256": "852F75380A3CABDD70DB25FE246536EE3D449D9AADD266A2C2D40AD494E4FF61",
+      "size": 151
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.csproj.AssemblyReference.cache",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.csproj.AssemblyReference.cache",
+      "sha256": "CC236987CCE627AB000406742C4FABB0461A5867DBF59C6229D63EA3C8385F6F",
+      "size": 53065
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.csproj.CoreCompileInputs.cache",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.csproj.CoreCompileInputs.cache",
+      "sha256": "1E11B2C839FC565D00A3D952EE4615974415F9E2E28CD41A2481900FDD1849BC",
+      "size": 66
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.csproj.FileListAbsolute.txt",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.csproj.FileListAbsolute.txt",
+      "sha256": "9E15F6104BBE5D02903F39DF328F3027CB68A5946B05F7FACE83D6562CE3E9DA",
+      "size": 1076
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.GeneratedMSBuildEditorConfig.editorconfig",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.GeneratedMSBuildEditorConfig.editorconfig",
+      "sha256": "63FFCEDEE1E15A375EDD4D700BD5A652C3BBA8205DBB461C6E9B6816DE2C530C",
+      "size": 414
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\WorkerBridge.csproj.nuget.dgspec.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\obj\\WorkerBridge.csproj.nuget.dgspec.json",
+      "sha256": "2986120463E5695FC1B32D3CCB9DD3E7096CDABF1D6C61337F88A51DF6707005",
+      "size": 1759
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\WorkerBridge.csproj.nuget.g.props",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\obj\\WorkerBridge.csproj.nuget.g.props",
+      "sha256": "AE798ECD59E8BBE02B1D481634BF4DABD064DD30E798B67E1316D1CB345E8B8C",
+      "size": 1133
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\WorkerBridge.csproj.nuget.g.targets",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\obj\\WorkerBridge.csproj.nuget.g.targets",
+      "sha256": "971CC9B535384849B5C661D776CD7A80833A416265E32E8968E06C367368B8B5",
+      "size": 150
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+      "size": 156431
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R13-2661a749\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "size": 1774
+    }
+  ],
+  "runtime_e2_released": false
+}

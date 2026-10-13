@@ -1,0 +1,9 @@
+{
+  "actual_release_tool": {
+    "chunk_id": "aff731",
+    "wall_time_seconds": 0.0000252,
+    "exit_code": 0,
+    "original_token_count": 105,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-SOL-R21-COMPLETE-20261011-01\", \"pid\": 27436, \"locked_at\": \"2026-10-11T07:24:41.367847+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-11T07:33:43.613216+09:00\", \"renewal_count\": 3, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-11T07:34:40.251388+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  }
+}

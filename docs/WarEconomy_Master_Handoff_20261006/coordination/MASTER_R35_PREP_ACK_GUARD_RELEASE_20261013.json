@@ -1,0 +1,7 @@
+{
+  "chunk_id": "a0c23f",
+  "wall_time_seconds": 0.0000403,
+  "exit_code": 0,
+  "original_token_count": 86,
+  "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R35-PREP-ACK-20261013-01\", \"pid\": 27884, \"locked_at\": \"2026-10-13T19:31:14.357733+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-13T19:32:23.129709+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+}

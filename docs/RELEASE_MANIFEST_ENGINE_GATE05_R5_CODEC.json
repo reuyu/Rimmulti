@@ -1,0 +1,102 @@
+{
+  "manifest_version": "1.0",
+  "work_package": "WP_ENGINE_GATE05_R5_CODEC",
+  "candidate_lineage": "GATE05-R5-CODEC",
+  "created_at_utc": "2026-10-08T09:00:21.375301+00:00",
+  "agent_role": "Antigravity A",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046",
+  "selected_candidate": {
+    "configuration": "Debug",
+    "target_framework": "net472",
+    "dll_path": "scratch/WorkerBridgeMod/Source/bin/Debug/net472/WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "930B69D012F34BFD3BB50F97B86629BAEA082D201A3A81696549DF1450075AE8",
+    "dll_bytes": 204800,
+    "pdb_path": "scratch/WorkerBridgeMod/Source/bin/Debug/net472/WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "06F616C6FD54E07AE87AE2B16E60B1F4AB6FA0AB664D77D71CED084ABC38D2E4",
+    "pdb_bytes": 49920,
+    "mvid": "0e6b7cca-e02c-4af5-97da-5de31ec7aec3"
+  },
+  "alternate_candidate": {
+    "configuration": "Release",
+    "target_framework": "net472",
+    "dll_path": "scratch/WorkerBridgeMod/Source/bin/Release/net472/WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "77AF633BBA063304E74C9F1D5AE7102CAE856D591201646226AFE6DD23B81EC7",
+    "dll_bytes": 195584,
+    "pdb_path": "scratch/WorkerBridgeMod/Source/bin/Release/net472/WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "E53DE9504FE257D19D789EFD196DA907704690F3F5CD6A5914B3AC7C59E77233",
+    "pdb_bytes": 37584,
+    "mvid": "0e6b7cca-e02c-4af5-97da-5de31ec7aec3"
+  },
+  "source_files": [
+    {
+      "path": "scratch/WorkerBridgeMod/Source/WorkerBridge.cs",
+      "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+      "bytes": 156431
+    },
+    {
+      "path": "scratch/WorkerBridgeMod/Source/EngineHostCensus.cs",
+      "sha256": "591408E898E1663732DAF362955248CE6C33CCBD213253D75C56FCE8E999D28C",
+      "bytes": 99735,
+      "prefix_marker": "    public static class ContentProfileProvider",
+      "prefix_length": 72547,
+      "prefix_sha256": "F3C4F865F1E2A898BF240A2D096195870D77A52408CF2D93664FE15092A2A887"
+    },
+    {
+      "path": "scratch/WorkerBridgeMod/Source/WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    }
+  ],
+  "verification_evidence": {
+    "runner_project": {
+      "path": "scratch/EngineGate05R5Codec/Harness/Gate05R5CodecRunner.csproj",
+      "sha256": "5DF1B7290B6A353B68CF6D516AF64051B25BFB675772C94DB1FF19586FB3055D",
+      "bytes": 1645
+    },
+    "runner_source": {
+      "path": "scratch/EngineGate05R5Codec/Harness/Program.cs",
+      "sha256": "922DC6C508EC360396FE24262518777BAC20C565FCA05F877A1646EF697B68FA",
+      "bytes": 28084
+    },
+    "results_json": {
+      "path": "scratch/EngineGate05R5Codec/results.json",
+      "sha256": "CD06E7538B0FF082D7C568261B19D27F000D358414D1B1769AE7F0C3DEBF04CA",
+      "bytes": 3408
+    },
+    "raw_console_log": {
+      "path": "scratch/EngineGate05R5Codec/raw_console.txt",
+      "sha256": "32D55B41A08DC6A4A9F419A286DF06536717E5CB423974370E8B1B3AD2ECD905",
+      "bytes": 2550
+    },
+    "pre_run_manifest": {
+      "path": "scratch/EngineGate05R5Codec/CANDIDATE_PRE_RUN_MANIFEST.json",
+      "sha256": "675FBD8C54E279CE3AE53520598C67D603569CA7B310A447AF82486E307A68BE",
+      "bytes": 3739
+    },
+    "engine_freeze_before": {
+      "path": "scratch/EngineGate05R5Codec/ENGINE_FREEZE_BEFORE.json",
+      "sha256": "FD455867600DF30B11E2F7ABF579FDE5FFFE3018934C19FB9DB549B6E5D1A8E8",
+      "bytes": 3194
+    },
+    "engine_freeze_after": {
+      "path": "scratch/EngineGate05R5Codec/ENGINE_FREEZE_AFTER.json",
+      "sha256": "F9CDC4D99AC786953415D73F3D4817337BD7FD055A57F7CE8063214BADF30304",
+      "bytes": 2353
+    },
+    "report_markdown": {
+      "path": "docs/POC_EngineHost_Content_Codec_Gate05_R5.md",
+      "sha256": "95E9AF52021980F340477248A423BA1F4B6A9C60B9E39AA024A5522C07BE7AB5",
+      "bytes": 17943
+    }
+  },
+  "summary": {
+    "total_tests": 12,
+    "pass": 12,
+    "fail": 0,
+    "e1_verdict": "IMPLEMENTATION_PARTIAL",
+    "codec_status": "NORMAL_CODEC_VERIFIED",
+    "native_observation_status": "NATIVE_UNTESTED (Prohibited under WP_ENGINE_GATE05_R5_CODEC)",
+    "installed_incident_status": "UNKNOWN OPEN INCIDENT",
+    "disposition_note": "Gate05-R5 successfully implements supported loaded-content manifest as typed versioned canonical records under ADR-006B-v5, eliminating legacy delimiter and sentinel combinations. Defects remain OPEN pending Master disposition and Sol QA independent verification."
+  }
+}

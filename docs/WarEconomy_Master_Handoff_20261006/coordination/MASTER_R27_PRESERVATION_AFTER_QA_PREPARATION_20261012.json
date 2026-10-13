@@ -1,0 +1,162 @@
+{
+  "at": "2026-10-12T03:32:35.382591+09:00",
+  "original_baseline": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R27_CHILD_CAPTURE_PROTECTED_BASELINE_20261011.json",
+    "sha256": "FA99693BBED8427FA88B671A6140A1971A7A064C5856BED4E5826FE2682FD788",
+    "bytes": 4120626
+  },
+  "additional_QA_original_files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\ACK.json",
+      "sha256": "0541BCCE562AE35FD3E9F57A0094967B42CCBFF064DC77522D13B2E27785A09B",
+      "bytes": 1536
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\ACK_COMPLETION_BINDING.json",
+      "sha256": "74509F690718EA6313EA3BE4F0FD2756DB3C84FE5A19DF464BA331F40895CAC3",
+      "bytes": 1444
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\ACK_INITIAL.json",
+      "sha256": "0541BCCE562AE35FD3E9F57A0094967B42CCBFF064DC77522D13B2E27785A09B",
+      "bytes": 1536
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\ACK_RETURN_TOOL_PROOF.json",
+      "sha256": "D644B20EAF82B689CCD008994AD2B440EE0B4B3D3BB56307FF0CE07D5F85B575",
+      "bytes": 349
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\bootstrap_review.py",
+      "sha256": "92AAFE08B53FEF965D8D5F6737CE6CBE5B26E754FEC9823FF392D32476FB1A93",
+      "bytes": 5177
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\COMPLETION.json",
+      "sha256": "DD4E5312832B548A92B85EA47E8497044C098A9536D4BE03C93FBD6E01C3959E",
+      "bytes": 2991
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\CONSTRUCTION_COPY_RISKS.json",
+      "sha256": "C6A5B699A1C9510D311DF6284F0362BF23D25DE6FE5BC35DFDD7B53C5C487DE4",
+      "bytes": 2883
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\COPY_OWNERSHIP_MATRIX.json",
+      "sha256": "3178B520CE1B227DCBE8F2088B737BD188CC65F48D672A815E9B730B45881F04",
+      "bytes": 4265
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\DELIVERY_STATUS.json",
+      "sha256": "7EDD0EDFF942E70C8A0AD80E37746A60F514D57772721616B8606D1157BF2C51",
+      "bytes": 536
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\EVIDENCE_MANIFEST.json",
+      "sha256": "AB226B9DB1D24EE98FA9D84F81DD9FDFC554E7D981785BF2828AAD37EB495545",
+      "bytes": 8088
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\finalize_review.py",
+      "sha256": "0953D752A6B8B85EF4BD2C519C85D78043CEFA954E6CA988B39DDC71F8300C4D",
+      "bytes": 16399
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\FINAL_PREPARATION_METADATA_AUDIT.json",
+      "sha256": "CC62A3909DDF93C72852899B98D8B7CAE778FDBFDBF25F597B66B6B54B4AA51E",
+      "bytes": 1170
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\FINAL_REFERENCE_OBSERVATION.json",
+      "sha256": "EBF9F0EF4E95BFCDFAF2E9D09382C9D190489163277C46F0C6B9927B78ACB713",
+      "bytes": 5427
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\FROZEN_SCHEMA_SOURCE_OBSERVATION.json",
+      "sha256": "2FC223F810C740682C9DB3183C83ACF4BBFC454755C161212BA28E6B8079E84B",
+      "bytes": 44283
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\FUTURE_EXECUTION_PROVENANCE_CHECKLIST.json",
+      "sha256": "60ABD3BCE57C04DA50D757E0B147871CC79E2BC9C945667E882B679364CE52C1",
+      "bytes": 6080
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\MASTER_PRIOR_DISPOSITION_RECEIPT.json",
+      "sha256": "922F9183608E86FB005F9D1880596B5B2EA71169BA121F78D38154C52F013BB1",
+      "bytes": 653
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\MASTER_SCOPE_FROZEN_BASE_CHECK.json",
+      "sha256": "92BE7630A2DC816ED27909F53C82666BA21CF6A331E9F41A56AC35E207EB42D6",
+      "bytes": 1624
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\OBSERVATION_CONTRACT.md",
+      "sha256": "289430A48B803B111CF1953CC7B7131FF926D56D2BDE5AF2B908E87499C3F0FC",
+      "bytes": 11810
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\prepare_oracle.py",
+      "sha256": "7E3DA7FDD20388917B8551B3BA153F17D30D30D6059264EC7246173FE32C5218",
+      "bytes": 18626
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\prepare_provenance.py",
+      "sha256": "463EB4A89D4CA2203A81F669A93C76BAAA568412D64337F6990571F5B591E71F",
+      "bytes": 7844
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\PRESERVATION_AFTER.json",
+      "sha256": "0B38447A23D34FAB016FD161724889AB1F8B39972E7A952CDC3FFC6899E40550",
+      "bytes": 4082290
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\PRESERVATION_BEFORE.json",
+      "sha256": "8CF9E7A95B1CA8347D9338192429EA5F87CC71F41231C92D84660247D8FD8243",
+      "bytes": 4082290
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\PROSPECTIVE_CALLPLAN.json",
+      "sha256": "CED0429567C53FED699CF57D6E77E005EAF1BAD62667ADE6842B318D88FA326A",
+      "bytes": 2272
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\PROSPECTIVE_CAPTURE_ORACLE.json",
+      "sha256": "5961CD18DA05B67F6DE40DA8A6EBB289D94ACF85054D57FB31FE4B8C5530C4C7",
+      "bytes": 549797
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\R27_PREPARATION_FROZEN_R25_LINEAGE.json",
+      "sha256": "311865F7791306F6E46B09FEBC02901599B84D297F4CFA5BACDE5CE664A16FB1",
+      "bytes": 6223
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\RECOVERY_AND_REQUIREMENT_BINDING.json",
+      "sha256": "8FAB8443FCED494AE63DDE888124C5E8BA3BEDFAB17755EFB0C5F798DF80E66B",
+      "bytes": 5961
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\RESULT_INDEX.json",
+      "sha256": "9C5392D833A0A1F6DE95EAA7B0AE28000C6EAC14CB13340A4458C8F86E293758",
+      "bytes": 2651
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\RETURN_PENDING.json",
+      "sha256": "D021A471EF25779B375C0A20E0DC27D48DC12343A38C8259DE609ACA1C979C7D",
+      "bytes": 1207
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\RETURN_TOOL_PROOF.json",
+      "sha256": "592A0B566AFD0EF466D1B8AA9D21D761E02DE7651D26664200AF33AA8CC5F71D",
+      "bytes": 589
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R27_Child_Capture_Preparation_S1_20261011.md",
+      "sha256": "D84C48F309BDA4EB736D31939F8F9A06D7067B371EE17E4245EF27CBEC0132E5",
+      "bytes": 6960
+    }
+  ],
+  "no_initial_baseline_or_sent_WP_changes": true,
+  "A_exact_current7_still_mutable": true
+}

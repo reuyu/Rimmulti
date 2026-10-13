@@ -1,0 +1,13 @@
+{
+  "actual_release": {
+    "chunk_id": "9e53e0",
+    "wall_time_seconds": 0.000049,
+    "exit_code": 0,
+    "original_token_count": 104,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R31-E1-COLLECT-20261012-01\", \"pid\": 16692, \"locked_at\": \"2026-10-12T22:24:38.135392+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-12T22:33:35.832239+09:00\", \"renewal_count\": 3, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-12T22:34:17.079209+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "guard_session": 29837,
+  "guard_run": "MASTER-R31-E1-COLLECT-20261012-01",
+  "prior_session27640_expired_during_user_interruption": true,
+  "historical_invocation_coverage_not_retroactively_asserted": true
+}

@@ -1,0 +1,52 @@
+{
+  "at": "2026-10-13T19:26:47.793091+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R35-PUBLISHER-20261013-DIRECT-16a25a7e",
+  "envelope": 38,
+  "actual_UI": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R35_A_ACTUAL_SUBMIT_UI_20261013.json",
+    "sha256": "CB23725AD5A2228EC5F77427ED28507C79221F55BA71C8F061F11E8E618B42E1",
+    "bytes": 52555
+  },
+  "actual_idle": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R35_A_FRESH_IDLE_UI_20261013.json",
+    "sha256": "E6EDA1F4547FFC71AF2779598455404E64EE5756AAE2C71531E68A7943CE0523",
+    "bytes": 73359
+  },
+  "exact_draft": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R35_A_EXACT_DRAFT_20261013.json",
+    "sha256": "D5F133702F5FFC80DAF5593718A44E974F765ED9FEC15AD101E38A259351A792",
+    "bytes": 75395
+  },
+  "one_submit": true,
+  "ACK": "PENDING",
+  "actual_automation_tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R35_HOURLY_RESUME_TOOL_20261013.json",
+    "sha256": "339DE508C3280FFFA7128F062C1A2ACAB6D48E217E3478485F049BE501E1F343",
+    "bytes": 258
+  },
+  "actual_config": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "ACTIVE",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791887116920
+  },
+  "future_R35_run_observed": false,
+  "ALL9_Engine_and_generated_FIXED": true,
+  "publisher_source_AST_only": true,
+  "publisher_execution": 0,
+  "protected_initial_paths": 19103,
+  "additional_R34_loosehelper": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R34_LATE_OUTSIDE_HELPER_DISCOVERY_20261013.json",
+    "sha256": "76E1BE93E16E5FE5E5F4E90217D4050D1D8A3E787626F5316D194660893DFA97",
+    "bytes": 661
+  },
+  "Foundation": "HOLD",
+  "nativeE2": "NOT_RELEASED",
+  "guard_session": 58500
+}

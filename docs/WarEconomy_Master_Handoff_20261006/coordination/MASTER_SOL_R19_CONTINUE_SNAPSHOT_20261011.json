@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":false,\"wake\":{\"reason\":\"turnCompleted\",\"turnId\":\"01a124f7-ffda-7512-ac77-bdd869f8b6bd\",\"threadId\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\"},\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:122\",\"revision\":122,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"idle\"}},\"latestTurn\":{\"id\":\"01a124f7-ffda-7512-ac77-bdd869f8b6bd\",\"status\":\"failed\",\"error\":{\"message\":\"You’ve hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 7:11 PM.\"},\"startedAt\":1791621595,\"completedAt\":1791622324,\"durationMs\":729220},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ac9fbd4341087d0a70dd742ebcf73c5\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ac9fbd4341087d0a70dd742ebcf73c5\",\"turnId\":\"01a124f7-ffda-7512-ac77-bdd869f8b6bd\",\"phase\":\"commentary\",\"text\":\"R19의 정상 원문 보존 검증은 PASS지만, producer inventory에는 추가 제약이 있습니다. en-US 로그 두 개는 해시가 다르고, de-DE는 실제 10개 출력 중 로그 두 개를 제외한 8개만 열거했습니다. 이 차이는 기존 Master 문서의 “de-DE 10개 일치”와 구분해 원본을 보존하고 보고하겠습니다.\"},\"latestToolMarkerId\":\"exec-515b0040-e5e2-40a6-802c-d012434b2c0c\",\"latestToolMarker\":{\"id\":\"exec-515b0040-e5e2-40a6-802c-d012434b2c0c\",\"turnId\":\"01a124f7-ffda-7512-ac77-bdd869f8b6bd\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

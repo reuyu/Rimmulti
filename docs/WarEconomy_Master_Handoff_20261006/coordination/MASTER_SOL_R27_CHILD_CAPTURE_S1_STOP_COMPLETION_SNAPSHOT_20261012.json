@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":false,\"wake\":{\"reason\":\"turnCompleted\",\"turnId\":\"01a12c46-6a5f-7233-8fc0-5f8aabb2c37e\",\"threadId\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\"},\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:169\",\"revision\":169,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"idle\"}},\"latestTurn\":{\"id\":\"01a12c46-6a5f-7233-8fc0-5f8aabb2c37e\",\"status\":\"completed\",\"error\":null,\"startedAt\":1791744174,\"completedAt\":1791744963,\"durationMs\":788778},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016acbdbc1115087d0bb83f4bc3a31205b\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016acbdbc1115087d0bb83f4bc3a31205b\",\"turnId\":\"01a12c46-6a5f-7233-8fc0-5f8aabb2c37e\",\"phase\":\"final_answer\",\"text\":\"R27 QA는 지정된 Newtonsoft.Json.dll 경로가 없어 빌드 전에 중단했습니다. 오류와 증거를 보존해 마스터에게 보고했으며, 빌드·후보 실행은 0회입니다. 경로 정정 지시를 기다리겠습니다. 중단 보고서\"},\"latestToolMarkerId\":\"exec-b3c9b2d4-0ebe-497d-8d9f-a6d8df343f93\",\"latestToolMarker\":{\"id\":\"exec-b3c9b2d4-0ebe-497d-8d9f-a6d8df343f93\",\"turnId\":\"01a12c46-6a5f-7233-8fc0-5f8aabb2c37e\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

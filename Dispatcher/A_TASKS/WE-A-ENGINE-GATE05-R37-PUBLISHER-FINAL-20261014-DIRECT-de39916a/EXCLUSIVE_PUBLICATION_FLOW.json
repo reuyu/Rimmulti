@@ -1,0 +1,80 @@
+{
+  "flow_name": "EXCLUSIVE_ATOMIC_NONOVERWRITE_PUBLICATION_R37",
+  "contract": "MASTER_R37_PUBLISHER_FINAL_IMPLEMENTATION_CONTRACT_20261014.md",
+  "steps": [
+    {
+      "step_index": 1,
+      "phase": "CLI_AND_SPEC_INGESTION",
+      "operations": [
+        "Verify sys.argv has exact length 3 with sys.argv[1] == '--spec'.",
+        "Verify spec path is valid local DOS path with direct nofollow ancestry guard.",
+        "Read raw spec file bytes ONCE via read_once_file_and_stat capturing handle fstat.",
+        "Verify no BOM, decode UTF-8, deserialize JSON rejecting duplicate keys.",
+        "Enforce exact closed keys: 6 required keys + optional bundleFilename fixed to 'operator_startup_pair.json'."
+      ]
+    },
+    {
+      "step_index": 2,
+      "phase": "PRE_PUBLICATION_VALIDATION",
+      "operations": [
+        "Verify operator_pair_id is non-empty string without trim/normalization.",
+        "Verify fixed bundle filename equals 'operator_startup_pair.json' (no traversal).",
+        "Validate parent and child declarations (exact 7 fields, non-empty, role, fully-qualified path, 64-hex SHA without padding).",
+        "Preserve original descriptor expectedRole and expectedCapabilityBoundary padding and lowercase verbatim.",
+        "Validate parent and child config paths (fully-qualified local DOS root, regular file, direct nofollow ancestry verified).",
+        "Enforce Windows path equality between supplied paths and declaration expectedConfigPath.",
+        "Read raw config bytes ONCE via read_once_file_and_stat capturing handle fstat and SHA-256.",
+        "Verify raw SHA-256 matches descriptor expectedConfigSha256.",
+        "Validate config14 JSON (no BOM, no duplicate properties, exact 14 properties).",
+        "Validate schemaVersion == 'WE-OPERATOR-BOOTSTRAP-V1'.",
+        "Validate raw role exact match ('SIMULATION' parent, 'READ_ONLY' child).",
+        "Validate raw configId matches untrimmed expectedConfigId and trimmed configId matches SAME untrimmed expectedConfigId.",
+        "Validate raw capabilityBoundary matches factory-cloned/trimmed expectedCapabilityBoundary case-insensitively BEFORE snapshot.",
+        "Validate blank validatorArguments in both configs.",
+        "Validate distinct workerUserDataDirectory and validatorUserDataDirectory.",
+        "Validate non-blank expectedContentProfileFingerprint.",
+        "Validate expectedPackagePolicyDeclaration (revision string or int with explicit bool exclusion).",
+        "Validate issuedAtUtc Gregorian UTC ISO 8601 with ASCII digits [0-9], calendar/time validity, preserving raw fractional digits."
+      ]
+    },
+    {
+      "step_index": 3,
+      "phase": "OWNED_ROOT_EXCLUSIVE_RESERVATION",
+      "operations": [
+        "Verify output_dir is fully-qualified local DOS path without traversal or aliases.",
+        "Verify output_dir does NOT preexist via direct os.lstat (catching ONLY FileNotFoundError).",
+        "Verify all existing ancestors of output_dir exist, are directories, and are NOT reparse points.",
+        "Exclusively create output_dir via os.mkdir.",
+        "Re-verify output_dir post-creation (leaf exists and is valid directory)."
+      ]
+    },
+    {
+      "step_index": 4,
+      "phase": "STAGING_BUNDLE_CREATION",
+      "operations": [
+        "Serialize bundle dict (schemaVersion, operatorPairId, parentDeclaration, childDeclaration) to compact UTF-8 without BOM or trailing newline.",
+        "Exclusively write 'operator_startup_pair.staging.json' using mode 'xb'."
+      ]
+    },
+    {
+      "step_index": 5,
+      "phase": "SIDECAR_ARTIFACT_CREATION",
+      "operations": [
+        "Exclusively write 'operator_startup_pair.sha256.txt' using mode 'xb'.",
+        "Construct PROVENANCE_MANIFEST.json linking specFile witness, parentConfig witness, childConfig witness, inputs, outputs, publisher metadata, and stated limits.",
+        "Exclusively write 'PROVENANCE_MANIFEST.json' using mode 'xb'."
+      ]
+    },
+    {
+      "step_index": 6,
+      "phase": "ATOMIC_FINAL_PUBLICATION",
+      "operations": [
+        "Re-verify output directory before final link.",
+        "Atomically create 'operator_startup_pair.json' via os.link from staging file.",
+        "os.link guarantees atomic directory entry creation on NTFS without overwriting.",
+        "Retain 'operator_startup_pair.staging.json' as immutable forensic evidence.",
+        "Zero destructive cleanup: zero calls to os.remove, os.unlink, rmtree, os.replace, os.rename, or mode 'wb'."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "timedOut": false,
+  "wake": {
+    "reason": "turnCompleted",
+    "turnId": "01a115c0-cd7f-7322-92ce-ed7b324e574d",
+    "threadId": "01a11583-ff90-73e0-8916-d021e2bb038d",
+    "hostId": "local"
+  },
+  "polls": [
+    {
+      "schemaVersion": 1,
+      "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:12",
+      "revision": 12,
+      "changed": true,
+      "thread": {
+        "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+        "hostId": "local",
+        "status": {
+          "type": "idle"
+        }
+      },
+      "latestTurn": {
+        "id": "01a115c0-cd7f-7322-92ce-ed7b324e574d",
+        "status": "completed",
+        "error": null,
+        "startedAt": 1791366319,
+        "completedAt": 1791366332,
+        "durationMs": 13001
+      },
+      "latestAssistantMessageId": "msg_0c6b28ae575c2341016ac614bc679887d0bd848801f7c2fd73",
+      "latestAssistantMessage": {
+        "id": "msg_0c6b28ae575c2341016ac614bc679887d0bd848801f7c2fd73",
+        "turnId": "01a115c0-cd7f-7322-92ce-ed7b324e574d",
+        "phase": "final_answer",
+        "text": "마스터의 수신·판정 확인을 받았습니다. 기존 QA 보고서와 raw evidence, freeze를 보존하고, 새 WP나 재실행 없이 다음 별도 release를 기다리겠습니다."
+      },
+      "latestToolMarkerId": null,
+      "latestToolMarker": null
+    }
+  ]
+}

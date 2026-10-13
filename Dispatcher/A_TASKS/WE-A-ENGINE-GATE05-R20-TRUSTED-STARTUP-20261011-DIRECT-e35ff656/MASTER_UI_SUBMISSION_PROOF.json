@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-11T04:37:01.291263+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R20-TRUSTED-STARTUP-20261011-DIRECT-e35ff656",
+  "exact_message": "Master 승인 R20입니다. C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R20-TRUSTED-STARTUP-20261011-DIRECT-e35ff656\\INSTRUCTIONS.md 전체와 WP/release를 읽고 진행하세요. R19 원문 정책 손실은 독립 QA로 좁은 CLOSED. 이번은 명시적 launch 출처·factory receipt·missing startup 신뢰 gate 연결만 수정하며 R19 Snapshot/Census/csproj/runtime7 고정. 새 정상 PURE helper E1과 새 후보/증거·지정 ACK/COMPLETION 기록. Global startup/native/Process/부정 probe 실행 금지.",
+  "one_actual_submit": true,
+  "new_exact_message": true,
+  "composer_empty": true,
+  "working_cancel": true,
+  "post_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R20-TRUSTED-STARTUP-20261011-DIRECT-e35ff656\\MASTER_UI_SUBMITTED.json",
+  "post_sha256": "8A3F23BFCEBEB4FC550561A0C11A15907647F8AD55CC2474375707EE24A117A2",
+  "send_tool": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R20-TRUSTED-STARTUP-20261011-DIRECT-e35ff656\\MASTER_UI_SEND_TOOL.json",
+  "send_tool_sha256": "5ABC0AFC1D4D012B2B2C77C13C60C4340BF7480D9AED041818B0F8D3B723B2C4",
+  "draft": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R20-TRUSTED-STARTUP-20261011-DIRECT-e35ff656\\MASTER_UI_DRAFT.json",
+  "idle": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R20_CU_IDLE_BEFORE_INPUT_20261011.json",
+  "focus_qualification": "UIA RootWebArea but observed screenshot caret in empty composer followed by exact Message input value; first geometry error reobserved before retry, no submission repeated"
+}

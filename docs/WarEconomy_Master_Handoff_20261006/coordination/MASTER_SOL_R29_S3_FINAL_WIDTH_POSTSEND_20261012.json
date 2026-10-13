@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"bcc76e72-e33d-4898-bc7b-b558cfab470c:6\",\"revision\":6,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a12f2d-3cfb-7fb0-857a-bf1ef4ab88e6\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791792856,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016acc98f1d1e487d0ab6a6dcc86c3f2ac\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016acc98f1d1e487d0ab6a6dcc86c3f2ac\",\"turnId\":\"01a12f2d-3cfb-7fb0-857a-bf1ef4ab88e6\",\"phase\":\"commentary\",\"text\":\"마스터가 완료된 검증을 보존한 채 마지막 소스 증거 정리만 이어가는 방안을 검토 중입니다. 후보·기대값·실행 결과는 그대로 두고, 보고서에 정상 단위 QA 결과와 High 문제 3건, native 미검증 범위를 명확히 기록하겠습니다.\"},\"latestToolMarkerId\":\"exec-6f4ddc33-19aa-43a1-a431-4ea40246ce25\",\"latestToolMarker\":{\"id\":\"exec-6f4ddc33-19aa-43a1-a431-4ea40246ce25\",\"turnId\":\"01a12f2d-3cfb-7fb0-857a-bf1ef4ab88e6\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

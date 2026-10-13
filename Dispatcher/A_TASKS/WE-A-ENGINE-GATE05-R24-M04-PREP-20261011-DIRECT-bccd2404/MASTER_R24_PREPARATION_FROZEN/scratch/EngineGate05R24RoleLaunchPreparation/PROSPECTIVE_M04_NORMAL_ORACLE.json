@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "document_type": "PROSPECTIVE_M04_NORMAL_ORACLE",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404",
+  "timestamp_utc": "2026-10-11T09:27:00Z",
+  "summary": "Prospective normal test cases, expected values, and verification assertions for future M04 implementation.",
+  "canonical_schemas": {
+    "config_schema": {
+      "name": "WE-OPERATOR-BOOTSTRAP-V1",
+      "field_count": 14,
+      "fields": [
+        "schemaVersion", "configId", "role", "admittedValidatorExecutablePath",
+        "admittedValidatorExecutableSha256", "validatorArguments", "workerUserDataDirectory",
+        "validatorUserDataDirectory", "workerCwd", "validatorCwd", "capabilityBoundary",
+        "issuedAtUtc", "expectedContentProfileFingerprint", "expectedPackagePolicyDeclaration"
+      ]
+    },
+    "snapshot_schema": {
+      "property_count": 15,
+      "immutable": true
+    },
+    "receipt_schema": {
+      "name": "WE-OPERATOR-RECEIPT-V1",
+      "property_count": 11,
+      "immutable": true
+    }
+  },
+  "test_cases": [
+    {
+      "case_id": "TC_M04_01_SIMULATION_FILE_ROUTE",
+      "role": "SIMULATION",
+      "admission_method": "File",
+      "worker_user_data_path": "C:\\WarEconomy\\WorkerData_Sim",
+      "validator_user_data_path": "C:\\WarEconomy\\ValidatorData_Sim",
+      "expected_safe_save_path": "C:\\WarEconomy\\WorkerData_Sim",
+      "expected_tasks_dir": "C:\\WarEconomy\\WorkerData_Sim\\Tasks",
+      "expected_staging_dir": "C:\\WarEconomy\\WorkerData_Sim\\Staging",
+      "expected_saves_dir": "C:\\WarEconomy\\WorkerData_Sim\\Saves",
+      "assertion": "SafeSaveDataFolderPath equals WorkerUserDataDirectory"
+    },
+    {
+      "case_id": "TC_M04_02_SIMULATION_BYTES_ROUTE",
+      "role": "SIMULATION",
+      "admission_method": "Bytes",
+      "worker_user_data_path": "C:\\WarEconomy\\WorkerData_Sim_Bytes",
+      "validator_user_data_path": "C:\\WarEconomy\\ValidatorData_Sim_Bytes",
+      "expected_safe_save_path": "C:\\WarEconomy\\WorkerData_Sim_Bytes",
+      "expected_tasks_dir": "C:\\WarEconomy\\WorkerData_Sim_Bytes\\Tasks",
+      "expected_staging_dir": "C:\\WarEconomy\\WorkerData_Sim_Bytes\\Staging",
+      "expected_saves_dir": "C:\\WarEconomy\\WorkerData_Sim_Bytes\\Saves",
+      "assertion": "SafeSaveDataFolderPath equals WorkerUserDataDirectory"
+    },
+    {
+      "case_id": "TC_M04_03_READ_ONLY_FILE_ROUTE",
+      "role": "READ_ONLY",
+      "admission_method": "File",
+      "worker_user_data_path": "C:\\WarEconomy\\WorkerData_Val",
+      "validator_user_data_path": "C:\\WarEconomy\\ValidatorData_Val",
+      "expected_safe_save_path": "C:\\WarEconomy\\ValidatorData_Val",
+      "expected_tasks_dir": "C:\\WarEconomy\\ValidatorData_Val\\Tasks",
+      "expected_staging_dir": "C:\\WarEconomy\\ValidatorData_Val\\Staging",
+      "expected_saves_dir": "C:\\WarEconomy\\ValidatorData_Val\\Saves",
+      "assertion": "SafeSaveDataFolderPath equals ValidatorUserDataDirectory (resolves current R23 defect)"
+    },
+    {
+      "case_id": "TC_M04_04_READ_ONLY_BYTES_ROUTE",
+      "role": "READ_ONLY",
+      "admission_method": "Bytes",
+      "worker_user_data_path": "C:\\WarEconomy\\WorkerData_Val_Bytes",
+      "validator_user_data_path": "C:\\WarEconomy\\ValidatorData_Val_Bytes",
+      "expected_safe_save_path": "C:\\WarEconomy\\ValidatorData_Val_Bytes",
+      "expected_tasks_dir": "C:\\WarEconomy\\ValidatorData_Val_Bytes\\Tasks",
+      "expected_staging_dir": "C:\\WarEconomy\\ValidatorData_Val_Bytes\\Staging",
+      "expected_saves_dir": "C:\\WarEconomy\\ValidatorData_Val_Bytes\\Saves",
+      "assertion": "SafeSaveDataFolderPath equals ValidatorUserDataDirectory (resolves current R23 defect)"
+    },
+    {
+      "case_id": "TC_M04_05_CHILD_ARGUMENT_ORDERING_AND_QUOTING",
+      "role": "SIMULATION",
+      "base_args": "--batchmode --nographics",
+      "task_file_path": "C:\\WarEconomy\\WorkerData\\Tasks\\TASK-01.json",
+      "nonce": "NONCE-SECRET-12345",
+      "validator_user_data_path": "C:\\WarEconomy\\IsolatedValidatorData",
+      "expected_args_pattern": "-savedatafolder=\"C:\\WarEconomy\\IsolatedValidatorData\" --batchmode --nographics --task-file \"C:\\WarEconomy\\WorkerData\\Tasks\\TASK-01.json\" --nonce \"NONCE-SECRET-12345\"",
+      "assertion": "Child arguments contain quoted -savedatafolder followed by baseArgs, --task-file, and --nonce in strict deterministic order"
+    },
+    {
+      "case_id": "TC_M04_06_UNICODE_AND_WHITESPACE_PATH_SAFETY",
+      "role": "READ_ONLY",
+      "worker_user_data_path": "C:\\WarEconomy\\테스트 작업자 폴더",
+      "validator_user_data_path": "C:\\WarEconomy\\검증자 격리 폴더 Ω",
+      "expected_safe_save_path": "C:\\WarEconomy\\검증자 격리 폴더 Ω",
+      "assertion": "Unicode codepoints and spaces in paths are preserved verbatim without truncation or corruption"
+    },
+    {
+      "case_id": "TC_M04_07_POST_ISSUANCE_CALLER_IMMUTABILITY",
+      "role": "READ_ONLY",
+      "assertion": "Mutating caller descriptor after admission does not affect SafeSaveDataFolderPath resolution or receipt validation"
+    }
+  ]
+}

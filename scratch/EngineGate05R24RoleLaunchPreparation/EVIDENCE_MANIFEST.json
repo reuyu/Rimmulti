@@ -1,0 +1,55 @@
+{
+  "manifest_id": "MANIFEST-ENGINE-GATE05-R24-M04-PREP-EVIDENCE-01",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404",
+  "wp_id": "WP_ENGINE_GATE05_R24_ROLE_LAUNCH_CONTRACT_PREPARATION",
+  "revision": "GATE05-R24-M04-PREP",
+  "envelope": 27,
+  "result_id": "WE-A-ENGINE-GATE05-R24-M04-PREP-RESULT-01",
+  "created_at": "2026-10-11T18:25:50+09:00",
+  "verdict": "PREPARATION_COMPLETE_NATIVE_UNTESTED",
+  "file_count": 6,
+  "files": [
+    {
+      "name": "ACTUAL_PREPARATION_SCOPE.json",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R24RoleLaunchPreparation\\ACTUAL_PREPARATION_SCOPE.json",
+      "relative_path": "scratch\\EngineGate05R24RoleLaunchPreparation\\ACTUAL_PREPARATION_SCOPE.json",
+      "size_bytes": 2160,
+      "sha256": "786A267A5461972003E51F30BFF94CA760631469444E9B7DC9DC4C18FA1267DA"
+    },
+    {
+      "name": "FRONTEND_PREREQUISITES.json",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R24RoleLaunchPreparation\\FRONTEND_PREREQUISITES.json",
+      "relative_path": "scratch\\EngineGate05R24RoleLaunchPreparation\\FRONTEND_PREREQUISITES.json",
+      "size_bytes": 6787,
+      "sha256": "D8CB969848CB40CCA6749CA38B0BB98CE5DD88873F5705F76EF4E2894975A319"
+    },
+    {
+      "name": "IMPLEMENTATION_CONTRACT.md",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R24RoleLaunchPreparation\\IMPLEMENTATION_CONTRACT.md",
+      "relative_path": "scratch\\EngineGate05R24RoleLaunchPreparation\\IMPLEMENTATION_CONTRACT.md",
+      "size_bytes": 7106,
+      "sha256": "299C8E36D1157D00F39B53BBEE884D205559A5E01E5B357BD76A64481551DAA9"
+    },
+    {
+      "name": "PROSPECTIVE_M04_NORMAL_ORACLE.json",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R24RoleLaunchPreparation\\PROSPECTIVE_M04_NORMAL_ORACLE.json",
+      "relative_path": "scratch\\EngineGate05R24RoleLaunchPreparation\\PROSPECTIVE_M04_NORMAL_ORACLE.json",
+      "size_bytes": 5085,
+      "sha256": "EC6FDE3E8C165330086CF96EDC63AC01B1F8DB66FBA50E2381F203F8E030866B"
+    },
+    {
+      "name": "RESULT_INDEX.json",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R24RoleLaunchPreparation\\RESULT_INDEX.json",
+      "relative_path": "scratch\\EngineGate05R24RoleLaunchPreparation\\RESULT_INDEX.json",
+      "size_bytes": 2924,
+      "sha256": "671E2DBF9B912C890D227FCBD1693D183BD9BBBC7F39DBE7BC9FEB0AE75FA07E"
+    },
+    {
+      "name": "ROUTE_MATRIX.json",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R24RoleLaunchPreparation\\ROUTE_MATRIX.json",
+      "relative_path": "scratch\\EngineGate05R24RoleLaunchPreparation\\ROUTE_MATRIX.json",
+      "size_bytes": 5689,
+      "sha256": "7C918A1EA35C2AE9376A2A8C22F9970DD9C9E7E7B8D28B7803EA7FAF61B13D88"
+    }
+  ]
+}

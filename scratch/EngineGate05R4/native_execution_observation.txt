@@ -1,0 +1,18 @@
+=== Native Runtime Execution Observation (Gate05-R4 / WP_ENGINE_GATE05_R4) ===
+Timestamp: 2026-10-08T07:31:19.8930706Z
+Target Isolated Directory: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R4\RuntimeCopy
+Rule: Never execute Steam original directory; isolate executable, userdata, and mod under RuntimeCopy.
+Copied Runtime Binary: 'RimWorldWin64.exe' (SHA256=4C30E2105B49F2D0130F5D861947FBE82B866042299DA48EF1C8CF6979A8564D, Size=666624)
+Copied Runtime Binary: 'UnityPlayer.dll' (SHA256=E0C489F1683609247FEDE45EA049D30BAA4F4542060E308E25C0EC87F6C0FB96, Size=30996672)
+Copied Runtime Binary: 'UnityCrashHandler64.exe' (SHA256=6DA75361F0EDDBE3492DF3C495AF7A1BA90FA6AE8C91D30BC857930F7DF63726, Size=1112768)
+Copied Runtime Binary: 'steam_appid.txt' (SHA256=127E5A12E4BEEAC49D6FAEA428A003E76ACE71A2B23CBB17F17DD00991DD60D3, Size=6)
+Copied Runtime Binary: 'Version.txt' (SHA256=0EC56B267649FAA48E8CD6BD767B14BAFE3D1359AF44434711105DBDC4597BE3, Size=17)
+Deployed Selected R4 Candidate: 'WarEconomy.WorkerBridge.PoC.dll' (SHA256=4F5663FDBBFA09A8B2BE460D09950FD22B9567459F7116E69D0B1C558F189B9E, Size=204800)
+Steam Installed Mod DLL: 'C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\WarEconomy.WorkerBridge.PoC\1.6\Assemblies\WarEconomy.WorkerBridge.PoC.dll' (SHA256=BB3B52F39F7B53B70BC9FB4CE039E7455D08B24B17B8DABB8295E0FF4584DD61, Size=110080) [UNKNOWN OPEN INCIDENT: Preserved unmodified per Master policy]
+Execution Attempt: 'C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R4\RuntimeCopy\RimWorldWin64.exe' -batchmode -nographics -savedatafolder='C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R4\RuntimeCopy\UserData'
+Started Isolated Process: PID=18816, StartTimeUtc=2026-10-08T07:31:20.8191595Z, Cwd='C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R4\RuntimeCopy'
+Process Still Running after 5000ms. Terminating observed test process cleanly...
+Terminated PID=18816 cleanly (Managed child lifecycle enforced).
+Classification: NATIVE_UNTESTED / BLOCKER_UNKNOWN
+Observation Summary: Standalone isolated execution under project scratch RuntimeCopy observed with exact PID, exit code, and managed process termination. Because game content data directories (Data/Managed) were not fully linked into RuntimeCopy, complete mod assembly loading and in-engine semantic progression was not fully executed in native environment.
+Limitation: Native gate PASS cannot be declared based solely on component harness results. Verdict declared as IMPLEMENTATION_PARTIAL with NATIVE_UNTESTED / BLOCKER_UNKNOWN status.

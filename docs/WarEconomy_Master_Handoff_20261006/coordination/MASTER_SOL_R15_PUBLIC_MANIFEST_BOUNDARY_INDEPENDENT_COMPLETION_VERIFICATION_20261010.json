@@ -1,0 +1,1535 @@
+{
+  "at": "2026-10-10T02:33:19.100263+09:00",
+  "guard_run": "MASTER-SOL-R15-COMPLETE-CONTINUE-20261010-01",
+  "guard_session": 58943,
+  "guard_pid": 16944,
+  "result_id": "SOL-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010-7843e15c956b49ab83fd2c11f205f8b4",
+  "delivery_id": "SOL-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R15_PUBLIC_MANIFEST_BOUNDARY_INDEPENDENT",
+  "completion_sha256": "EBC2F890A782313FB044AC530050C8705D4A2B505ACF23DCBD055178BA15758A",
+  "report_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R15_Public_Manifest_Boundary_Independent_S1_20261010.md",
+  "report_sha256": "FF55AA99602CA73326D2096387571CA00CA52A77F3B1F1F46AFCD90BB6587DF3",
+  "evidence_manifest_sha256": "6826319C3F7961A33741D13E12574F62328BE713DEF3731ABDC02AA7F6B0BD8F",
+  "result_index_sha256": "97B49B563FED7270B2E71D8E74603010C13A96EB26CA9C8D616226F8D1822643",
+  "evidence_files": 925,
+  "protected_paths_rehashed": 7994,
+  "runs": [
+    {
+      "run_id": "R15-daa3da1fef3840c9",
+      "pid": 34732,
+      "culture": "en-US",
+      "exit": 0,
+      "pass": 360,
+      "fail": 0,
+      "prepost": 174,
+      "loaded": 12,
+      "output_files": 423,
+      "stage_ledger": 87,
+      "root": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010\\runs\\R15-daa3da1fef3840c9"
+    },
+    {
+      "run_id": "R15-38ec011896124179",
+      "pid": 3756,
+      "culture": "de-DE",
+      "exit": 0,
+      "pass": 360,
+      "fail": 0,
+      "prepost": 174,
+      "loaded": 12,
+      "output_files": 423,
+      "stage_ledger": 87,
+      "root": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010\\runs\\R15-38ec011896124179"
+    }
+  ],
+  "typed_rows": 84252,
+  "canonical_pairs": 125,
+  "reference_pairs": 68,
+  "reference_bindings": 298,
+  "runner_metadata_master": {
+    "assembly": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010\\runner\\QaCodecRunner.exe",
+    "pdb": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010\\runner\\QaCodecRunner.pdb",
+    "mvid": "f467a422-7161-4e59-bdc2-17e795dfed6b",
+    "codeviewGuid": "f86ab0a4-3f56-4548-b47b-a7c5380e9ffd",
+    "pdbGuid": "f86ab0a4-3f56-4548-b47b-a7c5380e9ffd",
+    "codeviewMatched": true,
+    "documents": [
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010\\Program.cs",
+        "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+        "expected": "3F34808F9E3DEE415A88391AD6B182D1FCC18DDBD6D7FEC1B0E11DBBD158E799",
+        "actual": "3F34808F9E3DEE415A88391AD6B182D1FCC18DDBD6D7FEC1B0E11DBBD158E799",
+        "matched": true
+      }
+    ]
+  },
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:101",
+    "revision": 101,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a121a2-fc67-73b2-8d9a-64ab6a15e2ca",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791565692,
+      "completedAt": 1791566981,
+      "durationMs": 1289081
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ac92481e8cc87d0a7b80b381a7f8cb8",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016ac92481e8cc87d0a7b80b381a7f8cb8",
+      "turnId": "01a121a2-fc67-73b2-8d9a-64ab6a15e2ca",
+      "phase": "final_answer",
+      "text": "R15 QA를 완료하고 Master에 보고했습니다. 정상 검증: 두 프로세스에서 각각 360개 PASS 공개 성공 경로 수정: 정적 구현 확인 Native 검증·전체 E2·결함 closure는 미완료, Foundation HOLD 유지 QA 보고서"
+    },
+    "latestToolMarkerId": "exec-90e7f909-5089-46a6-a4bb-4690abe0d972",
+    "latestToolMarker": {
+      "id": "exec-90e7f909-5089-46a6-a4bb-4690abe0d972",
+      "turnId": "01a121a2-fc67-73b2-8d9a-64ab6a15e2ca",
+      "type": "fileChange",
+      "name": "fileChange",
+      "status": "completed"
+    }
+  },
+  "actual_thread_read": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R15_QA_ACTUAL_THREAD_READ_20261010.json",
+  "scope_correction": {
+    "at": "2026-10-10T02:23:29.159310+09:00",
+    "rows": [
+      {
+        "run_id": "R15-daa3da1fef3840c9",
+        "actual_runtime_ledger": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010\\runs\\R15-daa3da1fef3840c9\\ACTUAL_ADMITTED_CALL_LEDGER.json",
+          "sha256": "DFF3C07EBEF0787FDE469BECEB100C1DD9B6369D2D5184B99BCDF6929E7FC537",
+          "bytes": 122253
+        },
+        "actual_logged_stages": 855,
+        "direct_provider_API_calls": 768,
+        "core_or_global_grouped_stages": 87,
+        "counts": [
+          {
+            "scope": "direct_pure_provider",
+            "api": "CachedCanonicalJson_GLOBAL_EMPTY",
+            "observed_logged_count": 7
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "CachedFingerprint_GLOBAL_EMPTY",
+            "observed_logged_count": 7
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "CachedManifest_GLOBAL_EMPTY",
+            "observed_logged_count": 7
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "CanonicalNormalize",
+            "observed_logged_count": 26
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "CheckPackagePolicy_DECLARATION_FULL",
+            "observed_logged_count": 14
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "CheckPackagePolicy_DECLARATION_SHORT",
+            "observed_logged_count": 14
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "CheckPackagePolicy_RECORD_FULL",
+            "observed_logged_count": 14
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "CheckPackagePolicy_RECORD_SHORT",
+            "observed_logged_count": 14
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "ClearConfiguredExpectedPackagePolicy_GLOBAL_EMPTY",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "ComputePackagePolicyDigest_DECLARATION",
+            "observed_logged_count": 14
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "ComputePackagePolicyDigest_RECORD",
+            "observed_logged_count": 14
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "ComputePackagePolicyDigest_SCALAR",
+            "observed_logged_count": 14
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "ConfigurationGeneration_GLOBAL_EMPTY",
+            "observed_logged_count": 7
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "ConfigureExpectedPackagePolicy_DECLARATION_GLOBAL_EMPTY",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "ConfigureExpectedPackagePolicy_RECORD_GLOBAL_EMPTY",
+            "observed_logged_count": 2
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "ConfiguredExpectedPackagePolicy_GLOBAL_EMPTY",
+            "observed_logged_count": 8
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "DeserializeCanonicalJson",
+            "observed_logged_count": 211
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "DeserializePackagePolicy",
+            "observed_logged_count": 14
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "EscapeJsonString",
+            "observed_logged_count": 28
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "HasConfiguredExpectedPackagePolicy_GLOBAL_EMPTY",
+            "observed_logged_count": 7
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "InvalidateCache_GLOBAL_EMPTY",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "IsCached_GLOBAL_EMPTY",
+            "observed_logged_count": 7
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "LastComputationError_GLOBAL_EMPTY",
+            "observed_logged_count": 7
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "SerializeCanonicalJson_FALSE",
+            "observed_logged_count": 153
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "SerializeCanonicalJson_TRUE",
+            "observed_logged_count": 116
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "SerializePackagePolicy",
+            "observed_logged_count": 28
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "TryAdmitManifest_POSITIVE",
+            "observed_logged_count": 2
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "TryAdmitWithPackagePolicy_DECLARATION",
+            "observed_logged_count": 14
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "TryAdmitWithPackagePolicy_RECORD",
+            "observed_logged_count": 14
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "ValidateContract_POSITIVE",
+            "observed_logged_count": 2
+          },
+          {
+            "scope": "global_empty_only",
+            "api": "ClearConfiguredExpectedPackagePolicy",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "global_empty_only",
+            "api": "ConfigurationGeneration/HasConfigured/Configured/IsCached/CachedFingerprint/CachedCanonicalJson/CachedManifest/LastComputationError",
+            "observed_logged_count": 7
+          },
+          {
+            "scope": "global_empty_only",
+            "api": "ConfigureExpectedPackagePolicy_DECLARATION",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "global_empty_only",
+            "api": "ConfigureExpectedPackagePolicy_RECORD",
+            "observed_logged_count": 2
+          },
+          {
+            "scope": "global_empty_only",
+            "api": "ConfiguredExpectedPackagePolicy",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "global_empty_only",
+            "api": "InvalidateCache",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "standalone",
+            "api": "CachedManifest",
+            "observed_logged_count": 5
+          },
+          {
+            "scope": "standalone",
+            "api": "CaptureStateSnapshot",
+            "observed_logged_count": 5
+          },
+          {
+            "scope": "standalone",
+            "api": "CaptureStateSnapshot_OUTENTRY",
+            "observed_logged_count": 5
+          },
+          {
+            "scope": "standalone",
+            "api": "ClearConfiguredExpectedPackagePolicy",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "standalone",
+            "api": "CoherentEntry.CreateManifestSnapshot",
+            "observed_logged_count": 5
+          },
+          {
+            "scope": "standalone",
+            "api": "ConfigurationGeneration/HasConfigured/Configured/IsCached/CachedFingerprint/CachedCanonicalJson/CachedManifest/LastComputationError/TryGetCoherentEntry",
+            "observed_logged_count": 8
+          },
+          {
+            "scope": "standalone",
+            "api": "ConfigureExpectedPackagePolicy_DECLARATION",
+            "observed_logged_count": 2
+          },
+          {
+            "scope": "standalone",
+            "api": "ConfigureExpectedPackagePolicy_RECORD",
+            "observed_logged_count": 2
+          },
+          {
+            "scope": "standalone",
+            "api": "ConfiguredExpectedPackagePolicy",
+            "observed_logged_count": 8
+          },
+          {
+            "scope": "standalone",
+            "api": "ContentProfileCacheCore.constructor",
+            "observed_logged_count": 2
+          },
+          {
+            "scope": "standalone",
+            "api": "InvalidateCache",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "standalone",
+            "api": "TryGetCoherentEntry/CreateManifestSnapshot/CachedManifest/CachedFingerprint/CachedCanonicalJson/IsCached/ConfigurationGeneration",
+            "observed_logged_count": 20
+          },
+          {
+            "scope": "standalone",
+            "api": "TryPublishComputedEntry_LEGACY_CURRENT_MATCHING",
+            "observed_logged_count": 5
+          },
+          {
+            "scope": "standalone",
+            "api": "TryPublishComputedEntry_OUTENTRY_CURRENT_MATCHING",
+            "observed_logged_count": 5
+          }
+        ],
+        "matching_standalone_publications": 10,
+        "legacy_matching_publications": 5,
+        "outcarrier_matching_publications": 5,
+        "source_scope": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010\\FINAL_PROSPECTIVE_SOURCE_AUDIT.json",
+          "sha256": "C7223D534DA14E5B4A5E6C53919175E0B601F5E709B14BD5B827BA0287D08110",
+          "bytes": 1128
+        },
+        "pure_codec_order_coverage": {
+          "generic_cases": 12,
+          "order_cases": 14,
+          "historical_leaf_count": 65
+        },
+        "counter_limit": "DirectownproviderAPIwrappers plus explicitcore/groupedgetterstages;not nestedinternalproduction profiling",
+        "actual_global_publication_getactual_compute_native_error_adverse_source_sites": 0
+      },
+      {
+        "run_id": "R15-38ec011896124179",
+        "actual_runtime_ledger": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010\\runs\\R15-38ec011896124179\\ACTUAL_ADMITTED_CALL_LEDGER.json",
+          "sha256": "31A3C4A1AE05679C302C60FC983A1E42EFB85D9E3411D8EEA48E7854FFC086B0",
+          "bytes": 122253
+        },
+        "actual_logged_stages": 855,
+        "direct_provider_API_calls": 768,
+        "core_or_global_grouped_stages": 87,
+        "counts": [
+          {
+            "scope": "direct_pure_provider",
+            "api": "CachedCanonicalJson_GLOBAL_EMPTY",
+            "observed_logged_count": 7
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "CachedFingerprint_GLOBAL_EMPTY",
+            "observed_logged_count": 7
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "CachedManifest_GLOBAL_EMPTY",
+            "observed_logged_count": 7
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "CanonicalNormalize",
+            "observed_logged_count": 26
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "CheckPackagePolicy_DECLARATION_FULL",
+            "observed_logged_count": 14
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "CheckPackagePolicy_DECLARATION_SHORT",
+            "observed_logged_count": 14
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "CheckPackagePolicy_RECORD_FULL",
+            "observed_logged_count": 14
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "CheckPackagePolicy_RECORD_SHORT",
+            "observed_logged_count": 14
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "ClearConfiguredExpectedPackagePolicy_GLOBAL_EMPTY",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "ComputePackagePolicyDigest_DECLARATION",
+            "observed_logged_count": 14
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "ComputePackagePolicyDigest_RECORD",
+            "observed_logged_count": 14
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "ComputePackagePolicyDigest_SCALAR",
+            "observed_logged_count": 14
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "ConfigurationGeneration_GLOBAL_EMPTY",
+            "observed_logged_count": 7
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "ConfigureExpectedPackagePolicy_DECLARATION_GLOBAL_EMPTY",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "ConfigureExpectedPackagePolicy_RECORD_GLOBAL_EMPTY",
+            "observed_logged_count": 2
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "ConfiguredExpectedPackagePolicy_GLOBAL_EMPTY",
+            "observed_logged_count": 8
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "DeserializeCanonicalJson",
+            "observed_logged_count": 211
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "DeserializePackagePolicy",
+            "observed_logged_count": 14
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "EscapeJsonString",
+            "observed_logged_count": 28
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "HasConfiguredExpectedPackagePolicy_GLOBAL_EMPTY",
+            "observed_logged_count": 7
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "InvalidateCache_GLOBAL_EMPTY",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "IsCached_GLOBAL_EMPTY",
+            "observed_logged_count": 7
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "LastComputationError_GLOBAL_EMPTY",
+            "observed_logged_count": 7
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "SerializeCanonicalJson_FALSE",
+            "observed_logged_count": 153
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "SerializeCanonicalJson_TRUE",
+            "observed_logged_count": 116
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "SerializePackagePolicy",
+            "observed_logged_count": 28
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "TryAdmitManifest_POSITIVE",
+            "observed_logged_count": 2
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "TryAdmitWithPackagePolicy_DECLARATION",
+            "observed_logged_count": 14
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "TryAdmitWithPackagePolicy_RECORD",
+            "observed_logged_count": 14
+          },
+          {
+            "scope": "direct_pure_provider",
+            "api": "ValidateContract_POSITIVE",
+            "observed_logged_count": 2
+          },
+          {
+            "scope": "global_empty_only",
+            "api": "ClearConfiguredExpectedPackagePolicy",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "global_empty_only",
+            "api": "ConfigurationGeneration/HasConfigured/Configured/IsCached/CachedFingerprint/CachedCanonicalJson/CachedManifest/LastComputationError",
+            "observed_logged_count": 7
+          },
+          {
+            "scope": "global_empty_only",
+            "api": "ConfigureExpectedPackagePolicy_DECLARATION",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "global_empty_only",
+            "api": "ConfigureExpectedPackagePolicy_RECORD",
+            "observed_logged_count": 2
+          },
+          {
+            "scope": "global_empty_only",
+            "api": "ConfiguredExpectedPackagePolicy",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "global_empty_only",
+            "api": "InvalidateCache",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "standalone",
+            "api": "CachedManifest",
+            "observed_logged_count": 5
+          },
+          {
+            "scope": "standalone",
+            "api": "CaptureStateSnapshot",
+            "observed_logged_count": 5
+          },
+          {
+            "scope": "standalone",
+            "api": "CaptureStateSnapshot_OUTENTRY",
+            "observed_logged_count": 5
+          },
+          {
+            "scope": "standalone",
+            "api": "ClearConfiguredExpectedPackagePolicy",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "standalone",
+            "api": "CoherentEntry.CreateManifestSnapshot",
+            "observed_logged_count": 5
+          },
+          {
+            "scope": "standalone",
+            "api": "ConfigurationGeneration/HasConfigured/Configured/IsCached/CachedFingerprint/CachedCanonicalJson/CachedManifest/LastComputationError/TryGetCoherentEntry",
+            "observed_logged_count": 8
+          },
+          {
+            "scope": "standalone",
+            "api": "ConfigureExpectedPackagePolicy_DECLARATION",
+            "observed_logged_count": 2
+          },
+          {
+            "scope": "standalone",
+            "api": "ConfigureExpectedPackagePolicy_RECORD",
+            "observed_logged_count": 2
+          },
+          {
+            "scope": "standalone",
+            "api": "ConfiguredExpectedPackagePolicy",
+            "observed_logged_count": 8
+          },
+          {
+            "scope": "standalone",
+            "api": "ContentProfileCacheCore.constructor",
+            "observed_logged_count": 2
+          },
+          {
+            "scope": "standalone",
+            "api": "InvalidateCache",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "standalone",
+            "api": "TryGetCoherentEntry/CreateManifestSnapshot/CachedManifest/CachedFingerprint/CachedCanonicalJson/IsCached/ConfigurationGeneration",
+            "observed_logged_count": 20
+          },
+          {
+            "scope": "standalone",
+            "api": "TryPublishComputedEntry_LEGACY_CURRENT_MATCHING",
+            "observed_logged_count": 5
+          },
+          {
+            "scope": "standalone",
+            "api": "TryPublishComputedEntry_OUTENTRY_CURRENT_MATCHING",
+            "observed_logged_count": 5
+          }
+        ],
+        "matching_standalone_publications": 10,
+        "legacy_matching_publications": 5,
+        "outcarrier_matching_publications": 5,
+        "source_scope": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010\\FINAL_PROSPECTIVE_SOURCE_AUDIT.json",
+          "sha256": "C7223D534DA14E5B4A5E6C53919175E0B601F5E709B14BD5B827BA0287D08110",
+          "bytes": 1128
+        },
+        "pure_codec_order_coverage": {
+          "generic_cases": 12,
+          "order_cases": 14,
+          "historical_leaf_count": 65
+        },
+        "counter_limit": "DirectownproviderAPIwrappers plus explicitcore/groupedgetterstages;not nestedinternalproduction profiling",
+        "actual_global_publication_getactual_compute_native_error_adverse_source_sites": 0
+      }
+    ],
+    "raw_source_unchanged": true,
+    "actual_explicit_own_provider_invocations_observed": true,
+    "global_actual_native_adverse_methods_absent_fromrunner": true
+  },
+  "producer_reconciliation": {
+    "at": "2026-10-10T02:23:29.215890+09:00",
+    "source": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\EngineGate05R15PublicManifestBoundary\\Harness\\Program.cs",
+      "sha256": "7FF37B7C4C2B7981A4595A729AABAFE29E829E85D1A1FD853CD9AC5C41DB0A81",
+      "bytes": 66587
+    },
+    "label_source_rows": [
+      {
+        "test_id": "TC01_Provider_InitialState_Unconfigured_Diagnostics",
+        "first_line": 237,
+        "last_line": 281,
+        "assertion_lines": [
+          "AssertFalse(isCached, \"IsCached must be false when unconfigured\");",
+          "AssertNull(fp, \"CachedFingerprint must be null\");",
+          "AssertNull(json, \"CachedCanonicalJson must be null\");",
+          "AssertNull(manifest, \"CachedManifest must be null\");",
+          "AssertFalse(hasPolicy, \"HasConfiguredExpectedPackagePolicy must be false\");",
+          "AssertNull(policy, \"ConfiguredExpectedPackagePolicy must be null\");"
+        ],
+        "scope_deviation": false,
+        "replayed_by_QA": false
+      },
+      {
+        "test_id": "TC02_Provider_ConfigurePolicy_MonotonicGenerationAdvance",
+        "first_line": 281,
+        "last_line": 310,
+        "assertion_lines": [
+          "AssertEqual(newGen, initialGen + 1, \"ConfigurationGeneration must increment by exactly 1\");",
+          "AssertTrue(ContentProfileProvider.HasConfiguredExpectedPackagePolicy, \"HasConfiguredExpectedPackagePolicy must be true\");",
+          "AssertNotNull(ContentProfileProvider.ConfiguredExpectedPackagePolicy, \"ConfiguredExpectedPackagePolicy must not be null\");",
+          "AssertEqual(ContentProfileProvider.ConfiguredExpectedPackagePolicy.policyId, \"POL-R15-TEST-01\", \"policyId must match\");"
+        ],
+        "scope_deviation": false,
+        "replayed_by_QA": false
+      },
+      {
+        "test_id": "TC03_Provider_ReconfigureSamePolicy_AdvancesGeneration",
+        "first_line": 310,
+        "last_line": 336,
+        "assertion_lines": [
+          "AssertEqual(newGen, initialGen + 1, \"Reconfiguration must advance generation by 1\");"
+        ],
+        "scope_deviation": false,
+        "replayed_by_QA": false
+      },
+      {
+        "test_id": "TC04_Provider_ExplicitInvalidate_AdvancesGeneration",
+        "first_line": 336,
+        "last_line": 356,
+        "assertion_lines": [
+          "AssertEqual(newGen, initialGen + 1, \"R15 InvalidateCache must advance generation by +1\");",
+          "AssertFalse(ContentProfileProvider.IsCached, \"IsCached must be false after invalidate\");"
+        ],
+        "scope_deviation": false,
+        "replayed_by_QA": false
+      },
+      {
+        "test_id": "TC05_Provider_ClearConfiguredPolicy_AdvancesGeneration",
+        "first_line": 356,
+        "last_line": 377,
+        "assertion_lines": [
+          "AssertEqual(newGen, initialGen + 1, \"ClearConfiguredExpectedPackagePolicy must advance generation by 1\");",
+          "AssertFalse(ContentProfileProvider.HasConfiguredExpectedPackagePolicy, \"HasConfiguredExpectedPackagePolicy must be false\");"
+        ],
+        "scope_deviation": false,
+        "replayed_by_QA": false
+      },
+      {
+        "test_id": "TC06_StandaloneCore_InitialState_Clean",
+        "first_line": 377,
+        "last_line": 393,
+        "assertion_lines": [
+          "AssertEqual(core.ConfigurationGeneration, 0L, \"Initial generation must be 0\");",
+          "AssertFalse(core.IsCached, \"IsCached must be false\");",
+          "AssertNull(core.CachedFingerprint, \"CachedFingerprint must be null\");",
+          "AssertNull(core.CachedCanonicalJson, \"CachedCanonicalJson must be null\");",
+          "AssertNull(core.CachedManifest, \"CachedManifest must be null\");",
+          "AssertFalse(core.TryGetCoherentEntry(out _), \"TryGetCoherentEntry must return false\");"
+        ],
+        "scope_deviation": false,
+        "replayed_by_QA": false
+      },
+      {
+        "test_id": "TC07_StandaloneCore_ConfigurePolicy_GenerationAdvance",
+        "first_line": 393,
+        "last_line": 417,
+        "assertion_lines": [
+          "AssertEqual(core.ConfigurationGeneration, 1L, \"Generation must advance to 1\");",
+          "AssertTrue(core.HasConfiguredExpectedPackagePolicy, \"HasConfiguredExpectedPackagePolicy must be true\");",
+          "AssertEqual(core.ConfiguredExpectedPackagePolicy.policyId, \"POL-CORE-01\", \"policyId must match\");"
+        ],
+        "scope_deviation": false,
+        "replayed_by_QA": false
+      },
+      {
+        "test_id": "TC08_StandaloneCore_CaptureStateSnapshot_MatchesGenerationAndPolicy",
+        "first_line": 417,
+        "last_line": 445,
+        "assertion_lines": [
+          "AssertEqual(snapshot.generation, 1L, \"Snapshot generation must match core\");",
+          "AssertNotNull(snapshot.policy, \"Snapshot policy must not be null\");",
+          "AssertEqual(snapshot.policy.policyId, \"POL-SNAPSHOT\", \"Snapshot policyId must match\");",
+          "AssertEqual(snapshot.policy.revision, \"REV-SNAP\", \"Snapshot revision must match\");",
+          "AssertTrue(!string.IsNullOrEmpty(snapshot.policy.policyDigest), \"Snapshot policyDigest must be computed\");"
+        ],
+        "scope_deviation": false,
+        "replayed_by_QA": false
+      },
+      {
+        "test_id": "TC09_StandaloneCore_PublishCoherentEntry_NormalMatching_Success",
+        "first_line": 445,
+        "last_line": 486,
+        "assertion_lines": [
+          "AssertTrue(published, $\"Publication must succeed: {err}\");",
+          "AssertTrue(core.IsCached, \"IsCached must be true after publication\");",
+          "AssertEqual(core.CachedFingerprint, fp, \"CachedFingerprint must match published fingerprint\");",
+          "AssertEqual(core.CachedCanonicalJson, json, \"CachedCanonicalJson must match published JSON\");"
+        ],
+        "scope_deviation": false,
+        "replayed_by_QA": false
+      },
+      {
+        "test_id": "TC10_StandaloneCore_TryGetCoherentEntry_ReturnsMatchingSnapshot",
+        "first_line": 486,
+        "last_line": 527,
+        "assertion_lines": [
+          "AssertTrue(got, \"TryGetCoherentEntry must return true\");",
+          "AssertNotNull(entry, \"Coherent entry must not be null\");",
+          "AssertEqual(entry.ConfigurationGeneration, 1L, \"Entry generation must be 1\");",
+          "AssertEqual(entry.PolicyId, \"POL-COHERENT\", \"Entry policyId must match\");",
+          "AssertEqual(entry.PolicyRevision, \"REV-COH\", \"Entry revision must match\");",
+          "AssertEqual(entry.Fingerprint, fp, \"Entry fingerprint must match\");",
+          "AssertEqual(entry.ContentContractVersion, \"ADR-006B-v5-R15\", \"Contract version must be R15\");"
+        ],
+        "scope_deviation": false,
+        "replayed_by_QA": false
+      },
+      {
+        "test_id": "TC11_StandaloneCore_DefensiveManifestImmutability_ResistsCallerMutation",
+        "first_line": 527,
+        "last_line": 572,
+        "assertion_lines": [
+          "AssertNotNull(m1, \"CachedManifest must not be null\");",
+          "AssertEqual(m1.activeMods.Count, 1, \"Must have 1 mod\");",
+          "AssertEqual(m1.activeMods.Count, 0, \"m1 was mutated locally\");",
+          "AssertNotNull(m2, \"CachedManifest query 2 must not be null\");",
+          "AssertEqual(m2.activeMods.Count, 1, \"Internal cached manifest must remain intact with 1 mod\");"
+        ],
+        "scope_deviation": false,
+        "replayed_by_QA": false
+      },
+      {
+        "test_id": "TC12_StandaloneCore_InvalidateCache_AdvancesGeneration_ClearsEntry",
+        "first_line": 572,
+        "last_line": 610,
+        "assertion_lines": [
+          "AssertTrue(core.IsCached, \"Core must be cached initially\");",
+          "AssertEqual(core.ConfigurationGeneration, 2L, \"Generation must advance to 2\");",
+          "AssertFalse(core.IsCached, \"IsCached must be false after invalidate\");",
+          "AssertNull(core.CachedFingerprint, \"CachedFingerprint must be null\");",
+          "AssertNull(core.CachedCanonicalJson, \"CachedCanonicalJson must be null\");",
+          "AssertNull(core.CachedManifest, \"CachedManifest must be null\");",
+          "AssertFalse(core.TryGetCoherentEntry(out _), \"TryGetCoherentEntry must return false\");"
+        ],
+        "scope_deviation": false,
+        "replayed_by_QA": false
+      },
+      {
+        "test_id": "TC13_StandaloneCore_ReconfigureToNewPolicy_AdvancesGeneration_ClearsOldCache",
+        "first_line": 610,
+        "last_line": 649,
+        "assertion_lines": [
+          "AssertTrue(core.IsCached, \"Must be cached with A\");",
+          "AssertEqual(core.ConfigurationGeneration, 2L, \"Generation must advance to 2\");",
+          "AssertFalse(core.IsCached, \"Old cache A must be cleared upon reconfigure\");",
+          "AssertEqual(core.ConfiguredExpectedPackagePolicy.policyId, \"POL-B\", \"New policy must be POL-B\");"
+        ],
+        "scope_deviation": false,
+        "replayed_by_QA": false
+      },
+      {
+        "test_id": "TC14_StandaloneCore_PublishNewPolicyEntry_NormalMatching_Success",
+        "first_line": 649,
+        "last_line": 682,
+        "assertion_lines": [
+          "AssertTrue(published, $\"Publication B must succeed: {err}\");",
+          "AssertTrue(core.IsCached, \"IsCached must be true for B\");",
+          "AssertEqual(core.CachedFingerprint, fpB, \"Fingerprint must match B\");",
+          "AssertTrue(core.TryGetCoherentEntry(out var entryB), \"Must get coherent entry B\");",
+          "AssertEqual(entryB.PolicyId, \"POL-B\", \"Entry PolicyId must be POL-B\");"
+        ],
+        "scope_deviation": false,
+        "replayed_by_QA": false
+      },
+      {
+        "test_id": "TC15_StandaloneCore_TryPublishComputedEntry_ReturnsPublishedEntryDirectly",
+        "first_line": 682,
+        "last_line": 724,
+        "assertion_lines": [
+          "AssertTrue(published, \"Publication with out entry must succeed\");",
+          "AssertNull(rejectionReason, \"Rejection reason must be null on success\");",
+          "AssertNotNull(publishedEntry, \"Published entry out parameter must not be null\");",
+          "AssertEqual(publishedEntry.ConfigurationGeneration, snap.generation, \"Published entry generation must match snap\");",
+          "AssertEqual(publishedEntry.PolicyId, \"POL-R15-PUB-ENTRY\", \"Published entry policyId must match\");",
+          "AssertEqual(publishedEntry.Fingerprint, fp, \"Published entry fingerprint must match\");",
+          "AssertEqual(publishedEntry.ContentContractVersion, \"ADR-006B-v5-R15\", \"Published entry contract version must match R15\");"
+        ],
+        "scope_deviation": false,
+        "replayed_by_QA": false
+      },
+      {
+        "test_id": "TC16_StandaloneCore_SetComputationError_GenerationScoped_Protection",
+        "first_line": 724,
+        "last_line": 766,
+        "assertion_lines": [
+          "AssertEqual(core.LastComputationError, \"Test error at gen 1\", \"Error at gen 1 must be recorded\");",
+          "AssertNull(core.LastComputationError, \"InvalidateCache must clear error under sync lock\");",
+          "AssertNull(core.LastComputationError, \"Stale computation from superseded generation 1 must NOT overwrite current generation error state\");",
+          "AssertNull(core.LastComputationError, \"ClearComputationError must leave error as null\");"
+        ],
+        "scope_deviation": true,
+        "replayed_by_QA": false
+      },
+      {
+        "test_id": "TC17_R12_PackageOrder_LoadOrderZeroBasedSorting",
+        "first_line": 766,
+        "last_line": 788,
+        "assertion_lines": [
+          "AssertEqual(manifest.activeMods.Count, 3, \"Must retain 3 mods\");",
+          "AssertEqual(manifest.activeMods[0].loadOrder, 0, \"Index 0 must have loadOrder 0\");",
+          "AssertEqual(manifest.activeMods[0].packageId, \"ludeon.rimworld\", \"Index 0 must be core\");",
+          "AssertEqual(manifest.activeMods[1].loadOrder, 1, \"Index 1 must have loadOrder 1\");",
+          "AssertEqual(manifest.activeMods[1].packageId, \"ludeon.rimworld.royalty\", \"Index 1 must be royalty\");",
+          "AssertEqual(manifest.activeMods[2].loadOrder, 2, \"Index 2 must have loadOrder 2\");",
+          "AssertEqual(manifest.activeMods[2].packageId, \"ludeon.rimworld.ideology\", \"Index 2 must be ideology\");"
+        ],
+        "scope_deviation": false,
+        "replayed_by_QA": false
+      },
+      {
+        "test_id": "TC18_R12_PackageOrder_PhysicalPermutationInvariance",
+        "first_line": 788,
+        "last_line": 821,
+        "assertion_lines": [
+          "AssertTrue(ok1 && ok2, \"Both admissions must succeed\");",
+          "AssertEqual(jAligned, jPermuted, \"Both representations must yield identical canonical JSON\");",
+          "AssertEqual(ComputeSha256Hex(jAligned), ComputeSha256Hex(jPermuted), \"Fingerprints must be identical\");"
+        ],
+        "scope_deviation": false,
+        "replayed_by_QA": false
+      },
+      {
+        "test_id": "TC19_R12_PackageOrder_DistinctValidSequences_MatchSeparatePolicies",
+        "first_line": 821,
+        "last_line": 848,
+        "assertion_lines": [
+          "AssertTrue(okA, \"Sequence A must match Policy A\");",
+          "AssertTrue(okB, \"Sequence B must match Policy B\");"
+        ],
+        "scope_deviation": false,
+        "replayed_by_QA": false
+      },
+      {
+        "test_id": "TC20_R12_PackageOrder_FreshOriginal_SerializeTrue_BeforeAdmission",
+        "first_line": 848,
+        "last_line": 863,
+        "assertion_lines": [
+          "AssertNotNull(json, \"JSON must not be null\");",
+          "AssertEqual(manifest.activeMods[0].loadOrder, 0, \"activeMods must be sorted in-place to loadOrder 0 at index 0\");"
+        ],
+        "scope_deviation": false,
+        "replayed_by_QA": false
+      },
+      {
+        "test_id": "TC21_R11_PolicyDeclaration_Encoding_Whitespace_Unicode_Digest",
+        "first_line": 863,
+        "last_line": 887,
+        "assertion_lines": [
+          "AssertNotNull(roundTrip, \"Deserialization must succeed\");",
+          "AssertEqual(roundTrip.policyId, decl.policyId, \"policyId whitespace/Unicode must be preserved 100%\");",
+          "AssertEqual(roundTrip.revision, decl.revision, \"revision whitespace must be preserved 100%\");",
+          "AssertEqual(roundTrip.admittedPackageIds[0], \"ludeon.rimworld\", \"Package ID must be invariant lowercase\");",
+          "AssertTrue(digest.Length == 64, \"Digest must be 64-char hex\");",
+          "AssertEqual(digest, digest.ToUpperInvariant(), \"Digest must be uppercase hex\");"
+        ],
+        "scope_deviation": false,
+        "replayed_by_QA": false
+      },
+      {
+        "test_id": "TC22_R9_VersionMeaningSemantics",
+        "first_line": 887,
+        "last_line": 911,
+        "assertion_lines": [
+          "AssertNotNull(deserialized, \"Deserialized manifest must not be null\");",
+          "AssertNull(m0.modVersion, \"modVersion = null must remain null\");",
+          "AssertEqual(m1.modVersion, \"\", \"modVersion = '' must remain empty string\");",
+          "AssertEqual(m2.modVersion, \"2.4.1\", \"modVersion = '2.4.1' must be preserved\");"
+        ],
+        "scope_deviation": false,
+        "replayed_by_QA": false
+      },
+      {
+        "test_id": "TC23_ContractVersion_And_CapabilityFlag",
+        "first_line": 911,
+        "last_line": 944,
+        "assertion_lines": [
+          "AssertEqual(ContentProfileProvider.CONTENT_CONTRACT_VERSION, \"ADR-006B-v5-R15\", \"Contract version must be ADR-006B-v5-R15\");",
+          "AssertTrue(valid, $\"Contract validation must succeed: {failure}\");",
+          "AssertTrue(admitted, $\"Manifest admission must succeed with R15 flag: {failureReason}\");",
+          "AssertTrue(canonicalJson.Contains(\"GATE05_R15_PUBLIC_MANIFEST_BOUNDARY\"), \"Canonical JSON must contain GATE05_R15_PUBLIC_MANIFEST_BOUNDARY\");"
+        ],
+        "scope_deviation": false,
+        "replayed_by_QA": false
+      },
+      {
+        "test_id": "TC24_DefFamilies_CanonicalSorting",
+        "first_line": 944,
+        "last_line": 962,
+        "assertion_lines": [
+          "AssertEqual(manifest.defFamilies.thingDefs[0].defName, \"AlphaThing\", \"ThingDefs must sort Alpha first\");",
+          "AssertEqual(manifest.defFamilies.thingDefs[1].defName, \"ZetaThing\", \"ThingDefs must sort Zeta second\");",
+          "AssertEqual(manifest.defFamilies.hediffDefs[0].defName, \"AlphaHediff\", \"HediffDefs must sort Alpha first\");",
+          "AssertEqual(manifest.defFamilies.hediffDefs[1].defName, \"ZetaHediff\", \"HediffDefs must sort Zeta second\");"
+        ],
+        "scope_deviation": false,
+        "replayed_by_QA": false
+      },
+      {
+        "test_id": "TC25_Reflection_SealedCallerPolicyCollector_NoPublicOverload",
+        "first_line": 962,
+        "last_line": 1013,
+        "assertion_lines": [
+          "AssertNull(publicPolicyCollector, \"Public ComputeActualContentProfileManifest(ExpectedPackagePolicyRecord) overload MUST NOT exist; it must be sealed to a private internal helper\");",
+          "AssertNotNull(parameterlessManifest, \"Parameterless public static ComputeActualContentProfileManifest() must exist\");",
+          "AssertEqual(parameterlessManifest.ReturnType.Name, \"ContentProfileManifest\", \"Return type must be ContentProfileManifest\");",
+          "AssertNotNull(parameterlessFp, \"Parameterless public static ComputeActualContentProfileFingerprint() must exist\");",
+          "AssertEqual(parameterlessFp.ReturnType.Name, \"String\", \"Return type must be System.String\");",
+          "AssertNotNull(privateCollector, \"Private static CollectActualContentProfileManifestInternal(ExpectedPackagePolicyRecord) must exist\");",
+          "AssertTrue(privateCollector.IsPrivate, \"Collector helper must be strictly private\");"
+        ],
+        "scope_deviation": false,
+        "replayed_by_QA": false
+      }
+    ],
+    "three_processes": [
+      {
+        "run": "run_default",
+        "culture": "ko-KR",
+        "recorded_pid": 24440,
+        "recorded_exit": 0,
+        "result": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\EngineGate05R15PublicManifestBoundary\\run_default\\results.json",
+          "sha256": "3A55F2DCAD7C161C1F76A1F18D42D0ABC4612DFF0BBF6691CCD50856D045360F",
+          "bytes": 12568
+        },
+        "raw": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\EngineGate05R15PublicManifestBoundary\\run_default\\raw_console.txt",
+          "sha256": "0067F5D34FB87341A6F96C6A407C563C0ABC6E6557D3FD5CFD677465D8DB8EBC",
+          "bytes": 3099
+        },
+        "recorded_context": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\EngineGate05R15PublicManifestBoundary\\run_default\\PROCESS_METADATA.json",
+          "sha256": "0800D4D6DDB77B87C9267A60BD50E1B44F0FAD35D1325D6C7369E81571AF48C6",
+          "bytes": 883
+        },
+        "stage_ledger": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\EngineGate05R15PublicManifestBoundary\\run_default\\api_ledger.json",
+          "sha256": "E4E03C7DD5EFC074268485BB295579CCD1DFFD9005F4BBA4230B7A8BDD7541FE",
+          "bytes": 13261
+        },
+        "inventory": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\EngineGate05R15PublicManifestBoundary\\run_default\\OUTPUT_INVENTORY.json",
+          "sha256": "660D8A3C38DA820F2D852477CC5167D98A4E38C8B144A3EE1A24DAE0958E7038",
+          "bytes": 1210
+        },
+        "all4inventory_hashes_matched": true,
+        "retained_pass_labels": 25,
+        "partial_manual_stage_events": 44,
+        "manual9component_sum55": true,
+        "constructor11_separate": true,
+        "observed_stale_error_call": [
+          {
+            "sequence": 44,
+            "test_id": "TC16_StandaloneCore_SetComputationError_GenerationScoped_Protection",
+            "stage": "Stage2_SetStaleError",
+            "api_target": "ContentProfileCacheCore",
+            "method_name": "SetComputationError(staleGen,err)",
+            "call_category": "CoreError",
+            "outcome": "Ignored"
+          }
+        ],
+        "adverse_zero_claim_contradicted": true,
+        "producer_scope_PASS_not_admitted": true,
+        "QA_replayed": false
+      },
+      {
+        "run": "run_en_us",
+        "culture": "en-US",
+        "recorded_pid": 2432,
+        "recorded_exit": 0,
+        "result": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\EngineGate05R15PublicManifestBoundary\\run_en_us\\results.json",
+          "sha256": "87163CF18AFA92E128B6C847CBD10737EC9910E99A7F390B96F1A40DC3EFFBA7",
+          "bytes": 12567
+        },
+        "raw": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\EngineGate05R15PublicManifestBoundary\\run_en_us\\raw_console.txt",
+          "sha256": "406DBFA25E5A8EEEFDDA0290BB56FB0A29E92A4BCB422C7D30BF50E4127F357B",
+          "bytes": 3094
+        },
+        "recorded_context": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\EngineGate05R15PublicManifestBoundary\\run_en_us\\PROCESS_METADATA.json",
+          "sha256": "42DB350E2738D587BDED691436D580635BB94F4B17BE70A519342F431E57C003",
+          "bytes": 908
+        },
+        "stage_ledger": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\EngineGate05R15PublicManifestBoundary\\run_en_us\\api_ledger.json",
+          "sha256": "E4E03C7DD5EFC074268485BB295579CCD1DFFD9005F4BBA4230B7A8BDD7541FE",
+          "bytes": 13261
+        },
+        "inventory": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\EngineGate05R15PublicManifestBoundary\\run_en_us\\OUTPUT_INVENTORY.json",
+          "sha256": "66E401A2403E9632853B1A190C5AB006A49213B43FA5D623D75B14E2783A86B1",
+          "bytes": 1208
+        },
+        "all4inventory_hashes_matched": true,
+        "retained_pass_labels": 25,
+        "partial_manual_stage_events": 44,
+        "manual9component_sum55": true,
+        "constructor11_separate": true,
+        "observed_stale_error_call": [
+          {
+            "sequence": 44,
+            "test_id": "TC16_StandaloneCore_SetComputationError_GenerationScoped_Protection",
+            "stage": "Stage2_SetStaleError",
+            "api_target": "ContentProfileCacheCore",
+            "method_name": "SetComputationError(staleGen,err)",
+            "call_category": "CoreError",
+            "outcome": "Ignored"
+          }
+        ],
+        "adverse_zero_claim_contradicted": true,
+        "producer_scope_PASS_not_admitted": true,
+        "QA_replayed": false
+      },
+      {
+        "run": "run_de_de",
+        "culture": "de-DE",
+        "recorded_pid": 33632,
+        "recorded_exit": 0,
+        "result": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\EngineGate05R15PublicManifestBoundary\\run_de_de\\results.json",
+          "sha256": "09A6A54771BB5430A797278658FFEED778241C7D2FEF33E3699C6F0F260EB42D",
+          "bytes": 12568
+        },
+        "raw": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\EngineGate05R15PublicManifestBoundary\\run_de_de\\raw_console.txt",
+          "sha256": "997300E10FA8470E3FA041E21DF2FE3C7FC085EF98A3421BE947CD0701346A02",
+          "bytes": 3095
+        },
+        "recorded_context": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\EngineGate05R15PublicManifestBoundary\\run_de_de\\PROCESS_METADATA.json",
+          "sha256": "13919CB0AFEDD25B96A508E961979E4B8D254ACC03025AED3658CC7AE90102A5",
+          "bytes": 909
+        },
+        "stage_ledger": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\EngineGate05R15PublicManifestBoundary\\run_de_de\\api_ledger.json",
+          "sha256": "E4E03C7DD5EFC074268485BB295579CCD1DFFD9005F4BBA4230B7A8BDD7541FE",
+          "bytes": 13261
+        },
+        "inventory": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\EngineGate05R15PublicManifestBoundary\\run_de_de\\OUTPUT_INVENTORY.json",
+          "sha256": "1F16CD48C3A54382AAEF20528B243F77070CAA87092A9F311C6C1402D9949DA1",
+          "bytes": 1208
+        },
+        "all4inventory_hashes_matched": true,
+        "retained_pass_labels": 25,
+        "partial_manual_stage_events": 44,
+        "manual9component_sum55": true,
+        "constructor11_separate": true,
+        "observed_stale_error_call": [
+          {
+            "sequence": 44,
+            "test_id": "TC16_StandaloneCore_SetComputationError_GenerationScoped_Protection",
+            "stage": "Stage2_SetStaleError",
+            "api_target": "ContentProfileCacheCore",
+            "method_name": "SetComputationError(staleGen,err)",
+            "call_category": "CoreError",
+            "outcome": "Ignored"
+          }
+        ],
+        "adverse_zero_claim_contradicted": true,
+        "producer_scope_PASS_not_admitted": true,
+        "QA_replayed": false
+      }
+    ],
+    "all_25_label_scope_PASS_admitted": false,
+    "manual55_arithmetic_correct": true,
+    "stage44not_allcalls": true,
+    "TC16_stale_error_actual_calls_three": 3,
+    "producer_replays": 0,
+    "before": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\EngineGate05R15PublicManifestBoundary\\ENGINE_FREEZE_BEFORE.json",
+      "sha256": "4D9FE08F679EAD761FA981B1FAC5775AFA90893DD4459BB22A64480BBA8EEB66",
+      "bytes": 3343
+    },
+    "after": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\EngineGate05R15PublicManifestBoundary\\ENGINE_FREEZE_AFTER.json",
+      "sha256": "0C707F972041E39A7339779E7654F6FBCD3926C84BFE2E5E3E35BD44A59EB61A",
+      "bytes": 3343
+    },
+    "before9_rows": [
+      {
+        "recorded": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+          "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+          "size": 156431
+        },
+        "resolved_frozen": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R14-ff285a3b\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+          "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+          "bytes": 156431
+        },
+        "matched": true,
+        "source_already_R15": false
+      },
+      {
+        "recorded": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+          "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+          "size": 170135
+        },
+        "resolved_frozen": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+          "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+          "bytes": 170135
+        },
+        "matched": true,
+        "source_already_R15": true
+      },
+      {
+        "recorded": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+          "sha256": "1A19B47232F86C3BA3A8238783EA66ED71AE61E2DB16CF3B3C5162B0F7A6FC5F",
+          "size": 243200
+        },
+        "resolved_frozen": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R14-ff285a3b\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+          "sha256": "1A19B47232F86C3BA3A8238783EA66ED71AE61E2DB16CF3B3C5162B0F7A6FC5F",
+          "bytes": 243200
+        },
+        "matched": true,
+        "source_already_R15": false
+      },
+      {
+        "recorded": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+          "sha256": "776A277A3B8DA637A641A9289010D224A640412575EE86B15AC3BE897DEABB8A",
+          "size": 61996
+        },
+        "resolved_frozen": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R14-ff285a3b\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+          "sha256": "776A277A3B8DA637A641A9289010D224A640412575EE86B15AC3BE897DEABB8A",
+          "bytes": 61996
+        },
+        "matched": true,
+        "source_already_R15": false
+      },
+      {
+        "recorded": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+          "sha256": "B2D6B208E149B5ACDAB32D735DA5FCB8C951CC139AD4001D614FB7ECFFDB4AAD",
+          "size": 230912
+        },
+        "resolved_frozen": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R14-ff285a3b\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+          "sha256": "B2D6B208E149B5ACDAB32D735DA5FCB8C951CC139AD4001D614FB7ECFFDB4AAD",
+          "bytes": 230912
+        },
+        "matched": true,
+        "source_already_R15": false
+      },
+      {
+        "recorded": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+          "sha256": "33862EC6742DCA9224C5CAEAA64D4433661FC49D83B48BE784C4AF9F7CD5B624",
+          "size": 45472
+        },
+        "resolved_frozen": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R14-ff285a3b\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+          "sha256": "33862EC6742DCA9224C5CAEAA64D4433661FC49D83B48BE784C4AF9F7CD5B624",
+          "bytes": 45472
+        },
+        "matched": true,
+        "source_already_R15": false
+      },
+      {
+        "recorded": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+          "sha256": "1A19B47232F86C3BA3A8238783EA66ED71AE61E2DB16CF3B3C5162B0F7A6FC5F",
+          "size": 243200
+        },
+        "resolved_frozen": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R14-ff285a3b\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+          "sha256": "1A19B47232F86C3BA3A8238783EA66ED71AE61E2DB16CF3B3C5162B0F7A6FC5F",
+          "bytes": 243200
+        },
+        "matched": true,
+        "source_already_R15": false
+      },
+      {
+        "recorded": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+          "sha256": "776A277A3B8DA637A641A9289010D224A640412575EE86B15AC3BE897DEABB8A",
+          "size": 61996
+        },
+        "resolved_frozen": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R14-ff285a3b\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+          "sha256": "776A277A3B8DA637A641A9289010D224A640412575EE86B15AC3BE897DEABB8A",
+          "bytes": 61996
+        },
+        "matched": true,
+        "source_already_R15": false
+      },
+      {
+        "recorded": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+          "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+          "size": 1774
+        },
+        "resolved_frozen": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R14-ff285a3b\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+          "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+          "bytes": 1774
+        },
+        "matched": true,
+        "source_already_R15": false
+      }
+    ],
+    "after9_rows": [
+      {
+        "recorded": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+          "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+          "size": 156431
+        },
+        "resolved_frozen": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+          "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+          "bytes": 156431
+        },
+        "matched": true
+      },
+      {
+        "recorded": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+          "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+          "size": 170135
+        },
+        "resolved_frozen": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+          "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+          "bytes": 170135
+        },
+        "matched": true
+      },
+      {
+        "recorded": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+          "sha256": "835E81216B850B571577677AB724FAC9A515465F79888A5CACC13C51FF832877",
+          "size": 244224
+        },
+        "resolved_frozen": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+          "sha256": "835E81216B850B571577677AB724FAC9A515465F79888A5CACC13C51FF832877",
+          "bytes": 244224
+        },
+        "matched": true
+      },
+      {
+        "recorded": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+          "sha256": "0CBC164CDAF5AD188C71E28C9AED664F066950ACEA3CE09B5F8238DAAF9630BE",
+          "size": 62416
+        },
+        "resolved_frozen": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+          "sha256": "0CBC164CDAF5AD188C71E28C9AED664F066950ACEA3CE09B5F8238DAAF9630BE",
+          "bytes": 62416
+        },
+        "matched": true
+      },
+      {
+        "recorded": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+          "sha256": "4D198076B84C3FC44EEB75CBE22FE1A2575659009293FBA7E14E937996DD0358",
+          "size": 231936
+        },
+        "resolved_frozen": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+          "sha256": "4D198076B84C3FC44EEB75CBE22FE1A2575659009293FBA7E14E937996DD0358",
+          "bytes": 231936
+        },
+        "matched": true
+      },
+      {
+        "recorded": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+          "sha256": "9BC98A4A92D7E2FA0051DCE46ED03E98CDC2A014449AA32FDDAB3DF0A9FCEE15",
+          "size": 45808
+        },
+        "resolved_frozen": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+          "sha256": "9BC98A4A92D7E2FA0051DCE46ED03E98CDC2A014449AA32FDDAB3DF0A9FCEE15",
+          "bytes": 45808
+        },
+        "matched": true
+      },
+      {
+        "recorded": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+          "sha256": "835E81216B850B571577677AB724FAC9A515465F79888A5CACC13C51FF832877",
+          "size": 244224
+        },
+        "resolved_frozen": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+          "sha256": "835E81216B850B571577677AB724FAC9A515465F79888A5CACC13C51FF832877",
+          "bytes": 244224
+        },
+        "matched": true
+      },
+      {
+        "recorded": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+          "sha256": "0CBC164CDAF5AD188C71E28C9AED664F066950ACEA3CE09B5F8238DAAF9630BE",
+          "size": 62416
+        },
+        "resolved_frozen": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+          "sha256": "0CBC164CDAF5AD188C71E28C9AED664F066950ACEA3CE09B5F8238DAAF9630BE",
+          "bytes": 62416
+        },
+        "matched": true
+      },
+      {
+        "recorded": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+          "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+          "size": 1774
+        },
+        "resolved_frozen": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R15-03649052\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+          "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+          "bytes": 1774
+        },
+        "matched": true
+      }
+    ],
+    "before_source_already_R15_mixed_R14_bins": true,
+    "before_not_pre_edit_chronology": true,
+    "full_producer_compiler_independentoracle_loaded_postpin_firstafterlater_graph": "PARTIAL",
+    "historical_evidence_not_repaired": true
+  },
+  "pre_execution_setup_qualification": {
+    "analysis_count_reconciliation": {
+      "at": "2026-10-10T02:23:27.441562+09:00",
+      "initial_analysis_source": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010\\analysis_initial\\analyze_review.py.txt",
+        "sha256": "0CB48BECA0E2ADB3EA93194991CF67F7E7DDD386428971343929B29EDBBBD7A4",
+        "bytes": 23548
+      },
+      "initial_tool_exit": 1,
+      "initial_chunk": "76cdc9",
+      "initial_failure": "ProducerBEFORE assumed8 totalrows from shorthandMasterprose;actual frozen9rows (8priorR14rows plus1alreadyR15Census),AFTER9,total18",
+      "actual_metadata_before_count": 9,
+      "actual_metadata_after_count": 9,
+      "prior8_not_total_before_count": true,
+      "original_graph_outputs_unchanged": true,
+      "candidate_oracle_runner_sources_unchanged": true,
+      "candidate_reruns": 0,
+      "QA_rebuilds": 0,
+      "initial_derived_records_preserved": true
+    },
+    "source_before_build_integration": {
+      "at": "2026-10-10T02:28:26.308813+09:00",
+      "read_only_historical_source_text": [
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R14-POLICY-CAPTURE-PUBLICATION-INDEPENDENT-S1-20261009\\prepare_runner.py",
+          "sha256": "7FBA7659009EA40023867D5A4F8218B43AD7A86C915453A53FAFB1CBD9949652",
+          "bytes": 10175
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R14-POLICY-CAPTURE-PUBLICATION-INDEPENDENT-S1-20261009\\RunnerTemplate.cs.txt",
+          "sha256": "DAD4D96B6A6DD320BE2B37B6833D29EA38ACD98000DACDFB048D0B475F5B6971",
+          "bytes": 49957
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R14-POLICY-CAPTURE-PUBLICATION-INDEPENDENT-S1-20261009\\ObservedProvider.cs.txt",
+          "sha256": "D31892183272E95E98DA2FD041669B8555AC256B7ED3C1BEB839594DC58D47CD",
+          "bytes": 5664
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R14-POLICY-CAPTURE-PUBLICATION-INDEPENDENT-S1-20261009\\CacheChecks.cs.txt",
+          "sha256": "93C1E313AE2A3C7990B1C9BF331FD16100D059799830FACC31FB11A08EC34B16",
+          "bytes": 11804
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R14-POLICY-CAPTURE-PUBLICATION-INDEPENDENT-S1-20261009\\run_identity.py",
+          "sha256": "B2A790401699B63E306A99ACDF69233E61E0061D9B54ADF282D3E13EE827145F",
+          "bytes": 8491
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R14-POLICY-CAPTURE-PUBLICATION-INDEPENDENT-S1-20261009\\analyze_review.py",
+          "sha256": "152E9E5D3BBE25E89ED426B305EEB56CF387437BA166C3D937E550C03687F3D9",
+          "bytes": 19924
+        }
+      ],
+      "old_binaries_or_top_level_modules_executed": false,
+      "initial_preintegration_scope": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010\\PROSPECTIVE_SOURCE_EXECUTION_SCOPE.json",
+        "sha256": "00664D43E5D01A80CFC5BF453C4E83EC187F70317250A0BAF3D3440986DCCFC2",
+        "bytes": 826
+      },
+      "initial_scope_program_ref": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010\\Program.cs",
+        "sha256": "B194873D2379FF87E05402808AB6A15C1352983B4F415BB930DD88F66F15688C",
+        "bytes": 48852
+      },
+      "initial_ref_is_pre_wrapper_integration_draft_not_final_current_program": true,
+      "final_source_audit": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010\\FINAL_PROSPECTIVE_SOURCE_AUDIT.json",
+        "sha256": "C7223D534DA14E5B4A5E6C53919175E0B601F5E709B14BD5B827BA0287D08110",
+        "bytes": 1128
+      },
+      "final_program": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010\\Program.cs",
+        "sha256": "3F34808F9E3DEE415A88391AD6B182D1FCC18DDBD6D7FEC1B0E11DBBD158E799",
+        "bytes": 54550
+      },
+      "final_oracle": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010\\ORACLE_BEFORE_BUILD.json",
+        "sha256": "549BDE6E737BF2713DC0AD374B0BF7064114AA2C1E975AD50906819D9CB65E5E",
+        "bytes": 2398
+      },
+      "final_wrapper_reinserted_and_oracle_source_pin_corrected_before_onlybuild_andcalls": true,
+      "final_program_unchanged_afterbuild": true,
+      "oldR14metadata_setupfailure_not_inherited": true,
+      "own_derived_metadata_count_correction": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010\\ANALYSIS_METADATA_COUNT_RECONCILIATION.json",
+        "sha256": "1FF917105629CDC56A13A024A810F5F0E58896581A974BAE8FF9D62215CC321D",
+        "bytes": 868
+      },
+      "no_oracle_runner_input_candidate_output_changes_or_reruns_aftercalls": true
+    },
+    "toolchain_timestamp": "Compiler date only;at-second chronology unobserved;actual buildtool andidentity retained"
+  },
+  "selected_sha256": "835E81216B850B571577677AB724FAC9A515465F79888A5CACC13C51FF832877",
+  "selected_mvid": "4fb1a25f-72c8-426d-b93f-d6cba4f9af72",
+  "verification_status": "MASTER_DISPOSED",
+  "master_execute_builds": 0,
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD",
+  "master_verdict": "ACCEPTED_R15_SCOPED_NORMAL_OUTCARRIER_LIFECYCLE_OWNERSHIP_CODEC_PASS_PUBLIC_BOUNDARY_STATIC_CREDIT_NATIVE_UNTESTED_PRODUCER_SCOPE_DEVIATION",
+  "master_disposition_at": "2026-10-10T02:42:52.340844+09:00",
+  "review_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R15_PUBLIC_MANIFEST_BOUNDARY_INDEPENDENT_S1_20261010.md",
+  "review_sha256": "58DCC6B76F78949BAF4C7BD3EA3BFB2546BF6F340C03B7811EB1F373A401A0E7",
+  "next_technical_direction": "R16_OPERATOR_NATIVE_PREPARATION_APPROVED_NOT_SENT"
+}

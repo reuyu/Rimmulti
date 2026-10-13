@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "at": "2026-10-09T16:28:59.283333+09:00",
+  "producer": "Master",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R12-PACKAGE-ORDER-20261009-DIRECT-e9dcd1e6",
+  "frozen_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R12-PACKAGE-ORDER-20261009-DIRECT-e9dcd1e6\\MASTER_GATE05_R12_PACKAGE_ORDER_REVIEW_FREEZE_MANIFEST.json",
+  "frozen_manifest_sha256": "824747638CC2B71EB42CB778CBA90F8EA4DB3A9C388306AA6D3BC48D868F2A18",
+  "freeze_kind": "POST_COMPLETION_NOT_PRE_RUN_PROOF",
+  "selected": {
+    "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R12-e9dcd1e6\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "sha256": "3035A0D0FDD799D42AC83B7D776998AFF07A8BDD3246959E685AA0F8D7ACF94E",
+    "size": 237568,
+    "mvid": "ad4caf3c-88bc-4971-9c2a-ab78eae395e5"
+  },
+  "matching_pdb": {
+    "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R12-e9dcd1e6\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "sha256": "61CDC0E8D28047027BF3EE46FD6C3349AD52FAB0846C03868FEB7FEC538E9993",
+    "size": 59924
+  },
+  "source_census": {
+    "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+    "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R12-e9dcd1e6\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+    "sha256": "5E9A4DE9A6280A887E3659CE2D80A8029C2BEF41DC615BB3F6F1BB859B1F020E",
+    "size": 157554
+  },
+  "actual_pe_metadata_proof": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_GATE05_R12_PACKAGE_ORDER_E1_VERIFICATION_20261009.json",
+  "admission": "DEFENSIVE_STATIC_AND_NEW_POSITIVE_PURE_CODEC_ORDER_HELPERS_ONLY",
+  "production_modify_rebuild_allowed": false,
+  "provider_cache_configuration_game_native_operator_old_adverse_allowed": false,
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "Foundation": "HOLD"
+}

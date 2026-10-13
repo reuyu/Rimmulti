@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:133\",\"revision\":133,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a127e2-3320-7490-bea2-1a620a4579ae\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791670498,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016acab8ea8ccc87d09562245a0f0aeb87\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016acab8ea8ccc87d09562245a0f0aeb87\",\"turnId\":\"01a127e2-3320-7490-bea2-1a620a4579ae\",\"phase\":\"commentary\",\"text\":\"R21의 새 WP와 동결 후보를 확인하겠습니다. R20 원문과 실패 증거를 보존하고, 새 독립 기대값으로 receipt UTC 문자열·bytes 보존과 승인된 정상 UTC 변형을 검증하겠습니다.\"},\"latestToolMarkerId\":\"exec-fceaf60e-33bb-45a5-b6b9-d19c96e5dbb1\",\"latestToolMarker\":{\"id\":\"exec-fceaf60e-33bb-45a5-b6b9-d19c96e5dbb1\",\"turnId\":\"01a127e2-3320-7490-bea2-1a620a4579ae\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

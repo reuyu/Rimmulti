@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-11T16:49:50.350146+09:00",
+  "same_unique_dispatch_id": "WE-A-ENGINE-GATE05-R23-IDENTIFIER-MAPPING-20261011-DIRECT-31bd3af2",
+  "R22_disposition_already_committed": true,
+  "R22_result_dedupe": 1,
+  "initial_preparation_failure": "Missing additional_preserved_paths key;actual policy uses qa_preserved_manifests and fixed_current_files",
+  "before_failure_new_WP_release_baseline_taskboard_UI_input": 0,
+  "empty_task_directory_reused": true,
+  "no_production_or_QA_original_change": true
+}

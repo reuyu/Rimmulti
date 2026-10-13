@@ -1,0 +1,107 @@
+[
+  {
+    "tag": "01_held_item_stack",
+    "description": "MedicineIndustrial stack count mutated 5 -> 4",
+    "file": "Corrupted_01_held_item_stack.rws",
+    "bytes": 13583099,
+    "sha256": "757B503003FCDDA293AA0075022096B38DDDB6775359626BDC4675FBF9E69067"
+  },
+  {
+    "tag": "02_pawn_skill",
+    "description": "Strange Shooting skill mutated 10 -> 15",
+    "file": "Corrupted_02_pawn_skill.rws",
+    "bytes": 13583099,
+    "sha256": "86DA0C9CA0976F764E2B46BFF3350985F8B1C737BF38C2647822923F9F9C73D2"
+  },
+  {
+    "tag": "03_hediff_severity",
+    "description": "Strange Stab severity mutated 3.0 -> 1.0",
+    "file": "Corrupted_03_hediff_severity.rws",
+    "bytes": 13583099,
+    "sha256": "FA8BA0BBBB8487675F3A2AF476101A9B9BD64854E1366EBBE5F6A9AC6E02F813"
+  },
+  {
+    "tag": "04_hediff_removal",
+    "description": "Strange BionicTongue removed",
+    "file": "Corrupted_04_hediff_removal.rws",
+    "bytes": 13582839,
+    "sha256": "8025459F81B378F674CF8F90199F7432E02ECE50057D00ADEAB9B45DB5F48841"
+  },
+  {
+    "tag": "05_animal_master_follow",
+    "description": "Labrador master cleared, followDrafted False",
+    "file": "Corrupted_05_animal_master_follow.rws",
+    "bytes": 13583062,
+    "sha256": "570C8548D25436E4744B49D1D92B473E1E8B0A4109DA373D1F2A2922AC97A37B"
+  },
+  {
+    "tag": "06_bill_change",
+    "description": "Sculpting bill targetCount mutated 10 -> 25",
+    "file": "Corrupted_06_bill_change.rws",
+    "bytes": 13583099,
+    "sha256": "1B5F329BD202A20583E3CE38CA9EC1BAEA8EF07C763F09B4A23F7276D4B801E8"
+  },
+  {
+    "tag": "07_zone_cell",
+    "description": "Growing zone cell moved (139, 0, 145) -> (139, 0, 146)",
+    "file": "Corrupted_07_zone_cell.rws",
+    "bytes": 13583099,
+    "sha256": "2A9730C16155BF812309375BD59EF1C957C48CB056A2C0D306E9B0A0A967E8D8"
+  },
+  {
+    "tag": "08_designation_change",
+    "description": "Mine designation moved (150, 0, 150) -> (150, 0, 151)",
+    "file": "Corrupted_08_designation_change.rws",
+    "bytes": 13583099,
+    "sha256": "AF7639F5D7F2D67339F3DBFD25455D6DEA3E44DFDB3015495FC64183503D8A58"
+  },
+  {
+    "tag": "09_fire_size",
+    "description": "Fire fireSize mutated 0.45 -> 0.90",
+    "file": "Corrupted_09_fire_size.rws",
+    "bytes": 13583099,
+    "sha256": "8D88ED32F86E4F899CDCD6D89BE594B295960947D6DDAB6CEF48B2BA123A761B"
+  },
+  {
+    "tag": "10_plant_growth",
+    "description": "Rice growth mutated 0.50 -> 0.25",
+    "file": "Corrupted_10_plant_growth.rws",
+    "bytes": 13583100,
+    "sha256": "923E0BCAA3B0C8C40C4E498C500A0DA4B3292894DA8AF4275E2A04060CA5B965"
+  },
+  {
+    "tag": "11_condition_duration",
+    "description": "Aurora duration mutated 60000 -> 12000",
+    "file": "Corrupted_11_condition_duration.rws",
+    "bytes": 13583099,
+    "sha256": "2DB3DA54928429CBDD6F032ED42857443E9B0F6B722C83C6A36810B38E608364"
+  },
+  {
+    "tag": "12_bed_assignment",
+    "description": "Bed990012 assignment cleared",
+    "file": "Corrupted_12_bed_assignment.rws",
+    "bytes": 13583051,
+    "sha256": "B32697927CFC7FE37712D5A28D567A89DBAA82F5A0C22C77027549C42435A8C2"
+  },
+  {
+    "tag": "13_external_pawn_relation",
+    "description": "Spouse relation mutated to ExSpouse",
+    "file": "Corrupted_13_external_pawn_relation.rws",
+    "bytes": 13583101,
+    "sha256": "DD963FFD8DCB2586F2307BBF6CD9E5BDA6E9496D00A36B599488371C1360F241"
+  },
+  {
+    "tag": "14_power_scalar",
+    "description": "Battery509102 storedPower mutated 600 -> 200",
+    "file": "Corrupted_14_power_scalar.rws",
+    "bytes": 13583099,
+    "sha256": "F22064791BAD3DB2B5F42A81744B5D36EC4697E53BE77F6235FB422CDF3EDBE8"
+  },
+  {
+    "tag": "15_nested_holder_content",
+    "description": "MinifiedThing inner item def mutated Stool -> WoodLog",
+    "file": "Corrupted_15_nested_holder_content.rws",
+    "bytes": 13583101,
+    "sha256": "69077447651292EA17C650B800E56842CEBB702E64367A21B43883EB26677C13"
+  }
+]

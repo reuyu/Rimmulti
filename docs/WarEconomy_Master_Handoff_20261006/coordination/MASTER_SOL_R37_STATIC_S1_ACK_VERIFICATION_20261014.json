@@ -1,0 +1,437 @@
+{
+  "at": "2026-10-14T02:14:44.811821+09:00",
+  "run_id": "MASTER-SOL-R37-ACK-20261014-01",
+  "delivery_id": "SOL-GATE05-R37-PUBLISHER-INDEPENDENT-STATIC-S1-20261014-01",
+  "result_id": "SOL-GATE05-R37-PUBLISHER-INDEPENDENT-STATIC-S1-20261014-0fa2809cbd3a47e698af81520072a193",
+  "verdict": "ACK_VERIFIED_INDEPENDENT_R37_STATIC_IN_PROGRESS",
+  "ACK": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R37-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\ACK_INITIAL.json",
+    "sha256": "20FB710B2B00678F1C1872FACC7252BC9EA5F5395486167EE39849D9DFA7C2DF",
+    "bytes": 2058
+  },
+  "references": {
+    "wp_identity": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R37_PUBLISHER_INDEPENDENT_STATIC_S1.md",
+      "sha256": "A755C63AB5AFF3C7ED6690A8BF5C73B42171765D03D7A06490ACDE1DB4F00A26",
+      "bytes": 6232
+    },
+    "freeze_manifest": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a\\MASTER_GATE05_R37_PUBLISHER_FINAL_REVIEW_FREEZE_MANIFEST.json",
+      "sha256": "1916E40664113EDD90A1679336E37A6C6101C0184326C47ECF0B6734DA5119FC",
+      "bytes": 19817
+    },
+    "protected_baseline": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R37_INDEPENDENT_STATIC_PROTECTED_BASELINE_20261014.json",
+      "sha256": "79A53CB58F6CDE28E688705B6642DCC923C62FB498BEB6A50E4D04505B357618",
+      "bytes": 5942417
+    },
+    "publisher": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+      "sha256": "8F31D69A26A364BF727ABD029E096C0416B3C7B6BA54AC29A6A6E246FF537FD9",
+      "bytes": 40358
+    },
+    "initial_inventory": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R37-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\PRESERVATION_BEFORE.json",
+      "sha256": "35BD3FBC6AD4C5A203D68178289108C22EF92741964AD59EE0764D71A1DE9735",
+      "bytes": 5858179
+    }
+  },
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:51",
+    "revision": 51,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a1363a-6e49-7bd0-9f3b-8e5d3b8b5aad",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791911161,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ace660ad3f487d09a3bec670e15325e",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016ace660ad3f487d09a3bec670e15325e",
+      "turnId": "01a1363a-6e49-7bd0-9f3b-8e5d3b8b5aad",
+      "phase": "commentary",
+      "text": "R37은 raw/snapshot configId 바인딩, raw capability 비교, 루트부터의 직접 lstat, spec·config 읽기 증거 전달을 소스에서 개선했습니다. 다만 날짜 전체 소비와 Windows 속성 누락 처리에는 문제가 남아 있습니다. Producer의 5·6번 PairID 설명도 실제 원래 값과 달라 별도로 정정하겠습니다."
+    },
+    "latestToolMarkerId": "exec-6198b94f-25d2-4216-9fd4-c39b624f979b",
+    "latestToolMarker": {
+      "id": "exec-6198b94f-25d2-4216-9fd4-c39b624f979b",
+      "turnId": "01a1363a-6e49-7bd0-9f3b-8e5d3b8b5aad",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "inventory19530_exact_baseline_row_comparison": true,
+  "full19530_filesystem_rehash_this_ACK": false,
+  "full19530_QA_rehash_reported": true,
+  "recent_master19452_checker_return": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R37_FINAL_PROTECTED_CHECKER_RETURN_20261014.json",
+    "sha256": "CDB8AC8C5E7A2E21F1EDC414CFE4BD964922AAA1DBCA1DDDCED3CB5E18D4C16F",
+    "bytes": 802
+  },
+  "frozen42_actual_rehash": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a\\ACK.json",
+      "sha256": "09BA709150C2B39766EA72C0C488714B582A2BAD356B2A3C93EF6D34CA0C629C",
+      "bytes": 2480
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a\\ACK_INITIAL.json",
+      "sha256": "09BA709150C2B39766EA72C0C488714B582A2BAD356B2A3C93EF6D34CA0C629C",
+      "bytes": 2480
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a\\BEFORE_AFTER_PRESERVATION.json",
+      "sha256": "E9727FC6956A5B848990BC9E8290B6F7123707CCACAA48F240CD0D188898688A",
+      "bytes": 4263
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a\\COMPLETION.json",
+      "sha256": "C4BE4C05FF77A0AC6BEA77240099DD1F61DA1E0513E7D22FB8EC1E44F11D7C75",
+      "bytes": 11942
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a\\EXCLUSIVE_PUBLICATION_FLOW.json",
+      "sha256": "5993C169ED72A24CF9503D23F5369855D6B6FCFC239DCD298D7081BE0F91DAD6",
+      "bytes": 4596
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a\\IMPLEMENTATION_REPORT.md",
+      "sha256": "31D4F41F2AAD9D40952BA5B652EEBECBACFEC4F36BE3F614D71392722D7FD20C",
+      "bytes": 7913
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a\\MASTER_MESSAGE.txt",
+      "sha256": "27D9FF71606EF7375C9B3A710F05611DCFC9F2659E8EC507B6B663BEA2765BDF",
+      "bytes": 415
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a\\MASTER_R37_AUTHORIZED_SOURCE_SCOPE.json",
+      "sha256": "AD8806EE585D30FE3939D3D51BD5AAD5C91A26B527552F398C10946661696F37",
+      "bytes": 3657
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a\\ORIGINAL_SIX_LITERAL_COMPATIBILITY_SOURCE_REVIEW.md",
+      "sha256": "77F75247DCD2299E1D7A16BED94D91F25C9586A4C60A9A2E943544DE921051CA",
+      "bytes": 7783
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a\\PRESERVATION_BEFORE.json",
+      "sha256": "57239C47EEBDCEF289C09987D65CD018FC75681C11E8407F94AA8F050D17D381",
+      "bytes": 4230
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a\\PUBLISHER_IDENTITY.json",
+      "sha256": "AB617E74417D6E4ED1F094EFBB96E5FB8ED86C9396AFA2D94E8ED8C7604BB8B4",
+      "bytes": 440
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a\\REJECTION_SOURCE_MATRIX.json",
+      "sha256": "4AFFA61876A16E40CEE24A25B13DF8835B2E2F81EDE4876E55EF73A43C830272",
+      "bytes": 7136
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a\\RELEASE_MANIFEST.json",
+      "sha256": "8B2AF2B59576C1C52B94F7EBD98B8E7F49DFAC3B26D65AE71E232826C177DB05",
+      "bytes": 825
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a\\REQUIREMENT8_SOURCE_WITNESS.json",
+      "sha256": "4EFA585FA992EC0B27C2EAE932BC3C7B1E9AA41BE0B188C4DA56DB04C01132AD",
+      "bytes": 6198
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a\\RESULT_INDEX.json",
+      "sha256": "B240FCF6C03947B8A5E43B10B3B09FE7575A8DEF5C36566B398072FF6D2F439D",
+      "bytes": 7328
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a\\SOURCE_SCOPE_DIFF.json",
+      "sha256": "8D00A5E96269B5F7BD9AB643F1E92AA192056A3B7A62FDD805C28AF7387478F7",
+      "bytes": 1998
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a\\SUPPORTED_DOMAIN_CONFIG_PATH_CONTRACT.json",
+      "sha256": "C26A19EBB9408D2AB0AEB24E51FE2B498CF632A0A41AB73159287CAA4815440E",
+      "bytes": 4521
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a\\TASK.json",
+      "sha256": "86359DE9A13981CD024EC7AEF625F92A8C2011DFB9CA3CD47F43B1E301DF6F5D",
+      "bytes": 51836
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\scratch\\EngineGate05R37PublisherFinal-de39916a\\ast_checker.py",
+      "sha256": "FB1FB3D59367E248EC3212C1F482E391AFE709C2C7703DA8C4A699ADABC57847",
+      "bytes": 2253
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\scratch\\EngineGate05R37PublisherFinal-de39916a\\AST_HOST_TOOL_PROOF.json",
+      "sha256": "86B0089104792B852EB964F6B9A70FF2A137B7BA86A3E693578516D8518B40CD",
+      "bytes": 4272
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\scratch\\EngineGate05R37PublisherFinal-de39916a\\AST_INPUT_MANIFEST.json",
+      "sha256": "3DF9CCE7D53567F337A48B763424725ED34601682DCF246878628F6BA06BC8E4",
+      "bytes": 3600
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\scratch\\EngineGate05R37PublisherFinal-de39916a\\ast_stderr.raw.bin",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\scratch\\EngineGate05R37PublisherFinal-de39916a\\ast_stdout.raw.bin",
+      "sha256": "B9011634B84ACED87315ECBAD9B12E4ABDF4503D35007899E852D79CF8644F8A",
+      "bytes": 3022
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\scratch\\EngineGate05R37PublisherFinal-de39916a\\build_r37_artifacts.py",
+      "sha256": "4360432A75C69FC7ED5CDF1E370C2392FF7BC7F2ED9F05BDD8320EF915A493CB",
+      "bytes": 56595
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\scratch\\EngineGate05R37PublisherFinal-de39916a\\generate_final_completion_and_index.py",
+      "sha256": "8D6BC20AC2C7AEF3807697CD429853C82336F2DCC6E6E909388366EEB6DD4498",
+      "bytes": 10269
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\scratch\\EngineGate05R37PublisherFinal-de39916a\\generate_r37_publisher.py",
+      "sha256": "DC37345CCDA929DBBCD8392AB9475F7481008ACFA58581B09DB68153A1A1AF88",
+      "bytes": 39916
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\scratch\\EngineGate05R37PublisherFinal-de39916a\\OWNED_OUTPUT_MANIFEST.json",
+      "sha256": "8BC77A616BCF00FF425AFA9A4CC2F3F009631494CFC267F1B4590E4C66B657F1",
+      "bytes": 3290
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\scratch\\EngineGate05R37PublisherFinal-de39916a\\run_ast_verification.py",
+      "sha256": "47C67244DF2774A944BC6E7290BE8013DB42DA94C5C1294CCA5A8C816A2E6C4C",
+      "bytes": 4783
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\scratch\\EngineGate05R37PublisherFinal-de39916a\\verify_all_artifacts.py",
+      "sha256": "A9029649051EC86C54F91776C4B1B2BC0459E6275D21C32A81F304348DFD838A",
+      "bytes": 3650
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\scratch\\EngineGate05R37PublisherFinal-de39916a\\verify_refs_and_emit_ack.py",
+      "sha256": "4F8342A8A589AA92C0489BB9CBD27180D54BA4744D84F2C4BCFA256EABE661DC",
+      "bytes": 9671
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\docs\\WarEconomy_Master_Handoff_20261006\\A_ENGINE_GATE05_R37_PUBLISHER_FINAL_REPORT_20261014.md",
+      "sha256": "0F55C0222A147EF7E138936C4B7A0C12673DF3AAC3245A3DCB0B373FDF68792D",
+      "bytes": 5939
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R37_PUBLISHER_FINAL.json",
+      "sha256": "8B2AF2B59576C1C52B94F7EBD98B8E7F49DFAC3B26D65AE71E232826C177DB05",
+      "bytes": 825
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+      "sha256": "8F31D69A26A364BF727ABD029E096C0416B3C7B6BA54AC29A6A6E246FF537FD9",
+      "bytes": 40358
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "544B22178F80C63FE85584BCA93ED1D7B77B59554C93762F38655B87237682FD",
+      "bytes": 276685
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "bytes": 170135
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "8091F4414A29EF5AE224BA67A82A5F7B866C230EEFFC33D78486C28AD3297029",
+      "bytes": 326144
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "FE75B3D1AFA31C88AE2B8FB56F76F00D8929D28FCE1EA315027A154FFD76F0DE",
+      "bytes": 79220
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "9CBA7E69210DE90B069F269744F3140C4ADD802FD868AB0E0C71FB0E5F69D106",
+      "bytes": 308224
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "F05FE976EB522B6A5FC78338B0C35A8CC5341322BACB4CA6310F6AF3682933F5",
+      "bytes": 57776
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "8091F4414A29EF5AE224BA67A82A5F7B866C230EEFFC33D78486C28AD3297029",
+      "bytes": 326144
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "FE75B3D1AFA31C88AE2B8FB56F76F00D8929D28FCE1EA315027A154FFD76F0DE",
+      "bytes": 79220
+    }
+  ],
+  "bootstrap_tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R37-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.TOOL.json",
+    "sha256": "B621B0A8C25AE7DA136AA1D92EF878521E293ACB1D54E61EF837EDD0D07370E5",
+    "bytes": 1286
+  },
+  "bootstrap_raw_bindings": {
+    "stdout": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R37-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.STDOUT.txt",
+      "sha256": "AA4B68EEAA37E1B3E1D4A1E1F74AC6AF4D11AF3B2C448A5B697C6C71706EC097",
+      "bytes": 460
+    },
+    "stderr": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R37-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    "input_manifest": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R37-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.INPUT.json",
+      "sha256": "E35A670BB91166C9AA5B6D15EC907F083C09C39E7126706129783D857E5C8C91",
+      "bytes": 5034
+    },
+    "syntax_precheck": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R37-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.SYNTAX_PRECHECK.json",
+      "sha256": "16342FB69280CFE36E2246285D73A88B07049614B85D8E9301078B5F3F37C557",
+      "bytes": 1414
+    }
+  },
+  "prospective_files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R37-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.py",
+      "sha256": "CFBF0813A729E269B4266B7D1F733FFE47F9904DCD1B19B15F6A17E2753230EA",
+      "bytes": 2199
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R37-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\common.py",
+      "sha256": "C6C5F3235D6B9E15EF2893A35FB2A2043B5E6344049E9ED1357EA7351DB96DB7",
+      "bytes": 2386
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R37-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\log.py",
+      "sha256": "B875DAE6625A243843B00041D343ABD2F1E2DC57BB55AD821CE0CAFD9010FF8F",
+      "bytes": 2348
+    },
+    {
+      "path": "C:\\Users\\user\\anaconda3\\python.exe",
+      "sha256": "388FE2CFFDA8A134E7D7DC4E978F7C478857ECE6B69694DAECBED25E51EC633A",
+      "bytes": 104264
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R37_PUBLISHER_INDEPENDENT_STATIC_S1.md",
+      "sha256": "A755C63AB5AFF3C7ED6690A8BF5C73B42171765D03D7A06490ACDE1DB4F00A26",
+      "bytes": 6232
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R37_INDEPENDENT_STATIC_PROTECTED_BASELINE_20261014.json",
+      "sha256": "79A53CB58F6CDE28E688705B6642DCC923C62FB498BEB6A50E4D04505B357618",
+      "bytes": 5942417
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a\\MASTER_GATE05_R37_PUBLISHER_FINAL_REVIEW_FREEZE_MANIFEST.json",
+      "sha256": "1916E40664113EDD90A1679336E37A6C6101C0184326C47ECF0B6734DA5119FC",
+      "bytes": 19817
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R37-de39916a\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+      "sha256": "8F31D69A26A364BF727ABD029E096C0416B3C7B6BA54AC29A6A6E246FF537FD9",
+      "bytes": 40358
+    }
+  ],
+  "launcher_module_observations": [
+    {
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\json\\__init__.py",
+      "sha256": "D5D41E2C29049515D295D81A6D40B4890FBEC8D8482CFB401630F8EF2F77E4D5",
+      "bytes": 14020
+    },
+    {
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\hashlib.py",
+      "sha256": "F129B330E6AB878A96085843B3606ACD7D157B8FE6EDFA15E37FA13988CEF19C",
+      "bytes": 9446
+    },
+    {
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\pathlib\\__init__.py",
+      "sha256": "07921047886282E3D324ACF95F7D9F840FAA806664EE7007E7333A7DF4CDCAF6",
+      "bytes": 296
+    },
+    {
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\datetime.py",
+      "sha256": "EF20DC6B3554CD585DDDFFDC573F1F9A7A54C522F2A3FB4576C44EDBB1E14238",
+      "bytes": 268
+    },
+    {
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\ast.py",
+      "sha256": "7514EB7DF98B1B76EAB160CA2A83E6E9A9F3219A4659808CD9FD278B524EDE1B",
+      "bytes": 65339
+    },
+    {
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\difflib.py",
+      "sha256": "3EB2D371B4A171B063921DE6BBF115108BC39DE8BF72866315868CE2599213B7",
+      "bytes": 83368
+    },
+    {
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\re\\__init__.py",
+      "sha256": "DBE158A677C6AAACF717EA2ABC23C56233453D38024AEF75B7C3D93612CABB93",
+      "bytes": 17876
+    },
+    {
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\subprocess.py",
+      "sha256": "21ECC4C8F4FCF641974FC0D9CC28E97B07670ED1CEF7E9D96769B31BB8345586",
+      "bytes": 89486
+    }
+  ],
+  "syntax_prechecked_own_scripts": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R37-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.py",
+      "sha256": "CFBF0813A729E269B4266B7D1F733FFE47F9904DCD1B19B15F6A17E2753230EA",
+      "bytes": 2199
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R37-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\common.py",
+      "sha256": "C6C5F3235D6B9E15EF2893A35FB2A2043B5E6344049E9ED1357EA7351DB96DB7",
+      "bytes": 2386
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R37-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\log.py",
+      "sha256": "B875DAE6625A243843B00041D343ABD2F1E2DC57BB55AD821CE0CAFD9010FF8F",
+      "bytes": 2348
+    }
+  ],
+  "launcher_observations_not_comprehensive_child_import_attestation": true,
+  "all_candidate_publication_fixture_Engine_native_adverse": 0,
+  "completion": false,
+  "runtime_E2": "NOT_RELEASED",
+  "Foundation": "HOLD",
+  "scheduler": "PAUSED_HOURLY_UNCHANGED",
+  "new_WP": false,
+  "Master_checker_readonly_errors_before_any_mutation": [
+    "KeyError launcher_default_module_observations: corrected to actual launcher_module_observations",
+    "UnicodeEncodeError cp949 display: stdout utf8",
+    "KeyError stdout delivery_id: stdout actual ACK row+result_id bound; delivery identity checked in ACK_INITIAL"
+  ],
+  "candidate_modified": false
+}

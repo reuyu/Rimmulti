@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":false,\"wake\":{\"reason\":\"turnCompleted\",\"turnId\":\"01a136e7-25ff-79d2-ad5a-af463c194eb9\",\"threadId\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\"},\"polls\":[{\"schemaVersion\":1,\"cursor\":\"bcc76e72-e33d-4898-bc7b-b558cfab470c:64\",\"revision\":64,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"idle\"}},\"latestTurn\":{\"id\":\"01a136e7-25ff-79d2-ad5a-af463c194eb9\",\"status\":\"completed\",\"error\":null,\"startedAt\":1791922480,\"completedAt\":1791923277,\"durationMs\":796481},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ace944a76a087d0851bcd56324a0dbe\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ace944a76a087d0851bcd56324a0dbe\",\"turnId\":\"01a136e7-25ff-79d2-ad5a-af463c194eb9\",\"phase\":\"final_answer\",\"text\":\"정상 6개 사례가 모두 통과해 Master에게 보고했습니다. 각 1회씩 총 6회 호출했으며, 출력이 사전 등록 기대값과 바이트 단위로 일치했습니다. 일반 계약 결함은 열려 있고 Foundation HOLD를 유지합니다. QA 보고서\"},\"latestToolMarkerId\":\"exec-117cafd9-8dd0-42b8-b281-69d732aa1176\",\"latestToolMarker\":{\"id\":\"exec-117cafd9-8dd0-42b8-b281-69d732aa1176\",\"turnId\":\"01a136e7-25ff-79d2-ad5a-af463c194eb9\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

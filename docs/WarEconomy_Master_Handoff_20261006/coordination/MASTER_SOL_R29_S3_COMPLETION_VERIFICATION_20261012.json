@@ -1,0 +1,78 @@
+{
+  "at": "2026-10-12T17:47:19.435490+09:00",
+  "result_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012-8d682aff4ebd4996a12529142c0d7431",
+  "delivery_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R29_STARTUP_PAIR_INDEPENDENT",
+  "wp_revision": "S3",
+  "completion_sha256": "33F60EA133018C48D12D66BAFB8EA0CBDB8B539A04AC3B788DA9974B85CCFF82",
+  "master_verdict": "ACCEPTED_SCOPED_R29_NORMAL_PURE_PAIR_AND_CAPTURE_TYPED_RAW_COPY_PASS_STATIC_HIGH3_REVISION_REQUIRED_NATIVE_UNTESTED",
+  "review": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R29_STARTUP_PAIR_INDEPENDENT_S3_20261012.md",
+    "sha256": "5057F3CE6FCF7049EAAA5AD61EC9AAE2BFBE1B50CC46FB6D333963199BCC5A61",
+    "bytes": 4780
+  },
+  "independent_verification": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R29_S3_FINAL_INDEPENDENT_EVIDENCE_VERIFICATION_20261012.json",
+    "sha256": "8D1C13FB641A39DA6FDCAB9FED1E3D7BAB093604468687022C22FC6A890FDD61",
+    "bytes": 6368
+  },
+  "preservation": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R29_S3_COMPLETED_TERMINAL_PRESERVATION_20261012.json",
+    "sha256": "83C9C7001E337FFAD5A5157FAAB1CC50455698CD7B6460C3E805C4CA34732134",
+    "bytes": 289978
+  },
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:8",
+    "revision": 8,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a12f2d-3cfb-7fb0-857a-bf1ef4ab88e6",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791792856,
+      "completedAt": 1791793999,
+      "durationMs": 1143583
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acc9b4c767087d08fd5a3e4381b7347",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016acc9b4c767087d08fd5a3e4381b7347",
+      "turnId": "01a12f2d-3cfb-7fb0-857a-bf1ef4ab88e6",
+      "phase": "final_answer",
+      "text": "R29 S3 QA를 완료하고 마스터에게 보고했습니다. 정상 단위 QA: 876개 assertion 통과, 실패 0 정적 High 문제 3건: 수정 필요 Native 미검증, Foundation HOLD 유지 최종 보고서 다음 마스터 지시를 기다리겠습니다."
+    },
+    "latestToolMarkerId": "exec-d0fc7606-0ad5-4079-aaca-89b142282738",
+    "latestToolMarker": {
+      "id": "exec-d0fc7606-0ad5-4079-aaca-89b142282738",
+      "turnId": "01a12f2d-3cfb-7fb0-857a-bf1ef4ab88e6",
+      "type": "fileChange",
+      "name": "fileChange",
+      "status": "completed"
+    }
+  },
+  "evidence_files": 927,
+  "protected_paths": 14365,
+  "frozen_files": 132,
+  "qa_compile": 1,
+  "qa_runs": 2,
+  "assertions_each": 438,
+  "raw_expected_bindings": 672,
+  "crossculture_raw_pairs": 336,
+  "production_rebuild_modify": 0,
+  "Master_execution_build": 0,
+  "static_high3": "OPEN",
+  "native_e2_released": false,
+  "Engine_High_closure": false,
+  "Foundation": "HOLD",
+  "next_A": "R30_HANDOFF_PREPARATION_NOT_SENT",
+  "monitor": "PAUSED_HOURLY",
+  "guard_run": "MASTER-R29-S3-POSTRUN-ANALYSIS-20261012-02",
+  "guard_session": 2351
+}

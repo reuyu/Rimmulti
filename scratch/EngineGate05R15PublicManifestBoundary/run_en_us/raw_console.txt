@@ -1,0 +1,41 @@
+﻿================================================================================
+WarEconomy Gate05-R15 Public Manifest Boundary Pure Normal Runner
+Run ID: GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-RUN-01
+PID: 2432 | CLR: 4.0.30319.42000 | OS: Microsoft Windows NT 6.2.9200.0
+Culture: en-US (Invariant: )
+Candidate Assembly: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R15PublicManifestBoundary\Harness\bin\Debug\net472\WarEconomy.WorkerBridge.PoC.dll
+Target Contract Version: ADR-006B-v5-R15
+================================================================================
+[PASS] TC01_Provider_InitialState_Unconfigured_Diagnostics (2ms)
+[PASS] TC02_Provider_ConfigurePolicy_MonotonicGenerationAdvance (8ms)
+[PASS] TC03_Provider_ReconfigureSamePolicy_AdvancesGeneration (0ms)
+[PASS] TC04_Provider_ExplicitInvalidate_AdvancesGeneration (0ms)
+[PASS] TC05_Provider_ClearConfiguredPolicy_AdvancesGeneration (0ms)
+[PASS] TC06_StandaloneCore_InitialState_Clean (0ms)
+[PASS] TC07_StandaloneCore_ConfigurePolicy_GenerationAdvance (0ms)
+[PASS] TC08_StandaloneCore_CaptureStateSnapshot_MatchesGenerationAndPolicy (0ms)
+[PASS] TC09_StandaloneCore_PublishCoherentEntry_NormalMatching_Success (29ms)
+[PASS] TC10_StandaloneCore_TryGetCoherentEntry_ReturnsMatchingSnapshot (0ms)
+[PASS] TC11_StandaloneCore_DefensiveManifestImmutability_ResistsCallerMutation (3ms)
+[PASS] TC12_StandaloneCore_InvalidateCache_AdvancesGeneration_ClearsEntry (0ms)
+[PASS] TC13_StandaloneCore_ReconfigureToNewPolicy_AdvancesGeneration_ClearsOldCache (0ms)
+[PASS] TC14_StandaloneCore_PublishNewPolicyEntry_NormalMatching_Success (0ms)
+[PASS] TC15_StandaloneCore_TryPublishComputedEntry_ReturnsPublishedEntryDirectly (0ms)
+[PASS] TC16_StandaloneCore_SetComputationError_GenerationScoped_Protection (0ms)
+[PASS] TC17_R12_PackageOrder_LoadOrderZeroBasedSorting (0ms)
+[PASS] TC18_R12_PackageOrder_PhysicalPermutationInvariance (7ms)
+[PASS] TC19_R12_PackageOrder_DistinctValidSequences_MatchSeparatePolicies (0ms)
+[PASS] TC20_R12_PackageOrder_FreshOriginal_SerializeTrue_BeforeAdmission (0ms)
+[PASS] TC21_R11_PolicyDeclaration_Encoding_Whitespace_Unicode_Digest (0ms)
+[PASS] TC22_R9_VersionMeaningSemantics (0ms)
+[PASS] TC23_ContractVersion_And_CapabilityFlag (0ms)
+[PASS] TC24_DefFamilies_CanonicalSorting (0ms)
+[PASS] TC25_Reflection_SealedCallerPolicyCollector_NoPublicOverload (0ms)
+--------------------------------------------------------------------------------
+Total Tests: 25 | Passed: 25 | Failed: 0
+Overall Verdict: PASS (Elapsed: 60ms)
+Cache Accounting: Normal Calls = 55 (Configure: 13, Invalidate: 3, Publish: 7, Queries/Diag: 27, Error: 3)
+Prohibited Calls Executed: ComputeActual = 0, GetActual = 0, Native = 0, Adverse = 0
+--------------------------------------------------------------------------------
+Results successfully written to: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R15PublicManifestBoundary\run_en_us\results.json
+API Ledger successfully written to: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R15PublicManifestBoundary\run_en_us\api_ledger.json

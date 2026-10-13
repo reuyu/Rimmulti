@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":false,\"wake\":{\"reason\":\"inactiveStatus\",\"threadId\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\"},\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:69\",\"revision\":69,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"systemError\"}},\"latestTurn\":{\"id\":\"01a11d5f-555e-7c20-87bc-d741f1940a93\",\"status\":\"failed\",\"error\":{\"message\":\"You’ve hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 7:18 AM.\"},\"startedAt\":1791494149,\"completedAt\":1791494306,\"durationMs\":157207},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ac8080aadf487d09f9cbdec80e2fe09\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ac8080aadf487d09f9cbdec80e2fe09\",\"turnId\":\"01a11d5f-555e-7c20-87bc-d741f1940a93\",\"phase\":\"commentary\",\"text\":\"R10 결과 채택과 R11 읽기 전용 준비 지시를 확인했습니다. 동결 R10을 기준으로 versioned typed 정책 표현과 opaque ID·revision의 정확한 의미를 검증할 정상 oracle·기준을 준비하겠습니다. R11 후보 빌드·실행 없이 준비 결과를 마스터에게 보고하겠습니다.\"},\"latestToolMarkerId\":\"exec-7a5711c6-9c17-4a5f-b587-d5e8b055392c\",\"latestToolMarker\":{\"id\":\"exec-7a5711c6-9c17-4a5f-b587-d5e8b055392c\",\"turnId\":\"01a11d5f-555e-7c20-87bc-d741f1940a93\",\"type\":\"fileChange\",\"name\":\"fileChange\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

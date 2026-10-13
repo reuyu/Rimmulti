@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><TargetFramework>net472</TargetFramework><LangVersion>latest</LangVersion><AssemblyName>QA.SemanticGate.Observer</AssemblyName><RimWorldManagedDir>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed</RimWorldManagedDir></PropertyGroup><ItemGroup>
+<Reference Include="Assembly-CSharp"><HintPath>$(RimWorldManagedDir)\Assembly-CSharp.dll</HintPath><Private>False</Private></Reference>
+<Reference Include="UnityEngine.CoreModule"><HintPath>$(RimWorldManagedDir)\UnityEngine.CoreModule.dll</HintPath><Private>False</Private></Reference>
+<Reference Include="WorkerBridge"><HintPath>..\Frozen\WarEconomy.WorkerBridge.PoC.dll</HintPath><Private>False</Private></Reference>
+<Reference Include="Newtonsoft.Json"><HintPath>C:\Users\user\Desktop\RimMulti\WarEconomyMod\1.6\Assemblies\Newtonsoft.Json.dll</HintPath><Private>False</Private></Reference>
+<Reference Include="0Harmony"><HintPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Harmony\Current\Assemblies\0Harmony.dll</HintPath><Private>False</Private></Reference></ItemGroup></Project>

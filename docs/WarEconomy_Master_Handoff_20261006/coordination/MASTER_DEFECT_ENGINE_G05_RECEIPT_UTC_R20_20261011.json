@@ -1,0 +1,29 @@
+{
+  "defect_id": "ENGINE-G05-RECEIPT-UTC-R20-20261011-01",
+  "status": "CLOSED",
+  "severity": "MEDIUM",
+  "at": "2026-10-11T06:04:23.459029+09:00",
+  "scope": "Receipt ToRedactedJson nested snapshot original UTC string/bytes preservation only",
+  "candidate_sha256": "482166A77BF90569626A5CB27D83A4D949BD57DA85BA660F03067C833FB777F0",
+  "candidate_mvid": "9e516c44-35c8-49b8-b3ec-f73ec58ba12f",
+  "result_id": "SOL-GATE05-R20-TRUSTED-STARTUP-INDEPENDENT-S1-20261011-4245a7b9c3a8434993de3c5f411b762a",
+  "review": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R20_TRUSTED_STARTUP_INDEPENDENT_S1_20261011.md",
+  "proof": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R20_TRUSTED_STARTUP_INDEPENDENT_COMPLETION_VERIFICATION_20261011.json",
+  "same_utc_instant": true,
+  "material_clock_failure": false,
+  "closure_requires": [
+    "Narrow implementation",
+    "Fresh targeted original literal regression acrossbothroles/routes/cultures",
+    "New exact candidate proof/freeze",
+    "Fresh independent Sol result and Master disposition"
+  ],
+  "whole_gate_closure": false,
+  "closed_at": "2026-10-11T07:30:47.450511+09:00",
+  "closure_scope": "Normalreceipt originalUTC Stringtoken/fullgraph UTF8bytes ONLY",
+  "closed_candidate_sha256": "31D7A2508ACFADE1B9430F43E6F3D2ACF3E9822C787D00DAF55C9E44CF8E5AC4",
+  "closed_candidate_mvid": "7a8b444a-3a07-4dee-9d37-4fa7ed3c461c",
+  "independent_closure_result_id": "SOL-GATE05-R21-RECEIPT-UTC-INDEPENDENT-S1-20261011-af67dd4d2d454bba926c4f3c8cf14d6f",
+  "closure_review": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R21_RECEIPT_UTC_INDEPENDENT_S1_20261011.md",
+  "closure_proof": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R21_RECEIPT_UTC_INDEPENDENT_COMPLETION_VERIFICATION_20261011.json",
+  "broader_gate_closure": false
+}

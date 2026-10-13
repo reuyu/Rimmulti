@@ -1,0 +1,27 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a",
+  "envelope": 40,
+  "evaluated_at": "2026-10-13T16:06:55.745604+00:00",
+  "wp_id": "WP_ENGINE_GATE05_R37_PUBLISHER_FINAL",
+  "wp_revision": "GATE05-R37-PUBLISHER-FINAL",
+  "single_authorized_source": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+    "before": {
+      "bytes": 31689,
+      "sha256": "F60CBC184C6627F0FE15A5A904D0C45A026E20C5138973066BB8174DD8FBFD3F"
+    },
+    "after": {
+      "bytes": 40358,
+      "sha256": "8F31D69A26A364BF727ABD029E096C0416B3C7B6BA54AC29A6A6E246FF537FD9"
+    },
+    "byte_delta": 8669,
+    "mutation_authorized": true
+  },
+  "all_Engine9_and_generated_fixed": {
+    "all_match": true,
+    "count": 9,
+    "builder_executions": 0,
+    "rebuild_performed": false
+  },
+  "summary": "Updated standalone publisher to enforce all 8 R37 contract requirements: (1) configId raw and snapshot-trimmed ordinal matching against untrimmed descriptor expectedConfigId, raw capabilityBoundary matched against cloned-trimmed descriptor case-insensitively, bounded structural ASCII strip/upper, preserving original descriptor role/capability padding and lowercase in output bundle; (2) strict ASCII digits [0-9] ISO 8601 UTC timestamp validation with full consumption and calendar/time validity preserving raw fractional digits; (3) direct nofollow lstat ancestry guard on root and all actual components without lexists/isdir/isfile error-masking, catching only FileNotFoundError for new output leaf; (4) common readonce helper capturing prior lstat, handle fstat, raw bytes, and SHA-256 for spec and configs, linked into provenance manifest; (5) strict --spec CLI arity, atomic NTFS directory entry creation via os.link, zero destructive fallbacks; (6) exact original six test case compatibility and oracle binding; (7) prospective AST telemetry; (8) immutability of all 9 Engine baseline files."
+}

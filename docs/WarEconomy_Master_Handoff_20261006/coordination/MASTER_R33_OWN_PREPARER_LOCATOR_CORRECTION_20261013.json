@@ -1,0 +1,15 @@
+{
+  "recorded_at": "2026-10-13T01:10:42.283487+09:00",
+  "first_error": "ValueError subsection not found: exact CRLF suffix on void Awake(); actual frozen/current source has LF there",
+  "first_error_before_any_preparation_mutation": true,
+  "correction": "unique byte method signature prefix (no newline conversion) then exact next HandleUnityLogMessage boundary",
+  "actual_span": {
+    "id": "AWAKE_WHOLE_RESOURCE_ADMISSION_AND_FAILURE",
+    "start": 39056,
+    "end": 44736,
+    "bytes": 5680,
+    "sha256": "B2260895A101DE9A84FF81682B21C88EC711D25775FFD5FEC5D150AD82FEFA41"
+  },
+  "producer_originals_normalized": false,
+  "no_candidate_build_execution": true
+}

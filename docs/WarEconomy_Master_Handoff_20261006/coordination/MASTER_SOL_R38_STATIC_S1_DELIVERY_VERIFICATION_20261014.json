@@ -1,0 +1,46 @@
+{
+  "at": "2026-10-14T04:33:37.004245+09:00",
+  "guard_session": 26686,
+  "delivery_id": "SOL-GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014-01",
+  "exact_message": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R38_STATIC_S1_EXACT_MESSAGE_20261014.txt",
+    "sha256": "549352D7BF98CD1D92E17C3F26E85F8C3F8C1CD13A784842E162787510AF0E83",
+    "bytes": 991
+  },
+  "send_tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R38_STATIC_S1_SEND_TOOL_20261014.json",
+    "sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+    "bytes": 149
+  },
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:54",
+    "revision": 54,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a136c1-89d5-73d0-882a-f1052306b2b6",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791920015,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "delivery_status": "SENT",
+  "submit_count": 1,
+  "ACK": "PENDING",
+  "runtime_E2": "NOT_RELEASED",
+  "Foundation": "HOLD"
+}

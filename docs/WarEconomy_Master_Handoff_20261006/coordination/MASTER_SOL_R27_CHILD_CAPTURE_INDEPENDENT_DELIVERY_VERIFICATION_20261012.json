@@ -1,0 +1,88 @@
+{
+  "delivery_id": "SOL-GATE05-R27-CHILD_CAPTURE-INDEPENDENT-S1-20261012-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R27_CHILD_CAPTURE_INDEPENDENT",
+  "wp_revision": "S1",
+  "wp_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R27_CHILD_CAPTURE_INDEPENDENT_S1.md",
+  "wp_sha256": "B1693C639DE1919EE610E2615791A127B4CEAB56C0E1895A1E31FA612A611117",
+  "baseline_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R27_FRESH_CAPTURE_QA_PROTECTED_BASELINE_20261012.json",
+  "baseline_sha256": "A747F84C75FA3CED78C83239E9EC430C8575FCC4E77B7DCBDA53D998A03ED215",
+  "protected_unique_paths": 13652,
+  "qa_root": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-INDEPENDENT-S1-20261012",
+  "delivery_status": "SENT_ACTUAL_TOOL_NEW_ACTIVE_TURN",
+  "unknown_delivery": false,
+  "frozen_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_GATE05_R27_CHILD_CAPTURE_REVIEW_FREEZE_MANIFEST.json",
+  "frozen_manifest_sha256": "1FD4B9EFB368EE03F327241418C5CC0ACC08F9210E6E1BD271AECC373D219EE3",
+  "selected_sha256": "68BFE5105FA0471AAAF7943009703BB2599B39C5B572833507D6733BCE63CF64",
+  "selected_mvid": "44ba753c-6570-49d8-8068-4edf87a4e5d0",
+  "type": "SOL_R27_FRESH_EXACT_NORMAL_QA",
+  "actual_predispatch": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:166",
+    "revision": 166,
+    "changed": false,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a12c2a-2ea3-72d0-84a3-c614903da878",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791742324,
+      "completedAt": 1791743296,
+      "durationMs": 971731
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acbd53e3da887d0ba20b3b0320fcda8",
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": "exec-c8276f21-a05e-4295-96b5-1a8ed9c023b2",
+    "latestToolMarker": null
+  },
+  "attempt_started_at": "2026-10-12T03:42:52.099785+09:00",
+  "guard_run": "MASTER-R27-SOL-PREP-COMPLETE-20261012-01",
+  "guard_pid": 11168,
+  "guard_session": 8532,
+  "at": "2026-10-12T03:42:55.714079+09:00",
+  "status": "SENT_IN_PROGRESS_ACK_PENDING",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:167",
+    "revision": 167,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a12c46-6a5f-7233-8fc0-5f8aabb2c37e",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791744174,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "scope": "NEW_SELECTED_FROZEN_R27_DEFENSIVE_STATIC_AND_NORMAL_PURE_CAPTURE_UNIT_QA",
+  "production_modify_rebuild": 0,
+  "qa_owned_final_runner_build_admitted": 1,
+  "normal_culture_runs_admitted": 2,
+  "native_e2_released": false,
+  "foundation": "HOLD",
+  "monitor": "ACTUAL_PAUSED60MIN",
+  "pre_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R27_CHILD_CAPTURE_INDEPENDENT_PREDISPATCH_20261012.json",
+  "pre_sha256": "1CB38763C82A889B6C37AC9924D6728B89D5C9401EF5F7FB15D4F25F636DE2A7",
+  "tool_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R27_CHILD_CAPTURE_INDEPENDENT_SEND_TOOL_20261012.json",
+  "tool_sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+  "post_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R27_CHILD_CAPTURE_INDEPENDENT_POSTSEND_20261012.json",
+  "post_sha256": "4355F21522A7CC8DCDC1E9FA510A69E822020F7520B6E2EF4D053B8D90CFA2AC"
+}

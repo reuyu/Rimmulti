@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net472</TargetFramework><LangVersion>latest</LangVersion><AssemblyName>QA.Remote.Harden05.Observer</AssemblyName><Managed>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed</Managed></PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp"><HintPath>$(Managed)\Assembly-CSharp.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>$(Managed)\UnityEngine.CoreModule.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.IMGUIModule"><HintPath>$(Managed)\UnityEngine.IMGUIModule.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="RemotePresentation"><HintPath>C:\Users\user\.gemini\antigravity-ide\brain\877c240f-d035-4476-9d3b-3a03f75f1f65\scratch\RemotePresentationPoC\1.6\Assemblies\WarEconomy.RemotePresentation.PoC.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <Target Name="CopyObserver" AfterTargets="Build"><Copy SourceFiles="$(TargetPath)" DestinationFolder="..\1.6\Assemblies" /></Target>
+</Project>

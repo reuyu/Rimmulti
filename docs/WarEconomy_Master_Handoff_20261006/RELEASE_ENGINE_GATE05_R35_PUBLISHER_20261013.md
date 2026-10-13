@@ -1,0 +1,3 @@
+# R35 separate Python publisher release
+
+WE-A-ENGINE-GATE05-R35-PUBLISHER-20261013-DIRECT-16a25a7e/envelope38. ONLYexistingpublisher source+ASTsyntax allowed; allEngine9+generated fixed/noEnginebuild/no publisherexecution/native. C:\Users\user\Desktop\RimMulti\docs\WarEconomy_Master_Handoff_20261006\MASTER_R35_PLAN_ONLY_PUBLISHER_SAFETY_CONTRACT_20261013.md; C:\Users\user\Desktop\RimMulti\Dispatcher\A_TASKS\WE-A-ENGINE-GATE05-R35-PUBLISHER-20261013-DIRECT-16a25a7e\MASTER_R35_AUTHORIZED_SOURCE_SCOPE.json. Newpublisherfreeze/safe independent normalpublication later; no oldE2inheritance/Highclosure/FoundationHOLD.

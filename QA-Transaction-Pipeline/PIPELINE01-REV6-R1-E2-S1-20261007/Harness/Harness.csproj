@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+<PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup>
+<ItemGroup>
+<Reference Include="WarEconomy.Server"><HintPath>../Runtime/WarEconomy.Server.dll</HintPath></Reference>
+<Reference Include="WarEconomy.Common"><HintPath>../Runtime/WarEconomy.Common.dll</HintPath></Reference>
+<Reference Include="Microsoft.Data.Sqlite"><HintPath>../Runtime/Microsoft.Data.Sqlite.dll</HintPath></Reference>
+<Reference Include="Newtonsoft.Json"><HintPath>../Runtime/Newtonsoft.Json.dll</HintPath></Reference>
+<Reference Include="SQLitePCLRaw.core"><HintPath>../Runtime/SQLitePCLRaw.core.dll</HintPath></Reference>
+<Reference Include="SQLitePCLRaw.provider.e_sqlite3"><HintPath>../Runtime/SQLitePCLRaw.provider.e_sqlite3.dll</HintPath></Reference>
+<Reference Include="SQLitePCLRaw.batteries_v2"><HintPath>../Runtime/SQLitePCLRaw.batteries_v2.dll</HintPath></Reference>
+<None Include="../Runtime/runtimes/win-x64/native/e_sqlite3.dll" Link="e_sqlite3.dll" CopyToOutputDirectory="PreserveNewest" />
+</ItemGroup>
+</Project>

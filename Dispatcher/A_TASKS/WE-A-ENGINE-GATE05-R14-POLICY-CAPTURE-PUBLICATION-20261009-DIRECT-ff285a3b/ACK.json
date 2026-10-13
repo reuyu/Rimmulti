@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "producer": "A",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R14-POLICY-CAPTURE-PUBLICATION-20261009-DIRECT-ff285a3b",
+  "wp_id": "WP_ENGINE_GATE05_R14_POLICY_CAPTURE_PUBLICATION",
+  "wp_revision": "GATE05-R14-POLICY-CAPTURE-PUBLICATION",
+  "envelope": 17,
+  "received_at": "2026-10-09T21:02:00+09:00",
+  "status": "ACKNOWLEDGED",
+  "technical_objective": "POLICY_CAPTURE_PUBLICATION",
+  "commitments": {
+    "source_scope": "scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs suffix (ContentProfileProvider marker onwards) only",
+    "prefix_fixed": "EngineHostCensus.cs 72547 bytes prefix SHA F3C4F865F1E2A898BF240A2D096195870D77A52408CF2D93664FE15092A2A887 immutable",
+    "worker_bridge_fixed": "WorkerBridge.cs and WorkerBridge.csproj strictly untouched",
+    "technical_changes": "One captured policy throughout collection/admission/publication, publication refusal throws non-success and does not return success fingerprint, explicit InvalidateCache advances ConfigurationGeneration (+1) under sync lock",
+    "execution_permission_r14": "Pure positive normal matching standalone core publications/snapshots/queries and valid provider Configure/Clear/Invalidate/empty diagnostics only",
+    "prohibitions": "No GetActualContentProfileFingerprint/ComputeActual*, no game/native/operator/controlplane/promotion, no global cache seeding/override/reflection, no stale/crosspolicy/race/negative/rejection/adverse tests (exclude old R13 TC13 and TC19), no self-closure",
+    "packaging_requirements": "Separate immutable directory per process, explicit output inventory, valid serializer-generated release JSON, consistent run_id (GATE05-R14-POLICY-CAPTURE-PUBLICATION-RUN-01), accurate normal cache call accounting without generic 0 footer",
+    "authority": "Dedicated Server remains final Domain Authority; Master governs release; Foundation HOLD"
+  }
+}

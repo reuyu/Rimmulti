@@ -1,0 +1,301 @@
+{
+  "manifest_version": "we-r30-final-pre-run-manifest/v1",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f",
+  "wp_id": "WP_ENGINE_GATE05_R30_HANDOFF",
+  "envelope": 33,
+  "generated_at": "2026-10-12T18:13:20+09:00",
+  "toolchain": {
+    "dotnet_sdk": "Microsoft.NET.Sdk",
+    "csharp_compiler": "Microsoft (R) Visual C# Compiler version 4.8.9232.0",
+    "target_framework": ".NETFramework,Version=v4.7.2",
+    "python_executable": "python.exe",
+    "msbuild_configuration": [
+      "Debug",
+      "Release"
+    ]
+  },
+  "source_files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "relative_path": "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "bytes": 268703,
+      "sha256": "B1F8C00D1DF6E8E797EAC8E5A7F7FB462679BA06E79096D5C558C687BD413311"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "relative_path": "scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "bytes": 170135,
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "relative_path": "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "bytes": 1774,
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+      "relative_path": "scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+      "bytes": 10442,
+      "sha256": "0204609D1D9D8A697B1A0B88537419D78B9E506558C771CA3EDD4C50FD49D470"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\Harness\\Program.cs",
+      "relative_path": "scratch\\EngineGate05R29StartupPair\\Harness\\Program.cs",
+      "bytes": 20022,
+      "sha256": "B20682C19025A3A8574E437E557D84BAA1F4A8500100242B547C0B589541DBE9"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\Harness\\Gate05R29StartupPairRunner.csproj",
+      "relative_path": "scratch\\EngineGate05R29StartupPair\\Harness\\Gate05R29StartupPairRunner.csproj",
+      "bytes": 1697,
+      "sha256": "988608224B7BF8AD1654060EFE16C0E4A16242382DBE47A65198B6BA33C25EAB"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\Harness\\App.config",
+      "relative_path": "scratch\\EngineGate05R29StartupPair\\Harness\\App.config",
+      "bytes": 421,
+      "sha256": "1BE4F8BB988AE8DA023726B89212668036CEC313B7D44D46B4D63CF1454BA734"
+    }
+  ],
+  "frozen_references": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\Assembly-CSharp.dll",
+      "relative_path": "Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\Assembly-CSharp.dll",
+      "bytes": 15777280,
+      "sha256": "5CF1B5BE399D5B1C9C56CA72C9D35B4ECF307FEACF5859D04AC5A1AA5926356A"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\UnityEngine.CoreModule.dll",
+      "relative_path": "Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\UnityEngine.CoreModule.dll",
+      "bytes": 1386688,
+      "sha256": "C5C58EA254834291780A1D6C388C241443D07167B4A4B890A23C9494F626DDBA"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\UnityEngine.dll",
+      "relative_path": "Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\UnityEngine.dll",
+      "bytes": 125120,
+      "sha256": "0422FF282130458380D2FB4B63A718465D3BD2D5738F1532F60798B0D35DFF0D"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\0Harmony.dll",
+      "relative_path": "Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\0Harmony.dll",
+      "bytes": 2456064,
+      "sha256": "353DAAFEC180BB8E7BBE4DA78F2A7CDC78067392E3A4E79DC8E7AF295F2371E6"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\1.6\\Assemblies\\Newtonsoft.Json.dll",
+      "relative_path": "WarEconomyMod\\1.6\\Assemblies\\Newtonsoft.Json.dll",
+      "bytes": 711952,
+      "sha256": "E1E27AF7B07EEEDF5CE71A9255F0422816A6FC5849A483C6714E1B472044FA9D"
+    }
+  ],
+  "built_candidates": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "relative_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "bytes": 322560,
+      "sha256": "084C58CCD770AF90D2F2AE162FF5456C8CD2F0DB3167AE13394635BF8E567E7A"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "relative_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "bytes": 77724,
+      "sha256": "7E76C8CEE38F98FB5B33639AAFB1AA9B4321D563DD483C35A1469A32229C1F3F"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "relative_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "bytes": 305152,
+      "sha256": "4B4FBD87DDF6B4B39D419F5FDF28428F1E0869CA208E159094409A8D1102463E"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "relative_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "bytes": 56876,
+      "sha256": "EE705B6F654BEF8A605661AD3CBFBB03541D0CCB244C24AC1323C2E3D68EED50"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "relative_path": "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "bytes": 322560,
+      "sha256": "084C58CCD770AF90D2F2AE162FF5456C8CD2F0DB3167AE13394635BF8E567E7A"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "relative_path": "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "bytes": 77724,
+      "sha256": "7E76C8CEE38F98FB5B33639AAFB1AA9B4321D563DD483C35A1469A32229C1F3F"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\Harness\\bin\\Debug\\net472\\Gate05R29StartupPairRunner.exe",
+      "relative_path": "scratch\\EngineGate05R29StartupPair\\Harness\\bin\\Debug\\net472\\Gate05R29StartupPairRunner.exe",
+      "bytes": 24064,
+      "sha256": "12ADACDA387CD6BC6BF7F7531DAB8A50DBC9464CDE0BF32437458791306D95BC"
+    }
+  ],
+  "published_pair_fixtures": [
+    {
+      "case_index": 1,
+      "spec": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_01\\publish_spec.json",
+        "relative_path": "scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_01\\publish_spec.json",
+        "bytes": 1520,
+        "sha256": "95E36B109C62C6AE67BD0BF8CE71B7D891885794DD0DBE0D4F55E2485E20FA30"
+      },
+      "bundle": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_01\\operator_startup_pair.json",
+        "relative_path": "scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_01\\operator_startup_pair.json",
+        "bytes": 967,
+        "sha256": "7C0AB26E7F651AF17A377F27CC815DF3AD0D61C455B03892A958FE1AD11908A0"
+      },
+      "sha_file": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_01\\operator_startup_pair.sha256.txt",
+        "relative_path": "scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_01\\operator_startup_pair.sha256.txt",
+        "bytes": 64,
+        "sha256": "E64696B57667ED22EEAB267E1873F4BB8FE3F524329CA0263267A4617DF4E93A"
+      },
+      "manifest": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_01\\PROVENANCE_MANIFEST.json",
+        "relative_path": "scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_01\\PROVENANCE_MANIFEST.json",
+        "bytes": 2345,
+        "sha256": "71801574BA209F66FB13CA290D2C47CC673C75636D83F6CC5961C31FA23003FC"
+      }
+    },
+    {
+      "case_index": 2,
+      "spec": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_02\\publish_spec.json",
+        "relative_path": "scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_02\\publish_spec.json",
+        "bytes": 1556,
+        "sha256": "70AE0DBCE18EF7397B6F40A51B6BDD16B55FA6F3342739C770F7FC5579FE5603"
+      },
+      "bundle": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_02\\operator_startup_pair.json",
+        "relative_path": "scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_02\\operator_startup_pair.json",
+        "bytes": 1001,
+        "sha256": "39E6CF2F0D57060D9AC30940D67A90B7FB84356E84DFF6F841388054AF6167FE"
+      },
+      "sha_file": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_02\\operator_startup_pair.sha256.txt",
+        "relative_path": "scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_02\\operator_startup_pair.sha256.txt",
+        "bytes": 64,
+        "sha256": "4878AF98E2D7C3C9364EC071838E3A906FFF15A070DC02CE9C45BF43F5602E89"
+      },
+      "manifest": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_02\\PROVENANCE_MANIFEST.json",
+        "relative_path": "scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_02\\PROVENANCE_MANIFEST.json",
+        "bytes": 2380,
+        "sha256": "77B5A0504DD091D784CF73594DDFAB60C02A5992A740C9BDAFF85F1E20B8B490"
+      }
+    },
+    {
+      "case_index": 3,
+      "spec": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_03\\publish_spec.json",
+        "relative_path": "scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_03\\publish_spec.json",
+        "bytes": 1549,
+        "sha256": "F4363C3F2712BB4A2C49302F74994B53DB26EDCBED900AE9F5639FD57F7EE445"
+      },
+      "bundle": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_03\\operator_startup_pair.json",
+        "relative_path": "scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_03\\operator_startup_pair.json",
+        "bytes": 988,
+        "sha256": "9BB5E55D24F1CF4E7F1B7249C1EE25716ECFA63982110B4DD1EDBA7E111C0CA6"
+      },
+      "sha_file": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_03\\operator_startup_pair.sha256.txt",
+        "relative_path": "scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_03\\operator_startup_pair.sha256.txt",
+        "bytes": 64,
+        "sha256": "86CE10B1E334C8022639AB05592E09DE9B7630928BF125F0335C870B6532DDA5"
+      },
+      "manifest": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_03\\PROVENANCE_MANIFEST.json",
+        "relative_path": "scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_03\\PROVENANCE_MANIFEST.json",
+        "bytes": 2366,
+        "sha256": "D490B8DD261DE0D157A8CB155071ED830387FC1BD49F7EAB5A990C756D1474AB"
+      }
+    },
+    {
+      "case_index": 4,
+      "spec": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_04\\publish_spec.json",
+        "relative_path": "scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_04\\publish_spec.json",
+        "bytes": 1549,
+        "sha256": "DBAC459B1ED840548360FB2BFF0DF579656F413951F97282A6476CC527841EF0"
+      },
+      "bundle": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_04\\operator_startup_pair.json",
+        "relative_path": "scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_04\\operator_startup_pair.json",
+        "bytes": 988,
+        "sha256": "BECA6A3F86B9F9276C232F5507E7D22205B065EA6E69359B5AA7C8F4F55EFE92"
+      },
+      "sha_file": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_04\\operator_startup_pair.sha256.txt",
+        "relative_path": "scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_04\\operator_startup_pair.sha256.txt",
+        "bytes": 64,
+        "sha256": "C1D30559326BB2EE6291E5BE826F453BBB5AC941F7FCEDE665ABA9671FB54E31"
+      },
+      "manifest": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_04\\PROVENANCE_MANIFEST.json",
+        "relative_path": "scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_04\\PROVENANCE_MANIFEST.json",
+        "bytes": 2366,
+        "sha256": "A81A18C2643BBFFF6C430B9A0CE882B597E34965816F4BDB9E4BC23E700121AF"
+      }
+    },
+    {
+      "case_index": 5,
+      "spec": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_05\\publish_spec.json",
+        "relative_path": "scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_05\\publish_spec.json",
+        "bytes": 1511,
+        "sha256": "74E58E20DBA33E3D859DD51AC8D2FA57B12643C67AA230A669984252B55F51D2"
+      },
+      "bundle": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_05\\operator_startup_pair.json",
+        "relative_path": "scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_05\\operator_startup_pair.json",
+        "bytes": 950,
+        "sha256": "9FDEF4423B0B36728792B1D3E810684852EEF945A1DAA44B0CFA03F791E8ED8B"
+      },
+      "sha_file": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_05\\operator_startup_pair.sha256.txt",
+        "relative_path": "scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_05\\operator_startup_pair.sha256.txt",
+        "bytes": 64,
+        "sha256": "82CE966AF1639F62599B880B1511E3D70890DFD6B2310944A6A7E629ACED5ABD"
+      },
+      "manifest": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_05\\PROVENANCE_MANIFEST.json",
+        "relative_path": "scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_05\\PROVENANCE_MANIFEST.json",
+        "bytes": 2328,
+        "sha256": "B44F91F2070E4A4E84976A929C6B515A60C8CB27BC2434AE1E60B9C22D827388"
+      }
+    },
+    {
+      "case_index": 6,
+      "spec": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_06\\publish_spec.json",
+        "relative_path": "scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_06\\publish_spec.json",
+        "bytes": 1634,
+        "sha256": "6026A7A02A58F3F2B5BF4409F7A47519C164510951B705828D748CFC095C473C"
+      },
+      "bundle": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_06\\operator_startup_pair.json",
+        "relative_path": "scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_06\\operator_startup_pair.json",
+        "bytes": 1062,
+        "sha256": "30D4CAE52A0C74966AACE77A8B23402954126449E6791A79492AB3E715AEAC0A"
+      },
+      "sha_file": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_06\\operator_startup_pair.sha256.txt",
+        "relative_path": "scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_06\\operator_startup_pair.sha256.txt",
+        "bytes": 64,
+        "sha256": "D080083E0297423975D757CDBFA0721E284F2C55F37B761F9F6F9983D4D2BB80"
+      },
+      "manifest": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_06\\PROVENANCE_MANIFEST.json",
+        "relative_path": "scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_06\\PROVENANCE_MANIFEST.json",
+        "bytes": 2441,
+        "sha256": "B7774F81E2342AF87022000B969503D92BDE511A131A9D3A6058015047B4A884"
+      }
+    }
+  ]
+}

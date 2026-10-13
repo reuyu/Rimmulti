@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "producer": "A",
+  "report_kind": "E1",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3",
+  "wp_id": "WP_ENGINE_GATE05_R27_CHILD_CAPTURE",
+  "wp_revision": "GATE05-R27-CHILD-CAPTURE",
+  "envelope": 30,
+  "result_id": "WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-RESULT-01",
+  "status": "COMPLETED",
+  "completed_at": "2026-10-12T03:32:00+09:00",
+  "summary": "WP_ENGINE_GATE05_R27_CHILD_CAPTURE / GATE05-R27-CHILD-CAPTURE (Envelope 30) implementation and developer E1 verification completed. Successfully implemented pure immutable data capture class public sealed class OperatorChildLaunchInputs at authorized zero-width insertion offset 166910 in WorkerBridge.cs. Class exposes 15 public getters in exact specification order with complete defensive copy of ValidatorTask (all 27 fields) and child receipt declaration (ApprovedChildDeclaration with 7 lowerCamelCase fields per Master API correction). Enforces fail-closed SOURCE-ONLY validation for null receipts, invalid receipts, role mismatches (Parent SIMULATION, Child READ_ONLY), null tasks, and non-absolute task paths. Fixed segments (prefix [0..166910] SHA CC93D88C..., suffix [178847..239574] SHA 7DBD3BFD...) verified 100% byte-identical. Preserved EngineHostCensus.cs (170,135 B, SHA 391F9645...) and WorkerBridge.csproj (1,774 B, SHA 571A58F5...) immutable. Rebuilt Debug candidate DLL (308,224 B, SHA 68BFE510..., MVID 44ba753c-6570-49d8-8068-4edf87a4e5d0), Release candidate DLL (291,840 B, SHA C874B1F4..., MVID c9da01fd-6e6e-49c1-9bfd-9cb1d3a1a8a8), and synchronized 1.6 Assemblies with Debug candidate. Executed detached pure managed runner Gate05R27ChildCaptureRunner across 4 positive fixture pairs (PLAIN/PLAIN, OPAQUE/OPAQUE, PLAIN/OPAQUE-padded, OPAQUE/PLAIN-padded) under en-US (PID 18872, exit 0, 0.222s) and de-DE (PID 6972, exit 0, 0.084s), verifying 100% PASS with 8 IssueAdmissionReceiptFromBytes calls, 4 Capture calls, 0 Process API calls, 0 negative probes, and complete caller/detached mutation isolation. Scope marker hard-coded to DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED. Full Gate05 and Foundation remain HOLD pending independent Sol QA review and Master governance disposition.",
+  "e1_verdict": "IMPLEMENTED_CHILD_CAPTURE_PASS_NATIVE_UNTESTED",
+  "test_counts": {
+    "total_cases": 4,
+    "passed_cases": 4,
+    "failed_cases": 0,
+    "direct_issue_receipt_calls_per_run": 8,
+    "direct_capture_calls_per_run": 4,
+    "prohibited_calls_executed": 0
+  },
+  "limitations": [
+    "STATIC_MANAGED_NORMAL_EVIDENCE_ONLY: Verification conducted strictly via isolated positive pure normal managed runner controls (4/4 PASS, 8 issue receipt calls, 4 capture calls, exit 0) with Master-approved frozen dependencies.",
+    "ZERO_PROCESS_API_CALLS_IN_MANAGED_TESTS: All C# Process, GetCurrentProcess, and VerifyProcessIdentity execution strictly excluded from runner code. Pinned child PID and exit code 0 collected exclusively by host Python telemetry.",
+    "HOST_PYTHON_TELEMETRY_CHILD_PID_AND_EXIT_CODE_ONLY: Host subprocess telemetry is operational observation, not native authority.",
+    "NATIVE_ACTUAL_COMPUTATION_PROHIBITED_AND_UNTESTED: In-engine, game runtime, native execution, Awake event loops, and operator promotion were strictly prohibited and not executed.",
+    "ZERO_REGISTRATION_SLOTS_AND_ZERO_INVALID_PROBES: Child process registration slots and CLI launcher modifications deferred per Master R26 reconciliation; all negative/rejection probes zeroed; fail-closed guards verified via static source analysis only.",
+    "M05_M06_M07_STRICTLY_DEFERRED: M05 (task tuple / channel protocol / process identity binding), M06 (content-context live XML census), and M07 (control plane promotion / revocation) remain strictly unaddressed and uncommitted.",
+    "DATA_ONLY_CONTAINER_CONFERS_ZERO_LAUNCH_AUTHORITY: OperatorChildLaunchInputs is an immutable data container only, hard-coded with DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED.",
+    "INSTALLED_DLL_INCIDENT_OPEN: Steam installed DLL discrepancy against archive baseline remains an UNKNOWN OPEN INCIDENT, preserved unmodified.",
+    "FINAL_DOMAIN_AUTHORITY_REMAINS_DEDICATED_SERVER: Dedicated Server remains final Domain Authority; Engine/Client produces bounded simulation proposals.",
+    "FOUNDATION_HOLD: Foundation remains HOLD pending Pipeline independent E2 PASS."
+  ],
+  "artifacts": [
+    {
+      "role": "implementation_report",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_EngineHost_Gate05_R27_Child_Capture_20261011.md",
+      "sha256": "7B49A35C64DB90827DA8D212FC05DA8C683C6E152C955E6E31BC554AB470691A",
+      "size": 10990,
+      "mvid": ""
+    },
+    {
+      "role": "release_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R27_CHILD_CAPTURE.json",
+      "sha256": "07B8C9C2F85E6C2AFB3C48165E180DCA813E10D437D21554AE29D513738D6344",
+      "size": 5316,
+      "mvid": ""
+    },
+    {
+      "role": "modified_source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "B292AB846F78568F74333F58C5967ED38CAAA2F59B07393FC846F4329583E388",
+      "size": 239574,
+      "mvid": ""
+    },
+    {
+      "role": "debug_candidate_dll",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "68BFE5105FA0471AAAF7943009703BB2599B39C5B572833507D6733BCE63CF64",
+      "size": 308224,
+      "mvid": "44ba753c-6570-49d8-8068-4edf87a4e5d0"
+    },
+    {
+      "role": "debug_candidate_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "F0BC1B7D92F67593EA967F56A90EE302C76B920A46B98EF77219F7B884C47814",
+      "size": 73776,
+      "mvid": ""
+    },
+    {
+      "role": "release_candidate_dll",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "C874B1F4CD2DFC7482D5CB93B38782140CCCE6F20F39228046FCA637C1CEF42A",
+      "size": 291840,
+      "mvid": "c9da01fd-6e6e-49c1-9bfd-9cb1d3a1a8a8"
+    },
+    {
+      "role": "release_candidate_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "DCBC5EC03C4DD640F37821A877BE7ADFE30DE8C8B5B456CB9EEDF07E22C59FA0",
+      "size": 54016,
+      "mvid": ""
+    },
+    {
+      "role": "deployed_mod_dll",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "68BFE5105FA0471AAAF7943009703BB2599B39C5B572833507D6733BCE63CF64",
+      "size": 308224,
+      "mvid": "44ba753c-6570-49d8-8068-4edf87a4e5d0"
+    },
+    {
+      "role": "deployed_mod_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "F0BC1B7D92F67593EA967F56A90EE302C76B920A46B98EF77219F7B884C47814",
+      "size": 73776,
+      "mvid": ""
+    },
+    {
+      "role": "task_ack",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\ACK.json",
+      "sha256": "DCBEAC5CF1B8ABFB657D8BC89E6F5CD9FDC6A6C69EBB4AE47230F1F924A7FBD4",
+      "size": 2831,
+      "mvid": ""
+    },
+    {
+      "role": "implementation_contract",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\IMPLEMENTATION_CONTRACT.md",
+      "sha256": "0555BE60BDCD1709AE7A539F0BCAC202FF2262503A78BDB68558D4A236282F33",
+      "size": 7391,
+      "mvid": ""
+    },
+    {
+      "role": "patch_spans",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\PATCH_SPANS.json",
+      "sha256": "E22BE47D6F84CA471B50BD490ACC2D68EF36DA461C1C2D9677EEB6E407F6E44C",
+      "size": 1837,
+      "mvid": ""
+    },
+    {
+      "role": "freeze_before",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\ENGINE_FREEZE_BEFORE.json",
+      "sha256": "54670234FF838BF6A7821B3E579A82249B6324F8BF03C9CBD0FDA968421A0E31",
+      "size": 3684,
+      "mvid": ""
+    },
+    {
+      "role": "freeze_after",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\ENGINE_FREEZE_AFTER.json",
+      "sha256": "BECC118696F2DB6BAA3206CE0EA2DED76C0C7CF573781C58A00BAF3FE81DA20E",
+      "size": 3616,
+      "mvid": ""
+    },
+    {
+      "role": "candidate_identity",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\CANDIDATE_IDENTITY.json",
+      "sha256": "664C1B3A5A148E2F85FC3F50BB62AE168AFF1E2BF968D59F17D85ABABA1AE915",
+      "size": 4467,
+      "mvid": ""
+    },
+    {
+      "role": "prospective_oracle",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\PROSPECTIVE_CALLPLAN_AND_ORACLE.json",
+      "sha256": "CDBA8D797082886077F3984728F09FB609E2EA36F2D3C146695022092EE845C1",
+      "size": 5464,
+      "mvid": ""
+    },
+    {
+      "role": "content_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\CONTENT_MANIFEST.json",
+      "sha256": "8AFA5853A7B9C31DB802E5B08D8E62088EAA705025E49A92EA579A251244260D",
+      "size": 9290,
+      "mvid": ""
+    },
+    {
+      "role": "runner_project",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\Gate05R27ChildCaptureRunner.csproj",
+      "sha256": "61479BAD821EF6626A83357437E7467C93BD0915BF4B1BCC341C22E9037AB719",
+      "size": 1698,
+      "mvid": ""
+    },
+    {
+      "role": "runner_config",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\App.config",
+      "sha256": "1BE4F8BB988AE8DA023726B89212668036CEC313B7D44D46B4D63CF1454BA734",
+      "size": 421,
+      "mvid": ""
+    },
+    {
+      "role": "runner_source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\Program.cs",
+      "sha256": "0855F826A37A5F172ADFC424880CDDA6F02871ABC3A8C14F97CD4909C95BE7F4",
+      "size": 82218,
+      "mvid": ""
+    },
+    {
+      "role": "runner_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\Gate05R27ChildCaptureRunner.exe",
+      "sha256": "D16EFBB75FF1213A618EF057F6D5FBFB33885E528044060644706226BC8FA2BD",
+      "size": 45568,
+      "mvid": ""
+    },
+    {
+      "role": "runner_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\Gate05R27ChildCaptureRunner.pdb",
+      "sha256": "DD43CF510F9FA46B0AF01549A5779C8152048F4B3A4A77BE36D17019CDEBD7E7",
+      "size": 9728,
+      "mvid": ""
+    },
+    {
+      "role": "host_telemetry",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\HOST_TELEMETRY.json",
+      "sha256": "931286C4704907FDC974FEB0C9C99D5AC7D028C67D72F0F74688497301ACE109",
+      "size": 2168,
+      "mvid": ""
+    },
+    {
+      "role": "results_en_us",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_en_us\\E1_EXECUTION_REPORT.json",
+      "sha256": "8C7EED5B62B535AB8ACCABFA3FC36E85A41E32D82AAEB3E0F2E6FD04976D56F7",
+      "size": 2033,
+      "mvid": ""
+    },
+    {
+      "role": "output_inventory_en_us",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_en_us\\OUTPUT_INVENTORY.json",
+      "sha256": "1A179A6EA56F49CF0ED1D1CB8F6A2FA27CBA1A618604510FBE914C7E4DC87247",
+      "size": 229,
+      "mvid": ""
+    },
+    {
+      "role": "stdout_en_us",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_en_us\\stdout.txt",
+      "sha256": "D0CFAAC9E71F4EFF8FDB6D52E938DBAA2769DE753CED1B34A0057B171941A15A",
+      "size": 980,
+      "mvid": ""
+    },
+    {
+      "role": "stderr_en_us",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_en_us\\stderr.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "size": 0,
+      "mvid": ""
+    },
+    {
+      "role": "results_de_de",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_de_de\\E1_EXECUTION_REPORT.json",
+      "sha256": "3232CA19AFED79A112F10796977FB3DA9BCA06C2380F144A92E67B82222DE9AC",
+      "size": 2033,
+      "mvid": ""
+    },
+    {
+      "role": "output_inventory_de_de",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_de_de\\OUTPUT_INVENTORY.json",
+      "sha256": "D582114BAE065B291CCC5543425BBD91684DAD6870B6DDE8B1892FD91F827F69",
+      "size": 229,
+      "mvid": ""
+    },
+    {
+      "role": "stdout_de_de",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_de_de\\stdout.txt",
+      "sha256": "068550CDF176359FD4AF268B78178B35F92AD961198B0ED7FC350B35D94B13A0",
+      "size": 980,
+      "mvid": ""
+    },
+    {
+      "role": "stderr_de_de",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_de_de\\stderr.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "size": 0,
+      "mvid": ""
+    }
+  ]
+}

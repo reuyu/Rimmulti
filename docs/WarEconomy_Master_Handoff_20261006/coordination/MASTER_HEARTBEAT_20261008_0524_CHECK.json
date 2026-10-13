@@ -1,0 +1,38 @@
+{
+  "event_id": "MASTER-HEARTBEAT-20261008-0524-CHECK",
+  "type": "A_R2_RECOVERY_POSSIBLE_STALL_ATTENTION",
+  "at": "2026-10-08T05:29:24.253072+09:00",
+  "heartbeat_at": "2026-10-07T20:24:28.145Z",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R2-20261008-DIRECT-2af10708",
+  "delivery_status": "SENT",
+  "task_status": "IN_PROGRESS",
+  "ack_present": false,
+  "recovery_ack_present": false,
+  "completion_present": false,
+  "last_known_ui_phase": "RECOVERY",
+  "same_running_wrapper_and_last_commands_as_0424": true,
+  "last_tool_cards": [
+    "Test-Path old R1 report/manifest",
+    "Get-ChildItem old R1 task"
+  ],
+  "ui_working": true,
+  "underlying_command_liveness": "UNVERIFIED",
+  "confirmed_failure": false,
+  "attention_id": "A-R2-RECOVERY-POSSIBLE-STALL-20261008-01",
+  "attention_reason": "About3h since human delivery confirmation without recovery/ACK; two read-only UI observations1h apart show same recovery tool position, wrapper Running2 and child cards Ran. No completion proof.",
+  "ui_proof": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\A_R2_RUNNING_COMMAND_DETAILS_20261008_0524.json",
+  "ui_proof_sha256": "E61DAC21159BFD27831AA53C3046C4DC494BEB30E1D6254815606E81248FB9DB",
+  "input_attempt": {
+    "action": "expand existing chat tool card only",
+    "result": "coordinate input geometry unavailable; outcome not claimed; selected/activated current window and reobserved",
+    "terminal_commands_executed_by_master": false,
+    "message_sent": false,
+    "cancel_clicked": false
+  },
+  "sol_cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:19",
+  "sol_state": "notLoaded",
+  "sol_new_result": false,
+  "automation": "ACTIVE30MIN",
+  "new_dispatch": false,
+  "closure_changed": false
+}

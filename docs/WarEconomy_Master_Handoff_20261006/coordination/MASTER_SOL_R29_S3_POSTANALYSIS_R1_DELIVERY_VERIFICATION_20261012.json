@@ -1,0 +1,118 @@
+{
+  "at": "2026-10-12T17:16:13.664255+09:00",
+  "guard_run": "MASTER-R29-S3-POSTRUN-ANALYSIS-20261012-02",
+  "guard_session": 2351,
+  "guard_pid": 34332,
+  "resume_id": "SOL-GATE05-R29-STARTUP_PAIR-S3-POSTANALYSIS-R1-20261012-01",
+  "delivery_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012-01",
+  "result_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012-8d682aff4ebd4996a12529142c0d7431",
+  "wp_revision": "S3",
+  "delivery_status": "SENT_TOOL_AND_NEW_ACTIVE_TURN_CONFIRMED",
+  "resume_ACK": "PENDING",
+  "actual_new_turn_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:2",
+    "revision": 2,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a12f2d-3cfb-7fb0-857a-bf1ef4ab88e6",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791792856,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "previous_turn_usage_failed": true,
+  "not_inherited_operational_completion": true,
+  "exact_message": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R29_S3_POSTANALYSIS_R1_EXACT_MESSAGE_20261012.json",
+    "sha256": "716AF1B18AE36138642EF6C2A6491461AD1F9FFF75EB5A678EE03905597D7E3E",
+    "bytes": 2431
+  },
+  "send_tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R29_S3_POSTANALYSIS_R1_SEND_TOOL_20261012.json",
+    "sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+    "bytes": 149
+  },
+  "notice": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R29_S3_POSTRUN_ANALYSIS_R1_AUTHORIZATION_20261012.md",
+    "sha256": "4585469BF681B1AA314260144B910995CF143B07896FFBAE51C1C31C612815E6",
+    "bytes": 4406
+  },
+  "existing_sealed_evidence": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R29_S3_POSTRUN_SEALED_EVIDENCE_PRESERVATION_20261012.json",
+    "sha256": "B107C10230C52DE68AE821AE467B3D49594564DDA966502E03615B862B6B2A9E",
+    "bytes": 277564
+  },
+  "protected_executed_QA_files": 894,
+  "postanalysis_only": true,
+  "no_additional_build_runner_factory_calls": true,
+  "normal_provisional_observations": [
+    {
+      "culture": "en-US",
+      "host_pid": 21232,
+      "exit": 0,
+      "assertions": 438,
+      "failed": 0,
+      "typed_value_type_checks": 6700,
+      "prepost_pins": 264,
+      "loaded_managed": 10,
+      "sealed_outputs": 402,
+      "raw_utf8_files": 336,
+      "actual_call_ledger_rows": 584,
+      "inventory": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\runs\\1-en-US\\OUTPUT_INVENTORY.json",
+        "sha256": "FF074660260F89BF5A3B36678CB837C5F422E430DDF3100E71C7210B7DBA407E",
+        "bytes": 157425
+      },
+      "host": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\runs\\1-en-US\\HOST_RUN_PROCESS_OBSERVATION.json",
+        "sha256": "178FF5B2B43AE9106796AED748D0E8503FA1507E906B69B544DF09F35679B234",
+        "bytes": 1396
+      }
+    },
+    {
+      "culture": "de-DE",
+      "host_pid": 9224,
+      "exit": 0,
+      "assertions": 438,
+      "failed": 0,
+      "typed_value_type_checks": 6700,
+      "prepost_pins": 264,
+      "loaded_managed": 10,
+      "sealed_outputs": 402,
+      "raw_utf8_files": 336,
+      "actual_call_ledger_rows": 584,
+      "inventory": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\runs\\2-de-DE\\OUTPUT_INVENTORY.json",
+        "sha256": "BF6B9BBA395E880823AECBF752B7F72DC5B1A1DCD57DF9CC899A15A4B18742F6",
+        "bytes": 157425
+      },
+      "host": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\runs\\2-de-DE\\HOST_RUN_PROCESS_OBSERVATION.json",
+        "sha256": "7C8D95D7E7F1EFBB5FEBEA9F763C2D1165B93DAB59D8DDBA02CB02995771C2C9",
+        "bytes": 1395
+      }
+    }
+  ],
+  "normal_final_verdict": "PENDING",
+  "Master_candidate_execution": 0,
+  "source_high3": "OPEN",
+  "Foundation": "HOLD",
+  "native_E2": "NOT_RELEASED",
+  "new_candidate_WP": false,
+  "closure": false
+}

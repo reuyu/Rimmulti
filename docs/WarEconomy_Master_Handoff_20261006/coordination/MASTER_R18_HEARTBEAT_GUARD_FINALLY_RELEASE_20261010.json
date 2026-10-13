@@ -1,0 +1,13 @@
+{
+  "run_id": "MASTER-HEARTBEAT-R18-20261010T063748Z-01",
+  "guard_session": 41964,
+  "guard_pid": 11096,
+  "all_child_commands_completed_before_release": true,
+  "actual_release_tool": {
+    "chunk_id": "a50f0a",
+    "wall_time_seconds": 0.0000331,
+    "exit_code": 0,
+    "original_token_count": 118,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-HEARTBEAT-R18-20261010T063748Z-01\", \"pi\r\n\u001b[23;80Hid\": 11096, \"locked_at\": \"2026-10-10T15:37:59.582126+09:00\", \"mechanism\": \"Window\r\n\u001b[23;80Hws msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_a\r\n\u001b[23;80Hat\": \"2026-10-10T15:50:02.789247+09:00\", \"renewal_count\": 5, \"release_reason\": \"R\r\n\u001b[23;80HRELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-10T15:50:51.710625+09:00\"}     \r\n\u001b[?9001l\u001b[?1004l"
+  }
+}

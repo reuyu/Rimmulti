@@ -1,0 +1,9 @@
+# R12 package order — scoped development release
+
+WP_ENGINE_GATE05_R12_PACKAGE_ORDER/GATE05-R12-PACKAGE-ORDER/envelope15 authorizes one pure package inventory loadOrder consistency correction and required new candidate packaging. Actual collector's contiguous0-based sequence controls; physical storage permutation is normal transport representation. Independent expected policy is not derived from observed inventory. Full current-v1 encoding and normal version controls regress on the new candidate.
+
+Only ContentProfileProvider suffix/related typed pure helper/DTO source, approved derived build paths and task-owned positive runner/evidence may change. WorkerBridge/csproj/Census72547 prefix fixed. Current task preservation manifest/archive19/prior1251/Pipeline206/QA3335/managed4 and terminal refs control. R11 frozen74, original invalid release JSON/raw/QA findings and failed usage lineage are preserved. R11 scoped247PASS each is credit, never inherited R12 PASS.
+
+No provider/cache/configuration/game/native/operator/old/negative/rejection/tied/gapped/unknown-schema/adverse execution; static guards remain static. General schema/cache/patch-settings/trusted process/context/native and whole Gate remain separate. No deployed installed modification. Engine installed BB3B mismatch incident OPEN/actorUNKNOWN. New candidate exact SHA/MVID/source/PDB/manifest/prepost/full raw/tool graph requires Master admission and fresh independent original Sol QA; full runtime E2 NOT_RELEASED, no closure, Foundation HOLD.
+
+Routine communication is Master direct Computer Use to freshly verified idle Antigravity A, direct original Sol thread tools. Preparation is NOT SENT. Resume the existing wareconomy-master hourly short file-reference monitor only after actual A submission; pause after terminal collection, then automatically perform authorized QA/review/next bounded technical dispatch without waiting for a new continue. Processing recipients receive no duplicate WP.

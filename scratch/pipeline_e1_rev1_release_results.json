@@ -1,0 +1,146 @@
+{
+  "OverallSuccess": true,
+  "DatabasePath": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\test_pipeline_e1_rev1.db",
+  "JournalMode": "wal",
+  "SynchronousMode": "2",
+  "SchemaVersion": 2,
+  "ApplicationId": 1463898693,
+  "ActiveStoreIncarnationId": "39699f1434744ae3897b1d075ab2ff57",
+  "IntegrityCheck": "ok",
+  "Tests": [
+    {
+      "TestId": "E1_01",
+      "Title": "Exact retry stable",
+      "Passed": true,
+      "DurationMs": 50.0,
+      "Details": "Initial and retry produced stable receipt f3d686d71c4942e081cec14e7c59068e, revision remained 1."
+    },
+    {
+      "TestId": "E1_02",
+      "Title": "Same key changed fields -> collision rejected",
+      "Passed": true,
+      "DurationMs": 14.0,
+      "Details": "All changed material fields were rejected with COLLISION_REJECTED without leaking receipts."
+    },
+    {
+      "TestId": "E1_03",
+      "Title": "Semantically identical reordered JSON -> exact retry",
+      "Passed": true,
+      "DurationMs": 8.0,
+      "Details": "Reordered JSON keys and whitespace were canonicalized into identical RequestFingerprint and accepted as exact retry."
+    },
+    {
+      "TestId": "E1_04",
+      "Title": "Caller fake hash cannot influence identity",
+      "Passed": true,
+      "DurationMs": 6.0,
+      "Details": "Caller-supplied hash was completely ignored; server computed true fingerprint from parsed typed envelope."
+    },
+    {
+      "TestId": "E1_05",
+      "Title": "25+ independent concurrency race -> exactly 1 winner",
+      "Passed": true,
+      "DurationMs": 111.0,
+      "Details": "25 concurrent callers produced exactly 1 winner and 24 stale losers. Final revision in DB is 1."
+    },
+    {
+      "TestId": "E1_06",
+      "Title": "10+ same-ID concurrent requests -> typed stable outcomes",
+      "Passed": true,
+      "DurationMs": 8.0,
+      "Details": "10 concurrent requests with identical (PrincipalId, OperationId) resolved to 1 initial commit and 9 ALREADY_COMMITTED without SQLite exceptions."
+    },
+    {
+      "TestId": "E1_07",
+      "Title": "Storage busy/lock -> bounded typed outcome",
+      "Passed": true,
+      "DurationMs": 5273.0,
+      "Details": "Storage busy returned bounded typed STORAGE_BUSY_RETRYABLE in 5264ms."
+    },
+    {
+      "TestId": "E1_08",
+      "Title": "Hard kill before/inside/after commit boundaries",
+      "Passed": true,
+      "DurationMs": 7.0,
+      "Details": "Verified atomic rollback on pre-commit crash and durable commit survival on post-commit crash."
+    },
+    {
+      "TestId": "E1_09",
+      "Title": "Consumer effect success + crash before ACK -> exactly once",
+      "Passed": true,
+      "DurationMs": 15.0,
+      "Details": "Consumer applied effect once, process crashed before ACK, redelivery was idempotent and semantic effect count remained exactly 1."
+    },
+    {
+      "TestId": "E1_10",
+      "Title": "Transient consumer failure -> recovery eventually delivers",
+      "Passed": true,
+      "DurationMs": 11.0,
+      "Details": "Transient consumer failure did not roll back commit; recovery cleanly redelivered event to consumer."
+    },
+    {
+      "TestId": "E1_11",
+      "Title": "Durable ACK + crash -> convergence without duplicate effect",
+      "Passed": true,
+      "DurationMs": 11.0,
+      "Details": "Durable consumer cursor prevented duplicate replay during subsequent convergence."
+    },
+    {
+      "TestId": "E1_12",
+      "Title": "Fresh normal startup creates/validates DB before READY",
+      "Passed": true,
+      "DurationMs": 31.0,
+      "Details": "Fresh database created, migrated, validated, and PIPELINE_READY reached."
+    },
+    {
+      "TestId": "E1_13",
+      "Title": "Restart with pending publication recovers before READY",
+      "Passed": true,
+      "DurationMs": 42.0,
+      "Details": "Server startup converged pending publication events to consumer before setting PIPELINE_READY."
+    },
+    {
+      "TestId": "E1_14",
+      "Title": "Malformed/future schema -> fail closed before network admission",
+      "Passed": true,
+      "DurationMs": 92.0,
+      "Details": "Future schema version and malformed schema both failed closed with InvalidOperationException."
+    },
+    {
+      "TestId": "E1_15",
+      "Title": "Every canonical connection effective WAL/FULL",
+      "Passed": true,
+      "DurationMs": 1.0,
+      "Details": "10 independent connections from context verified effective WAL, synchronous=FULL (2), and application_id=WARE."
+    },
+    {
+      "TestId": "E1_16",
+      "Title": "Receipt round-trip/hash stable under timezone/culture change",
+      "Passed": true,
+      "DurationMs": 1.0,
+      "Details": "Receipt epoch ms and hash recomputation remained 100% stable across 6 diverse cultures."
+    },
+    {
+      "TestId": "E1_17",
+      "Title": "StoreIncarnation rotation rejects old incarnation identity",
+      "Passed": true,
+      "DurationMs": 5.0,
+      "Details": "StoreIncarnation successfully rotated from 39699f1434744ae3897b1d075ab2ff57 to 68857556ab1c449ebfe281c84821f02c, and old incarnation request was rejected."
+    },
+    {
+      "TestId": "E1_18",
+      "Title": "Actual gameplay dispatcher cannot invoke probe",
+      "Passed": true,
+      "DurationMs": 0.0,
+      "Details": "Gameplay transport invocation was strictly denied with ACCESS_DENIED."
+    },
+    {
+      "TestId": "E1_19",
+      "Title": "No Settlement/material/EntityId/Trade/Tax state touched",
+      "Passed": true,
+      "DurationMs": 0.0,
+      "Details": "Verified pipeline DB contains exclusively infrastructure tables. No Settlement, material, trade, or tactical state touched."
+    }
+  ],
+  "TimestampUtc": "2026-10-02T14:23:15.591909Z"
+}

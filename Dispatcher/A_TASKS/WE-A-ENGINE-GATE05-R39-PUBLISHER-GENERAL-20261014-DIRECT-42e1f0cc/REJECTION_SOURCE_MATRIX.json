@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "dispatch_id": "WE-A-ENGINE-GATE05-R39-PUBLISHER-GENERAL-20261014-DIRECT-42e1f0cc",
+  "wp_id": "WP_ENGINE_GATE05_R39_PUBLISHER_GENERAL",
+  "envelope": 42,
+  "captured_at_utc": "2026-10-13T20:48:56.156568+00:00",
+  "rules": [
+    {
+      "category": "CAPABILITY_NONBLANK",
+      "condition": "expectedCapabilityBoundary stripped result has length 0",
+      "rejection": "ValueError('{decl_name} expectedCapabilityBoundary cannot be blank or empty after strip.')",
+      "reference": "WorkerBridge.cs:5137/5243"
+    },
+    {
+      "category": "OPAQUE_NONBLANK",
+      "condition": "val is empty string or all characters in SUPPORTED_WHITESPACE_CHARS",
+      "rejection": "ValueError('{field_name} cannot be null, empty, or whitespace-only.')",
+      "reference": "MASTER_R39_ISSUER_WHITESPACE_SUPPORTED_DOMAIN_20261014.md"
+    },
+    {
+      "category": "OPAQUE_VERSION_SENSITIVE",
+      "condition": "val consists entirely of characters in SUPPORTED_WHITESPACE_CHARS | {'\\u180e'}",
+      "rejection": "ValueError('{field_name} blank-only string involving version-sensitive U+180E is explicitly unsupported.')",
+      "reference": "MASTER_R39_ISSUER_WHITESPACE_SUPPORTED_DOMAIN_20261014.md"
+    },
+    {
+      "category": "IDENTITY_BOUNDARY_TRIM",
+      "condition": "Non-ASCII whitespace code point in leading or trailing boundary region of identity field",
+      "rejection": "ValueError('Unsupported non-ASCII boundary whitespace code point ... in identity field ...')",
+      "reference": "MASTER_R39_ISSUER_WHITESPACE_SUPPORTED_DOMAIN_20261014.md"
+    },
+    {
+      "category": "PATH_SYNTAX",
+      "condition": "Repeated separators (//, \\\\, \\/, /\\), empty interior segments, UNC, ADS, traversal, reserved DOS names",
+      "rejection": "ValueError(...) fail-closed",
+      "reference": "MASTER_R38_PUBLISHER_BOUNDARIES_IMPLEMENTATION_CONTRACT_20261014.md"
+    },
+    {
+      "category": "ATTRIBUTES_INTEGRITY",
+      "condition": "Missing, None, boolean, or non-integer st_file_attributes, or reparse point (attrs & 0x400)",
+      "rejection": "ValueError('Unsupported environment: missing or non-integer st_file_attributes ...') or ValueError('Unsafe reparse point ...')",
+      "reference": "MASTER_R38_PUBLISHER_BOUNDARIES_IMPLEMENTATION_CONTRACT_20261014.md"
+    }
+  ]
+}

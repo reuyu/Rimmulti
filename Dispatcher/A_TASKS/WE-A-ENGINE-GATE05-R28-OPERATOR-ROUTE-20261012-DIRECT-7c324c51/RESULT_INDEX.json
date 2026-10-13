@@ -1,0 +1,26 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51",
+  "wp_id": "WP_ENGINE_GATE05_R28_OPERATOR_ROUTE",
+  "wp_revision": "GATE05-R28-OPERATOR-ROUTE",
+  "envelope": 31,
+  "result_id": "WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-RESULT-01",
+  "status": "COMPLETED",
+  "e1_verdict": "READ_ONLY_CONNECTED_ROUTE_PROPOSAL_NOT_IMPLEMENTED",
+  "generated_at": "2026-10-12T04:58:45+09:00",
+  "execution_metrics": {
+    "production_code_mutations": 0,
+    "compiler_build_calls": 0,
+    "candidate_and_native_execution_calls": 0
+  },
+  "index": {
+    "task_ack": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51\\ACK.json",
+    "preservation_before": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51\\PRESERVATION_BEFORE.json",
+    "preservation_after": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51\\PRESERVATION_AFTER.json",
+    "source_and_il_evidence": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51\\SOURCE_AND_IL_EVIDENCE.json",
+    "producer_and_frontend_route": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51\\PRODUCER_AND_FRONTEND_ROUTE.json",
+    "implementation_patch_proposal": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51\\IMPLEMENTATION_PATCH_PROPOSAL.diff",
+    "implementation_prerequisites": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51\\IMPLEMENTATION_PREREQUISITES.json",
+    "evidence_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51\\EVIDENCE_MANIFEST.json",
+    "technical_report": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\A_ENGINE_GATE05_R28_OPERATOR_ROUTE_REPORT_20261012.md"
+  }
+}

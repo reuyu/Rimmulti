@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="../../WarEconomyMod/Source/Common/**/*.cs" Exclude="../../WarEconomyMod/Source/Common/obj/**/*.cs;../../WarEconomyMod/Source/Common/bin/**/*.cs" />
+    <Compile Include="../../WarEconomyMod/Source/Server/Managers/*.cs" />
+    <Compile Include="../../WarEconomyMod/Source/Server/Network/*.cs" />
+    <Compile Include="../../WarEconomyMod/Source/Server/Time/*.cs" />
+    <Reference Include="Newtonsoft.Json"><HintPath>../../WarEconomyMod/Source/Server/bin/Debug/net8.0/Newtonsoft.Json.dll</HintPath></Reference>
+  </ItemGroup>
+</Project>

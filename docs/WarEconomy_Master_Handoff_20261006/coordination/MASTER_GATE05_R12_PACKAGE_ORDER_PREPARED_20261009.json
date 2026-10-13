@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-09T15:58:50.783724+09:00",
+  "event_id": "WE-A-ENGINE-GATE05-R12-PACKAGE-ORDER-20261009-DIRECT-e9dcd1e6-PREPARED",
+  "type": "A_R12_PACKAGE_ORDER_APPROVED_PREPARED",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R12-PACKAGE-ORDER-20261009-DIRECT-e9dcd1e6",
+  "status": "NOT_SENT",
+  "task_root": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R12-PACKAGE-ORDER-20261009-DIRECT-e9dcd1e6",
+  "counts": {
+    "archive": 19,
+    "prior_candidates": 1251,
+    "pipeline": 206,
+    "qa": 3335,
+    "managed_dependencies": 4
+  },
+  "prior_version_defect": "CLOSED_SCOPED_R9_ONLY",
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "monitor": "PAUSED60MIN"
+}

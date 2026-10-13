@@ -1,0 +1,17 @@
+{
+  "run_id": "MASTER-R38-NORMAL6-COMPLETE-NEXT-20261014-01",
+  "session_id": 97827,
+  "pid": 20900,
+  "release_tool_result": {
+    "chunk_id": "f87ab6",
+    "wall_time_seconds": 0.0000434,
+    "exit_code": 0,
+    "original_token_count": 120,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R38-NORMAL6-COMPLETE-NEXT-20261014-01\",\r\n\u001b[23;80H, \"pid\": 20900, \"locked_at\": \"2026-10-14T05:30:11.205861+09:00\", \"mechanism\": \"Wi\r\n\u001b[23;80Hindows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renew\r\n\u001b[23;80Hwed_at\": \"2026-10-14T05:45:47.695845+09:00\", \"renewal_count\": 9, \"release_reason\"\r\n\u001b[23;80H\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-14T05:46:59.804608+09:00\"} \u001b[24;1H\n\u001b[?9001l\u001b[?1004l"
+  },
+  "full19785_normal6_checker_and19983_R39_checker_completed_before_release": true,
+  "normal6_actual_scoped_PASS_disposed": true,
+  "A_R39_actual_one_CU_SENT_ACK_verified": true,
+  "same_hourly_actual_ACTIVE_verified": true,
+  "no_Engine_native_or_new_R39_runtime_PASS_inherited": true
+}

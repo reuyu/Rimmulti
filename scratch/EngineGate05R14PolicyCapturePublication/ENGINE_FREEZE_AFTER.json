@@ -1,0 +1,52 @@
+{
+  "at": "2026-10-09T12:12:08.0837813Z",
+  "work_package": "WP_ENGINE_GATE05_R14_POLICY_CAPTURE_PUBLICATION",
+  "baseline": "GATE05-R14-POLICY-CAPTURE-PUBLICATION",
+  "files": [
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+      "size": 156431
+    },
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "C2E1572D837A0E698450EC5996ECA7F0E1596DED89F109A7595E8C309008B0F1",
+      "size": 167634
+    },
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "size": 1774
+    },
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "1A19B47232F86C3BA3A8238783EA66ED71AE61E2DB16CF3B3C5162B0F7A6FC5F",
+      "size": 243200
+    },
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "776A277A3B8DA637A641A9289010D224A640412575EE86B15AC3BE897DEABB8A",
+      "size": 61996
+    },
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "B2D6B208E149B5ACDAB32D735DA5FCB8C951CC139AD4001D614FB7ECFFDB4AAD",
+      "size": 230912
+    },
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "33862EC6742DCA9224C5CAEAA64D4433661FC49D83B48BE784C4AF9F7CD5B624",
+      "size": 45472
+    },
+    {
+      "path": "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "1A19B47232F86C3BA3A8238783EA66ED71AE61E2DB16CF3B3C5162B0F7A6FC5F",
+      "size": 243200
+    },
+    {
+      "path": "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "776A277A3B8DA637A641A9289010D224A640412575EE86B15AC3BE897DEABB8A",
+      "size": 61996
+    }
+  ]
+}

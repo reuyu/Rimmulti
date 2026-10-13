@@ -1,0 +1,790 @@
+--- FrozenR17Worker
++++ R18Worker
+@@ -12,6 +12,7 @@
+ using System.Xml;
+ using System.Security.Cryptography;
+ using Newtonsoft.Json;
++using Newtonsoft.Json.Linq;
+ using HarmonyLib;
+ using UnityEngine;
+ using Verse;
+@@ -45,30 +46,47 @@
+         {
+             try
+             {
+-                // Gate05-R17: Check for operator startup config file parameter BEFORE component attach
+-                if (GenCommandLine.TryGetCommandLineArg("operatorconfig", out string configPath) && !string.IsNullOrWhiteSpace(configPath))
+-                {
+-                    try
++                // Gate05-R18: Connected trusted operator startup gate (M01..M03)
++                bool hasConfigArg = GenCommandLine.TryGetCommandLineArg("operatorconfig", out string configPath) && !string.IsNullOrWhiteSpace(configPath);
++                bool hasShaArg = GenCommandLine.TryGetCommandLineArg("operatorconfigsha", out string expectedSha) && !string.IsNullOrWhiteSpace(expectedSha);
++
++                if (hasConfigArg)
++                {
++                    if (!hasShaArg)
+                     {
+-                        if (File.Exists(configPath))
+-                        {
+-                            string configJson = File.ReadAllText(configPath);
+-                            var configObj = JsonConvert.DeserializeObject<OperatorStartupConfig>(configJson);
+-                            if (configObj != null)
+-                            {
+-                                WorkerBridgeComponent.ConfigureOperatorStartup(configObj);
+-                                Log.Message($"[WorkerBridge] Loaded operator startup config from '{configPath}' (Id='{configObj.configId}', Role='{configObj.role}')");
+-                            }
+-                        }
+-                        else
+-                        {
+-                            Log.Warning($"[WorkerBridge] Operator config file not found at '{configPath}'");
+-                        }
++                        Log.Error("[WorkerBridge] Missing required '-operatorconfigsha' CLI argument for operator config (Fail-Closed). Component will NOT attach.");
++                        return;
+                     }
+-                    catch (Exception ex)
++
++                    var descriptor = new OperatorLaunchDescriptor();
++                    if (GenCommandLine.TryGetCommandLineArg("operatorrole", out string role) && !string.IsNullOrWhiteSpace(role))
+                     {
+-                        Log.Error($"[WorkerBridge] Failed to load operator config from '{configPath}': {ex.Message}");
++                        descriptor.expectedRole = role.Trim();
+                     }
++                    if (GenCommandLine.TryGetCommandLineArg("operatorconfigid", out string cfgId) && !string.IsNullOrWhiteSpace(cfgId))
++                    {
++                        descriptor.expectedConfigId = cfgId.Trim();
++                    }
++
++                    var admission = OperatorStartupConfigAdmissionFactory.AdmitConfigFile(configPath, expectedSha, descriptor);
++                    if (!admission.isValid || admission.snapshot == null)
++                    {
++                        Log.Error($"[WorkerBridge] Operator config admission failed (Fail-Closed): {admission.error}. Component will NOT attach.");
++                        return;
++                    }
++
++                    bool installed = WorkerBridgeComponent.TryInstallOperatorStartupConfig(admission.snapshot);
++                    if (!installed)
++                    {
++                        Log.Error("[WorkerBridge] Failed to install operator startup config (already installed or sealed). Component will NOT attach.");
++                        return;
++                    }
++
++                    Log.Message($"[WorkerBridge] Successfully admitted and installed operator startup config from '{configPath}' (Id='{admission.snapshot.ConfigId}', Role='{admission.snapshot.Role}')");
++                }
++                else
++                {
++                    Log.Warning("[WorkerBridge] No operator startup config provided via '-operatorconfig'. Component starting in unadmitted legacy state (Fail-Closed for trusted operations).");
+                 }
+ 
+                 Log.Message("[WorkerBridge] StaticConstructorOnStartup fired. Attaching GameObject...");
+@@ -357,25 +375,26 @@
+     {
+         public static string? CustomSaveDataPathOverride = null;
+ 
+-        // Gate05-R17: Private immutable operator startup config snapshot
++        // Gate05-R18: Sealed operator-owned startup configuration (M01..M03)
+         private static OperatorStartupConfigSnapshot? _activeStartupConfig = null;
++        private static bool _operatorConfigSealed = false;
++        private static readonly object _configLock = new object();
+ 
+         public static OperatorStartupConfigSnapshot? ActiveStartupConfig => _activeStartupConfig;
+ 
+-        public static void ConfigureOperatorStartup(OperatorStartupConfig config)
+-        {
+-            if (config == null) throw new ArgumentNullException(nameof(config));
+-            _activeStartupConfig = config.ToSnapshot();
+-        }
+-
+-        public static void ConfigureOperatorStartup(OperatorStartupConfigSnapshot snapshot)
+-        {
+-            _activeStartupConfig = snapshot ?? throw new ArgumentNullException(nameof(snapshot));
+-        }
+-
+-        public static void ResetOperatorStartupConfig()
+-        {
+-            _activeStartupConfig = null;
++        internal static bool TryInstallOperatorStartupConfig(OperatorStartupConfigSnapshot snapshot)
++        {
++            if (snapshot == null) return false;
++            lock (_configLock)
++            {
++                if (_operatorConfigSealed || _activeStartupConfig != null)
++                {
++                    return false;
++                }
++                _activeStartupConfig = snapshot;
++                _operatorConfigSealed = true;
++                return true;
++            }
+         }
+ 
+         public static string SafeSaveDataFolderPath
+@@ -434,41 +453,9 @@
+         private string lastStagedPath = "";
+         private string lastStagedSha = "";
+ 
+-        // G05-S01 / Gate05-R2 / Gate05-R4 / Gate05-R17: Operator-launched and owned fresh validator process instance
+-        private static string _admittedOperatorValidatorExecutable = "";
+-        private static string _admittedOperatorValidatorSha = "";
+-
+-        public static string AdmittedOperatorValidatorExecutable
+-        {
+-            get
+-            {
+-                if (_activeStartupConfig != null)
+-                {
+-                    return _activeStartupConfig.AdmittedValidatorExecutablePath;
+-                }
+-                return _admittedOperatorValidatorExecutable;
+-            }
+-            set
+-            {
+-                _admittedOperatorValidatorExecutable = value;
+-            }
+-        }
+-
+-        public static string AdmittedOperatorValidatorSha
+-        {
+-            get
+-            {
+-                if (_activeStartupConfig != null)
+-                {
+-                    return _activeStartupConfig.AdmittedValidatorExecutableSha256;
+-                }
+-                return _admittedOperatorValidatorSha;
+-            }
+-            set
+-            {
+-                _admittedOperatorValidatorSha = value;
+-            }
+-        }
++        // G05-S01 / Gate05-R2 / Gate05-R4 / Gate05-R17 / Gate05-R18: Operator-launched and owned fresh validator process instance
++        public static string AdmittedOperatorValidatorExecutable => _activeStartupConfig?.AdmittedValidatorExecutablePath ?? "";
++        public static string AdmittedOperatorValidatorSha => _activeStartupConfig?.AdmittedValidatorExecutableSha256 ?? "";
+ 
+         private Process? operatorLaunchedValidatorProcess = null;
+         private int operatorLaunchedValidatorPid = 0;
+@@ -542,10 +529,15 @@
+                 // Subscribe to Unity log callback for post-load error gating
+                 Application.logMessageReceived += HandleUnityLogMessage;
+ 
+-                // Gate05-R17: If operator startup config is present, configure expected package policy BEFORE profile evaluation
+-                if (_activeStartupConfig != null && _activeStartupConfig.ExpectedPackagePolicyDeclaration != null)
+-                {
+-                    ContentProfileProvider.ConfigureExpectedPackagePolicy(_activeStartupConfig.ExpectedPackagePolicyDeclaration);
++                // Gate05-R18: Connected trusted missing/default gate (M03)
++                if (_activeStartupConfig == null)
++                {
++                    RevokeReadiness("Trusted operator startup configuration is missing or unadmitted (Fail-Closed).");
++                    Log.Warning("[WorkerBridge] Awake: Trusted operator startup config is missing or unadmitted (Fail-Closed).");
++                }
++                else
++                {
++                    ContentProfileProvider.ConfigureExpectedPackagePolicy(_activeStartupConfig.GetExpectedPackagePolicyDeclaration());
+                     Log.Message($"[WorkerBridge] Operator startup config applied in Awake: ConfigId='{_activeStartupConfig.ConfigId}', Role='{_activeStartupConfig.Role}', UserData='{_activeStartupConfig.WorkerUserDataDirectory}'");
+                 }
+ 
+@@ -2198,20 +2190,17 @@
+                 string baseArgs;
+                 string workingDir;
+ 
+-                if (_activeStartupConfig != null)
+-                {
+-                    exePath = _activeStartupConfig.AdmittedValidatorExecutablePath;
+-                    exeExpectedSha = _activeStartupConfig.AdmittedValidatorExecutableSha256;
+-                    baseArgs = _activeStartupConfig.ValidatorArguments;
+-                    workingDir = _activeStartupConfig.ValidatorCwd;
+-                }
+-                else
+-                {
+-                    exePath = AdmittedOperatorValidatorExecutable;
+-                    exeExpectedSha = AdmittedOperatorValidatorSha;
+-                    baseArgs = "";
+-                    workingDir = "";
+-                }
++                // Gate05-R18: Require admitted operator config strictly (Fail-Closed, M03)
++                if (_activeStartupConfig == null)
++                {
++                    RevokeReadiness("No admitted operator startup configuration active (Fail-Closed).");
++                    return "ERROR: No admitted operator startup configuration active.";
++                }
++
++                exePath = _activeStartupConfig.AdmittedValidatorExecutablePath;
++                exeExpectedSha = _activeStartupConfig.AdmittedValidatorExecutableSha256;
++                baseArgs = _activeStartupConfig.ValidatorArguments;
++                workingDir = _activeStartupConfig.ValidatorCwd;
+ 
+                 if (string.IsNullOrWhiteSpace(exePath) || string.IsNullOrWhiteSpace(exeExpectedSha))
+                 {
+@@ -2327,8 +2316,15 @@
+                 return "ERROR: Self-validation prohibited.";
+             }
+ 
+-            string admittedExe = _activeStartupConfig != null ? _activeStartupConfig.AdmittedValidatorExecutablePath : AdmittedOperatorValidatorExecutable;
+-            string admittedSha = _activeStartupConfig != null ? _activeStartupConfig.AdmittedValidatorExecutableSha256 : AdmittedOperatorValidatorSha;
++            // Gate05-R18: Require admitted operator config strictly (Fail-Closed, M03)
++            if (_activeStartupConfig == null)
++            {
++                comp.RevokeReadiness("BindOperatorLaunchedProcess rejected: No admitted operator startup configuration active (Fail-Closed).");
++                return "ERROR: No admitted operator startup configuration active.";
++            }
++
++            string admittedExe = _activeStartupConfig.AdmittedValidatorExecutablePath;
++            string admittedSha = _activeStartupConfig.AdmittedValidatorExecutableSha256;
+ 
+             if (string.IsNullOrWhiteSpace(admittedExe) || string.IsNullOrWhiteSpace(admittedSha))
+             {
+@@ -3411,7 +3407,7 @@
+         }
+     }
+ 
+-    #region Gate05-R17: Operator-Owned Normal Startup & Executable Admission
++    #region Gate05-R18: Operator-Owned Normal Startup & Config Admission Seal
+ 
+     public class OperatorStartupConfig
+     {
+@@ -3448,77 +3444,174 @@
+         public string ValidatorUserDataDirectory { get; }
+         public string WorkerCwd { get; }
+         public string ValidatorCwd { get; }
+-        public ExpectedPackagePolicyDeclaration ExpectedPackagePolicyDeclaration { get; }
+         public string ExpectedContentProfileFingerprint { get; }
+         public string Role { get; }
+         public string CapabilityBoundary { get; }
+         public string IssuedAtUtc { get; }
+ 
++        private readonly string _policySchemaVersion;
++        private readonly string _policyId;
++        private readonly string _policyRevision;
++        private readonly string[] _policyAdmittedPackageIds;
++
++        public ExpectedPackagePolicyDeclaration ExpectedPackagePolicyDeclaration => GetExpectedPackagePolicyDeclaration();
++
++        public ExpectedPackagePolicyDeclaration GetExpectedPackagePolicyDeclaration()
++        {
++            return new ExpectedPackagePolicyDeclaration
++            {
++                schemaVersion = _policySchemaVersion,
++                policyId = _policyId,
++                revision = _policyRevision,
++                admittedPackageIds = new List<string>(_policyAdmittedPackageIds)
++            };
++        }
++
++        public ExpectedPackagePolicyRecord GetExpectedPackagePolicyRecord()
++        {
++            return GetExpectedPackagePolicyDeclaration().ToRecord();
++        }
++
++        public IReadOnlyList<string> PolicyAdmittedPackageIds => Array.AsReadOnly(_policyAdmittedPackageIds);
++
+         public OperatorStartupConfigSnapshot(OperatorStartupConfig config)
+         {
+             if (config == null) throw new ArgumentNullException(nameof(config));
++
+             if (string.IsNullOrEmpty(config.schemaVersion) || config.schemaVersion != OperatorStartupConfig.BOOTSTRAP_SCHEMA_VERSION)
+             {
+                 throw new InvalidOperationException($"Invalid bootstrap schema version: '{config.schemaVersion}'. Expected '{OperatorStartupConfig.BOOTSTRAP_SCHEMA_VERSION}'.");
+             }
++            if (string.IsNullOrWhiteSpace(config.configId))
++            {
++                throw new InvalidOperationException("ConfigId cannot be null or whitespace.");
++            }
+             if (string.IsNullOrEmpty(config.role) || (config.role != "SIMULATION" && config.role != "READ_ONLY"))
+             {
+                 throw new InvalidOperationException($"Invalid role: '{config.role}'. Role must be 'SIMULATION' or 'READ_ONLY'.");
+             }
++
++            // Raw path validation before normalization (M02)
+             if (string.IsNullOrWhiteSpace(config.admittedValidatorExecutablePath))
+             {
+-                throw new InvalidOperationException("Admitted validator executable path cannot be null or empty.");
++                throw new InvalidOperationException("Admitted validator executable path cannot be null or whitespace.");
++            }
++            if (!Path.IsPathRooted(config.admittedValidatorExecutablePath))
++            {
++                throw new InvalidOperationException("Admitted validator executable path must be a raw rooted absolute path.");
+             }
+             string normalizedExe = Path.GetFullPath(config.admittedValidatorExecutablePath.Trim());
+-            if (!Path.IsPathRooted(normalizedExe))
+-            {
+-                throw new InvalidOperationException("Admitted validator executable path must be an absolute path.");
+-            }
++
+             if (string.IsNullOrWhiteSpace(config.admittedValidatorExecutableSha256) || config.admittedValidatorExecutableSha256.Trim().Length != 64)
+             {
+                 throw new InvalidOperationException("Admitted validator executable SHA256 must be a valid 64-character hex string.");
+             }
++            if (!OperatorStartupConfigAdmissionFactory.Is64AsciiHex(config.admittedValidatorExecutableSha256.Trim()))
++            {
++                throw new InvalidOperationException("Admitted validator executable SHA256 contains invalid hex characters.");
++            }
++
+             if (string.IsNullOrWhiteSpace(config.workerUserDataDirectory))
+             {
+-                throw new InvalidOperationException("Worker userdata directory cannot be null or empty.");
+-            }
++                throw new InvalidOperationException("Worker userdata directory cannot be null or whitespace.");
++            }
++            if (!Path.IsPathRooted(config.workerUserDataDirectory))
++            {
++                throw new InvalidOperationException("Worker userdata directory must be a raw rooted absolute path.");
++            }
++
+             if (string.IsNullOrWhiteSpace(config.validatorUserDataDirectory))
+             {
+-                throw new InvalidOperationException("Validator userdata directory cannot be null or empty.");
+-            }
++                throw new InvalidOperationException("Validator userdata directory cannot be null or whitespace.");
++            }
++            if (!Path.IsPathRooted(config.validatorUserDataDirectory))
++            {
++                throw new InvalidOperationException("Validator userdata directory must be a raw rooted absolute path.");
++            }
++
+             string normWorkerData = Path.GetFullPath(config.workerUserDataDirectory.Trim());
+             string normValidatorData = Path.GetFullPath(config.validatorUserDataDirectory.Trim());
+             if (string.Equals(normWorkerData, normValidatorData, StringComparison.OrdinalIgnoreCase))
+             {
+                 throw new InvalidOperationException("Worker and validator userdata directories must be distinct isolated locations.");
+             }
++
++            if (string.IsNullOrWhiteSpace(config.workerCwd))
++            {
++                throw new InvalidOperationException("Worker CWD cannot be null or whitespace.");
++            }
++            if (!Path.IsPathRooted(config.workerCwd))
++            {
++                throw new InvalidOperationException("Worker CWD must be a raw rooted absolute path.");
++            }
++
++            if (string.IsNullOrWhiteSpace(config.validatorCwd))
++            {
++                throw new InvalidOperationException("Validator CWD cannot be null or whitespace.");
++            }
++            if (!Path.IsPathRooted(config.validatorCwd))
++            {
++                throw new InvalidOperationException("Validator CWD must be a raw rooted absolute path.");
++            }
++
++            if (string.IsNullOrWhiteSpace(config.capabilityBoundary))
++            {
++                throw new InvalidOperationException("Capability boundary cannot be null or whitespace.");
++            }
++
++            if (string.IsNullOrWhiteSpace(config.issuedAtUtc))
++            {
++                throw new InvalidOperationException("IssuedAtUtc cannot be null or whitespace (auto-filling with UtcNow is prohibited).");
++            }
++            if (!DateTime.TryParse(config.issuedAtUtc, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.RoundtripKind, out _))
++            {
++                throw new InvalidOperationException($"IssuedAtUtc '{config.issuedAtUtc}' is not a valid ISO 8601 UTC date string.");
++            }
++
++            if (string.IsNullOrWhiteSpace(config.expectedContentProfileFingerprint))
++            {
++                throw new InvalidOperationException("Expected content profile fingerprint cannot be null or whitespace.");
++            }
++
+             if (config.expectedPackagePolicyDeclaration == null)
+             {
+                 throw new InvalidOperationException("Expected package policy declaration cannot be null.");
+             }
++            if (string.IsNullOrWhiteSpace(config.expectedPackagePolicyDeclaration.schemaVersion))
++            {
++                throw new InvalidOperationException("Expected package policy declaration schemaVersion cannot be null or empty.");
++            }
++            if (string.IsNullOrWhiteSpace(config.expectedPackagePolicyDeclaration.policyId))
++            {
++                throw new InvalidOperationException("Expected package policy declaration policyId cannot be null or empty.");
++            }
++            if (string.IsNullOrWhiteSpace(config.expectedPackagePolicyDeclaration.revision))
++            {
++                throw new InvalidOperationException("Expected package policy declaration revision cannot be null or empty.");
++            }
++            if (config.expectedPackagePolicyDeclaration.admittedPackageIds == null)
++            {
++                throw new InvalidOperationException("Expected package policy declaration admittedPackageIds cannot be null.");
++            }
+ 
+             SchemaVersion = config.schemaVersion;
+-            ConfigId = config.configId ?? "";
++            ConfigId = config.configId.Trim();
+             AdmittedValidatorExecutablePath = normalizedExe;
+             AdmittedValidatorExecutableSha256 = config.admittedValidatorExecutableSha256.Trim().ToUpperInvariant();
+             ValidatorArguments = config.validatorArguments ?? "";
+             WorkerUserDataDirectory = normWorkerData;
+             ValidatorUserDataDirectory = normValidatorData;
+-            WorkerCwd = string.IsNullOrWhiteSpace(config.workerCwd) ? "" : Path.GetFullPath(config.workerCwd.Trim());
+-            ValidatorCwd = string.IsNullOrWhiteSpace(config.validatorCwd) ? "" : Path.GetFullPath(config.validatorCwd.Trim());
+-
+-            ExpectedPackagePolicyDeclaration = new ExpectedPackagePolicyDeclaration
+-            {
+-                schemaVersion = config.expectedPackagePolicyDeclaration.schemaVersion,
+-                policyId = config.expectedPackagePolicyDeclaration.policyId,
+-                revision = config.expectedPackagePolicyDeclaration.revision,
+-                admittedPackageIds = new List<string>(config.expectedPackagePolicyDeclaration.admittedPackageIds ?? new List<string>())
+-            };
+-
+-            ExpectedContentProfileFingerprint = config.expectedContentProfileFingerprint ?? "";
++            WorkerCwd = Path.GetFullPath(config.workerCwd.Trim());
++            ValidatorCwd = Path.GetFullPath(config.validatorCwd.Trim());
++            ExpectedContentProfileFingerprint = config.expectedContentProfileFingerprint.Trim();
+             Role = config.role;
+-            CapabilityBoundary = config.capabilityBoundary ?? "LOCAL_SANDBOXED";
+-            IssuedAtUtc = string.IsNullOrWhiteSpace(config.issuedAtUtc) ? DateTime.UtcNow.ToString("O") : config.issuedAtUtc;
++            CapabilityBoundary = config.capabilityBoundary.Trim();
++            IssuedAtUtc = config.issuedAtUtc.Trim();
++
++            _policySchemaVersion = config.expectedPackagePolicyDeclaration.schemaVersion.Trim();
++            _policyId = config.expectedPackagePolicyDeclaration.policyId.Trim();
++            _policyRevision = config.expectedPackagePolicyDeclaration.revision.Trim();
++            _policyAdmittedPackageIds = config.expectedPackagePolicyDeclaration.admittedPackageIds.ToArray();
+         }
+ 
+         public string ToRedactedJson()
+@@ -3536,16 +3629,341 @@
+                 validatorCwd = ValidatorCwd,
+                 expectedPackagePolicyDeclaration = new
+                 {
+-                    ExpectedPackagePolicyDeclaration.schemaVersion,
+-                    ExpectedPackagePolicyDeclaration.policyId,
+-                    ExpectedPackagePolicyDeclaration.revision,
+-                    ExpectedPackagePolicyDeclaration.admittedPackageIds
++                    schemaVersion = _policySchemaVersion,
++                    policyId = _policyId,
++                    revision = _policyRevision,
++                    admittedPackageIds = _policyAdmittedPackageIds
+                 },
+                 expectedContentProfileFingerprint = ExpectedContentProfileFingerprint,
+                 capabilityBoundary = CapabilityBoundary,
+                 issuedAtUtc = IssuedAtUtc
+             };
+             return JsonConvert.SerializeObject(redacted, Newtonsoft.Json.Formatting.Indented);
++        }
++    }
++
++    public class OperatorLaunchDescriptor
++    {
++        public string originId = "LOCAL_OPERATOR_LAUNCH";
++        public string expectedConfigId = "";
++        public string expectedRole = "SIMULATION";
++        public string expectedCapabilityBoundary = "LOCAL_SANDBOXED";
++        public string launchPlanId = "WE-LAUNCH-PLAN-V1";
++    }
++
++    public static class OperatorStartupConfigAdmissionFactory
++    {
++        public static bool Is64AsciiHex(string? s)
++        {
++            if (s == null || s.Length != 64) return false;
++            for (int i = 0; i < s.Length; i++)
++            {
++                char c = s[i];
++                bool isHex = (c >= '0' && c <= '9') || (c >= 'a' && c <= 'f') || (c >= 'A' && c <= 'F');
++                if (!isHex) return false;
++            }
++            return true;
++        }
++
++        public static (bool isValid, string error, OperatorStartupConfigSnapshot? snapshot) AdmitConfigFile(
++            string configPath,
++            string expectedConfigSha256,
++            OperatorLaunchDescriptor? descriptor = null)
++        {
++            if (string.IsNullOrWhiteSpace(configPath))
++            {
++                return (false, "Config path cannot be null or whitespace.", null);
++            }
++            if (!Path.IsPathRooted(configPath))
++            {
++                return (false, "Config path must be a raw rooted absolute path.", null);
++            }
++            string normalizedPath;
++            try
++            {
++                normalizedPath = Path.GetFullPath(configPath.Trim());
++            }
++            catch (Exception ex)
++            {
++                return (false, $"Invalid config path: {ex.Message}", null);
++            }
++            if (!File.Exists(normalizedPath))
++            {
++                return (false, $"Operator config file not found at '{normalizedPath}'.", null);
++            }
++
++            byte[] rawBytes;
++            try
++            {
++                rawBytes = File.ReadAllBytes(normalizedPath);
++            }
++            catch (Exception ex)
++            {
++                return (false, $"Failed to read operator config file: {ex.Message}", null);
++            }
++
++            return AdmitConfigBytes(rawBytes, normalizedPath, expectedConfigSha256, descriptor);
++        }
++
++        public static (bool isValid, string error, OperatorStartupConfigSnapshot? snapshot) AdmitConfigBytes(
++            byte[] rawBytes,
++            string configPath,
++            string expectedConfigSha256,
++            OperatorLaunchDescriptor? descriptor = null)
++        {
++            if (rawBytes == null || rawBytes.Length == 0)
++            {
++                return (false, "Raw config bytes cannot be null or empty.", null);
++            }
++            if (string.IsNullOrWhiteSpace(expectedConfigSha256) || expectedConfigSha256.Trim().Length != 64)
++            {
++                return (false, "Expected config SHA256 must be a 64-character hex string.", null);
++            }
++            if (!Is64AsciiHex(expectedConfigSha256.Trim()))
++            {
++                return (false, "Expected config SHA256 contains invalid hex characters.", null);
++            }
++
++            // 1. Verify byte SHA256 BEFORE deserialization
++            string actualSha;
++            using (var sha = SHA256.Create())
++            {
++                byte[] hash = sha.ComputeHash(rawBytes);
++                var sb = new StringBuilder(hash.Length * 2);
++                for (int i = 0; i < hash.Length; i++)
++                {
++                    sb.Append(hash[i].ToString("X2"));
++                }
++                actualSha = sb.ToString();
++            }
++
++            if (!string.Equals(actualSha, expectedConfigSha256.Trim(), StringComparison.OrdinalIgnoreCase))
++            {
++                return (false, $"Config byte SHA256 mismatch before admission. Expected='{expectedConfigSha256.Trim().ToUpperInvariant()}', Observed='{actualSha}'.", null);
++            }
++
++            // 2. Strict parse UTF-8 JSON
++            string json;
++            try
++            {
++                if (rawBytes.Length >= 3 && rawBytes[0] == 0xEF && rawBytes[1] == 0xBB && rawBytes[2] == 0xBF)
++                {
++                    json = Encoding.UTF8.GetString(rawBytes, 3, rawBytes.Length - 3);
++                }
++                else
++                {
++                    json = Encoding.UTF8.GetString(rawBytes);
++                }
++                json = json.TrimStart('\uFEFF');
++            }
++            catch (Exception ex)
++            {
++                return (false, $"Failed to decode config bytes as UTF-8: {ex.Message}", null);
++            }
++
++            var parseResult = ParseStrict(json);
++            if (!parseResult.isValid || parseResult.config == null)
++            {
++                return (false, $"Strict config parsing failed: {parseResult.error}", null);
++            }
++
++            var config = parseResult.config;
++
++            // 3. Bind launch descriptor if provided
++            if (descriptor != null)
++            {
++                if (!string.IsNullOrEmpty(descriptor.expectedRole) &&
++                    !string.Equals(config.role, descriptor.expectedRole, StringComparison.OrdinalIgnoreCase))
++                {
++                    return (false, $"Launch descriptor role mismatch. Expected='{descriptor.expectedRole}', Observed='{config.role}'.", null);
++                }
++                if (!string.IsNullOrEmpty(descriptor.expectedConfigId) &&
++                    !string.Equals(config.configId, descriptor.expectedConfigId, StringComparison.Ordinal))
++                {
++                    return (false, $"Launch descriptor configId mismatch. Expected='{descriptor.expectedConfigId}', Observed='{config.configId}'.", null);
++                }
++                if (!string.IsNullOrEmpty(descriptor.expectedCapabilityBoundary) &&
++                    !string.Equals(config.capabilityBoundary, descriptor.expectedCapabilityBoundary, StringComparison.OrdinalIgnoreCase))
++                {
++                    return (false, $"Launch descriptor capabilityBoundary mismatch. Expected='{descriptor.expectedCapabilityBoundary}', Observed='{config.capabilityBoundary}'.", null);
++                }
++            }
++
++            // 4. Construct deeply immutable snapshot with semantic validation
++            OperatorStartupConfigSnapshot snapshot;
++            try
++            {
++                snapshot = new OperatorStartupConfigSnapshot(config);
++            }
++            catch (Exception ex)
++            {
++                return (false, $"Snapshot construction validation failed: {ex.Message}", null);
++            }
++
++            return (true, string.Empty, snapshot);
++        }
++
++        public static (bool isValid, string error, OperatorStartupConfig? config) ParseStrict(string json)
++        {
++            if (string.IsNullOrWhiteSpace(json))
++            {
++                return (false, "Config JSON is null or whitespace.", null);
++            }
++
++            var loadSettings = new JsonLoadSettings
++            {
++                DuplicatePropertyNameHandling = DuplicatePropertyNameHandling.Error
++            };
++
++            JObject root;
++            try
++            {
++                using (var sr = new StringReader(json))
++                using (var jr = new JsonTextReader(sr) { DateParseHandling = DateParseHandling.None })
++                {
++                    root = JObject.Load(jr, loadSettings);
++                }
++            }
++            catch (Exception ex)
++            {
++                return (false, $"JSON syntactic/duplicate property error: {ex.Message}", null);
++            }
++
++            var expectedRootProps = new HashSet<string>(StringComparer.Ordinal)
++            {
++                "schemaVersion",
++                "configId",
++                "role",
++                "admittedValidatorExecutablePath",
++                "admittedValidatorExecutableSha256",
++                "validatorArguments",
++                "workerUserDataDirectory",
++                "validatorUserDataDirectory",
++                "workerCwd",
++                "validatorCwd",
++                "capabilityBoundary",
++                "issuedAtUtc",
++                "expectedContentProfileFingerprint",
++                "expectedPackagePolicyDeclaration"
++            };
++
++            foreach (var prop in root.Properties())
++            {
++                if (!expectedRootProps.Contains(prop.Name))
++                {
++                    return (false, $"Unknown root property '{prop.Name}' in config JSON.", null);
++                }
++            }
++
++            foreach (var required in expectedRootProps)
++            {
++                if (root.Property(required) == null)
++                {
++                    return (false, $"Missing required property '{required}' in config JSON.", null);
++                }
++            }
++
++            string GetRequiredString(string propName)
++            {
++                var p = root.Property(propName)!;
++                if (p.Value.Type != JTokenType.String && p.Value.Type != JTokenType.Date)
++                {
++                    throw new InvalidOperationException($"Property '{propName}' must be a String token (observed {p.Value.Type}).");
++                }
++                return p.Value.Type == JTokenType.Date
++                    ? ((DateTime)p.Value).ToUniversalTime().ToString("O")
++                    : (string)p.Value!;
++            }
++
++            var config = new OperatorStartupConfig();
++            try
++            {
++                config.schemaVersion = GetRequiredString("schemaVersion");
++                config.configId = GetRequiredString("configId");
++                config.role = GetRequiredString("role");
++                config.admittedValidatorExecutablePath = GetRequiredString("admittedValidatorExecutablePath");
++                config.admittedValidatorExecutableSha256 = GetRequiredString("admittedValidatorExecutableSha256");
++                config.validatorArguments = GetRequiredString("validatorArguments");
++                config.workerUserDataDirectory = GetRequiredString("workerUserDataDirectory");
++                config.validatorUserDataDirectory = GetRequiredString("validatorUserDataDirectory");
++                config.workerCwd = GetRequiredString("workerCwd");
++                config.validatorCwd = GetRequiredString("validatorCwd");
++                config.capabilityBoundary = GetRequiredString("capabilityBoundary");
++                config.issuedAtUtc = GetRequiredString("issuedAtUtc");
++                config.expectedContentProfileFingerprint = GetRequiredString("expectedContentProfileFingerprint");
++
++                var policyProp = root.Property("expectedPackagePolicyDeclaration")!;
++                if (policyProp.Value.Type != JTokenType.Object)
++                {
++                    return (false, $"Property 'expectedPackagePolicyDeclaration' must be an Object token (observed {policyProp.Value.Type}).", null);
++                }
++
++                var policyObj = (JObject)policyProp.Value;
++                var expectedPolicyProps = new HashSet<string>(StringComparer.Ordinal)
++                {
++                    "schemaVersion",
++                    "policyId",
++                    "revision",
++                    "admittedPackageIds"
++                };
++
++                foreach (var prop in policyObj.Properties())
++                {
++                    if (!expectedPolicyProps.Contains(prop.Name))
++                    {
++                        return (false, $"Unknown property '{prop.Name}' in expectedPackagePolicyDeclaration.", null);
++                    }
++                }
++
++                foreach (var required in expectedPolicyProps)
++                {
++                    if (policyObj.Property(required) == null)
++                    {
++                        return (false, $"Missing required property '{required}' in expectedPackagePolicyDeclaration.", null);
++                    }
++                }
++
++                var pSchema = policyObj.Property("schemaVersion")!;
++                if (pSchema.Value.Type != JTokenType.String)
++                    return (false, "Policy 'schemaVersion' must be a String token.", null);
++
++                var pId = policyObj.Property("policyId")!;
++                if (pId.Value.Type != JTokenType.String)
++                    return (false, "Policy 'policyId' must be a String token.", null);
++
++                var pRev = policyObj.Property("revision")!;
++                if (pRev.Value.Type != JTokenType.String && pRev.Value.Type != JTokenType.Integer)
++                    return (false, "Policy 'revision' must be a String or Integer token.", null);
++
++                var pPkgs = policyObj.Property("admittedPackageIds")!;
++                if (pPkgs.Value.Type != JTokenType.Array)
++                    return (false, "Policy 'admittedPackageIds' must be an Array token.", null);
++
++                var pkgsArray = (JArray)pPkgs.Value;
++                var pkgList = new List<string>();
++                for (int i = 0; i < pkgsArray.Count; i++)
++                {
++                    if (pkgsArray[i].Type != JTokenType.String)
++                    {
++                        return (false, $"Element {i} in 'admittedPackageIds' must be a String token.", null);
++                    }
++                    pkgList.Add((string)pkgsArray[i]!);
++                }
++
++                config.expectedPackagePolicyDeclaration = new ExpectedPackagePolicyDeclaration
++                {
++                    schemaVersion = (string)pSchema.Value!,
++                    policyId = (string)pId.Value!,
++                    revision = pRev.Value.ToString(),
++                    admittedPackageIds = pkgList
++                };
++            }
++            catch (Exception ex)
++            {
++                return (false, $"Property validation error: {ex.Message}", null);
++            }
++
++            return (true, string.Empty, config);
+         }
+     }
+ 

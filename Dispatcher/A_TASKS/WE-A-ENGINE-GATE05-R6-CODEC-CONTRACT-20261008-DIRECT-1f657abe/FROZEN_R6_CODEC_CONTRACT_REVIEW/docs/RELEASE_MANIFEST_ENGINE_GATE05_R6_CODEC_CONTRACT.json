@@ -1,0 +1,102 @@
+{
+  "manifest_version": "1.0",
+  "work_package": "WP_ENGINE_GATE05_R6_CODEC_CONTRACT",
+  "candidate_lineage": "GATE05-R6-CODEC-CONTRACT",
+  "created_at_utc": "2026-10-08T10:37:05.611780+00:00",
+  "agent_role": "Antigravity A",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R6-CODEC-CONTRACT-20261008-DIRECT-1f657abe",
+  "selected_candidate": {
+    "configuration": "Debug",
+    "target_framework": "net472",
+    "dll_path": "scratch/WorkerBridgeMod/Source/bin/Debug/net472/WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "721807FF00245B5B56DD94220531DB5DF620933E5905ADF692FC6336DD402E9B",
+    "dll_bytes": 215040,
+    "pdb_path": "scratch/WorkerBridgeMod/Source/bin/Debug/net472/WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "47FA9E93D5768175BF61EAB204CB4ED1BF6B45194407AA536F363B3497671C63",
+    "pdb_bytes": 52280,
+    "mvid": "b3481641-2711-4b0e-96dd-db0983c2b689"
+  },
+  "alternate_candidate": {
+    "configuration": "Release",
+    "target_framework": "net472",
+    "dll_path": "scratch/WorkerBridgeMod/Source/bin/Release/net472/WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "2E6D66A16D2932155261034915E23B74B1BD73A0D28EE3D9F447A67152E2D3BC",
+    "dll_bytes": 205312,
+    "pdb_path": "scratch/WorkerBridgeMod/Source/bin/Release/net472/WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "3FF4D9F3ECF99D54857FD95A033CCDCE21786BE5722032A9DE5A46875B98C1BE",
+    "pdb_bytes": 39032,
+    "mvid": "354737fd-10a8-4160-8307-3e186c2118e6"
+  },
+  "source_files": [
+    {
+      "path": "scratch/WorkerBridgeMod/Source/WorkerBridge.cs",
+      "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+      "bytes": 156431
+    },
+    {
+      "path": "scratch/WorkerBridgeMod/Source/EngineHostCensus.cs",
+      "sha256": "E94EA163BD6041C1ACA057D7E698277C0165E7F535FBCDBB765F3F68929348B5",
+      "bytes": 112873,
+      "prefix_marker": "    public static class ContentProfileProvider",
+      "prefix_length": 72547,
+      "prefix_sha256": "F3C4F865F1E2A898BF240A2D096195870D77A52408CF2D93664FE15092A2A887"
+    },
+    {
+      "path": "scratch/WorkerBridgeMod/Source/WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    }
+  ],
+  "verification_evidence": {
+    "runner_project": {
+      "path": "scratch/EngineGate05R6CodecContract/Harness/Gate05R6CodecRunner.csproj",
+      "sha256": "34ACA53429F1592AE290BCD7EE3FDB5EA3E8F744CB552B44E8AB499475B58F94",
+      "bytes": 1645
+    },
+    "runner_source": {
+      "path": "scratch/EngineGate05R6CodecContract/Harness/Program.cs",
+      "sha256": "42576C0B84248ECC385F0FA95229A14698541436119471A325E432FBEEBD4596",
+      "bytes": 33446
+    },
+    "results_json": {
+      "path": "scratch/EngineGate05R6CodecContract/results.json",
+      "sha256": "CC81978C27C151C3CDBCFD53D1B562064DE6D86AA042469152BC2559F3F1A084",
+      "bytes": 3994
+    },
+    "raw_console_log": {
+      "path": "scratch/EngineGate05R6CodecContract/raw_console.txt",
+      "sha256": "0CBA59FD2B5744AA755AC68C2E87C3DCEE03E0F118D6AC72BFDE285E93B5A3A6",
+      "bytes": 2942
+    },
+    "pre_run_manifest": {
+      "path": "scratch/EngineGate05R6CodecContract/CANDIDATE_PRE_RUN_MANIFEST.json",
+      "sha256": "9A79F08C9926740A5FCF80945480C20D72673056DE84A6F2D7DAB692AF95750B",
+      "bytes": 3833
+    },
+    "engine_freeze_before": {
+      "path": "scratch/EngineGate05R6CodecContract/ENGINE_FREEZE_BEFORE.json",
+      "sha256": "4D2FBC0AF9286657E58B4A6973F41B898CF394CF3ABFBF6269EC195B11FB7B63",
+      "bytes": 2383
+    },
+    "engine_freeze_after": {
+      "path": "scratch/EngineGate05R6CodecContract/ENGINE_FREEZE_AFTER.json",
+      "sha256": "A0A075279CD1FCA7A33715D8BE09A69717BFDFAE21672E8917F871C723D2FBA6",
+      "bytes": 2154
+    },
+    "report_markdown": {
+      "path": "docs/POC_EngineHost_Content_Codec_Gate05_R6.md",
+      "sha256": "23F1494CD682CCCC61A871D7B4DE5DACD5819B9E784305959212969C8E803175",
+      "bytes": 20010
+    }
+  },
+  "summary": {
+    "total_tests": 14,
+    "pass": 14,
+    "fail": 0,
+    "e1_verdict": "IMPLEMENTATION_PARTIAL",
+    "codec_status": "NORMAL_CODEC_AND_CONTRACT_VERIFIED",
+    "native_observation_status": "NATIVE_UNTESTED (Prohibited under WP_ENGINE_GATE05_R6_CODEC_CONTRACT)",
+    "installed_incident_status": "UNKNOWN OPEN INCIDENT",
+    "disposition_note": "Gate05-R6 successfully establishes explicit supported content contract (MD-130), canonical sorting boundary with strict preservation of material sequence and multiplicity, fail-closed unobserved material rejection, and independent PE MVID binding for Debug and Release candidates. Full Gate05 and Foundation remain HOLD pending independent QA and Master governance disposition."
+  }
+}

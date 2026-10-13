@@ -1,0 +1,131 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3",
+  "wp_id": "WP_ENGINE_GATE05_R27_CHILD_CAPTURE",
+  "wp_revision": "GATE05-R27-CHILD-CAPTURE",
+  "envelope": 30,
+  "generated_at": "2026-10-12T03:22:00+09:00",
+  "call_plan": {
+    "direct_candidate_calls_per_run": 12,
+    "issue_admission_receipt_calls": 8,
+    "capture_calls": 4,
+    "is_valid_direct_calls": 0,
+    "prohibited_calls_budget": 0,
+    "process_api_calls": 0,
+    "verify_process_identity_calls": 0,
+    "negative_rejection_probes": 0
+  },
+  "fixture_pairs": [
+    {
+      "case_index": 1,
+      "case_id": "PLAIN_PLAIN",
+      "parent_profile": "PLAIN",
+      "parent_role": "SIMULATION",
+      "child_profile": "PLAIN",
+      "child_role": "READ_ONLY",
+      "child_padding": "NONE",
+      "task_file_path": "C:\\QA R26 Ω\\ValidatorTasks\\task_01.json",
+      "expected_scope": "DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED",
+      "expected_selected_user_data_directory": "C:\\QA R26 Ω\\Child Validator UserData",
+      "expected_operator_option_values": [
+        "C:\\QA R26 Ω\\Configs\\child_config.json",
+        "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "ORIGIN-DEV-R26-CHILD-PLAIN",
+        "PLAN-DEV-R26-CHILD-PLAIN",
+        "CFG-DEV-R26-CHILD-PLAIN",
+        "read_only",
+        "BOUND-READONLY-RESTRICTED-DEV"
+      ],
+      "expected_task_invocation_values": [
+        "C:\\QA R26 Ω\\ValidatorTasks\\task_01.json",
+        "NONCE-20261011-CASE-01"
+      ],
+      "expected_result_channel_path": "C:\\QA R26 Ω\\Channels\\result_01.json",
+      "expected_staged_file_path": "C:\\QA R26 Ω\\Staged\\staged_01.bin",
+      "expected_staged_sha": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "case_index": 2,
+      "case_id": "OPAQUE_OPAQUE",
+      "parent_profile": "OPAQUE",
+      "parent_role": "SIMULATION",
+      "child_profile": "OPAQUE",
+      "child_role": "READ_ONLY",
+      "child_padding": "NONE",
+      "task_file_path": "C:\\QA R26 Ω\\ValidatorTasks\\task_02.json",
+      "expected_scope": "DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED",
+      "expected_selected_user_data_directory": "C:\\QA R26 Ω\\Child Validator UserData",
+      "expected_operator_option_values": [
+        "C:\\QA R26 Ω\\Configs\\child_config.json",
+        "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "ORIGIN-DEV-R26-CHILD-OPAQUE",
+        "PLAN-DEV-R26-CHILD-OPAQUE",
+        "CFG-DEV-R26-CHILD-OPAQUE",
+        "read_only",
+        "BOUND-READONLY-RESTRICTED-DEV"
+      ],
+      "expected_task_invocation_values": [
+        "C:\\QA R26 Ω\\ValidatorTasks\\task_02.json",
+        "NONCE-20261011-CASE-02"
+      ],
+      "expected_result_channel_path": "C:\\QA R26 Ω\\Channels\\result_02.json",
+      "expected_staged_file_path": "C:\\QA R26 Ω\\Staged\\staged_02.bin",
+      "expected_staged_sha": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "case_index": 3,
+      "case_id": "PLAIN_OPAQUE_PADDED",
+      "parent_profile": "PLAIN",
+      "parent_role": "SIMULATION",
+      "child_profile": "OPAQUE",
+      "child_role": "READ_ONLY",
+      "child_padding": "PADDED_NORMAL",
+      "task_file_path": "C:\\QA R26 Ω\\ValidatorTasks\\task_03.json",
+      "expected_scope": "DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED",
+      "expected_selected_user_data_directory": "C:\\QA R26 Ω\\Child Validator UserData",
+      "expected_operator_option_values": [
+        "C:\\QA R26 Ω\\Configs\\child_config.json",
+        "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "ORIGIN-DEV-R26-CHILD-OPAQUE",
+        "PLAN-DEV-R26-CHILD-OPAQUE",
+        "CFG-DEV-R26-CHILD-OPAQUE",
+        "read_only",
+        "BOUND-READONLY-RESTRICTED-DEV"
+      ],
+      "expected_task_invocation_values": [
+        "C:\\QA R26 Ω\\ValidatorTasks\\task_03.json",
+        "NONCE-20261011-CASE-03"
+      ],
+      "expected_result_channel_path": "C:\\QA R26 Ω\\Channels\\result_03.json",
+      "expected_staged_file_path": "C:\\QA R26 Ω\\Staged\\staged_03.bin",
+      "expected_staged_sha": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "case_index": 4,
+      "case_id": "OPAQUE_PLAIN_PADDED",
+      "parent_profile": "OPAQUE",
+      "parent_role": "SIMULATION",
+      "child_profile": "PLAIN",
+      "child_role": "READ_ONLY",
+      "child_padding": "PADDED_NORMAL",
+      "task_file_path": "C:\\QA R26 Ω\\ValidatorTasks\\task_04.json",
+      "expected_scope": "DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED",
+      "expected_selected_user_data_directory": "C:\\QA R26 Ω\\Child Validator UserData",
+      "expected_operator_option_values": [
+        "C:\\QA R26 Ω\\Configs\\child_config.json",
+        "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "ORIGIN-DEV-R26-CHILD-PLAIN",
+        "PLAN-DEV-R26-CHILD-PLAIN",
+        "CFG-DEV-R26-CHILD-PLAIN",
+        "read_only",
+        "BOUND-READONLY-RESTRICTED-DEV"
+      ],
+      "expected_task_invocation_values": [
+        "C:\\QA R26 Ω\\ValidatorTasks\\task_04.json",
+        "NONCE-20261011-CASE-04"
+      ],
+      "expected_result_channel_path": "C:\\QA R26 Ω\\Channels\\result_04.json",
+      "expected_staged_file_path": "C:\\QA R26 Ω\\Staged\\staged_04.bin",
+      "expected_staged_sha": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    }
+  ]
+}

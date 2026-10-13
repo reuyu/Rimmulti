@@ -1,0 +1,59 @@
+{
+  "at": "2026-10-10T02:50:47.748499+09:00",
+  "guard_run": "MASTER-SOL-R16-PREP-ACK-20261010-01",
+  "guard_session": 48395,
+  "guard_pid": 17140,
+  "delivery_id": "SOL-GATE05-R16-OPERATOR-NATIVE-PREP-S1-20261010-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R16_OPERATOR_NATIVE_PREPARATION",
+  "wp_revision": "S1",
+  "result_id": "SOL-GATE05-R16-OPERATOR-NATIVE-PREP-S1-20261010-d7c1c37a89a14eadb400986441ce198d",
+  "ack_path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R16-OPERATOR-NATIVE-PREP-S1-20261010\\ACK_INITIAL.json",
+  "ack_sha256": "7B0997E5B086BB98AB3494716DAE805F883F55F1835F99DFC2CAD2EAA5B7AC68",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:104",
+    "revision": 104,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a121c7-2f56-7c83-bc63-4676a55a0dd7",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791568064,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ac9293593ec87d0a17812e0593d3e97",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016ac9293593ec87d0a17812e0593d3e97",
+      "turnId": "01a121c7-2f56-7c83-bc63-4676a55a0dd7",
+      "phase": "commentary",
+      "text": "R16 보호 대상 8,932개가 일치했고 ACK를 전달했습니다. RuntimeCopy에는 기존 7개 파일만 있으며 게임 data·managed 자산이 빠져 있습니다. 소스의 task 발급과 내부 receipt 경로를 16개 context 차원별로 추적하고, 아직 미관측인 운영자·native 근거를 구분하겠습니다."
+    },
+    "latestToolMarkerId": "exec-056b583d-3b81-4727-b3e5-e07e4a13993b",
+    "latestToolMarker": {
+      "id": "exec-056b583d-3b81-4727-b3e5-e07e4a13993b",
+      "turnId": "01a121c7-2f56-7c83-bc63-4676a55a0dd7",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "protected_paths_master_rehashed": 8932,
+  "qa_lineage_path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R16-OPERATOR-NATIVE-PREP-S1-20261010\\R16_FROZEN_LINEAGE.json",
+  "qa_lineage_sha256": "7FA7CA1E76AB62D0A6D302E3C581B735F5C6DEA48A8A1FC1E4A5D8D379E0E85D",
+  "master_metadata_comparison": "DebugReleaseSHA-MVID-CodeView-PDB-source4/4 matched",
+  "verdict": "ACK_VERIFIED_INDEPENDENT_READ_ONLY_R16_PREPARATION_IN_PROGRESS_NO_NATIVE_VERDICT",
+  "production_runner_build_load_execute_permissions": 0,
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "monitor": "SAME_HOURLY_ACTIVE_A_SEPARATE_READ_ONLY_PREPARATION",
+  "foundation": "HOLD"
+}

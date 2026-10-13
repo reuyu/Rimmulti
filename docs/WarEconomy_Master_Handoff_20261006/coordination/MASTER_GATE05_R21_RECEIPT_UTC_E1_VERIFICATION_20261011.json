@@ -1,0 +1,986 @@
+{
+  "at": "2026-10-11T07:10:43.585120+09:00",
+  "run_id": "MASTER-HEARTBEAT-R21-20261010T220932Z-01",
+  "guard_session": 90005,
+  "guard_pid": 28816,
+  "trigger_received_at": "2026-10-10T22:09:32.637Z",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R21-RECEIPT-UTC-20261011-DIRECT-49256586",
+  "wp_id": "WP_ENGINE_GATE05_R21_RECEIPT_UTC_LITERAL",
+  "wp_revision": "GATE05-R21-RECEIPT-UTC",
+  "result_id": "WE-A-ENGINE-GATE05-R21-RECEIPT-UTC-RESULT-01",
+  "completion_sha256": "16137F28A6B63882836B8057C2431AA42FDAEFF76895EF07D8C90DFF7F242F57",
+  "artifact_checks": [
+    {
+      "role": "implementation_report",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_EngineHost_Semantic_Authority_Gate_05_R21.md",
+      "sha256": "270AAE5FFD2E8F6C719FCD0C076601CD330339D52D6C2249062884A41A6CDF92",
+      "size": 14622,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "release_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R21_RECEIPT_UTC.json",
+      "sha256": "D59F13A9A8F30499080FCAC720F55DE3A3DB02135B72B757FC204227172EF937",
+      "size": 7268,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "harness",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\Harness\\Program.cs",
+      "sha256": "DAB63B21CB46985823DC692AD62D466A3168805543ED070CAFFDF0FAE241C10C",
+      "size": 52069,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "harness_project",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\Harness\\Gate05R21ReceiptUtcRunner.csproj",
+      "sha256": "71A6A3F3633A6D9A585FD7DDCF276925B3F293AE5425A5B2270D8930E4CA1839",
+      "size": 1657,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "harness_config",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\Harness\\App.config",
+      "sha256": "C62ACA778E68DBA98FFEC19DFE6C3A6CE0A15EF1F833B720242E794D67413D19",
+      "size": 514,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "harness_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\Harness\\bin\\Debug\\net472\\Gate05R21ReceiptUtcRunner.exe",
+      "sha256": "B5FC0260440B29E5631148F1682BF952B35CF96B6C2C5204C66F1DB73D83F6E9",
+      "size": 40448,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "harness_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\Harness\\bin\\Debug\\net472\\Gate05R21ReceiptUtcRunner.pdb",
+      "sha256": "CA04C13A0166A1D392698611A832C432AC86999F57199BECE69405FC4E438415",
+      "size": 9484,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "host_telemetry",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\HOST_TELEMETRY.json",
+      "sha256": "16967AC23F8830D81A749E74F647A4396394DFA823C834A850098E33A15282FD",
+      "size": 1998,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "results_en_us",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_en_us\\RESULTS.json",
+      "sha256": "7C624E8DE74AC945F89B68B4E295594C5CEBF7A4F1DCCBDDC8DA317D24E2FDD7",
+      "size": 4652,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "api_ledger_en_us",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_en_us\\API_LEDGER.json",
+      "sha256": "4A246AA75CD7B12349F29CBADB7881A087AB6C3A61F551C146FDD6707A2928EA",
+      "size": 830,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "output_inventory_en_us",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_en_us\\OUTPUT_INVENTORY.json",
+      "sha256": "1A2282E771E350CD4D5F31C3C5FBBB444986C15AE9B37C64AB1E138211C622CB",
+      "size": 2914,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "stdout_en_us",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_en_us\\stdout.txt",
+      "sha256": "013950DAEA34C52159CC95BBE04E5A9CA4EA03BB194FAD57F05AEC332B4830A2",
+      "size": 1123,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "stderr_en_us",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_en_us\\stderr.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "size": 0,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "results_de_de",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_de_de\\RESULTS.json",
+      "sha256": "9FCBDC57123D8148DD190E138010EE7E44DBC02A66547D94479FAFDBD7B9D3BD",
+      "size": 4652,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "api_ledger_de_de",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_de_de\\API_LEDGER.json",
+      "sha256": "4A246AA75CD7B12349F29CBADB7881A087AB6C3A61F551C146FDD6707A2928EA",
+      "size": 830,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "output_inventory_de_de",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_de_de\\OUTPUT_INVENTORY.json",
+      "sha256": "0DFD1B28383E7ECEC325DCC23AC99BAE7817F50B7C5FC05111F126FD927156ED",
+      "size": 2914,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "stdout_de_de",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_de_de\\stdout.txt",
+      "sha256": "88786670714FCC91FACE93E6347307939ACC70661365D82FCB71FF86F8AFE978",
+      "size": 1123,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "stderr_de_de",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_de_de\\stderr.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "size": 0,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "freeze_before",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R21-RECEIPT-UTC-20261011-DIRECT-49256586\\ENGINE_FREEZE_BEFORE.json",
+      "sha256": "8B2534CB29A95E138443D40DCB7F3C03F865C063AA9CF361D598AF708118319F",
+      "size": 2321,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "freeze_after",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R21-RECEIPT-UTC-20261011-DIRECT-49256586\\ENGINE_FREEZE_AFTER.json",
+      "sha256": "04DD50CE7F616C2A1710CF770EE22AF06371F45890D77C2F1F40B2F6BA0DA6EE",
+      "size": 2321,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "work_log",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R21-RECEIPT-UTC-20261011-DIRECT-49256586\\A_WORK_LOG.md",
+      "sha256": "2CF4AF09198D0B0DFE8DDF731E22C6CABBA7753428CC068109B8D7EA17CA44C9",
+      "size": 6570,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "recovery_ack",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R21-RECEIPT-UTC-20261011-DIRECT-49256586\\A_RECOVERY_ACK.md",
+      "sha256": "77C433D4134A8275D0BC7A01E104FC108F5742573496AE86F74C957606446C47",
+      "size": 1163,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "ack",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R21-RECEIPT-UTC-20261011-DIRECT-49256586\\ACK.json",
+      "sha256": "3BF465C9016A62F5BECF88CEF994EDB874346B9486E5CFCBDF975CD7D26C7A02",
+      "size": 1344,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "candidate_dll_debug",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "31D7A2508ACFADE1B9430F43E6F3D2ACF3E9822C787D00DAF55C9E44CF8E5AC4",
+      "size": 295424,
+      "mvid": "7a8b444a-3a07-4dee-9d37-4fa7ed3c461c",
+      "matched": true
+    },
+    {
+      "role": "candidate_pdb_debug",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "84C1F2D2BC339DFD00A9BBA29AEA655E92CBD6F77C64A27D0D54A4433370CDD8",
+      "size": 71192,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "candidate_dll_release",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "A2C4C5AD66E082C5F7BEC25A91FA8E7B237121398B94A59E5D60E3B401D0F840",
+      "size": 279552,
+      "mvid": "28abd2eb-3220-4e97-aa99-c4ff1edb5900",
+      "matched": true
+    },
+    {
+      "role": "candidate_pdb_release",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "41330A059B468E9011C284068AAF0DA100EA7C5CBC1DCDCB56802E797E0E3A1E",
+      "size": 52172,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "source_worker_bridge",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "CD3FBAB2F3BEA22A2E81B8687352451CC695D477069FE1A788291A78A6F85E5D",
+      "size": 214277,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "source_engine_host_census",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "size": 170135,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "source_worker_bridge_csproj",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "size": 1774,
+      "mvid": "",
+      "matched": true
+    }
+  ],
+  "before_after_checks": [
+    {
+      "phase": "BEFORE",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "AB56CC423C6FB915476104D22B32F0A91B446D6788552830A9730A2DEF11898D",
+      "size": 213803,
+      "matched": true
+    },
+    {
+      "phase": "BEFORE",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "size": 170135,
+      "matched": true
+    },
+    {
+      "phase": "BEFORE",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "482166A77BF90569626A5CB27D83A4D949BD57DA85BA660F03067C833FB777F0",
+      "size": 295424,
+      "matched": true
+    },
+    {
+      "phase": "BEFORE",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "EC05783A49CA30FECD9E615020A71206F2AE388D8053D750B3EECEDF9B97455F",
+      "size": 71020,
+      "matched": true
+    },
+    {
+      "phase": "BEFORE",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "90FDAF96404913D917CEE3EFCDC81A94C05B348DBF1BFE3F44852096A32B2C4C",
+      "size": 279552,
+      "matched": true
+    },
+    {
+      "phase": "BEFORE",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "749A540D23FF0A77CD0A7E0D53E5927B303B40615A7DEDF11A0E4C8D91B4C051",
+      "size": 52036,
+      "matched": true
+    },
+    {
+      "phase": "BEFORE",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "482166A77BF90569626A5CB27D83A4D949BD57DA85BA660F03067C833FB777F0",
+      "size": 295424,
+      "matched": true
+    },
+    {
+      "phase": "BEFORE",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "EC05783A49CA30FECD9E615020A71206F2AE388D8053D750B3EECEDF9B97455F",
+      "size": 71020,
+      "matched": true
+    },
+    {
+      "phase": "BEFORE",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "size": 1774,
+      "matched": true
+    },
+    {
+      "phase": "AFTER",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "CD3FBAB2F3BEA22A2E81B8687352451CC695D477069FE1A788291A78A6F85E5D",
+      "size": 214277,
+      "matched": true
+    },
+    {
+      "phase": "AFTER",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "size": 170135,
+      "matched": true
+    },
+    {
+      "phase": "AFTER",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "31D7A2508ACFADE1B9430F43E6F3D2ACF3E9822C787D00DAF55C9E44CF8E5AC4",
+      "size": 295424,
+      "matched": true
+    },
+    {
+      "phase": "AFTER",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "84C1F2D2BC339DFD00A9BBA29AEA655E92CBD6F77C64A27D0D54A4433370CDD8",
+      "size": 71192,
+      "matched": true
+    },
+    {
+      "phase": "AFTER",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "A2C4C5AD66E082C5F7BEC25A91FA8E7B237121398B94A59E5D60E3B401D0F840",
+      "size": 279552,
+      "matched": true
+    },
+    {
+      "phase": "AFTER",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "41330A059B468E9011C284068AAF0DA100EA7C5CBC1DCDCB56802E797E0E3A1E",
+      "size": 52172,
+      "matched": true
+    },
+    {
+      "phase": "AFTER",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "31D7A2508ACFADE1B9430F43E6F3D2ACF3E9822C787D00DAF55C9E44CF8E5AC4",
+      "size": 295424,
+      "matched": true
+    },
+    {
+      "phase": "AFTER",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "84C1F2D2BC339DFD00A9BBA29AEA655E92CBD6F77C64A27D0D54A4433370CDD8",
+      "size": 71192,
+      "matched": true
+    },
+    {
+      "phase": "AFTER",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "size": 1774,
+      "matched": true
+    }
+  ],
+  "outside_authorized_regions_byte_match": true,
+  "source_diff": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R21-RECEIPT-UTC-20261011-DIRECT-49256586\\MASTER_R21_WORKER_SOURCE_DIFF.txt",
+  "source_sha256": "CD3FBAB2F3BEA22A2E81B8687352451CC695D477069FE1A788291A78A6F85E5D",
+  "preservation_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R21-RECEIPT-UTC-20261011-DIRECT-49256586\\MASTER_R21_HEARTBEAT_PRESERVATION_20261011T070932.json",
+  "preservation_sha256": "17D0C5AED4A4BE7B29A0EA2A27EDB652F45FA8B17F3C14C2CD90573B3962CF69",
+  "lineage": [
+    {
+      "assembly": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "pdb": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "mvid": "7a8b444a-3a07-4dee-9d37-4fa7ed3c461c",
+      "codeviewGuid": "8d435f4d-06a1-4b6a-a50a-b2fa31d92bbb",
+      "pdbGuid": "8d435f4d-06a1-4b6a-a50a-b2fa31d92bbb",
+      "codeviewMatched": true,
+      "documents": [
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+          "actual": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "CD3FBAB2F3BEA22A2E81B8687352451CC695D477069FE1A788291A78A6F85E5D",
+          "actual": "CD3FBAB2F3BEA22A2E81B8687352451CC695D477069FE1A788291A78A6F85E5D",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+          "actual": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.AssemblyInfo.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "8C7180C5E4D3004DE53926C1039C107C3059053C470CF73F82CF974EAF7D5681",
+          "actual": "8C7180C5E4D3004DE53926C1039C107C3059053C470CF73F82CF974EAF7D5681",
+          "matched": true
+        }
+      ],
+      "configuration": "Debug",
+      "dll_sha256": "31D7A2508ACFADE1B9430F43E6F3D2ACF3E9822C787D00DAF55C9E44CF8E5AC4",
+      "pdb_sha256": "84C1F2D2BC339DFD00A9BBA29AEA655E92CBD6F77C64A27D0D54A4433370CDD8"
+    },
+    {
+      "assembly": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "pdb": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "mvid": "28abd2eb-3220-4e97-aa99-c4ff1edb5900",
+      "codeviewGuid": "1123d112-6825-4f2d-9f34-54aaf6c32f03",
+      "pdbGuid": "1123d112-6825-4f2d-9f34-54aaf6c32f03",
+      "codeviewMatched": true,
+      "documents": [
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+          "actual": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "CD3FBAB2F3BEA22A2E81B8687352451CC695D477069FE1A788291A78A6F85E5D",
+          "actual": "CD3FBAB2F3BEA22A2E81B8687352451CC695D477069FE1A788291A78A6F85E5D",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+          "actual": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.AssemblyInfo.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "80492D41167FD5D58508DFC29A09E3624EC6374EF4048B2FF2D2C5EE86562743",
+          "actual": "80492D41167FD5D58508DFC29A09E3624EC6374EF4048B2FF2D2C5EE86562743",
+          "matched": true
+        }
+      ],
+      "configuration": "Release",
+      "dll_sha256": "A2C4C5AD66E082C5F7BEC25A91FA8E7B237121398B94A59E5D60E3B401D0F840",
+      "pdb_sha256": "41330A059B468E9011C284068AAF0DA100EA7C5CBC1DCDCB56802E797E0E3A1E"
+    }
+  ],
+  "frozen_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R21-RECEIPT-UTC-20261011-DIRECT-49256586\\MASTER_GATE05_R21_RECEIPT_UTC_REVIEW_FREEZE_MANIFEST.json",
+  "frozen_manifest_sha256": "D2E2FEF82674B9C2C8F4C90045D9F75AE8C3463C82BC4AB1A9CB2502008623DB",
+  "frozen_files": 112,
+  "selected_sha256": "31D7A2508ACFADE1B9430F43E6F3D2ACF3E9822C787D00DAF55C9E44CF8E5AC4",
+  "selected_mvid": "7a8b444a-3a07-4dee-9d37-4fa7ed3c461c",
+  "selected_pdb_sha256": "84C1F2D2BC339DFD00A9BBA29AEA655E92CBD6F77C64A27D0D54A4433370CDD8",
+  "processes": [
+    {
+      "directory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_en_us",
+      "actual_culture": "en-US",
+      "host_child_pid": 15684,
+      "host_recorded_numeric_exit": 0,
+      "labels": 7,
+      "manual_ledger": {
+        "ParseStrictCalls": 4,
+        "AdmitConfigBytesCalls": 4,
+        "AdmitConfigFileCalls": 4,
+        "IssueAdmissionReceiptCalls": 8,
+        "IssueAdmissionReceiptFromBytesCalls": 4,
+        "ValidateAdmissionReceiptCalls": 8,
+        "IsFullyQualifiedWindowsPathCalls": 5,
+        "ToSnapshotCalls": 4,
+        "ToRedactedJsonSnapshotCalls": 0,
+        "ToRedactedJsonReceiptCalls": 3,
+        "GetExpectedPackagePolicyDeclarationCalls": 16,
+        "ComputeFileSha256Calls": 0,
+        "VerifyAdmittedExecutableCalls": 0,
+        "ToRedactedJsonValidatorResultCalls": 1,
+        "SerializePackagePolicyCalls": 1,
+        "DeserializePackagePolicyCalls": 1,
+        "ComputePackagePolicyDigestCalls": 17,
+        "ProcessApiCalls": 0,
+        "VerifyProcessIdentityCalls": 0,
+        "WorkerBridgeGlobalConfigureResetCalls": 0,
+        "TryInstallOperatorStartupConfigCalls": 0,
+        "AwakeCalls": 0,
+        "HarmonyCalls": 0
+      },
+      "ledger_sum": 80,
+      "tests": [
+        {
+          "TestName": "TEST_01_OPAQUE_POLICY_LOSSLESS_PRESERVATION",
+          "Status": "PASS",
+          "Details": "Verified exact preservation of untrimmed opaque policyId ('  qa.R18 정책 Ω  ') and revision ('  007 café Ω  ') yielding lossless digest 8A9C3381A041F79F300710D6EA93A5D8E08564C692AA5059337853825E1749BF across all 16 role/route combinations.",
+          "MatrixPassedCount": 16,
+          "TotalMatrixCount": 16
+        },
+        {
+          "TestName": "TEST_02_ADMISSION_RECEIPT_ISSUANCE_AND_BOUND_PROVENANCE",
+          "Status": "PASS",
+          "Details": "Verified factory-issued immutable OperatorStartupAdmissionReceipt across SIMULATION/READ_ONLY, PLAIN/OPAQUE, file/bytes routes with 100% bound provenance fields verified.",
+          "ReceiptSuccessCount": 8,
+          "TotalReceiptChecks": 8
+        },
+        {
+          "TestName": "TEST_03_RECEIPT_REDACTED_JSON_EXACT_LITERAL_UTC_PRESERVATION",
+          "Status": "PASS",
+          "Details": "Verified that OperatorStartupAdmissionReceipt.ToRedactedJson() uses explicit DateParseHandling.None reader, preserving nested snapshot.issuedAtUtc literal strings verbatim (including .0000000Z precision) without DateTime token coercion.",
+          "UtcCasesPassed": 3,
+          "TotalUtcCases": 3
+        },
+        {
+          "TestName": "TEST_04_DECLARATION_AND_RECEIPT_DEFENSIVE_IMMUTABILITY",
+          "Status": "PASS",
+          "Details": "Verified that mutating caller launch descriptor, cloned descriptor, or returned snapshot declarations has zero effect on the factory-issued admission receipt.",
+          "ReceiptOriginImmune": true,
+          "ReceiptPlanImmune": true,
+          "ReceiptPathImmune": true,
+          "SnapshotIsolation": true
+        },
+        {
+          "TestName": "TEST_05_FULLY_QUALIFIED_WINDOWS_PATH_POSITIVE_HELPER",
+          "Status": "PASS",
+          "Details": "Verified OperatorStartupConfigAdmissionFactory.IsFullyQualifiedWindowsPath correctly admits DOS drive roots and UNC shares via positive normal controls only (zero invalid/rejection probes).",
+          "ValidChecksPassed": 5,
+          "TotalValidChecks": 5
+        },
+        {
+          "TestName": "TEST_06_VALIDATOR_RESULT_REDACTION_REGRESSION",
+          "Status": "PASS",
+          "Details": "Verified public ValidatorResult redaction replaces capabilityNonce and channelSecretToken with protected placeholders.",
+          "NonceMasked": true,
+          "SecretMasked": true
+        },
+        {
+          "TestName": "TEST_07_CENSUS_PACKAGE_POLICY_REGRESSION",
+          "Status": "PASS",
+          "Details": "Verified unchanged Census ContentProfileProvider package policy serialization, roundtrip deserialization, and deterministic digest calculation.",
+          "Digest": "0B570501B959C842B6B2BA0814F7B9E9B2524D8A7937036F2E606712CD07F683"
+        }
+      ],
+      "inventory_rows": 17,
+      "actual_nonself_files": 17,
+      "inventory_exact_path_set": true,
+      "inventory_checks": [
+        {
+          "relative_path": "API_LEDGER.json",
+          "recorded_sha256": "4A246AA75CD7B12349F29CBADB7881A087AB6C3A61F551C146FDD6707A2928EA",
+          "actual_sha256": "4A246AA75CD7B12349F29CBADB7881A087AB6C3A61F551C146FDD6707A2928EA",
+          "recorded_size": 830,
+          "actual_size": 830,
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-IMMUTABILITY-R21.json",
+          "recorded_sha256": "5390FC842425BC5B5DEBC02F011DBDC53790FE081DA715CB0577DA393B9AC3E9",
+          "actual_sha256": "5390FC842425BC5B5DEBC02F011DBDC53790FE081DA715CB0577DA393B9AC3E9",
+          "recorded_size": 1348,
+          "actual_size": 1348,
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-READ_ONLY-OPAQUE.json",
+          "recorded_sha256": "190918843F9473B597775A337E7330637AB39766C9CA6ECBC949502413041D55",
+          "actual_sha256": "190918843F9473B597775A337E7330637AB39766C9CA6ECBC949502413041D55",
+          "recorded_size": 1332,
+          "actual_size": 1332,
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-READ_ONLY-PLAIN.json",
+          "recorded_sha256": "60EF6021C48B740DE5BEC2BF02A14EAA46C26FED40B778568640DC94B4A42A95",
+          "actual_sha256": "60EF6021C48B740DE5BEC2BF02A14EAA46C26FED40B778568640DC94B4A42A95",
+          "recorded_size": 1292,
+          "actual_size": 1292,
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-RECEIPT-READ_ONLY-OPAQUE.json",
+          "recorded_sha256": "6395608790869D1FCE6AB70DDFC6C86B2B0A7DA2484628257DF5540F83DC670E",
+          "actual_sha256": "6395608790869D1FCE6AB70DDFC6C86B2B0A7DA2484628257DF5540F83DC670E",
+          "recorded_size": 1353,
+          "actual_size": 1353,
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-RECEIPT-READ_ONLY-PLAIN.json",
+          "recorded_sha256": "1503A004B24797CDCD9936571B134FB7FDEBED7DE26C1A5218AE1E848DF8A163",
+          "actual_sha256": "1503A004B24797CDCD9936571B134FB7FDEBED7DE26C1A5218AE1E848DF8A163",
+          "recorded_size": 1317,
+          "actual_size": 1317,
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-RECEIPT-SIMULATION-OPAQUE.json",
+          "recorded_sha256": "7534D613C5F033BD5177AA2175B8F2D78590C7BF4AECAB3A0D021BB946421839",
+          "actual_sha256": "7534D613C5F033BD5177AA2175B8F2D78590C7BF4AECAB3A0D021BB946421839",
+          "recorded_size": 1355,
+          "actual_size": 1355,
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-RECEIPT-SIMULATION-PLAIN.json",
+          "recorded_sha256": "C41A61D46E5C6B5EC168143A522FF2CA7CBF4DCFA49AD94AA5EFAA18D233C7DC",
+          "actual_sha256": "C41A61D46E5C6B5EC168143A522FF2CA7CBF4DCFA49AD94AA5EFAA18D233C7DC",
+          "recorded_size": 1319,
+          "actual_size": 1319,
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-SIMULATION-OPAQUE.json",
+          "recorded_sha256": "F98532179ACB64F8788CDBF63623F12A85D12C24CBF003F0F15023E4FC577268",
+          "actual_sha256": "F98532179ACB64F8788CDBF63623F12A85D12C24CBF003F0F15023E4FC577268",
+          "recorded_size": 1334,
+          "actual_size": 1334,
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-SIMULATION-PLAIN.json",
+          "recorded_sha256": "FCE1325F93A37E8FB613DD52DC5C0F2A090B914B1DCC98F996849024F0947368",
+          "actual_sha256": "FCE1325F93A37E8FB613DD52DC5C0F2A090B914B1DCC98F996849024F0947368",
+          "recorded_size": 1294,
+          "actual_size": 1294,
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-UTC-14f82287c2c14208b1ae6c5c98111e31.json",
+          "recorded_sha256": "536987EF609AB58296E5044C8CC1909DE4A202CFEC182EE81DBBBDD3F9F0512B",
+          "actual_sha256": "536987EF609AB58296E5044C8CC1909DE4A202CFEC182EE81DBBBDD3F9F0512B",
+          "recorded_size": 1362,
+          "actual_size": 1362,
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-UTC-820cf4d61dda48659076b0ab7d93d74b.json",
+          "recorded_sha256": "F9B871AC480F3B2188596134486410167F8EED64A5B8AD8ADF560D645CD1AEA2",
+          "actual_sha256": "F9B871AC480F3B2188596134486410167F8EED64A5B8AD8ADF560D645CD1AEA2",
+          "recorded_size": 1354,
+          "actual_size": 1354,
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-UTC-a59ca5fddc1e4828bcc9507371f5295b.json",
+          "recorded_sha256": "62467F837C5DFE2FCF1C2B1E5FAE600A2D26BE0E2092C09FAA34F294501D2C65",
+          "actual_sha256": "62467F837C5DFE2FCF1C2B1E5FAE600A2D26BE0E2092C09FAA34F294501D2C65",
+          "recorded_size": 1362,
+          "actual_size": 1362,
+          "matched": true
+        },
+        {
+          "relative_path": "RESULTS.json",
+          "recorded_sha256": "7C624E8DE74AC945F89B68B4E295594C5CEBF7A4F1DCCBDDC8DA317D24E2FDD7",
+          "actual_sha256": "7C624E8DE74AC945F89B68B4E295594C5CEBF7A4F1DCCBDDC8DA317D24E2FDD7",
+          "recorded_size": 4652,
+          "actual_size": 4652,
+          "matched": true
+        },
+        {
+          "relative_path": "SimulatedAdmittedValidator.exe",
+          "recorded_sha256": "03A1CC8829DD0D8E6F7DF402E6FC4CDF47B52C99EC17E12EB15B1200071E0D3B",
+          "actual_sha256": "03A1CC8829DD0D8E6F7DF402E6FC4CDF47B52C99EC17E12EB15B1200071E0D3B",
+          "recorded_size": 48,
+          "actual_size": 48,
+          "matched": true
+        },
+        {
+          "relative_path": "stderr.txt",
+          "recorded_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+          "actual_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+          "recorded_size": 0,
+          "actual_size": 0,
+          "matched": true
+        },
+        {
+          "relative_path": "stdout.txt",
+          "recorded_sha256": "013950DAEA34C52159CC95BBE04E5A9CA4EA03BB194FAD57F05AEC332B4830A2",
+          "actual_sha256": "013950DAEA34C52159CC95BBE04E5A9CA4EA03BB194FAD57F05AEC332B4830A2",
+          "recorded_size": 1123,
+          "actual_size": 1123,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "directory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_de_de",
+      "actual_culture": "de-DE",
+      "host_child_pid": 32936,
+      "host_recorded_numeric_exit": 0,
+      "labels": 7,
+      "manual_ledger": {
+        "ParseStrictCalls": 4,
+        "AdmitConfigBytesCalls": 4,
+        "AdmitConfigFileCalls": 4,
+        "IssueAdmissionReceiptCalls": 8,
+        "IssueAdmissionReceiptFromBytesCalls": 4,
+        "ValidateAdmissionReceiptCalls": 8,
+        "IsFullyQualifiedWindowsPathCalls": 5,
+        "ToSnapshotCalls": 4,
+        "ToRedactedJsonSnapshotCalls": 0,
+        "ToRedactedJsonReceiptCalls": 3,
+        "GetExpectedPackagePolicyDeclarationCalls": 16,
+        "ComputeFileSha256Calls": 0,
+        "VerifyAdmittedExecutableCalls": 0,
+        "ToRedactedJsonValidatorResultCalls": 1,
+        "SerializePackagePolicyCalls": 1,
+        "DeserializePackagePolicyCalls": 1,
+        "ComputePackagePolicyDigestCalls": 17,
+        "ProcessApiCalls": 0,
+        "VerifyProcessIdentityCalls": 0,
+        "WorkerBridgeGlobalConfigureResetCalls": 0,
+        "TryInstallOperatorStartupConfigCalls": 0,
+        "AwakeCalls": 0,
+        "HarmonyCalls": 0
+      },
+      "ledger_sum": 80,
+      "tests": [
+        {
+          "TestName": "TEST_01_OPAQUE_POLICY_LOSSLESS_PRESERVATION",
+          "Status": "PASS",
+          "Details": "Verified exact preservation of untrimmed opaque policyId ('  qa.R18 정책 Ω  ') and revision ('  007 café Ω  ') yielding lossless digest 8A9C3381A041F79F300710D6EA93A5D8E08564C692AA5059337853825E1749BF across all 16 role/route combinations.",
+          "MatrixPassedCount": 16,
+          "TotalMatrixCount": 16
+        },
+        {
+          "TestName": "TEST_02_ADMISSION_RECEIPT_ISSUANCE_AND_BOUND_PROVENANCE",
+          "Status": "PASS",
+          "Details": "Verified factory-issued immutable OperatorStartupAdmissionReceipt across SIMULATION/READ_ONLY, PLAIN/OPAQUE, file/bytes routes with 100% bound provenance fields verified.",
+          "ReceiptSuccessCount": 8,
+          "TotalReceiptChecks": 8
+        },
+        {
+          "TestName": "TEST_03_RECEIPT_REDACTED_JSON_EXACT_LITERAL_UTC_PRESERVATION",
+          "Status": "PASS",
+          "Details": "Verified that OperatorStartupAdmissionReceipt.ToRedactedJson() uses explicit DateParseHandling.None reader, preserving nested snapshot.issuedAtUtc literal strings verbatim (including .0000000Z precision) without DateTime token coercion.",
+          "UtcCasesPassed": 3,
+          "TotalUtcCases": 3
+        },
+        {
+          "TestName": "TEST_04_DECLARATION_AND_RECEIPT_DEFENSIVE_IMMUTABILITY",
+          "Status": "PASS",
+          "Details": "Verified that mutating caller launch descriptor, cloned descriptor, or returned snapshot declarations has zero effect on the factory-issued admission receipt.",
+          "ReceiptOriginImmune": true,
+          "ReceiptPlanImmune": true,
+          "ReceiptPathImmune": true,
+          "SnapshotIsolation": true
+        },
+        {
+          "TestName": "TEST_05_FULLY_QUALIFIED_WINDOWS_PATH_POSITIVE_HELPER",
+          "Status": "PASS",
+          "Details": "Verified OperatorStartupConfigAdmissionFactory.IsFullyQualifiedWindowsPath correctly admits DOS drive roots and UNC shares via positive normal controls only (zero invalid/rejection probes).",
+          "ValidChecksPassed": 5,
+          "TotalValidChecks": 5
+        },
+        {
+          "TestName": "TEST_06_VALIDATOR_RESULT_REDACTION_REGRESSION",
+          "Status": "PASS",
+          "Details": "Verified public ValidatorResult redaction replaces capabilityNonce and channelSecretToken with protected placeholders.",
+          "NonceMasked": true,
+          "SecretMasked": true
+        },
+        {
+          "TestName": "TEST_07_CENSUS_PACKAGE_POLICY_REGRESSION",
+          "Status": "PASS",
+          "Details": "Verified unchanged Census ContentProfileProvider package policy serialization, roundtrip deserialization, and deterministic digest calculation.",
+          "Digest": "0B570501B959C842B6B2BA0814F7B9E9B2524D8A7937036F2E606712CD07F683"
+        }
+      ],
+      "inventory_rows": 17,
+      "actual_nonself_files": 17,
+      "inventory_exact_path_set": true,
+      "inventory_checks": [
+        {
+          "relative_path": "API_LEDGER.json",
+          "recorded_sha256": "4A246AA75CD7B12349F29CBADB7881A087AB6C3A61F551C146FDD6707A2928EA",
+          "actual_sha256": "4A246AA75CD7B12349F29CBADB7881A087AB6C3A61F551C146FDD6707A2928EA",
+          "recorded_size": 830,
+          "actual_size": 830,
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-IMMUTABILITY-R21.json",
+          "recorded_sha256": "7152F8F310C932210BC38B303C7EA40EC2847D0FEBEC790EFAD664BF6E3BA6B3",
+          "actual_sha256": "7152F8F310C932210BC38B303C7EA40EC2847D0FEBEC790EFAD664BF6E3BA6B3",
+          "recorded_size": 1348,
+          "actual_size": 1348,
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-READ_ONLY-OPAQUE.json",
+          "recorded_sha256": "881878CE7DDD5175F47EE6EA24939961706628602FAFE49F002E39D647B5E524",
+          "actual_sha256": "881878CE7DDD5175F47EE6EA24939961706628602FAFE49F002E39D647B5E524",
+          "recorded_size": 1332,
+          "actual_size": 1332,
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-READ_ONLY-PLAIN.json",
+          "recorded_sha256": "E32E874F5970E71CD68D3D9DE101AC4743C97208271E668157A8407B3C904BC6",
+          "actual_sha256": "E32E874F5970E71CD68D3D9DE101AC4743C97208271E668157A8407B3C904BC6",
+          "recorded_size": 1292,
+          "actual_size": 1292,
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-RECEIPT-READ_ONLY-OPAQUE.json",
+          "recorded_sha256": "59F482283FE987A452700DB651BBA7D86942770D8253064696391DC641B794AD",
+          "actual_sha256": "59F482283FE987A452700DB651BBA7D86942770D8253064696391DC641B794AD",
+          "recorded_size": 1353,
+          "actual_size": 1353,
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-RECEIPT-READ_ONLY-PLAIN.json",
+          "recorded_sha256": "FD4E4ABBF771FCB39BAE975A6E9E5BBF03584698177298B717DE08D04D0B2754",
+          "actual_sha256": "FD4E4ABBF771FCB39BAE975A6E9E5BBF03584698177298B717DE08D04D0B2754",
+          "recorded_size": 1317,
+          "actual_size": 1317,
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-RECEIPT-SIMULATION-OPAQUE.json",
+          "recorded_sha256": "E7E04955B19FAB40A32D130EAC22BB3A69B94B70CE3C322288BB44B75D12892C",
+          "actual_sha256": "E7E04955B19FAB40A32D130EAC22BB3A69B94B70CE3C322288BB44B75D12892C",
+          "recorded_size": 1355,
+          "actual_size": 1355,
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-RECEIPT-SIMULATION-PLAIN.json",
+          "recorded_sha256": "B616C8C22530E97E1EF167867DBE7419F2A52A44FECA658690B328458101C832",
+          "actual_sha256": "B616C8C22530E97E1EF167867DBE7419F2A52A44FECA658690B328458101C832",
+          "recorded_size": 1319,
+          "actual_size": 1319,
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-SIMULATION-OPAQUE.json",
+          "recorded_sha256": "13022FCA814527436536EFDFB0184A8241E4E4884CA15F10B3BF67B64FFE1D83",
+          "actual_sha256": "13022FCA814527436536EFDFB0184A8241E4E4884CA15F10B3BF67B64FFE1D83",
+          "recorded_size": 1334,
+          "actual_size": 1334,
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-SIMULATION-PLAIN.json",
+          "recorded_sha256": "A5B21D86B3B6F954BBFB904D0FA5C069AA0CCBAF0D5E81F3F51679626CBC4782",
+          "actual_sha256": "A5B21D86B3B6F954BBFB904D0FA5C069AA0CCBAF0D5E81F3F51679626CBC4782",
+          "recorded_size": 1294,
+          "actual_size": 1294,
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-UTC-287b1023622a43e1ba012d0266d4647d.json",
+          "recorded_sha256": "46DAEE864E1B6A1B555FDF3FFEAD32FC7B5E8EF43D2C6DDE18A026CE6FC561BC",
+          "actual_sha256": "46DAEE864E1B6A1B555FDF3FFEAD32FC7B5E8EF43D2C6DDE18A026CE6FC561BC",
+          "recorded_size": 1354,
+          "actual_size": 1354,
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-UTC-8b70f0eee491473d875614b465db688b.json",
+          "recorded_sha256": "E96B0A14EE2AAB41BD8C7EC44AB7CA0FD4C244C38607EDCDC8AD757B9DE6860E",
+          "actual_sha256": "E96B0A14EE2AAB41BD8C7EC44AB7CA0FD4C244C38607EDCDC8AD757B9DE6860E",
+          "recorded_size": 1362,
+          "actual_size": 1362,
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-UTC-d1bae153dd9f41228b72cb68af906888.json",
+          "recorded_sha256": "50E80D6DAC0B6525FE168694F78F70E226CD57FE54152FD23649531168C38D83",
+          "actual_sha256": "50E80D6DAC0B6525FE168694F78F70E226CD57FE54152FD23649531168C38D83",
+          "recorded_size": 1362,
+          "actual_size": 1362,
+          "matched": true
+        },
+        {
+          "relative_path": "RESULTS.json",
+          "recorded_sha256": "9FCBDC57123D8148DD190E138010EE7E44DBC02A66547D94479FAFDBD7B9D3BD",
+          "actual_sha256": "9FCBDC57123D8148DD190E138010EE7E44DBC02A66547D94479FAFDBD7B9D3BD",
+          "recorded_size": 4652,
+          "actual_size": 4652,
+          "matched": true
+        },
+        {
+          "relative_path": "SimulatedAdmittedValidator.exe",
+          "recorded_sha256": "03A1CC8829DD0D8E6F7DF402E6FC4CDF47B52C99EC17E12EB15B1200071E0D3B",
+          "actual_sha256": "03A1CC8829DD0D8E6F7DF402E6FC4CDF47B52C99EC17E12EB15B1200071E0D3B",
+          "recorded_size": 48,
+          "actual_size": 48,
+          "matched": true
+        },
+        {
+          "relative_path": "stderr.txt",
+          "recorded_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+          "actual_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+          "recorded_size": 0,
+          "actual_size": 0,
+          "matched": true
+        },
+        {
+          "relative_path": "stdout.txt",
+          "recorded_sha256": "88786670714FCC91FACE93E6347307939ACC70661365D82FCB71FF86F8AFE978",
+          "actual_sha256": "88786670714FCC91FACE93E6347307939ACC70661365D82FCB71FF86F8AFE978",
+          "recorded_size": 1123,
+          "actual_size": 1123,
+          "matched": true
+        }
+      ]
+    }
+  ],
+  "ACK_valid": true,
+  "ACK_sha256": "3BF465C9016A62F5BECF88CEF994EDB874346B9486E5CFCBDF975CD7D26C7A02",
+  "producer_host_telemetry": {
+    "dispatch_id": "WE-A-ENGINE-GATE05-R21-RECEIPT-UTC-20261011-DIRECT-49256586",
+    "wp_id": "WP_ENGINE_GATE05_R21_RECEIPT_UTC_LITERAL",
+    "wp_revision": "GATE05-R21-RECEIPT-UTC",
+    "envelope": 24,
+    "orchestrator": "Python Host Subprocess",
+    "timestamp_utc": "2026-10-10T21:16:08.589833+00:00",
+    "pinned_runner": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\Harness\\bin\\Debug\\net472\\Gate05R21ReceiptUtcRunner.exe",
+      "sha256": "B5FC0260440B29E5631148F1682BF952B35CF96B6C2C5204C66F1DB73D83F6E9",
+      "size": 40448
+    },
+    "runs": [
+      {
+        "run_name": "run_en_us",
+        "culture": "en-US",
+        "child_pid": 15684,
+        "exit_code": 0,
+        "duration_seconds": 0.27637767791748047,
+        "output_directory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_en_us",
+        "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_en_us\\stdout.txt",
+        "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_en_us\\stderr.txt",
+        "inventory_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_en_us\\OUTPUT_INVENTORY.json",
+        "inventory_count": 17
+      },
+      {
+        "run_name": "run_de_de",
+        "culture": "de-DE",
+        "child_pid": 32936,
+        "exit_code": 0,
+        "duration_seconds": 0.16508030891418457,
+        "output_directory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_de_de",
+        "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_de_de\\stdout.txt",
+        "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_de_de\\stderr.txt",
+        "inventory_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_de_de\\OUTPUT_INVENTORY.json",
+        "inventory_count": 17
+      }
+    ],
+    "isolation_verified": true
+  },
+  "native_execution": "UNTESTED",
+  "master_build_execute": 0,
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD",
+  "verification_status": "MASTER_DISPOSED",
+  "master_verdict": "METHOD_ONLY_ORIGINAL_UTC_EMBEDDING_FIX_CREDITED_FRESH_SCOPED_QA_ADMITTED_PRODUCER_FULL_GRAPH_PACKAGING_PARTIAL_NATIVE_UNTESTED",
+  "master_review_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R21_RECEIPT_UTC_E1_20261011.md",
+  "master_review_sha256": "787E9CA8DEBD16266C87FD6BA36F98124D8B8BFD4D56A4223F3528C051355BC7",
+  "master_disposition_at": "2026-10-11T07:13:22.352912+09:00",
+  "scoped_admission": "EXACT_R21_DEBUG_STATIC_POSITIVE_PURE_RECEIPT_LITERAL_FULL_GRAPH_NO_PROCESS_GLOBAL_NATIVE",
+  "managed_dependency_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\MASTER_R5_MANAGED_QA_DEPENDENCIES_MANIFEST.json",
+  "managed_dependency_manifest_sha256": "7FCB91EEB8489365E4304AFFDC601CCD0CCE2259365FD861A785AD658C183481"
+}

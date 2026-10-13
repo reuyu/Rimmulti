@@ -1,0 +1,86 @@
+{
+  "evaluated_at": "2026-10-13T14:40:23.550380+00:00",
+  "all_Engine9_files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "expected_sha256": "544B22178F80C63FE85584BCA93ED1D7B77B59554C93762F38655B87237682FD",
+      "expected_bytes": 276685,
+      "actual_sha256": "544B22178F80C63FE85584BCA93ED1D7B77B59554C93762F38655B87237682FD",
+      "actual_bytes": 276685,
+      "bit_exact": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "expected_sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "expected_bytes": 170135,
+      "actual_sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "actual_bytes": 170135,
+      "bit_exact": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "expected_sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "expected_bytes": 1774,
+      "actual_sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "actual_bytes": 1774,
+      "bit_exact": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "expected_sha256": "8091F4414A29EF5AE224BA67A82A5F7B866C230EEFFC33D78486C28AD3297029",
+      "expected_bytes": 326144,
+      "actual_sha256": "8091F4414A29EF5AE224BA67A82A5F7B866C230EEFFC33D78486C28AD3297029",
+      "actual_bytes": 326144,
+      "bit_exact": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "expected_sha256": "FE75B3D1AFA31C88AE2B8FB56F76F00D8929D28FCE1EA315027A154FFD76F0DE",
+      "expected_bytes": 79220,
+      "actual_sha256": "FE75B3D1AFA31C88AE2B8FB56F76F00D8929D28FCE1EA315027A154FFD76F0DE",
+      "actual_bytes": 79220,
+      "bit_exact": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "expected_sha256": "9CBA7E69210DE90B069F269744F3140C4ADD802FD868AB0E0C71FB0E5F69D106",
+      "expected_bytes": 308224,
+      "actual_sha256": "9CBA7E69210DE90B069F269744F3140C4ADD802FD868AB0E0C71FB0E5F69D106",
+      "actual_bytes": 308224,
+      "bit_exact": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "expected_sha256": "F05FE976EB522B6A5FC78338B0C35A8CC5341322BACB4CA6310F6AF3682933F5",
+      "expected_bytes": 57776,
+      "actual_sha256": "F05FE976EB522B6A5FC78338B0C35A8CC5341322BACB4CA6310F6AF3682933F5",
+      "actual_bytes": 57776,
+      "bit_exact": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "expected_sha256": "8091F4414A29EF5AE224BA67A82A5F7B866C230EEFFC33D78486C28AD3297029",
+      "expected_bytes": 326144,
+      "actual_sha256": "8091F4414A29EF5AE224BA67A82A5F7B866C230EEFFC33D78486C28AD3297029",
+      "actual_bytes": 326144,
+      "bit_exact": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "expected_sha256": "FE75B3D1AFA31C88AE2B8FB56F76F00D8929D28FCE1EA315027A154FFD76F0DE",
+      "expected_bytes": 79220,
+      "actual_sha256": "FE75B3D1AFA31C88AE2B8FB56F76F00D8929D28FCE1EA315027A154FFD76F0DE",
+      "actual_bytes": 79220,
+      "bit_exact": true
+    }
+  ],
+  "publisher_file": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+    "before_sha256": "9CAEA2DF0B8F3517DFCBEF080F7D26EC4343CDF4D2FD761453EFA2E4F3B86B4A",
+    "before_bytes": 22371,
+    "after_sha256": "F60CBC184C6627F0FE15A5A904D0C45A026E20C5138973066BB8174DD8FBFD3F",
+    "after_bytes": 31689,
+    "mutation_authorized": true
+  },
+  "all_preserved": true
+}

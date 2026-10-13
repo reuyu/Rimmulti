@@ -1,0 +1,76 @@
+{
+  "at": "2026-10-12T09:19:27.135597+09:00",
+  "guard_run": "MASTER-R29-SOL-PREP-ACK-20261012-01",
+  "guard_session": 49220,
+  "guard_pid": 21856,
+  "delivery_id": "SOL-GATE05-R29-STARTUP_PAIR-PREP-S1-20261012-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R29_STARTUP_PAIR_PREPARATION",
+  "wp_revision": "S1",
+  "result_id": "SOL-GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012-2b883a31352547c6bda6f398d204600f",
+  "initial_ACK": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\ACK_INITIAL.json",
+    "sha256": "8B801439D5857404F93E99C343328F1881980E751112705F940B5322AD3FF97A",
+    "bytes": 2268
+  },
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:177",
+    "revision": 177,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a12d75-c04e-7103-b1eb-6195f19791cd",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791764054,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acc26dd913087d0b8192808a457b2af",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016acc26dd913087d0b8192808a457b2af",
+      "turnId": "01a12d75-c04e-7103-b1eb-6195f19791cd",
+      "phase": "commentary",
+      "text": "새 계약은 원본 선언 7개씩을 bundle에 보존하므로, =·따옴표·역슬래시·Ω가 포함된 ID를 CLI로 옮길 필요가 없습니다. 오라클에서는 이 원문 선언과 기존 factory가 trim한 receipt 필드를 각각 검증하겠습니다."
+    },
+    "latestToolMarkerId": "exec-b5ba2fcc-4be6-4824-91b1-a92a50b360bd",
+    "latestToolMarker": {
+      "id": "exec-b5ba2fcc-4be6-4824-91b1-a92a50b360bd",
+      "turnId": "01a12d75-c04e-7103-b1eb-6195f19791cd",
+      "type": "fileChange",
+      "name": "fileChange",
+      "status": "completed"
+    }
+  },
+  "protected_unique_paths": 14105,
+  "frozen83_currentfixed2_matched": true,
+  "exactcurrentmutable7_excluded_unread": true,
+  "status": "ACK_VERIFIED_R29_INDEPENDENT_FROZEN_R27_AUXILIARY_CONTRACT_NORMAL_ORACLE_PREPARATION_IN_PROGRESS",
+  "R29_candidate_verdict": "NOT_REVIEWED",
+  "ACK_counters_initial_not_current_terminal": true,
+  "preparation_reported_approach": "Original declaration7 versus existing factory UsedClone/Trim/nested snapshot GetFullPath separated; future ownQA configlocator rebind explicit sidecar, historicalraw14/7 preserved; final oracle notyetverified",
+  "A_completion_observed": false,
+  "no_new_WP_or_duplicate": true,
+  "native_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD",
+  "scheduler_actual": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "ACTIVE",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791764008142
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-13T19:59:08.474923+09:00",
+  "old_guard_run": "MASTER-R35-PREP-COMPLETE-20261013-01",
+  "old_guard_session": 23543,
+  "old_release_at": "2026-10-13T19:57:51.450166+09:00",
+  "readback_child_session": 22852,
+  "readback_still_running_at_new_guard": true,
+  "new_guard_run": "MASTER-R35-FINAL-READBACK-20261013-02",
+  "new_guard_session": 87847,
+  "new_guard_pid": 34016,
+  "new_guard_locked_at": "2026-10-13T19:58:09.835556+09:00",
+  "gap": "Oldguard prematurely RELEASED after read-only child yielded, before its final own-proof create; new actualguard acquired. No retroactive full-invocation coverage claim. Delivery/state/governance completed under original liveguard; no operational mutation in intervening gap.",
+  "readback_proof_exists_at_audit": false,
+  "future_readback_guard_session_field23543_historical_input_not_current_guard": "Actual write must be bound to this newguard/time, not stale field.",
+  "candidate_publisher_execution": 0
+}

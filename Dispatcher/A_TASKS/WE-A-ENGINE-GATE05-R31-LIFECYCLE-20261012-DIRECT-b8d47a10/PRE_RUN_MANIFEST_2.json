@@ -1,0 +1,40 @@
+{
+  "manifest_version": "we-r31-pre-run-manifest/run-2",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10",
+  "wp_id": "WP_ENGINE_GATE05_R31_LIFECYCLE",
+  "envelope": 34,
+  "culture": "de-DE",
+  "selected_debug_candidate": {
+    "assembly_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "bytes": 324608,
+    "sha256": "F6C06D6B1392C5CF90483D047150D53A80193DED655850BF1A06FE65A72A52CE",
+    "mvid": "f8c7c77e-e2c5-4d3e-9371-a4e349d433c9",
+    "pdb_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_bytes": 78704,
+    "pdb_sha256": "FDCE1F62777DC49C8F00DE1E7899B106564471983F2A34105F290491984BF466"
+  },
+  "runner_identity": {
+    "runner_exe_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\Harness\\bin\\Debug\\net472\\Gate05R31LifecycleRunner.exe",
+    "runner_exe_bytes": 23552,
+    "runner_exe_sha256": "60B57478D22EC48EC65A070A5EFDC591D8EB0C1C0AB8F1F9D9AD7ACEAE232641",
+    "runner_mvid": "c01d2ce5-27d8-40f3-b8ae-727b35554d57",
+    "runner_codeview_guid": "aa905429-be5b-473e-9db4-42a6c8855a41",
+    "runner_pdb_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\Harness\\bin\\Debug\\net472\\Gate05R31LifecycleRunner.pdb",
+    "runner_pdb_bytes": 5192,
+    "runner_pdb_sha256": "D688FFF6D83F5010CD3948DE5E8AD8AD37DF737DB3DBAEA9DD82ADA4FC3F9D79",
+    "runner_source_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\Harness\\Program.cs",
+    "runner_source_bytes": 19722,
+    "runner_source_sha256": "B9270B4B4ED37FCC5E839E781DFFF6ADE75358389D8700ACC4CDF1097C6A25E6"
+  },
+  "command": [
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\Harness\\bin\\Debug\\net472\\Gate05R31LifecycleRunner.exe",
+    "--rundir",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\run_de_de",
+    "--culture",
+    "de-DE"
+  ],
+  "cwd": "C:\\Users\\user\\Desktop\\RimMulti",
+  "run_directory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\run_de_de",
+  "published_pairs_dir": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\PublishedPairs",
+  "fixtures_dir": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\Fixtures"
+}

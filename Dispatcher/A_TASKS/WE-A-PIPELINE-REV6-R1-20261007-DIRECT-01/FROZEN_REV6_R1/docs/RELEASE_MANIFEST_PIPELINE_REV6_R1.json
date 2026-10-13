@@ -1,0 +1,93 @@
+{
+  "ManifestVersion": "1.0",
+  "WorkPackage": "WP_PIPELINE_REV6_R1",
+  "Revision": "REV6-R1",
+  "DispatchId": "WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01",
+  "TimestampUtc": "2026-10-07T10:25:00Z",
+  "Role": "Gemini 3.8 Flash A — Primary Development Agent",
+  "IndependentVerifier": "GPT-6.1 Sol",
+  "Status": "E1 PIPELINE REV6-R1 PASS",
+  "SchemaVersion": 7,
+  "ApplicationId": "0x57415245 (1463898693 / WARE)",
+  "ExpectedV7SchemaSignature": "079CFBAC4246592B4E2300630BBB39528C44CCAA6C1199C9811E9B1DB9C4B63C",
+  "PriorRejectedCandidateArchive": {
+    "PreservedResultId": "WE-A-PIPELINE-REV6-RESULT-20261007-01",
+    "ArchiveManifestPath": "Dispatcher/A_TASKS/WE-A-PIPELINE-REV6-20261007-DIRECT-01/MASTER_REJECTED_CANDIDATE_ARCHIVE.json",
+    "ArchiveDirectory": "Dispatcher/A_TASKS/WE-A-PIPELINE-REV6-20261007-DIRECT-01/FROZEN_REV6_REJECTED",
+    "Status": "ARCHIVED_UNTOUCHED"
+  },
+  "BinaryArtifacts": {
+    "WarEconomy.Server.dll": {
+      "RelativePath": "WarEconomyMod/Source/Server/bin/Release/net8.0/WarEconomy.Server.dll",
+      "Sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78",
+      "Mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add",
+      "MatchingPdb": "WarEconomyMod/Source/Server/bin/Release/net8.0/WarEconomy.Server.pdb"
+    },
+    "WarEconomy.Server.exe": {
+      "RelativePath": "WarEconomyMod/Source/Server/bin/Release/net8.0/WarEconomy.Server.exe",
+      "Sha256": "0C1B14510C3CDC7396848E7228660456F7F127F97E680B785A7B62665765378C"
+    },
+    "WarEconomy.Server.pdb": {
+      "RelativePath": "WarEconomyMod/Source/Server/bin/Release/net8.0/WarEconomy.Server.pdb",
+      "Sha256": "7A99DAD44A6F32A7FDAFABA2534C5914C73C958B1F86E27A21CEBAE7F6A4A239"
+    },
+    "WarEconomy.Common.dll": {
+      "RelativePath": "WarEconomyMod/Source/Common/bin/Release/netstandard2.0/WarEconomy.Common.dll",
+      "Sha256": "2711A366D3108DE42EB5CD07EE4874DB6B332B86A63F38B36E79611CFE110BCB",
+      "Mvid": "84b7cb6b-224a-43de-b2b6-1f67e2e51cf7",
+      "MatchingPdb": "WarEconomyMod/Source/Common/bin/Release/netstandard2.0/WarEconomy.Common.pdb"
+    },
+    "WarEconomy.Common.pdb": {
+      "RelativePath": "WarEconomyMod/Source/Common/bin/Release/netstandard2.0/WarEconomy.Common.pdb",
+      "Sha256": "5119FE41A0FD3BB6B6DCA299B85FD3EEF0F91D4FB7B1AC77DAEDA762E9B2D0F0"
+    }
+  },
+  "ModifiedSourceFiles": {
+    "RecoveryReconciler.cs": {
+      "RelativePath": "WarEconomyMod/Source/Server/Pipeline/Recovery/RecoveryReconciler.cs",
+      "Sha256": "2CD07966F64B8AC05C1DB86E18C4D363802A20F4E0A5B26160BAAF4F95C37F12"
+    },
+    "PipelineSchemaMigration.cs": {
+      "RelativePath": "WarEconomyMod/Source/Server/Pipeline/Data/Migrations/PipelineSchemaMigration.cs",
+      "Sha256": "7A5AAA86DBDB447558936B38C68E95678BEA637D474184FA5F6AF5A3A29556B2"
+    }
+  },
+  "RunnerArtifacts": {
+    "E1_Rev6_R1_Runner.exe": {
+      "RelativePath": "scratch/E1_Rev6_R1_Runner/bin/Release/net8.0/E1_Rev6_R1_Runner.exe",
+      "Sha256": "D39C7CEF8209F93E8F2C01EC725919CB0676C357D840D9D3EFB01E7C52EBEF7C"
+    },
+    "E1_Rev6_R1_Runner.dll": {
+      "RelativePath": "scratch/E1_Rev6_R1_Runner/bin/Release/net8.0/E1_Rev6_R1_Runner.dll",
+      "Sha256": "22D0E5561409813B02FB9EF2C0D23FC3AA5F42E3F3BBE96426C7A493B0CB0CCE",
+      "Mvid": "8aec33d1-a76a-436d-a6bf-73e644e5f301"
+    },
+    "E1_Rev6_R1_Runner.pdb": {
+      "RelativePath": "scratch/E1_Rev6_R1_Runner/bin/Release/net8.0/E1_Rev6_R1_Runner.pdb",
+      "Sha256": "1C03ADAB86DA50E7E212F00D5FC67F282EA76B8A843CC209CCBD1300D334740B"
+    },
+    "Program.cs": {
+      "RelativePath": "scratch/E1_Rev6_R1_Runner/Program.cs",
+      "Sha256": "CF0B531A60FE678DC0DFD4AE7EB8758AF760CB9FE6EA0202C553057AB6E9410C"
+    }
+  },
+  "E1Results": {
+    "TotalBatteries": 25,
+    "PassedBatteries": 25,
+    "FailedBatteries": 0,
+    "Verdict": "PASS",
+    "RelativePath": "scratch/pipeline_e1_rev6_r1_results.json",
+    "Sha256": "65360FAC6456B451D729E13A6BD27A7FBA8AD2BDE13AE5FB7FE6D8349E2D2C20",
+    "RawEvidencePath": "scratch/pipeline_e1_rev6_r1_raw_console.txt",
+    "RawEvidenceSha256": "C47181D67AC03679A67DD8B15564DA6C33DC8AF3ACCADFFC74AEA8D9D35C5991"
+  },
+  "Gate05EngineFreeze": {
+    "Status": "UNTOUCHED_BIT_IDENTICAL_19_FILES",
+    "CandidateDllSha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+    "CandidateDllMvid": "12bb9237-1b3e-4b20-89a7-69ad729861e1",
+    "FreezeBeforePath": "Dispatcher/A_TASKS/WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01/MASTER_ENGINE_FREEZE_BEFORE.json",
+    "FreezeBeforeSha256": "2E7BB27EBF2E64287C3919E84A470B92371A99560832A2C7BBFB0FA611E72099",
+    "FreezeAfterPath": "scratch/MASTER_ENGINE_FREEZE_AFTER_REV6_R1.json",
+    "FreezeAfterSha256": "43F64F513255574C4FD2B224BC80DDD06AE36A2C2A0EA37D05F429404A39F9FC"
+  }
+}

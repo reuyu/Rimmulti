@@ -1,0 +1,37 @@
+from pathlib import Path
+import json,hashlib,datetime,sys,tomllib
+sys.stdout.reconfigure(encoding='utf8');R=Path(__file__).resolve().parents[2];H=R/'docs/WarEconomy_Master_Handoff_20261006';C=H/'coordination'
+def read(p):return json.loads(p.read_text(encoding='utf-8-sig'))
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest().upper()
+def write(p,x):p.write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
+def row(p):return {'path':str(p),'sha256':sha(p),'bytes':p.stat().st_size}
+at=datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).isoformat();cp=R/'Dispatcher/MASTER_COMMUNICATION_STATE.json';bp=R/'Dispatcher/MASTER_A_TASKS.json';sp=H/'DISPATCHER_STATE.json';rp=R/'Dispatcher/MASTER_RECEIPTS.json';c=read(cp);b=read(bp);s=read(sp);rr=read(rp);t=b['tasks'][-1];d=c['sol_current_delivery'];T=Path(t['instruction_path']).parent
+assert c['active_operation'] is None and t['dispatch_id'].endswith('46f60e2a') and t['delivery_status']=='SENT' and t['submission_attempts']==1 and not t['unknown_delivery'] and d['delivery_status']=='SENT' and d['actual_snapshot']['thread']['status']['type']=='active'
+lock=read(R/'Dispatcher/MASTER_MONITOR_LOCK_INFO.json');assert lock['status']=='LOCKED' and lock['run_id']=='MASTER-R28-DUAL-COMPLETE-20261012-01'
+base=read(Path(d['baseline_path']));assert len(base['files'])==14105
+for f in base['files']:
+ p=Path(f['path']);assert sha(p)==f['sha256'] and p.stat().st_size==f['bytes'],str(p)
+for f in t['production_fixed_files']:assert sha(Path(f['path']))==f['sha256']
+cfg=tomllib.loads(Path('C:/Users/user/.codex/automations/wareconomy-master/automation.toml').read_text(encoding='utf8'));assert cfg['status']=='ACTIVE' and cfg['rrule']=='FREQ=HOURLY;INTERVAL=1' and len(cfg['prompt'])==173 and cfg['target_thread_id']==c['master_thread_id']
+ack=None
+if Path(t['ack_path']).exists():
+ try:ack=read(Path(t['ack_path']))
+ except json.JSONDecodeError:ack=None
+ if ack:
+  assert all(ack[k]==t[k] for k in ['dispatch_id','wp_id','wp_revision']) and ack.get('envelope',ack.get('delivery_envelope_revision'))==32
+  t.update(status='IN_PROGRESS',ack_verified=True,ack_sha256=sha(Path(t['ack_path'])),ack_observed_at=at);write(bp,b)
+ap=C/'MASTER_R29_STARTUP_PAIR_ACK_OR_PENDING_VERIFICATION_20261012.json';assert not ap.exists();write(ap,{'at':at,'dispatch_id':t['dispatch_id'],'status':'ACK_VERIFIED_IN_PROGRESS' if ack else 'ACK_PENDING_ACTUAL_SENT','ack':row(Path(t['ack_path'])) if ack else None,'exact_submission':row(Path(t['submission_proof'])),'current_fixed2_matched':True,'protected14105_matched':True,'normal_E1_and_source_completion':'PENDING_NOT_RELEASE'})
+c.update(a_current_dispatch_id=t['dispatch_id'],a_status='R29_STARTUP_PAIR_IN_PROGRESS_ACK_VERIFIED' if ack else 'R29_STARTUP_PAIR_ACTUAL_SENT_ACK_PENDING',a_latest_ack={'at':at,'dispatch_id':t['dispatch_id'],'proof':row(ap)} if ack else None,sol_current_wp_id=d['wp_id'],updated_at=at);c['master_monitor_automation'].update(resumed_by='Master after actual R29 directCU delivery',configuration_updated_at=at)
+s['endpoints']['a'].update(ack_verified=bool(ack),current_wp=t['wp_id'],current_dispatch_id=t['dispatch_id'],execution_phase='IN_PROGRESS');s['master_monitor_automation']=c['master_monitor_automation'];s['latest_master_dispatch']={'at':at,'A':t['dispatch_id'],'Sol':d['delivery_id']};s['updated_at']=at
+for recipient,p in [('A',C/'MASTER_GATE05_R29_STARTUP_PAIR_DISPATCH_MONITOR_ACTIVE_20261012.json'),('Sol',C/'MASTER_SOL_R29_STARTUP_PAIR_PREPARATION_DELIVERY_VERIFICATION_20261012.json')]:
+ e={'event_id':(t['dispatch_id'] if recipient=='A' else d['delivery_id'])+'-ACTUAL-SENT-VERIFIED','recipient':recipient,'at':at,'delivery_status':'SENT','proof':row(p),'unknown_delivery':False};assert not any(z.get('event_id')==e['event_id'] for z in rr['processed_dispatch_events']);rr['processed_dispatch_events'].append(e)
+rr['updated_at']=at;write(rp,rr)
+proof={'at':at,'guard_run':lock['run_id'],'guard_session':99760,'guard_pid':33196,'A':{'dispatch_id':t['dispatch_id'],'SENT':True,'one_actual_submission':True,'ACK':'VERIFIED' if ack else 'PENDING','proof':row(ap),'scope':row(Path(t['scope_baseline_path']))},'Sol':{'delivery_id':d['delivery_id'],'actual_new_active_turn':d['actual_snapshot']['latestTurn']['id'],'cursor':d['actual_snapshot']['cursor'],'ACK':'PENDING','prior_R28_runtime':'FAILED_USAGE_INACTIVE175_NOT_REPLACED','current_operational':'NEW_ORIGINAL_ACTIVE_TURN176_PROVEN','scope':'FROZEN_R27_NEWCONTRACT_NORMALORACLE_PREPARATION_NO_MUTABLE_R29_OR_RUNS'},'protected_unique_paths':14105,'currentmutable7_excluded':True,'oldR27_candidate_frozen83_andQAraw_preserved':True,'currentfixedCensus_csproj':True,'R28_source_IL_disposition':'INDEPENDENT_EVIDENCE_ACCEPTED_A10CORRECTIONS_CONTROLLING','new_auxiliary_contract':row(H/'MASTER_R29_OPERATOR_STARTUP_PAIR_CONTRACT_20261012.md'),'scheduler_actual':cfg,'future_R29_scheduled_execution':'UNOBSERVED','closure_changed':False,'nativeE2':'NOT_RELEASED','Foundation':'HOLD','Engine002006_Pipeline007_schema_GQ1_PlayerGlobal_physicalsplit':'OPEN','Master_candidate_build_calls':0,'knowninstalled':'OPEN_UNCHANGED_ACTOR_UNKNOWN'}
+p=C/'MASTER_R28_DUAL_DISPOSED_R29_DUAL_SENT_FINAL_AUDIT_20261012.json';assert not p.exists();write(p,proof);c['latest_coordination_audit']=str(p);c['last_monitor_run'].update(status='R28_DUAL_DISPOSED_CORRECTED_R29_SOURCE_A_AND_NORMALPREP_ORIGINALSOL_ACTUAL_SENT_HOURLY_ACTIVE',at=at);write(cp,c);s['latest_coordination_audit']=str(p);write(sp,s)
+para=f'\n\n## LOCAL-R28-DISPOSED-R29-DUAL-ACTUAL-SENT-FINAL — {at}\nR28 dualrawverified/Master10Acorrectionscontrolling/proposal11+Sol38preserved/no wholeGatePASS. A{t["dispatch_id"]}/R29envelope32 actualCUfreshidle-exactdraft-oneSend-newmessage-emptycomposer-WorkingCancel/SENT/ACK{"VERIFIED" if ack else "PENDING"};sixWorkerstartupspans+newpairedpublisher/exactcurrentmutable7/Censuscsprojfixed,aux4contract explicit/operatorissuer-nativepending/M05launcherHOLD/currenttaskbodyfixed. OriginalSol{d["delivery_id"]} directSENT/newactive{d["actual_snapshot"]["latestTurn"]["id"]}/cursor176 provescurrentoperationalreadinessafterhistoricalR28usagefailednotLoaded175;ACKpending/no substitute/duplicate. Independent frozenR27+newMastercontract6normaltyped/raw/copy/prospectiveoracleprep/no mutableR29read-build-run. Protected14105rehashed/frozen83/oldraw intact. SameactualACTIVE60min173charcorrecttarget/futureR29scheduledexecutionUNOBSERVED. Collectprep→protect;Aterminal→Masterreviewexactfreeze/pause→freshoriginalSolQA→nextnecessaryM04/M05privatecurrenttask/protectedreceiver/nativewhenadmitted automatically. FullEnginePipelineGQ1OPEN/FoundationHOLD/nativeE2NOTRELEASED/closure0. Proof{p}\n'
+for q in [R/'AGENTS.md',R/'docs/MASTER_GOVERNANCE_CURRENT.md',H/'MASTER_PROJECT_STATE.md',H/'MASTER_DECISION_LOG.md',H/'QA_DEFECT_LEDGER.md',H/'MASTER_AGENT_DISPATCH_BOARD.md',R/'Dispatcher/MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md',H/'MASTER_NEXT_TECHNICAL_ACTIONS_20261009.md']:
+ with q.open('a',encoding='utf8') as f:f.write(para)
+e={'at':at,'event_id':lock['run_id']+'-R29-DUAL-FINAL','type':'R28_CORRECTED_R29_DUAL_SENT_FINAL_AUDIT','proof':row(p)}
+for q in [R/'Dispatcher/MASTER_MONITOR_JOURNAL.jsonl',H/'DISPATCH_JOURNAL.jsonl']:
+ with q.open('a',encoding='utf8') as f:f.write(json.dumps(e,ensure_ascii=False)+'\n')
+print(json.dumps({'status':'FINAL_AUDIT_MATCHED','protected':14105,'A_ACK':bool(ack),'Sol':'ORIGINAL_ACTUAL_NEW_ACTIVE176','monitor':'ACTIVE_HOURLY'},ensure_ascii=False))

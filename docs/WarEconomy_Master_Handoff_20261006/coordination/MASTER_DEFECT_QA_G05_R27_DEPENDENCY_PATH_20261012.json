@@ -1,0 +1,39 @@
+{
+  "at": "2026-10-12T03:59:45.548264+09:00",
+  "id": "QA-G05-R27-DEPENDENCY-PATH-20261012-01",
+  "owner": "Master QA WP pointer",
+  "status": "CLOSED_SCOPED",
+  "initial_failure": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-INDEPENDENT-S1-20261012\\PREPARE_RUNNER_FAILURE_RAW.txt",
+    "sha256": "A9E3E3D24BFD1AE4E3EF04A8380D8E6638FE695541D97D8EBB667596A7EB4C94",
+    "bytes": 1757
+  },
+  "Master_pointer_correction": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R27_FROZEN_NEWTONSOFT_POINTER_CORRECTION_20261012.json",
+    "sha256": "B094F7CBF714EB3C9C6535CAA316A85730EDB5B19FC052E46FA635BD49C02587",
+    "bytes": 2495
+  },
+  "newS2_WP": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R27_CHILD_CAPTURE_INDEPENDENT_S2.md",
+    "sha256": "098602B4E0CEB179FDEF5C9D89A6B12BE673D88202C5407F95119D68159C5D7F",
+    "bytes": 11570
+  },
+  "actual_candidate_FAIL": false,
+  "fullnativeE2_released": false,
+  "closed_at": "2026-10-12T04:46:15.834688+09:00",
+  "closure_scope": "MASTER_QA_DEPENDENCY_POINTER_ONLY",
+  "regression_result_id": "SOL-GATE05-R27-CHILD_CAPTURE-INDEPENDENT-S2-20261012-bff0acad007f4167b974eb7496240425",
+  "master_disposition": "ACCEPTED_SCOPED_R27_NORMAL_CAPTURE15_TYPED_RAW_COPY_PASS_OPERATOR_REGISTRATION_AND_NATIVE_UNTESTED",
+  "master_review": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R27_CHILD_CAPTURE_INDEPENDENT_S2_20261012.md",
+    "sha256": "F717E8C935460C0C6BEE5FE93F5713B97134EF544714C6CAD17C097BDEF848D5",
+    "bytes": 4177
+  },
+  "closure_proof": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R27_CHILD_CAPTURE_S2_COMPLETION_VERIFICATION_20261012.json",
+    "sha256": "9416A2C64CC90562F51A54C4A4EF6E8456EC6263F22E2AD0C7F5AB8211511CBC",
+    "bytes": 4626
+  },
+  "S1_failure_bytes_preserved": true,
+  "Engine002006_closed": false
+}

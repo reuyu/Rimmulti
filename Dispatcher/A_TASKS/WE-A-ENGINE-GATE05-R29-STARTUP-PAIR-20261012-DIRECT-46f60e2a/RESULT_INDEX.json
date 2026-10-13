@@ -1,0 +1,25 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a",
+  "wp_id": "WP_ENGINE_GATE05_R29_STARTUP_PAIR",
+  "wp_revision": "GATE05-R29-STARTUP-PAIR",
+  "envelope": 32,
+  "result_id": "WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-RESULT-01",
+  "status": "COMPLETED",
+  "e1_verdict": "IMPLEMENTED_STARTUP_PAIR_PASS_NATIVE_UNTESTED",
+  "generated_at": "2026-10-12T09:30:00+09:00",
+  "index": {
+    "task_ack": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a\\ACK.json",
+    "preservation_before": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a\\PRESERVATION_BEFORE.json",
+    "before_after_preservation": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a\\BEFORE_AFTER_PRESERVATION.json",
+    "source_scope_diff": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a\\SOURCE_SCOPE_DIFF.json",
+    "candidate_identity": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a\\CANDIDATE_IDENTITY.json",
+    "producer_publication_evidence": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a\\PRODUCER_PUBLICATION_EVIDENCE.json",
+    "final_pre_run_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a\\FINAL_PRE_RUN_MANIFEST.json",
+    "full_typed_raw_copy_binding": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a\\FULL_TYPED_RAW_COPY_BINDING.json",
+    "e1_normal_results": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a\\E1_NORMAL_RESULTS.json",
+    "release_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a\\RELEASE_MANIFEST.json",
+    "implementation_report": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a\\IMPLEMENTATION_REPORT.md",
+    "technical_report": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\A_ENGINE_GATE05_R29_STARTUP_PAIR_REPORT_20261012.md",
+    "completion": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a\\COMPLETION.json"
+  }
+}

@@ -1,0 +1,14 @@
+from pathlib import Path
+Q=Path(__file__).resolve().parent;ROOT=Q.parent.parent;OLD=ROOT/'QA-Tactical-Engine/GATE05-R23-IDENTIFIER_MAPPING-INDEPENDENT-S1-20261011'
+def change(t):
+    pairs=[('WE-A-ENGINE-GATE05-R23-IDENTIFIER-MAPPING-20261011-DIRECT-31bd3af2','WE-A-ENGINE-GATE05-R25-ROLE-USERDATA-20261011-DIRECT-dd341868'),('G05R23-31bd3af2','G05R25-dd341868'),('MASTER_GATE05_R23_IDENTIFIER_MAPPING','MASTER_GATE05_R25_ROLE_USERDATA'),('MASTER_R23_QA_INDEPENDENT_PROTECTED_BASELINE_RECONCILED','MASTER_R25_QA_INDEPENDENT_PROTECTED_BASELINE'),('QA_EngineHost_Gate05_R23_Identifier_Mapping','QA_EngineHost_Gate05_R25_Role_UserData'),('WP_QA_ENGINE_GATE05_R23_IDENTIFIER_MAPPING','WP_QA_ENGINE_GATE05_R25_ROLE_USERDATA'),('SOL-GATE05-R23-IDENTIFIER_MAPPING','SOL-GATE05-R25-ROLE_USERDATA'),('R23_FROZEN_LINEAGE','R25_FROZEN_LINEAGE'),('58A4E0E9F7748C0E23E5D2818CA29D3C72151E3052E2811989C4290B9A520181','3325336A57511B7F8A4702136771A7CCA52E5D134EC7D3D5C4CA5A68F25607F8'),('6D11497A1D2B8AA06DD3D8B8692E7B90B502D414C59455DC326ADC9921BF5CEE','FB436534FB8189D1BF20B2F888FAC2FDECCBBCB1C688CB6BD0ADCF7FEC9A0057'),('3AB773C5CEF01FE98514D78C2C3087D64000CBC3B39A5060214FCEC811DDC662','9FA1907CB215201E8AB8ACC89C033592B38B2260AACE1B7CB8F90CEC793030F0'),('12350','13220'),('4379BE35700337F797BB17F25D5BAC2A8014FAA9332D9878E587A12E5758A9C4','A9C31DB0EEEBDCFDF851C0160899A9E092579D8E333C030F34845A63FAAAB6E7'),('5bdada93-1f00-40e3-ab4d-7b23f4b2d086','5553a632-0557-433f-8840-bb12875cf577'),('af4e01b8-2da9-479c-b4ab-9bde73824bbd','da8efff8-3b44-48c1-a3bb-fd61f5d18795')]
+    for a,b in pairs:t=t.replace(a,b)
+    return t
+if __name__=='__main__':
+    assert not (Q/'review_setup.py').exists()
+    t=change((OLD/'review_setup.py').read_text(encoding='utf-8-sig'));t=t.replace('ExactfrozenR23 STATIC+normalPURE20receipt fullgraph originalUnicodeoriginplan actualusedClone14copy rolecap4equivalence UTCopaque plusnormal16snapshot only','ExactfrozenR25 STATIC+normalPURE4cases canonical2rolesPLAINOPAQUE/ToSnapshot4-SelectUserData8 fullgraph callerpurity only;receipt/global/native0')
+    (Q/'review_setup.py').write_text(t,encoding='utf-8')
+    t=(OLD/'verify_three_span_scope.py').read_text(encoding='utf-8-sig').replace('MASTER_R23_SCOPE_BASELINE','MASTER_R25_SCOPE_BASELINE').replace('G05R22-9be1579a','G05R23-31bd3af2').replace('2076E3A88B57A55CDDB5F25950ED26EB2310224A43A91C8917EEC6588CD5983F','AB5AD60F16A62FC4473712ABF03AF10A3BB22A66DD8E283F0EC241857BD25BD2').replace("len(load(MAN)['files'])==126","len(load(MAN)['files'])==99").replace('freeze126','freeze99')
+    (Q/'verify_three_span_scope.py').write_text(t,encoding='utf-8')
+    (Q/'build_once.py').write_text((OLD/'build_once.py').read_text(encoding='utf-8-sig'),encoding='utf-8')
+    print('Own R25 lineage/scope/compiler host scripts prepared;old source text reference only')

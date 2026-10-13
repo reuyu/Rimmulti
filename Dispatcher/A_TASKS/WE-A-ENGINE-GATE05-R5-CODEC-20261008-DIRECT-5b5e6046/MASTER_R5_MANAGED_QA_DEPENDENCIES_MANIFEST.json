@@ -1,0 +1,36 @@
+{
+  "at": "2026-10-08T18:44:00.754457+09:00",
+  "scope": "Managed DTO/Serialize/Deserialize dependency metadata and loader support only;no native/game/profile execute admission",
+  "read_only_original_copy": true,
+  "runtime_content_profile_admitted": false,
+  "files": [
+    {
+      "original_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\Assembly-CSharp.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\Assembly-CSharp.dll",
+      "sha256": "5CF1B5BE399D5B1C9C56CA72C9D35B4ECF307FEACF5859D04AC5A1AA5926356A",
+      "size": 15777280,
+      "mvid": "NOT_YET_PARSED;QA metadata check permitted"
+    },
+    {
+      "original_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\UnityEngine.CoreModule.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\UnityEngine.CoreModule.dll",
+      "sha256": "C5C58EA254834291780A1D6C388C241443D07167B4A4B890A23C9494F626DDBA",
+      "size": 1386688,
+      "mvid": "NOT_YET_PARSED;QA metadata check permitted"
+    },
+    {
+      "original_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\UnityEngine.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\UnityEngine.dll",
+      "sha256": "0422FF282130458380D2FB4B63A718465D3BD2D5738F1532F60798B0D35DFF0D",
+      "size": 125120,
+      "mvid": "NOT_YET_PARSED;QA metadata check permitted"
+    },
+    {
+      "original_path": "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\294100\\2009463077\\Current\\Assemblies\\0Harmony.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\0Harmony.dll",
+      "sha256": "353DAAFEC180BB8E7BBE4DA78F2A7CDC78067392E3A4E79DC8E7AF295F2371E6",
+      "size": 2456064,
+      "mvid": "NOT_YET_PARSED;QA metadata check permitted"
+    }
+  ]
+}

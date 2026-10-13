@@ -1,0 +1,55 @@
+--- FrozenR23Worker
++++ R25Worker
+@@ -439,10 +439,9 @@
+         {
+             get
+             {
+-                // Gate05-R17: If operator startup config is active, route saves/tasks to worker isolated userdata directory
+-                if (_activeStartupConfig != null && !string.IsNullOrEmpty(_activeStartupConfig.WorkerUserDataDirectory))
+-                {
+-                    return _activeStartupConfig.WorkerUserDataDirectory;
++                if (_activeStartupConfig != null)
++                {
++                    return OperatorRolePathSelector.SelectUserData(_activeStartupConfig);
+                 }
+                 if (!string.IsNullOrEmpty(CustomSaveDataPathOverride))
+                 {
+@@ -577,7 +576,7 @@
+                 }
+ 
+                 ContentProfileProvider.ConfigureExpectedPackagePolicy(_activeAdmissionReceipt.Snapshot.GetExpectedPackagePolicyDeclaration());
+-                Log.Message($"[WorkerBridge] Operator startup config applied in Awake: ConfigId='{_activeAdmissionReceipt.Snapshot.ConfigId}', Role='{_activeAdmissionReceipt.Snapshot.Role}', UserData='{_activeAdmissionReceipt.Snapshot.WorkerUserDataDirectory}'");
++                Log.Message($"[WorkerBridge] Operator startup config applied in Awake: ConfigId='{_activeAdmissionReceipt.Snapshot.ConfigId}', Role='{_activeAdmissionReceipt.Snapshot.Role}', DeclaredRoleUserData='{OperatorRolePathSelector.SelectUserData(_activeAdmissionReceipt.Snapshot)}'");
+ 
+                 if (GenCommandLine.TryGetCommandLineArg("bridgeport", out string portStr) && int.TryParse(portStr, out int customPort))
+                 {
+@@ -3452,6 +3451,29 @@
+         }
+     }
+ 
++    public static class OperatorRolePathSelector
++    {
++        public static string SelectUserData(OperatorStartupConfigSnapshot snapshot)
++        {
++            if (snapshot == null)
++            {
++                throw new ArgumentNullException(nameof(snapshot));
++            }
++
++            if (string.Equals(snapshot.Role, "SIMULATION", StringComparison.Ordinal))
++            {
++                return snapshot.WorkerUserDataDirectory;
++            }
++
++            if (string.Equals(snapshot.Role, "READ_ONLY", StringComparison.Ordinal))
++            {
++                return snapshot.ValidatorUserDataDirectory;
++            }
++
++            throw new InvalidOperationException($"[OperatorRolePathSelector] Unknown or unsupported operator role: '{snapshot.Role}'");
++        }
++    }
++
+     #region Gate05-R18: Operator-Owned Normal Startup & Config Admission Seal
+ 
+     public class OperatorStartupConfig

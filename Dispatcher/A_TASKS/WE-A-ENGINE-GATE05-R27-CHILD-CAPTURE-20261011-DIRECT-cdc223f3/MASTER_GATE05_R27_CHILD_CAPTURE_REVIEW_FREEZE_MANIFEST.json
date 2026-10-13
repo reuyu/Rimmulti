@@ -1,0 +1,506 @@
+{
+  "at": "2026-10-12T03:36:22.864412+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3",
+  "result_id": "WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-RESULT-01",
+  "kind": "POST_COMPLETION_MASTER_REVIEW_FREEZE_NEW_ENGINE_CANDIDATE_NOT_E2_PASS",
+  "files": [
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\ACK.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\ACK.json",
+      "sha256": "DCBEAC5CF1B8ABFB657D8BC89E6F5CD9FDC6A6C69EBB4AE47230F1F924A7FBD4",
+      "size": 2831
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\CANDIDATE_IDENTITY.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\CANDIDATE_IDENTITY.json",
+      "sha256": "664C1B3A5A148E2F85FC3F50BB62AE168AFF1E2BF968D59F17D85ABABA1AE915",
+      "size": 4467
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\COMPLETION.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\COMPLETION.json",
+      "sha256": "9B26B84A66C22120034729333709766A2F99111E8B425763BFC9DD035BC742F0",
+      "size": 14121
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\CONTENT_MANIFEST.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\CONTENT_MANIFEST.json",
+      "sha256": "8AFA5853A7B9C31DB802E5B08D8E62088EAA705025E49A92EA579A251244260D",
+      "size": 9290
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\ENGINE_FREEZE_AFTER.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\ENGINE_FREEZE_AFTER.json",
+      "sha256": "BECC118696F2DB6BAA3206CE0EA2DED76C0C7CF573781C58A00BAF3FE81DA20E",
+      "size": 3616
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\ENGINE_FREEZE_BEFORE.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\ENGINE_FREEZE_BEFORE.json",
+      "sha256": "54670234FF838BF6A7821B3E579A82249B6324F8BF03C9CBD0FDA968421A0E31",
+      "size": 3684
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\IMPLEMENTATION_CONTRACT.md",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\IMPLEMENTATION_CONTRACT.md",
+      "sha256": "0555BE60BDCD1709AE7A539F0BCAC202FF2262503A78BDB68558D4A236282F33",
+      "size": 7391
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\INSTRUCTIONS.md",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\INSTRUCTIONS.md",
+      "sha256": "2052B3DB23B3DC32334A0E11ACDB5600B86515D6548C9D49B3B1195B3FB5E472",
+      "size": 1993
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\INSTRUCTIONS_PRE_API_NAME_CLARIFICATION.md",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\INSTRUCTIONS_PRE_API_NAME_CLARIFICATION.md",
+      "sha256": "E12468C093F9941566378DEDEFB3DED216EADEB2DFA8B7F3547A8EF86A16520F",
+      "size": 1480
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_POSTSENT_PRESERVATION.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_POSTSENT_PRESERVATION.json",
+      "sha256": "77369E6E183E460275CE24AA557C92C0443A469F4FF5C8688B87DFCF7F091CED",
+      "size": 4638767
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_R27_AUTHORIZED_INSERTION_SCOPE.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_R27_AUTHORIZED_INSERTION_SCOPE.json",
+      "sha256": "4C289AF4FC68F860246683992302735A62B5B0C268E768BA8B0B418A2AFB6F91",
+      "size": 5186
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_R27_PRESERVATION_PREDISPATCH.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_R27_PRESERVATION_PREDISPATCH.json",
+      "sha256": "77369E6E183E460275CE24AA557C92C0443A469F4FF5C8688B87DFCF7F091CED",
+      "size": 4638767
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_R27_RECOVERED_PREDISPATCH_PRESERVATION.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_R27_RECOVERED_PREDISPATCH_PRESERVATION.json",
+      "sha256": "77369E6E183E460275CE24AA557C92C0443A469F4FF5C8688B87DFCF7F091CED",
+      "size": 4638767
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_R27_TERMINAL_PRESERVATION.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_R27_TERMINAL_PRESERVATION.json",
+      "sha256": "2E9529F326CD518B22E946A55DBE0024EB6B7787BF2A923451DDA63375C1F36E",
+      "size": 4646591
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_UI_DRAFT.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_UI_DRAFT.json",
+      "sha256": "6B43B9C73446BFF444041535897C8612093CA2169E91662739A606B7B9546C69",
+      "size": 96836
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_UI_IDLE.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_UI_IDLE.json",
+      "sha256": "A5155B038359F56DF16A80BF985CB145603D93F5F56F2918471964131320BEE2",
+      "size": 95371
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_UI_SUBMISSION_PROOF.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_UI_SUBMISSION_PROOF.json",
+      "sha256": "BFFA6BD25D774529C9650FA60046D15CB4BEEA0BD616A2DAB3C36F5001E904B2",
+      "size": 921
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_UI_SUBMITTED.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_UI_SUBMITTED.json",
+      "sha256": "BCE045569CC8317C38D4024EE3FCA048CD017932988BB49A44FBA52223C959BC",
+      "size": 66239
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\PATCH_SPANS.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\PATCH_SPANS.json",
+      "sha256": "E22BE47D6F84CA471B50BD490ACC2D68EF36DA461C1C2D9677EEB6E407F6E44C",
+      "size": 1837
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\PROSPECTIVE_CALLPLAN_AND_ORACLE.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\PROSPECTIVE_CALLPLAN_AND_ORACLE.json",
+      "sha256": "CDBA8D797082886077F3984728F09FB609E2EA36F2D3C146695022092EE845C1",
+      "size": 5464
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\UI_MESSAGE.txt",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\UI_MESSAGE.txt",
+      "sha256": "CAFDD8B29BA5F011159C594A3B66DF89D0878F60852AF3E435C370FD0589510A",
+      "size": 743
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_EngineHost_Gate05_R27_Child_Capture_20261011.md",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\docs\\POC_EngineHost_Gate05_R27_Child_Capture_20261011.md",
+      "sha256": "7B49A35C64DB90827DA8D212FC05DA8C683C6E152C955E6E31BC554AB470691A",
+      "size": 10990
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R27_CHILD_CAPTURE.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R27_CHILD_CAPTURE.json",
+      "sha256": "07B8C9C2F85E6C2AFB3C48165E180DCA813E10D437D21554AE29D513738D6344",
+      "size": 5316
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\App.config",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\App.config",
+      "sha256": "1BE4F8BB988AE8DA023726B89212668036CEC313B7D44D46B4D63CF1454BA734",
+      "size": 421
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\0Harmony.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\0Harmony.dll",
+      "sha256": "353DAAFEC180BB8E7BBE4DA78F2A7CDC78067392E3A4E79DC8E7AF295F2371E6",
+      "size": 2456064
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\Assembly-CSharp.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\Assembly-CSharp.dll",
+      "sha256": "5CF1B5BE399D5B1C9C56CA72C9D35B4ECF307FEACF5859D04AC5A1AA5926356A",
+      "size": 15777280
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\Gate05R27ChildCaptureRunner.exe",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\Gate05R27ChildCaptureRunner.exe",
+      "sha256": "D16EFBB75FF1213A618EF057F6D5FBFB33885E528044060644706226BC8FA2BD",
+      "size": 45568
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\Gate05R27ChildCaptureRunner.exe.config",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\Gate05R27ChildCaptureRunner.exe.config",
+      "sha256": "BDA33DD42D5636F93CB1D9EE10D7E4E6916E2EB1F4504BDF6CDBDA843057D6BC",
+      "size": 532
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\Gate05R27ChildCaptureRunner.pdb",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\Gate05R27ChildCaptureRunner.pdb",
+      "sha256": "DD43CF510F9FA46B0AF01549A5779C8152048F4B3A4A77BE36D17019CDEBD7E7",
+      "size": 9728
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\Newtonsoft.Json.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\Newtonsoft.Json.dll",
+      "sha256": "E1E27AF7B07EEEDF5CE71A9255F0422816A6FC5849A483C6714E1B472044FA9D",
+      "size": 711952
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\UnityEngine.CoreModule.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\UnityEngine.CoreModule.dll",
+      "sha256": "C5C58EA254834291780A1D6C388C241443D07167B4A4B890A23C9494F626DDBA",
+      "size": 1386688
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\UnityEngine.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\UnityEngine.dll",
+      "sha256": "0422FF282130458380D2FB4B63A718465D3BD2D5738F1532F60798B0D35DFF0D",
+      "size": 125120
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "68BFE5105FA0471AAAF7943009703BB2599B39C5B572833507D6733BCE63CF64",
+      "size": 308224
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "F0BC1B7D92F67593EA967F56A90EE302C76B920A46B98EF77219F7B884C47814",
+      "size": 73776
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\Gate05R27ChildCaptureRunner.csproj",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\Gate05R27ChildCaptureRunner.csproj",
+      "sha256": "61479BAD821EF6626A83357437E7467C93BD0915BF4B1BCC341C22E9037AB719",
+      "size": 1698
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Debug\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Debug\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+      "sha256": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+      "size": 214
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Debug\\net472\\Gate05R2.DD7055BB.Up2Date",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Debug\\net472\\Gate05R2.DD7055BB.Up2Date",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "size": 0
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Debug\\net472\\Gate05R27ChildCaptureRunner.AssemblyInfo.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Debug\\net472\\Gate05R27ChildCaptureRunner.AssemblyInfo.cs",
+      "sha256": "5A72748A84D53596CE738CA2CE306C1849074F486BE4ABF5047473545B5E17EA",
+      "size": 1029
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Debug\\net472\\Gate05R27ChildCaptureRunner.AssemblyInfoInputs.cache",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Debug\\net472\\Gate05R27ChildCaptureRunner.AssemblyInfoInputs.cache",
+      "sha256": "62B18C03F5059FCB302DC549418CB00000718F8E305EE1CA09A4D1F353207D18",
+      "size": 66
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Debug\\net472\\Gate05R27ChildCaptureRunner.assets.cache",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Debug\\net472\\Gate05R27ChildCaptureRunner.assets.cache",
+      "sha256": "B84EFFE1C98C7FE177AB557A62B17882A3D40CDBA0FC22C5663E0B7E6875B544",
+      "size": 151
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Debug\\net472\\Gate05R27ChildCaptureRunner.csproj.AssemblyReference.cache",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Debug\\net472\\Gate05R27ChildCaptureRunner.csproj.AssemblyReference.cache",
+      "sha256": "3E3BF82DEB54275DFC1ED4578DCF741577D7B68A54408A7801F2A597142D75E3",
+      "size": 12930
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Debug\\net472\\Gate05R27ChildCaptureRunner.csproj.CoreCompileInputs.cache",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Debug\\net472\\Gate05R27ChildCaptureRunner.csproj.CoreCompileInputs.cache",
+      "sha256": "56EC65EE93302AE22557CCE67B8E0B10F37FDDEB6037139739C7EBB78787BDA9",
+      "size": 66
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Debug\\net472\\Gate05R27ChildCaptureRunner.csproj.FileListAbsolute.txt",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Debug\\net472\\Gate05R27ChildCaptureRunner.csproj.FileListAbsolute.txt",
+      "sha256": "989ACBF134AE49D7593804F9A3F2EBA60F17EE5029122C6B6630C82107DB1D79",
+      "size": 2312
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Debug\\net472\\Gate05R27ChildCaptureRunner.exe",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Debug\\net472\\Gate05R27ChildCaptureRunner.exe",
+      "sha256": "D16EFBB75FF1213A618EF057F6D5FBFB33885E528044060644706226BC8FA2BD",
+      "size": 45568
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Debug\\net472\\Gate05R27ChildCaptureRunner.exe.withSupportedRuntime.config",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Debug\\net472\\Gate05R27ChildCaptureRunner.exe.withSupportedRuntime.config",
+      "sha256": "BDA33DD42D5636F93CB1D9EE10D7E4E6916E2EB1F4504BDF6CDBDA843057D6BC",
+      "size": 532
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Debug\\net472\\Gate05R27ChildCaptureRunner.GeneratedMSBuildEditorConfig.editorconfig",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Debug\\net472\\Gate05R27ChildCaptureRunner.GeneratedMSBuildEditorConfig.editorconfig",
+      "sha256": "8CA4A38D616D249441FA2F324CD6251BCB56F4FD39FDC9F7F6D70AB56C7A261E",
+      "size": 437
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Debug\\net472\\Gate05R27ChildCaptureRunner.pdb",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Debug\\net472\\Gate05R27ChildCaptureRunner.pdb",
+      "sha256": "DD43CF510F9FA46B0AF01549A5779C8152048F4B3A4A77BE36D17019CDEBD7E7",
+      "size": 9728
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Gate05R27ChildCaptureRunner.csproj.nuget.dgspec.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Gate05R27ChildCaptureRunner.csproj.nuget.dgspec.json",
+      "sha256": "F4CA64CD3849584894C97FAE789BB1262D76AB1386F30570E885E34807A766BC",
+      "size": 1973
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Gate05R27ChildCaptureRunner.csproj.nuget.g.props",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Gate05R27ChildCaptureRunner.csproj.nuget.g.props",
+      "sha256": "AE798ECD59E8BBE02B1D481634BF4DABD064DD30E798B67E1316D1CB345E8B8C",
+      "size": 1133
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Gate05R27ChildCaptureRunner.csproj.nuget.g.targets",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\Gate05R27ChildCaptureRunner.csproj.nuget.g.targets",
+      "sha256": "971CC9B535384849B5C661D776CD7A80833A416265E32E8968E06C367368B8B5",
+      "size": 150
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\project.assets.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\project.assets.json",
+      "sha256": "1E5877598B6959E096537D16DC4D82BD80AEF3D734AB95FF61E11755FF1D32B0",
+      "size": 1884
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\project.nuget.cache",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\obj\\project.nuget.cache",
+      "sha256": "1990AEBD947870A011D45946BAAD25987AB65AF8CCFF06DD745357DA0FE219B6",
+      "size": 262
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\Program.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\Program.cs",
+      "sha256": "0855F826A37A5F172ADFC424880CDDA6F02871ABC3A8C14F97CD4909C95BE7F4",
+      "size": 82218
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\HOST_TELEMETRY.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\HOST_TELEMETRY.json",
+      "sha256": "931286C4704907FDC974FEB0C9C99D5AC7D028C67D72F0F74688497301ACE109",
+      "size": 2168
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_de_de\\E1_EXECUTION_REPORT.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\run_de_de\\E1_EXECUTION_REPORT.json",
+      "sha256": "3232CA19AFED79A112F10796977FB3DA9BCA06C2380F144A92E67B82222DE9AC",
+      "size": 2033
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_de_de\\graph_case_1_before.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\run_de_de\\graph_case_1_before.json",
+      "sha256": "69E522C02C8D0E5A1941E6112FD622A548714980DFAB13714BA11A2E03E721F1",
+      "size": 1556
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_de_de\\graph_case_2_before.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\run_de_de\\graph_case_2_before.json",
+      "sha256": "464FFD1D407CDFEAA799468DA492CC56FA9710681EA8F0B4D7ED0F44CEB078F8",
+      "size": 1556
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_de_de\\graph_case_3_before.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\run_de_de\\graph_case_3_before.json",
+      "sha256": "515170A507A483CEE7CFEC0AE2B044A84BA084833E6D08AF3DBA8D0834FF9B33",
+      "size": 1556
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_de_de\\graph_case_4_before.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\run_de_de\\graph_case_4_before.json",
+      "sha256": "3B18B7DD47AD40312136463D717EBADBD426F7648D322736703208BE78311EAB",
+      "size": 1556
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_de_de\\OUTPUT_INVENTORY.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\run_de_de\\OUTPUT_INVENTORY.json",
+      "sha256": "D582114BAE065B291CCC5543425BBD91684DAD6870B6DDE8B1892FD91F827F69",
+      "size": 229
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_de_de\\stderr.txt",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\run_de_de\\stderr.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "size": 0
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_de_de\\stdout.txt",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\run_de_de\\stdout.txt",
+      "sha256": "068550CDF176359FD4AF268B78178B35F92AD961198B0ED7FC350B35D94B13A0",
+      "size": 980
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_en_us\\E1_EXECUTION_REPORT.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\run_en_us\\E1_EXECUTION_REPORT.json",
+      "sha256": "8C7EED5B62B535AB8ACCABFA3FC36E85A41E32D82AAEB3E0F2E6FD04976D56F7",
+      "size": 2033
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_en_us\\graph_case_1_before.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\run_en_us\\graph_case_1_before.json",
+      "sha256": "69E522C02C8D0E5A1941E6112FD622A548714980DFAB13714BA11A2E03E721F1",
+      "size": 1556
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_en_us\\graph_case_2_before.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\run_en_us\\graph_case_2_before.json",
+      "sha256": "464FFD1D407CDFEAA799468DA492CC56FA9710681EA8F0B4D7ED0F44CEB078F8",
+      "size": 1556
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_en_us\\graph_case_3_before.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\run_en_us\\graph_case_3_before.json",
+      "sha256": "515170A507A483CEE7CFEC0AE2B044A84BA084833E6D08AF3DBA8D0834FF9B33",
+      "size": 1556
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_en_us\\graph_case_4_before.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\run_en_us\\graph_case_4_before.json",
+      "sha256": "3B18B7DD47AD40312136463D717EBADBD426F7648D322736703208BE78311EAB",
+      "size": 1556
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_en_us\\OUTPUT_INVENTORY.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\run_en_us\\OUTPUT_INVENTORY.json",
+      "sha256": "1A179A6EA56F49CF0ED1D1CB8F6A2FA27CBA1A618604510FBE914C7E4DC87247",
+      "size": 229
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_en_us\\stderr.txt",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\run_en_us\\stderr.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "size": 0
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_en_us\\stdout.txt",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\run_en_us\\stdout.txt",
+      "sha256": "D0CFAAC9E71F4EFF8FDB6D52E938DBAA2769DE753CED1B34A0057B171941A15A",
+      "size": 980
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "68BFE5105FA0471AAAF7943009703BB2599B39C5B572833507D6733BCE63CF64",
+      "size": 308224
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "F0BC1B7D92F67593EA967F56A90EE302C76B920A46B98EF77219F7B884C47814",
+      "size": 73776
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "68BFE5105FA0471AAAF7943009703BB2599B39C5B572833507D6733BCE63CF64",
+      "size": 308224
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "F0BC1B7D92F67593EA967F56A90EE302C76B920A46B98EF77219F7B884C47814",
+      "size": 73776
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "C874B1F4CD2DFC7482D5CB93B38782140CCCE6F20F39228046FCA637C1CEF42A",
+      "size": 291840
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "DCBC5EC03C4DD640F37821A877BE7ADFE30DE8C8B5B456CB9EEDF07E22C59FA0",
+      "size": 54016
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "size": 170135
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+      "sha256": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+      "size": 214
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.AssemblyInfo.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.AssemblyInfo.cs",
+      "sha256": "8C7180C5E4D3004DE53926C1039C107C3059053C470CF73F82CF974EAF7D5681",
+      "size": 1029
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+      "sha256": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+      "size": 214
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.AssemblyInfo.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.AssemblyInfo.cs",
+      "sha256": "80492D41167FD5D58508DFC29A09E3624EC6374EF4048B2FF2D2C5EE86562743",
+      "size": 1031
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "B292AB846F78568F74333F58C5967ED38CAAA2F59B07393FC846F4329583E388",
+      "size": 239574
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "size": 1774
+    }
+  ]
+}

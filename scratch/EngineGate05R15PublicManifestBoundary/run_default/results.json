@@ -1,0 +1,295 @@
+{
+  "schema_version": "ADR-006B-v5",
+  "run_id": "GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-RUN-01",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-20261009-DIRECT-03649052",
+  "wp_id": "WP_ENGINE_GATE05_R15_PUBLIC_MANIFEST_BOUNDARY",
+  "wp_revision": "GATE05-R15-PUBLIC-MANIFEST-BOUNDARY",
+  "execution_timestamp": "2026-10-09T14:07:08.9203885Z",
+  "process_id": 24440,
+  "clr_version": "4.0.30319.42000",
+  "os_version": "Microsoft Windows NT 6.2.9200.0",
+  "culture": "ko-KR",
+  "total_tests": 25,
+  "passed_tests": 25,
+  "failed_tests": 0,
+  "overall_verdict": "PASS",
+  "e1_verdict": "SCOPED_POSITIVE_NORMAL_PASS",
+  "cache_accounting": {
+    "normal_provider_configure_calls": 2,
+    "normal_provider_clear_calls": 2,
+    "normal_provider_invalidate_calls": 1,
+    "normal_provider_diagnostics_calls": 15,
+    "normal_core_instance_creations": 11,
+    "normal_core_configure_calls": 11,
+    "normal_core_publish_calls": 7,
+    "normal_core_query_calls": 12,
+    "normal_core_invalidate_calls": 2,
+    "normal_core_error_calls": 3,
+    "total_normal_cache_calls": 55,
+    "prohibited_compute_calls": 0,
+    "prohibited_getactual_calls": 0,
+    "prohibited_native_calls": 0,
+    "prohibited_adverse_calls": 0
+  },
+  "limitations": [
+    "STATIC_MANAGED_NORMAL_EVIDENCE_ONLY",
+    "PURE_INSTANCE_CORE_AND_NORMAL_CONFIGURATION_LIFECYCLE_EVIDENCE_ONLY",
+    "NATIVE_ACTUAL_COMPUTATION_PROHIBITED_AND_UNTESTED",
+    "PRODUCER_GLOBAL_PROVIDER_REAL_ENTRY_STATIC_UNTESTED",
+    "MOD_PATCH_SETTINGS_DYNAMIC_EVALUATION_SEPARATE_OPEN",
+    "NATIVE_PROMOTION_FULL_E2_NOT_RELEASED",
+    "FINAL_DOMAIN_AUTHORITY_REMAINS_DEDICATED_SERVER"
+  ],
+  "test_cases": [
+    {
+      "id": "TC01_Provider_InitialState_Unconfigured_Diagnostics",
+      "name": "TC01_Provider_InitialState_Unconfigured_Diagnostics",
+      "category": "Category1_ProviderLifecycle",
+      "status": "PASS",
+      "description": "Verifies provider initial state before configuration: generation=0, IsCached=false, null entries.",
+      "durationMs": 2,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC02_Provider_ConfigurePolicy_MonotonicGenerationAdvance",
+      "name": "TC02_Provider_ConfigurePolicy_MonotonicGenerationAdvance",
+      "category": "Category1_ProviderLifecycle",
+      "status": "PASS",
+      "description": "Verifies configuring expected package policy advances generation monotonically and binds policy.",
+      "durationMs": 8,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC03_Provider_ReconfigureSamePolicy_AdvancesGeneration",
+      "name": "TC03_Provider_ReconfigureSamePolicy_AdvancesGeneration",
+      "category": "Category1_ProviderLifecycle",
+      "status": "PASS",
+      "description": "Verifies reconfiguring with the identical policy advances generation monotonically.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC04_Provider_ExplicitInvalidate_AdvancesGeneration",
+      "name": "TC04_Provider_ExplicitInvalidate_AdvancesGeneration",
+      "category": "Category1_ProviderLifecycle",
+      "status": "PASS",
+      "description": "Verifies R15 explicit InvalidateCache() advances generation by +1 under lock and clears cached items.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC05_Provider_ClearConfiguredPolicy_AdvancesGeneration",
+      "name": "TC05_Provider_ClearConfiguredPolicy_AdvancesGeneration",
+      "category": "Category1_ProviderLifecycle",
+      "status": "PASS",
+      "description": "Verifies ClearConfiguredExpectedPackagePolicy advances generation and clears policy.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC06_StandaloneCore_InitialState_Clean",
+      "name": "TC06_StandaloneCore_InitialState_Clean",
+      "category": "Category2_StandaloneCacheCoreLifecycle",
+      "status": "PASS",
+      "description": "Verifies isolated ContentProfileCacheCore instance starts clean with generation=0 and null entry.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC07_StandaloneCore_ConfigurePolicy_GenerationAdvance",
+      "name": "TC07_StandaloneCore_ConfigurePolicy_GenerationAdvance",
+      "category": "Category2_StandaloneCacheCoreLifecycle",
+      "status": "PASS",
+      "description": "Verifies core.ConfigureExpectedPackagePolicy advances generation to 1 and binds policy.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC08_StandaloneCore_CaptureStateSnapshot_MatchesGenerationAndPolicy",
+      "name": "TC08_StandaloneCore_CaptureStateSnapshot_MatchesGenerationAndPolicy",
+      "category": "Category2_StandaloneCacheCoreLifecycle",
+      "status": "PASS",
+      "description": "Verifies core.CaptureStateSnapshot returns consistent generation and cloned policy record.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC09_StandaloneCore_PublishCoherentEntry_NormalMatching_Success",
+      "name": "TC09_StandaloneCore_PublishCoherentEntry_NormalMatching_Success",
+      "category": "Category2_StandaloneCacheCoreLifecycle",
+      "status": "PASS",
+      "description": "Verifies publishing a matching entry at current generation populates core cache successfully.",
+      "durationMs": 29,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC10_StandaloneCore_TryGetCoherentEntry_ReturnsMatchingSnapshot",
+      "name": "TC10_StandaloneCore_TryGetCoherentEntry_ReturnsMatchingSnapshot",
+      "category": "Category2_StandaloneCacheCoreLifecycle",
+      "status": "PASS",
+      "description": "Verifies TryGetCoherentEntry returns coherent immutable snapshot with exact metadata.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC11_StandaloneCore_DefensiveManifestImmutability_ResistsCallerMutation",
+      "name": "TC11_StandaloneCore_DefensiveManifestImmutability_ResistsCallerMutation",
+      "category": "Category2_StandaloneCacheCoreLifecycle",
+      "status": "PASS",
+      "description": "Verifies CachedManifest returns defensive copy: mutating caller instance does not affect cached state.",
+      "durationMs": 3,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC12_StandaloneCore_InvalidateCache_AdvancesGeneration_ClearsEntry",
+      "name": "TC12_StandaloneCore_InvalidateCache_AdvancesGeneration_ClearsEntry",
+      "category": "Category2_StandaloneCacheCoreLifecycle",
+      "status": "PASS",
+      "description": "Verifies InvalidateCache on populated core advances generation from 1 to 2 and clears entry.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC13_StandaloneCore_ReconfigureToNewPolicy_AdvancesGeneration_ClearsOldCache",
+      "name": "TC13_StandaloneCore_ReconfigureToNewPolicy_AdvancesGeneration_ClearsOldCache",
+      "category": "Category2_StandaloneCacheCoreLifecycle",
+      "status": "PASS",
+      "description": "Verifies reconfiguring populated core to Policy B advances generation to 2 and clears old cache.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC14_StandaloneCore_PublishNewPolicyEntry_NormalMatching_Success",
+      "name": "TC14_StandaloneCore_PublishNewPolicyEntry_NormalMatching_Success",
+      "category": "Category2_StandaloneCacheCoreLifecycle",
+      "status": "PASS",
+      "description": "Verifies publishing entry for Policy B at generation 2 populates core successfully.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC15_StandaloneCore_TryPublishComputedEntry_ReturnsPublishedEntryDirectly",
+      "name": "TC15_StandaloneCore_TryPublishComputedEntry_ReturnsPublishedEntryDirectly",
+      "category": "Category2_StandaloneCacheCoreLifecycle",
+      "status": "PASS",
+      "description": "Verifies R15 TryPublishComputedEntry overload returns published CoherentContentProfileCacheEntry directly under sync lock.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC16_StandaloneCore_SetComputationError_GenerationScoped_Protection",
+      "name": "TC16_StandaloneCore_SetComputationError_GenerationScoped_Protection",
+      "category": "Category2_StandaloneCacheCoreLifecycle",
+      "status": "PASS",
+      "description": "Verifies R15 SetComputationError(capturedGeneration) only records error if generation has not advanced.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC17_R12_PackageOrder_LoadOrderZeroBasedSorting",
+      "name": "TC17_R12_PackageOrder_LoadOrderZeroBasedSorting",
+      "category": "Category3_Regressions",
+      "status": "PASS",
+      "description": "Regresses R12 package order: verifies 0-based contiguous loadOrder sorting normalizes activeMods.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC18_R12_PackageOrder_PhysicalPermutationInvariance",
+      "name": "TC18_R12_PackageOrder_PhysicalPermutationInvariance",
+      "category": "Category3_Regressions",
+      "status": "PASS",
+      "description": "Regresses R12: verifies aligned and permuted manifests produce identical canonical JSON and fingerprint.",
+      "durationMs": 7,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC19_R12_PackageOrder_DistinctValidSequences_MatchSeparatePolicies",
+      "name": "TC19_R12_PackageOrder_DistinctValidSequences_MatchSeparatePolicies",
+      "category": "Category3_Regressions",
+      "status": "PASS",
+      "description": "Verifies R12 separate valid execution orders match their respective policies without rejection calls.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC20_R12_PackageOrder_FreshOriginal_SerializeTrue_BeforeAdmission",
+      "name": "TC20_R12_PackageOrder_FreshOriginal_SerializeTrue_BeforeAdmission",
+      "category": "Category3_Regressions",
+      "status": "PASS",
+      "description": "Regresses R12 fresh-original manifest serializes with canonicalNormalize=true before external admission.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC21_R11_PolicyDeclaration_Encoding_Whitespace_Unicode_Digest",
+      "name": "TC21_R11_PolicyDeclaration_Encoding_Whitespace_Unicode_Digest",
+      "category": "Category3_Regressions",
+      "status": "PASS",
+      "description": "Regresses R11 policy declaration compact JSON, whitespace/Unicode preservation, and SHA-256 digest.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC22_R9_VersionMeaningSemantics",
+      "name": "TC22_R9_VersionMeaningSemantics",
+      "category": "Category3_Regressions",
+      "status": "PASS",
+      "description": "Regresses R9 version meaning: modVersion null/empty values preserved without overwrite.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC23_ContractVersion_And_CapabilityFlag",
+      "name": "TC23_ContractVersion_And_CapabilityFlag",
+      "category": "Category3_Regressions",
+      "status": "PASS",
+      "description": "Verifies ADR-006B-v5-R15 contract version and GATE05_R15_PUBLIC_MANIFEST_BOUNDARY capability flag.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC24_DefFamilies_CanonicalSorting",
+      "name": "TC24_DefFamilies_CanonicalSorting",
+      "category": "Category3_Regressions",
+      "status": "PASS",
+      "description": "Regresses Def families deterministic ordinal defName sorting across all supported families.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC25_Reflection_SealedCallerPolicyCollector_NoPublicOverload",
+      "name": "TC25_Reflection_SealedCallerPolicyCollector_NoPublicOverload",
+      "category": "Category3_Regressions",
+      "status": "PASS",
+      "description": "Verifies via reflection that public caller-policy native collector overload is sealed (removed/private), and only parameterless entry points remain public.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    }
+  ]
+}

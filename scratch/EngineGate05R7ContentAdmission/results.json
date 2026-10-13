@@ -1,0 +1,96 @@
+﻿{
+  "run_id": "RUN_GATE05_R7_CONTENT_ADMISSION_20261008_01",
+  "timestamp": "2026-10-08T13:05:49.1353656Z",
+  "candidate_dll": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R7ContentAdmission\\Harness\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+  "candidate_sha256": "223B4055C0AFAA6F30488C9787AE6F68D65D62F395CFCA722EDA83674975CD2A",
+  "total_tests": 14,
+  "passed": 14,
+  "failed": 0,
+  "verdict": "PASS",
+  "results": [
+    {
+      "test_id": "TC01_RoundTrip_Canonical_Lossless",
+      "description": "Serialize manifest -> deserialize -> re-serialize and compare exact SHA256 digests",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC02_Deterministic_Identical_Input",
+      "description": "Two separate instances with identical values must produce identical JSON and SHA256",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC03_All_Eight_Def_Families_No_Sentinels",
+      "description": "Verify all 8 Def families are present and free of legacy sentinel/delimiter strings",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC04_Floating_Point_Lossless_Precision",
+      "description": "Verify float boundary and fractional values preserve exact precision across round-trip",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC05_Unicode_SpecialChars_Lossless",
+      "description": "Verify Korean, Japanese, German umlauts, quotes, tabs, newlines round-trip without corruption",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC06_Null_Missing_Empty_Distinction",
+      "description": "Verify null fields remain null in JSON and do not collapse to empty string or sentinel",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC07_Ordered_Collections_Preservation",
+      "description": "Verify activeMods loadOrder, Verbs list order, Hediff stages sequence, and Comps order are preserved",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC08_Stable_Sorting_Determinism",
+      "description": "Verify Def family lists sort deterministically by defName ordinal via CanonicalNormalize",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC09_Unordered_Input_Normalization_Equivalence",
+      "description": "Manifest with shuffled unordered collections produces exact identical JSON and digest as pre-sorted instance",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC10_ValidateContract_Positive_Compliant",
+      "description": "ValidateContract returns true with empty failureReason on representative compliant manifest",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC11_TryAdmitManifest_Positive_Admission",
+      "description": "TryAdmitManifest successfully validates and admits compliant manifest producing non-empty canonical JSON",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC12_Distinct_Manifests_Distinct_Digests",
+      "description": "Changing a single scalar value must produce a distinct JSON and digest",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC13_Schema_Contract_Versions_And_Capability_Flags",
+      "description": "Verify MANIFEST_SCHEMA_VERSION is ADR-006B-v5, CONTENT_CONTRACT_VERSION is ADR-006B-v5-R7, SUPPORTED_COVERAGE_PROFILE and MOD_PATCH_SUPPORT_STATUS match",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC14_Deterministic_Tie_Breaking",
+      "description": "Verify assemblies and stats sort deterministically using secondary tie-breaking keys",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    }
+  ]
+}

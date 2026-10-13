@@ -1,0 +1,84 @@
+{
+  "type": "SOL_R21_RECEIPT_UTC_INDEPENDENT",
+  "delivery_id": "SOL-GATE05-R21-RECEIPT-UTC-INDEPENDENT-S1-20261011-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R21_RECEIPT_UTC_INDEPENDENT",
+  "wp_revision": "S1",
+  "delivery_status": "SENT_ACTUAL_TOOL_NEW_ACTIVE_TURN",
+  "unknown_delivery": false,
+  "wp_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R21_RECEIPT_UTC_INDEPENDENT_S1.md",
+  "wp_sha256": "1D70407D24EC6DC3195DEDBF31CC10A746F72C5CE8825577763E2EA7F1C15F4F",
+  "baseline_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R21_QA_INDEPENDENT_PROTECTED_BASELINE_20261011.json",
+  "baseline_sha256": "B3A4F1CC59D73E9774580216A03647336687A43637AA30F3FC6FBECED1421B6F",
+  "protected_unique_paths": 10939,
+  "qa_root": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R21-RECEIPT-UTC-INDEPENDENT-S1-20261011",
+  "guard_run": "MASTER-HEARTBEAT-R21-20261010T220932Z-01",
+  "guard_session": 90005,
+  "guard_pid": 28816,
+  "actual_predispatch": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:131",
+    "revision": 131,
+    "changed": false,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a127a4-7461-7ad2-b63a-2664cbc5be8e",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791666451,
+      "completedAt": 1791666506,
+      "durationMs": 55124
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acaa949aad487d0806f047665ca0c31",
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": "exec-754df6fc-d11b-48ae-a069-9e058404f0ca",
+    "latestToolMarker": null
+  },
+  "attempt_started_at": "2026-10-11T07:14:29.887790+09:00",
+  "at": "2026-10-11T07:14:59.025016+09:00",
+  "status": "SENT_IN_PROGRESS_ACK_PENDING",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:132",
+    "revision": 132,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a127e2-3320-7490-bea2-1a620a4579ae",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791670498,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "scope": "EXACT_FROZEN_R21_STATIC_POSITIVE_PURE_RECEIPT_UTC_LITERAL_FULL_GRAPH_AND_BOUNDED_NORMAL_REGRESSION",
+  "qa_owned_runner_build_allowed": true,
+  "production_modify_build": 0,
+  "full_runtime_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD",
+  "monitor": "ACTUAL_PAUSED60MIN",
+  "pre_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R21_RECEIPT_UTC_INDEPENDENT_PREDISPATCH_20261011.json",
+  "pre_sha256": "D82C9A9555DD0694A22201B29BBB5FF35FE2E15A4D75B6D95718ADDE50A3FE33",
+  "tool_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R21_RECEIPT_UTC_INDEPENDENT_SEND_TOOL_20261011.json",
+  "tool_sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+  "post_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R21_RECEIPT_UTC_INDEPENDENT_POSTSEND_20261011.json",
+  "post_sha256": "B7F1804AB758719D128C8F9318988007E88547A24F51DAE9C96AD3982E8B7355"
+}

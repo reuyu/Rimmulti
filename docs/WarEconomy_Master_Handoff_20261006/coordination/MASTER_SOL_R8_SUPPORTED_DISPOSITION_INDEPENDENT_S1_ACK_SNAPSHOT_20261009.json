@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:51\",\"revision\":51,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a11c2f-b048-73b0-a61d-a1eccf88b883\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791474249,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ac7ba50512087d0b5b9961cceb627b7\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ac7ba50512087d0b5b9961cceb627b7\",\"turnId\":\"01a11c2f-b048-73b0-a61d-a1eccf88b883\",\"phase\":\"commentary\",\"text\":\"R8 신규 독립 QA를 시작하겠습니다. 승인된 후보와 보호 기준을 확인하고, compatibility range와 실제 modVersion을 분리한 정상 입력 기대값으로 검증하겠습니다. 의미가 달라지는 결과가 나오면 실제 FAIL을 보존하겠습니다.\"},\"latestToolMarkerId\":\"exec-b0226624-25a4-4a5f-ad84-a305a0a20b95\",\"latestToolMarker\":{\"id\":\"exec-b0226624-25a4-4a5f-ad84-a305a0a20b95\",\"turnId\":\"01a11c2f-b048-73b0-a61d-a1eccf88b883\",\"type\":\"fileChange\",\"name\":\"fileChange\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

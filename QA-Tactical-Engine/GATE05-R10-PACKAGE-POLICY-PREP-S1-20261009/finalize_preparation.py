@@ -1,0 +1,35 @@
+from review_setup import ROOT,Q,PKG,MAN,sha,now,load,write,row,preservation
+from pathlib import Path
+import json
+
+REPORT=ROOT/'docs/QA_EngineHost_Gate05_R10_Package_Policy_Preparation_S1_20261009.md'
+TERMINAL={'EVIDENCE_MANIFEST.json','RESULT_INDEX.json','ACK_COMPLETION_BINDING.json','COMPLETION.json','RETURN_PENDING.json','RETURN_TOOL_PROOF.json','DELIVERY_STATUS.json'}
+assert not any((Q/n).exists() for n in TERMINAL), 'Terminal already exists; inspect without recreating'
+ack=load(Q/'ACK_INITIAL.json')
+assert load(Q/'ACK.json')==ack
+assert sha(REPORT)=='77009053375C30ABD273ECD995EEFB98837CCBD98A06A06CBE040828BDC68C01'
+positive=load(Q/'POSITIVE_NORMAL_ACCEPTANCE_MATRIX.json');static=load(Q/'STATIC_REVIEW_CRITERIA.json');fields=load(Q/'FROZEN_R9_FIELD_AND_CALLSITE_MATRIX.json')
+counts={'positive_normal_criteria':len(positive['rows']),'defensive_static_criteria':len(static['rows']),'frozen_r9_field_constraints':len(fields['fields']),'new_unobserved_logical_concepts':len(fields['new_logical_concepts'])}
+assert list(counts.values())==[12,14,12,7]
+before=load(Q/'PRESERVATION_BEFORE.json');after=preservation()
+def identity(d):return {r['path'].lower():(r['sha256'],r['bytes']) for r in d['files']}
+assert identity(before)==identity(after)
+assert after['protected_unique_paths']==len(identity(after))==3540
+write(Q/'PRESERVATION_AFTER.json',dict(after,preservation_matched=True,all_preexisting_bytes_unchanged=True))
+refs=[ROOT/'AGENTS.md',ROOT/'docs/MASTER_GOVERNANCE_CURRENT.md',ROOT/'docs/요구사항_명세서.md',PKG/'00_START_HERE.md',PKG/'MASTER_HANDOFF.md',PKG/'C_REVIEW_CORRECTIONS_CONSOLIDATED.md',PKG/'MASTER_PROJECT_STATE.md',PKG/'MASTER_DECISION_LOG.md',PKG/'QA_DEFECT_LEDGER.md',PKG/'MASTER_AGENT_DISPATCH_BOARD.md',PKG/'IDE_BOOTSTRAP_VERIFICATION.md',PKG/'DISPATCHER_STATE.json',PKG/'DISPATCH_JOURNAL.jsonl',PKG/'ADR_ACCEPTANCE_AND_AUTHORITY_MAP.md',PKG/'history/MASTER_DECISION_LOG_MDR-067.md',PKG/'WP_QA_ENGINE_GATE05_R10_PACKAGE_POLICY_PREPARATION_S1.md',PKG/'WP_ENGINE_GATE05_R10_PACKAGE_POLICY.md',PKG/'RELEASE_ENGINE_GATE05_R10_PACKAGE_POLICY_20261009.md',PKG/'MASTER_REVIEW_ENGINE_GATE05_R9_VERSION_MEANING_INDEPENDENT_S1_20261009.md',ROOT/'Dispatcher/README.md',ROOT/'Dispatcher/MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md',ROOT/'Dispatcher/MASTER_COMMUNICATION_STATE.json',ROOT/'Dispatcher/MASTER_RECEIPTS.json',ROOT/'Dispatcher/MASTER_MONITOR_JOURNAL.jsonl',PKG/'coordination/MASTER_R10_PARALLEL_DISPATCH_FINAL_AUDIT_20261009.json',MAN]
+write(Q/'RECOVERY_AND_SCOPE.json',dict(at=now(),reference_identity_at_completion=[row(p) for p in refs],scope='Read-only frozen R9 preparation; no mutable R10 inspection or execution',latest_durable_master_delta='R10 actual A SENT_ACK_PENDING / existing hourly monitor ACTIVE per Master file proof, not independently observed by QA',master_lifecycle_modified=False,new_a_message_or_wp=False,protected_original_source_hash_only=2,protected_original_scope_audit=row(Q/'PROTECTED_PATH_SCOPE_AUDIT.json'),operator_origin_and_native_proof='UNTESTED_SEPARATE_GATE',canonical_srs_not_replaced=True,c_corrections_controlling=True,concrete_r10_api_framing_digest='UNOBSERVED_RECONCILE_AFTER_FUTURE_FREEZE_BEFORE_BUILD_RUN'))
+common=dict(schema_version=1,producer='Sol',report_kind='QA_PREPARATION',wp_id=ack['wp_id'],wp_revision=ack['wp_revision'],delivery_id=ack['delivery_id'],result_id=ack['result_id'],timezone='Asia/Seoul',status='COMPLETED',verdict='PREPARATION_COMPLETE_NOT_R10_CANDIDATE_REVIEWED',r10_candidate_verdict='NOT_REVIEWED',criteria_counts=counts,protected_unique_paths=after['protected_unique_paths'],preservation_matched=True,controls_executed=0,qa_runner_builds=0,production_builds=0,candidate_runner_processes=0,production_modifications=0,provider_cache_game_native_operator_runs=0,old_runner_rejection_tied_adverse_runs=0,mutable_r10_read=False,closure_changed=False,runtime_e2_released=False,foundation='HOLD',limitations=['Read-only preparation, not R10 candidate verification','Concrete API/schema/width/framing and independent exact bytes require reconciliation after future Master freeze/admission before any new build/run','Expected and observed literal fixtures are independent synthetic declarations, not a supported global catalogue or operator authority','Package checks do not certify patch/settings exclusion, actual loaded native profile or operator origin','R9 narrow version closure preserved; R8 FAIL and all prior evidence remain unchanged'])
+files=[row(p) for p in sorted(Q.rglob('*')) if p.is_file() and '__pycache__' not in p.parts and not (p.parent==Q and p.name in TERMINAL)]
+files.append(row(REPORT))
+assert len({r['path'].lower() for r in files})==len(files)
+write(Q/'EVIDENCE_MANIFEST.json',dict(common,at=now(),file_count=len(files),files=files,exclusion_policy='Root terminal/transport files and __pycache__ excluded to avoid cycles; terminal graph binds manifest externally'))
+index=dict(common,at=now(),report=row(REPORT),evidence_manifest=row(Q/'EVIDENCE_MANIFEST.json'),artifact_count=len(files),positive_criteria=row(Q/'POSITIVE_NORMAL_ACCEPTANCE_MATRIX.json'),static_criteria=row(Q/'STATIC_REVIEW_CRITERIA.json'),field_constraints=row(Q/'FROZEN_R9_FIELD_AND_CALLSITE_MATRIX.json'),independent_oracle_plan=row(Q/'INDEPENDENT_POLICY_ORACLE_PLAN.json'),preservation_before=row(Q/'PRESERVATION_BEFORE.json'),preservation_after=row(Q/'PRESERVATION_AFTER.json'),report_delivery='PENDING_DIRECT_MASTER_RETURN',delivery_destination='01a1156b-97ec-7ce0-9e4a-dfc4a3acb174/local',transport_policy='Index immutable; actual tool return saved separately after one authorized send')
+write(Q/'RESULT_INDEX.json',index)
+binding=dict(common,at=now(),initial_ack=row(Q/'ACK_INITIAL.json'),ack=row(Q/'ACK.json'),report=row(REPORT),evidence_manifest=row(Q/'EVIDENCE_MANIFEST.json'),result_index=row(Q/'RESULT_INDEX.json'),ack_initial_unchanged=True)
+write(Q/'ACK_COMPLETION_BINDING.json',binding)
+completion=dict(common,completed_at=now(),report=row(REPORT),evidence_manifest=row(Q/'EVIDENCE_MANIFEST.json'),result_index=row(Q/'RESULT_INDEX.json'),ack_completion_binding=row(Q/'ACK_COMPLETION_BINDING.json'),artifact_count=len(files),primary_graph_complete=True,report_delivery='PENDING_DIRECT_MASTER_RETURN')
+write(Q/'COMPLETION.json',completion)
+for r in files+[completion[k] for k in ['report','evidence_manifest','result_index','ack_completion_binding']]:
+ p=Path(r['path']);assert sha(p)==r['sha256'] and p.stat().st_size==r['bytes']
+write(Q/'RETURN_PENDING.json',dict(at=now(),result_id=ack['result_id'],destination_thread='01a1156b-97ec-7ce0-9e4a-dfc4a3acb174',host='local',status='PENDING_ONE_AUTHORIZED_SEND',report=row(REPORT),manifest=row(Q/'EVIDENCE_MANIFEST.json'),index=row(Q/'RESULT_INDEX.json'),completion=row(Q/'COMPLETION.json'),primary_graph_verified=True))
+print(json.dumps(dict(result_id=ack['result_id'],counts=counts,protected_unique_paths=after['protected_unique_paths'],artifact_count=len(files),report=row(REPORT),manifest=row(Q/'EVIDENCE_MANIFEST.json'),index=row(Q/'RESULT_INDEX.json'),completion=row(Q/'COMPLETION.json'),verdict=common['verdict']),indent=2))

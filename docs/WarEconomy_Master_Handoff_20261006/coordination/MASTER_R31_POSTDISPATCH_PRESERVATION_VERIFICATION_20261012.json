@@ -1,0 +1,25 @@
+{
+  "at": "2026-10-12T20:44:15.987590+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10",
+  "actual_readonly_checker_session": 23597,
+  "exit_code": 0,
+  "checker_result": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10\\MASTER_POSTDISPATCH_PRESERVATION.json",
+    "sha256": "95790A73ED691C3D599B2C6131D50DBF3F3EE8CD3AFCED8AB3E236EFED6BB23E",
+    "bytes": 11821309
+  },
+  "matched_rows": 31667,
+  "qa_rows": 28652,
+  "known_installed_incident_only": true,
+  "installed_actual_sha256": "BB3B52F39F7B53B70BC9FB4CE039E7455D08B24B17B8DABB8295E0FF4584DD61",
+  "actor": "UNKNOWN",
+  "no_restore_or_normalization": true,
+  "ACK34": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10\\ACK.json",
+    "sha256": "F951574AC187E54AF3BB6E5888A80F51914046D1EB02AA0CD5EF0DFBE7913480",
+    "bytes": 4063
+  },
+  "scheduler": "ACTUAL_ACTIVE_HOURLY",
+  "native_E2": "NOT_RELEASED",
+  "Foundation": "HOLD"
+}

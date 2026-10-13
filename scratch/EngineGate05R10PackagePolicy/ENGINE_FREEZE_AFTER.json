@@ -1,0 +1,51 @@
+﻿{
+    "at":  "2026-10-09T05:38:50.8296309+09:00",
+    "stage":  "POST_RUN_AFTER_R10",
+    "files":  [
+                  {
+                      "path":  "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+                      "sha256":  "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+                      "size":  156431
+                  },
+                  {
+                      "path":  "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+                      "sha256":  "E855F60CB91F1207A03530842F65A6CECCEEA5B5DFF01511B86821AD2600D6AC",
+                      "size":  149085
+                  },
+                  {
+                      "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+                      "sha256":  "1772DFBD1674B7CF8450CAF42FDE7AC6F92FD3A22183B7DDE5AA705CCEC24721",
+                      "size":  234496
+                  },
+                  {
+                      "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+                      "sha256":  "58FE3A765BB95C5C7FB044FE5E4627B66BF245ABA72C0CF95A05BC29EFF9B342",
+                      "size":  58376
+                  },
+                  {
+                      "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+                      "sha256":  "659CFE704DBCE60AC8DF93D7C784FDA81FF312C0D42B502CA743720B7C30A706",
+                      "size":  223232
+                  },
+                  {
+                      "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+                      "sha256":  "3B1F51AC6E99D55794FB6BD83D373DAFFDAB443E62E91B5DEB64EEA170953553",
+                      "size":  42804
+                  },
+                  {
+                      "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+                      "sha256":  "1772DFBD1674B7CF8450CAF42FDE7AC6F92FD3A22183B7DDE5AA705CCEC24721",
+                      "size":  234496
+                  },
+                  {
+                      "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+                      "sha256":  "58FE3A765BB95C5C7FB044FE5E4627B66BF245ABA72C0CF95A05BC29EFF9B342",
+                      "size":  58376
+                  },
+                  {
+                      "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+                      "sha256":  "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+                      "size":  1774
+                  }
+              ]
+}

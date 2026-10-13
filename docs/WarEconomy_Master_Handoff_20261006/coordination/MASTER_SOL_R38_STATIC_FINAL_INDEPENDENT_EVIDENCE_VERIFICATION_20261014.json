@@ -1,0 +1,707 @@
+{
+  "at": "2026-10-14T05:09:37.036347+09:00",
+  "guard_session": 44442,
+  "delivery_id": "SOL-GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014-01",
+  "result_id": "SOL-GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014-c19c6459fa484d5bbee9c08ffe13caa4",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:61",
+    "revision": 61,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a136d9-1e3b-7641-9510-90cf5665960c",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791921561,
+      "completedAt": 1791921975,
+      "durationMs": 414682
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ace8f35719487d09e373ad94b7577b8",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016ace8f35719487d09e373ad94b7577b8",
+      "turnId": "01a136d9-1e3b-7641-9510-90cf5665960c",
+      "phase": "final_answer",
+      "text": "R38 독립 정적 QA를 완료해 Master에게 보고했습니다. 일반 계약은 수정이 필요하며, 정상 6개 사례는 별도 실행 검토를 권고했습니다. 후보 실행은 0이고 Foundation HOLD를 유지합니다. 최종 QA 보고서"
+    },
+    "latestToolMarkerId": "exec-71c04a8b-cb78-45d1-bf15-0a05117ec63c",
+    "latestToolMarker": {
+      "id": "exec-71c04a8b-cb78-45d1-bf15-0a05117ec63c",
+      "turnId": "01a136d9-1e3b-7641-9510-90cf5665960c",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "evidence_count": 94,
+  "evidence": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\ACK.json",
+      "sha256": "1EE34CC318E4FC50B6BBA7F4EE08CE604D8870630601C1F27E0D77651802A3E9",
+      "bytes": 2355
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\ACK_INITIAL.json",
+      "sha256": "1EE34CC318E4FC50B6BBA7F4EE08CE604D8870630601C1F27E0D77651802A3E9",
+      "bytes": 2355
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\ACK_RETURN_TOOL_PROOF.json",
+      "sha256": "1BDBDAEDF47B1E073B486C226791B0D58C64465E7AA4F1929F261E843A9CCC8E",
+      "bytes": 149
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\ACTUAL_R37_R38_SOURCE_DIFF.txt",
+      "sha256": "5382E561C0E492227B2824FFA185AB2D4A04DACAB5C87AC743A3A56EDCCACEDB",
+      "bytes": 86085
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.INPUT.json",
+      "sha256": "F35FBC5495BA5FB8264D00277B884723882E432E8822AA13195392901708C000",
+      "bytes": 5564
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.PREFLIGHT_SEED.json",
+      "sha256": "ED7095C856C8FD04FC08F122DEB4EE1C8C365008D288E765591B1736D4017C48",
+      "bytes": 2396
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.PREFLIGHT_STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.PREFLIGHT_STDOUT.txt",
+      "sha256": "823A3419D675FBB0C0B4F786770B6BB36E5B0989C630C0EB9C17BBE84EB69648",
+      "bytes": 495
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.PREFLIGHT_TOOL.json",
+      "sha256": "9EC8B424347C75F86DEA7B1D10ADCCDBEFBDF169DFBD5DEC0A7245D0B50CBDC1",
+      "bytes": 830
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.py",
+      "sha256": "393CF1CE526637AD778272889D77FA794B6B44825DBF608A270B5ACFDBF4F4E9",
+      "bytes": 2129
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.STDOUT.txt",
+      "sha256": "8F9F4C7D7C106A9F8FC9CC4566B9C120EC49D666C84395BC145A5BEFE4E15105",
+      "bytes": 433
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.TOOL.json",
+      "sha256": "344C2C9BBD1B44E320087531A2731FE6B4AB28E4DD36354268EDD292D451594E",
+      "bytes": 1265
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\capture.INPUT.json",
+      "sha256": "CA6A2DF826B595FB28D02874570B0FCBF337D3163AAC00C55F787F7612CABCA9",
+      "bytes": 21503
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\capture.PREFLIGHT_SEED.json",
+      "sha256": "B623A2BD4016980C3EF96EB3986B46ED9E3339DDC57980C37BE273A318D9C1EA",
+      "bytes": 2392
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\capture.PREFLIGHT_STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\capture.PREFLIGHT_STDOUT.txt",
+      "sha256": "C4019B619F856507F2619AA4DFA46E5CB07A0E53867943C7A10BDA65C1329399",
+      "bytes": 493
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\capture.PREFLIGHT_TOOL.json",
+      "sha256": "4C80242C5CB2A50B20857CB5E41CCB33471D3525C30636A50B76BDEB490E86BF",
+      "bytes": 824
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\capture.py",
+      "sha256": "C1E80016A48114295DB442FC08A38333DCBCF922A22C1745FF24DB5C874C2D97",
+      "bytes": 4436
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\capture.STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\capture.STDOUT.txt",
+      "sha256": "2FF681187C34244F09DCD4A9D7C8E793D3912CB006B125093B71AE9F9C64A218",
+      "bytes": 451
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\capture.TOOL.json",
+      "sha256": "0D92D67260BA40C9B3A39F6FF59E3485EBE516515A27D556F40BB508A2EDFA23",
+      "bytes": 1258
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\CLAIM_CORRECTIONS.json",
+      "sha256": "AF5A91AAFC5E97CF8AB0A97B4617FAF7D38ED358B19EE1AAA1CE304581C82399",
+      "bytes": 3156
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\common.py",
+      "sha256": "14670BD469741CEBC6257D9B72F4AA288BBE8AC16736163929ACEEB9F8789AD4",
+      "bytes": 2568
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\CONFIG14_DECL7_SEMANTICS_COMPARISON.json",
+      "sha256": "E16C944FE1C23265374A9D7A924509F94F3CA6555A38BD3CCD327323549F67E2",
+      "bytes": 21868
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\E1_PROVENANCE_ASSESSMENT.json",
+      "sha256": "DCEE3393765D8F34CA4FC09E33F1E27AB7E65B01E7746ACB3DE1685B74D550D1",
+      "bytes": 26503
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\FINAL_PREPARATION_ACCOUNTING.json",
+      "sha256": "B3543CDD157E704DA186F60BAC1896ACD6C33888558290671F38DBFEBB7265EF",
+      "bytes": 1010
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\FINALIZATION_PROSPECTIVE_SUPPLEMENT.json",
+      "sha256": "812EAB67BE55D218264B143571DABD17EBB6B772A998D731D84BD9B7935362D2",
+      "bytes": 2927
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\FULL_FROZEN_TEXT_READ.json",
+      "sha256": "D6C30DE6B25E842A11356DEFB1A2A6556F74870C00DC6AFA45E4F7680103B015",
+      "bytes": 852774
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\invoke.ps1",
+      "sha256": "34562E9AEE03A83F7717907A4E41B0C0E7C8B59D5240DE1A7695315067D38796",
+      "bytes": 2513
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\invoke_r1.ps1",
+      "sha256": "86631520C8980BE5D9607A45727E074A9357D14BA4D491AD34C50E3B939CA397",
+      "bytes": 2497
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\INVOKE_R1_LOCATOR_EXACT_DIFF.txt",
+      "sha256": "A71FEE6BF79F633CBD09271251DF118531F8DA80729948128DFA123E9B4DAEC9",
+      "bytes": 361
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\invoke_r2.ps1",
+      "sha256": "DCB3DA537056CB5FCBF578913B90CF53D3EC3B6165DA1B9CA33F781E6E0EEE38",
+      "bytes": 2806
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\log.py",
+      "sha256": "740BDD738C9D3D767A240EBEC330E60419E988A18C9A789BCA364C1FA4283A79",
+      "bytes": 1845
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\log_r2.py",
+      "sha256": "96458C217FDAD343A080A76150BEB9734BBD89850EED8C5C181DD58784DF2148",
+      "bytes": 2092
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\MINIMAL_NEXT_PUBLISHER_CORRECTIVE_REQUIREMENTS.json",
+      "sha256": "EBB0F9D1BA2438F839F1F2EEA60C9B0214733E201F940C33E974013B3014B105",
+      "bytes": 3821
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\ORIGINAL_SIX_LITERAL_SOURCE_COMPATIBILITY_MATRIX.json",
+      "sha256": "D027C28E95812976829158093BD88197C9B1C2EF8A43239622432D61FB2A64ED",
+      "bytes": 66127
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\OWNED_PRESEAL_INVENTORY.json",
+      "sha256": "EDC32013E9967BF8C62CC362563D8F1DC20062A1B7975BB1C0FC4539F381AB37",
+      "bytes": 22892
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\PASSIVE_INPUT_MANIFEST.json",
+      "sha256": "23DB5654A2A8BC4A5300D0E0A3DC75CB8A4596FAA2A7C02C500240E1E9573AE6",
+      "bytes": 16030
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\PASSIVE_SOURCE_AST.json",
+      "sha256": "D0E53B45D06AD2FCD5C7C48B63240212CC8B31083428B82648195F4A12E8C4DF",
+      "bytes": 70361
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\PATH_ANCESTRY_NONOVERWRITE_ASSESSMENT.json",
+      "sha256": "B28981BCB69F622F83252935ECC9523588A7502DEBCE1B0C9E7E680FC517EF34",
+      "bytes": 42338
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\prepare.INPUT.json",
+      "sha256": "F2CCAAA3E9EDD1A4B2218A1C9A11541B5AB865B0EB25A9DE734B1A45BDC01E7F",
+      "bytes": 21504
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\prepare.PREFLIGHT_SEED.json",
+      "sha256": "38E671449DCB7F3A28DD8EF01629B5BA76A7282742210B2DB5C5ABBD2899ECDC",
+      "bytes": 2393
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\prepare.PREFLIGHT_STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\prepare.PREFLIGHT_STDOUT.txt",
+      "sha256": "BD3ED38BA91D5EC623759AFB67120E0EB541431390DAAD83B90AD9A993BF7041",
+      "bytes": 493
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\prepare.PREFLIGHT_TOOL.json",
+      "sha256": "476DD0122901FB72292DBF2EFD50C14DB22184B513A76EFECC37600FB0BCA7C6",
+      "bytes": 824
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\prepare.py",
+      "sha256": "A88BD865DC77CDAB3C375F712C307067AF5A364B19D5F60388AD3E7D26A0897E",
+      "bytes": 17003
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\prepare.STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\prepare.STDOUT.txt",
+      "sha256": "47A86FE932D067A9D1B45E3C96E7047B0BC5E83E6BBF6F982DC30B5440C5EF2A",
+      "bytes": 411
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\prepare.TOOL.json",
+      "sha256": "C9643B9923648958757A1B414B6FEADB0515175C514127C2718CF9459DFF699F",
+      "bytes": 1258
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\PRESERVATION_AFTER.json",
+      "sha256": "3AC98C76CD8671746BA3BDB6FE7F3116259F88D91F0EE77855F4DC8C239BEFCD",
+      "bytes": 5899223
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\PRESERVATION_BEFORE.json",
+      "sha256": "8EEB920B7684B43A8A1EB720F23BD324FDDDC74B2FDB7C3C8A339A0F1609FE22",
+      "bytes": 5899223
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\PRESERVATION_BEFORE_AFTER.json",
+      "sha256": "4691C2249E3BE11C745BDC29A2A4D9DEB28F156F402C4F8E5DB3C42DDF73C13D",
+      "bytes": 765
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\RECOVERY_AUTHORITY_AUDIT.json",
+      "sha256": "C51AD57E8C00AF6D370F2B66F13BB326C37901963A948D89100968EA5ACA8A0E",
+      "bytes": 22843
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\RECOVERY_FULL_TEXT.json",
+      "sha256": "E3E890643BEF827D2E104521AF75DE3A5707CA8A0241F5FBB6952FFD6AD8814E",
+      "bytes": 6459413
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\RECOVERY_R1_PROSPECTIVE_SUPPLEMENT.json",
+      "sha256": "3BF40068E9E70A6128BC9379F34292B4A7EE4987744D2489826E8D539F9494D6",
+      "bytes": 3765
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\RECOVERY_R2_PROSPECTIVE_SUPPLEMENT.json",
+      "sha256": "D1628488D296989F9009507121D89E3C4F40EA0665D5C516B065286A60CC5FD1",
+      "bytes": 2777
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review.INPUT.json",
+      "sha256": "D269DD33CE14296E1507A1786E9CD256482CE715084C7D6A8563F1ADC1B7FAF4",
+      "bytes": 21501
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review.PREFLIGHT_SEED.json",
+      "sha256": "141EE5DFDC1945C90CD4DB73ED7705EAF3D5804FCB65114C28EECAFA8CAA2FE7",
+      "bytes": 2391
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review.PREFLIGHT_STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review.PREFLIGHT_STDOUT.txt",
+      "sha256": "FE29B436C1F52FDE74ABC6251C89B459EAB95C48EB03C8B5B5D5A6C76CE5AA1D",
+      "bytes": 492
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review.PREFLIGHT_TOOL.json",
+      "sha256": "1A3BC33780BDD885F290EC33E658652BA812EFB2DBE92E34997FDB8122409456",
+      "bytes": 821
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review.py",
+      "sha256": "F916667C606FAAC2ACAE9514D127D1921928F59E1D47906EF688B1C5166FC3FD",
+      "bytes": 15046
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review.STDERR.txt",
+      "sha256": "5748E4514F58EAD279EDD1576E11E82E55DDC44EA0FEFAA35C9100F0CE10D3FB",
+      "bytes": 1915
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review.STDOUT.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review.TOOL.json",
+      "sha256": "091FA70519EFE1389D1641B15888E3F77B9E48FE139450ACEF7DF4DA8A51B62B",
+      "bytes": 1255
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\REVIEW_EXECUTION_ACCOUNTING.json",
+      "sha256": "A0E433940D6BA1AC3405D8D90DA687C52E308F032C861B8A050755649A5CCCD4",
+      "bytes": 4916
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review_finalize_r2.INPUT.json",
+      "sha256": "18F8E00E1845BC52B333F53C21993498B5049974F988B60DAF89FDA3D8A6F2D9",
+      "bytes": 35611
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review_finalize_r2.PREFLIGHT_SEED.json",
+      "sha256": "4711F06AEF46D74BFEFC241274699636A39A7E5C7FB8AF6E80D35FAE11E92BEB",
+      "bytes": 2832
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review_finalize_r2.PREFLIGHT_STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review_finalize_r2.PREFLIGHT_STDOUT.txt",
+      "sha256": "28CF12B6D96C6E25E4D82EDA68A281442FC431EB0C62FCCCD5EB273BBBA72BCB",
+      "bytes": 507
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review_finalize_r2.PREFLIGHT_TOOL.json",
+      "sha256": "1CB3E8B0521A4A812D2A87893D943939BF7BB188306D51B24C80811253D66E8D",
+      "bytes": 898
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review_finalize_r2.py",
+      "sha256": "F130D1AE00C100E0E46D39F6E133BE98FE593081E3E984D5DF6E77A097064DE7",
+      "bytes": 3658
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review_finalize_r2.STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review_finalize_r2.STDOUT.txt",
+      "sha256": "6766E9F37F2B22B9A0D2B9C66321CE233F05EA6FC533BF71B622A06EF307ADDA",
+      "bytes": 468
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review_finalize_r2.TOOL.json",
+      "sha256": "0EB4819EC84DAD26093E62C0D782B35EDEA704278D6F9ECAA6A38CAF1FFD3A27",
+      "bytes": 1313
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\REVIEW_PARTIAL_FINALIZATION_ACCOUNTING.json",
+      "sha256": "D1A7ADD5508ECC0BD83C62D20A45B35552AE75600320A40FE34B10173406D623",
+      "bytes": 6533
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\SCOPED_ORIGINAL6_NORMAL_PUBLICATION_READINESS_RECOMMENDATION.json",
+      "sha256": "C67AD208E194F7ACB7252E726969D6811F6C5369F409CC204AB703E9E61B1C02",
+      "bytes": 1542
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\seal.INPUT.json",
+      "sha256": "9B94B1CAE0A4BABD6DACB744EB1FD8B586A11CF38B6E6C5BFEBDEE9039C5DF02",
+      "bytes": 21494
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\seal.PREFLIGHT_SEED.json",
+      "sha256": "841A34837C77284ADBBBF6DC93E10A036AA4736BE52F35F9736DB0ECE67AC4EB",
+      "bytes": 2386
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\seal.PREFLIGHT_STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\seal.PREFLIGHT_STDOUT.txt",
+      "sha256": "0CECB3EC96C27B59FC6698335A12298F1E962F87AB2162F06F2F81A05057AB45",
+      "bytes": 490
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\seal.PREFLIGHT_TOOL.json",
+      "sha256": "13F8B88FC636D1C446A902ED0D708EDFD1EC717A84E5E0D759EF9032BB26804C",
+      "bytes": 815
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\seal.py",
+      "sha256": "275EB399A8A60AAA110955119ECE93D8C9AE2F2C478235997209402946D79FCD",
+      "bytes": 4415
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\SOURCE_FLOW_REVIEW.json",
+      "sha256": "CBD158D8138B81363D5A26A102C87BFF59FD00B0BE5E2013B6BB36FE84F0DDA0",
+      "bytes": 140693
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\STOP_BOOTSTRAP_INTERPRETER_ALIAS_NOTICE.json",
+      "sha256": "6D8BD64B23BDE12E3C9C5A8CCEBE7F7FA9B151E02F04D91387CE6EA15CFC05E3",
+      "bytes": 1582
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\STOP_INITIAL_PARTIAL_PRESERVATION.json",
+      "sha256": "42DBA0569591FDF9D566F7C2D2BAF28CCF1EBE259419A3328F9C9E92AC3906C8",
+      "bytes": 1635
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\STOP_MASTER_RETURN_TOOL_PROOF.json",
+      "sha256": "1BDBDAEDF47B1E073B486C226791B0D58C64465E7AA4F1929F261E843A9CCC8E",
+      "bytes": 149
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\STOP_REVIEW_MASTER_RETURN_TOOL_PROOF.json",
+      "sha256": "1BDBDAEDF47B1E073B486C226791B0D58C64465E7AA4F1929F261E843A9CCC8E",
+      "bytes": 149
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\STOP_REVIEW_PARTIAL_INVENTORY.json",
+      "sha256": "9411A49C3003302A8A59433B5B507F36CEF117D56CE502084EC5C59A149B2EA9",
+      "bytes": 15344
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\STOP_REVIEW_SCOPE_KEY_NOTICE.json",
+      "sha256": "7565B41F2C066C8D7880EC4CA0E71D4A23CB6232D395CD84E868790C3466CDF8",
+      "bytes": 1473
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\TIMESTAMP_CORRECTION_DESCRIPTION_QUALIFICATION.json",
+      "sha256": "6BAF35E598560D5ABD84332E215F00B7BD94477378E01444D0CE428C32F501F9",
+      "bytes": 968
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\TIMESTAMP_RAW_CORRECTION_ASSESSMENT.json",
+      "sha256": "15E4446EDAED1C4645ED9DF2CD278B84B19FB8EFD4E2DA6D9103783392C75AD1",
+      "bytes": 50344
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R38_Publisher_Independent_Static_S1_20261014.md",
+      "sha256": "2426188773A695389B4742ECE1A8A5C5831C3D783AB6A75B940A38C2968E9C8F",
+      "bytes": 15058
+    }
+  ],
+  "report": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R38_Publisher_Independent_Static_S1_20261014.md",
+    "sha256": "2426188773A695389B4742ECE1A8A5C5831C3D783AB6A75B940A38C2968E9C8F",
+    "bytes": 15058
+  },
+  "completion": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\COMPLETION.json",
+    "sha256": "94F8056D284B77ADB5A161694B86AF324DF0472889FE7D3E3E24C3BEF33F32AF",
+    "bytes": 3344
+  },
+  "initial_ACK": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\ACK_INITIAL.json",
+    "sha256": "1EE34CC318E4FC50B6BBA7F4EE08CE604D8870630601C1F27E0D77651802A3E9",
+    "bytes": 2355
+  },
+  "protected19676_actual_rehash": true,
+  "frozen42_actual_rehash": true,
+  "before_after_full_lists_equal": true,
+  "successful_metadata5": [
+    {
+      "stage": "bootstrap",
+      "PID": 16604,
+      "exit_code": 0,
+      "stdout": 433,
+      "stderr": 0,
+      "native_preflight_PID": "UNOBSERVED",
+      "seed": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.PREFLIGHT_SEED.json",
+        "sha256": "ED7095C856C8FD04FC08F122DEB4EE1C8C365008D288E765591B1736D4017C48",
+        "bytes": 2396
+      }
+    },
+    {
+      "stage": "capture",
+      "PID": 13060,
+      "exit_code": 0,
+      "stdout": 451,
+      "stderr": 0,
+      "native_preflight_PID": "UNOBSERVED",
+      "seed": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\capture.PREFLIGHT_SEED.json",
+        "sha256": "B623A2BD4016980C3EF96EB3986B46ED9E3339DDC57980C37BE273A318D9C1EA",
+        "bytes": 2392
+      }
+    },
+    {
+      "stage": "review_finalize_r2",
+      "PID": 17348,
+      "exit_code": 0,
+      "stdout": 468,
+      "stderr": 0,
+      "native_preflight_PID": "UNOBSERVED",
+      "seed": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review_finalize_r2.PREFLIGHT_SEED.json",
+        "sha256": "4711F06AEF46D74BFEFC241274699636A39A7E5C7FB8AF6E80D35FAE11E92BEB",
+        "bytes": 2832
+      }
+    },
+    {
+      "stage": "prepare",
+      "PID": 30824,
+      "exit_code": 0,
+      "stdout": 411,
+      "stderr": 0,
+      "native_preflight_PID": "UNOBSERVED",
+      "seed": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\prepare.PREFLIGHT_SEED.json",
+        "sha256": "38E671449DCB7F3A28DD8EF01629B5BA76A7282742210B2DB5C5ABBD2899ECDC",
+        "bytes": 2393
+      }
+    },
+    {
+      "stage": "seal",
+      "PID": 23296,
+      "exit_code": 0,
+      "stdout": 1161,
+      "stderr": 0,
+      "native_preflight_PID": "UNOBSERVED",
+      "seed": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\seal.PREFLIGHT_SEED.json",
+        "sha256": "841A34837C77284ADBBBF6DC93E10A036AA4736BE52F35F9736DB0ECE67AC4EB",
+        "bytes": 2386
+      }
+    }
+  ],
+  "original_review_failed_preserved": true,
+  "native_locator_failed_preserved": true,
+  "review_replay": 0,
+  "actual_direct_return": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\RETURN_TOOL_PROOF.json",
+    "sha256": "1BDBDAEDF47B1E073B486C226791B0D58C64465E7AA4F1929F261E843A9CCC8E",
+    "bytes": 149
+  },
+  "original_six_ids": [
+    "PLAIN_PLAIN",
+    "OPAQUE_OPAQUE",
+    "PLAIN_OPAQUE_PADDED",
+    "OPAQUE_PLAIN_PADDED",
+    "OPAQUE_EQ_QUOTE_BACKSLASH",
+    "OPAQUE_EQ_QUOTE_BACKSLASH_PADDED"
+  ],
+  "raw12_actual_SHA_bytes_UTF8hex_and_two_upstream_matched": [
+    {
+      "case_id": "PLAIN_PLAIN",
+      "role": "parent",
+      "raw_sha256": "25D3B88B03B708772B8C1B6CE9AAF66E4250EE84D3AAB6C53CBEC7BF9EE75A21",
+      "bytes": 897,
+      "original_child_parent_UTC": "2026-10-11T00:00:00.1234567Z"
+    },
+    {
+      "case_id": "PLAIN_PLAIN",
+      "role": "child",
+      "raw_sha256": "D6E345FEB30873C6002102E4C13BC5815A781C7177233B2DF64D82E49DD2A6CD",
+      "bytes": 909,
+      "original_child_parent_UTC": "2026-10-11T00:00:01.0000000Z"
+    },
+    {
+      "case_id": "OPAQUE_OPAQUE",
+      "role": "parent",
+      "raw_sha256": "5077C839A2EFD38495FF553AD2F16F1B5C50F9CDA4A5D673E5014CEC2552124B",
+      "bytes": 919,
+      "original_child_parent_UTC": "2026-10-11T00:00:00.1234567Z"
+    },
+    {
+      "case_id": "OPAQUE_OPAQUE",
+      "role": "child",
+      "raw_sha256": "DAA3A0F16906EBF54B0A4CA8D2040B8BE9FE75A785DE1CD28573D17E8A5ACADA",
+      "bytes": 931,
+      "original_child_parent_UTC": "2026-10-11T00:00:01.0000000Z"
+    },
+    {
+      "case_id": "PLAIN_OPAQUE_PADDED",
+      "role": "parent",
+      "raw_sha256": "25D3B88B03B708772B8C1B6CE9AAF66E4250EE84D3AAB6C53CBEC7BF9EE75A21",
+      "bytes": 897,
+      "original_child_parent_UTC": "2026-10-11T00:00:00.1234567Z"
+    },
+    {
+      "case_id": "PLAIN_OPAQUE_PADDED",
+      "role": "child",
+      "raw_sha256": "DAA3A0F16906EBF54B0A4CA8D2040B8BE9FE75A785DE1CD28573D17E8A5ACADA",
+      "bytes": 931,
+      "original_child_parent_UTC": "2026-10-11T00:00:01.0000000Z"
+    },
+    {
+      "case_id": "OPAQUE_PLAIN_PADDED",
+      "role": "parent",
+      "raw_sha256": "5077C839A2EFD38495FF553AD2F16F1B5C50F9CDA4A5D673E5014CEC2552124B",
+      "bytes": 919,
+      "original_child_parent_UTC": "2026-10-11T00:00:00.1234567Z"
+    },
+    {
+      "case_id": "OPAQUE_PLAIN_PADDED",
+      "role": "child",
+      "raw_sha256": "D6E345FEB30873C6002102E4C13BC5815A781C7177233B2DF64D82E49DD2A6CD",
+      "bytes": 909,
+      "original_child_parent_UTC": "2026-10-11T00:00:01.0000000Z"
+    },
+    {
+      "case_id": "OPAQUE_EQ_QUOTE_BACKSLASH",
+      "role": "parent",
+      "raw_sha256": "B0CB65941E0548E7809829F2B198EEA5CAA58F4C94A945DFAA207FF4A1B11CE0",
+      "bytes": 914,
+      "original_child_parent_UTC": "2026-10-11T00:00:00.1234567Z"
+    },
+    {
+      "case_id": "OPAQUE_EQ_QUOTE_BACKSLASH",
+      "role": "child",
+      "raw_sha256": "871D13EB216C404A74F65A4603BE913B8AFB7919EE6CE6E236D03874C1270516",
+      "bytes": 940,
+      "original_child_parent_UTC": "2026-10-11T00:00:01.0000000Z"
+    },
+    {
+      "case_id": "OPAQUE_EQ_QUOTE_BACKSLASH_PADDED",
+      "role": "parent",
+      "raw_sha256": "E647B4CE8F245E4270C38DC2EAC25DF0092CE6FF58E9415906A7FFD10E1A10C6",
+      "bytes": 936,
+      "original_child_parent_UTC": "2026-10-11T00:00:00.1234567Z"
+    },
+    {
+      "case_id": "OPAQUE_EQ_QUOTE_BACKSLASH_PADDED",
+      "role": "child",
+      "raw_sha256": "E1F0E41C784D7767D661588DAD839A3B9B547EBDBA89260484A62F5C964AC26A",
+      "bytes": 962,
+      "original_child_parent_UTC": "2026-10-11T00:00:01.0000000Z"
+    }
+  ],
+  "all_original12_cap_nonblank_ASCII_ID_unpadded_Args_empty": true,
+  "source_verdict": "R38_INDEPENDENT_STATIC_GAINS_CREDITED_GENERAL_CONTRACT_REVISION_REQUIRED_ORIGINAL6_SOURCE_REPRESENTABLE_RUNTIME_UNTESTED",
+  "native_E2": "NOT_RELEASED",
+  "Foundation": "HOLD",
+  "Master_candidate_execution_build_publication_native": 0
+}

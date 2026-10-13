@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-13T19:24:05.053171+09:00",
+  "files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\verify_r34_baseline.py",
+      "sha256": "CA468B927C78A6E3EFCD82DF65D5F50E63EA50A85F18CEF4FBC64F7E7EB371AF",
+      "bytes": 1001
+    }
+  ],
+  "discovery": "Fresh R34 terminal A UI showed extra baseline verifier; actual rg confirmed only one R34 helper outside ownedroot",
+  "old_source_and_QA_verdict_not_invalidated": true,
+  "actor": "A task placement evidence; installed incident actor remains UNKNOWN",
+  "High_E1_lineage": "OPEN",
+  "no_original_rewrite": true,
+  "not_retroactive_full_recursive_inventory": true
+}

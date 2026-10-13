@@ -1,0 +1,10 @@
+{
+  "actual_release_tool": {
+    "chunk_id": "29e408",
+    "wall_time_seconds": 0.0000446,
+    "exit_code": 0,
+    "original_token_count": 118,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R27-SOL-PREP-COMPLETE-20261012-01\", \"pi\r\n\u001b[23;80Hid\": 11168, \"locked_at\": \"2026-10-12T03:28:15.095417+09:00\", \"mechanism\": \"Window\r\n\u001b[23;80Hws msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_a\r\n\u001b[23;80Hat\": \"2026-10-12T03:42:50.324904+09:00\", \"renewal_count\": 6, \"release_reason\": \"R\r\n\u001b[23;80HRELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-12T03:43:42.714867+09:00\"}     \r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "all_child_commands_completed_before_release": true
+}

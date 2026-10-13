@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:71\",\"revision\":71,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a11dd4-3687-7831-83ff-78900f2f64fe\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791501809,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ac826dae11c87d09091efadf4a21e60\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ac826dae11c87d09091efadf4a21e60\",\"turnId\":\"01a11dd4-3687-7831-83ff-78900f2f64fe\",\"phase\":\"commentary\",\"text\":\"정상 정책 선언 14개에 대해 독립 reference bytes·digest를 준비했습니다. Unicode를 그대로 쓰는 형식과 ASCII Unicode escape 형식을 각각 명시했으며, R11 후보가 동결된 뒤 문서화된 convention을 대조하도록 남겼습니다. ID·revision의 공백, 대소문자, Unicode는 정확히 보존하는 기준입니다.\"},\"latestToolMarkerId\":\"exec-bbec97e4-9751-4d49-8afe-8e9e0631f005\",\"latestToolMarker\":{\"id\":\"exec-bbec97e4-9751-4d49-8afe-8e9e0631f005\",\"turnId\":\"01a11dd4-3687-7831-83ff-78900f2f64fe\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

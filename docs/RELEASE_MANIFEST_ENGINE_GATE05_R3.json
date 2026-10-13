@@ -1,0 +1,88 @@
+{
+  "manifest_version": "1.0",
+  "work_package": "WP_ENGINE_GATE05_R3",
+  "candidate_lineage": "GATE05-R3",
+  "created_at_utc": "2026-10-08T04:10:00Z",
+  "agent_role": "Antigravity A",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa",
+  "selected_candidate": {
+    "configuration": "Debug",
+    "target_framework": "net472",
+    "dll_path": "scratch/WorkerBridgeMod/Source/bin/Debug/net472/WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "9851351B4F3E8DD14D16AB5BBC5932F6A0F71E34ABF49648FA7366945516B1BB",
+    "dll_bytes": 199168,
+    "pdb_path": "scratch/WorkerBridgeMod/Source/bin/Debug/net472/WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "3B93B64C62CE37E7D5856846562A30448E574619A0D1E8C96B9025974ADEB9BE",
+    "pdb_bytes": 48620,
+    "mvid": "501e64f4-2135-42b0-b997-8829c99f5001"
+  },
+  "alternate_candidate": {
+    "configuration": "Release",
+    "target_framework": "net472",
+    "dll_path": "scratch/WorkerBridgeMod/Source/bin/Release/net472/WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "CC675EC3D7933C7A163D43FDD1941AADE3B53BC1A6A2575D3096C170FA678217",
+    "dll_bytes": 190464,
+    "pdb_path": "scratch/WorkerBridgeMod/Source/bin/Release/net472/WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "895350A2D329DE6EDFB2BB0C671223B82B3391F69BCF0248455B35084CF4689C",
+    "pdb_bytes": 36860,
+    "mvid": "355d01bf-ea8e-4f09-a547-4038e9bbf46e"
+  },
+  "source_files": [
+    {
+      "path": "scratch/WorkerBridgeMod/Source/WorkerBridge.cs",
+      "sha256": "4BC9B3449A706123663D19AF465C09ADDB769BC4039FA1C1ED294ADDE1CD4E4E",
+      "bytes": 151218
+    },
+    {
+      "path": "scratch/WorkerBridgeMod/Source/EngineHostCensus.cs",
+      "sha256": "A91257D2439CB983EB39B3D6C2FA37C7B0481F2342C671D359A010744E4B56F7",
+      "bytes": 92468
+    },
+    {
+      "path": "scratch/WorkerBridgeMod/Source/WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    }
+  ],
+  "verification_evidence": {
+    "runner_project": {
+      "path": "scratch/EngineGate05R3/Gate05R3TestRunner.csproj",
+      "sha256": "68C6177B31A4BFC71E7A6659B65044DA96C454063093C0C0D11D9818E09B61BA",
+      "bytes": 1645
+    },
+    "runner_source": {
+      "path": "scratch/EngineGate05R3/Program.cs",
+      "sha256": "ECE4E8FE9889806C2C7A05E18CD03E414C3E953A083FDF93061445273B6153C9",
+      "bytes": 36553
+    },
+    "results_json": {
+      "path": "scratch/EngineGate05R3/results.json",
+      "sha256": "A066741953794E6F9256D7794A0DEBF0BC867BF8BDFDAF9535737C07653721EA",
+      "bytes": 11650
+    },
+    "raw_console_log": {
+      "path": "scratch/EngineGate05R3/raw_console.txt",
+      "sha256": "2EBC5561DEF7ACDB6B46B749CE479F024438216129C094A347294FF80AD81E48",
+      "bytes": 10822
+    },
+    "native_execution_observation": {
+      "path": "scratch/EngineGate05R3/native_execution_observation.txt",
+      "sha256": "6EA3C09A6F1B42C53F96ECD0BF19D65D72C43D469614FB8F07336E66881FA841",
+      "bytes": 1195
+    },
+    "report_markdown": {
+      "path": "docs/POC_EngineHost_Semantic_Authority_Gate_05_R3.md",
+      "sha256": "D3E00B6B24BB4667E9DF615AD557EB0821E7B327D77FBB6C73E090D14BE9FA11",
+      "bytes": 14100
+    }
+  },
+  "summary": {
+    "total_tests": 32,
+    "pass": 32,
+    "fail": 0,
+    "e1_verdict": "PASS_WITH_DECLARED_LIMITS",
+    "native_observation_status": "NATIVE_UNTESTED / BLOCKER_UNKNOWN",
+    "installed_incident_status": "UNKNOWN OPEN INCIDENT",
+    "disposition_note": "Gate05-R3 successfully addresses R2-M01~08. Defects remain OPEN pending Master review and independent E2 verification by Sol QA."
+  }
+}

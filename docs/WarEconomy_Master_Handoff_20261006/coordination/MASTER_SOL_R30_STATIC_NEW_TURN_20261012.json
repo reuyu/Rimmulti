@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"bcc76e72-e33d-4898-bc7b-b558cfab470c:10\",\"revision\":10,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a12f9d-0902-7591-aa71-a7bd40dc9105\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791800183,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016accb384db8887d090dd1c37a97ecac9\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016accb384db8887d090dd1c37a97ecac9\",\"turnId\":\"01a12f9d-0902-7591-aa71-a7bd40dc9105\",\"phase\":\"commentary\",\"text\":\"새 R30 독립 정적 검토를 시작하겠습니다. WP 전체와 frozen 후보의 SHA·PDB·소스 결속을 먼저 확인하고, 실행 없이 handoff 분기·custody·원본 증거 drift를 검토하겠습니다. R29의 PASS는 이번 후보에 상속하지 않겠습니다.\"},\"latestToolMarkerId\":\"exec-685003f6-7c13-48fb-9bd3-83aacac6de69\",\"latestToolMarker\":{\"id\":\"exec-685003f6-7c13-48fb-9bd3-83aacac6de69\",\"turnId\":\"01a12f9d-0902-7591-aa71-a7bd40dc9105\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

@@ -1,0 +1,136 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R36-PUBLISHER-CONTRACT-20261013-DIRECT-d2d6556b",
+  "wp_id": "WP_ENGINE_GATE05_R36_PUBLISHER_CONTRACT",
+  "wp_revision": "GATE05-R36-PUBLISHER-CONTRACT",
+  "envelope": 39,
+  "status": "ACKNOWLEDGED",
+  "task_state": "IN_PROGRESS",
+  "acknowledged_at": "2026-10-13T14:30:38.921318+00:00",
+  "receiver": "Antigravity Development Agent A",
+  "instruction_file": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_ENGINE_GATE05_R36_PUBLISHER_CONTRACT.md",
+  "task_file": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R36-PUBLISHER-CONTRACT-20261013-DIRECT-d2d6556b\\TASK.json",
+  "release_file": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\RELEASE_ENGINE_GATE05_R36_PUBLISHER_CONTRACT_20261013.md",
+  "contract_file": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R36_PUBLISHER_CONTRACT_SUPPORTED_DOMAIN_20261013.md",
+  "scope_baseline_file": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R36-PUBLISHER-CONTRACT-20261013-DIRECT-d2d6556b\\MASTER_R36_AUTHORIZED_SOURCE_SCOPE.json",
+  "protected_baseline_file": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R36_PUBLISHER_CONTRACT_PROTECTED_BASELINE_20261013.json",
+  "master_message_file": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R36-PUBLISHER-CONTRACT-20261013-DIRECT-d2d6556b\\MASTER_MESSAGE.txt",
+  "r35_review_file": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R35_INDEPENDENT_STATIC_S1_20261013.md",
+  "r35_correction_file": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R35_POLICY_AND_FILESYSTEM_CLAIM_CORRECTIONS_20261013.md",
+  "qa_s1_report_file": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R35_Publisher_Independent_Static_S1_20261013.md",
+  "minimal_r36_requirements_file": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R35-PUBLISHER-INDEPENDENT-STATIC-S1-20261013\\MINIMAL_R36_CORRECTIVE_REQUIREMENTS.json",
+  "ref_hashes": {
+    "task": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R36-PUBLISHER-CONTRACT-20261013-DIRECT-d2d6556b\\TASK.json",
+      "bytes": 51010,
+      "sha256": "1155F0866900C08EC2120B3618CCC9932C27B0D80A29B63C4DD43FDA8738CB15"
+    },
+    "master_message": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R36-PUBLISHER-CONTRACT-20261013-DIRECT-d2d6556b\\MASTER_MESSAGE.txt",
+      "bytes": 396,
+      "sha256": "2C8012E20800B2E4A375F2C44AD59667C1E32BDAEBCE3FAF96CD6D7162DAC954"
+    },
+    "scope": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R36-PUBLISHER-CONTRACT-20261013-DIRECT-d2d6556b\\MASTER_R36_AUTHORIZED_SOURCE_SCOPE.json",
+      "bytes": 3703,
+      "sha256": "9E0F4CD470F557D00CB2CBBC4784DEE549C28D83F1464159B200AB0E2C252D0B"
+    },
+    "wp": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_ENGINE_GATE05_R36_PUBLISHER_CONTRACT.md",
+      "bytes": 5486,
+      "sha256": "FF9FB7A149DC8BFA3FC891F167DCE37A3C5EE180AC1A50857C8A0BBA0DEB5BE9"
+    },
+    "release": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\RELEASE_ENGINE_GATE05_R36_PUBLISHER_CONTRACT_20261013.md",
+      "bytes": 1412,
+      "sha256": "C22148E400EFAF0E4D5A948B4E55756866A4DEF4AF93109CD47E5AE43B3084EC"
+    },
+    "contract": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R36_PUBLISHER_CONTRACT_SUPPORTED_DOMAIN_20261013.md",
+      "bytes": 5862,
+      "sha256": "73CDCB9B57752C0149B906CC6A1CA81BA6310E9E2A83B1B36DFB0280F5A36F7A"
+    },
+    "r35_review": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R35_INDEPENDENT_STATIC_S1_20261013.md",
+      "bytes": 4301,
+      "sha256": "D1DD86671F66FC099C39ACAD42DA59BDBF9EEF39AD90CADDBD001AB311413486"
+    },
+    "r35_correction": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R35_POLICY_AND_FILESYSTEM_CLAIM_CORRECTIONS_20261013.md",
+      "bytes": 1427,
+      "sha256": "08FD3653F701719774E06251206D6AC5F1DFC7DD09475F3337ECA20E5BFA4DB2"
+    },
+    "qa_s1_report": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R35_Publisher_Independent_Static_S1_20261013.md",
+      "bytes": 16354,
+      "sha256": "B9BC8333FB6C56BE8EB50C5CB8CBBC908392581584BA12C036CE3DF1C2285900"
+    },
+    "minimal_r36": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R35-PUBLISHER-INDEPENDENT-STATIC-S1-20261013\\MINIMAL_R36_CORRECTIVE_REQUIREMENTS.json",
+      "bytes": 4762,
+      "sha256": "C79A4E50EFAE1A5F59A9538A8BBE96D552D8A018272708A39CFBD2D599F2AA19"
+    },
+    "protected_baseline": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R36_PUBLISHER_CONTRACT_PROTECTED_BASELINE_20261013.json",
+      "bytes": 5877129,
+      "sha256": "FA81128C0073EA78E1A64CB7254D54CAE1E268BC1269411D7CB3460CEAF805FC"
+    }
+  },
+  "new_owned_e1_root": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R36PublisherContract-d2d6556b",
+  "scope_policy": "PUBLISHER_CONTRACT_CORRECTION_AND_SUPPORTED_DOMAIN_ENFORCEMENT_SOURCE_AND_AST_ONLY",
+  "scope_boundary": "SOURCE_AND_AST_SYNTAX_ONLY_ZERO_PUBLISHER_EXECUTION_ZERO_ENGINE_BUILD_ZERO_UNIT_NATIVE_EXECUTION",
+  "allowed_mutable_paths": [
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py"
+  ],
+  "publisher_original": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+    "bytes": 22371,
+    "sha256": "9CAEA2DF0B8F3517DFCBEF080F7D26EC4343CDF4D2FD761453EFA2E4F3B86B4A"
+  },
+  "fixed_current_files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "544B22178F80C63FE85584BCA93ED1D7B77B59554C93762F38655B87237682FD",
+      "bytes": 276685
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "bytes": 170135
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "8091F4414A29EF5AE224BA67A82A5F7B866C230EEFFC33D78486C28AD3297029",
+      "bytes": 326144
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "FE75B3D1AFA31C88AE2B8FB56F76F00D8929D28FCE1EA315027A154FFD76F0DE",
+      "bytes": 79220
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "9CBA7E69210DE90B069F269744F3140C4ADD802FD868AB0E0C71FB0E5F69D106",
+      "bytes": 308224
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "F05FE976EB522B6A5FC78338B0C35A8CC5341322BACB4CA6310F6AF3682933F5",
+      "bytes": 57776
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "8091F4414A29EF5AE224BA67A82A5F7B866C230EEFFC33D78486C28AD3297029",
+      "bytes": 326144
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "FE75B3D1AFA31C88AE2B8FB56F76F00D8929D28FCE1EA315027A154FFD76F0DE",
+      "bytes": 79220
+    }
+  ]
+}

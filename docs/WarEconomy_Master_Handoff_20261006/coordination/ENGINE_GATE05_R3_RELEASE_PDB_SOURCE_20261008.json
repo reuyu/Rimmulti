@@ -1,0 +1,45 @@
+{
+  "assembly": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+  "pdb": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+  "mvid": "355d01bf-ea8e-4f09-a547-4038e9bbf46e",
+  "codeviewGuid": "cc1621c2-d9ea-457c-a469-2dbca6f1281f",
+  "pdbGuid": "cc1621c2-d9ea-457c-a469-2dbca6f1281f",
+  "codeviewMatched": true,
+  "documents": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+      "expected": "A91257D2439CB983EB39B3D6C2FA37C7B0481F2342C671D359A010744E4B56F7",
+      "actual": "A91257D2439CB983EB39B3D6C2FA37C7B0481F2342C671D359A010744E4B56F7",
+      "matched": true,
+      "frozen_source_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa\\FROZEN_GATE05_R3_REVIEW\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+      "expected": "4BC9B3449A706123663D19AF465C09ADDB769BC4039FA1C1ED294ADDE1CD4E4E",
+      "actual": "4BC9B3449A706123663D19AF465C09ADDB769BC4039FA1C1ED294ADDE1CD4E4E",
+      "matched": true,
+      "frozen_source_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa\\FROZEN_GATE05_R3_REVIEW\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+      "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+      "expected": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+      "actual": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+      "matched": true,
+      "frozen_source_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa\\FROZEN_GATE05_R3_REVIEW\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.AssemblyInfo.cs",
+      "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+      "expected": "80492D41167FD5D58508DFC29A09E3624EC6374EF4048B2FF2D2C5EE86562743",
+      "actual": "80492D41167FD5D58508DFC29A09E3624EC6374EF4048B2FF2D2C5EE86562743",
+      "matched": true,
+      "frozen_source_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa\\FROZEN_GATE05_R3_REVIEW\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.AssemblyInfo.cs"
+    }
+  ],
+  "dll_sha256": "CC675EC3D7933C7A163D43FDD1941AADE3B53BC1A6A2575D3096C170FA678217",
+  "pdb_sha256": "895350A2D329DE6EDFB2BB0C671223B82B3391F69BCF0248455B35084CF4689C",
+  "scope": "metadata read only; no candidate execution/build"
+}

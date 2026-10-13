@@ -1,0 +1,53 @@
+{
+  "at": "2026-10-13T19:55:44.650389+09:00",
+  "prepared": {
+    "delivery_id": "SOL-GATE05-R35-PUBLISHER-INDEPENDENT-STATIC-S1-20261013-01",
+    "wp_id": "WP_QA_ENGINE_GATE05_R35_PUBLISHER_INDEPENDENT_STATIC",
+    "wp_revision": "S1",
+    "wp_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R35_PUBLISHER_INDEPENDENT_STATIC_S1.md",
+    "wp_sha256": "165023C11FC92E920384B439F250762048C9121E2923EAC5955168251878C738",
+    "qa_root": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R35-PUBLISHER-INDEPENDENT-STATIC-S1-20261013",
+    "report_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R35_Publisher_Independent_Static_S1_20261013.md",
+    "baseline_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R35_PUBLISHER_INDEPENDENT_STATIC_PROTECTED_BASELINE_20261013.json",
+    "baseline_sha256": "0955BDCC8A4AD053A017EE9E214B91E0C70AD22B2D52124BA3EFBE0729734C63",
+    "protected_unique_paths": 19229,
+    "frozen_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R35-PUBLISHER-20261013-DIRECT-16a25a7e\\MASTER_GATE05_R35_PUBLISHER_REVIEW_FREEZE_MANIFEST.json",
+    "frozen_manifest_sha256": "2E24EB1828DC892B8554D69F1D7A85DDEE57A8FF717533C620A258BF76D6393A",
+    "selected_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R35-16a25a7e\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+    "selected_sha256": "9CAEA2DF0B8F3517DFCBEF080F7D26EC4343CDF4D2FD761453EFA2E4F3B86B4A",
+    "selected_bytes": 22371,
+    "scope": "EXACT_FROZEN_R35_PUBLISHER_TEXT_STATIC_ONLY_NO_PUBLICATION_COMPILER_NATIVE",
+    "delivery_status": "APPROVED_NOT_SENT",
+    "unknown_delivery": false,
+    "status": "APPROVED_NOT_SENT",
+    "submission_attempts": 0
+  },
+  "exact_message": "R35 publisher preparation 결과를 Master가 준비 계획으로 채택했고 A의 실제 R35 E1 결과도 검토·고정했습니다. 승인된 새 독립 정적 WP를 시작하세요: C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R35_PUBLISHER_INDEPENDENT_STATIC_S1.md (SHA 165023C11FC92E920384B439F250762048C9121E2923EAC5955168251878C738). Delivery SOL-GATE05-R35-PUBLISHER-INDEPENDENT-STATIC-S1-20261013-01. 정확한 frozen publisher 9CAEA2DF…/22371을 TEXT로 독립 검토하고, config14/decl7·경로 ancestry·non-overwrite·CLI·provenance를 확인해 최소 R36 publisher-only 수정 요구를 작성하세요. publisher/Engine/compiler/native/fixture 실행은 이번 WP에서 미승인입니다. WP의 baseline19229/freeze34와 기존 준비 oracle을 보존하고 initial ACK 및 완료를 원래 Master 대화로 직접 보고하세요. 다음 A 지시는 독립 결과 검토 뒤 진행합니다.",
+  "fresh_idle": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:33",
+    "revision": 33,
+    "changed": false,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a134cd-ceea-7472-bfc7-c7e3bd5abc24",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791887265,
+      "completedAt": 1791888123,
+      "durationMs": 858258
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ace0af8ade087d0a76236d8b29c4f3d",
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": "exec-e18873df-2411-4054-bfdf-48c10f640628",
+    "latestToolMarker": null
+  },
+  "one_submission_attempt": true,
+  "guard_session": 23543
+}

@@ -1,0 +1,205 @@
+{
+  "schema_version": "ADR-006B-v5",
+  "run_id": "GATE05-R12-PACKAGE-ORDER-RUN-01",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R12-PACKAGE-ORDER-20261009-DIRECT-e9dcd1e6",
+  "wp_id": "WP_ENGINE_GATE05_R12_PACKAGE_ORDER",
+  "wp_revision": "GATE05-R12-PACKAGE-ORDER",
+  "execution_timestamp": "2026-10-09T07:11:52.0051745Z",
+  "culture": "ko-KR",
+  "total_tests": 18,
+  "passed_tests": 18,
+  "failed_tests": 0,
+  "overall_verdict": "PASS",
+  "e1_verdict": "SCOPED_POSITIVE_NORMAL_PASS",
+  "limitations": [
+    "STATIC_MANAGED_NORMAL_EVIDENCE_ONLY",
+    "PHYSICAL_ARRAY_LOAD_ORDER_ADMISSION_SCOPED_TO_DECLARED_ORDINAL_CONSISTENCY",
+    "POLICY_CACHE_GENERATION_NOT_PROVEN",
+    "REAL_OPERATOR_ORIGIN_NOT_PROVEN",
+    "MOD_PATCH_SETTINGS_DYNAMIC_EVALUATION_SEPARATE_OPEN",
+    "NATIVE_PROMOTION_FULL_E2_NOT_RELEASED",
+    "FINAL_DOMAIN_AUTHORITY_REMAINS_DEDICATED_SERVER"
+  ],
+  "test_cases": [
+    {
+      "id": "TC01_DeclarationSchemaAndCompactJson",
+      "name": "TC01_DeclarationSchemaAndCompactJson",
+      "category": "Category1_CanonicalEncoding",
+      "status": "PASS",
+      "description": "Verifies schemaVersion constant, compact JSON without BOM, and fixed field sequence.",
+      "durationMs": 1,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC02_PolicyDeclarationRoundTrip",
+      "name": "TC02_PolicyDeclarationRoundTrip",
+      "category": "Category1_CanonicalEncoding",
+      "status": "PASS",
+      "description": "Verifies full round-trip serialization and deserialization of typed policy declaration.",
+      "durationMs": 11,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC03_DeterministicDigestAndEqualInstances",
+      "name": "TC03_DeterministicDigestAndEqualInstances",
+      "category": "Category1_CanonicalEncoding",
+      "status": "PASS",
+      "description": "Verifies identical digest for independent equal instances and reference SHA calculation.",
+      "durationMs": 5,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC04_OpaqueStringsWhitespacePreservation",
+      "name": "TC04_OpaqueStringsWhitespacePreservation",
+      "category": "Category1_CanonicalEncoding",
+      "status": "PASS",
+      "description": "Verifies leading, trailing, and internal whitespace in policyId and revision are preserved without Trim.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC05_OpaqueStringsUnicodeAndPunctuation",
+      "name": "TC05_OpaqueStringsUnicodeAndPunctuation",
+      "category": "Category1_CanonicalEncoding",
+      "status": "PASS",
+      "description": "Verifies lossless preservation of Unicode, quotes, backslashes, and punctuation in opaque identifiers.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC06_PackageIdsCaseNormalization",
+      "name": "TC06_PackageIdsCaseNormalization",
+      "category": "Category1_CanonicalEncoding",
+      "status": "PASS",
+      "description": "Verifies invariant lowercase normalization of package IDs in declaration serialization.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC07_PermutationsDistinctDigests",
+      "name": "TC07_PermutationsDistinctDigests",
+      "category": "Category1_CanonicalEncoding",
+      "status": "PASS",
+      "description": "Verifies that isolated permutations of policyId, revision, list order, and multiplicity produce distinct digests.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC08_DigestOverloadParity",
+      "name": "TC08_DigestOverloadParity",
+      "category": "Category1_CanonicalEncoding",
+      "status": "PASS",
+      "description": "Verifies all ComputePackagePolicyDigest overloads route through canonical declaration producing identical digest.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC09_PureCheckPackagePolicy_AlignedInventory_Success",
+      "name": "TC09_PureCheckPackagePolicy_AlignedInventory_Success",
+      "category": "Category2_PackageOrder",
+      "status": "PASS",
+      "description": "Verifies CheckPackagePolicy on physically aligned inventory (loadOrder 0, 1, 2) matching policy.",
+      "durationMs": 6,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC10_PureCheckPackagePolicy_PhysicalPermutation_PreservesEffectiveOrder",
+      "name": "TC10_PureCheckPackagePolicy_PhysicalPermutation_PreservesEffectiveOrder",
+      "category": "Category2_PackageOrder",
+      "status": "PASS",
+      "description": "Verifies physical transport permutation with fixed loadOrders preserves effective execution sequence and matches expected policy.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC11_PureCheckPackagePolicy_CallerImmutability",
+      "name": "TC11_PureCheckPackagePolicy_CallerImmutability",
+      "category": "Category2_PackageOrder",
+      "status": "PASS",
+      "description": "Verifies CheckPackagePolicy uses copied view and does NOT mutate caller's activeMods list.",
+      "durationMs": 3,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC12_PureTryAdmit_PhysicalPermutation_CanonicalAdmittedContent",
+      "name": "TC12_PureTryAdmit_PhysicalPermutation_CanonicalAdmittedContent",
+      "category": "Category2_PackageOrder",
+      "status": "PASS",
+      "description": "Verifies two physically permuted valid inventories produce identical canonical admitted JSON and digest.",
+      "durationMs": 21,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC13_DistinctValidExecutionOrders_MatchingDistinctPolicies",
+      "name": "TC13_DistinctValidExecutionOrders_MatchingDistinctPolicies",
+      "category": "Category2_PackageOrder",
+      "status": "PASS",
+      "description": "Verifies equal-sized inventories declaring different execution sequences match their distinct corresponding policies.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC14_FreshOriginal_SerializeTrue_BeforeAdmission",
+      "name": "TC14_FreshOriginal_SerializeTrue_BeforeAdmission",
+      "category": "Category2_PackageOrder",
+      "status": "PASS",
+      "description": "Verifies policy-bearing fresh-original manifest serializes with canonicalNormalize=true before external admission.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC15_OverloadParity_CheckAndTryAdmit",
+      "name": "TC15_OverloadParity_CheckAndTryAdmit",
+      "category": "Category2_PackageOrder",
+      "status": "PASS",
+      "description": "Verifies all overloads of CheckPackagePolicy and TryAdmitWithPackagePolicy (Record vs Declaration) agree.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC16_ContractVersion_And_CapabilityFlag",
+      "name": "TC16_ContractVersion_And_CapabilityFlag",
+      "category": "Category3_ContractValidation",
+      "status": "PASS",
+      "description": "Verifies ADR-006B-v5-R12 contract version and GATE05_R12_PACKAGE_ORDER capability flag.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC17_Regression_R9_VersionMeaningSemantics",
+      "name": "TC17_Regression_R9_VersionMeaningSemantics",
+      "category": "Category4_Regressions",
+      "status": "PASS",
+      "description": "Regresses R9 version meaning: modVersion null/empty values preserved without overwrite.",
+      "durationMs": 2,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC18_Regression_DefFamiliesAndCanonicalSorting",
+      "name": "TC18_Regression_DefFamiliesAndCanonicalSorting",
+      "category": "Category4_Regressions",
+      "status": "PASS",
+      "description": "Regresses 8 Def families presence and canonical sorting order.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    }
+  ]
+}

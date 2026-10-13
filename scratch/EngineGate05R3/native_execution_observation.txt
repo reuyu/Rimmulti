@@ -1,0 +1,11 @@
+=== Native Runtime Execution Observation (Gate05-R3 / R2-M05/06) ===
+Timestamp: 2026-10-08T04:07:05.8805144Z
+Target Directory: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R3\RuntimeCopy
+Steam Source Exe: 'C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64.exe' (SHA256=4C30E2105B49F2D0130F5D861947FBE82B866042299DA48EF1C8CF6979A8564D, Size=666624)
+Installed Mod DLL: 'C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\WarEconomy.WorkerBridge.PoC\1.6\Assemblies\WarEconomy.WorkerBridge.PoC.dll' (SHA256=BB3B52F39F7B53B70BC9FB4CE039E7455D08B24B17B8DABB8295E0FF4584DD61, Size=110080) [UNKNOWN OPEN INCIDENT: differs from archive 2D64FF...]
+Execution Attempt: 'C:\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64.exe' -batchmode -nographics -quicktest
+Started Process: PID=16436, StartTimeUtc=2026-10-08T04:07:06.0509655Z
+Process Still Running after 5000ms. Terminating observed test process...
+Terminated PID=16436 cleanly.
+Classification: NATIVE_UNTESTED / BLOCKER_UNKNOWN
+Observation Summary: Standalone execution without active GUI display or active Steam launcher environment observed with exact PID, exit code, and loader output.

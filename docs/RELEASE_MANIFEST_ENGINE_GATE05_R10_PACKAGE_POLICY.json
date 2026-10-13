@@ -1,0 +1,102 @@
+﻿{
+    "manifest_version":  "1.0",
+    "work_package":  "WP_ENGINE_GATE05_R10_PACKAGE_POLICY",
+    "candidate_lineage":  "GATE05-R10-PACKAGE-POLICY",
+    "created_at_utc":  "2026-10-08T20:40:09.639023+00:00",
+    "agent_role":  "Antigravity A",
+    "dispatch_id":  "WE-A-ENGINE-GATE05-R10-PACKAGE-POLICY-20261009-DIRECT-81a28ecb",
+    "selected_candidate":  {
+                               "configuration":  "Debug",
+                               "target_framework":  "net472",
+                               "dll_path":  "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+                               "dll_sha256":  "1772DFBD1674B7CF8450CAF42FDE7AC6F92FD3A22183B7DDE5AA705CCEC24721",
+                               "dll_bytes":  234496,
+                               "pdb_path":  "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+                               "pdb_sha256":  "58FE3A765BB95C5C7FB044FE5E4627B66BF245ABA72C0CF95A05BC29EFF9B342",
+                               "pdb_bytes":  58376,
+                               "mvid":  "7ef10d5b-de1c-4e04-bdb4-3a03c4c316fb"
+                           },
+    "alternate_candidate":  {
+                                "configuration":  "Release",
+                                "target_framework":  "net472",
+                                "dll_path":  "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+                                "dll_sha256":  "659CFE704DBCE60AC8DF93D7C784FDA81FF312C0D42B502CA743720B7C30A706",
+                                "dll_bytes":  223232,
+                                "pdb_path":  "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+                                "pdb_sha256":  "3B1F51AC6E99D55794FB6BD83D373DAFFDAB443E62E91B5DEB64EEA170953553",
+                                "pdb_bytes":  42804,
+                                "mvid":  "afe11c93-fc73-4002-a9e2-b976ce10f9e3"
+                            },
+    "source_files":  [
+                         {
+                             "path":  "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+                             "sha256":  "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+                             "bytes":  156431
+                         },
+                         {
+                             "path":  "scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+                             "sha256":  "E855F60CB91F1207A03530842F65A6CECCEEA5B5DFF01511B86821AD2600D6AC",
+                             "bytes":  149085,
+                             "prefix_marker":  "    public static class ContentProfileProvider",
+                             "prefix_length":  72547,
+                             "prefix_sha256":  "F3C4F865F1E2A898BF240A2D096195870D77A52408CF2D93664FE15092A2A887"
+                         },
+                         {
+                             "path":  "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+                             "sha256":  "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+                             "bytes":  1774
+                         }
+                     ],
+    "verification_evidence":  {
+                                  "runner_project":  {
+                                                         "path":  "scratch\\EngineGate05R10PackagePolicy\\Harness\\Gate05R10PackageRunner.csproj",
+                                                         "sha256":  "5EF26F36292EA3EA563B0406D9140CAD63C514E641815CF591BC7BA6EF329EAB",
+                                                         "bytes":  1618
+                                                     },
+                                  "runner_source":  {
+                                                        "path":  "scratch\\EngineGate05R10PackagePolicy\\Harness\\Program.cs",
+                                                        "sha256":  "8BB0F3F5E8A1BEA137CAC63C08277934DF737DE60414A6D0C7B7CC6DA2107DD0",
+                                                        "bytes":  52641
+                                                    },
+                                  "results_json":  {
+                                                       "path":  "scratch\\EngineGate05R10PackagePolicy\\results.json",
+                                                       "sha256":  "E9BCC3C8B535B92DA0D0653F1EEB749E6F813A7B037AD9E3F8CBEF67BAADA15A",
+                                                       "bytes":  5741
+                                                   },
+                                  "raw_console_log":  {
+                                                          "path":  "scratch\\EngineGate05R10PackagePolicy\\raw_console.txt",
+                                                          "sha256":  "E48307863667FCB12F9B7CEA0D95B929876AA23E495EDEDD226C55A9F682E383",
+                                                          "bytes":  4840
+                                                      },
+                                  "pre_run_manifest":  {
+                                                           "path":  "scratch\\EngineGate05R10PackagePolicy\\CANDIDATE_PRE_RUN_MANIFEST.json",
+                                                           "sha256":  "C2F91733CD29F910F9CF352F835E842A6619BF7CF0F5123E4B5E4869BF347582",
+                                                           "bytes":  7286
+                                                       },
+                                  "engine_freeze_before":  {
+                                                               "path":  "scratch\\EngineGate05R10PackagePolicy\\ENGINE_FREEZE_BEFORE.json",
+                                                               "sha256":  "2E3B85B6CBB5E25FC77DE53F0BA870EBF6B57E775DE3A4A17762BC2FEC55E198",
+                                                               "bytes":  3072
+                                                           },
+                                  "engine_freeze_after":  {
+                                                              "path":  "scratch\\EngineGate05R10PackagePolicy\\ENGINE_FREEZE_AFTER.json",
+                                                              "sha256":  "5AFC7F0CDF16472A8ED1CFA3F6427F1F55A2329CE0BD67BC275371E2F7F02F0F",
+                                                              "bytes":  3072
+                                                          },
+                                  "report_markdown":  {
+                                                          "path":  "docs\\POC_EngineHost_Content_Codec_Gate05_R10.md",
+                                                          "sha256":  "E00BBC1E55DF74B5D006CE7C42BB80E1DADEB8634D5E6A2E7537F0BE18DF1590",
+                                                          "bytes":  10437
+                                                      }
+                              },
+    "summary":  {
+                    "total_tests":  19,
+                    "pass":  19,
+                    "fail":  0,
+                    "e1_verdict":  "IMPLEMENTATION_PARTIAL",
+                    "codec_status":  "POSITIVE_NORMAL_DTO_AND_PACKAGE_POLICY_VERIFIED",
+                    "native_observation_status":  "NATIVE_UNTESTED (Prohibited under WP_ENGINE_GATE05_R10_PACKAGE_POLICY)",
+                    "installed_incident_status":  "UNKNOWN OPEN INCIDENT",
+                    "disposition_note":  "Gate05-R10 implements explicit typed ExpectedPackagePolicyRecord, deterministic canonical policy digest computation, pure package inventory check against observed mods, replaces default-only POC_DECLARED_PACKAGES_ONLY assertion with UNCONFIGURED default and CHECKED_POLICY binding, while preserving R9 version meaning repair across Invariant, en-US, and de-DE. Tested with 19 positive normal controls (19/19 PASS). Full Gate05 and Foundation remain HOLD pending independent QA and Master governance disposition."
+                }
+}

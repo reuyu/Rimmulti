@@ -1,0 +1,49 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R26-CHILD-REG-PREP-20261011-DIRECT-4d660e9b",
+  "generated_at_utc": "2026-10-11T14:50:35Z",
+  "status": "UNRESOLVED_NATIVE_PREREQUISITES",
+  "prerequisites": [
+    {
+      "id": "PREREQ-01-OPERATOR-CHILD-CONFIG-ISSUANCE",
+      "category": "OPERATOR_AUTHORITY",
+      "summary": "External Operator Orchestration Plane Child Configuration Issuance",
+      "details": "The operator orchestration service must independently generate, sign/admit, and provide a valid OperatorStartupConfig JSON with role='READ_ONLY', unique configId, and matching executable SHA256 before child launch.",
+      "blocker_severity": "BLOCKING_EXECUTION"
+    },
+    {
+      "id": "PREREQ-02-NATIVE-CLI-ARGUMENT-PARSING",
+      "category": "NATIVE_BOOTSTRAP",
+      "summary": "Verification of RimWorld Executable CLI Argument Acceptance",
+      "details": "Empirical proof in target game binary that Verse.GenCommandLine / Unity Player processes -savedatafolder and -operator* tokens correctly upon startup without stripping them or crashing. Checked-in Multiplayer HostUtil.cs is reference usage only.",
+      "blocker_severity": "BLOCKING_EXECUTION"
+    },
+    {
+      "id": "PREREQ-03-ISOLATED-USERDATA-DIRECTORIES",
+      "category": "FILESYSTEM_ISOLATION",
+      "summary": "Physical Existence of Distinct ValidatorUserDataDirectory and ValidatorCwd",
+      "details": "The directories specified for ValidatorUserDataDirectory and ValidatorCwd must exist, be distinct from WorkerUserDataDirectory, and have proper write permissions for the child process.",
+      "blocker_severity": "BLOCKING_EXECUTION"
+    },
+    {
+      "id": "PREREQ-04-STAGED-ARTIFACT-MOUNT-OR-READ-ACCESS",
+      "category": "DATA_ISOLATION",
+      "summary": "Child Read-Only Access to Parent Staged Artifacts",
+      "details": "The child validator requires read-only access to the staged .rws save game file without lock conflicts or cross-contamination of parent simulation saves.",
+      "blocker_severity": "BLOCKING_EXECUTION"
+    },
+    {
+      "id": "PREREQ-05-LOOPBACK-PORT-ALLOCATION-AND-STREAM-AUTH",
+      "category": "NETWORK_AND_M05",
+      "summary": "Distinct Loopback Port and Nonce-Authenticated Stream Binding",
+      "details": "The child process requires an independent loopback TCP bridge port (-bridgeport) distinct from the parent worker port, bound to the operator-issued capability nonce.",
+      "blocker_severity": "BLOCKING_M05"
+    },
+    {
+      "id": "PREREQ-06-COMPLETE-RIMWORLD-DATA-ASSETS",
+      "category": "RUNTIME_ENVIRONMENT",
+      "summary": "Availability of Full RimWorld Game Assemblies and Core Content",
+      "details": "Current scratch environment contains only WorkerBridgeMod source and compiled PoC DLLs. Execution of RimWorldWin64.exe requires the full RimWorld game installation (RimWorldWin64_Data, Managed assemblies, Core defs).",
+      "blocker_severity": "BLOCKING_EXECUTION"
+    }
+  ]
+}

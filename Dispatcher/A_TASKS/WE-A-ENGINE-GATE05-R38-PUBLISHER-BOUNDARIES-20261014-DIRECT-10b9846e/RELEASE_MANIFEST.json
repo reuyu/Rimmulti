@@ -1,0 +1,25 @@
+{
+  "release_name": "RELEASE_MANIFEST_ENGINE_GATE05_R38_PUBLISHER_BOUNDARIES",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e",
+  "envelope": 41,
+  "created_at_utc": "2026-10-13T17:36:47.118800+00:00",
+  "publisher_source": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+    "bytes": 43666,
+    "sha256": "940CF77220C272D117CDBC278B64858EFB3077267141CC548A0105B47D6E1306"
+  },
+  "ast_verification": {
+    "tool": "ast_checker.py",
+    "verdict": "AST_PARSED_SUCCESS",
+    "exit_code": 0
+  },
+  "engine_immutability": {
+    "engine9_rebuilt": false,
+    "engine9_bit_exact": true
+  },
+  "execution_boundaries": {
+    "publisher_executions": 0,
+    "engine_build_executions": 0,
+    "unit_native_executions": 0
+  }
+}

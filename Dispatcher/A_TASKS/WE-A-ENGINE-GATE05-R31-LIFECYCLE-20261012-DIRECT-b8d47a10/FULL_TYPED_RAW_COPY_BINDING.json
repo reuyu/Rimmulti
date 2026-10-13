@@ -1,0 +1,181 @@
+{
+  "schemaVersion": "we-operator-pair-raw-binding/v1",
+  "generated_at": "2026-10-12T20:55:00+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10",
+  "wp_id": "WP_ENGINE_GATE05_R31_LIFECYCLE",
+  "envelope": 34,
+  "api_contracts": {
+    "snapshot_class": "public sealed class WarEconomy.WorkerBridge.OperatorStartupPairSnapshot",
+    "snapshot_properties": [
+      {
+        "name": "ParentReceipt",
+        "type": "OperatorStartupAdmissionReceipt",
+        "access": "public get"
+      },
+      {
+        "name": "ChildReceipt",
+        "type": "OperatorStartupAdmissionReceipt",
+        "access": "public get"
+      },
+      {
+        "name": "OperatorPairId",
+        "type": "string",
+        "access": "public get"
+      },
+      {
+        "name": "Scope",
+        "type": "string",
+        "value": "DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY",
+        "access": "public get"
+      }
+    ],
+    "snapshot_methods": [
+      {
+        "name": "GetParentDeclaration",
+        "return_type": "OperatorLaunchDescriptor",
+        "guarantee": "Fresh clone; caller mutation isolated"
+      },
+      {
+        "name": "GetChildDeclaration",
+        "return_type": "OperatorLaunchDescriptor",
+        "guarantee": "Fresh clone; caller mutation isolated"
+      }
+    ],
+    "admission_helper": "public static class WarEconomy.WorkerBridge.OperatorStartupPairAdmission",
+    "admission_method": "public static (bool isValid, string error, OperatorStartupPairSnapshot? pair) AdmitPairBytes(byte[] bundleBytes, string expectedBundleSha, byte[] parentConfigBytes, byte[] childConfigBytes)"
+  },
+  "provenance_and_bindings": [
+    {
+      "case_index": 1,
+      "case_id": "PLAIN_PLAIN",
+      "operatorPairId": "WE-PAIR-DEV-R29-PLAIN-PLAIN-01",
+      "bundle_file": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\PublishedPairs\\case_01\\operator_startup_pair.json",
+        "sha256": "7C0AB26E7F651AF17A377F27CC815DF3AD0D61C455B03892A958FE1AD11908A0",
+        "bytes": 967
+      },
+      "parent_config": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\Fixtures\\parent_config_01.json",
+        "sha256": "939285CA1FF4BFAE418241CF7FCB850BD18C297FC138F108B58C7B5DE8435559",
+        "bytes": 1094
+      },
+      "child_config": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\Fixtures\\child_config_01.json",
+        "sha256": "0BBE709CC300106DAA35FB9A3162E85A3039768B3A9401B07814BC66A6C78F5C",
+        "bytes": 1087
+      },
+      "parent_origin_id": "qa.R29.parent.origin.plain",
+      "child_origin_id": "qa.R29.child.origin.plain"
+    },
+    {
+      "case_index": 2,
+      "case_id": "OPAQUE_OPAQUE",
+      "operatorPairId": "WE-PAIR-DEV-R29-OPAQUE-OPAQUE-02",
+      "bundle_file": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\PublishedPairs\\case_02\\operator_startup_pair.json",
+        "sha256": "39E6CF2F0D57060D9AC30940D67A90B7FB84356E84DFF6F841388054AF6167FE",
+        "bytes": 1001
+      },
+      "parent_config": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\Fixtures\\parent_config_02.json",
+        "sha256": "C1377664FA85C08534178E61743FCA78F4425D12E89EF86E8FF8BAC255D167C2",
+        "bytes": 1099
+      },
+      "child_config": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\Fixtures\\child_config_02.json",
+        "sha256": "69A5B0A557EA1E1C17401558F666BD7EB38D0F7857C9DA01AA55B69FF50FE290",
+        "bytes": 1092
+      },
+      "parent_origin_id": "  qa.R29.parent.origin.opaque.Ω  ",
+      "child_origin_id": "  qa.R29.child.origin.opaque.Ω  "
+    },
+    {
+      "case_index": 3,
+      "case_id": "PLAIN_OPAQUE_PADDED",
+      "operatorPairId": "WE-PAIR-DEV-R29-PLAIN-OPAQUE-03",
+      "bundle_file": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\PublishedPairs\\case_03\\operator_startup_pair.json",
+        "sha256": "9BB5E55D24F1CF4E7F1B7249C1EE25716ECFA63982110B4DD1EDBA7E111C0CA6",
+        "bytes": 988
+      },
+      "parent_config": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\Fixtures\\parent_config_03.json",
+        "sha256": "54868D04900DAB0B4C00CDB18017CC61599E2CB0407523036C32770831696DCF",
+        "bytes": 1109
+      },
+      "child_config": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\Fixtures\\child_config_03.json",
+        "sha256": "CA155A1549E4E15DD1A39999EDFDCD7AA56C59BD3888C6C101708A8F547ECA9A",
+        "bytes": 1102
+      },
+      "parent_origin_id": "qa.R29.parent.origin.plain3",
+      "child_origin_id": "  qa.R29.child.origin.opaque3.Ω  "
+    },
+    {
+      "case_index": 4,
+      "case_id": "OPAQUE_PLAIN_PADDED",
+      "operatorPairId": "WE-PAIR-DEV-R29-OPAQUE-PLAIN-04",
+      "bundle_file": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\PublishedPairs\\case_04\\operator_startup_pair.json",
+        "sha256": "BECA6A3F86B9F9276C232F5507E7D22205B065EA6E69359B5AA7C8F4F55EFE92",
+        "bytes": 988
+      },
+      "parent_config": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\Fixtures\\parent_config_04.json",
+        "sha256": "984A63C5CD1875EE34853E4665A27D1A4F7892108FC8406D123477916C57D3BE",
+        "bytes": 1109
+      },
+      "child_config": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\Fixtures\\child_config_04.json",
+        "sha256": "449341BEFD83ECFCD409F09C3AEF5AD866AF500EC7F6C58610614844826B7C6D",
+        "bytes": 1102
+      },
+      "parent_origin_id": "  qa.R29.parent.origin.opaque4.Ω  ",
+      "child_origin_id": "qa.R29.child.origin.plain4"
+    },
+    {
+      "case_index": 5,
+      "case_id": "PAIR_ID_WITH_EQUALS",
+      "operatorPairId": "WE=PAIR=DEV=R29=EQUALS=05",
+      "bundle_file": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\PublishedPairs\\case_05\\operator_startup_pair.json",
+        "sha256": "9FDEF4423B0B36728792B1D3E810684852EEF945A1DAA44B0CFA03F791E8ED8B",
+        "bytes": 950
+      },
+      "parent_config": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\Fixtures\\parent_config_05.json",
+        "sha256": "58DB13D7671AA1AA2FB5CBBB682F4CA8F7E608E8B51269FB4E422A30E728A0A0",
+        "bytes": 1109
+      },
+      "child_config": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\Fixtures\\child_config_05.json",
+        "sha256": "B07FCD71AD491CEE018F764ECE190A0A5C37035DE19D1E06E66D86169B3B63A3",
+        "bytes": 1102
+      },
+      "parent_origin_id": "qa.R29.parent.origin.eq",
+      "child_origin_id": "qa.R29.child.origin.eq"
+    },
+    {
+      "case_index": 6,
+      "case_id": "UNICODE_BACKSLASH_QUOTE_EQUALS",
+      "operatorPairId": "WE-PAIR-DEV-R29-Ω-\"QUOTE\"=\\BACKSLASH\\-06",
+      "bundle_file": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\PublishedPairs\\case_06\\operator_startup_pair.json",
+        "sha256": "30D4CAE52A0C74966AACE77A8B23402954126449E6791A79492AB3E715AEAC0A",
+        "bytes": 1062
+      },
+      "parent_config": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\Fixtures\\parent_config_06.json",
+        "sha256": "523F6F2FD141A9E09DB4580417C21A9B46FC87971C8C51DB13C188A24B50D719",
+        "bytes": 1134
+      },
+      "child_config": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\Fixtures\\child_config_06.json",
+        "sha256": "0D4DF424A054AC73E9E227558AF047C841EACFB75F2E37BE9E1A2D6C95F285B3",
+        "bytes": 1127
+      },
+      "parent_origin_id": "qa.R29.parent.origin.Ω-\"quoted\"=\\path\\-06",
+      "child_origin_id": "qa.R29.child.origin.Ω-\"quoted\"=\\path\\-06"
+    }
+  ]
+}

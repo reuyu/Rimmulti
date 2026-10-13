@@ -1,0 +1,11 @@
+{
+  "run_id": "MASTER-R35-STATIC-ACK-20261013-01",
+  "session_id": 79169,
+  "actual_release": {
+    "chunk_id": "6149d6",
+    "wall_time_seconds": 0.0000346,
+    "exit_code": 0,
+    "original_token_count": 104,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R35-STATIC-ACK-20261013-01\", \"pid\": 12548, \"locked_at\": \"2026-10-13T20:00:10.770576+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-13T20:03:58.496032+09:00\", \"renewal_count\": 2, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-13T20:05:23.969457+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  }
+}

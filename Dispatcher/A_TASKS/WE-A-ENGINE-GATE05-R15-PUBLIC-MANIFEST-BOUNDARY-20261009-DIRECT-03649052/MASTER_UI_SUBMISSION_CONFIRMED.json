@@ -1,0 +1,27 @@
+{
+  "observed_at": "2026-10-09T13:55:09.945Z",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-20261009-DIRECT-03649052",
+  "wp_id": "WP_ENGINE_GATE05_R15_PUBLIC_MANIFEST_BOUNDARY",
+  "wp_revision": "GATE05-R15-PUBLIC-MANIFEST-BOUNDARY",
+  "envelope": 18,
+  "window": {
+    "app": "process:C:\\Users\\user\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe",
+    "id": 4458672,
+    "title": "RimMulti - Antigravity IDE - WarEconomy.Server.pdb"
+  },
+  "conversation": "WarEconomy 컨텍스트 복구 및 수행",
+  "actual_new_message_matches": true,
+  "composer_cleared": true,
+  "one_send_action": true,
+  "working_cancel_observed": true,
+  "model_changed": false,
+  "accept_all_used": false,
+  "guard_run": "MASTER-SOL-R14-COMPLETE-CONTINUE-20261009-01",
+  "guard_session": 38756,
+  "guard_pid": 32404,
+  "coordinate_focus_after_accessibility_geometry_unavailable": "fresh screenshot at460,946 followed fresh observed caret before one type;no UI commands",
+  "idle_tree": "C:/Users/user/Desktop/RimMulti/Dispatcher/A_TASKS/WE-A-ENGINE-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-20261009-DIRECT-03649052/MASTER_UI_IDLE_TREE.txt",
+  "before_type_tree": "C:/Users/user/Desktop/RimMulti/Dispatcher/A_TASKS/WE-A-ENGINE-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-20261009-DIRECT-03649052/MASTER_UI_BEFORE_TYPE_TREE.txt",
+  "exact_draft_tree": "C:/Users/user/Desktop/RimMulti/Dispatcher/A_TASKS/WE-A-ENGINE-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-20261009-DIRECT-03649052/MASTER_UI_EXACT_DRAFT_TREE.txt",
+  "postsend_tree": "C:/Users/user/Desktop/RimMulti/Dispatcher/A_TASKS/WE-A-ENGINE-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-20261009-DIRECT-03649052/MASTER_UI_POSTSEND_TREE.txt"
+}

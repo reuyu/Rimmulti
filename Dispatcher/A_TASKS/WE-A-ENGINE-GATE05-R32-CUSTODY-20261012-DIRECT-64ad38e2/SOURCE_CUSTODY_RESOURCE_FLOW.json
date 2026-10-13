@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "we-r32-source-custody-resource-flow/v1",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2",
+  "wp_id": "WP_ENGINE_GATE05_R32_CUSTODY",
+  "envelope": 35,
+  "target_source": "scratch/WorkerBridgeMod/Source/WorkerBridge.cs",
+  "generated_at": "2026-10-12T23:31:00+09:00",
+  "managed_custody_rules": [
+    {
+      "rule_id": "MANAGED_REFERENCE_EQUALS_NULL_AND_OWNER_GATING",
+      "authorized_span": "PRIVATE_DURABLE_MODE_OWNER_CONSUMED_STATE",
+      "byte_range": [
+        27259,
+        34312
+      ],
+      "description": "Uses object.ReferenceEquals(x, null) and object.ReferenceEquals(a, b) exclusively for null and owner verification in CleanupOwnerPendingHandoff, CleanupEscapingAddComponentFailure, and TryAcquirePendingStartupHandoff.",
+      "proof_witness": "Bypasses UnityEngine.Object overloaded operator== so that native-null wrappers on destroyed GameObjects can never bypass matching managed payload cleanup."
+    },
+    {
+      "rule_id": "MODE_BEFORE_GETTER_AND_PRIOR_ABORT_GATE",
+      "authorized_span": "AWAKE_REQUIRED_MODE_ENTRY",
+      "byte_range": [
+        39117,
+        41821
+      ],
+      "description": "Establishes _isPairRequiredMode = true from static marker _staticPairModeRequired under lock BEFORE reading this.gameObject. Retains managed owner in _retainedOwner inside try/catch. Checks _staticStartupAborted prior abort before resource setup.",
+      "proof_witness": "If process startup was previously aborted, clears matching payload under lock if retained owner matches, sets _startupInitializationComplete = false, isRunning = false, and returns immediately before fastEcology, log callback, policy, listener, or thread creation."
+    },
+    {
+      "rule_id": "AWAKE_CATCH_ISRUNNING_FALSE_AND_INDEPENDENT_CLEANUP",
+      "authorized_span": "AWAKE_SUCCESS_AND_FAILURE_TAIL",
+      "byte_range": [
+        43755,
+        44736
+      ],
+      "description": "Awake catch tail marks _startupInitializationComplete = false, isRunning = false, and _staticStartupAborted = true. Logging is protected inside try/catch so logging exceptions cannot skip cleanup. Each resource cleanup attempt is independently protected.",
+      "proof_witness": "Independently guarded: HandleUnityLogMessage unsubscribe, listener?.Stop(), listenerThread?.Abort(), and CleanupOwnerPendingHandoff(_retainedOwner)."
+    },
+    {
+      "rule_id": "ONDESTROY_SAFE_FINALIZATION_WITH_FINALLY",
+      "authorized_span": "OWNER_SCOPED_DESTROY_WHOLE_METHOD",
+      "byte_range": [
+        187797,
+        188671
+      ],
+      "description": "OnDestroy cleans _privatePairProfile, calls CleanupOwnerPendingHandoff(_retainedOwner) inside try/catch, guards error logging, and executes isRunning = false and resource stops inside a finally block.",
+      "proof_witness": "Guarantees resource teardown attempts execute unconditionally even if owner cleanup or catch logging throws."
+    }
+  ],
+  "source_only_limitations": [
+    "SOURCE_INSPECTION_ONLY: All rules above verified strictly via source structure and compile output. No Unity native lifecycle, C# Process API, or runtime game loops were executed.",
+    "UNTESTED_NATIVE_ABORT_PROPAGATION: Thread.Abort and native unmanaged cleanup efficacy remain unobserved."
+  ]
+}

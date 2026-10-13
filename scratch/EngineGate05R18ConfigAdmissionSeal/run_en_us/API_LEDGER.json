@@ -1,0 +1,19 @@
+{
+  "ParseStrictCalls": 1,
+  "AdmitConfigBytesCalls": 1,
+  "AdmitConfigFileCalls": 1,
+  "ToSnapshotCalls": 2,
+  "ToRedactedJsonSnapshotCalls": 1,
+  "GetExpectedPackagePolicyDeclarationCalls": 2,
+  "ComputeFileSha256Calls": 2,
+  "VerifyAdmittedExecutableCalls": 1,
+  "ToRedactedJsonValidatorResultCalls": 1,
+  "SerializePackagePolicyCalls": 1,
+  "DeserializePackagePolicyCalls": 1,
+  "ComputePackagePolicyDigestCalls": 2,
+  "ProcessApiCalls": 0,
+  "VerifyProcessIdentityCalls": 0,
+  "WorkerBridgeGlobalConfigureResetCalls": 0,
+  "AwakeCalls": 0,
+  "HarmonyCalls": 0
+}

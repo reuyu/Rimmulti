@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-12T04:51:04.262616+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51",
+  "ack": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51\\ACK.json",
+    "sha256": "F7EFE9E42F1CF1D897184AD31A1143B383C1CCA9A5E50DB51543BF869036CFF1",
+    "bytes": 4121
+  },
+  "actual_submission_proof": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51\\MASTER_UI_SUBMISSION_PROOF.json",
+    "sha256": "863D11A065574F422C5997334BE13AC87C6C62E92A6B23FBBAC44E7CB3C844E4",
+    "bytes": 928
+  },
+  "production9_allfixed_verified": true,
+  "protected": 14045,
+  "scope": "READ_ONLY_CONNECTED_PATCH_PROPOSAL",
+  "no_build_or_native_admission": true
+}

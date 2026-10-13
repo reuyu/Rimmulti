@@ -1,0 +1,11 @@
+{
+  "run_id": "MASTER-R35-FINAL-READBACK-20261013-02",
+  "session_id": 87847,
+  "actual_release_result": {
+    "chunk_id": "ff4048",
+    "wall_time_seconds": 0.0000235,
+    "exit_code": 0,
+    "original_token_count": 88,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R35-FINAL-READBACK-20261013-02\", \"pid\": 34016, \"locked_at\": \"2026-10-13T19:58:09.835556+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-13T19:59:42.342203+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  }
+}

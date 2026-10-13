@@ -1,0 +1,86 @@
+{
+  "at": "2026-10-11T06:08:46.483220+09:00",
+  "R20_dedupe_count": 1,
+  "R20_master_verdict": "ACCEPTED_R20_SCOPED_NORMAL_RECEIPT_OPAQUE_GRAPH_PASS_NESTED_UTC_LITERAL_FAIL_REVISION_REQUIRED_NATIVE_UNTESTED",
+  "A_R21_actual_sent": true,
+  "A_one_submission": true,
+  "A_ACK": "PENDING",
+  "A_ACK_error": null,
+  "A_completion_exists": false,
+  "R21_fixed_source_prefix_suffix_match": true,
+  "R21_current_worker_changed": false,
+  "Sol_notice": {
+    "at": "2026-10-11T06:08:46.483220+09:00",
+    "type": "SOL_R20_MASTER_DISPOSITION_RECEIPT_NOTICE",
+    "new_QA_WP": false,
+    "exact_message": "Master R20 판정을 수신해 주세요. MASTER_R20_SOL_DISPOSITION_NOTICE_20261011.md 수신만 기록;기존candidate/raw불변,새QA 아님",
+    "instruction_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R20_SOL_DISPOSITION_NOTICE_20261011.md",
+    "instruction_sha256": "362C2393B84A008FFF060FC45AC10838746E9CE9A369CE7B8AA271937AADFFF3",
+    "actual_predispatch": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R20_DISPOSITION_NOTICE_SOL_PREDISPATCH_20261011.json",
+    "actual_send_tool": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R20_DISPOSITION_NOTICE_SOL_SEND_TOOL_20261011.json",
+    "actual_send_tool_sha256": "EF29796C416883B641330AB8FE027A781D51739712C2F8B6C2CB7C2C95165BB1",
+    "actual_latest_snapshot": {
+      "schemaVersion": 1,
+      "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:130",
+      "revision": 130,
+      "changed": true,
+      "thread": {
+        "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+        "hostId": "local",
+        "status": {
+          "type": "active",
+          "activeFlags": []
+        }
+      },
+      "latestTurn": {
+        "id": "01a127a4-7461-7ad2-b63a-2664cbc5be8e",
+        "status": "inProgress",
+        "error": null,
+        "startedAt": 1791666451,
+        "completedAt": null,
+        "durationMs": null
+      },
+      "latestAssistantMessageId": "msg_0c6b28ae575c2341016acaa91bd32087d08ee523b4c1b987e7",
+      "latestAssistantMessage": {
+        "id": "msg_0c6b28ae575c2341016acaa91bd32087d08ee523b4c1b987e7",
+        "turnId": "01a127a4-7461-7ad2-b63a-2664cbc5be8e",
+        "phase": "commentary",
+        "text": "R20 판정 통지를 읽고 수신 기록만 한 번 남기겠습니다. 기존 증거와 terminal 파일은 보존하고 다음 QA WP를 기다리겠습니다."
+      },
+      "latestToolMarkerId": "exec-834a8473-9156-4744-812b-2a46e5405e7d",
+      "latestToolMarker": {
+        "id": "exec-834a8473-9156-4744-812b-2a46e5405e7d",
+        "turnId": "01a127a4-7461-7ad2-b63a-2664cbc5be8e",
+        "type": "commandExecution",
+        "name": "commandExecution",
+        "status": "completed"
+      }
+    },
+    "delivery_status": "SENT_TOOL_ACCEPTED_ACTUAL_NEW_TURN",
+    "unknown_delivery": false,
+    "duplicate_terminal_request": false,
+    "exact_user_message": {
+      "threadId": "01a11583-ff90-73e0-8916-d021e2bb038d"
+    }
+  },
+  "new_QA_WP": false,
+  "scheduler_actual": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "ACTIVE",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791666429070
+  },
+  "full_native_E2_released": false,
+  "historical_scoped_opaque_defect": "CLOSED_R19_ONLY",
+  "new_receipt_UTC_lexical_defect": "OPEN",
+  "foundation": "HOLD",
+  "guard_actual_release": "PENDING_FINALLY",
+  "Master_production_execution_builds": 0,
+  "metadata_preparation_failures": "InitialLFvsCRLFdelimiter then undefined final-print verdict;disposition/preparation persisted at respective stop points;reconciled same unique task/no duplicate/no candidate or QA mutation/execution"
+}

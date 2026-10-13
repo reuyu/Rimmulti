@@ -1,0 +1,96 @@
+﻿{
+  "run_id": "RUN_GATE05_R6_CODEC_CONTRACT_20261008_01",
+  "timestamp": "2026-10-08T10:35:00.9551037Z",
+  "candidate_dll": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R6CodecContract\\Harness\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+  "candidate_sha256": "721807FF00245B5B56DD94220531DB5DF620933E5905ADF692FC6336DD402E9B",
+  "total_tests": 14,
+  "passed": 14,
+  "failed": 0,
+  "verdict": "PASS",
+  "results": [
+    {
+      "test_id": "TC01_RoundTrip_Canonical_Lossless",
+      "description": "Serialize manifest -> deserialize -> re-serialize and compare exact SHA256 digests",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC02_Deterministic_Identical_Input",
+      "description": "Two separate instances with identical values must produce identical JSON and SHA256",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC03_All_Eight_Def_Families_No_Sentinels",
+      "description": "Verify all 8 Def families are present and free of legacy sentinel/delimiter strings",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC04_Floating_Point_Lossless_Precision",
+      "description": "Verify float boundary and fractional values preserve exact precision across round-trip",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC05_Unicode_SpecialChars_Lossless",
+      "description": "Verify Korean, Japanese, German umlauts, quotes, tabs, newlines round-trip without corruption",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC06_Null_Missing_Empty_Distinction",
+      "description": "Verify null fields remain null in JSON and do not collapse to empty string or sentinel",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC07_Ordered_Collections_Preservation",
+      "description": "Verify activeMods loadOrder, Verbs list order, Hediff stages sequence, and Comps order are preserved",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC08_Stable_Sorting_Determinism",
+      "description": "Verify Def family lists sort deterministically by defName ordinal via CanonicalNormalize",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC09_Unordered_Input_Normalization_Equivalence",
+      "description": "Manifest with shuffled unordered collections produces exact identical JSON and digest as pre-sorted instance",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC10_ValidateContract_Valid_Manifest",
+      "description": "ValidateContract returns true with empty failureReason on representative compliant manifest",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC11_ValidateContract_FailClosed_Violations",
+      "description": "ValidateContract detects missing defName mandatory field",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC12_Distinct_Manifests_Distinct_Digests",
+      "description": "Changing a single scalar value must produce a distinct JSON and digest",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC13_Cache_Invalidation_Lifecycle",
+      "description": "Verify InvalidateCache clears all cached properties and error state",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC14_Schema_Version_And_Capability_Flags",
+      "description": "Verify MANIFEST_SCHEMA_VERSION is ADR-006B-v5, CONTENT_CONTRACT_VERSION is ADR-006B-v5-R6, and required flags present",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"bcc76e72-e33d-4898-bc7b-b558cfab470c:49\",\"revision\":49,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a1363a-6e49-7bd0-9f3b-8e5d3b8b5aad\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791911161,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ace65956f8c87d0afb51bd5c6f6abef\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ace65956f8c87d0afb51bd5c6f6abef\",\"turnId\":\"01a1363a-6e49-7bd0-9f3b-8e5d3b8b5aad\",\"phase\":\"commentary\",\"text\":\"초기 검증과 ACK 전달을 마쳤습니다. 보호 대상 19,530개 경로와 동결 42개 파일이 모두 기록된 해시·크기와 일치합니다. 이제 R37 소스의 실제 분기와 기존 6개 사례 원문을 대조하겠습니다.\"},\"latestToolMarkerId\":\"exec-6cea225b-7ba0-4fed-a611-658c447c9893\",\"latestToolMarker\":{\"id\":\"exec-6cea225b-7ba0-4fed-a611-658c447c9893\",\"turnId\":\"01a1363a-6e49-7bd0-9f3b-8e5d3b8b5aad\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

@@ -1,0 +1,328 @@
+{
+  "at": "2026-10-14T04:46:00.468866+09:00",
+  "guard_session": 34384,
+  "delivery_id": "SOL-GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014-01",
+  "result_id": "SOL-GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014-c19c6459fa484d5bbee9c08ffe13caa4",
+  "status": "ACK_VERIFIED_R38_SAME_WP_LOCATOR_RECOVERY_STATIC_IN_PROGRESS",
+  "ACK": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\ACK_INITIAL.json",
+    "sha256": "1EE34CC318E4FC50B6BBA7F4EE08CE604D8870630601C1F27E0D77651802A3E9",
+    "bytes": 2355
+  },
+  "refs": {
+    "wp_identity": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R38_PUBLISHER_INDEPENDENT_STATIC_S1.md",
+      "sha256": "587D050A6F1C19322388D556ACEB0E967F0F793588C5811D41CB719AC3E4F14E",
+      "bytes": 6800
+    },
+    "freeze_manifest": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e\\MASTER_GATE05_R38_PUBLISHER_BOUNDARIES_REVIEW_FREEZE_MANIFEST.json",
+      "sha256": "85F08534BD3BD47258A8AC3A247438702FB318EA7F298C952B452C2464AF99DD",
+      "bytes": 20157
+    },
+    "protected_baseline": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R38_INDEPENDENT_STATIC_PROTECTED_BASELINE_20261014.json",
+      "sha256": "17DE6797EECAE6CFFEEACB068660354294AE37F6D6804C9CCFA378F87C485682",
+      "bytes": 5983749
+    },
+    "publisher": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R38-10b9846e\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+      "sha256": "940CF77220C272D117CDBC278B64858EFB3077267141CC548A0105B47D6E1306",
+      "bytes": 43666
+    },
+    "initial_inventory": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\PRESERVATION_BEFORE.json",
+      "sha256": "8EEB920B7684B43A8A1EB720F23BD324FDDDC74B2FDB7C3C8A339A0F1609FE22",
+      "bytes": 5899223
+    },
+    "timestamp_correction": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R37_ORIGINAL_LITERAL_TIMESTAMP_CORRECTION_20261014.md",
+      "sha256": "FEC2A1C44D1BD6CEDF4E0EF15F23B7B51E940C863A3E246F09AC0C5AA56026E0",
+      "bytes": 1239
+    }
+  },
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:57",
+    "revision": 57,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a136c9-418d-7781-83d0-90d2df9b7565",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791920521,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ace8a281fac87d094098a32f9b3885d",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016ace8a281fac87d094098a32f9b3885d",
+      "turnId": "01a136c9-418d-7781-83d0-90d2df9b7565",
+      "phase": "commentary",
+      "text": "R1 복구가 성공했습니다. 새 wrapper의 문법 사전 검사와 bootstrap이 exit0으로 완료됐고, 보호 19,676개 경로·동결 42개 파일의 해시와 크기가 일치해 최초 ACK를 전달했습니다. 이제 raw JSON에서 Child 시각을 확인하고 R38 소스의 정상 6개 사례 호환성을 검토하겠습니다."
+    },
+    "latestToolMarkerId": "exec-4a278802-8ad4-4a92-abb8-bb92c4340594",
+    "latestToolMarker": {
+      "id": "exec-4a278802-8ad4-4a92-abb8-bb92c4340594",
+      "turnId": "01a136c9-418d-7781-83d0-90d2df9b7565",
+      "type": "fileChange",
+      "name": "fileChange",
+      "status": "completed"
+    }
+  },
+  "full19676_Master_actual_SHA_bytes_rehash": true,
+  "frozen42_Master_actual_rehash": true,
+  "initial_inventory_matches_baseline": true,
+  "bootstrap_tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.TOOL.json",
+    "sha256": "344C2C9BBD1B44E320087531A2731FE6B4AB28E4DD36354268EDD292D451594E",
+    "bytes": 1265
+  },
+  "bootstrap_raw": {
+    "stdout": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.STDOUT.txt",
+      "sha256": "8F9F4C7D7C106A9F8FC9CC4566B9C120EC49D666C84395BC145A5BEFE4E15105",
+      "bytes": 433
+    },
+    "stderr": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    "input_manifest": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.INPUT.json",
+      "sha256": "F35FBC5495BA5FB8264D00277B884723882E432E8822AA13195392901708C000",
+      "bytes": 5564
+    },
+    "preflight": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.PREFLIGHT_TOOL.json",
+      "sha256": "9EC8B424347C75F86DEA7B1D10ADCCDBEFBDF169DFBD5DEC0A7245D0B50CBDC1",
+      "bytes": 830
+    }
+  },
+  "bootstrap_actualPID16604_exit0_stdout433_stderr0": true,
+  "inputrows": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.py",
+      "sha256": "393CF1CE526637AD778272889D77FA794B6B44825DBF608A270B5ACFDBF4F4E9",
+      "bytes": 2129
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\common.py",
+      "sha256": "14670BD469741CEBC6257D9B72F4AA288BBE8AC16736163929ACEEB9F8789AD4",
+      "bytes": 2568
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\log.py",
+      "sha256": "740BDD738C9D3D767A240EBEC330E60419E988A18C9A789BCA364C1FA4283A79",
+      "bytes": 1845
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\invoke.ps1",
+      "sha256": "34562E9AEE03A83F7717907A4E41B0C0E7C8B59D5240DE1A7695315067D38796",
+      "bytes": 2513
+    },
+    {
+      "path": "C:\\Users\\user\\anaconda3\\python.exe",
+      "sha256": "388FE2CFFDA8A134E7D7DC4E978F7C478857ECE6B69694DAECBED25E51EC633A",
+      "bytes": 104264
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R38_PUBLISHER_INDEPENDENT_STATIC_S1.md",
+      "sha256": "587D050A6F1C19322388D556ACEB0E967F0F793588C5811D41CB719AC3E4F14E",
+      "bytes": 6800
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R38_INDEPENDENT_STATIC_PROTECTED_BASELINE_20261014.json",
+      "sha256": "17DE6797EECAE6CFFEEACB068660354294AE37F6D6804C9CCFA378F87C485682",
+      "bytes": 5983749
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e\\MASTER_GATE05_R38_PUBLISHER_BOUNDARIES_REVIEW_FREEZE_MANIFEST.json",
+      "sha256": "85F08534BD3BD47258A8AC3A247438702FB318EA7F298C952B452C2464AF99DD",
+      "bytes": 20157
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R38-10b9846e\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+      "sha256": "940CF77220C272D117CDBC278B64858EFB3077267141CC548A0105B47D6E1306",
+      "bytes": 43666
+    }
+  ],
+  "launcher_module_observations": [
+    {
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\json\\__init__.py",
+      "sha256": "D5D41E2C29049515D295D81A6D40B4890FBEC8D8482CFB401630F8EF2F77E4D5",
+      "bytes": 14020
+    },
+    {
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\hashlib.py",
+      "sha256": "F129B330E6AB878A96085843B3606ACD7D157B8FE6EDFA15E37FA13988CEF19C",
+      "bytes": 9446
+    },
+    {
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\pathlib\\__init__.py",
+      "sha256": "07921047886282E3D324ACF95F7D9F840FAA806664EE7007E7333A7DF4CDCAF6",
+      "bytes": 296
+    },
+    {
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\datetime.py",
+      "sha256": "EF20DC6B3554CD585DDDFFDC573F1F9A7A54C522F2A3FB4576C44EDBB1E14238",
+      "bytes": 268
+    },
+    {
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\ast.py",
+      "sha256": "7514EB7DF98B1B76EAB160CA2A83E6E9A9F3219A4659808CD9FD278B524EDE1B",
+      "bytes": 65339
+    },
+    {
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\difflib.py",
+      "sha256": "3EB2D371B4A171B063921DE6BBF115108BC39DE8BF72866315868CE2599213B7",
+      "bytes": 83368
+    },
+    {
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\re\\__init__.py",
+      "sha256": "DBE158A677C6AAACF717EA2ABC23C56233453D38024AEF75B7C3D93612CABB93",
+      "bytes": 17876
+    },
+    {
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\subprocess.py",
+      "sha256": "21ECC4C8F4FCF641974FC0D9CC28E97B07670ED1CEF7E9D96769B31BB8345586",
+      "bytes": 89486
+    }
+  ],
+  "newwrapper_seed": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.PREFLIGHT_SEED.json",
+    "sha256": "ED7095C856C8FD04FC08F122DEB4EE1C8C365008D288E765591B1736D4017C48",
+    "bytes": 2396
+  },
+  "seed_rows": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.py",
+      "sha256": "393CF1CE526637AD778272889D77FA794B6B44825DBF608A270B5ACFDBF4F4E9",
+      "bytes": 2129
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\common.py",
+      "sha256": "14670BD469741CEBC6257D9B72F4AA288BBE8AC16736163929ACEEB9F8789AD4",
+      "bytes": 2568
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\log.py",
+      "sha256": "740BDD738C9D3D767A240EBEC330E60419E988A18C9A789BCA364C1FA4283A79",
+      "bytes": 1845
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\invoke_r1.ps1",
+      "sha256": "86631520C8980BE5D9607A45727E074A9357D14BA4D491AD34C50E3B939CA397",
+      "bytes": 2497
+    },
+    {
+      "path": "C:\\Users\\user\\anaconda3\\python.exe",
+      "sha256": "388FE2CFFDA8A134E7D7DC4E978F7C478857ECE6B69694DAECBED25E51EC633A",
+      "bytes": 104264
+    }
+  ],
+  "preflight_tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.PREFLIGHT_TOOL.json",
+    "sha256": "9EC8B424347C75F86DEA7B1D10ADCCDBEFBDF169DFBD5DEC0A7245D0B50CBDC1",
+    "bytes": 830
+  },
+  "preflight_streams": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.PREFLIGHT_STDOUT.txt",
+      "sha256": "823A3419D675FBB0C0B4F786770B6BB36E5B0989C630C0EB9C17BBE84EB69648",
+      "bytes": 495
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.PREFLIGHT_STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    }
+  ],
+  "native_preflight_PID_not_captured": true,
+  "recovery_supplement": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\RECOVERY_R1_PROSPECTIVE_SUPPLEMENT.json",
+    "sha256": "3BF40068E9E70A6128BC9379F34292B4A7EE4987744D2489826E8D539F9494D6",
+    "bytes": 3765
+  },
+  "supplement_rows": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R38_SAME_WP_INTERPRETER_LOCATOR_RECOVERY_R1_20261014.md",
+      "sha256": "3C748542064BA10019C6B9FBADB75B3A0004F728118A2CB5CF27A18C8233A3A0",
+      "bytes": 3199
+    },
+    {
+      "path": "C:\\Users\\user\\anaconda3\\python.exe",
+      "sha256": "388FE2CFFDA8A134E7D7DC4E978F7C478857ECE6B69694DAECBED25E51EC633A",
+      "bytes": 104264
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\invoke.ps1",
+      "sha256": "34562E9AEE03A83F7717907A4E41B0C0E7C8B59D5240DE1A7695315067D38796",
+      "bytes": 2513
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\invoke_r1.ps1",
+      "sha256": "86631520C8980BE5D9607A45727E074A9357D14BA4D491AD34C50E3B939CA397",
+      "bytes": 2497
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\INVOKE_R1_LOCATOR_EXACT_DIFF.txt",
+      "sha256": "A71FEE6BF79F633CBD09271251DF118531F8DA80729948128DFA123E9B4DAEC9",
+      "bytes": 361
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\STOP_INITIAL_PARTIAL_PRESERVATION.json",
+      "sha256": "42DBA0569591FDF9D566F7C2D2BAF28CCF1EBE259419A3328F9C9E92AC3906C8",
+      "bytes": 1635
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\STOP_MASTER_RETURN_TOOL_PROOF.json",
+      "sha256": "1BDBDAEDF47B1E073B486C226791B0D58C64465E7AA4F1929F261E843A9CCC8E",
+      "bytes": 149
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.py",
+      "sha256": "393CF1CE526637AD778272889D77FA794B6B44825DBF608A270B5ACFDBF4F4E9",
+      "bytes": 2129
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\common.py",
+      "sha256": "14670BD469741CEBC6257D9B72F4AA288BBE8AC16736163929ACEEB9F8789AD4",
+      "bytes": 2568
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\invoke.ps1",
+      "sha256": "34562E9AEE03A83F7717907A4E41B0C0E7C8B59D5240DE1A7695315067D38796",
+      "bytes": 2513
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\log.py",
+      "sha256": "740BDD738C9D3D767A240EBEC330E60419E988A18C9A789BCA364C1FA4283A79",
+      "bytes": 1845
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\STOP_BOOTSTRAP_INTERPRETER_ALIAS_NOTICE.json",
+      "sha256": "6D8BD64B23BDE12E3C9C5A8CCEBE7F7FA9B151E02F04D91387CE6EA15CFC05E3",
+      "bytes": 1582
+    }
+  ],
+  "exact_only_locator_diff": true,
+  "failed_originals_preserved": true,
+  "old_log_invoke_row_historical_only": true,
+  "comprehensive_child_import_attestation": false,
+  "originaltimestamp_own_QA_rawcomparison_pending": true,
+  "completion": false,
+  "all_candidate_publication_Engine_native_adverse": 0,
+  "runtime_E2": "NOT_RELEASED",
+  "Foundation": "HOLD",
+  "scheduler": "PAUSED_HOURLY_UNCHANGED"
+}

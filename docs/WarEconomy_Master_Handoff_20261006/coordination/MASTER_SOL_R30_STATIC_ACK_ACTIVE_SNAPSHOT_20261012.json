@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"bcc76e72-e33d-4898-bc7b-b558cfab470c:11\",\"revision\":11,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a12f9d-0902-7591-aa71-a7bd40dc9105\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791800183,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016accb3fb25e487d0928e68e971224aea\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016accb3fb25e487d0928e68e971224aea\",\"turnId\":\"01a12f9d-0902-7591-aa71-a7bd40dc9105\",\"phase\":\"commentary\",\"text\":\"R30 WP는 후보 실행 없이 정적 증거만 검토하도록 범위를 제한합니다. PDB 문서명은 원래 mutable 경로를 가리키므로, 소스 해시는 freeze manifest가 매핑한 파일에서만 확인하겠습니다. handoff 개선과 required-mode의 남은 공백도 나누어 검토하겠습니다.\"},\"latestToolMarkerId\":\"exec-e56a9343-4df1-4659-b01c-f9210d7e2e76\",\"latestToolMarker\":{\"id\":\"exec-e56a9343-4df1-4659-b01c-f9210d7e2e76\",\"turnId\":\"01a12f9d-0902-7591-aa71-a7bd40dc9105\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

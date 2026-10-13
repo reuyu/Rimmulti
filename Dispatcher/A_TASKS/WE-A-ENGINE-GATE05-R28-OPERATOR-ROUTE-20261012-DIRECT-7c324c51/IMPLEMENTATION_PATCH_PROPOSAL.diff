@@ -1,0 +1,161 @@
+--- a/scratch/WorkerBridgeMod/Source/WorkerBridge.cs
++++ b/scratch/WorkerBridgeMod/Source/WorkerBridge.cs
+@@ -49,6 +49,15 @@ namespace WarEconomy.WorkerBridge
+                 // Gate05-R22: Explicit 7-field declaration startup gate (M01)
+                 bool hasConfigArg = GenCommandLine.TryGetCommandLineArg("operatorconfig", out string configPath) && !string.IsNullOrWhiteSpace(configPath);
+                 if (!hasConfigArg)
+                 {
+                     Log.Warning("[WorkerBridge] Missing required '-operatorconfig' CLI argument for operator config (Fail-Closed). Component will NOT attach.");
+                     return;
+                 }
+@@ -108,12 +117,50 @@ namespace WarEconomy.WorkerBridge
+                 };
+ 
+                 var admissionResult = OperatorStartupConfigAdmissionFactory.IssueAdmissionReceipt(configPath, expectedSha, descriptor);
+                 if (!admissionResult.isValid || admissionResult.receipt == null)
+                 {
+                     Log.Error($"[WorkerBridge] Operator config admission receipt issuance failed (Fail-Closed): {admissionResult.error}. Component will NOT attach.");
+                     return;
+                 }
+ 
++                // Gate05-R28: Parse and admit paired READ_ONLY child configuration if declared by operator host
++                OperatorStartupAdmissionReceipt? childReceipt = null;
++                if (GenCommandLine.TryGetCommandLineArg("childoperatorconfig", out string childConfigPath) && !string.IsNullOrWhiteSpace(childConfigPath))
++                {
++                    GenCommandLine.TryGetCommandLineArg("childoperatorconfigsha", out string childExpectedSha);
++                    GenCommandLine.TryGetCommandLineArg("childoperatororigin", out string childOrigin);
++                    GenCommandLine.TryGetCommandLineArg("childoperatorlaunchplan", out string childPlan);
++                    GenCommandLine.TryGetCommandLineArg("childoperatorconfigid", out string childCfgId);
++                    GenCommandLine.TryGetCommandLineArg("childoperatorrole", out string childRole);
++                    GenCommandLine.TryGetCommandLineArg("childoperatorcapability", out string childCap);
++
++                    var childDescriptor = new OperatorLaunchDescriptor
++                    {
++                        originId = childOrigin ?? "",
++                        launchPlanId = childPlan ?? "",
++                        expectedConfigId = childCfgId ?? "",
++                        expectedRole = (childRole ?? "").Trim(),
++                        expectedCapabilityBoundary = (childCap ?? "").Trim(),
++                        expectedConfigPath = (childConfigPath ?? "").Trim(),
++                        expectedConfigSha256 = (childExpectedSha ?? "").Trim()
++                    };
++
++                    var childAdmissionResult = OperatorStartupConfigAdmissionFactory.IssueAdmissionReceipt(childConfigPath, childExpectedSha ?? "", childDescriptor);
++                    if (childAdmissionResult.isValid && childAdmissionResult.receipt != null)
++                    {
++                        if (string.Equals(childAdmissionResult.receipt.Snapshot.Role, "READ_ONLY", StringComparison.Ordinal))
++                        {
++                            childReceipt = childAdmissionResult.receipt;
++                            Log.Message($"[WorkerBridge] Successfully admitted paired child operator startup config from '{childConfigPath}' (Id='{childReceipt.Snapshot.ConfigId}', Role='READ_ONLY')");
++                        }
++                        else
++                        {
++                            Log.Warning($"[WorkerBridge] Paired child config rejected: Role '{childAdmissionResult.receipt.Snapshot.Role}' is not READ_ONLY.");
++                        }
++                    }
++                }
++
+-                bool installed = WorkerBridgeComponent.TryInstallOperatorStartupConfig(admissionResult.receipt);
++                bool installed = WorkerBridgeComponent.TryInstallOperatorStartupConfig(admissionResult.receipt, childReceipt);
+                 if (!installed)
+                 {
+                     Log.Error("[WorkerBridge] Failed to install operator startup admission receipt (already installed or sealed). Component will NOT attach.");
+@@ -414,14 +461,16 @@ namespace WarEconomy.WorkerBridge
+         private static OperatorStartupAdmissionReceipt? _activeAdmissionReceipt = null;
+         private static OperatorStartupConfigSnapshot? _activeStartupConfig = null;
++        private static OperatorStartupAdmissionReceipt? _pairedChildAdmissionReceipt = null;
+         private static bool _operatorConfigSealed = false;
+         private static readonly object _configLock = new object();
+ 
+         public static OperatorStartupAdmissionReceipt? ActiveAdmissionReceipt => _activeAdmissionReceipt;
+         public static OperatorStartupConfigSnapshot? ActiveStartupConfig => _activeStartupConfig;
++        public static OperatorStartupAdmissionReceipt? PairedChildAdmissionReceipt => _pairedChildAdmissionReceipt;
+ 
+-        internal static bool TryInstallOperatorStartupConfig(OperatorStartupAdmissionReceipt receipt)
++        internal static bool TryInstallOperatorStartupConfig(OperatorStartupAdmissionReceipt receipt, OperatorStartupAdmissionReceipt? childReceipt = null)
+         {
+             if (receipt == null || !receipt.IsValid()) return false;
+             lock (_configLock)
+             {
+                 if (_operatorConfigSealed || _activeAdmissionReceipt != null)
+                 {
+                     return false;
+                 }
+                 _activeAdmissionReceipt = receipt;
+                 _activeStartupConfig = receipt.Snapshot;
++                _pairedChildAdmissionReceipt = childReceipt;
+                 _operatorConfigSealed = true;
+                 return true;
+             }
+         }
+@@ -2237,33 +2286,41 @@ namespace WarEconomy.WorkerBridge
+                 // Gate05-R18: Require admitted operator config strictly (Fail-Closed, M03)
+                 if (_activeStartupConfig == null)
+                 {
+                     RevokeReadiness("No admitted operator startup configuration active (Fail-Closed).");
+                     return "ERROR: No admitted operator startup configuration active.";
+                 }
+ 
+-                exePath = _activeStartupConfig.AdmittedValidatorExecutablePath;
+-                exeExpectedSha = _activeStartupConfig.AdmittedValidatorExecutableSha256;
+-                baseArgs = _activeStartupConfig.ValidatorArguments;
+-                workingDir = _activeStartupConfig.ValidatorCwd;
++                // Gate05-R28: Require admitted paired child operator startup receipt strictly
++                if (_pairedChildAdmissionReceipt == null || !_pairedChildAdmissionReceipt.IsValid())
++                {
++                    RevokeReadiness("No admitted paired child operator startup receipt configured (Fail-Closed).");
++                    return "ERROR: No admitted paired child operator startup receipt configured.";
++                }
++
++                var launchInputs = OperatorChildLaunchInputs.Capture(
++                    _activeAdmissionReceipt,
++                    _pairedChildAdmissionReceipt,
++                    currentValidatorTask,
++                    currentValidatorTaskPath);
++
++                exePath = launchInputs.ExecutablePath;
++                exeExpectedSha = launchInputs.ExecutableExpectedSha256;
++                baseArgs = launchInputs.ChildReceipt.Snapshot.ValidatorArguments;
++                workingDir = launchInputs.WorkingDirectory;
+ 
+                 if (string.IsNullOrWhiteSpace(exePath) || string.IsNullOrWhiteSpace(exeExpectedSha))
+                 {
+                     RevokeReadiness("No admitted operator validator executable and SHA configured (Fail-Closed).");
+                     return "ERROR: No admitted operator validator executable and SHA configured.";
+                 }
+ 
+                 // Preflight check BEFORE Process.Start: File existence and SHA256 match
+                 var preflight = ExecutableAdmissionHelper.VerifyAdmittedExecutable(exePath, exeExpectedSha);
+                 if (!preflight.isValid)
+                 {
+                     RevokeReadiness($"Preflight executable admission check failed before Process.Start: {preflight.error}");
+                     return $"ERROR: Preflight executable admission check failed: {preflight.error}";
+                 }
+ 
+-                // Child arguments are strictly bound to current task and private config
+-                string childArgs = $"--task-file \"{currentValidatorTaskPath}\" --nonce \"{currentValidatorTask.capabilityNonce}\"";
+-                if (!string.IsNullOrWhiteSpace(baseArgs))
+-                {
+-                    childArgs = $"{baseArgs} {childArgs}";
+-                }
++                // Format child CLI using OperatorChildLaunchInputs option values and frontend UserData argument
++                var optVals = launchInputs.OperatorOptionValues;
++                string childArgs = 
++                    $"-batchmode " +
++                    $"-operatorconfig=\"{optVals[0]}\" " +
++                    $"-operatorconfigsha=\"{optVals[1]}\" " +
++                    $"-operatororigin=\"{optVals[2]}\" " +
++                    $"-operatorlaunchplan=\"{optVals[3]}\" " +
++                    $"-operatorconfigid=\"{optVals[4]}\" " +
++                    $"-operatorrole=\"{optVals[5]}\" " +
++                    $"-operatorcapability=\"{optVals[6]}\" " +
++                    $"-savedatafolder=\"{launchInputs.SelectedUserDataDirectory}\" " +
++                    $"--task-file=\"{launchInputs.TaskFilePath}\" " +
++                    $"--nonce=\"{launchInputs.TaskInvocationValues[1]}\"";
++                if (!string.IsNullOrWhiteSpace(baseArgs))
++                {
++                    childArgs = $"{childArgs} {baseArgs}";
++                }
+ 
+                 var psi = new ProcessStartInfo
+                 {

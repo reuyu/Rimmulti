@@ -1,0 +1,49 @@
+{
+  "at": "2026-10-12T04:51:04.262616+09:00",
+  "guard_run": "MASTER-R27-S2-COMPLETE-NEXT-20261012-01",
+  "guard_session": 76245,
+  "guard_pid": 2728,
+  "A": {
+    "dispatch_id": "WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51",
+    "delivery_status": "SENT",
+    "submission_attempts": 1,
+    "ACK": "VERIFIED_IN_PROGRESS",
+    "proof": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R28_OPERATOR_ROUTE_ACK_VERIFICATION_20261012.json",
+      "sha256": "2B7A5560CA29E35911FB87CB0DC425EE7DAB6239683D087B8D5C7C604E59847D",
+      "bytes": 864
+    }
+  },
+  "Sol": {
+    "delivery_id": "SOL-GATE05-R28-FRONTEND_ROUTE-INDEPENDENT-S1-20261012-01",
+    "delivery_status": "SENT",
+    "actual_active_turn": "01a12c83-b6a5-7eb0-a4b9-4ee410a14b1b",
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:173",
+    "ACK": "PENDING",
+    "scope": "INDEPENDENT_STATIC_METADATA_READ_ONLY_NO_A_PROPOSAL_NO_EXECUTION"
+  },
+  "protected_unique_paths": 14045,
+  "all9_current_fixed": true,
+  "scheduler_config": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "ACTIVE",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791748157650
+  },
+  "future_R28_scheduled_execution": "UNOBSERVED",
+  "R27_S2": "ACCEPTED_SCOPED_R27_NORMAL_CAPTURE15_TYPED_RAW_COPY_PASS_OPERATOR_REGISTRATION_AND_NATIVE_UNTESTED",
+  "QA_dependency_defect": "CLOSED_SCOPED",
+  "Engine002006": "OPEN",
+  "Pipeline007_schema": "OPEN",
+  "GQ1_PlayerGlobal_physicalsplit": "OPEN",
+  "Foundation": "HOLD",
+  "nativeE2": "NOT_RELEASED",
+  "known_installed_incident": "OPEN_UNCHANGED_ACTOR_UNKNOWN",
+  "Master_candidate_build_calls": 0
+}

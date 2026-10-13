@@ -1,0 +1,23 @@
+{
+  "renewal": {
+    "chunk_id": "8477cf",
+    "wall_time_seconds": 1.0123229,
+    "session_id": 59111,
+    "original_token_count": 45,
+    "output": "RENEW\r\n{\"status\": \"LOCK_RENEWED\", \"run_id\": \"MASTER-R4-FINAL-RENEWAL-CHECK-20261008-01\", \"pid\": 31036, \"renewed_at\": \"2026-10-08T16:07:13.616136+09:00\", \"max_hold_seconds\": 1800}\r\n"
+  },
+  "contender": {
+    "chunk_id": "019aeb",
+    "wall_time_seconds": 0.3638349,
+    "exit_code": 1,
+    "original_token_count": 19,
+    "output": "{\"status\": \"LOCK_BUSY\", \"run_id\": \"MASTER-R4-LOCK-CONTENDER-20261008-01\"}\r\n"
+  },
+  "previous_release": {
+    "run_id": "MASTER-SOL-R3-INDEPENDENT-COMPLETE-R4-20261008-01",
+    "reason": "TTL_EXPIRED",
+    "locked_at": "2026-10-08T14:19:56.439224+09:00",
+    "released_at": "2026-10-08T14:49:56.437394+09:00"
+  },
+  "new_actual_session": 59111
+}

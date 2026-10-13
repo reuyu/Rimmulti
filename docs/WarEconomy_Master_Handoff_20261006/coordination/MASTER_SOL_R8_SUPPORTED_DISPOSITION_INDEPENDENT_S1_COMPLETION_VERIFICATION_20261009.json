@@ -1,0 +1,184 @@
+{
+  "at": "2026-10-09T01:02:21.057908+09:00",
+  "type": "SOL_R8_NORMAL_CODEC_SEMANTIC_FAIL_MASTER_REVIEW",
+  "result_id": "SOL-GATE05-R8-SUPPORTED-DISPOSITION-INDEPENDENT-S1-20261009-95208a162c494ac5a7bfc6e84a72f911",
+  "delivery_id": "SOL-GATE05-R8-SUPPORTED-DISPOSITION-INDEPENDENT-S1-20261009-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R8_SUPPORTED_DISPOSITION_INDEPENDENT",
+  "wp_revision": "S1",
+  "completion_sha256": "B3456CEE1BC80854BE32AC5393B1E7B6619C45A84E445EB93F7D1AE728D88AC9",
+  "report_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R8_Supported_Disposition_Independent_S1_20261009.md",
+  "report_sha256": "0C51388D4FB07AF698C07092FF2F5D6C14DF795A4E54DD2733F0229B6E1AFD6F",
+  "evidence_manifest_path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R8-SUPPORTED-DISPOSITION-INDEPENDENT-S1-20261009\\EVIDENCE_MANIFEST.json",
+  "evidence_manifest_sha256": "7B19C0636A06954FD9C803A71D272183D917345982458540AA9DCC03D8041182",
+  "result_index_sha256": "6FE64A31379528B1635882285596584445EEB8EB657F52552BB2E6B12CC60CF4",
+  "evidence_files": 182,
+  "protected_unique_paths_master_rehashed": 2944,
+  "runs": [
+    {
+      "run_id": "RUN_SOL_R8_CODEC_S1_20261009_82fad91a22e14370b17c6b506761ae62",
+      "culture": "en-US",
+      "prepost_files": 106,
+      "tool_exit": 1,
+      "pass_assertions": 41,
+      "fail_assertions": 4,
+      "runner_sha256": "14CFE821EDD5D5754389EF1532711C69598895639BCFA4538D0C783DC10F27D1",
+      "runner_mvid": "82d098f9-3ce6-4156-8ec4-7c1300bb8aaa"
+    },
+    {
+      "run_id": "RUN_SOL_R8_CODEC_S1_20261009_0914d5293f30411db4bef7909c0a8f10",
+      "culture": "de-DE",
+      "prepost_files": 106,
+      "tool_exit": 1,
+      "pass_assertions": 41,
+      "fail_assertions": 4,
+      "runner_sha256": "14CFE821EDD5D5754389EF1532711C69598895639BCFA4538D0C783DC10F27D1",
+      "runner_mvid": "82d098f9-3ce6-4156-8ec4-7c1300bb8aaa"
+    }
+  ],
+  "cases": [
+    {
+      "case": "BASE",
+      "sha256": "029665B21E426F2484AAB7524FE1EB74BA1D9147F1D0572D611EA8E52F92137C",
+      "cross_process_bytes_match": true,
+      "semantic_verdict": "PASS",
+      "mismatch_rows": []
+    },
+    {
+      "case": "OPTIONAL_NULL",
+      "sha256": "F81EAD82AECF0E8ACC7B66A7EF133ABAE07285850BFA3A1FEFA053528F811A66",
+      "cross_process_bytes_match": true,
+      "semantic_verdict": "PASS",
+      "mismatch_rows": []
+    },
+    {
+      "case": "OPTIONAL_EMPTY",
+      "sha256": "0EBA6CB74ABAE55620D7AECD6455441E99059F859EDA7B77C1796C43EDACBED5",
+      "cross_process_bytes_match": true,
+      "semantic_verdict": "PASS",
+      "mismatch_rows": []
+    },
+    {
+      "case": "NORMAL_REVISION_B",
+      "sha256": "FCDDDAD8E19D0B75C3B9AA0370EC0BC8E6210A4DE6FF37A32528EBACB41ED847",
+      "cross_process_bytes_match": true,
+      "semantic_verdict": "PASS",
+      "mismatch_rows": []
+    },
+    {
+      "case": "NORMAL_SET_ORDER",
+      "sha256": "029665B21E426F2484AAB7524FE1EB74BA1D9147F1D0572D611EA8E52F92137C",
+      "cross_process_bytes_match": true,
+      "semantic_verdict": "PASS",
+      "mismatch_rows": []
+    },
+    {
+      "case": "OPTIONAL_MISSING",
+      "sha256": "F81EAD82AECF0E8ACC7B66A7EF133ABAE07285850BFA3A1FEFA053528F811A66",
+      "cross_process_bytes_match": true,
+      "semantic_verdict": "PASS",
+      "mismatch_rows": []
+    },
+    {
+      "case": "OPTIONAL_UNKNOWN_VERSION",
+      "sha256": "E550F30021B4F5B5535E21294869EF3022B7B07135849E56527BF89D577C49E4",
+      "cross_process_bytes_match": true,
+      "semantic_verdict": "FAIL",
+      "mismatch_rows": [
+        {
+          "stage": "semantic_checks",
+          "field": "activeMods[0].modVersion",
+          "expected": null,
+          "actual": "1.6"
+        },
+        {
+          "stage": "normalize_checks",
+          "field": "activeMods[0].modVersion",
+          "expected": null,
+          "actual": "1.6"
+        }
+      ]
+    }
+  ],
+  "admitted_cases": [
+    {
+      "case": "BASE",
+      "sha256": "029665B21E426F2484AAB7524FE1EB74BA1D9147F1D0572D611EA8E52F92137C",
+      "semantic_verdict": "PASS",
+      "cross_process_bytes_match": true
+    },
+    {
+      "case": "NORMAL_REVISION_B",
+      "sha256": "FCDDDAD8E19D0B75C3B9AA0370EC0BC8E6210A4DE6FF37A32528EBACB41ED847",
+      "semantic_verdict": "PASS",
+      "cross_process_bytes_match": true
+    }
+  ],
+  "positive_validate_cases_per_run": 2,
+  "positive_try_admit_cases_per_run": 2,
+  "all_actual_loaded_pre_pins_verified": true,
+  "runner_metadata_master": {
+    "assembly": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R8-SUPPORTED-DISPOSITION-INDEPENDENT-S1-20261009\\runner\\QaCodecRunner.exe",
+    "pdb": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R8-SUPPORTED-DISPOSITION-INDEPENDENT-S1-20261009\\runner\\QaCodecRunner.pdb",
+    "mvid": "82d098f9-3ce6-4156-8ec4-7c1300bb8aaa",
+    "codeviewGuid": "372d704d-d71d-40cc-816b-01d8cc1c2794",
+    "pdbGuid": "372d704d-d71d-40cc-816b-01d8cc1c2794",
+    "codeviewMatched": true,
+    "documents": [
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R8-SUPPORTED-DISPOSITION-INDEPENDENT-S1-20261009\\Program.cs",
+        "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+        "expected": "E15B0CAFAE14B224F2B221A2EA00955C448F0F9E4D2893B787846D22E38F3F0C",
+        "actual": "E15B0CAFAE14B224F2B221A2EA00955C448F0F9E4D2893B787846D22E38F3F0C",
+        "matched": true
+      }
+    ]
+  },
+  "actual_thread": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:52",
+    "revision": 52,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a11c2f-b048-73b0-a61d-a1eccf88b883",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791474249,
+      "completedAt": 1791475113,
+      "durationMs": 863218
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ac7bda605c887d09ddaf4d63b53b2d5",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016ac7bda605c887d09ddaf4d63b53b2d5",
+      "turnId": "01a11c2f-b048-73b0-a61d-a1eccf88b883",
+      "phase": "final_answer",
+      "text": "R8 QA를 완료하고 마스터에게 보고했습니다. 정상 입력에서 compatibility 값이 미확인 실제 버전으로 채워지는 의미 회귀 FAIL을 확인했습니다. Positive helper는 통과했습니다. QA 보고서 후보와 기존 증거를 보존하고 다음 지시를 기다리겠습니다."
+    },
+    "latestToolMarkerId": "exec-e6bc54c6-df5b-4d57-a403-76172c8cea05",
+    "latestToolMarker": {
+      "id": "exec-e6bc54c6-df5b-4d57-a403-76172c8cea05",
+      "turnId": "01a11c2f-b048-73b0-a61d-a1eccf88b883",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "regression_path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R8-SUPPORTED-DISPOSITION-INDEPENDENT-S1-20261009\\NORMAL_SEMANTIC_REGRESSION.json",
+  "regression_sha256": "6357C0F42E8D973F01C346F5B73FAF6469731843BD805D47A0D0C5D8EB6C149E",
+  "normal_semantic_root_causes": 1,
+  "defect_id": "ENGINE-CONTENT-VERSION-SEMANTIC-20261009-01",
+  "defect_severity": "High",
+  "master_execution_builds": 0,
+  "master_review_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R8_SUPPORTED_DISPOSITION_INDEPENDENT_S1_20261009.md",
+  "master_review_sha256": "B3998D5110FFC98F6387E399B0CABD26AE88A36393866DE3807F16E7DF10D293",
+  "master_verdict": "ACCEPTED_R8_NORMAL_CODEC_SEMANTIC_FAIL_HELPERS_SCOPED_PASS_REVISION_REQUIRED_NATIVE_UNTESTED",
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD"
+}

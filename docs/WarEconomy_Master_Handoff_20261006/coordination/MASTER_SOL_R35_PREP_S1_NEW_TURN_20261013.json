@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"bcc76e72-e33d-4898-bc7b-b558cfab470c:31\",\"revision\":31,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a134cd-ceea-7472-bfc7-c7e3bd5abc24\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791887265,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ace07a8460087d0a47ecf8f46caa5b2\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ace07a8460087d0a47ecf8f46caa5b2\",\"turnId\":\"01a134cd-ceea-7472-bfc7-c7e3bd5abc24\",\"phase\":\"commentary\",\"text\":\"R35 준비 작업을 시작하겠습니다. 승인된 고정 자료만 읽고 향후 정상 publication의 독립 기대값과 경로·덮어쓰기 방지 계획을 만들겠습니다. 현재 수정 중인 R35 publisher와 결과물은 읽거나 실행하지 않겠습니다.\"},\"latestToolMarkerId\":\"exec-0d861fc5-3861-4f5f-99dc-318b9192ddd9\",\"latestToolMarker\":{\"id\":\"exec-0d861fc5-3861-4f5f-99dc-318b9192ddd9\",\"turnId\":\"01a134cd-ceea-7472-bfc7-c7e3bd5abc24\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

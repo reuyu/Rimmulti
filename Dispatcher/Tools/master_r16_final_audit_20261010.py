@@ -1,0 +1,18 @@
+from pathlib import Path
+import json,datetime,tomllib,hashlib,sys
+sys.stdout.reconfigure(encoding='utf8');R=Path(__file__).resolve().parents[2];H=R/'docs/WarEconomy_Master_Handoff_20261006';C=H/'coordination'
+def read(p):return json.loads(p.read_text(encoding='utf-8-sig'))
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest().upper()
+def write(p,d):p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
+at=datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).isoformat();cp=R/'Dispatcher/MASTER_COMMUNICATION_STATE.json';c=read(cp);b=read(R/'Dispatcher/MASTER_A_TASKS.json');t=b['tasks'][-1];assert c['active_operation'] is None and t['dispatch_id'].endswith('7972af00') and t['ack_verified'] and t['status']=='IN_PROGRESS' and not Path(t['completion_path']).exists()
+snapfile=C/'MASTER_R16_FINAL_SOL_SNAPSHOT_20261010.json';snap=json.loads(read(snapfile)['content'][0]['text'])['polls'][0];assert snap['thread']['status']['type']=='active' and snap['latestTurn']['id']=='01a121c7-2f56-7c83-bc63-4676a55a0dd7' and snap['latestTurn']['status']=='inProgress'
+cfg=tomllib.loads(Path('C:/Users/user/.codex/automations/wareconomy-master/automation.toml').read_text(encoding='utf8'));assert cfg['status']=='ACTIVE' and cfg['rrule']=='FREQ=HOURLY;INTERVAL=1' and len(cfg['prompt'])==173 and cfg['target_thread_id']==c['master_thread_id']
+rr=read(R/'Dispatcher/MASTER_RECEIPTS.json');rid='SOL-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010-7843e15c956b49ab83fd2c11f205f8b4';assert sum(x.get('result_id')==rid for x in rr['processed_results'])==1
+vp=C/'MASTER_R16_DUAL_PREPARATION_FINAL_AUDIT_20261010.json';release=C/'MASTER_R16_CONTINUATION_GUARD_FINALLY_RELEASE_20261010.json';assert not vp.exists()
+p={'at':at,'guard_run':'MASTER-SOL-R15-COMPLETE-CONTINUE-20261010-01','guard_session':58943,'guard_pid':16944,'last_actual_renewal_at':'2026-10-10T02:48:42.518621+09:00','A_dispatch':t['dispatch_id'],'A_status':t['status'],'A_ack_verified':True,'A_completion_observed':False,'Sol_delivery':c['sol_current_attempt_id'],'Sol_actual_snapshot':snap,'active_operation':None,'same_monitor_actual_config':cfg,'r15_result_processed_once':True,'production_edit_build_execute_permissions':0,'all9engine_fixed':True,'next_action':'Collect original A/Sol preparation terminals,review exact evidence/collate,approve bounded implementation then separately admit normal native QA;no routine humancontinue','full_gate_e2_released':False,'closure_changed':False,'foundation':'HOLD','historic_mutex_gaps_not_retroclaimed':True,'release_status':'PENDING_ACTUAL_FINALLY_AFTER_ALL_CHILD_SESSIONS_SETTLED','actual_finally_receipt_path':str(release)};write(vp,p)
+c.update(last_sol_cursor=snap['cursor'],updated_at=at);c['last_monitor_run'].update(status='R15_QA_DISPOSED_R16_DUAL_READ_ONLY_PREPARATIONS_ACTUAL_IN_PROGRESS_HOURLY_ACTIVE',release_status='ACTUAL_FINALLY_FOLLOWS_AFTER_SETTLED_CHILDREN',release_proof_path=str(release),final_audit_path=str(vp),final_audit_sha256=sha(vp));write(cp,c)
+sp=H/'DISPATCHER_STATE.json';s=read(sp);s['endpoints']['sol']['last_runtime_observation_cursor']=snap['cursor'];s['updated_at']=at;write(sp,s)
+e={'at':at,'event_id':'MASTER-R16-DUAL-PREPARATION-FINAL-AUDIT-20261010-01','type':'DUAL_PREPARATION_ACTUAL_STATE_AND_DEDUPE_RECONCILED','proof':str(vp),'proof_sha256':sha(vp),'guard_finally_receipt':str(release)}
+for p in [R/'Dispatcher/MASTER_MONITOR_JOURNAL.jsonl',H/'DISPATCH_JOURNAL.jsonl']:
+ with p.open('a',encoding='utf8') as f:f.write(json.dumps(e)+'\n')
+print(json.dumps({'A':'IN_PROGRESS_ACK_VERIFIED','Sol':'ACTIVE_R16_READ_ONLY_PREPARATION_CURSOR103','monitor':'ACTIVE60MIN','result_dedupe':1,'audit':str(vp)},ensure_ascii=True))

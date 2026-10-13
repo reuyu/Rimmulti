@@ -1,0 +1,88 @@
+{
+  "captured_at": "2026-10-07T17:23:56.891754+09:00",
+  "selected_binary_sha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+  "selected_mvid": "12bb9237-1b3e-4b20-89a7-69ad729861e1",
+  "semantic_scope": "SupportedSemanticManifest V4 bounded declared fields",
+  "files": {
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\semantic_authority_gate_05_results.json": {
+      "sha256": "DA193776BDC61A9E4315D6E39B0B92760B3814B4C400F33F22CC9E7D7D9B855A",
+      "bytes": 26436
+    },
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\run_semantic_authority_gate_05.py": {
+      "sha256": "4B7F1199BCF3181683D28B2DE7E8B3B4FF54C94F6FA11D1C591D1F36DBE529C5",
+      "bytes": 82065
+    },
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64.exe": {
+      "sha256": "4C30E2105B49F2D0130F5D861947FBE82B866042299DA48EF1C8CF6979A8564D",
+      "bytes": 666624
+    },
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\Assembly-CSharp.dll": {
+      "sha256": "5CF1B5BE399D5B1C9C56CA72C9D35B4ECF307FEACF5859D04AC5A1AA5926356A",
+      "bytes": 15777280
+    },
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\WarEconomy.WorkerBridge.PoC\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll": {
+      "sha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+      "bytes": 166400
+    },
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ProbeMod\\1.6\\Assemblies\\QA.Engine02.Probe.dll": {
+      "sha256": "9C4D098B76B88A59DE11D46087AB9935EEE07A8574F8A66C0B081484E5F01966",
+      "bytes": 11264
+    },
+    "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs": {
+      "sha256": "BC9FD8DAA608892E97903BA56114B7186BABF29157ADAE45658238C3DD497549",
+      "bytes": 135157
+    },
+    "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs": {
+      "sha256": "954C12F7500EC0BF4AE8265D2F66EFA39369A69F2C9DF3D1DBA20A9F54CBD024",
+      "bytes": 77542
+    },
+    "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\TargetSettlement_Clean_ContextB.rws": {
+      "sha256": "EA8A02D4EC41CE79E285A7D386F3534EB5E192682FC061A8E008116B2B3DF34B",
+      "bytes": 14015618
+    },
+    "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\TargetSettlement_Clean_ContextB.v4.census.json": {
+      "sha256": "9F7AA0CDAD9026DC90D25C6209D802D351C0B978D804CD2A04F667543E31E8CC",
+      "bytes": 711802
+    },
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll": {
+      "sha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+      "bytes": 166400
+    },
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb": {
+      "sha256": "CF731E9B5CA6165B912A71A3D7E8374F2BF17D1D012C5A5A5533F72E19F90F65",
+      "bytes": 29372
+    },
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll": {
+      "sha256": "F526ED47B505EC4D2F7436E700CAD58B01F9CE8FFEC2DFD8425B07C76EB9FC93",
+      "bytes": 157184
+    },
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb": {
+      "sha256": "660FD9389331FAA1DC7497512334AFDD3762DBDAFEA18FBD483F0AB73635F27A",
+      "bytes": 33060
+    },
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WarEconomy.WorkerBridge.PoC.dll": {
+      "sha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+      "bytes": 166400
+    },
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll": {
+      "sha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+      "bytes": 166400
+    },
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb": {
+      "sha256": "4B86A8634C8B13D2A20EA51D27B5A9F7B067FA976A8C0503107C18C5A7656862",
+      "bytes": 43880
+    },
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj": {
+      "sha256": "B3CF8D675F1041625E9BF1D71463D1F2822A38D1719995E62A5551E28A869492",
+      "bytes": 1743
+    },
+    "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_EngineHost_Semantic_Authority_Gate_05.md": {
+      "sha256": "8749D510D794AA08B7B0482D377C0D72EAB65CB51C58E692898EEDD01A2FC168",
+      "bytes": 29563
+    }
+  },
+  "excluded_binary": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+  "reported_e1_harness_results_match": false,
+  "e1_report_acceptance": "preserved report-level; no independent closure",
+  "matching_pdb": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb"
+}

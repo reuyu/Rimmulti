@@ -1,0 +1,128 @@
+{
+  "manifest_version": "1.0",
+  "work_package": "WP_ENGINE_GATE05_R17_OWNED_BOOTSTRAP",
+  "candidate_lineage": "GATE05-R17-OWNED-BOOTSTRAP",
+  "created_at_utc": "2026-10-09T18:38:00Z",
+  "agent_role": "Antigravity A",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R17-OWNED-BOOTSTRAP-20261010-DIRECT-57163c71",
+  "run_id": "918d16b8547b41bb8bd4e84c5a41e7e1",
+  "selected_candidate": {
+    "configuration": "Debug",
+    "target_framework": "net472",
+    "dll_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "F7946FED1F4FB896DD8F46B7C253C4DB24E6CF2AA6D9C0528CD5B59CD05DBAA3",
+    "dll_bytes": 268800,
+    "pdb_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "F0EE8BF22E66B43EF5B37AE5BD7E905D09A64AE40FE2AEAA8FCA71A2C50BB28F",
+    "pdb_bytes": 65700,
+    "mvid": "d5a25e43-567c-414f-b7bd-4d4aa0b47050",
+    "codeview_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "codeview_guid": "a776277f-e9de-4dc1-8e4b-225d260d445c",
+    "codeview_age": 1
+  },
+  "alternate_candidate": {
+    "configuration": "Release",
+    "target_framework": "net472",
+    "dll_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "3CC5BB71A5A25F091677A57B69493522AC4FC0BC20B3562926F8942455D11591",
+    "dll_bytes": 254976,
+    "pdb_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "CE42762A3029C030646E1CB4635F053F932D0A2C66B5309CCDDDA17C28AC8E30",
+    "pdb_bytes": 48376,
+    "mvid": "ab67e9ac-0c30-4718-98a3-cbfe9af31c87",
+    "codeview_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "codeview_guid": "16912007-a180-4564-9ad4-6ebf68b32648",
+    "codeview_age": 1
+  },
+  "deployed_mod_assemblies": {
+    "dll_path": "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "F7946FED1F4FB896DD8F46B7C253C4DB24E6CF2AA6D9C0528CD5B59CD05DBAA3",
+    "dll_bytes": 268800,
+    "pdb_path": "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "F0EE8BF22E66B43EF5B37AE5BD7E905D09A64AE40FE2AEAA8FCA71A2C50BB28F",
+    "pdb_bytes": 65700
+  },
+  "source_files": [
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "EE63FB50ED84C1E0313EF7E2F160F38B0ABEA7E96A59CEBC30506FC9C7F338A9",
+      "bytes": 177533
+    },
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "bytes": 170135,
+      "prefix_marker": "    public static class ContentProfileProvider",
+      "prefix_length": 72547,
+      "prefix_sha256": "F3C4F865F1E2A898BF240A2D096195870D77A52408CF2D93664FE15092A2A887"
+    },
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    }
+  ],
+  "verification_evidence": {
+    "runner_project": {
+      "path": "scratch\\EngineGate05R17OwnedBootstrap\\Harness\\Gate05R17BootstrapRunner.csproj",
+      "sha256": "AE7D2FC455556D265CE7C33698FEE72816CD5982AF120B262339D56DD35BB202",
+      "bytes": 1656
+    },
+    "runner_source": {
+      "path": "scratch\\EngineGate05R17OwnedBootstrap\\Harness\\Program.cs",
+      "sha256": "B826421B82E39F6928388CA384E291EEFABE372E1F72237F5C97D1887DEF723E",
+      "bytes": 22496
+    },
+    "runner_binary": {
+      "path": "scratch\\EngineGate05R17OwnedBootstrap\\Harness\\bin\\Debug\\net472\\Gate05R17BootstrapRunner.exe",
+      "sha256": "FF72A8D2572E67E738491DAF749E234A7E5439354E30A4F9C4234AAB4DAB95CB",
+      "bytes": 27136
+    },
+    "runner_pdb": {
+      "path": "scratch\\EngineGate05R17OwnedBootstrap\\Harness\\bin\\Debug\\net472\\Gate05R17BootstrapRunner.pdb",
+      "sha256": "50171952A8FB2BC90506C3222E3E353E1F64D45DDD0A74F2C473B66866F49C6A",
+      "bytes": 6632
+    },
+    "freeze_before": {
+      "path": "Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R17-OWNED-BOOTSTRAP-20261010-DIRECT-57163c71\\ENGINE_FREEZE_BEFORE.json",
+      "sha256": "A476223A9E42F488F23E2D6D9292B8407B037C82102A0D8B5AA042A8724BBEC3",
+      "bytes": 2319
+    },
+    "freeze_after": {
+      "path": "Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R17-OWNED-BOOTSTRAP-20261010-DIRECT-57163c71\\ENGINE_FREEZE_AFTER.json",
+      "sha256": "0215FB585A81D2CA30E6148B08401662EAB1FA71848CC1349F1DCA01C0308DF7",
+      "bytes": 2270
+    },
+    "test_results": {
+      "path": "scratch\\EngineGate05R17OwnedBootstrap\\run_default\\RESULTS.json",
+      "sha256": "30B713324928D221833CE1387FD74077B0E2C2079A907D36A0F63090AA11D8D9",
+      "bytes": 4101
+    },
+    "api_ledger": {
+      "path": "scratch\\EngineGate05R17OwnedBootstrap\\run_default\\API_LEDGER.json",
+      "sha256": "1DC3B0DEE18F0337DB9F906E5F0BC32B80A9DAF61494872C983108313D2488EA",
+      "bytes": 479
+    },
+    "e1_report": {
+      "path": "docs\\POC_EngineHost_Semantic_Authority_Gate_05_R17.md",
+      "sha256": "DB282E0964EC38FA5A12C2DBFB2D5BA6FA514D91E62E7EE2ABD3F7214BFDF258",
+      "bytes": 10812
+    }
+  },
+  "execution_summary": {
+    "total_tests": 5,
+    "passed_tests": 5,
+    "failed_tests": 0,
+    "verdict": "IMPLEMENTED_SCOPED_NORMAL_HELPER_PASS_NATIVE_UNTESTED",
+    "execution_scope": "PURE_POSITIVE_NORMAL_MANAGED_ONLY"
+  },
+  "limitations": [
+    "STATIC_MANAGED_NORMAL_EVIDENCE_ONLY",
+    "PURE_INSTANCE_CORE_AND_NORMAL_CONFIGURATION_LIFECYCLE_EVIDENCE_ONLY",
+    "NATIVE_ACTUAL_COMPUTATION_PROHIBITED_AND_UNTESTED",
+    "PROCESS_START_AND_LIVE_BINDING_UNTESTED",
+    "NO_CAUSAL_OVERCLAIMS",
+    "FINAL_DOMAIN_AUTHORITY_REMAINS_DEDICATED_SERVER",
+    "FOUNDATION_HOLD"
+  ]
+}

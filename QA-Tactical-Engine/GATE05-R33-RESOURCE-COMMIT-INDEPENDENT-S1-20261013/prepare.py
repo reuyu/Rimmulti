@@ -1,0 +1,28 @@
+from common import *
+import ast,sys,difflib
+assert load(Q/'static_r1.TOOL.json')['exit_code']==0 and load(Q/'PATCH_R1_TOOL.json')['exit_code']==0
+bind=load(BINDING);check(list(bind['literal_oracles'].values())+[bind['old_template_TEXT_only'],bind['old_callplan'],bind['old_combined_literal']])
+old=Path(bind['old_template_TEXT_only']['path']);src=old.read_bytes().decode('utf-8');oldpath=str(ROOT/'Dispatcher/CANDIDATES/G05R32-64ad38e2/scratch/WorkerBridgeMod/Source/bin/Debug/net472/WarEconomy.WorkerBridge.PoC.dll').replace('\\','\\\\');assert src.count(oldpath)==1
+new=src.replace(oldpath,str(SELECTED).replace('\\','\\\\'))
+for bad in ['GetCurrentProcess','Process.Start','WorkerBridgeBootstrapper','TryInstallOperatorStartupConfig','SetPendingStartupHandoff','TryAcquirePendingStartupHandoff','InvalidateCache','BindingFlags','GetField','GetMethod']:assert bad not in new
+(Q/'Harness').mkdir();(Q/'runner').mkdir();(Q/'Harness/Program.cs').write_bytes(new.encode('utf-8'))
+(Q/'TEMPLATE_EXACT_DIFF.txt').write_bytes(''.join(difflib.unified_diff(src.splitlines(True),new.splitlines(True),fromfile=str(old),tofile=str(Q/'Harness/Program.cs'))).encode('utf-8'))
+write(Q/'TEMPLATE_REBINDING.json',dict(at=now(),old_source_TEXT_only=row(old),new_source=row(Q/'Harness/Program.cs'),exact_diff=row(Q/'TEMPLATE_EXACT_DIFF.txt'),only_selected_path_changed=True,normal_public_call_semantics_unchanged=True,no_old_top_helper_execute=True))
+pair=load(Path(bind['literal_oracles']['independent_pair_oracle']['path']));cap=load(Path(bind['literal_oracles']['independent_Capture_oracle']['path']));combined=load(Path(bind['literal_oracles']['combined_oracle']['path']));assert combined['pair_cases']==pair['prospective_cases'];cap['pair_cases']=pair['prospective_cases'];assert cap==combined
+(Q/'NORMAL_EXPECTED_ORACLE.json').write_bytes(Path(bind['literal_oracles']['combined_oracle']['path']).read_bytes());assert sha(Q/'NORMAL_EXPECTED_ORACLE.json')=='89C9EAE0722EF875577DCF2AC4D20687FDB19CE743B13AE285360225E79F9D7D'
+plan=load(Path(bind['old_callplan']['path']));plan.update(at=now(),delivery_id=DELIVERY,result_id=load(Q/'ACK_INITIAL.json')['result_id']);write(Q/'PRIMARY_NORMAL_CALLPLAN.json',plan)
+write(Q/'QA_RUNNER_CONFIG.json',dict(selected=row(SELECTED),selected_mvid='adb6cbc8-c4f9-4436-b137-d550d683f493',allowed_managed=[row(SELECTED),row(NJ)]+[row(Path(r['frozen_path'])) for r in load(DEP)['files']],delivery_id=DELIVERY,result_id=load(Q/'ACK_INITIAL.json')['result_id']))
+alloc=[]
+for i,culture in enumerate(['en-US','de-DE'],1):
+    out=Q/f'runs/{i}-{culture}';out.mkdir(parents=True);alloc.append(dict(run_id='R33S1QA-'+uuid.uuid4().hex,culture=culture,output_root=str(out)))
+write(Q/'RUN_ALLOCATION_PLAN.json',dict(allocations=alloc))
+fw=Path(r'C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2');dotnet=Path(r'C:\Program Files\dotnet\dotnet.exe');compiler=Path(r'C:\Program Files\dotnet\sdk\10.0.201\Roslyn\bincore\csc.dll');refs=[fw/n for n in ['mscorlib.dll','System.dll','System.Core.dll']]+[SELECTED,NJ]
+for p in [dotnet,compiler]+refs:assert p.is_file()
+rsp=['-noconfig','-nostdlib+','-target:exe','-langversion:latest','-nullable:enable','-deterministic+','-debug:portable','-codepage:65001','-out:"'+str(Q/'runner/QaPureRunner.exe')+'"','-pdb:"'+str(Q/'runner/QaPureRunner.pdb')+'"']+['-r:"'+str(p)+'"' for p in refs]+['"'+str(Q/'Harness/Program.cs')+'"'];(Q/'build.rsp').write_bytes(('\n'.join(rsp)+'\n').encode('utf-8'))
+write(Q/'TOOLCHAIN_OBSERVED.json',dict(at=now(),dotnet=row(dotnet),compiler=row(compiler),compiler_support=[row(p) for p in sorted(compiler.parent.iterdir()) if p.is_file()],exact_resolved_references=[row(p) for p in refs],python=row(Path(sys.executable)),compiler_argv=[str(dotnet),str(compiler),'@'+str(Q/'build.rsp')],cwd=str(Q),build_attempts=0))
+oldplumbing=OLD/'execution.py';oldtext=oldplumbing.read_bytes().decode('utf-8');tree=ast.parse(oldtext);names={'mvid','runner_identity','external_paths','inventory','verify_inventory'};defs=[n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name in names];assert {n.name for n in defs}==names
+newtext='from common import *\nimport sys,struct\nfrom pe_pdb_reader import pe_metadata,portable_pdb,metadata_streams,table_header,guid,u16,u32\n\n'+'\n\n'.join(ast.get_source_segment(oldtext,n) for n in defs)+'\n'
+(Q/'normal_tools.py').write_bytes(newtext.encode('utf-8'));(Q/'DEFINITION_PLUMBING_EXACT_DIFF.txt').write_bytes(''.join(difflib.unified_diff(oldtext.splitlines(True),newtext.splitlines(True),fromfile=str(oldplumbing),tofile=str(Q/'normal_tools.py'))).encode('utf-8'))
+write(Q/'DEFINITION_PLUMBING_PROVENANCE.json',dict(at=now(),old_TEXT_only=row(oldplumbing),old_full_text=oldtext,new_definition_only_module=row(Q/'normal_tools.py'),exact_diff=row(Q/'DEFINITION_PLUMBING_EXACT_DIFF.txt'),copied_functions=sorted(names),excluded_old_top_level_modes=True,old_helper_execute_import=False,scope='Only passive byte metadata, prospective framework-path plumbing and inventory functions in new module; new owned host controls actual scoped compiler/normal calls.'))
+write(Q/'ORACLE_BEFORE_BUILD.json',dict(at=now(),binding=row(BINDING),literal_pair=bind['literal_oracles']['independent_pair_oracle'],literal_Capture=bind['literal_oracles']['independent_Capture_oracle'],combined=row(Q/'NORMAL_EXPECTED_ORACLE.json'),source=row(Q/'Harness/Program.cs'),callplan=row(Q/'PRIMARY_NORMAL_CALLPLAN.json'),semantics_byte_exact=True,actual_output_derived=False,initial_builds_runs=0))
+print(json.dumps(dict(source=row(Q/'Harness/Program.cs'),combined_oracle=row(Q/'NORMAL_EXPECTED_ORACLE.json'),only_path_rebound=True,pair6_Capture4=True,compiler_refs=5,old_top_level_executed=False,builds_runs=0)))

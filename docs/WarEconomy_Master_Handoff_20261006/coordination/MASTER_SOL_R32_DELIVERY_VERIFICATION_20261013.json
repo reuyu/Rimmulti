@@ -1,0 +1,71 @@
+{
+  "at": "2026-10-13T00:36:29.900596+09:00",
+  "delivery_id": "SOL-GATE05-R32-CUSTODY-INDEPENDENT-S1-20261013-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R32_CUSTODY_INDEPENDENT",
+  "wp_revision": "S1",
+  "actual_idle": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R32_FRESH_IDLE_SNAPSHOT_20261013.json",
+    "sha256": "25226CB94631F59AE9D9B95DA9D7D1F35E65C286104DD80DE1F539DD34BDACC8",
+    "bytes": 759
+  },
+  "exact_message": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R32_EXACT_MESSAGE_20261013.txt",
+    "sha256": "6CB040412CD07920B34E726B8B44381A0D02299A7897ED207E871AEFDF6B94C2",
+    "bytes": 1474
+  },
+  "send_tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R32_SEND_TOOL_20261013.json",
+    "sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+    "bytes": 149
+  },
+  "actual_new_turn": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:16",
+    "revision": 16,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a130c1-7666-76d2-a139-a893b1b6d6b4",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791819347,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "delivery_status": "SENT_NEW_ACTIVE_TURN_VERIFIED_ACK_PENDING",
+  "unknown_delivery": false,
+  "submission_attempts": 1,
+  "WP": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R32_CUSTODY_INDEPENDENT_S1.md",
+    "sha256": "D1CC9DC814FE45A0084CA1EBC9423196997FF92BCC42F55419BB4D3E9F866A46",
+    "bytes": 11414
+  },
+  "candidate_sha256": "0B23C358E8C8FC16FCD02DDE654AD8AE763EA177460BB15F5F1E1B1F0CB67E26",
+  "candidate_mvid": "7d436c98-659a-4df1-a085-06fe9e55a0bc",
+  "frozen_manifest": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2\\MASTER_GATE05_R32_CUSTODY_REVIEW_FREEZE_MANIFEST.json",
+    "sha256": "F5EDD5DCBC021407B3598DEBCF80276F39C158EC38FABD37D10AD15E6098E6BF",
+    "bytes": 38814
+  },
+  "protected_unique_paths": 16026,
+  "scope": "INDEPENDENT_DEFENSIVE_STATIC_AND_FRESH_NORMAL_PURE_PAIR6_CAPTURE4_ONE_QA_BUILD_TWO_NORMAL_PROCESSES",
+  "production_build_modify": 0,
+  "Master_candidate_execution": 0,
+  "monitor": "ACTUAL_PAUSED_HOURLY",
+  "native_E2": "NOT_RELEASED",
+  "Foundation": "HOLD",
+  "guard_run": "MASTER-R32-HOURLY-20261013-0022-01",
+  "guard_session": 86751
+}

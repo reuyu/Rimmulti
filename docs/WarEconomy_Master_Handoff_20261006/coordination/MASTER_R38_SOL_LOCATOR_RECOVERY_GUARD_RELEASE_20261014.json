@@ -1,0 +1,15 @@
+{
+  "run_id": "MASTER-R38-SOL-LOCATOR-RECOVERY-20261014-01",
+  "session_id": 68381,
+  "pid": 7720,
+  "release_tool_result": {
+    "chunk_id": "cec5f2",
+    "wall_time_seconds": 0.0000298,
+    "exit_code": 0,
+    "original_token_count": 106,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R38-SOL-LOCATOR-RECOVERY-20261014-01\", \"pid\": 7720, \"locked_at\": \"2026-10-14T04:38:02.971018+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-14T04:40:58.349687+09:00\", \"renewal_count\": 2, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-14T04:42:14.833327+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "original_failed_files_preserved": true,
+  "same_WP_recovery_actual_direct_sent": true,
+  "initial_ACK_pending": true
+}

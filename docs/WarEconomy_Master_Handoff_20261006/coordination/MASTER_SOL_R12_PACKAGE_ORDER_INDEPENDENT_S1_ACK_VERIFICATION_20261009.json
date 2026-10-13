@@ -1,0 +1,61 @@
+{
+  "at": "2026-10-09T16:40:35.748341+09:00",
+  "result_id": "SOL-GATE05-R12-PACKAGE-ORDER-INDEPENDENT-S1-20261009-60adcacee14e45a4b4a199a2ab928bfe",
+  "delivery_id": "SOL-GATE05-R12-PACKAGE-ORDER-INDEPENDENT-S1-20261009-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R12_PACKAGE_ORDER_INDEPENDENT",
+  "wp_revision": "S1",
+  "ack_sha256": "5A4AF04FF323E57BD22C277F84E4381320923E3402AECCAC620A2C190621E544",
+  "status": "ACK_VERIFIED_R12_INDEPENDENT_NORMAL_CODEC_ORDER_QA_IN_PROGRESS",
+  "baseline_sha256": "D500246BF05FBE17A8BC05D9DD88EE91390928C1BD8E37B5BF0CE521582EB09C",
+  "protected_unique_paths_master_rehashed": 5078,
+  "actual_thread": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:82",
+    "revision": 82,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a11f91-bdee-7ae0-93a4-991c80034899",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791531007,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ac899d2f39087d08a7e9dc93ddef939",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016ac899d2f39087d08a7e9dc93ddef939",
+      "turnId": "01a11f91-bdee-7ae0-93a4-991c80034899",
+      "phase": "commentary",
+      "text": "R12은 검사 시 배열을 바꾸지 않고, loadOrder로 정렬한 별도 목록을 사용하도록 수정됐습니다. 검증에서는 배열의 저장 순서, 실행 순서, 패키지별 버전 연결을 각각 확인하겠습니다. 정책이 포함된 새 입력도 정규화 전에 독립 기준과 비교하겠습니다."
+    },
+    "latestToolMarkerId": "exec-fc4bacc3-8a1d-453a-a498-3699db6e560e",
+    "latestToolMarker": {
+      "id": "exec-fc4bacc3-8a1d-453a-a498-3699db6e560e",
+      "turnId": "01a11f91-bdee-7ae0-93a4-991c80034899",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "QA_lineage_sha256": "24E0BD0EEE7EEB313FB8ED96B996D142E93B0B1C4FC1E92094D52536B26B9D47",
+  "QA_PDB_source4of4_against_Master_own_PE_metadata_matched": true,
+  "selected_sha256": "3035A0D0FDD799D42AC83B7D776998AFF07A8BDD3246959E685AA0F8D7ACF94E",
+  "selected_mvid": "ad4caf3c-88bc-4971-9c2a-ab78eae395e5",
+  "guard_run": "MASTER-SOL-R12-INDEPENDENT-ACK-20261009-01",
+  "guard_session": 56995,
+  "guard_pid": 30480,
+  "verdict": "PENDING_NORMAL_EXECUTION",
+  "production_rebuild_modify_allowed": false,
+  "full_runtime_e2_released": false,
+  "closure_changed": false,
+  "monitor": "PAUSED60MIN_ACTUAL",
+  "Foundation": "HOLD"
+}

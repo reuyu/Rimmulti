@@ -1,0 +1,13 @@
+{
+  "run_id": "MASTER-SOL-R22-COMPLETE-20261011-01",
+  "guard_session": 97421,
+  "guard_pid": 19552,
+  "all_Master_child_commands_completed_before_release": true,
+  "actual_release_tool": {
+    "chunk_id": "f5fe2d",
+    "wall_time_seconds": 0.0000408,
+    "exit_code": 0,
+    "original_token_count": 107,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-SOL-R22-COMPLETE-20261011-01\", \"pid\": 19552, \"locked_at\": \"2026-10-11T16:43:48.993661+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-11T16:52:28.306509+09:00\", \"renewal_count\": 4, \"release_reason\": \"RELEAS\r\n\u001b[23;80HSE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-11T16:55:16.241713+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  }
+}

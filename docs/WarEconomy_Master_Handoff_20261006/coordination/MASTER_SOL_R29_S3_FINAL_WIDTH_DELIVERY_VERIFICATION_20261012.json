@@ -1,0 +1,73 @@
+{
+  "at": "2026-10-12T17:26:20.281608+09:00",
+  "guard_run": "MASTER-R29-S3-POSTRUN-ANALYSIS-20261012-02",
+  "guard_session": 2351,
+  "guard_pid": 34332,
+  "delivery_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012-01",
+  "result_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012-8d682aff4ebd4996a12529142c0d7431",
+  "notice_id": "R29-S3-FINAL-WIDTH-R1",
+  "delivery_status": "SENT_TOOL_CONFIRMED_ACK_PENDING",
+  "actual_same_turn_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:6",
+    "revision": 6,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a12f2d-3cfb-7fb0-857a-bf1ef4ab88e6",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791792856,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acc98f1d1e487d0ab6a6dcc86c3f2ac",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016acc98f1d1e487d0ab6a6dcc86c3f2ac",
+      "turnId": "01a12f2d-3cfb-7fb0-857a-bf1ef4ab88e6",
+      "phase": "commentary",
+      "text": "마스터가 완료된 검증을 보존한 채 마지막 소스 증거 정리만 이어가는 방안을 검토 중입니다. 후보·기대값·실행 결과는 그대로 두고, 보고서에 정상 단위 QA 결과와 High 문제 3건, native 미검증 범위를 명확히 기록하겠습니다."
+    },
+    "latestToolMarkerId": "exec-6f4ddc33-19aa-43a1-a431-4ea40246ce25",
+    "latestToolMarker": {
+      "id": "exec-6f4ddc33-19aa-43a1-a431-4ea40246ce25",
+      "turnId": "01a12f2d-3cfb-7fb0-857a-bf1ef4ab88e6",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "exact_message": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R29_S3_FINAL_WIDTH_EXACT_MESSAGE_20261012.json",
+    "sha256": "2A6929D6C9750256828960E2C6F572F603465F2CAB71E8D3477CE8EE4D6338E2",
+    "bytes": 1987
+  },
+  "send_tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R29_S3_FINAL_WIDTH_SEND_TOOL_20261012.json",
+    "sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+    "bytes": 149
+  },
+  "notice": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R29_S3_FINAL_WIDTH_SOURCE_AND_TERMINAL_CONTINUATION_20261012.md",
+    "sha256": "4517C5F7248C8AF1DA1BE77F5B87E7C333CE870170154102E6E2BE4C4EE8C142",
+    "bytes": 4207
+  },
+  "partial_success_preservation": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R29_S3_FINAL_WIDTH_STOP_PARTIAL_SUCCESS_PRESERVATION_20261012.json",
+    "sha256": "492D0B0A76C44CD3F0F554A3950464D09B9AECEF7EF31ADDFE1110054D138CF4",
+    "bytes": 5058
+  },
+  "original_failed_prepare_exit_1_immutable": true,
+  "no_further_compiler_runner_candidate_calls": true,
+  "normal_final_verdict": "PENDING",
+  "sourceHigh3": "OPEN",
+  "native_E2": "NOT_RELEASED",
+  "Foundation": "HOLD"
+}

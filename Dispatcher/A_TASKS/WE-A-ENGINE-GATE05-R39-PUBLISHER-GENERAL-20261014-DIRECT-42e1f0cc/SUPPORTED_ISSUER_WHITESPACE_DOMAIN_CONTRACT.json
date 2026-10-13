@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "dispatch_id": "WE-A-ENGINE-GATE05-R39-PUBLISHER-GENERAL-20261014-DIRECT-42e1f0cc",
+  "wp_id": "WP_ENGINE_GATE05_R39_PUBLISHER_GENERAL",
+  "envelope": 42,
+  "captured_at_utc": "2026-10-13T20:48:56.156568+00:00",
+  "governing_document": "MASTER_R39_ISSUER_WHITESPACE_SUPPORTED_DOMAIN_20261014.md",
+  "whitespace_profile": {
+    "set_name": "SUPPORTED_ISSUER_WHITESPACE_SET_W",
+    "code_points_count": 18,
+    "code_points": [
+      {
+        "code_point": "U+0009",
+        "name": "CHARACTER TABULATION",
+        "ascii": true
+      },
+      {
+        "code_point": "U+000A",
+        "name": "LINE FEED",
+        "ascii": true
+      },
+      {
+        "code_point": "U+000B",
+        "name": "LINE TABULATION (VERTICAL TAB)",
+        "ascii": true
+      },
+      {
+        "code_point": "U+000C",
+        "name": "FORM FEED",
+        "ascii": true
+      },
+      {
+        "code_point": "U+000D",
+        "name": "CARRIAGE RETURN",
+        "ascii": true
+      },
+      {
+        "code_point": "U+0020",
+        "name": "SPACE",
+        "ascii": true
+      },
+      {
+        "code_point": "U+0085",
+        "name": "NEXT LINE (NEL)",
+        "ascii": false
+      },
+      {
+        "code_point": "U+00A0",
+        "name": "NO-BREAK SPACE (NBSP)",
+        "ascii": false
+      },
+      {
+        "code_point": "U+1680",
+        "name": "OGHAM SPACE MARK",
+        "ascii": false
+      },
+      {
+        "code_point": "U+2000",
+        "name": "EN QUAD",
+        "ascii": false
+      },
+      {
+        "code_point": "U+2001",
+        "name": "EM QUAD",
+        "ascii": false
+      },
+      {
+        "code_point": "U+2002",
+        "name": "EN SPACE",
+        "ascii": false
+      },
+      {
+        "code_point": "U+2003",
+        "name": "EM SPACE",
+        "ascii": false
+      },
+      {
+        "code_point": "U+2004",
+        "name": "THREE-PER-EM SPACE",
+        "ascii": false
+      },
+      {
+        "code_point": "U+2005",
+        "name": "FOUR-PER-EM SPACE",
+        "ascii": false
+      },
+      {
+        "code_point": "U+2006",
+        "name": "SIX-PER-EM SPACE",
+        "ascii": false
+      },
+      {
+        "code_point": "U+2007",
+        "name": "FIGURE SPACE",
+        "ascii": false
+      },
+      {
+        "code_point": "U+2008",
+        "name": "PUNCTUATION SPACE",
+        "ascii": false
+      },
+      {
+        "code_point": "U+2009",
+        "name": "THIN SPACE",
+        "ascii": false
+      },
+      {
+        "code_point": "U+200A",
+        "name": "HAIR SPACE",
+        "ascii": false
+      },
+      {
+        "code_point": "U+2028",
+        "name": "LINE SEPARATOR",
+        "ascii": false
+      },
+      {
+        "code_point": "U+2029",
+        "name": "PARAGRAPH SEPARATOR",
+        "ascii": false
+      },
+      {
+        "code_point": "U+202F",
+        "name": "NARROW NO-BREAK SPACE",
+        "ascii": false
+      },
+      {
+        "code_point": "U+205F",
+        "name": "MEDIUM MATHEMATICAL SPACE",
+        "ascii": false
+      },
+      {
+        "code_point": "U+3000",
+        "name": "IDEOGRAPHIC SPACE",
+        "ascii": false
+      }
+    ]
+  },
+  "legacy_version_sensitive": {
+    "code_points": [
+      {
+        "code_point": "U+180E",
+        "name": "MONGOLIAN VOWEL SEPARATOR",
+        "disposition": "UNSUPPORTED_FAIL_CLOSED"
+      }
+    ]
+  },
+  "semantics": {
+    "opaque_non_blank": "Reject empty or all-W strings. Strings consisting only of W | {U+180E} are rejected as unsupported. Strings containing any non-W code point (e.g. Omega, quotes, backslashes, =, interior Unicode) are preserved verbatim.",
+    "identity_boundary_trim": "Scans entire leading and trailing boundary regions. If any boundary character is non-ASCII W or U+180E, fails closed as unsupported. Only ASCII boundary whitespace (tab, lf, vt, ff, cr, space) is trimmed. Ordinary non-ASCII boundary characters like Omega are preserved.",
+    "python_isspace_status": "REMOVED from semantic blank and trimming decisions."
+  }
+}

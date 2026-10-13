@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "dispatch_id": "WE-A-ENGINE-GATE05-R39-PUBLISHER-GENERAL-20261014-DIRECT-42e1f0cc",
+  "wp_id": "WP_ENGINE_GATE05_R39_PUBLISHER_GENERAL",
+  "envelope": 42,
+  "captured_at_utc": "2026-10-13T20:48:56.156568+00:00",
+  "before_r38": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+    "bytes": 43666,
+    "sha256": "940CF77220C272D117CDBC278B64858EFB3077267141CC548A0105B47D6E1306",
+    "lines": 937
+  },
+  "after_r39": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+    "bytes": 46246,
+    "sha256": "242FB7399C118A1BD3DE588BA99671616ED41E614369142F006E93B889C64242",
+    "lines": 955
+  },
+  "delta": {
+    "bytes_diff": 2580,
+    "lines_diff": 18
+  },
+  "modified_sections": [
+    {
+      "section": "topdoc",
+      "description": "Updated to reference R39 contract and whitespace supported domain. Clarified that multi-file publication does not provide transactional atomicity or crash durability on ANY volume regardless of volume journaling. Described explicit bounded whitespace support profile W and capability boundary NONBLANK check."
+    },
+    {
+      "section": "constants",
+      "description": "Added SUPPORTED_WHITESPACE_CHARS (set W of 18 code points), ASCII_WHITESPACE_CHARS (6 code points), and LEGACY_VERSION_SENSITIVE_WS ({'\\u180e'})."
+    },
+    {
+      "section": "check_opaque_non_blank",
+      "description": "Removed Python isspace() from semantic blank decision. Reject empty strings and all-W strings; version-sensitive blank-only strings involving U+180E are explicitly unsupported; interior Unicode and boundary Omega preserved verbatim."
+    },
+    {
+      "section": "identity_boundary_trim",
+      "description": "Scans entire leading and trailing boundary whitespace regions using set W and U+180E. Rejects non-ASCII whitespace and U+180E fail-closed. Trims supported ASCII whitespace only. Retains original Unicode interior and boundary non-whitespace characters (like Omega)."
+    },
+    {
+      "section": "check_supported_local_dos_path",
+      "description": "Replaced p.isspace() with all(c in (SUPPORTED_WHITESPACE_CHARS | LEGACY_VERSION_SENSITIVE_WS) for c in p) to remove isspace() dependence."
+    },
+    {
+      "section": "validate_declaration",
+      "description": "Saved structural_ascii_strip result for expectedCapabilityBoundary and added explicit check: if len(stripped_cap) == 0: raise ValueError(...) BEFORE raw binding/outputs."
+    },
+    {
+      "section": "publish_pair",
+      "description": "Updated docstring and manifest guarantees_and_limits to explicitly state multi_file_transactional_atomicity_unsupported: True and crash_durability_unproven: True."
+    }
+  ]
+}

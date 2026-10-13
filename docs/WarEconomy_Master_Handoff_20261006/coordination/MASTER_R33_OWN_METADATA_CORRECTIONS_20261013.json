@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-13T12:26:30.874033+09:00",
+  "own_collector_first_error": "SyntaxError invalid fstring brace in review literal; parse stopped before execution/mutations",
+  "correction": "Removed brace literal from explanatory review sentence, no source/proof scope change",
+  "subsequent_collector_actual_exit": 0,
+  "frozen71": true,
+  "prior_resume_delta_partial31_is_text_count_error": true,
+  "actual_partial_files": 26,
+  "controlling_partial_manifest": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R33_SOL_PREP_PARTIAL_PRESERVATION_20261013.json",
+    "sha256": "8630F4EA0354341C596368E7C7E5CF26A9ACB6EE316CF3C9A7751EB143DEBE0C",
+    "bytes": 7346
+  },
+  "passive_utf8_probe_error": "Own read_text default cp949 on Unicode JSON failed, corrected utf-8-sig; no mutation/candidate execution"
+}

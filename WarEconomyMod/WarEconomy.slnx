@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/Source/" />
+  <Folder Name="/Source/Client/">
+    <Project Path="Source/Client/WarEconomy.Client.csproj" />
+  </Folder>
+  <Folder Name="/Source/Common/">
+    <Project Path="Source/Common/WarEconomy.Common.csproj" />
+  </Folder>
+  <Folder Name="/Source/Server/">
+    <Project Path="Source/Server/WarEconomy.Server.csproj" />
+  </Folder>
+</Solution>

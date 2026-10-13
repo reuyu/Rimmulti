@@ -1,0 +1,67 @@
+{
+  "at": "2026-10-14T04:32:28.615203+09:00",
+  "guard_session": 26686,
+  "dispatch_id": "WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e",
+  "result_id": "WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-RESULT-01",
+  "review": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R38_PUBLISHER_BOUNDARIES_E1_20261014.md",
+    "sha256": "77282459EBFC337B4C0D7AF4C305CD95BCE1EA2B9069A8E52ECE0E23A8B5F425",
+    "bytes": 5455
+  },
+  "verification": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_GATE05_R38_PUBLISHER_BOUNDARIES_E1_VERIFICATION_20261014.json",
+    "sha256": "6DC338117988AF398F6FBB8AF952753A5F7FA9B938C9BD03FA6C1FD31288FAC4",
+    "bytes": 14629
+  },
+  "QA": {
+    "delivery_id": "SOL-GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014-01",
+    "wp_id": "WP_QA_ENGINE_GATE05_R38_PUBLISHER_INDEPENDENT_STATIC",
+    "wp_revision": "S1",
+    "wp_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R38_PUBLISHER_INDEPENDENT_STATIC_S1.md",
+    "wp_sha256": "587D050A6F1C19322388D556ACEB0E967F0F793588C5811D41CB719AC3E4F14E",
+    "qa_root": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014",
+    "report_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R38_Publisher_Independent_Static_S1_20261014.md",
+    "baseline_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R38_INDEPENDENT_STATIC_PROTECTED_BASELINE_20261014.json",
+    "baseline_sha256": "17DE6797EECAE6CFFEEACB068660354294AE37F6D6804C9CCFA378F87C485682",
+    "protected_unique_paths": 19676,
+    "frozen_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e\\MASTER_GATE05_R38_PUBLISHER_BOUNDARIES_REVIEW_FREEZE_MANIFEST.json",
+    "frozen_manifest_sha256": "85F08534BD3BD47258A8AC3A247438702FB318EA7F298C952B452C2464AF99DD",
+    "selected_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R38-10b9846e\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+    "selected_sha256": "940CF77220C272D117CDBC278B64858EFB3077267141CC548A0105B47D6E1306",
+    "selected_bytes": 43666,
+    "scope": "FROZEN_R38_TEXT_STATIC_ONLY_NO_PUBLICATION_NATIVE",
+    "delivery_status": "NOT_SENT",
+    "status": "APPROVED_NOT_SENT",
+    "submission_attempts": 0,
+    "unknown_delivery": false
+  },
+  "actual_automation": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "PAUSED",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791919825452
+  },
+  "automation_file": {
+    "path": "C:\\Users\\user\\.codex\\automations\\wareconomy-master\\automation.toml",
+    "sha256": "0E7B8861BFD2ED8B752D3FE7F5E07A2F7B15F235C534873738A2DAB9AA342D6B",
+    "bytes": 590
+  },
+  "pause_tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R38_PAUSE_TOOL_20261014.json",
+    "sha256": "ECCFFADE3DFEFB646D92E48A77E707D1379EEE7D462413AA31D8526D5A2B3DE3",
+    "bytes": 258
+  },
+  "lease": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R38_INTERRUPTED_LEASE_RECOVERY_20261014.json",
+    "sha256": "D2BEF3EBC5318AEFF2DA31F7F5472DA60D614D7F8319EF957230DA5CFD81E2A0",
+    "bytes": 842
+  },
+  "native_E2": "NOT_RELEASED",
+  "Foundation": "HOLD"
+}

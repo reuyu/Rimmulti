@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "dispatch_id": "WE-A-ENGINE-GATE05-R39-PUBLISHER-GENERAL-20261014-DIRECT-42e1f0cc",
+  "wp_id": "WP_ENGINE_GATE05_R39_PUBLISHER_GENERAL",
+  "envelope": 42,
+  "captured_at_utc": "2026-10-13T20:48:56.156568+00:00",
+  "contract": "MASTER_R39_PUBLISHER_GENERAL_IMPLEMENTATION_CONTRACT_20261014.md",
+  "requirements": [
+    {
+      "requirement_id": "R39-ITEM1-CAPABILITY-NONBLANK",
+      "title": "Fix capability NONBLANK in validate_declaration",
+      "target_function": "validate_declaration",
+      "start_line": 521,
+      "end_line": 525,
+      "snippet": "stripped_cap = structural_ascii_strip(ordered_desc[\"expectedCapabilityBoundary\"])\nif len(stripped_cap) == 0:\n    raise ValueError(f\"{decl_name} expectedCapabilityBoundary cannot be blank or empty after strip.\")",
+      "verification_status": "SOURCE_IMPLEMENTED_UNVERIFIED",
+      "notes": "Saves structural_ascii_strip result and rejects empty string explicitly before raw binding/outputs. Preserves original descriptor role/cap in ordered output, no cap enum, no raw cfg cap trim. C# original declaration/factory WorkerBridge.cs:5137/5243 controls."
+    },
+    {
+      "requirement_id": "R39-ITEM2-BOUNDED-WHITESPACE-SUPPORT-PROFILE",
+      "title": "Implement explicit bounded whitespace support profile throughout opaque NONBLANK and identity_boundary_trim",
+      "target_function": "check_opaque_non_blank, identity_boundary_trim, check_supported_local_dos_path",
+      "start_line": 133,
+      "end_line": 285,
+      "snippet": "SUPPORTED_WHITESPACE_CHARS = {\n    '\\u0009', '\\u000a', '\\u000b', '\\u000c', '\\u000d',\n    '\\u0020', '\\u0085', '\\u00a0', '\\u1680',\n    '\\u2000', '\\u2001', '\\u2002', '\\u2003', '\\u2004', '\\u2005', '\\u2006', '\\u2007', '\\u2008', '\\u2009', '\\u200a',\n    '\\u2028', '\\u2029', '\\u202f', '\\u205f', '\\u3000'\n}\nASCII_WHITESPACE_CHARS = {'\\u0009', '\\u000a', '\\u000b', '\\u000c', '\\u000d', '\\u0020'}\nLEGACY_VERSION_SENSITIVE_WS = {'\\u180e'}",
+      "verification_status": "SOURCE_IMPLEMENTED_UNVERIFIED",
+      "notes": "Removed Python isspace() from semantic decisions. Inspects whole leading/trailing boundary regions; rejects non-ASCII whitespace or U+180E fail-closed; trims supported ASCII whitespace only. Preserves ordinary boundary Omega, quotes, backslash, =, and opaque interior Unicode content."
+    },
+    {
+      "requirement_id": "R39-ITEM3-PRESERVATION-ALL-PREDICATES",
+      "title": "Preserve Gregorian UTC fullmatch, required attributes int, and closed DOS paths",
+      "target_function": "validate_iso_utc_date, verify_path_ancestry, read_once_file_and_stat, validate_config",
+      "start_line": 174,
+      "end_line": 673,
+      "snippet": "_ISO_UTC_REGEX = re.compile(r'^([0-9]{4})-([0-9]{2})-([0-9]{2})T([0-9]{2}):([0-9]{2}):([0-9]{2})(?:\\.([0-9]{1,7}))?Z$')\nattrs = getattr(st, 'st_file_attributes', None)\nif isinstance(attrs, bool) or not isinstance(attrs, int):\n    raise ValueError(...)",
+      "verification_status": "SOURCE_IMPLEMENTED_UNVERIFIED",
+      "notes": "Preserves Child .0000000Z and Parent .1234567Z fractional digits verbatim. Direct nofollow lstat requires usable Windows st_file_attributes integer, failing closed on missing/None/non-integer. Closed DOS paths reject repeated separators, UNC, ADS, device, and traversal."
+    },
+    {
+      "requirement_id": "R39-ITEM4-CLAIMS-CONSISTENCY",
+      "title": "Consistent claims across topdoc, docstrings, provenance manifest, and reports",
+      "target_function": "topdoc, publish_pair, manifest guarantees_and_limits",
+      "start_line": 30,
+      "end_line": 851,
+      "snippet": "\"guarantees_and_limits\": {\n    \"protected_owner_assumed\": True,\n    \"no_hostile_concurrent_writers_assumed\": True,\n    \"hardlink_entry_creation_atomic\": True,\n    \"hardlink_contents_shared_mutable\": True,\n    \"multi_file_transactional_atomicity_unsupported\": True,\n    \"crash_durability_unproven\": True,\n    \"native_engine_run_untested\": True\n}",
+      "verification_status": "SOURCE_IMPLEMENTED_UNVERIFIED",
+      "notes": "Removed all claims of multi-file transaction or crash durability on ANY volume. Hardlink file data is explicitly shared/mutable. os.link directory entry creation is atomic for the entry creation only. Observation witnesses assume protected local owner without hostile concurrent writers."
+    },
+    {
+      "requirement_id": "R39-ITEM5-PROSPECTIVE-GRAPH-AND-AST-E1",
+      "title": "Exact prospective graph and isolated stdlib AST child execution",
+      "target_function": "AST_INPUT_MANIFEST.json, run_ast_verification.py, ast_checker.py, AST_HOST_TOOL_PROOF.json",
+      "start_line": 1,
+      "end_line": 196,
+      "snippet": "\"verdict\": \"AST_PARSED_SUCCESS\",\n\"bytes\": 46246,\n\"sha256\": \"242FB7399C118A1BD3DE588BA99671616ED41E614369142F006E93B889C64242\",\n\"lines\": 955,\n\"ast_node_count\": 4872,\n\"function_count\": 19,\n\"classes\": 0",
+      "verification_status": "SOURCE_IMPLEMENTED_UNVERIFIED",
+      "notes": "Pre-pinned AST_INPUT_MANIFEST.json before execution. Isolated child process parsed publisher text with stdlib ast.parse without import or call. PID 25044, exit code 0, raw stdout 3255 B, raw stderr 0 B. Sampled launcher modules explicitly labeled as sample."
+    },
+    {
+      "requirement_id": "R39-ITEM6-COMPLETE-OWNED-INVENTORY",
+      "title": "Finite complete recursive owned inventory with explicit exclusions",
+      "target_function": "OWNED_OUTPUT_MANIFEST.json, verify_all_artifacts.py, RESULT_INDEX.json, COMPLETION.json",
+      "start_line": 1,
+      "end_line": 200,
+      "snippet": "all_Engine9_bit_exact: True (0 builds)\nall_artifacts_verified: True\nFoundation: HOLD\nDedicated Server Authority: FINAL",
+      "verification_status": "SOURCE_IMPLEMENTED_UNVERIFIED",
+      "notes": "All new helpers placed exclusively in scratch/EngineGate05R39PublisherGeneral-42e1f0cc. All 9 Engine baseline files independently verified 100% bit-exact (0 builds). All references dynamically hashed. No loose scratch files."
+    }
+  ]
+}

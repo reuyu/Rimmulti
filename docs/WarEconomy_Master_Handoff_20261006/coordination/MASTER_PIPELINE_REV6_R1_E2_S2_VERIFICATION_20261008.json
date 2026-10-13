@@ -1,0 +1,199 @@
+{
+  "at": "2026-10-08T00:15:39.597671+09:00",
+  "result_id": "SOL-PIPELINE-REV6-R1-E2-S2-20261008-2ed05cb01ecc46a49cd15551ea3ad89f",
+  "index_sha256": "95817468F65D1DE502F93CF5D94BA51CD37C827A6B388992A50C7DFFC9C1401C",
+  "report_sha256": "E9CAB6A9D5542FC6617B3E111039D92C0770D7ED6D7E8A3DA6C29CB68A8307E4",
+  "manifest_sha256": "07C5D67D3FB4946E3C65C97817ABC3B2E447A23C8625806F9BA730B4FD624897",
+  "checks": {
+    "s2_inventory": 238,
+    "prior297": 297,
+    "s1312": 312,
+    "freeze-before.json_candidate_copies": 309,
+    "freeze-before.json_engine19": 19,
+    "freeze-after.json_candidate_copies": 309,
+    "freeze-after.json_engine19": 19,
+    "tooling20": 20,
+    "master_engine19": 19,
+    "s2_after_master_reads": 238,
+    "prior297_after_master_reads": 297,
+    "s1312_after_master_reads": 312
+  },
+  "changed_or_missing": [],
+  "loaded_proofs": [
+    {
+      "pid": 32360,
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S2-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add"
+      },
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S2-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "sha256": "DADDC7AE65EFDA52B01815BA028973196D4D656702799E39CF4A29E05B589B1B",
+        "mvid": "ac2f8373-5660-43a5-858d-07831c02cecd"
+      }
+    },
+    {
+      "pid": 25520,
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S2-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add"
+      },
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S2-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "sha256": "DADDC7AE65EFDA52B01815BA028973196D4D656702799E39CF4A29E05B589B1B",
+        "mvid": "ac2f8373-5660-43a5-858d-07831c02cecd"
+      }
+    },
+    {
+      "pid": 19796,
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S2-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add"
+      },
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S2-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "sha256": "DADDC7AE65EFDA52B01815BA028973196D4D656702799E39CF4A29E05B589B1B",
+        "mvid": "ac2f8373-5660-43a5-858d-07831c02cecd"
+      }
+    },
+    {
+      "pid": 35580,
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S2-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add"
+      },
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S2-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "sha256": "DADDC7AE65EFDA52B01815BA028973196D4D656702799E39CF4A29E05B589B1B",
+        "mvid": "ac2f8373-5660-43a5-858d-07831c02cecd"
+      }
+    },
+    {
+      "pid": 27624,
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S2-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add"
+      },
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S2-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "sha256": "DADDC7AE65EFDA52B01815BA028973196D4D656702799E39CF4A29E05B589B1B",
+        "mvid": "ac2f8373-5660-43a5-858d-07831c02cecd"
+      }
+    },
+    {
+      "pid": 35708,
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S2-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add"
+      },
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S2-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "sha256": "DADDC7AE65EFDA52B01815BA028973196D4D656702799E39CF4A29E05B589B1B",
+        "mvid": "ac2f8373-5660-43a5-858d-07831c02cecd"
+      }
+    },
+    {
+      "pid": 24848,
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S2-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add"
+      },
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S2-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "sha256": "DADDC7AE65EFDA52B01815BA028973196D4D656702799E39CF4A29E05B589B1B",
+        "mvid": "ac2f8373-5660-43a5-858d-07831c02cecd"
+      }
+    },
+    {
+      "pid": 30636,
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S2-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add"
+      },
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S2-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "sha256": "DADDC7AE65EFDA52B01815BA028973196D4D656702799E39CF4A29E05B589B1B",
+        "mvid": "ac2f8373-5660-43a5-858d-07831c02cecd"
+      }
+    },
+    {
+      "pid": 32668,
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S2-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add"
+      },
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S2-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "sha256": "DADDC7AE65EFDA52B01815BA028973196D4D656702799E39CF4A29E05B589B1B",
+        "mvid": "ac2f8373-5660-43a5-858d-07831c02cecd"
+      }
+    }
+  ],
+  "actual_processes": 9,
+  "exit_counts": {
+    "0": 6,
+    "1": 3
+  },
+  "tool_snapshot_before_all_runs": true,
+  "cases": [
+    {
+      "stage": "commit-parent",
+      "owned_pid": 25520,
+      "signal_site": "OperationJournal.InsertRecord returned",
+      "external_and_cold_baseline_equal": true,
+      "counts": {
+        "COMMITTED": 2
+      },
+      "typed_operations": 2,
+      "signature": "079CFBAC4246592B4E2300630BBB39528C44CCAA6C1199C9811E9B1DB9C4B63C",
+      "head": {
+        "BoundaryScope": 2
+      }
+    },
+    {
+      "stage": "commit-audit",
+      "owned_pid": 27624,
+      "signal_site": "AuditLogRepository.InsertAudit returned: PROBE_CAS_COMMITTED",
+      "external_and_cold_baseline_equal": true,
+      "counts": {
+        "COMMITTED": 2
+      },
+      "typed_operations": 2,
+      "signature": "079CFBAC4246592B4E2300630BBB39528C44CCAA6C1199C9811E9B1DB9C4B63C",
+      "head": {
+        "BoundaryScope": 2
+      }
+    },
+    {
+      "stage": "stale-audit",
+      "owned_pid": 30636,
+      "signal_site": "AuditLogRepository.InsertAudit returned: PROBE_CAS_REJECTED",
+      "external_and_cold_baseline_equal": true,
+      "counts": {
+        "COMMITTED": 1,
+        "ABORTED": 1
+      },
+      "typed_operations": 2,
+      "signature": "079CFBAC4246592B4E2300630BBB39528C44CCAA6C1199C9811E9B1DB9C4B63C",
+      "head": {
+        "BoundaryScope": 1
+      }
+    }
+  ],
+  "typed_operations": 6,
+  "native_commit_internal_cut": false,
+  "power_loss": false,
+  "full_required_coverage": false,
+  "verdict": "INCONCLUSIVE_FULL_GATE",
+  "observed_controls": "PASS",
+  "review_mode": "SQLite only on separate Master copies; original evidence unchanged after reads"
+}

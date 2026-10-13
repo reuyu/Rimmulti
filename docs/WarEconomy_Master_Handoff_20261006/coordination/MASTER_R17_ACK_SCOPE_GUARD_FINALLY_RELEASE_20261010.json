@@ -1,0 +1,13 @@
+{
+  "run_id": "MASTER-SOL-R17-ACK-SCOPE-20261010-01",
+  "guard_session": 94421,
+  "guard_pid": 23240,
+  "all_child_exec_sessions_completed": true,
+  "actual_finally_release_tool": {
+    "chunk_id": "f2c3df",
+    "wall_time_seconds": 0.0000404,
+    "exit_code": 0,
+    "original_token_count": 105,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-SOL-R17-ACK-SCOPE-20261010-01\", \"pid\": 23240, \"locked_at\": \"2026-10-10T04:25:45.042711+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-10T04:30:15.123778+09:00\", \"renewal_count\": 3, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-10T04:30:45.176378+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  }
+}

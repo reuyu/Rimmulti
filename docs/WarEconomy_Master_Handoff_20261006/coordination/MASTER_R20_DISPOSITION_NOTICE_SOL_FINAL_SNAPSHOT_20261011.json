@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:130\",\"revision\":130,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a127a4-7461-7ad2-b63a-2664cbc5be8e\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791666451,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016acaa91bd32087d08ee523b4c1b987e7\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016acaa91bd32087d08ee523b4c1b987e7\",\"turnId\":\"01a127a4-7461-7ad2-b63a-2664cbc5be8e\",\"phase\":\"commentary\",\"text\":\"R20 판정 통지를 읽고 수신 기록만 한 번 남기겠습니다. 기존 증거와 terminal 파일은 보존하고 다음 QA WP를 기다리겠습니다.\"},\"latestToolMarkerId\":\"exec-834a8473-9156-4744-812b-2a46e5405e7d\",\"latestToolMarker\":{\"id\":\"exec-834a8473-9156-4744-812b-2a46e5405e7d\",\"turnId\":\"01a127a4-7461-7ad2-b63a-2664cbc5be8e\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

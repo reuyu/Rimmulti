@@ -1,0 +1,94 @@
+{
+  "at": "2026-10-08T22:00:58.977963+09:00",
+  "type": "MASTER_R7_CONTENT_ADMISSION_DISPATCH_MONITOR_ACTIVE",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-20261008-DIRECT-8524bf02",
+  "wp_id": "WP_ENGINE_GATE05_R7_CONTENT_ADMISSION",
+  "wp_revision": "GATE05-R7-CONTENT-ADMISSION",
+  "envelope": 10,
+  "status": "SENT_ACK_VERIFIED_IN_PROGRESS",
+  "actual_ui_proof": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-20261008-DIRECT-8524bf02\\MASTER_UI_SUBMISSION_CONFIRMED.json",
+  "actual_ui_proof_sha256": "4ED8F391015A016B9FABD42E37C299A81D421B13B18943B043CA72F1A44F7222",
+  "ui_trees": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-20261008-DIRECT-8524bf02\\MASTER_UI_PREDISPATCH_TREE.txt",
+      "sha256": "C4C081AD1369C140015F2871E823B58F21C898031C6B16039113CF77B6349F49"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-20261008-DIRECT-8524bf02\\MASTER_UI_EXACT_DRAFT_TREE.txt",
+      "sha256": "D9912F0F4F77CFD4198ED3BFAF51E312F4895E0AA86ED6563CEDDAC9C13D4118"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-20261008-DIRECT-8524bf02\\MASTER_UI_SUBMITTED_TREE.txt",
+      "sha256": "56D6A3551D6AB1238E247AA1EEA5BB9B60E75520056F7C9957992ACE335B5F33"
+    }
+  ],
+  "ack_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-20261008-DIRECT-8524bf02\\ACK.json",
+  "ack_sha256": "8438A802F79DFFE5ADF27BAA48402D642DEA098446748C60D36D4EF3FA67ACE7",
+  "ack_status": "IN_PROGRESS",
+  "producer_ack_time": "2026-10-08T22:00:00+09:00",
+  "master_ack_observed_at": "2026-10-08T22:00:58.977963+09:00",
+  "ack_closure_authority_wording_qualified": "Dedicated Server remains final runtime Domain Authority;Master governance closure disposition only",
+  "preservation_proof": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-20261008-DIRECT-8524bf02\\MASTER_POSTSENT_ACK_PRESERVATION.json",
+  "preservation_proof_sha256": "4FCD4B582C51362B40643FBDFB1310D4E6C41CF8AAD08B0C612D6CEFFB3660F8",
+  "counts": {
+    "archive": 19,
+    "prior": 844,
+    "pipeline": 206,
+    "qa": 1489,
+    "managed_dependencies": 4
+  },
+  "known_installed_incident": "UNCHANGED_OPEN_NO_RESTORE",
+  "known_installed_actual_sha256": "BB3B52F39F7B53B70BC9FB4CE039E7455D08B24B17B8DABB8295E0FF4584DD61",
+  "source_boundary": "ContentProfileProvider suffix/typed helpers;WorkerBridge/csproj/Censusprefix fixed",
+  "automation_actual_config": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "ACTIVE",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791464289651
+  },
+  "automation_update_tool": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R7_CONTENT_ADMISSION_MONITOR_UPDATE_TOOL_20261008.json",
+  "future_r7_scheduled_run_observed": false,
+  "master_guard_run": "MASTER-SOL-R6-COMPLETE-20261008-01",
+  "guard_session": 75148,
+  "renewed_before_input_and_mutations": true,
+  "actual_contender_lock_busy_observed": true,
+  "historical_r4_lease_gap_remains_unverified": true,
+  "sol_disposition_notice_tool": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R6_CODEC_CONTRACT_INDEPENDENT_S1_DISPOSITION_NOTICE_TOOL_20261008.json",
+  "sol_disposition_notice_tool_sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+  "sol_post_notice_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:43",
+    "revision": 43,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a11b98-8302-7a03-9334-4025a3bb2c5d",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791464342,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "sol_new_qa_wp": false,
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD"
+}

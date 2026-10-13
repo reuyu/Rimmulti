@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:120\",\"revision\":120,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a124f7-ffda-7512-ac77-bdd869f8b6bd\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791621595,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ac9f9e549e887d0b0f0e3b1fa83f2b1\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ac9f9e549e887d0b0f0e3b1fa83f2b1\",\"turnId\":\"01a124f7-ffda-7512-ac77-bdd869f8b6bd\",\"phase\":\"commentary\",\"text\":\"R19의 새 WP와 동결 후보를 먼저 대조하겠습니다. 공백·Unicode 정책 문자열의 기대값을 다시 실행 전에 고정하고, 새 QA runner와 새 실행 출력으로 R18 결함의 수정 여부를 검증하겠습니다.\"},\"latestToolMarkerId\":\"exec-1641cfc7-850a-4368-b197-2d7354fd01a6\",\"latestToolMarker\":{\"id\":\"exec-1641cfc7-850a-4368-b197-2d7354fd01a6\",\"turnId\":\"01a124f7-ffda-7512-ac77-bdd869f8b6bd\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

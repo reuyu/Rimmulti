@@ -1,0 +1,47 @@
+{
+  "timedOut": false,
+  "wake": {
+    "reason": "turnCompleted",
+    "turnId": "01a116a9-1024-7fd1-a99d-d073ded0d2b9",
+    "threadId": "01a11583-ff90-73e0-8916-d021e2bb038d",
+    "hostId": "local"
+  },
+  "polls": [
+    {
+      "schemaVersion": 1,
+      "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:14",
+      "revision": 14,
+      "changed": true,
+      "thread": {
+        "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+        "hostId": "local",
+        "status": {
+          "type": "idle"
+        }
+      },
+      "latestTurn": {
+        "id": "01a116a9-1024-7fd1-a99d-d073ded0d2b9",
+        "status": "completed",
+        "error": null,
+        "startedAt": 1791381540,
+        "completedAt": 1791383276,
+        "durationMs": 1735376
+      },
+      "latestAssistantMessageId": "msg_0c6b28ae575c2341016ac656ec2e3487d0b9bd8765651b49ef",
+      "latestAssistantMessage": {
+        "id": "msg_0c6b28ae575c2341016ac656ec2e3487d0b9bd8765651b49ef",
+        "turnId": "01a116a9-1024-7fd1-a99d-d073ded0d2b9",
+        "phase": "final_answer",
+        "text": "Pipeline REV6-R1 QA를 완료하고 마스터에게 보고했습니다. 관측한 검증 범위는 PASS이며, 미검증 항목이 남아 전체 gate는 미확정입니다. QA 보고서 다음 마스터 지시를 기다리겠습니다."
+      },
+      "latestToolMarkerId": "exec-b90e9f5e-f457-4078-9b10-cada5e48d32a",
+      "latestToolMarker": {
+        "id": "exec-b90e9f5e-f457-4078-9b10-cada5e48d32a",
+        "turnId": "01a116a9-1024-7fd1-a99d-d073ded0d2b9",
+        "type": "commandExecution",
+        "name": "commandExecution",
+        "status": "completed"
+      }
+    }
+  ]
+}

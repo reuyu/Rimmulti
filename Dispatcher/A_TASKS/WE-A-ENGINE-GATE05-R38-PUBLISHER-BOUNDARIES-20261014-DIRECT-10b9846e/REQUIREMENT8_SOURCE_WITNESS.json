@@ -1,0 +1,123 @@
+{
+  "schemaVersion": "we-r38-requirement8-source-witness/v1",
+  "witnessed_at_utc": "2026-10-13T17:36:47.118800+00:00",
+  "target_file": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+  "overall_status": "SOURCE_IMPLEMENTED_UNVERIFIED",
+  "limitations": [
+    "SOURCE_AND_AST_SYNTAX_ONLY: Verification conducted strictly via source inspection and stdlib ast.parse AST syntax validation (exit code 0). The publisher script was NOT executed.",
+    "ZERO_PUBLISHER_EXECUTIONS: publish_operator_pair.py was not imported, executed, or invoked with test arguments; independent normal publication testing is reserved for Sol.",
+    "ZERO_ENGINE_BUILDS: All 9 Engine baseline files remain bit-exact and immutable; no compile or C# project modification was performed.",
+    "ZERO_NATIVE_EXECUTION: In-engine, game runtime, native execution, Awake event loops, and operator promotion were strictly prohibited and not executed.",
+    "DEDICATED_SERVER_AUTHORITY: Dedicated Server remains final Domain Authority; Engine/Client produces bounded simulation proposals.",
+    "STEAM_INSTALLED_INCIDENT_OPEN: Steam installed DLL discrepancy against archive baseline remains an UNKNOWN OPEN INCIDENT, preserved unmodified.",
+    "FOUNDATION_HOLD: Foundation remains HOLD pending Pipeline independent E2 PASS."
+  ],
+  "requirements": [
+    {
+      "id": "R38-1",
+      "title": "DATE: Full Consumption Regex, Calendar Validity, Verbatim Fractional Preservation, Child .0000000Z",
+      "function_name": "validate_iso_utc_date",
+      "start_line": 146,
+      "end_line": 175,
+      "snippet": "m = _ISO_UTC_REGEX.fullmatch(val)\nif not m: raise ValueError(...)\nyear = int(m.group(1)); ...; if year < 1 or year > 9999: ...\nif day < 1 or day > max_days: ...",
+      "per_case_relation": "Parent 2026-10-11T00:00:00.1234567Z and Child 2026-10-11T00:00:01.0000000Z are validated with full consumption and preserved verbatim across all 6 cases without rounding or invented nofraction.",
+      "status": "SOURCE_IMPLEMENTED_UNVERIFIED"
+    },
+    {
+      "id": "R38-2",
+      "title": "REQUIRED ATTRIBUTES: Usable Integer st_file_attributes Fail-Closed, Direct Ancestry Guard",
+      "function_name": "verify_path_ancestry",
+      "start_line": 314,
+      "end_line": 404,
+      "snippet": "attrs = getattr(st, 'st_file_attributes', None)\nif isinstance(attrs, bool) or not isinstance(attrs, int):\n    raise ValueError(f'Unsupported environment: missing or non-integer st_file_attributes ...')\nif (attrs & reparse_flag) or stat.S_ISLNK(st.st_mode):\n    raise ValueError('Unsafe reparse point / junction / symlink ...')",
+      "per_case_relation": "All existing drive roots, ancestor directories, and input config files require valid Windows st_file_attributes integer. ONLY exact intended new output leaf FileNotFoundError permits creation.",
+      "status": "SOURCE_IMPLEMENTED_UNVERIFIED"
+    },
+    {
+      "id": "R38-3",
+      "title": "STRUCTURAL vs OPAQUE: Structural ASCII Operations, Raw Cap Untrimmed, Opaque Unicode Preserved",
+      "function_names": [
+        "check_opaque_non_blank (lines 198-210)",
+        "identity_boundary_trim (lines 213-219)",
+        "structural_ascii_strip (lines 222-232)",
+        "structural_ascii_upper (lines 235-248)",
+        "validate_declaration (lines 477-523)",
+        "validate_config (lines 526-661)"
+      ],
+      "snippet": "cfg_id == expected_id and identity_boundary_trim(cfg_id) == expected_id\ncloned_trimmed_desc_cap = structural_ascii_upper(structural_ascii_strip(desc['expectedCapabilityBoundary']))\nraw_cfg_cap = structural_ascii_upper(config_dict['capabilityBoundary'])\nif raw_cfg_cap != cloned_trimmed_desc_cap: raise ValueError(...)",
+      "per_case_relation": "Raw config capabilityBoundary is never trimmed before comparison to cloned-trimmed descriptor. Opaque fields (originId, launchPlanId, operatorPairId, fingerprint, policy) preserve interior/boundary Unicode content verbatim (including quotes, backslashes, '=', spaces, and Omega). Descriptor expectedConfigSha256 strictly 64 hex without trim; executable SHA allows trim. Original descriptor padding/lowercase preserved in output bundle.",
+      "status": "SOURCE_IMPLEMENTED_UNVERIFIED"
+    },
+    {
+      "id": "R38-4",
+      "title": "PATH NORMAL FORM: Fully-Qualified Local DOS, Explicit Slash Handling, Reject Repeated Separators",
+      "function_name": "check_supported_local_dos_path",
+      "start_line": 251,
+      "end_line": 311,
+      "snippet": "if '//' in p or '\\\\\\\\' in p or '\\\\/' in p or '/\\\\' in p:\n    raise ValueError(f'{field_name} contains prohibited repeated separators or ambiguous alias: \\'{p}\\'.')\nif body.endswith('\\\\') or body.endswith('/'):\n    raise ValueError(f'{field_name} contains prohibited trailing separator or ambiguous alias: \\'{p}\\'.')",
+      "per_case_relation": "Valid drive-root syntax (C:\\) and normal segments with spaces and Omega (C:\\QA R26 \u03a9\\...) are preserved. UNC, device paths, ADS colons, path traversal, control characters, and reserved DOS device names are rejected fail-closed.",
+      "status": "SOURCE_IMPLEMENTED_UNVERIFIED"
+    },
+    {
+      "id": "R38-5",
+      "title": "CLAIMS & READ-ONCE: Observation Witness Model, Removal of Immutable/Atomic Claims",
+      "function_names": [
+        "read_once_file_and_stat (lines 407-459)",
+        "publish_pair (lines 664-864)"
+      ],
+      "snippet": "prior_st = os.lstat(clean_path)\nwith open(clean_path, 'rb') as f:\n    handle_st = os.fstat(f.fileno())\n    raw_bytes = f.read()\n# Hardlink directory entry creation is atomic on NTFS, but file data is shared and mutable;\n# does NOT provide multi-file transactional atomicity or crash durability without volume journaling.",
+      "per_case_relation": "Preserves single spec and config bytes read with handle fstat observation. Removes all claims of immutable staging, atomic bundle+sidecars, or crash durability from topdoc, docstrings, reports, and manifests. Partial outputs preserved on error for forensic analysis.",
+      "status": "SOURCE_IMPLEMENTED_UNVERIFIED"
+    },
+    {
+      "id": "R38-6",
+      "title": "ORIGINALS & LINE WITNESS: Exact 6 Case IDs, Original Case 5/6 PairIDs, Child .0000000Z",
+      "oracle_binding": {
+        "oracle_path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R35-PUBLISHER-PREPARATION-S1-20261013\\NORMAL_PUBLISHER_EXPECTATION_ORACLE.json",
+        "oracle_sha256": "E68672E66E88195CAA25E185446FA1EE44C4399ED18F1211824B496B3DE7D3E0",
+        "case_ids": [
+          "PLAIN_PLAIN",
+          "OPAQUE_OPAQUE",
+          "PLAIN_OPAQUE_PADDED",
+          "OPAQUE_PLAIN_PADDED",
+          "OPAQUE_EQ_QUOTE_BACKSLASH",
+          "OPAQUE_EQ_QUOTE_BACKSLASH_PADDED"
+        ],
+        "case5_pair_id": "  operatorPairId=5 \"\u03a9\" \\ original  ",
+        "case6_pair_id": "  operatorPairId=6 \"\u03a9\" \\ original  ",
+        "parent_timestamp": "2026-10-11T00:00:00.1234567Z",
+        "child_timestamp": "2026-10-11T00:00:01.0000000Z"
+      },
+      "status": "SOURCE_IMPLEMENTED_UNVERIFIED"
+    },
+    {
+      "id": "R38-7",
+      "title": "ONE OWN AST E1 GRAPH: Pre-Pinned Input Manifest, Isolated Child AST Parse, First Binary Raw Streams",
+      "evidence": {
+        "input_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\AST_INPUT_MANIFEST.json",
+        "host_tool_proof": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\AST_HOST_TOOL_PROOF.json",
+        "stdout_raw": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\ast_stdout.raw.bin",
+        "stderr_raw": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\ast_stderr.raw.bin",
+        "child_script": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\ast_checker.py",
+        "child_pid": 9668,
+        "child_exit_code": 0,
+        "child_verdict": "AST_PARSED_SUCCESS"
+      },
+      "status": "SOURCE_IMPLEMENTED_UNVERIFIED"
+    },
+    {
+      "id": "R38-8",
+      "title": "COMPLETE OWNED INVENTORY: Helper Scoping, Baseline Immutability, Governance Authority",
+      "evidence": {
+        "owned_root": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e",
+        "engine9_bit_exact": true,
+        "engine_builds": 0,
+        "publisher_executions": 0,
+        "native_executions": 0,
+        "dedicated_server_authority": true,
+        "foundation_hold": true
+      },
+      "status": "SOURCE_IMPLEMENTED_UNVERIFIED"
+    }
+  ]
+}

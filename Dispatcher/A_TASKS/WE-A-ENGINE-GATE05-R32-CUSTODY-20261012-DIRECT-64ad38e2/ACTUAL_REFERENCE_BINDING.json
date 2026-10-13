@@ -1,0 +1,44 @@
+{
+  "manifest_version": "we-r32-actual-reference-binding/v1",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2",
+  "wp_id": "WP_ENGINE_GATE05_R32_CUSTODY",
+  "envelope": 35,
+  "generated_at": "2026-10-12T14:29:26.627566+00:00",
+  "project": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+    "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+    "bytes": 1774
+  },
+  "bound_compile_references": [
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\Assembly-CSharp.dll",
+      "sha256": "5CF1B5BE399D5B1C9C56CA72C9D35B4ECF307FEACF5859D04AC5A1AA5926356A",
+      "bytes": 15777280
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\UnityEngine.CoreModule.dll",
+      "sha256": "C5C58EA254834291780A1D6C388C241443D07167B4A4B890A23C9494F626DDBA",
+      "bytes": 1386688
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\UnityEngine.dll",
+      "sha256": "0422FF282130458380D2FB4B63A718465D3BD2D5738F1532F60798B0D35DFF0D",
+      "bytes": 125120
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\UnityEngine.IMGUIModule.dll",
+      "sha256": "C6C39327211BE8299E2E9FFDEE7A979F228736C99B84FD54BC73F563456865D9",
+      "bytes": 188608
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\294100\\2009463077\\Current\\Assemblies\\0Harmony.dll",
+      "sha256": "353DAAFEC180BB8E7BBE4DA78F2A7CDC78067392E3A4E79DC8E7AF295F2371E6",
+      "bytes": 2456064
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\1.6\\Assemblies\\Newtonsoft.Json.dll",
+      "sha256": "E1E27AF7B07EEEDF5CE71A9255F0422816A6FC5849A483C6714E1B472044FA9D",
+      "bytes": 711952
+    }
+  ]
+}

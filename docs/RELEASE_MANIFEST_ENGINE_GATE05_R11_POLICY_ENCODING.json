@@ -1,0 +1,102 @@
+{
+    "manifest_version": "1.0",
+    "work_package": "WP_ENGINE_GATE05_R11_POLICY_ENCODING",
+    "candidate_lineage": "GATE05-R11-POLICY-ENCODING",
+    "created_at_utc": "2026-10-08T21:26:00.000000+00:00",
+    "agent_role": "Antigravity A",
+    "dispatch_id": "WE-A-ENGINE-GATE05-R11-POLICY-ENCODING-20261009-DIRECT-bec3d350",
+    "selected_candidate": {
+        "configuration": "Debug",
+        "target_framework": "net472",
+        "dll_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+        "dll_sha256": "133348C3FBC20215B9C4E0E9CA25D731781FCE9AD8CBE91F5A145BDB3620F98D",
+        "dll_bytes": 236544,
+        "pdb_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+        "pdb_sha256": "BA3027651BA59976BBEC6E1D2454AA0A2F5D964862809618AD80C9F2C6647BDE",
+        "pdb_bytes": 59468,
+        "mvid": "e6c6f6fd-2915-4493-8ef9-dc5d87de1c6b"
+    },
+    "alternate_candidate": {
+        "configuration": "Release",
+        "target_framework": "net472",
+        "dll_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+        "dll_sha256": "A550896516C02F45F5CB4C30D39E35BC6F7ECABF07FBB595C5FCCE5D9EA66101",
+        "dll_bytes": 225280,
+        "pdb_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+        "pdb_sha256": "B20543F66D0AE5068D43C5F7C6E6D192963A831AC87D570491488709DDF716C7",
+        "pdb_bytes": 43548,
+        "mvid": "35dfe68f-6a6f-44cc-a648-7c8153f6a2ad"
+    },
+    "source_files": [
+        {
+            "path": "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+            "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+            "bytes": 156431
+        },
+        {
+            "path": "scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+            "sha256": "FA3E1EF5BB9E1B5EB94D001EC6A7B7B239C12A94F3105A388E553CC62BA5E2CA",
+            "bytes": 155483,
+            "prefix_marker": "    public static class ContentProfileProvider",
+            "prefix_length": 72547,
+            "prefix_sha256": "F3C4F865F1E2A898BF240A2D096195870D77A52408CF2D93664FE15092A2A887"
+        },
+        {
+            "path": "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+            "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+            "bytes": 1774
+        }
+    ],
+    "verification_evidence": {
+        "runner_project": {
+            "path": "scratch\\EngineGate05R11PolicyEncoding\\Harness\\Gate05R11PolicyRunner.csproj",
+            "sha256": "96D99AC3313C7C3F92C4297EC37866EF475F5DB03C0B3BABCDCD3F735642117C",
+            "bytes": 1617
+        },
+        "runner_source": {
+            "path": "scratch\\EngineGate05R11PolicyEncoding\Harness\\Program.cs",
+            "sha256": "65254AC7ADB5A382E93A2C7DD4EFCF6D2AB91A70810ABD69D9094EF0EA6A9803",
+            "bytes": 33970
+        },
+        "results_json": {
+            "path": "scratch\\EngineGate05R11PolicyEncoding\\results.json",
+            "sha256": "863F5463607643132DBAC5CDFBBB0197900874515D7198F3676F6281D50BEFE2",
+            "bytes": 6306
+        },
+        "raw_console_log": {
+            "path": "scratch\\EngineGate05R11PolicyEncoding\\raw_console.txt",
+            "sha256": "37B23ED1B3F62ED7E43A49676DEC66B8E9D5F80EA8016288520CFD91F9C00423",
+            "bytes": 5738
+        },
+        "pre_run_manifest": {
+            "path": "scratch\\EngineGate05R11PolicyEncoding\\CANDIDATE_PRE_RUN_MANIFEST.json",
+            "sha256": "CD3549DAE45EAC78DBE56579DB1EC003DF59FBF371DE11AFAD6EF6432D5E10B6",
+            "bytes": 4864
+        },
+        "engine_freeze_before": {
+            "path": "scratch\\EngineGate05R11PolicyEncoding\\ENGINE_FREEZE_BEFORE.json",
+            "sha256": "550B13AFF5173C75C35B6F1ED11683B9CDFA3223BE8010080B90052FDC9ED9ED",
+            "bytes": 3072
+        },
+        "engine_freeze_after": {
+            "path": "scratch\\EngineGate05R11PolicyEncoding\\ENGINE_FREEZE_AFTER.json",
+            "sha256": "2855377ADE82D3C9772C1EC3846BC37B1FC8D554B84CFD8CFEEA4291574916AB",
+            "bytes": 3072
+        },
+        "report_markdown": {
+            "path": "docs\\POC_EngineHost_Content_Codec_Gate05_R11.md",
+            "sha256": "1D1ED7F36046E534D8ED84029245ACDD3031E63057FBCA1693E4780AF0DDA0B7",
+            "bytes": 10662
+        }
+    },
+    "summary": {
+        "total_tests": 14,
+        "pass": 14,
+        "fail": 0,
+        "e1_verdict": "SCOPED_POSITIVE_NORMAL_PASS",
+        "codec_status": "CANONICAL_POLICY_DECLARATION_JSON_DIGEST_VERIFIED",
+        "native_observation_status": "NATIVE_UNTESTED (Prohibited under WP_ENGINE_GATE05_R11_POLICY_ENCODING)",
+        "installed_incident_status": "UNKNOWN OPEN INCIDENT",
+        "disposition_note": "Gate05-R11 implements concrete typed versioned canonical package policy declaration (ExpectedPackagePolicyDeclaration with schemaVersion WE-PACKAGE-POLICY-V1, policyId, revision, admittedPackageIds), deterministic lossless JSON escaping, pure canonical compact JSON serialization/deserialization, SHA-256 uppercase hex digest calculation of canonical JSON bytes, overload parity routing through the declaration, removes policy-specific Trim in CanonicalNormalize, updates contract version to ADR-006B-v5-R11 and capability flag to GATE05_R11_POLICY_ENCODING, and regresses R9 version meaning and 8 Def families canonical sorting. Strictly executes 14 pure positive normal controls (14/14 PASS) with 0 configuration lifecycle calls, 0 provider compute calls, and 0 negative/adverse tests. Full Gate05 and Foundation remain HOLD pending independent QA and Master governance disposition."
+    }
+}

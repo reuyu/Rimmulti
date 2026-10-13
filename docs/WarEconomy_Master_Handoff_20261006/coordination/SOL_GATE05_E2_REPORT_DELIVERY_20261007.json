@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "result_id": "SOL-GATE05-E2-20261007-8f58fb41362f4934a502e604a65f5896",
+  "attempt_id": "SOL-GATE05-E2-RESTART-8f58fb41362f4934a502e604a65f5896",
+  "reported_at_utc": "2026-10-07 09:39:38 UTC",
+  "status": "SENT_TOOL_CONFIRMED",
+  "recipient_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+  "host_id": "local",
+  "attempts": 1,
+  "direct_user_authorization_message_id": "01a11588-b7db-7752-b11c-0651aed9a300",
+  "report_sha256": "48F3A5CFF0F14B268A0D569A504239199030A1C87187CD8A1F07F2AD6BD56682",
+  "evidence_manifest_sha256": "504F3D59AF10151B4CE6A8F373A88C639DA76945B6BA5F67239DE88021CBC864",
+  "verdict_submitted": "FAIL",
+  "full_adversarial_runtime_coverage_submitted": false,
+  "tool": "send_message_to_thread",
+  "tool_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"threadId\":\"01a1156b-97ec-7ce0-9e4a-dfc4a3acb174\"}"
+      }
+    ],
+    "isError": false
+  },
+  "master_read_or_ack_separately_observed": false,
+  "message_id_returned": null,
+  "blind_retry": false
+}

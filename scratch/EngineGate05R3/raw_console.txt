@@ -1,0 +1,75 @@
+================================================================================
+WarEconomy Gate05-R3 Verification Test Runner (E1 Independent Execution)
+Scope: WP_ENGINE_GATE05_R3 / GATE05-R3 (Operator Launch, 16-Dim Equality, ADR-006B-v3)
+Standards: MD-126, MD-127, MD-128, MD-130, R2-M01~M08
+================================================================================
+
+--- SECTION 1: Binary Lineage & Cryptographic Provenance ---
+[PASS] PROV-01 (GENUINE_CONTROL_FLOW) [Provenance] Selected Debug Candidate DLL Exists & Cryptographically Bound -> Path=C:\Users\user\Desktop\RimMulti\scratch\WorkerBridgeMod\Source\bin\Debug\net472\WarEconomy.WorkerBridge.PoC.dll, SHA256=9851351B4F3E8DD14D16AB5BBC5932F6A0F71E34ABF49648FA7366945516B1BB, Size=199168
+[PASS] PROV-02 (GENUINE_CONTROL_FLOW) [Provenance] Selected Debug Matching PDB Exists & Cryptographically Bound -> Path=C:\Users\user\Desktop\RimMulti\scratch\WorkerBridgeMod\Source\bin\Debug\net472\WarEconomy.WorkerBridge.PoC.pdb, SHA256=3B93B64C62CE37E7D5856846562A30448E574619A0D1E8C96B9025974ADEB9BE
+[PASS] PROV-03 (GENUINE_CONTROL_FLOW) [Provenance] Candidate Assembly MVID Cryptographically Extracted -> MVID=501e64f4-2135-42b0-b997-8829c99f5001
+[PASS] PROV-04 (GENUINE_CONTROL_FLOW) [Provenance] Release Candidate Separately Tracked (Non-Selected Alternate Lineage) -> Path=C:\Users\user\Desktop\RimMulti\scratch\WorkerBridgeMod\Source\bin\Release\net472\WarEconomy.WorkerBridge.PoC.dll, SHA256=CC675EC3D7933C7A163D43FDD1941AADE3B53BC1A6A2575D3096C170FA678217
+
+--- SECTION 2: Genuine Operator Process Launch & Normal Flow ---
+[PASS] GEN-01 (GENUINE_CONTROL_FLOW) [GENUINE_OPERATOR_FLOW] Issue ValidatorTask with complete 16 authority dimensions & result channel path -> TaskId=VT_R3_bcfdf5db, ResultChannel='C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R3\MockSaveData\Tasks\VT_R3_bcfdf5db.protected_result.json'
+[RimWorld.Log] [WorkerBridge] OPERATOR_VALIDATOR_LAUNCHED: TaskId=VT_R3_bcfdf5db, Pid=26172, StartTime=2026-10-08T04:05:34.2687766Z, Exe='C:\WINDOWS\system32\cmd.exe'
+[PASS] GEN-02 (GENUINE_SUBPROCESS) [GENUINE_OPERATOR_FLOW] Launch genuine child process via LAUNCH_OPERATOR_VALIDATOR with verified capabilityNonce -> Resp='OPERATOR_VALIDATOR_LAUNCHED: TaskId=VT_R3_bcfdf5db, Pid=26172, StartTime=2026-10-08T04:05:34.2687766Z, Exe='C:\WINDOWS\system32\cmd.exe'', ChildPid=26172, SimulatorPid=10312, StartTime=2026-10-08T04:05:34.2687766Z
+[PASS] GEN-03 (GENUINE_CONTROL_FLOW) [GENUINE_OPERATOR_FLOW] Validator writes ValidatorResult with 16 authority dimensions to protected result channel -> ResultFile='C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R3\MockSaveData\Tasks\VT_R3_bcfdf5db.protected_result.json', Size=1316
+[RimWorld.Log] [WorkerBridge] STAGE_VALIDATION_ACCEPTED: ReceiptId=VR_20261008_040534_22568da4c38c451db93442b27ba73b97, ValidatorPid=26172, TaskId=VT_R3_bcfdf5db
+[PASS] GEN-04 (GENUINE_CONTROL_FLOW) [GENUINE_OPERATOR_FLOW] COMPLETE_STAGE_VALIDATION accepts verified result via protected channel with strict timing match -> Resp='STAGE_VALIDATION_ACCEPTED: ReceiptId=VR_20261008_040534_22568da4c38c451db93442b27ba73b97, ValidatorPid=26172, TaskId=VT_R3_bcfdf5db'
+[PASS] GEN-05 (GENUINE_CONTROL_FLOW) [GENUINE_OPERATOR_FLOW] Atomic result channel consumption: original vanished and .consumed created (Fail-Closed) -> OriginalExists=False, ConsumedExists=True
+[PASS] GEN-06 (GENUINE_CONTROL_FLOW) [GENUINE_OPERATOR_FLOW] StageValidationReceipt materialized and directly bound 1:1 to verified ValidatorResult fields -> ReceiptId=VR_20261008_040534_22568da4c38c451db93442b27ba73b97, BoundExe='C:\WINDOWS\system32\cmd.exe', BoundMode='READ_ONLY'
+
+--- SECTION 3: Operator Launch Security & Isolation (R2-M01, R2-M03) ---
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: Operator capability nonce verification failed for LAUNCH_OPERATOR_VALIDATOR (MD-126/127). Public requester launch prohibited.
+[PASS] SEC-01 (GENUINE_CONTROL_FLOW) [ATTACK_SURFACE_ISOLATION] Public requester invocation of LAUNCH_OPERATOR_VALIDATOR without capabilityNonce rejected -> Resp='ERROR: Unauthorized: CapabilityNonce mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: Operator capability nonce verification failed for LAUNCH_OPERATOR_VALIDATOR (MD-126/127). Public requester launch prohibited.
+[PASS] SEC-02 (GENUINE_CONTROL_FLOW) [ATTACK_SURFACE_ISOLATION] Public requester invocation with wrong capabilityNonce rejected -> Resp='ERROR: Unauthorized: CapabilityNonce mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: Self-validation or empty validator PID detected!
+[PASS] SEC-03 (GENUINE_CONTROL_FLOW) [ATTACK_SURFACE_ISOLATION] Self-validation prohibited (Validator PID == Simulator PID rejected) -> Resp='STAGE_VALIDATION_REJECTED: Fresh independent validator required (Self-PID prohibited).'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: Protected validator result channel file not found at configured path (MD-126/127).
+[PASS] SEC-04 (GENUINE_CONTROL_FLOW) [ATTACK_SURFACE_ISOLATION] Result channel fallback search removed (Missing configured channel rejects without alt search) -> Resp='STAGE_VALIDATION_REJECTED: Protected validator result channel file not found.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: Validator process start time mismatch (Expected=2026-10-08T12:00:00.0000000Z, Got=2026-10-08T12:05:00.0000000Z). Forged or unregistered process instance.
+[PASS] SEC-05 (GENUINE_CONTROL_FLOW) [ATTACK_SURFACE_ISOLATION] Process start time mismatch rejected (Unregistered or reused process instance rejected) -> Resp='STAGE_VALIDATION_REJECTED: Validator process start time mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: Caller-supplied validation result payload is prohibited (MD-127). Authority must originate from operator-owned validator task and protected channel.
+[PASS] SEC-06 (GENUINE_CONTROL_FLOW) [ATTACK_SURFACE_ISOLATION] Caller-supplied inline JSON payload rejected (MD-127) -> Resp='STAGE_VALIDATION_REJECTED: Caller-supplied payload prohibited under MD-127.'
+
+--- SECTION 4: MD-128 Complete 16 Authority Dimensions Closed-Context Equality ---
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: AuthorityId mismatch (Result=FORGED_AUTH_X, Task=AUTH_GATE05_R3_TEST, Registered=AUTH_GATE05_R3_TEST).
+[PASS] DIM-01 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'AuthorityId' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: AuthorityId mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: StoreIncarnation mismatch.
+[PASS] DIM-02 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'StoreIncarnation' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: StoreIncarnation mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: BaseLineage mismatch.
+[PASS] DIM-03 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'BaseLineage' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: BaseLineage mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: GrantId mismatch.
+[PASS] DIM-04 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'GrantId' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: GrantId mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: WorkerGeneration mismatch.
+[PASS] DIM-05 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'WorkerGeneration' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: WorkerGeneration mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: ScopeId mismatch.
+[PASS] DIM-06 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'ScopeId' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: ScopeId mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: TargetMapIndex mismatch.
+[PASS] DIM-07 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'TargetMapIndex' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: TargetMapIndex mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: AllowedMode mismatch.
+[PASS] DIM-08 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'AllowedMode' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: AllowedMode mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: ManifestVersion mismatch.
+[PASS] DIM-09 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'ManifestVersion' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: ManifestVersion mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: SealedResultId mismatch.
+[PASS] DIM-10 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'SealedResultId' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: SealedResultId mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: ResultEpoch mismatch.
+[PASS] DIM-11 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'ResultEpoch' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: ResultEpoch mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: SourceArtifactHash mismatch.
+[PASS] DIM-12 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'SourceArtifactHash' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: SourceArtifactHash mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: ContentProfileFingerprint mismatch in validator result.
+[PASS] DIM-13 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'ContentProfileFingerprint' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: ContentProfileFingerprint mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: Manifest hash mismatch (ValidatorActual=7777777777777777777777777777777777777777777777777777777777777777, SealedExpected=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA).
+[PASS] DIM-14 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'ActualManifestHash' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: Manifest hash mismatch.'
+
+--- SECTION 5: Fail-Closed Consumption & Schema Integrity ---
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: Replay of consumed ValidatorTask detected.
+[PASS] FAIL-01 (GENUINE_CONTROL_FLOW) [FAIL_CLOSED_CONSUMPTION] Replay of already consumed ValidatorTask rejected (Anti-Replay Enforcement) -> Resp='STAGE_VALIDATION_REJECTED: ValidatorTask already consumed. Replay prohibited.'
+[PASS] FAIL-02 (HARNESS_FIXTURE_ASSERTION) [CONTENT_PROFILE_INTEGRITY] ContentProfileProvider schema upgraded to ADR-006B-v3 with lossless typed material coverage -> SchemaVersion='ADR-006B-v3'
+
+================================================================================
+Final Summary: Total=32, Passed=32, Failed=0, Verdict=PASS
+Results saved to: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R3\results.json
+================================================================================

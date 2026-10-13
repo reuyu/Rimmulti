@@ -1,0 +1,15 @@
+{
+  "type": "SAME_R20_ACK_JSON_NOTICE",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R20-TRUSTED-STARTUP-20261011-DIRECT-e35ff656",
+  "message": "같은 R20 WP의 기록 형식 보완입니다. C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R20-TRUSTED-STARTUP-20261011-DIRECT-e35ff656\\MASTER_SAME_WP_ACK_JSON_NOTICE.md를 읽어 ACK의 invalid JSON escape만 원본 보존 후 정정하세요. 새 WP/코드 범위 변경/재빌드 요청이 아니며 현재 작업을 계속하세요.",
+  "unknown_delivery": false,
+  "attempt_started_at": "2026-10-11T04:39:46.292161+09:00",
+  "new_wp": false,
+  "at": "2026-10-11T04:39:55.878572+09:00",
+  "status": "SAME_WP_NOTICE_ACTUAL_SENT_NO_NEW_WP",
+  "post_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R20-TRUSTED-STARTUP-20261011-DIRECT-e35ff656\\MASTER_ACK_NOTICE_SUBMITTED.json",
+  "post_sha256": "5CA20D1989A243834CE867967A8DB8B6E3F729CD167BA8D60260EAE135D61676",
+  "actual_send_tool": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R20-TRUSTED-STARTUP-20261011-DIRECT-e35ff656\\MASTER_ACK_NOTICE_SEND_TOOL.json",
+  "one_notice_submit": true,
+  "producer_bad_ACK_preserved": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R20-TRUSTED-STARTUP-20261011-DIRECT-e35ff656\\MASTER_ACK_MALFORMED_ORIGINAL_20261011.json.txt"
+}

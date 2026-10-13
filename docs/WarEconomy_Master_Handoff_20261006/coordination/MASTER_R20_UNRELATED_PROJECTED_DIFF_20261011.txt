@@ -1,0 +1,10 @@
+--- 
++++ 
+@@ -1435,6 +1435,7 @@
+ 
+         private string HandleValidateInput()
+         {
++            // Gate05-R20: Connected trusted missing startup gate (M01..M03)
+             if (lifecycleState != WorkerLifecycleState.READY)
+             {
+                 return $"ERROR: Worker is not READY (State={lifecycleState}). Cannot validate input.";

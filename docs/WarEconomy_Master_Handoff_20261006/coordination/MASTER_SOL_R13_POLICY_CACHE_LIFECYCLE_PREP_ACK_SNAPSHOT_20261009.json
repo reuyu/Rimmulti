@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:87\",\"revision\":87,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a12060-1350-7d40-b1d9-52fd57aa1f00\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791544529,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ac8ce92d87487d08bf867b6aac829a4\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ac8ce92d87487d08bf867b6aac829a4\",\"turnId\":\"01a12060-1350-7d40-b1d9-52fd57aa1f00\",\"phase\":\"commentary\",\"text\":\"정상 검증 기준 18개, 정적 검토 기준 15개, 실행 증거 보관 기준 18개를 작성했습니다. 정책 A/B의 독립 JSON·digest와 전체 manifest 기준도 준비했습니다. 세대 값, API, R13 헤더는 후보 동결 후 확인할 항목으로 명시했습니다. 이제 보호 파일을 다시 확인하고 준비 결과를 마스터에게 보고하겠습니다.\"},\"latestToolMarkerId\":\"exec-530af650-ff14-4bae-8935-83ea2d93d9cf\",\"latestToolMarker\":{\"id\":\"exec-530af650-ff14-4bae-8935-83ea2d93d9cf\",\"turnId\":\"01a12060-1350-7d40-b1d9-52fd57aa1f00\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

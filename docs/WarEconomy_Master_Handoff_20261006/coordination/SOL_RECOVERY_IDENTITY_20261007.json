@@ -1,0 +1,269 @@
+{
+  "verified_at": "2026-10-07T17:57:04.954382+09:00",
+  "root": "C:\\Users\\user\\Desktop\\RimMulti",
+  "method": "read-only SHA256/PE MVID/CodeView and portable PDB document hashes; no assembly execution",
+  "prior_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\bootstrap\\GATE05_LOCAL_FREEZE_MANIFEST.json",
+  "prior_manifest_sha256": "C10D02BE0991FAC753622E098B16B4A88AE0630536D6B0C3C5593F3A6E2D5AAA",
+  "files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\semantic_authority_gate_05_results.json",
+      "exists": true,
+      "expected_sha256": "DA193776BDC61A9E4315D6E39B0B92760B3814B4C400F33F22CC9E7D7D9B855A",
+      "expected_bytes": 26436,
+      "bytes": 26436,
+      "sha256": "DA193776BDC61A9E4315D6E39B0B92760B3814B4C400F33F22CC9E7D7D9B855A",
+      "status": "MATCHED"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\run_semantic_authority_gate_05.py",
+      "exists": true,
+      "expected_sha256": "4B7F1199BCF3181683D28B2DE7E8B3B4FF54C94F6FA11D1C591D1F36DBE529C5",
+      "expected_bytes": 82065,
+      "bytes": 82065,
+      "sha256": "4B7F1199BCF3181683D28B2DE7E8B3B4FF54C94F6FA11D1C591D1F36DBE529C5",
+      "status": "MATCHED"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64.exe",
+      "exists": true,
+      "expected_sha256": "4C30E2105B49F2D0130F5D861947FBE82B866042299DA48EF1C8CF6979A8564D",
+      "expected_bytes": 666624,
+      "bytes": 666624,
+      "sha256": "4C30E2105B49F2D0130F5D861947FBE82B866042299DA48EF1C8CF6979A8564D",
+      "status": "MATCHED"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\Assembly-CSharp.dll",
+      "exists": true,
+      "expected_sha256": "5CF1B5BE399D5B1C9C56CA72C9D35B4ECF307FEACF5859D04AC5A1AA5926356A",
+      "expected_bytes": 15777280,
+      "bytes": 15777280,
+      "sha256": "5CF1B5BE399D5B1C9C56CA72C9D35B4ECF307FEACF5859D04AC5A1AA5926356A",
+      "status": "MATCHED",
+      "mvid": "61e41735-6189-4da4-9d21-0260257b5097"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\WarEconomy.WorkerBridge.PoC\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "exists": true,
+      "expected_sha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+      "expected_bytes": 166400,
+      "bytes": 166400,
+      "sha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+      "status": "MATCHED",
+      "mvid": "12bb9237-1b3e-4b20-89a7-69ad729861e1"
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ProbeMod\\1.6\\Assemblies\\QA.Engine02.Probe.dll",
+      "exists": true,
+      "expected_sha256": "9C4D098B76B88A59DE11D46087AB9935EEE07A8574F8A66C0B081484E5F01966",
+      "expected_bytes": 11264,
+      "bytes": 11264,
+      "sha256": "9C4D098B76B88A59DE11D46087AB9935EEE07A8574F8A66C0B081484E5F01966",
+      "status": "MATCHED",
+      "mvid": "e058b519-3474-4b43-a723-5ceb990a41d2"
+    },
+    {
+      "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "exists": true,
+      "expected_sha256": "BC9FD8DAA608892E97903BA56114B7186BABF29157ADAE45658238C3DD497549",
+      "expected_bytes": 135157,
+      "bytes": 135157,
+      "sha256": "BC9FD8DAA608892E97903BA56114B7186BABF29157ADAE45658238C3DD497549",
+      "status": "MATCHED"
+    },
+    {
+      "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "exists": true,
+      "expected_sha256": "954C12F7500EC0BF4AE8265D2F66EFA39369A69F2C9DF3D1DBA20A9F54CBD024",
+      "expected_bytes": 77542,
+      "bytes": 77542,
+      "sha256": "954C12F7500EC0BF4AE8265D2F66EFA39369A69F2C9DF3D1DBA20A9F54CBD024",
+      "status": "MATCHED"
+    },
+    {
+      "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\TargetSettlement_Clean_ContextB.rws",
+      "exists": true,
+      "expected_sha256": "EA8A02D4EC41CE79E285A7D386F3534EB5E192682FC061A8E008116B2B3DF34B",
+      "expected_bytes": 14015618,
+      "bytes": 14015618,
+      "sha256": "EA8A02D4EC41CE79E285A7D386F3534EB5E192682FC061A8E008116B2B3DF34B",
+      "status": "MATCHED"
+    },
+    {
+      "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\TargetSettlement_Clean_ContextB.v4.census.json",
+      "exists": true,
+      "expected_sha256": "9F7AA0CDAD9026DC90D25C6209D802D351C0B978D804CD2A04F667543E31E8CC",
+      "expected_bytes": 711802,
+      "bytes": 711802,
+      "sha256": "9F7AA0CDAD9026DC90D25C6209D802D351C0B978D804CD2A04F667543E31E8CC",
+      "status": "MATCHED"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "exists": true,
+      "expected_sha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+      "expected_bytes": 166400,
+      "bytes": 166400,
+      "sha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+      "status": "MATCHED",
+      "mvid": "12bb9237-1b3e-4b20-89a7-69ad729861e1"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "exists": true,
+      "expected_sha256": "CF731E9B5CA6165B912A71A3D7E8374F2BF17D1D012C5A5A5533F72E19F90F65",
+      "expected_bytes": 29372,
+      "bytes": 29372,
+      "sha256": "CF731E9B5CA6165B912A71A3D7E8374F2BF17D1D012C5A5A5533F72E19F90F65",
+      "status": "MATCHED"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "exists": true,
+      "expected_sha256": "F526ED47B505EC4D2F7436E700CAD58B01F9CE8FFEC2DFD8425B07C76EB9FC93",
+      "expected_bytes": 157184,
+      "bytes": 157184,
+      "sha256": "F526ED47B505EC4D2F7436E700CAD58B01F9CE8FFEC2DFD8425B07C76EB9FC93",
+      "status": "MATCHED",
+      "mvid": "3311985e-a8d8-464f-8e9c-66ccd8c677c8"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "exists": true,
+      "expected_sha256": "660FD9389331FAA1DC7497512334AFDD3762DBDAFEA18FBD483F0AB73635F27A",
+      "expected_bytes": 33060,
+      "bytes": 33060,
+      "sha256": "660FD9389331FAA1DC7497512334AFDD3762DBDAFEA18FBD483F0AB73635F27A",
+      "status": "MATCHED"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WarEconomy.WorkerBridge.PoC.dll",
+      "exists": true,
+      "expected_sha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+      "expected_bytes": 166400,
+      "bytes": 166400,
+      "sha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+      "status": "MATCHED",
+      "mvid": "12bb9237-1b3e-4b20-89a7-69ad729861e1"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "exists": true,
+      "expected_sha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+      "expected_bytes": 166400,
+      "bytes": 166400,
+      "sha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+      "status": "MATCHED",
+      "mvid": "12bb9237-1b3e-4b20-89a7-69ad729861e1"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "exists": true,
+      "expected_sha256": "4B86A8634C8B13D2A20EA51D27B5A9F7B067FA976A8C0503107C18C5A7656862",
+      "expected_bytes": 43880,
+      "bytes": 43880,
+      "sha256": "4B86A8634C8B13D2A20EA51D27B5A9F7B067FA976A8C0503107C18C5A7656862",
+      "status": "MATCHED"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "exists": true,
+      "expected_sha256": "B3CF8D675F1041625E9BF1D71463D1F2822A38D1719995E62A5551E28A869492",
+      "expected_bytes": 1743,
+      "bytes": 1743,
+      "sha256": "B3CF8D675F1041625E9BF1D71463D1F2822A38D1719995E62A5551E28A869492",
+      "status": "MATCHED"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_EngineHost_Semantic_Authority_Gate_05.md",
+      "exists": true,
+      "expected_sha256": "8749D510D794AA08B7B0482D377C0D72EAB65CB51C58E692898EEDD01A2FC168",
+      "expected_bytes": 29563,
+      "bytes": 29563,
+      "sha256": "8749D510D794AA08B7B0482D377C0D72EAB65CB51C58E692898EEDD01A2FC168",
+      "status": "MATCHED"
+    }
+  ],
+  "freeze_summary": {
+    "MATCHED": 19,
+    "CHANGED": 0,
+    "MISSING": 0
+  },
+  "selected_binary": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+    "sha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+    "mvid": "12bb9237-1b3e-4b20-89a7-69ad729861e1"
+  },
+  "matching_pdb": {
+    "guid": "3749afca-3905-4d55-a151-cc7e75b85649",
+    "documents": [
+      {
+        "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+        "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+        "pdb_hash": "954C12F7500EC0BF4AE8265D2F66EFA39369A69F2C9DF3D1DBA20A9F54CBD024",
+        "actual_sha256": "954C12F7500EC0BF4AE8265D2F66EFA39369A69F2C9DF3D1DBA20A9F54CBD024",
+        "matched": true
+      },
+      {
+        "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+        "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+        "pdb_hash": "BC9FD8DAA608892E97903BA56114B7186BABF29157ADAE45658238C3DD497549",
+        "actual_sha256": "BC9FD8DAA608892E97903BA56114B7186BABF29157ADAE45658238C3DD497549",
+        "matched": true
+      },
+      {
+        "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+        "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+        "pdb_hash": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+        "actual_sha256": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+        "matched": true
+      },
+      {
+        "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.AssemblyInfo.cs",
+        "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+        "pdb_hash": "8C7180C5E4D3004DE53926C1039C107C3059053C470CF73F82CF974EAF7D5681",
+        "actual_sha256": "8C7180C5E4D3004DE53926C1039C107C3059053C470CF73F82CF974EAF7D5681",
+        "matched": true
+      }
+    ],
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "sha256": "4B86A8634C8B13D2A20EA51D27B5A9F7B067FA976A8C0503107C18C5A7656862",
+    "binary_codeview_guid": "3749afca-3905-4d55-a151-cc7e75b85649",
+    "binary_guid_matched": true
+  },
+  "e1_report_comparisons": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\run_semantic_authority_gate_05.py",
+      "expected_report_sha256": "019CFB698EE54CF3AE92F6423C3FFBA46CE92FFD433604313B011D2503554DFD",
+      "actual_sha256": "4B7F1199BCF3181683D28B2DE7E8B3B4FF54C94F6FA11D1C591D1F36DBE529C5",
+      "status": "CHANGED",
+      "interpretation": "existing E1 report mismatch; cause not established"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\semantic_authority_gate_05_results.json",
+      "expected_report_sha256": "BE2C130AF5952CAE6370B02008E1905EAE060A6E0F89531BC50A2098495449A5",
+      "actual_sha256": "DA193776BDC61A9E4315D6E39B0B92760B3814B4C400F33F22CC9E7D7D9B855A",
+      "status": "CHANGED",
+      "interpretation": "existing E1 report mismatch; cause not established"
+    }
+  ],
+  "old_e2_search": {
+    "roots": [
+      "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine",
+      "C:\\Users\\user\\Desktop\\RimMulti\\docs"
+    ],
+    "matching_paths": [
+      "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_EngineHost_Semantic_Authority_Gate_05.md",
+      "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\DISPATCH_MESSAGE_SOL_GATE05.md",
+      "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_E1.md",
+      "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05.md",
+      "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\bootstrap\\GATE05_LOCAL_FREEZE_MANIFEST.json",
+      "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\source_reports\\POC_EngineHost_Semantic_Authority_Gate_05(2).md"
+    ],
+    "independent_gate05_completed_report_found": false,
+    "limitations": "path/name based local search; no assertion about unlisted/remote/archived artifacts"
+  },
+  "runtime_started": false,
+  "build_performed": false,
+  "production_or_candidate_modified": false
+}

@@ -1,0 +1,92 @@
+{
+  "DispatchId": "WE-A-ENGINE-GATE05-R19-OPAQUE-POLICY-20261010-DIRECT-5415a675",
+  "WpId": "WP_ENGINE_GATE05_R19_OPAQUE_POLICY_LOSSLESS",
+  "Revision": "GATE05-R19-OPAQUE-POLICY",
+  "Envelope": 22,
+  "RunId": "1f930490da2646c795c1c29933c580ba",
+  "TimestampUtc": "2026-10-10T07:34:25.4899820Z",
+  "ProcessId": 0,
+  "Culture": "de-DE",
+  "CommandLineArgs": [
+    "--rundir",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R19OpaquePolicy\\run_de_de",
+    "--culture",
+    "de-DE"
+  ],
+  "WorkingDirectory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R19OpaquePolicy",
+  "LoadedCandidateDllPath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R19OpaquePolicy\\Harness\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+  "LoadedCandidateSha256": "FB69CB8385CF665AEBAFA1913A8A02CC7887F48F8BBA6FCDEE85CF67C8CB646D",
+  "LoadedCandidateMvid": "4969ba0f-2bdf-4a27-b4f8-d7fa217f0b70",
+  "ApiLedger": {
+    "ParseStrictCalls": 7,
+    "AdmitConfigBytesCalls": 4,
+    "AdmitConfigFileCalls": 4,
+    "ToSnapshotCalls": 6,
+    "ToRedactedJsonSnapshotCalls": 1,
+    "GetExpectedPackagePolicyDeclarationCalls": 18,
+    "ComputeFileSha256Calls": 1,
+    "VerifyAdmittedExecutableCalls": 1,
+    "ToRedactedJsonValidatorResultCalls": 1,
+    "SerializePackagePolicyCalls": 1,
+    "DeserializePackagePolicyCalls": 1,
+    "ComputePackagePolicyDigestCalls": 17,
+    "ProcessApiCalls": 0,
+    "VerifyProcessIdentityCalls": 0,
+    "WorkerBridgeGlobalConfigureResetCalls": 0,
+    "AwakeCalls": 0,
+    "HarmonyCalls": 0
+  },
+  "Tests": [
+    {
+      "TestName": "TEST_01_OPAQUE_POLICY_LOSSLESS_PRESERVATION",
+      "Status": "PASS",
+      "Details": "Verified exact preservation of untrimmed opaque policyId ('  qa.R18 정책 Ω  ') and revision ('  007 café Ω  ') yielding lossless digest 8A9C3381A041F79F300710D6EA93A5D8E08564C692AA5059337853825E1749BF across all 16 role/route combinations.",
+      "MatrixPassedCount": 16,
+      "TotalMatrixCount": 16
+    },
+    {
+      "TestName": "TEST_02_DETACHED_COPY_MUTATION_IMMUNITY",
+      "Status": "PASS",
+      "Details": "Verified that snapshot internals remain 100% immune to subsequent caller DTO mutations and detached getter mutations.",
+      "CallerIsolation": true,
+      "GetterIsolation": true
+    },
+    {
+      "TestName": "TEST_03_STRICT_SCHEMA_ADMISSION_FACTORY",
+      "Status": "PASS",
+      "Details": "Verified strict schema parsing preserves exact opaque characters and rejects schema defaulting."
+    },
+    {
+      "TestName": "TEST_04_SNAPSHOT_REDACTED_JSON",
+      "Status": "PASS",
+      "Details": "Verified ToRedactedJson() contains exact 13 public properties and preserves opaque policy strings.",
+      "PropertyCount": 13,
+      "PolicyIdPreserved": true,
+      "RevisionPreserved": true
+    },
+    {
+      "TestName": "TEST_05_EXECUTABLE_ADMISSION_HELPERS",
+      "Status": "PASS",
+      "Details": "Verified ComputeFileSha256 and VerifyAdmittedExecutable against real disk bytes without execution.",
+      "FileSha": "913BE289570B7DC298675AF5867575B939103014F260CA9320B6CDB5B8C21F8B",
+      "IsValid": true
+    },
+    {
+      "TestName": "TEST_06_VALIDATOR_RESULT_REDACTION",
+      "Status": "PASS",
+      "Details": "Verified public ValidatorResult redaction replaces capabilityNonce and channelSecretToken with protected placeholders.",
+      "NonceMasked": true,
+      "SecretMasked": true
+    },
+    {
+      "TestName": "TEST_07_CENSUS_PACKAGE_POLICY_REGRESSION",
+      "Status": "PASS",
+      "Details": "Verified unchanged Census ContentProfileProvider package policy serialization, roundtrip deserialization, and deterministic digest calculation.",
+      "Digest": "FB85E54258C6FF9C192D01653C7CCB575C4361E8CD81EFC17CA9BFFA95B37F17"
+    }
+  ],
+  "TotalTests": 7,
+  "PassedTests": 7,
+  "FailedTests": 0,
+  "NumericExitCode": 0
+}

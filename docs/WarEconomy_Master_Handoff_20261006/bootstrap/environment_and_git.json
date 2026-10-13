@@ -1,0 +1,36 @@
+{
+  "observed_at": "2026-10-07T17:23:56.891754+09:00",
+  "commands": {
+    "git status --short --branch": {
+      "exit_code": 128,
+      "stdout": "",
+      "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+    },
+    "git rev-parse --show-toplevel": {
+      "exit_code": 128,
+      "stdout": "",
+      "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+    },
+    "git log -5 --format=%H %cI %s": {
+      "exit_code": 128,
+      "stdout": "",
+      "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+    },
+    "dotnet --list-runtimes": {
+      "exit_code": 0,
+      "stdout": "Microsoft.AspNetCore.App 10.0.5 [C:\\Program Files\\dotnet\\shared\\Microsoft.AspNetCore.App]\nMicrosoft.NETCore.App 8.0.10 [C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App]\nMicrosoft.NETCore.App 9.0.7 [C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App]\nMicrosoft.NETCore.App 10.0.5 [C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App]\nMicrosoft.WindowsDesktop.App 8.0.10 [C:\\Program Files\\dotnet\\shared\\Microsoft.WindowsDesktop.App]\nMicrosoft.WindowsDesktop.App 9.0.7 [C:\\Program Files\\dotnet\\shared\\Microsoft.WindowsDesktop.App]\nMicrosoft.WindowsDesktop.App 10.0.5 [C:\\Program Files\\dotnet\\shared\\Microsoft.WindowsDesktop.App]\n",
+      "stderr": ""
+    },
+    "dotnet --version": {
+      "exit_code": 0,
+      "stdout": "10.0.201\n",
+      "stderr": ""
+    },
+    "python --version": {
+      "exit_code": 0,
+      "stdout": "Python 3.13.5\n",
+      "stderr": ""
+    }
+  },
+  "nested_git_search": "PowerShell recursive .git directory/file search returned no entries"
+}

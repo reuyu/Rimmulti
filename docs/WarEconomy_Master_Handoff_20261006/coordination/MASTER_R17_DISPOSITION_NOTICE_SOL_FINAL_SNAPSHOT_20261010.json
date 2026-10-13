@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":false,\"wake\":{\"reason\":\"turnCompleted\",\"turnId\":\"01a12452-2823-7040-93ad-3c95bf174916\",\"threadId\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\"},\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:112\",\"revision\":112,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"idle\"}},\"latestTurn\":{\"id\":\"01a12452-2823-7040-93ad-3c95bf174916\",\"status\":\"completed\",\"error\":null,\"startedAt\":1791610726,\"completedAt\":1791610738,\"durationMs\":11986},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ac9cf71658087d0a4c047dd747a0874\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ac9cf71658087d0a4c047dd747a0874\",\"turnId\":\"01a12452-2823-7040-93ad-3c95bf174916\",\"phase\":\"final_answer\",\"text\":\"판정 문서를 확인했습니다. R17 terminal을 유지하고, production·runtime·build 작업 없이 다음 frozen candidate와 정확한 QA WP를 기다리겠습니다.\"},\"latestToolMarkerId\":\"exec-957938a6-73eb-4369-963e-57170326b3bb\",\"latestToolMarker\":{\"id\":\"exec-957938a6-73eb-4369-963e-57170326b3bb\",\"turnId\":\"01a12452-2823-7040-93ad-3c95bf174916\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

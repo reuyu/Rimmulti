@@ -1,0 +1,84 @@
+{
+  "at": "2026-10-12T17:25:10.477570+09:00",
+  "guard_run": "MASTER-R29-S3-POSTRUN-ANALYSIS-20261012-02",
+  "guard_session": 2351,
+  "guard_pid": 34332,
+  "delivery_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012-01",
+  "result_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012-8d682aff4ebd4996a12529142c0d7431",
+  "resume_id": "SOL-GATE05-R29-STARTUP_PAIR-S3-POSTANALYSIS-R1-20261012-01",
+  "resume_ACK": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\postanalysis-r1\\RESUME_ACK.json",
+    "sha256": "3A53A53816910FC5BF083C8C2FAE4BAF929FA26AC3498CD68BA339AAD5211847",
+    "bytes": 1797
+  },
+  "failed_prepare_tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\postanalysis-r1\\finalize_review_prepare.TOOL.json",
+    "sha256": "FABBAA7ECABF7F0F8E46A125432B75E5D3B9448B2851B8B7C7233D1D42907BCE",
+    "bytes": 1367
+  },
+  "stderr": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\postanalysis-r1\\finalize_review_prepare.STDERR.txt",
+    "sha256": "D279959D5ADEEB8AAF1D17E3B13B036EA34E8B011C705680729AF32D27CCE706",
+    "bytes": 714
+  },
+  "already_successful_protected_final": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\postanalysis-r1\\PRESERVATION_FINAL.json",
+    "sha256": "A6CE6D1DC0D2798FBDF80235CD5DB75E64559AC6F8B35B106E46F209631336B9",
+    "bytes": 4356621
+  },
+  "already_successful_both_inventory": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\postanalysis-r1\\FINAL_BOTH_RUN_INVENTORY_VERIFICATION.json",
+    "sha256": "17A4DDEDF549DB0E225910459E5FC9A3B0F3923BAAF60F5C7082400096B0FA92",
+    "bytes": 732
+  },
+  "frozen_Census": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R29-46f60e2a\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+    "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+    "bytes": 170135
+  },
+  "source_widths": [
+    {
+      "field": "simulatorGeneration",
+      "CLR_source_type": "long",
+      "line": 79
+    },
+    {
+      "field": "workerGeneration",
+      "CLR_source_type": "long",
+      "line": 84
+    },
+    {
+      "field": "resultEpoch",
+      "CLR_source_type": "long",
+      "line": 92
+    },
+    {
+      "field": "targetMapIndex",
+      "CLR_source_type": "int",
+      "line": 86
+    },
+    {
+      "field": "isConsumed",
+      "CLR_source_type": "bool",
+      "line": 97
+    }
+  ],
+  "source_only_not_runtime_edge_width_test": true,
+  "partial_immutable_preservation": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R29_S3_FINAL_WIDTH_STOP_PARTIAL_SUCCESS_PRESERVATION_20261012.json",
+    "sha256": "492D0B0A76C44CD3F0F554A3950464D09B9AECEF7EF31ADDFE1110054D138CF4",
+    "bytes": 5058
+  },
+  "notice": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R29_S3_FINAL_WIDTH_SOURCE_AND_TERMINAL_CONTINUATION_20261012.md",
+    "sha256": "4517C5F7248C8AF1DA1BE77F5B87E7C333CE870170154102E6E2BE4C4EE8C142",
+    "bytes": 4207
+  },
+  "status": "NARROW_FINAL_METADATA_CONTINUATION_APPROVED_NOT_SENT",
+  "no_additional_compiler_runner_factory_calls": true,
+  "Master_candidate_execution": 0,
+  "normal_final_verdict": "PENDING",
+  "source_High3": "OPEN",
+  "native_E2": "NOT_RELEASED",
+  "Foundation": "HOLD"
+}

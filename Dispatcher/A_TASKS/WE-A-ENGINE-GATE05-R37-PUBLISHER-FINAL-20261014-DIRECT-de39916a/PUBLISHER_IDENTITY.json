@@ -1,0 +1,11 @@
+{
+  "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+  "bytes": 40358,
+  "sha256": "8F31D69A26A364BF727ABD029E096C0416B3C7B6BA54AC29A6A6E246FF537FD9",
+  "lines": 847,
+  "ast_status": "SYNTAX_PASS",
+  "ast_body_node_count": 36,
+  "ast_function_count": 16,
+  "python_target": ">=3.8",
+  "dependencies": "stdlib ONLY (os, re, sys, json, stat, hashlib, datetime, collections)"
+}

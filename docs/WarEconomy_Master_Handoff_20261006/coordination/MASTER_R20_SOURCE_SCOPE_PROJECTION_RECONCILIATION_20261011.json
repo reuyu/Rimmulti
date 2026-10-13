@@ -1,0 +1,8 @@
+{
+  "at": "2026-10-11T05:43:42.174072+09:00",
+  "initial_projection_false_reason": "Master mask inserted placeholder for new HandleValidateInput guard but no placeholder for old zero-length region; marker removal reconciles byte projection",
+  "outside_all_authorized_regions_exact_byte_match": true,
+  "original_source_unchanged": true,
+  "no_producer_evidence_repair": true,
+  "scope_projection_additional_note": "Included inserted comment within authorized HandleValidateInput guard; no remaining outside-region bytes differ"
+}

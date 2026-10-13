@@ -1,0 +1,12 @@
+{
+  "recorded_after_release": true,
+  "guard_session": 56970,
+  "release_tool": {
+    "chunk_id": "5cfffa",
+    "wall_time_seconds": 0.0000293,
+    "exit_code": 0,
+    "original_token_count": 118,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R35-STATIC-COMPLETE-R36-20261013-01\", \"\r\n\u001b[23;80H\"pid\": 31012, \"locked_at\": \"2026-10-13T23:10:39.480458+09:00\", \"mechanism\": \"Wind\r\n\u001b[23;80Hdows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed\r\n\u001b[23;80Hd_at\": \"2026-10-13T23:29:03.618536+09:00\", \"renewal_count\": 6, \"release_reason\": \r\n\u001b[23;80H \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-13T23:30:22.209320+09:00\"}   \r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "candidate_or_dispatch_mutation_after_release": false
+}

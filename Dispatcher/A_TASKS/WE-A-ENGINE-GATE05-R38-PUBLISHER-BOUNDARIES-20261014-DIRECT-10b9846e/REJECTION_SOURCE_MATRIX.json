@@ -1,0 +1,180 @@
+{
+  "matrix_name": "R38_PUBLISHER_SOURCE_REJECTION_MATRIX",
+  "scenarios": [
+    {
+      "id": "REJ-01",
+      "category": "CLI_INVOCATION",
+      "condition": "CLI argc != 3 or argv[1] != '--spec'",
+      "behavior": "Prints error and exits with code 1",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-02",
+      "category": "SPEC_FILE",
+      "condition": "Spec file path does not exist on disk",
+      "behavior": "Raises FileNotFoundError",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-03",
+      "category": "SPEC_FILE",
+      "condition": "Spec file ancestry contains symlink or reparse point (0x400)",
+      "behavior": "Raises ValueError('Unsafe reparse point / junction / symlink ...')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-04",
+      "category": "REQUIRED_ATTRIBUTES",
+      "condition": "Spec, config, or ancestor lstat missing usable Windows st_file_attributes integer",
+      "behavior": "Raises ValueError('Unsupported environment: missing or non-integer st_file_attributes ...')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-05",
+      "category": "SPEC_SCHEMA",
+      "condition": "Spec JSON contains duplicate keys, BOM, or missing required keys",
+      "behavior": "Raises ValueError('Duplicate JSON property ...' or 'spec file missing required key ...')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-06",
+      "category": "OUTPUT_ROOT",
+      "condition": "Output directory already exists prior to publication",
+      "behavior": "Raises FileExistsError('Preexisting output root prohibited')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-07",
+      "category": "PATH_NORMAL_FORM",
+      "condition": "Path contains repeated separators (//, \\\\, \\/, /\\) or ambiguous alias",
+      "behavior": "Raises ValueError('... contains prohibited repeated separators or ambiguous alias')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-08",
+      "category": "PATH_NORMAL_FORM",
+      "condition": "Path is relative, non-fully-qualified DOS, or contains traversal ('..')",
+      "behavior": "Raises ValueError('... must be a fully-qualified local DOS path ...' or 'prohibited traversal segment')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-09",
+      "category": "BUNDLE_FILENAME",
+      "condition": "bundle_filename is not 'operator_startup_pair.json' or contains slashes",
+      "behavior": "Raises ValueError('Only fixed basename operator_startup_pair.json is supported')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-10",
+      "category": "CONFIG_PATH",
+      "condition": "Supplied config path does not exist on disk",
+      "behavior": "Raises FileNotFoundError",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-11",
+      "category": "PATH_BINDING",
+      "condition": "Supplied config path does not match descriptor expectedConfigPath under Windows path equality",
+      "behavior": "Raises ValueError('... config path does not match descriptor expectedConfigPath')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-12",
+      "category": "SHA_BINDING",
+      "condition": "Actual raw config file SHA-256 differs from descriptor expectedConfigSha256",
+      "behavior": "Raises ValueError('... config SHA mismatch: declared vs actual')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-13",
+      "category": "DESCRIPTOR_SHA",
+      "condition": "Descriptor expectedConfigSha256 is not strictly 64 ASCII hex characters (e.g. whitespace-padded)",
+      "behavior": "Raises ValueError('expectedConfigSha256 must be exactly 64 ASCII hex characters without padding')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-14",
+      "category": "SCHEMA_VERSION",
+      "condition": "Config schemaVersion != 'WE-OPERATOR-BOOTSTRAP-V1'",
+      "behavior": "Raises ValueError('schemaVersion must be WE-OPERATOR-BOOTSTRAP-V1')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-15",
+      "category": "ROLE_BINDING",
+      "condition": "Config role != 'SIMULATION' (parent) or != 'READ_ONLY' (child) under exact raw match",
+      "behavior": "Raises ValueError('... role must be exact ...')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-16",
+      "category": "CONFIG_ID",
+      "condition": "Config configId does not match descriptor expectedConfigId raw, or trimmed does not match untrimmed descriptor",
+      "behavior": "Raises ValueError('... configId mismatch ...')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-17",
+      "category": "CAPABILITY_BOUNDARY",
+      "condition": "Raw config capabilityBoundary does not match cloned-trimmed descriptor case-insensitively",
+      "behavior": "Raises ValueError('... capabilityBoundary mismatch ...')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-18",
+      "category": "STRUCTURAL_ASCII",
+      "condition": "Structural role or capability token contains prohibited non-ASCII character",
+      "behavior": "Raises ValueError('Prohibited non-ASCII character in structural token ...')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-19",
+      "category": "VALIDATOR_ARGS",
+      "condition": "validatorArguments is non-blank (contains arguments)",
+      "behavior": "Raises ValueError('validatorArguments must be blank in paired mode')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-20",
+      "category": "USERDATA_ISOLATION",
+      "condition": "workerUserDataDirectory and validatorUserDataDirectory normalize to identical directory",
+      "behavior": "Raises ValueError('workerUserDataDirectory and validatorUserDataDirectory must be distinct')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-21",
+      "category": "CONTENT_PROFILE",
+      "condition": "expectedContentProfileFingerprint is blank or not a string",
+      "behavior": "Raises ValueError('expectedContentProfileFingerprint cannot be null, empty, or whitespace-only')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-22",
+      "category": "PACKAGE_POLICY",
+      "condition": "policy revision is a boolean value (e.g. true / false)",
+      "behavior": "Raises ValueError('policy revision must be a String or Integer token (bool excluded)')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-23",
+      "category": "PACKAGE_POLICY",
+      "condition": "expectedPackagePolicyDeclaration missing required keys or schemaVersion/policyId blank",
+      "behavior": "Raises ValueError('missing required property ...' or '... cannot be null, empty, or whitespace-only')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-24",
+      "category": "TIMESTAMP",
+      "condition": "issuedAtUtc does not match full consumption regex, uses non-ASCII digits, or fails calendar/time validity",
+      "behavior": "Raises ValueError('issuedAtUtc must be a valid Gregorian UTC ISO 8601 string ...' or 'invalid ... in ...')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-25",
+      "category": "FINAL_LINK",
+      "condition": "Final bundle destination file already exists when os.link is called",
+      "behavior": "Raises FileExistsError (raised natively by os.link on NTFS)",
+      "destructive_cleanup": "None"
+    }
+  ]
+}

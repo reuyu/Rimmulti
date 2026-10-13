@@ -1,0 +1,29 @@
+{
+  "at": "2026-10-08T16:08:57.720572+09:00",
+  "old_run_id": "MASTER-SOL-R3-INDEPENDENT-COMPLETE-R4-20261008-01",
+  "old_session": 19419,
+  "old_locked_at": "2026-10-08T14:19:56.439224+09:00",
+  "old_released_at": "2026-10-08T14:49:56.437394+09:00",
+  "release_reason": "TTL_EXPIRED",
+  "full_invocation_exclusive_proof": false,
+  "submission_interval_lock_coverage": "UNVERIFIED_AFTER_INITIAL_TTL",
+  "reacquired_run": "MASTER-R4-FINAL-RECONCILIATION-20261008-01",
+  "reacquired_at": "2026-10-08T16:05:24.865455+09:00",
+  "current_actual_run": "MASTER-R4-FINAL-RENEWAL-CHECK-20261008-01",
+  "current_session": 59111,
+  "actual_renewal_and_contender_raw": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R4_LOCK_RENEWAL_RAW_20261008.json",
+  "repair": "helper RENEW protocol/validity checks and operating instructions; existing Windows byte0 lock retained",
+  "current_state_reconciled": true,
+  "active_a_task_count": 1,
+  "actual_submission_and_ack_verified": true,
+  "duplicate_dispatch_seen": false,
+  "scope_of_no_duplicate_observation": "current board and durable dispatch journal; not interval-wide exclusion proof",
+  "preservation_counts": {
+    "engine_archive_checks": 19,
+    "pipeline_preservation_checks": 206,
+    "prior_candidate_checks": 387,
+    "qa_preservation_checks": 1205
+  },
+  "known_installed_incident": "OPEN_UNCHANGED_ACTOR_UNKNOWN",
+  "candidate_or_game_execution_by_master": false
+}

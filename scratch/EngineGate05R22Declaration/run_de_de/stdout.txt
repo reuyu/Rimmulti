@@ -1,0 +1,30 @@
+[Runner] Starting Gate05 R22 Explicit Declaration Pure Normal Runner
+[Runner] Run Directory: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R22Declaration\run_de_de
+[Runner] Culture: de-DE
+[Runner] Loaded Candidate: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R22Declaration\Harness\bin\Debug\net472\WarEconomy.WorkerBridge.PoC.dll
+[Runner] Candidate SHA256: 278DA55F46B3646F981E79EF83D764F19959B6FEFAD6EEC83AFD4DAB0020864D
+[Runner] Candidate MVID: 3d7d7cf7-541a-42ec-a642-b31539cc3f3f
+
+--- TEST 01: EXPLICIT DECLARATION DEFAULTS REMOVAL & CLONING ---
+TEST 01: PASS
+
+--- TEST 02: MAIN 8 ADMISSION RECEIPT ISSUANCE WITH EXPLICIT 7-FIELD DECLARATION ---
+TEST 02: PASS (8/8 cases verified)
+
+--- TEST 03: DECLARATION AND RECEIPT CALLER MUTATION PROTECTION ---
+TEST 03: PASS (8/8 receipts immutability verified)
+
+--- TEST 04: LITERAL UTC PRESERVATION REGRESSION ---
+TEST 04: PASS (6/6 UTC literal variants verified)
+
+--- TEST 05: POSITIVE WINDOWS PATH HELPER ---
+TEST 05: PASS (5/5 positive paths verified)
+
+--- TEST 06: VALIDATOR RESULT REDACTION REGRESSION ---
+TEST 06: PASS
+
+--- TEST 07: CENSUS PACKAGE POLICY CODEC REGRESSION ---
+TEST 07: PASS
+
+[Runner] E1 Report emitted to: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R22Declaration\run_de_de\E1_EXECUTION_REPORT.json
+[Runner] Overall Verdict: PASS

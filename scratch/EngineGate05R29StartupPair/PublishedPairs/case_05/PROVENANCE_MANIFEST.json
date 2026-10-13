@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "we-operator-pair-provenance/v1",
+  "publishedAtUtc": "2026-10-12T00:25:13.096851+00:00",
+  "operatorPairId": "WE=PAIR=DEV=R29=EQUALS=05",
+  "bundleFile": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_05\\operator_startup_pair.json",
+    "sha256": "9FDEF4423B0B36728792B1D3E810684852EEF945A1DAA44B0CFA03F791E8ED8B",
+    "bytes": 950
+  },
+  "inputs": {
+    "parentConfig": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\Fixtures\\parent_config_05.json",
+      "sha256": "58DB13D7671AA1AA2FB5CBBB682F4CA8F7E608E8B51269FB4E422A30E728A0A0",
+      "bytes": 1109
+    },
+    "childConfig": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\Fixtures\\child_config_05.json",
+      "sha256": "B07FCD71AD491CEE018F764ECE190A0A5C37035DE19D1E06E66D86169B3B63A3",
+      "bytes": 1102
+    },
+    "parentDeclaration": {
+      "originId": "qa.R29.parent.origin.eq",
+      "expectedConfigId": "qa.R29.parent.cfg.5",
+      "expectedRole": "SIMULATION",
+      "expectedCapabilityBoundary": "LOCAL_SANDBOXED",
+      "launchPlanId": "qa.R29.parent.plan.eq",
+      "expectedConfigPath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\Fixtures\\parent_config_05.json",
+      "expectedConfigSha256": "58DB13D7671AA1AA2FB5CBBB682F4CA8F7E608E8B51269FB4E422A30E728A0A0"
+    },
+    "childDeclaration": {
+      "originId": "qa.R29.child.origin.eq",
+      "expectedConfigId": "qa.R29.child.cfg.5",
+      "expectedRole": "READ_ONLY",
+      "expectedCapabilityBoundary": "LOCAL_SANDBOXED",
+      "launchPlanId": "qa.R29.child.plan.eq",
+      "expectedConfigPath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\Fixtures\\child_config_05.json",
+      "expectedConfigSha256": "B07FCD71AD491CEE018F764ECE190A0A5C37035DE19D1E06E66D86169B3B63A3"
+    }
+  },
+  "publisher": {
+    "scriptPath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+    "scriptSha256": "0204609D1D9D8A697B1A0B88537419D78B9E506558C771CA3EDD4C50FD49D470",
+    "pythonVersion": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]"
+  }
+}

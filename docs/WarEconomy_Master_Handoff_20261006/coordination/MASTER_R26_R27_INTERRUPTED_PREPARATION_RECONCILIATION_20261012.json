@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-12T03:06:15.531299+09:00",
+  "old_guard_run": "MASTER-R26-SOL-COMPLETE-20261011-01",
+  "old_pid": 20528,
+  "old_guard_actual": "TTL_EXPIRED_2026-10-12T00:34:56.623734+09",
+  "full_invocation_lock_coverage": "UNVERIFIED_NOT_RETROCLAIMED",
+  "recovered_run": "MASTER-R26-R27-RECOVERY-20261012-01",
+  "pid": 20116,
+  "session": 83680,
+  "failed_step": "Old-Gate05 preservation inspector historical9 allowlist narrowed to7 caused existing fixed Census/csproj old-baseline deltas; no new production change",
+  "correction": "Retain original historical9 comparison allowance; exact currenttask mutable7 and current fixed Census/csproj+Worker insertion fixed bytes independently enforce scope",
+  "A_actual_UI_input": "NONE_R27_NOT_SENT",
+  "R26_result_receipts_deduped": 2,
+  "review_and_WP_original_bytes_preserved": true,
+  "known_installed_error": "UNCHANGED_OPEN",
+  "current_production9_match": true,
+  "protected_paths_match": 13458
+}

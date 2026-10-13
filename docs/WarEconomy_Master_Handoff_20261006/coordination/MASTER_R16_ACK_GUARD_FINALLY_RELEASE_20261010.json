@@ -1,0 +1,14 @@
+{
+  "guard_run": "MASTER-SOL-R16-PREP-ACK-20261010-01",
+  "guard_session": 48395,
+  "guard_pid": 17140,
+  "all_returned_child_sessions_settled_before_finally": true,
+  "status": "ACTUAL_RELEASED",
+  "release_tool_result": {
+    "chunk_id": "62368b",
+    "wall_time_seconds": 0.0000432,
+    "exit_code": 0,
+    "original_token_count": 105,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-SOL-R16-PREP-ACK-20261010-01\", \"pid\": 17140, \"locked_at\": \"2026-10-10T02:49:32.768454+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-10T02:50:46.078850+09:00\", \"renewal_count\": 1, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-10T02:50:51.372045+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  }
+}

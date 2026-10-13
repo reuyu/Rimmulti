@@ -1,0 +1,811 @@
+--- C:\Users\user\Desktop\RimMulti\Dispatcher\CANDIDATES\G05R35-16a25a7e\scratch\OperatorStartupPairR29\publish_operator_pair.py
++++ C:\Users\user\Desktop\RimMulti\scratch\OperatorStartupPairR29\publish_operator_pair.py
+@@ -3,26 +3,41 @@
+ r"""
+ publish_operator_pair.py
+ 
+-Standalone, plan-only operator startup pair publisher for R29 / R35.
++Standalone, plan-only operator startup pair publisher for R29 / R35 / R36.
+ Contracts:
+ - C:\Users\user\Desktop\RimMulti\docs\WarEconomy_Master_Handoff_20261006\MASTER_R29_OPERATOR_STARTUP_PAIR_CONTRACT_20261012.md
+ - C:\Users\user\Desktop\RimMulti\docs\WarEconomy_Master_Handoff_20261006\MASTER_R35_PLAN_ONLY_PUBLISHER_SAFETY_CONTRACT_20261013.md
+-
+-Safety Guarantees:
++- C:\Users\user\Desktop\RimMulti\docs\WarEconomy_Master_Handoff_20261006\MASTER_R36_PUBLISHER_CONTRACT_SUPPORTED_DOMAIN_20261013.md
++
++Supported Domain & Safety Guarantees:
+ - Standalone stdlib Python script (no external dependencies, no Process/subprocess spawning).
+-- Non-overwrite, exclusive new owned root: output root must not preexist, created via os.mkdir.
+-- Strict rejection of relative paths, path traversal, unsafe reparse points (symlinks/junctions).
++- Strict --spec mode with exact arity (sys.argv == 3) and closed required keys.
++- Non-overwrite exclusive owned root: output root must not preexist, created via os.mkdir.
++- Reusable whole-ancestry guard: verifies all existing ancestors with os.lstat (no-follow attributes),
++  rejecting inspection errors, reparse points (symlinks/junctions), traversal, ADS, and reserved DOS names.
+ - Fixed one basename 'operator_startup_pair.json'; custom or traversing filenames prohibited.
+-- Never os.remove/unlink/rmtree/replace; partial outputs on error are preserved as forensic evidence.
++- Never os.remove/unlink/rmtree/replace/rename; partial outputs on error are preserved as forensic evidence.
+ - Exclusive file creation ('xb' / O_EXCL) for staging bundle, sha256 file, and provenance manifest.
+ - Atomic publication via os.link from immutable staging file into final bundle on NTFS.
+ - Staging file retained as immutable audit evidence alongside final bundle.
+ - Independently supplied parent and child declarations (7 fields each) and raw config bytes.
+ - Reads actual raw config files ONCE; strict UTF-8 without BOM; no duplicate JSON properties.
+-- Exact 14 config fields validated per C# OperatorStartupConfig admission.
+-- Strict binding between supplied config paths, descriptor expectedConfigPath, and raw SHA-256.
+-- Strict validation that validatorArguments is blank in paired mode (fail-closed).
+-- Strict role verification: parent is SIMULATION, child is READ_ONLY.
++- Exact bootstrap schema: schemaVersion == "WE-OPERATOR-BOOTSTRAP-V1".
++- Exact raw role: parent is "SIMULATION", child is "READ_ONLY" (exact ordinal match, no normalization).
++- Raw configId and snapshot-trimmed configId match descriptor expectedConfigId.
++- Raw capabilityBoundary matches trimmed descriptor expectedCapabilityBoundary case-insensitively.
++- Original descriptor expectedConfigSha256: exactly 64 ASCII hex characters without padding or trimming.
++- Executable SHA (admittedValidatorExecutableSha256): 64 ASCII hex characters after trim.
++- Required paths: admittedValidatorExecutablePath, workerUserDataDirectory, validatorUserDataDirectory,
++  workerCwd, validatorCwd are non-blank and valid local DOS paths (lexical check; existence not required).
++- UserData isolation: normalized workerUserDataDirectory and validatorUserDataDirectory must be distinct.
++- expectedContentProfileFingerprint: non-blank string (not constrained to 64 hex).
++- validatorArguments: strictly blank in paired mode (fail-closed).
++- expectedPackagePolicyDeclaration: exact 4 keys (schemaVersion, policyId, revision, admittedPackageIds).
++  schemaVersion and policyId are non-blank strings; revision is string or integer (explicitly bool-excluded);
++  admittedPackageIds is array of strings (order preserved; no package uniqueness or non-empty requirement).
++- issuedAtUtc: valid Gregorian UTC ISO 8601 timestamp YYYY-MM-DDTHH:mm:ss[.1..7digits]Z (calendar validity,
++  preserves original fractional digits without rounding to 6 digits).
+ - Exact top 4 JSON fields in writer order:
+     1. "schemaVersion" = "we-operator-startup-pair/v1"
+     2. "operatorPairId" (opaque, non-empty, original preserved, noTrim/normalize)
+@@ -40,6 +55,7 @@
+ """
+ 
+ import os
++import re
+ import sys
+ import json
+ import stat
+@@ -48,6 +64,7 @@
+ from collections import OrderedDict
+ 
+ SCHEMA_VERSION = "we-operator-startup-pair/v1"
++CONFIG_BOOTSTRAP_SCHEMA = "WE-OPERATOR-BOOTSTRAP-V1"
+ FIXED_BUNDLE_BASENAME = "operator_startup_pair.json"
+ 
+ DESCRIPTOR_KEYS = [
+@@ -84,6 +101,61 @@
+     "admittedPackageIds"
+ ]
+ 
++SPEC_REQUIRED_KEYS = [
++    "operatorPairId",
++    "parentDeclaration",
++    "childDeclaration",
++    "parentConfigPath",
++    "childConfigPath",
++    "outputDir"
++]
++
++RESERVED_DOS_DEVICE_NAMES = {
++    "CON", "PRN", "AUX", "NUL",
++    "COM1", "COM2", "COM3", "COM4", "COM5", "COM6", "COM7", "COM8", "COM9",
++    "LPT1", "LPT2", "LPT3", "LPT4", "LPT5", "LPT6", "LPT7", "LPT8", "LPT9"
++}
++
++_ISO_UTC_REGEX = re.compile(
++    r"^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})(?:\.(\d{1,7}))?Z$"
++)
++
++_DAYS_IN_MONTH = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
++
++
++def is_leap_year(year: int) -> bool:
++    return (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
++
++
++def validate_iso_utc_date(val: str, field_name: str) -> None:
++    if not isinstance(val, str):
++        raise ValueError(f"{field_name} must be a String token, observed {type(val).__name__}.")
++    m = _ISO_UTC_REGEX.match(val)
++    if not m:
++        raise ValueError(
++            f"{field_name} must be a valid Gregorian UTC ISO 8601 string 'YYYY-MM-DDTHH:mm:ss[.1..7digits]Z', observed '{val}'."
++        )
++    year = int(m.group(1))
++    month = int(m.group(2))
++    day = int(m.group(3))
++    hour = int(m.group(4))
++    minute = int(m.group(5))
++    second = int(m.group(6))
++    
++    if month < 1 or month > 12:
++        raise ValueError(f"{field_name} invalid month: {month} in '{val}'.")
++    max_days = _DAYS_IN_MONTH[month]
++    if month == 2 and is_leap_year(year):
++        max_days = 29
++    if day < 1 or day > max_days:
++        raise ValueError(f"{field_name} invalid day {day} for month {month} in '{val}'.")
++    if hour < 0 or hour > 23:
++        raise ValueError(f"{field_name} invalid hour: {hour} in '{val}'.")
++    if minute < 0 or minute > 59:
++        raise ValueError(f"{field_name} invalid minute: {minute} in '{val}'.")
++    if second < 0 or second > 59:
++        raise ValueError(f"{field_name} invalid second: {second} in '{val}'.")
++
+ 
+ def compute_sha256_bytes(b: bytes) -> str:
+     return hashlib.sha256(b).hexdigest().upper()
+@@ -105,59 +177,102 @@
+     return d
+ 
+ 
+-def is_fully_qualified_windows_path(p: str) -> bool:
++def check_supported_local_dos_path(p: str, field_name: str = "Path") -> str:
+     if not isinstance(p, str) or len(p.strip()) == 0:
++        raise ValueError(f"{field_name} must be a non-empty string.")
++        
++    # Check control characters (ASCII < 32)
++    for ch in p:
++        if ord(ch) < 32:
++            raise ValueError(f"{field_name} contains prohibited control character (ord {ord(ch)}): '{p}'.")
++            
++    # Check standard invalid characters (<>"|?*)
++    for ch in '<>"|?*':
++        if ch in p:
++            raise ValueError(f"{field_name} contains prohibited invalid character '{ch}': '{p}'.")
++            
++    # Check DOS drive root: e.g. C:\ or C:/
++    if len(p) < 3 or not (p[0].isalpha() and p[1] == ':' and (p[2] == '\\' or p[2] == '/')):
++        raise ValueError(
++            f"{field_name} must be a fully-qualified local DOS path starting with a drive letter (e.g. 'C:\\'): '{p}'."
++        )
++        
++    # Check Alternate Data Streams (ADS): colon only allowed at index 1 for drive letter
++    if ':' in p[2:]:
++        raise ValueError(f"{field_name} contains prohibited Alternate Data Stream (ADS) colon: '{p}'.")
++        
++    normalized_slash = p.replace('/', '\\')
++    segments = normalized_slash.split('\\')
++    
++    for seg in segments[1:]:
++        if seg == "":
++            continue
++        if seg == "." or seg == "..":
++            raise ValueError(f"{field_name} contains prohibited traversal segment '{seg}': '{p}'.")
++        if seg.endswith(".") or seg.endswith(" "):
++            raise ValueError(f"{field_name} contains prohibited trailing dot or space in segment '{seg}': '{p}'.")
++        base_seg = seg.split('.')[0].upper()
++        if base_seg in RESERVED_DOS_DEVICE_NAMES or seg.upper() in RESERVED_DOS_DEVICE_NAMES:
++            raise ValueError(f"{field_name} contains prohibited reserved DOS device name '{seg}': '{p}'.")
++            
++    return normalized_slash
++
++
++def verify_path_ancestry(p: str, allow_leaf_missing: bool = False, field_name: str = "Path") -> str:
++    clean_path = check_supported_local_dos_path(p, field_name)
++    drive = clean_path[:2]
++    rest = clean_path[2:].strip('\\')
++    parts = [drive + '\\'] + [seg for seg in rest.split('\\') if seg != ""]
++    
++    leaf_exists = os.path.lexists(clean_path)
++    if allow_leaf_missing:
++        if leaf_exists:
++            raise FileExistsError(f"Preexisting output root prohibited: '{clean_path}'.")
++        parent_path = os.path.dirname(clean_path)
++        if not os.path.isdir(parent_path):
++            raise FileNotFoundError(f"Parent directory does not exist for '{clean_path}': '{parent_path}'.")
++        check_parts = parts[:-1]
++    else:
++        if not leaf_exists:
++            raise FileNotFoundError(f"{field_name} not found: '{clean_path}'.")
++        check_parts = parts
++        
++    current = check_parts[0]
++    for seg in check_parts[1:]:
++        current = os.path.join(current, seg)
++        if os.path.lexists(current):
++            try:
++                st = os.lstat(current)
++            except OSError as ex:
++                raise ValueError(f"Cannot inspect ancestry for '{current}': {ex}.") from ex
++                
++            attrs = getattr(st, 'st_file_attributes', 0)
++            reparse_flag = getattr(stat, 'FILE_ATTRIBUTE_REPARSE_POINT', 0x0400)
++            if (attrs & reparse_flag) or os.path.islink(current):
++                raise ValueError(f"Unsafe reparse point / symlink / junction in ancestry: '{current}'.")
++                
++    return clean_path
++
++
++def is_exact_64_ascii_hex_no_trim(s: str) -> bool:
++    if not isinstance(s, str) or len(s) != 64:
+         return False
+-    trimmed = p.strip()
+-
+-    # Check invalid path characters
+-    for ch in '<>"|?*':
+-        if ch in trimmed:
+-            return False
+-
+-    # Standard DOS drive root: e.g. C:\ or C:/
+-    if len(trimmed) >= 3 and trimmed[0].isalpha() and trimmed[1] == ':' and (trimmed[2] == '\\' or trimmed[2] == '/'):
+-        pass
+-    # UNC root: \\server\share\...
+-    elif trimmed.startswith('\\\\') and len(trimmed) > 2:
+-        unc = trimmed[2:]
+-        slash_idx = unc.find('\\')
+-        if slash_idx > 0 and slash_idx < len(unc) - 1:
+-            pass
+-        else:
+-            return False
+-    else:
+-        return False
+-
+-    # Reject path traversal segments
+-    parts = trimmed.replace('/', '\\').split('\\')
+-    if '..' in parts or '.' in parts:
+-        return False
+-
+-    return True
+-
+-
+-def is_reparse_point(path: str) -> bool:
+-    try:
+-        st = os.lstat(path)
+-        attrs = getattr(st, 'st_file_attributes', 0)
+-        reparse_flag = getattr(stat, 'FILE_ATTRIBUTE_REPARSE_POINT', 0x0400)
+-        return bool(attrs & reparse_flag) or os.path.islink(path)
+-    except OSError:
+-        return False
+-
+-
+-def is_64_ascii_hex(s: str) -> bool:
+-    if not isinstance(s, str) or len(s.strip()) != 64:
++    return all(c in '0123456789abcdefABCDEF' for c in s)
++
++
++def is_64_ascii_hex_trimmed(s: str) -> bool:
++    if not isinstance(s, str):
+         return False
+     trimmed = s.strip()
++    if len(trimmed) != 64:
++        return False
+     return all(c in '0123456789abcdefABCDEF' for c in trimmed)
+ 
+ 
+ def validate_declaration(desc: dict, expected_role: str, decl_name: str) -> OrderedDict:
+     if not isinstance(desc, dict):
+         raise ValueError(f"{decl_name} must be a dictionary/object.")
+-
++    
+     # Check exact keys
+     keys = list(desc.keys())
+     for k in DESCRIPTOR_KEYS:
+@@ -166,7 +281,7 @@
+     for k in keys:
+         if k not in DESCRIPTOR_KEYS:
+             raise ValueError(f"{decl_name} contains unknown key '{k}'.")
+-
++            
+     # Value types and non-empty checks
+     ordered_desc = OrderedDict()
+     for k in DESCRIPTOR_KEYS:
+@@ -176,44 +291,41 @@
+         if val.strip() == "":
+             raise ValueError(f"{decl_name} field '{k}' cannot be null, empty, or whitespace.")
+         ordered_desc[k] = val
+-
+-    # Role check
++        
++    # Role check: case-insensitive match against expected role; preserves original string
+     role_trimmed = ordered_desc["expectedRole"].strip().upper()
+     if role_trimmed != expected_role.strip().upper():
+         raise ValueError(f"{decl_name} expectedRole must be '{expected_role}', observed '{ordered_desc['expectedRole']}'.")
+-
+-    # Path check
+-    if not is_fully_qualified_windows_path(ordered_desc["expectedConfigPath"]):
+-        raise ValueError(
+-            f"{decl_name} expectedConfigPath '{ordered_desc['expectedConfigPath']}' must be a fully-qualified Windows path."
+-        )
+-
+-    # SHA check
+-    if not is_64_ascii_hex(ordered_desc["expectedConfigSha256"]):
+-        raise ValueError(
+-            f"{decl_name} expectedConfigSha256 '{ordered_desc['expectedConfigSha256']}' is not a valid 64-character hex string."
+-        )
+-
++        
++    # Path check: must be a supported local DOS path
++    check_supported_local_dos_path(ordered_desc["expectedConfigPath"], f"{decl_name} expectedConfigPath")
++        
++    # SHA check: must be EXACTLY 64 ASCII hex characters without padding or trimming
++    if not is_exact_64_ascii_hex_no_trim(ordered_desc["expectedConfigSha256"]):
++        raise ValueError(
++            f"{decl_name} expectedConfigSha256 '{ordered_desc['expectedConfigSha256']}' must be exactly 64 ASCII hex characters without padding or whitespace."
++        )
++        
+     return ordered_desc
+ 
+ 
+ def validate_config(raw_bytes: bytes, desc: OrderedDict, expected_role: str, config_label: str) -> OrderedDict:
+     if raw_bytes.startswith(b'\xef\xbb\xbf'):
+         raise ValueError(f"{config_label} contains prohibited UTF-8 Byte Order Mark (BOM).")
+-
++        
+     try:
+         text = raw_bytes.decode('utf-8')
+     except UnicodeDecodeError as ex:
+         raise ValueError(f"{config_label} UTF-8 decode error: {ex}") from ex
+-
++        
+     try:
+         config_dict = json.loads(text, object_pairs_hook=check_no_duplicate_keys)
+     except Exception as ex:
+         raise ValueError(f"{config_label} JSON syntactic/duplicate property error: {ex}") from ex
+-
++        
+     if not isinstance(config_dict, dict):
+         raise ValueError(f"{config_label} must be a JSON object.")
+-
++        
+     # Check exact 14 properties
+     for k in CONFIG_ROOT_KEYS:
+         if k not in config_dict:
+@@ -221,7 +333,7 @@
+     for k in config_dict.keys():
+         if k not in CONFIG_ROOT_KEYS:
+             raise ValueError(f"{config_label} contains unknown root property '{k}'.")
+-
++            
+     # Validate scalar string properties (the first 13)
+     for k in CONFIG_ROOT_KEYS:
+         if k == "expectedPackagePolicyDeclaration":
+@@ -229,58 +341,103 @@
+         val = config_dict[k]
+         if not isinstance(val, str):
+             raise ValueError(f"{config_label} property '{k}' must be a String token (observed {type(val).__name__}).")
+-
+-    # Validate expectedPackagePolicyDeclaration
++            
++    # 1. Exact bootstrap schema
++    if config_dict["schemaVersion"] != CONFIG_BOOTSTRAP_SCHEMA:
++        raise ValueError(
++            f"{config_label} schemaVersion must be '{CONFIG_BOOTSTRAP_SCHEMA}', observed '{config_dict['schemaVersion']}'."
++        )
++        
++    # 2. Exact raw role (exact string match without case conversion or trimming)
++    if config_dict["role"] != expected_role:
++        raise ValueError(
++            f"{config_label} role must be exact '{expected_role}', observed '{config_dict['role']}'."
++        )
++        
++    # 3. Non-blank configId, exact raw ordinal match, and snapshot-trimmed ordinal match
++    cfg_id = config_dict["configId"]
++    if cfg_id.strip() == "":
++        raise ValueError(f"{config_label} configId cannot be null, empty, or whitespace.")
++    if cfg_id != desc["expectedConfigId"]:
++        raise ValueError(
++            f"{config_label} raw configId mismatch: declared '{desc['expectedConfigId']}' vs config '{cfg_id}'."
++        )
++    if cfg_id.strip() != desc["expectedConfigId"].strip():
++        raise ValueError(
++            f"{config_label} trimmed configId mismatch: declared '{desc['expectedConfigId'].strip()}' vs config '{cfg_id.strip()}'."
++        )
++        
++    # 4. Required executable and working directory paths
++    check_supported_local_dos_path(config_dict["admittedValidatorExecutablePath"], f"{config_label} admittedValidatorExecutablePath")
++    check_supported_local_dos_path(config_dict["workerUserDataDirectory"], f"{config_label} workerUserDataDirectory")
++    check_supported_local_dos_path(config_dict["validatorUserDataDirectory"], f"{config_label} validatorUserDataDirectory")
++    check_supported_local_dos_path(config_dict["workerCwd"], f"{config_label} workerCwd")
++    check_supported_local_dos_path(config_dict["validatorCwd"], f"{config_label} validatorCwd")
++    
++    # 5. UserData directory separation
++    norm_worker_ud = os.path.normcase(os.path.abspath(config_dict["workerUserDataDirectory"])).rstrip("\\/")
++    norm_val_ud = os.path.normcase(os.path.abspath(config_dict["validatorUserDataDirectory"])).rstrip("\\/")
++    if norm_worker_ud == norm_val_ud:
++        raise ValueError(
++            f"{config_label} workerUserDataDirectory and validatorUserDataDirectory must be distinct (both resolve to '{norm_worker_ud}')."
++        )
++        
++    # 6. Executable SHA: trimmed 64 ASCII hex characters
++    if not is_64_ascii_hex_trimmed(config_dict["admittedValidatorExecutableSha256"]):
++        raise ValueError(
++            f"{config_label} admittedValidatorExecutableSha256 '{config_dict['admittedValidatorExecutableSha256']}' must be a valid 64-character hex string."
++        )
++        
++    # 7. validatorArguments strictly blank
++    val_args = config_dict["validatorArguments"]
++    if val_args.strip() != "":
++        raise ValueError(f"{config_label} validatorArguments must be blank in paired mode (observed '{val_args}').")
++        
++    # 8. capabilityBoundary match against trimmed descriptor expectedCapabilityBoundary
++    if config_dict["capabilityBoundary"].strip().upper() != desc["expectedCapabilityBoundary"].strip().upper():
++        raise ValueError(
++            f"{config_label} capabilityBoundary mismatch: declared '{desc['expectedCapabilityBoundary']}' vs config '{config_dict['capabilityBoundary']}'."
++        )
++        
++    # 9. issuedAtUtc valid Gregorian UTC ISO 8601 string
++    validate_iso_utc_date(config_dict["issuedAtUtc"], f"{config_label} issuedAtUtc")
++    
++    # 10. expectedContentProfileFingerprint non-blank string
++    if config_dict["expectedContentProfileFingerprint"].strip() == "":
++        raise ValueError(f"{config_label} expectedContentProfileFingerprint cannot be null, empty, or whitespace.")
++        
++    # 11. expectedPackagePolicyDeclaration validation
+     policy_obj = config_dict["expectedPackagePolicyDeclaration"]
+     if not isinstance(policy_obj, dict):
+         raise ValueError(
+             f"{config_label} property 'expectedPackagePolicyDeclaration' must be an Object token (observed {type(policy_obj).__name__})."
+         )
+-
++        
+     for k in POLICY_DECLARATION_KEYS:
+         if k not in policy_obj:
+             raise ValueError(f"{config_label} missing required property '{k}' in expectedPackagePolicyDeclaration.")
+     for k in policy_obj.keys():
+         if k not in POLICY_DECLARATION_KEYS:
+             raise ValueError(f"{config_label} contains unknown property '{k}' in expectedPackagePolicyDeclaration.")
+-
+-    if not isinstance(policy_obj["schemaVersion"], str):
+-        raise ValueError(f"{config_label} policy 'schemaVersion' must be a String token.")
+-    if not isinstance(policy_obj["policyId"], str):
+-        raise ValueError(f"{config_label} policy 'policyId' must be a String token.")
+-    if not isinstance(policy_obj["revision"], (str, int)):
+-        raise ValueError(f"{config_label} policy 'revision' must be a String or Integer token.")
++            
++    if not isinstance(policy_obj["schemaVersion"], str) or policy_obj["schemaVersion"].strip() == "":
++        raise ValueError(f"{config_label} policy 'schemaVersion' must be a non-blank String token.")
++    if not isinstance(policy_obj["policyId"], str) or policy_obj["policyId"].strip() == "":
++        raise ValueError(f"{config_label} policy 'policyId' must be a non-blank String token.")
++        
++    # revision must be string or integer, explicitly bool-excluded
++    rev_val = policy_obj["revision"]
++    if isinstance(rev_val, bool) or not (isinstance(rev_val, str) or isinstance(rev_val, int)):
++        raise ValueError(f"{config_label} policy 'revision' must be a String or Integer token (bool excluded).")
++    if isinstance(rev_val, str) and rev_val.strip() == "":
++        raise ValueError(f"{config_label} policy 'revision' cannot be blank string.")
++        
+     if not isinstance(policy_obj["admittedPackageIds"], list):
+         raise ValueError(f"{config_label} policy 'admittedPackageIds' must be an Array token.")
+     for idx, pkg_id in enumerate(policy_obj["admittedPackageIds"]):
+         if not isinstance(pkg_id, str):
+             raise ValueError(f"{config_label} element {idx} in 'admittedPackageIds' must be a String token.")
+-
+-    # Strict validatorArguments check for paired mode: MUST BE BLANK!
+-    val_args = config_dict["validatorArguments"]
+-    if val_args.strip() != "":
+-        raise ValueError(f"{config_label} validatorArguments must be blank in paired mode (observed '{val_args}').")
+-
+-    # Strict binding against descriptor7
+-    # 1. configId
+-    if config_dict["configId"] != desc["expectedConfigId"]:
+-        raise ValueError(
+-            f"{config_label} configId mismatch: declared '{desc['expectedConfigId']}' vs config '{config_dict['configId']}'."
+-        )
+-
+-    # 2. role
+-    cfg_role = config_dict["role"].strip().upper()
+-    if cfg_role != expected_role:
+-        raise ValueError(
+-            f"{config_label} role mismatch: expected '{expected_role}' vs config '{config_dict['role']}'."
+-        )
+-
+-    # 3. capabilityBoundary
+-    if config_dict["capabilityBoundary"].strip().upper() != desc["expectedCapabilityBoundary"].strip().upper():
+-        raise ValueError(
+-            f"{config_label} capabilityBoundary mismatch: declared '{desc['expectedCapabilityBoundary']}' vs config '{config_dict['capabilityBoundary']}'."
+-        )
+-
++            
+     return config_dict
+ 
+ 
+@@ -300,60 +457,54 @@
+     """
+     if not isinstance(operator_pair_id, str) or len(operator_pair_id) == 0:
+         raise ValueError("operator_pair_id must be an opaque, non-empty string.")
+-
++        
+     # Validate fixed bundle filename
+     if bundle_filename != FIXED_BUNDLE_BASENAME or "/" in bundle_filename or "\\" in bundle_filename:
+         raise ValueError(
+             f"Only fixed basename '{FIXED_BUNDLE_BASENAME}' is supported; custom or traversing filename '{bundle_filename}' prohibited."
+         )
+-
++        
+     # Validate declarations independently without mutation
+     ordered_parent_decl = validate_declaration(parent_decl, "SIMULATION", "parentDeclaration")
+     ordered_child_decl = validate_declaration(child_decl, "READ_ONLY", "childDeclaration")
+-
+-    # Validate parent and child config paths
+-    if not is_fully_qualified_windows_path(parent_config_path):
+-        raise ValueError(f"parent_config_path must be a fully-qualified Windows path: '{parent_config_path}'.")
+-    if not os.path.isfile(parent_config_path):
+-        raise FileNotFoundError(f"parent_config_path file not found: '{parent_config_path}'.")
+-    if is_reparse_point(parent_config_path):
+-        raise ValueError(f"parent_config_path is an unsafe reparse point / symlink: '{parent_config_path}'.")
+-
+-    if not is_fully_qualified_windows_path(child_config_path):
+-        raise ValueError(f"child_config_path must be a fully-qualified Windows path: '{child_config_path}'.")
+-    if not os.path.isfile(child_config_path):
+-        raise FileNotFoundError(f"child_config_path file not found: '{child_config_path}'.")
+-    if is_reparse_point(child_config_path):
+-        raise ValueError(f"child_config_path is an unsafe reparse point / symlink: '{child_config_path}'.")
+-
++    
++    # Validate parent and child config paths with whole-ancestry guard
++    clean_parent_cfg_path = verify_path_ancestry(parent_config_path, allow_leaf_missing=False, field_name="parent_config_path")
++    clean_child_cfg_path = verify_path_ancestry(child_config_path, allow_leaf_missing=False, field_name="child_config_path")
++    
++    if not os.path.isfile(clean_parent_cfg_path):
++        raise FileNotFoundError(f"parent_config_path is not a regular file: '{clean_parent_cfg_path}'.")
++    if not os.path.isfile(clean_child_cfg_path):
++        raise FileNotFoundError(f"child_config_path is not a regular file: '{clean_child_cfg_path}'.")
++        
+     # Windows path equality check between supplied path and descriptor expectedConfigPath
+-    norm_supplied_parent = os.path.normcase(os.path.abspath(parent_config_path)).rstrip("\\/")
++    norm_supplied_parent = os.path.normcase(os.path.abspath(clean_parent_cfg_path)).rstrip("\\/")
+     norm_decl_parent = os.path.normcase(os.path.abspath(ordered_parent_decl["expectedConfigPath"])).rstrip("\\/")
+     if norm_supplied_parent != norm_decl_parent:
+         raise ValueError(
+-            f"Parent config path '{parent_config_path}' does not match descriptor expectedConfigPath '{ordered_parent_decl['expectedConfigPath']}'."
+-        )
+-
+-    norm_supplied_child = os.path.normcase(os.path.abspath(child_config_path)).rstrip("\\/")
++            f"Parent config path '{clean_parent_cfg_path}' does not match descriptor expectedConfigPath '{ordered_parent_decl['expectedConfigPath']}'."
++        )
++        
++    norm_supplied_child = os.path.normcase(os.path.abspath(clean_child_cfg_path)).rstrip("\\/")
+     norm_decl_child = os.path.normcase(os.path.abspath(ordered_child_decl["expectedConfigPath"])).rstrip("\\/")
+     if norm_supplied_child != norm_decl_child:
+         raise ValueError(
+-            f"Child config path '{child_config_path}' does not match descriptor expectedConfigPath '{ordered_child_decl['expectedConfigPath']}'."
+-        )
+-
+-    # Read actual files ONCE
+-    with open(parent_config_path, "rb") as f:
++            f"Child config path '{clean_child_cfg_path}' does not match descriptor expectedConfigPath '{ordered_child_decl['expectedConfigPath']}'."
++        )
++        
++    # Read actual files ONCE into byte buffers
++    with open(clean_parent_cfg_path, "rb") as f:
+         parent_raw_bytes = f.read()
+-    with open(child_config_path, "rb") as f:
++    with open(clean_child_cfg_path, "rb") as f:
+         child_raw_bytes = f.read()
+-
++        
+     parent_raw_sha = compute_sha256_bytes(parent_raw_bytes)
+     child_raw_sha = compute_sha256_bytes(child_raw_bytes)
+-
++    
+     # Verify raw bytes SHA matches descriptor expectedConfigSha256
+-    expected_parent_sha = ordered_parent_decl["expectedConfigSha256"].strip().upper()
+-    expected_child_sha = ordered_child_decl["expectedConfigSha256"].strip().upper()
+-
++    expected_parent_sha = ordered_parent_decl["expectedConfigSha256"].upper()
++    expected_child_sha = ordered_child_decl["expectedConfigSha256"].upper()
++    
+     if parent_raw_sha != expected_parent_sha:
+         raise ValueError(
+             f"Parent config SHA mismatch: declared '{expected_parent_sha}' vs actual '{parent_raw_sha}'."
+@@ -362,52 +513,46 @@
+         raise ValueError(
+             f"Child config SHA mismatch: declared '{expected_child_sha}' vs actual '{child_raw_sha}'."
+         )
+-
++        
+     # Validate config14 contents and strict binding against descriptor
+     parent_config = validate_config(parent_raw_bytes, ordered_parent_decl, "SIMULATION", "parentConfig")
+     child_config = validate_config(child_raw_bytes, ordered_child_decl, "READ_ONLY", "childConfig")
+-
+-    # Validate output directory: must be absolute, fully qualified, not existing
+-    if not is_fully_qualified_windows_path(output_dir):
+-        raise ValueError(f"output_dir must be a fully-qualified Windows path: '{output_dir}'.")
+-    output_dir_clean = os.path.abspath(output_dir)
+-    if os.path.lexists(output_dir_clean):
+-        raise FileExistsError(f"Preexisting output root prohibited: '{output_dir_clean}'.")
+-
+-    parent_dir = os.path.dirname(output_dir_clean)
+-    if not os.path.isdir(parent_dir):
+-        raise FileNotFoundError(f"Parent directory of output root does not exist: '{parent_dir}'.")
+-    if is_reparse_point(parent_dir):
+-        raise ValueError(f"Parent directory of output root is an unsafe reparse point: '{parent_dir}'.")
+-
++    
++    # Validate output directory: must be non-existing leaf with whole valid ancestry
++    clean_out_dir = verify_path_ancestry(output_dir, allow_leaf_missing=True, field_name="output_dir")
++    output_dir_clean = os.path.abspath(clean_out_dir)
++    
+     # Create output root exclusively
+     os.mkdir(output_dir_clean)
+-
++    
++    # Re-verify output root ancestry after creation
++    verify_path_ancestry(output_dir_clean, allow_leaf_missing=False, field_name="output_dir")
++    
+     # Construct exact top-4 ordered dictionary
+     bundle_data = OrderedDict()
+     bundle_data["schemaVersion"] = SCHEMA_VERSION
+     bundle_data["operatorPairId"] = operator_pair_id
+     bundle_data["parentDeclaration"] = ordered_parent_decl
+     bundle_data["childDeclaration"] = ordered_child_decl
+-
++    
+     # Serialize to compact JSON without BOM, ensure_ascii=False, no trailing newline
+     bundle_json_str = json.dumps(bundle_data, ensure_ascii=False, separators=(',', ':'))
+     bundle_bytes = bundle_json_str.encode('utf-8')
+     bundle_sha256 = compute_sha256_bytes(bundle_bytes)
+-
++    
+     out_bundle_path = os.path.join(output_dir_clean, FIXED_BUNDLE_BASENAME)
+     staging_bundle_path = os.path.join(output_dir_clean, "operator_startup_pair.staging.json")
+     out_sha_path = os.path.join(output_dir_clean, "operator_startup_pair.sha256.txt")
+     out_manifest_path = os.path.join(output_dir_clean, "PROVENANCE_MANIFEST.json")
+-
++    
+     # 1. Write staging bundle exclusively (xb)
+     with open(staging_bundle_path, "xb") as f:
+         f.write(bundle_bytes)
+-
++        
+     # 2. Write SHA file exclusively (xb)
+     with open(out_sha_path, "xb") as f:
+         f.write(bundle_sha256.encode('utf-8'))
+-
++        
+     # 3. Build and write provenance manifest exclusively (xb)
+     manifest = {
+         "schemaVersion": "we-operator-pair-provenance/v1",
+@@ -425,14 +570,14 @@
+         },
+         "inputs": {
+             "parentConfig": {
+-                "path": os.path.abspath(parent_config_path),
++                "path": os.path.abspath(clean_parent_cfg_path),
+                 "sha256": parent_raw_sha,
+                 "bytes": len(parent_raw_bytes),
+                 "configId": parent_config["configId"],
+                 "role": parent_config["role"]
+             },
+             "childConfig": {
+-                "path": os.path.abspath(child_config_path),
++                "path": os.path.abspath(clean_child_cfg_path),
+                 "sha256": child_raw_sha,
+                 "bytes": len(child_raw_bytes),
+                 "configId": child_config["configId"],
+@@ -447,14 +592,17 @@
+             "pythonVersion": sys.version
+         }
+     }
+-
++    
+     manifest_bytes = json.dumps(manifest, indent=2, ensure_ascii=False).encode('utf-8')
+     with open(out_manifest_path, "xb") as f:
+         f.write(manifest_bytes)
+-
++        
++    # Re-verify output root ancestry before final link
++    verify_path_ancestry(output_dir_clean, allow_leaf_missing=False, field_name="output_dir")
++    
+     # 4. Atomic publication: link staging into final bundle without overwrite
+     os.link(staging_bundle_path, out_bundle_path)
+-
++    
+     return {
+         "status": "PUBLISHED",
+         "operatorPairId": operator_pair_id,
+@@ -469,19 +617,51 @@
+ 
+ 
+ def main():
+-    if len(sys.argv) < 2:
+-        print("Usage: publish_operator_pair.py --spec <spec.json>")
+-        print("   or: publish_operator_pair.py --pair-id <id> --parent-decl <file> --child-decl <file> --parent-cfg <file> --child-cfg <file> --out <dir>")
+-        sys.exit(1)
+-
+-    if sys.argv[1] == "--spec" and len(sys.argv) >= 3:
++    # Strict CLI arity: exactly 2 arguments (sys.argv has length 3: [script, "--spec", spec_path])
++    if len(sys.argv) == 3 and sys.argv[1] == "--spec":
+         spec_path = sys.argv[2]
+-        if not is_fully_qualified_windows_path(spec_path):
+-            raise ValueError(f"spec_path must be an absolute path: '{spec_path}'.")
+-        if not os.path.isfile(spec_path):
+-            raise FileNotFoundError(f"spec_path file not found: '{spec_path}'.")
+-        with open(spec_path, "r", encoding="utf-8") as f:
+-            spec = json.loads(f.read(), object_pairs_hook=check_no_duplicate_keys)
++        clean_spec_path = verify_path_ancestry(spec_path, allow_leaf_missing=False, field_name="spec_path")
++        if not os.path.isfile(clean_spec_path):
++            raise FileNotFoundError(f"spec_path is not a regular file: '{clean_spec_path}'.")
++            
++        with open(clean_spec_path, "rb") as f:
++            spec_bytes = f.read()
++        if spec_bytes.startswith(b'\xef\xbb\xbf'):
++            raise ValueError("spec file contains prohibited UTF-8 Byte Order Mark (BOM).")
++        spec_text = spec_bytes.decode('utf-8')
++        spec = json.loads(spec_text, object_pairs_hook=check_no_duplicate_keys)
++        
++        if not isinstance(spec, dict):
++            raise ValueError("spec file must contain a JSON object.")
++            
++        # Closed required keys check
++        for k in SPEC_REQUIRED_KEYS:
++            if k not in spec:
++                raise ValueError(f"spec file missing required key '{k}'.")
++        allowed_keys = set(SPEC_REQUIRED_KEYS) | {"bundleFilename"}
++        for k in spec.keys():
++            if k not in allowed_keys:
++                raise ValueError(f"spec file contains unknown key '{k}'.")
++                
++        # Value types check
++        if not isinstance(spec["operatorPairId"], str) or spec["operatorPairId"] == "":
++            raise ValueError("spec 'operatorPairId' must be a non-empty string.")
++        if not isinstance(spec["parentDeclaration"], dict):
++            raise ValueError("spec 'parentDeclaration' must be an object.")
++        if not isinstance(spec["childDeclaration"], dict):
++            raise ValueError("spec 'childDeclaration' must be an object.")
++        if not isinstance(spec["parentConfigPath"], str):
++            raise ValueError("spec 'parentConfigPath' must be a string.")
++        if not isinstance(spec["childConfigPath"], str):
++            raise ValueError("spec 'childConfigPath' must be a string.")
++        if not isinstance(spec["outputDir"], str):
++            raise ValueError("spec 'outputDir' must be a string.")
++        if "bundleFilename" in spec:
++            if not isinstance(spec["bundleFilename"], str) or spec["bundleFilename"] != FIXED_BUNDLE_BASENAME:
++                raise ValueError(
++                    f"spec 'bundleFilename' must be fixed '{FIXED_BUNDLE_BASENAME}', observed '{spec.get("bundleFilename")}'."
++                )
++                
+         result = publish_pair(
+             operator_pair_id=spec["operatorPairId"],
+             parent_decl=spec["parentDeclaration"],
+@@ -492,47 +672,13 @@
+             bundle_filename=spec.get("bundleFilename", FIXED_BUNDLE_BASENAME)
+         )
+         print(json.dumps(result, indent=2))
+-        return
+-
+-    # Argument parsing
+-    args = {}
+-    i = 1
+-    while i < len(sys.argv):
+-        arg = sys.argv[i]
+-        if arg.startswith("--") and i + 1 < len(sys.argv):
+-            args[arg[2:]] = sys.argv[i + 1]
+-            i += 2
+-        else:
+-            i += 1
+-
+-    required = ["pair-id", "parent-decl", "child-decl", "parent-cfg", "child-cfg", "out"]
+-    for r in required:
+-        if r not in args:
+-            print(f"Error: Missing required argument '--{r}'", file=sys.stderr)
+-            sys.exit(1)
+-
+-    parent_decl_path = args["parent-decl"]
+-    child_decl_path = args["child-decl"]
+-    if not is_fully_qualified_windows_path(parent_decl_path):
+-        raise ValueError(f"parent-decl must be an absolute path: '{parent_decl_path}'.")
+-    if not is_fully_qualified_windows_path(child_decl_path):
+-        raise ValueError(f"child-decl must be an absolute path: '{child_decl_path}'.")
+-
+-    with open(parent_decl_path, "r", encoding="utf-8") as f:
+-        parent_decl = json.loads(f.read(), object_pairs_hook=check_no_duplicate_keys)
+-    with open(child_decl_path, "r", encoding="utf-8") as f:
+-        child_decl = json.loads(f.read(), object_pairs_hook=check_no_duplicate_keys)
+-
+-    result = publish_pair(
+-        operator_pair_id=args["pair-id"],
+-        parent_decl=parent_decl,
+-        child_decl=child_decl,
+-        parent_config_path=args["parent-cfg"],
+-        child_config_path=args["child-cfg"],
+-        output_dir=args["out"],
+-        bundle_filename=args.get("bundle-filename", FIXED_BUNDLE_BASENAME)
+-    )
+-    print(json.dumps(result, indent=2))
++        sys.exit(0)
++    else:
++        print(
++            "Error: Unsupported CLI invocation. Strict usage: publish_operator_pair.py --spec <absoluteSpecPath> (exact 2 arguments required). Inline CLI flag mode is deprecated and unsupported.",
++            file=sys.stderr
++        )
++        sys.exit(1)
+ 
+ 
+ if __name__ == "__main__":

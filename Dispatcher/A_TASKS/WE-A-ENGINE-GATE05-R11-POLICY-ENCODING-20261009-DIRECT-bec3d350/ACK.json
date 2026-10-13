@@ -1,0 +1,18 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R11-POLICY-ENCODING-20261009-DIRECT-bec3d350",
+  "wp_id": "WP_ENGINE_GATE05_R11_POLICY_ENCODING",
+  "wp_revision": "GATE05-R11-POLICY-ENCODING",
+  "envelope": 14,
+  "producer": "A",
+  "acknowledged_at": "2026-10-09T06:14:00+09:00",
+  "status": "IN_PROGRESS",
+  "scope": "Narrow ContentProfileProvider suffix/typed policy DTO-helpers repair: implement concrete typed versioned canonical package policy declaration (ExpectedPackagePolicyDeclaration with schemaVersion constant WE-PACKAGE-POLICY-V1, policyId, revision, admittedPackageIds in fixed order); pure canonical Serialize/Deserialize APIs with deterministic lossless culture-independent JSON escaping; route digest computation through compact UTF-8 canonical JSON SHA256 uppercase hex without ad-hoc delimiter join; preserve opaque policyId and revision with original spelling/whitespace/punctuation without Trim; pure CheckPackagePolicy and TryAdmitWithPackagePolicy and content codec binding route through same canonical policy meaning; positive pure normal DTO/helper runner only; no provider/getter/compute/cache/configuration seam/game/native/operator/old runner/rejection/adverse execution",
+  "constraints": {
+    "source_scope": "Only EngineHostCensus.cs ContentProfileProvider suffix and typed policy DTO/helpers",
+    "prefix_immutability": "Fixed prefix 72547 bytes SHA F3C4F865F1E2A898BF240A2D096195870D77A52408CF2D93664FE15092A2A887 strictly preserved",
+    "workerbridge_immutability": "WorkerBridge.cs and WorkerBridge.csproj fixed current hashes preserved",
+    "execution_restrictions": "Positive pure normal DTO/helper runner only; no provider/compute/getter/cache properties/InvalidateCache/configuration/game/native/operator/old runners/negative/rejection/adverse execution",
+    "historical_preservation": "Archive 19, Prior candidates 1177, Pipeline 206, QA 2578, managed dependencies 4, and installed Steam DLL (OPEN incident) preserved",
+    "closure_authority": "Master sole domain authority; Dedicated Server final runtime Domain Authority; no self-declared defect closure or whole-gate E2 release"
+  }
+}

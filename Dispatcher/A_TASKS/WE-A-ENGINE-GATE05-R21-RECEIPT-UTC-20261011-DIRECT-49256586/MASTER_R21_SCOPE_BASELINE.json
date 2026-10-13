@@ -1,0 +1,890 @@
+{
+  "at": "2026-10-11T06:04:46.801790+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R21-RECEIPT-UTC-20261011-DIRECT-49256586",
+  "policy": {
+    "kind": "ENGINE_REPAIR_ARCHIVED_BASELINE",
+    "engine_archive_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\ENGINE_GATE05_BASELINE_BEFORE_R1_20261008\\ARCHIVE_MANIFEST.json",
+    "engine_archive_manifest_sha256": "B6AD0A70EA4C13F5040A3BAEE690DBCDDEB8735842FCB482D66352A8FB05F0F1",
+    "pipeline_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\MASTER_REV6_R1_FREEZE_MANIFEST.json",
+    "pipeline_manifest_sha256": "EBCDDBB9340DECBC9ED436845A231412B9003F42663E29D3EE767450319E53A0",
+    "allowed_changed_engine_paths": [
+      "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj"
+    ],
+    "installed_gate05_immutable": true,
+    "pipeline_original_frozen_immutable": true,
+    "prior_candidate_freeze_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R20-TRUSTED-STARTUP-20261011-DIRECT-e35ff656\\MASTER_GATE05_R20_TRUSTED_STARTUP_REVIEW_FREEZE_MANIFEST.json",
+    "prior_candidate_freeze_manifest_sha256": "03BD6923AB97F948FF6BCF708ACFB551986F024EA1E698C3810AEDF3370D702B",
+    "additional_preserved_candidate_manifests": [
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R1-20261008-DIRECT-971a4780\\MASTER_GATE05_R1_REJECTED_FREEZE_MANIFEST.json",
+        "sha256": "1196930576154C11351387B10EAB017C51D6BB027A1686317AB8DF8DAB73022E",
+        "lineage": "R1_REJECTED147"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R2-20261008-DIRECT-2af10708\\MASTER_GATE05_R2_REJECTED_FREEZE_MANIFEST.json",
+        "sha256": "110A796F5699495998D61503016F8F7C0430B9EC988DD20220D51416AACD421C",
+        "lineage": "R2_REJECTED107"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa\\MASTER_GATE05_R3_REVIEW_FREEZE_MANIFEST.json",
+        "sha256": "124C6AA900CB50ECE5C2F31B75BC197ACA194995BB90BDEDBD7EDA6B830E0972",
+        "lineage": "R3_REVIEW133"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R4-20261008-DIRECT-825ae8a1\\MASTER_GATE05_R4_REVIEW_FREEZE_MANIFEST.json",
+        "sha256": "D047D0095CEDDA8E5F0FB6871EA4C24AF0866CA569514049FFAD7E91B7C1460C",
+        "lineage": "R4_REVIEW232"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\MASTER_GATE05_R5_CODEC_REVIEW_FREEZE_MANIFEST.json",
+        "sha256": "C8FFA291F9B67074AE4C9E916FE2761D3A10D2A691F44F96D58E05E0CDED1692",
+        "lineage": "R5_REVIEW113"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R6-CODEC-CONTRACT-20261008-DIRECT-1f657abe\\MASTER_GATE05_R6_CODEC_CONTRACT_REVIEW_FREEZE_MANIFEST.json",
+        "sha256": "61BCABD85920C84B978FD9E826DEB672B45F0935D5CC329C33A88F002A90CEEA",
+        "lineage": "R6_REVIEW112"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-20261008-DIRECT-8524bf02\\MASTER_GATE05_R7_CONTENT_ADMISSION_REVIEW_FREEZE_MANIFEST.json",
+        "sha256": "DE49655C30976C254F59B022C7DD768806B90EB6F566055936B05EAFFE3F13CF",
+        "lineage": "R7_REVIEW110"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R8-SUPPORTED-DISPOSITION-20261008-DIRECT-41abc692\\MASTER_GATE05_R8_SUPPORTED_DISPOSITION_REVIEW_FREEZE_MANIFEST.json",
+        "sha256": "E7D9096EB7C4A9B074079952D550506C9259F733F64EC1A66FD4DBAA85D16FB4",
+        "lineage": "R8_REVIEW75"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R9-VERSION-MEANING-20261009-DIRECT-fbe8a43b\\MASTER_GATE05_R9_VERSION_MEANING_REVIEW_FREEZE_MANIFEST.json",
+        "sha256": "F3130B707E0B99690E6E724654EE794C61BBADFD34F8F9C07297C4AB481BD193",
+        "lineage": "R9_REVIEW72"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R10-PACKAGE-POLICY-20261009-DIRECT-81a28ecb\\MASTER_GATE05_R10_PACKAGE_POLICY_REVIEW_FREEZE_MANIFEST.json",
+        "sha256": "5BBDD6AA47C415783CDD0FCB256A87B852D227720FBD0B6E62B9F061680E8578",
+        "lineage": "R10_REVIEW76"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R11-POLICY-ENCODING-20261009-DIRECT-bec3d350\\MASTER_GATE05_R11_POLICY_ENCODING_REVIEW_FREEZE_MANIFEST.json",
+        "sha256": "79151763B710FE37E59148E272C1C7BC6C3D606D275B5215AF4174187C209DB1",
+        "lineage": "R11_REVIEW74"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R12-PACKAGE-ORDER-20261009-DIRECT-e9dcd1e6\\MASTER_GATE05_R12_PACKAGE_ORDER_REVIEW_FREEZE_MANIFEST.json",
+        "sha256": "824747638CC2B71EB42CB778CBA90F8EA4DB3A9C388306AA6D3BC48D868F2A18",
+        "lineage": "R12_REVIEW72"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R13-POLICY-CACHE-LIFECYCLE-20261009-DIRECT-2661a749\\MASTER_GATE05_R13_POLICY_CACHE_LIFECYCLE_REVIEW_FREEZE_MANIFEST.json",
+        "sha256": "3F831ED136C1A499943DE5F167620D6CF3032ECEA2FF294C7B1E279307D3B098",
+        "lineage": "R13_REVIEW72"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R14-POLICY-CAPTURE-PUBLICATION-20261009-DIRECT-ff285a3b\\MASTER_GATE05_R14_POLICY_CAPTURE_PUBLICATION_REVIEW_FREEZE_MANIFEST.json",
+        "sha256": "163626FB64A0BFED749483ED755EC8B19C1951BB838A8A239FBC7174F20D2823",
+        "lineage": "R14_REVIEW73"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-20261009-DIRECT-03649052\\MASTER_GATE05_R15_PUBLIC_MANIFEST_BOUNDARY_REVIEW_FREEZE_MANIFEST.json",
+        "sha256": "951F31D922BA7639A86C1BF1D88A03375432080FB56CD2EEA9D4EC0A3419E1D9",
+        "lineage": "R15_REVIEW93"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00\\MASTER_R16_PREPARATION_REVIEW_FREEZE_MANIFEST.json",
+        "sha256": "0AAFC59DD5D70130500807AF0C60E979A84DB467A9F9DBCB4539BB73B679FBD9",
+        "lineage": "R16_PREPARATION_DOCS11"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R17-OWNED-BOOTSTRAP-20261010-DIRECT-57163c71\\MASTER_GATE05_R17_OWNED_BOOTSTRAP_REVIEW_FREEZE_MANIFEST.json",
+        "sha256": "6D17F1A90702249EA1B0F1BA36A06F4C870DEC6E8E88D722ABF7FE34B74CE7DA",
+        "lineage": "R17_REVIEW91"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R18-CONFIG-ADMISSION-SEAL-20261010-DIRECT-befc4fba\\MASTER_GATE05_R18_CONFIG_ADMISSION_SEAL_REVIEW_FREEZE_MANIFEST.json",
+        "sha256": "C558CC579658D04CCC4396AFAAEB8792455663BE377A6F36E3835BBE5F99C908",
+        "lineage": "R18_REVIEW92"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R19-OPAQUE-POLICY-20261010-DIRECT-5415a675\\MASTER_GATE05_R19_OPAQUE_POLICY_REVIEW_FREEZE_MANIFEST.json",
+        "sha256": "746D9B76B8F338291D9B5F5602D3BF571C5BEFFBBB963F8C82E903177C179310",
+        "lineage": "R19_REVIEW98"
+      }
+    ],
+    "prior_candidate_lineage": "R20_REVIEW109",
+    "known_installed_incident": {
+      "id": "ENGINE-INSTALLED-IDENTITY-20261008-01",
+      "status": "OPEN",
+      "expected_old_sha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+      "observed_sha256_at_dispatch": "BB3B52F39F7B53B70BC9FB4CE039E7455D08B24B17B8DABB8295E0FF4584DD61",
+      "not_new_approval_to_modify_or_restore": true
+    },
+    "qa_preserved_manifests": [
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\qa-evidence-manifest.json",
+        "sha256": "504F3D59AF10151B4CE6A8F373A88C639DA76945B6BA5F67239DE88021CBC864"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-20261007\\EVIDENCE_MANIFEST.json",
+        "sha256": "D2AC8C184A7E79D8FEB98FDBB427C08B2B1C1D40FC4F0216506B345787C7BA08"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\EVIDENCE_MANIFEST.json",
+        "sha256": "394E4F72E4487CB0E24055470098FB120BCB26D2B27F19A3D36A6CB7FCA4100D"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S2-20261007\\EVIDENCE_MANIFEST.json",
+        "sha256": "07C5D67D3FB4946E3C65C97817ABC3B2E447A23C8625806F9BA730B4FD624897"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R3-QA-PREP-S1-20261008\\EVIDENCE_MANIFEST.json",
+        "sha256": "CA4177F0A12A65C47DB3D0A7DD6659EE195B1AF6D264E70ABDD44AAFB010BEE6"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R3-INDEPENDENT-REVIEW-S1-20261008\\EVIDENCE_MANIFEST.json",
+        "sha256": "D144F88571A9A2F8BC51DBF993FDA1847C177CDC40ABF07BA8FC45E926E685F4"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R4-INDEPENDENT-REVIEW-S1-20261008\\EVIDENCE_MANIFEST.json",
+        "sha256": "379A0E34AEB05CFE7238BD99DDDAA7C0AC1C1A22DE102B34AD0FD7C01C13FF68"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R5-CODEC-PREP-S1-20261008\\EVIDENCE_MANIFEST.json",
+        "sha256": "A1C77FD9C3259789700F1555A04F45D7583086D9F331797BD562CD7F8625607C"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R5-CODEC-INDEPENDENT-S1-20261008\\EVIDENCE_MANIFEST.json",
+        "sha256": "2F65297F86497ED9406B446C95C717FA8F8AFE85568831F48DE77CE9CDDF9EC8"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R6-CODEC-CONTRACT-INDEPENDENT-S1-20261008\\EVIDENCE_MANIFEST.json",
+        "sha256": "5CC5406D907FB35E30144D851C8CB0212295F45B73C4D5AAA7E16BC2DD5B4508"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008\\EVIDENCE_MANIFEST.json",
+        "sha256": "D46AD94773195957CA8178AEDD95D0212FC9D061B9A71456AB0046EBC1A1FB7F"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R8-SUPPORTED-DISPOSITION-INDEPENDENT-S1-20261009\\EVIDENCE_MANIFEST.json",
+        "sha256": "7B19C0636A06954FD9C803A71D272183D917345982458540AA9DCC03D8041182"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R9-VERSION-MEANING-INDEPENDENT-S1-20261009\\EVIDENCE_MANIFEST.json",
+        "sha256": "13D7C33FB46B96A3409E42FEDB44311300FFEE008CAD5955233952FD70792B14"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R10-PACKAGE-POLICY-PREP-S1-20261009\\EVIDENCE_MANIFEST.json",
+        "sha256": "56896CED065BC190A9F15BD699B61E30442D0341828D94D03CAFBE4C70D91BE0"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R10-PACKAGE-POLICY-INDEPENDENT-S1-20261009\\EVIDENCE_MANIFEST.json",
+        "sha256": "CCF7DB3A3B5AE60161DB9D2A9BC34CF6C41991462F948119041E43EFBB97BB9C"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R11-POLICY-ENCODING-PREP-S1-20261009\\EVIDENCE_MANIFEST.json",
+        "sha256": "F036A7A688AACBB7B76B68C1708C82D35277C466DD6C67F849E30DC1099F4083"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R11-POLICY-ENCODING-INDEPENDENT-S1-20261009\\EVIDENCE_MANIFEST.json",
+        "sha256": "41CE0C572A4C1627A7E58B2042726D67B77E7823978F88D27957BA912C4B2927"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R12-PACKAGE-ORDER-PREP-S1-20261009\\EVIDENCE_MANIFEST.json",
+        "sha256": "D59CCBA4D792BA5FEDAF8E563082056CC6C50F655CBC416E770088AA75735794"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R12-PACKAGE-ORDER-INDEPENDENT-S1-20261009\\EVIDENCE_MANIFEST.json",
+        "sha256": "7DA3DE92FCC3FBA36F7A2E9DCE63194CA9370C55C604C02363B180095ADF6A26"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R13-POLICY-CACHE-LIFECYCLE-PREP-S1-20261009\\EVIDENCE_MANIFEST.json",
+        "sha256": "D94D44241A524810A373C17043728DEE742CC604118438D16D32F28A4EE6C50F"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R13-POLICY-CACHE-LIFECYCLE-INDEPENDENT-S1-20261009\\EVIDENCE_MANIFEST.json",
+        "sha256": "A0B5FEF8B174AF061C77F433C58284069FC6ACC8124EE51B2310C2B672A21ACF"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R14-POLICY-CAPTURE-PUBLICATION-INDEPENDENT-S1-20261009\\EVIDENCE_MANIFEST.json",
+        "sha256": "68BF6DED793BEA45358A14BA835300AD08638F5C71183B1FA10AE6BD0B4A9982"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010\\EVIDENCE_MANIFEST.json",
+        "sha256": "6826319C3F7961A33741D13E12574F62328BE713DEF3731ABDC02AA7F6B0BD8F"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R16-OPERATOR-NATIVE-PREP-S1-20261010\\EVIDENCE_MANIFEST.json",
+        "sha256": "BDFC4071223E9AD43C8F94C71492D323CE2A77B421745C87BB6D791F06A6E1CD"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R17-OWNED-BOOTSTRAP-INDEPENDENT-S1-20261010\\EVIDENCE_MANIFEST.json",
+        "sha256": "7D3EEC0C08176F87223BFEB56232C2EC71FDF72888B5FB4B6BFF39774B88AE77"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R18-CONFIG-ADMISSION-SEAL-INDEPENDENT-S1-20261010\\EVIDENCE_MANIFEST.json",
+        "sha256": "3E3599112D7A7C7B782132FE38A134BC23645A271EC3BE18E56915534A312C5E"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R19-OPAQUE-POLICY-INDEPENDENT-S1-20261010\\EVIDENCE_MANIFEST.json",
+        "sha256": "BA4C00354C4DDD05910927ED3643D1B55F7C2C3FC45A748188DB78469E9C044A"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R20-TRUSTED-STARTUP-INDEPENDENT-S1-20261011\\EVIDENCE_MANIFEST.json",
+        "sha256": "9B4CC99A74B9FA54451D9997158871D6ED37EF5C95ED2369FD3678AACBB9375E"
+      }
+    ],
+    "fixed_current_files": [
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+        "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+        "size": 1774
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\MASTER_R5_MANAGED_QA_DEPENDENCIES_MANIFEST.json",
+        "sha256": "7FCB91EEB8489365E4304AFFDC601CCD0CCE2259365FD861A785AD658C183481",
+        "size": 2326
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\Assembly-CSharp.dll",
+        "sha256": "5CF1B5BE399D5B1C9C56CA72C9D35B4ECF307FEACF5859D04AC5A1AA5926356A",
+        "size": 15777280
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\UnityEngine.CoreModule.dll",
+        "sha256": "C5C58EA254834291780A1D6C388C241443D07167B4A4B890A23C9494F626DDBA",
+        "size": 1386688
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\UnityEngine.dll",
+        "sha256": "0422FF282130458380D2FB4B63A718465D3BD2D5738F1532F60798B0D35DFF0D",
+        "size": 125120
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\0Harmony.dll",
+        "sha256": "353DAAFEC180BB8E7BBE4DA78F2A7CDC78067392E3A4E79DC8E7AF295F2371E6",
+        "size": 2456064
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R5-CODEC-INDEPENDENT-S1-20261008\\COMPLETION.json",
+        "sha256": "724CBD6E216AE9B2CBFC39536A5437871147D18FD699E972CC19684DE52C8DFC",
+        "size": 30010
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R5-CODEC-INDEPENDENT-S1-20261008\\RESULT_INDEX.json",
+        "sha256": "7B6114D7B38303AC1C0BE6299678FC8C869F8CDFAE273DA0E9BA210F5FF86257",
+        "size": 3725
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R5-CODEC-INDEPENDENT-S1-20261008\\ACK_COMPLETION_BINDING.json",
+        "sha256": "9C045B74CA072DB9EED23D7418BCF13F3A37ABB8B02D0A8B95EF3777A231889D",
+        "size": 3359
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R6-CODEC-CONTRACT-INDEPENDENT-S1-20261008\\COMPLETION.json",
+        "sha256": "95A205969E9BA30588DECFA1BF46E8E3FD32A4EEB79855C70811D19C0F5BAC19",
+        "size": 45899
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R6-CODEC-CONTRACT-INDEPENDENT-S1-20261008\\RESULT_INDEX.json",
+        "sha256": "AEEE01EFDCCCA0C595CADF4019B4B866377AB80017B4CED3264E87BFB80E9884",
+        "size": 45605
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R6-CODEC-CONTRACT-INDEPENDENT-S1-20261008\\ACK_COMPLETION_BINDING.json",
+        "sha256": "CD5170E38E55886BD695F38C8803823F82584A37699BA78D5EC25FEB8DB70AA4",
+        "size": 1468
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008\\COMPLETION.json",
+        "sha256": "20F6CFFAFCF14D3C46EF2F8D425D5C456493D9BD0538A6252D2A836C56CF4955",
+        "size": 51583
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008\\RESULT_INDEX.json",
+        "sha256": "CB442C1A82E074B8B80523459E7F10AEA9D39355E1A3CB277CBBF0FC5AAB0935",
+        "size": 51224
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008\\ACK_COMPLETION_BINDING.json",
+        "sha256": "5432B0204CB52F49895F7199E4607185AEFF4A304021B30F0BD6FC2AE16E402E",
+        "size": 1490
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R8-SUPPORTED-DISPOSITION-INDEPENDENT-S1-20261009\\COMPLETION.json",
+        "sha256": "B3456CEE1BC80854BE32AC5393B1E7B6619C45A84E445EB93F7D1AE728D88AC9",
+        "size": 58178
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R8-SUPPORTED-DISPOSITION-INDEPENDENT-S1-20261009\\RESULT_INDEX.json",
+        "sha256": "6FE64A31379528B1635882285596584445EEB8EB657F52552BB2E6B12CC60CF4",
+        "size": 57849
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R8-SUPPORTED-DISPOSITION-INDEPENDENT-S1-20261009\\ACK_COMPLETION_BINDING.json",
+        "sha256": "94EABC1CF45F4BA7316AF70BA03B69D3D78CE3631EF3F0718A65E86560FFEAC3",
+        "size": 1518
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R8-SUPPORTED-DISPOSITION-INDEPENDENT-S1-20261009\\RETURN_TOOL_PROOF.json",
+        "sha256": "1BDBDAEDF47B1E073B486C226791B0D58C64465E7AA4F1929F261E843A9CCC8E",
+        "size": 149
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R8-SUPPORTED-DISPOSITION-INDEPENDENT-S1-20261009\\DELIVERY_STATUS.json",
+        "sha256": "9F8E7D2B565338244F95DF9B56287A7FA0D19026E7B9976BDE171D543C275E37",
+        "size": 1296
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R9-VERSION-MEANING-INDEPENDENT-S1-20261009\\COMPLETION.json",
+        "sha256": "AF00A8872AD37828376B8DC5B2EFA3EEC5ED73FA14BDE49679031235E1DAC1D5",
+        "size": 99049
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R9-VERSION-MEANING-INDEPENDENT-S1-20261009\\RESULT_INDEX.json",
+        "sha256": "B56E4AAF77BF062C383FA0090DD338F4FA448751F9E92B85221019545DE12A58",
+        "size": 98716
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R9-VERSION-MEANING-INDEPENDENT-S1-20261009\\ACK_COMPLETION_BINDING.json",
+        "sha256": "52F7B74EEEEB4453CF0FA9C909BC2E75D4B4DD345FFF610DED1497F20A8AE1B4",
+        "size": 1476
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R9-VERSION-MEANING-INDEPENDENT-S1-20261009\\RETURN_TOOL_PROOF.json",
+        "sha256": "1BDBDAEDF47B1E073B486C226791B0D58C64465E7AA4F1929F261E843A9CCC8E",
+        "size": 149
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R9-VERSION-MEANING-INDEPENDENT-S1-20261009\\DELIVERY_STATUS.json",
+        "sha256": "0550E184C086025253C4B7044C9A242C7654C4DAE16FCC75925D53F146A87902",
+        "size": 1306
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R10-PACKAGE-POLICY-PREP-S1-20261009\\COMPLETION.json",
+        "sha256": "823CEBB99028F3F9518552BCA0DD79DC6EB8422D6DB1F936580B06C1EDB41DF4",
+        "size": 2893
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R10-PACKAGE-POLICY-PREP-S1-20261009\\RESULT_INDEX.json",
+        "sha256": "3AB109EE43E75CFA83F27D4C7BB0E0A983C4B7D942E1C5A1E483AEE0514282AC",
+        "size": 4166
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R10-PACKAGE-POLICY-PREP-S1-20261009\\ACK_COMPLETION_BINDING.json",
+        "sha256": "1CBD3B66CE0DA09A57DBBFA42049C43B23670BC16EF4E91C71E0BD473EEB00D8",
+        "size": 3023
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R10-PACKAGE-POLICY-PREP-S1-20261009\\RETURN_TOOL_PROOF.json",
+        "sha256": "C75C9AB07F75E7D04C3A0A971290E1C79997D276EC1420CE1D8EB60F1D1014C6",
+        "size": 3710
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R10-PACKAGE-POLICY-PREP-S1-20261009\\DELIVERY_STATUS.json",
+        "sha256": "167634EAB8259B1AA418E061324150186F5DBE518C291CCA55169371D57FBF81",
+        "size": 974
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R10-PACKAGE-POLICY-INDEPENDENT-S1-20261009\\COMPLETION.json",
+        "sha256": "AE86F2CB5478E9ED73762E34717B660DBA5A10EC77A86B4A8ED3F73F9A7D61C8",
+        "size": 3540
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R10-PACKAGE-POLICY-INDEPENDENT-S1-20261009\\RESULT_INDEX.json",
+        "sha256": "8B88653E1E3B2F4BB0EC646A56B97AD4A5ECCA5E2E065D7E33455D6DF9A90714",
+        "size": 4786
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R10-PACKAGE-POLICY-INDEPENDENT-S1-20261009\\ACK_COMPLETION_BINDING.json",
+        "sha256": "399036507FFD069640E8CA268FD81643BB608446B329BB7324F5421626E797A1",
+        "size": 3682
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R10-PACKAGE-POLICY-INDEPENDENT-S1-20261009\\RETURN_TOOL_PROOF.json",
+        "sha256": "21D3D5ED9D436DD3679DDFE90A94A4E2C6235DD22785A7B87C8107477EC085C4",
+        "size": 5432
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R10-PACKAGE-POLICY-INDEPENDENT-S1-20261009\\DELIVERY_STATUS.json",
+        "sha256": "9BE1C83FA45DD38415397A2E03DB9904802D316BCF213184BC8228FC75B9DF7C",
+        "size": 927
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R11-POLICY-ENCODING-PREP-S1-20261009\\COMPLETION.json",
+        "sha256": "9476707B60E88CAC2FBFC299C812D9311D062096E7A9E8B037E59DA92C13DECD",
+        "size": 3172
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R11-POLICY-ENCODING-PREP-S1-20261009\\RESULT_INDEX.json",
+        "sha256": "35F79E2556520F213C71164E10430D01B44596F3C9FEEDF23F4D7E4BB6504B5B",
+        "size": 4991
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R11-POLICY-ENCODING-PREP-S1-20261009\\ACK_COMPLETION_BINDING.json",
+        "sha256": "A05F5A551BE72E9E107A76465062FDA395B2CE6888E6D334CC6677DECB46A2E7",
+        "size": 3564
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R11-POLICY-ENCODING-PREP-S1-20261009\\RETURN_TOOL_PROOF.json",
+        "sha256": "828B2964613D7EE3E5BB93B7A8FBCF0B11F02BB0EC63E1F8FD9460528AB00B88",
+        "size": 4577
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R11-POLICY-ENCODING-PREP-S1-20261009\\DELIVERY_STATUS.json",
+        "sha256": "E6BBEEF821463C252C7AA8D31C4FD5FEEAE867DAF4F6A5BEEE090D1E8F1D1924",
+        "size": 1063
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R11-POLICY-ENCODING-INDEPENDENT-S1-20261009\\COMPLETION.json",
+        "sha256": "74D72F4C407E2A4653C7BAC4AAE1D553D297FF84B8D5EF28021933FE72E070B1",
+        "size": 3740
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R11-POLICY-ENCODING-INDEPENDENT-S1-20261009\\RESULT_INDEX.json",
+        "sha256": "D5945CA5CA1F2D950782A41127818D3498A25C6A3BB3B91E8CC90B96D991E46E",
+        "size": 5620
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R11-POLICY-ENCODING-INDEPENDENT-S1-20261009\\ACK_COMPLETION_BINDING.json",
+        "sha256": "7B4617A4C6D456B8E4C91636000E9872FA95B017AF7016F52F3FCEC67D4B4B95",
+        "size": 3883
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R11-POLICY-ENCODING-INDEPENDENT-S1-20261009\\RETURN_TOOL_PROOF.json",
+        "sha256": "13D9636AF80418AA780E9FB4B6317A464F26FF8C1A57F08729B92B860CDDEE61",
+        "size": 5851
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R11-POLICY-ENCODING-INDEPENDENT-S1-20261009\\DELIVERY_STATUS.json",
+        "sha256": "5840B6334FD2C9E21C401DCC68B132A4368113DC1D7A4F95F892808957C24F04",
+        "size": 939
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R12-PACKAGE-ORDER-PREP-S1-20261009\\COMPLETION.json",
+        "sha256": "298658D6AE6AF224A6D525D7B15D14B3CC493108D9EAECEA7225F38966F63B97",
+        "size": 3178
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R12-PACKAGE-ORDER-PREP-S1-20261009\\RESULT_INDEX.json",
+        "sha256": "26E4F53A190414F262FDBD77D8CE783C53AEF83E068B4A450FB544E736E3F8F2",
+        "size": 4984
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R12-PACKAGE-ORDER-PREP-S1-20261009\\ACK_COMPLETION_BINDING.json",
+        "sha256": "8F7453DBF495C02BB962189E58225F161DD54F91A3112ECFAC348DED6E572746",
+        "size": 3313
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R12-PACKAGE-ORDER-PREP-S1-20261009\\RETURN_TOOL_PROOF.json",
+        "sha256": "383AD48A3F66C039D9D9C2310E4330F4BBCB20C86D32B963778D774A53031E8F",
+        "size": 5036
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R12-PACKAGE-ORDER-PREP-S1-20261009\\DELIVERY_STATUS.json",
+        "sha256": "0F739E36F012357CDD9FFB705FA5709C59EE6E9C6388AC69DC93B964B51675B8",
+        "size": 982
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R12-PACKAGE-ORDER-INDEPENDENT-S1-20261009\\COMPLETION.json",
+        "sha256": "3F4CE10B7C92AEC967C09EC9DBEB0F75A2DFCC77E46D75168D80FDE553439428",
+        "size": 4220
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R12-PACKAGE-ORDER-INDEPENDENT-S1-20261009\\RESULT_INDEX.json",
+        "sha256": "502A8A2E9C5E73618F7E49EA4C6361138097931E6A3AB8B878F0F0821349FF7A",
+        "size": 6013
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R12-PACKAGE-ORDER-INDEPENDENT-S1-20261009\\ACK_COMPLETION_BINDING.json",
+        "sha256": "18E6D8D522BBE6B4AE0D9BCB96B835FB5DA7B625B22E5EE63F698AD6CB91D22A",
+        "size": 4322
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R12-PACKAGE-ORDER-INDEPENDENT-S1-20261009\\RETURN_TOOL_PROOF.json",
+        "sha256": "1BDBDAEDF47B1E073B486C226791B0D58C64465E7AA4F1929F261E843A9CCC8E",
+        "size": 149
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R12-PACKAGE-ORDER-INDEPENDENT-S1-20261009\\DELIVERY_STATUS.json",
+        "sha256": "D4E99F7861AC0F5A9DCB0EBFE3F8C9F994E38B7FB807C3BF8381A901E4774DA3",
+        "size": 708
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R13-POLICY-CACHE-LIFECYCLE-PREP-S1-20261009\\COMPLETION.json",
+        "sha256": "9C5E66C3FB0C39670F4D0B99868345463B036F783DBA8880A23140F022A2BCB2",
+        "size": 3165
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R13-POLICY-CACHE-LIFECYCLE-PREP-S1-20261009\\RESULT_INDEX.json",
+        "sha256": "E3CEA4FF25AF9A1E0C66B78E4879268FE084F931435B968934BED4D429936749",
+        "size": 4380
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R13-POLICY-CACHE-LIFECYCLE-PREP-S1-20261009\\ACK_COMPLETION_BINDING.json",
+        "sha256": "C5721F5C785694C43A52A0E85F691FAD53E01AC93104C874CD6A10995948CB25",
+        "size": 3306
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R13-POLICY-CACHE-LIFECYCLE-PREP-S1-20261009\\RETURN_TOOL_PROOF.json",
+        "sha256": "1BDBDAEDF47B1E073B486C226791B0D58C64465E7AA4F1929F261E843A9CCC8E",
+        "size": 149
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R13-POLICY-CACHE-LIFECYCLE-PREP-S1-20261009\\DELIVERY_STATUS.json",
+        "sha256": "58927827A27D04D06FAAF2CAAAA3C7018AD4C48317E767CDD0B6CF2C72DB5E68",
+        "size": 714
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R13-POLICY-CACHE-LIFECYCLE-INDEPENDENT-S1-20261009\\COMPLETION.json",
+        "sha256": "9CC5B6B2B73C5C2F8CB9272B5F72C160274153670124ADF113A30E4784F0C36F",
+        "size": 4713
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R13-POLICY-CACHE-LIFECYCLE-INDEPENDENT-S1-20261009\\RESULT_INDEX.json",
+        "sha256": "4DEE4212FCEF470ACB5E703B002FD34603042A692312FA78FFCCE14751E3E4AB",
+        "size": 7088
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R13-POLICY-CACHE-LIFECYCLE-INDEPENDENT-S1-20261009\\ACK_COMPLETION_BINDING.json",
+        "sha256": "417BB5D6B2D2563C3C61E54EADD57D4F928E2BBC45CCFDD667B7F61E6B46C024",
+        "size": 4817
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R13-POLICY-CACHE-LIFECYCLE-INDEPENDENT-S1-20261009\\RETURN_TOOL_PROOF.json",
+        "sha256": "1BDBDAEDF47B1E073B486C226791B0D58C64465E7AA4F1929F261E843A9CCC8E",
+        "size": 149
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R13-POLICY-CACHE-LIFECYCLE-INDEPENDENT-S1-20261009\\DELIVERY_STATUS.json",
+        "sha256": "ADC31671018F37D3C4FA280A5E7BC5359EDA1121112E4728782481F8F6F72805",
+        "size": 735
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R14-POLICY-CAPTURE-PUBLICATION-INDEPENDENT-S1-20261009\\COMPLETION.json",
+        "sha256": "1D367B49FADC197CF22F596F6E4E0A51F0AD7564FC9D1C512BA537BF8A573D0C",
+        "size": 4835
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R14-POLICY-CAPTURE-PUBLICATION-INDEPENDENT-S1-20261009\\RESULT_INDEX.json",
+        "sha256": "21416AD8664353797E97A2D565E96F86113D01CEB5FC8861A7429F399ED0166B",
+        "size": 7561
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R14-POLICY-CAPTURE-PUBLICATION-INDEPENDENT-S1-20261009\\ACK_COMPLETION_BINDING.json",
+        "sha256": "C0E8A9CCE7489567350A2F6BF65339D5C2FFCEFF200B0B69DDA31593CEF7F2DB",
+        "size": 4989
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R14-POLICY-CAPTURE-PUBLICATION-INDEPENDENT-S1-20261009\\RETURN_TOOL_PROOF.json",
+        "sha256": "1BDBDAEDF47B1E073B486C226791B0D58C64465E7AA4F1929F261E843A9CCC8E",
+        "size": 149
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R14-POLICY-CAPTURE-PUBLICATION-INDEPENDENT-S1-20261009\\DELIVERY_STATUS.json",
+        "sha256": "78BBE67D44C359DFF3F4C3D8F4C1BAAF0DFA61551992C2BA101ABD63A26F825E",
+        "size": 747
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010\\COMPLETION.json",
+        "sha256": "EBC2F890A782313FB044AC530050C8705D4A2B505ACF23DCBD055178BA15758A",
+        "size": 4977
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010\\RESULT_INDEX.json",
+        "sha256": "97B49B563FED7270B2E71D8E74603010C13A96EB26CA9C8D616226F8D1822643",
+        "size": 7685
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010\\ACK_COMPLETION_BINDING.json",
+        "sha256": "4A946FB4C0EEE8C4BC2256D6D4806269900EBBE6DBADDADC557C5A20EF88EC19",
+        "size": 5129
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010\\RETURN_TOOL_PROOF.json",
+        "sha256": "C60D31F67FB83BDAF13522446D9738C4BA2CADD9842D73EEA473B8FFFE4BE48C",
+        "size": 4740
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R15-PUBLIC-MANIFEST-BOUNDARY-INDEPENDENT-S1-20261010\\DELIVERY_STATUS.json",
+        "sha256": "8B616ED9F3473CE089E3266C5D5D75AAF44CCCAF1C7D89853583D70063FC71A4",
+        "size": 540
+      },
+      {
+        "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+        "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+        "size": 170135
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R16-OPERATOR-NATIVE-PREP-S1-20261010\\EVIDENCE_MANIFEST.json",
+        "sha256": "BDFC4071223E9AD43C8F94C71492D323CE2A77B421745C87BB6D791F06A6E1CD",
+        "size": 13369
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R16-OPERATOR-NATIVE-PREP-S1-20261010\\COMPLETION.json",
+        "sha256": "439064FB7BCE1A3C10227DE30181B97EDFD6B01BE0047529E6E89AF46AA05167",
+        "size": 3528
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R16-OPERATOR-NATIVE-PREP-S1-20261010\\RESULT_INDEX.json",
+        "sha256": "AD08A9311843062DA877D808B366DB07E02F151FDFA703E4BE7943EC895A157E",
+        "size": 5987
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R16-OPERATOR-NATIVE-PREP-S1-20261010\\ACK_COMPLETION_BINDING.json",
+        "sha256": "8A2DDB8B62649079634172911094681DA6B087D6A2A7DA26542911F99757E006",
+        "size": 3665
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R16-OPERATOR-NATIVE-PREP-S1-20261010\\RETURN_TOOL_PROOF.json",
+        "sha256": "262806F9B3983BCB3B298D4D4B49BE408024FD1A3CABB4F25A1DDF951A38C842",
+        "size": 5820
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R16-OPERATOR-NATIVE-PREP-S1-20261010\\DELIVERY_STATUS.json",
+        "sha256": "496F0CED9EBC874BAAD43D76984718E6B1FCFFE580E15561940DC7BFAFCF6299",
+        "size": 508
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\RuntimeCopy\\RimWorldWin64.exe",
+        "sha256": "4C30E2105B49F2D0130F5D861947FBE82B866042299DA48EF1C8CF6979A8564D",
+        "size": 666624
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\RuntimeCopy\\steam_appid.txt",
+        "sha256": "127E5A12E4BEEAC49D6FAEA428A003E76ACE71A2B23CBB17F17DD00991DD60D3",
+        "size": 6
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\RuntimeCopy\\UnityCrashHandler64.exe",
+        "sha256": "6DA75361F0EDDBE3492DF3C495AF7A1BA90FA6AE8C91D30BC857930F7DF63726",
+        "size": 1112768
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\RuntimeCopy\\UnityPlayer.dll",
+        "sha256": "E0C489F1683609247FEDE45EA049D30BAA4F4542060E308E25C0EC87F6C0FB96",
+        "size": 30996672
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\RuntimeCopy\\Version.txt",
+        "sha256": "0EC56B267649FAA48E8CD6BD767B14BAFE3D1359AF44434711105DBDC4597BE3",
+        "size": 17
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\RuntimeCopy\\Mods\\WarEconomy.WorkerBridge.PoC\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+        "sha256": "4F5663FDBBFA09A8B2BE460D09950FD22B9567459F7116E69D0B1C558F189B9E",
+        "size": 204800
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\RuntimeCopy\\Mods\\WarEconomy.WorkerBridge.PoC\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+        "sha256": "CC796E68C592C94345DF41D64609B5D207933B8F5FE805146875D9E61B8D12C4",
+        "size": 49264
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R17-OWNED-BOOTSTRAP-INDEPENDENT-S1-20261010\\EVIDENCE_MANIFEST.json",
+        "sha256": "7D3EEC0C08176F87223BFEB56232C2EC71FDF72888B5FB4B6BFF39774B88AE77",
+        "size": 60803
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R17-OWNED-BOOTSTRAP-INDEPENDENT-S1-20261010\\COMPLETION.json",
+        "sha256": "C2316E4DE43CD8DF6740DA53622D524111C7006A9524931D07B2EC89EC83732C",
+        "size": 4743
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R17-OWNED-BOOTSTRAP-INDEPENDENT-S1-20261010\\RESULT_INDEX.json",
+        "sha256": "E5F2F54E386857D6B03983DA6FC7E90837041DE0AB2D94E09DB288DFD32D611B",
+        "size": 7633
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R17-OWNED-BOOTSTRAP-INDEPENDENT-S1-20261010\\ACK_COMPLETION_BINDING.json",
+        "sha256": "624A770B8857315912EA02E34ACFDCD33D5AE22AE7840941CAFAD7639F812C85",
+        "size": 4886
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R17-OWNED-BOOTSTRAP-INDEPENDENT-S1-20261010\\RETURN_TOOL_PROOF.json",
+        "sha256": "F8C8641AD8E298C3E61360A8B083F87DE4BECFAED5B0F71A2E0A3FB937E10FFD",
+        "size": 5726
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R17-OWNED-BOOTSTRAP-INDEPENDENT-S1-20261010\\DELIVERY_STATUS.json",
+        "sha256": "05148003A990CABC8563E492079679E516666B814B4892A1B8BE337A7FB19D9D",
+        "size": 522
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R18-CONFIG-ADMISSION-SEAL-INDEPENDENT-S1-20261010\\EVIDENCE_MANIFEST.json",
+        "sha256": "3E3599112D7A7C7B782132FE38A134BC23645A271EC3BE18E56915534A312C5E",
+        "size": 116272
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R18-CONFIG-ADMISSION-SEAL-INDEPENDENT-S1-20261010\\COMPLETION.json",
+        "sha256": "71BE5152112A6AA8F57D295C9EBE5CEEA998DCBBFEEF4C5027D70C9619149012",
+        "size": 4932
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R18-CONFIG-ADMISSION-SEAL-INDEPENDENT-S1-20261010\\RESULT_INDEX.json",
+        "sha256": "D73E6A91BC85A6561373710CD7104C4F5CF848D7E3D5EBDE20DD7F2621834A9C",
+        "size": 8790
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R18-CONFIG-ADMISSION-SEAL-INDEPENDENT-S1-20261010\\ACK_COMPLETION_BINDING.json",
+        "sha256": "16514B21BE2377105F747F6A6C2D5F85379F23C8D10C7D1A4816C332B5DE1AEB",
+        "size": 5081
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R18-CONFIG-ADMISSION-SEAL-INDEPENDENT-S1-20261010\\RETURN_TOOL_PROOF.json",
+        "sha256": "C665A8D0462A576041E9010331893382E3B2D8DA6A0E823D295159E3069EA11E",
+        "size": 407
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R18-CONFIG-ADMISSION-SEAL-INDEPENDENT-S1-20261010\\DELIVERY_STATUS.json",
+        "sha256": "3CF8523E8A3E413EDDF4F3E618C7C5CC0C3821AA47CFA86D3E10A35DED99A500",
+        "size": 430
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R19-OPAQUE-POLICY-INDEPENDENT-S1-20261010\\EVIDENCE_MANIFEST.json",
+        "sha256": "BA4C00354C4DDD05910927ED3643D1B55F7C2C3FC45A748188DB78469E9C044A",
+        "size": 121595
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R19-OPAQUE-POLICY-INDEPENDENT-S1-20261010\\COMPLETION.json",
+        "sha256": "EC88A9E0895C7E8A66F696730B0B0F028339B6E2E88533F26F46B82331FC3890",
+        "size": 4989
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R19-OPAQUE-POLICY-INDEPENDENT-S1-20261010\\RESULT_INDEX.json",
+        "sha256": "F4736940E2E8C3FC2DAEDF519E490D4F98090F9AB0F32A6D13FBDD53B6C86781",
+        "size": 8755
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R19-OPAQUE-POLICY-INDEPENDENT-S1-20261010\\ACK_COMPLETION_BINDING.json",
+        "sha256": "E200D7A224DBE14DCCC82BF4D1E8D1852B4AC3D056AEF03A75137E7D6183627D",
+        "size": 5130
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R19-OPAQUE-POLICY-INDEPENDENT-S1-20261010\\RETURN_PENDING.json",
+        "sha256": "F853DEC73F236DDB9BF230BC96CB811627D6EB776A94CC1DD85C486DFADA8319",
+        "size": 1293
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R19-OPAQUE-POLICY-INDEPENDENT-S1-20261010\\ACK_TOOL_PROOF.json",
+        "sha256": "41EA8C586E833BDFC63792DACA51271B55D8B15F47F625E8F7BD009CA06CD713",
+        "size": 466
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R20-TRUSTED-STARTUP-INDEPENDENT-S1-20261011\\EVIDENCE_MANIFEST.json",
+        "sha256": "9B4CC99A74B9FA54451D9997158871D6ED37EF5C95ED2369FD3678AACBB9375E",
+        "size": 149436
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R20-TRUSTED-STARTUP-INDEPENDENT-S1-20261011\\COMPLETION.json",
+        "sha256": "7170B8090D4AC40C959D84616763CC9194C5052145BD818F337FBDA744833CA0",
+        "size": 4670
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R20-TRUSTED-STARTUP-INDEPENDENT-S1-20261011\\RESULT_INDEX.json",
+        "sha256": "C4B6AC6D93C3AE40756E65D8B23EB1B42D22D0893F3267678233751533A879ED",
+        "size": 8705
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R20-TRUSTED-STARTUP-INDEPENDENT-S1-20261011\\ACK_COMPLETION_BINDING.json",
+        "sha256": "D4DCAB2BAE4DB843D1A26491691763B84C67571ABB5E739DA2C3D31354C83760",
+        "size": 4813
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R20-TRUSTED-STARTUP-INDEPENDENT-S1-20261011\\RETURN_TOOL_PROOF.json",
+        "sha256": "CA71C457144C3172217DCCF54F4D38B444A0183E2B0D530DEF7E78C6FF146E8E",
+        "size": 401
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R20-TRUSTED-STARTUP-INDEPENDENT-S1-20261011\\DELIVERY_STATUS.json",
+        "sha256": "E474B6FCFF1B5FF351B141990B55EE05E5AE3241C803063ECB30BB692A257A2B",
+        "size": 424
+      }
+    ],
+    "fixed_current_prefixes": [
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+        "marker": "    public static class ContentProfileProvider",
+        "sha256": "F3C4F865F1E2A898BF240A2D096195870D77A52408CF2D93664FE15092A2A887"
+      }
+    ],
+    "historical_allowlist_is_not_r5_source_scope": true,
+    "historical_allowlist_is_not_r6_source_scope": true,
+    "historical_allowlist_is_not_r7_source_scope": true,
+    "historical_allowlist_is_not_r8_source_scope": true,
+    "historical_allowlist_does_not_expand_r9_version_scope": true,
+    "historical_allowlist_does_not_expand_r10_package_policy_scope": true,
+    "historical_allowlist_does_not_expand_r11_policy_encoding_scope": true,
+    "historical_allowlist_does_not_expand_r12_package_order_scope": true,
+    "historical_allowlist_does_not_expand_r13_policy_cache_lifecycle_scope": true,
+    "historical_allowlist_does_not_expand_r14_policy_capture_scope": true,
+    "historical_allowlist_does_not_expand_r15_public_manifest_scope": true,
+    "r16_permission": "READ_ONLY_PREPARATION_NO_PRODUCTION_EDITS_BUILD_EXECUTION",
+    "historical_allowlist_does_not_expand_r16_scope": true,
+    "r17_permission": "WORKER_ONLY_OWNED_BOOTSTRAP_IMPLEMENTATION_PLUS_EXACT_BUILD_OUTPUTS_NORMAL_PURE_QA_NO_NATIVE",
+    "r18_permission": "WORKER_ONLY_CONFIG_ADMISSION_SEAL_NEW_POSITIVE_PURE_RUNNER_NO_GLOBAL_NATIVE",
+    "r19_permission": "ONLY_WORKER_TWO_OPAQUE_ASSIGNMENTS_AND6_DLL_PDB_NEW_POSITIVE_PURE_RUNNER",
+    "r20_permission": "Worker M01/M03 bounded startup origin receipt and missing readiness gate only;6projectDLLPDB/newnormalPURErunner",
+    "r21_permission": "ONLY receipt ToRedactedJson method and sixprojectDLLPDB/newpositivePURErunner"
+  },
+  "allowed_mutable_paths": [
+    {
+      "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "AB56CC423C6FB915476104D22B32F0A91B446D6788552830A9730A2DEF11898D",
+      "size": 213803
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "482166A77BF90569626A5CB27D83A4D949BD57DA85BA660F03067C833FB777F0",
+      "size": 295424
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "EC05783A49CA30FECD9E615020A71206F2AE388D8053D750B3EECEDF9B97455F",
+      "size": 71020
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "90FDAF96404913D917CEE3EFCDC81A94C05B348DBF1BFE3F44852096A32B2C4C",
+      "size": 279552
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "749A540D23FF0A77CD0A7E0D53E5927B303B40615A7DEDF11A0E4C8D91B4C051",
+      "size": 52036
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "482166A77BF90569626A5CB27D83A4D949BD57DA85BA660F03067C833FB777F0",
+      "size": 295424
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "EC05783A49CA30FECD9E615020A71206F2AE388D8053D750B3EECEDF9B97455F",
+      "size": 71020
+    }
+  ],
+  "worker_before_sha256": "AB56CC423C6FB915476104D22B32F0A91B446D6788552830A9730A2DEF11898D",
+  "authorized_region": "OperatorStartupAdmissionReceipt.ToRedactedJson ONLY; no new helper/class/using edits",
+  "region_offsets_before": [
+    179745,
+    180561
+  ],
+  "fixed_prefix": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R21-RECEIPT-UTC-20261011-DIRECT-49256586\\WORKER_FIXED_PREFIX.bin",
+    "sha256": "D8502FC0A667DC819F62898885A6AA15618B17D3DD09D2F7DCDD237C7C7CE9F4"
+  },
+  "fixed_suffix": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R21-RECEIPT-UTC-20261011-DIRECT-49256586\\WORKER_FIXED_SUFFIX.bin",
+    "sha256": "1F4D372F0366DA5F44A3EA34A094BC997812C511D64A3F9E7BEFC37914BBCAA8"
+  },
+  "all_other_worker_bytes": "EXACT_PREFIX_AND_SUFFIX_MATCH_REQUIRED",
+  "Census_csproj_runtime7": "FIXED"
+}

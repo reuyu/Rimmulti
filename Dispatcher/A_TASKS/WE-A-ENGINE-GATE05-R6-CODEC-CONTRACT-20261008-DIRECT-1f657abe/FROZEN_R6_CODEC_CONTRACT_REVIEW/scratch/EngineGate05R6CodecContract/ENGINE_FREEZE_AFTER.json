@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "freeze_time": "2026-10-08T19:36:00+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R6-CODEC-CONTRACT-20261008-DIRECT-1f657abe",
+  "phase": "POST_RUN_FREEZE_AFTER",
+  "files": {
+    "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs": {
+      "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+      "size": 156431
+    },
+    "scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs": {
+      "sha256": "E94EA163BD6041C1ACA057D7E698277C0165E7F535FBCDBB765F3F68929348B5",
+      "size": 112873
+    },
+    "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj": {
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "size": 1774
+    },
+    "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll": {
+      "sha256": "721807FF00245B5B56DD94220531DB5DF620933E5905ADF692FC6336DD402E9B",
+      "size": 215040,
+      "mvid": "b3481641-2711-4b0e-96dd-db0983c2b689"
+    },
+    "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb": {
+      "sha256": "47FA9E93D5768175BF61EAB204CB4ED1BF6B45194407AA536F363B3497671C63",
+      "size": 52280
+    },
+    "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll": {
+      "sha256": "2E6D66A16D2932155261034915E23B74B1BD73A0D28EE3D9F447A67152E2D3BC",
+      "size": 205312,
+      "mvid": "354737fd-10a8-4160-8307-3e186c2118e6"
+    },
+    "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb": {
+      "sha256": "3FF4D9F3ECF99D54857FD95A033CCDCE21786BE5722032A9DE5A46875B98C1BE",
+      "size": 39032
+    },
+    "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll": {
+      "sha256": "721807FF00245B5B56DD94220531DB5DF620933E5905ADF692FC6336DD402E9B",
+      "size": 215040,
+      "mvid": "b3481641-2711-4b0e-96dd-db0983c2b689"
+    },
+    "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb": {
+      "sha256": "47FA9E93D5768175BF61EAB204CB4ED1BF6B45194407AA536F363B3497671C63",
+      "size": 52280
+    }
+  }
+}

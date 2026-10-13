@@ -1,0 +1,87 @@
+{
+  "at": "2026-10-12T10:07:32.897784+09:00",
+  "guard_run": "MASTER-R29-S2-STOP-RECOVERY-20261012-01",
+  "guard_session": 53800,
+  "guard_pid": 35708,
+  "result_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S2-20261012-65d0b16ccd914b0ea508aea301163053",
+  "delivery_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S2-20261012-01",
+  "wp_revision": "S2",
+  "completion_sha256": "77A8A7220DAE2E2E8031F04D9F8356691A2913CC174A81E42F767CCB0B69D571",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:185",
+    "revision": 185,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a12da0-3577-75d0-b25f-20c9c1b9d1c5",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791766836,
+      "completedAt": 1791767086,
+      "durationMs": 250176
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acc322b5b4487d09b190190818ddf80",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016acc322b5b4487d09b190190818ddf80",
+      "turnId": "01a12da0-3577-75d0-b25f-20c9c1b9d1c5",
+      "phase": "final_answer",
+      "text": "S2도 제 metadata 경로 치환 오류로 중단됐습니다. 오류와 전체 diff를 보존해 마스터에게 보고했으며, 빌드·후보 호출은 0입니다. 중단 보고서 재시도 금지 지시에 따라 새 승인을 기다립니다."
+    },
+    "latestToolMarkerId": "exec-be4868a2-8788-45ea-a557-8ebd7b7a4dd4",
+    "latestToolMarker": {
+      "id": "exec-be4868a2-8788-45ea-a557-8ebd7b7a4dd4",
+      "turnId": "01a12da0-3577-75d0-b25f-20c9c1b9d1c5",
+      "type": "fileChange",
+      "name": "fileChange",
+      "status": "completed"
+    }
+  },
+  "evidence_count": 10,
+  "protected_paths": 14348,
+  "frozen_files": 132,
+  "master_verdict": "ACCEPTED_OWN_METADATA_ORCHESTRATION_STOP_CANDIDATE_NOT_EXECUTED_FRESH_S3_AUTHORIZED",
+  "review": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R29_QA_S2_BOOTSTRAP_STOP_20261012.md",
+    "sha256": "9FE5AE2C9B27ECC0CDD56D0AE1AB966D3A4D4D0EB04EE990F7E5707F1F432A58",
+    "bytes": 1872
+  },
+  "preservation": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R29_S2_STOP_TERMINAL_PRESERVATION_20261012.json",
+    "sha256": "CA2BEEE764B72D8ADB8A36F2B85E7B95309E4AB9981C06C72EB9C44501C9293C",
+    "bytes": 4657
+  },
+  "template": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\Tools\\MASTER_R29_S3_REVIEW_SETUP_TEMPLATE.py",
+    "sha256": "2878AE853B4B271A615EFA56A7E0C0568466F9FC4A1EE33B4E1DA3D7DA034EC7",
+    "bytes": 4775
+  },
+  "template_proof": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R29_S3_TEMPLATE_REPLACEMENT_PROOF_20261012.json",
+    "sha256": "ABB669133267E1F2402981ADB36708C54B3E1CF15A382339C338B764072F78C5",
+    "bytes": 2529
+  },
+  "new_wp": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R29_STARTUP_PAIR_INDEPENDENT_S3.md",
+    "sha256": "68B06607CE222BCC8EDD97C8D69D13A2B118191438B4EED699F8B0B948EB8B48",
+    "bytes": 9068
+  },
+  "new_baseline": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R29_S3_PAIR_QA_PROTECTED_BASELINE_20261012.json",
+    "sha256": "99DD177CB985F4D5985DD711A13ADD3303E6B52A7D1A8665FBEC4493DA11B0D0",
+    "bytes": 4388822
+  },
+  "new_count": 14365,
+  "new_delivery": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012-01",
+  "delivery_status": "APPROVED_NOT_SENT",
+  "candidate_executions": 0,
+  "native_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD"
+}

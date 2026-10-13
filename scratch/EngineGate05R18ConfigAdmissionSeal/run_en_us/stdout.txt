@@ -1,0 +1,37 @@
+[R18-RUNNER] Starting Pure Managed Normal Config Admission Seal Test Battery
+[R18-RUNNER] Run Directory:      C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R18ConfigAdmissionSeal\run_en_us
+[R18-RUNNER] Loaded Candidate:   C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R18ConfigAdmissionSeal\Harness\bin\Debug\net472\WarEconomy.WorkerBridge.PoC.dll
+[R18-RUNNER] Candidate SHA256:   AE7B2FB6FF3BDFD449D43CB055B85768557E872D4985017E71E2E5655F8F6073
+[R18-RUNNER] Candidate MVID:     9e8501fc-d16e-413b-8682-17ba8550d9bf
+[R18-RUNNER] Culture:            en-US
+
+[TEST 1] Pure Strict Config JSON Parsing (ParseStrict)
+  -> PASS: Test 1 completed successfully.
+
+[TEST 2] Byte SHA Validation & Admission Factory (AdmitConfigBytes)
+  -> PASS: Test 2 completed successfully.
+
+[TEST 3] File Admission & Launch Descriptor Binding (AdmitConfigFile)
+  -> PASS: Test 3 completed successfully.
+
+[TEST 4] Deep Immutability & Defensive Copy Sealing (M01)
+  -> PASS: Test 4 completed successfully.
+
+[TEST 5] Snapshot Redacted JSON Generation
+  -> PASS: Test 5 completed successfully.
+
+[TEST 6] File SHA256 Calculation Helper
+  -> PASS: Test 6 completed successfully.
+
+[TEST 7] Admitted Executable Validation Helper
+  -> PASS: Test 7 completed successfully.
+
+[TEST 8] Synthetic ValidatorResult Redaction Helper
+  -> PASS: Test 8 completed successfully.
+
+[TEST 9] Pure Package Policy Codec Normal Regression (Census Contract)
+  -> PASS: Test 9 completed successfully.
+
+[R18-RUNNER] All 9 tests PASSED. Exit code: 0
+[R18-RUNNER] Wrote Results: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R18ConfigAdmissionSeal\run_en_us\RESULTS.json
+[R18-RUNNER] Wrote Ledger:  C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R18ConfigAdmissionSeal\run_en_us\API_LEDGER.json

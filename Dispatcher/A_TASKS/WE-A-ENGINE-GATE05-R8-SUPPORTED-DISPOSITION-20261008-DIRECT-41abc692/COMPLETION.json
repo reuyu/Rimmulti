@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "producer": "A",
+  "report_kind": "E1",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R8-SUPPORTED-DISPOSITION-20261008-DIRECT-41abc692",
+  "wp_id": "WP_ENGINE_GATE05_R8_SUPPORTED_DISPOSITION",
+  "wp_revision": "GATE05-R8-SUPPORTED-DISPOSITION",
+  "result_id": "WE-A-ENGINE-GATE05-R8-SUPPORTED-DISPOSITION-RESULT-01",
+  "status": "COMPLETED",
+  "completed_at": "2026-10-08T14:52:31.440531+00:00",
+  "summary": "WP_ENGINE_GATE05_R8_SUPPORTED_DISPOSITION / GATE05-R8-SUPPORTED-DISPOSITION narrow technical correction completed and developer E1 verification recorded. Successfully replaced label-only patch/settings support with actual typed disposition (ModPatchSettingsDispositionRecord, mod-level patchDisposition, settingsDisposition, totalObservedPatches). Enforced fail-closed child element observation before projection, eliminating silent filter omission and distinctly preserving legitimate optional absence. Disentangled compatibility version range (SupportedVersionsReadOnly) from mod version. Established composite key uniqueness and deterministic multi-key tie-breaking for loaded assemblies and active mods. Preserved immutable source baselines (WorkerBridge.cs, WorkerBridge.csproj, EngineHostCensus.cs prefix 72547 bytes SHA F3C4F865...). Executed positive pure normal DTO/helper unit harness (16/16 PASS) with Master-approved frozen managed dependencies without cache calls, adverse execution, or runtime initialization anomalies. Bound actual PE MVIDs for Debug (348b49f3-...) and Release (f3ab51a3-...) candidates. All historical lineages and installed incident preserved as OPEN.",
+  "e1_verdict": "IMPLEMENTATION_PARTIAL",
+  "limitations": [
+    "NATIVE_UNTESTED: In-engine and game runtime execution was strictly prohibited under WP_ENGINE_GATE05_R8_SUPPORTED_DISPOSITION. Verification was conducted via isolated positive pure normal DTO and helper unit harness (16/16 PASS).",
+    "INSTALLED_DLL_INCIDENT_OPEN: Steam installed DLL (BB3B52...) discrepancy against archive baseline (2D64FF...) remains an UNKNOWN OPEN INCIDENT, preserved unmodified per Master policy.",
+    "NO_SELF_CLOSURE: Developer A does not self-declare candidate release, E2 verification, or defect closure. Gate05 defects, Engine002/006, Pipeline007, and Foundation HOLD remain OPEN pending Master disposition and independent Sol QA review."
+  ],
+  "artifacts": [
+    {
+      "role": "implementation_report",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_EngineHost_Content_Codec_Gate05_R8.md",
+      "sha256": "CDF69260B55D0DFAB28508174572B0242AE49D9AAC6358B5CA2B17C539CC6714",
+      "size": 13398
+    },
+    {
+      "role": "release_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R8_SUPPORTED_DISPOSITION.json",
+      "sha256": "195B76A20DFD290A82602B097192E7D2C8FA90B643DD9EE622E6402E491DF320",
+      "size": 4987
+    },
+    {
+      "role": "harness",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R8SupportedDisposition\\Harness\\Program.cs",
+      "sha256": "3DE6C46EFC73CCBB97BF6F5EBA1C45FFB8873CC3A389D4F780B10FEEA07A4F51",
+      "size": 34425
+    },
+    {
+      "role": "harness_project",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R8SupportedDisposition\\Harness\\Gate05R8SupportedRunner.csproj",
+      "sha256": "3E1BEB3AB81CF6660080A671AACD5E3E8E261238B062AE4DDDB48DC0A65141C4",
+      "size": 1618
+    },
+    {
+      "role": "results",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R8SupportedDisposition\\results.json",
+      "sha256": "DEE702244D80E121814D743A723758E9675FF7B31DA01FFD88EC2243A0B0FB53",
+      "size": 4624
+    },
+    {
+      "role": "raw_evidence",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R8SupportedDisposition\\raw_console.txt",
+      "sha256": "7B60DD37DEFE449127317FE5D5DB6DF1CFD131D4076917EE2A3998C28375C8E9",
+      "size": 3212
+    },
+    {
+      "role": "candidate_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "F82F3B08FF8D7D129F520DE054E7BAB666728B9909D9C9C2E955E5E583EBE9D5",
+      "size": 226816,
+      "mvid": "348b49f3-74f8-4643-9a2f-4a1dc5fb9a41"
+    },
+    {
+      "role": "pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "04CC496EE2D0B2D052813BA0824A222563D7462CADDCE7E9AE53629679533E6A",
+      "size": 56080
+    },
+    {
+      "role": "alternate_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "10A36A809B41DCB0AF158D5D2EEC2760B9F2D60EC2DBAFF089798242A5FA9742",
+      "size": 216064,
+      "mvid": "f3ab51a3-2c77-423c-adde-806782360d8f"
+    },
+    {
+      "role": "alternate_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "46F3CC376A18E94453DD3CCED681360FB59B097143C1834C79DD0B98C8FF3EC0",
+      "size": 41200
+    },
+    {
+      "role": "deployed_assembly",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "F82F3B08FF8D7D129F520DE054E7BAB666728B9909D9C9C2E955E5E583EBE9D5",
+      "size": 226816,
+      "mvid": "348b49f3-74f8-4643-9a2f-4a1dc5fb9a41"
+    },
+    {
+      "role": "deployed_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "04CC496EE2D0B2D052813BA0824A222563D7462CADDCE7E9AE53629679533E6A",
+      "size": 56080
+    },
+    {
+      "role": "source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+      "size": 156431
+    },
+    {
+      "role": "source_census",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "28651CE9461694C5BBA8DC57ECC6D1982329A9BF6775D9FBE420C0FFDCB98D0E",
+      "size": 134392
+    },
+    {
+      "role": "source_csproj",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "size": 1774
+    },
+    {
+      "role": "pre_run_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R8SupportedDisposition\\CANDIDATE_PRE_RUN_MANIFEST.json",
+      "sha256": "4259776153CD8B5CE18F175552F6EFFBC8E967D63DE659E394412B662DABC484",
+      "size": 4399
+    },
+    {
+      "role": "engine_freeze_before",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R8SupportedDisposition\\ENGINE_FREEZE_BEFORE.json",
+      "sha256": "D546BBC0650A72B19F290A44A3C8E377A075A62E0C6ED32AE862D9155DE0B909",
+      "size": 2041
+    },
+    {
+      "role": "engine_freeze_after",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R8SupportedDisposition\\ENGINE_FREEZE_AFTER.json",
+      "sha256": "5DA778D6780123A201867EB0F593C1F33AE1212B65B782F73F93EF614ABD595F",
+      "size": 2040
+    },
+    {
+      "role": "work_log",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R8-SUPPORTED-DISPOSITION-20261008-DIRECT-41abc692\\A_WORK_LOG.md",
+      "sha256": "AC88335B2721C4DE92BC255FC0945C6527FF82FD1A07E9380FEAC328894BAE2B",
+      "size": 6654
+    },
+    {
+      "role": "recovery_ack",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R8-SUPPORTED-DISPOSITION-20261008-DIRECT-41abc692\\A_RECOVERY_ACK.md",
+      "sha256": "84ED6E37896F176028A14FB3AAA00F8EFD1481B39BD3E5B6E41D5A8B32AD5C4D",
+      "size": 5267
+    },
+    {
+      "role": "ack_json",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R8-SUPPORTED-DISPOSITION-20261008-DIRECT-41abc692\\ACK.json",
+      "sha256": "4679B4B8527682AA184B072BE322B56B6875A375E92F7651BB91A3C53EDC136E",
+      "size": 1512
+    }
+  ]
+}

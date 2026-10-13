@@ -1,0 +1,292 @@
+--- Frozen R10
++++ R11
+@@ -1533,7 +1533,7 @@
+     public static class ContentProfileProvider
+     {
+         public const string MANIFEST_SCHEMA_VERSION = "ADR-006B-v5";
+-        public const string CONTENT_CONTRACT_VERSION = "ADR-006B-v5-R10";
++        public const string CONTENT_CONTRACT_VERSION = "ADR-006B-v5-R11";
+         public const string SUPPORTED_COVERAGE_PROFILE = "POC_SUPPORTED_CORE_DLC_ASSEMBLIES_V5";
+         public const string MOD_PATCH_SUPPORT_STATUS = "TYPED_OBSERVATION_EXPLICIT_DISPOSITION_V1";
+ 
+@@ -1592,6 +1592,12 @@
+             {
+                 _configuredExpectedPackagePolicy = clone;
+             }
++        }
++
++        public static void ConfigureExpectedPackagePolicy(ExpectedPackagePolicyDeclaration declaration)
++        {
++            if (declaration == null) throw new ArgumentNullException(nameof(declaration));
++            ConfigureExpectedPackagePolicy(declaration.ToRecord());
+         }
+ 
+         public static void ClearConfiguredExpectedPackagePolicy()
+@@ -1681,7 +1687,7 @@
+                 });
+             }
+ 
+-            // 4. Patch/Settings Disposition Summary synchronization & Package Policy string trimming
++            // 4. Patch/Settings Disposition Summary synchronization & Package Policy normalization (lossless opaque policyId/revision preserved without Trim)
+             if (manifest.patchSettingsDisposition != null && manifest.activeMods != null)
+             {
+                 int totalPatches = 0;
+@@ -1696,8 +1702,8 @@
+             }
+             if (manifest.packagePolicyDisposition != null)
+             {
+-                manifest.packagePolicyDisposition.policyId = manifest.packagePolicyDisposition.policyId?.Trim() ?? "";
+-                manifest.packagePolicyDisposition.revision = manifest.packagePolicyDisposition.revision?.Trim() ?? "";
++                manifest.packagePolicyDisposition.policyId = manifest.packagePolicyDisposition.policyId ?? "";
++                manifest.packagePolicyDisposition.revision = manifest.packagePolicyDisposition.revision ?? "";
+                 manifest.packagePolicyDisposition.policyDigest = manifest.packagePolicyDisposition.policyDigest?.Trim() ?? "";
+                 manifest.packagePolicyDisposition.status = manifest.packagePolicyDisposition.status?.Trim() ?? "";
+             }
+@@ -1812,32 +1818,102 @@
+             return JsonConvert.DeserializeObject<ContentProfileManifest>(json);
+         }
+ 
++        public static string EscapeJsonString(string? text)
++        {
++            if (text == null) return "";
++            var sb = new StringBuilder();
++            foreach (char c in text)
++            {
++                switch (c)
++                {
++                    case '"': sb.Append("\\\""); break;
++                    case '\\': sb.Append("\\\\"); break;
++                    case '\b': sb.Append("\\b"); break;
++                    case '\f': sb.Append("\\f"); break;
++                    case '\n': sb.Append("\\n"); break;
++                    case '\r': sb.Append("\\r"); break;
++                    case '\t': sb.Append("\\t"); break;
++                    default:
++                        if (c < 0x20)
++                        {
++                            sb.AppendFormat(System.Globalization.CultureInfo.InvariantCulture, "\\u{0:x4}", (int)c);
++                        }
++                        else
++                        {
++                            sb.Append(c);
++                        }
++                        break;
++                }
++            }
++            return sb.ToString();
++        }
++
++        public static string SerializePackagePolicy(ExpectedPackagePolicyDeclaration declaration)
++        {
++            if (declaration == null) throw new ArgumentNullException(nameof(declaration));
++            var sb = new StringBuilder();
++            sb.Append("{\"schemaVersion\":\"");
++            sb.Append(EscapeJsonString(string.IsNullOrEmpty(declaration.schemaVersion) ? ExpectedPackagePolicyDeclaration.POLICY_SCHEMA_VERSION : declaration.schemaVersion));
++            sb.Append("\",\"policyId\":\"");
++            sb.Append(EscapeJsonString(declaration.policyId ?? ""));
++            sb.Append("\",\"revision\":\"");
++            sb.Append(EscapeJsonString(declaration.revision ?? ""));
++            sb.Append("\",\"admittedPackageIds\":[");
++            if (declaration.admittedPackageIds != null)
++            {
++                for (int i = 0; i < declaration.admittedPackageIds.Count; i++)
++                {
++                    if (i > 0) sb.Append(',');
++                    sb.Append('"');
++                    string pkg = declaration.admittedPackageIds[i] ?? "";
++                    sb.Append(EscapeJsonString(pkg.ToLowerInvariant()));
++                    sb.Append('"');
++                }
++            }
++            sb.Append("]}");
++            return sb.ToString();
++        }
++
++        public static ExpectedPackagePolicyDeclaration? DeserializePackagePolicy(string json)
++        {
++            if (string.IsNullOrEmpty(json)) return null;
++            return JsonConvert.DeserializeObject<ExpectedPackagePolicyDeclaration>(json);
++        }
++
++        public static string ComputePackagePolicyDigest(ExpectedPackagePolicyDeclaration declaration)
++        {
++            if (declaration == null) throw new ArgumentNullException(nameof(declaration));
++            string json = SerializePackagePolicy(declaration);
++            using (var sha = SHA256.Create())
++            {
++                byte[] bytes = Encoding.UTF8.GetBytes(json);
++                return BitConverter.ToString(sha.ComputeHash(bytes)).Replace("-", "").ToUpperInvariant();
++            }
++        }
++
+         public static string ComputePackagePolicyDigest(ExpectedPackagePolicyRecord policy)
+         {
+             if (policy == null) throw new ArgumentNullException(nameof(policy));
+-            return ComputePackagePolicyDigest(policy.policyId, policy.revision, policy.admittedPackageIds);
++            return ComputePackagePolicyDigest(policy.ToDeclaration());
+         }
+ 
+         public static string ComputePackagePolicyDigest(string policyId, string revision, IEnumerable<string>? admittedPackageIds)
+         {
+-            var sb = new StringBuilder();
+-            sb.Append(policyId ?? "").Append('|');
+-            sb.Append(revision ?? "").Append('|');
++            var decl = new ExpectedPackagePolicyDeclaration
++            {
++                schemaVersion = ExpectedPackagePolicyDeclaration.POLICY_SCHEMA_VERSION,
++                policyId = policyId ?? "",
++                revision = revision ?? "",
++                admittedPackageIds = new List<string>()
++            };
+             if (admittedPackageIds != null)
+             {
+-                bool first = true;
+                 foreach (var pkg in admittedPackageIds)
+                 {
+-                    if (!first) sb.Append(',');
+-                    sb.Append((pkg ?? "").ToLowerInvariant());
+-                    first = false;
+-                }
+-            }
+-            using (var sha = SHA256.Create())
+-            {
+-                byte[] bytes = Encoding.UTF8.GetBytes(sb.ToString());
+-                return BitConverter.ToString(sha.ComputeHash(bytes)).Replace("-", "").ToUpperInvariant();
+-            }
++                    decl.admittedPackageIds.Add((pkg ?? "").ToLowerInvariant());
++                }
++            }
++            return ComputePackagePolicyDigest(decl);
+         }
+ 
+         public static bool CheckPackagePolicy(
+@@ -1950,6 +2026,30 @@
+             return CheckPackagePolicy(policy, manifest, out _, out failureReason);
+         }
+ 
++        public static bool CheckPackagePolicy(
++            ExpectedPackagePolicyDeclaration declaration,
++            ContentProfileManifest manifest,
++            out PackagePolicyCheckResult checkResult,
++            out string failureReason)
++        {
++            if (declaration == null)
++            {
++                checkResult = new PackagePolicyCheckResult();
++                failureReason = "Expected package policy declaration is null.";
++                checkResult.failureReason = failureReason;
++                return false;
++            }
++            return CheckPackagePolicy(declaration.ToRecord(), manifest, out checkResult, out failureReason);
++        }
++
++        public static bool CheckPackagePolicy(
++            ExpectedPackagePolicyDeclaration declaration,
++            ContentProfileManifest manifest,
++            out string failureReason)
++        {
++            return CheckPackagePolicy(declaration, manifest, out _, out failureReason);
++        }
++
+         public static bool TryAdmitWithPackagePolicy(
+             ContentProfileManifest manifest,
+             ExpectedPackagePolicyRecord policy,
+@@ -1996,6 +2096,21 @@
+ 
+             canonicalJson = SerializeCanonicalJson(manifest, canonicalNormalize: true);
+             return true;
++        }
++
++        public static bool TryAdmitWithPackagePolicy(
++            ContentProfileManifest manifest,
++            ExpectedPackagePolicyDeclaration declaration,
++            out string canonicalJson,
++            out string failureReason)
++        {
++            if (declaration == null)
++            {
++                canonicalJson = "";
++                failureReason = "Expected package policy declaration is null.";
++                return false;
++            }
++            return TryAdmitWithPackagePolicy(manifest, declaration.ToRecord(), out canonicalJson, out failureReason);
+         }
+ 
+         /// <summary>
+@@ -2060,7 +2175,7 @@
+                 "TACTICAL_PROBE_V4",
+                 "READ_ONLY",
+                 "SIMULATION",
+-                "GATE05_R10_PACKAGE_POLICY",
++                "GATE05_R11_POLICY_ENCODING",
+                 "ADR006B_LOSSLESS_CANONICAL_CONTENT_V5"
+             };
+             foreach (var flag in requiredFlags)
+@@ -2846,13 +2961,13 @@
+             }
+             manifest.defFamilies.researchDefs.Sort((a, b) => string.CompareOrdinal(a.defName, b.defName));
+ 
+-            // Capability flags (aligned with semantic V4 scope and ADR-006B-v5-R10)
++            // Capability flags (aligned with semantic V4 scope and ADR-006B-v5-R11)
+             manifest.capabilityFlags = new List<string>
+             {
+                 "TACTICAL_PROBE_V4",
+                 "READ_ONLY",
+                 "SIMULATION",
+-                "GATE05_R10_PACKAGE_POLICY",
++                "GATE05_R11_POLICY_ENCODING",
+                 "ADR006B_LOSSLESS_CANONICAL_CONTENT_V5"
+             };
+ 
+@@ -2942,12 +3057,51 @@
+         public int totalObservedPatches = 0;
+     }
+ 
++    public class ExpectedPackagePolicyDeclaration
++    {
++        public const string POLICY_SCHEMA_VERSION = "WE-PACKAGE-POLICY-V1";
++        public string schemaVersion = POLICY_SCHEMA_VERSION;
++        public string policyId = "";
++        public string revision = "";
++        public List<string> admittedPackageIds = new List<string>();
++
++        public ExpectedPackagePolicyRecord ToRecord(string? digest = null)
++        {
++            return new ExpectedPackagePolicyRecord
++            {
++                policyId = this.policyId ?? "",
++                revision = this.revision ?? "",
++                admittedPackageIds = new List<string>(this.admittedPackageIds ?? new List<string>()),
++                policyDigest = digest ?? ContentProfileProvider.ComputePackagePolicyDigest(this)
++            };
++        }
++    }
++
+     public class ExpectedPackagePolicyRecord
+     {
+         public string policyId = "";
+         public string revision = "";
+         public List<string> admittedPackageIds = new List<string>();
+         public string policyDigest = "";
++
++        public ExpectedPackagePolicyDeclaration ToDeclaration()
++        {
++            var decl = new ExpectedPackagePolicyDeclaration
++            {
++                schemaVersion = ExpectedPackagePolicyDeclaration.POLICY_SCHEMA_VERSION,
++                policyId = this.policyId ?? "",
++                revision = this.revision ?? "",
++                admittedPackageIds = new List<string>()
++            };
++            if (this.admittedPackageIds != null)
++            {
++                foreach (var pkg in this.admittedPackageIds)
++                {
++                    decl.admittedPackageIds.Add((pkg ?? "").ToLowerInvariant());
++                }
++            }
++            return decl;
++        }
+     }
+ 
+     public class PackagePolicyDispositionRecord

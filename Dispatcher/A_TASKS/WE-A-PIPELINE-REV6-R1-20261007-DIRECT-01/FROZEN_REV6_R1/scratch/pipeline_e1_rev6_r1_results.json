@@ -1,0 +1,186 @@
+{
+  "WorkOrder": "WP_PIPELINE_REV6_R1",
+  "Revision": "REV6-R1",
+  "TimestampUtc": "2026-10-07T10:23:53.1592198Z",
+  "OverallSuccess": true,
+  "TotalTests": 25,
+  "PassedTests": 25,
+  "FailedTests": 0,
+  "Results": [
+    {
+      "Id": 1,
+      "Name": "Battery1_FiveRev4TypedInputFailures",
+      "Success": true,
+      "Details": "All 5 REV4 typed-input failure cases rejected as INVALID_REQUEST; exactly 0 durable records.",
+      "DurationMs": 121
+    },
+    {
+      "Id": 2,
+      "Name": "Battery2_ExactJsonAndNumericBoundaries",
+      "Success": true,
+      "Details": "Exact numeric and distinct JSON representations strictly preserved; equivalent retries succeed while semantic mutations collide.",
+      "DurationMs": 95
+    },
+    {
+      "Id": 3,
+      "Name": "Battery3_NaturalMixedCommittedAbortedRestart",
+      "Success": true,
+      "Details": "2 scopes, 4 COMMITTED, 2 legitimate ABORTED; restart reached PIPELINE_READY.",
+      "DurationMs": 84
+    },
+    {
+      "Id": 4,
+      "Name": "Battery4_OsChildProcessMultiProcessWinnerLoserRestart",
+      "Success": true,
+      "Details": "Spawned 10 independent OS child processes [PID:24412(ExitCode:1); PID:27740(ExitCode:1); PID:17468(ExitCode:0); PID:28876(ExitCode:1); PID:3808(ExitCode:1); PID:31680(ExitCode:1); PID:20148(ExitCode:1); PID:440(ExitCode:1); PID:3680(ExitCode:1); PID:26980(ExitCode:1)]. Exactly 1 winner (exit 0) and 9 CAS losers (exit 1); restart reached PIPELINE_READY.",
+      "DurationMs": 917
+    },
+    {
+      "Id": 5,
+      "Name": "Battery5_CrossPrincipalSameOperationId",
+      "Success": true,
+      "Details": "Cross-principal composite identity (PrincipalId, OperationId) cleanly supported across scopes.",
+      "DurationMs": 48
+    },
+    {
+      "Id": 6,
+      "Name": "Battery6_SemanticGraphAttacks",
+      "Success": true,
+      "Details": "Semantic graph verification rejects cross-entity derivative swaps and corrupted linkages.",
+      "DurationMs": 99
+    },
+    {
+      "Id": 7,
+      "Name": "Battery7_EnvelopeFieldFingerprintMutations",
+      "Success": true,
+      "Details": "Tampered envelope RequestFingerprint detected and rejected during reconciliation.",
+      "DurationMs": 41
+    },
+    {
+      "Id": 8,
+      "Name": "Battery8_CanonicalReceiptIdEventIdDerivativeIdentity",
+      "Success": true,
+      "Details": "Injective derivative identities (RCPT_..., EVT_...) cryptographically bind entity graphs.",
+      "DurationMs": 56
+    },
+    {
+      "Id": 9,
+      "Name": "Battery9_QaPipeline007_HistoricalObservedRevisionRewrites",
+      "Success": true,
+      "Details": "Historical decision witness strictly binds observed revision via OperationRecords.rowid sequence; earlier (1), later (4), and foreign-scope (3) mutations all rejected.",
+      "DurationMs": 299
+    },
+    {
+      "Id": 10,
+      "Name": "Battery10_QaPipeline007_AbortedTypedAuditStatusAndReasonSemantics",
+      "Success": true,
+      "Details": "Typed audit validation strictly verified status, reason, FailureReason, mandatory fields, and rejected extra unrecognized keys.",
+      "DurationMs": 488
+    },
+    {
+      "Id": 11,
+      "Name": "Battery11_QaPipeline007_CommittedTypedAuditMandatoryFields",
+      "Success": true,
+      "Details": "COMMITTED audit verification strictly validates all 8 mandatory typed fields; modifications, omissions, and extra keys fail closed.",
+      "DurationMs": 430
+    },
+    {
+      "Id": 12,
+      "Name": "Battery12_QaPipeline008_SchemaKeyCollationMutations",
+      "Success": true,
+      "Details": "Collation introspection via PRAGMA index_xinfo and DDL parsing strictly detects and rejects non-BINARY key mutations.",
+      "DurationMs": 97
+    },
+    {
+      "Id": 13,
+      "Name": "Battery13_QaPipeline008_RollbackSafeCaseDistinctCanariesAndRuntimeIdentity",
+      "Success": true,
+      "Details": "Rollback-safe canaries confirmed 0 mutations; runtime case-distinct identities ('P'/'p', 'S'/'s') cleanly preserved.",
+      "DurationMs": 46
+    },
+    {
+      "Id": 14,
+      "Name": "Battery14_SchemaV7RegressionAndLegacyFailClosed",
+      "Success": true,
+      "Details": "Schema V7 verified: user_version 7, signature 079CFBAC4246592B4E2300630BBB39528C44CCAA6C1199C9811E9B1DB9C4B63C, legacy v1-v6 fail closed.",
+      "DurationMs": 251
+    },
+    {
+      "Id": 15,
+      "Name": "Battery15_ActiveWriterLongerThanOldShutdownTimeout",
+      "Success": true,
+      "Details": "Writer held 8,000 ms: Caller received UNKNOWN_QUERY_REQUIRED, Dispose waited 7811 ms until writer dead; IsDisposed=true.",
+      "DurationMs": 8052
+    },
+    {
+      "Id": 16,
+      "Name": "Battery16_ActualMainActiveOperationQuit",
+      "Success": true,
+      "Details": "Main quit cleanup waited 6801 ms for active 7s writer; readiness=false, coordinator nulled.",
+      "DurationMs": 7060
+    },
+    {
+      "Id": 17,
+      "Name": "Battery17_RepeatedShutdownDispose",
+      "Success": true,
+      "Details": "Multiple sequential Shutdown and Dispose calls safely executed with idempotence.",
+      "DurationMs": 40
+    },
+    {
+      "Id": 18,
+      "Name": "Battery18_CallerUnknownThenDurableRetryConvergence",
+      "Success": true,
+      "Details": "Exact retry after commit convergence returns original receipt via ALREADY_COMMITTED.",
+      "DurationMs": 38
+    },
+    {
+      "Id": 19,
+      "Name": "Battery19_OsChildProcessSequentialStreamProgression",
+      "Success": true,
+      "Details": "8 sequential OS child processes [R0:PID10260(Exit0); R1:PID31880(Exit0); R2:PID6460(Exit0); R3:PID12004(Exit0); R4:PID35600(Exit0); R5:PID9624(Exit0); R6:PID22240(Exit0); R7:PID9888(Exit0)] advanced scope STREAM_S monotonically from 0 to 8 across distinct process lifetimes.",
+      "DurationMs": 1500
+    },
+    {
+      "Id": 20,
+      "Name": "Battery20_OwnedChildProcessHardKillCommitCuts",
+      "Success": true,
+      "Details": "Owned child process PID 13752 hard-killed during uncommitted transaction (32 ms). SQLite WAL recovered cleanly: 0 cut records, subsequent clean commit succeeded. (Note: OS process kill control; power-loss is separate hardware boundary).",
+      "DurationMs": 212
+    },
+    {
+      "Id": 21,
+      "Name": "Battery21_TerminalImmutability",
+      "Success": true,
+      "Details": "Physical immutability triggers on OperationRecords strictly reject UPDATE and DELETE.",
+      "DurationMs": 41
+    },
+    {
+      "Id": 22,
+      "Name": "Battery22_StorageTypingAndStoreIncarnation",
+      "Success": true,
+      "Details": "StoreIncarnation rotated from '671988090eba4bc7b63b8ab2ce11c41c' to 'acb0ac56848342f39ad025b8d27a1b58'; exactly 1 active incarnation enforced.",
+      "DurationMs": 39
+    },
+    {
+      "Id": 23,
+      "Name": "Battery23_WalFullDurabilityAndPragmas",
+      "Success": true,
+      "Details": "Durability configuration verified: journal_mode=WAL, synchronous=FULL (2), foreign_keys=ON.",
+      "DurationMs": 32
+    },
+    {
+      "Id": 24,
+      "Name": "Battery24_NoConsumerGameplayMaterialPaths",
+      "Success": true,
+      "Details": "Pipeline boundary strictly isolated; zero consumer/material/gameplay routes exposed.",
+      "DurationMs": 3
+    },
+    {
+      "Id": 25,
+      "Name": "Battery25_ReleaseManifestAndPackageHygiene",
+      "Success": true,
+      "Details": "Gate05 invariant: all 19 frozen candidate files bit-identical (0 mutations). Package hygiene clean.",
+      "DurationMs": 105
+    }
+  ]
+}

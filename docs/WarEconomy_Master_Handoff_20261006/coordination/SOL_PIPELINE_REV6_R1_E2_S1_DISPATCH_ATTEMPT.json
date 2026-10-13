@@ -1,0 +1,21 @@
+{
+  "delivery_id": "SOL-PIPELINE-REV6-R1-E2-S1-20261007-54d0d39948ff",
+  "type": "SOL_QA_SUBMISSION",
+  "status": "SENT_NEW_TURN_IN_PROGRESS_ACK_PENDING",
+  "at": "2026-10-07T23:38:53.906761+09:00",
+  "wp_id": "WP_QA_PIPELINE_REV6_R1_E2_SUPPLEMENT",
+  "wp_revision": "S1",
+  "exact_message_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\SOL_PIPELINE_REV6_R1_E2_S1_DISPATCH_MESSAGE.md",
+  "exact_message_sha256": "0A43EB12D3504763FD3CB52A59CB30A2941ACBA80F6810E1F832CA702EDE1657",
+  "work_package_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_PIPELINE_REV6_R1_E2_SUPPLEMENT_S1.md",
+  "work_package_sha256": "035D6F4EA3E923823D4166C95921EDA46EDAE3893E788D9C06CE59EF6AAA7AF4",
+  "recipient_thread_id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+  "idle_proof": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\SOL_PIPELINE_REV6_R1_E2_S1_PREDISPATCH_SNAPSHOT.json",
+  "observed_at": "2026-10-07T23:40:21.584941+09:00",
+  "turn_id": "01a116ce-0d45-7012-bc38-70d907863a19",
+  "tool_proof": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\SOL_PIPELINE_REV6_R1_E2_S1_SEND_TOOL_PROOF.json",
+  "tool_proof_sha256": "9EDAB81472CBB692CF0F67774A6BCFFEC7BF5044CA7737C0432266F36FCC26AC",
+  "turn_proof": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\SOL_PIPELINE_REV6_R1_E2_S1_POSTSEND_SNAPSHOT.json",
+  "turn_proof_sha256": "AF43F15FCE9B1517E6AB705076F8DF4ACCDA45A33851A51DEAF4B57E8D72E1A8",
+  "runtime_verdict": null
+}

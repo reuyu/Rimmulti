@@ -1,0 +1,460 @@
+{
+  "at": "2026-10-09T16:57:22.439173+09:00",
+  "guard_run": "MASTER-SOL-R12-INDEPENDENT-COMPLETE-20261009-01",
+  "guard_session": 85079,
+  "result_id": "SOL-GATE05-R12-PACKAGE-ORDER-INDEPENDENT-S1-20261009-60adcacee14e45a4b4a199a2ab928bfe",
+  "delivery_id": "SOL-GATE05-R12-PACKAGE-ORDER-INDEPENDENT-S1-20261009-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R12_PACKAGE_ORDER_INDEPENDENT",
+  "completion_sha256": "3F4CE10B7C92AEC967C09EC9DBEB0F75A2DFCC77E46D75168D80FDE553439428",
+  "report_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R12_Package_Order_Independent_S1_20261009.md",
+  "report_sha256": "66B5C8DAEEA4C4BC8790309C1C083FA89CD3634D86DFC0800DC8105BA0E02D49",
+  "evidence_manifest_sha256": "7DA3DE92FCC3FBA36F7A2E9DCE63194CA9370C55C604C02363B180095ADF6A26",
+  "result_index_sha256": "502A8A2E9C5E73618F7E49EA4C6361138097931E6A3AB8B878F0F0821349FF7A",
+  "evidence_files": 814,
+  "protected_unique_paths_master_rehashed": 5078,
+  "runs": [
+    {
+      "run_id": "RUN_SOL_R12_PACKAGE_ORDER_S1_20261009_b329dc2247a548ec936d35e6fafca7a6",
+      "culture": "en-US",
+      "prepost_files": 129,
+      "tool_exit": 0,
+      "assertions_pass": 265,
+      "assertions_fail": 0,
+      "loaded_managed": 12,
+      "runner_sha256": "8CCB060E9992E14C75ED7790D24269460423A4644F27C61F004075996E42AA22",
+      "runner_mvid": "4cb02e0a-73a2-47d0-8652-12c9090d26a5"
+    },
+    {
+      "run_id": "RUN_SOL_R12_PACKAGE_ORDER_S1_20261009_924c1ce27c734391afbf68fc0851fa64",
+      "culture": "de-DE",
+      "prepost_files": 129,
+      "tool_exit": 0,
+      "assertions_pass": 265,
+      "assertions_fail": 0,
+      "loaded_managed": 12,
+      "runner_sha256": "8CCB060E9992E14C75ED7790D24269460423A4644F27C61F004075996E42AA22",
+      "runner_mvid": "4cb02e0a-73a2-47d0-8652-12c9090d26a5"
+    }
+  ],
+  "package_cases": [
+    {
+      "case": "ALIGNED",
+      "digest": "706C7E0DB89E60EE5166FECD952B0D6D1335C0812ADD0FF240FD595D1EDC9ABA",
+      "full_check9fields_and_caller": "MATCHED",
+      "fresh_original_before_normalize_full_binding": "MATCHED",
+      "whole_admitted_record_association": "MATCHED"
+    },
+    {
+      "case": "EQUAL_SEPARATE",
+      "digest": "706C7E0DB89E60EE5166FECD952B0D6D1335C0812ADD0FF240FD595D1EDC9ABA",
+      "full_check9fields_and_caller": "MATCHED",
+      "fresh_original_before_normalize_full_binding": "MATCHED",
+      "whole_admitted_record_association": "MATCHED"
+    },
+    {
+      "case": "PHYSICAL_BCA",
+      "digest": "706C7E0DB89E60EE5166FECD952B0D6D1335C0812ADD0FF240FD595D1EDC9ABA",
+      "full_check9fields_and_caller": "MATCHED",
+      "fresh_original_before_normalize_full_binding": "MATCHED",
+      "whole_admitted_record_association": "MATCHED"
+    },
+    {
+      "case": "PHYSICAL_CAB",
+      "digest": "706C7E0DB89E60EE5166FECD952B0D6D1335C0812ADD0FF240FD595D1EDC9ABA",
+      "full_check9fields_and_caller": "MATCHED",
+      "fresh_original_before_normalize_full_binding": "MATCHED",
+      "whole_admitted_record_association": "MATCHED"
+    },
+    {
+      "case": "PHYSICAL_REVERSE",
+      "digest": "706C7E0DB89E60EE5166FECD952B0D6D1335C0812ADD0FF240FD595D1EDC9ABA",
+      "full_check9fields_and_caller": "MATCHED",
+      "fresh_original_before_normalize_full_binding": "MATCHED",
+      "whole_admitted_record_association": "MATCHED"
+    },
+    {
+      "case": "EXECUTION_ACB",
+      "digest": "238F31B0FFDA52D18D64066C66030FA92FC5EACC74E9FBA7B9FD37D30BDCB042",
+      "full_check9fields_and_caller": "MATCHED",
+      "fresh_original_before_normalize_full_binding": "MATCHED",
+      "whole_admitted_record_association": "MATCHED"
+    },
+    {
+      "case": "EXECUTION_ACB_PHYSICAL",
+      "digest": "238F31B0FFDA52D18D64066C66030FA92FC5EACC74E9FBA7B9FD37D30BDCB042",
+      "full_check9fields_and_caller": "MATCHED",
+      "fresh_original_before_normalize_full_binding": "MATCHED",
+      "whole_admitted_record_association": "MATCHED"
+    },
+    {
+      "case": "ID_ONLY",
+      "digest": "169882A8EA8702A1E31196750DEA952C8B43978F84DAAEF70B8C55DF9844B100",
+      "full_check9fields_and_caller": "MATCHED",
+      "fresh_original_before_normalize_full_binding": "MATCHED",
+      "whole_admitted_record_association": "MATCHED"
+    },
+    {
+      "case": "REV_ONLY",
+      "digest": "408C270DE027ACD57547204B897269F276B8D1316BAE9771B7B6E70F4AF3C175",
+      "full_check9fields_and_caller": "MATCHED",
+      "fresh_original_before_normalize_full_binding": "MATCHED",
+      "whole_admitted_record_association": "MATCHED"
+    },
+    {
+      "case": "PACKAGE_CASE",
+      "digest": "706C7E0DB89E60EE5166FECD952B0D6D1335C0812ADD0FF240FD595D1EDC9ABA",
+      "full_check9fields_and_caller": "MATCHED",
+      "fresh_original_before_normalize_full_binding": "MATCHED",
+      "whole_admitted_record_association": "MATCHED"
+    },
+    {
+      "case": "SPACED_ID",
+      "digest": "46CF22343C5D5A9E695631E34F7EA484D3A2AE351F93E0D2FD6B98369F75063E",
+      "full_check9fields_and_caller": "MATCHED",
+      "fresh_original_before_normalize_full_binding": "MATCHED",
+      "whole_admitted_record_association": "MATCHED"
+    },
+    {
+      "case": "UNICODE_REV",
+      "digest": "3CBF2087A2D789FD94FFC6B7B577A63576F46E1DCB04D2E7101CAC6D1D6359B8",
+      "full_check9fields_and_caller": "MATCHED",
+      "fresh_original_before_normalize_full_binding": "MATCHED",
+      "whole_admitted_record_association": "MATCHED"
+    },
+    {
+      "case": "REV007",
+      "digest": "52400FC75516349EE8AB61CD417941F04C991EA0AF6B1481A4C249C92FDA549B",
+      "full_check9fields_and_caller": "MATCHED",
+      "fresh_original_before_normalize_full_binding": "MATCHED",
+      "whole_admitted_record_association": "MATCHED"
+    },
+    {
+      "case": "DISPLAY_ID",
+      "digest": "13BF4795048658A6DE6CF10710DA5F31ACCCB41BCE2E894D1363CA7780A9ADC6",
+      "full_check9fields_and_caller": "MATCHED",
+      "fresh_original_before_normalize_full_binding": "MATCHED",
+      "whole_admitted_record_association": "MATCHED"
+    }
+  ],
+  "typed_check_rows_verified": 67458,
+  "policy_bearing_fresh_original_before_normalize": "INDEPENDENT_VALID_CURRENT_V1_BINDING_14_CASES_FULL_TYPED_BYTES_MATCHED",
+  "QA_archive_limitations": [
+    "RUN1 ACTUAL_PROCESS_CONTEXT.json,REFERENCE_BYTE_STAGE.json,ORDER_POLICY_RESULTS.json were not archived before RUN2 due reused central-name archive list. Root originals are RUN2 only;no restoration/fabrication/rerun. RUN1 raw contains PID/culture/runID/reference stage66 and actual tool argv/cwd/exit remain retained. All RUN1 per-case typed/Check/canonical artifacts and66 reference byte files were archived;normal verdict fully uses those."
+  ],
+  "shared_vendor_reference_limit": "Shared pinned primitiveJson.NET;candidate API/DTO/output independent",
+  "target_version_cases": [
+    {
+      "case_id": "OPTIONAL_UNKNOWN_VERSION",
+      "status": "PASS",
+      "expected": [
+        {
+          "loadOrder": 0,
+          "packageId": "example.core",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": null
+        },
+        {
+          "loadOrder": 1,
+          "packageId": "example.material",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": "1.1"
+        }
+      ],
+      "actual": [
+        {
+          "loadOrder": 0,
+          "packageId": "example.core",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": null
+        },
+        {
+          "loadOrder": 1,
+          "packageId": "example.material",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": "1.1"
+        }
+      ],
+      "views_compared": 5,
+      "positive_required_helper_invoked": false
+    },
+    {
+      "case_id": "KNOWN_DISTINCT_VERSION",
+      "status": "PASS",
+      "expected": [
+        {
+          "loadOrder": 0,
+          "packageId": "example.core",
+          "compatibilityVersionRange": "1.5;1.6",
+          "modVersion": "2.1.0"
+        },
+        {
+          "loadOrder": 1,
+          "packageId": "example.material",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": "1.1"
+        }
+      ],
+      "actual": [
+        {
+          "loadOrder": 0,
+          "packageId": "example.core",
+          "compatibilityVersionRange": "1.5;1.6",
+          "modVersion": "2.1.0"
+        },
+        {
+          "loadOrder": 1,
+          "packageId": "example.material",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": "1.1"
+        }
+      ],
+      "views_compared": 5,
+      "positive_required_helper_invoked": false
+    },
+    {
+      "case_id": "REVERSE_NO_INFERENCE_VERSION",
+      "status": "PASS",
+      "expected": [
+        {
+          "loadOrder": 0,
+          "packageId": "example.core",
+          "compatibilityVersionRange": "",
+          "modVersion": "2.1.0"
+        },
+        {
+          "loadOrder": 1,
+          "packageId": "example.material",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": "1.1"
+        }
+      ],
+      "actual": [
+        {
+          "loadOrder": 0,
+          "packageId": "example.core",
+          "compatibilityVersionRange": "",
+          "modVersion": "2.1.0"
+        },
+        {
+          "loadOrder": 1,
+          "packageId": "example.material",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": "1.1"
+        }
+      ],
+      "views_compared": 5,
+      "positive_required_helper_invoked": false
+    },
+    {
+      "case_id": "OPTIONAL_EMPTY_VERSION",
+      "status": "PASS",
+      "expected": [
+        {
+          "loadOrder": 0,
+          "packageId": "example.core",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": ""
+        },
+        {
+          "loadOrder": 1,
+          "packageId": "example.material",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": "1.1"
+        }
+      ],
+      "actual": [
+        {
+          "loadOrder": 0,
+          "packageId": "example.core",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": ""
+        },
+        {
+          "loadOrder": 1,
+          "packageId": "example.material",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": "1.1"
+        }
+      ],
+      "views_compared": 5,
+      "positive_required_helper_invoked": false
+    },
+    {
+      "case_id": "GENERIC_VERSION_TEXT",
+      "status": "PASS",
+      "expected": [
+        {
+          "loadOrder": 0,
+          "packageId": "example.core",
+          "compatibilityVersionRange": "1.6; α \t\n",
+          "modVersion": "内容:2.1.0 / (null) \t\n"
+        },
+        {
+          "loadOrder": 1,
+          "packageId": "example.material",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": "1.1"
+        }
+      ],
+      "actual": [
+        {
+          "loadOrder": 0,
+          "packageId": "example.core",
+          "compatibilityVersionRange": "1.6; α \t\n",
+          "modVersion": "内容:2.1.0 / (null) \t\n"
+        },
+        {
+          "loadOrder": 1,
+          "packageId": "example.material",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": "1.1"
+        }
+      ],
+      "views_compared": 5,
+      "positive_required_helper_invoked": false
+    },
+    {
+      "case_id": "OPTIONAL_MISSING_VERSION",
+      "status": "PASS",
+      "expected": [
+        {
+          "loadOrder": 0,
+          "packageId": "example.core",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": null
+        },
+        {
+          "loadOrder": 1,
+          "packageId": "example.material",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": "1.1"
+        }
+      ],
+      "actual": [
+        {
+          "loadOrder": 0,
+          "packageId": "example.core",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": null
+        },
+        {
+          "loadOrder": 1,
+          "packageId": "example.material",
+          "compatibilityVersionRange": "1.6",
+          "modVersion": "1.1"
+        }
+      ],
+      "views_compared": 5,
+      "positive_required_helper_invoked": false
+    }
+  ],
+  "canonical_crossprocess_pairs": 110,
+  "reference_crossprocess_pairs": 66,
+  "runner_metadata_master": {
+    "assembly": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R12-PACKAGE-ORDER-INDEPENDENT-S1-20261009\\runner\\QaCodecRunner.exe",
+    "pdb": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R12-PACKAGE-ORDER-INDEPENDENT-S1-20261009\\runner\\QaCodecRunner.pdb",
+    "mvid": "4cb02e0a-73a2-47d0-8652-12c9090d26a5",
+    "codeviewGuid": "8d27a971-06be-4edd-8461-85440bacf078",
+    "pdbGuid": "8d27a971-06be-4edd-8461-85440bacf078",
+    "codeviewMatched": true,
+    "documents": [
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R12-PACKAGE-ORDER-INDEPENDENT-S1-20261009\\Program.cs",
+        "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+        "expected": "66BE470468610E164CA1D4D4AB1CD260E797B9A6EB46534C51CC236CA7C387AA",
+        "actual": "66BE470468610E164CA1D4D4AB1CD260E797B9A6EB46534C51CC236CA7C387AA",
+        "matched": true
+      }
+    ]
+  },
+  "source_scope": {
+    "at": "2026-10-09T16:47:04.192805+09:00",
+    "files": [
+      {
+        "current": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R12-e9dcd1e6\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+          "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+          "bytes": 156431
+        },
+        "prior": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R11-bec3d350\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+          "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+          "bytes": 156431
+        },
+        "matched": true
+      },
+      {
+        "current": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R12-e9dcd1e6\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+          "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+          "bytes": 1774
+        },
+        "prior": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R11-bec3d350\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+          "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+          "bytes": 1774
+        },
+        "matched": true
+      }
+    ],
+    "prefix_bytes": 72547,
+    "prefix_sha256": "F3C4F865F1E2A898BF240A2D096195870D77A52408CF2D93664FE15092A2A887",
+    "prefix_match": true,
+    "diff": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R12-PACKAGE-ORDER-INDEPENDENT-S1-20261009\\SOURCE_SCOPE_DIFF.txt",
+      "sha256": "2F7344AA47BF7ACCFF678467DFA2B9D9D9F379E9FD51308E0C947C34F5E93573",
+      "bytes": 5344
+    },
+    "production_modify_builds": 0
+  },
+  "general_schema": "CURRENT_V1_ONLY_STATIC_OPEN_NOT_GENERAL_VERSION_PROOF",
+  "actual_thread": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:83",
+    "revision": 83,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a11f91-bdee-7ae0-93a4-991c80034899",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791531007,
+      "completedAt": 1791532305,
+      "durationMs": 1297932
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ac89d0f0f0487d09c09061ca4d483a9",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016ac89d0f0f0487d09c09061ca4d483a9",
+      "turnId": "01a11f91-bdee-7ae0-93a4-991c80034899",
+      "phase": "final_answer",
+      "text": "R12 독립 QA를 완료하고 마스터에게 보고했습니다. 두 실행에서 각각 265개 검증이 모두 통과했습니다. 증거 보관 제한은 보고서에 명시했으며, 전체 런타임 검증·릴리스는 보류 상태입니다. QA 보고서"
+    },
+    "latestToolMarkerId": "exec-5a599970-434c-4a1f-8324-90abd9b921f2",
+    "latestToolMarker": {
+      "id": "exec-5a599970-434c-4a1f-8324-90abd9b921f2",
+      "turnId": "01a11f91-bdee-7ae0-93a4-991c80034899",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "actual_execution_thread_read": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R12_QA_ACTUAL_THREAD_READ_20261009.json",
+  "direct_transport_verified": true,
+  "master_execution_builds": 0,
+  "verification_status": "MASTER_DISPOSED",
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD",
+  "master_disposition_at": "2026-10-09T16:59:05.698971+09:00",
+  "master_verdict": "ACCEPTED_R12_SCOPED_NORMAL_ORDER_FRESH_ORIGINAL_BINDING_PASS_STATIC_QUALIFIED_ARCHIVE_LIMIT_NATIVE_UNTESTED",
+  "master_review_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R12_PACKAGE_ORDER_INDEPENDENT_S1_20261009.md",
+  "master_review_sha256": "E6AAD81F393585EE8829A88EA983F140D514AE4003E73AE07FE6A1CDACAE7D35",
+  "other_defects_closed": false,
+  "next_technical_direction": "R13_POLICY_CACHE_LIFECYCLE_APPROVED_TO_PREPARE_NOT_SENT;ORDER_CACHE_PATCH_SETTINGS_NATIVE_SEPARATE"
+}

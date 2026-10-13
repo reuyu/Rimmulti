@@ -1,0 +1,168 @@
+{
+  "runner_name": "Gate05R22DeclarationRunner",
+  "culture": "de-DE",
+  "timestamp_utc": "2026-10-10T22:48:19.6233622Z",
+  "candidate_asm": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\Harness\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+  "candidate_sha256": "278DA55F46B3646F981E79EF83D764F19959B6FEFAD6EEC83AFD4DAB0020864D",
+  "candidate_mvid": "3d7d7cf7-541a-42ec-a642-b31539cc3f3f",
+  "overall_verdict": "ALL_TESTS_PASS",
+  "tests": [
+    {
+      "name": "TEST01_ExplicitDeclarationDefaultsRemoval",
+      "status": "PASS",
+      "defaults_all_empty": true,
+      "clone_isolation_verified": true
+    },
+    {
+      "name": "TEST02_MainEightAdmissionReceiptIssuance",
+      "status": "PASS",
+      "pass_count": 8,
+      "total_count": 8,
+      "details": [
+        {
+          "configId": "CFG-SIMULATION-PLAIN-File",
+          "role": "SIMULATION",
+          "policyType": "PLAIN",
+          "method": "File",
+          "status": "PASS"
+        },
+        {
+          "configId": "CFG-SIMULATION-PLAIN-Bytes",
+          "role": "SIMULATION",
+          "policyType": "PLAIN",
+          "method": "Bytes",
+          "status": "PASS"
+        },
+        {
+          "configId": "CFG-SIMULATION-OPAQUE-File",
+          "role": "SIMULATION",
+          "policyType": "OPAQUE",
+          "method": "File",
+          "status": "PASS"
+        },
+        {
+          "configId": "CFG-SIMULATION-OPAQUE-Bytes",
+          "role": "SIMULATION",
+          "policyType": "OPAQUE",
+          "method": "Bytes",
+          "status": "PASS"
+        },
+        {
+          "configId": "CFG-READ_ONLY-PLAIN-File",
+          "role": "READ_ONLY",
+          "policyType": "PLAIN",
+          "method": "File",
+          "status": "PASS"
+        },
+        {
+          "configId": "CFG-READ_ONLY-PLAIN-Bytes",
+          "role": "READ_ONLY",
+          "policyType": "PLAIN",
+          "method": "Bytes",
+          "status": "PASS"
+        },
+        {
+          "configId": "CFG-READ_ONLY-OPAQUE-File",
+          "role": "READ_ONLY",
+          "policyType": "OPAQUE",
+          "method": "File",
+          "status": "PASS"
+        },
+        {
+          "configId": "CFG-READ_ONLY-OPAQUE-Bytes",
+          "role": "READ_ONLY",
+          "policyType": "OPAQUE",
+          "method": "Bytes",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "name": "TEST03_DeclarationAndReceiptCallerMutationProtection",
+      "status": "PASS",
+      "pass_count": 8,
+      "total_count": 8
+    },
+    {
+      "name": "TEST04_LiteralUtcPreservationRegression",
+      "status": "PASS",
+      "pass_count": 6,
+      "total_count": 6,
+      "details": [
+        {
+          "variant": "SevenZeros",
+          "expected": "2026-10-11T04:00:00.0000000Z",
+          "observed": "2026-10-11T04:00:00.0000000Z",
+          "token_type": "String",
+          "status": "PASS"
+        },
+        {
+          "variant": "SevenZeros",
+          "expected": "2026-10-11T04:00:00.0000000Z",
+          "observed": "2026-10-11T04:00:00.0000000Z",
+          "token_type": "String",
+          "status": "PASS"
+        },
+        {
+          "variant": "FractionalSeven",
+          "expected": "2026-10-11T04:15:30.1234567Z",
+          "observed": "2026-10-11T04:15:30.1234567Z",
+          "token_type": "String",
+          "status": "PASS"
+        },
+        {
+          "variant": "FractionalSeven",
+          "expected": "2026-10-11T04:15:30.1234567Z",
+          "observed": "2026-10-11T04:15:30.1234567Z",
+          "token_type": "String",
+          "status": "PASS"
+        },
+        {
+          "variant": "WholeSeconds",
+          "expected": "2026-10-11T04:30:00Z",
+          "observed": "2026-10-11T04:30:00Z",
+          "token_type": "String",
+          "status": "PASS"
+        },
+        {
+          "variant": "WholeSeconds",
+          "expected": "2026-10-11T04:30:00Z",
+          "observed": "2026-10-11T04:30:00Z",
+          "token_type": "String",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "name": "TEST05_PositiveFullyQualifiedWindowsPathHelper",
+      "status": "PASS",
+      "pass_count": 5,
+      "total_count": 5
+    },
+    {
+      "name": "TEST06_ValidatorResultRedactionRegression",
+      "status": "PASS"
+    },
+    {
+      "name": "TEST07_CensusPackagePolicyRegression",
+      "status": "PASS",
+      "digest": "32CBD50711F61E6E8B052415310B22C364A1BB53653F3B065BDB972B18E9FC16"
+    }
+  ],
+  "call_counts": {
+    "ParseStrict": 0,
+    "AdmitConfigBytes": 0,
+    "AdmitConfigFile": 0,
+    "IssueAdmissionReceipt": 10,
+    "IssueAdmissionReceiptFromBytes": 4,
+    "ValidateAdmissionReceipt": 16,
+    "IsFullyQualifiedWindowsPath": 5,
+    "ToSnapshot": 0,
+    "ToRedactedJsonSnapshot": 0,
+    "ToRedactedJsonReceipt": 14,
+    "ToRedactedJsonValidatorResult": 1,
+    "SerializePackagePolicy": 1,
+    "DeserializePackagePolicy": 1,
+    "ComputePackagePolicyDigest": 2
+  }
+}

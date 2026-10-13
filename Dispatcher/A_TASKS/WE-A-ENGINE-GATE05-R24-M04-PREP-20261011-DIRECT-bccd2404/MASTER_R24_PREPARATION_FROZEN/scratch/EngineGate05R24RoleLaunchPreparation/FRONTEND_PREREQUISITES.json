@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0",
+  "document_type": "M04_VALIDATOR_FRONTEND_PREREQUISITES",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404",
+  "timestamp_utc": "2026-10-11T09:26:00Z",
+  "summary": "Concrete operational and technical prerequisites required for real validator frontend execution, distinguishing between native RimWorld child worker and standalone validator CLI.",
+  "frontend_modes": [
+    {
+      "mode_id": "MODE_A_NATIVE_RIMWORLD_WORKER",
+      "frontend_type": "Native RimWorld Engine Process",
+      "executable_example": "RimWorldWin64.exe",
+      "description": "Child process is a secondary, isolated RimWorld game instance running WorkerBridgeMod in READ_ONLY role.",
+      "required_cli_arguments": [
+        {
+          "flag": "-batchmode",
+          "purpose": "Headless Unity execution without GUI loop",
+          "origin": "Base validator arguments (ValidatorArguments)"
+        },
+        {
+          "flag": "-nographics",
+          "purpose": "Suppresses DirectX/OpenGL graphics device creation",
+          "origin": "Base validator arguments (ValidatorArguments)"
+        },
+        {
+          "flag": "-savedatafolder",
+          "format": "-savedatafolder=\"<ValidatorUserDataDirectory>\"",
+          "purpose": "Native RimWorld engine isolation: sets GenFilePaths.SaveDataFolderPath to ValidatorUserDataDirectory so child config, keybindings, mods config, and logs never collide with simulator worker.",
+          "origin": "Materialized from admitted snapshot ValidatorUserDataDirectory"
+        },
+        {
+          "flag": "-bridgeport",
+          "format": "-bridgeport=\"<ValidatorPort>\"",
+          "purpose": "Port multiplexing: assigns unique TCP port (e.g., 29101) to prevent AddressAlreadyInUse socket conflict with simulator (port 29100).",
+          "origin": "Derived or configured operator port allocation"
+        },
+        {
+          "flag": "-operatorconfig",
+          "format": "-operatorconfig=\"<AdmittedReadOnlyConfigPath>\"",
+          "purpose": "Required for WorkerBridgeComponent.TryReadOperatorLaunchDescriptorFromCommandLine in child process to locate admitted configuration.",
+          "origin": "Admitted operator configuration file path"
+        },
+        {
+          "flag": "-operatorconfigsha",
+          "format": "-operatorconfigsha=\"<AdmittedReadOnlyConfigSha256>\"",
+          "purpose": "Verifies byte-level integrity of child configuration before admission.",
+          "origin": "SHA256 of child configuration file"
+        },
+        {
+          "flag": "-operatororigin",
+          "format": "-operatororigin=\"<OriginId>\"",
+          "purpose": "Identifies launch origin for child admission receipt.",
+          "origin": "Operator launch origin (e.g. OPERATOR-HOST-MAIN)"
+        },
+        {
+          "flag": "-operatorlaunchplan",
+          "format": "-operatorlaunchplan=\"<LaunchPlanId>\"",
+          "purpose": "Identifies coordination plan for child admission receipt.",
+          "origin": "Operator launch plan ID"
+        },
+        {
+          "flag": "-operatorconfigid",
+          "format": "-operatorconfigid=\"<ConfigId>\"",
+          "purpose": "Identifies expected configuration ID.",
+          "origin": "Config ID of child configuration"
+        },
+        {
+          "flag": "-operatorrole",
+          "format": "-operatorrole=\"READ_ONLY\"",
+          "purpose": "Explicitly enforces READ_ONLY role for child instance (Fail-Closed).",
+          "origin": "Literal 'READ_ONLY'"
+        },
+        {
+          "flag": "-operatorcapability",
+          "format": "-operatorcapability=\"<CapabilityBoundary>\"",
+          "purpose": "Enforces capability boundary for child instance.",
+          "origin": "Capability boundary (e.g. LOCAL_SANDBOXED)"
+        },
+        {
+          "flag": "--task-file",
+          "format": "--task-file \"<ValidatorTaskPath>\"",
+          "purpose": "Specifies path to issued ValidatorTask JSON for execution.",
+          "origin": "Generated task path under SafeSaveDataFolderPath/Tasks"
+        },
+        {
+          "flag": "--nonce",
+          "format": "--nonce \"<CapabilityNonce>\"",
+          "purpose": "Transfers operator capability nonce for authorization check.",
+          "origin": "Generated in StageSave / issued in ValidatorTask"
+        }
+      ],
+      "prerequisites": [
+        "RimWorld executable must exist and match AdmittedValidatorExecutableSha256.",
+        "Child READ_ONLY configuration JSON must be materialized on disk and admitted.",
+        "ValidatorUserDataDirectory must be created and writable prior to launch.",
+        "Steam/Workshop file access must be shared read-only without concurrent lock conflicts.",
+        "Process identity check (VerifyProcessIdentity) must verify PID, StartTimeUtc, and READ_ONLY role."
+      ]
+    },
+    {
+      "mode_id": "MODE_B_STANDALONE_VALIDATOR_CLI",
+      "frontend_type": "Dedicated Out-of-Process Validator Binary",
+      "executable_example": "WarEconomy.ValidatorCli.exe",
+      "description": "Child process is a dedicated validator tool that parses staged saves and writes protected results without launching full Unity/RimWorld game engine.",
+      "required_cli_arguments": [
+        {
+          "flag": "--task-file",
+          "format": "--task-file \"<ValidatorTaskPath>\"",
+          "purpose": "Specifies task JSON containing all 16 bound dimensions and staged file path."
+        },
+        {
+          "flag": "--nonce",
+          "format": "--nonce \"<CapabilityNonce>\"",
+          "purpose": "Transfers authorization nonce."
+        },
+        {
+          "flag": "--result-channel",
+          "format": "--result-channel \"<ProtectedResultChannelPath>\"",
+          "purpose": "Optional override for destination result file path."
+        }
+      ],
+      "prerequisites": [
+        "Binary must exist, be executable, and match AdmittedValidatorExecutableSha256.",
+        "Task file and staged save file must exist and be readable.",
+        "Result channel directory must be writable.",
+        "Child process must output valid ValidatorResult JSON with correct secret tokens and PID matching launched process."
+      ]
+    }
+  ],
+  "current_gap_assessment": {
+    "is_mode_a_currently_supported": false,
+    "mode_a_gap_reason": "HandleLaunchOperatorValidator currently constructs arguments: baseArgs + --task-file + --nonce. It does not emit -savedatafolder, -bridgeport, or the 7 mandatory -operator* arguments required for child RimWorld / WorkerBridgeComponent to boot into READ_ONLY mode.",
+    "is_mode_b_currently_supported": true,
+    "mode_b_readiness": "Current argument format matches Mode B convention, but requires dedicated validator CLI binary adhering to the --task-file and --nonce protocol."
+  }
+}

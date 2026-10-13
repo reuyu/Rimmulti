@@ -1,0 +1,9 @@
+{
+  "actual_release_tool": {
+    "chunk_id": "6df291",
+    "wall_time_seconds": 0.0000428,
+    "exit_code": 0,
+    "original_token_count": 114,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-SOL-R24-ACK-20261011-01\", \"pid\": 13224,\r\n\u001b[23;80H, \"locked_at\": \"2026-10-11T18:24:10.633515+09:00\", \"mechanism\": \"Windows msvcrt e\r\n\u001b[23;80Hexclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-\r\n\u001b[23;80H-10-11T18:25:14.355107+09:00\", \"renewal_count\": 1, \"release_reason\": \"RELEASE_OR_\r\n\u001b[23;80H_STDIN_CLOSED\", \"released_at\": \"2026-10-11T18:25:45.298045+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  }
+}

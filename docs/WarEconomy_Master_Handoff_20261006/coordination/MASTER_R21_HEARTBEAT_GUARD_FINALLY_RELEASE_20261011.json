@@ -1,0 +1,9 @@
+{
+  "actual_release_tool": {
+    "chunk_id": "6c7cfc",
+    "wall_time_seconds": 0.0000397,
+    "exit_code": 0,
+    "original_token_count": 106,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-HEARTBEAT-R21-20261010T220932Z-01\", \"pid\": 28816, \"locked_at\": \"2026-10-11T07:09:39.532220+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-11T07:14:53.367820+09:00\", \"renewal_count\": 3, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-11T07:15:54.227778+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  }
+}

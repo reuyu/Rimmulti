@@ -1,0 +1,67 @@
+{
+  "at": "2026-10-12T09:59:23.480569+09:00",
+  "guard_run": "MASTER-R29-QA-METADATA-CORRECTION-20261012-01",
+  "guard_session": 13411,
+  "guard_pid": 19332,
+  "result_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S1-20261012-29a5b209350746e5849319abf05b0855",
+  "delivery_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S1-20261012-01",
+  "wp_revision": "S1",
+  "completion_sha256": "5EE6C6057F8496749ED8FAC747183A0C08123803F149E4825555295141A93F4A",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:181",
+    "revision": 181,
+    "changed": false,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a12d91-bb9b-71c3-8258-5349866adc44",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791765887,
+      "completedAt": 1791766324,
+      "durationMs": 436450
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acc2f32166087d09c411c848a0db0cd",
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": "exec-3380bb30-e393-4f30-9137-2be4d982b480",
+    "latestToolMarker": null
+  },
+  "evidence_count": 9,
+  "protected_paths": 14332,
+  "frozen_files": 132,
+  "independent_QA_before_after_incomplete": true,
+  "Master_rehash_not_retroactive_QA_PASS": true,
+  "master_verdict": "ACCEPTED_OWN_METADATA_STOP_CANDIDATE_NOT_EXECUTED_FRESH_S2_AUTHORIZED",
+  "review": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R29_QA_S1_BOOTSTRAP_STOP_20261012.md",
+    "sha256": "535670FEE3DF10C7F3D93A03FBCAE36295996AEF3ABBEBE30207C5E1C9048FA5",
+    "bytes": 1660
+  },
+  "preservation": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R29_S1_STOP_TERMINAL_PRESERVATION_20261012.json",
+    "sha256": "FE033CA9C7473467DC4CF21BF49F41563E6B46A5656FBAB93301567F16971A8E",
+    "bytes": 4386
+  },
+  "new_wp": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R29_STARTUP_PAIR_INDEPENDENT_S2.md",
+    "sha256": "288D8EBB1C760CA572949F5CB199491B44B7B3E1D6A6EFB374A48064E7C08B8B",
+    "bytes": 8195
+  },
+  "new_baseline": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R29_S2_PAIR_QA_PROTECTED_BASELINE_20261012.json",
+    "sha256": "31AF29450CF7CFB47F0178C2E7182B38BC93118AA1C97CDE2CA20828CF8B3176",
+    "bytes": 4384343
+  },
+  "new_delivery": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S2-20261012-01",
+  "new_status": "APPROVED_NOT_SENT",
+  "candidate_executions": 0,
+  "native_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD"
+}

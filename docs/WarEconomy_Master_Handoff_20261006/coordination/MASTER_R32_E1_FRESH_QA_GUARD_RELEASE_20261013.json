@@ -1,0 +1,15 @@
+{
+  "run_id": "MASTER-R32-HOURLY-20261013-0022-01",
+  "guard_session": 86751,
+  "actual_release_tool": {
+    "chunk_id": "89f7ab",
+    "wall_time_seconds": 0.0000266,
+    "exit_code": 0,
+    "original_token_count": 115,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R32-HOURLY-20261013-0022-01\", \"pid\": 16\r\n\u001b[23;80H6884, \"locked_at\": \"2026-10-13T00:23:13.206557+09:00\", \"mechanism\": \"Windows msvc\r\n\u001b[23;80Hcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2\r\n\u001b[23;80H2026-10-13T00:35:43.105137+09:00\", \"renewal_count\": 5, \"release_reason\": \"RELEASE\r\n\u001b[23;80HE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-13T00:36:54.922405+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "no_candidate_build_run_by_Master": true,
+  "terminal_review_recorded": true,
+  "original_Sol_new_actual_turn_verified": true,
+  "no_new_A_delivery": true
+}

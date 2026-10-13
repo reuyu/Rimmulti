@@ -1,0 +1,124 @@
+{
+  "at": "2026-10-14T02:23:20.840011+09:00",
+  "oracle": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R35-PUBLISHER-PREPARATION-S1-20261013\\NORMAL_PUBLISHER_EXPECTATION_ORACLE.json",
+    "sha256": "E68672E66E88195CAA25E185446FA1EE44C4399ED18F1211824B496B3DE7D3E0",
+    "bytes": 185157
+  },
+  "upstreams": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\PRE_RUN_EXPECTED_ORACLE.json",
+      "sha256": "7371185E68771EA8613373E3948344B988D86C361421EE9DAF681036CBD95D02",
+      "bytes": 1030401
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\NORMAL_EXPECTED_ORACLE.json",
+      "sha256": "89C9EAE0722EF875577DCF2AC4D20687FDB19CE743B13AE285360225E79F9D7D",
+      "bytes": 1578021
+    }
+  ],
+  "original_raw12": [
+    {
+      "case_id": "PLAIN_PLAIN",
+      "role": "parent",
+      "raw_sha256": "25D3B88B03B708772B8C1B6CE9AAF66E4250EE84D3AAB6C53CBEC7BF9EE75A21",
+      "raw_bytes": 897,
+      "issuedAtUtc_raw": "2026-10-11T00:00:00.1234567Z",
+      "operatorPairId": "  qa.R29.pair.01 Ω  "
+    },
+    {
+      "case_id": "PLAIN_PLAIN",
+      "role": "child",
+      "raw_sha256": "D6E345FEB30873C6002102E4C13BC5815A781C7177233B2DF64D82E49DD2A6CD",
+      "raw_bytes": 909,
+      "issuedAtUtc_raw": "2026-10-11T00:00:01.0000000Z",
+      "operatorPairId": "  qa.R29.pair.01 Ω  "
+    },
+    {
+      "case_id": "OPAQUE_OPAQUE",
+      "role": "parent",
+      "raw_sha256": "5077C839A2EFD38495FF553AD2F16F1B5C50F9CDA4A5D673E5014CEC2552124B",
+      "raw_bytes": 919,
+      "issuedAtUtc_raw": "2026-10-11T00:00:00.1234567Z",
+      "operatorPairId": "  qa.R29.pair.02 Ω  "
+    },
+    {
+      "case_id": "OPAQUE_OPAQUE",
+      "role": "child",
+      "raw_sha256": "DAA3A0F16906EBF54B0A4CA8D2040B8BE9FE75A785DE1CD28573D17E8A5ACADA",
+      "raw_bytes": 931,
+      "issuedAtUtc_raw": "2026-10-11T00:00:01.0000000Z",
+      "operatorPairId": "  qa.R29.pair.02 Ω  "
+    },
+    {
+      "case_id": "PLAIN_OPAQUE_PADDED",
+      "role": "parent",
+      "raw_sha256": "25D3B88B03B708772B8C1B6CE9AAF66E4250EE84D3AAB6C53CBEC7BF9EE75A21",
+      "raw_bytes": 897,
+      "issuedAtUtc_raw": "2026-10-11T00:00:00.1234567Z",
+      "operatorPairId": "  qa.R29.pair.03 Ω  "
+    },
+    {
+      "case_id": "PLAIN_OPAQUE_PADDED",
+      "role": "child",
+      "raw_sha256": "DAA3A0F16906EBF54B0A4CA8D2040B8BE9FE75A785DE1CD28573D17E8A5ACADA",
+      "raw_bytes": 931,
+      "issuedAtUtc_raw": "2026-10-11T00:00:01.0000000Z",
+      "operatorPairId": "  qa.R29.pair.03 Ω  "
+    },
+    {
+      "case_id": "OPAQUE_PLAIN_PADDED",
+      "role": "parent",
+      "raw_sha256": "5077C839A2EFD38495FF553AD2F16F1B5C50F9CDA4A5D673E5014CEC2552124B",
+      "raw_bytes": 919,
+      "issuedAtUtc_raw": "2026-10-11T00:00:00.1234567Z",
+      "operatorPairId": "  qa.R29.pair.04 Ω  "
+    },
+    {
+      "case_id": "OPAQUE_PLAIN_PADDED",
+      "role": "child",
+      "raw_sha256": "D6E345FEB30873C6002102E4C13BC5815A781C7177233B2DF64D82E49DD2A6CD",
+      "raw_bytes": 909,
+      "issuedAtUtc_raw": "2026-10-11T00:00:01.0000000Z",
+      "operatorPairId": "  qa.R29.pair.04 Ω  "
+    },
+    {
+      "case_id": "OPAQUE_EQ_QUOTE_BACKSLASH",
+      "role": "parent",
+      "raw_sha256": "B0CB65941E0548E7809829F2B198EEA5CAA58F4C94A945DFAA207FF4A1B11CE0",
+      "raw_bytes": 914,
+      "issuedAtUtc_raw": "2026-10-11T00:00:00.1234567Z",
+      "operatorPairId": "  operatorPairId=5 \"Ω\" \\ original  "
+    },
+    {
+      "case_id": "OPAQUE_EQ_QUOTE_BACKSLASH",
+      "role": "child",
+      "raw_sha256": "871D13EB216C404A74F65A4603BE913B8AFB7919EE6CE6E236D03874C1270516",
+      "raw_bytes": 940,
+      "issuedAtUtc_raw": "2026-10-11T00:00:01.0000000Z",
+      "operatorPairId": "  operatorPairId=5 \"Ω\" \\ original  "
+    },
+    {
+      "case_id": "OPAQUE_EQ_QUOTE_BACKSLASH_PADDED",
+      "role": "parent",
+      "raw_sha256": "E647B4CE8F245E4270C38DC2EAC25DF0092CE6FF58E9415906A7FFD10E1A10C6",
+      "raw_bytes": 936,
+      "issuedAtUtc_raw": "2026-10-11T00:00:00.1234567Z",
+      "operatorPairId": "  operatorPairId=6 \"Ω\" \\ original  "
+    },
+    {
+      "case_id": "OPAQUE_EQ_QUOTE_BACKSLASH_PADDED",
+      "role": "child",
+      "raw_sha256": "E1F0E41C784D7767D661588DAD839A3B9B547EBDBA89260484A62F5C964AC26A",
+      "raw_bytes": 962,
+      "issuedAtUtc_raw": "2026-10-11T00:00:01.0000000Z",
+      "operatorPairId": "  operatorPairId=6 \"Ω\" \\ original  "
+    }
+  ],
+  "correction": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R37_ORIGINAL_LITERAL_TIMESTAMP_CORRECTION_20261014.md",
+    "sha256": "FEC2A1C44D1BD6CEDF4E0EF15F23B7B51E940C863A3E246F09AC0C5AA56026E0",
+    "bytes": 1239
+  },
+  "original_files_modified": false
+}

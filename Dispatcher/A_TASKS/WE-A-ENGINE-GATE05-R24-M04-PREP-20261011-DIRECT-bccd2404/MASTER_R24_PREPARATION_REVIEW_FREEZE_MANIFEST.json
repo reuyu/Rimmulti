@@ -1,0 +1,79 @@
+{
+  "at": "2026-10-11T21:23:19.331476+09:00",
+  "result_id": "WE-A-ENGINE-GATE05-R24-M04-PREP-RESULT-01",
+  "files": [
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_EngineHost_Gate05_R24_M04_Preparation.md",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404\\MASTER_R24_PREPARATION_FROZEN\\docs\\POC_EngineHost_Gate05_R24_M04_Preparation.md",
+      "sha256": "AEE717226C9BF416AB244AB428222634A27E60BCAC8F3292533D0683F13C0C55",
+      "bytes": 18472
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R24RoleLaunchPreparation\\ROUTE_MATRIX.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404\\MASTER_R24_PREPARATION_FROZEN\\scratch\\EngineGate05R24RoleLaunchPreparation\\ROUTE_MATRIX.json",
+      "sha256": "7C918A1EA35C2AE9376A2A8C22F9970DD9C9E7E7B8D28B7803EA7FAF61B13D88",
+      "bytes": 5689
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R24RoleLaunchPreparation\\FRONTEND_PREREQUISITES.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404\\MASTER_R24_PREPARATION_FROZEN\\scratch\\EngineGate05R24RoleLaunchPreparation\\FRONTEND_PREREQUISITES.json",
+      "sha256": "D8CB969848CB40CCA6749CA38B0BB98CE5DD88873F5705F76EF4E2894975A319",
+      "bytes": 6787
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R24RoleLaunchPreparation\\IMPLEMENTATION_CONTRACT.md",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404\\MASTER_R24_PREPARATION_FROZEN\\scratch\\EngineGate05R24RoleLaunchPreparation\\IMPLEMENTATION_CONTRACT.md",
+      "sha256": "299C8E36D1157D00F39B53BBEE884D205559A5E01E5B357BD76A64481551DAA9",
+      "bytes": 7106
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R24RoleLaunchPreparation\\PROSPECTIVE_M04_NORMAL_ORACLE.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404\\MASTER_R24_PREPARATION_FROZEN\\scratch\\EngineGate05R24RoleLaunchPreparation\\PROSPECTIVE_M04_NORMAL_ORACLE.json",
+      "sha256": "EC6FDE3E8C165330086CF96EDC63AC01B1F8DB66FBA50E2381F203F8E030866B",
+      "bytes": 5085
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R24RoleLaunchPreparation\\ACTUAL_PREPARATION_SCOPE.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404\\MASTER_R24_PREPARATION_FROZEN\\scratch\\EngineGate05R24RoleLaunchPreparation\\ACTUAL_PREPARATION_SCOPE.json",
+      "sha256": "786A267A5461972003E51F30BFF94CA760631469444E9B7DC9DC4C18FA1267DA",
+      "bytes": 2160
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R24RoleLaunchPreparation\\RESULT_INDEX.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404\\MASTER_R24_PREPARATION_FROZEN\\scratch\\EngineGate05R24RoleLaunchPreparation\\RESULT_INDEX.json",
+      "sha256": "671E2DBF9B912C890D227FCBD1693D183BD9BBBC7F39DBE7BC9FEB0AE75FA07E",
+      "bytes": 2924
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R24RoleLaunchPreparation\\EVIDENCE_MANIFEST.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404\\MASTER_R24_PREPARATION_FROZEN\\scratch\\EngineGate05R24RoleLaunchPreparation\\EVIDENCE_MANIFEST.json",
+      "sha256": "2B6810B9EC4DF55E3C824DC837BF493064937876823505C9CFBD680468EC08AF",
+      "bytes": 2805
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404\\ENGINE_FREEZE_BEFORE.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404\\MASTER_R24_PREPARATION_FROZEN\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404\\ENGINE_FREEZE_BEFORE.json",
+      "sha256": "00CF7753E4492073AB86DFA28459CA790D074214AE037B29162B347224D3C545",
+      "bytes": 3350
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404\\ENGINE_FREEZE_AFTER.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404\\MASTER_R24_PREPARATION_FROZEN\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404\\ENGINE_FREEZE_AFTER.json",
+      "sha256": "00CF7753E4492073AB86DFA28459CA790D074214AE037B29162B347224D3C545",
+      "bytes": 3350
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404\\A_RECOVERY_ACK.md",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404\\MASTER_R24_PREPARATION_FROZEN\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404\\A_RECOVERY_ACK.md",
+      "sha256": "FDD3411C07D10039F2CE2FC199AB0B68873B66AA61EF71231B2A5116589376BA",
+      "bytes": 1490
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404\\ACK.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404\\MASTER_R24_PREPARATION_FROZEN\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404\\ACK.json",
+      "sha256": "846EE8BD94DB3E2E80B091CC65D6B7FBD1A20CB7985F22BA7C6CEF573CBE4C9B",
+      "bytes": 2092
+    }
+  ],
+  "purpose": "POST_COMPLETION_PREPARATION_DOCS_ONLY_NOT_PROSPECTIVE_OR_NEW_CANDIDATE"
+}

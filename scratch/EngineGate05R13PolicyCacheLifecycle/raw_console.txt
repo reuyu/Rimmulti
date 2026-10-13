@@ -1,0 +1,36 @@
+================================================================================
+WarEconomy Gate05-R13 Policy Cache Lifecycle Pure Normal Runner
+Run ID: GATE05-R13-POLICY-CACHE-LIFECYCLE-RUN-01
+Current Culture: ko-KR (Invariant: )
+Candidate Assembly: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R13PolicyCacheLifecycle\Harness\bin\Debug\net472\WarEconomy.WorkerBridge.PoC.dll
+Target Contract Version: ADR-006B-v5-R13
+================================================================================
+[PASS] TC01_GlobalProvider_InitialStateDiagnostics (1ms) - Verifies unconfigured empty cache diagnostics on ContentProfileProvider global provider.
+[PASS] TC02_GlobalProvider_ConfigurePolicyA_DeclarationAndRecord (8ms) - Verifies valid current-v1 ConfigureExpectedPackagePolicy overloads (Declaration and Record) on global provider.
+[PASS] TC03_GlobalProvider_CallerOwnershipAndImmutability (0ms) - Verifies caller list mutation on input or returned snapshot does not corrupt global provider state.
+[PASS] TC04_GlobalProvider_GenerationAdvanceOnReconfigure (0ms) - Verifies legitimate reconfigure advances configuration generation and keeps cache unpopulated.
+[PASS] TC05_GlobalProvider_ClearConfiguredPolicy_ResetsAndAdvancesGeneration (0ms) - Verifies ClearConfiguredExpectedPackagePolicy removes configured policy and advances generation.
+[PASS] TC06_GlobalProvider_ExplicitInvalidateCache (0ms) - Verifies explicit InvalidateCache retains configured policy while ensuring empty cache state.
+[PASS] TC07_StandaloneCore_InitialStateDiagnostics (0ms) - Verifies standalone core initializes with generation 0 and empty unconfigured state.
+[PASS] TC08_StandaloneCore_ConfigurePolicyA_AdvancesGeneration (0ms) - Verifies configuring policy A on core advances generation to 1 and stores immutable snapshot.
+[PASS] TC09_StandaloneCore_PublishCoherentEntryA_Success (32ms) - Verifies publishing coherent entry matching generation and policy succeeds and populates cache.
+[PASS] TC10_StandaloneCore_CoherentEntryQueryRepeatAndDefensiveCopy (2ms) - Verifies repeated queries return identical results and mutating returned CachedManifest does not corrupt cache.
+[PASS] TC11_StandaloneCore_ReconfigureToPolicyB_ClearsOldCache (0ms) - Verifies reconfiguring core with policy B advances generation to 2 and atomically invalidates entry A.
+[PASS] TC12_StandaloneCore_PublishCoherentEntryB_Success (0ms) - Verifies publishing entry B at generation 2 populates core with entry B.
+[PASS] TC13_StandaloneCore_StaleGenerationPublication_Rejected (0ms) - Verifies publishing with stale generation or mismatched policy is rejected without modifying cache.
+[PASS] TC14_StandaloneCore_SamePolicyReconfigure_DeterministicAdvanceAndInvalidate (0ms) - Verifies same-policy reconfigure deterministically advances generation and invalidates cache.
+[PASS] TC15_StandaloneCore_ClearConfiguredPolicy_InvalidatesEntryAndClearsPolicy (0ms) - Verifies ClearConfiguredExpectedPackagePolicy on populated core advances generation and invalidates entry.
+[PASS] TC16_StandaloneCore_InvalidateCache_PreservesConfiguration (0ms) - Verifies InvalidateCache clears stored entry while preserving configured policy.
+[PASS] TC17_R12_CheckPackagePolicy_ZeroBasedContiguousOrder_CopiedView (1ms) - Verifies R12 CheckPackagePolicy validates 0-based contiguous loadOrder using copied view without mutating caller.
+[PASS] TC18_R12_PhysicalPermutation_CanonicalAdmittedContent (6ms) - Verifies R12 physical permutation invariance: permuted array yields identical canonical JSON and digest.
+[PASS] TC19_R12_DistinctValidExecutionOrders_MatchingDistinctPolicies (0ms) - Verifies R12 distinct execution sequences match their separate policies and retain distinct canonical content.
+[PASS] TC20_R12_FreshOriginal_SerializeTrue_BeforeAdmission (0ms) - Verifies R12 fresh-original manifest serializes with canonicalNormalize=true before external admission.
+[PASS] TC21_R11_PolicyDeclaration_Encoding_Whitespace_Unicode_Digest (0ms) - Verifies R11 policy declaration compact JSON, whitespace/Unicode preservation, and SHA-256 digest.
+[PASS] TC22_R9_VersionMeaningSemantics (0ms) - Regresses R9 version meaning: modVersion null/empty values preserved without overwrite.
+[PASS] TC23_ContractVersion_And_CapabilityFlag (0ms) - Verifies ADR-006B-v5-R13 contract version and GATE05_R13_POLICY_CACHE_LIFECYCLE capability flag.
+[PASS] TC24_DefFamiliesAndCanonicalSorting (0ms) - Regresses 8 Def families presence and canonical sorting order.
+--------------------------------------------------------------------------------
+Total Tests: 24 | Passed: 24 | Failed: 0
+Overall Verdict: PASS (Elapsed: 60ms)
+--------------------------------------------------------------------------------
+Results saved to: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R13PolicyCacheLifecycle\results.json

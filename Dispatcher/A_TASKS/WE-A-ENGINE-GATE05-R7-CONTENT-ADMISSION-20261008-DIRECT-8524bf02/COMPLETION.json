@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "producer": "A",
+  "report_kind": "E1",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-20261008-DIRECT-8524bf02",
+  "wp_id": "WP_ENGINE_GATE05_R7_CONTENT_ADMISSION",
+  "wp_revision": "GATE05-R7-CONTENT-ADMISSION",
+  "result_id": "WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-RESULT-01",
+  "status": "COMPLETED",
+  "completed_at": "2026-10-08T13:10:16.148352+00:00",
+  "summary": "WP_ENGINE_GATE05_R7_CONTENT_ADMISSION / GATE05-R7-CONTENT-ADMISSION narrow technical correction completed and developer E1 verification recorded. Successfully wired ValidateContract into ComputeActualContentProfileManifest and ComputeActualContentProfileFingerprint to enforce explicit supported content contract before admission and fingerprint generation. Implemented TryAdmitManifest for external callers. Enforced executable coverage and disposition policies for all 8 Def families, DLCs, active mods, and loaded assemblies without silent child omission or sentinel abbreviation. Bound executable patch/settings exclusion status (contentContractVersion ADR-006B-v5-R7, supportedCoverageProfile, modPatchSupportStatus) into manifest and contract validation. Implemented deterministic multi-key tie-breaking (loadedAssemblies, stats, costList) and formalized in-place mutation contract for CanonicalNormalize. Preserved immutable source baselines (WorkerBridge.cs, WorkerBridge.csproj, EngineHostCensus.cs prefix 72547 bytes SHA F3C4F865...). Executed positive pure normal DTO/helper unit harness (14/14 PASS) without cache calls, adverse execution, or runtime initialization anomalies. Bound actual PE MVIDs for Debug (bdf94567-...) and Release (db8d92c1-...) candidates. All historical lineages and installed incident preserved as OPEN.",
+  "e1_verdict": "IMPLEMENTATION_PARTIAL",
+  "limitations": [
+    "NATIVE_UNTESTED: In-engine and game runtime execution was strictly prohibited under WP_ENGINE_GATE05_R7_CONTENT_ADMISSION. Verification was conducted via isolated positive pure normal DTO and helper unit harness (14/14 PASS).",
+    "INSTALLED_DLL_INCIDENT_OPEN: Steam installed DLL (BB3B52...) discrepancy against archive baseline (2D64FF...) remains an UNKNOWN OPEN INCIDENT, preserved unmodified per Master policy.",
+    "NO_SELF_CLOSURE: Developer A does not self-declare candidate release, E2 verification, or defect closure. Gate05 defects, Engine002/006, Pipeline007, and Foundation HOLD remain OPEN pending Master disposition and independent Sol QA review."
+  ],
+  "artifacts": [
+    {
+      "role": "implementation_report",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_EngineHost_Content_Codec_Gate05_R7.md",
+      "sha256": "DAF6842CEB7D59FEC2728D5376FEE03914830EC1F6521469C82187A08AACC81F",
+      "size": 21156
+    },
+    {
+      "role": "release_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R7_CONTENT_ADMISSION.json",
+      "sha256": "450D1DB0BC62F90F0C045586AC787498544C879F79154F8A41D80F46C287F5A4",
+      "size": 4877
+    },
+    {
+      "role": "harness",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R7ContentAdmission\\Harness\\Program.cs",
+      "sha256": "FD1B726D51D6E0C66A00145A544572DABCB86CEE63F374CB6D2EDB798603BC7A",
+      "size": 34079
+    },
+    {
+      "role": "harness_project",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R7ContentAdmission\\Harness\\Gate05R7ContentRunner.csproj",
+      "sha256": "CD33212FA25664EA53D277060405023FBD2A98B43E3BDD1656E9A0C181ADEB00",
+      "size": 1647
+    },
+    {
+      "role": "results",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R7ContentAdmission\\results.json",
+      "sha256": "29AA8A322C983F75147B7CE477A98A742A2231A4A58E5C17444676DDE9C6A030",
+      "size": 4109
+    },
+    {
+      "role": "raw_evidence",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R7ContentAdmission\\raw_console.txt",
+      "sha256": "306115901C16339D8ADD8FA18AEE4EC23DE5232F07475EE3D8200EA3D7EC1A1B",
+      "size": 3056
+    },
+    {
+      "role": "candidate_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "223B4055C0AFAA6F30488C9787AE6F68D65D62F395CFCA722EDA83674975CD2A",
+      "size": 220672,
+      "mvid": "bdf94567-be4d-4270-9a70-dbf2df9b5b4a"
+    },
+    {
+      "role": "pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "146C5667DF4BB3C4C3F48328FD054A6C4BC87D22FEB5F010534A4428C8DA1579",
+      "size": 54604
+    },
+    {
+      "role": "alternate_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "E9E409E95E225552B59D34FA1DE9D5AB021764988F1FADD25FDC11235CF87F35",
+      "size": 209920,
+      "mvid": "db8d92c1-a284-4e67-8bcc-708e279944c1"
+    },
+    {
+      "role": "alternate_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "07C79C3C651EEB32BC0EFE56F552E90F414ED7F3AFFBDCCD8541B5CA49980188",
+      "size": 40312
+    },
+    {
+      "role": "deployed_assembly",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "223B4055C0AFAA6F30488C9787AE6F68D65D62F395CFCA722EDA83674975CD2A",
+      "size": 220672,
+      "mvid": "bdf94567-be4d-4270-9a70-dbf2df9b5b4a"
+    },
+    {
+      "role": "deployed_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "146C5667DF4BB3C4C3F48328FD054A6C4BC87D22FEB5F010534A4428C8DA1579",
+      "size": 54604
+    },
+    {
+      "role": "source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+      "size": 156431
+    },
+    {
+      "role": "source_census",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "D980225D8DBE04F9CAE95AD100DCF6640252A24A14599346E3B7F81CA8B9AF98",
+      "size": 124817
+    },
+    {
+      "role": "source_csproj",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "size": 1774
+    },
+    {
+      "role": "pre_run_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R7ContentAdmission\\CANDIDATE_PRE_RUN_MANIFEST.json",
+      "sha256": "8397962FD0D56645C41427C8DCB511A00E67B01A6E073C7808C654BCC6127FF0",
+      "size": 4034
+    },
+    {
+      "role": "engine_freeze_before",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R7ContentAdmission\\ENGINE_FREEZE_BEFORE.json",
+      "sha256": "35554D8617ACB4049024F726DF2162D01546889C8A91C6B5663A235A85BC164A",
+      "size": 2164
+    },
+    {
+      "role": "engine_freeze_after",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R7ContentAdmission\\ENGINE_FREEZE_AFTER.json",
+      "sha256": "640E56EC9CB6CF25F0E6FBF31983C66F3770C9E04344E4F44E9F6839A77FEBE3",
+      "size": 2164
+    },
+    {
+      "role": "work_log",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-20261008-DIRECT-8524bf02\\A_WORK_LOG.md",
+      "sha256": "C2A89F44AEFAA230F08EA35B3944FEEE0E388EE397C9D4D53E886C85621E530A",
+      "size": 6391
+    },
+    {
+      "role": "recovery_ack",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-20261008-DIRECT-8524bf02\\A_RECOVERY_ACK.md",
+      "sha256": "E14CB0FBCDC169C87DD1AC3A30AED696AA20539426029AE5A818A672781DD430",
+      "size": 5320
+    },
+    {
+      "role": "ack_json",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-20261008-DIRECT-8524bf02\\ACK.json",
+      "sha256": "8438A802F79DFFE5ADF27BAA48402D642DEA098446748C60D36D4EF3FA67ACE7",
+      "size": 1441
+    }
+  ]
+}

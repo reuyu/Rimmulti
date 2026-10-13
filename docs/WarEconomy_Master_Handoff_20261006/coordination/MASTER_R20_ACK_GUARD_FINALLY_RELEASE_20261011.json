@@ -1,0 +1,14 @@
+{
+  "run_id": "MASTER-SOL-R20-ACK-20261011-01",
+  "guard_session": 10927,
+  "guard_pid": 26084,
+  "actual_release_tool": {
+    "chunk_id": "8ebfab",
+    "wall_time_seconds": 0.000031,
+    "exit_code": 0,
+    "original_token_count": 103,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-SOL-R20-ACK-20261011-01\", \"pid\": 26084, \"locked_at\": \"2026-10-11T05:49:57.081627+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-11T05:50:53.243339+09:00\", \"renewal_count\": 2, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-11T05:51:12.905501+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "all_child_commands_completed_before_release": true,
+  "master_check_metadata_correction": "Initial reused checker expected legacy artifact role names. Revised current package identity check uses actual nine AFTER rows already bound to independent Master E1 identity; no producer/QA/candidate changes or execution."
+}

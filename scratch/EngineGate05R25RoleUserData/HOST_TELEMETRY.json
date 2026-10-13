@@ -1,0 +1,39 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R25-ROLE-USERDATA-20261011-DIRECT-dd341868",
+  "wp_id": "WP_ENGINE_GATE05_R25_ROLE_USERDATA_SELECTION",
+  "wp_revision": "GATE05-R25-ROLE-USERDATA",
+  "envelope": 28,
+  "orchestrator": "Python Host Subprocess",
+  "timestamp_utc": "2026-10-11T12:40:08.120066+00:00",
+  "pinned_runner": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R25RoleUserData\\Harness\\bin\\Debug\\net472\\Gate05R25RoleUserDataRunner.exe",
+    "sha256": "7769B674A1E05AB3D8AE862727EE17F9F7784B02E4FD2FE5A25D9154AE608C37",
+    "size": 26112
+  },
+  "runs": [
+    {
+      "run_index": 1,
+      "culture": "en-US",
+      "child_pid": 10408,
+      "exit_code": 0,
+      "duration_seconds": 0.15375757217407227,
+      "run_dir": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R25RoleUserData\\run_en_us",
+      "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R25RoleUserData\\run_en_us\\stdout.txt",
+      "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R25RoleUserData\\run_en_us\\stderr.txt",
+      "output_inventory_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R25RoleUserData\\run_en_us\\OUTPUT_INVENTORY.json",
+      "output_count": 11
+    },
+    {
+      "run_index": 2,
+      "culture": "de-DE",
+      "child_pid": 34440,
+      "exit_code": 0,
+      "duration_seconds": 0.07184076309204102,
+      "run_dir": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R25RoleUserData\\run_de_de",
+      "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R25RoleUserData\\run_de_de\\stdout.txt",
+      "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R25RoleUserData\\run_de_de\\stderr.txt",
+      "output_inventory_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R25RoleUserData\\run_de_de\\OUTPUT_INVENTORY.json",
+      "output_count": 11
+    }
+  ]
+}

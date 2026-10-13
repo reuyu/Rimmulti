@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-12T23:28:10.704406+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2",
+  "ACK": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2\\ACK.json",
+    "sha256": "BFCE0CC903406FA45A24EFB6854E41984D3A456992911AF2D15499684E66A6F0",
+    "bytes": 4309
+  },
+  "immutable_initial_ACK": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2\\ACK_INITIAL.json",
+    "sha256": "BFCE0CC903406FA45A24EFB6854E41984D3A456992911AF2D15499684E66A6F0",
+    "bytes": 4309
+  },
+  "references": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2\\INSTRUCTIONS.md",
+      "sha256": "10B401152366FCA08D4D0DEF2F3E013B90254220CB790CCA2FD4D5042D27E21C",
+      "bytes": 1192
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_ENGINE_GATE05_R32_CUSTODY.md",
+      "sha256": "5764445D5CD30BB3E096801AE242643716F2DC1BB1AFE2A56209939C316AD011",
+      "bytes": 7257
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\RELEASE_ENGINE_GATE05_R32_CUSTODY_20261012.md",
+      "sha256": "B98EB60B46554DCEDBAD1DFA9B19C7BCD5E7FE720F7FACDA9009AD3ECFA4776F",
+      "bytes": 838
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R32_MANAGED_CUSTODY_RESOURCE_CONTRACT_20261012.md",
+      "sha256": "3BC50D6D89B4F336A68155A2889FBB2BD9404F8E3FBB20315705AE69F16E227E",
+      "bytes": 4304
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2\\MASTER_R32_AUTHORIZED_SOURCE_SCOPE.json",
+      "sha256": "ECF93A72FEE19B8B2C415E3C16030584CD0009B1A26C2FE36793DE0F858F0D66",
+      "bytes": 8491
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R32_CUSTODY_PROTECTED_BASELINE_20261012.json",
+      "sha256": "3C436C959FD215DCDE0F9BEA376593AD6D8169A06EFFD6F92AC0B6F1A9CC4623",
+      "bytes": 4853063
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R31_INDEPENDENT_STATIC_S1_20261012.md",
+      "sha256": "9AE06AA77A76EE0FF0BCBB09B7DEA45DB1B9CCA506B3491AA2F4133680562105",
+      "bytes": 4218
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2\\MASTER_EXISTING_PROJECT_REFERENCE_OBSERVATION.json",
+      "sha256": "4AB5D62F5A5B82AB19508F3872B75FE350D07FC19182FD98D37A7DC110A6B963",
+      "bytes": 2030
+    }
+  ],
+  "all8_reference_hashes_matched": true,
+  "task_state": "IN_PROGRESS",
+  "source4_build_only_no_runtime": true,
+  "monitor": "ACTUAL_ACTIVE_HOURLY",
+  "Foundation": "HOLD",
+  "native_E2": "NOT_RELEASED"
+}

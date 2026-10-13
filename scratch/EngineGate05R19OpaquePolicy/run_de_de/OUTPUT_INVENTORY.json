@@ -1,0 +1,42 @@
+[
+  {
+    "relative_path": "API_LEDGER.json",
+    "size_bytes": 586,
+    "sha256": "27049A23D2A481F2872F4B4AB25CA1B4D22B01890953457B68DEDBA8E1C23F8D"
+  },
+  {
+    "relative_path": "CFG-READ_ONLY-OPAQUE.json",
+    "size_bytes": 1342,
+    "sha256": "AFFB9EB8A6316E92F4327EF1AF582E7CD7526A180F794920BBBA98243CC07283"
+  },
+  {
+    "relative_path": "CFG-READ_ONLY-PLAIN.json",
+    "size_bytes": 1302,
+    "sha256": "6A73815ABDDEEE8F0CB41F67E327D9CC728CC89A54AC2F8A108143E997954404"
+  },
+  {
+    "relative_path": "CFG-SIMULATION-OPAQUE.json",
+    "size_bytes": 1344,
+    "sha256": "A3AD490A61BE0ACFF622A1AA9F46666C0ACE104DE63A46855AF53E2E4205B571"
+  },
+  {
+    "relative_path": "CFG-SIMULATION-PLAIN.json",
+    "size_bytes": 1304,
+    "sha256": "B2736E6D936E4FA81DBEB5F91354B891B6629AE0275A710FF0B4C14AC3A402C3"
+  },
+  {
+    "relative_path": "RESULTS.json",
+    "size_bytes": 3927,
+    "sha256": "56D66B96B2C136FE969AA6A79C75DAF1909BCB03EC0C8C8370E050AD3BECCEEC"
+  },
+  {
+    "relative_path": "sample_sha_check.txt",
+    "size_bytes": 38,
+    "sha256": "913BE289570B7DC298675AF5867575B939103014F260CA9320B6CDB5B8C21F8B"
+  },
+  {
+    "relative_path": "SimulatedAdmittedValidator.exe",
+    "size_bytes": 48,
+    "sha256": "03A1CC8829DD0D8E6F7DF402E6FC4CDF47B52C99EC17E12EB15B1200071E0D3B"
+  }
+]

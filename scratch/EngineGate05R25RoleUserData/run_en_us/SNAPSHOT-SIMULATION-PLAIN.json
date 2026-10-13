@@ -1,0 +1,23 @@
+﻿{
+  "schemaVersion": "WE-OPERATOR-BOOTSTRAP-V1",
+  "configId": "CFG-SIMULATION-PLAIN",
+  "role": "SIMULATION",
+  "admittedValidatorExecutablePath": "C:\\WarEconomy\\Data R25\\Bin 01\\SimulatedValidator.exe",
+  "admittedValidatorExecutableSha256": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+  "workerUserDataDirectory": "C:\\WarEconomy\\Data R25\\작업자 01\\UserData",
+  "validatorUserDataDirectory": "C:\\WarEconomy\\Data R25\\검증자 01\\UserData",
+  "workerCwd": "C:\\WarEconomy\\Data R25\\작업자 01\\Cwd",
+  "validatorCwd": "C:\\WarEconomy\\Data R25\\검증자 01\\Cwd",
+  "expectedPackagePolicyDeclaration": {
+    "schemaVersion": "WE-PACKAGE-POLICY-V1",
+    "policyId": "POLICY-MAIN-01",
+    "revision": "1",
+    "admittedPackageIds": [
+      "ludeon.rimworld",
+      "test.pkg"
+    ]
+  },
+  "expectedContentProfileFingerprint": "FINGERPRINT-R25-01",
+  "capabilityBoundary": "LOCAL_SANDBOXED",
+  "issuedAtUtc": "2026-10-11T03:00:00.0000000Z"
+}

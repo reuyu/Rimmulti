@@ -1,0 +1,65 @@
+{
+  "at": "2026-10-12T10:07:32.832518+09:00",
+  "original": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S1-20261012\\review_setup.py",
+    "sha256": "188B86424B073A8D164EE81BDCE4AC610AFDB1967316B69827A58920CB456B0C",
+    "bytes": 4777
+  },
+  "template": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\Tools\\MASTER_R29_S3_REVIEW_SETUP_TEMPLATE.py",
+    "sha256": "2878AE853B4B271A615EFA56A7E0C0568466F9FC4A1EE33B4E1DA3D7DA034EC7",
+    "bytes": 4775
+  },
+  "replacements": [
+    {
+      "old": "coordination/MASTER_R29_FRESH_PAIR_QA_PROTECTED_BASELINE_20261012.json",
+      "new": "coordination/MASTER_R29_S3_PAIR_QA_PROTECTED_BASELINE_20261012.json",
+      "occurrences": 1
+    },
+    {
+      "old": "WP_QA_ENGINE_GATE05_R29_STARTUP_PAIR_INDEPENDENT_S1.md",
+      "new": "WP_QA_ENGINE_GATE05_R29_STARTUP_PAIR_INDEPENDENT_S3.md",
+      "occurrences": 1
+    },
+    {
+      "old": "E323F00F917EC3873EDADE006D358C104C2C198C5779A135D101867D9CE52E37",
+      "new": "99DD177CB985F4D5985DD711A13ADD3303E6B52A7D1A8665FBEC4493DA11B0D0",
+      "occurrences": 1
+    },
+    {
+      "old": "p=Path(r['frozen_path']);v=row(p);assert v['sha256']==r['sha256'] and v['bytes']==r['size'];fs.append(v)",
+      "new": "p=Path(r['frozen_path']);v=row(p);assert v['sha256']==r['sha256'] and v['bytes']==r['bytes'];fs.append(v)",
+      "occurrences": 1
+    },
+    {
+      "old": "14332",
+      "new": "14365",
+      "occurrences": 4
+    },
+    {
+      "old": "wp_revision='S1'",
+      "new": "wp_revision='S3'",
+      "occurrences": 1
+    },
+    {
+      "old": "delivery_id='SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S1-20261012-01'",
+      "new": "delivery_id='SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012-01'",
+      "occurrences": 1
+    },
+    {
+      "old": "result_id='SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S1-20261012-'",
+      "new": "result_id='SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012-'",
+      "occurrences": 1
+    }
+  ],
+  "inverse_byte_reconstruction_equal": true,
+  "EOF_preserved": true,
+  "fixed_dependency_assignment_lines_unchanged": true,
+  "AST_syntax_compile_only": true,
+  "template_execution": 0,
+  "diff": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R29_S3_TEMPLATE_EXACT_DIFF_20261012.txt",
+    "sha256": "D4F34ED806E7656E05A9A088FCB678ED9E1BF3E4B62A324B8E27FFDA59F6399C",
+    "bytes": 5641
+  }
+}

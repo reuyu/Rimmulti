@@ -1,0 +1,42 @@
+{
+  "at": "2026-10-14T00:47:50.207182+09:00",
+  "guard_session": 81798,
+  "delivery_id": "SOL-GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014-01",
+  "result_id": "SOL-GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014-6ed51db08e3540c9b6b98a6a96f57e1d",
+  "old_source": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review.py",
+    "sha256": "435DBA9DB5C1BB22D9C9266203E9EEAC81670491D14A87FD9BF06B4B2F4A6C69",
+    "bytes": 19936
+  },
+  "new_source": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review_r1.py",
+    "sha256": "1FD30B2B1F66B4CF515E8A3B8DE5BE60B1AED273BFD903E067981B012246EC39",
+    "bytes": 19935
+  },
+  "exact_one_closing_parenthesis_deletion": [
+    [
+      "delete",
+      9937,
+      9938,
+      9937,
+      9937
+    ]
+  ],
+  "tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review_r1.TOOL.json",
+    "sha256": "7C58E7BE6CC8F314CCDE17A7FF047ADB9E67EEED499442A6721C77D9F7B823A1",
+    "bytes": 1027
+  },
+  "prospective": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review_r1.INPUT.json",
+    "sha256": "C12C483AC49153B42E9CE48EB81447CE22B6B9727A7F9D2454551C0E7E234FAE",
+    "bytes": 29545
+  },
+  "PID": 25868,
+  "exit_code": 0,
+  "stdout587_stderr0": true,
+  "actual_execution_precedes_later_Master_authorization": true,
+  "scope": "EXISTING_APPROVED_OWN_PASSIVE_METADATA_ONLY",
+  "new_notice": "CANCELLED_UNSENT_SUPERSEDED_BY_OBSERVED_BOUNDED_R1_DO_NOT_RERUN",
+  "candidate_RUNTIME_PASS": false
+}

@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "dispatch_id": "WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00",
+  "wp_id": "WP_ENGINE_GATE05_R16_OPERATOR_NATIVE_PREPARATION",
+  "wp_revision": "GATE05-R16-OPERATOR-NATIVE-PREPARATION",
+  "envelope": 19,
+  "created_at": "2026-10-10T02:54:55+09:00",
+  "target_runtime_directory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\RuntimeCopy",
+  "inventory_summary": {
+    "total_files": 7,
+    "total_bytes": 33030151,
+    "directories_present": [
+      "Mods",
+      "Mods\\WarEconomy.WorkerBridge.PoC",
+      "Mods\\WarEconomy.WorkerBridge.PoC\\1.6",
+      "Mods\\WarEconomy.WorkerBridge.PoC\\1.6\\Assemblies",
+      "UserData"
+    ],
+    "game_version_declared": "1.6.4871 rev590",
+    "steam_app_id": 294100
+  },
+  "files": [
+    {
+      "relative_path": "RimWorldWin64.exe",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\RuntimeCopy\\RimWorldWin64.exe",
+      "size_bytes": 666624,
+      "sha256": "4C30E2105B49F2D0130F5D861947FBE82B866042299DA48EF1C8CF6979A8564D",
+      "file_type": "PE32+ executable (x86-64)",
+      "pe_machine": "0x8664",
+      "pe_timestamp": "0x667bf359",
+      "provenance": "Licensed RimWorld standalone launcher binary (Ludeon Studios proprietary)"
+    },
+    {
+      "relative_path": "steam_appid.txt",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\RuntimeCopy\\steam_appid.txt",
+      "size_bytes": 6,
+      "sha256": "127E5A12E4BEEAC49D6FAEA428A003E76ACE71A2B23CBB17F17DD00991DD60D3",
+      "file_type": "ASCII text",
+      "content": "294100",
+      "provenance": "Steam AppID configuration token"
+    },
+    {
+      "relative_path": "UnityCrashHandler64.exe",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\RuntimeCopy\\UnityCrashHandler64.exe",
+      "size_bytes": 1112768,
+      "sha256": "6DA75361F0EDDBE3492DF3C495AF7A1BA90FA6AE8C91D30BC857930F7DF63726",
+      "file_type": "PE32+ executable (x86-64)",
+      "pe_machine": "0x8664",
+      "pe_timestamp": "0x667bf422",
+      "provenance": "Unity engine crash handler utility"
+    },
+    {
+      "relative_path": "UnityPlayer.dll",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\RuntimeCopy\\UnityPlayer.dll",
+      "size_bytes": 30996672,
+      "sha256": "E0C489F1683609247FEDE45EA049D30BAA4F4542060E308E25C0EC87F6C0FB96",
+      "file_type": "PE32+ DLL (x86-64)",
+      "pe_machine": "0x8664",
+      "pe_timestamp": "0x667bf6a1",
+      "provenance": "Unity engine core player runtime library"
+    },
+    {
+      "relative_path": "Version.txt",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\RuntimeCopy\\Version.txt",
+      "size_bytes": 17,
+      "sha256": "0EC56B267649FAA48E8CD6BD767B14BAFE3D1359AF44434711105DBDC4597BE3",
+      "file_type": "ASCII text",
+      "content": "1.6.4871 rev590",
+      "provenance": "Declared RimWorld engine version stamp"
+    },
+    {
+      "relative_path": "Mods\\WarEconomy.WorkerBridge.PoC\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\RuntimeCopy\\Mods\\WarEconomy.WorkerBridge.PoC\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "size_bytes": 204800,
+      "sha256": "4F5663FDBBFA09A8B2BE460D09950FD22B9567459F7116E69D0B1C558F189B9E",
+      "file_type": "PE32 executable (CLR .NET Framework assembly)",
+      "provenance": "Historical Gate05-R4 candidate assembly (Superseeded by R15 835E8121...)"
+    },
+    {
+      "relative_path": "Mods\\WarEconomy.WorkerBridge.PoC\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\RuntimeCopy\\Mods\\WarEconomy.WorkerBridge.PoC\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "size_bytes": 49264,
+      "sha256": "CC796E68C592C94345DF41D64609B5D207933B8F5FE805146875D9E61B8D12C4",
+      "file_type": "Microsoft C/C++ MSF program database",
+      "provenance": "Historical Gate05-R4 debug symbol database"
+    }
+  ],
+  "critical_missing_assets": [
+    {
+      "asset_group": "RimWorldWin64_Data Core Package",
+      "missing_path": "RimWorldWin64_Data",
+      "criticality": "BLOCKING_FATAL",
+      "impact": "Unity Standalone player cannot initialize without its corresponding data directory. Executable halts or hangs immediately.",
+      "items": [
+        "RimWorldWin64_Data\\boot.config",
+        "RimWorldWin64_Data\\globalgamemanagers",
+        "RimWorldWin64_Data\\resources.assets",
+        "RimWorldWin64_Data\\sharedassets*.assets"
+      ]
+    },
+    {
+      "asset_group": "Mono Embedding Runtime",
+      "missing_path": "RimWorldWin64_Data\\MonoBleedingEdge",
+      "criticality": "BLOCKING_FATAL",
+      "impact": "Unity player cannot initialize the CLR mono runtime to execute managed game assemblies.",
+      "items": [
+        "RimWorldWin64_Data\\MonoBleedingEdge\\EmbedRuntime\\mono-2.0-bdwgc.dll",
+        "RimWorldWin64_Data\\MonoBleedingEdge\\etc\\mono\\config"
+      ]
+    },
+    {
+      "asset_group": "Core Managed Assemblies",
+      "missing_path": "RimWorldWin64_Data\\Managed",
+      "criticality": "BLOCKING_FATAL",
+      "impact": "Game logic assembly (Assembly-CSharp.dll), UnityEngine modules, and BCL runtime libraries are completely missing.",
+      "items": [
+        "RimWorldWin64_Data\\Managed\\Assembly-CSharp.dll",
+        "RimWorldWin64_Data\\Managed\\UnityEngine.CoreModule.dll",
+        "RimWorldWin64_Data\\Managed\\UnityEngine.dll",
+        "RimWorldWin64_Data\\Managed\\mscorlib.dll",
+        "RimWorldWin64_Data\\Managed\\System.dll"
+      ]
+    },
+    {
+      "asset_group": "Core Game XML Defs & Languages",
+      "missing_path": "Data\\Core",
+      "criticality": "BLOCKING_FATAL",
+      "impact": "RimWorld DefDatabase cannot populate any game definitions (ThingDefs, PawnDefs, JobDefs, HediffDefs). Engine cannot reach Playing state.",
+      "items": [
+        "Data\\Core\\Defs\\**\\*.xml",
+        "Data\\Core\\Languages\\English\\**\\*.xml",
+        "Data\\Core\\Patches\\**\\*.xml"
+      ]
+    },
+    {
+      "asset_group": "Official DLC Packages",
+      "missing_path": "Data\\Royalty, Data\\Ideology, Data\\Biotech, Data\\Anomaly",
+      "criticality": "OPTIONAL_TO_CORE_BUT_DLC_SPECIFIC",
+      "impact": "Expansion definitions cannot load if active DLCs are declared in ContentProfile.",
+      "items": [
+        "Data\\Royalty\\Defs\\**\\*.xml",
+        "Data\\Biotech\\Defs\\**\\*.xml"
+      ]
+    },
+    {
+      "asset_group": "Mod Loader Metadata",
+      "missing_path": "Mods\\WarEconomy.WorkerBridge.PoC\\About\\About.xml",
+      "criticality": "BLOCKING_MOD_DISCOVERY",
+      "impact": "RimWorld mod discovery system requires About.xml to identify packageId, name, and supported versions. Mod will not load automatically.",
+      "items": [
+        "Mods\\WarEconomy.WorkerBridge.PoC\\About\\About.xml"
+      ]
+    },
+    {
+      "asset_group": "Bootstrap Configuration",
+      "missing_path": "UserData\\Config\\ModsConfig.xml",
+      "criticality": "BLOCKING_ACTIVE_MOD_LIST",
+      "impact": "Without ModsConfig.xml in UserData, RimWorld defaults to only loading Core, omitting the WorkerBridge mod.",
+      "items": [
+        "UserData\\Config\\ModsConfig.xml"
+      ]
+    }
+  ],
+  "provenance_and_licensing": {
+    "game_binaries": {
+      "license": "Commercial Proprietary EULA (Ludeon Studios)",
+      "redistribution_permitted": false,
+      "modification_permitted": false,
+      "handling_policy": "Read-only isolated local staging from licensed user installation. Zero asset mutation, zero uploading."
+    },
+    "reference_multiplayer": {
+      "source_root": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master",
+      "license": "MIT License (Copyright (c) 2018 Zetrith)",
+      "reusability": "Architectural and launcher pattern reference only. Zero lockstep/weak hash inheritance."
+    },
+    "reference_rimworld_together": {
+      "source_root": "C:\\Users\\user\\Desktop\\RimMulti\\Rimworld-Together-development\\Rimworld-Together-development",
+      "license": "CC BY-NC-ND 4.0",
+      "reusability": "Concept and protocol reference only. Direct code copying into production strictly prohibited."
+    }
+  },
+  "isolation_evaluation": {
+    "cwd_isolation": "Set working directory to RuntimeCopy root.",
+    "argv_isolation": "Launch with -batchmode -nographics -savedatafolder=\"UserData\" -logfile=\"UserData\\Logs\\Player.log\"",
+    "userdata_isolation": "Dedicated UserData folder prevents contaminating primary Steam installation.",
+    "child_kill_root_cause_analysis": "In Gate05-R4, RimWorldWin64.exe was launched with only 5 root binaries present. Missing RimWorldWin64_Data caused Unity standalone engine to fail immediately during boot, hanging or halting in headless mode, triggering the parent process timeout kill."
+  }
+}

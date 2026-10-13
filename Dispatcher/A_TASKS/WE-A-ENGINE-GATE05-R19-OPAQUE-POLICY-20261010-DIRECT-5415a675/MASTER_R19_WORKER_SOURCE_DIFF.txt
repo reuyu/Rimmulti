@@ -1,0 +1,13 @@
+--- FrozenR18Worker
++++ R19Worker
+@@ -3609,8 +3609,8 @@
+             IssuedAtUtc = config.issuedAtUtc.Trim();
+ 
+             _policySchemaVersion = config.expectedPackagePolicyDeclaration.schemaVersion.Trim();
+-            _policyId = config.expectedPackagePolicyDeclaration.policyId.Trim();
+-            _policyRevision = config.expectedPackagePolicyDeclaration.revision.Trim();
++            _policyId = config.expectedPackagePolicyDeclaration.policyId;
++            _policyRevision = config.expectedPackagePolicyDeclaration.revision;
+             _policyAdmittedPackageIds = config.expectedPackagePolicyDeclaration.admittedPackageIds.ToArray();
+         }
+ 

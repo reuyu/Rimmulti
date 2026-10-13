@@ -1,0 +1,50 @@
+{
+  "at": "2026-10-14T00:59:58.184928+09:00",
+  "guard_session": 64707,
+  "dispatch_id": "WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a",
+  "envelope": 40,
+  "actual_UI": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R37_ACTUAL_UI_SENT_20261014.json",
+    "sha256": "693F06A08BF98E64E1A3D97A0FA4830D36F442B1194439B217FEA2640064E0B9",
+    "bytes": 1722
+  },
+  "fresh_idle": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R37_A_FRESH_IDLE_20261014.json",
+    "sha256": "A94C8AD85E0CE3EC47A1A3F456BA0DCACC7A04D28FA592888C4C838677EF6AE6",
+    "bytes": 1369
+  },
+  "draft": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R37_EXACT_UI_DRAFT_20261014.json",
+    "sha256": "52FA5ECEE563E0AAB8DF61CB255087E9A25122585E199963FB57FF6167D7503A",
+    "bytes": 1796
+  },
+  "actual_protected19452_checker_exit0": true,
+  "delivery_status": "SENT",
+  "submit_count": 1,
+  "ACK": "PENDING",
+  "automation_file": {
+    "path": "C:\\Users\\user\\.codex\\automations\\wareconomy-master\\automation.toml",
+    "sha256": "04DCCB35D781D1DF4B8859FD871B4BE984BEC7EAF99A9134B453752FF3EA4807",
+    "bytes": 590
+  },
+  "actual_configuration": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "ACTIVE",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791907151752
+  },
+  "automation_tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R37_HOURLY_RESUME_TOOL_20261014.json",
+    "sha256": "339DE508C3280FFFA7128F062C1A2ACAB6D48E217E3478485F049BE501E1F343",
+    "bytes": 258
+  },
+  "future_R37_scheduled_run_observed": false,
+  "native_E2": "NOT_RELEASED",
+  "Foundation": "HOLD"
+}

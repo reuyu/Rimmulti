@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-12T19:13:33.570611+09:00",
+  "defect_id": "ENGINE-G05-R30-E1-LINEAGE-20261012-04",
+  "severity": "High",
+  "status": "OPEN",
+  "kind": "ORIGINAL_PRODUCER_EVIDENCE_PRESERVATION_AND_PROVENANCE",
+  "evidence": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R30_ORIGINAL_R29_E1_LINEAGE_DRIFT_20261012.json",
+    "sha256": "07C09D671C1C3595924D3E0F3E8EF95F96F636BB089098EDE2F6F9E264846EBE",
+    "bytes": 11682
+  },
+  "old_R29_frozen_copies_preserved": true,
+  "closure_requires": "fresh authorized new-root prospective runner/evidence with exact ownidentity, retain both oldfrozen and drift snapshot; Master review, no restore or oldPASSinheritance"
+}

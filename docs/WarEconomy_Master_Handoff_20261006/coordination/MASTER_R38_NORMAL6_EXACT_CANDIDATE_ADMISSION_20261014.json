@@ -1,0 +1,53 @@
+{
+  "at": "2026-10-14T05:13:20.460350+09:00",
+  "delivery_id": "SOL-GATE05-R38-PUBLISHER-NORMAL6-S1-20261014-01",
+  "admitted_candidate": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R38-10b9846e\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+    "sha256": "940CF77220C272D117CDBC278B64858EFB3077267141CC548A0105B47D6E1306",
+    "bytes": 43666,
+    "MVID": "NOT_APPLICABLE_PYTHON"
+  },
+  "frozen_manifest": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e\\MASTER_GATE05_R38_PUBLISHER_BOUNDARIES_REVIEW_FREEZE_MANIFEST.json",
+    "sha256": "85F08534BD3BD47258A8AC3A247438702FB318EA7F298C952B452C2464AF99DD"
+  },
+  "review": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R38_INDEPENDENT_STATIC_S1_20261014.md",
+    "sha256": "65AA35B1D7B63EE06DC3C14772EE5F14275FAC3D25F9C154F414905EBF0A6419",
+    "bytes": 3698
+  },
+  "static_verification": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R38_STATIC_FINAL_INDEPENDENT_EVIDENCE_VERIFICATION_20261014.json",
+    "sha256": "86E0A9DDFD3E409FD682834AC788E545952FF3005C2A3B6A15BE8D0000AE09D8",
+    "bytes": 34966
+  },
+  "expected_oracle": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R38_NORMAL6_PREFROZEN_EXPECTED_ORACLE_20261014.json",
+    "sha256": "C2D667CC372D605FDEC680B5663A62636DEF81DFCD6133689055C2FB86D343CB",
+    "bytes": 138444
+  },
+  "protected_baseline": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R38_NORMAL6_PROTECTED_BASELINE_20261014.json",
+    "sha256": "7DC67B8B9AAC482C30ECCD78999B8E2A6F65DBF12F58AE44BC17D62380F2A90E",
+    "bytes": 6013738
+  },
+  "new_QA_root": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-NORMAL6-S1-20261014",
+  "allowed_candidate_calls": 6,
+  "allowed_case_ids": [
+    "PLAIN_PLAIN",
+    "OPAQUE_OPAQUE",
+    "PLAIN_OPAQUE_PADDED",
+    "OPAQUE_PLAIN_PADDED",
+    "OPAQUE_EQ_QUOTE_BACKSLASH",
+    "OPAQUE_EQ_QUOTE_BACKSLASH_PADDED"
+  ],
+  "allowed_API": "PYTHON_CLI_--spec_ONLY",
+  "allowed_writes": "NEW_QA_ROOT_FIXTURE_SPEC_AND_FRESH_CASE_OUTPUT_ONLY",
+  "unsupported_blank_cap_identity_edgecases_excluded": true,
+  "adverse_rejection_calls": 0,
+  "Engine_native_game_operator_CLR_builds": 0,
+  "whole_general_contract": "REVISION_REQUIRED",
+  "High4": "OPEN",
+  "whole_runtime_E2": "NOT_RELEASED",
+  "Foundation": "HOLD"
+}

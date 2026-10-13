@@ -1,0 +1,32 @@
+[Runner] Starting Gate05 R23 Identifier Mapping Pure Normal Runner
+[Runner] Run Directory: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R23IdentifierMapping\run_en_us
+[Runner] Culture: en-US
+[Runner] Candidate Assembly: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R23IdentifierMapping\Harness\bin\Debug\net472\WarEconomy.WorkerBridge.PoC.dll
+[Runner] Candidate SHA256: 4379BE35700337F797BB17F25D5BAC2A8014FAA9332D9878E587A12E5758A9C4
+[Runner] Candidate MVID: 5bdada93-1f00-40e3-ab4d-7b23f4b2d086
+
+--- TEST 01: OPAQUE POLICY LOSSLESS DIGEST & DECLARATION DEFAULTS ---
+TEST 01: PASS
+
+--- TEST 02: MAIN 8 ADMISSION RECEIPT ISSUANCE (UNICODE & WHITESPACE ORIGIN/PLAN) ---
+TEST 02: PASS (8/8 receipts verified)
+
+--- TEST 03: DECLARATION AND RECEIPT CALLER MUTATION PROTECTION ---
+TEST 03: PASS (8/8 receipts immutability verified)
+
+--- TEST 04: LITERAL UTC PRESERVATION REGRESSION (8 CASES) ---
+TEST 04: PASS (8/8 UTC literal variants verified)
+
+--- TEST 05: EXACT 4 BOUNDED NORMAL ROLECAP-EQUIVALENCE RECEIPTS ---
+TEST 05: PASS (4/4 rolecap equivalence receipts verified)
+
+--- TEST 06: POSITIVE WINDOWS PATH HELPER ---
+TEST 06: PASS (5/5 positive paths verified)
+
+--- TEST 07: VALIDATOR RESULT AND CENSUS POLICY REGRESSION ---
+TEST 07: PASS
+
+[Runner] Total Admission Receipts Issued: 20 (Expected: 20)
+
+[Runner] E1 Report emitted to: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R23IdentifierMapping\run_en_us\E1_EXECUTION_REPORT.json
+[Runner] Overall Verdict: PASS

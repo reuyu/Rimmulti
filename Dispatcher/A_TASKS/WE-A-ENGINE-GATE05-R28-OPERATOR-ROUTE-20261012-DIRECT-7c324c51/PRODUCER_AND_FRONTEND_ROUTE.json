@@ -1,0 +1,85 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51",
+  "wp_id": "WP_ENGINE_GATE05_R28_OPERATOR_ROUTE",
+  "wp_revision": "GATE05-R28-OPERATOR-ROUTE",
+  "envelope": 31,
+  "generated_at": "2026-10-12T04:57:00+09:00",
+  "architectural_boundaries": {
+    "observed_facts": [
+      "WorkerBridgeBootstrapper currently consumes exactly 7 CLI arguments (self7) for its own admission receipt and admits role 'SIMULATION'.",
+      "WorkerBridgeComponent holds only _activeAdmissionReceipt and _activeStartupConfig for itself; it has no slot for a child admission receipt.",
+      "HandleLaunchOperatorValidator currently reads executable path and working directory from parent _activeStartupConfig and launches child process with '--task-file ... --nonce ...' without operator bootstrap arguments.",
+      "If child RimWorld process is launched without 7 operator CLI flags, its own WorkerBridgeBootstrapper aborts startup with fail-closed warning/errors ('Missing required -operatorconfig CLI argument... Component will NOT attach').",
+      "GenCommandLine.TryGetCommandLineArg in Assembly-CSharp requires '-key=value' format with an '=' delimiter and split length exactly 2.",
+      "GenFilePaths.get_SaveDataFolderPath in Assembly-CSharp natively reads '-savedatafolder=<path>' and overrides save data root early in initialization.",
+      "OperatorChildLaunchInputs.Capture (R27) requires parent admission receipt ('SIMULATION'), child admission receipt ('READ_ONLY'), task, and taskFilePath to construct the immutable container.",
+      "Dedicated server (WarEconomyMod/Source/Server/Program.cs) does not produce operator configurations, launch worker processes, or manage child validator lifecycles."
+    ],
+    "identified_missing_elements": [
+      "No operator-owned producer exists in live code to generate, sign, or supply a paired READ_ONLY child configuration to the primary simulation worker.",
+      "No mechanism exists in WorkerBridgeBootstrapper to admit or store a paired child startup receipt alongside the parent simulation receipt.",
+      "HandleLaunchOperatorValidator does not invoke OperatorChildLaunchInputs.Capture and does not supply the 7 operator CLI flags to the child process."
+    ],
+    "proposed_boundaries": [
+      "Establish an explicit operator-owned startup pair carrier at worker bootstrap: primary worker CLI accepts both self7 (SIMULATION) and child7 (READ_ONLY).",
+      "Admit child startup configuration at bootstrap using OperatorStartupConfigAdmissionFactory.IssueAdmissionReceipt, strictly verifying role == 'READ_ONLY'.",
+      "Store paired child receipt in a private static slot in WorkerBridgeComponent (_pairedChildAdmissionReceipt) inaccessible to public TCP requesters or global setters.",
+      "Consume paired child receipt inside HandleLaunchOperatorValidator via OperatorChildLaunchInputs.Capture(_activeAdmissionReceipt, _pairedChildAdmissionReceipt, currentValidatorTask, currentValidatorTaskPath).",
+      "Format child process CLI using exact 7 operator option values (-operatorconfig=..., etc.) and -savedatafolder=\"{SelectedUserDataDirectory}\" per frozen ECMA335 IL requirements."
+    ]
+  },
+  "recommended_route": {
+    "route_name": "OPERATOR_PAIRED_BOOTSTRAP_CLI_AND_CAPTURE_ROUTE",
+    "rationale": "Reuses existing canonical 7-field descriptor without inventing new external wire protocols, dynamic TCP commands, or PKI schemas. Guarantees immutable custody from the exact moment of bootstrap, eliminates post-Awake race conditions, and natively satisfies frozen RimWorld CLI parsers.",
+    "lifecycle_sequence": [
+      {
+        "phase": "1. Produce & Declare",
+        "actor": "Operator Orchestrator / Infrastructure Host",
+        "details": "Operator generates parent config (SIMULATION) and child config (READ_ONLY). Emits primary RimWorld command line containing parent 7 args (-operatorconfig=..., -operatorrole=SIMULATION, etc.) and paired child 7 args (-childoperatorconfig=..., -childoperatorrole=READ_ONLY, etc.)."
+      },
+      {
+        "phase": "2. Bootstrap Dual Admission",
+        "actor": "WorkerBridgeBootstrapper.cctor()",
+        "details": "Parses parent 7 args -> issues parent receipt (asserts Role == 'SIMULATION'). Parses child 7 args -> issues child receipt (asserts Role == 'READ_ONLY'). Installs both into WorkerBridgeComponent.TryInstallOperatorStartupConfig(parentReceipt, childReceipt)."
+      },
+      {
+        "phase": "3. Component Invariants & Awake",
+        "actor": "WorkerBridgeComponent.Awake()",
+        "details": "Verifies parent receipt valid. Verifies paired child receipt present and valid (or marks validation-launch capability disabled). Starts TCP listener."
+      },
+      {
+        "phase": "4. Task Issuance & Snapshot",
+        "actor": "Simulator / Control Plane",
+        "details": "Dedicated server / test coordinator requests task preparation. WorkerBridgeComponent issues ValidatorTask (generating MD126 unguessable capabilityNonce) and writes task file."
+      },
+      {
+        "phase": "5. Child Launch & Capture Invocation",
+        "actor": "WorkerBridgeComponent.HandleLaunchOperatorValidator(arg)",
+        "details": "Verifies capabilityNonce matches currentValidatorTask. Invokes OperatorChildLaunchInputs.Capture(_activeAdmissionReceipt, _pairedChildAdmissionReceipt, currentValidatorTask, currentValidatorTaskPath). Reads 15 getters for all process start parameters."
+      },
+      {
+        "phase": "6. Child Process StartInfo Formatting",
+        "actor": "ProcessStartInfo Construction",
+        "details": "FileName = launchInputs.ExecutablePath. WorkingDirectory = launchInputs.WorkingDirectory. Arguments = 7 child operator flags in -key=value format + -savedatafolder=\"{launchInputs.SelectedUserDataDirectory}\" + --task-file=\"{launchInputs.TaskFilePath}\" + --nonce=\"{capabilityNonce}\". Uses Process.Start(psi)."
+      },
+      {
+        "phase": "7. Child Process Boot & Execution",
+        "actor": "Child RimWorld Process",
+        "details": "Vanilla GenFilePaths overrides save data root to launchInputs.SelectedUserDataDirectory. Child WorkerBridgeBootstrapper admits itself cleanly as READ_ONLY using its 7 CLI args. Child component listens on its designated port and executes the task in complete isolation."
+      }
+    ],
+    "child_cli_format_specification": [
+      "-batchmode",
+      "-operatorconfig=\"{ApprovedExpectedConfigPath}\"",
+      "-operatorconfigsha=\"{ApprovedExpectedConfigSha256}\"",
+      "-operatororigin=\"{ApprovedOriginId}\"",
+      "-operatorlaunchplan=\"{ApprovedLaunchPlanId}\"",
+      "-operatorconfigid=\"{ApprovedExpectedConfigId}\"",
+      "-operatorrole=\"{ApprovedExpectedRole}\"",
+      "-operatorcapability=\"{ApprovedExpectedCapabilityBoundary}\"",
+      "-savedatafolder=\"{SelectedUserDataDirectory}\"",
+      "--task-file=\"{TaskFilePath}\"",
+      "--nonce=\"{capabilityNonce}\""
+    ]
+  }
+}

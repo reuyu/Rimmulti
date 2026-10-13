@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":false,\"wake\":{\"reason\":\"turnCompleted\",\"turnId\":\"01a12b32-7616-7e90-9eb3-dc5c1706dc46\",\"threadId\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\"},\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:157\",\"revision\":157,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"idle\"}},\"latestTurn\":{\"id\":\"01a12b32-7616-7e90-9eb3-dc5c1706dc46\",\"status\":\"completed\",\"error\":null,\"startedAt\":1791726089,\"completedAt\":1791727020,\"durationMs\":930705},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016acb95a9b2ac87d0afc65ec768f716b1\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016acb95a9b2ac87d0afc65ec768f716b1\",\"turnId\":\"01a12b32-7616-7e90-9eb3-dc5c1706dc46\",\"phase\":\"final_answer\",\"text\":\"R25 QA를 완료하고 마스터에게 보고했습니다. 각 실행 결과는 32 PASS / 4 FAIL입니다. 실패는 제가 바이트 기대값에 Windows 줄바꿈을 반영하지 않은 오류이며, selector·데이터 보존 검사는 통과했습니다. 원래 결과를 보존하고 재실행하지 않았습니다. QA 보고서\"},\"latestToolMarkerId\":\"exec-edb826a7-e82b-4642-a08f-92bb9519bdb0\",\"latestToolMarker\":{\"id\":\"exec-edb826a7-e82b-4642-a08f-92bb9519bdb0\",\"turnId\":\"01a12b32-7616-7e90-9eb3-dc5c1706dc46\",\"type\":\"fileChange\",\"name\":\"fileChange\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

@@ -1,0 +1,79 @@
+{
+  "at": "2026-10-13T17:58:20.224751+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c",
+  "envelope": 37,
+  "ACK": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c\\ACK.json",
+    "sha256": "62F75408DA9802DAA79C2FE14497542AC3F9472196AF7EF359AF7A723D3C4391",
+    "bytes": 4387
+  },
+  "ACK_INITIAL": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c\\ACK_INITIAL.json",
+    "sha256": "62F75408DA9802DAA79C2FE14497542AC3F9472196AF7EF359AF7A723D3C4391",
+    "bytes": 4387
+  },
+  "eight_reference_hashes_actual_matched": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c\\INSTRUCTIONS.md",
+      "sha256": "F795874974DD1DBCFA85763206F38756A9C45BE20BF5B31B3A74B4AF533DC1A2",
+      "bytes": 1347
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_ENGINE_GATE05_R34_ROLLBACK.md",
+      "sha256": "F9B779AE720C1C8903BDFD575C32ABA2D4100D06B43D0F23B40F52C3B9B9BB32",
+      "bytes": 5438
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\RELEASE_ENGINE_GATE05_R34_ROLLBACK_20261013.md",
+      "sha256": "45D05CF2EDE145D957273F5434B19EDB043D9469C6004E36E084B2AA5DADB62A",
+      "bytes": 591
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R34_ROLLBACK_ORDERING_CONTRACT_20261013.md",
+      "sha256": "8FCB97F5CEE651066579AB86941729F7F390092B6FCF4D02313DA21DE8254FB3",
+      "bytes": 2906
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c\\MASTER_R34_AUTHORIZED_SOURCE_SCOPE.json",
+      "sha256": "8B6877DD3B5952BAD84E6DE21E1F9A168B7268C9D739ABFA9AE4615C956DB6FA",
+      "bytes": 8028
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R34_ROLLBACK_PROTECTED_BASELINE_20261013.json",
+      "sha256": "109EC11C06B29C322BE3A35E3B1AD6EC2CED1F3542A07CD39403F5A0EA881640",
+      "bytes": 5498992
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R33_INDEPENDENT_S1_20261013.md",
+      "sha256": "AF82122EB10D1288048FE53247717E0DBB277560E9EA453777B45234B6A6C05B",
+      "bytes": 4307
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5\\MASTER_EXISTING_FULL_COMPILER_REFERENCE_OBSERVATION.json",
+      "sha256": "64F985576570F823DC765AC01E156A4ADEAA8CDBF4517F51233AF3D89EE94A4A",
+      "bytes": 32915
+    }
+  ],
+  "source_scope": "ONE_AWAKE_FAILURE_PUBLICATION_OUTSIDE_LOCK_CLEANUP",
+  "allowed_mutable7_match": true,
+  "actual_UI_WORKING_proof": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R34_A_ACTUAL_SUBMIT_UI_20261013.json",
+    "sha256": "56EA78FD51ABE5B7DFA2AAC5A0E5EF45B59E131449B1D34F5DB8117AEB76EFD7",
+    "bytes": 46660
+  },
+  "producer_task_state": "IN_PROGRESS",
+  "postdispatch_preservation": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R34_POSTDISPATCH_PRESERVATION_VERIFICATION_20261013.json",
+    "sha256": "DD4EC9702975F8CDBAC5C7EAD5A723A18E014649B1F3C99C5A017ED26F4DD4E2",
+    "bytes": 908
+  },
+  "same_hourly_active_proof": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R34_DISPATCH_HOURLY_ACTIVE_VERIFICATION_20261013.json",
+    "sha256": "065CC720C4F0C351833F459689092505019496326DD359706D7A9ECAE57CFED1",
+    "bytes": 2957
+  },
+  "no_completion_or_E2_inferred": true,
+  "producer_ack_time_not_Master_preobservation": true,
+  "Foundation": "HOLD",
+  "nativeE2": "NOT_RELEASED"
+}

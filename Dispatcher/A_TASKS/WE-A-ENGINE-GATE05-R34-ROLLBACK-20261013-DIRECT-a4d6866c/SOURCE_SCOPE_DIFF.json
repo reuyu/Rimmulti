@@ -1,0 +1,61 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c",
+  "wp_id": "WP_ENGINE_GATE05_R34_ROLLBACK",
+  "envelope": 37,
+  "source_file": "scratch/WorkerBridgeMod/Source/WorkerBridge.cs",
+  "original_file": {
+    "bytes": 276524,
+    "sha256": "6E45362C4D34566F7612AA626E31DD8E15BCCE5232FB3815117E43B019CA597D"
+  },
+  "modified_file": {
+    "bytes": 276685,
+    "sha256": "544B22178F80C63FE85584BCA93ED1D7B77B59554C93762F38655B87237682FD"
+  },
+  "authorized_spans": [
+    {
+      "span_id": "AWAKE_WHOLE_FAILURE_PUBLICATION_AND_OUTSIDE_LOCK_CLEANUP",
+      "orig_range": [
+        39056,
+        45687
+      ],
+      "orig_bytes": 6631,
+      "orig_sha256": "D56AEC9B4464D6F0EB277C33B04E1D71A748489A8FA63BB3CF09ECDE61CC0DF4",
+      "new_range": [
+        39056,
+        45848
+      ],
+      "new_bytes": 6792,
+      "new_sha256": "6B51BE442708F0E92CA456F6D6B08DE153759C40C89030B2E10F322A8CF866C8"
+    }
+  ],
+  "outside_segments_verification": [
+    {
+      "segment_index": 0,
+      "orig_range": [
+        0,
+        39056
+      ],
+      "new_range": [
+        0,
+        39056
+      ],
+      "bytes": 39056,
+      "status": "VERIFIED_BIT_EXACT"
+    },
+    {
+      "segment_index": 1,
+      "orig_range": [
+        45687,
+        276524
+      ],
+      "new_range": [
+        45848,
+        276685
+      ],
+      "bytes": 230837,
+      "status": "VERIFIED_BIT_EXACT"
+    }
+  ],
+  "outside_bytes_total": 269893,
+  "all_outside_segments_identical": true
+}

@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:115\",\"revision\":115,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a12492-c3e1-7282-8906-e0eac853394f\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791614960,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ac9e0fef01087d0bc25be271546b0e5\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ac9e0fef01087d0bc25be271546b0e5\",\"turnId\":\"01a12492-c3e1-7282-8906-e0eac853394f\",\"phase\":\"commentary\",\"text\":\"R18 동결 파일 92개와 보호 대상 9,374개의 해시를 확인했습니다. 새 후보의 스냅샷·승인 API를 검토하고, 공백과 Unicode가 포함된 정책 문자열의 원문 보존을 독립 기대값으로 고정하겠습니다.\"},\"latestToolMarkerId\":\"exec-df20190a-048d-44ca-ac49-aa854e9d4b05\",\"latestToolMarker\":{\"id\":\"exec-df20190a-048d-44ca-ac49-aa854e9d4b05\",\"turnId\":\"01a12492-c3e1-7282-8906-e0eac853394f\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

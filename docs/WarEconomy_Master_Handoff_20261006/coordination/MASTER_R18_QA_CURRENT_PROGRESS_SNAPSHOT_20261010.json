@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:114\",\"revision\":114,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a12492-c3e1-7282-8906-e0eac853394f\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791614960,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ac9e00b988c87d0a29050e953a9d1ad\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ac9e00b988c87d0a29050e953a9d1ad\",\"turnId\":\"01a12492-c3e1-7282-8906-e0eac853394f\",\"phase\":\"commentary\",\"text\":\"R18 독립 QA를 시작하겠습니다. 실제 WP와 복구 자료, 동결 후보 및 보호 기준을 먼저 대조하겠습니다. 정상 opaque policy의 공백·Unicode 기대값은 원문 그대로 고정하고, 실패가 관측되면 수정·재실행 없이 보고하겠습니다.\"},\"latestToolMarkerId\":\"exec-74f9f561-8fdf-48d3-82b8-ae4402ae0c08\",\"latestToolMarker\":{\"id\":\"exec-74f9f561-8fdf-48d3-82b8-ae4402ae0c08\",\"turnId\":\"01a12492-c3e1-7282-8906-e0eac853394f\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

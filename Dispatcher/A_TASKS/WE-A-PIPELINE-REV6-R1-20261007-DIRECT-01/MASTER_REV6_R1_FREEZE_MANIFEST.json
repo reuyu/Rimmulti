@@ -1,0 +1,766 @@
+{
+  "created_at": "2026-10-07T22:53:33.163872+09:00",
+  "dispatch_id": "WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01",
+  "result_id": "WE-A-PIPELINE-REV6-R1-RESULT-20261007-01",
+  "completion_sha256": "09057D2719830251C8C741506FBA8F38713830EE5496C563B9709C7AF9C13B0A",
+  "reported_e1_verdict": "PASS",
+  "schema_version": 7,
+  "schema_signature": "079CFBAC4246592B4E2300630BBB39528C44CCAA6C1199C9811E9B1DB9C4B63C",
+  "release_manifest_sha256": "1267E28C3235E5053B6B8C88BB5DC7C89CA9D2F44F3D73BE9A36877712E2DE50",
+  "artifact_checks": [
+    {
+      "role": "implementation_report",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_Production_Transaction_Pipeline_01_REV6_R1.md",
+      "sha256": "1ED12B4F81A954FA80B3AB5F94E70F9CDA6D6959987FE7EBA250F9D30256E311",
+      "expected_sha256": "1ED12B4F81A954FA80B3AB5F94E70F9CDA6D6959987FE7EBA250F9D30256E311",
+      "matched": true
+    },
+    {
+      "role": "release_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_PIPELINE_REV6_R1.json",
+      "sha256": "1267E28C3235E5053B6B8C88BB5DC7C89CA9D2F44F3D73BE9A36877712E2DE50",
+      "expected_sha256": "1267E28C3235E5053B6B8C88BB5DC7C89CA9D2F44F3D73BE9A36877712E2DE50",
+      "matched": true
+    },
+    {
+      "role": "results",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\pipeline_e1_rev6_r1_results.json",
+      "sha256": "65360FAC6456B451D729E13A6BD27A7FBA8AD2BDE13AE5FB7FE6D8349E2D2C20",
+      "expected_sha256": "65360FAC6456B451D729E13A6BD27A7FBA8AD2BDE13AE5FB7FE6D8349E2D2C20",
+      "matched": true
+    },
+    {
+      "role": "raw_evidence",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\pipeline_e1_rev6_r1_raw_console.txt",
+      "sha256": "C47181D67AC03679A67DD8B15564DA6C33DC8AF3ACCADFFC74AEA8D9D35C5991",
+      "expected_sha256": "C47181D67AC03679A67DD8B15564DA6C33DC8AF3ACCADFFC74AEA8D9D35C5991",
+      "matched": true
+    },
+    {
+      "role": "engine_freeze_before",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\MASTER_ENGINE_FREEZE_BEFORE.json",
+      "sha256": "2E7BB27EBF2E64287C3919E84A470B92371A99560832A2C7BBFB0FA611E72099",
+      "expected_sha256": "2E7BB27EBF2E64287C3919E84A470B92371A99560832A2C7BBFB0FA611E72099",
+      "matched": true
+    },
+    {
+      "role": "engine_freeze_after",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\MASTER_ENGINE_FREEZE_AFTER_REV6_R1.json",
+      "sha256": "43F64F513255574C4FD2B224BC80DDD06AE36A2C2A0EA37D05F429404A39F9FC",
+      "expected_sha256": "43F64F513255574C4FD2B224BC80DDD06AE36A2C2A0EA37D05F429404A39F9FC",
+      "matched": true
+    },
+    {
+      "role": "harness",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.exe",
+      "sha256": "D39C7CEF8209F93E8F2C01EC725919CB0676C357D840D9D3EFB01E7C52EBEF7C",
+      "expected_sha256": "D39C7CEF8209F93E8F2C01EC725919CB0676C357D840D9D3EFB01E7C52EBEF7C",
+      "matched": true
+    },
+    {
+      "role": "harness",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.dll",
+      "sha256": "22D0E5561409813B02FB9EF2C0D23FC3AA5F42E3F3BBE96426C7A493B0CB0CCE",
+      "expected_sha256": "22D0E5561409813B02FB9EF2C0D23FC3AA5F42E3F3BBE96426C7A493B0CB0CCE",
+      "matched": true
+    },
+    {
+      "role": "candidate_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.dll",
+      "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78",
+      "expected_sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78",
+      "matched": true
+    },
+    {
+      "role": "candidate_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\bin\\Release\\netstandard2.0\\WarEconomy.Common.dll",
+      "sha256": "2711A366D3108DE42EB5CD07EE4874DB6B332B86A63F38B36E79611CFE110BCB",
+      "expected_sha256": "2711A366D3108DE42EB5CD07EE4874DB6B332B86A63F38B36E79611CFE110BCB",
+      "matched": true
+    },
+    {
+      "role": "candidate_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.exe",
+      "sha256": "0C1B14510C3CDC7396848E7228660456F7F127F97E680B785A7B62665765378C",
+      "expected_sha256": "0C1B14510C3CDC7396848E7228660456F7F127F97E680B785A7B62665765378C",
+      "matched": true
+    },
+    {
+      "role": "pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.pdb",
+      "sha256": "7A99DAD44A6F32A7FDAFABA2534C5914C73C958B1F86E27A21CEBAE7F6A4A239",
+      "expected_sha256": "7A99DAD44A6F32A7FDAFABA2534C5914C73C958B1F86E27A21CEBAE7F6A4A239",
+      "matched": true
+    },
+    {
+      "role": "pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\bin\\Release\\netstandard2.0\\WarEconomy.Common.pdb",
+      "sha256": "5119FE41A0FD3BB6B6DCA299B85FD3EEF0F91D4FB7B1AC77DAEDA762E9B2D0F0",
+      "expected_sha256": "5119FE41A0FD3BB6B6DCA299B85FD3EEF0F91D4FB7B1AC77DAEDA762E9B2D0F0",
+      "matched": true
+    },
+    {
+      "role": "pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.pdb",
+      "sha256": "1C03ADAB86DA50E7E212F00D5FC67F282EA76B8A843CC209CCBD1300D334740B",
+      "expected_sha256": "1C03ADAB86DA50E7E212F00D5FC67F282EA76B8A843CC209CCBD1300D334740B",
+      "matched": true
+    },
+    {
+      "role": "source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Recovery\\RecoveryReconciler.cs",
+      "sha256": "2CD07966F64B8AC05C1DB86E18C4D363802A20F4E0A5B26160BAAF4F95C37F12",
+      "expected_sha256": "2CD07966F64B8AC05C1DB86E18C4D363802A20F4E0A5B26160BAAF4F95C37F12",
+      "matched": true
+    },
+    {
+      "role": "source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Data\\Migrations\\PipelineSchemaMigration.cs",
+      "sha256": "7A5AAA86DBDB447558936B38C68E95678BEA637D474184FA5F6AF5A3A29556B2",
+      "expected_sha256": "7A5AAA86DBDB447558936B38C68E95678BEA637D474184FA5F6AF5A3A29556B2",
+      "matched": true
+    },
+    {
+      "role": "source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\Program.cs",
+      "sha256": "CF0B531A60FE678DC0DFD4AE7EB8758AF760CB9FE6EA0202C553057AB6E9410C",
+      "expected_sha256": "CF0B531A60FE678DC0DFD4AE7EB8758AF760CB9FE6EA0202C553057AB6E9410C",
+      "matched": true
+    }
+  ],
+  "candidate_lineage": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.dll",
+      "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78",
+      "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\bin\\Release\\netstandard2.0\\WarEconomy.Common.dll",
+      "sha256": "2711A366D3108DE42EB5CD07EE4874DB6B332B86A63F38B36E79611CFE110BCB",
+      "mvid": "84b7cb6b-224a-43de-b2b6-1f67e2e51cf7"
+    }
+  ],
+  "engine19_match": true,
+  "frozen_root": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1",
+  "files": [
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\COMPLETION.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\COMPLETION.json",
+      "sha256": "09057D2719830251C8C741506FBA8F38713830EE5496C563B9709C7AF9C13B0A",
+      "bytes": 6072
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\MASTER_ENGINE_FREEZE_BEFORE.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\MASTER_ENGINE_FREEZE_BEFORE.json",
+      "sha256": "2E7BB27EBF2E64287C3919E84A470B92371A99560832A2C7BBFB0FA611E72099",
+      "bytes": 5894
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_Production_Transaction_Pipeline_01_REV6_R1.md",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\docs\\POC_Production_Transaction_Pipeline_01_REV6_R1.md",
+      "sha256": "1ED12B4F81A954FA80B3AB5F94E70F9CDA6D6959987FE7EBA250F9D30256E311",
+      "bytes": 26235
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_PIPELINE_REV6_R1.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\docs\\RELEASE_MANIFEST_PIPELINE_REV6_R1.json",
+      "sha256": "1267E28C3235E5053B6B8C88BB5DC7C89CA9D2F44F3D73BE9A36877712E2DE50",
+      "bytes": 4727
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.deps.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.deps.json",
+      "sha256": "D96F4EF573C8704E655132AD6EB9F35FE9FAD5E221C1257D1969DF7AA0D31218",
+      "bytes": 9354
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.dll",
+      "sha256": "22D0E5561409813B02FB9EF2C0D23FC3AA5F42E3F3BBE96426C7A493B0CB0CCE",
+      "bytes": 67584
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.exe",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.exe",
+      "sha256": "D39C7CEF8209F93E8F2C01EC725919CB0676C357D840D9D3EFB01E7C52EBEF7C",
+      "bytes": 151552
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.pdb",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.pdb",
+      "sha256": "1C03ADAB86DA50E7E212F00D5FC67F282EA76B8A843CC209CCBD1300D334740B",
+      "bytes": 20468
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.runtimeconfig.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.runtimeconfig.json",
+      "sha256": "28329CF08F6505E73806B17558B187C02F0C1C516FE47EBFB7A013D082AAA306",
+      "bytes": 340
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\Microsoft.Data.Sqlite.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\Microsoft.Data.Sqlite.dll",
+      "sha256": "FB967FAE5437A1A1932D4076760D4DFE893518C9A03E2059C5470AF26755C775",
+      "bytes": 173112
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\Newtonsoft.Json.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\Newtonsoft.Json.dll",
+      "sha256": "22C649F75FCE5BE7C7CCDA8880473B634EF69ECF33F5D1AB8AD892CAF47D5A07",
+      "bytes": 712464
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\pipeline_e1_rev6_r1_results.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\pipeline_e1_rev6_r1_results.json",
+      "sha256": "65360FAC6456B451D729E13A6BD27A7FBA8AD2BDE13AE5FB7FE6D8349E2D2C20",
+      "bytes": 7587
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\runtimes\\win-arm\\native\\e_sqlite3.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\runtimes\\win-arm\\native\\e_sqlite3.dll",
+      "sha256": "6098739E729776B9A221E4266FD9B43FB8B04013FD2DFF23B617D3202EAFAE38",
+      "bytes": 1192960
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\runtimes\\win-arm64\\native\\e_sqlite3.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\runtimes\\win-arm64\\native\\e_sqlite3.dll",
+      "sha256": "A56E35D6ABAC40A657E0445BE007F6479B16B4F0566CA7B0B9A3E0794E87A969",
+      "bytes": 1485824
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\runtimes\\win-x64\\native\\e_sqlite3.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\runtimes\\win-x64\\native\\e_sqlite3.dll",
+      "sha256": "DCCBABB2BC7E7D4302C44D9CE41B70721A7D0914FA4D289E2F340D39766AD102",
+      "bytes": 1691648
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\runtimes\\win-x86\\native\\e_sqlite3.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\runtimes\\win-x86\\native\\e_sqlite3.dll",
+      "sha256": "F80D5F5DE3F7A82E684229028B946F6EFA1682D27EC960EF18518542FD12A407",
+      "bytes": 1308672
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\SQLitePCLRaw.batteries_v2.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\SQLitePCLRaw.batteries_v2.dll",
+      "sha256": "E2709FDA3EE4137DCEA3398221F0AFCD6241DB0EA6FA55FD31A33610BE78CF02",
+      "bytes": 5120
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\SQLitePCLRaw.core.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\SQLitePCLRaw.core.dll",
+      "sha256": "C33995427EDD44FA641CF702DF8B63CC82CB7054DD984DC8277D15EE7C958874",
+      "bytes": 50688
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\SQLitePCLRaw.provider.e_sqlite3.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\SQLitePCLRaw.provider.e_sqlite3.dll",
+      "sha256": "66A5EA09AA318F9A05093C28ED19D3EB2491D8C3710FF5FB622B8902AB866CE8",
+      "bytes": 35840
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Common.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Common.dll",
+      "sha256": "2711A366D3108DE42EB5CD07EE4874DB6B332B86A63F38B36E79611CFE110BCB",
+      "bytes": 39424
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Common.pdb",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Common.pdb",
+      "sha256": "5119FE41A0FD3BB6B6DCA299B85FD3EEF0F91D4FB7B1AC77DAEDA762E9B2D0F0",
+      "bytes": 22072
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Server.deps.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Server.deps.json",
+      "sha256": "6991963EBAB22E4B1A76FD93D1C78C07A241F2D606B2FC80DB600CBB60365942",
+      "bytes": 8820
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Server.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Server.dll",
+      "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78",
+      "bytes": 195584
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Server.exe",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Server.exe",
+      "sha256": "0C1B14510C3CDC7396848E7228660456F7F127F97E680B785A7B62665765378C",
+      "bytes": 151552
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Server.pdb",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Server.pdb",
+      "sha256": "7A99DAD44A6F32A7FDAFABA2534C5914C73C958B1F86E27A21CEBAE7F6A4A239",
+      "bytes": 47880
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Server.runtimeconfig.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Server.runtimeconfig.json",
+      "sha256": "28329CF08F6505E73806B17558B187C02F0C1C516FE47EBFB7A013D082AAA306",
+      "bytes": 340
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\E1_Rev6_R1_Runner.csproj",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\E1_Rev6_R1_Runner.csproj",
+      "sha256": "BBF6CB00D4877A804178EC937C96592A5AF8BFDF508D918096D734342E7D9E24",
+      "bytes": 581
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\obj\\Release\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\obj\\Release\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+      "sha256": "F7A5D9789C863625E139FF99E1113A503830F6B85A88F6129916DF83AC76B49E",
+      "bytes": 198
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\obj\\Release\\net8.0\\E1_Rev6_R1_Runner.AssemblyInfo.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\obj\\Release\\net8.0\\E1_Rev6_R1_Runner.AssemblyInfo.cs",
+      "sha256": "B4BD0B40C98DD8500BD08F1C314C71C0264FC830086F5EC40F6C3E469A7C4A8F",
+      "bytes": 1001
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\Program.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\Program.cs",
+      "sha256": "CF0B531A60FE678DC0DFD4AE7EB8758AF760CB9FE6EA0202C553057AB6E9410C",
+      "bytes": 77350
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\MASTER_ENGINE_FREEZE_AFTER_REV6_R1.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\MASTER_ENGINE_FREEZE_AFTER_REV6_R1.json",
+      "sha256": "43F64F513255574C4FD2B224BC80DDD06AE36A2C2A0EA37D05F429404A39F9FC",
+      "bytes": 7398
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\pipeline_e1_rev6_r1_raw_console.txt",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\pipeline_e1_rev6_r1_raw_console.txt",
+      "sha256": "C47181D67AC03679A67DD8B15564DA6C33DC8AF3ACCADFFC74AEA8D9D35C5991",
+      "bytes": 6664
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\pipeline_e1_rev6_r1_results.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\pipeline_e1_rev6_r1_results.json",
+      "sha256": "65360FAC6456B451D729E13A6BD27A7FBA8AD2BDE13AE5FB7FE6D8349E2D2C20",
+      "bytes": 7587
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\bin\\Release\\netstandard2.0\\WarEconomy.Common.deps.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\bin\\Release\\netstandard2.0\\WarEconomy.Common.deps.json",
+      "sha256": "3E0FC5759D9790D891D3FE7A83D426A37283D67DC2E317E761ED2C90729F2785",
+      "bytes": 1105
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\bin\\Release\\netstandard2.0\\WarEconomy.Common.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\bin\\Release\\netstandard2.0\\WarEconomy.Common.dll",
+      "sha256": "2711A366D3108DE42EB5CD07EE4874DB6B332B86A63F38B36E79611CFE110BCB",
+      "bytes": 39424
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\bin\\Release\\netstandard2.0\\WarEconomy.Common.pdb",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\bin\\Release\\netstandard2.0\\WarEconomy.Common.pdb",
+      "sha256": "5119FE41A0FD3BB6B6DCA299B85FD3EEF0F91D4FB7B1AC77DAEDA762E9B2D0F0",
+      "bytes": 22072
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Models\\DynamicMarketState.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Models\\DynamicMarketState.cs",
+      "sha256": "98E4F6EC7543DC2020D3FFE19F31FF7F4586E6155DEDF4346B8AB3F76C2ECF5F",
+      "bytes": 6076
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Models\\Enums\\FactionTier.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Models\\Enums\\FactionTier.cs",
+      "sha256": "7D7A7CF23930DC2FBBD00AFCE6A4FD6402DAAFBB976784639867BA5C25D354B1",
+      "bytes": 3904
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Models\\Enums\\NobilityTitle.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Models\\Enums\\NobilityTitle.cs",
+      "sha256": "0F42CB311DED01E7704F7D4E84E13C33C7B140B6C783F84225081483F017972D",
+      "bytes": 1971
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Models\\FogOfWarTileCache.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Models\\FogOfWarTileCache.cs",
+      "sha256": "DDB2B88AE7524397036F805C167B37AF9A1ADBD90C65ED5AD133F1B0003F69E2",
+      "bytes": 2622
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Models\\SettlementData.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Models\\SettlementData.cs",
+      "sha256": "2E9D682E89C2031C49B767F076824358642175029E314D98C2164B14F3A542BB",
+      "bytes": 1978
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Models\\TaxDelinquencyState.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Models\\TaxDelinquencyState.cs",
+      "sha256": "04745D1C75A27154EBE2394D2880B9F6E9606B1D48FFECBA6A150D417B422043",
+      "bytes": 2960
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Models\\VisitRequestData.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Models\\VisitRequestData.cs",
+      "sha256": "D63F9FE1AC25420C629B89FAFDD13755471306C07CD43C0CCCD6F1E4EEB4B09C",
+      "bytes": 2178
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Models\\WarDeclarationData.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Models\\WarDeclarationData.cs",
+      "sha256": "E7D904C96AD126AECBCEF5EAF70EDA8E2A3BADC6CDF12B3F9DE923714361C1F7",
+      "bytes": 2508
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\obj\\Debug\\netstandard2.0\\.NETStandard,Version=v2.0.AssemblyAttributes.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\obj\\Debug\\netstandard2.0\\.NETStandard,Version=v2.0.AssemblyAttributes.cs",
+      "sha256": "024D53B28A9ADE66887280D5DC398A1E1B10C3172DF3573F01C67FDA2D7B673B",
+      "bytes": 208
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\obj\\Debug\\netstandard2.0\\WarEconomy.Common.AssemblyInfo.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\obj\\Debug\\netstandard2.0\\WarEconomy.Common.AssemblyInfo.cs",
+      "sha256": "403359A76E37504FB93381FDB18BD7CFC85750ECD3A6FF4570C04456DB248427",
+      "bytes": 999
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\obj\\Release\\netstandard2.0\\.NETStandard,Version=v2.0.AssemblyAttributes.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\obj\\Release\\netstandard2.0\\.NETStandard,Version=v2.0.AssemblyAttributes.cs",
+      "sha256": "024D53B28A9ADE66887280D5DC398A1E1B10C3172DF3573F01C67FDA2D7B673B",
+      "bytes": 208
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\obj\\Release\\netstandard2.0\\WarEconomy.Common.AssemblyInfo.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\obj\\Release\\netstandard2.0\\WarEconomy.Common.AssemblyInfo.cs",
+      "sha256": "029E19383D9A0712C58D87AA9C58231496DBD51B7D4031FE7E9EB650E45EBB6D",
+      "bytes": 1001
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\Auth\\PKT_PlayerHandshake.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\Auth\\PKT_PlayerHandshake.cs",
+      "sha256": "6FD86B1068BA358F902A48B661ECF03DF18CBF9FD17CE9EEFD99195A0300E5E8",
+      "bytes": 840
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\Diplomacy\\PKT_AllianceAndBetrayal.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\Diplomacy\\PKT_AllianceAndBetrayal.cs",
+      "sha256": "06E0BC4CABD7EA9A36C14A1FF4810F1A89DEF5C6A4A0820C2F19DD13DB88E1FC",
+      "bytes": 1860
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\Diplomacy\\PKT_WarDeclaration.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\Diplomacy\\PKT_WarDeclaration.cs",
+      "sha256": "66B4C8957E9DB0284F7980DDE0C34AD746D85F9D99DEAA87F9BDB847B413A264",
+      "bytes": 1295
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\Economy\\PKT_DynamicMarketSync.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\Economy\\PKT_DynamicMarketSync.cs",
+      "sha256": "E771F6508435DDAF5F4FD2ACBCE173584DC79C5872E2FF0576E0CCE49374B9B1",
+      "bytes": 1884
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\Feudal\\PKT_FiefTransfer.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\Feudal\\PKT_FiefTransfer.cs",
+      "sha256": "E1077A10A3CE0ACF1F5D50FEF19D61BA0193F23DE0A0ACD019116EEB06284704",
+      "bytes": 4548
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\Feudal\\PKT_TaxCaravan.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\Feudal\\PKT_TaxCaravan.cs",
+      "sha256": "1F4A32E9E38EF99C3F151EC9CFAA8527E07CB92D24CE78D528D8C2D4108DDB4E",
+      "bytes": 2527
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\PacketHeader.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\PacketHeader.cs",
+      "sha256": "8CD71512ADE6F5B1C8DABB1CF43EEDF927CC77835C63E659261A84AD87845F91",
+      "bytes": 1352
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\PacketReceiver.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\PacketReceiver.cs",
+      "sha256": "A9ED69283A22DFAF13D0D466D3B649143A3847AF4EEA5ECB98427325E6856A4D",
+      "bytes": 3576
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\PacketSerializer.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\PacketSerializer.cs",
+      "sha256": "EEE11028FD1E57C10533E069A7399771C53B36C32D2F434FC52C2D1561CC13E4",
+      "bytes": 1196
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\Vision\\PKT_FogOfWarSync.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\Vision\\PKT_FogOfWarSync.cs",
+      "sha256": "988867F47368E666C32871FA177FB116D6EFB1BC2A0664156AC08B25F701F2A7",
+      "bytes": 1233
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\Visit\\PKT_VisitProtocol.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\Visit\\PKT_VisitProtocol.cs",
+      "sha256": "655E5C77CE11CE13518F2ADF0684D5AAD8128F3E2731E0EA6686E5E45AF38B67",
+      "bytes": 2357
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\World\\PKT_SettlementListSync.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\World\\PKT_SettlementListSync.cs",
+      "sha256": "6FC97106AF53486D9BD1F7247CC40CCA65CE98D92ED788AA066CC0E0A8444C79",
+      "bytes": 744
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\World\\PKT_SettlementRegister.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\World\\PKT_SettlementRegister.cs",
+      "sha256": "D5129B71292BD61EF75DE5D8B1B48349729FBF7A57942FC3A4A787EB91DD22F8",
+      "bytes": 660
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\World\\PKT_WorldTickSync.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\World\\PKT_WorldTickSync.cs",
+      "sha256": "45257461DAE0868CCAB1EDB06FA9E4CE497463507261A04C9CB5D779E8792512",
+      "bytes": 957
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Time\\WorldTimeConstants.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Time\\WorldTimeConstants.cs",
+      "sha256": "DD8B2122DB3F96410FE2F09CC3FA8AB597A71BDD5BF56444029DC50452623418",
+      "bytes": 1878
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\WarEconomy.Common.csproj",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\WarEconomy.Common.csproj",
+      "sha256": "E03FBDB9310E7B053840347D918642A41B8CC50E210B29DBD4BCB555AA61914B",
+      "bytes": 410
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\Microsoft.Data.Sqlite.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\Microsoft.Data.Sqlite.dll",
+      "sha256": "FB967FAE5437A1A1932D4076760D4DFE893518C9A03E2059C5470AF26755C775",
+      "bytes": 173112
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\Newtonsoft.Json.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\Newtonsoft.Json.dll",
+      "sha256": "22C649F75FCE5BE7C7CCDA8880473B634EF69ECF33F5D1AB8AD892CAF47D5A07",
+      "bytes": 712464
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\runtimes\\win-arm\\native\\e_sqlite3.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\runtimes\\win-arm\\native\\e_sqlite3.dll",
+      "sha256": "6098739E729776B9A221E4266FD9B43FB8B04013FD2DFF23B617D3202EAFAE38",
+      "bytes": 1192960
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\runtimes\\win-arm64\\native\\e_sqlite3.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\runtimes\\win-arm64\\native\\e_sqlite3.dll",
+      "sha256": "A56E35D6ABAC40A657E0445BE007F6479B16B4F0566CA7B0B9A3E0794E87A969",
+      "bytes": 1485824
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\runtimes\\win-x64\\native\\e_sqlite3.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\runtimes\\win-x64\\native\\e_sqlite3.dll",
+      "sha256": "DCCBABB2BC7E7D4302C44D9CE41B70721A7D0914FA4D289E2F340D39766AD102",
+      "bytes": 1691648
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\runtimes\\win-x86\\native\\e_sqlite3.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\runtimes\\win-x86\\native\\e_sqlite3.dll",
+      "sha256": "F80D5F5DE3F7A82E684229028B946F6EFA1682D27EC960EF18518542FD12A407",
+      "bytes": 1308672
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\SQLitePCLRaw.batteries_v2.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\SQLitePCLRaw.batteries_v2.dll",
+      "sha256": "E2709FDA3EE4137DCEA3398221F0AFCD6241DB0EA6FA55FD31A33610BE78CF02",
+      "bytes": 5120
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\SQLitePCLRaw.core.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\SQLitePCLRaw.core.dll",
+      "sha256": "C33995427EDD44FA641CF702DF8B63CC82CB7054DD984DC8277D15EE7C958874",
+      "bytes": 50688
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\SQLitePCLRaw.provider.e_sqlite3.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\SQLitePCLRaw.provider.e_sqlite3.dll",
+      "sha256": "66A5EA09AA318F9A05093C28ED19D3EB2491D8C3710FF5FB622B8902AB866CE8",
+      "bytes": 35840
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Common.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Common.dll",
+      "sha256": "2711A366D3108DE42EB5CD07EE4874DB6B332B86A63F38B36E79611CFE110BCB",
+      "bytes": 39424
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Common.pdb",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Common.pdb",
+      "sha256": "5119FE41A0FD3BB6B6DCA299B85FD3EEF0F91D4FB7B1AC77DAEDA762E9B2D0F0",
+      "bytes": 22072
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.deps.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.deps.json",
+      "sha256": "6991963EBAB22E4B1A76FD93D1C78C07A241F2D606B2FC80DB600CBB60365942",
+      "bytes": 8820
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.dll",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.dll",
+      "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78",
+      "bytes": 195584
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.exe",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.exe",
+      "sha256": "0C1B14510C3CDC7396848E7228660456F7F127F97E680B785A7B62665765378C",
+      "bytes": 151552
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.pdb",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.pdb",
+      "sha256": "7A99DAD44A6F32A7FDAFABA2534C5914C73C958B1F86E27A21CEBAE7F6A4A239",
+      "bytes": 47880
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.runtimeconfig.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.runtimeconfig.json",
+      "sha256": "28329CF08F6505E73806B17558B187C02F0C1C516FE47EBFB7A013D082AAA306",
+      "bytes": 340
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Managers\\DiplomacyManager.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Managers\\DiplomacyManager.cs",
+      "sha256": "E37277638BB16BE32B2544BEC34F7C3FE21F56925A12DE47645A6425FA9CA2BF",
+      "bytes": 3536
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Managers\\DynamicMarketManager.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Managers\\DynamicMarketManager.cs",
+      "sha256": "547392BA701DA1A650A3D9C32A09CD6F4F567B36B9B365D4442D6BFD7EB2AC04",
+      "bytes": 3597
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Managers\\FeudalManager.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Managers\\FeudalManager.cs",
+      "sha256": "41BF00CBB3A2BB15EF232D468F897D99DEA5854EBDEE99DF029F729B89E6DEEE",
+      "bytes": 15020
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Network\\ServerClientSession.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Network\\ServerClientSession.cs",
+      "sha256": "6BC84444D1BB93D169CD8511A0F65D2EAF2F58732D30CF7B13A1C7EBFE2C1BDC",
+      "bytes": 10366
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Network\\TcpNetworkServer.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Network\\TcpNetworkServer.cs",
+      "sha256": "D697CD4C9D284AFE3FA47B83B89C0B223E91984AF32E66169CF158C3186A3FFC",
+      "bytes": 20786
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+      "sha256": "F7A5D9789C863625E139FF99E1113A503830F6B85A88F6129916DF83AC76B49E",
+      "bytes": 198
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\obj\\Debug\\net8.0\\WarEconomy.Server.AssemblyInfo.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\obj\\Debug\\net8.0\\WarEconomy.Server.AssemblyInfo.cs",
+      "sha256": "9F186B810D5EEBAD9A3AD50E9878E631EAC71C53D8B5FBC8EAACB2E8ABA5396B",
+      "bytes": 999
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\obj\\Release\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\obj\\Release\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+      "sha256": "F7A5D9789C863625E139FF99E1113A503830F6B85A88F6129916DF83AC76B49E",
+      "bytes": 198
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\obj\\Release\\net8.0\\WarEconomy.Server.AssemblyInfo.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\obj\\Release\\net8.0\\WarEconomy.Server.AssemblyInfo.cs",
+      "sha256": "757BF1F87B0E319A06262614561CBD7FE736C15C78E67BC9DFBF392445E4B7D4",
+      "bytes": 1001
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Coordinator\\PipelineTransactionCoordinator.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Pipeline\\Coordinator\\PipelineTransactionCoordinator.cs",
+      "sha256": "9F987535E8B84C4F812884F53EFF34914555CE45A8F042769C0F8AD24E2D3456",
+      "bytes": 26737
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Data\\Migrations\\PipelineSchemaMigration.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Pipeline\\Data\\Migrations\\PipelineSchemaMigration.cs",
+      "sha256": "7A5AAA86DBDB447558936B38C68E95678BEA637D474184FA5F6AF5A3A29556B2",
+      "bytes": 57912
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Data\\SqliteDatabaseContext.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Pipeline\\Data\\SqliteDatabaseContext.cs",
+      "sha256": "AD83A9747ADE1D078B2D672EFDDF34E60F5B5A902DD672BF567500215977B903",
+      "bytes": 7416
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Models\\PipelineProbeModels.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Pipeline\\Models\\PipelineProbeModels.cs",
+      "sha256": "E545A2689898DBECF57D7FD52C257290352CFC51A312F71A0A319BF415424182",
+      "bytes": 40374
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Recovery\\RecoveryReconciler.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Pipeline\\Recovery\\RecoveryReconciler.cs",
+      "sha256": "2CD07966F64B8AC05C1DB86E18C4D363802A20F4E0A5B26160BAAF4F95C37F12",
+      "bytes": 57063
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Security\\InternalProbeTestSurface.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Pipeline\\Security\\InternalProbeTestSurface.cs",
+      "sha256": "3B81699D95F45C920DEA1764B223196DA7560A08B226E231DF3E59B2CF8FA9A3",
+      "bytes": 1443
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Storage\\AuditLogRepository.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Pipeline\\Storage\\AuditLogRepository.cs",
+      "sha256": "5A885964386BE2587A859C5345A3D55593E4499E924C546C8E7F6FB89A0387AE",
+      "bytes": 1828
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Storage\\CommitReceiptRepository.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Pipeline\\Storage\\CommitReceiptRepository.cs",
+      "sha256": "BC13BE5F360642CC5CBC53B36A3776E3B9B35658D0BFDD044BEEE18FBEEB9AA2",
+      "bytes": 3189
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Storage\\OperationJournal.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Pipeline\\Storage\\OperationJournal.cs",
+      "sha256": "5B2E11B4EF86251C839AF25118596354F018CEEC7E7C13155353E0DF2043386B",
+      "bytes": 7258
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Storage\\ProbeAggregateStore.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Pipeline\\Storage\\ProbeAggregateStore.cs",
+      "sha256": "B1C34B4F57B4D1A4508FF59B318B6A9A8249217C360816141F842A9FF4C1B149",
+      "bytes": 5223
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Storage\\PublicationEventStore.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Pipeline\\Storage\\PublicationEventStore.cs",
+      "sha256": "F15E85941327149355ADB6477D492061CCF6987D1DD110A4C1883963AEFFA62D",
+      "bytes": 6749
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Program.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Program.cs",
+      "sha256": "8A4013701A1E8DC1B915E5C383560CD9D8C35E2134C376413CC584FA59F6BF2C",
+      "bytes": 4995
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Time\\WorldTickManager.cs",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Time\\WorldTickManager.cs",
+      "sha256": "6D0D1BA8C2CEEEC70D92000D0366A898EF9DB8230098FDFC0BEEBC27E147B7C2",
+      "bytes": 4428
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\WarEconomy.Server.csproj",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\WarEconomy.Server.csproj",
+      "sha256": "CBBC43E5E06097988D533B5B054F5D6529D624E5A963E26EA786C0F6BE5D356D",
+      "bytes": 609
+    }
+  ],
+  "master_runtime_rerun": false
+}

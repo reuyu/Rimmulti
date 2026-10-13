@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-13T19:00:51.368738+09:00",
+  "operation_id": "SOL-GATE05-R34-ROLLBACK-INDEPENDENT-S1-20261013-01",
+  "recipient": "Sol",
+  "status": "INTENT_NOT_YET_SUBMITTED",
+  "submission_attempts": 0,
+  "unknown_delivery": false,
+  "message": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R34_INDEPENDENT_S1_EXACT_MESSAGE_20261013.txt",
+    "sha256": "59DAD28F6C817F98FA67FF77343015CB16A59A51B1764EB2091784CCF668E3F9",
+    "bytes": 3937
+  },
+  "fresh_idle": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R34_SOL_FRESH_IDLE_20261013.json",
+    "sha256": "74AC242976EF4E08455FFB970119AB952B10929214468157EC2621FB0ABC1EDF",
+    "bytes": 759
+  },
+  "guard_run": "MASTER-R34-HOURLY-20261013-01",
+  "guard_session": 97639
+}

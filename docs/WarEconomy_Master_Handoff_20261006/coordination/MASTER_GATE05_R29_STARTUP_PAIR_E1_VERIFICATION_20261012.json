@@ -1,0 +1,651 @@
+{
+  "at": "2026-10-12T09:37:45.615681+09:00",
+  "guard_run": "MASTER-R29-SOL-PREP-COMPLETE-20261012-01",
+  "guard_session": 7127,
+  "guard_pid": 27876,
+  "dispatch_id": "WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a",
+  "wp_id": "WP_ENGINE_GATE05_R29_STARTUP_PAIR",
+  "wp_revision": "GATE05-R29-STARTUP-PAIR",
+  "result_id": "WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-RESULT-01",
+  "completion": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a\\COMPLETION.json",
+    "sha256": "7E6B6493976EF44674946ACC2F8EC7F15A583B33A16FEADA31A9307888DCFA04",
+    "bytes": 15755
+  },
+  "artifact_count": 34,
+  "protected": 14105,
+  "additional_QA_terminal_preserved": 60,
+  "six_spans_outside7_entirebytes_matched": [
+    {
+      "old": [
+        0,
+        1126
+      ],
+      "new": [
+        0,
+        1126
+      ],
+      "bytes": 1126,
+      "sha256": "C2BF7585213119BBC50694E4C1DA4201FF5D46268D03A9D158265BC76F06C230"
+    },
+    {
+      "old": [
+        6269,
+        16357
+      ],
+      "new": [
+        16145,
+        26233
+      ],
+      "bytes": 10088,
+      "sha256": "A8FAFD14AFBAF23A0B5DCC6C612BA62C22576DB6F0E4F1E79D026D331395A43E"
+    },
+    {
+      "old": [
+        16357,
+        21162
+      ],
+      "new": [
+        28118,
+        32923
+      ],
+      "bytes": 4805,
+      "sha256": "54E45F3ACB59975CE45E6A49456F2017A5067401F0352A117E93664DAFFC3289"
+    },
+    {
+      "old": [
+        21162,
+        99112
+      ],
+      "new": [
+        33287,
+        111237
+      ],
+      "bytes": 77950,
+      "sha256": "D74CCE690FCB1B02FB3BA73B8592984FF902BADD759CE56ACC15FFDBF6C1D143"
+    },
+    {
+      "old": [
+        99112,
+        165893
+      ],
+      "new": [
+        111418,
+        178199
+      ],
+      "bytes": 66781,
+      "sha256": "DA8E92264687F72B992DDA2190B3C6109419004E170DE40EEB4ED276ABB3C067"
+    },
+    {
+      "old": [
+        165893,
+        178847
+      ],
+      "new": [
+        178282,
+        191236
+      ],
+      "bytes": 12954,
+      "sha256": "9F8C47E66F5B220BC9387DDE9BDCADEC18D0DE86F79940483464F0A4BC8947FC"
+    },
+    {
+      "old": [
+        178847,
+        239574
+      ],
+      "new": [
+        204689,
+        265416
+      ],
+      "bytes": 60727,
+      "sha256": "7DBD3BFD89EA8B93E951B8F2FD01743E4B85DFFC55079D8ED0F0A7CF55733F47"
+    }
+  ],
+  "outside_bytes_total": 234431,
+  "candidate_identity": {
+    "dispatch_id": "WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a",
+    "wp_id": "WP_ENGINE_GATE05_R29_STARTUP_PAIR",
+    "wp_revision": "GATE05-R29-STARTUP-PAIR",
+    "envelope": 32,
+    "generated_at": "2026-10-12T00:29:07.518722+00:00",
+    "candidate_status": "BUILT_AND_VERIFIED",
+    "compiler_metadata": {
+      "toolset": "Microsoft (R) Visual C# Compiler version 4.8.9232.0",
+      "target_framework": ".NETFramework,Version=v4.7.2",
+      "configuration_debug": {
+        "platform": "AnyCPU",
+        "debug_symbols": true,
+        "debug_type": "full",
+        "optimize": false,
+        "constants": [
+          "DEBUG",
+          "TRACE"
+        ]
+      },
+      "configuration_release": {
+        "platform": "AnyCPU",
+        "debug_symbols": true,
+        "debug_type": "pdbonly",
+        "optimize": true,
+        "constants": [
+          "TRACE"
+        ]
+      }
+    },
+    "debug_candidate": {
+      "assembly_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "relative_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "size_bytes": 322560,
+      "sha256": "084C58CCD770AF90D2F2AE162FF5456C8CD2F0DB3167AE13394635BF8E567E7A",
+      "mvid": "5c410658-e435-4ae4-8aa3-d074fbcf4f5d",
+      "codeview_signature": "RSDS",
+      "codeview_guid": "4b83c0af-9116-4158-b47e-a4d8a1581cf5",
+      "codeview_age": 1,
+      "codeview_pdb_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "pdb_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "pdb_size_bytes": 77724,
+      "pdb_sha256": "7E76C8CEE38F98FB5B33639AAFB1AA9B4321D563DD483C35A1469A32229C1F3F"
+    },
+    "release_candidate": {
+      "assembly_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "relative_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "size_bytes": 305152,
+      "sha256": "4B4FBD87DDF6B4B39D419F5FDF28428F1E0869CA208E159094409A8D1102463E",
+      "mvid": "3bf83c4d-c38b-43b4-8f9c-520e3e277200",
+      "codeview_signature": "RSDS",
+      "codeview_guid": "bddd0aa3-ed8b-4253-957a-ea18011d4f36",
+      "codeview_age": 1,
+      "codeview_pdb_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "pdb_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "pdb_size_bytes": 56876,
+      "pdb_sha256": "EE705B6F654BEF8A605661AD3CBFBB03541D0CCB244C24AC1323C2E3D68EED50"
+    },
+    "mod_1_6_assembly_synchronized": {
+      "assembly_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "relative_path": "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "size_bytes": 322560,
+      "sha256": "084C58CCD770AF90D2F2AE162FF5456C8CD2F0DB3167AE13394635BF8E567E7A",
+      "mvid": "5c410658-e435-4ae4-8aa3-d074fbcf4f5d",
+      "pdb_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "pdb_size_bytes": 77724,
+      "pdb_sha256": "7E76C8CEE38F98FB5B33639AAFB1AA9B4321D563DD483C35A1469A32229C1F3F"
+    },
+    "new_source_publisher": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+      "size_bytes": 10442,
+      "sha256": "0204609D1D9D8A697B1A0B88537419D78B9E506558C771CA3EDD4C50FD49D470"
+    },
+    "source_fidelity": {
+      "target_source_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "size_bytes": 265416,
+      "sha256": "55441CE93DF32F5E5940D99A4A9CA8449B3F7839840CA3A3832C9DB31396FBDE",
+      "authorized_spans_count": 6,
+      "outside_segments_count": 7,
+      "outside_bytes_verified_equal": true,
+      "total_outside_bytes": 234431
+    },
+    "byte_fixed_files": [
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+        "size_bytes": 170135,
+        "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+        "size_bytes": 1774,
+        "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052"
+      }
+    ]
+  },
+  "Master_PE_PDB_Source4of4": {
+    "Debug": {
+      "assembly": "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "pdb": "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "mvid": "5c410658-e435-4ae4-8aa3-d074fbcf4f5d",
+      "codeviewGuid": "4b83c0af-9116-4158-b47e-a4d8a1581cf5",
+      "pdbGuid": "4b83c0af-9116-4158-b47e-a4d8a1581cf5",
+      "codeviewMatched": true,
+      "documents": [
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+          "actual": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "55441CE93DF32F5E5940D99A4A9CA8449B3F7839840CA3A3832C9DB31396FBDE",
+          "actual": "55441CE93DF32F5E5940D99A4A9CA8449B3F7839840CA3A3832C9DB31396FBDE",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+          "actual": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.AssemblyInfo.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "8C7180C5E4D3004DE53926C1039C107C3059053C470CF73F82CF974EAF7D5681",
+          "actual": "8C7180C5E4D3004DE53926C1039C107C3059053C470CF73F82CF974EAF7D5681",
+          "matched": true
+        }
+      ]
+    },
+    "Release": {
+      "assembly": "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "pdb": "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "mvid": "3bf83c4d-c38b-43b4-8f9c-520e3e277200",
+      "codeviewGuid": "bddd0aa3-ed8b-4253-957a-ea18011d4f36",
+      "pdbGuid": "bddd0aa3-ed8b-4253-957a-ea18011d4f36",
+      "codeviewMatched": true,
+      "documents": [
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+          "actual": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "55441CE93DF32F5E5940D99A4A9CA8449B3F7839840CA3A3832C9DB31396FBDE",
+          "actual": "55441CE93DF32F5E5940D99A4A9CA8449B3F7839840CA3A3832C9DB31396FBDE",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+          "actual": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.AssemblyInfo.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "80492D41167FD5D58508DFC29A09E3624EC6374EF4048B2FF2D2C5EE86562743",
+          "actual": "80492D41167FD5D58508DFC29A09E3624EC6374EF4048B2FF2D2C5EE86562743",
+          "matched": true
+        }
+      ]
+    }
+  },
+  "host_runs": [
+    {
+      "culture": "en-US",
+      "pid": 34228,
+      "exit_code": 0,
+      "duration_seconds": 0.151531,
+      "argv": [
+        "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\Harness\\bin\\Debug\\net472\\Gate05R29StartupPairRunner.exe",
+        "--rundir",
+        "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_en_us",
+        "--culture",
+        "en-US"
+      ],
+      "cwd": "C:\\Users\\user\\Desktop\\RimMulti",
+      "run_directory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_en_us",
+      "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_en_us\\stdout.txt",
+      "stdout_sha256": "1A608C68A8A17CFD90B8A8EA806FD0FC1419175937021D431964F842CB9FD84C",
+      "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_en_us\\stderr.txt",
+      "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "execution_report_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_en_us\\E1_EXECUTION_REPORT.json",
+      "execution_report_sha256": "8E9929F1701DC552DCDF582D453157612A16D2BB0BEB33FD183F25261E3CC3EE",
+      "report_summary": {
+        "wp_id": "WP_ENGINE_GATE05_R29_STARTUP_PAIR",
+        "wp_revision": "GATE05-R29-STARTUP-PAIR",
+        "dispatch_id": "WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a",
+        "envelope": 32,
+        "culture": "en-US",
+        "timestamp_utc": "2026-10-12T00:27:59.2507685Z",
+        "pair_cases": [
+          {
+            "case_index": 1,
+            "case_id": "PLAIN_PLAIN",
+            "operatorPairId": "WE-PAIR-DEV-R29-PLAIN-PLAIN-01",
+            "scope": "DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY",
+            "parent_config_id": "qa.R29.parent.cfg.1",
+            "parent_role": "SIMULATION",
+            "parent_origin_id": "qa.R29.parent.origin.plain",
+            "child_config_id": "qa.R29.child.cfg.1",
+            "child_role": "READ_ONLY",
+            "child_origin_id": "qa.R29.child.origin.plain",
+            "status": "PASS",
+            "detached_mutation_isolated": true,
+            "caller_array_mutation_isolated": true
+          },
+          {
+            "case_index": 2,
+            "case_id": "OPAQUE_OPAQUE",
+            "operatorPairId": "WE-PAIR-DEV-R29-OPAQUE-OPAQUE-02",
+            "scope": "DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY",
+            "parent_config_id": "qa.R29.parent.cfg.2",
+            "parent_role": "SIMULATION",
+            "parent_origin_id": "  qa.R29.parent.origin.opaque.Ω  ",
+            "child_config_id": "qa.R29.child.cfg.2",
+            "child_role": "READ_ONLY",
+            "child_origin_id": "  qa.R29.child.origin.opaque.Ω  ",
+            "status": "PASS",
+            "detached_mutation_isolated": true,
+            "caller_array_mutation_isolated": true
+          },
+          {
+            "case_index": 3,
+            "case_id": "PLAIN_OPAQUE_PADDED",
+            "operatorPairId": "WE-PAIR-DEV-R29-PLAIN-OPAQUE-03",
+            "scope": "DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY",
+            "parent_config_id": "qa.R29.parent.cfg.3",
+            "parent_role": "SIMULATION",
+            "parent_origin_id": "qa.R29.parent.origin.plain3",
+            "child_config_id": "qa.R29.child.cfg.3",
+            "child_role": "READ_ONLY",
+            "child_origin_id": "  qa.R29.child.origin.opaque3.Ω  ",
+            "status": "PASS",
+            "detached_mutation_isolated": true,
+            "caller_array_mutation_isolated": true
+          },
+          {
+            "case_index": 4,
+            "case_id": "OPAQUE_PLAIN_PADDED",
+            "operatorPairId": "WE-PAIR-DEV-R29-OPAQUE-PLAIN-04",
+            "scope": "DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY",
+            "parent_config_id": "qa.R29.parent.cfg.4",
+            "parent_role": "SIMULATION",
+            "parent_origin_id": "  qa.R29.parent.origin.opaque4.Ω  ",
+            "child_config_id": "qa.R29.child.cfg.4",
+            "child_role": "READ_ONLY",
+            "child_origin_id": "qa.R29.child.origin.plain4",
+            "status": "PASS",
+            "detached_mutation_isolated": true,
+            "caller_array_mutation_isolated": true
+          },
+          {
+            "case_index": 5,
+            "case_id": "PAIR_ID_WITH_EQUALS",
+            "operatorPairId": "WE=PAIR=DEV=R29=EQUALS=05",
+            "scope": "DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY",
+            "parent_config_id": "qa.R29.parent.cfg.5",
+            "parent_role": "SIMULATION",
+            "parent_origin_id": "qa.R29.parent.origin.eq",
+            "child_config_id": "qa.R29.child.cfg.5",
+            "child_role": "READ_ONLY",
+            "child_origin_id": "qa.R29.child.origin.eq",
+            "status": "PASS",
+            "detached_mutation_isolated": true,
+            "caller_array_mutation_isolated": true
+          },
+          {
+            "case_index": 6,
+            "case_id": "UNICODE_BACKSLASH_QUOTE_EQUALS",
+            "operatorPairId": "WE-PAIR-DEV-R29-Ω-\"QUOTE\"=\\BACKSLASH\\-06",
+            "scope": "DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY",
+            "parent_config_id": "qa.R29.parent.cfg.6",
+            "parent_role": "SIMULATION",
+            "parent_origin_id": "qa.R29.parent.origin.Ω-\"quoted\"=\\path\\-06",
+            "child_config_id": "qa.R29.child.cfg.6",
+            "child_role": "READ_ONLY",
+            "child_origin_id": "qa.R29.child.origin.Ω-\"quoted\"=\\path\\-06",
+            "status": "PASS",
+            "detached_mutation_isolated": true,
+            "caller_array_mutation_isolated": true
+          }
+        ],
+        "r27_regression_cases": [
+          {
+            "case_index": 1,
+            "case_id": "PLAIN_PLAIN",
+            "status": "PASS",
+            "15_getters_verified": true,
+            "scope": "DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED"
+          },
+          {
+            "case_index": 2,
+            "case_id": "OPAQUE_OPAQUE",
+            "status": "PASS",
+            "15_getters_verified": true,
+            "scope": "DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED"
+          },
+          {
+            "case_index": 3,
+            "case_id": "PLAIN_OPAQUE_PADDED",
+            "status": "PASS",
+            "15_getters_verified": true,
+            "scope": "DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED"
+          },
+          {
+            "case_index": 4,
+            "case_id": "OPAQUE_PLAIN_PADDED",
+            "status": "PASS",
+            "15_getters_verified": true,
+            "scope": "DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED"
+          }
+        ],
+        "admit_pair_calls": 6,
+        "issue_receipt_calls": 8,
+        "capture_calls": 4,
+        "process_api_calls": 0,
+        "negative_probes": 0,
+        "status": "SUCCESS"
+      }
+    },
+    {
+      "culture": "de-DE",
+      "pid": 12948,
+      "exit_code": 0,
+      "duration_seconds": 0.080305,
+      "argv": [
+        "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\Harness\\bin\\Debug\\net472\\Gate05R29StartupPairRunner.exe",
+        "--rundir",
+        "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_de_de",
+        "--culture",
+        "de-DE"
+      ],
+      "cwd": "C:\\Users\\user\\Desktop\\RimMulti",
+      "run_directory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_de_de",
+      "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_de_de\\stdout.txt",
+      "stdout_sha256": "432F76BBE8455D64BE6C1410E9D81EE779B95598452E796D5C83BA65E8149EBE",
+      "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_de_de\\stderr.txt",
+      "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "execution_report_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_de_de\\E1_EXECUTION_REPORT.json",
+      "execution_report_sha256": "C78743237CA554B0D2C41227CDA954BDEE93A41DD34B6C6A62B53C72E62659D9",
+      "report_summary": {
+        "wp_id": "WP_ENGINE_GATE05_R29_STARTUP_PAIR",
+        "wp_revision": "GATE05-R29-STARTUP-PAIR",
+        "dispatch_id": "WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a",
+        "envelope": 32,
+        "culture": "de-DE",
+        "timestamp_utc": "2026-10-12T00:27:59.3332056Z",
+        "pair_cases": [
+          {
+            "case_index": 1,
+            "case_id": "PLAIN_PLAIN",
+            "operatorPairId": "WE-PAIR-DEV-R29-PLAIN-PLAIN-01",
+            "scope": "DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY",
+            "parent_config_id": "qa.R29.parent.cfg.1",
+            "parent_role": "SIMULATION",
+            "parent_origin_id": "qa.R29.parent.origin.plain",
+            "child_config_id": "qa.R29.child.cfg.1",
+            "child_role": "READ_ONLY",
+            "child_origin_id": "qa.R29.child.origin.plain",
+            "status": "PASS",
+            "detached_mutation_isolated": true,
+            "caller_array_mutation_isolated": true
+          },
+          {
+            "case_index": 2,
+            "case_id": "OPAQUE_OPAQUE",
+            "operatorPairId": "WE-PAIR-DEV-R29-OPAQUE-OPAQUE-02",
+            "scope": "DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY",
+            "parent_config_id": "qa.R29.parent.cfg.2",
+            "parent_role": "SIMULATION",
+            "parent_origin_id": "  qa.R29.parent.origin.opaque.Ω  ",
+            "child_config_id": "qa.R29.child.cfg.2",
+            "child_role": "READ_ONLY",
+            "child_origin_id": "  qa.R29.child.origin.opaque.Ω  ",
+            "status": "PASS",
+            "detached_mutation_isolated": true,
+            "caller_array_mutation_isolated": true
+          },
+          {
+            "case_index": 3,
+            "case_id": "PLAIN_OPAQUE_PADDED",
+            "operatorPairId": "WE-PAIR-DEV-R29-PLAIN-OPAQUE-03",
+            "scope": "DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY",
+            "parent_config_id": "qa.R29.parent.cfg.3",
+            "parent_role": "SIMULATION",
+            "parent_origin_id": "qa.R29.parent.origin.plain3",
+            "child_config_id": "qa.R29.child.cfg.3",
+            "child_role": "READ_ONLY",
+            "child_origin_id": "  qa.R29.child.origin.opaque3.Ω  ",
+            "status": "PASS",
+            "detached_mutation_isolated": true,
+            "caller_array_mutation_isolated": true
+          },
+          {
+            "case_index": 4,
+            "case_id": "OPAQUE_PLAIN_PADDED",
+            "operatorPairId": "WE-PAIR-DEV-R29-OPAQUE-PLAIN-04",
+            "scope": "DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY",
+            "parent_config_id": "qa.R29.parent.cfg.4",
+            "parent_role": "SIMULATION",
+            "parent_origin_id": "  qa.R29.parent.origin.opaque4.Ω  ",
+            "child_config_id": "qa.R29.child.cfg.4",
+            "child_role": "READ_ONLY",
+            "child_origin_id": "qa.R29.child.origin.plain4",
+            "status": "PASS",
+            "detached_mutation_isolated": true,
+            "caller_array_mutation_isolated": true
+          },
+          {
+            "case_index": 5,
+            "case_id": "PAIR_ID_WITH_EQUALS",
+            "operatorPairId": "WE=PAIR=DEV=R29=EQUALS=05",
+            "scope": "DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY",
+            "parent_config_id": "qa.R29.parent.cfg.5",
+            "parent_role": "SIMULATION",
+            "parent_origin_id": "qa.R29.parent.origin.eq",
+            "child_config_id": "qa.R29.child.cfg.5",
+            "child_role": "READ_ONLY",
+            "child_origin_id": "qa.R29.child.origin.eq",
+            "status": "PASS",
+            "detached_mutation_isolated": true,
+            "caller_array_mutation_isolated": true
+          },
+          {
+            "case_index": 6,
+            "case_id": "UNICODE_BACKSLASH_QUOTE_EQUALS",
+            "operatorPairId": "WE-PAIR-DEV-R29-Ω-\"QUOTE\"=\\BACKSLASH\\-06",
+            "scope": "DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY",
+            "parent_config_id": "qa.R29.parent.cfg.6",
+            "parent_role": "SIMULATION",
+            "parent_origin_id": "qa.R29.parent.origin.Ω-\"quoted\"=\\path\\-06",
+            "child_config_id": "qa.R29.child.cfg.6",
+            "child_role": "READ_ONLY",
+            "child_origin_id": "qa.R29.child.origin.Ω-\"quoted\"=\\path\\-06",
+            "status": "PASS",
+            "detached_mutation_isolated": true,
+            "caller_array_mutation_isolated": true
+          }
+        ],
+        "r27_regression_cases": [
+          {
+            "case_index": 1,
+            "case_id": "PLAIN_PLAIN",
+            "status": "PASS",
+            "15_getters_verified": true,
+            "scope": "DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED"
+          },
+          {
+            "case_index": 2,
+            "case_id": "OPAQUE_OPAQUE",
+            "status": "PASS",
+            "15_getters_verified": true,
+            "scope": "DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED"
+          },
+          {
+            "case_index": 3,
+            "case_id": "PLAIN_OPAQUE_PADDED",
+            "status": "PASS",
+            "15_getters_verified": true,
+            "scope": "DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED"
+          },
+          {
+            "case_index": 4,
+            "case_id": "OPAQUE_PLAIN_PADDED",
+            "status": "PASS",
+            "15_getters_verified": true,
+            "scope": "DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED"
+          }
+        ],
+        "admit_pair_calls": 6,
+        "issue_receipt_calls": 8,
+        "capture_calls": 4,
+        "process_api_calls": 0,
+        "negative_probes": 0,
+        "status": "SUCCESS"
+      }
+    }
+  ],
+  "reported_normal6_case_PASS_no_Master_rerun": true,
+  "producer_full_typed_raw_and_normal_capture_coverage": "SHALLOW_SELECTED_FIELDS_NOT_FULL_SNAPSHOT_OR_AFTERGRAPH_TYPED_BINDING",
+  "producer_pre_manifest_at": "2026-10-12T00:29:23.412595+00:00",
+  "host_telemetry_at": "2026-10-12T00:27:59.381019+00:00",
+  "publisher_evidence_at": "2026-10-12T00:25:12.690421+00:00",
+  "prospective_final_compiler_allrefs_inputs_pin": "NOT_PROVED; manifest generated after publisher and normal runs",
+  "critical_source_finding": "ReferenceEquals receipt versus snapshot alwaysfalse, Awake fails togate pairmode; launchHold bypass possible",
+  "publisher_static_findings": "DELETE/TRUNCATE_EXISTING_OUTPUT_CAPABLE; nonexclusive temporary; configurable filename may escape root; declaredpath equality/config14 role/schema checks missing",
+  "carrier_static_findings": "anyPair usesnonempty corelookup; blank/malformed/duplicate rawsignals not closed beforelegacy",
+  "frozen_manifest": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a\\MASTER_GATE05_R29_STARTUP_PAIR_REVIEW_FREEZE_MANIFEST.json",
+    "sha256": "006DE41FCB6EC9C9E183C877BD6E3D5C3FB48047454F4AF3902673C0B08D447E",
+    "bytes": 80352
+  },
+  "frozen_files": 132,
+  "selected_frozen_dll": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R29-46f60e2a\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+  "selected_sha256": "084C58CCD770AF90D2F2AE162FF5456C8CD2F0DB3167AE13394635BF8E567E7A",
+  "selected_mvid": "5c410658-e435-4ae4-8aa3-d074fbcf4f5d",
+  "matching_pdb_sha256": "7E76C8CEE38F98FB5B33639AAFB1AA9B4321D563DD483C35A1469A32229C1F3F",
+  "publisher_frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R29-46f60e2a\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+  "frozen_loader_library": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\Harness\\bin\\Debug\\net472\\Newtonsoft.Json.dll",
+    "sha256": "E1E27AF7B07EEEDF5CE71A9255F0422816A6FC5849A483C6714E1B472044FA9D",
+    "bytes": 711952,
+    "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\Harness\\bin\\Debug\\net472\\Newtonsoft.Json.dll",
+    "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R29-46f60e2a\\scratch\\EngineGate05R29StartupPair\\Harness\\bin\\Debug\\net472\\Newtonsoft.Json.dll"
+  },
+  "verification_status": "MASTER_DISPOSED",
+  "Master_candidate_build_execute": 0,
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD",
+  "master_verdict": "STARTUP_PAIR_PURE_DATA_SOURCE_CREDITED_CONNECTED_HANDOFF_CARRIER_PUBLISHER_REVISION_REQUIRED_SCOPED_QA_ONLY_NATIVE_NOT_RELEASED",
+  "master_review": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R29_STARTUP_PAIR_E1_20261012.md",
+    "sha256": "935D7C10676E965A8C370F63E3ADF357E9CB63D05D9D8DD381E4EACEEFDDE4FA",
+    "bytes": 6636
+  },
+  "defects": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_DEFECT_ENGINE_G05_R29_HANDOFF_20261012.json",
+      "sha256": "BBFD3FC743F14D41DE31B58BC17DA1B727421F9C1668DA0141F1AD57D6B63E34",
+      "bytes": 1367
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_DEFECT_ENGINE_G05_R29_CARRIER_20261012.json",
+      "sha256": "2BF87001F92C0D7DF4201C59B5C2AE2883448CDA4D1116B988035E38D7F190A0",
+      "bytes": 1360
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_DEFECT_ENGINE_G05_R29_PUBLISHER_20261012.json",
+      "sha256": "07071929727175C7B505BF1BC58D5A49FE8B36630C37FC1682B582266E0730DB",
+      "bytes": 1334
+    }
+  ],
+  "scoped_candidate_admission": "PURE_POSITIVE_PAIR_DATA_HELPERS_AND_STATIC_ONLY_NO_PUBLISHER_GLOBAL_NATIVE",
+  "disposed_at": "2026-10-12T09:41:24.472945+09:00"
+}

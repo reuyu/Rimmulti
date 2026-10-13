@@ -1,0 +1,72 @@
+{
+  "at": "2026-10-11T23:10:45.720002+09:00",
+  "guard_run": "MASTER-R25-QA-S2-ACK-20261011-01",
+  "guard_session": 19395,
+  "guard_pid": 3880,
+  "delivery_id": "SOL-GATE05-R25-ROLE_USERDATA-INDEPENDENT-S2-20261011-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R25_ROLE_USERDATA_INDEPENDENT",
+  "wp_revision": "S2",
+  "result_id": "SOL-GATE05-R25-ROLE_USERDATA-INDEPENDENT-S2-20261011-098499b5238a467cb87509c88d8d2e07",
+  "ack_path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R25-ROLE_USERDATA-INDEPENDENT-S2-20261011\\ACK_INITIAL.json",
+  "ack_sha256": "41F78A54B0FF33CCADF85C68F1D7F4140794C78EF49CD43233260AE22B2CFD01",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:159",
+    "revision": 159,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a12b48-a63b-7dd3-8891-aecd70893ed0",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791727543,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acb97cc882c87d08a97de9d079d5da5",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016acb97cc882c87d08a97de9d079d5da5",
+      "turnId": "01a12b48-a63b-7dd3-8891-aecd70893ed0",
+      "phase": "commentary",
+      "text": "새 S2 후속 검증 지시를 접수했습니다. S1의 실패와 원문을 보존하고, 승인된 줄바꿈 기대값만 독립적으로 작성해 같은 정상 입력·실행 로직으로 다시 검증하겠습니다. 새 실패가 나오면 추가 수정이나 재실행 없이 보고하겠습니다."
+    },
+    "latestToolMarkerId": "exec-290319a2-8359-4eb0-b9f8-01f6a3766317",
+    "latestToolMarker": {
+      "id": "exec-290319a2-8359-4eb0-b9f8-01f6a3766317",
+      "turnId": "01a12b48-a63b-7dd3-8891-aecd70893ed0",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "snapshot_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R25_ROLE_USERDATA_S2_ACK_SNAPSHOT_20261011.json",
+  "snapshot_sha256": "4D57C00BCEC6BB6BA3EE182AE42686CCF09B48D764A2119588BBE8E0002DEAC9",
+  "protected_paths_master_rehashed": 13315,
+  "baseline_sha256": "FF2200BDF8890A443CB0DEE6243F85C76F44EB55365D31A490533801927741DF",
+  "qa_lineage_path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R25-ROLE_USERDATA-INDEPENDENT-S2-20261011\\R25_FROZEN_LINEAGE.json",
+  "qa_lineage_sha256": "AD7266E9B946B92F5A28473B433B9D86EF10F405994A60E51785DD5421C66A2C",
+  "master_metadata_comparison": "DebugReleaseSHA-MVID-CodeView-PDB-source4/4matched",
+  "three_span_scope_admission_path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R25-ROLE_USERDATA-INDEPENDENT-S2-20261011\\THREE_SPAN_SCOPE_ADMISSION_BEFORE_CALLS.json",
+  "three_span_scope_admission_sha256": "5E42B1A287D4115247A565F8138B0DC43FAB13FC6550366F2FB8B77E9AB778A1",
+  "four_fixed_segments_matched": 4,
+  "current_production_package_identity_checked": 9,
+  "A_terminal_completion_deduped_unchanged": true,
+  "verdict": "ACK_VERIFIED_INDEPENDENT_R25_S2_NEWLINE_ORACLE_FRESH_NORMAL_QA_IN_PROGRESS",
+  "S2_program_exact_S1_bytes_and_four_oracle_formatting_only_changes_master_checked": true,
+  "initial_ACK_execution_statement": "InitialACKnotbuilt;currentQAexecutionverdictPENDING;notanobservationoflaterongoingexecution",
+  "QA_metadata_helper_schema_failure": "Historicallegacyworker_before_sha256lookupfailedbeforewrites;actualsource_before/authorized_spans/byteshandled;candidateexecution0there",
+  "qa_owned_runner_build_allowed": true,
+  "master_candidate_build_execute": 0,
+  "new_wp": false,
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "monitor_actual_status": "PAUSED60MIN173CHAR_SAME_TARGET",
+  "foundation": "HOLD"
+}

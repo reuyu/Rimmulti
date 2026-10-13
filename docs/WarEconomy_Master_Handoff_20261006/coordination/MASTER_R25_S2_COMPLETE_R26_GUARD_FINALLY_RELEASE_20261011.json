@@ -1,0 +1,13 @@
+{
+  "run_id": "MASTER-R25-S2-COMPLETE-NEXT-20261011-01",
+  "guard_session": 35120,
+  "guard_pid": 24636,
+  "actual_release_tool": {
+    "chunk_id": "21cfc4",
+    "wall_time_seconds": 0.0000517,
+    "exit_code": 0,
+    "original_token_count": 118,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R25-S2-COMPLETE-NEXT-20261011-01\", \"pid\r\n\u001b[23;80Hd\": 24636, \"locked_at\": \"2026-10-11T23:19:43.027140+09:00\", \"mechanism\": \"Windows\r\n\u001b[23;80Hs msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\r\n\u001b[23;80Ht\": \"2026-10-11T23:33:02.675601+09:00\", \"renewal_count\": 5, \"release_reason\": \"RE\r\n\u001b[23;80HELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-11T23:33:50.528470+09:00\"}      \r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "all_child_commands_completed_before_release": true
+}

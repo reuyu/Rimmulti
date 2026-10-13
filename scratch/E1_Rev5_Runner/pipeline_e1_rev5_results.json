@@ -1,0 +1,157 @@
+{
+  "WorkOrder": "WP-PROD-TRANSACTION-PIPELINE-01-REV5",
+  "TimestampUtc": "2026-10-04T12:36:57.5357208Z",
+  "OverallSuccess": true,
+  "TotalTests": 21,
+  "PassedTests": 21,
+  "FailedTests": 0,
+  "Results": [
+    {
+      "Id": 1,
+      "Name": "Battery1_FiveRev4TypedInputFailures",
+      "Success": true,
+      "Details": "All 5 REV4 typed-input failure cases rejected as INVALID_REQUEST; exactly 0 durable records.",
+      "DurationMs": 288
+    },
+    {
+      "Id": 2,
+      "Name": "Battery2_NaturalMixedCommittedAbortedRestart",
+      "Success": true,
+      "Details": "2 scopes, 4 COMMITTED, 2 legitimate ABORTED; restart reached PIPELINE_READY.",
+      "DurationMs": 112
+    },
+    {
+      "Id": 3,
+      "Name": "Battery3_25ProcessWinnerLoserDbRestart",
+      "Success": true,
+      "Details": "25 concurrent requests: 1 winner, 24 losers; restart reached PIPELINE_READY.",
+      "DurationMs": 117
+    },
+    {
+      "Id": 4,
+      "Name": "Battery4_CrossPrincipalSameOperationIdSameScope",
+      "Success": true,
+      "Details": "P1/SAME and P2/SAME committed in same scope; restart reached PIPELINE_READY.",
+      "DurationMs": 58
+    },
+    {
+      "Id": 5,
+      "Name": "Battery5_CrossPrincipalSameOperationIdDifferentScopes",
+      "Success": true,
+      "Details": "P1 committed and P2 aborted with SAME OperationId across different scopes; restart reached PIPELINE_READY.",
+      "DurationMs": 48
+    },
+    {
+      "Id": 6,
+      "Name": "Battery6_SixRev4FalseReadySemanticGraphAttacks",
+      "Success": true,
+      "Details": "All 6 REV4 false-READY attacks successfully detected and rejected with fail-closed non-READY.",
+      "DurationMs": 360
+    },
+    {
+      "Id": 7,
+      "Name": "Battery7_EnvelopeFieldFingerprintMutations",
+      "Success": true,
+      "Details": "All envelope field mutations broke recomputed RequestFingerprint and were rejected.",
+      "DurationMs": 147
+    },
+    {
+      "Id": 8,
+      "Name": "Battery8_CanonicalReceiptIdEventIdSwapResignAttacks",
+      "Success": true,
+      "Details": "Derived ReceiptId and EventId check strictly enforces canonical derivation from parent key.",
+      "DurationMs": 52
+    },
+    {
+      "Id": 9,
+      "Name": "Battery9_TypedCommitRejectAuditMutations",
+      "Success": true,
+      "Details": "Typed audit validation strictly verified structured JSON fields on COMMITTED and ABORTED audits.",
+      "DurationMs": 44
+    },
+    {
+      "Id": 10,
+      "Name": "Battery10_SchemaV6Regression",
+      "Success": true,
+      "Details": "Schema V6 verified: user_version 6, signature 64BDB62037D70303D7F2AE15D39FC7E7DFD9F01021B5E0AA0709A51FA507E721, all 5 FKs validated.",
+      "DurationMs": 34
+    },
+    {
+      "Id": 11,
+      "Name": "Battery11_ActiveWriterLongerThanOldShutdownTimeout",
+      "Success": true,
+      "Details": "Writer held 8,000 ms: Caller received UNKNOWN_QUERY_REQUIRED, Dispose waited 7806 ms until writer dead; IsDisposed=true.",
+      "DurationMs": 8054
+    },
+    {
+      "Id": 12,
+      "Name": "Battery12_ActualMainActiveOperationQuit",
+      "Success": true,
+      "Details": "Main quit cleanup waited 6797 ms for active 7s writer; readiness=false, coordinator nulled.",
+      "DurationMs": 7074
+    },
+    {
+      "Id": 13,
+      "Name": "Battery13_RepeatedShutdownDispose",
+      "Success": true,
+      "Details": "Multiple successive Shutdown/Dispose invocations executed cleanly and idempotently.",
+      "DurationMs": 61
+    },
+    {
+      "Id": 14,
+      "Name": "Battery14_CallerUnknownThenDurableRetryConvergence",
+      "Success": true,
+      "Details": "Caller received UNKNOWN_QUERY_REQUIRED; retry after writer termination converged cleanly to ALREADY_COMMITTED.",
+      "DurationMs": 2080
+    },
+    {
+      "Id": 15,
+      "Name": "Battery15_OsProcessCasSameIdSameStream",
+      "Success": true,
+      "Details": "8 monotonic sequential revisions/publication events verified without gaps.",
+      "DurationMs": 87
+    },
+    {
+      "Id": 16,
+      "Name": "Battery16_HardKillCommitCuts",
+      "Success": true,
+      "Details": "Full atomic cross-table invariant verified: exactly 1 row across all 5 dependent tables.",
+      "DurationMs": 38
+    },
+    {
+      "Id": 17,
+      "Name": "Battery17_TerminalImmutability",
+      "Success": true,
+      "Details": "Triggers trg_operation_records_no_update, trg_operation_records_no_delete, trg_operation_records_no_replace strictly enforced.",
+      "DurationMs": 51
+    },
+    {
+      "Id": 18,
+      "Name": "Battery18_StorageTypingAndStoreIncarnation",
+      "Success": true,
+      "Details": "Store incarnation fencing verified; foreign/stale incarnation rejected.",
+      "DurationMs": 44
+    },
+    {
+      "Id": 19,
+      "Name": "Battery19_WalFullDurabilityAndPragmas",
+      "Success": true,
+      "Details": "WAL=wal, synchronous=FULL(2), foreign_keys=1, recursive_triggers=1 verified.",
+      "DurationMs": 38
+    },
+    {
+      "Id": 20,
+      "Name": "Battery20_NoConsumerGameplayMaterialPaths",
+      "Success": true,
+      "Details": "Strict P1 scope preserved: zero consumer/cursor/ACK queue types in pipeline assembly.",
+      "DurationMs": 2
+    },
+    {
+      "Id": 21,
+      "Name": "Battery21_CurrentReleaseManifestAndPackageHygiene",
+      "Success": true,
+      "Details": "Release Candidate verified: DLL SHA=1143AE62FD74F0C9..., MVID=a5cba4c3-1e2f-4a19-a35c-0241ccf12e81, 0 stray files.",
+      "DurationMs": 35
+    }
+  ]
+}

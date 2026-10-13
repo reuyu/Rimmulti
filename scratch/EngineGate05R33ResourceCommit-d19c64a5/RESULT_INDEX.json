@@ -1,0 +1,28 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5",
+  "wp_id": "WP_ENGINE_GATE05_R33_RESOURCE_COMMIT",
+  "wp_revision": "GATE05-R33-RESOURCE-COMMIT",
+  "envelope": 36,
+  "result_id": "WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-RESULT-01",
+  "status": "COMPLETED",
+  "e1_verdict": "BUILT_SOURCE_CORRECTION_RUNTIME_NOT_EXECUTED",
+  "generated_at": "2026-10-13T01:15:00+09:00",
+  "index": {
+    "task_ack_initial": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5\\ACK_INITIAL.json",
+    "task_ack": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5\\ACK.json",
+    "preservation_before": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5\\PRESERVATION_BEFORE.json",
+    "before_after_preservation": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5\\BEFORE_AFTER_PRESERVATION.json",
+    "source_scope_diff": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5\\SOURCE_SCOPE_DIFF.json",
+    "source_resource_commit_flow": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5\\SOURCE_RESOURCE_COMMIT_FLOW.json",
+    "callback_lock_order_review": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5\\CALLBACK_LOCK_ORDER_REVIEW.md",
+    "candidate_identity": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5\\CANDIDATE_IDENTITY.json",
+    "build_input_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5\\BUILD_INPUT_MANIFEST.json",
+    "actual_reference_binding": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5\\ACTUAL_REFERENCE_BINDING.json",
+    "build_host_tool_telemetry": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5\\BUILD_HOST_TOOL_TELEMETRY.json",
+    "build_output_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5\\BUILD_OUTPUT_MANIFEST.json",
+    "release_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5\\RELEASE_MANIFEST.json",
+    "implementation_report": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5\\IMPLEMENTATION_REPORT.md",
+    "technical_report": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\A_ENGINE_GATE05_R33_RESOURCE_COMMIT_REPORT_20261013.md",
+    "completion": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5\\COMPLETION.json"
+  }
+}

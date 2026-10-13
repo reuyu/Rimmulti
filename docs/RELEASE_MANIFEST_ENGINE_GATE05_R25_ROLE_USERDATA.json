@@ -1,0 +1,150 @@
+{
+  "manifest_version": "1.0",
+  "work_package": "WP_ENGINE_GATE05_R25_ROLE_USERDATA_SELECTION",
+  "candidate_lineage": "GATE05-R25-ROLE-USERDATA",
+  "created_at_utc": "2026-10-11T12:40:45Z",
+  "agent_role": "Antigravity A",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R25-ROLE-USERDATA-20261011-DIRECT-dd341868",
+  "selected_candidate": {
+    "configuration": "Debug",
+    "target_framework": "net472",
+    "dll_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "A9C31DB0EEEBDCFDF851C0160899A9E092579D8E333C030F34845A63FAAAB6E7",
+    "dll_bytes": 303616,
+    "pdb_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "1B13F39A917F7C96EE736C1470B6F385B0534CFABF2174E4B86191950DB2458D",
+    "pdb_bytes": 72740,
+    "mvid": "5553a632-0557-433f-8840-bb12875cf577",
+    "codeview_path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "codeview_guid": "fc75dba4-e23e-4d20-99be-1a5add6d36c4",
+    "codeview_age": 1
+  },
+  "alternate_candidate": {
+    "configuration": "Release",
+    "target_framework": "net472",
+    "dll_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "10C01657CF148AD0BE8B6B70A5466F4739D64397922BD78088B1431983BBBC72",
+    "dll_bytes": 287232,
+    "pdb_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "57E80AB13FA1819564F2DAAA2CEF86054CCDFADE354C50FE0AB69B2F0E06159C",
+    "pdb_bytes": 53152,
+    "mvid": "da8efff8-3b44-48c1-a3bb-fd61f5d18795",
+    "codeview_path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "codeview_guid": "75219ae2-fe8b-41fb-8a95-19f3abd568dd",
+    "codeview_age": 1
+  },
+  "deployed_mod_assemblies": {
+    "dll_path": "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "A9C31DB0EEEBDCFDF851C0160899A9E092579D8E333C030F34845A63FAAAB6E7",
+    "dll_bytes": 303616,
+    "pdb_path": "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "1B13F39A917F7C96EE736C1470B6F385B0534CFABF2174E4B86191950DB2458D",
+    "pdb_bytes": 72740
+  },
+  "source_files": [
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "AB5AD60F16A62FC4473712ABF03AF10A3BB22A66DD8E283F0EC241857BD25BD2",
+      "bytes": 227637
+    },
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "bytes": 170135,
+      "prefix_marker": "    public static class ContentProfileProvider",
+      "prefix_length": 72547,
+      "prefix_sha256": "F3C4F865F1E2A898BF240A2D096195870D77A52408CF2D93664FE15092A2A887"
+    },
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    }
+  ],
+  "verification_evidence": {
+    "runner_project": {
+      "path": "scratch\\EngineGate05R25RoleUserData\\Harness\\Gate05R25RoleUserDataRunner.csproj",
+      "sha256": "3E7184FA59C1E4C79535CE493AADB29EEF445A02EFB56DEBA6B4793ECDF12F54",
+      "bytes": 1698
+    },
+    "runner_config": {
+      "path": "scratch\\EngineGate05R25RoleUserData\\Harness\\App.config",
+      "sha256": "1BE4F8BB988AE8DA023726B89212668036CEC313B7D44D46B4D63CF1454BA734",
+      "bytes": 421
+    },
+    "runner_source": {
+      "path": "scratch\\EngineGate05R25RoleUserData\\Harness\\Program.cs",
+      "sha256": "28F92170E961DE06845A286CE9B53A9EFC305F7E95ADFFF72ACAC8D830758A6A",
+      "bytes": 19226
+    },
+    "runner_binary": {
+      "path": "scratch\\EngineGate05R25RoleUserData\\Harness\\bin\\Debug\\net472\\Gate05R25RoleUserDataRunner.exe",
+      "sha256": "7769B674A1E05AB3D8AE862727EE17F9F7784B02E4FD2FE5A25D9154AE608C37",
+      "bytes": 26112
+    },
+    "runner_pdb": {
+      "path": "scratch\\EngineGate05R25RoleUserData\\Harness\\bin\\Debug\\net472\\Gate05R25RoleUserDataRunner.pdb",
+      "sha256": "188ACB5D544C974B1D05F5D139CB57E67B9B013B3BD4D06C826C5E59DD3CB0B4",
+      "bytes": 4508
+    },
+    "freeze_before": {
+      "path": "Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R25-ROLE-USERDATA-20261011-DIRECT-dd341868\\ENGINE_FREEZE_BEFORE.json",
+      "sha256": "1640D6147EE7CB9587D3159E90EFEECF3BB0BCD6234925CAFFA3DB0B641AA469",
+      "bytes": 4239
+    },
+    "freeze_after": {
+      "path": "Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R25-ROLE-USERDATA-20261011-DIRECT-dd341868\\ENGINE_FREEZE_AFTER.json",
+      "sha256": "1C5EBDF6E205922D2F372AA7B84D25ECE8D6607066160C68DA9E59EB87A7FCCF",
+      "bytes": 4239
+    },
+    "host_telemetry": {
+      "path": "scratch\\EngineGate05R25RoleUserData\\HOST_TELEMETRY.json",
+      "sha256": "E742394AAD147336B6585ECC2DA855C52032A4A15462CEE117978D77B04FA99A",
+      "bytes": 1967
+    },
+    "run_en_us": {
+      "execution_report": {
+        "path": "scratch\\EngineGate05R25RoleUserData\\run_en_us\\E1_EXECUTION_REPORT.json",
+        "sha256": "0D0E5AF8D9B895CE0EEB2E08396A6819A34C42381EE8FD61EDA38BE1C018E7DB",
+        "bytes": 3265
+      },
+      "output_inventory": {
+        "path": "scratch\\EngineGate05R25RoleUserData\\run_en_us\\OUTPUT_INVENTORY.json",
+        "sha256": "8C35681C88EE3301843415F4C1F690A89F3AAA2942D8D52E9C56F1290BE6FFFE",
+        "bytes": 1847
+      },
+      "stdout": {
+        "path": "scratch\\EngineGate05R25RoleUserData\\run_en_us\\stdout.txt",
+        "sha256": "B0467385494FCE27E4DE8C9BFD032C5BBB18C3685879C18158211A3F12A7ABEA",
+        "bytes": 857
+      },
+      "stderr": {
+        "path": "scratch\\EngineGate05R25RoleUserData\\run_en_us\\stderr.txt",
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "bytes": 0
+      }
+    },
+    "run_de_de": {
+      "execution_report": {
+        "path": "scratch\\EngineGate05R25RoleUserData\\run_de_de\\E1_EXECUTION_REPORT.json",
+        "sha256": "5545BBC3522F8E377BA7908295B95E620DF49C3EBCA059C4F541624A0EB64783",
+        "bytes": 3265
+      },
+      "output_inventory": {
+        "path": "scratch\\EngineGate05R25RoleUserData\\run_de_de\\OUTPUT_INVENTORY.json",
+        "sha256": "7B1AFA0FC07498F6115DA51E4FC012D0BFA7254B6A7CC2A1F8C088E434597876",
+        "bytes": 1847
+      },
+      "stdout": {
+        "path": "scratch\\EngineGate05R25RoleUserData\\run_de_de\\stdout.txt",
+        "sha256": "3E63B2DC724E9B2F3AEEC16186BE2BED17D269BD05D35D341E00D370D02680ED",
+        "bytes": 857
+      },
+      "stderr": {
+        "path": "scratch\\EngineGate05R25RoleUserData\\run_de_de\\stderr.txt",
+        "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "bytes": 0
+      }
+    }
+  }
+}

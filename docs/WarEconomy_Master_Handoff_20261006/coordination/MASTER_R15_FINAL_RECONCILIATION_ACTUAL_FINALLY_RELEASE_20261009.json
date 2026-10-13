@@ -1,0 +1,14 @@
+{
+  "run_id": "MASTER-R15-FINAL-AUDIT-RECONCILE-20261009-01",
+  "session_id": 71020,
+  "pid": 35084,
+  "actual_try_finally": true,
+  "background_command_polled_to_final_exit_inside_try": true,
+  "release_tool_result": {
+    "chunk_id": "103b43",
+    "wall_time_seconds": 0.0000404,
+    "exit_code": 0,
+    "original_token_count": 107,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R15-FINAL-AUDIT-RECONCILE-20261009-01\", \"pid\": 35084, \"locked_at\": \"2026-10-09T22:57:45.026065+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-09T22:59:25.906916+09:00\", \"renewal_count\": 1, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-09T22:59:36.306709+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  }
+}

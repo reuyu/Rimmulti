@@ -1,0 +1,183 @@
+{
+  "schemaVersion": "we-operator-handoff-control-flow/v1",
+  "generated_at": "2026-10-12T18:11:00+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f",
+  "wp_id": "WP_ENGINE_GATE05_R30_HANDOFF",
+  "wp_revision": "GATE05-R30-HANDOFF",
+  "envelope": 33,
+  "defect_fixed": "ENGINE-G05-R29-HANDOFF-20261012-01",
+  "target_source": "scratch/WorkerBridgeMod/Source/WorkerBridge.cs",
+  "control_flow_table": [
+    {
+      "step_order": 1,
+      "phase": "BOOTSTRAP_PARENT_INSTALL",
+      "authorized_span_id": "BOOTSTRAP_HANDOFF_AFTER_PURE_ADMISSION",
+      "span_range": [7573, 10738],
+      "operation": "WorkerBridgeComponent.TryInstallOperatorStartupConfig(pairAdmission.pair.ParentReceipt)",
+      "custody_state": {
+        "installed_active_receipt": "_activeAdmissionReceipt = pairAdmission.pair.ParentReceipt",
+        "installed_active_config": "_activeStartupConfig = pairAdmission.pair.ParentReceipt.Snapshot",
+        "sealed_state": "_operatorConfigSealed = true"
+      },
+      "invariants": [
+        "Receipt installed into component before controller GameObject instantiation.",
+        "Preserves legacy parent seal semantics and role path selection.",
+        "If install fails, logs error and returns fail-closed without attaching controller."
+      ],
+      "failure_handling": "FAIL_CLOSED_RETURN"
+    },
+    {
+      "step_order": 2,
+      "phase": "OWNER_BOUND_PENDING_HANDOFF_REGISTRATION",
+      "authorized_span_id": "BOOTSTRAP_HANDOFF_AFTER_PURE_ADMISSION",
+      "span_range": [7573, 10738],
+      "operation": "bool handoffSet = WorkerBridgeComponent.SetPendingStartupHandoff(go, pairAdmission.pair.ParentReceipt, pairAdmission.pair)",
+      "custody_state": {
+        "_pendingHandoffOwner": "go (strictly reference-bound fresh GameObject)",
+        "_pendingParentReceipt": "pairAdmission.pair.ParentReceipt",
+        "_pendingPairSnapshot": "pairAdmission.pair"
+      },
+      "invariants": [
+        "Atomic registration inside lock(_startupHandoffLock).",
+        "Overwriting rejection: if _pendingHandoffOwner != null || _pendingParentReceipt != null || _pendingPairSnapshot != null, returns false.",
+        "Cohort identity verification: ReferenceEquals(parentReceipt, _activeAdmissionReceipt) == true.",
+        "Pair parent linkage verification: ReferenceEquals(pairSnapshot.ParentReceipt, parentReceipt) == true.",
+        "Snapshot consistency verification: ReferenceEquals(parentReceipt.Snapshot, _activeStartupConfig) == true.",
+        "Returns bool; bootstrap explicitly validates handoffSet return value."
+      ],
+      "failure_handling": "If handoffSet is false: Log.Error, UnityEngine.Object.Destroy(go), return fail-closed without calling AddComponent."
+    },
+    {
+      "step_order": 3,
+      "phase": "CONTROLLER_COMPONENT_ATTACHMENT",
+      "authorized_span_id": "BOOTSTRAP_HANDOFF_AFTER_PURE_ADMISSION",
+      "span_range": [7573, 10738],
+      "operation": "try { go.AddComponent<WorkerBridgeComponent>(); } catch (Exception ex) { ... }",
+      "custody_state": {
+        "attachment_target": "go",
+        "lifecycle_trigger": "Unity invokes Awake() synchronously on WorkerBridgeComponent instance"
+      },
+      "invariants": [
+        "AddComponent is protected by try/catch.",
+        "If an exception occurs during component addition or Awake, catch block executes.",
+        "Catch block calls WorkerBridgeComponent.CleanupOwnerPendingHandoff(go).",
+        "Catch block calls UnityEngine.Object.Destroy(go) and returns fail-closed."
+      ],
+      "failure_handling": "FAIL_CLOSED_CLEANUP_AND_DESTROY"
+    },
+    {
+      "step_order": 4,
+      "phase": "AWAKE_EXACT_RECEIPT_OWNER_ONE_USE_ACQUISITION",
+      "authorized_span_id": "PRIVATE_OWNER_HANDOFF_STATE",
+      "span_range": [27899, 31441],
+      "operation": "TryAcquirePendingStartupHandoff(out var acquiredPair)",
+      "custody_state": {
+        "instance_mode": "_isPairRequiredMode = true (set if owner matches)",
+        "instance_profile": "_privatePairProfile = acquiredPair (transferred to private instance field)",
+        "static_pending_state": "_pendingHandoffOwner = null, _pendingParentReceipt = null, _pendingPairSnapshot = null (consumed)"
+      },
+      "invariants": [
+        "Inside lock(_startupHandoffLock), verifies object.ReferenceEquals(_pendingHandoffOwner, this.gameObject).",
+        "If owner matches, marks this instance as _isPairRequiredMode = true.",
+        "Verifies full cohort equality: ReferenceEquals(_pendingParentReceipt, _activeAdmissionReceipt), ReferenceEquals(_pendingPairSnapshot.ParentReceipt, _pendingParentReceipt), ReferenceEquals(_pendingParentReceipt.Snapshot, _activeStartupConfig).",
+        "On match: sets acquired = _pendingPairSnapshot and zeroes all three static pending slots atomically.",
+        "One-use consumption guaranteed: no second caller can retrieve the profile.",
+        "If cohort mismatch occurs for registered owner: zeroes pending slots, returns false with _isPairRequiredMode = true."
+      ],
+      "failure_handling": "Returns false; _privatePairProfile remains null; _isPairRequiredMode is true."
+    },
+    {
+      "step_order": 5,
+      "phase": "AWAKE_PAIR_REQUIRED_EARLY_FAILURE_GATE",
+      "authorized_span_id": "AWAKE_EARLY_PAIR_GATE",
+      "span_range": [36246, 36980],
+      "operation": "if (_isPairRequiredMode && _privatePairProfile == null) { Log.Error(...); return; }",
+      "custody_state": {
+        "early_termination": "Immediate return from Awake() before any side effects"
+      },
+      "invariants": [
+        "Evaluated immediately after TryAcquirePendingStartupHandoff.",
+        "If pair mode was required but acquisition failed (or profile is null), aborts immediately.",
+        "DebugSettings.fastEcology = false is NOT executed.",
+        "Application.logMessageReceived callback is NOT subscribed.",
+        "ContentProfileProvider expected package policy is NOT configured.",
+        "TcpListener and listenerThread are NOT created or started.",
+        "Legacy mode has _isPairRequiredMode == false, allowing normal legacy execution."
+      ],
+      "failure_handling": "EARLY_ABORT_ZERO_SIDE_EFFECTS"
+    },
+    {
+      "step_order": 6,
+      "phase": "PAIR_MODE_LAUNCH_HOLD_ENFORCEMENT",
+      "authorized_span_id": "PAIR_MODE_LAUNCH_HOLD",
+      "span_range": [114917, 115124],
+      "operation": "if (_isPairRequiredMode || _privatePairProfile != null) return \"ERROR: M05_NOT_ADMITTED: Child launch execution withheld in R30.\";",
+      "custody_state": {
+        "execution_boundary": "M05 launch execution unconditionally blocked in R30"
+      },
+      "invariants": [
+        "Checks _isPairRequiredMode || _privatePairProfile != null.",
+        "Even if _privatePairProfile was cleared to null, _isPairRequiredMode remains true.",
+        "Prevents any fall-through into legacy or child Process.Start execution.",
+        "Returns exact error string: 'ERROR: M05_NOT_ADMITTED: Child launch execution withheld in R30.'",
+        "ValidatorTask state, RevokeReadiness, and receiver remain intact."
+      ],
+      "failure_handling": "UNCONDITIONAL_LAUNCH_HOLD"
+    },
+    {
+      "step_order": 7,
+      "phase": "OWNER_SCOPED_DESTROY_CLEANUP",
+      "authorized_span_id": "OWNER_SCOPED_DESTROY",
+      "span_range": [181895, 182006],
+      "operation": "_privatePairProfile = null; CleanupOwnerPendingHandoff(this.gameObject);",
+      "custody_state": {
+        "instance_profile": "_privatePairProfile = null",
+        "pending_cleanup": "Cleared only if object.ReferenceEquals(_pendingHandoffOwner, this.gameObject)"
+      },
+      "invariants": [
+        "Instance profile cleared on OnDestroy.",
+        "CleanupOwnerPendingHandoff verifies object.ReferenceEquals(_pendingHandoffOwner, owner).",
+        "Unrelated instance destroying will NOT clear another owner's live pending handoff.",
+        "_isPairRequiredMode instance flag is NOT cleared, preserving launch hold semantics."
+      ],
+      "failure_handling": "OWNER_BOUND_SCOPED_CLEANUP"
+    }
+  ],
+  "source_only_scenario_analysis": {
+    "scenario_wrong_owner_acquisition": {
+      "precondition": "Pending handoff registered for GameObject A. GameObject B executes Awake().",
+      "behavior": "Inside TryAcquirePendingStartupHandoff, ReferenceEquals(_pendingHandoffOwner, B) evaluates to false.",
+      "outcome": "B receives acquired = null, B._isPairRequiredMode remains false. Pending handoff for A is untouched and remains live."
+    },
+    "scenario_second_consume_attempt": {
+      "precondition": "GameObject A successfully acquires handoff. Subsequently, A or another component calls TryAcquirePendingStartupHandoff.",
+      "behavior": "_pendingHandoffOwner was set to null during the first successful acquisition.",
+      "outcome": "Second call observes _pendingHandoffOwner == null, returning false and acquired = null."
+    },
+    "scenario_overwrite_live_pending_handoff": {
+      "precondition": "Pending handoff already registered for GameObject A. Bootstrap or external caller invokes SetPendingStartupHandoff for GameObject C.",
+      "behavior": "SetPendingStartupHandoff checks _pendingHandoffOwner != null || _pendingParentReceipt != null || _pendingPairSnapshot != null.",
+      "outcome": "Immediate return false. Existing pending handoff for A is preserved without mutation."
+    },
+    "scenario_cohort_mismatched_pair_registration": {
+      "precondition": "SetPendingStartupHandoff invoked with forged pair whose ParentReceipt does not ReferenceEquals _activeAdmissionReceipt.",
+      "behavior": "ReferenceEquals(parentReceipt, _activeAdmissionReceipt) evaluates to false.",
+      "outcome": "Returns false. Bootstrap destroys GameObject and aborts."
+    },
+    "scenario_profile_null_launch_attempt": {
+      "precondition": "Pair mode was activated (_isPairRequiredMode = true), but _privatePairProfile is null (either failed acquire or post-cleanup).",
+      "behavior": "HandleLaunchOperatorValidator evaluates _isPairRequiredMode || _privatePairProfile != null.",
+      "outcome": "Condition evaluates to true due to _isPairRequiredMode. Returns 'ERROR: M05_NOT_ADMITTED: Child launch execution withheld in R30.'. No launch permitted."
+    },
+    "scenario_unrelated_ondestroy_cleanup": {
+      "precondition": "Pending handoff registered for GameObject A. Unrelated GameObject D is destroyed, invoking CleanupOwnerPendingHandoff(D).",
+      "behavior": "CleanupOwnerPendingHandoff checks ReferenceEquals(_pendingHandoffOwner, D).",
+      "outcome": "Condition evaluates to false. Static pending handoff for GameObject A is untouched."
+    }
+  },
+  "unity_equality_and_reference_semantics": {
+    "reference_equals_custody": "object.ReferenceEquals strictly inspects CLR managed pointer identity, bypassing Unity's overloaded == and != operators.",
+    "unity_destroyed_state_distinction": "Unity's == null operator evaluates true if native C++ peer is destroyed. ReferenceEquals ensures custody is bound strictly to the allocated managed instance without false-positive matching against other destroyed or null proxies.",
+    "limitations": "In-engine native Unity lifecycle, multithreaded GameObject lifecycle timing, and native Process execution remain UNTESTED in this pure static source repair."
+  }
+}

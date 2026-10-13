@@ -1,0 +1,260 @@
+{
+  "schema_version": 1,
+  "result_id": "SOL-GATE05-E2-20261007-8f58fb41362f4934a502e604a65f5896",
+  "producer": "Sol / Independent QA",
+  "thread_id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+  "attempt_id": "SOL-GATE05-E2-RESTART-8f58fb41362f4934a502e604a65f5896",
+  "wp_id": "WP_QA_ENGINE_GATE05",
+  "wp_revision": "Gate05",
+  "completed": true,
+  "completed_at": "2026-10-07T18:36:08.310291+09:00",
+  "verdict": "FAIL",
+  "execution_classification": "completed scoped independent review; partial required adversarial runtime coverage",
+  "report": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Semantic_Authority_Gate_05.md",
+    "sha256": "48F3A5CFF0F14B268A0D569A504239199030A1C87187CD8A1F07F2AD6BD56682",
+    "bytes": 17954
+  },
+  "raw_summary": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\Evidence\\independent-summary.json",
+    "sha256": "4361541E1754825BB7AA1B0F0EF38E306676BCB859E4C8A0F54E9E8F2C522CB7",
+    "bytes": 12314
+  },
+  "static_review": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\Evidence\\static-review.json",
+    "sha256": "FEBDFB14328D33A1DAB6778DD79DADB7DA02A9BFBD969DF99C31E2C4772544FD",
+    "bytes": 4196
+  },
+  "freeze_before": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\freeze-before.json",
+    "sha256": "528B6F9B86535911ACEC96FF53377BCE77CC8E2692EEF1DE4A5977001785A285",
+    "bytes": 866414
+  },
+  "freeze_after": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\freeze-after.json",
+    "sha256": "528B6F9B86535911ACEC96FF53377BCE77CC8E2692EEF1DE4A5977001785A285",
+    "bytes": 866414
+  },
+  "freeze_comparison": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\freeze-comparison.json",
+    "sha256": "612FC0E2A7361EF19F91427C2AA775568FB893DCA5D6F844FDFBC0961391E12D",
+    "bytes": 243
+  },
+  "evidence_manifest": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\qa-evidence-manifest.json",
+    "sha256": "504F3D59AF10151B4CE6A8F373A88C639DA76945B6BA5F67239DE88021CBC864",
+    "bytes": 90295
+  },
+  "evidence_root": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007",
+  "candidate": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+    "sha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+    "mvid": "12bb9237-1b3e-4b20-89a7-69ad729861e1",
+    "source_pdb_evidence": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\SOL_RECOVERY_IDENTITY_20261007.json",
+      "sha256": "137F105C63EEC4F807DE81EB12EA89EEF7A012B1ABFA27E84A32F3EED249EDA4",
+      "bytes": 13384
+    },
+    "preserved": true,
+    "freeze_files": 2255,
+    "changes": 0
+  },
+  "supported_scope": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\Evidence\\supported-scope.json",
+    "sha256": "7FD590ED15EF2F4099A00D8172AB3DD4776B3D933DA2EECA023805ADD3A35990",
+    "bytes": 1463
+  },
+  "unsupported_limits": [
+    "forged result/receipt and unrelated-PID bypass reproduction",
+    "stale/replay/wrong-generation/context mutation matrix",
+    "substituted expected task or supported saved-field corruption reproduction",
+    "gameplay core/mod/DLC/Def drift injection",
+    "concurrent staged-byte change/crash/power-loss campaign",
+    "nonempty reservation/complete job-driver graph and all-mod integration"
+  ],
+  "scope_restriction": "defensive review scope limits on bypass/vulnerability reproduction; missing cases are UNTESTED, never PASS",
+  "static_blockers": [
+    "G05-S01",
+    "G05-S02"
+  ],
+  "defect_recommendations": {
+    "QA-ENGINE-002": "OPEN / independent issuer-content contract FAIL",
+    "QA-ENGINE-006": "retain OPEN; positive saved-byte equality confirmed, required adversarial closure evidence incomplete"
+  },
+  "runtime_runs": {
+    "positive_chain": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\Evidence\\native-positive-results.json",
+      "sha256": "DBE77ACB0F603001278675A686127AC9F8D9BAE323D87AAF15B0EECA276E21ED",
+      "status": "POSITIVE_CHAIN_COMPLETED",
+      "checks": 52,
+      "checks_passed": 52,
+      "processes": [
+        {
+          "name": "SimulatorA",
+          "pid": 32908,
+          "started_at": "2026-10-07T18:09:06.798401+09:00",
+          "ended_at": "2026-10-07T18:09:50.406438+09:00",
+          "exit_code": 0,
+          "native_content_fingerprint": "7DDC73B75FA4AA1B00177EA4C73380A7E233A972968D5C0BF91852CD1C2F8D40",
+          "profile": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\Profiles\\Run02SimulatorA"
+        },
+        {
+          "name": "ValidatorA",
+          "pid": 28380,
+          "started_at": "2026-10-07T18:09:28.573473+09:00",
+          "ended_at": "2026-10-07T18:09:48.836993+09:00",
+          "exit_code": 0,
+          "native_content_fingerprint": "7DDC73B75FA4AA1B00177EA4C73380A7E233A972968D5C0BF91852CD1C2F8D40",
+          "profile": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\Profiles\\Run02ValidatorA"
+        },
+        {
+          "name": "SimulatorB",
+          "pid": 19364,
+          "started_at": "2026-10-07T18:09:50.501108+09:00",
+          "ended_at": "2026-10-07T18:10:33.495882+09:00",
+          "exit_code": 0,
+          "native_content_fingerprint": "7DDC73B75FA4AA1B00177EA4C73380A7E233A972968D5C0BF91852CD1C2F8D40",
+          "profile": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\Profiles\\Run02SimulatorB"
+        },
+        {
+          "name": "ValidatorB",
+          "pid": 26780,
+          "started_at": "2026-10-07T18:10:11.700615+09:00",
+          "ended_at": "2026-10-07T18:10:31.906951+09:00",
+          "exit_code": 0,
+          "native_content_fingerprint": "7DDC73B75FA4AA1B00177EA4C73380A7E233A972968D5C0BF91852CD1C2F8D40",
+          "profile": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\Profiles\\Run02ValidatorB"
+        },
+        {
+          "name": "SimulatorC",
+          "pid": 29804,
+          "started_at": "2026-10-07T18:10:33.586890+09:00",
+          "ended_at": "2026-10-07T18:10:52.787555+09:00",
+          "exit_code": 0,
+          "native_content_fingerprint": "7DDC73B75FA4AA1B00177EA4C73380A7E233A972968D5C0BF91852CD1C2F8D40",
+          "profile": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\Profiles\\Run02SimulatorC"
+        }
+      ]
+    },
+    "input_hygiene": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\Evidence\\InputHygiene\\native-positive-results.json",
+      "sha256": "AB55D60C74346ADDD8A1C86FE60EBF10D22538D1FA5613AF4B6EDFBA0C7454BB",
+      "status": "INPUT_HYGIENE_CONTROLS_COMPLETED",
+      "checks": 14,
+      "checks_passed": 14,
+      "processes": [
+        {
+          "name": "InputHygiene",
+          "pid": 12628,
+          "started_at": "2026-10-07T18:14:38.850787+09:00",
+          "ended_at": "2026-10-07T18:14:58.627533+09:00",
+          "exit_code": 0,
+          "native_content_fingerprint": "7DDC73B75FA4AA1B00177EA4C73380A7E233A972968D5C0BF91852CD1C2F8D40",
+          "profile": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\Profiles\\Run02InputHygiene"
+        }
+      ]
+    },
+    "normal_replacement": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\Evidence\\ReplacementWithoutLockUnsandboxed\\native-positive-results.json",
+      "sha256": "F26AA7262AB5A776F8690F9F02C6245A1CA133C965A63B767B4F8F682A235950",
+      "status": "NORMAL_REPLACEMENT_COMPLETED",
+      "checks": 38,
+      "checks_passed": 38,
+      "processes": [
+        {
+          "name": "EscalatedReplacementNoLock",
+          "pid": 22928,
+          "started_at": "2026-10-07T18:20:33.055071+09:00",
+          "ended_at": "2026-10-07T18:21:35.270300+09:00",
+          "exit_code": 0,
+          "native_content_fingerprint": "7DDC73B75FA4AA1B00177EA4C73380A7E233A972968D5C0BF91852CD1C2F8D40",
+          "profile": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\Profiles\\Run02EscalatedReplacementNoLock"
+        },
+        {
+          "name": "ValidatorEscalatedNoLock1",
+          "pid": 31992,
+          "started_at": "2026-10-07T18:20:52.806291+09:00",
+          "ended_at": "2026-10-07T18:21:11.819564+09:00",
+          "exit_code": 0,
+          "native_content_fingerprint": "7DDC73B75FA4AA1B00177EA4C73380A7E233A972968D5C0BF91852CD1C2F8D40",
+          "profile": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\Profiles\\Run02ValidatorEscalatedNoLock1"
+        },
+        {
+          "name": "ValidatorEscalatedNoLock2",
+          "pid": 9176,
+          "started_at": "2026-10-07T18:21:14.800928+09:00",
+          "ended_at": "2026-10-07T18:21:33.645734+09:00",
+          "exit_code": 0,
+          "native_content_fingerprint": "7DDC73B75FA4AA1B00177EA4C73380A7E233A972968D5C0BF91852CD1C2F8D40",
+          "profile": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\Profiles\\Run02ValidatorEscalatedNoLock2"
+        }
+      ]
+    },
+    "lock_and_recovery": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\Evidence\\ReplacementUnsandboxed\\native-positive-results.json",
+      "sha256": "1CC746FEAED6B99825C4BF252A0CE3F13C74AFE4F47FCC8F0CD57B582BC440B5",
+      "status": "REPLACEMENT_CONTROLS_COMPLETED",
+      "checks": 60,
+      "checks_passed": 60,
+      "processes": [
+        {
+          "name": "EscalatedReplacement",
+          "pid": 19180,
+          "started_at": "2026-10-07T18:22:28.800948+09:00",
+          "ended_at": "2026-10-07T18:24:00.018109+09:00",
+          "exit_code": 0,
+          "native_content_fingerprint": "7DDC73B75FA4AA1B00177EA4C73380A7E233A972968D5C0BF91852CD1C2F8D40",
+          "profile": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\Profiles\\Run02EscalatedReplacement"
+        },
+        {
+          "name": "ValidatorEscalatedReplacementFirst",
+          "pid": 20736,
+          "started_at": "2026-10-07T18:22:48.823863+09:00",
+          "ended_at": "2026-10-07T18:23:07.886476+09:00",
+          "exit_code": 0,
+          "native_content_fingerprint": "7DDC73B75FA4AA1B00177EA4C73380A7E233A972968D5C0BF91852CD1C2F8D40",
+          "profile": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\Profiles\\Run02ValidatorEscalatedReplacementFirst"
+        },
+        {
+          "name": "ValidatorEscalatedReplacementLocked",
+          "pid": 20416,
+          "started_at": "2026-10-07T18:23:11.056101+09:00",
+          "ended_at": "2026-10-07T18:23:30.429280+09:00",
+          "exit_code": 0,
+          "native_content_fingerprint": "7DDC73B75FA4AA1B00177EA4C73380A7E233A972968D5C0BF91852CD1C2F8D40",
+          "profile": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\Profiles\\Run02ValidatorEscalatedReplacementLocked"
+        },
+        {
+          "name": "ValidatorEscalatedReplacementSuccess",
+          "pid": 7544,
+          "started_at": "2026-10-07T18:23:38.993338+09:00",
+          "ended_at": "2026-10-07T18:23:58.389940+09:00",
+          "exit_code": 0,
+          "native_content_fingerprint": "7DDC73B75FA4AA1B00177EA4C73380A7E233A972968D5C0BF91852CD1C2F8D40",
+          "profile": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\Profiles\\Run02ValidatorEscalatedReplacementSuccess"
+        }
+      ]
+    }
+  },
+  "cleanup": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\Evidence\\cleanup.json",
+    "sha256": "DB903AD99A37B256A7D9D7772675F1E344AF92F3B4F2B70E0258787804C9CCD7",
+    "bytes": 7801
+  },
+  "original_ack_preserved": true,
+  "master_governance_modified": false,
+  "delivery": {
+    "status": "SENT_TOOL_CONFIRMED",
+    "recipient_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "host_id": "local",
+    "attempts": 1,
+    "direct_user_authorization_message_id": "01a11588-b7db-7752-b11c-0651aed9a300",
+    "proof_sidecar": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\SOL_GATE05_E2_REPORT_DELIVERY_20261007.json",
+    "reported_at_utc": "2026-10-07 09:39:38 UTC",
+    "tool_success": true,
+    "master_read_or_ack_separately_observed": false,
+    "proof_sha256": "100C52753E42B228257CC0BFD15C3A3451C411496435899F265E905EEC3BFC80"
+  },
+  "wp_adversarial_runtime_coverage_complete": false,
+  "completion_basis": "Completed scoped independent FAIL report; required adversarial cases explicitly UNTESTED, not a completed full WP battery"
+}

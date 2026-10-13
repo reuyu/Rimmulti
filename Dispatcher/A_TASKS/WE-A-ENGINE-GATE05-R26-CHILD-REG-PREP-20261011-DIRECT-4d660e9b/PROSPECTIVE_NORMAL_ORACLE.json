@@ -1,0 +1,122 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R26-CHILD-REG-PREP-20261011-DIRECT-4d660e9b",
+  "generated_at_utc": "2026-10-11T14:50:00Z",
+  "test_suite_name": "WarEconomy.WorkerBridge.UnitTests.ChildRegistrationAndLaunchPlanTests",
+  "purity": "PURE_NORMAL_UNIT_NO_PROCESS_START_NO_GLOBAL_MUTATION",
+  "test_cases": [
+    {
+      "test_id": "TC01_REGISTER_VALID_READ_ONLY_CHILD_SUCCESS",
+      "description": "Registering a valid, operator-issued READ_ONLY child receipt with matching executable and profile succeeds.",
+      "inputs": {
+        "parent_role": "SIMULATION",
+        "parent_exe_path": "C:\\Games\\RimWorld\\RimWorldWin64.exe",
+        "parent_exe_sha": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "parent_profile": "CONTENT_PROFILE_FP_NORM_V1",
+        "child_role": "READ_ONLY",
+        "child_exe_path": "C:\\Games\\RimWorld\\RimWorldWin64.exe",
+        "child_exe_sha": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "child_profile": "CONTENT_PROFILE_FP_NORM_V1",
+        "child_config_id": "CFG_CHILD_VALIDATOR_001"
+      },
+      "expected_outcome": {
+        "registration_result": true,
+        "active_child_receipt_non_null": true,
+        "active_child_config_id": "CFG_CHILD_VALIDATOR_001",
+        "active_child_role": "READ_ONLY"
+      }
+    },
+    {
+      "test_id": "TC02_REJECT_SIMULATION_ROLE_AS_CHILD",
+      "description": "Attempting to register a receipt with role SIMULATION as a child validator receipt is strictly rejected.",
+      "inputs": {
+        "parent_role": "SIMULATION",
+        "child_role": "SIMULATION",
+        "child_config_id": "CFG_ILLEGAL_SIM_CHILD_002"
+      },
+      "expected_outcome": {
+        "registration_result": false,
+        "active_child_receipt_non_null": false
+      }
+    },
+    {
+      "test_id": "TC03_REJECT_EXECUTABLE_SHA_MISMATCH",
+      "description": "Attempting to register a child receipt whose executable SHA256 differs from the parent worker config is rejected.",
+      "inputs": {
+        "parent_exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "child_exe_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+      },
+      "expected_outcome": {
+        "registration_result": false,
+        "active_child_receipt_non_null": false
+      }
+    },
+    {
+      "test_id": "TC04_REJECT_CONTENT_PROFILE_MISMATCH",
+      "description": "Attempting to register a child receipt whose content profile fingerprint differs from the parent worker config is rejected.",
+      "inputs": {
+        "parent_profile": "CONTENT_PROFILE_ALPHA",
+        "child_profile": "CONTENT_PROFILE_BETA"
+      },
+      "expected_outcome": {
+        "registration_result": false,
+        "active_child_receipt_non_null": false
+      }
+    },
+    {
+      "test_id": "TC05_REJECT_OVERWRITE_WHILE_ACTIVE",
+      "description": "Attempting to register a second child receipt while an active child receipt is already registered returns false.",
+      "inputs": {
+        "first_registration_role": "READ_ONLY",
+        "second_registration_role": "READ_ONLY"
+      },
+      "expected_outcome": {
+        "first_registration_result": true,
+        "second_registration_result": false,
+        "active_child_receipt_retains_first": true
+      }
+    },
+    {
+      "test_id": "TC06_REVOKE_CLEARS_ACTIVE_CHILD",
+      "description": "Calling RevokeChildValidatorReceipt() clears the slot to null, allowing subsequent registration.",
+      "inputs": {},
+      "expected_outcome": {
+        "post_revoke_active_child_null": true,
+        "subsequent_registration_result": true
+      }
+    },
+    {
+      "test_id": "TC07_LAUNCH_PLAN_BUILDER_TOKEN_VECTOR",
+      "description": "ChildValidatorLaunchPlanBuilder produces an exact, closed token vector containing the 7 mandatory startup keys, -savedatafolder, and task arguments.",
+      "inputs": {
+        "child_config_path": "C:\\RimWorld\\Config\\child_operator_config.json",
+        "child_config_sha": "C0FFEE00112233445566778899AABBCCDDEEFF00112233445566778899AABBCC",
+        "child_origin_id": "ORIGIN_OPERATOR_ROOT",
+        "child_launch_plan_id": "PLAN_TASK_001_LAUNCH",
+        "child_config_id": "CFG_CHILD_001",
+        "child_role": "READ_ONLY",
+        "child_capability": "LOCAL_SANDBOXED",
+        "child_validator_userdata": "C:\\RimWorld\\ValidatorUserData",
+        "child_validator_cwd": "C:\\RimWorld\\ValidatorCwd",
+        "task_file_path": "C:\\RimWorld\\Tasks\\task_001.json",
+        "task_nonce": "NONCE_UNGUESSABLE_12345"
+      },
+      "expected_outcome": {
+        "is_valid": true,
+        "plan_non_null": true,
+        "expected_tokens": [
+          "-operatorconfig=\"C:\\RimWorld\\Config\\child_operator_config.json\"",
+          "-operatorconfigsha=\"C0FFEE00112233445566778899AABBCCDDEEFF00112233445566778899AABBCC\"",
+          "-operatororigin=\"ORIGIN_OPERATOR_ROOT\"",
+          "-operatorlaunchplan=\"PLAN_TASK_001_LAUNCH\"",
+          "-operatorconfigid=\"CFG_CHILD_001\"",
+          "-operatorrole=\"READ_ONLY\"",
+          "-operatorcapability=\"LOCAL_SANDBOXED\"",
+          "-savedatafolder=\"C:\\RimWorld\\ValidatorUserData\"",
+          "--task-file=\"C:\\RimWorld\\Tasks\\task_001.json\"",
+          "--nonce=\"NONCE_UNGUESSABLE_12345\""
+        ],
+        "expected_working_directory": "C:\\RimWorld\\ValidatorCwd"
+      }
+    }
+  ]
+}

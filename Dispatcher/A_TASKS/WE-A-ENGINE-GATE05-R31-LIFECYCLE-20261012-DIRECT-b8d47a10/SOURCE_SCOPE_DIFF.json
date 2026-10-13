@@ -1,0 +1,229 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10",
+  "wp_id": "WP_ENGINE_GATE05_R31_LIFECYCLE",
+  "envelope": 34,
+  "source_file": "scratch/WorkerBridgeMod/Source/WorkerBridge.cs",
+  "original_file": {
+    "bytes": 268703,
+    "sha256": "B1F8C00D1DF6E8E797EAC8E5A7F7FB462679BA06E79096D5C558C687BD413311"
+  },
+  "modified_file": {
+    "bytes": 272607,
+    "sha256": "CB1EE0A55512A6F578B2D7ABCACBE36B62327D9F3E585B6E4221725B6DADFFDB"
+  },
+  "authorized_spans": [
+    {
+      "span_id": "BOOTSTRAP_MODE_AND_HANDOFF",
+      "orig_range": [
+        7573,
+        9856
+      ],
+      "orig_bytes": 2283,
+      "orig_sha256": "ECB17D1969888A82A071FF96FD078938D3080C532FB342431DFB445DD01FE75D",
+      "new_range": [
+        7573,
+        10738
+      ],
+      "new_bytes": 3165,
+      "new_sha256": "72B7F700CC8E2F05B4074791A80CEFE78CF5A180BE4A5EB1184D224496F9E5E4"
+    },
+    {
+      "span_id": "PRIVATE_DURABLE_MODE_OWNER_CONSUMED_STATE",
+      "orig_range": [
+        27017,
+        31076
+      ],
+      "orig_bytes": 4059,
+      "orig_sha256": "DCFB555BFA9042AEBCE99D15ECADAD3131D8B2E63675772B70E983E37CEA9C44",
+      "new_range": [
+        27899,
+        31441
+      ],
+      "new_bytes": 3542,
+      "new_sha256": "68134BB837603A7B5C52CC93336B51E8202F16362C2AEABB2751B6D5E2001D88"
+    },
+    {
+      "span_id": "AWAKE_REQUIRED_MODE_ENTRY",
+      "orig_range": [
+        35881,
+        36536
+      ],
+      "orig_bytes": 655,
+      "orig_sha256": "175529E44C78109F5D70FFC75A29C0D56114B9A673A7AF248BDE4E7D676D4EEF",
+      "new_range": [
+        36246,
+        36980
+      ],
+      "new_bytes": 734,
+      "new_sha256": "358552DC136AA50D336522359647EA0067641283A62C531C467A12147056E39B"
+    },
+    {
+      "span_id": "AWAKE_SUCCESS_AND_FAILURE_TAIL",
+      "orig_range": [
+        38470,
+        38677
+      ],
+      "orig_bytes": 207,
+      "orig_sha256": "F1A3C4404E61C77B561D72A7C5A574DF09C04A037ACC06494C0F334FA1C05DA7",
+      "new_range": [
+        38914,
+        40388
+      ],
+      "new_bytes": 1474,
+      "new_sha256": "7C9CF7BD0706146A0E38188AA05CE094838F195762A1D60D4BB5FFEE47A88E17"
+    },
+    {
+      "span_id": "UPDATE_REQUIRED_MODE_EARLY_GUARD",
+      "orig_range": [
+        39122,
+        39122
+      ],
+      "orig_bytes": 0,
+      "orig_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "new_range": [
+        40833,
+        41144
+      ],
+      "new_bytes": 311,
+      "new_sha256": "E57B51849013117CFA5B70C292BDF916604241F502777259D515344C0C7C6B3A"
+    },
+    {
+      "span_id": "PAIR_MODE_LAUNCH_HOLD",
+      "orig_range": [
+        114473,
+        114691
+      ],
+      "orig_bytes": 218,
+      "orig_sha256": "8B1B8DFEB7467C43B78B32C87BF1BEC82D03BC2F888EED4984959B4FDB012117",
+      "new_range": [
+        116495,
+        116776
+      ],
+      "new_bytes": 281,
+      "new_sha256": "073B129D38FBC87E966D7A10DCC793C9E064E66223DE34625CAA091F09D77158"
+    },
+    {
+      "span_id": "OWNER_SCOPED_DESTROY_WHOLE_METHOD",
+      "orig_range": [
+        181437,
+        181801
+      ],
+      "orig_bytes": 364,
+      "orig_sha256": "2A00871ECC3555B376F5DBB27AC7DEFBCA9B661D01D411E3A08A0B424F295A2C",
+      "new_range": [
+        183522,
+        184000
+      ],
+      "new_bytes": 478,
+      "new_sha256": "9770CE9787F306206DA03C02DAE3413C8663245CAE92F9B70FDE12365E586ADF"
+    }
+  ],
+  "outside_segments_verification": [
+    {
+      "segment_index": 0,
+      "orig_range": [
+        0,
+        7573
+      ],
+      "new_range": [
+        0,
+        7573
+      ],
+      "bytes": 7573,
+      "status": "VERIFIED_BIT_EXACT"
+    },
+    {
+      "segment_index": 1,
+      "orig_range": [
+        9856,
+        27017
+      ],
+      "new_range": [
+        10738,
+        27899
+      ],
+      "bytes": 17161,
+      "status": "VERIFIED_BIT_EXACT"
+    },
+    {
+      "segment_index": 2,
+      "orig_range": [
+        31076,
+        35881
+      ],
+      "new_range": [
+        31441,
+        36246
+      ],
+      "bytes": 4805,
+      "status": "VERIFIED_BIT_EXACT"
+    },
+    {
+      "segment_index": 3,
+      "orig_range": [
+        36536,
+        38470
+      ],
+      "new_range": [
+        36980,
+        38914
+      ],
+      "bytes": 1934,
+      "status": "VERIFIED_BIT_EXACT"
+    },
+    {
+      "segment_index": 4,
+      "orig_range": [
+        38677,
+        39122
+      ],
+      "new_range": [
+        40388,
+        40833
+      ],
+      "bytes": 445,
+      "status": "VERIFIED_BIT_EXACT"
+    },
+    {
+      "segment_index": 5,
+      "orig_range": [
+        39122,
+        114473
+      ],
+      "new_range": [
+        41144,
+        116495
+      ],
+      "bytes": 75351,
+      "status": "VERIFIED_BIT_EXACT"
+    },
+    {
+      "segment_index": 6,
+      "orig_range": [
+        114691,
+        181437
+      ],
+      "new_range": [
+        116776,
+        183522
+      ],
+      "bytes": 66746,
+      "status": "VERIFIED_BIT_EXACT"
+    },
+    {
+      "segment_index": 7,
+      "orig_range": [
+        181801,
+        268703
+      ],
+      "new_range": [
+        184000,
+        272607
+      ],
+      "bytes": 86902,
+      "status": "VERIFIED_BIT_EXACT"
+    }
+  ],
+  "outside_bytes_total": 260917,
+  "all_outside_segments_identical": true
+}

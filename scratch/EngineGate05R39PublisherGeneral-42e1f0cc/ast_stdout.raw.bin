@@ -1,0 +1,169 @@
+{
+  "verdict": "AST_PARSED_SUCCESS",
+  "target_file": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+  "bytes": 46246,
+  "sha256": "242FB7399C118A1BD3DE588BA99671616ED41E614369142F006E93B889C64242",
+  "lines": 955,
+  "ast_node_count": 4872,
+  "function_count": 19,
+  "functions": [
+    {
+      "name": "is_leap_year",
+      "lineno": 170,
+      "end_lineno": 171
+    },
+    {
+      "name": "validate_iso_utc_date",
+      "lineno": 174,
+      "end_lineno": 205
+    },
+    {
+      "name": "compute_sha256_bytes",
+      "lineno": 208,
+      "end_lineno": 209
+    },
+    {
+      "name": "compute_sha256_file",
+      "lineno": 212,
+      "end_lineno": 214
+    },
+    {
+      "name": "check_no_duplicate_keys",
+      "lineno": 217,
+      "end_lineno": 225
+    },
+    {
+      "name": "check_opaque_non_blank",
+      "lineno": 228,
+      "end_lineno": 247
+    },
+    {
+      "name": "identity_boundary_trim",
+      "lineno": 250,
+      "end_lineno": 285
+    },
+    {
+      "name": "structural_ascii_strip",
+      "lineno": 288,
+      "end_lineno": 298
+    },
+    {
+      "name": "structural_ascii_upper",
+      "lineno": 301,
+      "end_lineno": 314
+    },
+    {
+      "name": "check_supported_local_dos_path",
+      "lineno": 317,
+      "end_lineno": 363
+    },
+    {
+      "name": "verify_path_ancestry",
+      "lineno": 366,
+      "end_lineno": 440
+    },
+    {
+      "name": "read_once_file_and_stat",
+      "lineno": 443,
+      "end_lineno": 484
+    },
+    {
+      "name": "is_exact_64_ascii_hex_no_trim",
+      "lineno": 487,
+      "end_lineno": 490
+    },
+    {
+      "name": "is_64_ascii_hex_trimmed",
+      "lineno": 493,
+      "end_lineno": 499
+    },
+    {
+      "name": "validate_declaration",
+      "lineno": 502,
+      "end_lineno": 551
+    },
+    {
+      "name": "validate_config",
+      "lineno": 554,
+      "end_lineno": 689
+    },
+    {
+      "name": "publish_pair",
+      "lineno": 692,
+      "end_lineno": 883
+    },
+    {
+      "name": "main",
+      "lineno": 886,
+      "end_lineno": 951
+    },
+    {
+      "name": "check_stat",
+      "lineno": 387,
+      "end_lineno": 400
+    }
+  ],
+  "class_count": 0,
+  "classes": [],
+  "import_count": 8,
+  "imports": [
+    {
+      "module": null,
+      "names": [
+        "os"
+      ],
+      "lineno": 84
+    },
+    {
+      "module": null,
+      "names": [
+        "re"
+      ],
+      "lineno": 85
+    },
+    {
+      "module": null,
+      "names": [
+        "sys"
+      ],
+      "lineno": 86
+    },
+    {
+      "module": null,
+      "names": [
+        "json"
+      ],
+      "lineno": 87
+    },
+    {
+      "module": null,
+      "names": [
+        "stat"
+      ],
+      "lineno": 88
+    },
+    {
+      "module": null,
+      "names": [
+        "hashlib"
+      ],
+      "lineno": 89
+    },
+    {
+      "module": "datetime",
+      "names": [
+        "datetime",
+        "timezone"
+      ],
+      "lineno": 90
+    },
+    {
+      "module": "collections",
+      "names": [
+        "OrderedDict"
+      ],
+      "lineno": 91
+    }
+  ],
+  "parsed_at_utc": "2026-10-13T20:47:01.255564+00:00"
+}

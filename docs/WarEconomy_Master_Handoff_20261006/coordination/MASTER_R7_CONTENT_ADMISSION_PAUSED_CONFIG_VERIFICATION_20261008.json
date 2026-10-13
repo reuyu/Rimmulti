@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-08T23:09:07.282061+09:00",
+  "status": "PAUSED60MIN_ACTUAL_VERIFIED",
+  "automation_actual_config": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "PAUSED",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791468412264
+  },
+  "tool_proof": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R7_CONTENT_ADMISSION_MONITOR_PAUSE_TOOL_20261008.json",
+  "tool_sha256": "ECCFFADE3DFEFB646D92E48A77E707D1379EEE7D462413AA31D8526D5A2B3DE3",
+  "terminal_review": {
+    "dispatch_id": "WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-20261008-DIRECT-8524bf02",
+    "wp_id": "WP_ENGINE_GATE05_R7_CONTENT_ADMISSION",
+    "wp_revision": "GATE05-R7-CONTENT-ADMISSION",
+    "result_id": "WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-RESULT-01",
+    "completion_sha256": "F943BC8AB96542641D93CBD7F7B640B5E5D7A6CE8A2F509E13E3046FEC3CADD8",
+    "master_verdict": "CONTENT_ADMISSION_LINKAGE_CREDITED_REVISION_REQUIRED_FULL_GATE_E2_NOT_RELEASED",
+    "frozen_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-20261008-DIRECT-8524bf02\\MASTER_GATE05_R7_CONTENT_ADMISSION_REVIEW_FREEZE_MANIFEST.json",
+    "frozen_manifest_sha256": "DE49655C30976C254F59B022C7DD768806B90EB6F566055936B05EAFFE3F13CF",
+    "frozen_files": 110,
+    "master_review_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R7_CONTENT_ADMISSION_E1_20261008.md",
+    "master_review_sha256": "CC13ABC326BBF4F805AD6BC27CF1FA38DF84B6911EE6AB5DD8DB9C8C71AD2F49",
+    "scoped_admission": "EXACT_SELECTED_DEBUG_DEFENSIVE_STATIC_AND_POSITIVE_PURE_CODEC_HELPER_QA_ONLY",
+    "managed_dependency_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\MASTER_R5_MANAGED_QA_DEPENDENCIES_MANIFEST.json",
+    "managed_dependency_manifest_sha256": "7FCB91EEB8489365E4304AFFDC601CCD0CCE2259365FD861A785AD658C183481",
+    "at": "2026-10-08T23:06:23.610682+09:00",
+    "type": "A_R7_CONTENT_ADMISSION_E1_MASTER_REVIEW",
+    "verification_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_GATE05_R7_CONTENT_ADMISSION_E1_VERIFICATION_20261008.json",
+    "verification_sha256": "7256378A1C102611890B160C3BE83252AD1C6A1E5B2DA7B865F3ED15CFFA78C5",
+    "runtime_e2_released": false,
+    "closure_changed": false,
+    "foundation": "HOLD"
+  },
+  "sol_direct_continues": true,
+  "new_a_wp": "NOT_SENT_PENDING_QA"
+}

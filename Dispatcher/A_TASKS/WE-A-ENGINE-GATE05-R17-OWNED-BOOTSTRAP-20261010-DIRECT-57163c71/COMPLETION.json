@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "producer": "A",
+  "report_kind": "E1",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R17-OWNED-BOOTSTRAP-20261010-DIRECT-57163c71",
+  "wp_id": "WP_ENGINE_GATE05_R17_OWNED_BOOTSTRAP",
+  "wp_revision": "GATE05-R17-OWNED-BOOTSTRAP",
+  "result_id": "WE-A-ENGINE-GATE05-R17-OWNED-BOOTSTRAP-RESULT-01",
+  "run_id": "918d16b8547b41bb8bd4e84c5a41e7e1",
+  "status": "COMPLETED",
+  "completed_at": "2026-10-10T03:40:00+09:00",
+  "summary": "WP_ENGINE_GATE05_R17_OWNED_BOOTSTRAP / GATE05-R17-OWNED-BOOTSTRAP implementation completed and developer E1 verification recorded. Adopted Master R16 review corrections rejecting causal overclaims (missing assets are readiness gaps; historical 5s kill cause UNKNOWN). Modified WorkerBridge.cs only while strictly preserving EngineHostCensus.cs and WorkerBridge.csproj immutability. Implemented typed immutable operator startup configuration (OperatorStartupConfig and OperatorStartupConfigSnapshot under schema WE-OPERATOR-BOOTSTRAP-V1), private snapshot binding in WorkerBridgeComponent, isolated userdata routing in SafeSaveDataFolderPath, and package policy declaration wiring (ContentProfileProvider.ConfigureExpectedPackagePolicy) in Awake before profile evaluation. Implemented mandatory executable admission and process identity binding helpers (ExecutableAdmissionHelper.VerifyAdmittedExecutable, VerifyProcessIdentity) strictly checking file existence, 64-hex SHA-256 match, MainModule path, PID, StartTimeUtc, and role fail-closed, with self-PID self-validation prohibited. Updated HandleLaunchOperatorValidator and BindOperatorLaunchedProcess to derive executable and child options strictly from private config, rejecting arbitrary caller path or argv nominations. Implemented ValidatorResultExtensions.ToRedactedJson preventing public secret leakage of capabilityNonce and channelSecretToken. Executed positive pure normal managed runner controls (Gate05R17BootstrapRunner, 5/5 PASS, numeric exit 0) across 3 isolated process directories (run_default, run_en_us, run_de_de) with zero native/Awake/game/Process.Start/Bindlive/adverse calls. Bound PE MVIDs for Debug (d5a25e43-...) and Release (ab67e9ac-...) candidates. Steam installed DLL incident remains UNKNOWN OPEN INCIDENT. Full Gate05 and Foundation remain HOLD pending independent Sol QA review and Master governance disposition.",
+  "e1_verdict": "IMPLEMENTED_SCOPED_NORMAL_HELPER_PASS_NATIVE_UNTESTED",
+  "limitations": [
+    "STATIC_MANAGED_NORMAL_EVIDENCE_ONLY: Verification conducted strictly via isolated positive pure normal managed runner controls (5/5 PASS, exit 0) with Master-approved frozen dependencies.",
+    "NATIVE_ACTUAL_COMPUTATION_PROHIBITED_AND_UNTESTED: In-engine, game runtime, native execution, Awake event loops, and operator promotion were strictly prohibited and not executed.",
+    "PROCESS_START_AND_LIVE_BINDING_UNTESTED: Process.Start and live process binding were not executed in this WP; helper logic and verification functions verified fail-closed.",
+    "NO_CAUSAL_OVERCLAIMS: Missing assets observed are readiness gaps; historical R4 5-second kill cause remains UNKNOWN.",
+    "INSTALLED_DLL_INCIDENT_OPEN: Steam installed DLL discrepancy against archive baseline remains an UNKNOWN OPEN INCIDENT, preserved unmodified.",
+    "FINAL_DOMAIN_AUTHORITY_REMAINS_DEDICATED_SERVER: Dedicated Server remains final Domain Authority; Engine/Client produces bounded simulation proposals.",
+    "FOUNDATION_HOLD: Foundation remains HOLD pending Pipeline E2 PASS."
+  ],
+  "artifacts": [
+    {
+      "role": "implementation_report",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_EngineHost_Semantic_Authority_Gate_05_R17.md",
+      "sha256": "DB282E0964EC38FA5A12C2DBFB2D5BA6FA514D91E62E7EE2ABD3F7214BFDF258",
+      "size": 10812,
+      "mvid": ""
+    },
+    {
+      "role": "release_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R17_OWNED_BOOTSTRAP.json",
+      "sha256": "228D2D767F86B8CDAC0EFACDB71E1312E5081733349623492D66A9D71556E5D7",
+      "size": 5914,
+      "mvid": ""
+    },
+    {
+      "role": "harness",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R17OwnedBootstrap\\Harness\\Program.cs",
+      "sha256": "B826421B82E39F6928388CA384E291EEFABE372E1F72237F5C97D1887DEF723E",
+      "size": 22496,
+      "mvid": ""
+    },
+    {
+      "role": "harness_project",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R17OwnedBootstrap\\Harness\\Gate05R17BootstrapRunner.csproj",
+      "sha256": "AE7D2FC455556D265CE7C33698FEE72816CD5982AF120B262339D56DD35BB202",
+      "size": 1656,
+      "mvid": ""
+    },
+    {
+      "role": "harness_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R17OwnedBootstrap\\Harness\\bin\\Debug\\net472\\Gate05R17BootstrapRunner.exe",
+      "sha256": "FF72A8D2572E67E738491DAF749E234A7E5439354E30A4F9C4234AAB4DAB95CB",
+      "size": 27136,
+      "mvid": ""
+    },
+    {
+      "role": "harness_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R17OwnedBootstrap\\Harness\\bin\\Debug\\net472\\Gate05R17BootstrapRunner.pdb",
+      "sha256": "50171952A8FB2BC90506C3222E3E353E1F64D45DDD0A74F2C473B66866F49C6A",
+      "size": 6632,
+      "mvid": ""
+    },
+    {
+      "role": "results",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R17OwnedBootstrap\\run_default\\RESULTS.json",
+      "sha256": "30B713324928D221833CE1387FD74077B0E2C2079A907D36A0F63090AA11D8D9",
+      "size": 4101,
+      "mvid": ""
+    },
+    {
+      "role": "api_ledger",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R17OwnedBootstrap\\run_default\\API_LEDGER.json",
+      "sha256": "1DC3B0DEE18F0337DB9F906E5F0BC32B80A9DAF61494872C983108313D2488EA",
+      "size": 479,
+      "mvid": ""
+    },
+    {
+      "role": "candidate_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "F7946FED1F4FB896DD8F46B7C253C4DB24E6CF2AA6D9C0528CD5B59CD05DBAA3",
+      "size": 268800,
+      "mvid": "d5a25e43-567c-414f-b7bd-4d4aa0b47050"
+    },
+    {
+      "role": "pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "F0EE8BF22E66B43EF5B37AE5BD7E905D09A64AE40FE2AEAA8FCA71A2C50BB28F",
+      "size": 65700,
+      "mvid": ""
+    },
+    {
+      "role": "alternate_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "3CC5BB71A5A25F091677A57B69493522AC4FC0BC20B3562926F8942455D11591",
+      "size": 254976,
+      "mvid": "ab67e9ac-0c30-4718-98a3-cbfe9af31c87"
+    },
+    {
+      "role": "alternate_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "CE42762A3029C030646E1CB4635F053F932D0A2C66B5309CCDDDA17C28AC8E30",
+      "size": 48376,
+      "mvid": ""
+    },
+    {
+      "role": "deployed_assembly",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "F7946FED1F4FB896DD8F46B7C253C4DB24E6CF2AA6D9C0528CD5B59CD05DBAA3",
+      "size": 268800,
+      "mvid": "d5a25e43-567c-414f-b7bd-4d4aa0b47050"
+    },
+    {
+      "role": "deployed_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "F0EE8BF22E66B43EF5B37AE5BD7E905D09A64AE40FE2AEAA8FCA71A2C50BB28F",
+      "size": 65700,
+      "mvid": ""
+    },
+    {
+      "role": "source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "EE63FB50ED84C1E0313EF7E2F160F38B0ABEA7E96A59CEBC30506FC9C7F338A9",
+      "size": 177533,
+      "mvid": ""
+    },
+    {
+      "role": "source_census",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "size": 170135,
+      "mvid": ""
+    },
+    {
+      "role": "source_csproj",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "size": 1774,
+      "mvid": ""
+    },
+    {
+      "role": "engine_freeze_before",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R17-OWNED-BOOTSTRAP-20261010-DIRECT-57163c71\\ENGINE_FREEZE_BEFORE.json",
+      "sha256": "A476223A9E42F488F23E2D6D9292B8407B037C82102A0D8B5AA042A8724BBEC3",
+      "size": 2319,
+      "mvid": ""
+    },
+    {
+      "role": "engine_freeze_after",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R17-OWNED-BOOTSTRAP-20261010-DIRECT-57163c71\\ENGINE_FREEZE_AFTER.json",
+      "sha256": "0215FB585A81D2CA30E6148B08401662EAB1FA71848CC1349F1DCA01C0308DF7",
+      "size": 2270,
+      "mvid": ""
+    },
+    {
+      "role": "work_log",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R17-OWNED-BOOTSTRAP-20261010-DIRECT-57163c71\\A_WORK_LOG.md",
+      "sha256": "085BA36EE69242A6246DD8CE4D77651086EE75133955C2BF4D82C54EF91E968B",
+      "size": 6980,
+      "mvid": ""
+    },
+    {
+      "role": "recovery_ack",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R17-OWNED-BOOTSTRAP-20261010-DIRECT-57163c71\\A_RECOVERY_ACK.md",
+      "sha256": "AD89A81D0B445CDBDC2FD00C856A42163709E12BD0664E241AFC2A84F23AB76C",
+      "size": 2893,
+      "mvid": ""
+    },
+    {
+      "role": "ack_json",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R17-OWNED-BOOTSTRAP-20261010-DIRECT-57163c71\\ACK.json",
+      "sha256": "74431C1F6E407758D2B8BE9F524B7A2E7D7426BEBE64C3E0D941051B4B0DCFF9",
+      "size": 1287,
+      "mvid": ""
+    }
+  ]
+}

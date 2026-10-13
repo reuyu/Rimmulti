@@ -1,0 +1,199 @@
+{
+  "WorkOrder": "WP-PROD-TRANSACTION-PIPELINE-01-REV4",
+  "TimestampUtc": "2026-10-03T13:02:03.6447558Z",
+  "OverallSuccess": true,
+  "TotalTests": 27,
+  "PassedTests": 27,
+  "FailedTests": 0,
+  "Results": [
+    {
+      "Id": 1,
+      "Name": "Input_1eMinus29VsMinus1eMinus29",
+      "Success": true,
+      "Details": "1e-29 ({\"n\":0.00000000000000000000000000001}) != -1e-29 ({\"n\":-0.00000000000000000000000000001}); collision detected cleanly.",
+      "DurationMs": 138
+    },
+    {
+      "Id": 2,
+      "Name": "Input_1eMinus40VsZero",
+      "Success": true,
+      "Details": "1e-40 ({\"n\":0.0000000000000000000000000000000000000001}) != 0.0 ({\"n\":0}); preserved distinction without lossy rounding.",
+      "DurationMs": 36
+    },
+    {
+      "Id": 3,
+      "Name": "Input_Both29PlusPrecisionPairsFromSol",
+      "Success": true,
+      "Details": "Both 29+ precision pairs preserved full fidelity without lossy rounding.",
+      "DurationMs": 0
+    },
+    {
+      "Id": 4,
+      "Name": "Input_InvalidSurrogateInJsonPropertyNames",
+      "Success": true,
+      "Details": "All 3 invalid surrogate property names rejected with INVALID_REQUEST; 0 durable rows.",
+      "DurationMs": 29
+    },
+    {
+      "Id": 5,
+      "Name": "Input_DuplicateKeysRootNestedArrayObject",
+      "Success": true,
+      "Details": "Root, nested, and array-object duplicate keys all strictly rejected with INVALID_REQUEST.",
+      "DurationMs": 31
+    },
+    {
+      "Id": 6,
+      "Name": "Input_SecondJsonRootTrailingNonWhitespace",
+      "Success": true,
+      "Details": "Multiple JSON roots rejected with INVALID_REQUEST.",
+      "DurationMs": 32
+    },
+    {
+      "Id": 7,
+      "Name": "Input_NormalKeySortingArrayOrderEquivalentNumbers",
+      "Success": true,
+      "Details": "Keys sorted Ordinal, array order preserved, 1==1.0==1e0, 0==-0==0.0, |exp|>308 rejected.",
+      "DurationMs": 0
+    },
+    {
+      "Id": 8,
+      "Name": "Schema_LowercaseCheckLiteralSemanticMutation",
+      "Success": true,
+      "Details": "Lowercase CHECK literal semantic mutation rejected by signature and constraint verifiers.",
+      "DurationMs": 59
+    },
+    {
+      "Id": 9,
+      "Name": "Schema_PartialIndexWhereSeqLessThanZero",
+      "Success": true,
+      "Details": "Partial index IX_PublicationEvents_Stream_Seq (WHERE Seq<0) rejected by partial flag and signature check.",
+      "DurationMs": 51
+    },
+    {
+      "Id": 10,
+      "Name": "Schema_NoOpLookalikeTrigger",
+      "Success": true,
+      "Details": "Lookalike 'WHEN 0' no-op trigger rejected by trigger verification and startup canary.",
+      "DurationMs": 34
+    },
+    {
+      "Id": 11,
+      "Name": "Schema_RollbackOnlyCanonicalInsertCanary",
+      "Success": true,
+      "Details": "Canaries verified COMMITTED/ABORTED inserts, trigger aborts, and rolled back cleanly leaving data unchanged.",
+      "DurationMs": 39
+    },
+    {
+      "Id": 12,
+      "Name": "Consistency_AllNineRev3FalseReadyMutationsMustFail",
+      "Success": true,
+      "Details": "All 9 REV3 false-READY mutations rejected with explicit consistency errors.",
+      "DurationMs": 373
+    },
+    {
+      "Id": 13,
+      "Name": "Consistency_DuplicateLogicalReceiptEventWithValidHashesMustFail",
+      "Success": true,
+      "Details": "Duplicate receipt with internally valid hash rejected by cardinality and per-op checks.",
+      "DurationMs": 53
+    },
+    {
+      "Id": 14,
+      "Name": "Consistency_OrphanDirectionBothParentToChildAndChildToParent",
+      "Success": true,
+      "Details": "Bi-directional orphan verification rejected both parent->child and child->parent discrepancies.",
+      "DurationMs": 70
+    },
+    {
+      "Id": 15,
+      "Name": "Shutdown_1205FullQueue",
+      "Success": true,
+      "Details": "1,205 requests: 1001 committed, 204 backpressure rejected, 0 orphaned.",
+      "DurationMs": 16405
+    },
+    {
+      "Id": 16,
+      "Name": "Shutdown_ObserverBarrierBeyondCallerTimeout",
+      "Success": true,
+      "Details": "Shutdown with in-flight barrier completed with typed outcome: UNKNOWN_QUERY_REQUIRED.",
+      "DurationMs": 545
+    },
+    {
+      "Id": 17,
+      "Name": "Shutdown_NativeDbLockBeyondResponseDeadline",
+      "Success": true,
+      "Details": "Native DB lock beyond busy timeout returned retryable STORAGE_BUSY_RETRYABLE.",
+      "DurationMs": 5229
+    },
+    {
+      "Id": 18,
+      "Name": "Shutdown_CommitCutsAfterCasAuditPrecommitWal",
+      "Success": true,
+      "Details": "Committed cut converges to ALREADY_COMMITTED and returns stored derivative ID on retry.",
+      "DurationMs": 36
+    },
+    {
+      "Id": 19,
+      "Name": "Shutdown_NoWorkerRepositoryActivityAfterFinalDisposeReturns",
+      "Success": true,
+      "Details": "Coordinator Dispose joined worker thread; IsDisposed=true, zero post-dispose activity.",
+      "DurationMs": 23
+    },
+    {
+      "Id": 20,
+      "Name": "Shutdown_NormalQuitReturnsOnlyAfterServiceCoordinatorTerminatesAndReadinessFalse",
+      "Success": true,
+      "Details": "PipelineStartupManager.Shutdown() sets readiness false and disposes coordinator cleanly.",
+      "DurationMs": 23
+    },
+    {
+      "Id": 21,
+      "Name": "IDs_AllFourDelimiterUnicodeLongCollisionPairsCoexist",
+      "Success": true,
+      "Details": "All 4 collision pairs coexist independently without delimiter collision; exact retries verified.",
+      "DurationMs": 145
+    },
+    {
+      "Id": 22,
+      "Name": "Regression_ProcessCasSameIdSameStream",
+      "Success": true,
+      "Details": "CAS 1-winner arbitration, exact same-ID retry, and monotonic stream sequencing verified.",
+      "DurationMs": 73
+    },
+    {
+      "Id": 23,
+      "Name": "Regression_HardKillAtomicity",
+      "Success": true,
+      "Details": "Uncommitted transactional mutation rolled back cleanly; consistency graph intact.",
+      "DurationMs": 34
+    },
+    {
+      "Id": 24,
+      "Name": "Regression_StorageTypingAndStoreIncarnation",
+      "Success": true,
+      "Details": "Blank incarnation yields INVALID_REQUEST; mismatched incarnation yields INCARNATION_MISMATCH.",
+      "DurationMs": 32
+    },
+    {
+      "Id": 25,
+      "Name": "Regression_WalFullDurabilityAndPragmas",
+      "Success": true,
+      "Details": "Durability asserted: journal_mode=WAL, synchronous=FULL (2), foreign_keys=1, recursive_triggers=1.",
+      "DurationMs": 32
+    },
+    {
+      "Id": 26,
+      "Name": "Regression_LegacyV1ToV4FailClosed",
+      "Success": true,
+      "Details": "Legacy database v4 fail closed with LEGACY_SCHEMA_REQUIRES_OFFLINE_MIGRATION_OR_RESET.",
+      "DurationMs": 64
+    },
+    {
+      "Id": 27,
+      "Name": "Regression_NoConsumersNoGameplayNoMaterial",
+      "Success": true,
+      "Details": "Confirmed 7 pipeline tables only; no generic consumers, cursors, ACKs, or gameplay mutations.",
+      "DurationMs": 35
+    }
+  ]
+}

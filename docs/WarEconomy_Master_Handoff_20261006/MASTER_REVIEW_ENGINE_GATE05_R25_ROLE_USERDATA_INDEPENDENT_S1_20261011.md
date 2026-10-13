@@ -1,0 +1,21 @@
+# R25 독립 QA S1 — Master 판정
+
+2026-10-11T23:03:40.775802+09:00;SOL-GATE05-R25-ROLE_USERDATA-INDEPENDENT-S1-20261011-d7ea2f5481e84f7eb9d0f718220793ec. **ACCEPTED_R25_SOURCE_NORMAL_SELECTOR_TYPED_COPY_PURITY_PASS_RAW_BYTE_FAIL_PRESERVED_QA_ORACLE_REVISION_REQUIRED_NATIVE_UNTESTED**.
+
+Original Sol actualcompleted/idle157와88evidence/13220protected/COMPLETION SHA30CD695EA556B6AA0D0CB6E2A8F647AD2DE31254ECE603E7755184E492A54505/report-index-immutableACKbinding를 직접 대조했다. 실제finalQA build1/exit0/3413bytesstdout/stderr0;en-USPID1604/de-DEPID28968 각32PASS4FAIL/36assertions/OSexit1. 원래FAIL8건과exit1은 보존한다. Mastercandidate/buildexecution0. Frozen99/SHAFB436534FB8189D1BF20B2F888FAC2FDECCBBCB1C688CB6BD0ADCF7FEC9A0057/DebugA9C31DB0EEEBDCFDF851C0160899A9E092579D8E333C030F34845A63FAAAB6E7/MVID5553a632-0557-433f-8840-bb12875cf577/PDB1B13F39A917F7C96EE736C1470B6F385B0534CFABF2174E4B86191950DB2458D/current9/source-PDB4of4와기존QA일치. 새candidate생성/수정/재빌드없음.
+
+Master1824typedrows(912each)를expected/actual/type/objectkey-order/arrayorder로직접재대조해0mismatch를확인했다. Fourcanonicalnormalcases2roles×PLAINOPAQUE/ToSnapshot4/SelectUserData8 each;caller14before/immediatelyafter순수성,전체snapshot15/policyrecord-order-digest/13redaction/originalUTCString/codepoints,callerownedit와detacheddecl-recordedit 후전체originalgraph 유지,Worker/Validatorliteral선택beforeafter가관측범위PASS다. Helper source3spans/fourfixedsegments credit retained;Safegetter/Awake연결은STATICONLY. Sourceguard/null/unknown/invalid/default/rejection/native0.
+
+Actual each157prepostpins/10allmanagedloadedSHA+Master독립PEMVID/21recursivepathset+SHA-size/4crosscultureobservationbytespairs matched. Fullcompiler/runrawexit1 결속됨. Ledger32directstage-helpergroups+12groupedreads=44events는internalprofiler가아니다. Syntheticpaths/exe/content/PIDfixtures는nativeauthority가아니다. Wholegame/profile/context/controlplane/Genroot/CLI/frontend/cwd운영은OPEN.
+
+8rawFAIL 모두 _FULL13_UTC_BYTES_INITIAL. 사전PythonprettyJSONexpected는LF,actualWindowsJsonNET은CRLF,each22linebreaks/byte차이22. Master가actualobs와originaloracle를직접읽어원문values/key-order/type가같고CRLF→LF진단만으로기대문자열이같음을확인했다. 이것은진단이며FAIL을PASS로바꾸지않는다. Full13byteoracle assertion PASS는미충족/새S2필요. Candidate역할선택이나데이터손실오류는관측되지않았다. S1원문oracle/source/runner/raw변경과후속재빌드/추가run0.
+
+## Controlling QA oracle correction
+
+한정된Windows .NETFramework pretty-redaction oracle에CRLF가필요하다는기술적정정을채택한다. 이것은canonicalcodec/wireformat/모든플랫폼의newline규칙채택이아니다. Localcandidate ToRedactedJson은JsonConvertFormatting.Indented를쓴다. 실제frozenNewtonsoftfileversion13.0.3.27908/product13.0.3+0a2e291...를파일메타데이터로확인했다. [JsonConvert13.0.3primarysource](https://github.com/JamesNK/Newtonsoft.Json/blob/13.0.3/Src/Newtonsoft.Json/JsonConvert.cs)는StringWriter를만들고 [JsonTextWriter13.0.3primarysource](https://github.com/JamesNK/Newtonsoft.Json/blob/13.0.3/Src/Newtonsoft.Json/JsonTextWriter.cs)의indent는writer.NewLine을쓴다. [Microsoft.NETFrameworkTextWriterreference](https://github.com/microsoft/referencesource/blob/main/mscorlib/system/io/textwriter.cs)의초기줄바꿈은CRLF다. 이소스와현재Windows환경/원시관측을근거로한한정된inference이며전체실행DLL의모든IL을분석했다는주장은아니다.
+
+다음S2는새WP/delivery/result/oracle/prospectivepins로정확히같은frozenR25와4normalinputs/typedexpectations을유지하면서 prettyexpectedtext생성의formattingCRLF만correct한다. Expected를S1actualoutput에서copy하지않고기존prospectiveorderedexpected13graph에서독립생성한다. 비교전actualnormalize나relaxedwhitespacecompare금지; rawstring/UTF8bytes exact comparison 그대로유지. S1실패files는모두immutable보호한다. NewQA-owned sourceclone동일logic/hash를새directory에복사하고finalbuild1/twofreshcultures 허용;이전PASS재사용/Productionbuildmodify0. 新S2 unexpectednormalFAIL도원문보존/no self-fix-rerun.
+
+QA-G05-R25-ORACLE-NEWLINE-20261011-01 OPEN. FreshS2byteproof후Master가좁은QAdefect정정과role-rootscope진척을판정한다. A후속implementation NOT_SENTpendingS2;A코드에newline맞춤변경을요구하지않는다. 기존hourlyPAUSED유지/Sol idle→approvedS2직접전달/완료자동보고,사용자continue불필요. E1PASS→E2/fullGateclosure승격없음. Engine002006/Pipeline007/schema/G-Q1/PlayerGlobalphysicalsplitOPEN/FoundationHOLD/nativeE2NOTRELEASED. HistoricalR19/R21/R23narrowCLOSED retained.
+
+QAoldmetadatabaselineschema KeyError와Mastercp949출력실패는읽기/metadata만정정됐고candidatefailure가아니다. MicrosoftAPI문서URL접근실패후실제primaryreferencesource로근거대조. ProofC:\Users\user\Desktop\RimMulti\docs\WarEconomy_Master_Handoff_20261006\coordination\MASTER_SOL_R25_ROLE_USERDATA_INDEPENDENT_COMPLETION_VERIFICATION_20261011.json.

@@ -1,0 +1,46 @@
+{
+  "at": "2026-10-13T12:22:15.138846+09:00",
+  "resume_id": "SOL-GATE05-R33-RESOURCE-NATIVE-PREP-S1-RESUME-R1-20261013-01",
+  "delivery_id": "SOL-GATE05-R33-RESOURCE-NATIVE-PREP-S1-20261013-01",
+  "result_id": "SOL-GATE05-R33-RESOURCE-NATIVE-PREP-S1-20261013-9c4a33b402fc4af68d5ac55a9c97009c",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:22",
+    "revision": 22,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a13348-3981-7b51-8b6b-a6c65b2a5d5f",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791861733,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "notice": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R33_PREPARATION_METADATA_FINALIZATION_RESUME_R1_20261013.md",
+    "sha256": "2786647AFFB3A6292D95852BD9AADEBF821835AD40EC5BD253B73D4595832043",
+    "bytes": 1790
+  },
+  "send_tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R33_PREP_RESUME_R1_SEND_TOOL_20261013.json",
+    "sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+    "bytes": 149
+  },
+  "status": "SAME_SCOPE_RESUME_SENT_NEW_ACTUAL_ACTIVE_TURN_ACK_PENDING",
+  "partial_old_outputs_immutable": true,
+  "new_candidate_admission": false,
+  "all_candidate_compiler_runner_native_global_adverse": 0
+}

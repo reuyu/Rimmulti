@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-08T14:03:27.172170+09:00",
+  "actual_configuration": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "PAUSED",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791435771716
+  },
+  "configuration_sha256": "207D5355CA139416738E585ACF82068AF4E076D2E5766A62EF073536D83B3077",
+  "source": "automation tool update + persisted read-only config",
+  "reason": "Actual R3 terminal collected/reviewed; independent static QA next",
+  "new_scheduler": false
+}

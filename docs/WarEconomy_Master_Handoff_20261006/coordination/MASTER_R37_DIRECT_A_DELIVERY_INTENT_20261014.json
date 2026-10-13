@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-14T00:57:40.193301+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a",
+  "guard_session": 64707,
+  "TASK": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a\\TASK.json",
+    "sha256": "86359DE9A13981CD024EC7AEF625F92A8C2011DFB9CA3CD47F43B1E301DF6F5D",
+    "bytes": 51836
+  },
+  "actual19452checkerexit0": true,
+  "fresh_idle": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R37_A_FRESH_IDLE_20261014.json",
+    "sha256": "A94C8AD85E0CE3EC47A1A3F456BA0DCACC7A04D28FA592888C4C838677EF6AE6",
+    "bytes": 1369
+  },
+  "ref9matched": true,
+  "own_checker_first_attempt": "Own revision suffix typo asserted before filehash/candidate checks; corrected publisher-final identity and completed actual19452 checker exit0. No candidate error/transmission.",
+  "exact_message": "승인된 R37 작업: C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a\\TASK.json 먼저 읽고 instruction_path의 WP와 구현 계약의 8개 항목을 수행하세요. publisher 한 파일·자체 AST만 허용하며 Engine 빌드/publisher 실행/1.7 전환은 금지입니다. 초기 ACK와 완료 표식은 TASK 지정 경로에 기록하세요.",
+  "SENT": false
+}

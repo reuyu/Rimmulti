@@ -1,0 +1,41 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3",
+  "wp_id": "WP_ENGINE_GATE05_R27_CHILD_CAPTURE",
+  "wp_revision": "GATE05-R27-CHILD-CAPTURE",
+  "envelope": 30,
+  "status": "ACKNOWLEDGED",
+  "task_state": "IN_PROGRESS",
+  "acknowledged_at": "2026-10-12T03:13:00+09:00",
+  "receiver": "Antigravity Development Agent A",
+  "instructions_file": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\INSTRUCTIONS.md",
+  "wp_file": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_ENGINE_GATE05_R27_CHILD_CAPTURE.md",
+  "release_file": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\RELEASE_ENGINE_GATE05_R27_CHILD_CAPTURE_20261011.md",
+  "scope_baseline_file": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_R27_AUTHORIZED_INSERTION_SCOPE.json",
+  "api_correction_file": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R27_CAPTURE_API_NAME_CORRECTION_20261012.md",
+  "scope_policy": "PURE_IMMUTABLE_OPERATOR_CHILD_LAUNCH_INPUTS_CAPTURE_CLASS_ONLY",
+  "scope_boundary": "SINGLE_ZERO_WIDTH_INSERTION_BYTE_166910_IN_WORKERBRIDGE_CS_AND_PROJECT_6_OUTPUTS_ONLY",
+  "permitted_source_edits": [
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs"
+  ],
+  "allowed_mutable_paths": [
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb"
+  ],
+  "fixed_current_files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "bytes": 170135
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    }
+  ]
+}

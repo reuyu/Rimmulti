@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":false,\"wake\":{\"reason\":\"turnCompleted\",\"turnId\":\"01a11bda-0e86-7330-ad00-d21baf5fd5b0\",\"threadId\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\"},\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:47\",\"revision\":47,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"idle\"}},\"latestTurn\":{\"id\":\"01a11bda-0e86-7330-ad00-d21baf5fd5b0\",\"status\":\"completed\",\"error\":null,\"startedAt\":1791468637,\"completedAt\":1791469476,\"durationMs\":838709},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ac7a7a1dc4c87d08c506935f05b5cfa\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ac7a7a1dc4c87d08c506935f05b5cfa\",\"turnId\":\"01a11bda-0e86-7330-ad00-d21baf5fd5b0\",\"phase\":\"final_answer\",\"text\":\"R7 독립 QA를 완료하고 마스터에게 보고했습니다. 정상 codec·admission helper 범위는 PASS이며, 정적 계약 수정과 native 검증은 남아 있습니다. QA 보고서 보호 대상 2,701개 경로를 보존했고, 다음 지시를 기다리겠습니다.\"},\"latestToolMarkerId\":\"exec-776d14e8-37fc-46f3-a0d6-a9350c890019\",\"latestToolMarker\":{\"id\":\"exec-776d14e8-37fc-46f3-a0d6-a9350c890019\",\"turnId\":\"01a11bda-0e86-7330-ad00-d21baf5fd5b0\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

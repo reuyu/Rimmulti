@@ -1,0 +1,76 @@
+    [StaticConstructorOnStartup]
+    public static class WorkerBridgeBootstrapper
+    {
+        static WorkerBridgeBootstrapper()
+        {
+            try
+            {
+                // Gate05-R20: Connected trusted operator startup gate (M01..M03)
+                bool hasConfigArg = GenCommandLine.TryGetCommandLineArg("operatorconfig", out string configPath) && !string.IsNullOrWhiteSpace(configPath);
+                bool hasShaArg = GenCommandLine.TryGetCommandLineArg("operatorconfigsha", out string expectedSha) && !string.IsNullOrWhiteSpace(expectedSha);
+
+                if (!hasConfigArg)
+                {
+                    Log.Warning("[WorkerBridge] No operator startup config provided via '-operatorconfig' (Fail-Closed). Component will NOT attach.");
+                    return;
+                }
+
+                if (!hasShaArg)
+                {
+                    Log.Error("[WorkerBridge] Missing required '-operatorconfigsha' CLI argument for operator config (Fail-Closed). Component will NOT attach.");
+                    return;
+                }
+
+                var descriptor = new OperatorLaunchDescriptor();
+                if (GenCommandLine.TryGetCommandLineArg("operatororigin", out string origin) && !string.IsNullOrWhiteSpace(origin))
+                {
+                    descriptor.originId = origin.Trim();
+                }
+                if (GenCommandLine.TryGetCommandLineArg("operatorlaunchplan", out string plan) && !string.IsNullOrWhiteSpace(plan))
+                {
+                    descriptor.launchPlanId = plan.Trim();
+                }
+                if (GenCommandLine.TryGetCommandLineArg("operatorrole", out string role) && !string.IsNullOrWhiteSpace(role))
+                {
+                    descriptor.expectedRole = role.Trim();
+                }
+                if (GenCommandLine.TryGetCommandLineArg("operatorconfigid", out string cfgId) && !string.IsNullOrWhiteSpace(cfgId))
+                {
+                    descriptor.expectedConfigId = cfgId.Trim();
+                }
+                if (GenCommandLine.TryGetCommandLineArg("operatorcapability", out string cap) && !string.IsNullOrWhiteSpace(cap))
+                {
+                    descriptor.expectedCapabilityBoundary = cap.Trim();
+                }
+                descriptor.expectedConfigPath = configPath.Trim();
+                descriptor.expectedConfigSha256 = expectedSha.Trim();
+
+                var admissionResult = OperatorStartupConfigAdmissionFactory.IssueAdmissionReceipt(configPath, expectedSha, descriptor);
+                if (!admissionResult.isValid || admissionResult.receipt == null)
+                {
+                    Log.Error($"[WorkerBridge] Operator config admission receipt issuance failed (Fail-Closed): {admissionResult.error}. Component will NOT attach.");
+                    return;
+                }
+
+                bool installed = WorkerBridgeComponent.TryInstallOperatorStartupConfig(admissionResult.receipt);
+                if (!installed)
+                {
+                    Log.Error("[WorkerBridge] Failed to install operator startup admission receipt (already installed or sealed). Component will NOT attach.");
+                    return;
+                }
+
+                Log.Message($"[WorkerBridge] Successfully admitted and installed operator startup config from '{configPath}' (Id='{admissionResult.receipt.Snapshot.ConfigId}', Role='{admissionResult.receipt.Snapshot.Role}')");
+
+                Log.Message("[WorkerBridge] StaticConstructorOnStartup fired. Attaching GameObject...");
+                var go = new GameObject("WorkerBridgeController");
+                UnityEngine.Object.DontDestroyOnLoad(go);
+                go.AddComponent<WorkerBridgeComponent>();
+                Log.Message("[WorkerBridge] Controller GameObject attached.");
+            }
+            catch (Exception ex)
+            {
+                Log.Error("[WorkerBridge] Bootstrapper error: " + ex);
+            }
+        }
+    }
+

@@ -1,0 +1,15 @@
+from review_setup import *
+from bootstrap import change
+old=(ROOT/'QA-Tactical-Engine/GATE05-R22-DECLARATION-INDEPENDENT-S1-20261011/finalize_review.py').read_text(encoding='utf-8-sig')
+t=change(old)
+a=t.index("    report=f'''");b=t.index('    REPORT.write_text(report',a)
+t=t[:a]+"    report=(Q/'ReportBody.md.txt').read_text(encoding='utf-8').replace('%%RESULTID%%',ack['result_id']).replace('%%COUNTS%%',json.dumps({k:s[k] for k in ['assertions_per_run','fulltyped_checks','byte_pair_count','binding_count','pins','loads','outputs']},ensure_ascii=False)).replace('%%DEBUG%%',meta[0]['dll_sha256']).replace('%%MVID%%',meta[0]['mvid'])\n"+t[b:]
+t=t.replace('[261,261]','[297,297]').replace("len(scope['five_fixed_ordered_segments'])==5","len(scope['four_fixed_ordered_segments'])==4").replace("scope['five_fixed_ordered_segments']","scope['four_fixed_ordered_segments']")
+t=t.replace('C6F35C842B75B84CD6A6C7A5726A916C1BA30688DACF96E83A1974683BF4B648','3CBA7DE0562397C91ABD1BBF98C6E91423AB5C6B53DDBE9C30077D8DC80F8F0F')
+t=t.replace('currentWorker_onlyfrozenR22','currentWorker_onlyfrozenR23').replace('newR22_normal16receipt','newR23_normal20receipt').replace('descriptor_count5_to7_receipt16_annotations','descriptor_count5_to7_receipt20_annotations').replace('read_only_wrong_producer_results_filename_errors=2','failed_postanalysis_metadata_assertion71_vsactual66=1').replace('wrong_read_paths_created_changed_executed=0','candidate_compiler_rebuild_rerun_after_metadatafailure=0').replace('initialACK_generic_scope_partial_exactWPcontrols=True','initialACK_exact20receipt_scope=True')
+t=t.replace("M01='CLI_TRIM_STATIC_REVISION_REQUIRED'","M01='TARGETED_SOURCE_MAPPING_NORMAL_PRIVATECOPY_EQUIVALENCE_PASS_MASTER_DISPOSITION_PENDING_NATIVECLI_UNTESTED'")
+t=t.replace('receipt_cases=16','receipt_cases=20').replace('normalreceipt_usedClone_andcaller_copy=16','normalreceipt_usedClone_andcaller_copy=20').replace('detached_policy_copy=32','detached_policy_copy=36').replace('fourauthorizedspans_fivefixedsegments_matched','threeauthorizedspans_fourfixedsegments_matched').replace('producer_current18_nonself_match_each','producer_current24_nonself_match_each').replace('producer_manual54_notprofiler','producer_manual66_notprofiler').replace('producerUTC6_FILEleaf_only_qualified','producerUTC8_FILE_PLAINleaf_only_qualified')
+t=t.replace("factory_DATA='SCOPED_NORMAL_DECLARATION_USEDCLONE_FULLGRAPH_PASS'","factory_DATA='SCOPED_NORMAL20_DECLARATION_USEDCLONE_ROLECAP_EQUIVALENCE_FULLGRAPH_PASS'")
+t=t.replace("fourspan_scope=row(Q/'THREE_SPAN_SCOPE_ADMISSION_BEFORE_CALLS.json')","threespan_scope=row(Q/'THREE_SPAN_SCOPE_ADMISSION_BEFORE_CALLS.json'),rolecap_equivalence_binding=row(Q/'NORMAL_ROLECAP_EQUIVALENCE_FULLGRAPH_BINDING.json'),producer_counter_reconciliation=row(Q/'PRODUCER_COUNTER_RECONCILIATION.json')")
+assert not (Q/'finalize_review.py').exists();(Q/'finalize_review.py').write_text(t,encoding='utf-8')
+print('New R23 terminal graph source generated fromread-only previous source;no oldreport/manifest/evidence mutation')

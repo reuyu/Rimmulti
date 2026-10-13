@@ -1,0 +1,24 @@
+[Runner] Starting Gate05 R20 Trusted Startup Pure Runner
+[Runner] Run Directory: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R20TrustedStartup\run_en_us
+[Runner] Culture: en-US
+[Runner] Loaded Candidate: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R20TrustedStartup\Harness\bin\Debug\net472\WarEconomy.WorkerBridge.PoC.dll
+[Runner] Candidate SHA256: 482166A77BF90569626A5CB27D83A4D949BD57DA85BA660F03067C833FB777F0
+[Runner] Candidate MVID: 9e516c44-35c8-49b8-b3ec-f73ec58ba12f
+
+--- TEST 01: 16-ROUTE LOSSLESS MATRIX REGRESSION ---
+[Runner] 16-Route Matrix: 16/16 PASSED
+
+--- TEST 02: ADMISSION RECEIPT ISSUANCE & BOUND PROVENANCE ---
+[Runner] Receipt Issuance Battery: 8/8 PASSED
+
+--- TEST 03: DECLARATION AND RECEIPT DEFENSIVE IMMUTABILITY ---
+
+--- TEST 04: RECEIPT REDACTED JSON REPRESENTATION ---
+
+--- TEST 05: FULLY QUALIFIED WINDOWS PATH HELPER ---
+
+--- TEST 06: VALIDATOR RESULT REDACTION REGRESSION ---
+
+--- TEST 07: CENSUS PACKAGE POLICY CODEC REGRESSION ---
+
+[Runner] FINISHED: Total=7, Passed=7, ExitCode=0

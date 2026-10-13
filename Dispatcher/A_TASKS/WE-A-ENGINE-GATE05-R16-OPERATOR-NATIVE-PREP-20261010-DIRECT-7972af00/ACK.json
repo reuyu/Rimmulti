@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "producer": "A",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00",
+  "wp_id": "WP_ENGINE_GATE05_R16_OPERATOR_NATIVE_PREPARATION",
+  "wp_revision": "GATE05-R16-OPERATOR-NATIVE-PREPARATION",
+  "envelope": 19,
+  "received_at": "2026-10-10T02:44:17+09:00",
+  "status": "ACKNOWLEDGED",
+  "technical_objective": "OPERATOR_NATIVE_PREPARATION",
+  "commitments": {
+    "permission": "READ_ONLY_PREPARATION_NO_PRODUCTION_EDITS_BUILD_EXECUTION",
+    "source_scope": "Zero production code edits, zero builds, zero candidate loading, zero runtime execution",
+    "fixed_engine_paths": "All 9 Engine paths and Census 72547 prefix strictly fixed and immutable",
+    "deliverables": "OPERATOR_AUTHORITY_CALLGRAPH.md, OPERATOR_CONTEXT_MATRIX.json, RUNTIME_READINESS_INVENTORY.json, RUNTIME_READINESS.md, NORMAL_NATIVE_SLICE_PLAN.md, NEXT_IMPLEMENTATION_WRITESET.json, READINESS_GAPS.json",
+    "prohibitions": "No asset copying/installation, no game/native/operator/oldrunner launch, no negative probes, no candidate execution, no self-closure",
+    "authority": "Dedicated Server remains final Domain Authority; Master governs release; Foundation HOLD"
+  }
+}

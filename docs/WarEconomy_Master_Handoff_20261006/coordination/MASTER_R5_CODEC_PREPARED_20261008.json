@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-08T17:36:29.403256+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046",
+  "task_root": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046",
+  "status": "PREPARED_NOT_SENT",
+  "instruction_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\INSTRUCTIONS.md",
+  "wp_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_ENGINE_GATE05_R5_CODEC.md",
+  "approved": true,
+  "preservation_counts": {
+    "archive": 19,
+    "prior": 619,
+    "pipeline": 206,
+    "qa": 1222
+  },
+  "known_installed_incident": "UNCHANGED_OPEN",
+  "runtime_e2_released": false,
+  "monitor": "PAUSED60MIN"
+}

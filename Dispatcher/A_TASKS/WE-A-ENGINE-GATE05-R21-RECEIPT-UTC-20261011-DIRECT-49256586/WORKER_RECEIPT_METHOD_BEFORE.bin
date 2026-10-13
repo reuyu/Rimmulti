@@ -1,0 +1,18 @@
+        public string ToRedactedJson()
+        {
+            var redacted = new
+            {
+                receiptSchemaVersion = ReceiptSchemaVersion,
+                isTrusted = IsTrusted,
+                boundOriginId = BoundOriginId,
+                boundLaunchPlanId = BoundLaunchPlanId,
+                boundConfigId = BoundConfigId,
+                boundRole = BoundRole,
+                boundCapabilityBoundary = BoundCapabilityBoundary,
+                boundConfigPath = BoundConfigPath,
+                boundConfigSha256 = BoundConfigSha256,
+                admittedAtUtc = AdmittedAtUtc,
+                snapshot = Snapshot != null ? JObject.Parse(Snapshot.ToRedactedJson()) : null
+            };
+            return JsonConvert.SerializeObject(redacted, Newtonsoft.Json.Formatting.Indented);
+        }

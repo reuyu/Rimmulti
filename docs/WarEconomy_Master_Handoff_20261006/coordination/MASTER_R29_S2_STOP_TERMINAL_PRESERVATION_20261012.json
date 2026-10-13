@@ -1,0 +1,93 @@
+{
+  "at": "2026-10-12T10:06:46.722855+09:00",
+  "files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S2-20261012\\ACK.json",
+      "sha256": "821A4C4D798394E8F70D1E7AC653BC097F5C5F0DD3510E3F2EBD4C7BC2B90B80",
+      "bytes": 987
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S2-20261012\\ACK_COMPLETION_BINDING.json",
+      "sha256": "6A839BFD93FA0455FC028A53EAA02CC5C189D27B83CDE571F5DD105F6B9195A6",
+      "bytes": 1206
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S2-20261012\\ACK_INITIAL.json",
+      "sha256": "821A4C4D798394E8F70D1E7AC653BC097F5C5F0DD3510E3F2EBD4C7BC2B90B80",
+      "bytes": 987
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S2-20261012\\COMPLETION.json",
+      "sha256": "77A8A7220DAE2E2E8031F04D9F8356691A2913CC174A81E42F767CCB0B69D571",
+      "bytes": 2108
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S2-20261012\\DELIVERY_STATUS.json",
+      "sha256": "3B793017F9FA7711B3D5A86AE8784162CFCF654A999971B8CAE55E1A5922CE02",
+      "bytes": 393
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S2-20261012\\EVIDENCE_MANIFEST.json",
+      "sha256": "683A9D8389DEB085F01AF7C724F29AE1DB41FB4A15D5EC67C85B24C8D76C4B83",
+      "bytes": 2965
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S2-20261012\\finalize_stop.py",
+      "sha256": "21882D84070D028ED1DF25AD8FAA6DE5063CB611404B7A43A73D1BE727098830",
+      "bytes": 6453
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S2-20261012\\RESULT_INDEX.json",
+      "sha256": "18D1EA88B56190E6D17C7EFED00F3038C29BAEFD2627926C56862C76178C79E1",
+      "bytes": 983
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S2-20261012\\RETURN_PENDING.json",
+      "sha256": "33638F3DFA102B2CA907B1979B692C535C6EBE1DBCB7E154D5CFD5D4A1191255",
+      "bytes": 295
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S2-20261012\\RETURN_TOOL_PROOF.json",
+      "sha256": "1BDBDAEDF47B1E073B486C226791B0D58C64465E7AA4F1929F261E843A9CCC8E",
+      "bytes": 149
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S2-20261012\\review_setup.py",
+      "sha256": "4E2A8524C47C936A3B4E02B96E80B53F61A5E472DB1DDE3AA3AE5497286806DA",
+      "bytes": 4774
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S2-20261012\\S2_ACTUAL_EXHAUSTIVE_DIFF.txt",
+      "sha256": "4AE06EE33022CBF302F7B2EE00E829CA9A5F50B0A83845E83E2D1A9434516540",
+      "bytes": 5927
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S2-20261012\\S2_FAILURE_RAW.txt",
+      "sha256": "7E4D4FA548E3DAF2E87147060536E105285CAF59BA7202905F8E7A3EBDCA12D5",
+      "bytes": 1196
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S2-20261012\\S2_REPLACEMENT_PLAN.json",
+      "sha256": "AE3ADB676A3E52091229CDD3576E9486AC37F57E72D9A4CCC0CB9BFC839EAF37",
+      "bytes": 1152
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S2-20261012\\S2_STOP_NOTICE_TOOL_PROOF.json",
+      "sha256": "1BDBDAEDF47B1E073B486C226791B0D58C64465E7AA4F1929F261E843A9CCC8E",
+      "bytes": 149
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S2-20261012\\S2_STOP_RECORD.json",
+      "sha256": "3FDB83853E3441B07D12AE886FE43DA5C8DC6DC4D82C1670A5B490618BC6D3D8",
+      "bytes": 2242
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R29_Startup_Pair_Independent_S2_20261012.md",
+      "sha256": "F9C15DD3D5F8454E194A47CC5958864DB217E227C945E06B1A6491E459B4A834",
+      "bytes": 1958
+    }
+  ],
+  "source_errors_preserved": true,
+  "complete_raw_stream_capture": false,
+  "candidate_compiler_runner": 0
+}

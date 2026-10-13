@@ -1,0 +1,25 @@
+{
+  "at": "2026-10-13T12:30:22.643958+09:00",
+  "delivery": {
+    "delivery_id": "SOL-GATE05-R33-RESOURCE-COMMIT-INDEPENDENT-S1-20261013-01",
+    "wp_id": "WP_QA_ENGINE_GATE05_R33_RESOURCE_COMMIT_INDEPENDENT",
+    "wp_revision": "S1",
+    "wp_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R33_RESOURCE_COMMIT_INDEPENDENT_S1.md",
+    "wp_sha256": "93510A55A610FC62B7B74FB8F5A06B3A0D7E8BF9ED222BED71D2A18B1FA7801C",
+    "qa_root": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-COMMIT-INDEPENDENT-S1-20261013",
+    "report_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R33_Resource_Commit_Independent_S1_20261013.md",
+    "baseline_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R33_INDEPENDENT_QA_PROTECTED_BASELINE_20261013.json",
+    "baseline_sha256": "23202D7DECB3C5E3D0D03286580158D5A4FFBF727125A63C056C6FA777DBFE50",
+    "protected_unique_paths": 17099,
+    "frozen_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5\\MASTER_GATE05_R33_RESOURCE_COMMIT_REVIEW_FREEZE_MANIFEST.json",
+    "frozen_manifest_sha256": "176AC1C3EF7F700BD105699B7A69147977F15ECD51FD9979DF0CF35A0391FC29",
+    "selected_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R33-d19c64a5\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "selected_sha256": "EC01A3B368E385B2EAA35064BBD5EFC3971FCBED7609ADF3CEE8490146241764",
+    "selected_mvid": "adb6cbc8-c4f9-4436-b137-d550d683f493",
+    "delivery_status": "APPROVED_NOT_SENT_WAIT_PREPARATION_TERMINAL_IDLE",
+    "unknown_delivery": false
+  },
+  "Master_candidate_execution": 0,
+  "current_Sol_preparation_active_no_duplicate": true,
+  "guard_session": 91758
+}

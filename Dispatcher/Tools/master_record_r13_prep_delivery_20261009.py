@@ -1,0 +1,21 @@
+from pathlib import Path
+import json,sys,datetime
+R=Path(__file__).resolve().parents[2];H=R/'docs/WarEconomy_Master_Handoff_20261006';Q=H/'coordination';sys.path.insert(0,str(R/'Dispatcher'));import master_check_a_result as ck
+def read(p):return json.loads(p.read_text(encoding='utf-8-sig'))
+def write(p,d):p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+at=datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).isoformat();cp=R/'Dispatcher/MASTER_COMMUNICATION_STATE.json';c=read(cp);op=c['active_operation'];assert op['delivery_status']=='PREPARED_NOT_SENT' and op['guard_session']==32118
+pre=Q/'MASTER_SOL_R13_POLICY_CACHE_LIFECYCLE_PREP_PREDISPATCH_CURRENT_20261009.json';send=Q/'MASTER_SOL_R13_POLICY_CACHE_LIFECYCLE_PREP_SEND_TOOL_20261009.json';post=Q/'MASTER_SOL_R13_POLICY_CACHE_LIFECYCLE_PREP_POSTSEND_20261009.json'
+def content(p):return json.loads(read(p)['content'][0]['text'])
+s=content(post)['polls'][0];assert s['thread']['id']==c['sol_thread_id'] and s['latestTurn']['status']=='inProgress' and s['latestTurn']['id']!='01a11f91-bdee-7ae0-93a4-991c80034899';assert not read(send).get('isError')
+proof=dict(op,at=at,delivery_status='SENT_ACTUAL_TOOL_NEW_ACTIVE_TURN',actual_snapshot=s,ack_status='PENDING',baseline_sha256=ck.digest(Path(op['baseline_path'])),pre_path=str(pre),pre_sha256=ck.digest(pre),send_tool_path=str(send),send_tool_sha256=ck.digest(send),post_path=str(post),post_sha256=ck.digest(post),execution_builds=0,r13_candidate='NOT_REVIEWED',runtime_e2_released=False,closure_changed=False,foundation='HOLD')
+vp=Q/'MASTER_SOL_R13_POLICY_CACHE_LIFECYCLE_PREP_DELIVERY_VERIFICATION_20261009.json';assert not vp.exists();write(vp,proof)
+c.update(active_operation=None,sol_current_wp=op['wp_id'],sol_current_attempt_id=op['delivery_id'],sol_status='R13_READ_ONLY_POLICY_CACHE_LIFECYCLE_PREPARATION_SENT_ACTIVE_ACK_PENDING',last_sol_cursor=s['cursor'],sol_latest_delivery=proof,updated_at=at);write(cp,c)
+sp=H/'DISPATCHER_STATE.json';state=read(sp);state['endpoints']['sol'].update(current_wp=op['wp_id'],current_delivery_id=op['delivery_id'],execution_phase='IN_PROGRESS',actual_turn_id=s['latestTurn']['id'],last_cursor=s['cursor']);state['updated_at']=at;state['deliveries'].append({'delivery_id':op['delivery_id'],'recipient':'Sol','wp_id':op['wp_id'],'wp_revision':'S1','delivery_status':'SENT','status':'ACTIVE_ACK_PENDING','proof':str(vp)});write(sp,state)
+event={'at':at,'event_id':op['delivery_id']+'-ACTUAL_SENT','type':'SOL_R13_PREPARATION_ACTUAL_DIRECT_SENT','proof':str(vp),'proof_sha256':ck.digest(vp),'delivery_id':op['delivery_id'],'actual_turn':s['latestTurn']['id'],'cursor':s['cursor']}
+rp=R/'Dispatcher/MASTER_RECEIPTS.json';receipts=read(rp);assert not any(x.get('event_id')==event['event_id'] for x in receipts['processed_dispatch_events']);receipts['processed_dispatch_events'].append(event);receipts['updated_at']=at;write(rp,receipts)
+for p in [R/'Dispatcher/MASTER_MONITOR_JOURNAL.jsonl',H/'DISPATCH_JOURNAL.jsonl']:
+ with p.open('a',encoding='utf-8') as f:f.write(json.dumps(event)+'\n')
+text=f'\n\n## LOCAL-SOL-R13-CACHE-LIFECYCLE-PREPARATION-SENT — {at}\nOriginal Sol {op["delivery_id"]}/{op["wp_id"]}/S1 actual direct tool SENT/new active turn {s["latestTurn"]["id"]}/cursor84;ACK pending. Frozen R12 reference only;prospective normal policy/cache lifecycle/ownership oracle and complete immutable per-process output inventory criteria. 5901 protected SHA-size matched,baseline SHA {proof["baseline_sha256"]}. Preparation build/load/run/config/cache/controls0,R13 NOT_REVIEWED. A R13 terminal observed pending Master implementation/identity/packaging review;no resend/no inherited PASS. Prior guard85079 TTL_EXPIRED17:36:40,new guard32118/pid864 actual renewed before delivery,interruption full coverage unverified. Hourly lifecycle unchanged until A disposition;Engine002006/Pipeline007/current schema/G-Q1 OPEN,Foundation HOLD/full runtime E2 not released/no closure. Proof {vp}\n'
+for p in [R/'docs/MASTER_GOVERNANCE_CURRENT.md',H/'MASTER_PROJECT_STATE.md',H/'MASTER_DECISION_LOG.md',H/'QA_DEFECT_LEDGER.md',H/'MASTER_AGENT_DISPATCH_BOARD.md',R/'Dispatcher/MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md']:
+ with p.open('a',encoding='utf-8') as f:f.write(text)
+print(json.dumps(event))

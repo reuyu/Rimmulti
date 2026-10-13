@@ -1,0 +1,998 @@
+{
+  "at": "2026-10-11T17:56:13.905307+09:00",
+  "run_id": "MASTER-HEARTBEAT-R23-20261011T085442Z-01",
+  "guard_session": 49350,
+  "guard_pid": 19228,
+  "dispatch_id": "WE-A-ENGINE-GATE05-R23-IDENTIFIER-MAPPING-20261011-DIRECT-31bd3af2",
+  "wp_id": "WP_ENGINE_GATE05_R23_IDENTIFIER_MAPPING",
+  "wp_revision": "GATE05-R23-IDENTIFIER-MAPPING",
+  "result_id": "WE-A-ENGINE-GATE05-R23-IDENTIFIER-MAPPING-RESULT-01",
+  "completion_sha256": "B85410D1868F1E65A19F11D53D321FED23401C5CFBE5D3069F32AC218586038A",
+  "artifact_checks": [
+    {
+      "role": "implementation_report",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_EngineHost_Semantic_Authority_Gate_05_R23.md",
+      "sha256": "30863C975210AAA2C5AB544D5E07FF5C96B916CE2408732F10A2C903E3C9D17E",
+      "size": 10598,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "release_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R23_IDENTIFIER_MAPPING.json",
+      "sha256": "E890896DDB74740264D10A325BF5DF3A962E66684B6781F4FF9DA45230B105FA",
+      "size": 7164,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "harness",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\Harness\\Program.cs",
+      "sha256": "D952FFF86F7D207B30F4A008CAA705A00DD3C8F3CC3CFD71F97C9EB95813EE5A",
+      "size": 47753,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "harness_project",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\Harness\\Gate05R23IdentifierMappingRunner.csproj",
+      "sha256": "9DC113DD3C99B6E47DAC861E965AEDF40CBAA7CBB02B02F167AB2470C1151D18",
+      "size": 1703,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "harness_config",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\Harness\\App.config",
+      "sha256": "1BE4F8BB988AE8DA023726B89212668036CEC313B7D44D46B4D63CF1454BA734",
+      "size": 421,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "harness_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\Harness\\bin\\Debug\\net472\\Gate05R23IdentifierMappingRunner.exe",
+      "sha256": "6AB6C5263BB0D0BBD0B6DE4E702C58298B73EF0DF99E9A3C23798C70C19F6C3E",
+      "size": 38912,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "harness_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\Harness\\bin\\Debug\\net472\\Gate05R23IdentifierMappingRunner.pdb",
+      "sha256": "CE072978AF83A2397D503750D5CE28CE7F19767034008CC1BA8081522644CC2B",
+      "size": 9016,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "host_telemetry",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\HOST_TELEMETRY.json",
+      "sha256": "C7CD6AAE2FED40034AE6F110C24D8ECAE0772CAA5ADC8E98848DC54767A0B83C",
+      "size": 2109,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "results_en_us",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_en_us\\E1_EXECUTION_REPORT.json",
+      "sha256": "5031F7E6DEC3AB1911C1804EF4F9610AC6473178605F65C9853C26792DBA5BEF",
+      "size": 2377,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "output_inventory_en_us",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_en_us\\OUTPUT_INVENTORY.json",
+      "sha256": "A35E4AC0A57737F2139CFDB72EF11EA5502E6C6EB749DF53C199517112BEFEC6",
+      "size": 4224,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "stdout_en_us",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_en_us\\stdout.txt",
+      "sha256": "4358B99734CC3E5E4ACAFF6F8F53052465818C0C60F4A202703209D161B67E4B",
+      "size": 1513,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "stderr_en_us",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_en_us\\stderr.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "size": 0,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "results_de_de",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_de_de\\E1_EXECUTION_REPORT.json",
+      "sha256": "D7D6D58353F8015ABDBBEE8203ABBC29CD2502FCDA0B97B766495481315AD442",
+      "size": 2377,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "output_inventory_de_de",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_de_de\\OUTPUT_INVENTORY.json",
+      "sha256": "26BE6522CBE22D0462B9017D1215D7A5047EEE71D968EC2378EE25B3187DD040",
+      "size": 4224,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "stdout_de_de",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_de_de\\stdout.txt",
+      "sha256": "728FA6C88B270714463D37957CBA93FB33866245A1112D1465C71085D14A87BC",
+      "size": 1513,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "stderr_de_de",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_de_de\\stderr.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "size": 0,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "freeze_before",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R23-IDENTIFIER-MAPPING-20261011-DIRECT-31bd3af2\\ENGINE_FREEZE_BEFORE.json",
+      "sha256": "53276179317096737707601B13E7C9CAE32187860A8ED91A3F25943DBC049311",
+      "size": 3346,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "freeze_after",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R23-IDENTIFIER-MAPPING-20261011-DIRECT-31bd3af2\\ENGINE_FREEZE_AFTER.json",
+      "sha256": "CFF13337DA03C646669B1956FE5B52C1C9D2EB8CC5FF6C38B18869417C283AE2",
+      "size": 3346,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "work_log",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R23-IDENTIFIER-MAPPING-20261011-DIRECT-31bd3af2\\A_WORK_LOG.md",
+      "sha256": "28AF210E383283C9028E8F3EE9EC66CE2DDA1D79A9122371D700FD6BD9E19DEF",
+      "size": 6836,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "recovery_ack",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R23-IDENTIFIER-MAPPING-20261011-DIRECT-31bd3af2\\A_RECOVERY_ACK.md",
+      "sha256": "1E54011868E98BE493D17268A59CB932FA11785AFA3D846F926B4696B4B15E28",
+      "size": 1622,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "ack",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R23-IDENTIFIER-MAPPING-20261011-DIRECT-31bd3af2\\ACK.json",
+      "sha256": "E3BCE33EEC0BE056918D98392B1F72739A0D798083577AECF8511B3C9E62C9A2",
+      "size": 1356,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "candidate_dll_debug",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "4379BE35700337F797BB17F25D5BAC2A8014FAA9332D9878E587A12E5758A9C4",
+      "size": 303104,
+      "mvid": "5bdada93-1f00-40e3-ab4d-7b23f4b2d086",
+      "matched": true
+    },
+    {
+      "role": "candidate_pdb_debug",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "2309CEC04514B58E23FC1885DDED87FAAF30F1BDEECA4CA48AD667C4DE2B18B4",
+      "size": 72628,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "candidate_dll_release",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "D46BD31D61B45950AFB8F9717CC4444C0C0C4CF6D1E12FB3E20AF99BCBE9FCBD",
+      "size": 286720,
+      "mvid": "af4e01b8-2da9-479c-b4ab-9bde73824bbd",
+      "matched": true
+    },
+    {
+      "role": "candidate_pdb_release",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "4DCD674C11CF0BBA593C5EC13B826C58219387FB766EBA4CA88E8484C5719D50",
+      "size": 53096,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "source_worker_bridge",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "2076E3A88B57A55CDDB5F25950ED26EB2310224A43A91C8917EEC6588CD5983F",
+      "size": 227009,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "source_engine_host_census",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "size": 170135,
+      "mvid": "",
+      "matched": true
+    },
+    {
+      "role": "source_worker_bridge_csproj",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "size": 1774,
+      "mvid": "",
+      "matched": true
+    }
+  ],
+  "before_after_checks": [
+    {
+      "phase": "BEFORE",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "6AA281259A5760BFFFA432E392AC4480807E16C044EE599A7D31AD4BF6C10F1E",
+      "size": 226714,
+      "matched": true
+    },
+    {
+      "phase": "BEFORE",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "size": 170135,
+      "matched": true
+    },
+    {
+      "phase": "BEFORE",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "size": 1774,
+      "matched": true
+    },
+    {
+      "phase": "BEFORE",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "278DA55F46B3646F981E79EF83D764F19959B6FEFAD6EEC83AFD4DAB0020864D",
+      "size": 303104,
+      "matched": true
+    },
+    {
+      "phase": "BEFORE",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "75C81993FEB72294789BB69E611FD3AFE7647D733568D405F1A672CF1DA74D84",
+      "size": 72608,
+      "matched": true
+    },
+    {
+      "phase": "BEFORE",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "BF170758FE5998919A860A17A33F04A36780D5419D735D95D8518DF631783955",
+      "size": 286720,
+      "matched": true
+    },
+    {
+      "phase": "BEFORE",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "A4C0947FDD7CC7901C20951F11DF82B38FE6DF6CF73E48CB0ABD22C6E54BDEC1",
+      "size": 53076,
+      "matched": true
+    },
+    {
+      "phase": "BEFORE",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "278DA55F46B3646F981E79EF83D764F19959B6FEFAD6EEC83AFD4DAB0020864D",
+      "size": 303104,
+      "matched": true
+    },
+    {
+      "phase": "BEFORE",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "75C81993FEB72294789BB69E611FD3AFE7647D733568D405F1A672CF1DA74D84",
+      "size": 72608,
+      "matched": true
+    },
+    {
+      "phase": "AFTER",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "2076E3A88B57A55CDDB5F25950ED26EB2310224A43A91C8917EEC6588CD5983F",
+      "size": 227009,
+      "matched": true
+    },
+    {
+      "phase": "AFTER",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "size": 170135,
+      "matched": true
+    },
+    {
+      "phase": "AFTER",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "size": 1774,
+      "matched": true
+    },
+    {
+      "phase": "AFTER",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "4379BE35700337F797BB17F25D5BAC2A8014FAA9332D9878E587A12E5758A9C4",
+      "size": 303104,
+      "matched": true
+    },
+    {
+      "phase": "AFTER",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "2309CEC04514B58E23FC1885DDED87FAAF30F1BDEECA4CA48AD667C4DE2B18B4",
+      "size": 72628,
+      "matched": true
+    },
+    {
+      "phase": "AFTER",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "D46BD31D61B45950AFB8F9717CC4444C0C0C4CF6D1E12FB3E20AF99BCBE9FCBD",
+      "size": 286720,
+      "matched": true
+    },
+    {
+      "phase": "AFTER",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "4DCD674C11CF0BBA593C5EC13B826C58219387FB766EBA4CA88E8484C5719D50",
+      "size": 53096,
+      "matched": true
+    },
+    {
+      "phase": "AFTER",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "4379BE35700337F797BB17F25D5BAC2A8014FAA9332D9878E587A12E5758A9C4",
+      "size": 303104,
+      "matched": true
+    },
+    {
+      "phase": "AFTER",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "2309CEC04514B58E23FC1885DDED87FAAF30F1BDEECA4CA48AD667C4DE2B18B4",
+      "size": 72628,
+      "matched": true
+    }
+  ],
+  "fixed_segment_checks": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R23-IDENTIFIER-MAPPING-20261011-DIRECT-31bd3af2\\WORKER_FIXED_SEGMENT_0.bin",
+      "sha256": "19B02C31545A4F8B6DBE45758FCCA1F5D811395A5B5735309B8CD7EC4B2CE05C",
+      "size": 4314,
+      "index": 0,
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R23-IDENTIFIER-MAPPING-20261011-DIRECT-31bd3af2\\WORKER_FIXED_SEGMENT_1.bin",
+      "sha256": "EC79940EF3DAEA889C2DE8F48D5820EFD4DCDFA1B122C99A1092A785B5F77DF0",
+      "size": 189258,
+      "index": 1,
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R23-IDENTIFIER-MAPPING-20261011-DIRECT-31bd3af2\\WORKER_FIXED_SEGMENT_2.bin",
+      "sha256": "A40BF76218CE067C4B9ED8BC9AC089B176D7E9178BDE11F4EFAC4B47E47BABE3",
+      "size": 4715,
+      "index": 2,
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R23-IDENTIFIER-MAPPING-20261011-DIRECT-31bd3af2\\WORKER_FIXED_SEGMENT_3.bin",
+      "sha256": "09606528BB98D66F7413FAFB109200F357F78CBB15E2C1A5F5210CAD94212A38",
+      "size": 28194,
+      "index": 3,
+      "matched": true
+    }
+  ],
+  "source_diff": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R23-IDENTIFIER-MAPPING-20261011-DIRECT-31bd3af2\\MASTER_R23_WORKER_SOURCE_DIFF.txt",
+  "source_sha256": "2076E3A88B57A55CDDB5F25950ED26EB2310224A43A91C8917EEC6588CD5983F",
+  "preservation_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R23-IDENTIFIER-MAPPING-20261011-DIRECT-31bd3af2\\MASTER_R23_TERMINAL_PRESERVATION_20261011.json",
+  "preservation_sha256": "F1FF26D1BD3045679D6862F6C66A46808480194EBFD45F43687DD896F93899F4",
+  "lineage": [
+    {
+      "assembly": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "pdb": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "mvid": "5bdada93-1f00-40e3-ab4d-7b23f4b2d086",
+      "codeviewGuid": "1e7c457a-d766-477f-8643-6f3bdead940e",
+      "pdbGuid": "1e7c457a-d766-477f-8643-6f3bdead940e",
+      "codeviewMatched": true,
+      "documents": [
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+          "actual": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "2076E3A88B57A55CDDB5F25950ED26EB2310224A43A91C8917EEC6588CD5983F",
+          "actual": "2076E3A88B57A55CDDB5F25950ED26EB2310224A43A91C8917EEC6588CD5983F",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+          "actual": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.AssemblyInfo.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "8C7180C5E4D3004DE53926C1039C107C3059053C470CF73F82CF974EAF7D5681",
+          "actual": "8C7180C5E4D3004DE53926C1039C107C3059053C470CF73F82CF974EAF7D5681",
+          "matched": true
+        }
+      ],
+      "configuration": "Debug",
+      "dll_sha256": "4379BE35700337F797BB17F25D5BAC2A8014FAA9332D9878E587A12E5758A9C4",
+      "pdb_sha256": "2309CEC04514B58E23FC1885DDED87FAAF30F1BDEECA4CA48AD667C4DE2B18B4"
+    },
+    {
+      "assembly": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "pdb": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "mvid": "af4e01b8-2da9-479c-b4ab-9bde73824bbd",
+      "codeviewGuid": "d0a5b2f5-a48a-4b35-81ff-194c14192b7f",
+      "pdbGuid": "d0a5b2f5-a48a-4b35-81ff-194c14192b7f",
+      "codeviewMatched": true,
+      "documents": [
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+          "actual": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "2076E3A88B57A55CDDB5F25950ED26EB2310224A43A91C8917EEC6588CD5983F",
+          "actual": "2076E3A88B57A55CDDB5F25950ED26EB2310224A43A91C8917EEC6588CD5983F",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+          "actual": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.AssemblyInfo.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "80492D41167FD5D58508DFC29A09E3624EC6374EF4048B2FF2D2C5EE86562743",
+          "actual": "80492D41167FD5D58508DFC29A09E3624EC6374EF4048B2FF2D2C5EE86562743",
+          "matched": true
+        }
+      ],
+      "configuration": "Release",
+      "dll_sha256": "D46BD31D61B45950AFB8F9717CC4444C0C0C4CF6D1E12FB3E20AF99BCBE9FCBD",
+      "pdb_sha256": "4DCD674C11CF0BBA593C5EC13B826C58219387FB766EBA4CA88E8484C5719D50"
+    }
+  ],
+  "frozen_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R23-IDENTIFIER-MAPPING-20261011-DIRECT-31bd3af2\\MASTER_GATE05_R23_IDENTIFIER_MAPPING_REVIEW_FREEZE_MANIFEST.json",
+  "frozen_manifest_sha256": "6D11497A1D2B8AA06DD3D8B8692E7B90B502D414C59455DC326ADC9921BF5CEE",
+  "frozen_files": 126,
+  "selected_sha256": "4379BE35700337F797BB17F25D5BAC2A8014FAA9332D9878E587A12E5758A9C4",
+  "selected_mvid": "5bdada93-1f00-40e3-ab4d-7b23f4b2d086",
+  "selected_pdb_sha256": "2309CEC04514B58E23FC1885DDED87FAAF30F1BDEECA4CA48AD667C4DE2B18B4",
+  "processes": [
+    {
+      "directory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_en_us",
+      "actual_culture": "en-US",
+      "host_child_pid": 16744,
+      "host_recorded_numeric_exit": 0,
+      "tests": [
+        {
+          "name": "TEST01_OpaquePolicyDigestAndDeclarationDefaults",
+          "status": "PASS",
+          "expected_digest": "8A9C3381A041F79F300710D6EA93A5D8E08564C692AA5059337853825E1749BF",
+          "observed_digest": "8A9C3381A041F79F300710D6EA93A5D8E08564C692AA5059337853825E1749BF"
+        },
+        {
+          "name": "TEST02_AdmissionReceiptIssuanceMain8",
+          "status": "PASS",
+          "receipt_pass_count": 8,
+          "unicode_whitespace_origin_preserved": true,
+          "unicode_whitespace_plan_preserved": true
+        },
+        {
+          "name": "TEST03_DeclarationAndReceiptCallerMutationProtection",
+          "status": "PASS",
+          "pass_count": 8,
+          "total_count": 8
+        },
+        {
+          "name": "TEST04_LiteralUtcPreservationRegression8",
+          "status": "PASS",
+          "pass_count": 8,
+          "total_count": 8
+        },
+        {
+          "name": "TEST05_RoleCapEquivalenceReceipts4",
+          "status": "PASS",
+          "rolecap_receipt_pass_count": 4,
+          "caller_descriptor_unmutated": true
+        },
+        {
+          "name": "TEST06_PositiveFullyQualifiedWindowsPathHelper",
+          "status": "PASS",
+          "pass_count": 5,
+          "total_count": 5
+        },
+        {
+          "name": "TEST07_ValidatorResultAndCensusPolicyRegression",
+          "status": "PASS",
+          "digest": "0A635BB38E49F04552CEA48A5A7A41B3448AC1AF59D8CE7D80EB8706F19C12EE"
+        }
+      ],
+      "result_remaining_fields": {
+        "runner_name": "Gate05R23IdentifierMappingRunner",
+        "culture": "en-US",
+        "timestamp_utc": "2026-10-11T08:02:17.8965793Z",
+        "candidate_asm": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\Harness\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+        "candidate_sha256": "4379BE35700337F797BB17F25D5BAC2A8014FAA9332D9878E587A12E5758A9C4",
+        "candidate_mvid": "5bdada93-1f00-40e3-ab4d-7b23f4b2d086",
+        "overall_verdict": "ALL_TESTS_PASS",
+        "total_receipts_issued": 20,
+        "call_counts": {
+          "ParseStrict": 0,
+          "AdmitConfigBytes": 0,
+          "AdmitConfigFile": 0,
+          "IssueAdmissionReceipt": 14,
+          "IssueAdmissionReceiptFromBytes": 6,
+          "ValidateAdmissionReceipt": 28,
+          "IsFullyQualifiedWindowsPath": 5,
+          "ToSnapshot": 0,
+          "ToRedactedJsonSnapshot": 0,
+          "ToRedactedJsonReceipt": 8,
+          "ToRedactedJsonValidatorResult": 1,
+          "SerializePackagePolicy": 1,
+          "DeserializePackagePolicy": 1,
+          "ComputePackagePolicyDigest": 2
+        }
+      },
+      "inventory_rows": 24,
+      "actual_nonself_files": 24,
+      "inventory_exact_path_set": true,
+      "inventory_checks": [
+        {
+          "relative_path": "CFG-READ_ONLY-OPAQUE-Bytes.json",
+          "size_bytes": 1381,
+          "sha256": "76FFEAB113B1333813746E5A549BFB8545309ADA58E7B34C8CFEC9571CF29C15",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-READ_ONLY-OPAQUE-File.json",
+          "size_bytes": 1380,
+          "sha256": "821C5752B85303168D94C78E9054EC5087468883CA6A862E7612191BDFCC6367",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-READ_ONLY-PLAIN-Bytes.json",
+          "size_bytes": 1339,
+          "sha256": "9274D48254511A5EC6EBE72E76358A296CA99268ADF56A7204A5DDFD79DC0874",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-READ_ONLY-PLAIN-File.json",
+          "size_bytes": 1338,
+          "sha256": "E924C8422E3AFDEC3A928F8EB51BA1D7C9DB096E4AAFE64E99250C9D7A4C56AA",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-ROLECAP-EQUIV-READ_ONLY-Bytes.json",
+          "size_bytes": 1350,
+          "sha256": "79F0AD06A2E87882B68AC96737636F1653175F5C8E86BB4A8B468D46E80265ED",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-ROLECAP-EQUIV-READ_ONLY-File.json",
+          "size_bytes": 1349,
+          "sha256": "87DB8F7C50003E8BCAEDF92385D6AE482073E95A9872FEF7F6BDC1E32EA7DE53",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-ROLECAP-EQUIV-SIMULATION-Bytes.json",
+          "size_bytes": 1352,
+          "sha256": "B08453DD973CB563E82569CAF40433F43B1D7192BBBA4A343197C5847851D696",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-ROLECAP-EQUIV-SIMULATION-File.json",
+          "size_bytes": 1351,
+          "sha256": "587CA7D152292990E1C60509AB4CF6ABD7482E271570FD46483522B82BD9A67D",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-SIMULATION-OPAQUE-Bytes.json",
+          "size_bytes": 1383,
+          "sha256": "585E9C50D2B590285EA146D3922963B782E646705F73107C25E8A1234B05053C",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-SIMULATION-OPAQUE-File.json",
+          "size_bytes": 1382,
+          "sha256": "843805A8F661300D806AF3726C655986119AC019A059E5C88065A76665762C29",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-SIMULATION-PLAIN-Bytes.json",
+          "size_bytes": 1341,
+          "sha256": "45E61137C692DCCD23C3A965802CC513A0D2B5D29E0AB1EA3EC32CC75F912B5F",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-SIMULATION-PLAIN-File.json",
+          "size_bytes": 1340,
+          "sha256": "E7BAD6A3B91DCA1D2BF7680101534DE0B752539A4E2F803E9A1AEE6440C95670",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-UTC-FractionalSeven-READ_ONLY-3.json",
+          "size_bytes": 1324,
+          "sha256": "93759A30BCB618B4AF0ADD5681A8546726F4E38C7BD8F8DCE64D57EA6974E756",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-UTC-FractionalSeven-SIMULATION-2.json",
+          "size_bytes": 1326,
+          "sha256": "B96D17057F4C4ACF5A1667AB421BEA95AC37AAE9D603DC93B6391DB4B9FF9BC5",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-UTC-SevenZeros-READ_ONLY-1.json",
+          "size_bytes": 1319,
+          "sha256": "C40820AF5CDF8A84E3041A0A553615ECA7A1CB2DC77ED6C88233F51CF983A1C4",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-UTC-SevenZeros-SIMULATION-0.json",
+          "size_bytes": 1321,
+          "sha256": "A60796E9F618819A09B8A529BD3AEABF382BA2A572B7471762B433EEBB3FB20D",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-UTC-SevenZeros2-READ_ONLY-7.json",
+          "size_bytes": 1320,
+          "sha256": "68F8B2199C38B856B41263F1B196A7D98C9AF9180263E372389898F9E46D1BB8",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-UTC-SevenZeros2-SIMULATION-6.json",
+          "size_bytes": 1322,
+          "sha256": "C4F35CD4583064154CA39EC47A19253923C616096B872494189F3516F6975368",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-UTC-WholeSeconds-READ_ONLY-5.json",
+          "size_bytes": 1313,
+          "sha256": "341054A5009CB3F6E5B0046318C6D8A9DB2562C5EE481DCAA34FEB329F70C0AD",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-UTC-WholeSeconds-SIMULATION-4.json",
+          "size_bytes": 1315,
+          "sha256": "CCAF4ADA162C7D51EB0AE3670A58456B2F5F1212D6E76049D95BE66129D79F01",
+          "matched": true
+        },
+        {
+          "relative_path": "E1_EXECUTION_REPORT.json",
+          "size_bytes": 2377,
+          "sha256": "5031F7E6DEC3AB1911C1804EF4F9610AC6473178605F65C9853C26792DBA5BEF",
+          "matched": true
+        },
+        {
+          "relative_path": "SimulatedAdmittedValidator.exe",
+          "size_bytes": 48,
+          "sha256": "03A1CC8829DD0D8E6F7DF402E6FC4CDF47B52C99EC17E12EB15B1200071E0D3B",
+          "matched": true
+        },
+        {
+          "relative_path": "stderr.txt",
+          "size_bytes": 0,
+          "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+          "matched": true
+        },
+        {
+          "relative_path": "stdout.txt",
+          "size_bytes": 1513,
+          "sha256": "4358B99734CC3E5E4ACAFF6F8F53052465818C0C60F4A202703209D161B67E4B",
+          "matched": true
+        }
+      ]
+    },
+    {
+      "directory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_de_de",
+      "actual_culture": "de-DE",
+      "host_child_pid": 22248,
+      "host_recorded_numeric_exit": 0,
+      "tests": [
+        {
+          "name": "TEST01_OpaquePolicyDigestAndDeclarationDefaults",
+          "status": "PASS",
+          "expected_digest": "8A9C3381A041F79F300710D6EA93A5D8E08564C692AA5059337853825E1749BF",
+          "observed_digest": "8A9C3381A041F79F300710D6EA93A5D8E08564C692AA5059337853825E1749BF"
+        },
+        {
+          "name": "TEST02_AdmissionReceiptIssuanceMain8",
+          "status": "PASS",
+          "receipt_pass_count": 8,
+          "unicode_whitespace_origin_preserved": true,
+          "unicode_whitespace_plan_preserved": true
+        },
+        {
+          "name": "TEST03_DeclarationAndReceiptCallerMutationProtection",
+          "status": "PASS",
+          "pass_count": 8,
+          "total_count": 8
+        },
+        {
+          "name": "TEST04_LiteralUtcPreservationRegression8",
+          "status": "PASS",
+          "pass_count": 8,
+          "total_count": 8
+        },
+        {
+          "name": "TEST05_RoleCapEquivalenceReceipts4",
+          "status": "PASS",
+          "rolecap_receipt_pass_count": 4,
+          "caller_descriptor_unmutated": true
+        },
+        {
+          "name": "TEST06_PositiveFullyQualifiedWindowsPathHelper",
+          "status": "PASS",
+          "pass_count": 5,
+          "total_count": 5
+        },
+        {
+          "name": "TEST07_ValidatorResultAndCensusPolicyRegression",
+          "status": "PASS",
+          "digest": "0A635BB38E49F04552CEA48A5A7A41B3448AC1AF59D8CE7D80EB8706F19C12EE"
+        }
+      ],
+      "result_remaining_fields": {
+        "runner_name": "Gate05R23IdentifierMappingRunner",
+        "culture": "de-DE",
+        "timestamp_utc": "2026-10-11T08:02:18.1050208Z",
+        "candidate_asm": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\Harness\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+        "candidate_sha256": "4379BE35700337F797BB17F25D5BAC2A8014FAA9332D9878E587A12E5758A9C4",
+        "candidate_mvid": "5bdada93-1f00-40e3-ab4d-7b23f4b2d086",
+        "overall_verdict": "ALL_TESTS_PASS",
+        "total_receipts_issued": 20,
+        "call_counts": {
+          "ParseStrict": 0,
+          "AdmitConfigBytes": 0,
+          "AdmitConfigFile": 0,
+          "IssueAdmissionReceipt": 14,
+          "IssueAdmissionReceiptFromBytes": 6,
+          "ValidateAdmissionReceipt": 28,
+          "IsFullyQualifiedWindowsPath": 5,
+          "ToSnapshot": 0,
+          "ToRedactedJsonSnapshot": 0,
+          "ToRedactedJsonReceipt": 8,
+          "ToRedactedJsonValidatorResult": 1,
+          "SerializePackagePolicy": 1,
+          "DeserializePackagePolicy": 1,
+          "ComputePackagePolicyDigest": 2
+        }
+      },
+      "inventory_rows": 24,
+      "actual_nonself_files": 24,
+      "inventory_exact_path_set": true,
+      "inventory_checks": [
+        {
+          "relative_path": "CFG-READ_ONLY-OPAQUE-Bytes.json",
+          "size_bytes": 1381,
+          "sha256": "09B91D6AFDD06B58E799322713E255545DC1F362EDEAF35032508931F9A4BD14",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-READ_ONLY-OPAQUE-File.json",
+          "size_bytes": 1380,
+          "sha256": "914D6169BC6A379B3F5AD82344444FD2BDDD35621FC3E918608E990757CA926B",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-READ_ONLY-PLAIN-Bytes.json",
+          "size_bytes": 1339,
+          "sha256": "D5059B5F247BC024F6A7E508147AE5A410A842A111AA15215564384853840617",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-READ_ONLY-PLAIN-File.json",
+          "size_bytes": 1338,
+          "sha256": "6D34341BA1476C3E84088EB20C5389B2FDD844226DCF32223BFD2D2174867BB3",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-ROLECAP-EQUIV-READ_ONLY-Bytes.json",
+          "size_bytes": 1350,
+          "sha256": "A3E25FC76BF2800BDBFAA1FE659660CC17AF3349B469DB3328F4ABB6A2EC69A9",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-ROLECAP-EQUIV-READ_ONLY-File.json",
+          "size_bytes": 1349,
+          "sha256": "A8ED675A48D9489A888B737EBCEA585370D3FCC22A1E15B38AB240CE981A9811",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-ROLECAP-EQUIV-SIMULATION-Bytes.json",
+          "size_bytes": 1352,
+          "sha256": "7C2E6E386DEF79C86D04D7DD2E5FA9636D8C3FFA94A78F33D0BD7D9E65319B9A",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-ROLECAP-EQUIV-SIMULATION-File.json",
+          "size_bytes": 1351,
+          "sha256": "1FD26D2CBD189E94A97B8F3717D42F40B9D218690261AD633DD2BECA7DEFC5B5",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-SIMULATION-OPAQUE-Bytes.json",
+          "size_bytes": 1383,
+          "sha256": "77C49668435A3C2615B804BF897DA64CABA726715C81BF61D602386A55F3779D",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-SIMULATION-OPAQUE-File.json",
+          "size_bytes": 1382,
+          "sha256": "608CEACC475065B7C8271322542F652332470760D9A4A6408035B2760100FE57",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-SIMULATION-PLAIN-Bytes.json",
+          "size_bytes": 1341,
+          "sha256": "01672C6CA2C67664D2B55027C9C0058090F7C12BAA00E78EE8932643718390C2",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-SIMULATION-PLAIN-File.json",
+          "size_bytes": 1340,
+          "sha256": "BD7EBD0B45168BEF5443E73FA16B9CACD6E3C4E0ED9EED60D90642B5B2615CBF",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-UTC-FractionalSeven-READ_ONLY-3.json",
+          "size_bytes": 1324,
+          "sha256": "801DB900C8591EA21CFF0884D687D53804FDE675B05224EE87B677328BFDBA70",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-UTC-FractionalSeven-SIMULATION-2.json",
+          "size_bytes": 1326,
+          "sha256": "D033065E0FE04EEA02391C58A222715586251AB0B9E3D609B032BA3B80568341",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-UTC-SevenZeros-READ_ONLY-1.json",
+          "size_bytes": 1319,
+          "sha256": "5B532D231D5F9EA731B2F6FAA2E55DAE5B6EEF3577B0B41E8D66F319C07BEC06",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-UTC-SevenZeros-SIMULATION-0.json",
+          "size_bytes": 1321,
+          "sha256": "29400B703940049F5FB5F12971871657A192E3376816B7324F0058DA24AFFB9F",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-UTC-SevenZeros2-READ_ONLY-7.json",
+          "size_bytes": 1320,
+          "sha256": "7D3D9BBA9F52CF04A87EA30D1CD99AF48E5DD746343E34CF784CCC98A94D429E",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-UTC-SevenZeros2-SIMULATION-6.json",
+          "size_bytes": 1322,
+          "sha256": "7FAA33D1368880508CB29AB8602B7C9A94062BD404FCC92A8E3D04D1ABE0C7EE",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-UTC-WholeSeconds-READ_ONLY-5.json",
+          "size_bytes": 1313,
+          "sha256": "5AA5BF4581611BB4FAC10194141E4B83585727A82F94C058C371F8E8A1ABEE54",
+          "matched": true
+        },
+        {
+          "relative_path": "CFG-UTC-WholeSeconds-SIMULATION-4.json",
+          "size_bytes": 1315,
+          "sha256": "AB3C5ED190ADC1A8ADC46318EADA9B55B2CF0FFD2B3933A213E74A98E8F9A25D",
+          "matched": true
+        },
+        {
+          "relative_path": "E1_EXECUTION_REPORT.json",
+          "size_bytes": 2377,
+          "sha256": "D7D6D58353F8015ABDBBEE8203ABBC29CD2502FCDA0B97B766495481315AD442",
+          "matched": true
+        },
+        {
+          "relative_path": "SimulatedAdmittedValidator.exe",
+          "size_bytes": 48,
+          "sha256": "03A1CC8829DD0D8E6F7DF402E6FC4CDF47B52C99EC17E12EB15B1200071E0D3B",
+          "matched": true
+        },
+        {
+          "relative_path": "stderr.txt",
+          "size_bytes": 0,
+          "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+          "matched": true
+        },
+        {
+          "relative_path": "stdout.txt",
+          "size_bytes": 1513,
+          "sha256": "728FA6C88B270714463D37957CBA93FB33866245A1112D1465C71085D14A87BC",
+          "matched": true
+        }
+      ]
+    }
+  ],
+  "ACK_valid": true,
+  "producer_host_telemetry": {
+    "dispatch_id": "WE-A-ENGINE-GATE05-R23-IDENTIFIER-MAPPING-20261011-DIRECT-31bd3af2",
+    "wp_id": "WP_ENGINE_GATE05_R23_IDENTIFIER_MAPPING",
+    "wp_revision": "GATE05-R23-IDENTIFIER-MAPPING",
+    "envelope": 26,
+    "orchestrator": "Python Host Subprocess",
+    "timestamp_utc": "2026-10-11T08:02:17.592175+00:00",
+    "pinned_runner": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\Harness\\bin\\Debug\\net472\\Gate05R23IdentifierMappingRunner.exe",
+      "sha256": "6AB6C5263BB0D0BBD0B6DE4E702C58298B73EF0DF99E9A3C23798C70C19F6C3E",
+      "size": 38912
+    },
+    "runs": [
+      {
+        "run_index": 1,
+        "culture": "en-US",
+        "child_pid": 16744,
+        "exit_code": 0,
+        "duration_seconds": 0.3128170967102051,
+        "run_dir": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_en_us",
+        "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_en_us\\stdout.txt",
+        "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_en_us\\stderr.txt",
+        "output_inventory_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_en_us\\OUTPUT_INVENTORY.json",
+        "output_count": 24
+      },
+      {
+        "run_index": 2,
+        "culture": "de-DE",
+        "child_pid": 22248,
+        "exit_code": 0,
+        "duration_seconds": 0.1990187168121338,
+        "run_dir": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_de_de",
+        "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_de_de\\stdout.txt",
+        "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_de_de\\stderr.txt",
+        "output_inventory_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_de_de\\OUTPUT_INVENTORY.json",
+        "output_count": 24
+      }
+    ],
+    "isolation_verified": true,
+    "runner_unmodified": true,
+    "overall_success": true
+  },
+  "native_execution": "UNTESTED",
+  "master_build_execute": 0,
+  "runtime_e2_released": false,
+  "trigger_received_at": "2026-10-11T08:54:42.092Z",
+  "closure_changed": false,
+  "foundation": "HOLD",
+  "verification_status": "MASTER_DISPOSED",
+  "master_verdict": "ORIGINAL_CLI_MAPPING_PRIVATE_COPY_NORMALIZATION_SOURCE_FIX_CREDITED_FRESH_SCOPED_QA_PENDING_NATIVE_UNTESTED",
+  "master_review_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R23_IDENTIFIER_MAPPING_E1_20261011.md",
+  "master_review_sha256": "3CBA7DE0562397C91ABD1BBF98C6E91423AB5C6B53DDBE9C30077D8DC80F8F0F",
+  "master_disposition_at": "2026-10-11T17:59:29.426324+09:00",
+  "scoped_admission": "EXACT_R23_DEBUG_STATIC_POSITIVE_PURE_CLI_MAPPING_ROLECAP_NORMALIZATION_RECEIPT_FULLGRAPH_REGRESSION",
+  "managed_dependency_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\MASTER_R5_MANAGED_QA_DEPENDENCIES_MANIFEST.json",
+  "managed_dependency_manifest_sha256": "7FCB91EEB8489365E4304AFFDC601CCD0CCE2259365FD861A785AD658C183481"
+}

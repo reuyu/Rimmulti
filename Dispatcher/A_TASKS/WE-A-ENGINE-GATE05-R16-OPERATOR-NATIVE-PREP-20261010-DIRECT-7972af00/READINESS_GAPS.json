@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "dispatch_id": "WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00",
+  "wp_id": "WP_ENGINE_GATE05_R16_OPERATOR_NATIVE_PREPARATION",
+  "wp_revision": "GATE05-R16-OPERATOR-NATIVE-PREPARATION",
+  "envelope": 19,
+  "created_at": "2026-10-10T02:57:05+09:00",
+  "summary": "Identification of concrete readiness gaps, missing assets, and ordered prerequisite sequence for Gate05 native validation.",
+  "gaps": [
+    {
+      "gap_id": "GAP-01",
+      "name": "RUNTIME_COPY_ASSET_INCOMPLETENESS",
+      "category": "FILESYSTEM_ASSET_DEFICIENCY",
+      "severity": "BLOCKING_FATAL_FOR_NATIVE_EXECUTION",
+      "location": "scratch\\EngineGate05R4\\RuntimeCopy",
+      "observed_state": "Only 7 files present (33,030,151 bytes). Missing RimWorldWin64_Data, Managed libraries, Mono runtime, Data\\Core XML defs, About.xml, ModsConfig.xml.",
+      "technical_consequence": "RimWorldWin64.exe standalone Unity player cannot initialize; halts or hangs in batchmode, triggering parent process timeout kill.",
+      "resolution_requirement": "Master must authorize complete project-isolated runtime staging from user's licensed installation into scratch\\EngineGate05NativeSlice\\RuntimeCopy before native run.",
+      "resolution_order": 1
+    },
+    {
+      "gap_id": "GAP-02",
+      "name": "INSTALLED_DLL_IDENTITY_INCIDENT_OPEN",
+      "category": "BASELINE_INTEGRITY_INCIDENT",
+      "severity": "QUALIFIED_OPEN_INCIDENT",
+      "location": "Steam installation directory (WarEconomy.WorkerBridge.PoC.dll)",
+      "observed_state": "Observed SHA256 BB3B52F39F7B53B70BC9FB4CE039E7455D08B24B17B8DABB8295E0FF4584DD61 differs from archive baseline 2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C.",
+      "technical_consequence": "Actor and cause remain UNKNOWN. Developer A is strictly prohibited from modifying, restoring, or normalizing Steam baseline.",
+      "resolution_requirement": "All future native runs must execute exclusively within isolated project RuntimeCopy directories, completely bypassing the Steam installation directory.",
+      "resolution_order": 2
+    },
+    {
+      "gap_id": "GAP-03",
+      "name": "NATIVE_CURRENT_GAME_DEPENDENCY_IN_CENSUS",
+      "category": "CLR_RUNTIME_DEPENDENCY",
+      "severity": "ARCHITECTURAL_PREREQUISITE",
+      "source_anchor": {
+        "file": "EngineHostCensus.cs",
+        "lines": "430-815",
+        "method": "GenerateCensus"
+      },
+      "observed_state": "Census generation requires Current.Game != null, ProgramState == Playing, and initialized Map and DefDatabase.",
+      "technical_consequence": "Standalone managed runners cannot execute live census generation without booting the full RimWorld engine.",
+      "resolution_requirement": "Live census validation must execute inside the child RimWorld process after loading the staged save into the engine.",
+      "resolution_order": 3
+    },
+    {
+      "gap_id": "GAP-04",
+      "name": "DYNAMIC_PATCH_AND_SETTINGS_EVALUATION_SEPARATE",
+      "category": "SEMANTIC_SCOPE_QUALIFICATION",
+      "severity": "QUALIFIED_OPEN_SCOPE",
+      "source_anchor": {
+        "file": "EngineHostCensus.cs",
+        "lines": "3448-3454, 3503-3520",
+        "method": "ModPatchSettingsDispositionRecord, PackagePolicyDispositionRecord"
+      },
+      "observed_state": "Settings disposition fixed to USER_MOD_SETTINGS_EXCLUDED and patch disposition fixed to COUNT_OBSERVED_RAW_AST_EXCLUDED.",
+      "technical_consequence": "Dynamic XML patch AST execution and user settings evaluation remain qualified boundaries under ADR-006B-v5.",
+      "resolution_requirement": "Recognized as qualified admission boundary; future expansion requires separate ADR and work package.",
+      "resolution_order": 4
+    },
+    {
+      "gap_id": "GAP-05",
+      "name": "MD131_ATOMIC_PROMOTION_PRIMITIVES_DEFERRED",
+      "category": "WORK_PACKAGE_BOUNDARY",
+      "severity": "DEFERRED_TO_NEXT_SLICE",
+      "source_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2763-2980",
+        "method": "HandlePromoteStaged"
+      },
+      "observed_state": "Same-volume atomic file replacement primitives and existing-final replacement fail-closed logic belong to MD131.",
+      "technical_consequence": "This slice terminates upon receipt issuance and transition to STAGED_VALIDATED. Final save promotion is not executed.",
+      "resolution_requirement": "Deferred to separate dedicated MD131 slice.",
+      "resolution_order": 5
+    },
+    {
+      "gap_id": "GAP-06",
+      "name": "FOUNDATION_HOLD_AND_DOMAIN_AUTHORITY",
+      "category": "GOVERNANCE_AND_AUTHORITY",
+      "severity": "GOVERNANCE_HOLD",
+      "location": "docs/MASTER_GOVERNANCE_CURRENT.md",
+      "observed_state": "Engine002/006, Pipeline007, current schema, and G-Q1 remain OPEN. Foundation remains HOLD.",
+      "technical_consequence": "Developer A cannot self-declare gate closure, candidate release, or E2 verification. Dedicated Server is final Domain Authority.",
+      "resolution_requirement": "Developer A records PREPARATION_COMPLETE_NATIVE_UNTESTED. Master conducts review and coordinates independent QA.",
+      "resolution_order": 6
+    }
+  ]
+}

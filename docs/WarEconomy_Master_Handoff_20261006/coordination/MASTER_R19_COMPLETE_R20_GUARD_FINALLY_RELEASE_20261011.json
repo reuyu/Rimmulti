@@ -1,0 +1,13 @@
+{
+  "run_id": "MASTER-CONTINUE-R19-20261011-01",
+  "guard_session": 40147,
+  "guard_pid": 19832,
+  "actual_release_tool": {
+    "chunk_id": "d9be5a",
+    "wall_time_seconds": 0.0000439,
+    "exit_code": 0,
+    "original_token_count": 115,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-CONTINUE-R19-20261011-01\", \"pid\": 19832\r\n\u001b[23;80H2, \"locked_at\": \"2026-10-11T04:27:45.547779+09:00\", \"mechanism\": \"Windows msvcrt \r\n\u001b[23;80H exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026\r\n\u001b[23;80H6-10-11T04:39:46.345883+09:00\", \"renewal_count\": 8, \"release_reason\": \"RELEASE_OR\r\n\u001b[23;80HR_STDIN_CLOSED\", \"released_at\": \"2026-10-11T04:40:09.388242+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "all_child_commands_completed_before_release": true
+}

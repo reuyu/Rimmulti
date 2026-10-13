@@ -1,0 +1,15 @@
+{
+  "run_id": "MASTER-R15-HEARTBEAT-20261009T165837Z-01",
+  "session_id": 12883,
+  "pid": 26552,
+  "actual_try_finally": true,
+  "background_commands_polled_to_final_exit_before_release": true,
+  "earlier_guard48929": "TTL_EXPIRED00:23 before substantive mutation,notretroclaimed",
+  "release_tool_result": {
+    "chunk_id": "986560",
+    "wall_time_seconds": 0.0000316,
+    "exit_code": 0,
+    "original_token_count": 106,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R15-HEARTBEAT-20261009T165837Z-01\", \"pid\": 26552, \"locked_at\": \"2026-10-10T01:59:01.638431+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-10T02:08:00.629619+09:00\", \"renewal_count\": 2, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-10T02:08:14.423607+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  }
+}

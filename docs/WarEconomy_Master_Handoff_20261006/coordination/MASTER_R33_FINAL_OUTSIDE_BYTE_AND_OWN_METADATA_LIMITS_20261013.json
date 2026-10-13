@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-13T17:57:12.832436+09:00",
+  "outside2_actual_compared_bytes": 269893,
+  "source_span_new_SHA": "D56AEC9B4464D6F0EB277C33B04E1D71A748489A8FA63BB3CF09ECDE61CC0DF4",
+  "original_source": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R32-64ad38e2\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+    "sha256": "214F1F95C6BF7F547ED47FD91B787A70B2E52DFF129A882DCD8C1AC1471A24E8",
+    "bytes": 275573
+  },
+  "new_source": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R33-d19c64a5\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+    "sha256": "6E45362C4D34566F7612AA626E31DD8E15BCCE5232FB3815117E43B019CA597D",
+    "bytes": 276524
+  },
+  "Master_own_passive_schema_failure1": "ACK_COMPLETION_BINDING uses index not result_index",
+  "Master_own_passive_schema_failure2": "COMPLETION artifacts schema report available in RESULT_INDEX not completion.report",
+  "original_attempts_preserved": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\Tools\\master_verify_r33_final_attempt1_20261013.py",
+      "sha256": "DA2EE9AE531F6B5A2530788842F3735FCD61FEB444D00EF1BC396960470326F0",
+      "bytes": 12961
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\Tools\\master_verify_r33_final_attempt2_20261013.py",
+      "sha256": "9E672442A221D5AE6A6EDE07495C962E3D511B12730189FF3EB728E6CFC122A5",
+      "bytes": 12954
+    }
+  ],
+  "actual_failures_raw_location": "This Master conversation actual exec tool outputs; no fabricated local full-raw copy",
+  "candidate_QA_oracle_modified": false,
+  "candidate_execution": 0
+}

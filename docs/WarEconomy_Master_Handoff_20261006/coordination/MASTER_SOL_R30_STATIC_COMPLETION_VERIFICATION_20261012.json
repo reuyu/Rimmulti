@@ -1,0 +1,90 @@
+{
+  "at": "2026-10-12T19:59:48.003753+09:00",
+  "delivery_id": "SOL-GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012-01",
+  "result_id": "SOL-GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012-7705b91d0779465387a937a18e35405b",
+  "wp_id": "WP_QA_ENGINE_GATE05_R30_HANDOFF_INDEPENDENT_STATIC",
+  "wp_revision": "S1",
+  "completion": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\COMPLETION.json",
+    "sha256": "E1602AD6B429C6E0D370AA0B060DCEAAA1E51DF4730350E01C226C9104420FA1",
+    "bytes": 6958
+  },
+  "master_verdict": "ACCEPTED_INDEPENDENT_R30_STATIC_RECEIPT_COHORT_GAINS_REQUIRED_MODE_LIFETIME_EVIDENCE_REVISION_REQUIRED_NATIVE_UNTESTED",
+  "review": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R30_HANDOFF_INDEPENDENT_STATIC_S1_20261012.md",
+    "sha256": "890FC883BF7B26ABB2EB3C6746DAADCB26B633E630666326EF72E97B9788C12B",
+    "bytes": 4688
+  },
+  "report": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R30_Handoff_Independent_Static_S1_20261012.md",
+    "sha256": "776E0E0C20CFB94E60DD7C7A00F86BC91E6EBCBB3C142D7D71F13458F2978D97",
+    "bytes": 15703
+  },
+  "evidence_count": 59,
+  "protected_paths": 15549,
+  "frozen_files": 128,
+  "terminal_preservation": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R30_STATIC_COMPLETED_QA_TERMINAL_PRESERVATION_20261012.json",
+    "sha256": "26CDD8B5BEC1228224F58CA64561F3CF851D45F6EEDC31FCD865D27B5299B0E6",
+    "bytes": 19156
+  },
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:12",
+    "revision": 12,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a12f9d-0902-7591-aa71-a7bd40dc9105",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791800183,
+      "completedAt": 1791802335,
+      "durationMs": 2152375
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016accbbdcb16487d0a18c77349d32f8c0",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016accbbdcb16487d0a18c77349d32f8c0",
+      "turnId": "01a12f9d-0902-7591-aa71-a7bd40dc9105",
+      "phase": "final_answer",
+      "text": "R30 독립 정적 QA를 완료하고 마스터에게 보고했습니다. 판정은 수정 필요입니다. Required-mode·생애 one-use·custody와 증거 결속에 공백이 남습니다. 후보·빌드·테스트 실행은 0이며 native 미검증, Foundation HOLD를 유지합니다. 최종 보고서 다음 마스터 지시를 기다리겠습니다."
+    },
+    "latestToolMarkerId": "exec-5aa46aed-2705-4816-89d5-65824375e192",
+    "latestToolMarker": {
+      "id": "exec-5aa46aed-2705-4816-89d5-65824375e192",
+      "turnId": "01a12f9d-0902-7591-aa71-a7bd40dc9105",
+      "type": "fileChange",
+      "name": "fileChange",
+      "status": "completed"
+    }
+  },
+  "static_source_branches": 16,
+  "static_claims": 17,
+  "not_executed_tests": true,
+  "Unity_reference_IL_methods_byte_checked": [
+    "op_Implicit",
+    "CompareBaseObjects",
+    "IsNativeObjectAlive",
+    "GetCachedPtr",
+    "op_Equality",
+    "op_Inequality"
+  ],
+  "stale_pre_manifest_binaries": 7,
+  "original_drift_initial_baseline_coverage": 0,
+  "original_drift_current_matched": 12,
+  "QA_execution_compile_candidate_native_adverse": 0,
+  "Master_candidate_build_execute": 0,
+  "source_high1_carrier_publisher_and_E1lineage": "OPEN",
+  "native_E2": "NOT_RELEASED",
+  "Foundation": "HOLD",
+  "next_A": "R31_DURABLE_MODE_FAILURE_UPDATE_AND_NEW_EVIDENCE_APPROVED_DIRECTION_NOT_SENT",
+  "monitor": "PAUSED_HOURLY",
+  "guard_run": "MASTER-R30-SOL-STATIC-COMPLETE-20261012-01",
+  "guard_session": 2627
+}

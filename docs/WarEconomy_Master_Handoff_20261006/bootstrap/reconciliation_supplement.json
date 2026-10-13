@@ -1,0 +1,357 @@
+{
+  "observed_at": "2026-10-07T17:23:56.891754+09:00",
+  "qa_report_relocated": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_Production_Transaction_Pipeline_01_REV5.md",
+    "sha256": "77605D27CD041758BF7181C3A40673E172A3E270B5EA3EBD66E58000E242BCF9",
+    "expected_sha256": "77605D27CD041758BF7181C3A40673E172A3E270B5EA3EBD66E58000E242BCF9",
+    "matched": true
+  },
+  "adr_pairs": [
+    {
+      "reference": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\reference_adrs\\ADR-001_Authenticated_Identity_Central_Authority_Persistent_State.md",
+      "sha256": "9CE1F33842A9D3FA0A46A8811DB80FB1294C12F71DE6689D9045135D5487CC86",
+      "local_candidates": [
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-001_Authenticated_Authority_and_Persistent_State.md",
+          "sha256": "095D9C337C0FBC71663EBDF9E15F9E8C864674CA38F6EB3D2F74B5A9F3976DFC",
+          "same_bytes": false
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-001_Authenticated_Identity_Cenral_Authority_Persistent_State.md.md",
+          "sha256": "84E71A77D97B852260055A54537472C800F3E25976846CED45EC1DD2FB73556F",
+          "same_bytes": false
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-001_Technical_Feasibility_Evidence.md",
+          "sha256": "E94334FA9DC8DC0C17B840BE6FA44D7C9136BD848D8752D354FAAD27B0937058",
+          "same_bytes": false
+        }
+      ]
+    },
+    {
+      "reference": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\reference_adrs\\ADR-002_Tactical_Session_Offline_Combat_Authority.md",
+      "sha256": "99A5849E134A1B27CE9C012486F8B7ABC0DA1B56FAFCC3BB15C0845E2BE67997",
+      "local_candidates": [
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-002_Tactical_and_Offline_Combat_Authority.md",
+          "sha256": "474AB0DCA4109BCAF599CBF290B9F46C9041E6FD5DC542A8DEFCA2127F599D13",
+          "same_bytes": false
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-002_Tactical_Session_Ofline_Combat_Authority.md",
+          "sha256": "E720A55E3FE2C5B120E5ACAAFF2F44D834F5C140EB31F4451539417F073F2B35",
+          "same_bytes": false
+        }
+      ]
+    },
+    {
+      "reference": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\reference_adrs\\ADR-003_Canonical_Settlement_State_Entity_Identity_Save_Provenance_v3.md",
+      "sha256": "4BF52E85EF0A7E5EC04902B09532556E62213420635D10C8A49CB5957BC0F015",
+      "local_candidates": [
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-003_Canonical_Settlement_State_Entity_Identity_Save_Provenance.md",
+          "sha256": "DACFA48F1451ED2090C9565419C431B6C80EEBAA90523A04B0FC9DCE1B1FEE29",
+          "same_bytes": false
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-003_Canonical_Settlement_State_Entity_Identity_Save_Provenance_v2.md",
+          "sha256": "12485651F309D23CF0C88224B897B891483D05E9A575F851FC28BB03114ECDF9",
+          "same_bytes": false
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-003_Canonical_Settlement_State_Entity_Identity_Save_Provenance_v3.md",
+          "sha256": "49B68AA432609502003253EB10521C0E26A51F5A30365130D6833BD37079AC9C",
+          "same_bytes": false
+        }
+      ]
+    },
+    {
+      "reference": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\reference_adrs\\ADR-004_Distributed_Ownership_Transaction_Repair_v2.md",
+      "sha256": "83605B985D5C5F8E80F652B17258FF7BA4FBD6364C00CF2F3D5E4752DF2EB2C9",
+      "local_candidates": [
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-004_Distributed_Ownership_Transaction_Repair.md",
+          "sha256": "195743A02C5DAB0ED8D6E3269F8EEC438C11B0F135A80ECFAF7CFD4F786E94D4",
+          "same_bytes": false
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-004_Distributed_Ownership_Transaction_Repair_v2.md",
+          "sha256": "D89F56F232B12282AA3A8884C42BC8F6F4A4052C67A5B7D2D488CBB1173209AC",
+          "same_bytes": false
+        }
+      ]
+    },
+    {
+      "reference": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\reference_adrs\\ADR-005_Intent_Betrayal_Domain_Simulation_Event_Contract_v2.md",
+      "sha256": "462E2E9FCBBD5E556FC8E0624447A77EA60F55F0499ABE60DB3359DEEB38250B",
+      "local_candidates": [
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-005_Intent_Betrayal_Domain_Simulation_Event_Contract.md",
+          "sha256": "231E93684CFDADD06989D172F11858C2DD1E212DFB87439167DD585F715CA1AD",
+          "same_bytes": false
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-005_Intent_Betrayal_Domain_Simulation_Event_Contract_v2.md",
+          "sha256": "462E2E9FCBBD5E556FC8E0624447A77EA60F55F0499ABE60DB3359DEEB38250B",
+          "same_bytes": true
+        }
+      ]
+    },
+    {
+      "reference": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\reference_adrs\\ADR-006A_Temporal_Authority_ACCEPTED.md",
+      "sha256": "8044B431A10B4965EFCDEE7A02747EF06DCFF016D494420A230CC20C1EE53AC6",
+      "local_candidates": [
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-006A_Temporal_Authority.md",
+          "sha256": "1A2E38BF274F016C7264B79C0CD18DC31A4A6D067AC7442F58376A51CA9E1C96",
+          "same_bytes": false
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-006A_Temporal_Authority_ACCEPTED.md",
+          "sha256": "59741427639C6ABC69A7803DD8A1D0B11F0793F188C5D9C89D1BD562F514E293",
+          "same_bytes": false
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-006B_Configuration_Content_Manifest.md",
+          "sha256": "0C07C3676A1D9A262ECE534247A8FF1B93B7C9F98A14E9FDD94E62912CC38139",
+          "same_bytes": false
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-006B_Configuration_Content_Manifest_v2.md",
+          "sha256": "D3A673BAEB35677E500C07493C5F1ED05D042D4551BD0EDC899001F43FCBE99C",
+          "same_bytes": false
+        }
+      ]
+    },
+    {
+      "reference": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\reference_adrs\\ADR-006B_Configuration_Content_Manifest_v2.md",
+      "sha256": "D68CE6D758AD5C93450BD6767A8D3416DBD3E1946EEB0D464FF45B8CAA79FCD4",
+      "local_candidates": [
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-006A_Temporal_Authority.md",
+          "sha256": "1A2E38BF274F016C7264B79C0CD18DC31A4A6D067AC7442F58376A51CA9E1C96",
+          "same_bytes": false
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-006A_Temporal_Authority_ACCEPTED.md",
+          "sha256": "59741427639C6ABC69A7803DD8A1D0B11F0793F188C5D9C89D1BD562F514E293",
+          "same_bytes": false
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-006B_Configuration_Content_Manifest.md",
+          "sha256": "0C07C3676A1D9A262ECE534247A8FF1B93B7C9F98A14E9FDD94E62912CC38139",
+          "same_bytes": false
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-006B_Configuration_Content_Manifest_v2.md",
+          "sha256": "D3A673BAEB35677E500C07493C5F1ED05D042D4551BD0EDC899001F43FCBE99C",
+          "same_bytes": false
+        }
+      ]
+    },
+    {
+      "reference": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\reference_adrs\\ADR-007_Ordinary_Settlement_Simulation_Authority_v4.md",
+      "sha256": "4E29479D74EC8A55A2D6C0640217514502C08436E764DA0B9324C7C687387D24",
+      "local_candidates": [
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-007_Ordinary_Settlement_Simulation_Authority.md",
+          "sha256": "5466D509E2DE864D1F7BFD4D20752C4500442604C33A924F6C11B1A8544A4B2D",
+          "same_bytes": false
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-007_Ordinary_Settlement_Simulation_Authority_v2.md",
+          "sha256": "138B6FB9E3FF5E3F11638DD535A196717C802B40E8085AA8711C7CA97F64E906",
+          "same_bytes": false
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-007_Ordinary_Settlement_Simulation_Authority_v3.md",
+          "sha256": "F6AEF8653F573AA5B87FC9F7B5613E8C664A75212640C89BF7A2B062404E8636",
+          "same_bytes": false
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-007_Ordinary_Settlement_Simulation_Authority_v5.md",
+          "sha256": "A7F57D298D823A0DAB95021E7232EC915F3DC60BF6943170B0F9BCFCE49D610A",
+          "same_bytes": false
+        }
+      ]
+    },
+    {
+      "reference": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\reference_adrs\\ADR-008_Shared_World_Layer_Transit_World_Projection_v2.md",
+      "sha256": "5652FE5CA47AF9B963A8EC6FFD8CB3035A6424EACBB3E227AFD79DDBE481FCA7",
+      "local_candidates": [
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-008_Shared_World_Layer_Transit_World_Projection.md",
+          "sha256": "BA48DBA1749AE85A33836C99D7D5D89FBE20422EC87A9390FE9E73BD5FA3E528",
+          "same_bytes": false
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\ADR-008_Shared_World_Layer_Transit_World_Projection_v2.md",
+          "sha256": "FFE3F347756222B7CAA951D50BFB1B807CBF072C5E85BE5A9C375AB9B3A23957",
+          "same_bytes": false
+        }
+      ]
+    }
+  ],
+  "raw_evidence_selection": {
+    "verdict": "FAIL",
+    "recommendations": {
+      "001": "CLOSED (tested input contract)",
+      "007": "STILL FAILING",
+      "013": "CLOSED (tested final service lifecycle)",
+      "008": "Historical V5 closure unchanged; current V6 collation admission STILL FAILING",
+      "019": "regression closure retained"
+    },
+    "cas": {
+      "SUCCESS": 1,
+      "STALE_REVISION": 24
+    },
+    "sameId": {
+      "SUCCESS": 1,
+      "ALREADY_COMMITTED": 11
+    },
+    "sameStream": {
+      "SUCCESS": 8,
+      "STALE_REVISION": 40
+    },
+    "historicalTamperReady": {
+      "historical-earlier": [
+        {
+          "status": "STARTUP",
+          "ready": true
+        }
+      ],
+      "historical-later": [
+        {
+          "status": "STARTUP",
+          "ready": true
+        }
+      ],
+      "other-scope-observed": [
+        {
+          "status": "STARTUP",
+          "ready": true
+        }
+      ]
+    },
+    "inputFive": [
+      {
+        "operation": "num13",
+        "records": 0,
+        "status": "INVALID_REQUEST"
+      },
+      {
+        "operation": "sur-key",
+        "records": 0,
+        "status": "INVALID_REQUEST"
+      },
+      {
+        "operation": "sur-value",
+        "records": 0,
+        "status": "INVALID_REQUEST"
+      },
+      {
+        "operation": "sur-low",
+        "records": 0,
+        "status": "INVALID_REQUEST"
+      },
+      {
+        "operation": "sur-reversed",
+        "records": 0,
+        "status": "INVALID_REQUEST"
+      }
+    ],
+    "main": [
+      {
+        "status": "MAIN_DURING_SHUTDOWN",
+        "writerAlive": true,
+        "isDisposed": false,
+        "ready": false,
+        "coordinatorRetained": true,
+        "callerDone": true
+      },
+      {
+        "status": "MAIN_RETURN",
+        "writerAlive": false,
+        "isDisposed": true,
+        "ready": false,
+        "activeCoordinatorNull": true,
+        "pending": 0,
+        "result": {
+          "Success": false,
+          "Outcome": 10,
+          "Status": "UNKNOWN_QUERY_REQUIRED",
+          "Message": "Shutdown response deadline expired while operation was in-flight. Query operation status before retry.",
+          "Receipt": null,
+          "CurrentRevision": null,
+          "ExpectedRevision": null,
+          "Collision": false,
+          "StaleRevision": false,
+          "Retryable": false
+        },
+        "elapsedMs": 12021
+      },
+      {
+        "status": "MAIN_FINAL",
+        "writerAlive": false,
+        "isDisposed": true,
+        "result": {
+          "Success": false,
+          "Outcome": 10,
+          "Status": "UNKNOWN_QUERY_REQUIRED",
+          "Message": "Shutdown response deadline expired while operation was in-flight. Query operation status before retry.",
+          "Receipt": null,
+          "CurrentRevision": null,
+          "ExpectedRevision": null,
+          "Collision": false,
+          "StaleRevision": false,
+          "Retryable": false
+        },
+        "callsAfterReturn": 0
+      }
+    ],
+    "finalLifetime": {
+      "lifetime-hold6": {
+        "elapsedMs": 6586,
+        "writerAlive": false,
+        "isDisposed": true,
+        "callsAfterFinalDispose": 0
+      },
+      "lifetime-hold8": {
+        "elapsedMs": 8493,
+        "writerAlive": false,
+        "isDisposed": true,
+        "callsAfterFinalDispose": 0
+      },
+      "lifetime-hold13": {
+        "elapsedMs": 13545,
+        "writerAlive": false,
+        "isDisposed": true,
+        "callsAfterFinalDispose": 0
+      },
+      "lifetime-aftercas": {
+        "elapsedMs": 8468,
+        "writerAlive": false,
+        "isDisposed": true,
+        "callsAfterFinalDispose": 0
+      },
+      "lifetime-afteraudit": {
+        "elapsedMs": 8478,
+        "writerAlive": false,
+        "isDisposed": true,
+        "callsAfterFinalDispose": 0
+      },
+      "lifetime-precommit": {
+        "elapsedMs": 8486,
+        "writerAlive": false,
+        "isDisposed": true,
+        "callsAfterFinalDispose": 0
+      },
+      "lifetime-postwal": {
+        "elapsedMs": 8500,
+        "writerAlive": false,
+        "isDisposed": true,
+        "callsAfterFinalDispose": 0
+      }
+    }
+  }
+}

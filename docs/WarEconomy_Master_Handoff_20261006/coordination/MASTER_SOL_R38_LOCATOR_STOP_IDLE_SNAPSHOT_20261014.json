@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":false,\"wake\":{\"reason\":\"turnCompleted\",\"turnId\":\"01a136c1-89d5-73d0-882a-f1052306b2b6\",\"threadId\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\"},\"polls\":[{\"schemaVersion\":1,\"cursor\":\"bcc76e72-e33d-4898-bc7b-b558cfab470c:55\",\"revision\":55,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"idle\"}},\"latestTurn\":{\"id\":\"01a136c1-89d5-73d0-882a-f1052306b2b6\",\"status\":\"completed\",\"error\":null,\"startedAt\":1791920015,\"completedAt\":1791920285,\"durationMs\":269974},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ace889b75c087d095a13b337ccdde59\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ace889b75c087d095a13b337ccdde59\",\"turnId\":\"01a136c1-89d5-73d0-882a-f1052306b2b6\",\"phase\":\"final_answer\",\"text\":\"R38 준비 도구의 Python 경로 해시 검증이 실패해 WP 지침에 따라 중단했습니다. 오류와 원본 파일을 보존하고 마스터에게 제한적 복구를 요청했습니다. 후보 분석·실행은 아직 시작하지 않았습니다. 중단 기록\"},\"latestToolMarkerId\":\"exec-f1fc944c-3946-4431-a73b-1c7e57febe2b\",\"latestToolMarker\":{\"id\":\"exec-f1fc944c-3946-4431-a73b-1c7e57febe2b\",\"turnId\":\"01a136c1-89d5-73d0-882a-f1052306b2b6\",\"type\":\"fileChange\",\"name\":\"fileChange\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

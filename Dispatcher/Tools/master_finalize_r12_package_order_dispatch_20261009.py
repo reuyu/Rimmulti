@@ -1,0 +1,39 @@
+from pathlib import Path
+import json,hashlib,datetime,tomllib
+R=Path(__file__).resolve().parents[2];H=R/'docs/WarEconomy_Master_Handoff_20261006'
+def read(p):return json.loads(p.read_text(encoding='utf-8-sig'))
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest().upper()
+def write(p,d):p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+at=datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).isoformat()
+bp=R/'Dispatcher/MASTER_A_TASKS.json';b=read(bp);t=b['tasks'][-1]
+assert t['dispatch_id']=='WE-A-ENGINE-GATE05-R12-PACKAGE-ORDER-20261009-DIRECT-e9dcd1e6' and t['delivery_status']=='SENT'
+T=Path(t['instruction_path']).parent;ui=read(T/'MASTER_UI_SUBMISSION_CONFIRMED.json')
+assert ui['exact_message']==t['exact_message'] and ui['send_clicks']==1 and ui['composer_cleared'] and ui['active_cancel_observed'] and ui['new_user_message_exact_match']
+cp=R/'Dispatcher/MASTER_COMMUNICATION_STATE.json';c=read(cp);op=c['active_operation'];assert op['dispatch_id']==t['dispatch_id'] and op['delivery_status']=='SENT' and not op['unknown_delivery']
+pres=read(T/'MASTER_POSTSENT_PRESERVATION.json');assert len(pres['preservation_errors'])==1 and 'Steam' in pres['preservation_errors'][0]
+for k,n in [('engine_archive_checks',19),('prior_candidate_checks',1251),('pipeline_preservation_checks',206),('qa_preservation_checks',3335)]:assert len(pres[k])==n and all(x['matched'] for x in pres[k])
+installed=Path('C:/Program Files (x86)/Steam/steamapps/common/RimWorld/Mods/WarEconomy.WorkerBridge.PoC/1.6/Assemblies/WarEconomy.WorkerBridge.PoC.dll')
+assert sha(installed)==op['known_installed_actual_sha256_verified']=='BB3B52F39F7B53B70BC9FB4CE039E7455D08B24B17B8DABB8295E0FF4584DD61'
+contender={'status':'LOCK_BUSY','run_id':'MASTER-R12-CONTENDER-20261009-01'}
+cfg=tomllib.loads(Path('C:/Users/user/.codex/automations/wareconomy-master/automation.toml').read_text(encoding='utf-8-sig'))
+assert cfg['status']=='ACTIVE' and cfg['rrule']=='FREQ=HOURLY;INTERVAL=1' and len(cfg['prompt'])==173 and cfg['target_thread_id']=='01a1156b-97ec-7ce0-9e4a-dfc4a3acb174'
+ack=read(Path(t['ack_path'])) if Path(t['ack_path']).exists() else {'status':'ACK_PENDING'}
+ack_ok=ack['status']!='ACK_PENDING'
+if ack_ok:assert ack['dispatch_id']==t['dispatch_id'] and ack['wp_id']==t['wp_id'] and ack['wp_revision']==t['wp_revision'] and ack['envelope']==15 and ack['status'] in ['ACKNOWLEDGED','IN_PROGRESS']
+vp=H/'coordination/MASTER_GATE05_R12_PACKAGE_ORDER_DISPATCH_MONITOR_ACTIVE_20261009.json'
+proof={'at':at,'type':'A_R12_PACKAGE_ORDER_SENT_ACK_HOURLY_ACTIVE','dispatch_id':t['dispatch_id'],'wp_id':t['wp_id'],'wp_revision':t['wp_revision'],'envelope':15,'status':('SENT_ACK_VERIFIED_IN_PROGRESS' if ack_ok else 'SENT_IN_PROGRESS_ACK_PENDING'),'actual_ui_proof':t['submission_proof'],'actual_ui_sha256':sha(Path(t['submission_proof'])),'ack_path':t['ack_path'],'ack_sha256':sha(Path(t['ack_path'])) if ack_ok else None,'ack_status':ack['status'],'ack_authority_qualification':'Dedicated Server final runtime DomainAuthority/Master releasegovernance per exactWP;ACK independently checked when available','preservation_proof':str(T/'MASTER_POSTSENT_PRESERVATION.json'),'preservation_sha256':sha(T/'MASTER_POSTSENT_PRESERVATION.json'),'counts':{'archive':19,'prior':1251,'pipeline':206,'qa':3335,'managed_dependencies':4},'installed_actual_sha256':sha(installed),'installed_incident':'UNCHANGED_OPEN_ACTOR_UNKNOWN','automation_actual_config':cfg,'automation_update_observed_response':{'automationId':'wareconomy-master','mode':'update','status':'ACTIVE'},'future_r11_scheduled_run_observed':False,'guard_run':op['guard_run'],'guard_session':op['guard_session'],'guard_pid':op['guard_pid'],'renewed_before_input_and_mutations':True,'contender_lock_busy_verified':True,'historical_r4_lease_gap_unverified':True,'original_sol_status':'R11_COMPLETED_SCOPED_PASS_IDLE77;R12_PREPARATION_NOT_SENT_YET','master_execution_builds':0,'runtime_e2_released':False,'closure_changed':False,'foundation':'HOLD'}
+write(vp,proof);t.update(status='IN_PROGRESS' if ack_ok else 'SENT_IN_PROGRESS_ACK_PENDING',ack_verified=ack_ok,ack_sha256=proof['ack_sha256'],monitor_status='ACTIVE60MIN_VERIFIED',monitor_configuration_proof=str(vp),updated_at=at);b['updated_at']=at;write(bp,b)
+c.update(active_operation=None,a_pending_dispatch_id=None,a_status='R12_PACKAGE_ORDER_IN_PROGRESS_ACK_VERIFIED' if ack_ok else 'R12_PACKAGE_ORDER_SENT_IN_PROGRESS_ACK_PENDING',a_latest_delivery=proof,a_latest_runtime_observation=proof,updated_at=at)
+c['master_monitor_automation'].update(status='ACTIVE',desired_status='ACTIVE',interval_minutes=60,configuration_verified=True,configuration_checked_at=at,configuration_proof=str(vp),future_run_after_engine_r11_resume_observed=False,pause_reason=None,no_resume_in_this_review=False,resumed_by='Master after actual R12 CU SENT')
+c['last_monitor_run']={'run_id':op['guard_run'],'guard_session':op['guard_session'],'at':at,'status':'R10_QA_ACCEPTED_A_R12_SENT_ACK_HOURLY_ACTIVE','release_pending':True};write(cp,c)
+sp=H/'DISPATCHER_STATE.json';s=read(sp);s['endpoints']['a'].update(current_wp=t['wp_id'],current_dispatch_id=t['dispatch_id'],execution_phase='IN_PROGRESS',current_conversation_status='ACTUAL_R12_EXACT_SUBMITTED_CLEARED_COMPOSER_WORKING_CANCEL',ack_verified=ack_ok,last_ui_proof=t['submission_proof'],last_ui_observation_at=ui['observed_at']);s['master_monitor_automation']=c['master_monitor_automation'];s['latest_master_dispatch']=str(vp);s['updated_at']=at
+s['deliveries'].append({'delivery_id':t['dispatch_id'],'recipient':'A','wp_id':t['wp_id'],'wp_revision':t['wp_revision'],'status':proof['status'],'delivery_status':'SENT','proof':str(vp),'runtime_e2_released':False});write(sp,s)
+rp=R/'Dispatcher/MASTER_RECEIPTS.json';receipts=read(rp);eid=t['dispatch_id']+'-SENT-HOURLY-ACTIVE';assert not any(x.get('event_id')==eid for x in receipts['processed_dispatch_events'])
+event=dict(proof,event_id=eid,proof=str(vp),proof_sha256=sha(vp));receipts['processed_dispatch_events'].append(event);receipts['updated_at']=at;write(rp,receipts)
+for p in [R/'Dispatcher/MASTER_MONITOR_JOURNAL.jsonl',H/'DISPATCH_JOURNAL.jsonl']:
+ with p.open('a',encoding='utf-8') as f:f.write(json.dumps(event,ensure_ascii=False)+'\n')
+paragraph=f'\n\n## LOCAL-A-R12-PACKAGE-ORDER-SENT-HOURLY-ACTIVE — {at}\n{t["dispatch_id"]}/{t["wp_id"]}/{t["wp_revision"]}/envelope15 actualfreshCUidle/exactdraft/oneSend/newmessage/composercleared/WorkingCancel proof;SENT/ACK{ack["status"]},no resend. One package loadOrder consistency correction and new validJSON/finalprepin/tool graph packaging requirement;general schema/cache/patchsettings/operator/native remain separateOPEN. R11 scopedindependent247PASS each accepted703/4189/71pairs/37696typedrows,current-v1only/N12qualified;not inherited R12PASS. Archive19/prior1251/Pipeline206/QA3335+managed4/fixedscope matched;installedBBunchangedOPEN/no restore. Sameactualwareconomy-masterACTIVE60min/173char/correcttarget;futureR12scheduledrununobserved. OriginalSol R11completeidle77,newR12preparationNOT_SENTatthispoint. Liveguard{op["guard_session"]}/run{op["guard_run"]}/pid{op["guard_pid"]}renewed/contenderLOCK_BUSY;historicR4leasegapunverified. DedicatedServerfinalruntimeAuthority/Mastergovernance controls. Latestuser reauthorizes completion-review-next-agent automaticcontinuation;no routine reapproval/continue required. No fullGateE2/newclosure;Engine002006/Pipeline007/current schema/G-Q1OPEN,FoundationHOLD. Proof {vp}\n'
+
+for p in [R/'AGENTS.md',R/'docs/MASTER_GOVERNANCE_CURRENT.md',H/'MASTER_PROJECT_STATE.md',H/'MASTER_DECISION_LOG.md',H/'QA_DEFECT_LEDGER.md',H/'MASTER_AGENT_DISPATCH_BOARD.md',R/'Dispatcher/MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md']:
+ with p.open('a',encoding='utf-8') as f:f.write(paragraph)
+print(json.dumps({'A':proof['status'],'monitor':cfg['status'],'interval':60,'Sol':'R10COMPLETED_IDLE','full_e2':False}))

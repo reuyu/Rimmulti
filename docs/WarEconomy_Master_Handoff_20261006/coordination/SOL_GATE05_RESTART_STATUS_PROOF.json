@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:7\",\"revision\":7,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a11598-cbe3-7160-ae39-0e16e3a00e62\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791363697,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ac60a8dcc5887d092919a7c55fde91e\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ac60a8dcc5887d092919a7c55fde91e\",\"turnId\":\"01a11598-cbe3-7160-ae39-0e16e3a00e62\",\"phase\":\"commentary\",\"text\":\"Gate05 E2 release를 받았습니다. 새 QA 디렉터리에서 동결 상태를 다시 확인하고, 신뢰 경계의 정적 검토와 정상 fresh-load 체인을 진행하겠습니다. 원본 ACK는 보존하고 UTF-8 경로 정정 sidecar를 추가합니다. 우회·위조를 재현하는 항목은 실행 범위를 제한하고, 검증하지 못한 항목을 PASS로 계산하지 않겠습니다.\"},\"latestToolMarkerId\":\"exec-bee01c75-1aa1-4ff2-9225-0b19540b78c9\",\"latestToolMarker\":{\"id\":\"exec-bee01c75-1aa1-4ff2-9225-0b19540b78c9\",\"turnId\":\"01a11598-cbe3-7160-ae39-0e16e3a00e62\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

@@ -1,0 +1,18 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-20261008-DIRECT-8524bf02",
+  "wp_id": "WP_ENGINE_GATE05_R7_CONTENT_ADMISSION",
+  "wp_revision": "GATE05-R7-CONTENT-ADMISSION",
+  "envelope": 10,
+  "producer": "A",
+  "acknowledged_at": "2026-10-08T22:00:00+09:00",
+  "status": "IN_PROGRESS",
+  "scope": "Narrow ContentProfileProvider suffix/typed helpers repair: wire computed profile admission to supported content rule set; executable coverage/disposition; patch/settings coverage boundary; canonical contract key/caller policy; positive pure normal DTO/helper runner only",
+  "constraints": {
+    "source_scope": "Only EngineHostCensus.cs ContentProfileProvider suffix and typed content helpers",
+    "prefix_immutability": "Fixed prefix 72547 bytes SHA F3C4F865F1E2A898BF240A2D096195870D77A52408CF2D93664FE15092A2A887 strictly preserved",
+    "workerbridge_immutability": "WorkerBridge.cs and WorkerBridge.csproj fixed current hashes preserved",
+    "execution_restrictions": "Positive pure normal DTO/helper runner only; no provider/compute/getter/cache properties/InvalidateCache/game/native/operator/old runners/TC11TC13/rejection/adverse execution",
+    "historical_preservation": "Archive 19, Prior 844, Pipeline 206, QA 1489, managed dependencies 4, and installed Steam DLL (OPEN incident) preserved",
+    "closure_authority": "Master sole domain authority; no self-declared defect closure or whole-gate E2 release"
+  }
+}

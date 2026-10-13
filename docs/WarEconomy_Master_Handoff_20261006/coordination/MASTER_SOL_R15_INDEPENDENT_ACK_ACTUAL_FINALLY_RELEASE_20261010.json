@@ -1,0 +1,14 @@
+{
+  "run_id": "MASTER-SOL-R15-INDEPENDENT-ACK-20261010-01",
+  "session_id": 13508,
+  "pid": 30484,
+  "actual_try_finally": true,
+  "command_polled_to_final_before_release": true,
+  "release_tool_result": {
+    "chunk_id": "7fc2b7",
+    "wall_time_seconds": 0.0000346,
+    "exit_code": 0,
+    "original_token_count": 106,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-SOL-R15-INDEPENDENT-ACK-20261010-01\", \"pid\": 30484, \"locked_at\": \"2026-10-10T02:16:43.889298+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-10T02:17:41.331466+09:00\", \"renewal_count\": 1, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-10T02:17:46.491270+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  }
+}

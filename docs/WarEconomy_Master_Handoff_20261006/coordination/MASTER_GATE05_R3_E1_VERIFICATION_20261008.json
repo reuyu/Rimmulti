@@ -1,0 +1,326 @@
+{
+  "at": "2026-10-08T14:01:51.444071+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa",
+  "wp_id": "WP_ENGINE_GATE05_R3",
+  "wp_revision": "GATE05-R3",
+  "result_id": "GATE05-R3-E1-COMPLETION-20261008-01",
+  "completion_sha256": "3EBE3AAEF5A32B802B5EEFD6004709F88218E65E11462AAC033E5A4B8898E5F4",
+  "reported_e1_verdict": "PASS_WITH_DECLARED_LIMITS",
+  "master_verdict": "REVISION_REQUIRED_E2_RUNTIME_NOT_RELEASED",
+  "alias_identity_reconciled": true,
+  "standard_schema_accepted": false,
+  "artifact_checks": [
+    {
+      "role": "selected_candidate_debug_dll",
+      "resolved_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "matched": true,
+      "size_matched": true
+    },
+    {
+      "role": "selected_candidate_debug_pdb",
+      "resolved_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "matched": true,
+      "size_matched": true
+    },
+    {
+      "role": "alternate_candidate_release_dll",
+      "resolved_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "matched": true,
+      "size_matched": true
+    },
+    {
+      "role": "alternate_candidate_release_pdb",
+      "resolved_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "matched": true,
+      "size_matched": true
+    },
+    {
+      "role": "e1_report",
+      "resolved_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_EngineHost_Semantic_Authority_Gate_05_R3.md",
+      "matched": true,
+      "size_matched": true
+    },
+    {
+      "role": "release_manifest",
+      "resolved_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R3.json",
+      "matched": true,
+      "size_matched": true
+    },
+    {
+      "role": "harness_results_json",
+      "resolved_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R3\\results.json",
+      "matched": true,
+      "size_matched": true
+    },
+    {
+      "role": "harness_raw_console",
+      "resolved_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R3\\raw_console.txt",
+      "matched": true,
+      "size_matched": true
+    },
+    {
+      "role": "work_log",
+      "resolved_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa\\A_WORK_LOG.md",
+      "matched": true,
+      "size_matched": true
+    },
+    {
+      "role": "recovery_ack",
+      "resolved_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa\\A_RECOVERY_ACK.md",
+      "matched": true,
+      "size_matched": true
+    }
+  ],
+  "manifest_evidence_checks": [
+    {
+      "role": "runner_project",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R3\\Gate05R3TestRunner.csproj",
+      "matched": true,
+      "size_matched": true
+    },
+    {
+      "role": "runner_source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R3\\Program.cs",
+      "matched": true,
+      "size_matched": true
+    },
+    {
+      "role": "results_json",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R3\\results.json",
+      "matched": true,
+      "size_matched": true
+    },
+    {
+      "role": "raw_console_log",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R3\\raw_console.txt",
+      "matched": true,
+      "size_matched": true
+    },
+    {
+      "role": "native_execution_observation",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R3\\native_execution_observation.txt",
+      "matched": true,
+      "size_matched": true
+    },
+    {
+      "role": "report_markdown",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_EngineHost_Semantic_Authority_Gate_05_R3.md",
+      "matched": true,
+      "size_matched": true
+    }
+  ],
+  "lineage": [
+    {
+      "assembly": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "pdb": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "mvid": "501e64f4-2135-42b0-b997-8829c99f5001",
+      "codeviewGuid": "660b0643-6fd9-4426-bbd4-6aa6e21fa317",
+      "pdbGuid": "660b0643-6fd9-4426-bbd4-6aa6e21fa317",
+      "codeviewMatched": true,
+      "documents": [
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "A91257D2439CB983EB39B3D6C2FA37C7B0481F2342C671D359A010744E4B56F7",
+          "actual": "A91257D2439CB983EB39B3D6C2FA37C7B0481F2342C671D359A010744E4B56F7",
+          "matched": true,
+          "frozen_source_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa\\FROZEN_GATE05_R3_REVIEW\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs"
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "4BC9B3449A706123663D19AF465C09ADDB769BC4039FA1C1ED294ADDE1CD4E4E",
+          "actual": "4BC9B3449A706123663D19AF465C09ADDB769BC4039FA1C1ED294ADDE1CD4E4E",
+          "matched": true,
+          "frozen_source_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa\\FROZEN_GATE05_R3_REVIEW\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs"
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+          "actual": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+          "matched": true,
+          "frozen_source_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa\\FROZEN_GATE05_R3_REVIEW\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs"
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.AssemblyInfo.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "8C7180C5E4D3004DE53926C1039C107C3059053C470CF73F82CF974EAF7D5681",
+          "actual": "8C7180C5E4D3004DE53926C1039C107C3059053C470CF73F82CF974EAF7D5681",
+          "matched": true,
+          "frozen_source_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa\\FROZEN_GATE05_R3_REVIEW\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.AssemblyInfo.cs"
+        }
+      ],
+      "dll_sha256": "9851351B4F3E8DD14D16AB5BBC5932F6A0F71E34ABF49648FA7366945516B1BB",
+      "pdb_sha256": "3B93B64C62CE37E7D5856846562A30448E574619A0D1E8C96B9025974ADEB9BE",
+      "scope": "metadata read only; no candidate execution/build"
+    },
+    {
+      "assembly": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "pdb": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "mvid": "355d01bf-ea8e-4f09-a547-4038e9bbf46e",
+      "codeviewGuid": "cc1621c2-d9ea-457c-a469-2dbca6f1281f",
+      "pdbGuid": "cc1621c2-d9ea-457c-a469-2dbca6f1281f",
+      "codeviewMatched": true,
+      "documents": [
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "A91257D2439CB983EB39B3D6C2FA37C7B0481F2342C671D359A010744E4B56F7",
+          "actual": "A91257D2439CB983EB39B3D6C2FA37C7B0481F2342C671D359A010744E4B56F7",
+          "matched": true,
+          "frozen_source_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa\\FROZEN_GATE05_R3_REVIEW\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs"
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "4BC9B3449A706123663D19AF465C09ADDB769BC4039FA1C1ED294ADDE1CD4E4E",
+          "actual": "4BC9B3449A706123663D19AF465C09ADDB769BC4039FA1C1ED294ADDE1CD4E4E",
+          "matched": true,
+          "frozen_source_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa\\FROZEN_GATE05_R3_REVIEW\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs"
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+          "actual": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+          "matched": true,
+          "frozen_source_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa\\FROZEN_GATE05_R3_REVIEW\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs"
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.AssemblyInfo.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "80492D41167FD5D58508DFC29A09E3624EC6374EF4048B2FF2D2C5EE86562743",
+          "actual": "80492D41167FD5D58508DFC29A09E3624EC6374EF4048B2FF2D2C5EE86562743",
+          "matched": true,
+          "frozen_source_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa\\FROZEN_GATE05_R3_REVIEW\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.AssemblyInfo.cs"
+        }
+      ],
+      "dll_sha256": "CC675EC3D7933C7A163D43FDD1941AADE3B53BC1A6A2575D3096C170FA678217",
+      "pdb_sha256": "895350A2D329DE6EDFB2BB0C671223B82B3391F69BCF0248455B35084CF4689C",
+      "scope": "metadata read only; no candidate execution/build"
+    }
+  ],
+  "frozen_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa\\MASTER_GATE05_R3_REVIEW_FREEZE_MANIFEST.json",
+  "frozen_manifest_sha256": "124C6AA900CB50ECE5C2F31B75BC197ACA194995BB90BDEDBD7EDA6B830E0972",
+  "frozen_files": 133,
+  "freeze_kind": "POST_COMPLETION_MASTER_OBSERVATION_NOT_PRE_EXECUTION_PROOF",
+  "reported_test_count": 32,
+  "native_semantic_candidate_execution": "UNTESTED",
+  "candidate_execution_by_master": false,
+  "findings": [
+    {
+      "id": "R3-M01",
+      "severity": "Critical",
+      "disposition": "OPEN_STATIC_CONTRACT_FAILURE",
+      "finding": "Nonce checks improved; fixed admitted executable/binary/config and owned validator workload/result origin still not established. Launch parses caller-selected executable/arguments; Bind helper supplies/accepts existing process identity instead of proving trusted launch origin.",
+      "anchors": [
+        "WorkerBridge.cs:2057",
+        "WorkerBridge.cs:2081",
+        "WorkerBridge.cs:2121",
+        "WorkerBridge.cs:2187",
+        "WorkerBridge.cs:2222"
+      ]
+    },
+    {
+      "id": "R3-M02",
+      "severity": "High",
+      "disposition": "OPEN_NORMAL_FLOW_REGRESSION",
+      "finding": "Issued validator task/result is READ_ONLY; completion requires same allowedMode as SIMULATION grant. Genuine SIMULATION→seal/stage→READ_ONLY validator path is rejected statically; harness injects READ_ONLY grant. Role mapping must preserve approved simulator authority, not change it to make fixture pass.",
+      "anchors": [
+        "WorkerBridge.cs:1760",
+        "WorkerBridge.cs:1986",
+        "WorkerBridge.cs:2545",
+        "EngineGate05R3/Program.cs:286"
+      ]
+    },
+    {
+      "id": "R3-M03",
+      "severity": "High",
+      "disposition": "OPEN_STATIC_CONTRACT_FAILURE",
+      "finding": "DTO/context equality expanded and consume failure now revokes: credit. Full MD128 proof still incomplete: validator copies task context, target map clamps by index without stable identity proof, executable carried into receipt without admitted binary/config equality, no fully defined current authority/role mapping. MD129 Execute/Bind early failures remain unclassified.",
+      "anchors": [
+        "WorkerBridge.cs:2187",
+        "WorkerBridge.cs:2230",
+        "WorkerBridge.cs:2295",
+        "WorkerBridge.cs:2331",
+        "WorkerBridge.cs:2500",
+        "WorkerBridge.cs:2631"
+      ]
+    },
+    {
+      "id": "R3-M04",
+      "severity": "High",
+      "disposition": "OPEN_MD130_NOT_REMEDIATED",
+      "finding": "Mod missing-file fail-closed, extra Thing material fields and R-format credited. Version/capability flag upgrade is not typed lossless encoding: delimiter strings, skipped nulls, null-empty collapse, incomplete patch/settings/material/order support remain; FAIL-02 checks only constant schema string. No all-Def serialization or blanket sorting prohibition imposed.",
+      "anchors": [
+        "EngineHostCensus.cs:1534",
+        "EngineHostCensus.cs:1651",
+        "EngineHostCensus.cs:1681",
+        "EngineHostCensus.cs:1719",
+        "EngineHostCensus.cs:1878",
+        "EngineGate05R3/Program.cs:590"
+      ]
+    },
+    {
+      "id": "R3-M05",
+      "severity": "High",
+      "disposition": "OPEN_EVIDENCE_SCOPE_FAILURE",
+      "finding": "32 reported PASS/raw counts agree but OS child is cmd echo; runner writes ValidatorResult, armed component/authority/grant/seal are reflection fixtures and actual content profile is mocked. GENUINE_CONTROL_FLOW labels do not prove genuine native semantic validator. Adverse forged fixtures fall outside issued defensive/normal-only scope; Master never reruns or commissions these.",
+      "anchors": [
+        "EngineGate05R3/Program.cs:244",
+        "EngineGate05R3/Program.cs:263",
+        "EngineGate05R3/Program.cs:399",
+        "EngineGate05R3/Program.cs:413"
+      ]
+    },
+    {
+      "id": "R3-M06",
+      "severity": "High",
+      "disposition": "OPEN_NATIVE_ISOLATION_EVIDENCE_GAP",
+      "finding": "Native observation reports launch from protected Steam original with -quicktest, not RuntimeCopy executable; report omits -quicktest. No actual isolated userdata/mod paths, loaded new candidate SHA/MVID/profile/staged native census/result/loader output/numeric exit proof. PID startup observed only; NATIVE_UNTESTED/CAUSE_UNKNOWN. No claim that original saves were modified or DRM blocked.",
+      "anchors": [
+        "EngineGate05R3/native_execution_observation.txt",
+        "POC_EngineHost_Semantic_Authority_Gate_05_R3.md:4"
+      ]
+    },
+    {
+      "id": "R3-M07",
+      "severity": "High",
+      "disposition": "OPEN_PROVENANCE_SCHEMA_FAILURE",
+      "finding": "10 completion artifact SHA/size matches; manifest source/binary identity and Debug/Release PDB source4/4 match. Report table source/results/raw SHA values differ from actual/manifest. Standard completion lacks exact dispatch_id/wp_id/wp_revision/completed_at/e1_verdict/limitations/required roles and absolute paths; aliases resolve same task, not another task. Before-execution freeze/dependency/content proof missing.",
+      "anchors": [
+        "COMPLETION.json",
+        "RELEASE_MANIFEST_ENGINE_GATE05_R3.json",
+        "POC_EngineHost_Semantic_Authority_Gate_05_R3.md:2"
+      ]
+    },
+    {
+      "id": "R3-M08",
+      "severity": "High",
+      "disposition": "OPEN_KNOWN_INSTALLED_INCIDENT",
+      "finding": "Installed BB3B... unchanged from pre-R3 observed incident; old expected2D64... not normalized/restored. Actor/cause UNKNOWN. Archive19/prior254/Pipeline206/QA preserved. No full installed-baseline-preservation claim accepted.",
+      "anchors": [
+        "MASTER_HEARTBEAT_20261008_1356_FILE_CHECK.json"
+      ]
+    }
+  ],
+  "preservation_counts": {
+    "archive": 19,
+    "prior": 254,
+    "pipeline": 206,
+    "qa": [
+      324,
+      297,
+      312,
+      238
+    ],
+    "r3_preparation_evidence": 17
+  },
+  "installed_actual_sha256": "BB3B52F39F7B53B70BC9FB4CE039E7455D08B24B17B8DABB8295E0FF4584DD61",
+  "installed_incident": "OPEN_UNCHANGED_ACTOR_CAUSE_UNKNOWN",
+  "closure_changed": false,
+  "foundation": "HOLD",
+  "monitor_pause": "PENDING_ACTUAL_TOOL",
+  "master_review_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R3_E1_20261008.md"
+}

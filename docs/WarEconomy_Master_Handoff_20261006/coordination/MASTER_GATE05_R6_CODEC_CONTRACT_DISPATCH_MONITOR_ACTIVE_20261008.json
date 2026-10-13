@@ -1,0 +1,86 @@
+{
+  "at": "2026-10-08T19:28:24.845858+09:00",
+  "type": "MASTER_R6_CODEC_CONTRACT_DISPATCH_MONITOR_ACTIVE",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R6-CODEC-CONTRACT-20261008-DIRECT-1f657abe",
+  "wp_id": "WP_ENGINE_GATE05_R6_CODEC_CONTRACT",
+  "wp_revision": "GATE05-R6-CODEC-CONTRACT",
+  "envelope": 9,
+  "status": "SENT_ACK_VERIFIED_IN_PROGRESS",
+  "actual_ui_proof": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R6-CODEC-CONTRACT-20261008-DIRECT-1f657abe\\MASTER_UI_SUBMISSION_CONFIRMED.json",
+  "actual_ui_proof_sha256": "8822A7EFB1D6A27F3EC6813C48177A15B77B52E45ECAB16751E2998CCD52441B",
+  "fresh_predispatch_tree": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R6-CODEC-CONTRACT-20261008-DIRECT-1f657abe\\MASTER_UI_PREDISPATCH_TREE.txt",
+  "fresh_predispatch_tree_sha256": "9117F53A65F532040085959C997AC46CAE92B09AED11695B5647A573F51F37FF",
+  "exact_draft_tree": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R6-CODEC-CONTRACT-20261008-DIRECT-1f657abe\\MASTER_UI_EXACT_DRAFT_TREE.txt",
+  "exact_draft_tree_sha256": "319760001505D5674417B34352AA68F9BE9A945FEA8A8B7C3A06E74C012CFB36",
+  "submitted_tree": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R6-CODEC-CONTRACT-20261008-DIRECT-1f657abe\\MASTER_UI_SUBMITTED_TREE.txt",
+  "submitted_tree_sha256": "DD665BA1BDCC78C14A2F789A59B17E65420F9E3DB9B583AC819ECA70CC5CA1FE",
+  "ack_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R6-CODEC-CONTRACT-20261008-DIRECT-1f657abe\\ACK.json",
+  "ack_sha256": "DC01B571A23671FA5ED3F4A866C0729D556A1DCC0005180DC297ED3F04C0D5D8",
+  "ack_status": "IN_PROGRESS",
+  "preservation_proof": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R6-CODEC-CONTRACT-20261008-DIRECT-1f657abe\\MASTER_POSTSENT_ACK_PRESERVATION.json",
+  "preservation_proof_sha256": "64076219CF0ADD81E9AAE65C11F666A738644FBD34CC8016E99BA877FB6E20F6",
+  "counts": {
+    "archive": 19,
+    "prior": 732,
+    "pipeline": 206,
+    "qa": 1342,
+    "managed_dependencies": 4
+  },
+  "known_installed_incident": "UNCHANGED_OPEN_NO_RESTORE",
+  "source_boundary": "ContentProfileProvider suffix;WorkerBridge/csproj/Censusprefix fixed",
+  "automation_actual_config": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "ACTIVE",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791455170454
+  },
+  "automation_update_tool": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R6_CODEC_CONTRACT_MONITOR_UPDATE_TOOL_20261008.json",
+  "future_r6_scheduled_run_observed": false,
+  "master_guard_run": "MASTER-SOL-R5-CODEC-COMPLETE-20261008-01",
+  "guard_session": 83918,
+  "renewed_before_input_and_mutations": true,
+  "actual_contender_lock_busy_observed": true,
+  "historical_r4_lease_gap_remains_unverified": true,
+  "sol_disposition_notice_tool": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R5_CODEC_INDEPENDENT_S1_DISPOSITION_NOTICE_TOOL_20261008.json",
+  "sol_disposition_notice_tool_sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+  "sol_post_notice_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:39",
+    "revision": 39,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a11b0d-3492-7180-aea4-9eef37912a86",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791455212,
+      "completedAt": 1791455217,
+      "durationMs": 4814
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ac76fefe2ec87d0bcddc8e0c21a2cc1",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016ac76fefe2ec87d0bcddc8e0c21a2cc1",
+      "turnId": "01a11b0d-3492-7180-aea4-9eef37912a86",
+      "phase": "final_answer",
+      "text": "마스터의 scoped codec PASS 채택을 확인했습니다. 기존 증거를 보존하고, 별도 frozen 후보 QA 지시가 올 때까지 대기하겠습니다."
+    },
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "sol_new_qa_wp": false,
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD"
+}

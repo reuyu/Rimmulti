@@ -1,0 +1,179 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f",
+  "wp_id": "WP_ENGINE_GATE05_R30_HANDOFF",
+  "envelope": 33,
+  "source_file": "scratch/WorkerBridgeMod/Source/WorkerBridge.cs",
+  "original_file": {
+    "bytes": 265416,
+    "sha256": "55441CE93DF32F5E5940D99A4A9CA8449B3F7839840CA3A3832C9DB31396FBDE"
+  },
+  "modified_file": {
+    "bytes": 268703,
+    "sha256": "B1F8C00D1DF6E8E797EAC8E5A7F7FB462679BA06E79096D5C558C687BD413311"
+  },
+  "authorized_spans": [
+    {
+      "span_id": "BOOTSTRAP_HANDOFF_AFTER_PURE_ADMISSION",
+      "orig_range": [
+        7573,
+        9072
+      ],
+      "orig_bytes": 1499,
+      "orig_sha256": "5A36AEA944DD78E9036CDBAC8615589A216926A81B731A2B8CE392DF0F6808E5",
+      "new_range": [
+        7573,
+        9856
+      ],
+      "new_bytes": 2283,
+      "new_sha256": "ECB17D1969888A82A071FF96FD078938D3080C532FB342431DFB445DD01FE75D"
+    },
+    {
+      "span_id": "PRIVATE_OWNER_HANDOFF_STATE",
+      "orig_range": [
+        26233,
+        28118
+      ],
+      "orig_bytes": 1885,
+      "orig_sha256": "E46E4795F0671E81F85F497F0388F34EDB42C75756A6B323E9A9AA7A8D7D48CA",
+      "new_range": [
+        27017,
+        31076
+      ],
+      "new_bytes": 4059,
+      "new_sha256": "DCFB555BFA9042AEBCE99D15ECADAD3131D8B2E63675772B70E983E37CEA9C44"
+    },
+    {
+      "span_id": "AWAKE_EARLY_PAIR_GATE",
+      "orig_range": [
+        32923,
+        33287
+      ],
+      "orig_bytes": 364,
+      "orig_sha256": "4F8C62B37E38B49569A768B24C15739404437C2BBDDA6223FF78281A669B015A",
+      "new_range": [
+        35881,
+        36536
+      ],
+      "new_bytes": 655,
+      "new_sha256": "175529E44C78109F5D70FFC75A29C0D56114B9A673A7AF248BDE4E7D676D4EEF"
+    },
+    {
+      "span_id": "PAIR_MODE_LAUNCH_HOLD",
+      "orig_range": [
+        111224,
+        111419
+      ],
+      "orig_bytes": 195,
+      "orig_sha256": "CDE30C09A9B3E9CCA41192C139C6C7558810B6D2FA383BA85C4D81A074DA0488",
+      "new_range": [
+        114473,
+        114691
+      ],
+      "new_bytes": 218,
+      "new_sha256": "8B1B8DFEB7467C43B78B32C87BF1BEC82D03BC2F888EED4984959B4FDB012117"
+    },
+    {
+      "span_id": "OWNER_SCOPED_DESTROY",
+      "orig_range": [
+        178190,
+        178283
+      ],
+      "orig_bytes": 93,
+      "orig_sha256": "61B0ED1D2B6F85C61227E38AF3B012965BD52E4CD55DFB131D7668568648C41A",
+      "new_range": [
+        181462,
+        181570
+      ],
+      "new_bytes": 108,
+      "new_sha256": "5C9910B225F7C74C9F6B6A8265BE5696FDA7F9B203C640B92BE92E2902E9BA3F"
+    }
+  ],
+  "outside_segments_verification": [
+    {
+      "segment_index": 0,
+      "orig_range": [
+        0,
+        7573
+      ],
+      "new_range": [
+        0,
+        7573
+      ],
+      "bytes": 7573,
+      "sha256": "8FFAE2B7B1F69B068025E8D92A200D201771D36D5C87E3F0784F7B3E6DAC78E6",
+      "matched": true
+    },
+    {
+      "segment_index": 1,
+      "orig_range": [
+        9072,
+        26233
+      ],
+      "new_range": [
+        9856,
+        27017
+      ],
+      "bytes": 17161,
+      "sha256": "5561A4EF11F5F0389F4832D7B4C1DAA325F009EED6556445856CF30051F90100",
+      "matched": true
+    },
+    {
+      "segment_index": 2,
+      "orig_range": [
+        28118,
+        32923
+      ],
+      "new_range": [
+        31076,
+        35881
+      ],
+      "bytes": 4805,
+      "sha256": "54E45F3ACB59975CE45E6A49456F2017A5067401F0352A117E93664DAFFC3289",
+      "matched": true
+    },
+    {
+      "segment_index": 3,
+      "orig_range": [
+        33287,
+        111224
+      ],
+      "new_range": [
+        36536,
+        114473
+      ],
+      "bytes": 77937,
+      "sha256": "7DAA803E874B880BB5A9764E7339671A5EF16F38CC38245F8C1782C051C79ED3",
+      "matched": true
+    },
+    {
+      "segment_index": 4,
+      "orig_range": [
+        111419,
+        178190
+      ],
+      "new_range": [
+        114691,
+        181462
+      ],
+      "bytes": 66771,
+      "sha256": "1522B55AFC5F4D7DE9053E4CBEA56A04C3A4F92C74BD83143F63BC181DA911C7",
+      "matched": true
+    },
+    {
+      "segment_index": 5,
+      "orig_range": [
+        178283,
+        265416
+      ],
+      "new_range": [
+        181570,
+        268703
+      ],
+      "bytes": 87133,
+      "sha256": "A12F5F2DCB6448BFAA975EA8ABCE1E85F08AD37DA4BD6B3C4932F4FBCBEBDBD0",
+      "matched": true
+    }
+  ],
+  "entire_outside_bytes_equal": true,
+  "total_outside_bytes": 261380
+}

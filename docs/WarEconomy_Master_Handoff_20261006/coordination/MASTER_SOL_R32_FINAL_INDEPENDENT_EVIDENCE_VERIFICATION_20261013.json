@@ -1,0 +1,123 @@
+{
+  "at": "2026-10-13T00:56:43.973119+09:00",
+  "result_id": "SOL-GATE05-R32-CUSTODY-INDEPENDENT-S1-20261013-46a87b1da4f4474d9d18694f4443338e",
+  "delivery_id": "SOL-GATE05-R32-CUSTODY-INDEPENDENT-S1-20261013-01",
+  "completion": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R32-CUSTODY-INDEPENDENT-S1-20261013\\COMPLETION.json",
+    "sha256": "1342E1B2880393484B524B3A2D2463E2E49606053A9C21FB92624560528BB517",
+    "bytes": 3387
+  },
+  "report": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R32_Custody_Independent_S1_20261013.md",
+    "sha256": "DDAD228DE36B0166817C6FE78ECC5E1AC9476C79970871C6A6B550417B93B7D8",
+    "bytes": 13855
+  },
+  "evidence_manifest": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R32-CUSTODY-INDEPENDENT-S1-20261013\\EVIDENCE_MANIFEST.json",
+    "sha256": "FF5E86EB3F6825274440B28C7B1EA06E73ABF85CEF81898F4D6457649248E394",
+    "bytes": 273480
+  },
+  "evidence_files": 911,
+  "protected_paths": 16026,
+  "frozen_files": 64,
+  "prospective_build_inputs": 159,
+  "independent_raw_literal_bindings": 672,
+  "ordered_full_graphs": 60,
+  "crossculture_raw_pairs": 336,
+  "crossculture_graph_pairs": 30,
+  "copy_mutations_independently_compared": true,
+  "loaded_PE_MVID_filebyte_independent": true,
+  "oracle_semantics_independently_original_bound": true,
+  "runs": [
+    {
+      "run_id": "R32S1QA-c04c2ad8c5314ad8834a412ca241d7a4",
+      "culture": "en-US",
+      "pid": 25948,
+      "exit_code": 0,
+      "assertions": 438,
+      "typed_rows": 6700,
+      "raw_files": 336,
+      "graphs": 30,
+      "output_files": 407,
+      "prepost_pins": 172,
+      "loaded_counts": [
+        8,
+        10,
+        10
+      ],
+      "ledger": {
+        "primary_direct": 38,
+        "ordered_getter": 288,
+        "grouped_helper": 60,
+        "observational_helper": 180,
+        "QA_wrapper_not_publisher": 18
+      }
+    },
+    {
+      "run_id": "R32S1QA-5ad65f10ddbc4372bff916068df686f3",
+      "culture": "de-DE",
+      "pid": 34376,
+      "exit_code": 0,
+      "assertions": 438,
+      "typed_rows": 6700,
+      "raw_files": 336,
+      "graphs": 30,
+      "output_files": 407,
+      "prepost_pins": 172,
+      "loaded_counts": [
+        8,
+        10,
+        10
+      ],
+      "ledger": {
+        "primary_direct": 38,
+        "ordered_getter": 288,
+        "grouped_helper": 60,
+        "observational_helper": 180,
+        "QA_wrapper_not_publisher": 18
+      }
+    }
+  ],
+  "own_QA_builds": 1,
+  "Master_candidate_build_execution": 0,
+  "source_High4": "OPEN",
+  "native_E2": "NOT_RELEASED",
+  "Foundation": "HOLD",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:18",
+    "revision": 18,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a130c1-7666-76d2-a139-a893b1b6d6b4",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791819347,
+      "completedAt": 1791820341,
+      "durationMs": 994247
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acd0233b3c087d0afc2a0311e188da9",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016acd0233b3c087d0afc2a0311e188da9",
+      "turnId": "01a130c1-7666-76d2-a139-a893b1b6d6b4",
+      "phase": "final_answer",
+      "text": "R32 QA를 완료하고 마스터에게 보고했습니다. 두 정상 회귀 실행에서 각각 438개 assertion이 모두 통과했습니다. Native 검증은 미실행이며 Foundation HOLD를 유지합니다. QA 보고서 다음 마스터 지시를 기다리겠습니다."
+    },
+    "latestToolMarkerId": "exec-cdbd8bd2-2e04-45d7-90b4-a23cfb3c4bcf",
+    "latestToolMarker": {
+      "id": "exec-cdbd8bd2-2e04-45d7-90b4-a23cfb3c4bcf",
+      "turnId": "01a130c1-7666-76d2-a139-a893b1b6d6b4",
+      "type": "fileChange",
+      "name": "fileChange",
+      "status": "completed"
+    }
+  },
+  "limitations": "Positive PURE graph/copy only; modified lifecycle/native0; managed resources attempts/abort concurrency/unknown owner/legacy failure remain; Capture IDs holder replacement; no publisher/issuer proof"
+}

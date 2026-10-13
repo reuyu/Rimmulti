@@ -1,0 +1,30 @@
+================================================================================
+WarEconomy Gate05-R12 Pure Positive Normal Package Order Runner
+Run ID: GATE05-R12-PACKAGE-ORDER-RUN-01
+Current Culture: ko-KR (Invariant: )
+Candidate Assembly: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R12PackageOrder\Harness\bin\Debug\net472\WarEconomy.WorkerBridge.PoC.dll
+Target Contract Version: ADR-006B-v5-R12
+================================================================================
+[PASS] TC01_DeclarationSchemaAndCompactJson (1ms) - Verifies schemaVersion constant, compact JSON without BOM, and fixed field sequence.
+[PASS] TC02_PolicyDeclarationRoundTrip (11ms) - Verifies full round-trip serialization and deserialization of typed policy declaration.
+[PASS] TC03_DeterministicDigestAndEqualInstances (5ms) - Verifies identical digest for independent equal instances and reference SHA calculation.
+[PASS] TC04_OpaqueStringsWhitespacePreservation (0ms) - Verifies leading, trailing, and internal whitespace in policyId and revision are preserved without Trim.
+[PASS] TC05_OpaqueStringsUnicodeAndPunctuation (0ms) - Verifies lossless preservation of Unicode, quotes, backslashes, and punctuation in opaque identifiers.
+[PASS] TC06_PackageIdsCaseNormalization (0ms) - Verifies invariant lowercase normalization of package IDs in declaration serialization.
+[PASS] TC07_PermutationsDistinctDigests (0ms) - Verifies that isolated permutations of policyId, revision, list order, and multiplicity produce distinct digests.
+[PASS] TC08_DigestOverloadParity (0ms) - Verifies all ComputePackagePolicyDigest overloads route through canonical declaration producing identical digest.
+[PASS] TC09_PureCheckPackagePolicy_AlignedInventory_Success (6ms) - Verifies CheckPackagePolicy on physically aligned inventory (loadOrder 0, 1, 2) matching policy.
+[PASS] TC10_PureCheckPackagePolicy_PhysicalPermutation_PreservesEffectiveOrder (0ms) - Verifies physical transport permutation with fixed loadOrders preserves effective execution sequence and matches expected policy.
+[PASS] TC11_PureCheckPackagePolicy_CallerImmutability (3ms) - Verifies CheckPackagePolicy uses copied view and does NOT mutate caller's activeMods list.
+[PASS] TC12_PureTryAdmit_PhysicalPermutation_CanonicalAdmittedContent (21ms) - Verifies two physically permuted valid inventories produce identical canonical admitted JSON and digest.
+[PASS] TC13_DistinctValidExecutionOrders_MatchingDistinctPolicies (0ms) - Verifies equal-sized inventories declaring different execution sequences match their distinct corresponding policies.
+[PASS] TC14_FreshOriginal_SerializeTrue_BeforeAdmission (0ms) - Verifies policy-bearing fresh-original manifest serializes with canonicalNormalize=true before external admission.
+[PASS] TC15_OverloadParity_CheckAndTryAdmit (0ms) - Verifies all overloads of CheckPackagePolicy and TryAdmitWithPackagePolicy (Record vs Declaration) agree.
+[PASS] TC16_ContractVersion_And_CapabilityFlag (0ms) - Verifies ADR-006B-v5-R12 contract version and GATE05_R12_PACKAGE_ORDER capability flag.
+[PASS] TC17_Regression_R9_VersionMeaningSemantics (2ms) - Regresses R9 version meaning: modVersion null/empty values preserved without overwrite.
+[PASS] TC18_Regression_DefFamiliesAndCanonicalSorting (0ms) - Regresses 8 Def families presence and canonical sorting order.
+--------------------------------------------------------------------------------
+Total Tests: 18 | Passed: 18 | Failed: 0
+Overall Verdict: PASS (Elapsed: 58ms)
+--------------------------------------------------------------------------------
+Results saved to: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R12PackageOrder\results.json

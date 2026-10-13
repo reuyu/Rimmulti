@@ -1,0 +1,52 @@
+{
+  "recorded_at": "2026-10-12T14:29:26.626071+00:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2",
+  "wp_id": "WP_ENGINE_GATE05_R32_CUSTODY",
+  "envelope": 35,
+  "build_runs": [
+    {
+      "configuration": "Debug",
+      "pid": 34256,
+      "exit_code": 0,
+      "duration_seconds": 2.284256,
+      "argv": [
+        "dotnet",
+        "build",
+        "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+        "-c",
+        "Debug",
+        "--no-restore",
+        "-v:diag"
+      ],
+      "cwd": "C:\\Users\\user\\Desktop\\RimMulti",
+      "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R32Custody-64ad38e2\\build_debug_stdout.raw.txt",
+      "stdout_bytes": 1308578,
+      "stdout_sha256": "0C1B1D054E586AA41D8D2D054CEBC7E0F5201EE560AFACD554B630DA23E74F95",
+      "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R32Custody-64ad38e2\\build_debug_stderr.raw.txt",
+      "stderr_bytes": 0,
+      "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "configuration": "Release",
+      "pid": 12188,
+      "exit_code": 0,
+      "duration_seconds": 1.278215,
+      "argv": [
+        "dotnet",
+        "build",
+        "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+        "-c",
+        "Release",
+        "--no-restore",
+        "-v:diag"
+      ],
+      "cwd": "C:\\Users\\user\\Desktop\\RimMulti",
+      "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R32Custody-64ad38e2\\build_release_stdout.raw.txt",
+      "stdout_bytes": 1308727,
+      "stdout_sha256": "8833683B5E7D88BCF91C0C0B6E55AE34D6170D2732E66D28784570F5561DF347",
+      "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R32Custody-64ad38e2\\build_release_stderr.raw.txt",
+      "stderr_bytes": 0,
+      "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    }
+  ]
+}

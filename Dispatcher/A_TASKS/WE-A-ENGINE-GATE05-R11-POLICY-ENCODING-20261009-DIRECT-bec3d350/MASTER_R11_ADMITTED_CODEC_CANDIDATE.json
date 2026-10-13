@@ -1,0 +1,123 @@
+{
+  "at": "2026-10-09T08:30:18.180937+09:00",
+  "kind": "MASTER_OBSERVED_EXACT_CANDIDATE_IDENTITY_FOR_SCOPED_CODEC_QA",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R11-POLICY-ENCODING-20261009-DIRECT-bec3d350",
+  "wp_id": "WP_ENGINE_GATE05_R11_POLICY_ENCODING",
+  "result_id": "WE-A-ENGINE-GATE05-R11-POLICY-ENCODING-RESULT-01",
+  "freeze_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R11-POLICY-ENCODING-20261009-DIRECT-bec3d350\\MASTER_GATE05_R11_POLICY_ENCODING_REVIEW_FREEZE_MANIFEST.json",
+  "freeze_manifest_sha256": "79151763B710FE37E59148E272C1C7BC6C3D606D275B5215AF4174187C209DB1",
+  "freeze_files": 74,
+  "selected": {
+    "dll_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R11-bec3d350\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "133348C3FBC20215B9C4E0E9CA25D731781FCE9AD8CBE91F5A145BDB3620F98D",
+    "mvid": "e6c6f6fd-2915-4493-8ef9-dc5d87de1c6b",
+    "pdb_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R11-bec3d350\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "BA3027651BA59976BBEC6E1D2454AA0A2F5D964862809618AD80C9F2C6647BDE",
+    "source": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R11-bec3d350\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs"
+  },
+  "supported_policy_version_normal_only": "WE-PACKAGE-POLICY-V1",
+  "canonical_encoding": "fixedorderedfields/compactJSON/UTF8noBOM/literalvalidUnicode/quote-backslash-b-f-n-r-t and othercontrols lowercase4hex",
+  "master_observed_debug_release_metadata": [
+    {
+      "assembly": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "pdb": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "mvid": "e6c6f6fd-2915-4493-8ef9-dc5d87de1c6b",
+      "codeviewGuid": "9ea5d2fa-87a5-4a20-b7a2-faa277ba50fe",
+      "pdbGuid": "9ea5d2fa-87a5-4a20-b7a2-faa277ba50fe",
+      "codeviewMatched": true,
+      "documents": [
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "FA3E1EF5BB9E1B5EB94D001EC6A7B7B239C12A94F3105A388E553CC62BA5E2CA",
+          "actual": "FA3E1EF5BB9E1B5EB94D001EC6A7B7B239C12A94F3105A388E553CC62BA5E2CA",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+          "actual": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+          "actual": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.AssemblyInfo.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "8C7180C5E4D3004DE53926C1039C107C3059053C470CF73F82CF974EAF7D5681",
+          "actual": "8C7180C5E4D3004DE53926C1039C107C3059053C470CF73F82CF974EAF7D5681",
+          "matched": true
+        }
+      ],
+      "configuration": "Debug",
+      "dll_sha256": "133348C3FBC20215B9C4E0E9CA25D731781FCE9AD8CBE91F5A145BDB3620F98D",
+      "pdb_sha256": "BA3027651BA59976BBEC6E1D2454AA0A2F5D964862809618AD80C9F2C6647BDE"
+    },
+    {
+      "assembly": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "pdb": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "mvid": "35dfe68f-6a6f-44cc-a648-7c8153f6a2ad",
+      "codeviewGuid": "726b3628-aed4-4919-955a-47cbca296ad5",
+      "pdbGuid": "726b3628-aed4-4919-955a-47cbca296ad5",
+      "codeviewMatched": true,
+      "documents": [
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "FA3E1EF5BB9E1B5EB94D001EC6A7B7B239C12A94F3105A388E553CC62BA5E2CA",
+          "actual": "FA3E1EF5BB9E1B5EB94D001EC6A7B7B239C12A94F3105A388E553CC62BA5E2CA",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+          "actual": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+          "actual": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+          "matched": true
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.AssemblyInfo.cs",
+          "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+          "expected": "80492D41167FD5D58508DFC29A09E3624EC6374EF4048B2FF2D2C5EE86562743",
+          "actual": "80492D41167FD5D58508DFC29A09E3624EC6374EF4048B2FF2D2C5EE86562743",
+          "matched": true
+        }
+      ],
+      "configuration": "Release",
+      "dll_sha256": "A550896516C02F45F5CB4C30D39E35BC6F7ECABF07FBB595C5FCCE5D9EA66101",
+      "pdb_sha256": "B20543F66D0AE5068D43C5F7C6E6D192963A831AC87D570491488709DDF716C7"
+    }
+  ],
+  "producer_release_manifest_valid_json": false,
+  "producer_release_manifest_error": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R11_POLICY_ENCODING.json",
+    "sha256": "290507994A0E13A3A8F04F77637F240F3C7F55E63308E387B216831219AA8F80",
+    "error": "Invalid \\escape: line 57 column 60 (char 2823)",
+    "original_preserved": true,
+    "corrected_in_place": false
+  },
+  "producer_raw_encoding": "utf-16",
+  "raw_and_original_release_preserved": true,
+  "scoped_admission": "NEW_QA_OWNED_NORMAL_CODEC_POLICY_HELPER_RUNNER_ONLY",
+  "native_operator_cache_configuration_provider_released": false,
+  "production_rebuild_modify_allowed": false,
+  "invalid_adverse_or_old_runner_allowed": false,
+  "prior_PASS_inherited": false,
+  "master_execute_build": 0,
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "Foundation": "HOLD"
+}

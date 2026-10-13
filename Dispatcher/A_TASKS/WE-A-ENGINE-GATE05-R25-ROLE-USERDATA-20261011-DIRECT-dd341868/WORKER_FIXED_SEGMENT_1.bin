@@ -1,0 +1,133 @@
+                if (!string.IsNullOrEmpty(CustomSaveDataPathOverride))
+                {
+                    return CustomSaveDataPathOverride!;
+                }
+                try
+                {
+                    return GenFilePaths.SaveDataFolderPath;
+                }
+                catch
+                {
+                    return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "RimWorld");
+                }
+            }
+        }
+
+        private TcpListener? listener;
+        private Thread? listenerThread;
+        private volatile bool isRunning = true;
+        private readonly ConcurrentQueue<BridgeRequest> requestQueue = new ConcurrentQueue<BridgeRequest>();
+
+        private int port = 29100;
+
+        // Lifecycle & Correlation
+        private WorkerLifecycleState lifecycleState = WorkerLifecycleState.NO_GAME;
+        private long currentGeneration = 0;
+        private string lastFailureReason = "";
+        private string activeSaveName = "";
+        public static int DesignatedTargetMapIndex = 0;
+
+        // Semantic Authority, Grant & Promotion (QA-ENGINE-002, QA-ENGINE-006, WP-04, WP-05)
+        private AuthorityBundle? registeredAuthority = null;
+        private string registeredAuthorityJson = "";
+        private SimulationGrant? activeGrant = null;
+        private string activeGrantJson = "";
+        private long ticksSimulatedUnderGrant = 0;
+        private ResultManifest? sealedResult = null;
+        private ValidatorTask? currentValidatorTask = null;
+        private string currentValidatorTaskJson = "";
+        private string currentValidatorTaskPath = "";
+        private StageValidationReceipt? currentStageValidationReceipt = null;
+        private SemanticApprovalState semanticState = SemanticApprovalState.NONE;
+        private bool trustedSimulationReady = false;
+        private long currentResultEpoch = 0;
+        private string lastValidationSummary = "";
+        private string lastStagedPath = "";
+        private string lastStagedSha = "";
+
+        // G05-S01 / Gate05-R2 / Gate05-R4 / Gate05-R17 / Gate05-R18: Operator-launched and owned fresh validator process instance
+        public static string AdmittedOperatorValidatorExecutable => _activeStartupConfig?.AdmittedValidatorExecutablePath ?? "";
+        public static string AdmittedOperatorValidatorSha => _activeStartupConfig?.AdmittedValidatorExecutableSha256 ?? "";
+
+        private Process? operatorLaunchedValidatorProcess = null;
+        private int operatorLaunchedValidatorPid = 0;
+        private string operatorLaunchedValidatorStartTimeUtc = "";
+        private string operatorLaunchedValidatorExecutable = "";
+        private string operatorChannelSecretToken = "";
+        private int registeredValidatorProcessId = 0;
+        private string registeredValidatorStartTime = "";
+        private string registeredValidatorExecutable = "";
+
+        private void RevokeReadiness(string reason)
+        {
+            trustedSimulationReady = false;
+            semanticState = SemanticApprovalState.VALIDATION_FAILED;
+            sealedResult = null;
+            currentValidatorTask = null;
+            currentValidatorTaskJson = "";
+            currentValidatorTaskPath = "";
+            currentStageValidationReceipt = null;
+            if (operatorLaunchedValidatorProcess != null)
+            {
+                try { if (!operatorLaunchedValidatorProcess.HasExited) operatorLaunchedValidatorProcess.Kill(); } catch { }
+                try { operatorLaunchedValidatorProcess.Dispose(); } catch { }
+                operatorLaunchedValidatorProcess = null;
+            }
+            operatorLaunchedValidatorPid = 0;
+            operatorLaunchedValidatorStartTimeUtc = "";
+            operatorLaunchedValidatorExecutable = "";
+            operatorChannelSecretToken = "";
+            registeredValidatorProcessId = 0;
+            registeredValidatorStartTime = "";
+            registeredValidatorExecutable = "";
+            activeGrant = null;
+            activeGrantJson = "";
+            ticksSimulatedUnderGrant = 0;
+            currentResultEpoch++; // Any failure advances/invalidates epoch to prevent replay
+            lastFailureReason = reason;
+            Log.Warning($"[WorkerBridge] READINESS REVOKED: {reason}");
+        }
+
+        public static string GetActualContentProfileFingerprint()
+        {
+            return ContentProfileProvider.GetActualContentProfileFingerprint();
+        }
+
+        // Post-load Semantic & Error Gate (QA-ENGINE-002, QA-ENGINE-007)
+        private bool isTrackingLoadErrors = false;
+        private int loadErrorCount = 0;
+        private string firstLoadError = "";
+
+        // Sliced Simulation Loop & Hard Bounds (QA-ENGINE-003, QA-ENGINE-008)
+        private const int MAX_SLICE_SIZE = 20;
+        private const double MAX_TICK_BUDGET_MS = 10.0;
+        private const int MAX_QUEUE_DEPTH = 100;
+
+        private bool isRealtimeSimulating = false;
+        private float simulationTps = 60f;
+        private int targetTicksRemaining = 0;
+        private int ticksPerSlice = 10;
+        private float timeAccumulator = 0f;
+        private float lastSimFrameTime = 0f;
+        private bool isFirstSimFrame = true;
+
+        void Awake()
+        {
+            try
+            {
+                // Explicitly disable fastEcology
+                DebugSettings.fastEcology = false;
+
+                // Subscribe to Unity log callback for post-load error gating
+                Application.logMessageReceived += HandleUnityLogMessage;
+
+                // Gate05-R20: Connected trusted missing/default gate (M01..M03)
+                // Defense-in-depth: return before policy setup, TCP listener, or thread when no valid installed receipt
+                if (_activeAdmissionReceipt == null || !_activeAdmissionReceipt.IsValid())
+                {
+                    RevokeReadiness("Trusted operator startup receipt is missing or unadmitted (Fail-Closed).");
+                    Log.Error("[WorkerBridge] Awake: Trusted operator startup receipt is missing or unadmitted (Fail-Closed). Aborting component setup without starting listener.");
+                    return;
+                }
+
+                ContentProfileProvider.ConfigureExpectedPackagePolicy(_activeAdmissionReceipt.Snapshot.GetExpectedPackagePolicyDeclaration());

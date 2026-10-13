@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":false,\"wake\":{\"reason\":\"turnCompleted\",\"turnId\":\"01a129f1-83a2-7b21-8c3d-392f597ce3e2\",\"threadId\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\"},\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:143\",\"revision\":143,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"idle\"}},\"latestTurn\":{\"id\":\"01a129f1-83a2-7b21-8c3d-392f597ce3e2\",\"status\":\"completed\",\"error\":null,\"startedAt\":1791705056,\"completedAt\":1791705085,\"durationMs\":29593},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016acb3ffc671c87d08faed6c9bc80b437\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016acb3ffc671c87d08faed6c9bc80b437\",\"turnId\":\"01a129f1-83a2-7b21-8c3d-392f597ce3e2\",\"phase\":\"final_answer\",\"text\":\"마스터의 R22 정상 factory 경로 PASS 채택을 확인했습니다. M01은 수정 필요, Foundation HOLD를 유지합니다. 기존 증거는 보존했으며 새 후보와 QA 지시를 기다리겠습니다.\"},\"latestToolMarkerId\":\"exec-ae06644f-a6cd-4ebc-aa1c-633646968799\",\"latestToolMarker\":{\"id\":\"exec-ae06644f-a6cd-4ebc-aa1c-633646968799\",\"turnId\":\"01a129f1-83a2-7b21-8c3d-392f597ce3e2\",\"type\":\"fileChange\",\"name\":\"fileChange\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

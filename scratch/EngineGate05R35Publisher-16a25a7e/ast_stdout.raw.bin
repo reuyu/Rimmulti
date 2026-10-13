@@ -1,0 +1,31 @@
+{
+  "status": "AST_PARSE_SUCCESS",
+  "target_file": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+  "source_bytes": 22371,
+  "source_lines": 539,
+  "root_node": "Module",
+  "body_node_count": 24,
+  "functions_found": [
+    "compute_sha256_bytes",
+    "compute_sha256_file",
+    "check_no_duplicate_keys",
+    "is_fully_qualified_windows_path",
+    "is_reparse_point",
+    "is_64_ascii_hex",
+    "validate_declaration",
+    "validate_config",
+    "publish_pair",
+    "main"
+  ],
+  "classes_found": [],
+  "imports_found": [
+    "os",
+    "sys",
+    "json",
+    "stat",
+    "hashlib",
+    "datetime.datetime",
+    "datetime.timezone",
+    "collections.OrderedDict"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "at": "2026-10-13T00:39:51.045624+09:00",
+  "files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R32-CUSTODY-INDEPENDENT-S1-20261013\\ACK_INITIAL.json",
+      "sha256": "FCA87F6EDADAC42F112BB9FB9365D525202F6D8CB4F40CF5B340A5B0B262272A",
+      "bytes": 2649
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R32-CUSTODY-INDEPENDENT-S1-20261013\\bootstrap.STDOUT.txt",
+      "sha256": "E8C34E7B628FE7644F6F4849706245EDC276FACE65133FAA3D5A417F64AF7634",
+      "bytes": 5146769
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R32-CUSTODY-INDEPENDENT-S1-20261013\\bootstrap.STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R32-CUSTODY-INDEPENDENT-S1-20261013\\bootstrap.TOOL.json",
+      "sha256": "5EB6190DB30DA85FAC78C4CF4AA49771D6ED3D486063088147CD82E0EEECAB98",
+      "bytes": 1152
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R32-CUSTODY-INDEPENDENT-S1-20261013\\FROZEN_PE_PDB_IDENTITY.json",
+      "sha256": "92ED48FB0B72253E3CCE22A6C66D4EE939F7D48A4AD1E9DAA02D338D5046C2E2",
+      "bytes": 8146
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R32-CUSTODY-INDEPENDENT-S1-20261013\\METADATA_DEFINITION_PROVENANCE.json",
+      "sha256": "1CAE97984A9A58B010DCD3B7D9C0074F4E94651B1F7FCA1A7E855EA04A61C6CB",
+      "bytes": 10994
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R32-CUSTODY-INDEPENDENT-S1-20261013\\RECOVERY_AND_AUTHORITY_AUDIT.json",
+      "sha256": "E4758C70F4483BE14CA6FD246360DB90C5FDB8BF06916C6CE4400F89B364EBFC",
+      "bytes": 9352
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R32-CUSTODY-INDEPENDENT-S1-20261013\\PRESERVATION_BEFORE.json",
+      "sha256": "B01CFD821005124A89CE9566A296DEEA8115B875DD4A8EFCEA814810DF5CCB8F",
+      "bytes": 4824306
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R32-CUSTODY-INDEPENDENT-S1-20261013\\ORACLE_TEMPLATE_TEXT_INSPECTION.json",
+      "sha256": "E3358BB3FD52208D110230944E3B58CDF79F98CAFCE48F20218118FA0641266B",
+      "bytes": 3486168
+    }
+  ],
+  "ongoing_outputs_not_pinned": true,
+  "ACK_status_mirror_excluded": true,
+  "initial_metadata_only_not_terminal": true
+}

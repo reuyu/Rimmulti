@@ -1,0 +1,285 @@
+{
+  "at": "2026-10-14T04:29:50.856779+09:00",
+  "guard_session": 26686,
+  "dispatch_id": "WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e",
+  "result_id": "WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-RESULT-01",
+  "completion": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e\\COMPLETION.json",
+    "sha256": "39DB8DF26AE58B8F9F50CA2252A3B41C5D52114AAC8B60C40CEF7EAC4ECB3F71",
+    "bytes": 12033
+  },
+  "artifact_count": 22,
+  "artifacts": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\A_ENGINE_GATE05_R38_PUBLISHER_BOUNDARIES_REPORT_20261014.md",
+      "sha256": "65AE9BB77675226858E9F4E6687CD219BE1B3340D031F02AAA0AA633ABFDDB50",
+      "bytes": 7528
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e\\IMPLEMENTATION_REPORT.md",
+      "sha256": "5C91F14E6A29A98B8A307E079FAD36DF9469AA472A819190C12FABE1496A2B49",
+      "bytes": 8917
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R38_PUBLISHER_BOUNDARIES_20261014.md",
+      "sha256": "14D2D78F486C1D6DB26C0B2EABC445FA95E4E2944DECEC1F3DFC2C88B76F9955",
+      "bytes": 731
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e\\RELEASE_MANIFEST.json",
+      "sha256": "7BCCBC7F0B56E5E06C862CF5115E9E5521960DED3EF9B6C294E2AF7A76FD7569",
+      "bytes": 842
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e\\PUBLISHER_IDENTITY.json",
+      "sha256": "F84641F58518A1B5412672AA09FF16DEA4479015FE9B047C25B71D65F14F9422",
+      "bytes": 512
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e\\SOURCE_SCOPE_DIFF.json",
+      "sha256": "786226146C9FF119707DCBF03650096A3CB94F4DA7EF114152CBCC758EAD58A1",
+      "bytes": 2610
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e\\REQUIREMENT8_SOURCE_WITNESS.json",
+      "sha256": "1C9D6ACAB0047A501EE8CB5A21DD09989CB0C8BC84AA47BF0B5115390E45A037",
+      "bytes": 8789
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e\\SUPPORTED_DOMAIN_CONFIG_PATH_CONTRACT.json",
+      "sha256": "5B31165F0D89A2B8624D1F15BD40DC09D5F14DC2955D6B07B058DD06058F2FEE",
+      "bytes": 5411
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e\\EXCLUSIVE_PUBLICATION_FLOW.json",
+      "sha256": "68D6D5948EB7AFFEAC7E1D879FA90A9D74F173FE9691295AE1591F737420784E",
+      "bytes": 5008
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e\\REJECTION_SOURCE_MATRIX.json",
+      "sha256": "182E4591E9CA4357491626960F5BF12A1D6CB00C8A6FDFBDEDF8C130FF0DC045",
+      "bytes": 7605
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e\\ORIGINAL_SIX_LITERAL_COMPATIBILITY_SOURCE_REVIEW.md",
+      "sha256": "A8E74BD2B5C7E199CF5444AA206836AA4475868FB0EFD972178B8A01A3D0EFC3",
+      "bytes": 9388
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e\\BEFORE_AFTER_PRESERVATION.json",
+      "sha256": "E353C40625C3D1319EC48DBA355028B3D1663CE1625DD80B155740093FB00F07",
+      "bytes": 4263
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e\\PRESERVATION_BEFORE.json",
+      "sha256": "8DBF69C4ED97AF417BD79D0FB6034E51A7A786A3196BEB4E84BA1FFEF8FEE2AF",
+      "bytes": 4230
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e\\ACK_INITIAL.json",
+      "sha256": "A3F47EBCBAE4E6D00D2CF66DDC607AFD67DC5682B4D19B2C699C04C6B7F0C40C",
+      "bytes": 2647
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e\\ACK.json",
+      "sha256": "A3F47EBCBAE4E6D00D2CF66DDC607AFD67DC5682B4D19B2C699C04C6B7F0C40C",
+      "bytes": 2647
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\AST_INPUT_MANIFEST.json",
+      "sha256": "D44BD20E4BF7919CC0754C204D48E9FC8EDE6DB26D1442357F2D8A5EEAD02AC3",
+      "bytes": 6418
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\AST_HOST_TOOL_PROOF.json",
+      "sha256": "F60988922882C9EE7986A723FD968C1BDDBA590BA3195C58DFC7E0EAC993E952",
+      "bytes": 4315
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\ast_stdout.raw.bin",
+      "sha256": "6CE2917E748D7C67F7337FFDE6C5542797973FCBF1E58B8AFF259C3FE59BB56F",
+      "bytes": 2699
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\ast_stderr.raw.bin",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\OWNED_OUTPUT_MANIFEST.json",
+      "sha256": "BEBC69580EC8156750AA4D97F89F7A6CC6E64AB8713B037E7D04CC059C38C831",
+      "bytes": 3659
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+      "sha256": "940CF77220C272D117CDBC278B64858EFB3077267141CC548A0105B47D6E1306",
+      "bytes": 43666
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e\\RESULT_INDEX.json",
+      "sha256": "AB36300FC8693447D2334DEEA413230C68AC69A89BDA5C8175D9AC79FAB183BB",
+      "bytes": 7455
+    }
+  ],
+  "refs": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_ENGINE_GATE05_R38_PUBLISHER_BOUNDARIES.md",
+      "sha256": "358ACCF0717BAF257CEF8C80BB821570568698DCA987916C98B054719D1A1BBC",
+      "bytes": 1036
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\RELEASE_ENGINE_GATE05_R38_PUBLISHER_BOUNDARIES_20261014.md",
+      "sha256": "14DDA63751DD1E417589BC39806DF702394CD677E3D4C2F1499ABC4C95EF319E",
+      "bytes": 827
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R38_PUBLISHER_BOUNDARIES_IMPLEMENTATION_CONTRACT_20261014.md",
+      "sha256": "BFE455E5E3A9C1C71735AFEDB8732BD3A8AA444E1F03B9DE1FD348E6FC2B69B6",
+      "bytes": 8140
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e\\MASTER_R38_AUTHORIZED_SOURCE_SCOPE.json",
+      "sha256": "1DB85C95377C1FA573445453A5672045A6D218F8B7A24A2B53E3B89536E186C9",
+      "bytes": 3667
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R37_INDEPENDENT_STATIC_S1_20261014.md",
+      "sha256": "84016812620F3ED9D7533955130B60F7AAAF9342433162DFC30EAF42AB7FE41E",
+      "bytes": 4030
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R37_ORIGINAL_LITERAL_TIMESTAMP_CORRECTION_20261014.md",
+      "sha256": "FEC2A1C44D1BD6CEDF4E0EF15F23B7B51E940C863A3E246F09AC0C5AA56026E0",
+      "bytes": 1239
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R37_ORIGINAL_LITERAL_TIMESTAMP_RAW_WITNESS_20261014.json",
+      "sha256": "5C54C5570D88FEDAEA1EFD28329DB0078B0D8AA7D5485B6666844B025491A0F1",
+      "bytes": 4955
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R37_Publisher_Independent_Static_S1_20261014.md",
+      "sha256": "E7CDEBB501D24BB1ABA828066D02757314ADE2A8A6732E957F36E94ABF5B18A4",
+      "bytes": 13476
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R37-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\MINIMAL_NEXT_PUBLISHER_CORRECTIVE_REQUIREMENTS.json",
+      "sha256": "293F629D7446B40E49AD28DDED8EC9A0F8DB8E6936F5365F5F200DCED1073EDC",
+      "bytes": 2517
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R37-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\ORIGINAL_SIX_LITERAL_SOURCE_COMPATIBILITY_MATRIX.json",
+      "sha256": "C5A6891F877D75C852C207945AED4248765CB2E64194AF78B63CD42E78FE441F",
+      "bytes": 48173
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R35-PUBLISHER-PREPARATION-S1-20261013\\NORMAL_PUBLISHER_EXPECTATION_ORACLE.json",
+      "sha256": "E68672E66E88195CAA25E185446FA1EE44C4399ED18F1211824B496B3DE7D3E0",
+      "bytes": 185157
+    }
+  ],
+  "ACK": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e\\ACK_INITIAL.json",
+    "sha256": "A3F47EBCBAE4E6D00D2CF66DDC607AFD67DC5682B4D19B2C699C04C6B7F0C40C",
+    "bytes": 2647
+  },
+  "ACK_mirror_equal": true,
+  "fixed_Engine9": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "544B22178F80C63FE85584BCA93ED1D7B77B59554C93762F38655B87237682FD",
+      "bytes": 276685
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "bytes": 170135
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "8091F4414A29EF5AE224BA67A82A5F7B866C230EEFFC33D78486C28AD3297029",
+      "bytes": 326144
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "FE75B3D1AFA31C88AE2B8FB56F76F00D8929D28FCE1EA315027A154FFD76F0DE",
+      "bytes": 79220
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "9CBA7E69210DE90B069F269744F3140C4ADD802FD868AB0E0C71FB0E5F69D106",
+      "bytes": 308224
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "F05FE976EB522B6A5FC78338B0C35A8CC5341322BACB4CA6310F6AF3682933F5",
+      "bytes": 57776
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "8091F4414A29EF5AE224BA67A82A5F7B866C230EEFFC33D78486C28AD3297029",
+      "bytes": 326144
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "FE75B3D1AFA31C88AE2B8FB56F76F00D8929D28FCE1EA315027A154FFD76F0DE",
+      "bytes": 79220
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "bytes": 170135
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    }
+  ],
+  "freeze": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e\\MASTER_GATE05_R38_PUBLISHER_BOUNDARIES_REVIEW_FREEZE_MANIFEST.json",
+    "sha256": "85F08534BD3BD47258A8AC3A247438702FB318EA7F298C952B452C2464AF99DD",
+    "bytes": 20157
+  },
+  "frozen_files": 42,
+  "publisher": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+    "sha256": "940CF77220C272D117CDBC278B64858EFB3077267141CC548A0105B47D6E1306",
+    "bytes": 43666
+  },
+  "python_MVID": "N_A",
+  "actual_source_diff": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R38_ACTUAL_SOURCE_DIFF_20261014.txt",
+    "sha256": "0FDE70354DADCD092B00FE8F656D87A7569B8E5A9D870EEBFD622094E7B109D7",
+    "bytes": 27630
+  },
+  "AST": {
+    "PID": 9668,
+    "exit_code": 0,
+    "stdout": 2699,
+    "stderr": 0,
+    "functions18_totalnodes4926": true,
+    "source_interpreter_child_launcher_pins_matched": true,
+    "launcher_claimed_modulecount": 65,
+    "launcher_actual_pinned_rows": 20,
+    "actual_child_importfile_context_absent": true
+  },
+  "owned_declared": 11,
+  "owned_actual": 12,
+  "owned_unlisted": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\OWNED_OUTPUT_MANIFEST.json",
+      "sha256": "BEBC69580EC8156750AA4D97F89F7A6CC6E64AB8713B037E7D04CC059C38C831",
+      "bytes": 3659
+    }
+  ],
+  "protected19598_actual_checker_exit0_chunk": "4e2214",
+  "Master_candidate_build_publication_native_adverse_executions": 0,
+  "native_E2": "NOT_RELEASED",
+  "Foundation": "HOLD"
+}

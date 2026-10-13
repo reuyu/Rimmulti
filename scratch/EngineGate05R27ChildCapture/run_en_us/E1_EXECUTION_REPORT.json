@@ -1,0 +1,58 @@
+﻿{
+  "wp_id": "WP_ENGINE_GATE05_R27_CHILD_CAPTURE",
+  "wp_revision": "GATE05-R27-CHILD-CAPTURE",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3",
+  "envelope": 30,
+  "culture": "en-US",
+  "timestamp_utc": "2026-10-11T18:22:20.1301852Z",
+  "all_cases_passed": true,
+  "verdict": "PASS",
+  "total_cases": 4,
+  "issue_receipt_calls": 8,
+  "capture_calls": 4,
+  "expected_issue_receipt_calls": 8,
+  "expected_capture_calls": 4,
+  "prohibited_calls_executed": 0,
+  "cases": [
+    {
+      "case_index": 1,
+      "case_id": "PLAIN_PLAIN",
+      "status": "PASS",
+      "15_getters_verified": true,
+      "caller_task_mutation_isolated": true,
+      "detached_mutation_isolated": true,
+      "selected_user_data_directory": "C:\\QA R26 Ω\\Child Validator UserData",
+      "scope": "DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED"
+    },
+    {
+      "case_index": 2,
+      "case_id": "OPAQUE_OPAQUE",
+      "status": "PASS",
+      "15_getters_verified": true,
+      "caller_task_mutation_isolated": true,
+      "detached_mutation_isolated": true,
+      "selected_user_data_directory": "C:\\QA R26 Ω\\Child Validator UserData",
+      "scope": "DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED"
+    },
+    {
+      "case_index": 3,
+      "case_id": "PLAIN_OPAQUE_PADDED",
+      "status": "PASS",
+      "15_getters_verified": true,
+      "caller_task_mutation_isolated": true,
+      "detached_mutation_isolated": true,
+      "selected_user_data_directory": "C:\\QA R26 Ω\\Child Validator UserData",
+      "scope": "DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED"
+    },
+    {
+      "case_index": 4,
+      "case_id": "OPAQUE_PLAIN_PADDED",
+      "status": "PASS",
+      "15_getters_verified": true,
+      "caller_task_mutation_isolated": true,
+      "detached_mutation_isolated": true,
+      "selected_user_data_directory": "C:\\QA R26 Ω\\Child Validator UserData",
+      "scope": "DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED"
+    }
+  ]
+}

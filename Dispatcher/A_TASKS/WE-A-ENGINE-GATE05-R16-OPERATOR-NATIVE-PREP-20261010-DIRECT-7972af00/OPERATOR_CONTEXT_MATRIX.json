@@ -1,0 +1,659 @@
+{
+  "schema_version": 1,
+  "dispatch_id": "WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00",
+  "wp_id": "WP_ENGINE_GATE05_R16_OPERATOR_NATIVE_PREPARATION",
+  "wp_revision": "GATE05-R16-OPERATOR-NATIVE-PREPARATION",
+  "envelope": 19,
+  "description": "MD128 16 Logical Context Dimensions Authority Mapping for Gate05 Semantic Validation",
+  "created_at": "2026-10-10T02:54:00+09:00",
+  "dimensions": [
+    {
+      "dimension_id": "C01",
+      "name": "ValidatorTaskId_and_CapabilityNonce",
+      "logical_dimension": "Task Capability & Dedicated Channel Token",
+      "role": "Operator-issued capability authorizing fresh validator execution and channel correlation",
+      "creation_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1951-1963",
+        "method": "HandleStageSave",
+        "detail": "Generated cryptographically via RandomNumberGenerator (32-byte hex nonce and secret token) and GUID-based task ID"
+      },
+      "storage_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2003-2006",
+        "field": "currentValidatorTask, operatorChannelSecretToken"
+      },
+      "carry_anchor": {
+        "file": "EngineHostCensus.cs",
+        "structures": [
+          "ValidatorTask (lines 74-76)",
+          "ValidatorResult (lines 105-107)",
+          "StageValidationReceipt (lines 46-47)"
+        ]
+      },
+      "check_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2087-2091, 2291-2294, 2495-2509, 2550-2554",
+        "method": "HandleLaunchOperatorValidator, HandleExecuteValidatorTask, HandleCompleteStageValidation",
+        "detail": "Verified at launch, task start, channel result intake, and completion binding"
+      },
+      "consume_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2664-2691",
+        "method": "HandleCompleteStageValidation",
+        "detail": "currentValidatorTask.isConsumed = true, channel file moved to .consumed, bound to receipt"
+      },
+      "status": "IMPLEMENTED_STATIC_MANAGED_UNOBSERVED_NATIVE",
+      "notes_and_gaps": "Nonce prevents public requester invocation; secret token verifies out-of-band channel origin. Native execution untested."
+    },
+    {
+      "dimension_id": "C02",
+      "name": "StagedPath_and_StagedSha",
+      "logical_dimension": "Staged Input Location & Exact Byte Digest",
+      "role": "Identifies the exact staged save file and immutable SHA256 bytes submitted for independent validation",
+      "creation_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1875-1945",
+        "method": "HandleStageSave",
+        "detail": "Staged save written to isolated folder, validated via ValidateStagedXml, SHA256 computed from disk"
+      },
+      "storage_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1947-1948",
+        "field": "lastStagedPath, lastStagedSha"
+      },
+      "carry_anchor": {
+        "file": "EngineHostCensus.cs",
+        "structures": [
+          "ValidatorTask (lines 94-95)",
+          "ValidatorResult (lines 127-128)",
+          "StageValidationReceipt (lines 48-49)"
+        ]
+      },
+      "check_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2307-2317, 2555-2564, 2836-2850",
+        "method": "HandleExecuteValidatorTask, HandleCompleteStageValidation, HandlePromoteStaged",
+        "detail": "Validator re-hashes disk file against task.stagedSha; operator verifies result equality; promoter verifies pre-promotion file integrity"
+      },
+      "consume_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2692-2693, 2950-2974",
+        "method": "HandleCompleteStageValidation, HandlePromoteStaged",
+        "detail": "Bound into StageValidationReceipt; promoted to final save during promotion"
+      },
+      "status": "IMPLEMENTED_STATIC_MANAGED_UNOBSERVED_NATIVE",
+      "notes_and_gaps": "Requires fail-closed XML validation and exact disk re-hashing in validator process."
+    },
+    {
+      "dimension_id": "C03",
+      "name": "SourceArtifactHash",
+      "logical_dimension": "Canonical Source Artifact Digest",
+      "role": "Binds simulation proposal to the original baseline artifact from which execution originated",
+      "creation_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1125-1135",
+        "method": "HandleRegisterAuthority",
+        "detail": "Supplied by Dedicated Server / Operator in AuthorityBundle.expectedSourceArtifactHash"
+      },
+      "storage_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1205",
+        "field": "registeredAuthority.expectedSourceArtifactHash"
+      },
+      "carry_anchor": {
+        "file": "EngineHostCensus.cs",
+        "structures": [
+          "AuthorityBundle (line 20)",
+          "ResultManifest (line 148)",
+          "ValidatorTask (line 89)",
+          "ValidatorResult (line 123)",
+          "StageValidationReceipt (line 64)"
+        ]
+      },
+      "check_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1772, 2644-2648",
+        "method": "HandleSealResult, HandleCompleteStageValidation",
+        "detail": "Checked at sealing against registered authority; verified for exact equality in HandleCompleteStageValidation"
+      },
+      "consume_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2708",
+        "method": "HandleCompleteStageValidation",
+        "detail": "Materialized into StageValidationReceipt.sourceArtifactHash"
+      },
+      "status": "IMPLEMENTED_STATIC_MANAGED_UNOBSERVED_NATIVE",
+      "notes_and_gaps": "Prevents proposal lineage hijacking across unapproved source baselines."
+    },
+    {
+      "dimension_id": "C04",
+      "name": "AuthorityId",
+      "logical_dimension": "Issuing Authority Identity",
+      "role": "Identifies the unique authority instance under which simulation and validation occur",
+      "creation_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1090-1096",
+        "method": "HandleRegisterAuthority",
+        "detail": "Configured in AuthorityBundle by operator"
+      },
+      "storage_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1205",
+        "field": "registeredAuthority.authorityId"
+      },
+      "carry_anchor": {
+        "file": "EngineHostCensus.cs",
+        "structures": [
+          "AuthorityBundle (line 19)",
+          "SimulationGrant (line 35)",
+          "ResultManifest (line 136)",
+          "ValidatorTask (line 80)",
+          "ValidatorResult (line 111)",
+          "StageValidationReceipt (line 54)"
+        ]
+      },
+      "check_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1240-1246, 2565-2569, 2785-2795",
+        "method": "HandleRegisterGrant, HandleCompleteStageValidation, HandlePromoteStaged",
+        "detail": "Verified across grant, task, result, receipt, and promotion boundary"
+      },
+      "consume_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2698",
+        "method": "HandleCompleteStageValidation",
+        "detail": "Bound into StageValidationReceipt.authorityId"
+      },
+      "status": "IMPLEMENTED_STATIC_MANAGED_UNOBSERVED_NATIVE",
+      "notes_and_gaps": "Ensures authority boundary cannot be crossed without explicit registration."
+    },
+    {
+      "dimension_id": "C05",
+      "name": "StoreIncarnation_and_BaseLineage",
+      "logical_dimension": "Persistent Store Incarnation & Lineage",
+      "role": "Tracks the durable storage epoch and base lineage of the simulation world",
+      "creation_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1080-1090",
+        "method": "HandleRegisterAuthority",
+        "detail": "Configured in AuthorityBundle (storeIncarnation, baseLineage)"
+      },
+      "storage_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1205",
+        "field": "registeredAuthority.storeIncarnation, registeredAuthority.baseLineage"
+      },
+      "carry_anchor": {
+        "file": "EngineHostCensus.cs",
+        "structures": [
+          "AuthorityBundle (lines 28-29)",
+          "ResultManifest (lines 137-138)",
+          "ValidatorTask (lines 81-82)",
+          "ValidatorResult (lines 112-113)",
+          "StageValidationReceipt (lines 55-56)"
+        ]
+      },
+      "check_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2570-2579, 2796-2805",
+        "method": "HandleCompleteStageValidation, HandlePromoteStaged",
+        "detail": "Verified across task, result, receipt, and current registered authority"
+      },
+      "consume_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2699-2700",
+        "method": "HandleCompleteStageValidation",
+        "detail": "Bound into StageValidationReceipt"
+      },
+      "status": "IMPLEMENTED_STATIC_MANAGED_UNOBSERVED_NATIVE",
+      "notes_and_gaps": "Prevents cross-incarnation state leakage."
+    },
+    {
+      "dimension_id": "C06",
+      "name": "GrantId",
+      "logical_dimension": "Execution Grant Token",
+      "role": "Authorizes specific bounded simulation work with dedicated tick budget and execution class",
+      "creation_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1225-1235",
+        "method": "HandleRegisterGrant",
+        "detail": "Issued by operator via REGISTER_GRANT"
+      },
+      "storage_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1290",
+        "field": "activeGrant"
+      },
+      "carry_anchor": {
+        "file": "EngineHostCensus.cs",
+        "structures": [
+          "SimulationGrant (line 34)",
+          "ResultManifest (line 135)",
+          "ValidatorTask (line 83)",
+          "ValidatorResult (line 114)",
+          "StageValidationReceipt (line 57)"
+        ]
+      },
+      "check_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1520-1530, 2580-2584, 2806-2814",
+        "method": "HandleStepTicks, HandleCompleteStageValidation, HandlePromoteStaged",
+        "detail": "Checked at stepping, stage completion, and promotion boundary"
+      },
+      "consume_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2701",
+        "method": "HandleCompleteStageValidation",
+        "detail": "Bound into StageValidationReceipt.grantId"
+      },
+      "status": "IMPLEMENTED_STATIC_MANAGED_UNOBSERVED_NATIVE",
+      "notes_and_gaps": "Grant cannot be reused across generations."
+    },
+    {
+      "dimension_id": "C07",
+      "name": "WorkerGeneration",
+      "logical_dimension": "Worker Lifecycle Generation",
+      "role": "Monotonically increasing generation number tracking worker instance restarts and resets",
+      "creation_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "342, 1335-1340",
+        "method": "HandleResetWorker",
+        "detail": "Initialized to 1, incremented by 1 on every worker reset"
+      },
+      "storage_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "342",
+        "field": "currentGeneration"
+      },
+      "carry_anchor": {
+        "file": "EngineHostCensus.cs",
+        "structures": [
+          "AuthorityBundle (line 26)",
+          "SimulationGrant (line 36)",
+          "ResultManifest (line 143)",
+          "ValidatorTask (line 84)",
+          "ValidatorResult (line 115)",
+          "StageValidationReceipt (line 58)"
+        ]
+      },
+      "check_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1140-1155, 1250-1256, 2585-2589, 2815-2820",
+        "method": "HandleRegisterAuthority, HandleRegisterGrant, HandleCompleteStageValidation, HandlePromoteStaged",
+        "detail": "Strict equality required across all operations within generation"
+      },
+      "consume_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2702",
+        "method": "HandleCompleteStageValidation",
+        "detail": "Bound into StageValidationReceipt.workerGeneration"
+      },
+      "status": "IMPLEMENTED_STATIC_MANAGED_UNOBSERVED_NATIVE",
+      "notes_and_gaps": "Worker reset immediately invalidates all prior receipts and tasks."
+    },
+    {
+      "dimension_id": "C08",
+      "name": "ScopeId",
+      "logical_dimension": "Target Settlement / Scope Identity",
+      "role": "Defines the exact settlement or tactical partition scope for the simulation",
+      "creation_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1085",
+        "method": "HandleRegisterAuthority",
+        "detail": "Supplied in AuthorityBundle.targetScopeId (e.g. SETTLEMENT-B)"
+      },
+      "storage_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1205",
+        "field": "registeredAuthority.targetScopeId"
+      },
+      "carry_anchor": {
+        "file": "EngineHostCensus.cs",
+        "structures": [
+          "AuthorityBundle (line 24)",
+          "SimulationGrant (line 37)",
+          "ResultManifest (line 142)",
+          "ValidatorTask (line 85)",
+          "ValidatorResult (line 116)",
+          "StageValidationReceipt (line 59)"
+        ]
+      },
+      "check_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1270-1275, 2590-2594",
+        "method": "HandleRegisterGrant, HandleCompleteStageValidation",
+        "detail": "Verified between grant, authority, task, and result"
+      },
+      "consume_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2703",
+        "method": "HandleCompleteStageValidation",
+        "detail": "Bound into StageValidationReceipt.scopeId"
+      },
+      "status": "IMPLEMENTED_STATIC_MANAGED_UNOBSERVED_NATIVE",
+      "notes_and_gaps": "Scope restricts write-set; cannot replace entire global save."
+    },
+    {
+      "dimension_id": "C09",
+      "name": "StableTarget_and_TargetMapIndex",
+      "logical_dimension": "Target Map Index & Stable Map Identity",
+      "role": "Binds simulation to a specific map index with strict fail-closed boundary checking",
+      "creation_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1118, 1470-1510",
+        "method": "HandleRegisterAuthority, HandleSetTargetMap",
+        "detail": "Configured by operator; fail-closed targetMapIndex check"
+      },
+      "storage_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "344",
+        "field": "ScopedTacticalSession.TargetMapIndex"
+      },
+      "carry_anchor": {
+        "file": "EngineHostCensus.cs",
+        "structures": [
+          "AuthorityBundle (line 25)",
+          "SimulationGrant (line 38)",
+          "ResultManifest (line 144)",
+          "ValidatorTask (line 86)",
+          "ValidatorResult (line 117)",
+          "StageValidationReceipt (line 60)"
+        ]
+      },
+      "check_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2320-2323, 2348-2351, 2595-2599",
+        "method": "HandleExecuteValidatorTask, HandleCompleteStageValidation",
+        "detail": "Target clamping strictly prohibited under MD128; index out of range causes immediate fail-closed rejection"
+      },
+      "consume_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2704",
+        "method": "HandleCompleteStageValidation",
+        "detail": "Bound into StageValidationReceipt.targetMapIndex"
+      },
+      "status": "IMPLEMENTED_STATIC_MANAGED_UNOBSERVED_NATIVE",
+      "notes_and_gaps": "Clamp removal credited in Gate05-R4; map identity must correlate to loaded map."
+    },
+    {
+      "dimension_id": "C10",
+      "name": "AllowedOperationMode",
+      "logical_dimension": "Proposal Operation Mode vs Validator Execution Role",
+      "role": "Enforces strict separation between SIMULATION proposal mode and READ_ONLY validator role",
+      "creation_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1102-1108, 1988",
+        "method": "HandleRegisterAuthority, HandleStageSave",
+        "detail": "Authority and Grant must be SIMULATION; ValidatorTask forces READ_ONLY role"
+      },
+      "storage_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1205, 1290",
+        "field": "registeredAuthority.allowedOperationMode, activeGrant.allowedMode"
+      },
+      "carry_anchor": {
+        "file": "EngineHostCensus.cs",
+        "structures": [
+          "AuthorityBundle (line 27)",
+          "SimulationGrant (line 39)",
+          "ValidatorTask (line 87)",
+          "ValidatorResult (line 118)",
+          "StageValidationReceipt (lines 61-62)"
+        ]
+      },
+      "check_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2600-2628",
+        "method": "HandleCompleteStageValidation",
+        "detail": "Explicit check: AuthorityBundle & Grant == SIMULATION; ValidatorTask & Result == READ_ONLY. Escalation rejected."
+      },
+      "consume_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2705-2706",
+        "method": "HandleCompleteStageValidation",
+        "detail": "Bound into StageValidationReceipt.allowedMode and simulatorOperationMode"
+      },
+      "status": "IMPLEMENTED_STATIC_MANAGED_UNOBSERVED_NATIVE",
+      "notes_and_gaps": "Role separation prevents validator from mutating game state."
+    },
+    {
+      "dimension_id": "C11",
+      "name": "ContentProfileFingerprint",
+      "logical_dimension": "Loaded Content Profile Fingerprint",
+      "role": "Binds simulation to exact content manifest digest computed independently by both processes",
+      "creation_anchor": {
+        "file": "EngineHostCensus.cs",
+        "lines": "2100-2220",
+        "method": "ContentProfileProvider.ComputeActualContentProfileFingerprint",
+        "detail": "Computed from active DLCs, mods, and loaded assemblies via SHA256 digest"
+      },
+      "storage_anchor": {
+        "file": "EngineHostCensus.cs",
+        "lines": "1940-1960",
+        "field": "ContentProfileProvider cache core"
+      },
+      "carry_anchor": {
+        "file": "EngineHostCensus.cs",
+        "structures": [
+          "AuthorityBundle (line 23)",
+          "ResultManifest (line 141)",
+          "ValidatorTask (line 88)",
+          "ValidatorResult (line 125)",
+          "StageValidationReceipt (line 63)"
+        ]
+      },
+      "check_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2296-2300, 2649-2654",
+        "method": "HandleExecuteValidatorTask, HandleCompleteStageValidation",
+        "detail": "Validator verifies loaded content against task; operator verifies result against active loaded content"
+      },
+      "consume_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2707",
+        "method": "HandleCompleteStageValidation",
+        "detail": "Bound into StageValidationReceipt.contentProfileFingerprint"
+      },
+      "status": "IMPLEMENTED_STATIC_MANAGED_UNOBSERVED_NATIVE",
+      "notes_and_gaps": "R15 sealed public collector; native def collection remains untested in standalone harness."
+    },
+    {
+      "dimension_id": "C12",
+      "name": "SupportedSemanticManifestVersion",
+      "logical_dimension": "Supported Semantic Manifest Version & Schema",
+      "role": "Declares exact semantic codec contract version (e.g. ADR-006B-v5-R15 / 4.0)",
+      "creation_anchor": {
+        "file": "EngineHostCensus.cs",
+        "lines": "21, 348",
+        "method": "AuthorityBundle, CensusManifestData",
+        "detail": "manifestVersion = 4.0, manifestSchema = SupportedSemanticManifest_V4_Closed"
+      },
+      "storage_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1205",
+        "field": "registeredAuthority.manifestVersion"
+      },
+      "carry_anchor": {
+        "file": "EngineHostCensus.cs",
+        "structures": [
+          "AuthorityBundle (line 21)",
+          "ResultManifest (line 139)",
+          "ValidatorTask (line 90)",
+          "ValidatorResult (line 119)",
+          "StageValidationReceipt (line 52)"
+        ]
+      },
+      "check_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2629-2633",
+        "method": "HandleCompleteStageValidation",
+        "detail": "Verified: res.manifestVersion == currentValidatorTask.manifestVersion == sealedResult.manifestVersion"
+      },
+      "consume_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2696",
+        "method": "HandleCompleteStageValidation",
+        "detail": "Bound into StageValidationReceipt.manifestVersion"
+      },
+      "status": "IMPLEMENTED_STATIC_MANAGED_UNOBSERVED_NATIVE",
+      "notes_and_gaps": "Schema version prevents cross-version serialization divergence."
+    },
+    {
+      "dimension_id": "C13",
+      "name": "SealedResultId",
+      "logical_dimension": "Immutable Sealed Result Identifier",
+      "role": "Unique immutable identifier generated at the moment simulation result is sealed",
+      "creation_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1755",
+        "method": "HandleSealResult",
+        "detail": "Generated as SR_{timestamp}_{guid}"
+      },
+      "storage_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1785",
+        "field": "sealedResult.sealedResultId"
+      },
+      "carry_anchor": {
+        "file": "EngineHostCensus.cs",
+        "structures": [
+          "ResultManifest (line 134)",
+          "ValidatorTask (line 91)",
+          "ValidatorResult (line 120)",
+          "StageValidationReceipt (line 50)"
+        ]
+      },
+      "check_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2634-2638, 2829-2833",
+        "method": "HandleCompleteStageValidation, HandlePromoteStaged",
+        "detail": "Verified: res.sealedResultId == task.sealedResultId == sealedResult.sealedResultId"
+      },
+      "consume_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2694",
+        "method": "HandleCompleteStageValidation",
+        "detail": "Bound into StageValidationReceipt.sealedResultId"
+      },
+      "status": "IMPLEMENTED_STATIC_MANAGED_UNOBSERVED_NATIVE",
+      "notes_and_gaps": "Receipt cannot validate an unsealed or superseded result."
+    },
+    {
+      "dimension_id": "C14",
+      "name": "ResultEpoch_and_CurrentEpoch",
+      "logical_dimension": "Result Epoch & Authority Invalidation Counter",
+      "role": "Tracks the execution invalidation epoch; any state reset or invalidation advances epoch",
+      "creation_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "343, 401, 1324",
+        "method": "WorkerBridgeComponent, RevokeReadiness, HandleResetWorker",
+        "detail": "currentResultEpoch incremented on every reset or revocation"
+      },
+      "storage_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "343",
+        "field": "currentResultEpoch"
+      },
+      "carry_anchor": {
+        "file": "EngineHostCensus.cs",
+        "structures": [
+          "ValidatorTask (line 92)",
+          "ValidatorResult (line 121)",
+          "StageValidationReceipt (line 51)"
+        ]
+      },
+      "check_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2639-2643, 2822-2826",
+        "method": "HandleCompleteStageValidation, HandlePromoteStaged",
+        "detail": "Verified: res.resultEpoch == task.resultEpoch == currentResultEpoch == sealedResult.resultEpoch"
+      },
+      "consume_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2695",
+        "method": "HandleCompleteStageValidation",
+        "detail": "Bound into StageValidationReceipt.resultEpoch"
+      },
+      "status": "IMPLEMENTED_STATIC_MANAGED_UNOBSERVED_NATIVE",
+      "notes_and_gaps": "Epoch mismatch immediately blocks stale receipt promotion."
+    },
+    {
+      "dimension_id": "C15",
+      "name": "SealedManifestHash",
+      "logical_dimension": "Sealed Census Manifest Hash",
+      "role": "Digest of the census manifest JSON computed by worker at the moment of sealing",
+      "creation_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1748-1750",
+        "method": "HandleSealResult",
+        "detail": "liveCensus = GenerateCensus(map); sealedManifestHash = liveCensus.ComputeManifestHash()"
+      },
+      "storage_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1785",
+        "field": "sealedResult.sealedManifestHash"
+      },
+      "carry_anchor": {
+        "file": "EngineHostCensus.cs",
+        "structures": [
+          "ResultManifest (line 140)",
+          "ValidatorTask (line 93)",
+          "ValidatorResult (line 122)",
+          "StageValidationReceipt (line 53)"
+        ]
+      },
+      "check_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "1933, 2343, 2655-2661, 2855-2870",
+        "method": "HandleStageSave, HandleExecuteValidatorTask, HandleCompleteStageValidation, HandlePromoteStaged",
+        "detail": "Verified against staged XML saved-bytes and live census manifest"
+      },
+      "consume_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2697",
+        "method": "HandleCompleteStageValidation",
+        "detail": "Bound into StageValidationReceipt.sealedManifestHash"
+      },
+      "status": "IMPLEMENTED_STATIC_MANAGED_UNOBSERVED_NATIVE",
+      "notes_and_gaps": "Binds semantic content to XML payload."
+    },
+    {
+      "dimension_id": "C16",
+      "name": "ActualValidatorManifestHash",
+      "logical_dimension": "Actual Validator Census Manifest Hash",
+      "role": "Independently computed census manifest hash from fresh loaded state inside validator process",
+      "creation_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2354-2355",
+        "method": "HandleExecuteValidatorTask",
+        "detail": "liveCensus = EngineHostCensus.GenerateCensus(map); liveHash = liveCensus.ComputeManifestHash()"
+      },
+      "storage_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2410",
+        "field": "ValidatorResult.actualManifestHash"
+      },
+      "carry_anchor": {
+        "file": "EngineHostCensus.cs",
+        "structures": [
+          "ValidatorResult (line 126)"
+        ]
+      },
+      "check_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2357-2360, 2655-2661",
+        "method": "HandleExecuteValidatorTask, HandleCompleteStageValidation",
+        "detail": "Validator checks liveHash == task.sealedManifestHash; operator checks res.actualManifestHash == sealedResult.sealedManifestHash"
+      },
+      "consume_anchor": {
+        "file": "WorkerBridge.cs",
+        "lines": "2688-2714",
+        "method": "HandleCompleteStageValidation",
+        "detail": "Verified for exact match; conditions receipt materialization"
+      },
+      "status": "IMPLEMENTED_STATIC_MANAGED_UNOBSERVED_NATIVE",
+      "notes_and_gaps": "Core semantic oracle proof. Native execution requires fully loaded DefDatabase."
+    }
+  ]
+}

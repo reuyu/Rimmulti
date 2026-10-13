@@ -1,0 +1,67 @@
+{
+  "flow_name": "EXCLUSIVE_ATOMIC_NONOVERWRITE_PUBLICATION",
+  "contract": "MASTER_R35_PLAN_ONLY_PUBLISHER_SAFETY_CONTRACT_20261013.md",
+  "steps": [
+    {
+      "step_index": 1,
+      "phase": "PRE_PUBLICATION_VALIDATION",
+      "operations": [
+        "Verify operator_pair_id is non-empty string without trim/normalization.",
+        "Verify fixed bundle filename equals 'operator_startup_pair.json' (no traversal).",
+        "Validate parent and child declarations (exact 7 fields, non-empty, role, fully-qualified path, 64-hex SHA).",
+        "Validate parent and child config paths (fully-qualified, file exists, not reparse point).",
+        "Enforce Windows path equality between supplied paths and declaration expectedConfigPath.",
+        "Read raw config bytes ONCE and rehash SHA-256.",
+        "Verify raw SHA-256 matches descriptor expectedConfigSha256.",
+        "Validate config14 JSON (no BOM, no duplicate properties, exact 14 properties, scalar types, policy object).",
+        "Validate config role, configId, capabilityBoundary bindings.",
+        "Enforce blank validatorArguments in both configs."
+      ]
+    },
+    {
+      "step_index": 2,
+      "phase": "OWNED_ROOT_EXCLUSIVE_RESERVATION",
+      "operations": [
+        "Verify output_dir is fully-qualified Windows path without traversal.",
+        "Verify output_dir does NOT preexist (os.path.lexists check).",
+        "Verify parent directory of output_dir exists and is NOT a reparse point.",
+        "Exclusively create output_dir via os.mkdir (fails if directory exists)."
+      ]
+    },
+    {
+      "step_index": 3,
+      "phase": "STAGING_BUNDLE_CREATION",
+      "operations": [
+        "Serialize bundle dict (schemaVersion, operatorPairId, parentDeclaration, childDeclaration) to compact UTF-8 without BOM.",
+        "Exclusively write 'operator_startup_pair.staging.json' using mode 'xb'."
+      ]
+    },
+    {
+      "step_index": 4,
+      "phase": "SIDECAR_ARTIFACT_CREATION",
+      "operations": [
+        "Exclusively write 'operator_startup_pair.sha256.txt' using mode 'xb'.",
+        "Construct PROVENANCE_MANIFEST.json with exact inputs, outputs, publisher metadata, and hashes.",
+        "Exclusively write 'PROVENANCE_MANIFEST.json' using mode 'xb'."
+      ]
+    },
+    {
+      "step_index": 5,
+      "phase": "ATOMIC_FINAL_PUBLICATION",
+      "operations": [
+        "Atomically create 'operator_startup_pair.json' via os.link from staging file.",
+        "os.link guarantees atomic directory entry creation on NTFS and fails if target exists.",
+        "Retain 'operator_startup_pair.staging.json' as immutable forensic evidence."
+      ]
+    },
+    {
+      "step_index": 6,
+      "phase": "ERROR_HANDLING_POLICY",
+      "operations": [
+        "Never os.remove/unlink/rmtree/replace on error.",
+        "Partial outputs remain raw evidence; no cleanup deletion or automatic retry.",
+        "No destructive fallback or overwrite-capable operations permitted."
+      ]
+    }
+  ]
+}

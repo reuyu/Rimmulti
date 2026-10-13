@@ -1,0 +1,27 @@
+{
+  "case_index": 1,
+  "case_id": "PLAIN_PLAIN",
+  "operatorPairId": "WE-PAIR-DEV-R29-PLAIN-PLAIN-01",
+  "parentDeclaration": {
+    "originId": "qa.R29.parent.origin.plain",
+    "expectedConfigId": "qa.R29.parent.cfg.1",
+    "expectedRole": "SIMULATION",
+    "expectedCapabilityBoundary": "LOCAL_SANDBOXED",
+    "launchPlanId": "qa.R29.parent.plan.plain",
+    "expectedConfigPath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\Fixtures\\parent_config_01.json",
+    "expectedConfigSha256": "939285CA1FF4BFAE418241CF7FCB850BD18C297FC138F108B58C7B5DE8435559"
+  },
+  "childDeclaration": {
+    "originId": "qa.R29.child.origin.plain",
+    "expectedConfigId": "qa.R29.child.cfg.1",
+    "expectedRole": "READ_ONLY",
+    "expectedCapabilityBoundary": "LOCAL_SANDBOXED",
+    "launchPlanId": "qa.R29.child.plan.plain",
+    "expectedConfigPath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\Fixtures\\child_config_01.json",
+    "expectedConfigSha256": "0BBE709CC300106DAA35FB9A3162E85A3039768B3A9401B07814BC66A6C78F5C"
+  },
+  "parentConfigPath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\Fixtures\\parent_config_01.json",
+  "childConfigPath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\Fixtures\\child_config_01.json",
+  "outputDir": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\PublishedPairs\\case_01",
+  "bundleFilename": "operator_startup_pair.json"
+}

@@ -1,0 +1,15 @@
+from common import *
+d=load(Q/'prepare.TOOL.json');assert d['exit_code']==0;check([d['stdout'],d['stderr']]);assert load(Q/'prepare.SYNTAX_PRECHECK.json')['exit_code']==0
+check(load(Q/'OWNED_PRESEAL_INVENTORY.json')['files']);check([load(Q/'FINAL_PREPARATION_ACCOUNTING.json')['report']]);check(load(Q/'PASSIVE_INPUT_MANIFEST.json')['files'])
+a=load(Q/'ACK_INITIAL.json');assert sha(Q/'ACK_INITIAL.json')==sha(Q/'ACK.json')=='20FB710B2B00678F1C1872FACC7252BC9EA5F5395486167EE39849D9DFA7C2DF';account=load(Q/'REVIEW_EXECUTION_ACCOUNTING.json')
+excluded=['EVIDENCE_MANIFEST.json','RESULT_INDEX.json','ACK_COMPLETION_BINDING.json','RETURN_PENDING.json','COMPLETION.json','COMPLETION.json.tmp','RETURN_TOOL_PROOF.json','DELIVERY_STATUS.json','seal.STDOUT.txt','seal.STDERR.txt','seal.TOOL.json']
+files=[row(p) for p in sorted(Q.rglob('*')) if p.is_file() and p.relative_to(Q).as_posix() not in excluded]+[row(REPORT)];check(files)
+ctx=dict(delivery_id=DELIVERY,wp='WP_QA_ENGINE_GATE05_R37_PUBLISHER_INDEPENDENT_STATIC',stage='S1',result_id=a['result_id'],verdict=account['verdict'],scope='FROZEN_PUBLISHER_TEXT_STATIC_ONLY',publisher_Engine_compiler_fixture_native_adverse=0,Master_disposition='PENDING',Foundation='HOLD',native_full_E2='NOT_RELEASED',closure=False)
+write(Q/'EVIDENCE_MANIFEST.json',dict(at=now(),**ctx,files=files,file_count=len(files),explicit_cycle_and_postseal_exclusions=excluded,all_late_owned_helpers_included=True,actual_seal_tool_streams_return_saved_separately=True))
+write(Q/'RESULT_INDEX.json',dict(at=now(),**ctx,source_accounting=account,source_counts_not_tests=True,manifest=row(Q/'EVIDENCE_MANIFEST.json'),report=row(REPORT),preservation=row(Q/'PRESERVATION_BEFORE_AFTER.json')))
+write(Q/'ACK_COMPLETION_BINDING.json',dict(at=now(),**ctx,initial_ACK=row(Q/'ACK_INITIAL.json'),initial_mirror=row(Q/'ACK.json'),initial_ACK_unchanged=True,manifest=row(Q/'EVIDENCE_MANIFEST.json'),index=row(Q/'RESULT_INDEX.json'),report=row(REPORT)))
+write(Q/'RETURN_PENDING.json',dict(at=now(),**ctx,status='PENDING_ACTUAL_DIRECT_SUBMISSION',immutable_intent_not_acceptance=True))
+arts=[row(Q/n) for n in ['EVIDENCE_MANIFEST.json','RESULT_INDEX.json','ACK_COMPLETION_BINDING.json','PRESERVATION_BEFORE_AFTER.json','RETURN_PENDING.json']]+[row(REPORT)];check(files);check(arts)
+comp=dict(at=now(),**ctx,status='COMPLETED',artifacts=arts,evidence_file_count=len(files),source_counts=account['counts'],source_counts_not_tests=True,production_changes=0,own_metadata_success_stages=5,own_metadata_errors=0,syntax_prechecked_all_stages=True,original6_raw12_unchanged=True,producer_owned10_actual12_preserved=True,atomic_completion_last=True,postseal_exclusions=excluded)
+write(Q/'COMPLETION.json.tmp',comp);assert not (Q/'COMPLETION.json').exists();(Q/'COMPLETION.json.tmp').rename(Q/'COMPLETION.json')
+print(json.dumps(dict(report=row(REPORT),manifest=row(Q/'EVIDENCE_MANIFEST.json'),index=row(Q/'RESULT_INDEX.json'),completion=row(Q/'COMPLETION.json'),evidence_file_count=len(files),all_candidate_execution=0,verdict=account['verdict']),ensure_ascii=False))

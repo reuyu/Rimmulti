@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:191\",\"revision\":191,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a12da7-4e7b-7352-ad70-4efa4aa792ac\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791767301,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016acc35c355dc87d0a6fada53f5dfce24\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016acc35c355dc87d0a6fada53f5dfce24\",\"turnId\":\"01a12da7-4e7b-7352-ad70-4efa4aa792ac\",\"phase\":\"commentary\",\"text\":\"초기 lineage와 runner 준비는 성공했지만, 정적 증거 추출에서 제가 계약의 gate 이름을 소스 문자열로 가정해 찾지 못했습니다. 전체 stderr를 보존했습니다. 아직 빌드·후보 호출은 없으며, 마스터에게 이 증거 추출 정정의 재개 범위를 요청하겠습니다.\"},\"latestToolMarkerId\":\"exec-6d4dcb51-d6b3-41c3-91b1-176154cabbe4\",\"latestToolMarker\":{\"id\":\"exec-6d4dcb51-d6b3-41c3-91b1-176154cabbe4\",\"turnId\":\"01a12da7-4e7b-7352-ad70-4efa4aa792ac\",\"type\":\"fileChange\",\"name\":\"fileChange\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

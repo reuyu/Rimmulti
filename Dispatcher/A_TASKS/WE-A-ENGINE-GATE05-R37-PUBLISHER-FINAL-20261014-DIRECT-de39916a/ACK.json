@@ -1,0 +1,39 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a",
+  "wp_id": "WP_ENGINE_GATE05_R37_PUBLISHER_FINAL",
+  "wp_revision": "GATE05-R37-PUBLISHER-FINAL",
+  "delivery_envelope_revision": 40,
+  "received_at": "2026-10-13T16:01:22.789029+00:00",
+  "status": "ACKNOWLEDGED",
+  "recipient": "A",
+  "route": "MASTER_DIRECT_COMPUTER_USE_ANTIGRAVITY",
+  "instruction_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_ENGINE_GATE05_R37_PUBLISHER_FINAL.md",
+  "instruction_sha256": "D721B31197FB92B5B32629251450C0164869EAB83255BC3E4855F7A5D6CA8C6B",
+  "work_package_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_ENGINE_GATE05_R37_PUBLISHER_FINAL.md",
+  "work_package_sha256": "D721B31197FB92B5B32629251450C0164869EAB83255BC3E4855F7A5D6CA8C6B",
+  "release_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\RELEASE_ENGINE_GATE05_R37_PUBLISHER_FINAL_20261014.md",
+  "release_sha256": "EA11EA70F15B4AA7D5D1D8F7FE424DA2B64A3BFE94EFC10760E4D451439F5197",
+  "contract_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R37_PUBLISHER_FINAL_IMPLEMENTATION_CONTRACT_20261014.md",
+  "contract_sha256": "8B5B0DD5B71AF36826036BAE70436A65444260949E2BD68EAB7F9054E8DA130C",
+  "scope_baseline_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R37-PUBLISHER-FINAL-20261014-DIRECT-de39916a\\MASTER_R37_AUTHORIZED_SOURCE_SCOPE.json",
+  "scope_baseline_sha256": "AD8806EE585D30FE3939D3D51BD5AAD5C91A26B527552F398C10946661696F37",
+  "allowed_mutable_paths": [
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py"
+  ],
+  "new_owned_E1_root": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R37PublisherFinal-de39916a",
+  "current_publisher_before": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+    "bytes": 31689,
+    "sha256": "F60CBC184C6627F0FE15A5A904D0C45A026E20C5138973066BB8174DD8FBFD3F"
+  },
+  "all9_engine_bit_exact": true,
+  "governance_commitments": {
+    "dedicated_server_authority": true,
+    "foundation_hold": true,
+    "zero_engine_builds": true,
+    "zero_publisher_executions": true,
+    "zero_native_unit_executions": true,
+    "zero_1_7_migrations": true,
+    "standalone_ast_verification_only": true
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "at": "2026-10-13T01:06:38.557910+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5",
+  "wp_id": "WP_ENGINE_GATE05_R33_RESOURCE_COMMIT",
+  "wp_revision": "GATE05-R33-RESOURCE-COMMIT",
+  "envelope": 36,
+  "fresh_idle": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R33_A_IDLE_FRESH_20261013.json",
+    "sha256": "D11B457FB3D2CACC507F556829DD8173B6931B862B7B7BA1E744ADB802D26625",
+    "bytes": 80022
+  },
+  "exact_draft": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R33_A_DRAFT_VERIFIED_20261013.json",
+    "sha256": "B6D5215D33B413E75757236DE588FA00D09E1471BD44A41B23DA8FC555A3193F",
+    "bytes": 81418
+  },
+  "actual_submission": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R33_A_SUBMIT_FRESH_20261013.json",
+    "sha256": "61EAD542D6E40ED12BC7ACBDAAC2345B6BDA5DEC72E53CD156DD225DF4E4CDAD",
+    "bytes": 55505
+  },
+  "exact_message_sha256": "92A683FB84060AFE816BAA151DC290F51721807EBA7BA5071C7B9788317E8818",
+  "submission_attempts": 1,
+  "delivery_status": "SENT",
+  "unknown_delivery": false,
+  "actual_working": true,
+  "composer_empty": true,
+  "ACK": "PENDING",
+  "scheduler": "RESUME_PENDING_TOOL",
+  "guard_run": "MASTER-R32-SOL-COMPLETE-20261013-01",
+  "guard_session": 65470,
+  "initial_click_error": "coordinate input geometry unavailable on text-only snapshot; reobserved screenshot; no text or submission then; composer visual focus/Tab-ShiftTab confirmed before type",
+  "Foundation": "HOLD",
+  "native_E2": "NOT_RELEASED"
+}

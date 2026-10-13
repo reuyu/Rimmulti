@@ -1,0 +1,19 @@
+{
+  "run_id": "MASTER-R32-SOL-COMPLETE-20261013-01",
+  "guard_session": 65470,
+  "actual_release_tool": {
+    "chunk_id": "4faa0e",
+    "wall_time_seconds": 0.0000278,
+    "exit_code": 0,
+    "original_token_count": 116,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R32-SOL-COMPLETE-20261013-01\", \"pid\": 3\r\n\u001b[23;80H35120, \"locked_at\": \"2026-10-13T00:52:26.522086+09:00\", \"mechanism\": \"Windows msv\r\n\u001b[23;80Hvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"\r\n\u001b[23;80H\"2026-10-13T01:10:33.017539+09:00\", \"renewal_count\": 8, \"release_reason\": \"RELEAS\r\n\u001b[23;80HSE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-13T01:11:19.636775+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "R32_normal_QA_scoped_PASS_Master_accepted": true,
+  "A_R33_actual_SENT_Working_ACK36_verified": true,
+  "same_hourly_actual_ACTIVE_verified": true,
+  "original_Sol_parallel_R33_frozen_R32_resource_native_preparation_new_actual_active_turn": true,
+  "Master_candidate_build_execution": 0,
+  "no_High_closure": true,
+  "Foundation": "HOLD",
+  "full_native_E2": "NOT_RELEASED"
+}

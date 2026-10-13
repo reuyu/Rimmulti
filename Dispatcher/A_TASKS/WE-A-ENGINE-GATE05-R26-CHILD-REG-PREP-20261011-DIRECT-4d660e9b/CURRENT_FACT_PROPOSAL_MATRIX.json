@@ -1,0 +1,142 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R26-CHILD-REG-PREP-20261011-DIRECT-4d660e9b",
+  "generated_at_utc": "2026-10-11T14:49:00Z",
+  "task_revision": "GATE05-R26-CHILD-REG-PREP",
+  "envelope": 29,
+  "e1_verdict": "READ_ONLY_PREPARATION_NO_EXECUTION",
+  "categories": {
+    "current_facts": [
+      {
+        "item_id": "FACT-01-SINGLETON-STARTUP-CONFIG",
+        "description": "WorkerBridge possesses only a single static slot for operator startup configuration (_activeAdmissionReceipt / _activeStartupConfig) sealed via _operatorConfigSealed.",
+        "file": "scratch/WorkerBridgeMod/Source/WorkerBridge.cs",
+        "line_span": "413-436",
+        "start_byte_offset": 14401,
+        "end_byte_offset": 15598,
+        "span_sha256": "B153800FB5FFADE8C8A95D1B8F263EB970FC97BB94BFA2ADDA14151F68F5C473",
+        "observation": "Once TryInstallOperatorStartupConfig succeeds, _operatorConfigSealed is set to true and subsequent installation calls return false. No slot exists for a child validator receipt."
+      },
+      {
+        "item_id": "FACT-02-LAUNCH-DERIVES-FROM-PARENT-CONFIG",
+        "description": "HandleLaunchOperatorValidator derives executable, arguments, and working directory directly from the parent SIMULATION worker config.",
+        "file": "scratch/WorkerBridgeMod/Source/WorkerBridge.cs",
+        "line_span": "2237-2281",
+        "start_byte_offset": 101495,
+        "end_byte_offset": 103837,
+        "span_sha256": "1EF1BAC86DBC663557B882E41419CDA150754D00F44C9C3B26A377120216DD54",
+        "observation": "exePath = _activeStartupConfig.AdmittedValidatorExecutablePath; baseArgs = _activeStartupConfig.ValidatorArguments; workingDir = _activeStartupConfig.ValidatorCwd. No child role or 7 startup arguments are passed."
+      },
+      {
+        "item_id": "FACT-03-ROLE-PATH-SELECTOR-ISOLATION",
+        "description": "OperatorRolePathSelector strictly returns WorkerUserDataDirectory for SIMULATION and ValidatorUserDataDirectory for READ_ONLY.",
+        "file": "scratch/WorkerBridgeMod/Source/WorkerBridge.cs",
+        "line_span": "3454-3475",
+        "observation": "SelectUserData throws InvalidOperationException if role is neither SIMULATION nor READ_ONLY. Source selection defect closed in R25."
+      },
+      {
+        "item_id": "FACT-04-IMMUTABLE-ADMISSION-FACTORY",
+        "description": "OperatorStartupAdmissionReceipt and OperatorStartupConfigSnapshot enforce deep immutability, raw byte SHA256 preflight checks, and descriptor matching.",
+        "file": "scratch/WorkerBridgeMod/Source/WorkerBridge.cs",
+        "line_span": "3738-4360",
+        "observation": "Receipt Schema version WE-OPERATOR-RECEIPT-V1 and Config Schema version WE-OPERATOR-BOOTSTRAP-V1 are byte-fixed."
+      },
+      {
+        "item_id": "FACT-05-MULTIPLAYER-SAVEDATAFOLDER-REFERENCE",
+        "description": "Checked-in Multiplayer HostUtil.cs demonstrates reference usage of -savedatafolder argument.",
+        "file": "Multiplayer-master/Multiplayer-master/Source/Client/Networking/HostUtil.cs",
+        "line_span": "218-226",
+        "start_byte_offset": 8746,
+        "end_byte_offset": 9279,
+        "span_sha256": "4776091B39E241EF3CC9AA375B6BA004257C16CA73CBA64F5064A9D4FEA9C12D",
+        "observation": "Lines 224-225: if (GenCommandLine.TryGetCommandLineArg(\"savedatafolder\", out string saveDataFolder)) args += $\" \\\"-savedatafolder={saveDataFolder}\\\"\"; This is reference usage, not evidence of native runtime support in RimWorld base game."
+      }
+    ],
+    "proposed_mechanisms": [
+      {
+        "proposal_id": "PROP-01-CHILD-RECEIPT-CARRIER",
+        "name": "Private Child Validator Admission Receipt Storage and API",
+        "description": "Introduce private static OperatorStartupAdmissionReceipt? _activeChildValidatorReceipt and internal static bool TryRegisterChildValidatorReceipt(OperatorStartupAdmissionReceipt childReceipt).",
+        "validation_invariants": [
+          "childReceipt must be non-null and valid (IsValid() == true)",
+          "childReceipt.Snapshot.Role must strictly equal 'READ_ONLY' (Ordinal comparison)",
+          "childReceipt executable path and SHA256 must match parent SIMULATION config exactly",
+          "childReceipt content profile fingerprint must match parent SIMULATION config exactly",
+          "Single-active registration under _configLock; reject overwrite while active"
+        ],
+        "pure_seam": "Method can be invoked directly in pure unit tests with pre-constructed admission receipts."
+      },
+      {
+        "proposal_id": "PROP-02-CLOSED-LAUNCH-PLAN-BUILDER",
+        "name": "Pure ChildValidatorLaunchPlanBuilder DTO & Builder",
+        "description": "Construct an immutable ChildValidatorLaunchPlan from parent SIMULATION receipt, registered child READ_ONLY receipt, and active sealed task (27 fields).",
+        "output_fields": [
+          "ExecutablePath",
+          "ExecutableExpectedSha256",
+          "WorkingDirectory",
+          "SelectedUserDataDirectory",
+          "BoundConfigPath",
+          "BoundConfigSha256",
+          "BoundOriginId",
+          "BoundLaunchPlanId",
+          "BoundConfigId",
+          "BoundRole (READ_ONLY)",
+          "BoundCapabilityBoundary",
+          "TaskFilePath",
+          "TaskCapabilityNonce",
+          "FormattedArgumentTokens"
+        ],
+        "pure_seam": "Static pure function returning (bool isValid, string error, ChildValidatorLaunchPlan? plan) without process execution or filesystem side effects."
+      },
+      {
+        "proposal_id": "PROP-03-TOKEN-VECTOR-CONTRACT",
+        "name": "Strict Parameter Token Vector Construction",
+        "description": "Format child launch arguments using the exact 7 mandatory operator keys plus reference -savedatafolder and task parameters.",
+        "tokens": [
+          "-operatorconfig=\"<childReceipt.BoundConfigPath>\"",
+          "-operatorconfigsha=\"<childReceipt.BoundConfigSha256>\"",
+          "-operatororigin=\"<childReceipt.BoundOriginId>\"",
+          "-operatorlaunchplan=\"<childReceipt.BoundLaunchPlanId>\"",
+          "-operatorconfigid=\"<childReceipt.BoundConfigId>\"",
+          "-operatorrole=\"READ_ONLY\"",
+          "-operatorcapability=\"<childReceipt.BoundCapabilityBoundary>\"",
+          "-savedatafolder=\"<childReceipt.Snapshot.ValidatorUserDataDirectory>\"",
+          "--task-file=\"<currentValidatorTaskPath>\"",
+          "--nonce=\"<currentValidatorTask.capabilityNonce>\""
+        ],
+        "pure_seam": "Deterministic formatting verified via exact string comparison in prospective unit oracle."
+      },
+      {
+        "proposal_id": "PROP-04-SINGLE-USE-LIFETIME-AND-REVOCATION",
+        "name": "Child Receipt Consumption & Revocation",
+        "description": "Child receipt registration is single-use: consumed upon Process.Start or cleared upon task abort/timeout/revocation via RevokeChildValidatorReceipt()."
+      }
+    ],
+    "unresolved_prerequisites": [
+      {
+        "prereq_id": "PREREQ-01-OPERATOR-CHILD-CONFIG-ISSUANCE",
+        "description": "The external Operator orchestration plane must issue a distinct READ_ONLY configuration JSON file and launch descriptor with unique configId and valid SHA256.",
+        "status": "UNRESOLVED_EXTERNAL"
+      },
+      {
+        "prereq_id": "PREREQ-02-NATIVE-CLI-ARGUMENT-PARSING",
+        "description": "Empirical proof that RimWorld executable (Verse.GenCommandLine / Unity player) accepts and respects -savedatafolder without crashing or reverting to default UserData directory.",
+        "status": "UNOBSERVED_NATIVE"
+      },
+      {
+        "prereq_id": "PREREQ-03-ISOLATED-USERDATA-DIRECTORIES",
+        "description": "Filesystem preparation of ValidatorUserDataDirectory and ValidatorCwd distinct from WorkerUserDataDirectory.",
+        "status": "UNRESOLVED_OPERATOR_ENVIRONMENT"
+      },
+      {
+        "prereq_id": "PREREQ-04-STAGED-ARTIFACT-MOUNT-OR-PATH",
+        "description": "Child process must have read access to the parent's staged save game artifact without modifying or locking parent files.",
+        "status": "UNRESOLVED_NATIVE_IO"
+      },
+      {
+        "prereq_id": "PREREQ-05-LOOPBACK-PORT-ALLOCATION",
+        "description": "Allocation of a distinct loopback TCP port for the child validator bridge and establishing mutually authenticated communication.",
+        "status": "UNRESOLVED_NETWORK_M05"
+      }
+    ]
+  }
+}

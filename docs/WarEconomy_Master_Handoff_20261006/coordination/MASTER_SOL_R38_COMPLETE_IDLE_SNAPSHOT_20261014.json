@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":false,\"wake\":{\"reason\":\"turnCompleted\",\"turnId\":\"01a136d9-1e3b-7641-9510-90cf5665960c\",\"threadId\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\"},\"polls\":[{\"schemaVersion\":1,\"cursor\":\"bcc76e72-e33d-4898-bc7b-b558cfab470c:61\",\"revision\":61,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"idle\"}},\"latestTurn\":{\"id\":\"01a136d9-1e3b-7641-9510-90cf5665960c\",\"status\":\"completed\",\"error\":null,\"startedAt\":1791921561,\"completedAt\":1791921975,\"durationMs\":414682},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ace8f35719487d09e373ad94b7577b8\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ace8f35719487d09e373ad94b7577b8\",\"turnId\":\"01a136d9-1e3b-7641-9510-90cf5665960c\",\"phase\":\"final_answer\",\"text\":\"R38 독립 정적 QA를 완료해 Master에게 보고했습니다. 일반 계약은 수정이 필요하며, 정상 6개 사례는 별도 실행 검토를 권고했습니다. 후보 실행은 0이고 Foundation HOLD를 유지합니다. 최종 QA 보고서\"},\"latestToolMarkerId\":\"exec-71c04a8b-cb78-45d1-bf15-0a05117ec63c\",\"latestToolMarker\":{\"id\":\"exec-71c04a8b-cb78-45d1-bf15-0a05117ec63c\",\"turnId\":\"01a136d9-1e3b-7641-9510-90cf5665960c\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

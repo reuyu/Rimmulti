@@ -1,0 +1,157 @@
+{
+  "at": "2026-10-12T17:45:17.429627+09:00",
+  "result_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012-8d682aff4ebd4996a12529142c0d7431",
+  "delivery_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012-01",
+  "completion": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\COMPLETION.json",
+    "sha256": "33F60EA133018C48D12D66BAFB8EA0CBDB8B539A04AC3B788DA9974B85CCFF82",
+    "bytes": 4931
+  },
+  "report": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R29_Startup_Pair_Independent_S3_20261012.md",
+    "sha256": "CF26B4BE0152BC3140C5D7DF4CCC2EB792B8E7F69B774A101A2A61956F4156B3",
+    "bytes": 12207
+  },
+  "evidence_manifest": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\EVIDENCE_MANIFEST.json",
+    "sha256": "E76DD48DF10913FD49C6E3995F779E4B821839D40557AE818803C6FC083AE32F",
+    "bytes": 283320
+  },
+  "evidence_files": 927,
+  "cycle_exclusions": [
+    "ACK_COMPLETION_BINDING.json",
+    "COMPLETION.json",
+    "DELIVERY_STATUS.json",
+    "EVIDENCE_MANIFEST.json",
+    "RESULT_INDEX.json",
+    "RETURN_PENDING.json",
+    "RETURN_TOOL_PROOF.json"
+  ],
+  "postseal_logger_exclusions": [
+    "WIDTH_TERMINAL_R1_seal_STDERR.txt",
+    "WIDTH_TERMINAL_R1_seal_STDOUT.txt",
+    "WIDTH_TERMINAL_R1_seal_TOOL.json"
+  ],
+  "terminal_return": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\RETURN_TOOL_PROOF.json",
+    "sha256": "A90D2A19BB37ADDAE44F9BCD938D34E9AC80AAF10A02F492A8BDC7ED1EA4F96C",
+    "bytes": 3000
+  },
+  "delivery_status": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\DELIVERY_STATUS.json",
+    "sha256": "8938C17CEBE9003784125CAA589D93C9EB41C9A3CC150F93F86B43CC92800E3C",
+    "bytes": 679
+  },
+  "protected_paths": 14365,
+  "frozen_files": 132,
+  "prospective_compile_pins": 253,
+  "prebuild_oracle": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\NORMAL_EXPECTED_ORACLE.json",
+    "sha256": "89C9EAE0722EF875577DCF2AC4D20687FDB19CE743B13AE285360225E79F9D7D",
+    "bytes": 1578021
+  },
+  "original_pair_oracle": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\PRE_RUN_EXPECTED_ORACLE.json",
+    "sha256": "7371185E68771EA8613373E3948344B988D86C361421EE9DAF681036CBD95D02",
+    "bytes": 1030401
+  },
+  "original_Capture_oracle": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\PROSPECTIVE_CAPTURE_ORACLE.json",
+    "sha256": "5961CD18DA05B67F6DE40DA8A6EBB289D94ACF85054D57FB31FE4B8C5530C4C7",
+    "bytes": 549797
+  },
+  "independent_original_oracle_equivalence": true,
+  "independent_raw_expected_bindings": 672,
+  "crossculture_raw_pairs": 336,
+  "independent_ordered_graphs": 60,
+  "crossculture_graph_pairs": 30,
+  "runs": [
+    {
+      "run_id": "R29S3QA-65ace1418fea42d69513248fd048b522",
+      "culture": "en-US",
+      "pid": 21232,
+      "exit_code": 0,
+      "assertions_pass": 438,
+      "typed_hierarchical_rows": 6700,
+      "raw_expected_files": 336,
+      "full_graphs": 30,
+      "inventory_files": 402,
+      "prepost_pins": 264,
+      "loaded_managed": 10,
+      "ledger": {
+        "primary_direct": 38,
+        "ordered_getter": 288,
+        "grouped_helper": 60,
+        "observational_helper": 180,
+        "QA_wrapper_not_publisher": 18
+      }
+    },
+    {
+      "run_id": "R29S3QA-a41da09d7bc6410db629cb0312293f30",
+      "culture": "de-DE",
+      "pid": 9224,
+      "exit_code": 0,
+      "assertions_pass": 438,
+      "typed_hierarchical_rows": 6700,
+      "raw_expected_files": 336,
+      "full_graphs": 30,
+      "inventory_files": 402,
+      "prepost_pins": 264,
+      "loaded_managed": 10,
+      "ledger": {
+        "primary_direct": 38,
+        "ordered_getter": 288,
+        "grouped_helper": 60,
+        "observational_helper": 180,
+        "QA_wrapper_not_publisher": 18
+      }
+    }
+  ],
+  "static_outside_bytes": 234431,
+  "width_source_only": true,
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:8",
+    "revision": 8,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a12f2d-3cfb-7fb0-857a-bf1ef4ab88e6",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791792856,
+      "completedAt": 1791793999,
+      "durationMs": 1143583
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acc9b4c767087d08fd5a3e4381b7347",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016acc9b4c767087d08fd5a3e4381b7347",
+      "turnId": "01a12f2d-3cfb-7fb0-857a-bf1ef4ab88e6",
+      "phase": "final_answer",
+      "text": "R29 S3 QA를 완료하고 마스터에게 보고했습니다. 정상 단위 QA: 876개 assertion 통과, 실패 0 정적 High 문제 3건: 수정 필요 Native 미검증, Foundation HOLD 유지 최종 보고서 다음 마스터 지시를 기다리겠습니다."
+    },
+    "latestToolMarkerId": "exec-d0fc7606-0ad5-4079-aaca-89b142282738",
+    "latestToolMarker": {
+      "id": "exec-d0fc7606-0ad5-4079-aaca-89b142282738",
+      "turnId": "01a12f2d-3cfb-7fb0-857a-bf1ef4ab88e6",
+      "type": "fileChange",
+      "name": "fileChange",
+      "status": "completed"
+    }
+  },
+  "qa_builds": 1,
+  "qa_runs": 2,
+  "production_modify_rebuild": 0,
+  "Master_candidate_execution_build": 0,
+  "static_High3": "OPEN",
+  "native_E2": "NOT_RELEASED",
+  "Foundation": "HOLD",
+  "limitation": "Positive pure data only; wrapper bundle projection, SOURCE-only widths/internal calls; Capture ID holder replacement is not in-place array isolation; no native/operator/issuer/channel/consume/rejection validation.",
+  "Master_readonly_schema_probe_correction": "Key Sol absent in endpoint mapping; actual existing schema inspected, no candidate or QA mutation."
+}

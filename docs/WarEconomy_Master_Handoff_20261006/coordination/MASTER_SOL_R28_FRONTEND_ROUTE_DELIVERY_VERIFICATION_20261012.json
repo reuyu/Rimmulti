@@ -1,0 +1,50 @@
+{
+  "delivery_id": "SOL-GATE05-R28-FRONTEND_ROUTE-INDEPENDENT-S1-20261012-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R28_FRONTEND_ROUTE_INDEPENDENT",
+  "wp_revision": "S1",
+  "wp_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R28_FRONTEND_ROUTE_INDEPENDENT_S1.md",
+  "wp_sha256": "900F65801BEBE556A925FF4087B0D13FD65FF79729FF605BB4370096FDFDC55C",
+  "baseline_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R28_OPERATOR_ROUTE_PROTECTED_BASELINE_20261012.json",
+  "baseline_sha256": "6E87FEEC96B34498EB608D3AB495FAE26188AC977DE510CB1AC07CA4078E7FCE",
+  "protected_unique_paths": 14045,
+  "qa_root": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R28-FRONTEND_ROUTE-INDEPENDENT-S1-20261012",
+  "delivery_status": "SENT",
+  "unknown_delivery": false,
+  "frozen_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_GATE05_R27_CHILD_CAPTURE_REVIEW_FREEZE_MANIFEST.json",
+  "frozen_manifest_sha256": "1FD4B9EFB368EE03F327241418C5CC0ACC08F9210E6E1BD271AECC373D219EE3",
+  "sent_at": "2026-10-12T04:49:58.333664+09:00",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:173",
+    "revision": 173,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a12c83-b6a5-7eb0-a4b9-4ee410a14b1b",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791748191,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "at": "2026-10-12T04:49:58.333664+09:00",
+  "tool_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R28_FRONTEND_ROUTE_SEND_TOOL_20261012.json",
+  "tool_sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+  "guard_run": "MASTER-R27-S2-COMPLETE-NEXT-20261012-01",
+  "guard_pid": 2728,
+  "guard_session": 76245,
+  "no_substitute_agent": true,
+  "scope": "FROZEN_FRONTEND_IL_BOOTSTRAP_ORDER_READ_ONLY_INDEPENDENT_NO_A_PROPOSAL_NO_BUILD_CALLS_NATIVE"
+}

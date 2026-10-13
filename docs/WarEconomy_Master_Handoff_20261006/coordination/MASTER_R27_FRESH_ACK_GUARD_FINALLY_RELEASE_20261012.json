@@ -1,0 +1,10 @@
+{
+  "actual_release_tool": {
+    "chunk_id": "c57559",
+    "wall_time_seconds": 0.0000283,
+    "exit_code": 0,
+    "original_token_count": 105,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R27-FRESH-QA-ACK-20261012-01\", \"pid\": 20016, \"locked_at\": \"2026-10-12T03:46:08.733499+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-12T03:48:15.317533+09:00\", \"renewal_count\": 1, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-12T03:48:21.769972+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "all_child_commands_completed_before_release": true
+}

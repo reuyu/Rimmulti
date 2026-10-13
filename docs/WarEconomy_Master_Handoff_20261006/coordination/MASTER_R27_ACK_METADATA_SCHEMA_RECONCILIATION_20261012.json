@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-12T03:17:29.200607+09:00",
+  "Master_collector_original_error": "KeyError protected_files copied from R26 schema; R27 actual PRESERVATION_BEFORE uses files",
+  "correction": "Read actual files schema; original QA evidence unchanged; new verifier only",
+  "candidate_QA_reexecution": 0,
+  "baseline_actual_rehashed": 13458,
+  "preservation": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R27_ACK_A_CURRENT_PRESERVATION_20261012.json",
+    "sha256": "D968F6820E2E76E40EA347967C710A5E82E10C199319A3FB9BE98941639530EC",
+    "bytes": 4638767
+  }
+}

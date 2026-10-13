@@ -1,0 +1,650 @@
+{
+  "at": "2026-10-12T09:01:51.903352+09:00",
+  "guard_run": "MASTER-R28-DUAL-COMPLETE-20261012-01",
+  "guard_session": 99760,
+  "guard_pid": 33196,
+  "A_result_id": "WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-RESULT-01",
+  "A_completion": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51\\COMPLETION.json",
+    "sha256": "241DBE46D78D28D612711CA2E4221ADEAD6B5220289FBE6A4C524E03E49135A7",
+    "bytes": 7416
+  },
+  "A_evidence_count": 8,
+  "A_artifacts_count": 10,
+  "A_proposal_freeze": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51\\MASTER_R28_OPERATOR_ROUTE_PROPOSAL_FREEZE_MANIFEST.json",
+    "sha256": "1A645FD5E150BFEE3A095B7ADA893A5ACE89BBA5412425C811642BB414551DD1",
+    "bytes": 7481
+  },
+  "A_proposal_frozen_files": 11,
+  "Sol_result_id": "SOL-GATE05-R28-FRONTEND_ROUTE-INDEPENDENT-S1-20261012-99b7c410f7ee452a91169778881914dc",
+  "Sol_completion": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R28-FRONTEND_ROUTE-INDEPENDENT-S1-20261012\\COMPLETION.json",
+    "sha256": "FA5D86D37469181F9C2D1F728E9716DF511AE5F68CAEA09E9E93DFDEB8E53283",
+    "bytes": 4770
+  },
+  "Sol_report": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R28_Frontend_Route_Independent_S1_20261012.md",
+    "sha256": "D318C78F379C728A3E3B509A1CDF6CBAD8FED99D1F9F0187C098B801A205DB8A",
+    "bytes": 14181
+  },
+  "Sol_evidence_count": 38,
+  "Sol_actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:175",
+    "revision": 175,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "notLoaded"
+      }
+    },
+    "latestTurn": {
+      "id": "01a12c83-b6a5-7eb0-a4b9-4ee410a14b1b",
+      "status": "failed",
+      "error": {
+        "message": "You’ve hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 8:04 AM."
+      },
+      "startedAt": 1791748191,
+      "completedAt": 1791749446,
+      "durationMs": 1255042
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acbed1f99f487d0b8e7f92a5b3ae634",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016acbed1f99f487d0b8e7f92a5b3ae634",
+      "turnId": "01a12c83-b6a5-7eb0-a4b9-4ee410a14b1b",
+      "phase": "commentary",
+      "text": "보고서와 증거를 봉인했고, 보호 대상 14,045개 경로와 동결 자료의 SHA·크기가 전후 모두 일치했습니다. 정적 QA 결과를 마스터에게 바로 보고하겠습니다. 실제 child 경로와 lifecycle 검증은 아직 미실행입니다."
+    },
+    "latestToolMarkerId": "exec-90db670f-8b8a-4db8-9a67-ce0f20365fd3",
+    "latestToolMarker": {
+      "id": "exec-90db670f-8b8a-4db8-9a67-ce0f20365fd3",
+      "turnId": "01a12c83-b6a5-7eb0-a4b9-4ee410a14b1b",
+      "type": "fileChange",
+      "name": "fileChange",
+      "status": "completed"
+    }
+  },
+  "Sol_artifact_terminal": "COMPLETED_VERIFIED",
+  "Sol_runtime_operational_status": "FAILED_USAGE_LIMIT_NOTLOADED_SEPARATE_FROM_ARTIFACT_COMPLETION",
+  "protected_unique_paths": 14045,
+  "current_production9_fixed": true,
+  "five_library_MVID_independently_matched": true,
+  "raw_method_IL_and_instruction_bytes_verified": [
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06000A9B",
+      "code_sha256": "9A19C804989B564BD4AB416889BDBB089DAFE88DF8D92E73406FC7BEA93C28F6",
+      "bytes": 130
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06000A9C",
+      "code_sha256": "349A92596C8524A540DA44FBAC2FBD3B2C1FE6CB2D136AA49D9ED27D735CE8CC",
+      "bytes": 38
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06000D65",
+      "code_sha256": "9533652507585B72EAD6A31F737B7DBCE20687AD0EC4A37B00555F616352902E",
+      "bytes": 6
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06000D66",
+      "code_sha256": "92B0A0133D07FBF9E94F0517CD00DA7F6CBB23771172D065443C40A5ED9E36E0",
+      "bytes": 294
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06000D67",
+      "code_sha256": "094A3FFE34E794B4736B132973026B66BEDFBCC4B7A55DFC044B42D317AA3187",
+      "bytes": 1032
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06000D68",
+      "code_sha256": "925A97E512089490E6A6640D1DB4F8FECB78CD30AB5CD6A2C9277A60071CF75E",
+      "bytes": 111
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06000D69",
+      "code_sha256": "3EEEE1F3EF5D7074EA4E88A9C5F0C4F95C8E0C66869EB085ABDCF1D146322442",
+      "bytes": 146
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06000D6A",
+      "code_sha256": "1AA8FA9FB149A9A4089427ED7A7BFCF80A6924381AAC3809A0885606AE908566",
+      "bytes": 271
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06000D6B",
+      "code_sha256": "11131D40DE556C1E6EEBDA4578B82E20A89434EEB62E44A9601E9907C04EA19C",
+      "bytes": 31
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x060015F3",
+      "code_sha256": "FE59B1B7867FDF4FD2C25B35F63AB8F5144B8A6D45EDD6197341547348E3B0AD",
+      "bytes": 146
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x060015F4",
+      "code_sha256": "1E59B82783CC0038FA7ACD958ED1215B6DDA50C294A07678954EE1D78F5F85DE",
+      "bytes": 167
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x060015FB",
+      "code_sha256": "3F841D6A77943D99EE9DC79B2043B72D22715F51ACC06778FB25CF3F6CD148EA",
+      "bytes": 11
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x060015FC",
+      "code_sha256": "5C4E7B2A8CD405974481A9EB524AF36608C5D23D626B2A7B1AD4AC0968E6F866",
+      "bytes": 7
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x060015FD",
+      "code_sha256": "E5B0EDAEE72BEA484FA44A9D46A888D75547A7BC1AAA46255D56D4C3A41B5025",
+      "bytes": 7
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x060023D2",
+      "code_sha256": "C817658ACBE7F1C282A54BB127759E493D577A09809B5D7BC0FB93F73D1ED12A",
+      "bytes": 313
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x060023D5",
+      "code_sha256": "D78B192AE76A56C3A37A24E0D31F09D42E60095FB6F8FC5A4A0D054BD72FDBF6",
+      "bytes": 261
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x060054D7",
+      "code_sha256": "930DF0ADECFBB8E9247CF4B9F72297C16B5C6E07A1DF18AC19A2FBEB4B02F17A",
+      "bytes": 58
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x060054D8",
+      "code_sha256": "74F28CE61BEC0CCE4C527B713B4FDB796D51731292A64A647B6996151D9B524A",
+      "bytes": 96
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x060054D9",
+      "code_sha256": "538169BEF542917D75745C225193CA8CD14024AB891AC84F51A9197B67010347",
+      "bytes": 230
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005522",
+      "code_sha256": "AFF5BD726B688E874B45B12135B8952EF0E1588111D2917BB65FC6A76830DBD9",
+      "bytes": 266
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005523",
+      "code_sha256": "7678ED63CCDA72E7E3376553B06E7D071A56031E295DF65A33DE2F876D165EE0",
+      "bytes": 69
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005524",
+      "code_sha256": "E5EC2B3E0A0A9772BD4A8B10DC080B61241F41CA4508A5392D7B79E39D0E71AB",
+      "bytes": 16
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005525",
+      "code_sha256": "C9EBF43056304363090A89A29FB018184B1AA5064BB60B39F9F135C99AC4A76F",
+      "bytes": 28
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005526",
+      "code_sha256": "18F0594C2D1ED6DBEABF77446614620584E63B3A595A130658CD9EE80CD87236",
+      "bytes": 28
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005527",
+      "code_sha256": "89EC47C09EB831BE52AFD52494AD1D590951ECCABDA147CA7596E77B437C9E9A",
+      "bytes": 11
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005528",
+      "code_sha256": "CCCC5B6A215A24EB3CD8996AEEF033ABB496D55E531CF619F910ECB00302796E",
+      "bytes": 11
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005529",
+      "code_sha256": "7DE36CA3E23388F15FDBFABE05124D305293FB0077673C95AF228C3E6840DA7D",
+      "bytes": 11
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x0600552A",
+      "code_sha256": "C767576937CF2F56B3C32A3C3784E14EA15E4492F24FFD096A77EB5889E79B6A",
+      "bytes": 11
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x0600552B",
+      "code_sha256": "80ED46D15924CA976E301C90EB64BE063E58D4FA817DBE9D6781F846A306F5B4",
+      "bytes": 11
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x0600552C",
+      "code_sha256": "7CEB3251E8250546EF5A99C772079944DCC30BEB88547FB6396E38D4FF8F1F78",
+      "bytes": 11
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x0600552D",
+      "code_sha256": "4DB3435D878044C87A5710238978655FA2671774EF2CD9BFA93412737212A48B",
+      "bytes": 11
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x0600552E",
+      "code_sha256": "D2FFBFF34FD517BF087830C69083492490B7F7B49766142F5B162FC99D3CCC43",
+      "bytes": 11
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x0600552F",
+      "code_sha256": "B663CD0AEFE85B1653B7AE3C12452FF28050B5814EDEE3EEF6C754D5D1800D7A",
+      "bytes": 11
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005530",
+      "code_sha256": "A7D2C920259202F7C4C3B0B0E6D8729C3A7417BC82A8B38E6513253E6CF07E49",
+      "bytes": 11
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005531",
+      "code_sha256": "8A8E1AC5418066FEEE83F17EED890FCFD18FCFD3F5E050601E8F01EECA7DB81A",
+      "bytes": 11
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005532",
+      "code_sha256": "EDA39FF057C0DB5BD7DCD7D06D11EBF8BF8A534D3B3052CEBFE5AF6AEBB89FF6",
+      "bytes": 16
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005533",
+      "code_sha256": "4AAE52EA9E92E52A4C37C9B8DADAC54585D55AFF870F2AABD09BEA20119532E9",
+      "bytes": 16
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005534",
+      "code_sha256": "D2E63CD0D2A061955A137DA794CB0DC69592B549E1B44227305813A92DC14357",
+      "bytes": 16
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005535",
+      "code_sha256": "5C806F609C6F3C64FC09CEC78D27812AA9C7E84C670138D8213F6D2FA741A4BC",
+      "bytes": 16
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005536",
+      "code_sha256": "B479D8BBC8A34118E2EC04C7E12DC90EFCA3593FD15B4F2263E39BA33C887E5E",
+      "bytes": 16
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005537",
+      "code_sha256": "EB8FFB17847BA0D396E1692FE6544FBE666B90AE8009B9B919066968CA21D60B",
+      "bytes": 16
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005538",
+      "code_sha256": "DC8F521041B858CF43E19A39E47C15503723DE55E579351CD3BE55EC80EB7B41",
+      "bytes": 16
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005539",
+      "code_sha256": "6C7E19D6D91BAEA6B6497687293B4ACA55433D58BBA5657E41387E46BA2F3550",
+      "bytes": 6
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x0600553A",
+      "code_sha256": "8721CC5E61C445883390BA9980E3106AD9951317297B74141642DAA51EF77DDE",
+      "bytes": 104
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x0600553B",
+      "code_sha256": "9EBF3B302A05B1E215C63398AF00B32A2AAA399710EC7C07029E91D63478177C",
+      "bytes": 104
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x0600553C",
+      "code_sha256": "BAA7D7741081777BCDB67F64555603309517C08C7C0803BF8671163676BCCFD0",
+      "bytes": 104
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x0600553D",
+      "code_sha256": "1C3E40F18568FE8001A0086C8CCFBD43107A91EAA45E2A5BB3009963E98BA5B6",
+      "bytes": 104
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x0600553E",
+      "code_sha256": "E50442825C7FBE5D6EE99184B7BB4DEF84C24DC5C622DAD46CDFF80BAB85B959",
+      "bytes": 104
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x0600553F",
+      "code_sha256": "76A804BD4B7710BF5214EF87FA4B66133B9A652E24BEADAC72EDBF4ABFE96C82",
+      "bytes": 104
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005540",
+      "code_sha256": "3B9CFB62971E64AE6373C33967109F634528BF8657A3FE2828BD30B64A78012F",
+      "bytes": 104
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005541",
+      "code_sha256": "3938FF58DAEE55CF96E1170CC8CE591024A766ABF478BAA88876C9BE3615AEAC",
+      "bytes": 104
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005542",
+      "code_sha256": "E96A19D70A436C50A18CEC8BB65BB58588ED72B963259661363C79718F381F75",
+      "bytes": 33
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005543",
+      "code_sha256": "9771A83FC2E21991D866815B4578C0AEFC4B6C54006D51661A1FE8D7B493F34F",
+      "bytes": 22
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005544",
+      "code_sha256": "F44BEF8C17FF4D44C5225B7F09389687E6CD7A50969CA6A1029BAECB6DA30626",
+      "bytes": 22
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005545",
+      "code_sha256": "842FD27FB35381D0F2E0F7C1D83AB14F28E7E55FEC229C7F314B84FB08493256",
+      "bytes": 22
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005546",
+      "code_sha256": "783474ED1115FC62FDDAF6B1B0BEBC29429BE5F629B380C993152F716E79DE7B",
+      "bytes": 22
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005547",
+      "code_sha256": "8E2B4D69ECD01F19921677481F124F0112387E783232FE76C7DA8E4E12D6758E",
+      "bytes": 22
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005548",
+      "code_sha256": "4B6AB9D5654604056187AA0EFEF6A75D22680108BBC2DFBEBFA244F4F4499D1B",
+      "bytes": 22
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06005549",
+      "code_sha256": "C323AF09F2708DE07E514E28DDA023E4EFB80A748DC5C093617790AD1A013960",
+      "bytes": 22
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x0600554A",
+      "code_sha256": "782955ECCFEF10ED22E7E88976D1690E945486F941BC7DA8A124044D05E17A12",
+      "bytes": 171
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x0600554B",
+      "code_sha256": "36C809651CF3DFA7AEEEB8EF9D8C41B8ED144EDDE86F7153C10B87D085E03EEC",
+      "bytes": 65
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x0600554C",
+      "code_sha256": "6DE36999929AF99786BAB030D7AECCDB2D68BA211B67BC20407F11C2FD2C5330",
+      "bytes": 53
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x0600554D",
+      "code_sha256": "212CC49D8BF3FD492DF42638F97C0B08D1028E11712A4FD25C5ABF8D1FB06C52",
+      "bytes": 1339
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x0600572C",
+      "code_sha256": "8EB343A350C567699791758A691DC7F2A4EA0A0154896A890D351972B8A9EF1B",
+      "bytes": 125
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06000882",
+      "code_sha256": "07565A4DC32E02C99CA82C72FCB09F551F4E82F1F71CC8656D0D240E79BBB0B8",
+      "bytes": 101
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x06000985",
+      "code_sha256": "0BACBB92FCD8996CB5D06B92826A4C5DF5846E48D7B056877BEC54F5330F8F12",
+      "bytes": 21
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x060009CD",
+      "code_sha256": "B47C23D142541E941383947E5968345B8F69C58EAE150C77252C3D80703C5D5E",
+      "bytes": 84
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x060009CE",
+      "code_sha256": "4D0DCABFC59422BB0404E069693757803B1D2720A97E148EFB12DB6C8EF530DE",
+      "bytes": 80
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x060009CF",
+      "code_sha256": "F19A8BC1EFBBC75AC441DD2CF9C19844282B31E8303D57F0B9C7B790664B7113",
+      "bytes": 84
+    },
+    {
+      "module": "Assembly-CSharp.dll",
+      "token": "0x060009D4",
+      "code_sha256": "AC161D95809CBD9885B588407C5AE0EEC9ACAA6AED1FEB88927A8820443BD980",
+      "bytes": 43
+    },
+    {
+      "module": "UnityEngine.CoreModule.dll",
+      "token": "0x060018E4",
+      "code_sha256": "E25CFCE931B07215994C975766059F40C4744D454EA8C886AF4991E588750478",
+      "bytes": 13
+    },
+    {
+      "module": "UnityEngine.CoreModule.dll",
+      "token": "0x060018E5",
+      "code_sha256": "E38D5E7FA3AA2EE7CDD4C9A2793A0F17F6C8BA7623B805D2E6FC180A426C0E2A",
+      "bytes": 32
+    },
+    {
+      "module": "UnityEngine.CoreModule.dll",
+      "token": "0x06001905",
+      "code_sha256": "69B680FAE130223F3320576BE283CB809EEBAF8CEF2A4C7E10CF50DE7E16EB0D",
+      "bytes": 17
+    },
+    {
+      "module": "UnityEngine.CoreModule.dll",
+      "token": "0x06001906",
+      "code_sha256": "71476F4A7674496D9A0D8BBE443FBB9F048FBBE7104C6F05EA303AB77C58FE37",
+      "bytes": 17
+    },
+    {
+      "module": "UnityEngine.CoreModule.dll",
+      "token": "0x06001907",
+      "code_sha256": "A35D4722628370CCF88AC11730B720F251B44CF3E43C1C8D1A9B3194EBAA2D5E",
+      "bytes": 46
+    },
+    {
+      "module": "WarEconomy.WorkerBridge.PoC.dll",
+      "token": "0x060000ED",
+      "code_sha256": "4DD0B952C776BC614BBD1F6EF1C46B9AF6B9F0159B7FD464DFBC9F02ED6799F9",
+      "bytes": 774
+    },
+    {
+      "module": "WarEconomy.WorkerBridge.PoC.dll",
+      "token": "0x06000107",
+      "code_sha256": "6E3E0D3D8BCB6D4C44CD0044DD263C7798FB4EB335390D79DB842429580DE5A3",
+      "bytes": 111
+    },
+    {
+      "module": "WarEconomy.WorkerBridge.PoC.dll",
+      "token": "0x0600010D",
+      "code_sha256": "239DBD30277D4F8D2BF76735C2624C8C3CD9947A61385DCEB0A8306C910B89EC",
+      "bytes": 400
+    },
+    {
+      "module": "WarEconomy.WorkerBridge.PoC.dll",
+      "token": "0x0600013B",
+      "code_sha256": "14D9AEC6ACC19D9BC9A31EE768C779B28EF5E38C8FA2679CD1D5B021D0152026",
+      "bytes": 94
+    },
+    {
+      "module": "WarEconomy.WorkerBridge.PoC.dll",
+      "token": "0x06000151",
+      "code_sha256": "DB8DD9A4806BFD6C6FB5DD20E5E60F17BCCD17A5C90C613075C866641D2EAE24",
+      "bytes": 418
+    },
+    {
+      "module": "WarEconomy.WorkerBridge.PoC.dll",
+      "token": "0x06000183",
+      "code_sha256": "72846E8F841BE0355BC29BBC154A393ABA35E1908D3AD65F59F360FE0E05907A",
+      "bytes": 977
+    },
+    {
+      "module": "WarEconomy.WorkerBridge.PoC.dll",
+      "token": "0x06000184",
+      "code_sha256": "F17E1E59BEE12BA66BDE690EB66790F99B47037880D367102C702B7BB09205FC",
+      "bytes": 1456
+    },
+    {
+      "module": "WarEconomy.WorkerBridge.PoC.dll",
+      "token": "0x06000108",
+      "code_sha256": "C8F79E7AF9612E63211B9D229365593F0E16FF4A6CB07215D9C7BC5D9060DCB9",
+      "bytes": 87
+    },
+    {
+      "module": "WarEconomy.WorkerBridge.PoC.dll",
+      "token": "0x0600010B",
+      "code_sha256": "CE4AF98445F6E30721BD4F7F748FE3D04065E3E6914B81B513B9F2D977A5F23C",
+      "bytes": 276
+    },
+    {
+      "module": "WarEconomy.WorkerBridge.PoC.dll",
+      "token": "0x0600012A",
+      "code_sha256": "35EE15ACBACA4F7F2541595435051CB89B8A4BE43067FDBF63321409BE45BB88",
+      "bytes": 1343
+    },
+    {
+      "module": "WarEconomy.WorkerBridge.PoC.dll",
+      "token": "0x0600012F",
+      "code_sha256": "07E675AF19CC1D202C34CF64D2C54D5061F4B388DC4C0A0796F0D3C9A3676C08",
+      "bytes": 23
+    },
+    {
+      "module": "WarEconomy.WorkerBridge.PoC.dll",
+      "token": "0x0600013B",
+      "code_sha256": "14D9AEC6ACC19D9BC9A31EE768C779B28EF5E38C8FA2679CD1D5B021D0152026",
+      "bytes": 94
+    },
+    {
+      "module": "WarEconomy.WorkerBridge.PoC.dll",
+      "token": "0x0600013E",
+      "code_sha256": "A1668D1AAC36ECB22DF9D9D9BB45399E2D894DC4B045ED943134F5E9542E524E",
+      "bytes": 112
+    }
+  ],
+  "internalcall_no_managed_Awake_proof": [
+    {
+      "module": "UnityEngine.CoreModule.dll",
+      "token": "0x06000456",
+      "flags": 4096
+    },
+    {
+      "module": "UnityEngine.CoreModule.dll",
+      "token": "0x060018E2",
+      "flags": 4096
+    },
+    {
+      "module": "UnityEngine.CoreModule.dll",
+      "token": "0x060018E3",
+      "flags": 4096
+    },
+    {
+      "module": "UnityEngine.CoreModule.dll",
+      "token": "0x06001908",
+      "flags": 4096
+    },
+    {
+      "module": "UnityEngine.CoreModule.dll",
+      "token": "0x060019C9",
+      "flags": 4096
+    }
+  ],
+  "88_branch_maps_declared_valid": true,
+  "core_direct_scan_reported": 90840,
+  "core_decode_errors_reported": 0,
+  "Worker_direct_scan_reported": 532,
+  "tool_command_ledger": "Resolved absolute own scriptpaths; source invocation was relative; no literal OS argv proof",
+  "A_raw_IL_tool_provenance": "Producer opcode summaries only; no complete token-RVA-fileoffset-codehash/raw tool stream graph",
+  "verification_status": "MASTER_DISPOSED",
+  "Master_candidate_build_execute": 0,
+  "native_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD",
+  "master_verdict": "ACCEPTED_INDEPENDENT_FRONTEND_IL_STATIC_EVIDENCE_A_CONNECTED_PATCH_REVISION_REQUIRED_NATIVE_UNTESTED",
+  "master_review": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R28_DUAL_OPERATOR_ROUTE_20261012.md",
+    "sha256": "7C574B269562FAA000E9A70F77C2D593684C38FB41C0569F70C3AB0585A3DB42",
+    "bytes": 8100
+  },
+  "disposed_at": "2026-10-12T09:06:46.046848+09:00"
+}

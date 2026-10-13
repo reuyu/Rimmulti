@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-08T00:28:19.795302+09:00",
+  "automation_id": "wareconomy-master",
+  "status": "ACTIVE",
+  "interval_minutes": 30,
+  "prompt_chars": 173,
+  "prompt_unchanged": true,
+  "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+  "actual_config_path": "C:\\Users\\user\\.codex\\automations\\wareconomy-master\\automation.toml",
+  "tool_proof": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_ENGINE_GATE05_R1_MONITOR_RESUME_TOOL_PROOF_20261008.json",
+  "tool_proof_sha256": "339DE508C3280FFFA7128F062C1A2ACAB6D48E217E3478485F049BE501E1F343",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R1-20261008-DIRECT-971a4780",
+  "a_state": "ACK_IN_PROGRESS",
+  "ack_sha256": "DCFF37E1A96B7FC9026D8F75EEFBEE7C11D9551D7A7ECEB12AAD4B2DEFE3773D",
+  "future_scheduled_run_after_this_resume_observed": false
+}

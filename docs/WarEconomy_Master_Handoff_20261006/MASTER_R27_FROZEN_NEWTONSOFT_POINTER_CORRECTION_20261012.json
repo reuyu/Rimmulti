@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-12T03:59:45.548264+09:00",
+  "Master_controlling_correction": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R27_QA_S1_DEPENDENCY_STOP_20261012.md",
+    "sha256": "735E5BF916A553C9890C6E0720024BF1DC031B027EA0E8D491ABDF8406B9FAE1",
+    "bytes": 3323
+  },
+  "original_S1_WP": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R27_CHILD_CAPTURE_INDEPENDENT_S1.md",
+    "sha256": "B1693C639DE1919EE610E2615791A127B4CEAB56C0E1895A1E31FA612A611117",
+    "bytes": 9603
+  },
+  "manifest": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_GATE05_R27_CHILD_CAPTURE_REVIEW_FREEZE_MANIFEST.json",
+    "sha256": "1FD4B9EFB368EE03F327241418C5CC0ACC08F9210E6E1BD271AECC373D219EE3",
+    "bytes": 39281
+  },
+  "missing_pointer": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\Newtonsoft.Json.dll",
+  "missing_not_admitted": true,
+  "actual_manifest_row": {
+    "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\Newtonsoft.Json.dll",
+    "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\Newtonsoft.Json.dll",
+    "sha256": "E1E27AF7B07EEEDF5CE71A9255F0422816A6FC5849A483C6714E1B472044FA9D",
+    "size": 711952
+  },
+  "admitted_frozen_loader_reference": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\Newtonsoft.Json.dll",
+    "sha256": "E1E27AF7B07EEEDF5CE71A9255F0422816A6FC5849A483C6714E1B472044FA9D",
+    "bytes": 711952,
+    "mvid": "dd21e087-47d9-4bce-bed8-b56112226337"
+  },
+  "admission_scope": "DLL_METADATA_COMPILER_REFERENCE_AND_MANAGED_LOADER_SUPPORT_ONLY_NOT_A_RUNNER_OR_NATIVE",
+  "candidate_unchanged": true,
+  "no_copy_move_download_or_rebuild": true,
+  "S1_error_raw": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-INDEPENDENT-S1-20261012\\PREPARE_RUNNER_FAILURE_RAW.txt",
+    "sha256": "A9E3E3D24BFD1AE4E3EF04A8380D8E6638FE695541D97D8EBB667596A7EB4C94",
+    "bytes": 1757
+  }
+}

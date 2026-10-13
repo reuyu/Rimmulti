@@ -1,0 +1,14 @@
+{
+  "run_id": "MASTER-R38-TERMINAL-RECOVERY-20261014-01",
+  "session_id": 26686,
+  "pid": 504,
+  "release_tool_result": {
+    "chunk_id": "a3deea",
+    "wall_time_seconds": 0.0000708,
+    "exit_code": 0,
+    "original_token_count": 105,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R38-TERMINAL-RECOVERY-20261014-01\", \"pid\": 504, \"locked_at\": \"2026-10-14T04:27:23.566863+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-14T04:32:58.598692+09:00\", \"renewal_count\": 2, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-14T04:33:50.822235+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "preservation_checker_and_freeze_and_delivery_completed_before_release": true,
+  "prior_interrupted_guard_expiry_record": "MASTER_R38_INTERRUPTED_LEASE_RECOVERY_20261014.json"
+}

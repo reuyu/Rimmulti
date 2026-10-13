@@ -1,0 +1,27 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e",
+  "envelope": 41,
+  "evaluated_at": "2026-10-13T17:36:47.118800+00:00",
+  "wp_id": "WP_ENGINE_GATE05_R38_PUBLISHER_BOUNDARIES",
+  "wp_revision": "GATE05-R38-PUBLISHER-BOUNDARIES",
+  "single_authorized_source": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+    "before": {
+      "bytes": 40358,
+      "sha256": "8F31D69A26A364BF727ABD029E096C0416B3C7B6BA54AC29A6A6E246FF537FD9"
+    },
+    "after": {
+      "bytes": 43666,
+      "sha256": "940CF77220C272D117CDBC278B64858EFB3077267141CC548A0105B47D6E1306"
+    },
+    "byte_delta": 3308,
+    "mutation_authorized": true
+  },
+  "all_Engine9_and_generated_fixed": {
+    "all_match": true,
+    "count": 9,
+    "builder_executions": 0,
+    "rebuild_performed": false
+  },
+  "summary": "Updated standalone publisher to enforce all 8 R38 contract requirements: (1) DATE: full consumption _ISO_UTC_REGEX.fullmatch(val), ASCII digits [0-9], calendar/leap/time validity, verbatim fractional digits, Child .0000000Z original preserved across all 6 cases; (2) REQUIRED ATTRIBUTES: existing root/ancestor/leaf direct lstat requires usable Windows st_file_attributes integer (bool excluded), failing closed on missing/None/non-integer, ONLY exact new output leaf FileNotFoundError permits creation; (3) STRUCTURAL vs OPAQUE: structural ASCII strip/upper for role/cap, raw config cap never trimmed before comparison to cloned-trimmed descriptor, configId raw and snapshot-trimmed ordinal matching against untrimmed descriptor, opaque NONBLANK strings preserve supplied Unicode content verbatim; (4) PATH NORMAL FORM: fully-qualified local DOS drive paths, explicit slash handling rejecting repeated separators and ambiguous aliases, preserving drive-root and normal segment values (spaces, Omega); (5) CLAIMS & READ-ONCE: accurate observation witness documentation under protected local owner assumption, removal of all claims of immutable staging, atomic sidecars, or crash durability, hardlink mutability acknowledged; (6) ORIGINALS & LINE WITNESS: exact 6 case IDs, original Case 5/6 PairIDs with quotes/Omega/backslash/padding, Child .0000000Z, line witness status SOURCE_IMPLEMENTED_UNVERIFIED with limitations; (7) ONE OWN AST E1 GRAPH: pre-pinned input manifest, isolated child AST check, first binary raw stdout/stderr; (8) COMPLETE OWNED INVENTORY: all new helpers in owned root, 9 Engine baseline files bit-exact (0 builds), Dedicated Server final Domain Authority, Foundation HOLD."
+}

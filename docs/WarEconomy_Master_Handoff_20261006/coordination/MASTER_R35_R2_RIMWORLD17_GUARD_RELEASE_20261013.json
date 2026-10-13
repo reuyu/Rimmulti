@@ -1,0 +1,11 @@
+{
+  "run_id": "MASTER-R35-R2-AND-RIMWORLD17-REVIEW-20261013-01",
+  "session_id": 7761,
+  "actual_release": {
+    "chunk_id": "37f1c5",
+    "wall_time_seconds": 0.0000432,
+    "exit_code": 0,
+    "original_token_count": 108,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R35-R2-AND-RIMWORLD17-REVIEW-20261013-01\", \"pid\": 31848, \"locked_at\": \"2026-10-13T22:59:04.043798+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-13T23:00:56.433306+09:00\", \"renewal_count\": 1, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-13T23:05:21.467898+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  }
+}

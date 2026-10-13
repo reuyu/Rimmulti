@@ -1,0 +1,151 @@
+{
+  "at": "2026-10-12T23:21:43.903792+09:00",
+  "Worker_original": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+    "sha256": "CB1EE0A55512A6F578B2D7ABCACBE36B62327D9F3E585B6E4221725B6DADFFDB",
+    "bytes": 272607
+  },
+  "all9_before": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "CB1EE0A55512A6F578B2D7ABCACBE36B62327D9F3E585B6E4221725B6DADFFDB",
+      "bytes": 272607
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "bytes": 170135
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "F6C06D6B1392C5CF90483D047150D53A80193DED655850BF1A06FE65A72A52CE",
+      "bytes": 324608
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "FDCE1F62777DC49C8F00DE1E7899B106564471983F2A34105F290491984BF466",
+      "bytes": 78704
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "2B8220B6A02ADEBBB318BB5E5AA98569C7B89BE98E3DC77D725075538406458E",
+      "bytes": 307200
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "69E60BB07A99E4C7C15FC07C23D6138C8AC5596944DE5B82AA5795D8AC0D982B",
+      "bytes": 57448
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "F6C06D6B1392C5CF90483D047150D53A80193DED655850BF1A06FE65A72A52CE",
+      "bytes": 324608
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "FDCE1F62777DC49C8F00DE1E7899B106564471983F2A34105F290491984BF466",
+      "bytes": 78704
+    }
+  ],
+  "allowed_mutable_paths": [
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb"
+  ],
+  "allowed_generated_intermediate_paths": [
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.AssemblyInfoInputs.cache",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.assets.cache",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.csproj.AssemblyReference.cache",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.csproj.CoreCompileInputs.cache",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.csproj.FileListAbsolute.txt",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\project.nuget.cache",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.AssemblyInfoInputs.cache",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.assets.cache",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.csproj.AssemblyReference.cache",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.csproj.CoreCompileInputs.cache",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.csproj.FileListAbsolute.txt"
+  ],
+  "allowed_new_source_paths": [],
+  "fixed_current_files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "bytes": 170135
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+      "sha256": "0204609D1D9D8A697B1A0B88537419D78B9E506558C771CA3EDD4C50FD49D470",
+      "bytes": 10442
+    }
+  ],
+  "allowed_byte_spans": [
+    {
+      "id": "PRIVATE_DURABLE_MODE_OWNER_CONSUMED_STATE",
+      "start": 27259,
+      "end": 33326,
+      "sha256": "C23C50C247450A29E2F4AB49936F885065F4AEA65197B780BAF7BE79F8C21FD9",
+      "bytes": 6067
+    },
+    {
+      "id": "AWAKE_REQUIRED_MODE_ENTRY",
+      "start": 38131,
+      "end": 39339,
+      "sha256": "35F2F4D7A5F1EC4B293ECE769FA3E771D343FB32C077A29BF02F840D0523FB28",
+      "bytes": 1208
+    },
+    {
+      "id": "AWAKE_SUCCESS_AND_FAILURE_TAIL",
+      "start": 41273,
+      "end": 42068,
+      "sha256": "4E4CBB22B5EEBDC21B5148ADA208EBE9A51D489DB13EE73CC552BBEB05431364",
+      "bytes": 795
+    },
+    {
+      "id": "OWNER_SCOPED_DESTROY_WHOLE_METHOD",
+      "start": 185129,
+      "end": 185705,
+      "sha256": "481B343E4532CC0B88FC369C2E65169F4887914686085FCC8B4E466208575D52",
+      "bytes": 576
+    }
+  ],
+  "outside_spans_entire_bytes_fixed": true,
+  "controlled_contract": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R32_MANAGED_CUSTODY_RESOURCE_CONTRACT_20261012.md",
+    "sha256": "3BC50D6D89B4F336A68155A2889FBB2BD9404F8E3FBB20315705AE69F16E227E",
+    "bytes": 4304
+  },
+  "protected_baseline": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R32_CUSTODY_PROTECTED_BASELINE_20261012.json",
+    "sha256": "3C436C959FD215DCDE0F9BEA376593AD6D8169A06EFFD6F92AC0B6F1A9CC4623",
+    "bytes": 4853063
+  },
+  "new_owned_E1_root": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R32Custody-64ad38e2",
+  "old_original_E1_roots": [
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10"
+  ],
+  "actual_project_reference_observation": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2\\MASTER_EXISTING_PROJECT_REFERENCE_OBSERVATION.json",
+    "sha256": "4AB5D62F5A5B82AB19508F3872B75FE350D07FC19182FD98D37A7DC110A6B963",
+    "bytes": 2030
+  },
+  "all_outside_Update_M05_Bootstrap_PURE_task_publisher_fixed": true
+}

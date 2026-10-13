@@ -1,0 +1,110 @@
+{
+  "matrix_name": "R35_PUBLISHER_SOURCE_REJECTION_MATRIX",
+  "scenarios": [
+    {
+      "id": "REJ-01",
+      "category": "OUTPUT_ROOT",
+      "condition": "Output directory already exists prior to publication",
+      "behavior": "Raises FileExistsError('Preexisting output root prohibited')",
+      "destructive_cleanup": "None (directory untouched)"
+    },
+    {
+      "id": "REJ-02",
+      "category": "OUTPUT_ROOT",
+      "condition": "Output directory is relative or contains '..' path traversal",
+      "behavior": "Raises ValueError('output_dir must be a fully-qualified Windows path')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-03",
+      "category": "OUTPUT_ROOT",
+      "condition": "Output directory parent is an unsafe reparse point / junction",
+      "behavior": "Raises ValueError('Parent directory of output root is an unsafe reparse point')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-04",
+      "category": "BUNDLE_FILENAME",
+      "condition": "bundle_filename is not 'operator_startup_pair.json' or contains slashes",
+      "behavior": "Raises ValueError('Only fixed basename operator_startup_pair.json is supported')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-05",
+      "category": "CONFIG_PATH",
+      "condition": "Supplied config path does not exist on disk",
+      "behavior": "Raises FileNotFoundError",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-06",
+      "category": "CONFIG_PATH",
+      "condition": "Supplied config path is an unsafe reparse point / symlink",
+      "behavior": "Raises ValueError('... is an unsafe reparse point / symlink')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-07",
+      "category": "PATH_BINDING",
+      "condition": "Supplied config path does not match descriptor expectedConfigPath under Windows path equality",
+      "behavior": "Raises ValueError('... config path does not match descriptor expectedConfigPath')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-08",
+      "category": "SHA_BINDING",
+      "condition": "Actual raw config file SHA-256 differs from descriptor expectedConfigSha256",
+      "behavior": "Raises ValueError('... config SHA mismatch: declared vs actual')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-09",
+      "category": "CONFIG_ENCODING",
+      "condition": "Config file begins with UTF-8 Byte Order Mark (BOM)",
+      "behavior": "Raises ValueError('... contains prohibited UTF-8 Byte Order Mark (BOM)')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-10",
+      "category": "CONFIG_SYNTAX",
+      "condition": "Config JSON contains duplicate property names",
+      "behavior": "Raises ValueError('Duplicate JSON property: ...')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-11",
+      "category": "CONFIG_SCHEMA",
+      "condition": "Config JSON has missing or unknown root properties outside exact 14",
+      "behavior": "Raises ValueError('... missing required property' or '... contains unknown root property')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-12",
+      "category": "CONFIG_VALIDATOR_ARGS",
+      "condition": "validatorArguments in config JSON is non-blank",
+      "behavior": "Raises ValueError('... validatorArguments must be blank in paired mode')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-13",
+      "category": "ROLE_BINDING",
+      "condition": "Parent role is not 'SIMULATION' or child role is not 'READ_ONLY'",
+      "behavior": "Raises ValueError('... expectedRole must be ...')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-14",
+      "category": "SEMANTIC_BINDING",
+      "condition": "Config configId or capabilityBoundary does not match declaration",
+      "behavior": "Raises ValueError('... configId mismatch' or '... capabilityBoundary mismatch')",
+      "destructive_cleanup": "None"
+    },
+    {
+      "id": "REJ-15",
+      "category": "ATOMIC_LINK",
+      "condition": "Target final bundle already exists when os.link is attempted",
+      "behavior": "Raises FileExistsError (os.link fails closed without overwrite)",
+      "destructive_cleanup": "None (staging and sidecar files preserved as partial evidence)"
+    }
+  ]
+}

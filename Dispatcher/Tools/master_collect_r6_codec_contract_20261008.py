@@ -1,0 +1,40 @@
+"""Master hashes/metadata/post-completion copies; production execution/build0."""
+from pathlib import Path
+import json,sys,datetime,subprocess,shutil
+sys.stdout.reconfigure(encoding='utf-8');R=Path(__file__).resolve().parents[2];H=R/'docs/WarEconomy_Master_Handoff_20261006';sys.path.insert(0,str(R/'Dispatcher'));import master_check_a_result as checker
+def read(p):return json.loads(p.read_text(encoding='utf-8-sig'))
+def write(p,d):p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+sha=checker.digest;at=datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).isoformat();b=read(R/'Dispatcher/MASTER_A_TASKS.json');t=b['tasks'][-1];assert t['dispatch_id']=='WE-A-ENGINE-GATE05-R6-CODEC-CONTRACT-20261008-DIRECT-1f657abe';T=Path(t['completion_path']).parent;c=read(Path(t['completion_path']));assert c['dispatch_id']==t['dispatch_id'] and c['wp_revision']==t['wp_revision']
+assert c['result_id']=='WE-A-ENGINE-GATE05-R6-CODEC-CONTRACT-RESULT-01' and sha(Path(t['completion_path']))=='C0166519CBE176E15852C2FDB2672FB5F57B516B5FCB9BC8022CB9C325C41763'
+checks=[]
+for x in c['artifacts']:
+ p=Path(x['path']);assert p.resolve().is_relative_to(R);assert sha(p)==x['sha256'] and p.stat().st_size==x['size'];checks.append(dict(x,actual_sha256=sha(p),actual_size=p.stat().st_size,matched=True))
+pres=checker.inspect_preservation(t);assert len(pres['preservation_errors'])==1 and 'Steam' in pres['preservation_errors'][0];write(T/'MASTER_R6_TERMINAL_PRESERVATION.json',pres)
+files=set();source=R/'scratch/WorkerBridgeMod/Source'
+for base in [source,R/'scratch/EngineGate05R6CodecContract',R/'scratch/WorkerBridgeMod/1.6/Assemblies']:
+ for p in base.rglob('*'):
+  if p.is_file() and not p.is_symlink():files.add(p.resolve())
+for x in c['artifacts']:files.add(Path(x['path']).resolve())
+for p in T.iterdir():
+ if p.is_file() and not p.name.startswith('MASTER_') and p.suffix in ['.json','.md','.txt']:files.add(p.resolve())
+F=R/'Dispatcher/CANDIDATES/G05R6-1f657abe';mp=T/'MASTER_GATE05_R6_CODEC_CONTRACT_REVIEW_FREEZE_MANIFEST.json';assert not mp.exists();rows=[]
+for p in sorted(files):
+ assert p.is_relative_to(R);dest=F/p.relative_to(R);dest.parent.mkdir(parents=True,exist_ok=True);before=sha(p);size=p.stat().st_size
+ if dest.exists():assert sha(dest)==before and dest.stat().st_size==size
+ else:shutil.copy2(p,dest)
+ assert sha(dest)==before==sha(p) and size==dest.stat().st_size
+ rows.append({'original_path':str(p),'frozen_path':str(dest),'sha256':before,'size':size})
+write(mp,{'at':at,'dispatch_id':t['dispatch_id'],'kind':'POST_COMPLETION_REVIEW_SNAPSHOT_NOT_PRE_EXECUTION_PROOF','runtime_e2_released':False,'files':rows})
+lineage=[]
+for conf in ['Debug','Release']:
+ dll=source/'bin'/conf/'net472/WarEconomy.WorkerBridge.PoC.dll';pdb=dll.with_suffix('.pdb');out=subprocess.run(['dotnet',str(R/'Dispatcher/Tools/InspectLineage/bin/Debug/net8.0/InspectLineage.dll'),str(dll),str(pdb)],capture_output=True,text=True,check=True);m=json.loads(out.stdout);assert m['codeviewMatched'] and all(x['matched'] for x in m['documents']);m.update(configuration=conf,dll_sha256=sha(dll),pdb_sha256=sha(pdb));lineage.append(m)
+oldmap={x['original_path'].lower():x for x in read(Path(t['preservation_policy']['prior_candidate_freeze_manifest']))['files']};before=read(R/'scratch/EngineGate05R6CodecContract/ENGINE_FREEZE_BEFORE.json');after=read(R/'scratch/EngineGate05R6CodecContract/ENGINE_FREEZE_AFTER.json');freeze_checks=[]
+for x in before['entries']:
+ original=(R/x['path']).resolve();frozen=Path(oldmap[str(original).lower()]['frozen_path']);assert sha(frozen)==x['sha256'] and frozen.stat().st_size==x['size_bytes'];freeze_checks.append({'kind':'BEFORE','path':str(original),'matched':True,'size_matched':True})
+for rel,x in after['files'].items():
+ p=(R/rel).resolve();assert sha(p)==x['sha256'] and p.stat().st_size==x['size'];freeze_checks.append({'kind':'AFTER','path':str(p),'matched':True,'size_matched':True})
+raw=(R/'scratch/EngineGate05R6CodecContract/raw_console.txt').read_text(encoding='utf-8-sig');results=read(R/'scratch/EngineGate05R6CodecContract/results.json');release=read(R/'docs/RELEASE_MANIFEST_ENGINE_GATE05_R6_CODEC_CONTRACT.json');assert [x['mvid'] for x in lineage]==[release['selected_candidate']['mvid'],release['alternate_candidate']['mvid']]
+assert sum(l.startswith('[PASS]') for l in raw.splitlines())==14==len(results['results'])
+proof={'at':at,'run_id':'MASTER-R6-CONTINUE-20261008-01','dispatch_id':t['dispatch_id'],'wp_id':t['wp_id'],'wp_revision':t['wp_revision'],'result_id':c['result_id'],'completion_sha256':sha(Path(t['completion_path'])),'reported_e1_verdict':c['e1_verdict'],'artifact_checks':checks,'preservation':pres,'lineage':lineage,'before_after_checks':freeze_checks,'frozen_manifest':str(mp),'frozen_manifest_sha256':sha(mp),'frozen_files':len(rows),'freeze_kind':'POST_COMPLETION_REVIEW_SNAPSHOT_NOT_PRE_EXECUTION_PROOF','results_declared':results,'raw_pass_rows':14,'candidate_execution_by_master':0,'candidate_rebuild_by_master':0,'runtime_e2_released':False,'closure_changed':False,'foundation':'HOLD','scheduled_r6_run_observed_at':'2026-10-08T11:26:41.197Z','master_review_status':'PENDING_DISPOSITION','lock_recovery':{'old_session':97347,'old_run':'MASTER-HOURLY-R6-20261008-202641-01','expired_at':'2026-10-08T20:56:49.837339+09:00','old_invocation_actions_before_expiry':'READ_ONLY_NO_MUTATION_NO_DISPATCH','new_session':92075,'new_run':'MASTER-R6-CONTINUE-20261008-01','renewed_before_mutation':True,'prior_ownership_not_assumed_after_interruption':True}}
+vp=H/'coordination/MASTER_GATE05_R6_CODEC_CONTRACT_E1_VERIFICATION_20261008.json';write(vp,proof)
+print(json.dumps({'frozen_files':len(rows),'freeze_sha256':sha(mp),'artifacts':len(checks),'lineage':[{k:m[k] for k in ['configuration','mvid','codeviewMatched','dll_sha256','pdb_sha256']} for m in lineage],'before_after':len(freeze_checks),'raw_pass_rows':14},ensure_ascii=False))

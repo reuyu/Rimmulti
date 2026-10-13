@@ -1,0 +1,89 @@
+{
+  "recorded_at": "2026-10-12T20:55:00+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10",
+  "wp_id": "WP_ENGINE_GATE05_R31_LIFECYCLE",
+  "wp_revision": "GATE05-R31-LIFECYCLE",
+  "envelope": 34,
+  "all_preserved_files_matched": true,
+  "fixed_baseline_files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "bytes": 170135,
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "expected_sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "status": "BYTE_FIXED_IDENTICAL"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "bytes": 1774,
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "expected_sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "status": "BYTE_FIXED_IDENTICAL"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+      "bytes": 10442,
+      "sha256": "0204609D1D9D8A697B1A0B88537419D78B9E506558C771CA3EDD4C50FD49D470",
+      "expected_sha256": "0204609D1D9D8A697B1A0B88537419D78B9E506558C771CA3EDD4C50FD49D470",
+      "status": "BYTE_FIXED_IDENTICAL"
+    }
+  ],
+  "modified_candidate_files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "before_bytes": 268703,
+      "before_sha256": "B1F8C00D1DF6E8E797EAC8E5A7F7FB462679BA06E79096D5C558C687BD413311",
+      "after_bytes": 272607,
+      "after_sha256": "CB1EE0A55512A6F578B2D7ABCACBE36B62327D9F3E585B6E4221725B6DADFFDB",
+      "status": "AUTHORIZED_REBUILT_CANDIDATE"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "before_bytes": 323584,
+      "before_sha256": "9142C63AF18E2AE028D9E44AC36277F2FEBFFBB7AE8B6AF2437D12CED288C706",
+      "after_bytes": 324608,
+      "after_sha256": "F6C06D6B1392C5CF90483D047150D53A80193DED655850BF1A06FE65A72A52CE",
+      "status": "AUTHORIZED_REBUILT_CANDIDATE"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "before_bytes": 78108,
+      "before_sha256": "4BCF43B7E9FBF84D11FF677708C050415E68032CF1A0BACADA3CF46E13B8E28A",
+      "after_bytes": 78704,
+      "after_sha256": "FDCE1F62777DC49C8F00DE1E7899B106564471983F2A34105F290491984BF466",
+      "status": "AUTHORIZED_REBUILT_CANDIDATE"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "before_bytes": 306176,
+      "before_sha256": "D6D4EFEEDC06B90D42148F07F71EA6EA5946FDAAD8B2E7EFD11AD9D26F2FB52B",
+      "after_bytes": 307200,
+      "after_sha256": "2B8220B6A02ADEBBB318BB5E5AA98569C7B89BE98E3DC77D725075538406458E",
+      "status": "AUTHORIZED_REBUILT_CANDIDATE"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "before_bytes": 57084,
+      "before_sha256": "4E179AEA558E00380669437C4CE264F2AABF80AF0A5858F92C7E33481F3BF33A",
+      "after_bytes": 57448,
+      "after_sha256": "69E60BB07A99E4C7C15FC07C23D6138C8AC5596944DE5B82AA5795D8AC0D982B",
+      "status": "AUTHORIZED_REBUILT_CANDIDATE"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "before_bytes": 323584,
+      "before_sha256": "9142C63AF18E2AE028D9E44AC36277F2FEBFFBB7AE8B6AF2437D12CED288C706",
+      "after_bytes": 324608,
+      "after_sha256": "F6C06D6B1392C5CF90483D047150D53A80193DED655850BF1A06FE65A72A52CE",
+      "status": "AUTHORIZED_REBUILT_CANDIDATE"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "before_bytes": 78108,
+      "before_sha256": "4BCF43B7E9FBF84D11FF677708C050415E68032CF1A0BACADA3CF46E13B8E28A",
+      "after_bytes": 78704,
+      "after_sha256": "FDCE1F62777DC49C8F00DE1E7899B106564471983F2A34105F290491984BF466",
+      "status": "AUTHORIZED_REBUILT_CANDIDATE"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "at": "2026-10-12T17:13:04.668123+09:00",
+  "guard_run": "MASTER-R29-S3-POSTRUN-ANALYSIS-20261012-02",
+  "guard_session": 2351,
+  "guard_pid": 34332,
+  "delivery_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012-01",
+  "result_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012-8d682aff4ebd4996a12529142c0d7431",
+  "resume_id": "SOL-GATE05-R29-STARTUP_PAIR-S3-POSTANALYSIS-R1-20261012-01",
+  "wp_revision": "S3",
+  "actual_inactive_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:1",
+    "revision": 1,
+    "changed": false,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "notLoaded"
+      }
+    },
+    "latestTurn": {
+      "id": "01a12da7-4e7b-7352-ad70-4efa4aa792ac",
+      "status": "failed",
+      "error": {
+        "message": "You’ve hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 1:57 PM."
+      },
+      "startedAt": 1791767301,
+      "completedAt": 1791769267,
+      "durationMs": 1965750
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acc39d64c0887d0b0b05e93edc6eaf4",
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": "exec-2bbb37c7-6254-4295-a347-c2475f9a4353",
+    "latestToolMarker": null
+  },
+  "usage_failure_not_completion": true,
+  "execution_provisional_checked": true,
+  "not_final_expected_independence_raw_or_E2_verdict": true,
+  "build_attempts": 1,
+  "prospective_compiler_pins": 253,
+  "normal_runs": [
+    {
+      "culture": "en-US",
+      "host_pid": 21232,
+      "exit": 0,
+      "assertions": 438,
+      "failed": 0,
+      "typed_value_type_checks": 6700,
+      "prepost_pins": 264,
+      "loaded_managed": 10,
+      "sealed_outputs": 402,
+      "raw_utf8_files": 336,
+      "actual_call_ledger_rows": 584,
+      "inventory": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\runs\\1-en-US\\OUTPUT_INVENTORY.json",
+        "sha256": "FF074660260F89BF5A3B36678CB837C5F422E430DDF3100E71C7210B7DBA407E",
+        "bytes": 157425
+      },
+      "host": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\runs\\1-en-US\\HOST_RUN_PROCESS_OBSERVATION.json",
+        "sha256": "178FF5B2B43AE9106796AED748D0E8503FA1507E906B69B544DF09F35679B234",
+        "bytes": 1396
+      }
+    },
+    {
+      "culture": "de-DE",
+      "host_pid": 9224,
+      "exit": 0,
+      "assertions": 438,
+      "failed": 0,
+      "typed_value_type_checks": 6700,
+      "prepost_pins": 264,
+      "loaded_managed": 10,
+      "sealed_outputs": 402,
+      "raw_utf8_files": 336,
+      "actual_call_ledger_rows": 584,
+      "inventory": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\runs\\2-de-DE\\OUTPUT_INVENTORY.json",
+        "sha256": "BF6B9BBA395E880823AECBF752B7F72DC5B1A1DCD57DF9CC899A15A4B18742F6",
+        "bytes": 157425
+      },
+      "host": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\runs\\2-de-DE\\HOST_RUN_PROCESS_OBSERVATION.json",
+        "sha256": "7C8D95D7E7F1EFBB5FEBEA9F763C2D1165B93DAB59D8DDBA02CB02995771C2C9",
+        "bytes": 1395
+      }
+    }
+  ],
+  "source_high3": "OPEN",
+  "postlookup_stop": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\POSTRUN_INSPECTION_PATH_GUESS_STOP.json",
+    "sha256": "1DD6B02C07BF15E888EDF91B0CCC5B2AADD72694F4D67024517FB9D6B329D405",
+    "bytes": 1909
+  },
+  "immutable_existing_QA_evidence": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R29_S3_POSTRUN_SEALED_EVIDENCE_PRESERVATION_20261012.json",
+    "sha256": "B107C10230C52DE68AE821AE467B3D49594564DDA966502E03615B862B6B2A9E",
+    "bytes": 277564
+  },
+  "preserved_files": 894,
+  "notice": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R29_S3_POSTRUN_ANALYSIS_R1_AUTHORIZATION_20261012.md",
+    "sha256": "4585469BF681B1AA314260144B910995CF143B07896FFBAE51C1C31C612815E6",
+    "bytes": 4406
+  },
+  "resume_status": "APPROVED_NOT_SENT",
+  "Master_candidate_execution": 0,
+  "no_further_build_run_factory_calls_allowed": true,
+  "Foundation": "HOLD",
+  "native_E2": "NOT_RELEASED",
+  "scheduler_actual": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "PAUSED",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791765745222
+  }
+}

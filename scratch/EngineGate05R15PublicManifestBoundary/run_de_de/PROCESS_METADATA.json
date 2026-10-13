@@ -1,0 +1,16 @@
+﻿{
+    "run_name":  "run_de_de",
+    "culture":  "de-DE",
+    "pid":  33632,
+    "exit_code":  0,
+    "start_time_utc":  "2026-10-09T14:07:09.2368256Z",
+    "end_time_utc":  "2026-10-09T14:07:09.3571548Z",
+    "elapsed_ms":  120,
+    "arguments":  [
+                      "--output-json=C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R15PublicManifestBoundary\\run_de_de\\results.json",
+                      "--output-ledger=C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R15PublicManifestBoundary\\run_de_de\\api_ledger.json",
+                      "--culture=de-DE"
+                  ],
+    "working_directory":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R15PublicManifestBoundary",
+    "runner_executable":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R15PublicManifestBoundary\\Harness\\bin\\Debug\\net472\\Gate05R15BoundaryRunner.exe"
+}

@@ -1,0 +1,74 @@
+{
+  "at": "2026-10-14T04:40:29.605912+09:00",
+  "guard_session": 68381,
+  "delivery_id": "SOL-GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014-01",
+  "actual_fail_command": {
+    "type": "commandExecution",
+    "id": "exec-96d8c701-d266-4d0a-a22e-b705ef5096c2",
+    "command": "\"C:\\\\Users\\\\user\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command \"& 'QA-Tactical-Engine/GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014/invoke.ps1' bootstrap\"",
+    "cwd": "C:\\Users\\user\\Desktop\\RimMulti",
+    "status": "failed",
+    "exitCode": 1,
+    "durationMs": 554,
+    "output": {
+      "text": "Get-FileHash: C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\invoke.ps1:9\r\nLine |\r\n   9 |  … ath;sha256=(Get-FileHash -LiteralPath $qaSeedPath -Algorithm SHA256). …\r\n     |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n     | 시스템에서 파일에 액세스할 수 없습니다. : 'C:\\Users\\user\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe'.\r\n",
+      "truncated": false
+    }
+  },
+  "actual_thread_read": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R38_LOCATOR_STOP_ACTUAL_THREAD_READ_20261014.json",
+    "sha256": "5B14EC8E5F8E7F2DBE2033C05E331165767ACE41553782DAECBE690147FA3B8B",
+    "bytes": 44800
+  },
+  "actual_idle_snapshot": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R38_LOCATOR_STOP_IDLE_SNAPSHOT_20261014.json",
+    "sha256": "18B139791364C41CA1D322ECBFB135BF2FA176653294F59F87005ECECB608892",
+    "bytes": 1514
+  },
+  "notice": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\STOP_BOOTSTRAP_INTERPRETER_ALIAS_NOTICE.json",
+    "sha256": "6D8BD64B23BDE12E3C9C5A8CCEBE7F7FA9B151E02F04D91387CE6EA15CFC05E3",
+    "bytes": 1582
+  },
+  "partial_original_rows": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.py",
+      "sha256": "393CF1CE526637AD778272889D77FA794B6B44825DBF608A270B5ACFDBF4F4E9",
+      "bytes": 2129
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\common.py",
+      "sha256": "14670BD469741CEBC6257D9B72F4AA288BBE8AC16736163929ACEEB9F8789AD4",
+      "bytes": 2568
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\invoke.ps1",
+      "sha256": "34562E9AEE03A83F7717907A4E41B0C0E7C8B59D5240DE1A7695315067D38796",
+      "bytes": 2513
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\log.py",
+      "sha256": "740BDD738C9D3D767A240EBEC330E60419E988A18C9A789BCA364C1FA4283A79",
+      "bytes": 1845
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\STOP_BOOTSTRAP_INTERPRETER_ALIAS_NOTICE.json",
+      "sha256": "6D8BD64B23BDE12E3C9C5A8CCEBE7F7FA9B151E02F04D91387CE6EA15CFC05E3",
+      "bytes": 1582
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\STOP_INITIAL_PARTIAL_PRESERVATION.json",
+      "sha256": "42DBA0569591FDF9D566F7C2D2BAF28CCF1EBE259419A3328F9C9E92AC3906C8",
+      "bytes": 1635
+    }
+  ],
+  "explicit_interpreter_current_read": {
+    "path": "C:\\Users\\user\\anaconda3\\python.exe",
+    "sha256": "388FE2CFFDA8A134E7D7DC4E978F7C478857ECE6B69694DAECBED25E51EC633A",
+    "bytes": 104264
+  },
+  "full19676_rehash_this_stop_verification": false,
+  "initial_ACK": false,
+  "candidate_failure": false,
+  "all_candidate_execution": 0
+}

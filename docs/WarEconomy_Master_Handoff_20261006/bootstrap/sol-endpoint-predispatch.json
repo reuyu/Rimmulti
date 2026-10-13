@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":false,\"wake\":{\"reason\":\"turnCompleted\",\"turnId\":\"01a10fd9-676b-77e0-8aa5-dc3040d88b33\",\"threadId\":\"01a10fd9-2f90-79e2-a1c4-a1079c99f3ac\",\"hostId\":\"local\"},\"polls\":[{\"schemaVersion\":1,\"cursor\":\"4e68ad33-f950-44e5-9650-c30f001de711:1\",\"revision\":1,\"changed\":true,\"thread\":{\"id\":\"01a10fd9-2f90-79e2-a1c4-a1079c99f3ac\",\"hostId\":\"local\",\"status\":{\"type\":\"idle\"}},\"latestTurn\":{\"id\":\"01a10fd9-676b-77e0-8aa5-dc3040d88b33\",\"status\":\"completed\",\"error\":null,\"startedAt\":1791267268,\"completedAt\":1791268499,\"durationMs\":1231254},\"latestAssistantMessageId\":\"msg_0cbd636361551f57016ac4968ef84c87d0865eac5559fd0877\",\"latestAssistantMessage\":{\"id\":\"msg_0cbd636361551f57016ac4968ef84c87d0865eac5559fd0877\",\"turnId\":\"01a10fd9-676b-77e0-8aa5-dc3040d88b33\",\"phase\":\"final_answer\",\"text\":\"최종 판정: FAIL REV5 독립 QA 보고서를 작성했습니다. 001·013: 검증 범위 내 해결 권고 007: 과거 observed revision과 audit 의미 변조가 승인되어 미해결 V6 추가 차단 결함: COLLATE NOCASE 변조를 승인해 서로 다른 actor/scope를 같은 key로 처리 019: 기존 해결 상태 유지 권고 Production 353개 파일의 변경·재빌드는 0건입니다. Master의 다음 지시를 기다립니다.\"},\"latestToolMarkerId\":\"exec-f0f07ce1-739b-415e-80ef-1571429ba54b\",\"latestToolMarker\":{\"id\":\"exec-f0f07ce1-739b-415e-80ef-1571429ba54b\",\"turnId\":\"01a10fd9-676b-77e0-8aa5-dc3040d88b33\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

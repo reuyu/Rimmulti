@@ -1,0 +1,5 @@
+# R10 bounded implementation release
+
+Master approves WP_ENGINE_GATE05_R10_PACKAGE_POLICY/GATE05-R10-PACKAGE-POLICY/envelope13. Implement one actual ordered package inventory comparison against a distinct explicit expected policy with canonical policy identity and actual Compute linkage. No self-approved expected list/default-only boundary claim. Generic codec behavior and R9 narrow closure are preserved;fresh candidate requires independent QA. Expected policy installation/operator origin/native content and patch/settings support remain separate unproven gates.
+
+Only existing ContentProfileProvider suffix/typed policy DTO-helper and derived candidate outputs,new normal runner/evidence allowed. WorkerBridge/csproj/Census prefix fixed. Archive19/prior1101/Pipeline206/QA2160/managed4/terminal protected. No actual provider/cache/game/native/operator/old/rejection/adverse execution or product deployment/fullGate E2/closure. Actual fresh CU idle/submission proof required;files are NOT SENT until delivery. Same hourly monitor resumes after actual A delivery. Latest user autonomous routine coordination authorization controls.

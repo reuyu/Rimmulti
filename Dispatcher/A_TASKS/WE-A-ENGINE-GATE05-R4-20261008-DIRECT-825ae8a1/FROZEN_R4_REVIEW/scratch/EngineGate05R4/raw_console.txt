@@ -1,0 +1,96 @@
+﻿================================================================================
+WarEconomy Gate05-R4 Verification Test Runner (E1 Independent Execution)
+Scope: WP_ENGINE_GATE05_R4 / GATE05-R4 (P0 Mode Separation, Admitted Executable, ADR-006B-v4)
+Standards: MD-126, MD-127, MD-128, MD-129, MD-130, ADR-006B
+================================================================================
+
+--- SECTION 1: Binary Lineage & Cryptographic Provenance ---
+[PASS] PROV-01 (GENUINE_CONTROL_FLOW) [Provenance] Selected Debug Candidate DLL Exists & Cryptographically Bound -> Path=C:\Users\user\Desktop\RimMulti\scratch\WorkerBridgeMod\Source\bin\Debug\net472\WarEconomy.WorkerBridge.PoC.dll, SHA256=4F5663FDBBFA09A8B2BE460D09950FD22B9567459F7116E69D0B1C558F189B9E, Size=204800
+[PASS] PROV-02 (GENUINE_CONTROL_FLOW) [Provenance] Selected Debug Matching PDB Exists & Cryptographically Bound -> Path=C:\Users\user\Desktop\RimMulti\scratch\WorkerBridgeMod\Source\bin\Debug\net472\WarEconomy.WorkerBridge.PoC.pdb, SHA256=CC796E68C592C94345DF41D64609B5D207933B8F5FE805146875D9E61B8D12C4
+[PASS] PROV-03 (GENUINE_CONTROL_FLOW) [Provenance] Candidate Assembly MVID Cryptographically Extracted -> MVID=ed98e6f9-aa63-47ee-ae21-84f59465d2bb
+[PASS] PROV-04 (GENUINE_CONTROL_FLOW) [Provenance] Release Candidate Separately Tracked (Non-Selected Alternate Lineage) -> Path=C:\Users\user\Desktop\RimMulti\scratch\WorkerBridgeMod\Source\bin\Release\net472\WarEconomy.WorkerBridge.PoC.dll, SHA256=7532FF152314892A4AB95A0117107C0845B0D7BAD170C3B840BA24F3EADA270B
+
+--- SECTION 2: Genuine Operator Process Launch & Normal Flow ---
+[PASS] GEN-01 (GENUINE_CONTROL_FLOW) [GENUINE_OPERATOR_FLOW] Issue ValidatorTask with complete 16 authority dimensions & result channel path -> TaskId=VT_R4_2265bebb, ResultChannel='C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R4\MockSaveData\Tasks\VT_R4_2265bebb.protected_result.json', Role=READ_ONLY
+[RimWorld.Log] [WorkerBridge] OPERATOR_VALIDATOR_LAUNCHED: TaskId=VT_R4_2265bebb, Pid=15820, StartTime=2026-10-08T07:29:10.3376942Z, Exe='C:\WINDOWS\system32\cmd.exe'
+[PASS] GEN-02 (GENUINE_SUBPROCESS) [GENUINE_OPERATOR_FLOW] Launch genuine child process via LAUNCH_OPERATOR_VALIDATOR with admitted executable and verified StartTime -> Resp='OPERATOR_VALIDATOR_LAUNCHED: TaskId=VT_R4_2265bebb, Pid=15820, StartTime=2026-10-08T07:29:10.3376942Z, Exe='C:\WINDOWS\system32\cmd.exe'', ChildPid=15820, SimulatorPid=17532, StartTime=2026-10-08T07:29:10.3376942Z
+[PASS] GEN-03 (GENUINE_CONTROL_FLOW) [GENUINE_OPERATOR_FLOW] Validator writes ValidatorResult with 16 authority dimensions (allowedMode=READ_ONLY) to protected result channel -> ResultFile='C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R4\MockSaveData\Tasks\VT_R4_2265bebb.protected_result.json', Size=1316, Mode=READ_ONLY
+[RimWorld.Log] [WorkerBridge] STAGE_VALIDATION_ACCEPTED: ReceiptId=VR_20261008_072910_fbd429d8b3d9455d937582922dc81bc5, ValidatorPid=15820, TaskId=VT_R4_2265bebb
+[PASS] GEN-04 (GENUINE_CONTROL_FLOW) [GENUINE_OPERATOR_FLOW] COMPLETE_STAGE_VALIDATION accepts verified result binding SIMULATION grant & READ_ONLY validator -> Resp='STAGE_VALIDATION_ACCEPTED: ReceiptId=VR_20261008_072910_fbd429d8b3d9455d937582922dc81bc5, ValidatorPid=15820, TaskId=VT_R4_2265bebb'
+[PASS] GEN-05 (GENUINE_CONTROL_FLOW) [GENUINE_OPERATOR_FLOW] Atomic result channel consumption: original vanished and .consumed created (Fail-Closed) -> OriginalExists=False, ConsumedExists=True
+[PASS] GEN-06 (GENUINE_CONTROL_FLOW) [GENUINE_OPERATOR_FLOW] StageValidationReceipt dual-role binding verified (allowedMode=READ_ONLY, simulatorOperationMode=SIMULATION) -> ReceiptId=VR_20261008_072910_fbd429d8b3d9455d937582922dc81bc5, BoundExe='C:\WINDOWS\system32\cmd.exe', BoundMode='READ_ONLY', SimMode='SIMULATION'
+[RimWorld.Log] [WorkerBridge] ARTIFACT_APPROVED: 'C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R4\Saves\FinalSave.rws', SHA=FE248F38BF8B5F7C34F360FC6C959020B14C6D4F7D40652C9261021C80F9D884, ManifestHash=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA, Epoch=1, ReceiptId=VR_20261008_072910_fbd429d8b3d9455d937582922dc81bc5
+[PASS] GEN-07 (GENUINE_CONTROL_FLOW) [GENUINE_OPERATOR_FLOW] PROMOTE_STAGED successfully promotes validated staged save -> Resp='ARTIFACT_APPROVED: File='C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R4\Saves\FinalSave.rws', Name='FinalSave', Size=66 bytes, SHA256=FE248F38BF8B5F7C34F360FC6C959020B14C6D4F7D40652C9261021C80F9D884, SealedManifestHash=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA, Epoch=1, ReceiptId=VR_20261008_072910_fbd429d8b3d9455d937582922dc81bc5'
+
+--- SECTION 3: P0 Mode Mismatch & Role Escalation Rejection Controls ---
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: ValidatorResult allowedMode role must be 'READ_ONLY' (Got 'SIMULATION'). Prohibited simulation authority escalation.
+[PASS] MODE-01 (GENUINE_CONTROL_FLOW) [ROLE_ESCALATION_PREVENTION] Reject ValidatorResult attempting SIMULATION write authority escalation -> Resp='STAGE_VALIDATION_REJECTED: ValidatorResult role must be READ_ONLY.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: ValidatorTask allowedMode role must be 'READ_ONLY' (Got 'SIMULATION').
+[PASS] MODE-02 (GENUINE_CONTROL_FLOW) [ROLE_ESCALATION_PREVENTION] Reject ValidatorTask mutated to non-READ_ONLY role -> Resp='STAGE_VALIDATION_REJECTED: ValidatorTask role must be READ_ONLY.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: Proposal operation mode in registered AuthorityBundle must be 'SIMULATION' (Got 'READ_ONLY').
+[PASS] MODE-03 (GENUINE_CONTROL_FLOW) [ROLE_ESCALATION_PREVENTION] Reject AuthorityBundle proposal operation mode when not SIMULATION -> Resp='STAGE_VALIDATION_REJECTED: Proposal operation mode mismatch in AuthorityBundle.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: Proposal operation mode in active SimulationGrant must be 'SIMULATION' (Got 'READ_ONLY').
+[PASS] MODE-04 (GENUINE_CONTROL_FLOW) [ROLE_ESCALATION_PREVENTION] Reject SimulationGrant proposal operation mode when not SIMULATION -> Resp='STAGE_VALIDATION_REJECTED: Proposal operation mode mismatch in SimulationGrant.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: ValidatorResult allowedMode role must be 'READ_ONLY' (Got 'ARBITRARY_ROLE'). Prohibited simulation authority escalation.
+[PASS] MODE-05 (GENUINE_CONTROL_FLOW) [ROLE_ESCALATION_PREVENTION] Reject mismatch between ValidatorTask and ValidatorResult allowedMode -> Resp='STAGE_VALIDATION_REJECTED: ValidatorResult role must be READ_ONLY.'
+
+--- SECTION 4: Operator Launch Security & Process Origin ---
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: Operator capability nonce verification failed for LAUNCH_OPERATOR_VALIDATOR (MD-126/127). Public requester launch prohibited.
+[PASS] SEC-01 (GENUINE_CONTROL_FLOW) [ATTACK_SURFACE_ISOLATION] Public requester invocation of LAUNCH_OPERATOR_VALIDATOR without capabilityNonce rejected -> Resp='ERROR: Unauthorized: CapabilityNonce mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: Operator capability nonce verification failed for LAUNCH_OPERATOR_VALIDATOR (MD-126/127). Public requester launch prohibited.
+[PASS] SEC-02 (GENUINE_CONTROL_FLOW) [ATTACK_SURFACE_ISOLATION] Public requester invocation with wrong capabilityNonce rejected -> Resp='ERROR: Unauthorized: CapabilityNonce mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: Caller attempted to nominate unadmitted validator executable: 'C:\Windows\notepad.exe' (Admitted='C:\WINDOWS\system32\cmd.exe').
+[PASS] SEC-03 (GENUINE_CONTROL_FLOW) [ATTACK_SURFACE_ISOLATION] Caller attempt to nominate unadmitted validator executable rejected -> Resp='ERROR: Caller cannot nominate arbitrary validator executable (MD-126/127).'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: Self-validation or empty validator PID detected!
+[PASS] SEC-04 (GENUINE_CONTROL_FLOW) [ATTACK_SURFACE_ISOLATION] Self-validation prohibited (Validator PID == Simulator PID rejected) -> Resp='STAGE_VALIDATION_REJECTED: Fresh independent validator required (Self-PID prohibited).'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: Protected validator result channel file not found at configured path (MD-126/127).
+[PASS] SEC-05 (GENUINE_CONTROL_FLOW) [ATTACK_SURFACE_ISOLATION] Result channel fallback search removed (Missing configured channel rejects without fallback) -> Resp='STAGE_VALIDATION_REJECTED: Protected validator result channel file not found.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: Validator process start time mismatch (Expected=2026-10-08T12:00:00.0000000Z, Got=2026-10-08T12:05:00.0000000Z). Forged or unregistered process instance.
+[PASS] SEC-06 (GENUINE_CONTROL_FLOW) [ATTACK_SURFACE_ISOLATION] Process start time mismatch rejected (Unregistered or reused process instance rejected) -> Resp='STAGE_VALIDATION_REJECTED: Validator process start time mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: Caller-supplied validation result payload is prohibited (MD-127). Authority must originate from operator-owned validator task and protected channel.
+[PASS] SEC-07 (GENUINE_CONTROL_FLOW) [ATTACK_SURFACE_ISOLATION] Caller-supplied inline JSON payload rejected (MD-127) -> Resp='STAGE_VALIDATION_REJECTED: Caller-supplied payload prohibited under MD-127.'
+[PASS] SEC-08 (GENUINE_CONTROL_FLOW) [ATTACK_SURFACE_ISOLATION] Unauthorized BindOperatorLaunchedProcess overload without nonce is eliminated -> OverloadExists=False
+
+--- SECTION 5: Target Map Clamping Prohibited Controls ---
+[PASS] CLAMP-01 (GENUINE_CONTROL_FLOW) [TARGET_CLAMPING_PROHIBITION] Reject targetMapIndex < 0 without clamping under MD-128 -> Resp='VALIDATION_FAILED: Target map index -1 out of range. Target clamping is strictly prohibited under MD-128.'
+[PASS] CLAMP-02 (GENUINE_CONTROL_FLOW) [TARGET_CLAMPING_PROHIBITION] Reject targetMapIndex >= MapCount without clamping under MD-128 -> Resp='VALIDATION_FAILED: Target map index 9999 out of range (Maps.Count=1). Target clamping is strictly prohibited under MD-128.'
+[PASS] CLAMP-03 (GENUINE_CONTROL_FLOW) [TARGET_CLAMPING_PROHIBITION] Valid targetMapIndex passes boundary guard without clamping error -> Resp='VALIDATION_FAILED: Validator exception: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.'
+
+--- SECTION 6: MD-128 Complete 16 Authority Dimensions Closed-Context Equality ---
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: AuthorityId mismatch (Result=FORGED_AUTH_X, Task=AUTH_GATE05_R4_TEST, Registered=AUTH_GATE05_R4_TEST).
+[PASS] DIM-01 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'AuthorityId' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: AuthorityId mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: StoreIncarnation mismatch.
+[PASS] DIM-02 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'StoreIncarnation' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: StoreIncarnation mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: BaseLineage mismatch.
+[PASS] DIM-03 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'BaseLineage' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: BaseLineage mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: GrantId mismatch.
+[PASS] DIM-04 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'GrantId' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: GrantId mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: WorkerGeneration mismatch.
+[PASS] DIM-05 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'WorkerGeneration' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: WorkerGeneration mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: ScopeId mismatch.
+[PASS] DIM-06 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'ScopeId' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: ScopeId mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: TargetMapIndex mismatch.
+[PASS] DIM-07 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'TargetMapIndex' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: TargetMapIndex mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: ValidatorResult allowedMode role must be 'READ_ONLY' (Got 'MUTATION'). Prohibited simulation authority escalation.
+[PASS] DIM-08 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'AllowedMode' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: ValidatorResult role must be READ_ONLY.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: ManifestVersion mismatch.
+[PASS] DIM-09 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'ManifestVersion' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: ManifestVersion mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: SealedResultId mismatch.
+[PASS] DIM-10 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'SealedResultId' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: SealedResultId mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: ResultEpoch mismatch.
+[PASS] DIM-11 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'ResultEpoch' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: ResultEpoch mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: SourceArtifactHash mismatch.
+[PASS] DIM-12 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'SourceArtifactHash' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: SourceArtifactHash mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: ContentProfileFingerprint mismatch in validator result.
+[PASS] DIM-13 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'ContentProfileFingerprint' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: ContentProfileFingerprint mismatch.'
+[RimWorld.Log] [WorkerBridge] READINESS REVOKED: Manifest hash mismatch (ValidatorActual=7777777777777777777777777777777777777777777777777777777777777777, SealedExpected=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA).
+[PASS] DIM-14 (GENUINE_CONTROL_FLOW) [16_DIMENSION_EQUALITY] Authority dimension 'ActualManifestHash' mismatch rejected -> Resp='STAGE_VALIDATION_REJECTED: Manifest hash mismatch.'
+
+--- SECTION 7: P1 Content Profile ADR-006B-v4 & Cache Lifecycle Controls ---
+[PASS] PROF-01 (HARNESS_FIXTURE_ASSERTION) [CONTENT_PROFILE_INTEGRITY] ContentProfileProvider schema upgraded to ADR-006B-v4 with DLC expansion binding -> SchemaVersion='ADR-006B-v4'
+[PASS] PROF-02 (GENUINE_CONTROL_FLOW) [CONTENT_PROFILE_INTEGRITY] InvalidateCache() cleanly clears fingerprint and manifest cache for re-admission -> IsCached=False
+
+================================================================================
+Final Summary: Total=43, Passed=43, Failed=0, Verdict=PASS
+Results saved to: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R4\results.json
+================================================================================

@@ -1,0 +1,55 @@
+{
+  "at": "2026-10-14T04:42:02.786426+09:00",
+  "guard_session": 68381,
+  "delivery_id": "SOL-GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014-01",
+  "same_WP": true,
+  "new_WP": false,
+  "notice": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R38_SAME_WP_INTERPRETER_LOCATOR_RECOVERY_R1_20261014.md",
+    "sha256": "3C748542064BA10019C6B9FBADB75B3A0004F728118A2CB5CF27A18C8233A3A0",
+    "bytes": 3199
+  },
+  "exact_message": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R38_LOCATOR_R1_EXACT_MESSAGE_20261014.txt",
+    "sha256": "8443B2FEFBDBD7C21AA8EC7529B0CDC7B4EEC3FD9AAABEC09B82899D3DCD4483",
+    "bytes": 948
+  },
+  "actual_send_tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R38_LOCATOR_R1_SEND_TOOL_20261014.json",
+    "sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+    "bytes": 149
+  },
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:56",
+    "revision": 56,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a136c9-418d-7781-83d0-90d2df9b7565",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791920521,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "prior_stopped_turn": "01a136c1-89d5-73d0-882a-f1052306b2b6",
+  "result_id": null,
+  "initial_ACK": "PENDING_SUCCESSFUL_BOOTSTRAP",
+  "all_candidate_execution": 0,
+  "scheduler": "PAUSED_HOURLY_UNCHANGED",
+  "runtime_E2": "NOT_RELEASED",
+  "Foundation": "HOLD"
+}

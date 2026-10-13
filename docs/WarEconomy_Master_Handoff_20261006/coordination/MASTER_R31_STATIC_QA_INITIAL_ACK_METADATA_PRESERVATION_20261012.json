@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-12T22:40:59.805960+09:00",
+  "files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R31-LIFECYCLE-INDEPENDENT-STATIC-S1-20261012\\ACK_INITIAL.json",
+      "sha256": "F587A9EE427F338A6116329580AF6306C4EA69AC58A50F79162F21FE739FE7DA",
+      "bytes": 2440
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R31-LIFECYCLE-INDEPENDENT-STATIC-S1-20261012\\bootstrap.STDOUT.txt",
+      "sha256": "C2FC74EE452D7BF1A98D180371CD2EAC49C2675D23CFF427AF0BC0C9B569D6E0",
+      "bytes": 1613
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R31-LIFECYCLE-INDEPENDENT-STATIC-S1-20261012\\bootstrap.STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R31-LIFECYCLE-INDEPENDENT-STATIC-S1-20261012\\bootstrap.TOOL.json",
+      "sha256": "09D8D6912BBA83CD2983768A384F661D24637713B45994C37F490988986311FB",
+      "bytes": 1241
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R31-LIFECYCLE-INDEPENDENT-STATIC-S1-20261012\\INDEPENDENT_FROZEN_PE_PDB_IDENTITY.json",
+      "sha256": "BF0FA77B4FF19870FAB1068C08A2DFB3973767CBF5B7E2F5363A6494E9C1E118",
+      "bytes": 8390
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R31-LIFECYCLE-INDEPENDENT-STATIC-S1-20261012\\METADATA_READER_DEFINITION_PROVENANCE.json",
+      "sha256": "8D2FDFAD029F075CDA6941B0171B582CCDD09A43C45C0C961C8528583E5BE268",
+      "bytes": 1633
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R31-LIFECYCLE-INDEPENDENT-STATIC-S1-20261012\\RECOVERY_AND_AUTHORITY_AUDIT.json",
+      "sha256": "C0CBF2DD058F4436C6E453F4C291ACB734924711EF125872EF9B4B037825215C",
+      "bytes": 7333
+    }
+  ],
+  "ongoing_outputs_not_pinned": true,
+  "ACK_status_mirror_excluded": true,
+  "initial_metadata_only_not_terminal": true
+}

@@ -1,0 +1,38 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R19-OPAQUE-POLICY-20261010-DIRECT-5415a675",
+  "wp_id": "WP_ENGINE_GATE05_R19_OPAQUE_POLICY_LOSSLESS",
+  "wp_revision": "GATE05-R19-OPAQUE-POLICY",
+  "envelope": 22,
+  "orchestrator": "Python Host Subprocess",
+  "timestamp_utc": "2026-10-10T07:34:25.114807+00:00",
+  "pinned_runner": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R19OpaquePolicy\\Harness\\bin\\Debug\\net472\\Gate05R19OpaquePolicyRunner.exe",
+    "sha256": "6B4A8C339B52988E51506EE9344ADE7FD5A737A9C3876A0AFD586951BB120B62",
+    "size": 36352
+  },
+  "runs": [
+    {
+      "run_name": "run_en_us",
+      "culture": "en-US",
+      "child_pid": 22212,
+      "exit_code": 0,
+      "duration_seconds": 0.24899625778198242,
+      "output_directory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R19OpaquePolicy\\run_en_us",
+      "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R19OpaquePolicy\\run_en_us\\stdout.txt",
+      "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R19OpaquePolicy\\run_en_us\\stderr.txt",
+      "inventory_count": 11
+    },
+    {
+      "run_name": "run_de_de",
+      "culture": "de-DE",
+      "child_pid": 24736,
+      "exit_code": 0,
+      "duration_seconds": 0.13428831100463867,
+      "output_directory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R19OpaquePolicy\\run_de_de",
+      "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R19OpaquePolicy\\run_de_de\\stdout.txt",
+      "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R19OpaquePolicy\\run_de_de\\stderr.txt",
+      "inventory_count": 11
+    }
+  ],
+  "isolation_verified": true
+}

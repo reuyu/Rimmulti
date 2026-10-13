@@ -1,0 +1,533 @@
+{
+  "at": "2026-10-10T14:32:24.676099+09:00",
+  "guard_run": "MASTER-SOL-R17-COMPLETE-20261010-01",
+  "guard_session": 11454,
+  "guard_pid": 5480,
+  "result_id": "SOL-GATE05-R17-OWNED-BOOTSTRAP-INDEPENDENT-S1-20261010-4cc8216bb6e144339a4dce4bc543d344",
+  "delivery_id": "SOL-GATE05-R17-OWNED-BOOTSTRAP-INDEPENDENT-S1-20261010-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R17_OWNED_BOOTSTRAP_INDEPENDENT",
+  "completion_sha256": "C2316E4DE43CD8DF6740DA53622D524111C7006A9524931D07B2EC89EC83732C",
+  "report_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R17_Owned_Bootstrap_Independent_S1_20261010.md",
+  "report_sha256": "4CCCA22749BDF8565C1F49004D8216D6AA887382EF31407ED919A4BCFC80F86C",
+  "evidence_manifest_path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R17-OWNED-BOOTSTRAP-INDEPENDENT-S1-20261010\\EVIDENCE_MANIFEST.json",
+  "evidence_manifest_sha256": "7D3EEC0C08176F87223BFEB56232C2EC71FDF72888B5FB4B6BFF39774B88AE77",
+  "result_index_sha256": "E5F2F54E386857D6B03983DA6FC7E90837041DE0AB2D94E09DB288DFD32D611B",
+  "evidence_files": 193,
+  "protected_paths_rehashed": 9082,
+  "runs": [
+    {
+      "run_id": "R17-be6302ac7b6d4a88",
+      "pid": 35616,
+      "culture": "en-US",
+      "exit": 0,
+      "pass": 29,
+      "fail": 0,
+      "prepost": 158,
+      "loaded": 10,
+      "output_files": 71,
+      "direct_calls": 38,
+      "grouped_reads": 16
+    },
+    {
+      "run_id": "R17-281c7dbc22c94d2e",
+      "pid": 25628,
+      "culture": "de-DE",
+      "exit": 0,
+      "pass": 29,
+      "fail": 0,
+      "prepost": 158,
+      "loaded": 10,
+      "output_files": 71,
+      "direct_calls": 38,
+      "grouped_reads": 16
+    }
+  ],
+  "typed_rows": 2864,
+  "canonical_pairs": 18,
+  "reference_pairs": 4,
+  "reference_bindings": 28,
+  "runner_metadata_master": {
+    "assembly": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R17-OWNED-BOOTSTRAP-INDEPENDENT-S1-20261010\\runner\\QaPureRunner.exe",
+    "pdb": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R17-OWNED-BOOTSTRAP-INDEPENDENT-S1-20261010\\runner\\QaPureRunner.pdb",
+    "mvid": "eeadc377-fc98-4547-bf12-9311a99ecd58",
+    "codeviewGuid": "f2df78b7-9151-4ef9-ba99-f1d0a1db8a4d",
+    "pdbGuid": "f2df78b7-9151-4ef9-ba99-f1d0a1db8a4d",
+    "codeviewMatched": true,
+    "documents": [
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R17-OWNED-BOOTSTRAP-INDEPENDENT-S1-20261010\\Program.cs",
+        "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+        "expected": "9A09832DE91D5E4AEB5DA27DAD7BB7A47343CD4617602523D8BD0442EE77C983",
+        "actual": "9A09832DE91D5E4AEB5DA27DAD7BB7A47343CD4617602523D8BD0442EE77C983",
+        "matched": true
+      }
+    ]
+  },
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:110",
+    "revision": 110,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a12438-4f1f-7062-8e0e-5d3dc18c5bf7",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791609032,
+      "completedAt": 1791610113,
+      "durationMs": 1080999
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ac9ccffacec87d0b6856820f2b74f6b",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016ac9ccffacec87d0b6856820f2b74f6b",
+      "turnId": "01a12438-4f1f-7062-8e0e-5d3dc18c5bf7",
+      "phase": "final_answer",
+      "text": "R17 독립 QA를 완료하고 Master에 보고했습니다. 정상 helper 검증: 두 프로세스 각각 29개 PASS 실제 bootstrap: 정적 수정 필요 Native·전체 E2 미검증, Foundation HOLD 유지 QA 보고서"
+    },
+    "latestToolMarkerId": "exec-42b94716-9061-4ce0-9d56-67a6e6cbcb43",
+    "latestToolMarker": {
+      "id": "exec-42b94716-9061-4ce0-9d56-67a6e6cbcb43",
+      "turnId": "01a12438-4f1f-7062-8e0e-5d3dc18c5bf7",
+      "type": "fileChange",
+      "name": "fileChange",
+      "status": "completed"
+    }
+  },
+  "actual_thread_read": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R17_QA_ACTUAL_THREAD_READ_VALID_20261010.json",
+  "scope_correction": {
+    "at": "2026-10-10T14:19:51.477703+09:00",
+    "rows": [
+      {
+        "run_id": "R17-be6302ac7b6d4a88",
+        "ledger": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R17-OWNED-BOOTSTRAP-INDEPENDENT-S1-20261010\\runs\\R17-be6302ac7b6d4a88\\ACTUAL_ADMITTED_CALL_LEDGER.json",
+          "sha256": "E1312148ADEF864FFB1C71B120F70FD665A0904FBEA0B96D1E9F28B5E6FDE164",
+          "bytes": 7565
+        },
+        "total_events": 54,
+        "direct_pure_events": 38,
+        "grouped_snapshot_read_events": 16,
+        "counts": [
+          {
+            "scope": "direct_pure",
+            "api": "ContentProfileProvider.ClearConfiguredExpectedPackagePolicy",
+            "count": 2
+          },
+          {
+            "scope": "direct_pure",
+            "api": "ContentProfileProvider.ConfigureExpectedPackagePolicy_VALID_DECLARATION",
+            "count": 1
+          },
+          {
+            "scope": "direct_pure",
+            "api": "ContentProfileProvider.ConfigureExpectedPackagePolicy_VALID_RECORD",
+            "count": 1
+          },
+          {
+            "scope": "direct_pure",
+            "api": "ContentProfileProvider.DeserializeCanonicalJson_NORMAL",
+            "count": 4
+          },
+          {
+            "scope": "direct_pure",
+            "api": "ContentProfileProvider.DeserializePackagePolicy_VALID",
+            "count": 2
+          },
+          {
+            "scope": "direct_pure",
+            "api": "ContentProfileProvider.SerializeCanonicalJson_FALSE",
+            "count": 2
+          },
+          {
+            "scope": "direct_pure",
+            "api": "ContentProfileProvider.SerializeCanonicalJson_TRUE_FRESH",
+            "count": 2
+          },
+          {
+            "scope": "direct_pure",
+            "api": "ContentProfileProvider.SerializeCanonicalJson_TRUE_RECONSTRUCTION",
+            "count": 2
+          },
+          {
+            "scope": "direct_pure",
+            "api": "ContentProfileProvider.SerializePackagePolicy_VALID",
+            "count": 2
+          },
+          {
+            "scope": "direct_pure",
+            "api": "ExecutableAdmissionHelper.ComputeFileSha256_VALID_EXISTING_NORMALFILE",
+            "count": 2
+          },
+          {
+            "scope": "direct_pure",
+            "api": "ExecutableAdmissionHelper.VerifyAdmittedExecutable_VALID_MATCH",
+            "count": 2
+          },
+          {
+            "scope": "direct_pure",
+            "api": "OperatorStartupConfig.ToSnapshot_VALID",
+            "count": 2
+          },
+          {
+            "scope": "direct_pure",
+            "api": "OperatorStartupConfig.constructor_fromnormalDTO",
+            "count": 4
+          },
+          {
+            "scope": "direct_pure",
+            "api": "OperatorStartupConfigSnapshot.ToRedactedJson",
+            "count": 4
+          },
+          {
+            "scope": "direct_pure",
+            "api": "OperatorStartupConfigSnapshot.constructor_VALID",
+            "count": 2
+          },
+          {
+            "scope": "direct_pure",
+            "api": "ValidatorResult.constructor_fromnormalownedDTO",
+            "count": 2
+          },
+          {
+            "scope": "direct_pure",
+            "api": "ValidatorResultExtensions.ToRedactedJson_VALID",
+            "count": 2
+          },
+          {
+            "scope": "grouped_snapshot_read",
+            "api": "Snapshot.full14properties+wholetypedpolicy",
+            "count": 12
+          },
+          {
+            "scope": "grouped_snapshot_read",
+            "api": "Snapshot.nestedgetter_readonly_repeat",
+            "count": 4
+          }
+        ],
+        "actualCSharp_Process_GlobalWorker_native_adverse": 0,
+        "counter_limit": "Explicitownpermitteddirectcalls/constructor-fromDTO stages plusgrouped14propertyreads,not nestedprofiling"
+      },
+      {
+        "run_id": "R17-281c7dbc22c94d2e",
+        "ledger": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R17-OWNED-BOOTSTRAP-INDEPENDENT-S1-20261010\\runs\\R17-281c7dbc22c94d2e\\ACTUAL_ADMITTED_CALL_LEDGER.json",
+          "sha256": "E1312148ADEF864FFB1C71B120F70FD665A0904FBEA0B96D1E9F28B5E6FDE164",
+          "bytes": 7565
+        },
+        "total_events": 54,
+        "direct_pure_events": 38,
+        "grouped_snapshot_read_events": 16,
+        "counts": [
+          {
+            "scope": "direct_pure",
+            "api": "ContentProfileProvider.ClearConfiguredExpectedPackagePolicy",
+            "count": 2
+          },
+          {
+            "scope": "direct_pure",
+            "api": "ContentProfileProvider.ConfigureExpectedPackagePolicy_VALID_DECLARATION",
+            "count": 1
+          },
+          {
+            "scope": "direct_pure",
+            "api": "ContentProfileProvider.ConfigureExpectedPackagePolicy_VALID_RECORD",
+            "count": 1
+          },
+          {
+            "scope": "direct_pure",
+            "api": "ContentProfileProvider.DeserializeCanonicalJson_NORMAL",
+            "count": 4
+          },
+          {
+            "scope": "direct_pure",
+            "api": "ContentProfileProvider.DeserializePackagePolicy_VALID",
+            "count": 2
+          },
+          {
+            "scope": "direct_pure",
+            "api": "ContentProfileProvider.SerializeCanonicalJson_FALSE",
+            "count": 2
+          },
+          {
+            "scope": "direct_pure",
+            "api": "ContentProfileProvider.SerializeCanonicalJson_TRUE_FRESH",
+            "count": 2
+          },
+          {
+            "scope": "direct_pure",
+            "api": "ContentProfileProvider.SerializeCanonicalJson_TRUE_RECONSTRUCTION",
+            "count": 2
+          },
+          {
+            "scope": "direct_pure",
+            "api": "ContentProfileProvider.SerializePackagePolicy_VALID",
+            "count": 2
+          },
+          {
+            "scope": "direct_pure",
+            "api": "ExecutableAdmissionHelper.ComputeFileSha256_VALID_EXISTING_NORMALFILE",
+            "count": 2
+          },
+          {
+            "scope": "direct_pure",
+            "api": "ExecutableAdmissionHelper.VerifyAdmittedExecutable_VALID_MATCH",
+            "count": 2
+          },
+          {
+            "scope": "direct_pure",
+            "api": "OperatorStartupConfig.ToSnapshot_VALID",
+            "count": 2
+          },
+          {
+            "scope": "direct_pure",
+            "api": "OperatorStartupConfig.constructor_fromnormalDTO",
+            "count": 4
+          },
+          {
+            "scope": "direct_pure",
+            "api": "OperatorStartupConfigSnapshot.ToRedactedJson",
+            "count": 4
+          },
+          {
+            "scope": "direct_pure",
+            "api": "OperatorStartupConfigSnapshot.constructor_VALID",
+            "count": 2
+          },
+          {
+            "scope": "direct_pure",
+            "api": "ValidatorResult.constructor_fromnormalownedDTO",
+            "count": 2
+          },
+          {
+            "scope": "direct_pure",
+            "api": "ValidatorResultExtensions.ToRedactedJson_VALID",
+            "count": 2
+          },
+          {
+            "scope": "grouped_snapshot_read",
+            "api": "Snapshot.full14properties+wholetypedpolicy",
+            "count": 12
+          },
+          {
+            "scope": "grouped_snapshot_read",
+            "api": "Snapshot.nestedgetter_readonly_repeat",
+            "count": 4
+          }
+        ],
+        "actualCSharp_Process_GlobalWorker_native_adverse": 0,
+        "counter_limit": "Explicitownpermitteddirectcalls/constructor-fromDTO stages plusgrouped14propertyreads,not nestedprofiling"
+      }
+    ],
+    "host_PID_numericexit_only": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R17_QA_HOST_LAUNCHER_TELEMETRY_SCOPE_CLARIFICATION_20261010.md",
+      "sha256": "B35BF9836E70B162571730D301CF2452F7E01F080568F80C69D0FD47414BAB59",
+      "bytes": 3646
+    },
+    "source_no_process_queries": true,
+    "actual_native_issuer_authority_proof": false
+  },
+  "producer_reconciliation": {
+    "at": "2026-10-10T14:19:51.558971+09:00",
+    "source": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R17-57163c71\\scratch\\EngineGate05R17OwnedBootstrap\\Harness\\Program.cs",
+      "sha256": "B826421B82E39F6928388CA384E291EEFABE372E1F72237F5C97D1887DEF723E",
+      "bytes": 22496
+    },
+    "original_A_scope": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_ENGINE_GATE05_R17_OWNED_BOOTSTRAP.md",
+      "sha256": "CA68DB94BFC07633F627C4F73A338F49B891BD8C505FC434570B4801580DDB91",
+      "bytes": 7583
+    },
+    "rows": [
+      {
+        "run": "run_default",
+        "result": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R17-57163c71\\scratch\\EngineGate05R17OwnedBootstrap\\run_default\\RESULTS.json",
+          "sha256": "30B713324928D221833CE1387FD74077B0E2C2079A907D36A0F63090AA11D8D9",
+          "bytes": 4101
+        },
+        "reported_pid": 19628,
+        "reported_culture": "ko-KR",
+        "self_reported_candidate_SHA_MVID": [
+          "F7946FED1F4FB896DD8F46B7C253C4DB24E6CF2AA6D9C0528CD5B59CD05DBAA3",
+          "d5a25e43-567c-414f-b7bd-4d4aa0b47050"
+        ],
+        "TEST03_self_rejection": {
+          "TestName": "TEST_03_PROCESS_IDENTITY_BINDING_HELPER",
+          "Status": "PASS",
+          "Details": "Verified fail-closed self-PID prohibition and process identity integrity checking logic.",
+          "Artifacts": {
+            "CurrentPid": 19628,
+            "SelfCheck_Rejected": true,
+            "RejectionReason": "Self-validation prohibited. Target PID cannot match simulator PID."
+          }
+        },
+        "manual_ledger": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R17-57163c71\\scratch\\EngineGate05R17OwnedBootstrap\\run_default\\API_LEDGER.json",
+          "sha256": "1DC3B0DEE18F0337DB9F906E5F0BC32B80A9DAF61494872C983108313D2488EA",
+          "bytes": 479
+        },
+        "manual_counter_sum14": true,
+        "globalConfigureReset_getfallback_values": {
+          "ConfigureOperatorStartupCalls": 1,
+          "ResetOperatorStartupConfigCalls": 1,
+          "SafeSaveDataFolderPathCalls": 1,
+          "AdmittedExecutablePropertyCalls": 1,
+          "AdmittedShaPropertyCalls": 1,
+          "ComputeFileSha256Calls": 2,
+          "VerifyAdmittedExecutableCalls": 2,
+          "VerifyProcessIdentityCalls": 1,
+          "ConfigureExpectedPackagePolicyCalls": 1,
+          "ClearConfiguredExpectedPackagePolicyCalls": 1,
+          "ToRedactedJsonValidatorResultCalls": 1,
+          "ToRedactedJsonSnapshotCalls": 1
+        },
+        "posthoc4inventory": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R17-57163c71\\scratch\\EngineGate05R17OwnedBootstrap\\run_default\\OUTPUT_INVENTORY.json",
+          "sha256": "60C10DA7586CB71844C8D3570878420D01989A0733120BF68EC467F1D52A7EC4",
+          "bytes": 1181
+        },
+        "all4currenthashsize_matched": true,
+        "producer_replay": false
+      },
+      {
+        "run": "run_en_us",
+        "result": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R17-57163c71\\scratch\\EngineGate05R17OwnedBootstrap\\run_en_us\\RESULTS.json",
+          "sha256": "536F9F9BE526309798A05C2B0E41DC063A089B52EA9E80E6958000F1CE07D62C",
+          "bytes": 4097
+        },
+        "reported_pid": 33804,
+        "reported_culture": "ko-KR",
+        "self_reported_candidate_SHA_MVID": [
+          "F7946FED1F4FB896DD8F46B7C253C4DB24E6CF2AA6D9C0528CD5B59CD05DBAA3",
+          "d5a25e43-567c-414f-b7bd-4d4aa0b47050"
+        ],
+        "TEST03_self_rejection": {
+          "TestName": "TEST_03_PROCESS_IDENTITY_BINDING_HELPER",
+          "Status": "PASS",
+          "Details": "Verified fail-closed self-PID prohibition and process identity integrity checking logic.",
+          "Artifacts": {
+            "CurrentPid": 33804,
+            "SelfCheck_Rejected": true,
+            "RejectionReason": "Self-validation prohibited. Target PID cannot match simulator PID."
+          }
+        },
+        "manual_ledger": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R17-57163c71\\scratch\\EngineGate05R17OwnedBootstrap\\run_en_us\\API_LEDGER.json",
+          "sha256": "1DC3B0DEE18F0337DB9F906E5F0BC32B80A9DAF61494872C983108313D2488EA",
+          "bytes": 479
+        },
+        "manual_counter_sum14": true,
+        "globalConfigureReset_getfallback_values": {
+          "ConfigureOperatorStartupCalls": 1,
+          "ResetOperatorStartupConfigCalls": 1,
+          "SafeSaveDataFolderPathCalls": 1,
+          "AdmittedExecutablePropertyCalls": 1,
+          "AdmittedShaPropertyCalls": 1,
+          "ComputeFileSha256Calls": 2,
+          "VerifyAdmittedExecutableCalls": 2,
+          "VerifyProcessIdentityCalls": 1,
+          "ConfigureExpectedPackagePolicyCalls": 1,
+          "ClearConfiguredExpectedPackagePolicyCalls": 1,
+          "ToRedactedJsonValidatorResultCalls": 1,
+          "ToRedactedJsonSnapshotCalls": 1
+        },
+        "posthoc4inventory": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R17-57163c71\\scratch\\EngineGate05R17OwnedBootstrap\\run_en_us\\OUTPUT_INVENTORY.json",
+          "sha256": "89C27F4E77742B22A2C710DF230EB78BE7DD9D021A2512AF25E39C2A0D4D647F",
+          "bytes": 1179
+        },
+        "all4currenthashsize_matched": true,
+        "producer_replay": false
+      },
+      {
+        "run": "run_de_de",
+        "result": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R17-57163c71\\scratch\\EngineGate05R17OwnedBootstrap\\run_de_de\\RESULTS.json",
+          "sha256": "5163449FAE5476C09F28E542D464EE35B3FC26327473EDE9904F70B93F648137",
+          "bytes": 4095
+        },
+        "reported_pid": 3568,
+        "reported_culture": "ko-KR",
+        "self_reported_candidate_SHA_MVID": [
+          "F7946FED1F4FB896DD8F46B7C253C4DB24E6CF2AA6D9C0528CD5B59CD05DBAA3",
+          "d5a25e43-567c-414f-b7bd-4d4aa0b47050"
+        ],
+        "TEST03_self_rejection": {
+          "TestName": "TEST_03_PROCESS_IDENTITY_BINDING_HELPER",
+          "Status": "PASS",
+          "Details": "Verified fail-closed self-PID prohibition and process identity integrity checking logic.",
+          "Artifacts": {
+            "CurrentPid": 3568,
+            "SelfCheck_Rejected": true,
+            "RejectionReason": "Self-validation prohibited. Target PID cannot match simulator PID."
+          }
+        },
+        "manual_ledger": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R17-57163c71\\scratch\\EngineGate05R17OwnedBootstrap\\run_de_de\\API_LEDGER.json",
+          "sha256": "1DC3B0DEE18F0337DB9F906E5F0BC32B80A9DAF61494872C983108313D2488EA",
+          "bytes": 479
+        },
+        "manual_counter_sum14": true,
+        "globalConfigureReset_getfallback_values": {
+          "ConfigureOperatorStartupCalls": 1,
+          "ResetOperatorStartupConfigCalls": 1,
+          "SafeSaveDataFolderPathCalls": 1,
+          "AdmittedExecutablePropertyCalls": 1,
+          "AdmittedShaPropertyCalls": 1,
+          "ComputeFileSha256Calls": 2,
+          "VerifyAdmittedExecutableCalls": 2,
+          "VerifyProcessIdentityCalls": 1,
+          "ConfigureExpectedPackagePolicyCalls": 1,
+          "ClearConfiguredExpectedPackagePolicyCalls": 1,
+          "ToRedactedJsonValidatorResultCalls": 1,
+          "ToRedactedJsonSnapshotCalls": 1
+        },
+        "posthoc4inventory": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R17-57163c71\\scratch\\EngineGate05R17OwnedBootstrap\\run_de_de\\OUTPUT_INVENTORY.json",
+          "sha256": "46E766E583B3739DF941464D8EE796F5EEDF28FB7A581F7392E54479C38E69E5",
+          "bytes": 1179
+        },
+        "all4currenthashsize_matched": true,
+        "producer_replay": false
+      }
+    ],
+    "actualrecorded_cultures": [
+      "ko-KR",
+      "ko-KR",
+      "ko-KR"
+    ],
+    "TEST03_scope_deviation_calls": 3,
+    "global_state_isolation_qualification_requires_Master": true,
+    "noall5labelscopePASS": true,
+    "posthoc_inventories_not_firstbeforelater": true,
+    "original_buildOSnumericexit_inputs_prepost_fullloaded_graph": "PARTIAL",
+    "execute_runs_source": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R17-57163c71\\scratch\\EngineGate05R17OwnedBootstrap\\execute_runs.ps1",
+      "sha256": "2163F44AE7FF4599D0A51E8775EFB913B61222507FD8462436185E8C582D0B5E",
+      "bytes": 1344
+    },
+    "culturedeclaration_not_applied": true,
+    "originalbytes_preserved": true,
+    "producerreplays": 0
+  },
+  "selected_sha256": "F7946FED1F4FB896DD8F46B7C253C4DB24E6CF2AA6D9C0528CD5B59CD05DBAA3",
+  "selected_mvid": "d5a25e43-567c-414f-b7bd-4d4aa0b47050",
+  "verification_status": "MASTER_DISPOSED",
+  "master_execute_builds": 0,
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD",
+  "master_verdict": "ACCEPTED_R17_SCOPED_NORMAL_SNAPSHOT_SOURCE_COPY_FILESHA_REDACTION_LIMITED_CODEC_PASS_BOOTSTRAP_REVISION_REQUIRED_NATIVE_UNTESTED_PRODUCER_SCOPE_DEVIATION",
+  "master_disposition_at": "2026-10-10T14:34:58.041000+09:00",
+  "review_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R17_OWNED_BOOTSTRAP_INDEPENDENT_S1_20261010.md",
+  "review_sha256": "FF520A1D282731C5937207E6E1CDB5666C26568DCFF0FA93284E97039C99A071",
+  "next_technical_direction": "R18_CONFIG_ADMISSION_SEAL_APPROVED_NOT_SENT"
+}

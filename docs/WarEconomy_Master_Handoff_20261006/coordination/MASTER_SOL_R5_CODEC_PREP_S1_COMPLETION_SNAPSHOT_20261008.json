@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":false,\"wake\":{\"reason\":\"turnCompleted\",\"turnId\":\"01a11aab-9a96-70e2-b4f4-bb738ac4cfaf\",\"threadId\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\"},\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:33\",\"revision\":33,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"idle\"}},\"latestTurn\":{\"id\":\"01a11aab-9a96-70e2-b4f4-bb738ac4cfaf\",\"status\":\"completed\",\"error\":null,\"startedAt\":1791448816,\"completedAt\":1791449531,\"durationMs\":714914},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ac759b8e7c887d08c8ea4ce527dd97e\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ac759b8e7c887d08c8ea4ce527dd97e\",\"turnId\":\"01a11aab-9a96-70e2-b4f4-bb738ac4cfaf\",\"phase\":\"final_answer\",\"text\":\"R5 codec 준비 보고서를 완료하고 마스터에게 전달했습니다. 65개 지원 필드와 정상 검증·provenance 기준을 정리했습니다. R5 후보 검토와 실행은 별도 지시를 기다립니다.\"},\"latestToolMarkerId\":\"exec-4241a313-a747-4e02-b38f-13ddeff74ed2\",\"latestToolMarker\":{\"id\":\"exec-4241a313-a747-4e02-b38f-13ddeff74ed2\",\"turnId\":\"01a11aab-9a96-70e2-b4f4-bb738ac4cfaf\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

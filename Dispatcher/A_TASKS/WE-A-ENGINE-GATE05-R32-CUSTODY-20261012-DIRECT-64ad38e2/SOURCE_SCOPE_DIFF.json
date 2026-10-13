@@ -1,0 +1,145 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2",
+  "wp_id": "WP_ENGINE_GATE05_R32_CUSTODY",
+  "envelope": 35,
+  "source_file": "scratch/WorkerBridgeMod/Source/WorkerBridge.cs",
+  "original_file": {
+    "bytes": 272607,
+    "sha256": "CB1EE0A55512A6F578B2D7ABCACBE36B62327D9F3E585B6E4221725B6DADFFDB"
+  },
+  "modified_file": {
+    "bytes": 275573,
+    "sha256": "214F1F95C6BF7F547ED47FD91B787A70B2E52DFF129A882DCD8C1AC1471A24E8"
+  },
+  "authorized_spans": [
+    {
+      "span_id": "PRIVATE_DURABLE_MODE_OWNER_CONSUMED_STATE",
+      "orig_range": [
+        27259,
+        33326
+      ],
+      "orig_bytes": 6067,
+      "orig_sha256": "C23C50C247450A29E2F4AB49936F885065F4AEA65197B780BAF7BE79F8C21FD9",
+      "new_range": [
+        27259,
+        34312
+      ],
+      "new_bytes": 7053,
+      "new_sha256": "6DB889723928BFF1DF7F7468C42ADF9FC8F413DC1042E68371259A91FBD6AC54"
+    },
+    {
+      "span_id": "AWAKE_REQUIRED_MODE_ENTRY",
+      "orig_range": [
+        38131,
+        39339
+      ],
+      "orig_bytes": 1208,
+      "orig_sha256": "35F2F4D7A5F1EC4B293ECE769FA3E771D343FB32C077A29BF02F840D0523FB28",
+      "new_range": [
+        39117,
+        41821
+      ],
+      "new_bytes": 2704,
+      "new_sha256": "EEB1CD46DC71ADCA0EDEEA02C5CBB2BADAB84C499CF9D78EE186435A9B8E5009"
+    },
+    {
+      "span_id": "AWAKE_SUCCESS_AND_FAILURE_TAIL",
+      "orig_range": [
+        41273,
+        42068
+      ],
+      "orig_bytes": 795,
+      "orig_sha256": "4E4CBB22B5EEBDC21B5148ADA208EBE9A51D489DB13EE73CC552BBEB05431364",
+      "new_range": [
+        43755,
+        44736
+      ],
+      "new_bytes": 981,
+      "new_sha256": "6F43345D05F347EDA9CFB141049BC40376D434FF9CE900279EFFD4B369465AF3"
+    },
+    {
+      "span_id": "OWNER_SCOPED_DESTROY_WHOLE_METHOD",
+      "orig_range": [
+        185129,
+        185705
+      ],
+      "orig_bytes": 576,
+      "orig_sha256": "481B343E4532CC0B88FC369C2E65169F4887914686085FCC8B4E466208575D52",
+      "new_range": [
+        187797,
+        188671
+      ],
+      "new_bytes": 874,
+      "new_sha256": "FA2B5AF80519A39DDB22B507A55A2B994E02BA2C0AB0AB818A76326EFECB911C"
+    }
+  ],
+  "outside_segments_verification": [
+    {
+      "segment_index": 0,
+      "orig_range": [
+        0,
+        27259
+      ],
+      "new_range": [
+        0,
+        27259
+      ],
+      "bytes": 27259,
+      "status": "VERIFIED_BIT_EXACT"
+    },
+    {
+      "segment_index": 1,
+      "orig_range": [
+        33326,
+        38131
+      ],
+      "new_range": [
+        34312,
+        39117
+      ],
+      "bytes": 4805,
+      "status": "VERIFIED_BIT_EXACT"
+    },
+    {
+      "segment_index": 2,
+      "orig_range": [
+        39339,
+        41273
+      ],
+      "new_range": [
+        41821,
+        43755
+      ],
+      "bytes": 1934,
+      "status": "VERIFIED_BIT_EXACT"
+    },
+    {
+      "segment_index": 3,
+      "orig_range": [
+        42068,
+        185129
+      ],
+      "new_range": [
+        44736,
+        187797
+      ],
+      "bytes": 143061,
+      "status": "VERIFIED_BIT_EXACT"
+    },
+    {
+      "segment_index": 4,
+      "orig_range": [
+        185705,
+        272607
+      ],
+      "new_range": [
+        188671,
+        275573
+      ],
+      "bytes": 86902,
+      "status": "VERIFIED_BIT_EXACT"
+    }
+  ],
+  "outside_bytes_total": 263961,
+  "all_outside_segments_identical": true
+}

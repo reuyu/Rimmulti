@@ -1,0 +1,619 @@
+{
+  "workOrder": "WP-POC-ENGINE-HOST-SEMANTIC-AUTHORITY-GATE-05",
+  "timestamp": "2026-10-05 03:52:29",
+  "classification": "E1 ENGINE SEMANTIC AUTHORITY GATE05 PASS",
+  "provenance": {
+    "engineVersion": "RimWorld 1.6.4871 rev591 Win64",
+    "activeMods": [
+      "brrainz.harmony",
+      "ludeon.rimworld",
+      "ludeon.rimworld.royalty",
+      "ludeon.rimworld.ideology",
+      "ludeon.rimworld.biotech",
+      "ludeon.rimworld.anomaly",
+      "ludeon.rimworld.odyssey",
+      "wareconomy.hybridmultiplayer",
+      "wareconomy.workerbridge.poc",
+      "qacodex.engine02.probe"
+    ],
+    "binaries": {
+      "exe": {
+        "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64.exe",
+        "sha256": "4C30E2105B49F2D0130F5D861947FBE82B866042299DA48EF1C8CF6979A8564D"
+      },
+      "assemblyCSharp": {
+        "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\Assembly-CSharp.dll",
+        "sha256": "5CF1B5BE399D5B1C9C56CA72C9D35B4ECF307FEACF5859D04AC5A1AA5926356A",
+        "mvid": "61e41735-6189-4da4-9d21-0260257b5097"
+      },
+      "workerBridgeDll": {
+        "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\WarEconomy.WorkerBridge.PoC\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+        "sha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+        "mvid": "12bb9237-1b3e-4b20-89a7-69ad729861e1"
+      },
+      "probeDll": {
+        "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ProbeMod\\1.6\\Assemblies\\QA.Engine02.Probe.dll",
+        "sha256": "9C4D098B76B88A59DE11D46087AB9935EEE07A8574F8A66C0B081484E5F01966"
+      }
+    },
+    "sourceFiles": {
+      "WorkerBridge.cs": {
+        "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+        "sha256": "BC9FD8DAA608892E97903BA56114B7186BABF29157ADAE45658238C3DD497549"
+      },
+      "EngineHostCensus.cs": {
+        "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+        "sha256": "954C12F7500EC0BF4AE8265D2F66EFA39369A69F2C9DF3D1DBA20A9F54CBD024"
+      }
+    },
+    "fixtures": {
+      "TargetSettlement_Clean_ContextB.rws": {
+        "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\TargetSettlement_Clean_ContextB.rws",
+        "bytes": 14015618,
+        "sha256": "EA8A02D4EC41CE79E285A7D386F3534EB5E192682FC061A8E008116B2B3DF34B"
+      },
+      "TargetSettlement_Clean_ContextB.v4.census.json": {
+        "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\TargetSettlement_Clean_ContextB.v4.census.json",
+        "sha256": "9F7AA0CDAD9026DC90D25C6209D802D351C0B978D804CD2A04F667543E31E8CC"
+      }
+    },
+    "contentProfileFingerprint": "7DDC73B75FA4AA1B00177EA4C73380A7E233A972968D5C0BF91852CD1C2F8D40",
+    "cleanBaselineManifestHash": "9F7AA0CDAD9026DC90D25C6209D802D351C0B978D804CD2A04F667543E31E8CC",
+    "manifestVersion": "4.0",
+    "storeIncarnation": "STORE_INCARNATION_POC_01",
+    "baseLineage": "LINEAGE_CLEAN_CONTEXT_B_REV1"
+  },
+  "negativeBattery1_InputAdmission": {
+    "casesCount": 15,
+    "passCount": 15,
+    "allPassed": true,
+    "cases": [
+      {
+        "tag": "01_held_item_stack",
+        "description": "MedicineIndustrial stack count mutated 5 -> 4",
+        "inputRejected": true,
+        "validationFailed": true,
+        "stepBlocked": true,
+        "sealBlocked": true,
+        "stageBlocked": true,
+        "promoteBlocked": true,
+        "pass": true
+      },
+      {
+        "tag": "02_pawn_skill",
+        "description": "Strange Shooting skill mutated 10 -> 15",
+        "inputRejected": true,
+        "validationFailed": true,
+        "stepBlocked": true,
+        "sealBlocked": true,
+        "stageBlocked": true,
+        "promoteBlocked": true,
+        "pass": true
+      },
+      {
+        "tag": "03_hediff_severity",
+        "description": "Strange Stab severity mutated 3.0 -> 1.0",
+        "inputRejected": true,
+        "validationFailed": true,
+        "stepBlocked": true,
+        "sealBlocked": true,
+        "stageBlocked": true,
+        "promoteBlocked": true,
+        "pass": true
+      },
+      {
+        "tag": "04_hediff_removal",
+        "description": "Strange BionicTongue removed",
+        "inputRejected": true,
+        "validationFailed": true,
+        "stepBlocked": true,
+        "sealBlocked": true,
+        "stageBlocked": true,
+        "promoteBlocked": true,
+        "pass": true
+      },
+      {
+        "tag": "05_animal_master_follow",
+        "description": "Labrador master cleared, followDrafted False",
+        "inputRejected": true,
+        "validationFailed": true,
+        "stepBlocked": true,
+        "sealBlocked": true,
+        "stageBlocked": true,
+        "promoteBlocked": true,
+        "pass": true
+      },
+      {
+        "tag": "06_bill_change",
+        "description": "Sculpting bill targetCount mutated 10 -> 25",
+        "inputRejected": true,
+        "validationFailed": true,
+        "stepBlocked": true,
+        "sealBlocked": true,
+        "stageBlocked": true,
+        "promoteBlocked": true,
+        "pass": true
+      },
+      {
+        "tag": "07_zone_cell",
+        "description": "Growing zone cell moved (139, 0, 145) -> (139, 0, 146)",
+        "inputRejected": true,
+        "validationFailed": true,
+        "stepBlocked": true,
+        "sealBlocked": true,
+        "stageBlocked": true,
+        "promoteBlocked": true,
+        "pass": true
+      },
+      {
+        "tag": "08_designation_change",
+        "description": "Mine designation moved (150, 0, 150) -> (150, 0, 151)",
+        "inputRejected": true,
+        "validationFailed": true,
+        "stepBlocked": true,
+        "sealBlocked": true,
+        "stageBlocked": true,
+        "promoteBlocked": true,
+        "pass": true
+      },
+      {
+        "tag": "09_fire_size",
+        "description": "Fire fireSize mutated 0.45 -> 0.90",
+        "inputRejected": true,
+        "validationFailed": true,
+        "stepBlocked": true,
+        "sealBlocked": true,
+        "stageBlocked": true,
+        "promoteBlocked": true,
+        "pass": true
+      },
+      {
+        "tag": "10_plant_growth",
+        "description": "Rice growth mutated 0.50 -> 0.25",
+        "inputRejected": true,
+        "validationFailed": true,
+        "stepBlocked": true,
+        "sealBlocked": true,
+        "stageBlocked": true,
+        "promoteBlocked": true,
+        "pass": true
+      },
+      {
+        "tag": "11_condition_duration",
+        "description": "Aurora duration mutated 60000 -> 12000",
+        "inputRejected": true,
+        "validationFailed": true,
+        "stepBlocked": true,
+        "sealBlocked": true,
+        "stageBlocked": true,
+        "promoteBlocked": true,
+        "pass": true
+      },
+      {
+        "tag": "12_bed_assignment",
+        "description": "Bed990012 assignment cleared",
+        "inputRejected": true,
+        "validationFailed": true,
+        "stepBlocked": true,
+        "sealBlocked": true,
+        "stageBlocked": true,
+        "promoteBlocked": true,
+        "pass": true
+      },
+      {
+        "tag": "13_external_pawn_relation",
+        "description": "Spouse relation mutated to ExSpouse",
+        "inputRejected": true,
+        "validationFailed": true,
+        "stepBlocked": true,
+        "sealBlocked": true,
+        "stageBlocked": true,
+        "promoteBlocked": true,
+        "pass": true
+      },
+      {
+        "tag": "14_power_scalar",
+        "description": "Battery509102 storedPower mutated 600 -> 200",
+        "inputRejected": true,
+        "validationFailed": true,
+        "stepBlocked": true,
+        "sealBlocked": true,
+        "stageBlocked": true,
+        "promoteBlocked": true,
+        "pass": true
+      },
+      {
+        "tag": "15_nested_holder_content",
+        "description": "MinifiedThing inner item def mutated Stool -> WoodLog",
+        "inputRejected": true,
+        "validationFailed": true,
+        "stepBlocked": true,
+        "sealBlocked": true,
+        "stageBlocked": true,
+        "promoteBlocked": true,
+        "pass": true
+      }
+    ]
+  },
+  "negativeBattery2_G0401_IssuerAuthentication": {
+    "casesCount": 7,
+    "passCount": 7,
+    "allPassed": true,
+    "cases": [
+      {
+        "attack": "Handcrafted receipt without capability nonce rejected",
+        "response": "STAGE_VALIDATION_REJECTED: Caller-visible fields alone cannot satisfy task capability. Unguessable task capability nonce required.",
+        "pass": true
+      },
+      {
+        "attack": "Handcrafted receipt with forged nonce rejected",
+        "response": "STAGE_VALIDATION_REJECTED: Invalid capability nonce. Handcrafted receipt rejected.",
+        "pass": true
+      },
+      {
+        "attack": "Non-existent validator PID 2147483646 rejected",
+        "response": "STAGE_VALIDATION_REJECTED: Validator PID does not exist.",
+        "pass": true
+      },
+      {
+        "attack": "Empty validator PID rejected",
+        "response": "STAGE_VALIDATION_REJECTED: Fresh independent validator required (Empty or Self-PID prohibited).",
+        "pass": true
+      },
+      {
+        "attack": "Self-validation attempt rejected",
+        "response": "STAGE_VALIDATION_REJECTED: Fresh independent validator required (Empty or Self-PID prohibited).",
+        "pass": true
+      },
+      {
+        "attack": "Forged ValidatorTaskId rejected",
+        "response": "STAGE_VALIDATION_REJECTED: ValidatorTaskId mismatch.",
+        "pass": true
+      },
+      {
+        "attack": "Replay of consumed ValidatorTask prohibited",
+        "firstCompletion": "STAGE_VALIDATION_ACCEPTED: ReceiptId=VR_20261004_185525_521166abbe4c467e98725200c4f68086, ValidatorPid=22368, TaskId=VT_20261004_185507_e49d4556491c41dca9d1dad403f45d34",
+        "replayResponse": "STAGE_VALIDATION_REJECTED: ValidatorTask already consumed. Replay prohibited.",
+        "pass": true
+      }
+    ]
+  },
+  "negativeBattery3_G0402_StagedSaveTamper": {
+    "casesCount": 4,
+    "passCount": 4,
+    "allPassed": true,
+    "cases": [
+      {
+        "attack": "Staged save followFieldwork tamper rejected by fresh validator",
+        "validatorMessage": "Validator failed to reach READY: STATE: LOAD_FAILED, SemanticState=VALIDATION_FAILED, SimulationReady=False, SealedHash=None, Gen=1, Maps=0, TicksGame=0, SimActive=False, TargetMap=-1, TicksSim=0, IsRealtime=False, RemainingStep=0, LastFailure='Source artifact SHA mismatch. Expected 8D75E92DFB00CF8E3634A0A967B5B73CD24A1D8E1150B6877FADC1FDCA809D6A, got CBCF7CB5289FC5C7A7977BBA9BA8619A98C7C51568E504AFC746BF80D7B34749'",
+        "pass": true
+      },
+      {
+        "attack": "Staged save bill suspended tamper rejected by fresh validator",
+        "validatorMessage": "Validator failed to reach READY: STATE: LOAD_FAILED, SemanticState=VALIDATION_FAILED, SimulationReady=False, SealedHash=None, Gen=1, Maps=0, TicksGame=0, SimActive=False, TargetMap=-1, TicksSim=0, IsRealtime=False, RemainingStep=0, LastFailure='Source artifact SHA mismatch. Expected 993E7A05B593D287E1C1523F16FB6DB4E674DA4EFE2F2AD8E7573B001F7591A4, got F4885F72CC846064DB3FFE327C3FBA9DF5C1E5B42C6A880B008A0CB2DB24DDA9'",
+        "pass": true
+      },
+      {
+        "attack": "Caller-nominated VALIDATE_AS_PRE_PROMOTION_VALIDATOR deprecated and rejected",
+        "response": "ERROR: VALIDATE_AS_PRE_PROMOTION_VALIDATOR is deprecated and rejected under Gate 05. Caller cannot nominate expected manifest/result. Use EXECUTE_VALIDATOR_TASK <taskFilePath> <capabilityNonce>.",
+        "pass": true
+      },
+      {
+        "attack": "Simulator rejects validator result claiming different manifest hash B",
+        "response": "STAGE_VALIDATION_REJECTED: Manifest hash mismatch.",
+        "pass": true
+      }
+    ]
+  },
+  "negativeBattery4_ReceiptFieldMutations": {
+    "casesCount": 14,
+    "passCount": 14,
+    "allPassed": true,
+    "cases": [
+      {
+        "field": "scopeId",
+        "mutatedValue": "SETTLEMENT-FORGED-SCOPE",
+        "response": "STAGE_VALIDATION_REJECTED: ScopeId mismatch.",
+        "readinessRevoked": true,
+        "pass": true
+      },
+      {
+        "field": "targetMapIndex",
+        "mutatedValue": "999",
+        "response": "STAGE_VALIDATION_REJECTED: TargetMapIndex mismatch.",
+        "readinessRevoked": true,
+        "pass": true
+      },
+      {
+        "field": "manifestVersion",
+        "mutatedValue": "5.0-INVALID",
+        "response": "STAGE_VALIDATION_REJECTED: ManifestVersion mismatch.",
+        "readinessRevoked": true,
+        "pass": true
+      },
+      {
+        "field": "sealedManifestHash",
+        "mutatedValue": "0000000000000000000000000000000000000000000000000000000000000000",
+        "response": "STAGE_VALIDATION_REJECTED: SealedManifestHash mismatch.",
+        "readinessRevoked": true,
+        "pass": true
+      },
+      {
+        "field": "sourceArtifactHash",
+        "mutatedValue": "0000000000000000000000000000000000000000000000000000000000000000",
+        "response": "STAGE_VALIDATION_REJECTED: SourceArtifactHash mismatch.",
+        "readinessRevoked": true,
+        "pass": true
+      },
+      {
+        "field": "storeIncarnation",
+        "mutatedValue": "STORE_INCARNATION_FORGED",
+        "response": "STAGE_VALIDATION_REJECTED: StoreIncarnation mismatch.",
+        "readinessRevoked": true,
+        "pass": true
+      },
+      {
+        "field": "baseLineage",
+        "mutatedValue": "LINEAGE_FORGED",
+        "response": "STAGE_VALIDATION_REJECTED: BaseLineage mismatch.",
+        "readinessRevoked": true,
+        "pass": true
+      },
+      {
+        "field": "validatorProcessId",
+        "mutatedValue": "2147483646",
+        "response": "STAGE_VALIDATION_REJECTED: Validator PID does not exist.",
+        "readinessRevoked": true,
+        "pass": true
+      },
+      {
+        "field": "stagedSha",
+        "mutatedValue": "0000000000000000000000000000000000000000000000000000000000000000",
+        "response": "STAGE_VALIDATION_REJECTED: Staged path or SHA mismatch.",
+        "readinessRevoked": true,
+        "pass": true
+      },
+      {
+        "field": "stagedFilePath",
+        "mutatedValue": "C:\\NonExistent\\Forged.rws",
+        "response": "STAGE_VALIDATION_REJECTED: Staged path or SHA mismatch.",
+        "readinessRevoked": true,
+        "pass": true
+      },
+      {
+        "field": "workerGeneration",
+        "mutatedValue": "999",
+        "response": "STAGE_VALIDATION_REJECTED: Generation mismatch.",
+        "readinessRevoked": true,
+        "pass": true
+      },
+      {
+        "field": "authorityId",
+        "mutatedValue": "AUTH-FORGED-ID",
+        "response": "STAGE_VALIDATION_REJECTED: AuthorityId mismatch.",
+        "readinessRevoked": true,
+        "pass": true
+      },
+      {
+        "field": "grantId",
+        "mutatedValue": "GRANT-FORGED-ID",
+        "response": "STAGE_VALIDATION_REJECTED: GrantId mismatch.",
+        "readinessRevoked": true,
+        "pass": true
+      },
+      {
+        "field": "contentProfileFingerprint",
+        "mutatedValue": "0000000000000000000000000000000000000000000000000000000000000000",
+        "response": "STAGE_VALIDATION_REJECTED: ContentProfileFingerprint mismatch.",
+        "readinessRevoked": true,
+        "pass": true
+      }
+    ]
+  },
+  "negativeBattery5_AuthorityImmutability": {
+    "casesCount": 4,
+    "passCount": 4,
+    "allPassed": true,
+    "cases": [
+      {
+        "attack": "Identical authority re-registration acknowledged unchanged",
+        "response": "AUTHORITY_ACK_UNCHANGED: Id=AUTH-IMMUT-01, ExpectedHash=9F7AA0CDAD9026DC90D25C6209D802D351C0B978D804CD2A04F667543E31E8CC, Gen=1, Map=0",
+        "pass": true
+      },
+      {
+        "attack": "Same authorityId with altered storeIncarnation rejected",
+        "response": "ERROR: AuthorityId already registered with different bundle parameters. In-place overwrite prohibited.",
+        "pass": true
+      },
+      {
+        "attack": "Same authorityId with altered baseLineage rejected",
+        "response": "ERROR: AuthorityId already registered with different bundle parameters. In-place overwrite prohibited.",
+        "pass": true
+      },
+      {
+        "attack": "Authority overwrite after load/admission prohibited",
+        "response": "ERROR: Cannot register or modify AuthorityBundle after game load and input admission. Worker reset required.",
+        "pass": true
+      }
+    ]
+  },
+  "negativeBattery6_GrantSemanticsAndBudget": {
+    "casesCount": 4,
+    "passCount": 4,
+    "allPassed": true,
+    "cases": [
+      {
+        "attack": "Grant scopeId mismatch against authority targetScopeId rejected",
+        "response": "ERROR: Grant scopeId 'SETTLEMENT-FOREIGN' does not match authority targetScopeId 'SETTLEMENT-B'.",
+        "pass": true
+      },
+      {
+        "attack": "Re-grant invalidates outstanding stage and blocks promotion",
+        "response": "PROMOTION_BLOCKED: No valid StageValidationReceipt found. State is 'RESULT_SEALED'. Must pass STAGE_SAVE and fresh pre-promotion validation first.",
+        "pass": true
+      },
+      {
+        "attack": "STEP_TICKS exceeding tickBudget blocked",
+        "response": "ERROR: TICK_BUDGET_EXCEEDED: Requested 30 ticks exceeds remaining grant budget (20 remaining of 20).",
+        "pass": true
+      },
+      {
+        "attack": "READ_ONLY mode blocks STEP_TICKS and SEAL_RESULT",
+        "stepResponse": "ERROR: OPERATION_NOT_PERMITTED_IN_READ_ONLY_MODE: Sliced simulation is prohibited under READ_ONLY grant.",
+        "sealResponse": "ERROR: OPERATION_NOT_PERMITTED_IN_READ_ONLY_MODE: Cannot seal simulation result with READ_ONLY grant.",
+        "pass": true
+      }
+    ]
+  },
+  "negativeBattery7_ControlPlaneRevocation": {
+    "casesCount": 3,
+    "passCount": 3,
+    "allPassed": true,
+    "cases": [
+      {
+        "attack": "Malformed grant JSON immediately revokes simulation readiness",
+        "response": "ERROR: RegisterGrant exception: Invalid character after parsing property name. Expected ':' but got: j. Path '', line 1, position 11.",
+        "statusAfter": "SEMANTIC_STATUS: State=VALIDATION_FAILED, SimulationReady=False, AuthorityId=AUTH-REV-01, SealedHash=None, Epoch=2, Summary='RESULT_SEALED: Epoch=1, SealedResultId=SEAL_E1_74ab9533a3b144759acbcda04a0d68d2, Hash=9F7AA0CDAD9026DC90D25C6209D802D351C0B978D804CD2A04F667543E31E8CC, Ticks=1823.'",
+        "pass": true
+      },
+      {
+        "attack": "Malformed complete validation JSON immediately revokes simulation readiness",
+        "response": "ERROR: CompleteStageValidation exception: Invalid character after parsing property name. Expected ':' but got: j. Path '', line 1, position 9.",
+        "statusAfter": "SEMANTIC_STATUS: State=VALIDATION_FAILED, SimulationReady=False, AuthorityId=AUTH-REV-02, SealedHash=None, Epoch=2, Summary='RESULT_SEALED: Epoch=1, SealedResultId=SEAL_E1_be9a9edac59347c1b03a6258c07a1092, Hash=9F7AA0CDAD9026DC90D25C6209D802D351C0B978D804CD2A04F667543E31E8CC, Ticks=1823.'",
+        "pass": true
+      },
+      {
+        "attack": "Stage recensus mismatch revokes readiness without NullReferenceException (G04-07 fixed)",
+        "response": "STAGE_BLOCKED: Live state mutated after result was sealed! SealedHash=9F7AA0CDAD9026DC90D25C6209D802D351C0B978D804CD2A04F667543E31E8CC, CurrentLiveHash=3B533C6A6939ACEDAD549317B7248AF9CC7F3B805F63DD73A2053F3382F9B633",
+        "pass": true
+      }
+    ]
+  },
+  "negativeBattery8_ContentProfileADR006B": {
+    "casesCount": 4,
+    "passCount": 4,
+    "allPassed": true,
+    "cases": [
+      {
+        "test": "Live ADR-006B ContentProfile fingerprint matches expected SHA-256",
+        "actualFingerprint": "7DDC73B75FA4AA1B00177EA4C73380A7E233A972968D5C0BF91852CD1C2F8D40",
+        "expectedFingerprint": "7DDC73B75FA4AA1B00177EA4C73380A7E233A972968D5C0BF91852CD1C2F8D40",
+        "pass": true
+      },
+      {
+        "test": "ModsConfig.xml comment/formatting changes preserve canonical fingerprint",
+        "commentFingerprint": "7DDC73B75FA4AA1B00177EA4C73380A7E233A972968D5C0BF91852CD1C2F8D40",
+        "pass": true
+      },
+      {
+        "test": "Mod load order alteration alters fingerprint and blocks registration",
+        "reorderedFingerprint": "FE3987173A97FC11984AC4FF1DE5EB960DBFAC7153A2A56FA9F9FFE18B19124E",
+        "registrationResponse": "ERROR: ContentProfileFingerprint mismatch. Active=FE3987173A97FC11984AC4FF1DE5EB960DBFAC7153A2A56FA9F9FFE18B19124E, Provided=7DDC73B75FA4AA1B00177EA4C73380A7E233A972968D5C0BF91852CD1C2F8D40",
+        "pass": true
+      },
+      {
+        "test": "Admitted assembly byte tamper alters fingerprint and blocks admission",
+        "tamperedFingerprint": "348B6A654A23D95DF99D9A2976170DB8C2783226A20016531B5C4DD1A0BA7A24",
+        "registrationResponse": "ERROR: ContentProfileFingerprint mismatch. Active=348B6A654A23D95DF99D9A2976170DB8C2783226A20016531B5C4DD1A0BA7A24, Provided=7DDC73B75FA4AA1B00177EA4C73380A7E233A972968D5C0BF91852CD1C2F8D40",
+        "pass": true
+      }
+    ]
+  },
+  "negativeBattery9_SupportedManifestV4": {
+    "casesCount": 3,
+    "passCount": 3,
+    "allPassed": true,
+    "cases": [
+      {
+        "test": "ActiveJob target mutation changes live manifest digest and fails validation",
+        "response": "INPUT_REJECTED: Hash mismatch. Expected 9F7AA0CDAD9026DC90D25C6209D802D351C0B978D804CD2A04F667543E31E8CC, got 3AA6BBC0C878A84E183A424B48BAE8BAD84B8A08E80A656EFB8AB9EFE18F45C4",
+        "pass": true
+      },
+      {
+        "test": "Animal playerSettings.followFieldwork present in V4 census",
+        "pass": true
+      },
+      {
+        "test": "Bill suspended and targetCount present in V4 census",
+        "pass": true
+      }
+    ]
+  },
+  "negativeBattery10_ResultEpochInvariant": {
+    "casesCount": 2,
+    "passCount": 2,
+    "allPassed": true,
+    "cases": [
+      {
+        "test": "Reseal advances epoch and blocks promotion of earlier staged save",
+        "resealResponse": "RESULT_SEALED: Epoch=2, SealedResultId=SEAL_E2_adb692954d254daeb7c7a5f237d42c03, Grant=GRANT-AUTH-EPOCH-01, ManifestHash=9F7AA0CDAD9026DC90D25C6209D802D351C0B978D804CD2A04F667543E31E8CC, Ticks=1823, Gen=1",
+        "promoteResponse": "PROMOTION_BLOCKED: No valid StageValidationReceipt found. State is 'RESULT_SEALED'. Must pass STAGE_SAVE and fresh pre-promotion validation first.",
+        "pass": true
+      },
+      {
+        "test": "Epoch discrepancy between receipt and current engine counter blocks promotion",
+        "response": "PROMOTION_BLOCKED: ResultEpoch invariant violated.",
+        "pass": true
+      }
+    ]
+  },
+  "promotionSafety": {
+    "allPassed": true,
+    "cases": [
+      {
+        "test": "Exclusive Lock Forced Replacement Failure Preserves Prior Final and Retains Staging",
+        "promotionResponse": "PROMOTION_FAILED: Atomic File.Replace failed: The process cannot access the file because it is being used by another process.. Existing final preserved.",
+        "priorFinalUnchanged": true,
+        "stagingRetained": true,
+        "pass": true
+      },
+      {
+        "test": "Normal Replacement Creates Backup of Prior Final and Atomically Replaces Final",
+        "promotionResponse": "ARTIFACT_APPROVED: File='C:\\Users\\user\\Desktop\\RimMulti\\scratch\\Profiles\\Profile_Safe_Atomic\\Saves\\TargetSettlement_Final.rws', Name='TargetSettlement_Final', Size=14037977 bytes, SHA256=6A3208F962DEAFF1B8FF3DE30D3BFAD9B2D56E25186812F316C2AAED307A5713, SealedManifestHash=9F7AA0CDAD9026DC90D25C6209D802D351C0B978D804CD2A04F667543E31E8CC, Epoch=1, ReceiptId=VR_20261004_190304_161c9cb249674a7a8c4621664dbbad04",
+        "backupCreated": true,
+        "backupMatchesPriorFinal": true,
+        "newFinalSha": "6A3208F962DEAFF1B8FF3DE30D3BFAD9B2D56E25186812F316C2AAED307A5713",
+        "pass": true
+      }
+    ]
+  },
+  "freshPositiveChain": {
+    "processA": {
+      "pid": 22040,
+      "sourceSha": "EA8A02D4EC41CE79E285A7D386F3534EB5E192682FC061A8E008116B2B3DF34B",
+      "authorityId": "AUTH-CHAIN-A",
+      "grantId": "GRANT-CHAIN-A-01",
+      "sealedManifestHash": "925AF7DDD9F379A3657D486C4F9CD0BB17385D29DF1011B0BB1C67533B1C0D69",
+      "stagedSha": "5C4DE06BC924B6BAB6DC4A82897A17689673C1A0994F9E2F0228A3E33B5AB052",
+      "validatorPid": 27552,
+      "validatorTaskId": "VT_20261004_190325_9052615f280246f5b7d6a4634359116b",
+      "validatorResult": "PASS",
+      "promotedFile": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\Profiles\\Profile_Chain_A\\Saves\\TargetSettlement_Promoted_A.rws",
+      "promotedSha": "5C4DE06BC924B6BAB6DC4A82897A17689673C1A0994F9E2F0228A3E33B5AB052",
+      "pass": true
+    },
+    "processB": {
+      "pid": 16976,
+      "sourceSha": "5C4DE06BC924B6BAB6DC4A82897A17689673C1A0994F9E2F0228A3E33B5AB052",
+      "authorityId": "AUTH-CHAIN-B",
+      "grantId": "GRANT-CHAIN-B-01",
+      "sealedManifestHash": "0FC3BECE42CB465FA970DD916D38950899C2FD98BBB0729635E28F86ECAE7F2A",
+      "stagedSha": "11517AAC696ADF4262B56F882384FF33BB1F9748639A413BD999D0C05C8FC62D",
+      "validatorPid": 5956,
+      "validatorTaskId": "VT_20261004_190405_2b713b632d374851b254e48736f8b4aa",
+      "validatorResult": "PASS",
+      "promotedFile": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\Profiles\\Profile_Chain_B\\Saves\\TargetSettlement_Promoted_B.rws",
+      "promotedSha": "11517AAC696ADF4262B56F882384FF33BB1F9748639A413BD999D0C05C8FC62D",
+      "pass": true
+    },
+    "processC": {
+      "pid": 24768,
+      "sourceSha": "11517AAC696ADF4262B56F882384FF33BB1F9748639A413BD999D0C05C8FC62D",
+      "authorityId": "AUTH-CHAIN-C",
+      "expectedManifestHash": "0FC3BECE42CB465FA970DD916D38950899C2FD98BBB0729635E28F86ECAE7F2A",
+      "validationResult": "INPUT_VALIDATED: AuthorityId=AUTH-CHAIN-C, ManifestHash=0FC3BECE42CB465FA970DD916D38950899C2FD98BBB0729635E28F86ECAE7F2A, SimulationReady=true",
+      "pass": true
+    },
+    "allPassed": true
+  }
+}

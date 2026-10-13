@@ -1,0 +1,69 @@
+{
+  "at": "2026-10-12T18:04:24.448392+09:00",
+  "kind": "A_ACK_DECLARED_REFERENCE_HASH_MISMATCH_NOT_SCOPE_MUTATION",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f",
+  "original_ACK": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\ACK.json",
+    "sha256": "556C8A7D22EE2C2275D4F83BB7AF1B18DCD2CDBD1DB54BB4C5424F65958FD7F8",
+    "bytes": 3908
+  },
+  "bindings": [
+    {
+      "kind": "contract",
+      "actual": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R29_OPERATOR_STARTUP_PAIR_CONTRACT_20261012.md",
+        "sha256": "2EEE68E2E3B6D0FD3777D8F1F13EDDE3239D7697CD9339B03B324D108CE9A531",
+        "bytes": 6219
+      },
+      "ACK_declared_sha256": "2EEE68E2E3B6D0FD3777D8F1F13EDDE3239D7697CD9339B03B324D108CE9A531",
+      "matched": true
+    },
+    {
+      "kind": "scope",
+      "actual": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\MASTER_R30_AUTHORIZED_SOURCE_SCOPE.json",
+        "sha256": "85BF9637821F2C80E48276842056876EC74E164CA4427A5FA7909CDBB17A755E",
+        "bytes": 7566
+      },
+      "ACK_declared_sha256": "8CC85542289F4BD2161A4E7A277102EFB1BCDB70A6AC8DFEDFEBC9DA02488AE5",
+      "matched": false
+    },
+    {
+      "kind": "protected_baseline",
+      "actual": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R30_HANDOFF_PROTECTED_BASELINE_20261012.json",
+        "sha256": "904319B6AC64D9D1AF46449F3AA4702A8B95C1B9377839EB98E7BE3835D02418",
+        "bytes": 4677860
+      },
+      "ACK_declared_sha256": "904319B6AC64D9D1AF46449F3AA4702A8B95C1B9377839EB98E7BE3835D02418",
+      "matched": true
+    },
+    {
+      "kind": "defect",
+      "actual": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_DEFECT_ENGINE_G05_R29_HANDOFF_20261012.json",
+        "sha256": "BBFD3FC743F14D41DE31B58BC17DA1B727421F9C1668DA0141F1AD57D6B63E34",
+        "bytes": 1367
+      },
+      "ACK_declared_sha256": "BBFD3FC743F14D41DE31B58BC17DA1B727421F9C1668DA0141F1AD57D6B63E34",
+      "matched": true
+    },
+    {
+      "kind": "master_review",
+      "actual": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R29_STARTUP_PAIR_INDEPENDENT_S3_20261012.md",
+        "sha256": "5057F3CE6FCF7049EAAA5AD61EC9AAE2BFBE1B50CC46FB6D333963199BCC5A61",
+        "bytes": 4780
+      },
+      "ACK_declared_sha256": "5057F3CE6FCF7049EAAA5AD61EC9AAE2BFBE1B50CC46FB6D333963199BCC5A61",
+      "matched": true
+    }
+  ],
+  "scope_actual_matches_Master_board": true,
+  "actual_immutable_scope_unmodified": true,
+  "actor_of_any_scope_change": "NO_SCOPE_CHANGE_OBSERVED",
+  "operational_delivery": "ACTUAL_SENT_WORKING_IDENTITY_ACK_MATCH",
+  "full_ACK_reference_binding": "PENDING_SCOPE_FIELD_CORRECTION",
+  "require_completion_reference_hash_correct": true,
+  "no_candidate_FAIL_or_PASS_inferred": true
+}

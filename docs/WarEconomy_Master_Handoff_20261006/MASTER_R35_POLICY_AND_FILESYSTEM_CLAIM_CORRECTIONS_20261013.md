@@ -1,0 +1,7 @@
+# Accepted R35 controlling corrections
+
+Source/evidence basis C:\Users\user\Desktop\RimMulti\docs\WarEconomy_Master_Handoff_20261006\MASTER_REVIEW_ENGINE_GATE05_R35_INDEPENDENT_STATIC_S1_20261013.md SHAD1DD86671F66FC099C39ACAD42DA59BDBF9EEF39AD90CADDBD001AB311413486; C:\Users\user\Desktop\RimMulti\QA-Tactical-Engine\GATE05-R35-PUBLISHER-INDEPENDENT-STATIC-S1-20261013\CONFIG14_DECL7_SEMANTICS_COMPARISON.json SHAB0C4CC51F6303F82B8497CF02DDAED7715BCC318B04F5F99D9107286D75DD4B9.
+
+Actual config→snapshot→receipt/digest route requires NONBLANK supplied policy schema, not equality to WE-PACKAGE-POLICY-V1. Nonempty suppliedschema ispreserved byserializer; laterpolicychecker separate. This replaces tentative Master/E1brief schema-valueassertion and guessed PackagePolicyService. Fingerprint nonblank/noinvented64hex, no newpackageuniqueness/nonemptylist, Pythonisalpha vs char.IsLetter alone unprovenmismatch.
+
+Hardlinkcontents shared/mutable; retainingstage!=immutable, finalentry!=multifileatomictransaction; wholeancestry/lstatinspectionfailclosed andprotectedwriterboundedassumptions required, no universalraceimmunity/cryptographicissuer claim. ASTsyntax!=publicationPASS. Engine current R34 exactlineage unchanged. Preserve originaldecl7 opaque/paddedstrings/configraw14/UTC7; unsupported generalUnicode/date/pathdomain failclosed explicit withoutimprovisedCLRport. No native/E2/closure/1.7migration approval.

@@ -1,0 +1,39 @@
+{
+  "at": "2026-10-13T00:34:55.260674+09:00",
+  "independent_literal_oracles": {
+    "independent_pair_oracle": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\PRE_RUN_EXPECTED_ORACLE.json",
+      "sha256": "7371185E68771EA8613373E3948344B988D86C361421EE9DAF681036CBD95D02",
+      "bytes": 1030401
+    },
+    "independent_Capture_oracle": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011\\PROSPECTIVE_CAPTURE_ORACLE.json",
+      "sha256": "5961CD18DA05B67F6DE40DA8A6EBB289D94ACF85054D57FB31FE4B8C5530C4C7",
+      "bytes": 549797
+    },
+    "combined_oracle": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\NORMAL_EXPECTED_ORACLE.json",
+      "sha256": "89C9EAE0722EF875577DCF2AC4D20687FDB19CE743B13AE285360225E79F9D7D",
+      "bytes": 1578021
+    }
+  },
+  "old_template_source": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\Harness\\Program.cs",
+    "sha256": "A57A6BB08DF8A6D07C0DBA6E276DF6C95A8B93A0CFD0CEA0998DB38CDA4DF940",
+    "bytes": 26490
+  },
+  "old_full_callplan": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\PRIMARY_NORMAL_CALLPLAN.json",
+    "sha256": "D70564A89A3B6619EA16E3EE8548CADA92E52265EA7E24ADC4899861FAD7F91A",
+    "bytes": 636
+  },
+  "reuse": "TEXT_ONLY_NEW_OWNED_TEMPLATE_AND_EXPECTATION_DEFINITIONS; NO_OLD_HELPER_EXEC_IMPORT_OR_PASS_INHERITANCE",
+  "new_selected": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "sha256": "0B23C358E8C8FC16FCD02DDE654AD8AE763EA177460BB15F5F1E1B1F0CB67E26",
+    "bytes": 325632,
+    "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R32-64ad38e2\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll"
+  },
+  "new_expected_outputs_not_derived_from_R32_observation": true
+}

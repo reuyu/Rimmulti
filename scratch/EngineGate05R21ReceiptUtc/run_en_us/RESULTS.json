@@ -1,0 +1,101 @@
+{
+  "DispatchId": "WE-A-ENGINE-GATE05-R21-RECEIPT-UTC-20261011-DIRECT-49256586",
+  "WpId": "WP_ENGINE_GATE05_R21_RECEIPT_UTC_LITERAL",
+  "Revision": "GATE05-R21-RECEIPT-UTC",
+  "Envelope": 24,
+  "RunId": "45664c31524e439a9907af0d292a4bc6",
+  "TimestampUtc": "2026-10-10T21:16:08.8589981Z",
+  "ProcessId": 0,
+  "Culture": "en-US",
+  "CommandLineArgs": [
+    "--rundir",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_en_us",
+    "--culture",
+    "en-US"
+  ],
+  "WorkingDirectory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc",
+  "LoadedCandidateDllPath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\Harness\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+  "LoadedCandidateSha256": "31D7A2508ACFADE1B9430F43E6F3D2ACF3E9822C787D00DAF55C9E44CF8E5AC4",
+  "LoadedCandidateMvid": "7a8b444a-3a07-4dee-9d37-4fa7ed3c461c",
+  "ApiLedger": {
+    "ParseStrictCalls": 4,
+    "AdmitConfigBytesCalls": 4,
+    "AdmitConfigFileCalls": 4,
+    "IssueAdmissionReceiptCalls": 8,
+    "IssueAdmissionReceiptFromBytesCalls": 4,
+    "ValidateAdmissionReceiptCalls": 8,
+    "IsFullyQualifiedWindowsPathCalls": 5,
+    "ToSnapshotCalls": 4,
+    "ToRedactedJsonSnapshotCalls": 0,
+    "ToRedactedJsonReceiptCalls": 3,
+    "GetExpectedPackagePolicyDeclarationCalls": 16,
+    "ComputeFileSha256Calls": 0,
+    "VerifyAdmittedExecutableCalls": 0,
+    "ToRedactedJsonValidatorResultCalls": 1,
+    "SerializePackagePolicyCalls": 1,
+    "DeserializePackagePolicyCalls": 1,
+    "ComputePackagePolicyDigestCalls": 17,
+    "ProcessApiCalls": 0,
+    "VerifyProcessIdentityCalls": 0,
+    "WorkerBridgeGlobalConfigureResetCalls": 0,
+    "TryInstallOperatorStartupConfigCalls": 0,
+    "AwakeCalls": 0,
+    "HarmonyCalls": 0
+  },
+  "Tests": [
+    {
+      "TestName": "TEST_01_OPAQUE_POLICY_LOSSLESS_PRESERVATION",
+      "Status": "PASS",
+      "Details": "Verified exact preservation of untrimmed opaque policyId ('  qa.R18 정책 Ω  ') and revision ('  007 café Ω  ') yielding lossless digest 8A9C3381A041F79F300710D6EA93A5D8E08564C692AA5059337853825E1749BF across all 16 role/route combinations.",
+      "MatrixPassedCount": 16,
+      "TotalMatrixCount": 16
+    },
+    {
+      "TestName": "TEST_02_ADMISSION_RECEIPT_ISSUANCE_AND_BOUND_PROVENANCE",
+      "Status": "PASS",
+      "Details": "Verified factory-issued immutable OperatorStartupAdmissionReceipt across SIMULATION/READ_ONLY, PLAIN/OPAQUE, file/bytes routes with 100% bound provenance fields verified.",
+      "ReceiptSuccessCount": 8,
+      "TotalReceiptChecks": 8
+    },
+    {
+      "TestName": "TEST_03_RECEIPT_REDACTED_JSON_EXACT_LITERAL_UTC_PRESERVATION",
+      "Status": "PASS",
+      "Details": "Verified that OperatorStartupAdmissionReceipt.ToRedactedJson() uses explicit DateParseHandling.None reader, preserving nested snapshot.issuedAtUtc literal strings verbatim (including .0000000Z precision) without DateTime token coercion.",
+      "UtcCasesPassed": 3,
+      "TotalUtcCases": 3
+    },
+    {
+      "TestName": "TEST_04_DECLARATION_AND_RECEIPT_DEFENSIVE_IMMUTABILITY",
+      "Status": "PASS",
+      "Details": "Verified that mutating caller launch descriptor, cloned descriptor, or returned snapshot declarations has zero effect on the factory-issued admission receipt.",
+      "ReceiptOriginImmune": true,
+      "ReceiptPlanImmune": true,
+      "ReceiptPathImmune": true,
+      "SnapshotIsolation": true
+    },
+    {
+      "TestName": "TEST_05_FULLY_QUALIFIED_WINDOWS_PATH_POSITIVE_HELPER",
+      "Status": "PASS",
+      "Details": "Verified OperatorStartupConfigAdmissionFactory.IsFullyQualifiedWindowsPath correctly admits DOS drive roots and UNC shares via positive normal controls only (zero invalid/rejection probes).",
+      "ValidChecksPassed": 5,
+      "TotalValidChecks": 5
+    },
+    {
+      "TestName": "TEST_06_VALIDATOR_RESULT_REDACTION_REGRESSION",
+      "Status": "PASS",
+      "Details": "Verified public ValidatorResult redaction replaces capabilityNonce and channelSecretToken with protected placeholders.",
+      "NonceMasked": true,
+      "SecretMasked": true
+    },
+    {
+      "TestName": "TEST_07_CENSUS_PACKAGE_POLICY_REGRESSION",
+      "Status": "PASS",
+      "Details": "Verified unchanged Census ContentProfileProvider package policy serialization, roundtrip deserialization, and deterministic digest calculation.",
+      "Digest": "0B570501B959C842B6B2BA0814F7B9E9B2524D8A7937036F2E606712CD07F683"
+    }
+  ],
+  "TotalTests": 7,
+  "PassedTests": 7,
+  "FailedTests": 0,
+  "NumericExitCode": 0
+}

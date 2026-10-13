@@ -1,0 +1,764 @@
+    }
+
+    public static class OperatorStartupConfigAdmissionFactory
+    {
+        public static bool Is64AsciiHex(string? s)
+        {
+            if (s == null || s.Length != 64) return false;
+            for (int i = 0; i < s.Length; i++)
+            {
+                char c = s[i];
+                bool isHex = (c >= '0' && c <= '9') || (c >= 'a' && c <= 'f') || (c >= 'A' && c <= 'F');
+                if (!isHex) return false;
+            }
+            return true;
+        }
+
+        public static bool IsFullyQualifiedWindowsPath(string? path)
+        {
+            if (string.IsNullOrWhiteSpace(path)) return false;
+            string trimmed = path!.Trim();
+            if (trimmed.IndexOfAny(Path.GetInvalidPathChars()) >= 0) return false;
+
+            // Standard DOS drive root: e.g. C:\ or C:/
+            if (trimmed.Length >= 3 && char.IsLetter(trimmed[0]) && trimmed[1] == ':' && (trimmed[2] == '\\' || trimmed[2] == '/'))
+            {
+                return true;
+            }
+
+            // UNC root: \\server\share\...
+            if (trimmed.StartsWith(@"\\") && trimmed.Length > 2)
+            {
+                string unc = trimmed.Substring(2);
+                int slashIdx = unc.IndexOf('\\');
+                if (slashIdx > 0 && slashIdx < unc.Length - 1)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public static (bool isValid, string error, OperatorStartupConfigSnapshot? snapshot) AdmitConfigFile(
+            string configPath,
+            string expectedConfigSha256,
+            OperatorLaunchDescriptor? descriptor = null)
+        {
+            if (string.IsNullOrWhiteSpace(configPath))
+            {
+                return (false, "Config path cannot be null or whitespace.", null);
+            }
+            if (!IsFullyQualifiedWindowsPath(configPath))
+            {
+                return (false, "Config path must be a fully-qualified Windows path.", null);
+            }
+            string normalizedPath;
+            try
+            {
+                normalizedPath = Path.GetFullPath(configPath.Trim());
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Invalid config path: {ex.Message}", null);
+            }
+            if (!File.Exists(normalizedPath))
+            {
+                return (false, $"Operator config file not found at '{normalizedPath}'.", null);
+            }
+
+            byte[] rawBytes;
+            try
+            {
+                rawBytes = File.ReadAllBytes(normalizedPath);
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Failed to read operator config file: {ex.Message}", null);
+            }
+
+            return AdmitConfigBytes(rawBytes, normalizedPath, expectedConfigSha256, descriptor);
+        }
+
+        public static (bool isValid, string error, OperatorStartupConfigSnapshot? snapshot) AdmitConfigBytes(
+            byte[] rawBytes,
+            string configPath,
+            string expectedConfigSha256,
+            OperatorLaunchDescriptor? descriptor = null)
+        {
+            if (rawBytes == null || rawBytes.Length == 0)
+            {
+                return (false, "Raw config bytes cannot be null or empty.", null);
+            }
+            if (string.IsNullOrWhiteSpace(configPath))
+            {
+                return (false, "Config path cannot be null or whitespace.", null);
+            }
+            if (!IsFullyQualifiedWindowsPath(configPath))
+            {
+                return (false, "Config path must be a fully-qualified Windows path.", null);
+            }
+            if (string.IsNullOrWhiteSpace(expectedConfigSha256) || expectedConfigSha256.Trim().Length != 64)
+            {
+                return (false, "Expected config SHA256 must be a 64-character hex string.", null);
+            }
+            if (!Is64AsciiHex(expectedConfigSha256.Trim()))
+            {
+                return (false, "Expected config SHA256 contains invalid hex characters.", null);
+            }
+
+            // 1. Verify byte SHA256 BEFORE deserialization
+            string actualSha;
+            using (var sha = SHA256.Create())
+            {
+                byte[] hash = sha.ComputeHash(rawBytes);
+                var sb = new StringBuilder(hash.Length * 2);
+                for (int i = 0; i < hash.Length; i++)
+                {
+                    sb.Append(hash[i].ToString("X2"));
+                }
+                actualSha = sb.ToString();
+            }
+
+            if (!string.Equals(actualSha, expectedConfigSha256.Trim(), StringComparison.OrdinalIgnoreCase))
+            {
+                return (false, $"Config byte SHA256 mismatch before admission. Expected='{expectedConfigSha256.Trim().ToUpperInvariant()}', Observed='{actualSha}'.", null);
+            }
+
+            // 2. Strict parse UTF-8 JSON
+            string json;
+            try
+            {
+                if (rawBytes.Length >= 3 && rawBytes[0] == 0xEF && rawBytes[1] == 0xBB && rawBytes[2] == 0xBF)
+                {
+                    json = Encoding.UTF8.GetString(rawBytes, 3, rawBytes.Length - 3);
+                }
+                else
+                {
+                    json = Encoding.UTF8.GetString(rawBytes);
+                }
+                json = json.TrimStart('\uFEFF');
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Failed to decode config bytes as UTF-8: {ex.Message}", null);
+            }
+
+            var parseResult = ParseStrict(json);
+            if (!parseResult.isValid || parseResult.config == null)
+            {
+                return (false, $"Strict config parsing failed: {parseResult.error}", null);
+            }
+
+            var config = parseResult.config;
+
+            // 3. Bind launch descriptor if provided
+            if (descriptor != null)
+            {
+                if (!string.IsNullOrEmpty(descriptor.expectedRole) &&
+                    !string.Equals(config.role, descriptor.expectedRole, StringComparison.OrdinalIgnoreCase))
+                {
+                    return (false, $"Launch descriptor role mismatch. Expected='{descriptor.expectedRole}', Observed='{config.role}'.", null);
+                }
+                if (!string.IsNullOrEmpty(descriptor.expectedConfigId) &&
+                    !string.Equals(config.configId, descriptor.expectedConfigId, StringComparison.Ordinal))
+                {
+                    return (false, $"Launch descriptor configId mismatch. Expected='{descriptor.expectedConfigId}', Observed='{config.configId}'.", null);
+                }
+                if (!string.IsNullOrEmpty(descriptor.expectedCapabilityBoundary) &&
+                    !string.Equals(config.capabilityBoundary, descriptor.expectedCapabilityBoundary, StringComparison.OrdinalIgnoreCase))
+                {
+                    return (false, $"Launch descriptor capabilityBoundary mismatch. Expected='{descriptor.expectedCapabilityBoundary}', Observed='{config.capabilityBoundary}'.", null);
+                }
+                if (!string.IsNullOrEmpty(descriptor.expectedConfigPath))
+                {
+                    if (!IsFullyQualifiedWindowsPath(descriptor.expectedConfigPath))
+                    {
+                        return (false, $"Launch descriptor expectedConfigPath '{descriptor.expectedConfigPath}' is not fully-qualified.", null);
+                    }
+                    string normDescPath = Path.GetFullPath(descriptor.expectedConfigPath.Trim());
+                    string normCfgPath = Path.GetFullPath(configPath.Trim());
+                    if (!string.Equals(normCfgPath, normDescPath, StringComparison.OrdinalIgnoreCase))
+                    {
+                        return (false, $"Config path '{normCfgPath}' does not match descriptor expectedConfigPath '{normDescPath}'.", null);
+                    }
+                }
+                if (!string.IsNullOrEmpty(descriptor.expectedConfigSha256))
+                {
+                    if (!string.Equals(actualSha, descriptor.expectedConfigSha256.Trim(), StringComparison.OrdinalIgnoreCase))
+                    {
+                        return (false, $"Config byte SHA '{actualSha}' does not match descriptor expectedConfigSha256 '{descriptor.expectedConfigSha256}'.", null);
+                    }
+                }
+            }
+
+            // 4. Construct deeply immutable snapshot with semantic validation
+            OperatorStartupConfigSnapshot snapshot;
+            try
+            {
+                snapshot = new OperatorStartupConfigSnapshot(config);
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Snapshot construction validation failed: {ex.Message}", null);
+            }
+
+            return (true, string.Empty, snapshot);
+        }
+
+        public static (bool isValid, string error, OperatorStartupAdmissionReceipt? receipt) IssueAdmissionReceipt(
+            string configPath,
+            string expectedConfigSha256,
+            OperatorLaunchDescriptor descriptor)
+        {
+            if (descriptor == null)
+            {
+                return (false, "Operator launch descriptor cannot be null for receipt issuance.", null);
+            }
+            if (string.IsNullOrWhiteSpace(descriptor.originId))
+            {
+                return (false, "Operator launch descriptor originId cannot be null or whitespace.", null);
+            }
+            if (string.IsNullOrWhiteSpace(descriptor.launchPlanId))
+            {
+                return (false, "Operator launch descriptor launchPlanId cannot be null or whitespace.", null);
+            }
+            if (string.IsNullOrWhiteSpace(configPath))
+            {
+                return (false, "Config path cannot be null or whitespace.", null);
+            }
+            if (!IsFullyQualifiedWindowsPath(configPath))
+            {
+                return (false, $"Config path '{configPath}' must be a fully-qualified Windows path.", null);
+            }
+
+            string normalizedConfigPath;
+            try
+            {
+                normalizedConfigPath = Path.GetFullPath(configPath.Trim());
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Failed to normalize config path '{configPath}': {ex.Message}", null);
+            }
+
+            if (!File.Exists(normalizedConfigPath))
+            {
+                return (false, $"Operator config file not found at '{normalizedConfigPath}'.", null);
+            }
+
+            if (!string.IsNullOrWhiteSpace(descriptor.expectedConfigPath))
+            {
+                if (!IsFullyQualifiedWindowsPath(descriptor.expectedConfigPath))
+                {
+                    return (false, $"Descriptor expectedConfigPath '{descriptor.expectedConfigPath}' must be fully-qualified.", null);
+                }
+                string normDescPath = Path.GetFullPath(descriptor.expectedConfigPath.Trim());
+                if (!string.Equals(normalizedConfigPath, normDescPath, StringComparison.OrdinalIgnoreCase))
+                {
+                    return (false, $"Config path '{normalizedConfigPath}' does not match descriptor expectedConfigPath '{normDescPath}'.", null);
+                }
+            }
+
+            if (!string.IsNullOrWhiteSpace(descriptor.expectedConfigSha256))
+            {
+                if (!string.Equals(expectedConfigSha256.Trim(), descriptor.expectedConfigSha256.Trim(), StringComparison.OrdinalIgnoreCase))
+                {
+                    return (false, $"Expected config SHA '{expectedConfigSha256}' does not match descriptor expectedConfigSha256 '{descriptor.expectedConfigSha256}'.", null);
+                }
+            }
+
+            byte[] rawBytes;
+            try
+            {
+                rawBytes = File.ReadAllBytes(normalizedConfigPath);
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Failed to read operator config file: {ex.Message}", null);
+            }
+
+            return IssueAdmissionReceiptFromBytes(rawBytes, normalizedConfigPath, expectedConfigSha256, descriptor);
+        }
+
+        public static (bool isValid, string error, OperatorStartupAdmissionReceipt? receipt) IssueAdmissionReceiptFromBytes(
+            byte[] rawBytes,
+            string configPath,
+            string expectedConfigSha256,
+            OperatorLaunchDescriptor descriptor)
+        {
+            if (descriptor == null)
+            {
+                return (false, "Operator launch descriptor cannot be null.", null);
+            }
+            if (string.IsNullOrWhiteSpace(descriptor.originId))
+            {
+                return (false, "Descriptor originId cannot be null or whitespace.", null);
+            }
+            if (string.IsNullOrWhiteSpace(descriptor.launchPlanId))
+            {
+                return (false, "Descriptor launchPlanId cannot be null or whitespace.", null);
+            }
+            if (!IsFullyQualifiedWindowsPath(configPath))
+            {
+                return (false, $"Config path '{configPath}' must be a fully-qualified Windows path.", null);
+            }
+
+            var admission = AdmitConfigBytes(rawBytes, configPath, expectedConfigSha256, descriptor);
+            if (!admission.isValid || admission.snapshot == null)
+            {
+                return (false, admission.error, null);
+            }
+
+            var snapshot = admission.snapshot;
+
+            if (!string.IsNullOrEmpty(descriptor.expectedConfigId) &&
+                !string.Equals(snapshot.ConfigId, descriptor.expectedConfigId.Trim(), StringComparison.Ordinal))
+            {
+                return (false, $"Descriptor expectedConfigId mismatch. Expected='{descriptor.expectedConfigId}', Observed='{snapshot.ConfigId}'.", null);
+            }
+            if (!string.IsNullOrEmpty(descriptor.expectedRole) &&
+                !string.Equals(snapshot.Role, descriptor.expectedRole.Trim(), StringComparison.OrdinalIgnoreCase))
+            {
+                return (false, $"Descriptor expectedRole mismatch. Expected='{descriptor.expectedRole}', Observed='{snapshot.Role}'.", null);
+            }
+            if (!string.IsNullOrEmpty(descriptor.expectedCapabilityBoundary) &&
+                !string.Equals(snapshot.CapabilityBoundary, descriptor.expectedCapabilityBoundary.Trim(), StringComparison.OrdinalIgnoreCase))
+            {
+                return (false, $"Descriptor expectedCapabilityBoundary mismatch. Expected='{descriptor.expectedCapabilityBoundary}', Observed='{snapshot.CapabilityBoundary}'.", null);
+            }
+
+            string actualByteSha;
+            using (var sha = SHA256.Create())
+            {
+                actualByteSha = BitConverter.ToString(sha.ComputeHash(rawBytes)).Replace("-", "").ToUpperInvariant();
+            }
+
+            var receipt = new OperatorStartupAdmissionReceipt(
+                snapshot: snapshot,
+                boundConfigPath: Path.GetFullPath(configPath.Trim()),
+                boundConfigSha256: actualByteSha,
+                boundOriginId: descriptor.originId.Trim(),
+                boundLaunchPlanId: descriptor.launchPlanId.Trim(),
+                boundConfigId: snapshot.ConfigId,
+                boundRole: snapshot.Role,
+                boundCapabilityBoundary: snapshot.CapabilityBoundary,
+                admittedAtUtc: snapshot.IssuedAtUtc,
+                isTrusted: true
+            );
+
+            return (true, string.Empty, receipt);
+        }
+
+        public static (bool isValid, string error) ValidateAdmissionReceipt(OperatorStartupAdmissionReceipt? receipt)
+        {
+            if (receipt == null)
+            {
+                return (false, "Admission receipt is null.");
+            }
+            if (receipt.ReceiptSchemaVersion != OperatorStartupAdmissionReceipt.RECEIPT_SCHEMA_VERSION)
+            {
+                return (false, $"Receipt schema version mismatch: '{receipt.ReceiptSchemaVersion}'. Expected '{OperatorStartupAdmissionReceipt.RECEIPT_SCHEMA_VERSION}'.");
+            }
+            if (!receipt.IsTrusted)
+            {
+                return (false, "Admission receipt IsTrusted flag is false.");
+            }
+            if (receipt.Snapshot == null)
+            {
+                return (false, "Receipt Snapshot is null.");
+            }
+            if (string.IsNullOrWhiteSpace(receipt.BoundOriginId))
+            {
+                return (false, "Receipt BoundOriginId is null or whitespace.");
+            }
+            if (string.IsNullOrWhiteSpace(receipt.BoundLaunchPlanId))
+            {
+                return (false, "Receipt BoundLaunchPlanId is null or whitespace.");
+            }
+            if (string.IsNullOrWhiteSpace(receipt.BoundConfigId))
+            {
+                return (false, "Receipt BoundConfigId is null or whitespace.");
+            }
+            if (!string.Equals(receipt.BoundConfigId, receipt.Snapshot.ConfigId, StringComparison.Ordinal))
+            {
+                return (false, $"Receipt BoundConfigId mismatch against snapshot. Receipt='{receipt.BoundConfigId}', Snapshot='{receipt.Snapshot.ConfigId}'.");
+            }
+            if (!string.Equals(receipt.BoundRole, receipt.Snapshot.Role, StringComparison.OrdinalIgnoreCase))
+            {
+                return (false, $"Receipt BoundRole mismatch against snapshot. Receipt='{receipt.BoundRole}', Snapshot='{receipt.Snapshot.Role}'.");
+            }
+            if (!string.Equals(receipt.BoundCapabilityBoundary, receipt.Snapshot.CapabilityBoundary, StringComparison.OrdinalIgnoreCase))
+            {
+                return (false, $"Receipt BoundCapabilityBoundary mismatch against snapshot. Receipt='{receipt.BoundCapabilityBoundary}', Snapshot='{receipt.Snapshot.CapabilityBoundary}'.");
+            }
+            if (!IsFullyQualifiedWindowsPath(receipt.BoundConfigPath))
+            {
+                return (false, $"Receipt BoundConfigPath '{receipt.BoundConfigPath}' is not a fully-qualified Windows path.");
+            }
+            if (!Is64AsciiHex(receipt.BoundConfigSha256))
+            {
+                return (false, $"Receipt BoundConfigSha256 '{receipt.BoundConfigSha256}' is not a valid 64-character hex string.");
+            }
+            if (string.IsNullOrWhiteSpace(receipt.AdmittedAtUtc))
+            {
+                return (false, "Receipt AdmittedAtUtc is null or whitespace.");
+            }
+            return (true, string.Empty);
+        }
+
+        public static (bool isValid, string error, OperatorStartupConfig? config) ParseStrict(string json)
+        {
+            if (string.IsNullOrWhiteSpace(json))
+            {
+                return (false, "Config JSON is null or whitespace.", null);
+            }
+
+            var loadSettings = new JsonLoadSettings
+            {
+                DuplicatePropertyNameHandling = DuplicatePropertyNameHandling.Error
+            };
+
+            JObject root;
+            try
+            {
+                using (var sr = new StringReader(json))
+                using (var jr = new JsonTextReader(sr) { DateParseHandling = DateParseHandling.None })
+                {
+                    root = JObject.Load(jr, loadSettings);
+                }
+            }
+            catch (Exception ex)
+            {
+                return (false, $"JSON syntactic/duplicate property error: {ex.Message}", null);
+            }
+
+            var expectedRootProps = new HashSet<string>(StringComparer.Ordinal)
+            {
+                "schemaVersion",
+                "configId",
+                "role",
+                "admittedValidatorExecutablePath",
+                "admittedValidatorExecutableSha256",
+                "validatorArguments",
+                "workerUserDataDirectory",
+                "validatorUserDataDirectory",
+                "workerCwd",
+                "validatorCwd",
+                "capabilityBoundary",
+                "issuedAtUtc",
+                "expectedContentProfileFingerprint",
+                "expectedPackagePolicyDeclaration"
+            };
+
+            foreach (var prop in root.Properties())
+            {
+                if (!expectedRootProps.Contains(prop.Name))
+                {
+                    return (false, $"Unknown root property '{prop.Name}' in config JSON.", null);
+                }
+            }
+
+            foreach (var required in expectedRootProps)
+            {
+                if (root.Property(required) == null)
+                {
+                    return (false, $"Missing required property '{required}' in config JSON.", null);
+                }
+            }
+
+            string GetRequiredString(string propName)
+            {
+                var p = root.Property(propName)!;
+                if (p.Value.Type != JTokenType.String && p.Value.Type != JTokenType.Date)
+                {
+                    throw new InvalidOperationException($"Property '{propName}' must be a String token (observed {p.Value.Type}).");
+                }
+                return p.Value.Type == JTokenType.Date
+                    ? ((DateTime)p.Value).ToUniversalTime().ToString("O")
+                    : (string)p.Value!;
+            }
+
+            var config = new OperatorStartupConfig();
+            try
+            {
+                config.schemaVersion = GetRequiredString("schemaVersion");
+                config.configId = GetRequiredString("configId");
+                config.role = GetRequiredString("role");
+                config.admittedValidatorExecutablePath = GetRequiredString("admittedValidatorExecutablePath");
+                config.admittedValidatorExecutableSha256 = GetRequiredString("admittedValidatorExecutableSha256");
+                config.validatorArguments = GetRequiredString("validatorArguments");
+                config.workerUserDataDirectory = GetRequiredString("workerUserDataDirectory");
+                config.validatorUserDataDirectory = GetRequiredString("validatorUserDataDirectory");
+                config.workerCwd = GetRequiredString("workerCwd");
+                config.validatorCwd = GetRequiredString("validatorCwd");
+                config.capabilityBoundary = GetRequiredString("capabilityBoundary");
+                config.issuedAtUtc = GetRequiredString("issuedAtUtc");
+                config.expectedContentProfileFingerprint = GetRequiredString("expectedContentProfileFingerprint");
+
+                var policyProp = root.Property("expectedPackagePolicyDeclaration")!;
+                if (policyProp.Value.Type != JTokenType.Object)
+                {
+                    return (false, $"Property 'expectedPackagePolicyDeclaration' must be an Object token (observed {policyProp.Value.Type}).", null);
+                }
+
+                var policyObj = (JObject)policyProp.Value;
+                var expectedPolicyProps = new HashSet<string>(StringComparer.Ordinal)
+                {
+                    "schemaVersion",
+                    "policyId",
+                    "revision",
+                    "admittedPackageIds"
+                };
+
+                foreach (var prop in policyObj.Properties())
+                {
+                    if (!expectedPolicyProps.Contains(prop.Name))
+                    {
+                        return (false, $"Unknown property '{prop.Name}' in expectedPackagePolicyDeclaration.", null);
+                    }
+                }
+
+                foreach (var required in expectedPolicyProps)
+                {
+                    if (policyObj.Property(required) == null)
+                    {
+                        return (false, $"Missing required property '{required}' in expectedPackagePolicyDeclaration.", null);
+                    }
+                }
+
+                var pSchema = policyObj.Property("schemaVersion")!;
+                if (pSchema.Value.Type != JTokenType.String)
+                    return (false, "Policy 'schemaVersion' must be a String token.", null);
+
+                var pId = policyObj.Property("policyId")!;
+                if (pId.Value.Type != JTokenType.String)
+                    return (false, "Policy 'policyId' must be a String token.", null);
+
+                var pRev = policyObj.Property("revision")!;
+                if (pRev.Value.Type != JTokenType.String && pRev.Value.Type != JTokenType.Integer)
+                    return (false, "Policy 'revision' must be a String or Integer token.", null);
+
+                var pPkgs = policyObj.Property("admittedPackageIds")!;
+                if (pPkgs.Value.Type != JTokenType.Array)
+                    return (false, "Policy 'admittedPackageIds' must be an Array token.", null);
+
+                var pkgsArray = (JArray)pPkgs.Value;
+                var pkgList = new List<string>();
+                for (int i = 0; i < pkgsArray.Count; i++)
+                {
+                    if (pkgsArray[i].Type != JTokenType.String)
+                    {
+                        return (false, $"Element {i} in 'admittedPackageIds' must be a String token.", null);
+                    }
+                    pkgList.Add((string)pkgsArray[i]!);
+                }
+
+                config.expectedPackagePolicyDeclaration = new ExpectedPackagePolicyDeclaration
+                {
+                    schemaVersion = (string)pSchema.Value!,
+                    policyId = (string)pId.Value!,
+                    revision = pRev.Value.ToString(),
+                    admittedPackageIds = pkgList
+                };
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Property validation error: {ex.Message}", null);
+            }
+
+            return (true, string.Empty, config);
+        }
+    }
+
+    public static class ExecutableAdmissionHelper
+    {
+        public static string ComputeFileSha256(string filePath)
+        {
+            if (string.IsNullOrEmpty(filePath) || !File.Exists(filePath))
+            {
+                throw new FileNotFoundException($"File not found for hash calculation: '{filePath}'");
+            }
+            using (var sha = SHA256.Create())
+            using (var stream = File.Open(filePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+            {
+                byte[] hash = sha.ComputeHash(stream);
+                StringBuilder sb = new StringBuilder(hash.Length * 2);
+                for (int i = 0; i < hash.Length; i++)
+                {
+                    sb.Append(hash[i].ToString("X2"));
+                }
+                return sb.ToString();
+            }
+        }
+
+        public static (bool isValid, string error) VerifyAdmittedExecutable(string exePath, string expectedSha256)
+        {
+            if (string.IsNullOrWhiteSpace(exePath))
+            {
+                return (false, "Executable path cannot be null or empty.");
+            }
+            if (string.IsNullOrWhiteSpace(expectedSha256) || expectedSha256.Trim().Length != 64)
+            {
+                return (false, "Expected SHA256 must be a 64-character hex string.");
+            }
+            string normalizedPath;
+            try
+            {
+                normalizedPath = Path.GetFullPath(exePath.Trim());
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Invalid executable path: {ex.Message}");
+            }
+            if (!File.Exists(normalizedPath))
+            {
+                return (false, $"Admitted executable file does not exist at '{normalizedPath}'.");
+            }
+            string actualSha;
+            try
+            {
+                actualSha = ComputeFileSha256(normalizedPath);
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Failed to compute executable SHA256: {ex.Message}");
+            }
+            if (!string.Equals(actualSha, expectedSha256.Trim(), StringComparison.OrdinalIgnoreCase))
+            {
+                return (false, $"Executable SHA256 mismatch. Expected='{expectedSha256.ToUpperInvariant()}', Observed='{actualSha.ToUpperInvariant()}'.");
+            }
+            return (true, string.Empty);
+        }
+
+        public static (bool isValid, string error) VerifyProcessIdentity(
+            Process proc,
+            string expectedExePath,
+            string expectedSha256,
+            int expectedPid = 0,
+            string? expectedStartTimeUtc = null,
+            string expectedRole = "READ_ONLY")
+        {
+            if (proc == null)
+            {
+                return (false, "Process object is null.");
+            }
+            if (proc.HasExited)
+            {
+                return (false, "Process has already exited.");
+            }
+            int myPid = Process.GetCurrentProcess().Id;
+            if (proc.Id == myPid)
+            {
+                return (false, "Self-validation prohibited. Target PID cannot match simulator PID.");
+            }
+            if (expectedPid > 0 && proc.Id != expectedPid)
+            {
+                return (false, $"PID mismatch. Expected={expectedPid}, Observed={proc.Id}.");
+            }
+
+            string procStartTime;
+            try
+            {
+                procStartTime = proc.StartTime.ToUniversalTime().ToString("O");
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Failed to read process StartTime: {ex.Message}");
+            }
+            if (string.IsNullOrEmpty(procStartTime))
+            {
+                return (false, "Process StartTime is empty.");
+            }
+            if (!string.IsNullOrEmpty(expectedStartTimeUtc) && procStartTime != expectedStartTimeUtc)
+            {
+                return (false, $"Process StartTime mismatch. Expected={expectedStartTimeUtc}, Observed={procStartTime}.");
+            }
+
+            string mainModulePath;
+            try
+            {
+                mainModulePath = proc.MainModule?.FileName ?? "";
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Failed to query process MainModule: {ex.Message}");
+            }
+            if (string.IsNullOrWhiteSpace(mainModulePath))
+            {
+                return (false, "Process MainModule FileName is empty or inaccessible.");
+            }
+            string normalizedMain;
+            try
+            {
+                normalizedMain = Path.GetFullPath(mainModulePath.Trim());
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Failed to normalize process MainModule path: {ex.Message}");
+            }
+
+            string normalizedExpected;
+            try
+            {
+                normalizedExpected = Path.GetFullPath(expectedExePath.Trim());
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Failed to normalize expected executable path: {ex.Message}");
+            }
+
+            if (!string.Equals(normalizedMain, normalizedExpected, StringComparison.OrdinalIgnoreCase))
+            {
+                return (false, $"Process MainModule path mismatch. Expected='{normalizedExpected}', Observed='{normalizedMain}'.");
+            }
+
+            var exeCheck = VerifyAdmittedExecutable(normalizedMain, expectedSha256);
+            if (!exeCheck.isValid)
+            {
+                return (false, $"Process MainModule executable verification failed: {exeCheck.error}");
+            }
+
+            return (true, string.Empty);
+        }
+    }
+
+    public static class ValidatorResultExtensions
+    {
+        public static string ToRedactedJson(this ValidatorResult result)
+        {
+            if (result == null) return "{}";
+            var redacted = new
+            {
+                validatorTaskId = result.validatorTaskId,
+                capabilityNonce = "[REDACTED_PROTECTED_OPERATOR_CAPABILITY]",
+                channelSecretToken = "[REDACTED_PROTECTED_CHANNEL_SECRET]",
+                validatorProcessId = result.validatorProcessId,
+                validatorProcessStartTimeUtc = result.validatorProcessStartTimeUtc,
+                validatorExecutable = result.validatorExecutable,
+                authorityId = result.authorityId,
+                storeIncarnation = result.storeIncarnation,
+                baseLineage = result.baseLineage,
+                grantId = result.grantId,
+                workerGeneration = result.workerGeneration,
+                scopeId = result.scopeId,
+                targetMapIndex = result.targetMapIndex,
+                allowedMode = result.allowedMode,
+                manifestVersion = result.manifestVersion,
+                sealedResultId = result.sealedResultId,
+                resultEpoch = result.resultEpoch,
+                sealedManifestHash = result.sealedManifestHash,
+                sourceArtifactHash = result.sourceArtifactHash,
+                validatorResult = result.validatorResult,
+                actualContentProfileFingerprint = result.actualContentProfileFingerprint,
+                actualManifestHash = result.actualManifestHash,
+                stagedSha = result.stagedSha,
+                stagedFilePath = result.stagedFilePath,
+                validatedAtUtc = result.validatedAtUtc
+            };
+            return JsonConvert.SerializeObject(redacted, Newtonsoft.Json.Formatting.Indented);
+        }
+    }
+
+    #endregion
+}

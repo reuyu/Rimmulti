@@ -1,0 +1,24 @@
+﻿======================================================================
+WarEconomy Engine Gate05-R5 Normal Codec Verification Battery (Developer E1)
+Timestamp: 2026-10-08T08:57:16.2189205Z
+Target: ContentProfileProvider ADR-006B-v5 Typed Lossless Codec
+======================================================================
+Loaded Candidate DLL: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R5Codec\Harness\bin\Debug\net472\WarEconomy.WorkerBridge.PoC.dll
+Candidate DLL SHA256: 930B69D012F34BFD3BB50F97B86629BAEA082D201A3A81696549DF1450075AE8
+  JSON Length: 3301 bytes, SHA256: 866CA55158816F88614675F0325B43D1106A62613F5E6A453C410EE9DA89F431
+[PASS] TC01_RoundTrip_Canonical_Lossless: Serialize manifest -> deserialize -> re-serialize and compare exact SHA256 digests
+[PASS] TC02_Deterministic_Identical_Input: Two separate instances with identical values must produce identical JSON and SHA256
+[PASS] TC03_All_Eight_Def_Families_No_Sentinels: Verify all 8 Def families are present and free of legacy sentinel/delimiter strings
+[PASS] TC04_Floating_Point_Lossless_Precision: Verify float boundary and fractional values preserve exact precision across round-trip
+[PASS] TC05_Unicode_SpecialChars_Lossless: Verify Korean, Japanese, German umlauts, quotes, tabs, newlines round-trip without corruption
+[PASS] TC06_Null_Missing_Empty_Distinction: Verify null fields remain null in JSON and do not collapse to empty string or sentinel
+[PASS] TC07_Ordered_Collections_Preservation: Verify activeMods loadOrder, Verbs list order, and Hediff stages sequence are preserved
+[PASS] TC08_Stable_Sorting_Determinism: Verify Def family lists with unordered inputs sort deterministically by defName ordinal
+[PASS] TC09_Distinct_Manifests_Distinct_Digests: Changing a single scalar value must produce a distinct JSON and digest
+[PASS] TC10_Cache_Invalidation_Lifecycle: Verify InvalidateCache clears all cached properties and error state
+  Confirmed expected fail-closed rejection: SecurityException - ECall 메서드는 시스템 모듈에 패키지되어 있어야 합니다.
+[PASS] TC11_FailClosed_Unadmitted_Runtime_Rejection: ComputeActualContentProfileFingerprint throws when runtime DefDatabase uninitialized
+[PASS] TC12_Schema_Version_And_Capability_Flags: Verify MANIFEST_SCHEMA_VERSION is ADR-006B-v5 and required flags present
+======================================================================
+Total Tests: 12, Passed: 12, Failed: 0, Verdict: PASS
+======================================================================

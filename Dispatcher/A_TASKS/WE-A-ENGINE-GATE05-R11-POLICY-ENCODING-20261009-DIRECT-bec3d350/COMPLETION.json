@@ -1,0 +1,151 @@
+﻿{
+    "schema_version":  1,
+    "producer":  "A",
+    "report_kind":  "E1",
+    "dispatch_id":  "WE-A-ENGINE-GATE05-R11-POLICY-ENCODING-20261009-DIRECT-bec3d350",
+    "wp_id":  "WP_ENGINE_GATE05_R11_POLICY_ENCODING",
+    "wp_revision":  "GATE05-R11-POLICY-ENCODING",
+    "result_id":  "WE-A-ENGINE-GATE05-R11-POLICY-ENCODING-RESULT-01",
+    "status":  "COMPLETED",
+    "completed_at":  "2026-10-08T21:26:43.205706Z",
+    "summary":  "WP_ENGINE_GATE05_R11_POLICY_ENCODING / GATE05-R11-POLICY-ENCODING single technical objective POLICY_ENCODING implementation completed and developer E1 verification recorded. Successfully implemented concrete typed versioned canonical package policy declaration (ExpectedPackagePolicyDeclaration with schemaVersion constant WE-PACKAGE-POLICY-V1, policyId, revision, admittedPackageIds), deterministic lossless culture-independent JSON escaping (EscapeJsonString) preserving original spelling, whitespace, Unicode, punctuation of opaque identifiers without Trim, pure canonical compact JSON serialization/deserialization (SerializePackagePolicy / DeserializePackagePolicy), SHA-256 uppercase hex digest calculation of canonical JSON bytes, overload parity routing through the canonical declaration, removed policy-specific Trim in CanonicalNormalize, updated content contract version to ADR-006B-v5-R11 and capability flag to GATE05_R11_POLICY_ENCODING. Preserved R10 scoped PASS, R9 version meaning repair (null modVersion preserved across Invariant, en-US, de-DE), child fail-closed observation, composite key uniqueness, Def family canonical sorting, and immutable baselines (WorkerBridge.cs, WorkerBridge.csproj, EngineHostCensus.cs prefix 72,547 bytes SHA F3C4F865...). Executed pure positive normal managed runner controls (14/14 PASS) with 0 configuration lifecycle calls, 0 provider compute calls, and 0 negative/adverse tests. Bound PE MVIDs for Debug (e6c6f6fd-...) and Release (35dfe68f-...) candidates. Steam installed DLL incident remains UNKNOWN OPEN INCIDENT. Full Gate05 and Foundation remain HOLD pending independent Sol QA review and Master governance disposition.",
+    "e1_verdict":  "SCOPED_POSITIVE_NORMAL_PASS",
+    "limitations":  [
+                        "STATIC_MANAGED_NORMAL_EVIDENCE_ONLY: Verification conducted strictly via isolated positive pure normal managed runner controls (14/14 PASS) with Master-approved frozen dependencies.",
+                        "NATIVE_PROMOTION_FULL_E2_NOT_RELEASED: In-engine, game runtime, native execution, and operator promotion were strictly prohibited and not executed.",
+                        "INSTALLED_DLL_INCIDENT_OPEN: Steam installed DLL (BB3B52...) discrepancy against archive baseline (2D64FF...) remains an UNKNOWN OPEN INCIDENT, preserved unmodified per Master policy.",
+                        "ORDER_CACHE_PATCHSETTINGS_OPERATOR_SEPARATE: Physical array load-order validation, policy cache generation, patch/settings dynamic evaluation, and real operator provenance remain separate OPEN gates.",
+                        "NO_SELF_CLOSURE: Developer A does not self-declare candidate release, E2 verification, or defect closure. Dedicated Server remains final Domain Authority; Master governs release."
+                    ],
+    "artifacts":  [
+                      {
+                          "role":  "implementation_report",
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_EngineHost_Content_Codec_Gate05_R11.md",
+                          "sha256":  "1D1ED7F36046E534D8ED84029245ACDD3031E63057FBCA1693E4780AF0DDA0B7",
+                          "size":  10662
+                      },
+                      {
+                          "role":  "release_manifest",
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R11_POLICY_ENCODING.json",
+                          "sha256":  "290507994A0E13A3A8F04F77637F240F3C7F55E63308E387B216831219AA8F80",
+                          "size":  5733
+                      },
+                      {
+                          "role":  "harness",
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R11PolicyEncoding\\Harness\\Program.cs",
+                          "sha256":  "65254AC7ADB5A382E93A2C7DD4EFCF6D2AB91A70810ABD69D9094EF0EA6A9803",
+                          "size":  33970
+                      },
+                      {
+                          "role":  "harness_project",
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R11PolicyEncoding\\Harness\\Gate05R11PolicyRunner.csproj",
+                          "sha256":  "96D99AC3313C7C3F92C4297EC37866EF475F5DB03C0B3BABCDCD3F735642117C",
+                          "size":  1617
+                      },
+                      {
+                          "role":  "results",
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R11PolicyEncoding\\results.json",
+                          "sha256":  "863F5463607643132DBAC5CDFBBB0197900874515D7198F3676F6281D50BEFE2",
+                          "size":  6306
+                      },
+                      {
+                          "role":  "raw_evidence",
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R11PolicyEncoding\\raw_console.txt",
+                          "sha256":  "37B23ED1B3F62ED7E43A49676DEC66B8E9D5F80EA8016288520CFD91F9C00423",
+                          "size":  5738
+                      },
+                      {
+                          "role":  "candidate_binary",
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+                          "sha256":  "133348C3FBC20215B9C4E0E9CA25D731781FCE9AD8CBE91F5A145BDB3620F98D",
+                          "size":  236544,
+                          "mvid":  "e6c6f6fd-2915-4493-8ef9-dc5d87de1c6b"
+                      },
+                      {
+                          "role":  "pdb",
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+                          "sha256":  "BA3027651BA59976BBEC6E1D2454AA0A2F5D964862809618AD80C9F2C6647BDE",
+                          "size":  59468
+                      },
+                      {
+                          "role":  "alternate_binary",
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+                          "sha256":  "A550896516C02F45F5CB4C30D39E35BC6F7ECABF07FBB595C5FCCE5D9EA66101",
+                          "size":  225280,
+                          "mvid":  "35dfe68f-6a6f-44cc-a648-7c8153f6a2ad"
+                      },
+                      {
+                          "role":  "alternate_pdb",
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+                          "sha256":  "B20543F66D0AE5068D43C5F7C6E6D192963A831AC87D570491488709DDF716C7",
+                          "size":  43548
+                      },
+                      {
+                          "role":  "deployed_assembly",
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+                          "sha256":  "133348C3FBC20215B9C4E0E9CA25D731781FCE9AD8CBE91F5A145BDB3620F98D",
+                          "size":  236544,
+                          "mvid":  "e6c6f6fd-2915-4493-8ef9-dc5d87de1c6b"
+                      },
+                      {
+                          "role":  "deployed_pdb",
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+                          "sha256":  "BA3027651BA59976BBEC6E1D2454AA0A2F5D964862809618AD80C9F2C6647BDE",
+                          "size":  59468
+                      },
+                      {
+                          "role":  "source",
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+                          "sha256":  "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+                          "size":  156431
+                      },
+                      {
+                          "role":  "source_census",
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+                          "sha256":  "FA3E1EF5BB9E1B5EB94D001EC6A7B7B239C12A94F3105A388E553CC62BA5E2CA",
+                          "size":  155483
+                      },
+                      {
+                          "role":  "source_csproj",
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+                          "sha256":  "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+                          "size":  1774
+                      },
+                      {
+                          "role":  "pre_run_manifest",
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R11PolicyEncoding\\CANDIDATE_PRE_RUN_MANIFEST.json",
+                          "sha256":  "CD3549DAE45EAC78DBE56579DB1EC003DF59FBF371DE11AFAD6EF6432D5E10B6",
+                          "size":  4864
+                      },
+                      {
+                          "role":  "engine_freeze_before",
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R11PolicyEncoding\\ENGINE_FREEZE_BEFORE.json",
+                          "sha256":  "550B13AFF5173C75C35B6F1ED11683B9CDFA3223BE8010080B90052FDC9ED9ED",
+                          "size":  3072
+                      },
+                      {
+                          "role":  "engine_freeze_after",
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R11PolicyEncoding\\ENGINE_FREEZE_AFTER.json",
+                          "sha256":  "2855377ADE82D3C9772C1EC3846BC37B1FC8D554B84CFD8CFEEA4291574916AB",
+                          "size":  3072
+                      },
+                      {
+                          "role":  "work_log",
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R11-POLICY-ENCODING-20261009-DIRECT-bec3d350\\A_WORK_LOG.md",
+                          "sha256":  "213FB80146A69A661F2BC16F49E66E8036475D200D6D4AB9B1F9B5E04AF7A5C1",
+                          "size":  6931
+                      },
+                      {
+                          "role":  "recovery_ack",
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R11-POLICY-ENCODING-20261009-DIRECT-bec3d350\\A_RECOVERY_ACK.md",
+                          "sha256":  "F38114FEAB7BDB98033A4D301E8675D8121AD73C5FF149C8E2CBE4197E98A403",
+                          "size":  5396
+                      },
+                      {
+                          "role":  "ack_json",
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R11-POLICY-ENCODING-20261009-DIRECT-bec3d350\\ACK.json",
+                          "sha256":  "7A66B111F3ED336A4A5D4644982F2364FE7E3DEA20B9113F510CE3FCEEA05C40",
+                          "size":  2126
+                      }
+                  ]
+}

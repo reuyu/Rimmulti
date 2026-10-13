@@ -1,0 +1,95 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a",
+  "wp_id": "WP_ENGINE_GATE05_R29_STARTUP_PAIR",
+  "wp_revision": "GATE05-R29-STARTUP-PAIR",
+  "envelope": 32,
+  "generated_at": "2026-10-12T00:29:07.518722+00:00",
+  "candidate_status": "BUILT_AND_VERIFIED",
+  "compiler_metadata": {
+    "toolset": "Microsoft (R) Visual C# Compiler version 4.8.9232.0",
+    "target_framework": ".NETFramework,Version=v4.7.2",
+    "configuration_debug": {
+      "platform": "AnyCPU",
+      "debug_symbols": true,
+      "debug_type": "full",
+      "optimize": false,
+      "constants": [
+        "DEBUG",
+        "TRACE"
+      ]
+    },
+    "configuration_release": {
+      "platform": "AnyCPU",
+      "debug_symbols": true,
+      "debug_type": "pdbonly",
+      "optimize": true,
+      "constants": [
+        "TRACE"
+      ]
+    }
+  },
+  "debug_candidate": {
+    "assembly_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "relative_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "size_bytes": 322560,
+    "sha256": "084C58CCD770AF90D2F2AE162FF5456C8CD2F0DB3167AE13394635BF8E567E7A",
+    "mvid": "5c410658-e435-4ae4-8aa3-d074fbcf4f5d",
+    "codeview_signature": "RSDS",
+    "codeview_guid": "4b83c0af-9116-4158-b47e-a4d8a1581cf5",
+    "codeview_age": 1,
+    "codeview_pdb_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_size_bytes": 77724,
+    "pdb_sha256": "7E76C8CEE38F98FB5B33639AAFB1AA9B4321D563DD483C35A1469A32229C1F3F"
+  },
+  "release_candidate": {
+    "assembly_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "relative_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "size_bytes": 305152,
+    "sha256": "4B4FBD87DDF6B4B39D419F5FDF28428F1E0869CA208E159094409A8D1102463E",
+    "mvid": "3bf83c4d-c38b-43b4-8f9c-520e3e277200",
+    "codeview_signature": "RSDS",
+    "codeview_guid": "bddd0aa3-ed8b-4253-957a-ea18011d4f36",
+    "codeview_age": 1,
+    "codeview_pdb_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_size_bytes": 56876,
+    "pdb_sha256": "EE705B6F654BEF8A605661AD3CBFBB03541D0CCB244C24AC1323C2E3D68EED50"
+  },
+  "mod_1_6_assembly_synchronized": {
+    "assembly_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+    "relative_path": "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+    "size_bytes": 322560,
+    "sha256": "084C58CCD770AF90D2F2AE162FF5456C8CD2F0DB3167AE13394635BF8E567E7A",
+    "mvid": "5c410658-e435-4ae4-8aa3-d074fbcf4f5d",
+    "pdb_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_size_bytes": 77724,
+    "pdb_sha256": "7E76C8CEE38F98FB5B33639AAFB1AA9B4321D563DD483C35A1469A32229C1F3F"
+  },
+  "new_source_publisher": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+    "size_bytes": 10442,
+    "sha256": "0204609D1D9D8A697B1A0B88537419D78B9E506558C771CA3EDD4C50FD49D470"
+  },
+  "source_fidelity": {
+    "target_source_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+    "size_bytes": 265416,
+    "sha256": "55441CE93DF32F5E5940D99A4A9CA8449B3F7839840CA3A3832C9DB31396FBDE",
+    "authorized_spans_count": 6,
+    "outside_segments_count": 7,
+    "outside_bytes_verified_equal": true,
+    "total_outside_bytes": 234431
+  },
+  "byte_fixed_files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "size_bytes": 170135,
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "size_bytes": 1774,
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052"
+    }
+  ]
+}

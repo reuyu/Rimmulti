@@ -1,0 +1,65 @@
+{
+  "at": "2026-10-13T12:39:10.529450+09:00",
+  "delivery_id": "SOL-GATE05-R33-RESOURCE-COMMIT-INDEPENDENT-S1-20261013-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R33_RESOURCE_COMMIT_INDEPENDENT",
+  "wp_revision": "S1",
+  "exact_message": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R33_INDEPENDENT_S1_EXACT_MESSAGE_20261013.txt",
+    "sha256": "14A0DBF4DD68DFCA31B38B2624284BC50E553BBB48430CB4ECE7CF8C65BC219C",
+    "bytes": 3906
+  },
+  "send_tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R33_INDEPENDENT_S1_SEND_TOOL_20261013.json",
+    "sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+    "bytes": 149
+  },
+  "fresh_idle": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R33_NEW_QA_FRESH_IDLE_SNAPSHOT_20261013.json",
+    "sha256": "EF2E568BE393EC295CABCC41D3D8194FB53C9CC86357F586A0E537C55001A0BC",
+    "bytes": 758
+  },
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:25",
+    "revision": 25,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a13357-15d0-70c3-9608-315f02ba1c32",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791862707,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "new_actual_turn_id": "01a13357-15d0-70c3-9608-315f02ba1c32",
+  "one_submit": true,
+  "ACK": "PENDING",
+  "release_supplement": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R33_INDEPENDENT_QA_RELEASE_SUPPLEMENT_20261013.json",
+    "sha256": "D144768BE14438AC8EDFB4EDC92F574503A78D1289D46A8392954F9649B40A67",
+    "bytes": 1842
+  },
+  "selected_SHA": "EC01A3B368E385B2EAA35064BBD5EFC3971FCBED7609ADF3CEE8490146241764",
+  "selected_MVID": "adb6cbc8-c4f9-4436-b137-d550d683f493",
+  "protected_paths": 17099,
+  "frozen_files": 71,
+  "old_PASS_inherited": false,
+  "Foundation": "HOLD",
+  "native_E2": "NOT_RELEASED",
+  "same_hourly_monitor": "PAUSED",
+  "guard_run": "MASTER-R33-CONTINUE-20261013-02",
+  "guard_session": 91758
+}

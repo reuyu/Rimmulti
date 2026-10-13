@@ -1,0 +1,13 @@
+{
+  "run_id": "MASTER-SOL-R19-ACK-20261010-01",
+  "guard_session": 65945,
+  "guard_pid": 29472,
+  "actual_release_tool": {
+    "chunk_id": "379c35",
+    "wall_time_seconds": 0.0000358,
+    "exit_code": 0,
+    "original_token_count": 103,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-SOL-R19-ACK-20261010-01\", \"pid\": 29472, \"locked_at\": \"2026-10-10T17:43:21.476506+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-10T17:44:12.785541+09:00\", \"renewal_count\": 1, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-10T17:44:32.519911+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "all_child_commands_completed_before_release": true
+}

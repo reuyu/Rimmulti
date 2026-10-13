@@ -1,0 +1,70 @@
+{
+  "at": "2026-10-13T19:01:48.811026+09:00",
+  "delivery_id": "SOL-GATE05-R34-ROLLBACK-INDEPENDENT-S1-20261013-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R34_ROLLBACK_INDEPENDENT",
+  "wp_revision": "S1",
+  "exact_message": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R34_INDEPENDENT_S1_EXACT_MESSAGE_20261013.txt",
+    "sha256": "59DAD28F6C817F98FA67FF77343015CB16A59A51B1764EB2091784CCF668E3F9",
+    "bytes": 3937
+  },
+  "tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R34_INDEPENDENT_S1_SEND_TOOL_20261013.json",
+    "sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+    "bytes": 149
+  },
+  "fresh_idle": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R34_SOL_FRESH_IDLE_20261013.json",
+    "sha256": "74AC242976EF4E08455FFB970119AB952B10929214468157EC2621FB0ABC1EDF",
+    "bytes": 759
+  },
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:28",
+    "revision": 28,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a134b5-45ec-7781-b030-5c0b89158728",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791885657,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ace0160a81887d0b65612b2a6796add",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016ace0160a81887d0b65612b2a6796add",
+      "turnId": "01a134b5-45ec-7781-b030-5c0b89158728",
+      "phase": "commentary",
+      "text": "R34의 새 승인 범위로 시작하겠습니다. WP와 최신 마스터 기록, 고정 후보를 확인하고 초기 ACK를 보고한 뒤, 정적 rollback 리뷰와 두 문화권의 새 정상 검증을 수행하겠습니다."
+    },
+    "latestToolMarkerId": "exec-6444ff57-8608-4972-a999-02738e73af06",
+    "latestToolMarker": {
+      "id": "exec-6444ff57-8608-4972-a999-02738e73af06",
+      "turnId": "01a134b5-45ec-7781-b030-5c0b89158728",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "one_submit": true,
+  "ACK": "PENDING",
+  "selected_SHA": "8091F4414A29EF5AE224BA67A82A5F7B866C230EEFFC33D78486C28AD3297029",
+  "selected_MVID": "7b08d3f4-27de-4685-b61b-8a312708a496",
+  "frozen75": true,
+  "protected_paths": 18163,
+  "Master_candidate_execution": 0,
+  "Foundation": "HOLD",
+  "nativeE2": "NOT_RELEASED",
+  "same_hourly": "ACTUAL_PAUSED",
+  "guard_run": "MASTER-R34-HOURLY-20261013-01",
+  "guard_session": 97639
+}

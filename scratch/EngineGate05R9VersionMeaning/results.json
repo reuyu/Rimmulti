@@ -1,0 +1,108 @@
+﻿{
+  "run_id": "RUN_GATE05_R9_VERSION_MEANING_20261009_01",
+  "timestamp": "2026-10-08T17:35:39.1330478Z",
+  "candidate_dll": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R9VersionMeaning\\Harness\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+  "candidate_sha256": "02815FF8A20CB971AD716BBA75417E5FFAD9FADEB358078A785253124FEF4BF5",
+  "total_tests": 16,
+  "passed": 16,
+  "failed": 0,
+  "verdict": "PASS",
+  "results": [
+    {
+      "test_id": "TC01_Lossless_Roundtrip",
+      "description": "Canonical JSON serialization and deserialization preserves all fields losslessly",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC02_Canonical_Determinism",
+      "description": "Serializing the same manifest multiple times produces byte-identical results",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC03_DefFamilies_8_Count_And_Integrity",
+      "description": "Manifest correctly projects and contains exactly 8 supported Def families",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC04_Floating_Point_Lossless_Precision",
+      "description": "Verify floats serialize and roundtrip without floating point drift or cultural decimal comma",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC05_Unicode_And_Cultural_Invariance",
+      "description": "Verify non-ASCII strings and culture switching produce identical output",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC06_Null_And_Empty_Distinction",
+      "description": "Verify empty list vs null list distinction is maintained",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC07_Verbs_Stages_Comps_Order_And_Multiplicity",
+      "description": "Verify verbs, stages, and comps maintain author order and multiplicity without deduplication or sorting",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC08_Stable_Sorting_Determinism",
+      "description": "Verify Def family lists sort deterministically by defName ordinal via CanonicalNormalize",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC09_Unordered_Input_Normalization_Equivalence",
+      "description": "Manifest with shuffled unordered collections produces exact identical JSON and digest as pre-sorted instance",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC10_ValidateContract_Positive_Compliant",
+      "description": "ValidateContract returns true with empty failureReason on representative compliant manifest",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC11_TryAdmitManifest_Positive_Admission",
+      "description": "TryAdmitManifest successfully validates and admits compliant manifest producing non-empty canonical JSON",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC12_Distinct_Manifests_Distinct_Digests",
+      "description": "Changing a single scalar value must produce a distinct JSON and digest",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC13_Schema_Contract_Versions_And_Capability_Flags",
+      "description": "Verify MANIFEST_SCHEMA_VERSION is ADR-006B-v5, CONTENT_CONTRACT_VERSION is ADR-006B-v5-R9, and GATE05_R9_VERSION_MEANING capability flag is present",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC14_Deterministic_Tie_Breaking",
+      "description": "Verify assemblies and stats sort deterministically using secondary tie-breaking keys",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC15_Typed_Patch_And_Settings_Disposition",
+      "description": "Verify ModPatchSettingsDispositionRecord and activeMods patch/settings dispositions are properly validated and serialized",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC16_Distinct_Version_Meaning_And_Optional_Unknown_Preservation",
+      "description": "Verify compatibilityVersionRange and modVersion are distinct; optional unknown modVersion (null) remains null after CanonicalNormalize and both Serialize(false) and Serialize(true) across cultures",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    }
+  ]
+}

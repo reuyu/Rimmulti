@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-13T17:53:45.799461+09:00",
+  "operation_id": "WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c",
+  "recipient": "A",
+  "status": "PRE_SUBMISSION_INTENT_NO_INPUT_YET",
+  "guard_run": "MASTER-R33-COMPLETION-20261013-01",
+  "guard_session": 39149,
+  "exact_message": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c\\UI_MESSAGE.txt",
+    "sha256": "44E939D817939D1CB34C05E3226B607A8523672B865CA1926B3D9C40ED8B5C1A",
+    "bytes": 717
+  },
+  "window_id": 4458672,
+  "conversation": "WarEconomy 컨텍스트 복구 및 수행",
+  "fresh_idle_ui": "R33 completed response, empty Message input/disabled Send, no Working/Cancel observed",
+  "delivery_status": "NOT_SENT"
+}

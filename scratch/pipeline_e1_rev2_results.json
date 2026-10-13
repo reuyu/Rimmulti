@@ -1,0 +1,164 @@
+{
+  "WorkOrder": "WP-PROD-TRANSACTION-PIPELINE-01-REV2",
+  "TimestampUtc": "2026-10-02T16:09:49.1025084Z",
+  "OverallSuccess": true,
+  "TotalTests": 22,
+  "PassedTests": 22,
+  "FailedTests": 0,
+  "Results": [
+    {
+      "Id": 1,
+      "Name": "FingerprintCollisionMatrix",
+      "Success": true,
+      "Details": "Matrix tested 17 adversarial inputs with 0 collisions. Canonical key sorting verified.",
+      "DurationMs": 36
+    },
+    {
+      "Id": 2,
+      "Name": "MutableRequestImmunity",
+      "Success": true,
+      "Details": "Admitted command executed with 100% immunity to post-enqueue caller mutations.",
+      "DurationMs": 98
+    },
+    {
+      "Id": 3,
+      "Name": "ExactRetryAndCollision",
+      "Success": true,
+      "Details": "Exact retry returned idempotent ALREADY_COMMITTED; changed envelope rejected with COLLISION_REJECTED.",
+      "DurationMs": 36
+    },
+    {
+      "Id": 4,
+      "Name": "MultiProcessRevisionRace",
+      "Success": true,
+      "Details": "25 concurrent callers competed on rev 0: exactly 1 COMMITTED, 24 rejected with STALE_REVISION.",
+      "DurationMs": 1116
+    },
+    {
+      "Id": 5,
+      "Name": "MultiProcessSameIdRace",
+      "Success": true,
+      "Details": "12 simultaneous submissions of same key: exactly 1 initial commit, 11 idempotent acks. DB contains exactly 1 record, receipt, and event.",
+      "DurationMs": 146
+    },
+    {
+      "Id": 6,
+      "Name": "TerminalRecordImmutability",
+      "Success": true,
+      "Details": "DB triggers trg_operation_records_no_update and trg_operation_records_no_delete successfully blocked UPDATE and DELETE.",
+      "DurationMs": 36
+    },
+    {
+      "Id": 7,
+      "Name": "IncarnationRotationToctouRace",
+      "Success": true,
+      "Details": "In-transaction StoreIncarnation fence caught post-admission rotation (522d79a930474a119eff9f5d684b17ba -> 7378b57e60ef407c970a902c12e4aefb) and rejected with INCARNATION_MISMATCH.",
+      "DurationMs": 32
+    },
+    {
+      "Id": 8,
+      "Name": "OverloadBoundedAdmission",
+      "Success": true,
+      "Details": "Overload test: 1000 requests processed with bounded capacity (50). Successfully returned 944 STORAGE_BUSY_RETRYABLE backpressure rejections without deadlock or crash.",
+      "DurationMs": 874
+    },
+    {
+      "Id": 9,
+      "Name": "SafeShutdownQueueDrain",
+      "Success": true,
+      "Details": "Shutdown cleanly completed all 50 in-flight requests and safely closed admission.",
+      "DurationMs": 783
+    },
+    {
+      "Id": 10,
+      "Name": "StorageErrorClassification",
+      "Success": true,
+      "Details": "True revision mismatch typed as STALE_REVISION; SQLite constraint violation preserved as STORAGE_FAILURE / constraint exception.",
+      "DurationMs": 29
+    },
+    {
+      "Id": 11,
+      "Name": "SameTransactionEventAppendAtomicity",
+      "Success": true,
+      "Details": "Publication event appended atomically in same transaction on commit; 0 events appended on failure.",
+      "DurationMs": 34
+    },
+    {
+      "Id": 12,
+      "Name": "PerStreamSeqMonotonicity",
+      "Success": true,
+      "Details": "Verified 50 sequential events in stream with strictly monotonic sequence numbers (1 to 50) and zero gaps.",
+      "DurationMs": 275
+    },
+    {
+      "Id": 13,
+      "Name": "EventReadAfterOrdering",
+      "Success": true,
+      "Details": "ReadAfter API returned strictly ordered ascending sequence slices with correct pagination.",
+      "DurationMs": 37
+    },
+    {
+      "Id": 14,
+      "Name": "FreshV3Startup",
+      "Success": true,
+      "Details": "Fresh startup successfully created Schema V3 (user_version=3, application_id=0x57415245, PIPELINE_READY=true).",
+      "DurationMs": 31
+    },
+    {
+      "Id": 15,
+      "Name": "LegacySchemaV1V2FailClosed",
+      "Success": true,
+      "Details": "Legacy V2 database startup failed closed with LEGACY_SCHEMA_REQUIRES_OFFLINE_MIGRATION_OR_RESET; zero bytes deleted.",
+      "DurationMs": 188
+    },
+    {
+      "Id": 16,
+      "Name": "ForeignDatabaseRejection",
+      "Success": true,
+      "Details": "Foreign database with non-WARE application_id rejected with FOREIGN_DATABASE_REJECTED before adoption.",
+      "DurationMs": 38
+    },
+    {
+      "Id": 17,
+      "Name": "MalformedV3SchemaRejection",
+      "Success": true,
+      "Details": "Schema validator caught missing immutability trigger and rejected startup.",
+      "DurationMs": 119
+    },
+    {
+      "Id": 18,
+      "Name": "FailingValidationPreservesDatabase",
+      "Success": true,
+      "Details": "Failed validation preserved database bytes completely unchanged.",
+      "DurationMs": 49
+    },
+    {
+      "Id": 19,
+      "Name": "EveryConnectionWalAndFull",
+      "Success": true,
+      "Details": "Verified 5 connections enforce PRAGMA journal_mode=WAL and PRAGMA synchronous=FULL.",
+      "DurationMs": 29
+    },
+    {
+      "Id": 20,
+      "Name": "ReleaseBinaryDoesNotExposeTestCli",
+      "Success": true,
+      "Details": "Verified WarEconomy.Server assembly contains zero destructive test batteries, crash workers, or test CLI controls.",
+      "DurationMs": 2
+    },
+    {
+      "Id": 21,
+      "Name": "GameplayDispatcherCannotInvokeProbe",
+      "Success": true,
+      "Details": "Gameplay network invocation unconditionally rejected with: ACCESS_DENIED: Operation 'PIPELINE_PROBE_CAS' is an internal administrative probe and cannot be invoked over gameplay transport 'TcpNetworkPacket'.",
+      "DurationMs": 27
+    },
+    {
+      "Id": 22,
+      "Name": "NoGameplayMaterialMutation",
+      "Success": true,
+      "Details": "Pipeline operates exclusively on ProbeScopeId and ProbeRevision. Zero material/Settlement/EntityId/Trade/Tax/Tactical tables touched.",
+      "DurationMs": 0
+    }
+  ]
+}

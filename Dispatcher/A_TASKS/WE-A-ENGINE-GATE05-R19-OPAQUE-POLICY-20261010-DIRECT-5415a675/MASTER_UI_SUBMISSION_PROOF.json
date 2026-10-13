@@ -1,0 +1,17 @@
+{
+  "observed_at": "2026-10-10T16:23:14.171197+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R19-OPAQUE-POLICY-20261010-DIRECT-5415a675",
+  "message": "Master 승인 R19입니다. C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R19-OPAQUE-POLICY-20261010-DIRECT-5415a675\\INSTRUCTIONS.md 전체와 WP/release를 읽고 진행하세요. 수정은 snapshot 정책 ID/revision의 Trim 제거 2줄뿐이며 나머지 Worker bytes/Census/csproj/runtime7 고정. 새 정상 PURE 검증·새 후보/증거·지정 ACK/COMPLETION 기록. Bootstrap/native/Process/global state/부정 프로브 금지.",
+  "actual_new_message_matches": true,
+  "composer_cleared": true,
+  "one_send_action": true,
+  "working_cancel_observed": true,
+  "actual_submission_tool": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R19-OPAQUE-POLICY-20261010-DIRECT-5415a675\\MASTER_UI_SEND_TOOL.json",
+  "actual_submission_tool_sha256": "92F978467D2F45CC98069253E98A5F8D291DDEE51469A224D523FEDF592B5641",
+  "postsubmit_observation": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R19-OPAQUE-POLICY-20261010-DIRECT-5415a675\\MASTER_UI_SUBMITTED_VERIFIED_TOOL.json",
+  "postsubmit_sha256": "2C7B9C9AB59BCC4B7FB57B90212AF20BAF81FEBCC72C2511800CC2EF263C029D",
+  "predraft_actualidle": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R19-OPAQUE-POLICY-20261010-DIRECT-5415a675\\MASTER_UI_IDLE_CONTROLS_TOOL.json",
+  "draft_actualexact": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R19-OPAQUE-POLICY-20261010-DIRECT-5415a675\\MASTER_UI_DRAFT_VERIFIED_TOOL.json",
+  "focus_qualification": "UIA reportedRootWebArea;visualeditablecaret thenexactMessageInputValue verified beforeoneSend;no separate focus claim",
+  "geometry_recovery": "Initialclickwithout screenshotgeometry failed;freshscreenshot/click thenexactdraft,neversecondSend"
+}

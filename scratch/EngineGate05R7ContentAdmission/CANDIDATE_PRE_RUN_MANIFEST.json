@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "run_id": "RUN_GATE05_R7_CONTENT_ADMISSION_20261008_01",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-20261008-DIRECT-8524bf02",
+  "wp_id": "WP_ENGINE_GATE05_R7_CONTENT_ADMISSION",
+  "wp_revision": "GATE05-R7-CONTENT-ADMISSION",
+  "created_at": "2026-10-08T13:05:43.527732+00:00",
+  "selected_candidate": {
+    "role": "candidate_binary",
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "sha256": "223B4055C0AFAA6F30488C9787AE6F68D65D62F395CFCA722EDA83674975CD2A",
+    "size": 220672,
+    "mvid": "bdf94567-be4d-4270-9a70-dbf2df9b5b4a",
+    "matching_pdb": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "146C5667DF4BB3C4C3F48328FD054A6C4BC87D22FEB5F010534A4428C8DA1579",
+      "size": 54604
+    }
+  },
+  "alternate_release_candidate": {
+    "role": "alternate_binary",
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "sha256": "E9E409E95E225552B59D34FA1DE9D5AB021764988F1FADD25FDC11235CF87F35",
+    "size": 209920,
+    "mvid": "db8d92c1-a284-4e67-8bcc-708e279944c1",
+    "matching_pdb": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "07C79C3C651EEB32BC0EFE56F552E90F414ED7F3AFFBDCCD8541B5CA49980188",
+      "size": 40312
+    }
+  },
+  "deployed_mod_assemblies": {
+    "dll_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "223B4055C0AFAA6F30488C9787AE6F68D65D62F395CFCA722EDA83674975CD2A",
+    "dll_size": 220672,
+    "pdb_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "146C5667DF4BB3C4C3F48328FD054A6C4BC87D22FEB5F010534A4428C8DA1579",
+    "pdb_size": 54604
+  },
+  "sources": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+      "size": 156431
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "D980225D8DBE04F9CAE95AD100DCF6640252A24A14599346E3B7F81CA8B9AF98",
+      "size": 124817,
+      "prefix_marker": "    public static class ContentProfileProvider",
+      "prefix_length": 72547,
+      "prefix_sha256": "F3C4F865F1E2A898BF240A2D096195870D77A52408CF2D93664FE15092A2A887"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "size": 1774
+    }
+  ],
+  "content_schema_profile": {
+    "manifest_schema_version": "ADR-006B-v5",
+    "content_contract_version": "ADR-006B-v5-R7",
+    "supported_coverage_profile": "POC_SUPPORTED_CORE_DLC_ASSEMBLIES_V5",
+    "mod_patch_support_status": "COUNT_ONLY_EXPLICIT_EXCLUSION_RAW_PATCHES_SETTINGS",
+    "capability_flags": [
+      "TACTICAL_PROBE_V4",
+      "READ_ONLY",
+      "SIMULATION",
+      "GATE05_R7_CONTENT_ADMISSION",
+      "ADR006B_LOSSLESS_CANONICAL_CONTENT_V5"
+    ]
+  },
+  "runtime_candidate_proof": "NOT_OBSERVED (Positive pure normal DTO/helper controls executed under Developer E1; game/native execution prohibited per WP_ENGINE_GATE05_R7_CONTENT_ADMISSION)",
+  "tooling_environment": {
+    "dotnet_sdk": "10.0.201",
+    "target_framework": "net472",
+    "build_command_debug": "dotnet build scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj -c Debug",
+    "build_command_release": "dotnet build scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj -c Release"
+  }
+}

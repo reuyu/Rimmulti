@@ -1,0 +1,110 @@
+﻿{
+    "schema_version":  1,
+    "dispatch_id":  "WE-A-ENGINE-GATE05-R1-20261008-DIRECT-971a4780",
+    "wp_id":  "WP_ENGINE_GATE05_R1",
+    "wp_revision":  "GATE05-R1",
+    "result_id":  "WE-A-ENGINE-GATE05-R1-RESULT-20261008-01",
+    "producer":  "A",
+    "status":  "COMPLETED",
+    "report_kind":  "E1",
+    "completed_at":  "2026-10-08T01:30:19+09:00",
+    "e1_verdict":  "PASS",
+    "summary":  "Completed Engine Gate05-R1 repair addressing G05-S01 (validator process registration, capability nonce redaction and leak elimination, protected task-bound channel, caller receipt rejection) and G05-S02 (expanded 8-family Def census with deep gameplay fields, running mod metadata and assembly SHA/MVID inventory, fail-closed profile computation without UNKNOWN_PROFILE, and lifecycle-bound cache invalidation). Preserved historical Gate05 baseline (19 files bit-identical) and Pipeline REV6-R1 candidate (17 artifacts bit-identical). Tested via dedicated regression harness Gate05R1TestRunner (11/11 PASS). Native RimWorld execution against candidate reported as UNTESTED / BLOCKED due to frozen installed DLL boundary.",
+    "limitations":  [
+                        "Native RimWorld process execution against the new candidate DLL was NOT performed (marked UNTESTED / BLOCKED). Modifying the frozen installed DLL (SHA 2D64FF9C...) in Steam directory is strictly prohibited by Master governance rules, and RimWorld hardcodes its mod directory to RimWorld\\Mods on Windows.",
+                        "This submission represents E1 producer verification only. Per Master rules, E1 PASS does not replace independent E2 verification by Sol / QA.",
+                        "Engine Host remains a bounded simulation proposal producer; final domain authority remains with the Dedicated Server."
+                    ],
+    "artifacts":  [
+                      {
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_EngineHost_Semantic_Authority_Gate_05_R1.md",
+                          "sha256":  "CF91F79AD025483205254EA8F3248A39D514448BBBFF221E7D40BCC1B79CF465",
+                          "role":  "implementation_report"
+                      },
+                      {
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R1.json",
+                          "sha256":  "375616431DBEEBD42181C272590ED1A81665776935748D8B118C9812348673D9",
+                          "role":  "release_manifest"
+                      },
+                      {
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R1\\results.json",
+                          "sha256":  "D044FA0F96287F3D0652672BE57FDD495FB1C7F0A61E4C74105B3AB1B014CF21",
+                          "role":  "results"
+                      },
+                      {
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R1\\raw_console.txt",
+                          "sha256":  "E56BEF36E2CC679204AE6003594C8C23D5A88C2203018EF1EE0FF220443C8E45",
+                          "role":  "raw_evidence"
+                      },
+                      {
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\ENGINE_GATE05_BASELINE_BEFORE_R1_20261008\\ARCHIVE_MANIFEST.json",
+                          "sha256":  "B6AD0A70EA4C13F5040A3BAEE690DBCDDEB8735842FCB482D66352A8FB05F0F1",
+                          "role":  "engine_freeze_before"
+                      },
+                      {
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\MASTER_ENGINE_FREEZE_AFTER_GATE05_R1.json",
+                          "sha256":  "A1F01B4460D8C069AF63A882B476937557902598916520581B56055ADD9FC75A",
+                          "role":  "engine_freeze_after"
+                      },
+                      {
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R1\\bin\\Release\\net472\\Gate05R1TestRunner.exe",
+                          "sha256":  "279440C2C1F990890E903A8E8F690927FB5208838E0F68F27442E0B1B029449F",
+                          "role":  "harness"
+                      },
+                      {
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+                          "sha256":  "620F7A7BB9D6BF45F149F31662CBD79B369152B2B7F2C67882BFF84240BA86AC",
+                          "role":  "candidate_binary"
+                      },
+                      {
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+                          "sha256":  "C7B0A9F427C33CA20DA00EDD944E888AD643D392F3A81B875067D989A61E93A8",
+                          "role":  "candidate_binary"
+                      },
+                      {
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+                          "sha256":  "7E3CB7DBCBA9D0020C9801B3CB0150973DC61868E8B1E78EAF1A16F3DE112FC1",
+                          "role":  "pdb"
+                      },
+                      {
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+                          "sha256":  "FBAEEE9870D24FB1FADBADC9D1F4BD9672B36393B7F6D7ADDC63664D6C8B1127",
+                          "role":  "pdb"
+                      },
+                      {
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R1\\bin\\Release\\net472\\Gate05R1TestRunner.pdb",
+                          "sha256":  "92441BF2CA9A6C1579211209AD75B1B61012244F1C2DBFE83765D1C0EF30D84C",
+                          "role":  "pdb"
+                      },
+                      {
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+                          "sha256":  "F80B966B087DEFA0027451005EC8499F24447C98B04FA901CDBC84A1FFE32B46",
+                          "role":  "source"
+                      },
+                      {
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+                          "sha256":  "E86B54B2077B36D1E8D24879B9CB88B58E79725BAEBD8BCCDDD8DA5930961235",
+                          "role":  "source"
+                      },
+                      {
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+                          "sha256":  "B3CF8D675F1041625E9BF1D71463D1F2822A38D1719995E62A5551E28A869492",
+                          "role":  "source"
+                      },
+                      {
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R1\\Program.cs",
+                          "sha256":  "5242767FC464A91F2479774EBA7468B30CD1F198D66516D3CB72B5E47AE25C00",
+                          "role":  "source"
+                      },
+                      {
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R1\\Gate05R1TestRunner.csproj",
+                          "sha256":  "320CF5CDE99EE98628077DA3DE8A0C5433FE2BBF8171739A9C50A052418B31F4",
+                          "role":  "source"
+                      },
+                      {
+                          "path":  "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\COMPLETION.json",
+                          "sha256":  "09057D2719830251C8C741506FBA8F38713830EE5496C563B9709C7AF9C13B0A",
+                          "role":  "pipeline_preservation"
+                      }
+                  ]
+}

@@ -1,0 +1,13 @@
+{
+  "run_id": "MASTER-HEARTBEAT-R23-20261011T085442Z-01",
+  "guard_session": 49350,
+  "guard_pid": 19228,
+  "all_Master_child_commands_completed_before_release": true,
+  "actual_release_tool": {
+    "chunk_id": "f404c2",
+    "wall_time_seconds": 0.0000371,
+    "exit_code": 0,
+    "original_token_count": 110,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-HEARTBEAT-R23-20261011T085442Z-01\", \"pid\": 19228, \"locked_at\": \"2026-10-11T17:54:51.164662+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-11T18:02:39.135619+09:00\", \"renewal_count\": 4, \"release_reason\": \"R\r\n\u001b[23;80HRELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-11T18:03:48.887059+09:00\"}     \r\n\u001b[?9001l\u001b[?1004l"
+  }
+}

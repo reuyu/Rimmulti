@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-10T04:21:53.318342+09:00",
+  "historical_baseline": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R16_QA_PREPARATION_PROTECTED_BASELINE_20261010.json",
+  "historical_baseline_sha256": "4B567A39019F6033F81F8A97E91FD583674F8E799F2804A25E02405448444AE3",
+  "excluded_current_paths": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+      "bytes": 156431,
+      "reason": "Historical fixed Worker in priorQA baseline;R17explicitlyauthorized sourceedit;oldbytes preservedfrozenR15 andpriorbaseline NOTnormalized"
+    }
+  ],
+  "old_QA_evidence_unchanged": true,
+  "current_source_admitted_ONLY_frozenR17": true,
+  "guard_session": 31503
+}

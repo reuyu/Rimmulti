@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "we-operator-config-binding-contract/v3",
+  "contract_authority": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R37_PUBLISHER_FINAL_IMPLEMENTATION_CONTRACT_20261014.md",
+  "contract_sha256": "8B5B0DD5B71AF36826036BAE70436A65444260949E2BD68EAB7F9054E8DA130C",
+  "config14_properties": [
+    "schemaVersion",
+    "configId",
+    "role",
+    "admittedValidatorExecutablePath",
+    "admittedValidatorExecutableSha256",
+    "validatorArguments",
+    "workerUserDataDirectory",
+    "validatorUserDataDirectory",
+    "workerCwd",
+    "validatorCwd",
+    "capabilityBoundary",
+    "issuedAtUtc",
+    "expectedContentProfileFingerprint",
+    "expectedPackagePolicyDeclaration"
+  ],
+  "decl7_properties": [
+    "originId",
+    "expectedConfigId",
+    "expectedRole",
+    "expectedCapabilityBoundary",
+    "launchPlanId",
+    "expectedConfigPath",
+    "expectedConfigSha256"
+  ],
+  "binding_rules": {
+    "schema_version": {
+      "rule": "schemaVersion must strictly equal 'WE-OPERATOR-BOOTSTRAP-V1'.",
+      "fail_closed": true
+    },
+    "role_binding": {
+      "parent": {
+        "expectedRole": "SIMULATION",
+        "rule": "Parent raw role must strictly equal 'SIMULATION' without strip or case normalization."
+      },
+      "child": {
+        "expectedRole": "READ_ONLY",
+        "rule": "Child raw role must strictly equal 'READ_ONLY' without strip or case normalization."
+      },
+      "fail_closed": true
+    },
+    "config_id_matching": {
+      "rule": "rawConfigId must equal original untrimmed descriptor expectedConfigId, and snapshot-supported trim(configId) must equal the SAME untrimmed descriptor expectedConfigId.",
+      "fail_closed": true
+    },
+    "capability_boundary_matching": {
+      "rule": "raw config capabilityBoundary must match factory-cloned/trimmed descriptor expectedCapabilityBoundary case-insensitively BEFORE snapshot; raw capabilityBoundary is never stripped.",
+      "fail_closed": true
+    },
+    "descriptor_formatting_preservation": {
+      "rule": "Original descriptor expectedRole and expectedCapabilityBoundary padding and lowercase are preserved verbatim in output bundle.",
+      "fail_closed": true
+    },
+    "descriptor_sha256": {
+      "rule": "Descriptor expectedConfigSha256 must be strictly 64 ASCII hex characters without padding or trimming.",
+      "fail_closed": true
+    },
+    "executable_sha256": {
+      "rule": "Executable SHA256 must be trimmed 64 ASCII hex characters.",
+      "fail_closed": true
+    },
+    "path_equality": {
+      "rule": "Declared Windows path equality verified under DOS comparison domain (normcase(abspath(p)).rstrip('\\/')).",
+      "fail_closed": true
+    },
+    "path_ancestry_verification": {
+      "rule": "Direct nofollow lstat ancestry guard checks drive root (C:\\) and every actual component with os.lstat without lexists/isdir/isfile error-masking; rejects reparse points (0x400) and symlinks; catches only FileNotFoundError for new output leaf.",
+      "fail_closed": true
+    },
+    "read_once_provenance": {
+      "rule": "Common readonce helper captures prior lstat, handle fstat, raw bytes, and SHA-256 for spec and configs; linked into PROVENANCE_MANIFEST.json.",
+      "fail_closed": true
+    },
+    "userdata_isolation": {
+      "rule": "workerUserDataDirectory and validatorUserDataDirectory must be distinct when normalized.",
+      "fail_closed": true
+    },
+    "content_profile_fingerprint": {
+      "rule": "expectedContentProfileFingerprint must be a non-blank string (not constrained to 64 hex characters).",
+      "fail_closed": true
+    },
+    "package_policy_declaration": {
+      "rule": "Object containing schemaVersion, policyId, revision, and admittedPackageIds; revision admits string or integer with explicit boolean exclusion; admittedPackageIds retains order.",
+      "fail_closed": true
+    },
+    "timestamp_format": {
+      "rule": "issuedAtUtc must be a valid Gregorian UTC ISO 8601 string (YYYY-MM-DDTHH:mm:ss[.1..7digits]Z) with ASCII digits [0-9], full consumption, calendar/time validity, and exact raw fractional digits preserved.",
+      "fail_closed": true
+    },
+    "cli_invocation": {
+      "rule": "Strict --spec <absoluteSpecPath> CLI invocation with exact argc 3; closed 6 required keys + optional bundleFilename fixed to 'operator_startup_pair.json'. Inline mode rejected fail-closed.",
+      "fail_closed": true
+    }
+  }
+}

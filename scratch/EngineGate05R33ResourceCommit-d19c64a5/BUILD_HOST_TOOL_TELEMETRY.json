@@ -1,0 +1,52 @@
+{
+  "recorded_at": "2026-10-12T16:12:24.028734+00:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5",
+  "wp_id": "WP_ENGINE_GATE05_R33_RESOURCE_COMMIT",
+  "envelope": 36,
+  "build_runs": [
+    {
+      "configuration": "Debug",
+      "pid": 26384,
+      "exit_code": 0,
+      "duration_seconds": 2.335058,
+      "argv": [
+        "dotnet",
+        "build",
+        "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+        "-c",
+        "Debug",
+        "--no-restore",
+        "-v:diag"
+      ],
+      "cwd": "C:\\Users\\user\\Desktop\\RimMulti",
+      "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R33ResourceCommit-d19c64a5\\build_debug_stdout.raw.txt",
+      "stdout_bytes": 1308247,
+      "stdout_sha256": "6D9BAC0D6A7DFA74BC9233FB5BC988FB3A329A450883827028777D66293427AC",
+      "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R33ResourceCommit-d19c64a5\\build_debug_stderr.raw.txt",
+      "stderr_bytes": 0,
+      "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "configuration": "Release",
+      "pid": 18736,
+      "exit_code": 0,
+      "duration_seconds": 1.289643,
+      "argv": [
+        "dotnet",
+        "build",
+        "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+        "-c",
+        "Release",
+        "--no-restore",
+        "-v:diag"
+      ],
+      "cwd": "C:\\Users\\user\\Desktop\\RimMulti",
+      "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R33ResourceCommit-d19c64a5\\build_release_stdout.raw.txt",
+      "stdout_bytes": 1308726,
+      "stdout_sha256": "33EE782E77F0F1463771253799EE20E0BAFC6BC94EFC622A3A34FCF00A5EBB66",
+      "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R33ResourceCommit-d19c64a5\\build_release_stderr.raw.txt",
+      "stderr_bytes": 0,
+      "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    }
+  ]
+}

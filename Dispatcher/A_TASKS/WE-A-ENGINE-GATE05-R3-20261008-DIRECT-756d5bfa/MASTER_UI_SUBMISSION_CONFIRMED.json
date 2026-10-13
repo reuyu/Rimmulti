@@ -1,0 +1,25 @@
+{
+  "at": "2026-10-08T12:53:01.260149+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa",
+  "wp_id": "WP_ENGINE_GATE05_R3",
+  "wp_revision": "GATE05-R3",
+  "delivery_status": "SENT",
+  "actor": "Master",
+  "route": "computer-use/Antigravity",
+  "window": {
+    "app": "process:C:\\Users\\user\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe",
+    "id": 4458672,
+    "title": "RimMulti - Antigravity IDE - WarEconomy.Server.pdb"
+  },
+  "conversation": "WarEconomy 컨텍스트 복구 및 수행",
+  "observation_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa\\MASTER_UI_SUBMISSION_OBSERVATION.json",
+  "observation_sha256": "596C48D8F78A8434244480589920EC0F8C62CB2F1D2441F23A4F91148412718C",
+  "exact_message_sha256": "63E4E7C3A0875EC33B7B38A267A7933719B06BECD7FF97B9E936A01282036FB1",
+  "new_user_message_visible": true,
+  "composer_empty": true,
+  "working_cancel_observed": true,
+  "actual_submission_time_exact": null,
+  "submission_observed_at": "2026-10-08T03:52:08.900Z",
+  "candidate_runtime_verdict": null,
+  "no_resend": true
+}

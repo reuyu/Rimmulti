@@ -1,0 +1,13 @@
+{
+  "guard_session": 64707,
+  "run_id": "MASTER-SOL-R36-COMPLETE-R37-20261014-01",
+  "release_tool": {
+    "chunk_id": "a8bd18",
+    "wall_time_seconds": 0.0000478,
+    "exit_code": 0,
+    "original_token_count": 110,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-SOL-R36-COMPLETE-R37-20261014-01\", \"pid\": 29852, \"locked_at\": \"2026-10-14T00:50:54.574781+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-14T00:59:56.667102+09:00\", \"renewal_count\": 4, \"release_reason\": \"RE\r\n\u001b[23;80HELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-14T01:00:40.375195+09:00\"}      \r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "candidate_or_dispatch_mutation_after_release": false,
+  "R37_ACK_at_final_read": "PENDING_NOT_PRESENT_NO_RESEND"
+}

@@ -1,0 +1,25 @@
+    public class OperatorLaunchDescriptor
+    {
+        public string originId = "LOCAL_OPERATOR_LAUNCH";
+        public string expectedConfigId = "";
+        public string expectedRole = "SIMULATION";
+        public string expectedCapabilityBoundary = "LOCAL_SANDBOXED";
+        public string launchPlanId = "WE-LAUNCH-PLAN-V1";
+        public string expectedConfigPath = "";
+        public string expectedConfigSha256 = "";
+
+        public OperatorLaunchDescriptor Clone()
+        {
+            return new OperatorLaunchDescriptor
+            {
+                originId = this.originId,
+                expectedConfigId = this.expectedConfigId,
+                expectedRole = this.expectedRole,
+                expectedCapabilityBoundary = this.expectedCapabilityBoundary,
+                launchPlanId = this.launchPlanId,
+                expectedConfigPath = this.expectedConfigPath,
+                expectedConfigSha256 = this.expectedConfigSha256
+            };
+        }
+    }
+

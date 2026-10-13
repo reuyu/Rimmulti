@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":false,\"wake\":{\"reason\":\"inactiveStatus\",\"threadId\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\"},\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:26\",\"revision\":26,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"systemError\"}},\"latestTurn\":{\"id\":\"01a119e5-b7d5-73a3-bbc5-a98956eb079e\",\"status\":\"failed\",\"error\":{\"message\":\"You’ve hit your usage limit. Upgrade to Pro (https://chatgpt.com/explore/pro), visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at 2:27 PM.\"},\"startedAt\":1791435847,\"completedAt\":1791436781,\"durationMs\":934057},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ac72787ad9087d094c538699b30ee99\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ac72787ad9087d094c538699b30ee99\",\"turnId\":\"01a119e5-b7d5-73a3-bbc5-a98956eb079e\",\"phase\":\"commentary\",\"text\":\"검토 결과를 보고서와 항목별 증거 색인에 정리했습니다. 제출된 32개 PASS의 수와 원문은 일치하지만, native 정상 검증 흐름은 미관측으로 남깁니다. 이제 보호된 이전 증거와 frozen 파일의 전후 해시를 확인하고, 완료 패키지를 마스터에게 직접 보고하겠습니다.\"},\"latestToolMarkerId\":\"exec-8a17add4-0bdf-41a0-b678-c1a3efc9d23d\",\"latestToolMarker\":{\"id\":\"exec-8a17add4-0bdf-41a0-b678-c1a3efc9d23d\",\"turnId\":\"01a119e5-b7d5-73a3-bbc5-a98956eb079e\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

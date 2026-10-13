@@ -1,0 +1,149 @@
+{
+  "at": "2026-10-12T10:23:16.403949+09:00",
+  "guard_run": "MASTER-R29-S3-STATIC-SELECTOR-20261012-01",
+  "guard_session": 8615,
+  "guard_pid": 35372,
+  "delivery_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012-01",
+  "result_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012-8d682aff4ebd4996a12529142c0d7431",
+  "wp_revision": "S3",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:189",
+    "revision": 189,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a12da7-4e7b-7352-ad70-4efa4aa792ac",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791767301,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acc35c355dc87d0a6fada53f5dfce24",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016acc35c355dc87d0a6fada53f5dfce24",
+      "turnId": "01a12da7-4e7b-7352-ad70-4efa4aa792ac",
+      "phase": "commentary",
+      "text": "초기 lineage와 runner 준비는 성공했지만, 정적 증거 추출에서 제가 계약의 gate 이름을 소스 문자열로 가정해 찾지 못했습니다. 전체 stderr를 보존했습니다. 아직 빌드·후보 호출은 없으며, 마스터에게 이 증거 추출 정정의 재개 범위를 요청하겠습니다."
+    },
+    "latestToolMarkerId": "exec-20d241c6-48f4-4174-b216-af5837cb537b",
+    "latestToolMarker": {
+      "id": "exec-20d241c6-48f4-4174-b216-af5837cb537b",
+      "turnId": "01a12da7-4e7b-7352-ad70-4efa4aa792ac",
+      "type": "mcpToolCall",
+      "name": "wait_threads",
+      "status": "completed"
+    }
+  },
+  "status": "AUTHORIZED_SAME_S3_NARROW_METADATA_SELECTOR_ONCE_NOT_SENT",
+  "original_failed_tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\static_review.TOOL.json",
+    "sha256": "F93C08DD494618786A25E54586031DEE5DCDE044C25C8A3324CA622FAF6112DD",
+    "bytes": 1175
+  },
+  "stderr": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\static_review.STDERR.txt",
+    "sha256": "69B4BEC2F02B4D40AB725E88D7ECCD5C19D5556CCABD751BC637A1B12440A493",
+    "bytes": 3519
+  },
+  "initial_ACK": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\ACK_INITIAL.json",
+    "sha256": "E62D7A47248E015DBB1C293723108E8368D544F0221B6CC3028122AFB382FE31",
+    "bytes": 2892
+  },
+  "immutable_preservation": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R29_S3_STATIC_STOP_INITIAL_PROSPECTIVE_PRESERVATION_20261012.json",
+    "sha256": "1DA122680BCAB148BAA129807E3F2D2688057866F88499BDD89C24AB1B8F28EC",
+    "bytes": 5251
+  },
+  "template": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\Tools\\MASTER_R29_S3_STATIC_SELECTOR_R1_TEMPLATE.py",
+    "sha256": "C0F617C8C8A967780C990967BE994A7AC160850A5E0F77A2BC26E1DA441A5BF0",
+    "bytes": 7446
+  },
+  "exact_diff": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R29_S3_STATIC_SELECTOR_R1_EXACT_DIFF_20261012.txt",
+    "sha256": "8E0B0AD13A8C66C1C181DB7A422885062758EB31FA6C295E1E6E4D360404387A",
+    "bytes": 6752
+  },
+  "notice": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R29_S3_STATIC_SELECTOR_R1_AUTHORIZATION_20261012.md",
+    "sha256": "9EB47BEC7D3EBAF15A213C8DDCDA445ECF900110167E374F873AACE10F085BD5",
+    "bytes": 3252
+  },
+  "source_selectors": [
+    {
+      "file": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R29-46f60e2a\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "needle": "                json = Encoding.UTF8.GetString(bundleBytes);",
+      "occurrences": 1
+    },
+    {
+      "file": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R29-46f60e2a\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "needle": "object.ReferenceEquals(_pendingParentReceipt, _activeStartupConfig)",
+      "occurrences": 1
+    },
+    {
+      "file": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R29-46f60e2a\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "needle": "if (TryAcquirePendingStartupHandoff(out var acquiredPair)",
+      "occurrences": 1
+    },
+    {
+      "file": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R29-46f60e2a\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "needle": "internal static void ClearPendingStartupHandoff()",
+      "occurrences": 1
+    },
+    {
+      "file": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R29-46f60e2a\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "needle": "if (_privatePairProfile != null)",
+      "occurrences": 1
+    },
+    {
+      "file": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R29-46f60e2a\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "needle": "bool anyPair =",
+      "occurrences": 1
+    },
+    {
+      "file": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R29-46f60e2a\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "needle": "// Extract declared config paths",
+      "occurrences": 1
+    },
+    {
+      "file": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R29-46f60e2a\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "needle": "TryGetCommandLineArg(\"validatorarguments\"",
+      "occurrences": 1
+    },
+    {
+      "file": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R29-46f60e2a\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+      "needle": "with open(tmp_bundle_path, \"wb\")",
+      "occurrences": 1
+    },
+    {
+      "file": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R29-46f60e2a\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+      "needle": "out_bundle_path = os.path.join",
+      "occurrences": 1
+    },
+    {
+      "file": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R29-46f60e2a\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+      "needle": "# Verify relation between declared expected SHA",
+      "occurrences": 1
+    },
+    {
+      "file": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R29-46f60e2a\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+      "needle": "spec = json.load(f)",
+      "occurrences": 1
+    }
+  ],
+  "inverse_byte_equality": true,
+  "Master_candidate_execution": 0,
+  "normal_verdict": "PENDING",
+  "native_E2": "NOT_RELEASED",
+  "Foundation": "HOLD"
+}

@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-13T17:57:46.187833+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c",
+  "protected_actual_rehash": 18019,
+  "baseline": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R34_ROLLBACK_PROTECTED_BASELINE_20261013.json",
+    "sha256": "109EC11C06B29C322BE3A35E3B1AD6EC2CED1F3542A07CD39403F5A0EA881640",
+    "bytes": 5498992
+  },
+  "fixedproduction_actual_rehash": 3,
+  "installed_known_unchanged_OPEN_actorUNKNOWN": {
+    "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\WarEconomy.WorkerBridge.PoC\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+    "sha256": "BB3B52F39F7B53B70BC9FB4CE039E7455D08B24B17B8DABB8295E0FF4584DD61",
+    "bytes": 110080
+  },
+  "allowed_current22_not_treated_as_oldlineage": true,
+  "Master_candidate_execution": 0
+}

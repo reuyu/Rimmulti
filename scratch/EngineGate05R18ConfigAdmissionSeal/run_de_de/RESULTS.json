@@ -1,0 +1,139 @@
+{
+  "DispatchId": "WE-A-ENGINE-GATE05-R18-CONFIG-ADMISSION-SEAL-20261010-DIRECT-befc4fba",
+  "WpId": "WP_ENGINE_GATE05_R18_CONFIG_ADMISSION_SEAL",
+  "Revision": "GATE05-R18-CONFIG-ADMISSION-SEAL",
+  "Envelope": 21,
+  "RunId": "c19bc86c5e4e48348a58c5627f3010c9",
+  "TimestampUtc": "2026-10-10T05:53:17.3584218Z",
+  "ProcessId": 0,
+  "Culture": "de-DE",
+  "CommandLineArgs": [
+    "--rundir",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R18ConfigAdmissionSeal\\run_de_de",
+    "--culture",
+    "de-DE"
+  ],
+  "WorkingDirectory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R18ConfigAdmissionSeal",
+  "LoadedCandidateDllPath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R18ConfigAdmissionSeal\\Harness\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+  "LoadedCandidateSha256": "AE7B2FB6FF3BDFD449D43CB055B85768557E872D4985017E71E2E5655F8F6073",
+  "LoadedCandidateMvid": "9e8501fc-d16e-413b-8682-17ba8550d9bf",
+  "ApiLedger": {
+    "ParseStrictCalls": 1,
+    "AdmitConfigBytesCalls": 1,
+    "AdmitConfigFileCalls": 1,
+    "ToSnapshotCalls": 2,
+    "ToRedactedJsonSnapshotCalls": 1,
+    "GetExpectedPackagePolicyDeclarationCalls": 2,
+    "ComputeFileSha256Calls": 2,
+    "VerifyAdmittedExecutableCalls": 1,
+    "ToRedactedJsonValidatorResultCalls": 1,
+    "SerializePackagePolicyCalls": 1,
+    "DeserializePackagePolicyCalls": 1,
+    "ComputePackagePolicyDigestCalls": 2,
+    "ProcessApiCalls": 0,
+    "VerifyProcessIdentityCalls": 0,
+    "WorkerBridgeGlobalConfigureResetCalls": 0,
+    "AwakeCalls": 0,
+    "HarmonyCalls": 0
+  },
+  "Tests": [
+    {
+      "TestName": "TEST_01_STRICT_CONFIG_JSON_PARSING",
+      "Status": "PASS",
+      "Details": "Verified pure strict JSON parsing with schema validation, non-empty fields, and zero DTO defaulting.",
+      "Artifacts": {
+        "ConfigId": "CFG-BOOTSTRAP-NORMAL-01",
+        "Role": "SIMULATION",
+        "SchemaVersion": "WE-OPERATOR-BOOTSTRAP-V1",
+        "PolicyId": "POLICY-BOOTSTRAP-NORMAL-01"
+      }
+    },
+    {
+      "TestName": "TEST_02_ADMIT_CONFIG_BYTES_VALIDATION",
+      "Status": "PASS",
+      "Details": "Verified precommitted byte SHA256 check before parsing, descriptor matching, and snapshot construction.",
+      "Artifacts": {
+        "ConfigId": "CFG-BOOTSTRAP-NORMAL-02",
+        "Role": "SIMULATION",
+        "ConfigByteSha256": "01862EE9D068149048D518E31ECE4D4D4C4EC855165C6FA75B6166592AFF551F",
+        "AdmittedValidatorSha": "FE6E251C5F501C282B67315DDCAB2C9D67F3395FACE61D7721DA1DC85413D9B7"
+      }
+    },
+    {
+      "TestName": "TEST_03_ADMIT_CONFIG_FILE_BINDING",
+      "Status": "PASS",
+      "Details": "Verified file path validation, disk byte reading, SHA256 preflight, and READ_ONLY role binding.",
+      "Artifacts": {
+        "ConfigFile": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R18ConfigAdmissionSeal\\run_de_de\\operator_bootstrap_readonly.json",
+        "ConfigId": "CFG-BOOTSTRAP-READONLY-03",
+        "Role": "READ_ONLY",
+        "FileSha256": "3B474A93AF8E29510D8E0CC255162523F83F799BE72548189D701343F2B17C72"
+      }
+    },
+    {
+      "TestName": "TEST_04_DEEP_IMMUTABILITY_DEFENSIVE_COPY",
+      "Status": "PASS",
+      "Details": "Verified private array defensive cloning, detached getter copies, and immunity to caller mutation.",
+      "Artifacts": {
+        "ConfigId": "CFG-IMMUTABLE-04",
+        "InitialPackageCount": 2,
+        "PostMutationGetterCount": 2,
+        "CallerIsolationVerified": true
+      }
+    },
+    {
+      "TestName": "TEST_05_SNAPSHOT_REDACTED_JSON",
+      "Status": "PASS",
+      "Details": "Verified snapshot ToRedactedJson() contains exact 13 public properties and excludes sensitive arguments.",
+      "Artifacts": {
+        "ConfigId": "CFG-REDACT-05",
+        "ArgumentsRedacted": true,
+        "JsonLength": 1334
+      }
+    },
+    {
+      "TestName": "TEST_06_COMPUTE_FILE_SHA256_HELPER",
+      "Status": "PASS",
+      "Details": "Verified ExecutableAdmissionHelper.ComputeFileSha256 against real disk file bytes.",
+      "Artifacts": {
+        "FilePath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R18ConfigAdmissionSeal\\run_de_de\\sample_sha_check.txt",
+        "ExpectedSha": "B2980AA3ECEB3DCC1176A8D0BD0658620B04F3EC405EF7BD216DB6184DA9C1DF",
+        "ComputedSha": "B2980AA3ECEB3DCC1176A8D0BD0658620B04F3EC405EF7BD216DB6184DA9C1DF"
+      }
+    },
+    {
+      "TestName": "TEST_07_VERIFY_ADMITTED_EXECUTABLE_HELPER",
+      "Status": "PASS",
+      "Details": "Verified ExecutableAdmissionHelper.VerifyAdmittedExecutable file existence and 64-hex SHA match.",
+      "Artifacts": {
+        "ExePath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R18ConfigAdmissionSeal\\run_de_de\\SimulatedAdmittedValidator.exe",
+        "VerifiedSha": "FE6E251C5F501C282B67315DDCAB2C9D67F3395FACE61D7721DA1DC85413D9B7",
+        "IsValid": true
+      }
+    },
+    {
+      "TestName": "TEST_08_VALIDATOR_RESULT_REDACTION",
+      "Status": "PASS",
+      "Details": "Verified ValidatorResult.ToRedactedJson() masks capability nonce and channel secret with protected placeholders.",
+      "Artifacts": {
+        "TaskId": "TASK-SYNTHETIC-08",
+        "NonceMasked": true,
+        "SecretMasked": true
+      }
+    },
+    {
+      "TestName": "TEST_09_PACKAGE_POLICY_CODEC_REGRESSION",
+      "Status": "PASS",
+      "Details": "Verified pure Census package policy serialization, deserialization, and deterministic digest calculation.",
+      "Artifacts": {
+        "PolicyId": "POLICY-REGRESSION-09",
+        "Digest": "1103150E75B5FE9B036502BE1E3D7F2C7225F21D8376B739261EE9B37B3EED2D",
+        "PackageCount": 3
+      }
+    }
+  ],
+  "TotalTests": 9,
+  "PassedTests": 9,
+  "FailedTests": 0,
+  "NumericExitCode": 0
+}

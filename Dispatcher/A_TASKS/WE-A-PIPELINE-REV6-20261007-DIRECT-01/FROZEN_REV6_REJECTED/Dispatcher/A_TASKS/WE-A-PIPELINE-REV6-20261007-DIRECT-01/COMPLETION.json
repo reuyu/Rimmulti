@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "dispatch_id": "WE-A-PIPELINE-REV6-20261007-DIRECT-01",
+  "wp_id": "WP_PIPELINE_REV6",
+  "wp_revision": "REV6",
+  "result_id": "WE-A-PIPELINE-REV6-RESULT-20261007-01",
+  "producer": "A",
+  "status": "COMPLETED",
+  "report_kind": "E1",
+  "completed_at": "2026-10-07T19:00:00+09:00",
+  "e1_verdict": "PASS",
+  "summary": "Pipeline REV6 implementation and verification completed with 25/25 batteries passing (100% PASS). Historical decision witness query rejects historical-earlier, historical-later, and cross-scope rewrites. Typed audit semantics strictly validate all 8 COMMITTED and 7 ABORTED mandatory fields, status == 'STALE_REVISION', and reason == FailureReason matching. Schema collation blindness defended via PRAGMA index_xinfo & DDL inspection, index collation inclusion in schema descriptor, and rollback-safe case-distinct startup canaries. Schema bumped to V7 (signature: 079CFBAC4246592B4E2300630BBB39528C44CCAA6C1199C9811E9B1DB9C4B63C) with fail-closed legacy policy. Gate05 Engine candidate verified bit-identical (19/19 files untouched).",
+  "limitations": "E1 PASS is internal development verification by Agent A and does not substitute for independent E2 verification by GPT-6.1 Sol or Master disposition. Threat boundary covers logical consistency within SQLite persistence; direct out-of-band raw disk binary corruption requires OS/hardware-level protection. Legacy schemas v1-v6 fail closed on startup requiring offline reset or migration.",
+  "artifacts": [
+    {
+      "role": "implementation_report",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_Production_Transaction_Pipeline_01_REV6.md",
+      "sha256": "D5F31BA6FDCCB3B0156CCE7EAA2B9C68B775B99A6A9B4AC812C596DF7DA44CAA"
+    },
+    {
+      "role": "release_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_PIPELINE_REV6.json",
+      "sha256": "BAAA856C73CDFCF72F3CDC455BA86994898D2A866AB87F836BCFF8ED778221EA"
+    },
+    {
+      "role": "results",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\pipeline_e1_rev6_results.json",
+      "sha256": "74A12E160D76D0D9E3E7CDCF98ED7CAB2A180EF4EE560AA4D77DE931932B7603"
+    },
+    {
+      "role": "raw_evidence",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\pipeline_e1_rev6_raw_console.txt",
+      "sha256": "412EE1DBEDA30BDD08AEFC5E428959697868E5666FD4A06ABB2AD01BCCFB0801"
+    },
+    {
+      "role": "engine_freeze_before",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-20261007-DIRECT-01\\MASTER_ENGINE_FREEZE_BEFORE.json",
+      "sha256": "2E7BB27EBF2E64287C3919E84A470B92371A99560832A2C7BBFB0FA611E72099"
+    },
+    {
+      "role": "engine_freeze_after",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\MASTER_ENGINE_FREEZE_AFTER.json",
+      "sha256": "C23876B2E01172D1DD09F3969B5AFE3F64CC2DDE21D4EF7532C46FD6C4D8F43A"
+    },
+    {
+      "role": "harness",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Testing\\WarEconomy.Pipeline.TestHarness\\bin\\Release\\net8.0\\WarEconomy.Pipeline.TestHarness.dll",
+      "sha256": "85A479F5985F8C6DC6391ECB71072230AA1C5E9406810041D3374A858F0BF673"
+    },
+    {
+      "role": "harness",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_Runner\\bin\\Release\\net8.0\\E1_Rev6_Runner.exe",
+      "sha256": "EB1B54C3F5D1701BC2D2A915282B3816172CACB2CA0E2D4DA7C4029D4E5730D9"
+    },
+    {
+      "role": "candidate_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.dll",
+      "sha256": "CBC9AACC67387E18A8F42762170D0B4080E7BD8249C50C616B6302B9A3FFDF39"
+    },
+    {
+      "role": "candidate_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\bin\\Release\\netstandard2.0\\WarEconomy.Common.dll",
+      "sha256": "2711A366D3108DE42EB5CD07EE4874DB6B332B86A63F38B36E79611CFE110BCB"
+    },
+    {
+      "role": "candidate_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.exe",
+      "sha256": "0C1B14510C3CDC7396848E7228660456F7F127F97E680B785A7B62665765378C"
+    },
+    {
+      "role": "pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.pdb",
+      "sha256": "3E29ECAD6632EA89A0E23784654A421AC16907FFC63F9F254BF636C2542788F7"
+    },
+    {
+      "role": "pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\bin\\Release\\netstandard2.0\\WarEconomy.Common.pdb",
+      "sha256": "5119FE41A0FD3BB6B6DCA299B85FD3EEF0F91D4FB7B1AC77DAEDA762E9B2D0F0"
+    },
+    {
+      "role": "pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Testing\\WarEconomy.Pipeline.TestHarness\\bin\\Release\\net8.0\\WarEconomy.Pipeline.TestHarness.pdb",
+      "sha256": "13B961A7D9D53A197A475C6A15CC0C2558302E17B2E390C867B5896CD0981933"
+    },
+    {
+      "role": "source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Recovery\\RecoveryReconciler.cs",
+      "sha256": "8A2EA1AA1C2B27CD21824ACED0E1DA7D66727CF6122E073D47927FC262DF9396"
+    },
+    {
+      "role": "source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Data\\Migrations\\PipelineSchemaMigration.cs",
+      "sha256": "7A5AAA86DBDB447558936B38C68E95678BEA637D474184FA5F6AF5A3A29556B2"
+    },
+    {
+      "role": "source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Testing\\WarEconomy.Pipeline.TestHarness\\PipelineE1TestBattery.cs",
+      "sha256": "C77D36145EE8F7F44F8EF8D8885D8419EBBDCD6A7B4A772A786CC0E4B3CCDC24"
+    },
+    {
+      "role": "source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_Runner\\Program.cs",
+      "sha256": "7A8D62859F4AE358604746C9E715B8EA55E2D9FEA964BA4E68CEE26CC2A5651A"
+    }
+  ]
+}

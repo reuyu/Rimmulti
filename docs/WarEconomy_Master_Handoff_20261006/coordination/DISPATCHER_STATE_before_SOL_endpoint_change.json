@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "checkpoint_date": "2026-10-06",
+  "package_produced_date": "2026-10-07",
+  "timezone": "Asia/Seoul",
+  "automation_enabled": false,
+  "migration_bootstrap_verified": true,
+  "project_root": "C:\\Users\\user\\Desktop\\RimMulti",
+  "endpoints": {
+    "master": {
+      "thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+      "host_id": "local",
+      "route": "codex_app"
+    },
+    "a": null,
+    "sol": {
+      "thread_id": "01a10fd9-2f90-79e2-a1c4-a1079c99f3ac",
+      "host_id": "local",
+      "title": "Review WarEconomyMod QA",
+      "route": "codex_app",
+      "last_verified_state": "active",
+      "previous_wp": "Pipeline REV5 independent E2",
+      "previous_final": "FAIL/completed",
+      "current_wp": "WP_QA_ENGINE_GATE05"
+    }
+  },
+  "c_mode": "on_demand_only",
+  "non_overlap_mechanism": null,
+  "active_run": null,
+  "deliveries": [
+    {
+      "delivery_id": "LOCAL-SOL-GATE05-SUBMISSION-01",
+      "recipient": "sol",
+      "work_package": "WP_QA_ENGINE_GATE05",
+      "status": "IN_PROGRESS",
+      "delivery_status": "SENT",
+      "submitted_at": "2026-10-07T17:24:49+09:00",
+      "acknowledged_observed_at": "2026-10-07T17:27:10.236005+09:00",
+      "thread_id": "01a10fd9-2f90-79e2-a1c4-a1079c99f3ac",
+      "host_id": "local",
+      "turn_id": "01a11577-1a0d-7c30-9e57-9f09aaa9f695",
+      "acknowledgment_message_id": "msg_0cbd636361551f57016ac601ebc87c87d099b177cf040290ec",
+      "submitted_message_file": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\DISPATCH_MESSAGE_SOL_GATE05.md",
+      "submitted_message_sha256": "AB8BC75BB494ED6D8A46C99564AAC11807DF1404C34D8DAB973C9C861D177F7E",
+      "work_package_sha256": "71F236FB116B474ED69849E46A58611C12EBB0C0F8F1B7172BAD512334529BF8",
+      "evidence": [
+        "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\bootstrap\\sol-delivery-tool-result.json",
+        "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\bootstrap\\sol-postdelivery-proof-confirmed.json",
+        "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\bootstrap\\sol-predispatch-check.json",
+        "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\bootstrap\\sol-endpoint-predispatch.json"
+      ],
+      "verification": "tool success + new active turn + explicit Gate05 acceptance commentary; user message ID unavailable in read_thread snapshot",
+      "attachments": "exact original WP embedded in saved prompt; absolute paths to local verification/freeze/source/raw evidence",
+      "source": "latest user authorized exact WP delivery after verified bootstrap/idle",
+      "duplicate_retry": false
+    }
+  ],
+  "queued_work": [
+    {
+      "recipient": "a",
+      "work_package": "WP_PIPELINE_REV6",
+      "status": "NOT_SENT",
+      "prerequisites_verified": false,
+      "prepared_message": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\DISPATCH_MESSAGE_A_REV6.md",
+      "readiness": "BLOCKED_ENDPOINT_AND_IDLE",
+      "work_package_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_PIPELINE_REV6.md",
+      "work_package_sha256": "788986C7696F30004224E3CEE93D315DD72A5CFF32E048EA0E6C5DA514E3DA7A",
+      "prepared_message_sha256": "BCB1EE8A361E0B27BCFF8C4486CF537AB5566E98CAC2E1716DD60C23A1AD7162"
+    },
+    {
+      "recipient": "sol",
+      "work_package": "WP_QA_ENGINE_GATE05",
+      "status": "IN_PROGRESS",
+      "prerequisites_verified": true,
+      "prepared_message": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\DISPATCH_MESSAGE_SOL_GATE05.md",
+      "readiness": "ALREADY_DISPATCHED_DO_NOT_RESEND",
+      "work_package_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05.md",
+      "work_package_sha256": "71F236FB116B474ED69849E46A58611C12EBB0C0F8F1B7172BAD512334529BF8",
+      "prepared_message_sha256": "AB8BC75BB494ED6D8A46C99564AAC11807DF1404C34D8DAB973C9C861D177F7E",
+      "delivery_status": "SENT",
+      "delivery_id": "LOCAL-SOL-GATE05-SUBMISSION-01"
+    }
+  ],
+  "bootstrap_verified_at": "2026-10-07T17:23:56.891754+09:00",
+  "bootstrap_verification_report": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\IDE_BOOTSTRAP_VERIFICATION.md",
+  "bootstrap_verification_sha256": "F21CCF456E2EAFD5AD7310D1AAB128451AB847214B1CC09745366D60EA0E8D5B",
+  "bootstrap_evidence": [
+    "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\bootstrap\\local_identity_verification.json",
+    "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\bootstrap\\reconciliation_supplement.json",
+    "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\bootstrap\\server-pdb-current.json",
+    "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\bootstrap\\common-pdb-current.json",
+    "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\bootstrap\\engine-pdb-recovered.json",
+    "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\bootstrap\\GATE05_LOCAL_FREEZE_MANIFEST.json",
+    "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\bootstrap\\environment_and_git.json"
+  ],
+  "dispatcher_status": "BLOCKED_CONFIGURATION",
+  "shared_journal": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\DISPATCH_JOURNAL.jsonl",
+  "dispatcher_blockers": [
+    "A is in separate Antigravity IDE; direct endpoint and current idle/WP unverified",
+    "Unattended non-overlap lock and scheduler not configured"
+  ],
+  "updated_at": "2026-10-07T17:27:10.236005+09:00",
+  "a_environment": {
+    "application": "Antigravity",
+    "source": "latest explicit user message",
+    "direct_delivery_available": false,
+    "current_active_wp": "UNVERIFIED",
+    "idle": "UNVERIFIED"
+  },
+  "automation_configuration_observation": {
+    "path": "C:\\Users\\user\\.codex\\automations",
+    "exists": false,
+    "project_schedule_observed": false,
+    "checked_at": "2026-10-07T17:27:10.236005+09:00"
+  },
+  "bootstrap_checkpoint_report": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\bootstrap\\IDE_BOOTSTRAP_VERIFICATION_at_bootstrap.md",
+  "bootstrap_checkpoint_report_sha256": "105640C337711A9C87ADA56CD1D7E92AE9FC4255CC3FD205F6C3D74DB1BC764D"
+}

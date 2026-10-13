@@ -1,0 +1,78 @@
+{
+  "at": "2026-10-14T00:39:13.382785+09:00",
+  "guard_session": 21025,
+  "delivery_id": "SOL-GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014-01",
+  "result_id": "SOL-GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014-6ed51db08e3540c9b6b98a6a96f57e1d",
+  "ACK": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\ACK_INITIAL.json",
+    "sha256": "038FA117B1B2EEED468A622A98D1E49C861D913C40A6A6ED63DF8F5AE191E4AC",
+    "bytes": 2071
+  },
+  "ACK_mirror_equal": true,
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:44",
+    "revision": 44,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a135e6-e62b-73a1-a02d-0794937f58ea",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791905687,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ace5059944c87d09dd1683f40326681",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016ace5059944c87d09dd1683f40326681",
+      "turnId": "01a135e6-e62b-73a1-a02d-0794937f58ea",
+      "phase": "commentary",
+      "text": "동결 43개 파일과 보호 대상 19,380개 경로의 해시·크기를 확인했고, ACK도 마스터에게 전달했습니다. 이제 R36의 설정 비교와 경로 검사 흐름을 실제 C# 계약 및 기존 정상 사례의 원문과 대조하겠습니다."
+    },
+    "latestToolMarkerId": "exec-9b706e2f-95ce-4d1a-a05f-e7ded41f6bd2",
+    "latestToolMarker": {
+      "id": "exec-9b706e2f-95ce-4d1a-a05f-e7ded41f6bd2",
+      "turnId": "01a135e6-e62b-73a1-a02d-0794937f58ea",
+      "type": "fileChange",
+      "name": "fileChange",
+      "status": "completed"
+    }
+  },
+  "protected19380_actual_SHA_bytes_matched": true,
+  "frozen43_actual_SHA_bytes_matched": true,
+  "initial_inventory": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\PRESERVATION_BEFORE.json",
+    "sha256": "03432F220C9C96F7D9EF79F112920BBE96EB57FC98DA6E25F4EB54D8404EC321",
+    "bytes": 5816890
+  },
+  "bootstrap": {
+    "tool": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.TOOL.json",
+      "sha256": "582245EB18F09E597EDC651120000E6F896FD32B0CEDF863E592D9ED863DC1DF",
+      "bytes": 1026
+    },
+    "input": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\bootstrap.INPUT.json",
+      "sha256": "3CA728EF520293AA40802009CC9DF9697633AD713792F0DA2490E73CD0780E4F",
+      "bytes": 5309
+    },
+    "exit_code": 0,
+    "PID": 11432,
+    "stdout423_stderr0": true,
+    "prospective_input_files": 8,
+    "default_observations": 9
+  },
+  "scope": "STATIC_TEXT_ONLY_REVIEW_IN_PROGRESS",
+  "candidate_publisher_compiler_Engine_fixture_native_adverse_executions": 0,
+  "native_E2": "NOT_RELEASED",
+  "Foundation": "HOLD",
+  "no_new_WP": true
+}

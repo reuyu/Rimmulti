@@ -1,0 +1,102 @@
+{
+  "manifest_version": "1.0",
+  "work_package": "WP_ENGINE_GATE05_R9_VERSION_MEANING",
+  "candidate_lineage": "GATE05-R9-VERSION-MEANING",
+  "created_at_utc": "2026-10-08T17:37:30.000000+00:00",
+  "agent_role": "Antigravity A",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R9-VERSION-MEANING-20261009-DIRECT-fbe8a43b",
+  "selected_candidate": {
+    "configuration": "Debug",
+    "target_framework": "net472",
+    "dll_path": "scratch/WorkerBridgeMod/Source/bin/Debug/net472/WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "02815FF8A20CB971AD716BBA75417E5FFAD9FADEB358078A785253124FEF4BF5",
+    "dll_bytes": 226816,
+    "pdb_path": "scratch/WorkerBridgeMod/Source/bin/Debug/net472/WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "9AAA4E24DE296D2435242F2C5D5A21AA1205FED02464EB2CE15783F42A83D93B",
+    "pdb_bytes": 56024,
+    "mvid": "12aa23c7-3ec0-4b6a-bbb1-4a036127c5da"
+  },
+  "alternate_candidate": {
+    "configuration": "Release",
+    "target_framework": "net472",
+    "dll_path": "scratch/WorkerBridgeMod/Source/bin/Release/net472/WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "F088ADEED9569C71445B1FE0D796D2806FB2AF94B8A559A11A5361DDF932195B",
+    "dll_bytes": 215552,
+    "pdb_path": "scratch/WorkerBridgeMod/Source/bin/Release/net472/WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "3FD892DD7E5B7EC4E6C5ABF1871C98560B3E346FFD660A684DDE187374E796F3",
+    "pdb_bytes": 41176,
+    "mvid": "9d4837eb-4ad1-4e50-9c29-52e3d9466061"
+  },
+  "source_files": [
+    {
+      "path": "scratch/WorkerBridgeMod/Source/WorkerBridge.cs",
+      "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+      "bytes": 156431
+    },
+    {
+      "path": "scratch/WorkerBridgeMod/Source/EngineHostCensus.cs",
+      "sha256": "BBB1343E4C9084276296DD9CC4C517AC44E02426064BC9C314E1D261167AB2AB",
+      "bytes": 133910,
+      "prefix_marker": "    public static class ContentProfileProvider",
+      "prefix_length": 72547,
+      "prefix_sha256": "F3C4F865F1E2A898BF240A2D096195870D77A52408CF2D93664FE15092A2A887"
+    },
+    {
+      "path": "scratch/WorkerBridgeMod/Source/WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    }
+  ],
+  "verification_evidence": {
+    "runner_project": {
+      "path": "scratch/EngineGate05R9VersionMeaning/Harness/Gate05R9VersionRunner.csproj",
+      "sha256": "5DD3C8C2F56415A6647C55E68EB54E03550E532A507F53008AEC95BA021D7893",
+      "bytes": 1616
+    },
+    "runner_source": {
+      "path": "scratch/EngineGate05R9VersionMeaning/Harness/Program.cs",
+      "sha256": "B45B8D58117DE20CAB486ECD7E2042F333C4179428A00229AB19A83A23F3504A",
+      "bytes": 41084
+    },
+    "results_json": {
+      "path": "scratch/EngineGate05R9VersionMeaning/results.json",
+      "sha256": "25114C0D6599D5B4A97B3B6E7021AB018E6AEB7D6B4F13859F365FFDA1B3A159",
+      "bytes": 4704
+    },
+    "raw_console_log": {
+      "path": "scratch/EngineGate05R9VersionMeaning/raw_console.txt",
+      "sha256": "3E9E44CB4CD190C88E6C3B387F80A342AE1992DA0F029545D5E36838E9896AB4",
+      "bytes": 3520
+    },
+    "pre_run_manifest": {
+      "path": "scratch/EngineGate05R9VersionMeaning/CANDIDATE_PRE_RUN_MANIFEST.json",
+      "sha256": "60F360E24F19A72FB0ECE17EB89C85DC587E26D2E930D864728BF4E1B0E28824",
+      "bytes": 4367
+    },
+    "engine_freeze_before": {
+      "path": "scratch/EngineGate05R9VersionMeaning/ENGINE_FREEZE_BEFORE.json",
+      "sha256": "D827C97F212C1A279F28D6D0BA0B4AE4845753BB7A4DA785F5D4A38726CBF850",
+      "bytes": 3071
+    },
+    "engine_freeze_after": {
+      "path": "scratch/EngineGate05R9VersionMeaning/ENGINE_FREEZE_AFTER.json",
+      "sha256": "3655F5BAA7EADAC52B0DE1841540BDA2957B5F7E6A345CB8F1D729B2CEACE7D6",
+      "bytes": 3071
+    },
+    "report_markdown": {
+      "path": "docs/POC_EngineHost_Content_Codec_Gate05_R9.md",
+      "sha256": "7B939430B8F8534950B8AE5F5EC6248804D2C1E29106DEA1DE20851714394EDB",
+      "bytes": 10003
+    }
+  },
+  "summary": {
+    "total_tests": 16,
+    "pass": 16,
+    "fail": 0,
+    "e1_verdict": "IMPLEMENTATION_PARTIAL",
+    "codec_status": "POSITIVE_NORMAL_DTO_AND_VERSION_MEANING_VERIFIED",
+    "native_observation_status": "NATIVE_UNTESTED (Prohibited under WP_ENGINE_GATE05_R9_VERSION_MEANING)",
+    "installed_incident_status": "UNKNOWN OPEN INCIDENT",
+    "disposition_note": "Gate05-R9 removes compatibilityVersionRange and modVersion cross-inference in CanonicalNormalize and actual projection, strictly preserving legitimate optional unknown modVersion (null) and separate compatibility values across normalization and serialization. Tested with 16 positive normal controls including cultural invariance across Invariant, en-US, and de-DE. Full Gate05 and Foundation remain HOLD pending independent QA and Master governance disposition."
+  }
+}

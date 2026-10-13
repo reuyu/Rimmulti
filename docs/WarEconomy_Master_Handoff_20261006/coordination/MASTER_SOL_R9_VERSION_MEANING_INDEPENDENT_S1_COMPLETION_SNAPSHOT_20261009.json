@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":false,\"wake\":{\"reason\":\"turnCompleted\",\"turnId\":\"01a11ca3-5c18-7bd0-abab-77e17e3b6463\",\"threadId\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\"},\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:57\",\"revision\":57,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"idle\"}},\"latestTurn\":{\"id\":\"01a11ca3-5c18-7bd0-abab-77e17e3b6463\",\"status\":\"completed\",\"error\":null,\"startedAt\":1791481830,\"completedAt\":1791482728,\"durationMs\":897932},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ac7db65e84887d089795a302575ea85\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ac7db65e84887d089795a302575ea85\",\"turnId\":\"01a11ca3-5c18-7bd0-abab-77e17e3b6463\",\"phase\":\"final_answer\",\"text\":\"R9 독립 QA를 완료하고 마스터에게 보고했습니다. 버전 의미 회귀는 검증 범위 내 PASS이며, 두 프로세스에서 각각 88개 검증이 통과했습니다. QA 보고서 R8 FAIL과 기존 증거를 보존하고 다음 지시를 기다리겠습니다.\"},\"latestToolMarkerId\":\"exec-09e50c0a-59a4-40cc-80e5-24dd7c2bc361\",\"latestToolMarker\":{\"id\":\"exec-09e50c0a-59a4-40cc-80e5-24dd7c2bc361\",\"turnId\":\"01a11ca3-5c18-7bd0-abab-77e17e3b6463\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

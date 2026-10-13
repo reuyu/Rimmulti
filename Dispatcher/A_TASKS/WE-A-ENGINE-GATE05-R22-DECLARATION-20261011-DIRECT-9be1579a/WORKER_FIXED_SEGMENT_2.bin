@@ -1,0 +1,15 @@
+    public sealed class OperatorStartupAdmissionReceipt
+    {
+        public const string RECEIPT_SCHEMA_VERSION = "WE-OPERATOR-RECEIPT-V1";
+
+        public string ReceiptSchemaVersion { get; }
+        public OperatorStartupConfigSnapshot Snapshot { get; }
+        public string BoundConfigPath { get; }
+        public string BoundConfigSha256 { get; }
+        public string BoundOriginId { get; }
+        public string BoundLaunchPlanId { get; }
+        public string BoundConfigId { get; }
+        public string BoundRole { get; }
+        public string BoundCapabilityBoundary { get; }
+        public string AdmittedAtUtc { get; }
+        public bool IsTrusted { get; }

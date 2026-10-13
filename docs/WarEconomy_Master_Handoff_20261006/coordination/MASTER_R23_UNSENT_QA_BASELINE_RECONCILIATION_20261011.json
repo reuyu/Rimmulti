@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-11T18:00:37.480497+09:00",
+  "reason": "Generator retained R21baseline instead of lastR22;detectedbefore anymessage/send/QAexecution",
+  "initial_protected": 11650,
+  "full_prior_protected": 11639,
+  "new_additive_protected": 12350,
+  "new_baseline": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R23_QA_INDEPENDENT_PROTECTED_BASELINE_RECONCILED_20261011.json",
+  "new_baseline_sha256": "58A4E0E9F7748C0E23E5D2818CA29D3C72151E3052E2811989C4290B9A520181",
+  "initial_baseline_preserved": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R23_QA_INDEPENDENT_PROTECTED_BASELINE_20261011.json",
+  "initial_WP_preserved": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R23_QA_WP_INITIAL_UNSENT_BEFORE_BASELINE_RECONCILIATION_20261011.md",
+  "initial_WP_sha256": "9CA99F2FA070B17705AC7F2A94300D5F3E48DA64E286AC0B1DCF269EC7AD1350",
+  "corrected_unsent_WP_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R23_IDENTIFIER_MAPPING_INDEPENDENT_S1.md",
+  "corrected_unsent_WP_sha256": "3AB773C5CEF01FE98514D78C2C3087D64000CBC3B39A5060214FCEC811DDC662",
+  "delivery": "NOT_SENT",
+  "scope_change": false,
+  "production_candidate_or_QA_original_mutation": 0,
+  "initial_generator_no_output_error": "Substring generation error wrote0;corrected matching before successfulpreparation"
+}

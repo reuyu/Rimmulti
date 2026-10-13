@@ -1,0 +1,17 @@
+# R5 codec 독립 검증 준비 S1
+
+WP `WP_QA_ENGINE_GATE05_R5_CODEC_PREPARATION`,revision S1,delivery `SOL-GATE05-R5-CODEC-PREP-S1-20261008-01`.
+Original Sol Review WarEconomyMod QA/local/01a11583-ff90-73e0-8916-d021e2bb038d. 이전 R4 독립 결과는 Master가 ACCEPTED_INDEPENDENT_STATIC_REVISION_REQUIRED_RUNTIME_UNTESTED로 수집했다. 실제 다른 active WP면 중복 시작하지 않는다.
+
+Master review C:\Users\user\Desktop\RimMulti\docs\WarEconomy_Master_Handoff_20261006\MASTER_REVIEW_ENGINE_GATE05_R4_INDEPENDENT_QA_S1_20261008.md와 WP_ENGINE_GATE05_R5_CODEC.md/release를 읽는다. 실제 root AGENTS/current governance/SRS/mandatory C corrections/accepted ADR006B/MD130을 복구한다. A는 R5 codec/content만 수정 중이며 operator/native/full gate는 별도 후속 작업이다. QA는 독립 판단하며 Master/A의 codec 설계 선택을 그대로 PASS로 삼지 않는다.
+
+역사 R4 exact manifest C:\Users\user\Desktop\RimMulti\Dispatcher\A_TASKS\WE-A-ENGINE-GATE05-R4-20261008-DIRECT-825ae8a1\MASTER_GATE05_R4_REVIEW_FREEZE_MANIFEST.json,SHA D047D0095CEDDA8E5F0FB6871EA4C24AF0866CA569514049FFAD7E91B7C1460C,232파일의 frozen_path만 code/raw reference로 읽는다. Selected4F5663.../MVID ed98e6f9-aa63-47ee-ae21-84f59465d2bb/WorkerBA28.../Census09D57... lineage는 역사 기준이다. Mutable R5 current source/bin/obj를 검증 후보로 읽거나 QA가 수정/재빌드하지 않는다. 아직 새 R5 candidate freeze/admission/evidence는 없다.
+
+1. R4 ContentProfileProvider의 현재 supported8 Def family 필드를 function/line/SHA로 추출하여 최소 field/type/requiredness/material meaning/optional-unavailable/null-missing-empty/collection identity/order matrix를 만든다. Actual core/loaded mod assemblies/active order/DLC/patch/settings coverage와 unknown disposition도 범위별로 정리한다. 모든 Def field/모든 sort 금지나 global ownership schema를 새 요구로 만들지 않는다.
+2. 실제 production codec를 사용하는 후속 independent positive normal controls의 검증 계획을 만든다. 정상 대표 data의 semantic roundtrip/canonical byte determinism/Unicode 및 문자열 escaping/숫자 정밀도/정상 null-empty states/ordered list/set stable key/content revision 의미를 지원 계약으로 검증하게 한다. Mocked provider/manifest/census/hash나 version flag만으로 PASS하는 계획은 채택하지 않는다. Forged/replay/tamper/bypass/adverse 보안 reproduction/공격 절차를 만들지 않는다.
+3. Codec unit proof,actual loaded-content profile proof,native lifecycle/issuer semantics를 구분한다. R5 codec만으로 operator/MD128/MD129/native failure 또는 wholeGate closure가 해결된다고 주장하지 않는다. Worker/validator 독립 loaded profile 및 cache/admission lifecycle row는 실행 승인 전 UNTESTED다.
+4. 새 후보의 final pre-run/sources/generated/matching PDB/Debug-vs-Release/raw/run_id/unchanged bytes/actual report+manifest SHA gate를 준비한다. Actual R4 before7 size/pre-run5 identity 차이를 정상 provenance checklist로 연결하고 사후 snapshot을 실행 전 proof로 소급하지 않는다. 기존 S1 matrix/prep 내용을 복제만 하지 말고 exact supported codec field scope를 표로 제시한다.
+
+새 QA root C:\Users\user\Desktop\RimMulti\QA-Tactical-Engine\GATE05-R5-CODEC-PREP-S1-20261008,report C:\Users\user\Desktop\RimMulti\docs\QA_EngineHost_Gate05_R5_Codec_Preparation_S1_20261008.md에 ACK/coverage matrix/normal verification plan/provenance acceptance/identity+preservation/EVIDENCE_MANIFEST/RESULT_INDEX/COMPLETION을 쓴다. 기존 같은 파일을 덮어쓰지 않는다. R4frozen232/prior387/archive19/Pipeline206/QA1222/manifests/terminal을 보존한다. Candidate/runner/game/native 실행0,build0,production 변경0. 기존 설치/UserData를 다시 읽거나 수정/복구하지 않는다.
+
+Exact delivery/WP/revision/unique result/timezone/report+manifest/index absolute paths/hashes/limitations를 결속한다. 완료 즉시 기존 사용자 승인에 따라 Master01a1156b-97ec-7ce0-9e4a-dfc4a3acb174로 direct thread tool 보고한다. 준비 완료는 R5 E2나 R5 candidate 검토 완료가 아니다. Runtime E2 NOT_RELEASED,Engine002006/Pipeline007/current schema/G-Q1 OPEN,Foundation HOLD. 기존 hourly monitor는 A R5 실제 dispatch에 따라 Master가 운영하며 QA가 변경하지 않는다.

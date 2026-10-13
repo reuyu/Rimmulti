@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:32\",\"revision\":32,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a11aab-9a96-70e2-b4f4-bb738ac4cfaf\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791448816,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ac756f6f5f887d09a7b1b1974a78933\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ac756f6f5f887d09a7b1b1974a78933\",\"turnId\":\"01a11aab-9a96-70e2-b4f4-bb738ac4cfaf\",\"phase\":\"commentary\",\"text\":\"마스터가 승인한 R5 codec 준비 작업을 시작하겠습니다. Frozen R4를 기준으로 지원 필드의 타입·null·순서·content 범위를 검토하고, 정상 codec 검증과 provenance 확인 기준을 독립 작성하겠습니다.\"},\"latestToolMarkerId\":\"exec-0a4f86c5-d91b-4ee4-96cd-07ea40eb93c0\",\"latestToolMarker\":{\"id\":\"exec-0a4f86c5-d91b-4ee4-96cd-07ea40eb93c0\",\"turnId\":\"01a11aab-9a96-70e2-b4f4-bb738ac4cfaf\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

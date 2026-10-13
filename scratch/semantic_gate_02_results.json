@@ -1,0 +1,337 @@
+{
+  "workOrder": "WP-POC-ENGINE-HOST-SEMANTIC-GATE-02",
+  "timestamp": "2026-10-03 11:27:08",
+  "classification": "E1 ENGINE SEMANTIC GATE PASS",
+  "provenance": {
+    "engineVersion": "RimWorld 1.6.4871 rev591 Win64",
+    "activeMods": [
+      "brrainz.harmony",
+      "ludeon.rimworld",
+      "ludeon.rimworld.royalty",
+      "ludeon.rimworld.ideology",
+      "ludeon.rimworld.biotech",
+      "ludeon.rimworld.anomaly",
+      "ludeon.rimworld.odyssey",
+      "wareconomy.hybridmultiplayer",
+      "wareconomy.workerbridge.poc",
+      "qacodex.engine02.probe"
+    ],
+    "binaries": {
+      "exe": {
+        "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64.exe",
+        "sha256": "4C30E2105B49F2D0130F5D861947FBE82B866042299DA48EF1C8CF6979A8564D"
+      },
+      "assemblyCSharp": {
+        "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\Assembly-CSharp.dll",
+        "sha256": "5CF1B5BE399D5B1C9C56CA72C9D35B4ECF307FEACF5859D04AC5A1AA5926356A",
+        "mvid": "61e41735-6189-4da4-9d21-0260257b5097"
+      },
+      "workerBridgeDll": {
+        "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\WarEconomy.WorkerBridge.PoC\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+        "sha256": "2FDEB8DB7EE9271044294ADAA9D8CFEC86D559510D7F8182234F9FCBEFB3D5BC",
+        "mvid": "9e1e7d98-530c-4911-908e-fd2f876ef05e"
+      }
+    },
+    "sourceFiles": {
+      "WorkerBridge.cs": {
+        "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+        "sha256": "6D4D5064C25C84BD6ED670833D1BEDCB2D173EB5623E2E0A708C8A26B260512A"
+      },
+      "EngineHostCensus.cs": {
+        "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+        "sha256": "01A7430F083201961AA96248CD12C6443DA6DDC9A62607EBC6504FA053BA3C48"
+      }
+    },
+    "fixtures": {
+      "CleanSettlementFixture.rws": {
+        "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\CleanSettlementFixture.rws",
+        "bytes": 25896703,
+        "sha256": "BCDEA94EFEE63A609EA6652B24B8913CD8C74A5ABB1A36489D386E892FC44FC4"
+      },
+      "TargetSettlement_Clean_ContextB.rws": {
+        "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\TargetSettlement_Clean_ContextB.rws",
+        "bytes": 14015735,
+        "sha256": "6F535B9162C5C5267F1BA57DC056891449C4879AD51C5A906DC96AFBEF7CEEBD"
+      }
+    }
+  },
+  "negativeBattery": {
+    "allDetected": true,
+    "allExportRefused": true,
+    "casesCount": 15,
+    "passCount": 15,
+    "cases": [
+      {
+        "tag": "01_held_item_stack",
+        "description": "MedicineIndustrial stack count mutated 5 -> 4",
+        "fixture": "Corrupted_01_held_item_stack.rws",
+        "fixtureSha256": "9AABDCC64949F9003D21816D1D87BD28BF9987A78D5FCFD36610EC94181C02EA",
+        "reachedReady": true,
+        "unapprovedExportBlocked": true,
+        "approvalRejected": true,
+        "rejectionDetail": "SEMANTIC_REJECTED: Map[0] has 5 semantic mismatches. Export blocked.",
+        "validationFailedState": true,
+        "postRejectionExportBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "02_pawn_skill",
+        "description": "Strange Shooting skill mutated 10 -> 15",
+        "fixture": "Corrupted_02_pawn_skill.rws",
+        "fixtureSha256": "560AD055734EDA666B8233E62DF7B53A066A6E4FE3E27C08CEBD9A9F408680AB",
+        "reachedReady": true,
+        "unapprovedExportBlocked": true,
+        "approvalRejected": true,
+        "rejectionDetail": "SEMANTIC_REJECTED: Map[0] has 5 semantic mismatches. Export blocked.",
+        "validationFailedState": true,
+        "postRejectionExportBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "03_hediff_severity",
+        "description": "Strange Stab severity mutated 3.0 -> 1.0",
+        "fixture": "Corrupted_03_hediff_severity.rws",
+        "fixtureSha256": "D38060F58EE0CB80B14588F8EB21150139BBD693A96E24EF423FC704333E2A92",
+        "reachedReady": true,
+        "unapprovedExportBlocked": true,
+        "approvalRejected": true,
+        "rejectionDetail": "SEMANTIC_REJECTED: Map[0] has 5 semantic mismatches. Export blocked.",
+        "validationFailedState": true,
+        "postRejectionExportBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "04_hediff_removal",
+        "description": "Strange BionicTongue removed",
+        "fixture": "Corrupted_04_hediff_removal.rws",
+        "fixtureSha256": "24D19BB1A1CC782212400DEA935E97D412F3F4572B8587A4A9668AC8FC59E050",
+        "reachedReady": true,
+        "unapprovedExportBlocked": true,
+        "approvalRejected": true,
+        "rejectionDetail": "SEMANTIC_REJECTED: Map[0] has 6 semantic mismatches. Export blocked.",
+        "validationFailedState": true,
+        "postRejectionExportBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "05_animal_master_follow",
+        "description": "Labrador master cleared, followDrafted False",
+        "fixture": "Corrupted_05_animal_master_follow.rws",
+        "fixtureSha256": "3E0C06144CA8327A54E9DB1D4C06A79D6E96BF0773CE3FD565F3F84F22709F66",
+        "reachedReady": true,
+        "unapprovedExportBlocked": true,
+        "approvalRejected": true,
+        "rejectionDetail": "SEMANTIC_REJECTED: Map[0] has 5 semantic mismatches. Export blocked.",
+        "validationFailedState": true,
+        "postRejectionExportBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "06_bill_change",
+        "description": "Sculpting bill targetCount mutated 10 -> 25",
+        "fixture": "Corrupted_06_bill_change.rws",
+        "fixtureSha256": "0C7536AD61E46828E65C10F690ADC9E43C80197A83ECBF7F6C0EDF5BBA1FD255",
+        "reachedReady": true,
+        "unapprovedExportBlocked": true,
+        "approvalRejected": true,
+        "rejectionDetail": "SEMANTIC_REJECTED: Map[0] has 5 semantic mismatches. Export blocked.",
+        "validationFailedState": true,
+        "postRejectionExportBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "07_zone_cell",
+        "description": "Growing zone cell moved (139, 0, 145) -> (139, 0, 146)",
+        "fixture": "Corrupted_07_zone_cell.rws",
+        "fixtureSha256": "18CDCA857D5D90595233C5D15489970B355E8990273469EF956074FBC7C9A588",
+        "reachedReady": true,
+        "unapprovedExportBlocked": true,
+        "approvalRejected": true,
+        "rejectionDetail": "SEMANTIC_REJECTED: Map[0] has 5 semantic mismatches. Export blocked.",
+        "validationFailedState": true,
+        "postRejectionExportBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "08_designation_change",
+        "description": "Mine designation moved (150, 0, 150) -> (150, 0, 151)",
+        "fixture": "Corrupted_08_designation_change.rws",
+        "fixtureSha256": "2C7DB9BE41C066A3FDCDE923CE647B23E7AB3A616D64C308E154D636352EF464",
+        "reachedReady": true,
+        "unapprovedExportBlocked": true,
+        "approvalRejected": true,
+        "rejectionDetail": "SEMANTIC_REJECTED: Map[0] has 5 semantic mismatches. Export blocked.",
+        "validationFailedState": true,
+        "postRejectionExportBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "09_fire_size",
+        "description": "Fire fireSize mutated 0.45 -> 0.90",
+        "fixture": "Corrupted_09_fire_size.rws",
+        "fixtureSha256": "50A7BE8C780EF0B0827B7DA358A40A10F153EE4D4ABB41644BD5BB504B809580",
+        "reachedReady": true,
+        "unapprovedExportBlocked": true,
+        "approvalRejected": true,
+        "rejectionDetail": "SEMANTIC_REJECTED: Map[0] has 5 semantic mismatches. Export blocked.",
+        "validationFailedState": true,
+        "postRejectionExportBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "10_plant_growth",
+        "description": "Rice growth mutated 0.85 -> 0.40",
+        "fixture": "Corrupted_10_plant_growth.rws",
+        "fixtureSha256": "B8532CD84A81F0D923CC2534281377A0A58D40B08E3FA960845F2FF4CCE1C102",
+        "reachedReady": true,
+        "unapprovedExportBlocked": true,
+        "approvalRejected": true,
+        "rejectionDetail": "SEMANTIC_REJECTED: Map[0] has 4 semantic mismatches. Export blocked.",
+        "validationFailedState": true,
+        "postRejectionExportBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "11_condition_duration",
+        "description": "Aurora duration mutated 60000 -> 12000",
+        "fixture": "Corrupted_11_condition_duration.rws",
+        "fixtureSha256": "AC2C7812804F0A6359365C4D03482A81950950DBDE616F20AF3BE71333D5BBCC",
+        "reachedReady": true,
+        "unapprovedExportBlocked": true,
+        "approvalRejected": true,
+        "rejectionDetail": "SEMANTIC_REJECTED: Map[0] has 5 semantic mismatches. Export blocked.",
+        "validationFailedState": true,
+        "postRejectionExportBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "12_bed_assignment",
+        "description": "Bed990012 assignment cleared",
+        "fixture": "Corrupted_12_bed_assignment.rws",
+        "fixtureSha256": "19A84A0F5E805781D99D05DF4861F13B3E1E6512A09427E666ABF5DF7AA8988B",
+        "reachedReady": true,
+        "unapprovedExportBlocked": true,
+        "approvalRejected": true,
+        "rejectionDetail": "SEMANTIC_REJECTED: Map[0] has 5 semantic mismatches. Export blocked.",
+        "validationFailedState": true,
+        "postRejectionExportBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "13_external_pawn_relation",
+        "description": "Spouse relation mutated to ExSpouse",
+        "fixture": "Corrupted_13_external_pawn_relation.rws",
+        "fixtureSha256": "D7E7B5885EF84B21DAAEAFAFFA4FFBE857A24E017A8D5DCED740E72E5FCA88FC",
+        "reachedReady": true,
+        "unapprovedExportBlocked": true,
+        "approvalRejected": true,
+        "rejectionDetail": "SEMANTIC_REJECTED: Map[0] has 5 semantic mismatches. Export blocked.",
+        "validationFailedState": true,
+        "postRejectionExportBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "14_power_scalar",
+        "description": "Battery509102 storedPower mutated 600 -> 200",
+        "fixture": "Corrupted_14_power_scalar.rws",
+        "fixtureSha256": "7BA5BB30DB725EDDC1AAA4721A2AF7CCD6387226D11F1A32CD3791AC65607E04",
+        "reachedReady": true,
+        "unapprovedExportBlocked": true,
+        "approvalRejected": true,
+        "rejectionDetail": "SEMANTIC_REJECTED: Map[0] has 5 semantic mismatches. Export blocked.",
+        "validationFailedState": true,
+        "postRejectionExportBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      },
+      {
+        "tag": "15_nested_holder_content",
+        "description": "MinifiedThing inner item def mutated Stool -> WoodLog",
+        "fixture": "Corrupted_15_nested_holder_content.rws",
+        "fixtureSha256": "0FE4BA906B94D3CB216F786421667108CB06A422CD9A66482209911BEE0C3436",
+        "reachedReady": true,
+        "unapprovedExportBlocked": true,
+        "approvalRejected": true,
+        "rejectionDetail": "SEMANTIC_REJECTED: Map[0] has 7 semantic mismatches. Export blocked.",
+        "validationFailedState": true,
+        "postRejectionExportBlocked": true,
+        "zeroBytesOnDisk": true,
+        "casePass": true
+      }
+    ]
+  },
+  "freshProcessPositive": {
+    "processA": {
+      "pid": 9032,
+      "status": "STATE: READY, SemanticState=VALIDATION_REQUIRED, ApprovedTicks=-1, Gen=1, Maps=1, TicksGame=1823, SimActive=True, TargetMap=0, TicksSim=0, IsRealtime=False, RemainingStep=0, LastFailure=''",
+      "approval": "SEMANTIC_APPROVED: Gen=1, Map=0, Ticks=1823, ManifestHash=9A29F2A98B071E9498E4B869C2B002B1497D8C4905CC165FD450252384DBDAFE, Path='c:\\Users\\user\\Desktop\\RimMulti\\scratch\\Profiles\\Profile_A\\Saves\\A_CleanManifest.census.json'",
+      "exportResponse": "ARTIFACT_APPROVED: File='c:\\Users\\user\\Desktop\\RimMulti\\scratch\\Profiles\\Profile_A\\Saves\\A_ApprovedArtifact.rws', Name='A_ApprovedArtifact', Size=14038046 bytes, SHA256=0D6B538566BA11A879D4E50BBF52392D0CC57D21DFFF9BD81A1F01312A0F424B, ManifestHash=9A29F2A98B071E9498E4B869C2B002B1497D8C4905CC165FD450252384DBDAFE, TicksGame=1823, Elapsed=833 ms",
+      "artifact": {
+        "file": "A_TargetArtifact.rws",
+        "bytes": 14038046,
+        "sha256": "0D6B538566BA11A879D4E50BBF52392D0CC57D21DFFF9BD81A1F01312A0F424B"
+      }
+    },
+    "processB": {
+      "pid": 34132,
+      "status": "STATE: READY, SemanticState=VALIDATION_REQUIRED, ApprovedTicks=-1, Gen=1, Maps=1, TicksGame=1823, SimActive=True, TargetMap=0, TicksSim=0, IsRealtime=False, RemainingStep=0, LastFailure=''",
+      "initialApproval": "SEMANTIC_APPROVED: Gen=1, Map=0, Ticks=1823, ManifestHash=9A29F2A98B071E9498E4B869C2B002B1497D8C4905CC165FD450252384DBDAFE, Path='c:\\Users\\user\\Desktop\\RimMulti\\scratch\\Profiles\\Profile_B\\Saves\\A_CleanManifest.census.json'",
+      "ticksAdvanced": 100,
+      "invalidatedOk": true,
+      "unapprovedExportBlocked": true,
+      "postTickApproval": "SEMANTIC_APPROVED: Gen=1, Map=0, Ticks=1923, ManifestHash=5785E43499291E7CEFAC119D2B4E0FFB19ABCFFF6A9FC33DF5DA52555905C7FA, Path='c:\\Users\\user\\Desktop\\RimMulti\\scratch\\Profiles\\Profile_B\\Saves\\B_PostTick_Manifest.census.json'",
+      "exportResponse": "ARTIFACT_APPROVED: File='c:\\Users\\user\\Desktop\\RimMulti\\scratch\\Profiles\\Profile_B\\Saves\\B_PostTick_Artifact.rws', Name='B_PostTick_Artifact', Size=14042040 bytes, SHA256=BC522786B61E620B9B370CBF3218A6BF38959123F1B6DF668A1EA8E842B55483, ManifestHash=5785E43499291E7CEFAC119D2B4E0FFB19ABCFFF6A9FC33DF5DA52555905C7FA, TicksGame=1923, Elapsed=797 ms",
+      "artifact": {
+        "file": "B_PostTick_Artifact.rws",
+        "bytes": 14042040,
+        "sha256": "BC522786B61E620B9B370CBF3218A6BF38959123F1B6DF668A1EA8E842B55483"
+      }
+    },
+    "processC": {
+      "pid": 30872,
+      "status": "STATE: READY, SemanticState=VALIDATION_REQUIRED, ApprovedTicks=-1, Gen=1, Maps=1, TicksGame=1923, SimActive=True, TargetMap=0, TicksSim=0, IsRealtime=False, RemainingStep=0, LastFailure=''",
+      "validation": "VALIDATION_PASS: Map[0] matches manifest 'B_PostTick_Manifest.census.json'. Entities=31976, Errors=0.",
+      "validationPass": true,
+      "approval": "SEMANTIC_APPROVED: Gen=1, Map=0, Ticks=1923, ManifestHash=5785E43499291E7CEFAC119D2B4E0FFB19ABCFFF6A9FC33DF5DA52555905C7FA, Path='c:\\Users\\user\\Desktop\\RimMulti\\scratch\\Profiles\\Profile_C\\Saves\\B_PostTick_Manifest.census.json'"
+    },
+    "zeroUnexplainedMismatch": true
+  },
+  "contextAnalysis": {
+    "contextName": "Pruned Target-Map Owner Context",
+    "inventory": {
+      "provenRequired": [
+        "World FactionManager with PlayerColony and referenced hostile/neutral factions",
+        "Parent WorldObject (Settlement/MapParent) matching Map.info.parent",
+        "Active DefDatabase registries (ThingDef, HediffDef, RecipeDef, PawnKindDef, BiomeDef)"
+      ],
+      "retainedUnknown": [
+        "Unspawned WorldPawns referenced in directRelations (e.g. Spouse Human309)",
+        "Global TaleManager entries associated with colonist historical events",
+        "World Grid Tile coordinate attributes for celestial day/night calculations"
+      ],
+      "reconstructible": [
+        "WeatherManager.tickedLastWeather transient state",
+        "Transient JobDriver made pointers (re-instantiated upon load)",
+        "Local lighting grid and pathfinding cache tables"
+      ],
+      "futurePlayerGlobalCandidate": [
+        "Colony faction research manager and unlocked tech trees",
+        "Cross-settlement shared currency / silver accounts",
+        "Global quest states and empire goodwill ratings"
+      ]
+    }
+  }
+}

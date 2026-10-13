@@ -1,0 +1,27 @@
+﻿======================================================================
+WarEconomy Engine Gate05-R7 Content Admission Verification Battery (Developer E1)
+Timestamp: 2026-10-08T13:05:49.0690921Z
+Target: ContentProfileProvider ADR-006B-v5-R7 Pure Normal DTO / Helper Verification
+======================================================================
+Loaded Candidate DLL: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R7ContentAdmission\Harness\bin\Debug\net472\WarEconomy.WorkerBridge.PoC.dll
+Candidate DLL SHA256: 223B4055C0AFAA6F30488C9787AE6F68D65D62F395CFCA722EDA83674975CD2A
+  JSON Length: 3482 bytes, SHA256: D0CFC22AA9024ABC2CA3B0C5D819D0463B1E8F9705CDA86FC8748FE77EF1D6CE
+[PASS] TC01_RoundTrip_Canonical_Lossless: Serialize manifest -> deserialize -> re-serialize and compare exact SHA256 digests
+[PASS] TC02_Deterministic_Identical_Input: Two separate instances with identical values must produce identical JSON and SHA256
+[PASS] TC03_All_Eight_Def_Families_No_Sentinels: Verify all 8 Def families are present and free of legacy sentinel/delimiter strings
+[PASS] TC04_Floating_Point_Lossless_Precision: Verify float boundary and fractional values preserve exact precision across round-trip
+[PASS] TC05_Unicode_SpecialChars_Lossless: Verify Korean, Japanese, German umlauts, quotes, tabs, newlines round-trip without corruption
+[PASS] TC06_Null_Missing_Empty_Distinction: Verify null fields remain null in JSON and do not collapse to empty string or sentinel
+[PASS] TC07_Ordered_Collections_Preservation: Verify activeMods loadOrder, Verbs list order, Hediff stages sequence, and Comps order are preserved
+[PASS] TC08_Stable_Sorting_Determinism: Verify Def family lists sort deterministically by defName ordinal via CanonicalNormalize
+[PASS] TC09_Unordered_Input_Normalization_Equivalence: Manifest with shuffled unordered collections produces exact identical JSON and digest as pre-sorted instance
+  Validated 8 Def families, DLCs, mods, assemblies and headers successfully with 0 contract errors.
+[PASS] TC10_ValidateContract_Positive_Compliant: ValidateContract returns true with empty failureReason on representative compliant manifest
+  Successfully admitted manifest with canonical JSON (3482 bytes).
+[PASS] TC11_TryAdmitManifest_Positive_Admission: TryAdmitManifest successfully validates and admits compliant manifest producing non-empty canonical JSON
+[PASS] TC12_Distinct_Manifests_Distinct_Digests: Changing a single scalar value must produce a distinct JSON and digest
+[PASS] TC13_Schema_Contract_Versions_And_Capability_Flags: Verify MANIFEST_SCHEMA_VERSION is ADR-006B-v5, CONTENT_CONTRACT_VERSION is ADR-006B-v5-R7, SUPPORTED_COVERAGE_PROFILE and MOD_PATCH_SUPPORT_STATUS match
+[PASS] TC14_Deterministic_Tie_Breaking: Verify assemblies and stats sort deterministically using secondary tie-breaking keys
+======================================================================
+Total Tests: 14, Passed: 14, Failed: 0, Verdict: PASS
+======================================================================

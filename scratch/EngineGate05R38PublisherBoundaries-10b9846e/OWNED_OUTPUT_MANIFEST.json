@@ -1,0 +1,73 @@
+{
+  "owned_root": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e",
+  "generated_at_utc": "2026-10-13T17:37:58.529650+00:00",
+  "file_count": 11,
+  "files": [
+    {
+      "relative_path": "AST_HOST_TOOL_PROOF.json",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\AST_HOST_TOOL_PROOF.json",
+      "bytes": 4315,
+      "sha256": "F60988922882C9EE7986A723FD968C1BDDBA590BA3195C58DFC7E0EAC993E952"
+    },
+    {
+      "relative_path": "AST_INPUT_MANIFEST.json",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\AST_INPUT_MANIFEST.json",
+      "bytes": 6418,
+      "sha256": "D44BD20E4BF7919CC0754C204D48E9FC8EDE6DB26D1442357F2D8A5EEAD02AC3"
+    },
+    {
+      "relative_path": "ast_checker.py",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\ast_checker.py",
+      "bytes": 2406,
+      "sha256": "D63FD91C7B9C6ABEC3876EC1E380F5992589D44E29F1AEDF0D4022B6FD636D2C"
+    },
+    {
+      "relative_path": "ast_stderr.raw.bin",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\ast_stderr.raw.bin",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "relative_path": "ast_stdout.raw.bin",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\ast_stdout.raw.bin",
+      "bytes": 2699,
+      "sha256": "6CE2917E748D7C67F7337FFDE6C5542797973FCBF1E58B8AFF259C3FE59BB56F"
+    },
+    {
+      "relative_path": "build_r38_artifacts.py",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\build_r38_artifacts.py",
+      "bytes": 66714,
+      "sha256": "317CF78C62B3FA06E9635C7DDF7042EC99933FBD81D6FEB255A250FE81C143A6"
+    },
+    {
+      "relative_path": "generate_final_completion_and_index.py",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\generate_final_completion_and_index.py",
+      "bytes": 10307,
+      "sha256": "8FBAED580332D6F12E34D9726D90F24589D26EFF48C58C13898CD1AD68F23D6B"
+    },
+    {
+      "relative_path": "generate_r38_publisher.py",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\generate_r38_publisher.py",
+      "bytes": 43956,
+      "sha256": "8CE902BCD645BF5E43C86FA3E0D65CA9D53156F2FB528FB0C14FEB5935FCD4AD"
+    },
+    {
+      "relative_path": "run_ast_verification.py",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\run_ast_verification.py",
+      "bytes": 6771,
+      "sha256": "9822A44802B931B2DF55D1FE6DEE0D066C208E75B223DFFDAA571972C0B9A953"
+    },
+    {
+      "relative_path": "verify_all_artifacts.py",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\verify_all_artifacts.py",
+      "bytes": 3718,
+      "sha256": "3E990406971A007D75E3C70F0740CE233C4289D3D2AB4BDE6872C6BC3FFCCB28"
+    },
+    {
+      "relative_path": "verify_refs_and_emit_ack.py",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\verify_refs_and_emit_ack.py",
+      "bytes": 10333,
+      "sha256": "6AB3D0C824E57038CED695DD90A087CCEEB230581EF0333B626D6996C6644044"
+    }
+  ]
+}

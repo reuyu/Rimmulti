@@ -1,0 +1,40 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R20-TRUSTED-STARTUP-20261011-DIRECT-e35ff656",
+  "wp_id": "WP_ENGINE_GATE05_R20_TRUSTED_STARTUP_ORIGIN",
+  "wp_revision": "GATE05-R20-TRUSTED-STARTUP",
+  "envelope": 23,
+  "orchestrator": "Python Host Subprocess",
+  "timestamp_utc": "2026-10-10T19:46:40.612061+00:00",
+  "pinned_runner": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R20TrustedStartup\\Harness\\bin\\Debug\\net472\\Gate05R20TrustedStartupRunner.exe",
+    "sha256": "5C2DD36A9480D20CC488FD075A6DCBDEF5F754978C46EF5BB66BB5643924A3EF",
+    "size": 40960
+  },
+  "runs": [
+    {
+      "run_name": "run_en_us",
+      "culture": "en-US",
+      "child_pid": 32552,
+      "exit_code": 0,
+      "duration_seconds": 0.31003618240356445,
+      "output_directory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R20TrustedStartup\\run_en_us",
+      "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R20TrustedStartup\\run_en_us\\stdout.txt",
+      "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R20TrustedStartup\\run_en_us\\stderr.txt",
+      "inventory_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R20TrustedStartup\\run_en_us\\OUTPUT_INVENTORY.json",
+      "inventory_count": 15
+    },
+    {
+      "run_name": "run_de_de",
+      "culture": "de-DE",
+      "child_pid": 8020,
+      "exit_code": 0,
+      "duration_seconds": 0.17290592193603516,
+      "output_directory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R20TrustedStartup\\run_de_de",
+      "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R20TrustedStartup\\run_de_de\\stdout.txt",
+      "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R20TrustedStartup\\run_de_de\\stderr.txt",
+      "inventory_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R20TrustedStartup\\run_de_de\\OUTPUT_INVENTORY.json",
+      "inventory_count": 15
+    }
+  ],
+  "isolation_verified": true
+}

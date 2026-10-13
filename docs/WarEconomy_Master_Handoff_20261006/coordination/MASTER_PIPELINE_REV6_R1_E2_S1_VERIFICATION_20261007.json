@@ -1,0 +1,546 @@
+{
+  "at": "2026-10-07T23:56:22.710483+09:00",
+  "result_id": "SOL-PIPELINE-REV6-R1-E2-S1-20261007-7b91d2e34d7f4facac528d1e0bde3210",
+  "index_sha256": "AC587EE9849D52AF613D0A38DC12030EB02AA236C41AB59017F741B31D05C4ED",
+  "report_sha256": "C7AB59F624ACF3E6CFEA04613ED08E2891CD2190005B39154CAD859849A79747",
+  "manifest_sha256": "394E4F72E4487CB0E24055470098FB120BCB26D2B27F19A3D36A6CB7FCA4100D",
+  "checks": {
+    "s1_inventory": 312,
+    "prior_inventory": 297,
+    "master_frozen": 103,
+    "master_original": 103,
+    "tooling_snapshot": 20,
+    "master_engine19": 19,
+    "freeze-before-run2.json_original_path": 103,
+    "freeze-before-run2.json_frozen_path": 103,
+    "freeze-before-run2.json_qa_path": 103,
+    "freeze-after.json_original_path": 103,
+    "freeze-after.json_frozen_path": 103,
+    "freeze-after.json_qa_path": 103,
+    "s1_inventory_after_master_reads": 312,
+    "prior_inventory_after_master_reads": 297
+  },
+  "changed_or_missing": [],
+  "actual_processes": 18,
+  "exit_counts": {
+    "1": 2,
+    "0": 16
+  },
+  "loaded_proofs": [
+    {
+      "pid": 24948,
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "mvid": "6ceee963-81e6-46ef-a7c7-f0b93432a1f3",
+        "sha256": "9D1CEEB1CA3B98B776855EAC61DD7A086E667918AEA6061B297CF9780D48E133"
+      },
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78"
+      }
+    },
+    {
+      "pid": 11388,
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "mvid": "6ceee963-81e6-46ef-a7c7-f0b93432a1f3",
+        "sha256": "9D1CEEB1CA3B98B776855EAC61DD7A086E667918AEA6061B297CF9780D48E133"
+      },
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78"
+      }
+    },
+    {
+      "pid": 29208,
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "mvid": "6ceee963-81e6-46ef-a7c7-f0b93432a1f3",
+        "sha256": "9D1CEEB1CA3B98B776855EAC61DD7A086E667918AEA6061B297CF9780D48E133"
+      },
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78"
+      }
+    },
+    {
+      "pid": 15108,
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "mvid": "6ceee963-81e6-46ef-a7c7-f0b93432a1f3",
+        "sha256": "9D1CEEB1CA3B98B776855EAC61DD7A086E667918AEA6061B297CF9780D48E133"
+      },
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78"
+      }
+    },
+    {
+      "pid": 17972,
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "mvid": "6ceee963-81e6-46ef-a7c7-f0b93432a1f3",
+        "sha256": "9D1CEEB1CA3B98B776855EAC61DD7A086E667918AEA6061B297CF9780D48E133"
+      },
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78"
+      }
+    },
+    {
+      "pid": 16068,
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "mvid": "6ceee963-81e6-46ef-a7c7-f0b93432a1f3",
+        "sha256": "9D1CEEB1CA3B98B776855EAC61DD7A086E667918AEA6061B297CF9780D48E133"
+      },
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78"
+      }
+    },
+    {
+      "pid": 28052,
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "mvid": "6ceee963-81e6-46ef-a7c7-f0b93432a1f3",
+        "sha256": "9D1CEEB1CA3B98B776855EAC61DD7A086E667918AEA6061B297CF9780D48E133"
+      },
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78"
+      }
+    },
+    {
+      "pid": 21924,
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "mvid": "6ceee963-81e6-46ef-a7c7-f0b93432a1f3",
+        "sha256": "9D1CEEB1CA3B98B776855EAC61DD7A086E667918AEA6061B297CF9780D48E133"
+      },
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78"
+      }
+    },
+    {
+      "pid": 26592,
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "mvid": "6ceee963-81e6-46ef-a7c7-f0b93432a1f3",
+        "sha256": "9D1CEEB1CA3B98B776855EAC61DD7A086E667918AEA6061B297CF9780D48E133"
+      },
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78"
+      }
+    },
+    {
+      "pid": 29360,
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "mvid": "6ceee963-81e6-46ef-a7c7-f0b93432a1f3",
+        "sha256": "9D1CEEB1CA3B98B776855EAC61DD7A086E667918AEA6061B297CF9780D48E133"
+      },
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78"
+      }
+    },
+    {
+      "pid": 17416,
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "mvid": "6ceee963-81e6-46ef-a7c7-f0b93432a1f3",
+        "sha256": "9D1CEEB1CA3B98B776855EAC61DD7A086E667918AEA6061B297CF9780D48E133"
+      },
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78"
+      }
+    },
+    {
+      "pid": 25876,
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "mvid": "6ceee963-81e6-46ef-a7c7-f0b93432a1f3",
+        "sha256": "9D1CEEB1CA3B98B776855EAC61DD7A086E667918AEA6061B297CF9780D48E133"
+      },
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78"
+      }
+    },
+    {
+      "pid": 33248,
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "mvid": "6ceee963-81e6-46ef-a7c7-f0b93432a1f3",
+        "sha256": "9D1CEEB1CA3B98B776855EAC61DD7A086E667918AEA6061B297CF9780D48E133"
+      },
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78"
+      }
+    },
+    {
+      "pid": 26860,
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "mvid": "6ceee963-81e6-46ef-a7c7-f0b93432a1f3",
+        "sha256": "9D1CEEB1CA3B98B776855EAC61DD7A086E667918AEA6061B297CF9780D48E133"
+      },
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78"
+      }
+    },
+    {
+      "pid": 28432,
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "mvid": "6ceee963-81e6-46ef-a7c7-f0b93432a1f3",
+        "sha256": "9D1CEEB1CA3B98B776855EAC61DD7A086E667918AEA6061B297CF9780D48E133"
+      },
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78"
+      }
+    },
+    {
+      "pid": 28492,
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "mvid": "6ceee963-81e6-46ef-a7c7-f0b93432a1f3",
+        "sha256": "9D1CEEB1CA3B98B776855EAC61DD7A086E667918AEA6061B297CF9780D48E133"
+      },
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78"
+      }
+    },
+    {
+      "pid": 34672,
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "mvid": "6ceee963-81e6-46ef-a7c7-f0b93432a1f3",
+        "sha256": "9D1CEEB1CA3B98B776855EAC61DD7A086E667918AEA6061B297CF9780D48E133"
+      },
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78"
+      }
+    },
+    {
+      "pid": 35368,
+      "tool": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\Harness.dll",
+        "mvid": "6ceee963-81e6-46ef-a7c7-f0b93432a1f3",
+        "sha256": "9D1CEEB1CA3B98B776855EAC61DD7A086E667918AEA6061B297CF9780D48E133"
+      },
+      "server": {
+        "Location": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Tooling\\R1\\bin\\WarEconomy.Server.dll",
+        "mvid": "bbb3d4f4-423c-4379-a931-58e4b3a50add",
+        "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78"
+      }
+    }
+  ],
+  "tool_snapshot_before_all_runs": true,
+  "master_db_copy_rechecks": [
+    {
+      "source": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Databases\\acknowledged.db",
+      "master_copy": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_S1_DB_READ_COPIES\\run1\\acknowledged.db",
+      "typed_operations": 1,
+      "counts": {
+        "COMMITTED": 1
+      },
+      "head": {
+        "AckScope": 1
+      },
+      "descriptor_sha256": "079CFBAC4246592B4E2300630BBB39528C44CCAA6C1199C9811E9B1DB9C4B63C"
+    },
+    {
+      "source": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Databases\\fixture.db",
+      "master_copy": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_S1_DB_READ_COPIES\\run1\\fixture.db",
+      "typed_operations": 10,
+      "counts": {
+        "COMMITTED": 8,
+        "ABORTED": 2
+      },
+      "head": {
+        "A": 3,
+        "B": 3,
+        "C": 2
+      },
+      "descriptor_sha256": "079CFBAC4246592B4E2300630BBB39528C44CCAA6C1199C9811E9B1DB9C4B63C"
+    },
+    {
+      "source": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Databases\\normal-copy.db",
+      "master_copy": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_S1_DB_READ_COPIES\\run1\\normal-copy.db",
+      "typed_operations": 10,
+      "counts": {
+        "COMMITTED": 8,
+        "ABORTED": 2
+      },
+      "head": {
+        "A": 3,
+        "B": 3,
+        "C": 2
+      },
+      "descriptor_sha256": "079CFBAC4246592B4E2300630BBB39528C44CCAA6C1199C9811E9B1DB9C4B63C"
+    },
+    {
+      "source": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Databases\\normal-vacuum.db",
+      "master_copy": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_S1_DB_READ_COPIES\\run1\\normal-vacuum.db",
+      "typed_operations": 10,
+      "counts": {
+        "COMMITTED": 8,
+        "ABORTED": 2
+      },
+      "head": {
+        "A": 3,
+        "B": 3,
+        "C": 2
+      },
+      "descriptor_sha256": "079CFBAC4246592B4E2300630BBB39528C44CCAA6C1199C9811E9B1DB9C4B63C"
+    },
+    {
+      "source": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Databases\\backup-source-copy.db",
+      "master_copy": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_S1_DB_READ_COPIES\\run1\\backup-source-copy.db",
+      "typed_operations": 10,
+      "counts": {
+        "COMMITTED": 8,
+        "ABORTED": 2
+      },
+      "head": {
+        "A": 3,
+        "B": 3,
+        "C": 2
+      },
+      "descriptor_sha256": "079CFBAC4246592B4E2300630BBB39528C44CCAA6C1199C9811E9B1DB9C4B63C"
+    },
+    {
+      "source": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Databases\\normal-backup.db",
+      "master_copy": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_S1_DB_READ_COPIES\\run1\\normal-backup.db",
+      "typed_operations": 10,
+      "counts": {
+        "COMMITTED": 8,
+        "ABORTED": 2
+      },
+      "head": {
+        "A": 3,
+        "B": 3,
+        "C": 2
+      },
+      "descriptor_sha256": "079CFBAC4246592B4E2300630BBB39528C44CCAA6C1199C9811E9B1DB9C4B63C"
+    },
+    {
+      "source": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Run2\\Databases\\acknowledged.db",
+      "master_copy": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_S1_DB_READ_COPIES\\run2\\acknowledged.db",
+      "typed_operations": 1,
+      "counts": {
+        "COMMITTED": 1
+      },
+      "head": {
+        "AckScope": 1
+      },
+      "descriptor_sha256": "079CFBAC4246592B4E2300630BBB39528C44CCAA6C1199C9811E9B1DB9C4B63C"
+    },
+    {
+      "source": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Run2\\Databases\\fixture.db",
+      "master_copy": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_S1_DB_READ_COPIES\\run2\\fixture.db",
+      "typed_operations": 10,
+      "counts": {
+        "COMMITTED": 8,
+        "ABORTED": 2
+      },
+      "head": {
+        "A": 3,
+        "B": 3,
+        "C": 2
+      },
+      "descriptor_sha256": "079CFBAC4246592B4E2300630BBB39528C44CCAA6C1199C9811E9B1DB9C4B63C"
+    },
+    {
+      "source": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Run2\\Databases\\normal-copy.db",
+      "master_copy": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_S1_DB_READ_COPIES\\run2\\normal-copy.db",
+      "typed_operations": 10,
+      "counts": {
+        "COMMITTED": 8,
+        "ABORTED": 2
+      },
+      "head": {
+        "A": 3,
+        "B": 3,
+        "C": 2
+      },
+      "descriptor_sha256": "079CFBAC4246592B4E2300630BBB39528C44CCAA6C1199C9811E9B1DB9C4B63C"
+    },
+    {
+      "source": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Run2\\Databases\\normal-vacuum.db",
+      "master_copy": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_S1_DB_READ_COPIES\\run2\\normal-vacuum.db",
+      "typed_operations": 10,
+      "counts": {
+        "COMMITTED": 8,
+        "ABORTED": 2
+      },
+      "head": {
+        "A": 3,
+        "B": 3,
+        "C": 2
+      },
+      "descriptor_sha256": "079CFBAC4246592B4E2300630BBB39528C44CCAA6C1199C9811E9B1DB9C4B63C"
+    },
+    {
+      "source": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Run2\\Databases\\backup-source-copy.db",
+      "master_copy": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_S1_DB_READ_COPIES\\run2\\backup-source-copy.db",
+      "typed_operations": 10,
+      "counts": {
+        "COMMITTED": 8,
+        "ABORTED": 2
+      },
+      "head": {
+        "A": 3,
+        "B": 3,
+        "C": 2
+      },
+      "descriptor_sha256": "079CFBAC4246592B4E2300630BBB39528C44CCAA6C1199C9811E9B1DB9C4B63C"
+    },
+    {
+      "source": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\Run2\\Databases\\normal-backup.db",
+      "master_copy": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_S1_DB_READ_COPIES\\run2\\normal-backup.db",
+      "typed_operations": 10,
+      "counts": {
+        "COMMITTED": 8,
+        "ABORTED": 2
+      },
+      "head": {
+        "A": 3,
+        "B": 3,
+        "C": 2
+      },
+      "descriptor_sha256": "079CFBAC4246592B4E2300630BBB39528C44CCAA6C1199C9811E9B1DB9C4B63C"
+    }
+  ],
+  "snapshot_comparisons": [
+    {
+      "phase": "Run1",
+      "before": "ack-before-termination",
+      "after": "ack-after-restart",
+      "records_equal": true,
+      "rowid_relationships_equal": true
+    },
+    {
+      "phase": "Run1",
+      "before": "fixture-closed-baseline",
+      "after": "fixture-after-recovery",
+      "records_equal": true,
+      "rowid_relationships_equal": true
+    },
+    {
+      "phase": "Run1",
+      "before": "fixture-closed-baseline",
+      "after": "copy-after",
+      "records_equal": true,
+      "rowid_relationships_equal": true
+    },
+    {
+      "phase": "Run1",
+      "before": "vacuum-before",
+      "after": "vacuum-after",
+      "records_equal": true,
+      "rowid_relationships_equal": true
+    },
+    {
+      "phase": "Run1",
+      "before": "vacuum-after",
+      "after": "vacuum-after-retry",
+      "records_equal": true,
+      "rowid_relationships_equal": true
+    },
+    {
+      "phase": "Run1",
+      "before": "fixture-closed-baseline",
+      "after": "backup-after-api",
+      "records_equal": true,
+      "rowid_relationships_equal": true
+    },
+    {
+      "phase": "Run1",
+      "before": "backup-after-api",
+      "after": "backup-after-retry",
+      "records_equal": true,
+      "rowid_relationships_equal": true
+    },
+    {
+      "phase": "Run2/",
+      "before": "ack-before-termination",
+      "after": "ack-after-restart",
+      "records_equal": true,
+      "rowid_relationships_equal": true
+    },
+    {
+      "phase": "Run2/",
+      "before": "fixture-closed-baseline",
+      "after": "fixture-after-recovery",
+      "records_equal": true,
+      "rowid_relationships_equal": true
+    },
+    {
+      "phase": "Run2/",
+      "before": "fixture-closed-baseline",
+      "after": "copy-after",
+      "records_equal": true,
+      "rowid_relationships_equal": true
+    },
+    {
+      "phase": "Run2/",
+      "before": "vacuum-before",
+      "after": "vacuum-after",
+      "records_equal": true,
+      "rowid_relationships_equal": true
+    },
+    {
+      "phase": "Run2/",
+      "before": "vacuum-after",
+      "after": "vacuum-after-retry",
+      "records_equal": true,
+      "rowid_relationships_equal": true
+    },
+    {
+      "phase": "Run2/",
+      "before": "fixture-closed-baseline",
+      "after": "backup-after-api",
+      "records_equal": true,
+      "rowid_relationships_equal": true
+    },
+    {
+      "phase": "Run2/",
+      "before": "backup-after-api",
+      "after": "backup-after-retry",
+      "records_equal": true,
+      "rowid_relationships_equal": true
+    }
+  ],
+  "readonly_mode": "original files only hashed/read; SQLite checks on separately copied DB/WAL/SHM; reviewed oracle with write no-op",
+  "full_required_coverage": false,
+  "verdict": "INCONCLUSIVE_FULL_GATE",
+  "observed_controls": "PASS"
+}

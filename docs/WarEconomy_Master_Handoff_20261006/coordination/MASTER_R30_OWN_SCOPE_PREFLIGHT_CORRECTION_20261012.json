@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-12T17:54:06.818216+09:00",
+  "kind": "MASTER_METADATA_ONLY_SCOPE_ANCHOR_PREPARATION",
+  "failed_stages": [
+    "PAIR_MODE_LAUNCH_HOLD end anchor currentValidatorTask-null occurs at multiple methods",
+    "OWNER_SCOPED_DESTROY isRunning-false occurs at multiple methods"
+  ],
+  "actual_failed_exit_each": 1,
+  "corrected_full_unique_source_anchors": true,
+  "own_empty_task_directory_reused_only": true,
+  "scope_or_WP_or_delivery_mutation_before_failed_anchors": false,
+  "production_candidate_QA_execution_mutation": 0,
+  "original_tool_returned_trace_capture_only": true,
+  "successful_preparation": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\MASTER_R30_AUTHORIZED_SOURCE_SCOPE.json"
+}

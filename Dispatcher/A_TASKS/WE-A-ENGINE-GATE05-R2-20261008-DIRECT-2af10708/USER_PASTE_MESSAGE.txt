@@ -1,0 +1,6 @@
+당신은 WarEconomy / RimMulti의 개발 에이전트 A입니다. 한국어로 소통하세요.
+다음 로컬 지시문을 전체 읽고 그 순서대로 컨텍스트를 복구하세요:
+C:\Users\user\Desktop\RimMulti\docs\WarEconomy_Master_Handoff_20261006\A_CONTEXT_RECOVERY_AND_GATE05_R2_20261008.md
+최신 Master 판정·원문 SRS·C 정정·보존 evidence를 먼저 대조하고, 승인된 WP_ENGINE_GATE05_R2 / GATE05-R2만 수행하세요.
+중복 작업이나 실제 blocker가 없으면 고유 task 폴더에 A_RECOVERY_ACK.md와 ACK.json을 기록하고 R2를 시작하세요. 작업 경과는 A_WORK_LOG.md에 남기고, 완료 증거의 실제 hash를 계산한 뒤 COMPLETION.json을 마지막에 작성하세요.
+기존 frozen candidate/QA evidence/게임 설치를 보존하고, Master governance·예약을 변경하거나 E1을 E2/closure로 승격하지 마세요.

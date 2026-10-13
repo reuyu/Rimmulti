@@ -1,0 +1,48 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3",
+  "wp_id": "WP_ENGINE_GATE05_R27_CHILD_CAPTURE",
+  "wp_revision": "GATE05-R27-CHILD-CAPTURE",
+  "envelope": 30,
+  "generated_at": "2026-10-12T03:22:30+09:00",
+  "target_file": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+  "before": {
+    "bytes": 227637,
+    "sha256": "AB5AD60F16A62FC4473712ABF03AF10A3BB22A66DD8E283F0EC241857BD25BD2"
+  },
+  "after": {
+    "bytes": 239574,
+    "sha256": "B292AB846F78568F74333F58C5967ED38CAAA2F59B07393FC846F4329583E388"
+  },
+  "authorized_spans": [
+    {
+      "span_id": "SPAN-01-OPERATOR-CHILD-LAUNCH-INPUTS-CLASS",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "insertion_byte_offset": 166910,
+      "inserted_bytes_count": 11937,
+      "context_start_byte": 166718,
+      "context_end_byte": 167102,
+      "context_sha256": "FB507B9410EBBDDDEE55B36B7E76CFA07B613601C3D4B0336F5E5F70ED864137",
+      "purpose": "ONE new OperatorChildLaunchInputs class only before existing Gate05-R18 region"
+    }
+  ],
+  "fixed_segments_verification": [
+    {
+      "segment_index": 0,
+      "start_byte": 0,
+      "end_byte_exclusive": 166910,
+      "bytes": 166910,
+      "expected_sha256": "CC93D88C3EDEFF0574F3C5030F5B06346A0F69B956D1F71E85443F249A3F8099",
+      "observed_sha256": "CC93D88C3EDEFF0574F3C5030F5B06346A0F69B956D1F71E85443F249A3F8099",
+      "verified": true
+    },
+    {
+      "segment_index": 1,
+      "start_byte": 178847,
+      "end_byte_exclusive": 239574,
+      "bytes": 60727,
+      "expected_sha256": "7DBD3BFD89EA8B93E951B8F2FD01743E4B85DFFC55079D8ED0F0A7CF55733F47",
+      "observed_sha256": "7DBD3BFD89EA8B93E951B8F2FD01743E4B85DFFC55079D8ED0F0A7CF55733F47",
+      "verified": true
+    }
+  ]
+}

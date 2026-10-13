@@ -1,0 +1,29 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c",
+  "wp_id": "WP_ENGINE_GATE05_R34_ROLLBACK",
+  "wp_revision": "GATE05-R34-ROLLBACK",
+  "envelope": 37,
+  "result_id": "WE-A-ENGINE-GATE05-R34-ROLLBACK-RESULT-01",
+  "status": "COMPLETED",
+  "e1_verdict": "BUILT_SOURCE_CORRECTION_RUNTIME_NOT_EXECUTED",
+  "generated_at": "2026-10-13T18:02:00+09:00",
+  "index": {
+    "task_ack_initial": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c\\ACK_INITIAL.json",
+    "task_ack": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c\\ACK.json",
+    "preservation_before": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c\\PRESERVATION_BEFORE.json",
+    "before_after_preservation": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c\\BEFORE_AFTER_PRESERVATION.json",
+    "source_scope_diff": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c\\SOURCE_SCOPE_DIFF.json",
+    "source_rollback_flow": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c\\SOURCE_ROLLBACK_FLOW.json",
+    "failure_publication_matrix": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c\\FAILURE_PUBLICATION_MATRIX.json",
+    "callback_lock_order_review": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c\\CALLBACK_LOCK_ORDER_REVIEW.md",
+    "candidate_identity": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c\\CANDIDATE_IDENTITY.json",
+    "build_input_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c\\BUILD_INPUT_MANIFEST.json",
+    "actual_reference_binding": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c\\ACTUAL_REFERENCE_BINDING.json",
+    "build_host_tool_telemetry": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c\\BUILD_HOST_TOOL_TELEMETRY.json",
+    "build_output_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c\\BUILD_OUTPUT_MANIFEST.json",
+    "release_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c\\RELEASE_MANIFEST.json",
+    "implementation_report": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c\\IMPLEMENTATION_REPORT.md",
+    "technical_report": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\A_ENGINE_GATE05_R34_ROLLBACK_REPORT_20261013.md",
+    "completion": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c\\COMPLETION.json"
+  }
+}

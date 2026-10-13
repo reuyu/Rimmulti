@@ -1,0 +1,37 @@
+﻿======================================================================
+WarEconomy Engine Gate05 R10 Package Policy Runner
+Dispatch: WE-A-ENGINE-GATE05-R10-PACKAGE-POLICY-20261009-DIRECT-81a28ecb
+WP: WP_ENGINE_GATE05_R10_PACKAGE_POLICY / Envelope 13
+======================================================================
+Loaded Candidate DLL: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R10PackagePolicy\Harness\bin\Debug\net472\WarEconomy.WorkerBridge.PoC.dll
+Candidate DLL SHA256: 1772DFBD1674B7CF8450CAF42FDE7AC6F92FD3A22183B7DDE5AA705CCEC24721
+Contract Version: ADR-006B-v5-R10
+[PASS] TC01_Lossless_Float_Double_Formatting: Verify FormatLossless outputs IEEE 754 'R' roundtrip representation with InvariantCulture
+[PASS] TC02_Canonical_Normalize_ActiveMods_Preserved: CanonicalNormalize preserves loadOrder sequence and multiplicity in activeMods
+[PASS] TC03_Canonical_Normalize_DefFamilies_Sorting: CanonicalNormalize sorts unordered Def families by defName ordinal
+[PASS] TC04_Canonical_JSON_Serialization_Roundtrip: SerializeCanonicalJson and DeserializeCanonicalJson preserve all typed records faithfully
+[PASS] TC05_Patch_Settings_Disposition_Sync: CanonicalNormalize synchronizes totalObservedPatches from activeMods patchCounts
+[PASS] TC06_Culture_Invariance_Serialization: SerializeCanonicalJson produces byte-for-byte identical output under InvariantCulture, en-US, and de-DE
+[PASS] TC07_Assemblies_Ordinal_MultiKey_Sorting: Loaded assemblies sort by packageId -> assemblyName -> mvid -> sha256
+[PASS] TC08_Verbs_And_Comps_Material_Sequence_Preserved: CanonicalNormalize preserves verbs and comps declaration order and duplicates
+[PASS] TC09_Hediff_Stages_minSeverity_Preserved: CanonicalNormalize preserves HediffDef stages defined minSeverity sequence
+  Validated 8 Def families, DLCs, mods, assemblies and headers successfully with 0 contract errors.
+[PASS] TC10_DefDatabase_8_Families_Structure_Validation: Verify all 8 Def families are populated and validated without contract errors
+  Successfully admitted manifest with canonical JSON (3913 bytes).
+[PASS] TC11_TryAdmitManifest_Positive_Admission: TryAdmitManifest successfully validates and admits compliant manifest producing non-empty canonical JSON
+[PASS] TC12_Distinct_Manifests_Distinct_Digests: Changing a single scalar value must produce a distinct JSON and digest
+[PASS] TC13_Schema_Contract_Versions_And_Capability_Flags: Verify MANIFEST_SCHEMA_VERSION is ADR-006B-v5, CONTENT_CONTRACT_VERSION is ADR-006B-v5-R10, and GATE05_R10_PACKAGE_POLICY capability flag is present
+[PASS] TC14_Deterministic_Tie_Breaking: Verify assemblies and stats sort deterministically using secondary tie-breaking keys
+  Successfully verified legacy POC_DECLARED_PACKAGES_ONLY rejection: patchSettingsDisposition.supportedModBoundary cannot be legacy 'POC_DECLARED_PACKAGES_ONLY'. Must be 'UNCONFIGURED' or 'CHECKED_POLICY:{policyId}:{revision}'.
+[PASS] TC15_Typed_Patch_And_Settings_Disposition: Verify ModPatchSettingsDispositionRecord defaults to UNCONFIGURED and rejects legacy POC_DECLARED_PACKAGES_ONLY
+  Verified distinct version semantics: optional unknown modVersion (null) preserved across InvariantCulture, en-US, and de-DE without cross-inference in Normalize, Serialize(false), Serialize(true), or Deserialize.
+[PASS] TC16_Distinct_Version_Meaning_And_Optional_Unknown_Preservation: Verify compatibilityVersionRange and modVersion are distinct; optional unknown modVersion (null) remains null after CanonicalNormalize and both Serialize(false) and Serialize(true) across cultures
+  Policy Digest Verified: '6F3E1990643B6F7C8AF2F9FB324752D91B570EFD8E996E459ADD20A025C854C5' (Canonical, Case-Insensitive, Order-Sensitive).
+[PASS] TC17_Deterministic_Policy_Digest_And_Instance_Equality: Verify ComputePackagePolicyDigest produces deterministic canonical digests; two equal instances yield identical digest and canonical serialization; ordered list permutations and field alterations yield distinct digests
+  Verified order mismatch detection: status=ORDER_OR_PACKAGE_MISMATCH, reason=Package mismatch at index 0: expected 'wareconomy.mod', observed 'ludeon.rimworld'.
+[PASS] TC18_Pure_Package_Comparison_And_Admission_Helper: Verify CheckPackagePolicy and TryAdmitWithPackagePolicy with matching policy, alternate policy, and order mismatch
+  Verified configuration seam lifecycle: configure, snapshot isolation, and clear.
+[PASS] TC19_Configuration_Seam_Lifecycle_And_Defensive_Unconfigured: Verify ConfigureExpectedPackagePolicy, ClearConfiguredExpectedPackagePolicy, and HasConfiguredExpectedPackagePolicy thread-safe lifecycle
+======================================================================
+Total Tests: 19, Passed: 19, Failed: 0, Verdict: PASS
+======================================================================

@@ -1,0 +1,38 @@
+{
+  "at": "2026-10-13T12:26:30.836071+09:00",
+  "files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\write_r33_ack.py",
+      "sha256": "268894E2956BDBC50581E0DD12EC2777957FC2EDF4E90A71C3547B36D198F963",
+      "bytes": 4943
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\apply_r33_patch.py",
+      "sha256": "D88A5B9089542A219429B643EA5898A4BE4D77BD5BD24447508F32A28FAB7FA4",
+      "bytes": 7960
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\perform_r33_build.py",
+      "sha256": "FE82713018812F17125C18FAA43FD9297D9ADD44FFCDC7271FB6E74C9C0ED02C",
+      "bytes": 15146
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\generate_all_r33_artifacts.py",
+      "sha256": "C216303C5EFDEEA854749E99A874679E78566CB95449734FADD66C16EC1F6F4C",
+      "bytes": 37239
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\verify_r33_completion.py",
+      "sha256": "F4DF5E96D98D6E22F3B21D03FAB2E20484493A874DC22ECC641E506350084429",
+      "bytes": 912
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\verify_r33_baseline.py",
+      "sha256": "DD53340E04DEF3358AF40C0F76D681A4EB5FDBDC425A5E70BB20535E309623B9",
+      "bytes": 1008
+    }
+  ],
+  "source": "Actual rg --files scratch found six R33 producer helpers outside explicit new owned E1 root; original files protected no execution/move/repair",
+  "scope_placement_exception": true,
+  "producer_recursive_helper_graph_not_prospective_complete": true
+}

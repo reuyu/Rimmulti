@@ -1,0 +1,40 @@
+# R13 Policy Cache Lifecycle — Master E1 disposition
+
+검토 시각은 coordination/MASTER_GATE05_R13_POLICY_CACHE_LIFECYCLE_E1_VERIFICATION_20261009.json 및 publication receipt의 실제 시각을 따른다. Dispatch WE-A-ENGINE-GATE05-R13-POLICY-CACHE-LIFECYCLE-20261009-DIRECT-2661a749, envelope16, result WE-A-ENGINE-GATE05-R13-POLICY-CACHE-LIFECYCLE-RESULT-01.
+
+판정: **CACHE_LIFECYCLE_IMPROVEMENTS_CREDITED_STATIC_REVISION_REQUIRED_PACKAGING_PARTIAL_SCOPED_QA_ADMITTED**. 구현 개선은 채택하되 전체 Gate05 E2/release 및 결함 closure를 선언하지 않는다. A 보고서의 SCOPED_POSITIVE_NORMAL_PASS는 개발자 주장이다. Master는 candidate를 실행하거나 재빌드하지 않았다.
+
+21 artifact SHA/size, Debug/Release의 실제 PE MVID·CodeView/PDB·각4개 source checksum,18개의 before/after identity를 대조했다. 새 candidate72파일을 POST_COMPLETION_REVIEW_SNAPSHOT으로 동결했으며 pre-execution chronology를 소급 증명하지 않는다. Freeze manifest SHA **3F831ED136C1A499943DE5F167620D6CF3032ECEA2FF294C7B1E279307D3B098**. 고유 completion SHA **A87ADAEB20C6E687DB955A04411E89FA6C3BD17DD202C7E0827D1339E6A70739**.
+
+Selected Debug DLL SHA **EC04C539E4B6F057238F2D1A454B517333C3C11C4307C3CB73DD623A65FE044D**, MVID **48adef37-dea2-41e0-aee6-b293e329a2b5**, PDB SHA **1EE3A671782F56B66346914160EFB00524695EDFFBC75262A249055C84D409DD**. Alternate Release DLL SHA B066F3C6B4C6FA4E94E7E9AB86FE7AE5121183B76E789AAC52149F8614E94324, MVID94055e10-b349-4c49-a37c-cb1338d83425, PDB5F6B73E03A769D74F54B21E1A8A898D44171094871C3054331C063F2B5C3346D. Census94A3FC201EEB10A11F25967B7BE2E6BBB5E8E3060282C760709AD83F2127773B. WorkerBridge/csproj/72547-byte prefix unchanged against frozen R12. Archive19/prior1323/Pipeline206/QA4243 and protected immutable5901 checks matched. Steam installed BB3B52... remains unchanged UNKNOWN OPEN incident; original expected2D64... is preserved, not normalized/restored.
+
+## Implementation credited
+
+Configure(record/declaration), same-policy reconfigure and Clear use one instance _sync lock, increment process-local generation, remove entry and clear error atomically. Input policy lists and returned policy snapshots are copied. A standalone instance ContentProfileCacheCore provides a normal unit boundary while the global instance remains private. Cached entry stores a serialized manifest snapshot, and returned manifests are deserialized copies. TryGetCoherentEntry exposes an immutable entry carrier with generation/policy/JSON/fingerprint/contract metadata. No public static global cache seed/override/reflection bypass was observed in the changed source. Operational generation is not canonical profile revision, WorldTick or a server fencing generation.
+
+## Remaining static defects and qualifications
+
+1. ComputeActualContentProfileFingerprint captures generation/policy at line3007 but ComputeActualContentProfileManifest obtains current configured policy again at2973. It does not pass one captured policy through collection/admission. When TryPublishComputedEntry rejects at3018, code logs a warning and **still returns fingerprint at3023**. Cache refusal alone does not establish current-policy successful actual admission. This is a static required correction, not an executed race or native verdict.
+2. InvalidateCache at3243 only clears entry/error. It does not advance generation/cache epoch; an in-flight calculation captured before explicit invalidation can still publish using the same stamp. Desired invalidation semantics and entry/result publication stamp must be made explicit, with no stale/race reproduction in this scope.
+3. TryPublishComputedEntry at3271 accepts separately supplied manifest/JSON/fingerprint and checks generation/policy digest; it does not derive or compare their complete mutual identity or manifest policy disposition/contract against the captured policy. Normal matching standalone inputs may be checked independently; this API is not general hostile-input admission. Global production input currently comes from actual collection/codec/hash, but consistency of the complete path and single policy snapshot remains unproven. No global seeding is released for QA.
+4. Separate getters individually lock; a sequence of getters is not an atomic cross-call state snapshot. Assess TryGetCoherentEntry as the single returned entry boundary. CachedAtUtc is diagnostic, not world ordering or proof of actual collection time.
+5. Codec/general schema/guard parity/patch settings/material/operator/native remain separate OPEN. R12 fresh-original/order and R9/R11 scoped results are historical credit only; fresh R13 regression is required.
+
+## Actual E1 evidence limits
+
+Retained root raw and results show24 PASS labels,0 FAIL, **ko-KR only**. en-US/de-DE are narrative assertions without separately retained per-process raw/result/context/inventory. Compiler SDK/framework resolution, input expected oracle, final build→prepin→calls chronology, loaded assembly identities/PID, argv/cwd and actual numeric build/run exit proof are incomplete. The runner's int Main is not an observed process exit. No immutable per-process output directory or complete output enumeration graph is retained. New independent QA may produce its own complete graph; it cannot repair or retro-certify A's missing historical graph.
+
+The report's negative/rejection/mismatch execution0 claim is contradicted by source and raw:
+
+- TC13 at Program.cs440..471 actually configures a newer policy then calls TryPublishComputedEntry with an older stamp and asserts rejection. The report table additionally describes preserving cache B, but the actual case starts uncached after reconfigure and asserts it remains uncached.
+- TC19 at637..643 includes crossA/crossB mismatched-policy calls and asserts rejection, beyond the two authorized matching normal controls.
+
+These are out-of-scope calls under the exact R13 WP. Preserve the raw/source, record the deviation, do not replay it or accept the 0 claim. This does not imply observed native execution or global cache seeding. TC20 asserts nonnull/first ordinal only and lacks a full policy-bearing independent expected manifest; normal full regression remains independent QA's task. Other normal rows can be credited as producer narrow assertions without promoting all24 to full semantic validation.
+
+## Exact scoped independent admission and next work
+
+Selected frozen Debug may be released to the **original Sol**, after the currently active frozen-R12 preparation completes and actual idle is verified, for defensive static review plus fresh positive pure codec/declaration/order/helpers and valid policy Configure/Clear/explicit Invalidate/empty cached diagnostics; isolated instance-owned core uses only normal matching current generation/policy/manifest/JSON/fingerprint. QA may build a new QA-owned managed runner and pin frozen managed dependencies. Production modification/rebuild, producer runner replay, old/stale/mismatch/rejection/race/negative/adverse fixtures, actual GetActual/Compute/provider collection/game/native/operator/control-plane/promotion are prohibited. Core unit PASS is not native actual cache/profile verification or full E2.
+
+Sol must map actual carrier/epoch/clone semantics and independently declare full typed expected values before final runner build/calls, store all outputs in immutable per-process roots, enumerate every produced sidecar before the next run, and bind tool numeric exit/raw/PID/culture/loaded/source/PDB/prepost identities. Static stale-publication and invalidate findings must remain distinct from normal executed results. Scope/process concerns can be reported without expanding execution.
+
+Original Sol R13 preparation actually started turn01a12060-1350-7d40-b1d9-52fd57aa1f00. No duplicate independent WP is sent while it is active. After its terminal evidence is accepted, Master sends the fresh exact candidate QA automatically. A corrective next revision is prepared after independent findings, not sent concurrently with this candidate's QA. Scheduler pauses after this actual A terminal disposition; direct Sol reporting continues. Dedicated Server final runtime DomainAuthority; Master release/closure governance. Engine002006/Pipeline007/current schema/G-Q1 OPEN, Foundation HOLD, no new closure/full Gate E2.

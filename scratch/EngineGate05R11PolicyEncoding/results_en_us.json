@@ -1,0 +1,165 @@
+{
+  "schema_version": "ADR-006B-v5",
+  "run_id": "GATE05-R11-POLICY-ENCODING-RUN-01",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R11-POLICY-ENCODING-20261009-DIRECT-bec3d350",
+  "wp_id": "WP_ENGINE_GATE05_R11_POLICY_ENCODING",
+  "wp_revision": "GATE05-R11-POLICY-ENCODING",
+  "execution_timestamp": "2026-10-08T21:23:44.4130299Z",
+  "culture": "en-US",
+  "total_tests": 14,
+  "passed_tests": 14,
+  "failed_tests": 0,
+  "overall_verdict": "PASS",
+  "e1_verdict": "SCOPED_POSITIVE_NORMAL_PASS",
+  "limitations": [
+    "STATIC_MANAGED_NORMAL_EVIDENCE_ONLY",
+    "PHYSICAL_ARRAY_LOAD_ORDER_ADMISSION_NOT_PROVEN",
+    "POLICY_CACHE_GENERATION_NOT_PROVEN",
+    "REAL_OPERATOR_ORIGIN_NOT_PROVEN",
+    "MOD_PATCH_SETTINGS_DYNAMIC_EVALUATION_SEPARATE_OPEN",
+    "NATIVE_PROMOTION_FULL_E2_NOT_RELEASED",
+    "FINAL_DOMAIN_AUTHORITY_REMAINS_DEDICATED_SERVER"
+  ],
+  "test_cases": [
+    {
+      "id": "TC01_DeclarationSchemaAndCompactJson",
+      "name": "TC01_DeclarationSchemaAndCompactJson",
+      "category": "Category1_CanonicalEncoding",
+      "status": "PASS",
+      "description": "Verifies schemaVersion constant, compact JSON without BOM, and fixed field sequence.",
+      "durationMs": 1,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC02_PolicyDeclarationRoundTrip",
+      "name": "TC02_PolicyDeclarationRoundTrip",
+      "category": "Category1_CanonicalEncoding",
+      "status": "PASS",
+      "description": "Verifies full round-trip serialization and deserialization of typed policy declaration.",
+      "durationMs": 11,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC03_DeterministicDigestAndEqualInstances",
+      "name": "TC03_DeterministicDigestAndEqualInstances",
+      "category": "Category1_CanonicalEncoding",
+      "status": "PASS",
+      "description": "Verifies identical digest for independent equal instances and culture invariance.",
+      "durationMs": 6,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC04_OpaqueStringsWhitespacePreservation",
+      "name": "TC04_OpaqueStringsWhitespacePreservation",
+      "category": "Category1_CanonicalEncoding",
+      "status": "PASS",
+      "description": "Verifies leading, trailing, and internal whitespace in policyId and revision are strictly preserved without Trim.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC05_OpaqueStringsUnicodeAndPunctuation",
+      "name": "TC05_OpaqueStringsUnicodeAndPunctuation",
+      "category": "Category1_CanonicalEncoding",
+      "status": "PASS",
+      "description": "Verifies lossless preservation of Unicode, quotes, backslashes, and punctuation in opaque identifiers.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC06_PackageIdsCaseNormalization",
+      "name": "TC06_PackageIdsCaseNormalization",
+      "category": "Category1_CanonicalEncoding",
+      "status": "PASS",
+      "description": "Verifies invariant lowercase normalization of package IDs in declaration serialization.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC07_PermutationsDistinctDigests",
+      "name": "TC07_PermutationsDistinctDigests",
+      "category": "Category1_CanonicalEncoding",
+      "status": "PASS",
+      "description": "Verifies that isolated permutations of policyId, revision, list order, and multiplicity produce distinct digests.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC08_DigestOverloadParity",
+      "name": "TC08_DigestOverloadParity",
+      "category": "Category1_CanonicalEncoding",
+      "status": "PASS",
+      "description": "Verifies that all ComputePackagePolicyDigest overloads route through canonical declaration producing identical digest.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC09_PureCheckPackagePolicyMatchingSuccess",
+      "name": "TC09_PureCheckPackagePolicyMatchingSuccess",
+      "category": "Category2_PureAdmission",
+      "status": "PASS",
+      "description": "Verifies pure CheckPackagePolicy succeeds for matching positive manifest and declaration.",
+      "durationMs": 2,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC10_PureTryAdmitWithPackagePolicySuccess",
+      "name": "TC10_PureTryAdmitWithPackagePolicySuccess",
+      "category": "Category2_PureAdmission",
+      "status": "PASS",
+      "description": "Verifies pure TryAdmitWithPackagePolicy applies policy disposition and validates contract.",
+      "durationMs": 21,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC11_CanonicalNormalizePreservesOpaquePolicyFields",
+      "name": "TC11_CanonicalNormalizePreservesOpaquePolicyFields",
+      "category": "Category2_PureAdmission",
+      "status": "PASS",
+      "description": "Verifies CanonicalNormalize does not Trim opaque policyId and revision fields.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC12_ContentContractAndCapabilityFlags",
+      "name": "TC12_ContentContractAndCapabilityFlags",
+      "category": "Category3_ContractValidation",
+      "status": "PASS",
+      "description": "Verifies ADR-006B-v5-R11 contract version and GATE05_R11_POLICY_ENCODING capability flag.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC13_Regression_R9_VersionMeaningSemantics",
+      "name": "TC13_Regression_R9_VersionMeaningSemantics",
+      "category": "Category4_Regressions",
+      "status": "PASS",
+      "description": "Regresses R9 version meaning: modVersion null and empty values preserved without overwrite.",
+      "durationMs": 2,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC14_Regression_DefFamiliesAndCanonicalSorting",
+      "name": "TC14_Regression_DefFamiliesAndCanonicalSorting",
+      "category": "Category4_Regressions",
+      "status": "PASS",
+      "description": "Regresses 8 Def families presence and canonical sorting order.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "checks": [
+    {
+      "role": "selected_candidate_debug_dll",
+      "resolved_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "matched": true,
+      "size_matched": true
+    },
+    {
+      "role": "selected_candidate_debug_pdb",
+      "resolved_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "matched": true,
+      "size_matched": true
+    },
+    {
+      "role": "alternate_candidate_release_dll",
+      "resolved_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "matched": true,
+      "size_matched": true
+    },
+    {
+      "role": "alternate_candidate_release_pdb",
+      "resolved_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "matched": true,
+      "size_matched": true
+    },
+    {
+      "role": "e1_report",
+      "resolved_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_EngineHost_Semantic_Authority_Gate_05_R3.md",
+      "matched": true,
+      "size_matched": true
+    },
+    {
+      "role": "release_manifest",
+      "resolved_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R3.json",
+      "matched": true,
+      "size_matched": true
+    },
+    {
+      "role": "harness_results_json",
+      "resolved_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R3\\results.json",
+      "matched": true,
+      "size_matched": true
+    },
+    {
+      "role": "harness_raw_console",
+      "resolved_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R3\\raw_console.txt",
+      "matched": true,
+      "size_matched": true
+    },
+    {
+      "role": "work_log",
+      "resolved_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa\\A_WORK_LOG.md",
+      "matched": true,
+      "size_matched": true
+    },
+    {
+      "role": "recovery_ack",
+      "resolved_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa\\A_RECOVERY_ACK.md",
+      "matched": true,
+      "size_matched": true
+    }
+  ],
+  "relative_paths_resolved_by_master": true,
+  "freeze_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa\\MASTER_GATE05_R3_REVIEW_FREEZE_MANIFEST.json",
+  "frozen_files": 133
+}

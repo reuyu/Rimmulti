@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "document_type": "M04_ROLE_USERDATA_ROUTE_MATRIX",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404",
+  "timestamp_utc": "2026-10-11T09:25:00Z",
+  "controlling_candidate": {
+    "source_file": "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+    "source_sha256": "2076E3A88B57A55CDDB5F25950ED26EB2310224A43A91C8917EEC6588CD5983F",
+    "source_bytes": 227009
+  },
+  "roles": [
+    {
+      "role": "SIMULATION",
+      "canonical_name": "SIMULATION",
+      "purpose": "Primary proposal execution worker. Runs game tick simulation, stages saves, and generates ValidatorTask.",
+      "declared_data_field": "WorkerUserDataDirectory",
+      "current_r23_selected_path": "WorkerUserDataDirectory",
+      "intended_m04_selected_path": "WorkerUserDataDirectory",
+      "is_current_behavior_correct": true,
+      "subdirectories": {
+        "tasks": "WorkerUserDataDirectory/Tasks",
+        "staging": "WorkerUserDataDirectory/Staging",
+        "saves": "WorkerUserDataDirectory/Saves",
+        "logs": "WorkerUserDataDirectory/Player.log"
+      }
+    },
+    {
+      "role": "READ_ONLY",
+      "canonical_name": "READ_ONLY",
+      "purpose": "Independent validator worker. Loads staged proposals in read-only sandbox, runs census, and writes protected results.",
+      "declared_data_field": "ValidatorUserDataDirectory",
+      "current_r23_selected_path": "WorkerUserDataDirectory",
+      "intended_m04_selected_path": "ValidatorUserDataDirectory",
+      "is_current_behavior_correct": false,
+      "defect_summary": "In current R23 WorkerBridge.cs line 443-445, SafeSaveDataFolderPath unconditionally returns WorkerUserDataDirectory regardless of active role. When the instance boots under READ_ONLY, tasks, staging, and saves still map to WorkerUserDataDirectory instead of ValidatorUserDataDirectory.",
+      "subdirectories": {
+        "tasks": "ValidatorUserDataDirectory/Tasks",
+        "staging": "ValidatorUserDataDirectory/Staging",
+        "saves": "ValidatorUserDataDirectory/Saves",
+        "logs": "ValidatorUserDataDirectory/Player.log"
+      }
+    }
+  ],
+  "consumers": [
+    {
+      "consumer_name": "SafeSaveDataFolderPath",
+      "source_anchor": "WorkerBridge.cs:L438-L460",
+      "responsibility": "Root property providing active UserData directory for all game and bridge file operations.",
+      "current_logic": "if (_activeStartupConfig != null && !string.IsNullOrEmpty(_activeStartupConfig.WorkerUserDataDirectory)) return _activeStartupConfig.WorkerUserDataDirectory;",
+      "proposed_m04_logic": "if (_activeStartupConfig != null) { bool isReadOnly = string.Equals(_activeStartupConfig.Role, \"READ_ONLY\", StringComparison.OrdinalIgnoreCase); string target = isReadOnly ? _activeStartupConfig.ValidatorUserDataDirectory : _activeStartupConfig.WorkerUserDataDirectory; if (!string.IsNullOrEmpty(target)) return target; }"
+    },
+    {
+      "consumer_name": "Awake_LogMessage",
+      "source_anchor": "WorkerBridge.cs:L580",
+      "responsibility": "Component startup logging of active configuration parameters.",
+      "current_logic": "Logs UserData='{_activeAdmissionReceipt.Snapshot.WorkerUserDataDirectory}' unconditionally.",
+      "proposed_m04_logic": "Logs role-aware active UserData directory (ValidatorUserDataDirectory when Role == READ_ONLY, WorkerUserDataDirectory otherwise)."
+    },
+    {
+      "consumer_name": "HandleStageSave",
+      "source_anchor": "WorkerBridge.cs:L1875-L1885",
+      "responsibility": "Stages simulation proposals to disk under isolated directory.",
+      "current_logic": "Uses Path.Combine(SafeSaveDataFolderPath, \"Staging\"). Correct for SIMULATION role once SafeSaveDataFolderPath is role-aware."
+    },
+    {
+      "consumer_name": "HandleExecuteValidatorTask",
+      "source_anchor": "WorkerBridge.cs:L2425-L2586",
+      "responsibility": "Executes census on staged save and writes protected result file.",
+      "current_logic": "Uses resultChannelPath or defaults to Path.Combine(SafeSaveDataFolderPath, \"Tasks\", ...). Must resolve to ValidatorUserDataDirectory under READ_ONLY role."
+    },
+    {
+      "consumer_name": "HandleLaunchOperatorValidator",
+      "source_anchor": "WorkerBridge.cs:L2191-L2285",
+      "responsibility": "Launches child validator process with appropriate CLI arguments.",
+      "current_logic": "Passes baseArgs plus --task-file and --nonce. Missing -savedatafolder and -operator* arguments required for child RimWorld / WorkerBridge isolation."
+    },
+    {
+      "consumer_name": "CensusSaveRouting",
+      "source_anchor": "WorkerBridge.cs:L3174, L3236",
+      "responsibility": "Reads and writes census JSON manifests alongside save files.",
+      "current_logic": "Uses Path.Combine(SafeSaveDataFolderPath, \"Saves\", ...). Requires role-aware routing."
+    }
+  ],
+  "path_resolution_hierarchy": [
+    {
+      "priority": 1,
+      "source": "_activeStartupConfig",
+      "condition": "_activeStartupConfig != null",
+      "resolution": "If Role == 'READ_ONLY', ValidatorUserDataDirectory; else WorkerUserDataDirectory."
+    },
+    {
+      "priority": 2,
+      "source": "CustomSaveDataPathOverride",
+      "condition": "!string.IsNullOrEmpty(CustomSaveDataPathOverride)",
+      "resolution": "CustomSaveDataPathOverride"
+    },
+    {
+      "priority": 3,
+      "source": "GenFilePaths.SaveDataFolderPath",
+      "condition": "GenFilePaths accessible",
+      "resolution": "Native RimWorld engine path (honors native -savedatafolder command line argument)"
+    },
+    {
+      "priority": 4,
+      "source": "Fallback",
+      "condition": "Exception in GenFilePaths",
+      "resolution": "%LOCALAPPDATA%\\RimWorld"
+    }
+  ]
+}

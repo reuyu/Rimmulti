@@ -1,0 +1,65 @@
+{
+  "manifest_version": "we-r31-build-input-manifest/v1",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10",
+  "wp_id": "WP_ENGINE_GATE05_R31_LIFECYCLE",
+  "envelope": 34,
+  "generated_at": "2026-10-12T20:55:00+09:00",
+  "toolchain": {
+    "dotnet_sdk": "Microsoft.NET.Sdk",
+    "csharp_compiler": "Microsoft (R) Visual C# Compiler version 4.8.9232.0",
+    "target_framework": ".NETFramework,Version=v4.7.2",
+    "msbuild_configurations": [
+      "Debug",
+      "Release"
+    ]
+  },
+  "input_source_files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "bytes": 272607,
+      "sha256": "CB1EE0A55512A6F578B2D7ABCACBE36B62327D9F3E585B6E4221725B6DADFFDB"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "bytes": 170135,
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "bytes": 1774,
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052"
+    }
+  ],
+  "compiler_dependencies": [
+    {
+      "name": "Assembly-CSharp.dll",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\Assembly-CSharp.dll",
+      "bytes": 24203776,
+      "sha256": "806A32EAA58043B4E387920A615D1C59190BE664FE60BE7E6B202DBCFD968038"
+    },
+    {
+      "name": "UnityEngine.CoreModule.dll",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\UnityEngine.CoreModule.dll",
+      "bytes": 1478144,
+      "sha256": "EFBFBDE392F8A4B02EAF418FD5B9B0A352342BEFCFE8DEACF03A5812A292D5F9"
+    },
+    {
+      "name": "UnityEngine.dll",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\UnityEngine.dll",
+      "bytes": 44544,
+      "sha256": "42F856525946DF79C813D0CE78D24838F5FDFB395FD7145FFD6F971AC2D38A3A"
+    },
+    {
+      "name": "0Harmony.dll",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\0Harmony.dll",
+      "bytes": 105984,
+      "sha256": "1B8756E398935AFBF91A06BA3B62CF7743A0F8F126DA0A1EE0042ED8CF3FD6A3"
+    },
+    {
+      "name": "Newtonsoft.Json.dll",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\1.6\\Assemblies\\Newtonsoft.Json.dll",
+      "bytes": 712704,
+      "sha256": "9C22C0AC6DE1F3FF0C696B20D0BEBEE6D2B7E35E5B5377DA2BA9EC86C2EB3847"
+    }
+  ]
+}

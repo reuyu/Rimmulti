@@ -1,0 +1,123 @@
+{
+  "at": "2026-10-13T19:17:28.166738+09:00",
+  "result_id": "SOL-GATE05-R34-ROLLBACK-INDEPENDENT-S1-20261013-1dd2b96902da4b00820a6c8d923169dc",
+  "delivery_id": "SOL-GATE05-R34-ROLLBACK-INDEPENDENT-S1-20261013-01",
+  "completion": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R34-ROLLBACK-INDEPENDENT-S1-20261013\\COMPLETION.json",
+    "sha256": "831052E650DD5D2A44E56DE5380F5015DDDCAA0D69334D9ED2F9E082C9946901",
+    "bytes": 3150
+  },
+  "report": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R34_Rollback_Independent_S1_20261013.md",
+    "sha256": "346C1820506F9CC11342BF9E4569701CA5A871ECEE5C587A95FB3F31830D8439",
+    "bytes": 14352
+  },
+  "evidence_manifest": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R34-ROLLBACK-INDEPENDENT-S1-20261013\\EVIDENCE_MANIFEST.json",
+    "sha256": "8DB2475FADEADF33A932D918342E8EC46687C7501010B3A268F8D616BA751857",
+    "bytes": 278627
+  },
+  "evidence_files": 927,
+  "protected_paths": 18163,
+  "frozen_files": 75,
+  "prospective_build_inputs": 188,
+  "independent_raw_literal_bindings": 672,
+  "ordered_full_graphs": 60,
+  "crossculture_raw_pairs": 336,
+  "crossculture_graph_pairs": 30,
+  "copy_mutations_independently_compared": true,
+  "loaded_PE_MVID_filebyte_independent": true,
+  "oracle_semantics_independently_original_bound": true,
+  "runs": [
+    {
+      "run_id": "R34S1QA-3ba25d32071048628fcb11cb20ce29d3",
+      "culture": "en-US",
+      "pid": 14836,
+      "exit_code": 0,
+      "assertions": 438,
+      "typed_rows": 6700,
+      "raw_files": 336,
+      "graphs": 30,
+      "output_files": 407,
+      "prepost_pins": 201,
+      "loaded_counts": [
+        8,
+        10,
+        10
+      ],
+      "ledger": {
+        "primary_direct": 38,
+        "ordered_getter": 288,
+        "grouped_helper": 60,
+        "observational_helper": 180,
+        "QA_wrapper_not_publisher": 18
+      }
+    },
+    {
+      "run_id": "R34S1QA-c1e1f1e7252245359370b56889b9e660",
+      "culture": "de-DE",
+      "pid": 18688,
+      "exit_code": 0,
+      "assertions": 438,
+      "typed_rows": 6700,
+      "raw_files": 336,
+      "graphs": 30,
+      "output_files": 407,
+      "prepost_pins": 201,
+      "loaded_counts": [
+        8,
+        10,
+        10
+      ],
+      "ledger": {
+        "primary_direct": 38,
+        "ordered_getter": 288,
+        "grouped_helper": 60,
+        "observational_helper": 180,
+        "QA_wrapper_not_publisher": 18
+      }
+    }
+  ],
+  "own_QA_builds": 1,
+  "Master_candidate_build_execution": 0,
+  "source_High4": "OPEN",
+  "native_E2": "NOT_RELEASED",
+  "Foundation": "HOLD",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:30",
+    "revision": 30,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a134b5-45ec-7781-b030-5c0b89158728",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791885657,
+      "completedAt": 1791886557,
+      "durationMs": 899510
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ace04dad63487d0a3bd51d62afc0b36",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016ace04dad63487d0a3bd51d62afc0b36",
+      "turnId": "01a134b5-45ec-7781-b030-5c0b89158728",
+      "phase": "final_answer",
+      "text": "R34 QA를 완료하고 마스터에게 보고했습니다. 새 정상 실행의 876개 assertion이 모두 통과했고 rollback 소스 개선을 확인했습니다. 무교착 보장 문구는 근거 부족이며 네이티브 검증은 미실행입니다. 다음 지시를 기다리겠습니다. QA 보고서"
+    },
+    "latestToolMarkerId": "exec-2efff896-859c-429f-8fd9-167cab41ea22",
+    "latestToolMarker": {
+      "id": "exec-2efff896-859c-429f-8fd9-167cab41ea22",
+      "turnId": "01a134b5-45ec-7781-b030-5c0b89158728",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "limitations": "Positive PURE only; native0; parent/sharedlock gains credited; inner Stop/Abort source issue resolved; universal nonblocking/deadlock claims unsupported; native lifecycle unknown; no native deadlock observed; issuer/publisher/runtime unproved"
+}

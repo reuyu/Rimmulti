@@ -1,0 +1,82 @@
+{
+  "manifest_version": "1.0",
+  "run_id": "GATE05-R14-POLICY-CAPTURE-PUBLICATION-RUN-01",
+  "work_package": "WP_ENGINE_GATE05_R14_POLICY_CAPTURE_PUBLICATION",
+  "revision": "GATE05-R14-POLICY-CAPTURE-PUBLICATION",
+  "pinned_at_utc": "2026-10-09T12:11:36.9944709Z",
+  "agent": "Antigravity A",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R14-POLICY-CAPTURE-PUBLICATION-20261009-DIRECT-ff285a3b",
+  "selected_candidate": {
+    "path": "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "sha256": "1A19B47232F86C3BA3A8238783EA66ED71AE61E2DB16CF3B3C5162B0F7A6FC5F",
+    "size": 243200,
+    "mvid": "acab0270-bc98-4d17-b920-9941950ff024"
+  },
+  "selected_pdb": {
+    "path": "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "sha256": "776A277A3B8DA637A641A9289010D224A640412575EE86B15AC3BE897DEABB8A",
+    "size": 61996
+  },
+  "alternate_candidate": {
+    "path": "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "sha256": "B2D6B208E149B5ACDAB32D735DA5FCB8C951CC139AD4001D614FB7ECFFDB4AAD",
+    "size": 230912,
+    "mvid": "874a8ce6-014a-4506-aba5-4648e50abd83"
+  },
+  "alternate_pdb": {
+    "path": "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "sha256": "33862EC6742DCA9224C5CAEAA64D4433661FC49D83B48BE784C4AF9F7CD5B624",
+    "size": 45472
+  },
+  "deployed_candidate": {
+    "path": "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+    "sha256": "1A19B47232F86C3BA3A8238783EA66ED71AE61E2DB16CF3B3C5162B0F7A6FC5F",
+    "size": 243200,
+    "mvid": "acab0270-bc98-4d17-b920-9941950ff024"
+  },
+  "deployed_pdb": {
+    "path": "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+    "sha256": "776A277A3B8DA637A641A9289010D224A640412575EE86B15AC3BE897DEABB8A",
+    "size": 61996
+  },
+  "sources": [
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+      "size": 156431
+    },
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "C2E1572D837A0E698450EC5996ECA7F0E1596DED89F109A7595E8C309008B0F1",
+      "size": 167634
+    },
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "size": 1774
+    }
+  ],
+  "runner": {
+    "project": {
+      "path": "scratch\\EngineGate05R14PolicyCapturePublication\\Harness\\Gate05R14CacheRunner.csproj",
+      "sha256": "F8B32327DC93CB41B56C8465BB48D3118B174AB4979193638AEC1905B0465493",
+      "size": 1616
+    },
+    "source": {
+      "path": "scratch\\EngineGate05R14PolicyCapturePublication\\Harness\\Program.cs",
+      "sha256": "3ACD09DB641640FEBA693DC8339E74223ECBF83E8A5558083CFAFE82CD5141B7",
+      "size": 50056
+    },
+    "binary": {
+      "path": "scratch\\EngineGate05R14PolicyCapturePublication\\Harness\\bin\\Debug\\net472\\Gate05R14CacheRunner.exe",
+      "sha256": "A880FCB7FBC7A021C67F2EC072E7B146E61C4E36DD594A911F4E5482DC700F90",
+      "size": 49152,
+      "mvid": "24ed6412-233a-4cbd-99f9-6d8a3e2b7bf0"
+    },
+    "pdb": {
+      "path": "scratch\\EngineGate05R14PolicyCapturePublication\\Harness\\bin\\Debug\\net472\\Gate05R14CacheRunner.pdb",
+      "sha256": "CC07883A9C3DEA4F6E17A54E6B3ADDB39F75DC165057E2F9A7C92624DB525586",
+      "size": 10280
+    }
+  }
+}

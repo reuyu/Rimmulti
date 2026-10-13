@@ -1,0 +1,27 @@
+{
+  "at": "2026-10-12T10:07:32.959508+09:00",
+  "defect_id": "QA-G05-R29-TEXT-ORCHESTRATION-20261012-02",
+  "status": "CLOSED_SCOPED_RECOVERED_TOOLING_ONLY",
+  "cause": "broad immutable dependency path substitution + EOF trim + continued after failed prerequisite",
+  "candidate_verdict": "NOT_EXECUTED",
+  "S2_preservation": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R29_S2_STOP_TERMINAL_PRESERVATION_20261012.json",
+    "sha256": "CA2BEEE764B72D8ADB8A36F2B85E7B95309E4AB9981C06C72EB9C44501C9293C",
+    "bytes": 4657
+  },
+  "repair_template": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\Tools\\MASTER_R29_S3_REVIEW_SETUP_TEMPLATE.py",
+    "sha256": "2878AE853B4B271A615EFA56A7E0C0568466F9FC4A1EE33B4E1DA3D7DA034EC7",
+    "bytes": 4775
+  },
+  "closure_requires": "fresh S3 bytecopy/prerequisite-gated metadata proof and independent normal QA",
+  "master_disposition_at": "2026-10-12T17:47:19.498231+09:00",
+  "final_success_proof": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R29_S3_COMPLETION_VERIFICATION_20261012.json",
+    "sha256": "1DA907FDD1E9F66C3EE94A3FADE5DE5F355184AF0CBEDD0175C943587861BD18",
+    "bytes": 3438
+  },
+  "actual_new_S3_success_replaces_failed_S2_repair_attempt": true,
+  "original_NOT_EXECUTED_and_raw_stops_unchanged": true,
+  "not_Engine_High_or_native_closure": true
+}

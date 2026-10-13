@@ -1,0 +1,84 @@
+﻿{
+  "run_id": "RUN_GATE05_R5_CODEC_20261008_01",
+  "timestamp": "2026-10-08T08:57:16.3770803Z",
+  "candidate_dll": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R5Codec\\Harness\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+  "candidate_sha256": "930B69D012F34BFD3BB50F97B86629BAEA082D201A3A81696549DF1450075AE8",
+  "total_tests": 12,
+  "passed": 12,
+  "failed": 0,
+  "verdict": "PASS",
+  "results": [
+    {
+      "test_id": "TC01_RoundTrip_Canonical_Lossless",
+      "description": "Serialize manifest -> deserialize -> re-serialize and compare exact SHA256 digests",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC02_Deterministic_Identical_Input",
+      "description": "Two separate instances with identical values must produce identical JSON and SHA256",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC03_All_Eight_Def_Families_No_Sentinels",
+      "description": "Verify all 8 Def families are present and free of legacy sentinel/delimiter strings",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC04_Floating_Point_Lossless_Precision",
+      "description": "Verify float boundary and fractional values preserve exact precision across round-trip",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC05_Unicode_SpecialChars_Lossless",
+      "description": "Verify Korean, Japanese, German umlauts, quotes, tabs, newlines round-trip without corruption",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC06_Null_Missing_Empty_Distinction",
+      "description": "Verify null fields remain null in JSON and do not collapse to empty string or sentinel",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC07_Ordered_Collections_Preservation",
+      "description": "Verify activeMods loadOrder, Verbs list order, and Hediff stages sequence are preserved",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC08_Stable_Sorting_Determinism",
+      "description": "Verify Def family lists with unordered inputs sort deterministically by defName ordinal",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC09_Distinct_Manifests_Distinct_Digests",
+      "description": "Changing a single scalar value must produce a distinct JSON and digest",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC10_Cache_Invalidation_Lifecycle",
+      "description": "Verify InvalidateCache clears all cached properties and error state",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC11_FailClosed_Unadmitted_Runtime_Rejection",
+      "description": "ComputeActualContentProfileFingerprint throws when runtime DefDatabase uninitialized",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC12_Schema_Version_And_Capability_Flags",
+      "description": "Verify MANIFEST_SCHEMA_VERSION is ADR-006B-v5 and required flags present",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    }
+  ]
+}

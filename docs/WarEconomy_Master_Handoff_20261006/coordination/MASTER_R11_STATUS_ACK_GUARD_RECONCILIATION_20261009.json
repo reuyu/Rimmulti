@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-09T14:46:27.133406+09:00",
+  "original_guard_run": "MASTER-R11-STATUS-ACK-20261009-01",
+  "original_guard_session": 4219,
+  "background_read_verify_write_command_session": 41855,
+  "background_command_exit_code": 0,
+  "original_guard_released_at": "2026-10-09T14:44:42.800633+09:00",
+  "fresh_guard_run": "MASTER-R11-STATUS-ACK-LOCK-AUDIT-20261009-01",
+  "fresh_guard_session": 51518,
+  "fresh_guard_pid": 22436,
+  "fresh_guard_locked_at": "2026-10-09T14:45:07.769637+09:00",
+  "original_full_invocation_lock_coverage": "UNVERIFIED_GAP_NOT_RETROASSERTED",
+  "ack_proof_recorded_at": "2026-10-09T14:45:53.410356+09:00",
+  "actual_background_completion_verified": true,
+  "duplicate_or_unknown_dispatch": false,
+  "active_operation": null,
+  "candidate_execute_rebuild_by_Master": 0,
+  "new_WP_sent": false,
+  "sol_status": "ACK_IDENTITY_VERIFIED_USER_RESUMED_SAME_R11_QA_IN_PROGRESS",
+  "candidate_QA_result": "PENDING",
+  "closure_changed": false,
+  "Foundation": "HOLD"
+}

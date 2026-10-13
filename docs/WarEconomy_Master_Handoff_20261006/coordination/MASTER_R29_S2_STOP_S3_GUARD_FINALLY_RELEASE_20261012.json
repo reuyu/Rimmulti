@@ -1,0 +1,7 @@
+{
+  "chunk_id": "0ef8cf",
+  "wall_time_seconds": 0.0000472,
+  "exit_code": 0,
+  "original_token_count": 106,
+  "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R29-S2-STOP-RECOVERY-20261012-01\", \"pid\": 35708, \"locked_at\": \"2026-10-12T10:03:27.102977+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-12T10:08:10.098208+09:00\", \"renewal_count\": 2, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-12T10:09:31.304337+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+}

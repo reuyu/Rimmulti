@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-11T23:03:40.775802+09:00",
+  "id": "QA-G05-R25-ORACLE-NEWLINE-20261011-01",
+  "status": "CLOSED_SCOPED_PROSPECTIVE_WINDOWS_PRETTY_ORACLE_AND_FRESH_NORMAL_REGRESSION",
+  "owner": "Sol_QA",
+  "scope": "Windowsprettyredactionprospectivebyteoracleonly",
+  "cause": "LFprettyoracleomitsWindowsTextWriterCRLF",
+  "S1_rawFAIL": "PRESERVED_OS_EXIT1_TWO_RUNS",
+  "candidate_defect_observed": false,
+  "master_review": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R25_ROLE_USERDATA_INDEPENDENT_S1_20261011.md",
+    "sha256": "F6C3DED5C187FC730CFD98A0093C2E8F8E94433E807535823A518B12E013F603",
+    "bytes": 5231
+  },
+  "release_condition": "NewS2correctedprospectiveindependentexpectedCRLF_exactrawcomparison_twofreshcultures_andMasterdisposition",
+  "production_change_authorized": false,
+  "full_runtime_e2_released": false,
+  "foundation": "HOLD",
+  "closed_at": "2026-10-11T23:26:27.852630+09:00",
+  "closed_by": "Master",
+  "S2result": "SOL-GATE05-R25-ROLE_USERDATA-INDEPENDENT-S2-20261011-098499b5238a467cb87509c88d8d2e07",
+  "S2review": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R25_ROLE_USERDATA_INDEPENDENT_S2_20261011.md",
+    "sha256": "5E2C09F725A6E8CC3B9C1D70BA857427FBB71C4D987F8200315FFE85217DF635",
+    "bytes": 4625
+  },
+  "S1rawFAIL": "UNCHANGED_PRESERVED"
+}

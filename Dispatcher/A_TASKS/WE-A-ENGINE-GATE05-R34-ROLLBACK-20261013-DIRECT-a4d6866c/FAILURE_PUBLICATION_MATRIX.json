@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "dispatch_id": "WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c",
+  "wp_id": "WP_ENGINE_GATE05_R34_ROLLBACK",
+  "envelope": 37,
+  "evaluation_mode": "SOURCE_INSPECTION_ONLY",
+  "failure_matrix": [
+    {
+      "scenario_id": "PARENT_INVALID",
+      "condition": "_activeAdmissionReceipt == null || !_activeAdmissionReceipt.IsValid()",
+      "detection_point": "Before fastEcology, callback subscription, policy setup, socket creation, thread creation",
+      "immediate_action": "Calls RevokeReadiness and throws InvalidOperationException",
+      "publication_path": "Outer catch marks _startupInitializationComplete = false, isRunning = false, _staticStartupAborted = true under lock",
+      "cleanup_execution": "Guarded outer catch unhooks log callback (noop), stops listener (noop), aborts thread (noop), cleans up handoff payload via CleanupOwnerPendingHandoff(_retainedOwner)",
+      "teardown_location": "OUTSIDE _startupHandoffLock",
+      "duplicate_calls": 0,
+      "source_status": "VERIFIED_SOURCE_STRUCTURE"
+    },
+    {
+      "scenario_id": "PRE_COMMIT_ABORT",
+      "condition": "_staticStartupAborted == true prior to resource admission commit",
+      "detection_point": "Inside lock (_startupHandoffLock) immediately before listener.Start()",
+      "immediate_action": "Marks _startupInitializationComplete = false, isRunning = false, throws InvalidOperationException",
+      "publication_path": "Published immediately under held lock, re-throws to unwind lock",
+      "cleanup_execution": "Guarded outer catch unhooks log callback, stops unstarted listener (null-safe), aborts unstarted thread (null-safe), cleans up handoff payload",
+      "teardown_location": "OUTSIDE _startupHandoffLock",
+      "duplicate_calls": 0,
+      "source_status": "VERIFIED_SOURCE_STRUCTURE"
+    },
+    {
+      "scenario_id": "LISTENER_START_THROW",
+      "condition": "listener.Start() throws SocketException (e.g. port already bound)",
+      "detection_point": "Inside inner try/catch block within lock (_startupHandoffLock)",
+      "immediate_action": "Inner catch sets _startupInitializationComplete = false, isRunning = false, _staticStartupAborted = true, then re-throws",
+      "publication_path": "Published immediately under held lock before rethrow unwinds lock",
+      "cleanup_execution": "Guarded outer catch outside lock unsubscribes log callback, executes listener?.Stop(), listenerThread?.Abort() (null-safe), CleanupOwnerPendingHandoff(_retainedOwner)",
+      "teardown_location": "OUTSIDE _startupHandoffLock",
+      "duplicate_calls": 0,
+      "source_status": "VERIFIED_SOURCE_STRUCTURE"
+    },
+    {
+      "scenario_id": "THREAD_START_THROW",
+      "condition": "listener.Start() succeeded, but listenerThread.Start() throws OutOfMemoryException or ThreadStateException",
+      "detection_point": "Inside inner try/catch block within lock (_startupHandoffLock)",
+      "immediate_action": "Inner catch sets _startupInitializationComplete = false, isRunning = false, _staticStartupAborted = true, then re-throws",
+      "publication_path": "Published immediately under held lock before rethrow unwinds lock",
+      "cleanup_execution": "Guarded outer catch outside lock unsubscribes log callback, executes listener?.Stop() (rolls back started listener), listenerThread?.Abort(), CleanupOwnerPendingHandoff(_retainedOwner)",
+      "teardown_location": "OUTSIDE _startupHandoffLock",
+      "duplicate_calls": 0,
+      "source_status": "VERIFIED_SOURCE_STRUCTURE"
+    },
+    {
+      "scenario_id": "SUCCESS_COMMIT",
+      "condition": "!_staticStartupAborted && listener.Start() succeeds && listenerThread.Start() succeeds",
+      "detection_point": "Inside lock (_startupHandoffLock) end of critical admission block",
+      "immediate_action": "_startupInitializationComplete = true set atomically before lock release",
+      "publication_path": "Normal return; initialization complete, isRunning remains true",
+      "cleanup_execution": "Zero cleanup executed; component enters operational state",
+      "teardown_location": "N/A",
+      "duplicate_calls": 0,
+      "source_status": "VERIFIED_SOURCE_STRUCTURE"
+    },
+    {
+      "scenario_id": "POST_COMMIT_ABORT",
+      "condition": "Process abort signaled after successful startup commit",
+      "detection_point": "Runtime execution loop / external abort writer",
+      "immediate_action": "Static abort writer marks _staticStartupAborted = true",
+      "publication_path": "Subsequent Update / M05 / components detect _staticStartupAborted",
+      "cleanup_execution": "Teardown deferred to OnDestroy / runtime lifecycle management",
+      "teardown_location": "OUTSIDE _startupHandoffLock",
+      "duplicate_calls": 0,
+      "source_status": "LIMITATION_RUNTIME_NATIVE_TEARDOWN_UNTESTED"
+    },
+    {
+      "scenario_id": "CLEANUP_THROW",
+      "condition": "Exception thrown during logging or individual resource cleanup attempt in outer catch",
+      "detection_point": "Outer catch block body",
+      "immediate_action": "Each teardown step is independently wrapped in try/catch; exception is swallowed locally without skipping subsequent cleanup steps",
+      "publication_path": "Failure state already published prior to entering cleanup steps",
+      "cleanup_execution": "Every remaining cleanup step executes independently",
+      "teardown_location": "OUTSIDE _startupHandoffLock",
+      "duplicate_calls": 0,
+      "source_status": "VERIFIED_SOURCE_STRUCTURE"
+    }
+  ]
+}

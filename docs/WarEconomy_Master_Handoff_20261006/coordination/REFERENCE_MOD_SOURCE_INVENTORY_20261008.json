@@ -1,0 +1,1062 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-10-08T10:12:27.238451+09:00",
+  "analysis_only": true,
+  "reference_mods_built_or_executed": false,
+  "root_git_present": false,
+  "sources": {
+    "MP": {
+      "root": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master",
+      "git_present": false,
+      "upstream_commit": "UNVERIFIED",
+      "source_cs_file_count": 393,
+      "csproj_paths": [
+        "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Client\\Multiplayer.csproj",
+        "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Common\\Common.csproj",
+        "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\MultiplayerLoader\\MultiplayerLoader.csproj",
+        "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Server\\Server.csproj",
+        "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Tests\\Tests.csproj",
+        "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\TestsOnMono\\TestsOnMono.csproj"
+      ],
+      "files": [
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\LICENSE",
+          "relative_path": "LICENSE",
+          "size": 1064,
+          "sha256": "F27DA75B5E4142A6C00F8F3001B6C71361356FBD0761DF53F01AA811F9C1B748",
+          "line_count": 21,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\README.md",
+          "relative_path": "README.md",
+          "size": 2110,
+          "sha256": "0B8D03D23E70A186BAC119E4DD1C37434E2412C07352CEE3A2A7A3E6FE5D169D",
+          "line_count": 38,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\About\\About.xml",
+          "relative_path": "About/About.xml",
+          "size": 1335,
+          "sha256": "2F025C1602574A48B6FB5C06190618BE0F316D75C269D7F46F22536013527C6D",
+          "line_count": 39,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Client\\Multiplayer.csproj",
+          "relative_path": "Source/Client/Multiplayer.csproj",
+          "size": 3440,
+          "sha256": "6942D1848357C9070B37A7A74E91E0B0A3233B4877E1FB28DF802A570ED983E7",
+          "line_count": 84,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Common\\Common.csproj",
+          "relative_path": "Source/Common/Common.csproj",
+          "size": 1650,
+          "sha256": "0E8DE273340EB48250B326B344CA08E2C2CA111B06C054E26C62A8DBC71349D5",
+          "line_count": 37,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Tests\\Tests.csproj",
+          "relative_path": "Source/Tests/Tests.csproj",
+          "size": 998,
+          "sha256": "6C4CB1FF1BCF96084EC86F1C8224E334C82E481C3B70B14D819021255CC857E3",
+          "line_count": 29,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Client\\AsyncTime\\AsyncTimeComp.cs",
+          "relative_path": "Source/Client/AsyncTime/AsyncTimeComp.cs",
+          "size": 16049,
+          "sha256": "638235DD7B7E7D8BCF4D7761A65248AA4ADF86708A52853BB800603AE4D247AE",
+          "line_count": 484,
+          "anchors": [
+            {
+              "line": 111,
+              "text": "public void Tick()"
+            },
+            {
+              "line": 114,
+              "text": "PreContext();"
+            },
+            {
+              "line": 130,
+              "text": "tickListNormal.Tick();"
+            },
+            {
+              "line": 131,
+              "text": "tickListRare.Tick();"
+            },
+            {
+              "line": 132,
+              "text": "tickListLong.Tick();"
+            },
+            {
+              "line": 151,
+              "text": "PostContext();"
+            },
+            {
+              "line": 152,
+              "text": "Multiplayer.game.sync.TryAddMapRandomState(map.uniqueID, randState);"
+            },
+            {
+              "line": 167,
+              "text": "// Thus these methods can be moved to Tick() and ExecuteCmd() by way of this method"
+            },
+            {
+              "line": 177,
+              "text": "private TimeSnapshot? prevTime;"
+            },
+            {
+              "line": 179,
+              "text": "public void PreContext()"
+            },
+            {
+              "line": 187,
+              "text": "prevTime = TimeSnapshot.GetAndSetFromMap(map);"
+            },
+            {
+              "line": 196,
+              "text": "public void PostContext()"
+            },
+            {
+              "line": 249,
+              "text": "PreContext();"
+            },
+            {
+              "line": 310,
+              "text": "PostContext();"
+            },
+            {
+              "line": 474,
+              "text": "MultiplayerAsyncQuest.TickMapQuests(this);"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Client\\AsyncTime\\AsyncWorldTimeComp.cs",
+          "relative_path": "Source/Client/AsyncTime/AsyncWorldTimeComp.cs",
+          "size": 10703,
+          "sha256": "837C2F9077B0BD3CF0E5A916DB807568F89AB687A01D8B6468559ED7BAF7C20A",
+          "line_count": 330,
+          "anchors": [
+            {
+              "line": 103,
+              "text": "public void Tick()"
+            },
+            {
+              "line": 106,
+              "text": "PreContext();"
+            },
+            {
+              "line": 137,
+              "text": "PostContext();"
+            },
+            {
+              "line": 144,
+              "text": "public void PreContext()"
+            },
+            {
+              "line": 158,
+              "text": "public void PostContext()"
+            },
+            {
+              "line": 180,
+              "text": "PreContext();"
+            },
+            {
+              "line": 263,
+              "text": "PostContext();"
+            },
+            {
+              "line": 276,
+              "text": "Multiplayer.session.dataSnapshot = SaveLoad.CreateGameDataSnapshot(SaveLoad.SaveAndReload(), Multiplayer.GameComp.multifaction);"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Client\\AsyncTime\\SetMapTime.cs",
+          "relative_path": "Source/Client/AsyncTime/SetMapTime.cs",
+          "size": 9076,
+          "sha256": "0B5657937F414A58C445BF545A0CACEA2C554A7DD22574206C53A1875456BE07",
+          "line_count": 247,
+          "anchors": [
+            {
+              "line": 31,
+              "text": "internal static void Prefix(ref TimeSnapshot? __state)"
+            },
+            {
+              "line": 34,
+              "text": "__state = TimeSnapshot.GetAndSetFromMap(Find.CurrentMap);"
+            },
+            {
+              "line": 38,
+              "text": "internal static void Finalizer(TimeSnapshot? __state) => __state?.Set();"
+            },
+            {
+              "line": 51,
+              "text": "static void Prefix(Map __instance, ref TimeSnapshot? __state)"
+            },
+            {
+              "line": 54,
+              "text": "__state = TimeSnapshot.GetAndSetFromMap(__instance);"
+            },
+            {
+              "line": 58,
+              "text": "static void Postfix(TimeSnapshot? __state) => __state?.Set();"
+            },
+            {
+              "line": 69,
+              "text": "static void Prefix(Pawn pawn, ref TimeSnapshot? __state)"
+            },
+            {
+              "line": 72,
+              "text": "__state = TimeSnapshot.GetAndSetFromMap(pawn.MapHeld);"
+            },
+            {
+              "line": 75,
+              "text": "static void Postfix(TimeSnapshot? __state) => __state?.Set();"
+            },
+            {
+              "line": 82,
+              "text": "static void Prefix(PawnRenderer __instance, ref TimeSnapshot? __state)"
+            },
+            {
+              "line": 85,
+              "text": "__state = TimeSnapshot.GetAndSetFromMap(__instance.pawn.MapHeld);"
+            },
+            {
+              "line": 88,
+              "text": "static void Postfix(TimeSnapshot? __state) => __state?.Set();"
+            },
+            {
+              "line": 94,
+              "text": "static void Prefix(PawnTweener __instance, ref TimeSnapshot? __state)"
+            },
+            {
+              "line": 97,
+              "text": "__state = TimeSnapshot.GetAndSetFromMap(__instance.pawn.Map);"
+            },
+            {
+              "line": 100,
+              "text": "static void Postfix(TimeSnapshot? __state) => __state?.Set();"
+            },
+            {
+              "line": 106,
+              "text": "static void Prefix(DangerWatcher __instance, ref TimeSnapshot? __state)"
+            },
+            {
+              "line": 109,
+              "text": "__state = TimeSnapshot.GetAndSetFromMap(__instance.map);"
+            },
+            {
+              "line": 112,
+              "text": "static void Postfix(TimeSnapshot? __state) => __state?.Set();"
+            },
+            {
+              "line": 124,
+              "text": "static void Prefix(Sustainer __instance, ref TimeSnapshot? __state)"
+            },
+            {
+              "line": 127,
+              "text": "__state = TimeSnapshot.GetAndSetFromMap(__instance.info.Maker.Map);"
+            },
+            {
+              "line": 130,
+              "text": "static void Postfix(TimeSnapshot? __state) => __state?.Set();"
+            },
+            {
+              "line": 136,
+              "text": "static void Prefix(Sample __instance, ref TimeSnapshot? __state)"
+            },
+            {
+              "line": 139,
+              "text": "__state = TimeSnapshot.GetAndSetFromMap(__instance.Map);"
+            },
+            {
+              "line": 142,
+              "text": "static void Postfix(TimeSnapshot? __state) => __state?.Set();"
+            },
+            {
+              "line": 152,
+              "text": "var current = TimeSnapshot.Current();"
+            },
+            {
+              "line": 157,
+              "text": "var prev = TimeSnapshot.Current();"
+            },
+            {
+              "line": 194,
+              "text": "static void Prefix(Map map, ref TimeSnapshot? __state)"
+            },
+            {
+              "line": 197,
+              "text": "__state = TimeSnapshot.GetAndSetFromMap(map);"
+            },
+            {
+              "line": 200,
+              "text": "static void Finalizer(TimeSnapshot? __state) => __state?.Set();"
+            },
+            {
+              "line": 203,
+              "text": "public struct TimeSnapshot"
+            },
+            {
+              "line": 218,
+              "text": "public static TimeSnapshot Current()"
+            },
+            {
+              "line": 220,
+              "text": "return new TimeSnapshot"
+            },
+            {
+              "line": 229,
+              "text": "public static TimeSnapshot? GetAndSetFromMap(Map map)"
+            },
+            {
+              "line": 233,
+              "text": "TimeSnapshot prev = Current();"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Client\\AsyncTime\\MultiplayerAsyncQuest.cs",
+          "relative_path": "Source/Client/AsyncTime/MultiplayerAsyncQuest.cs",
+          "size": 11430,
+          "sha256": "97964578F7E1C54F9848E7F071EE5CA32DF0EB595FB17819CFF70D113422D90B",
+          "line_count": 299,
+          "anchors": [
+            {
+              "line": 53,
+              "text": "MultiplayerAsyncQuest.TickWorldQuests();"
+            },
+            {
+              "line": 95,
+              "text": "__state?.PreContext();"
+            },
+            {
+              "line": 98,
+              "text": "static void Postfix(AsyncTimeComp __state) => __state?.PostContext();"
+            },
+            {
+              "line": 112,
+              "text": "__state?.PreContext();"
+            },
+            {
+              "line": 115,
+              "text": "static void Postfix(AsyncTimeComp __state) => __state?.PostContext();"
+            },
+            {
+              "line": 198,
+              "text": "var mapAsyncTimeComp = TryGetQuestMap(quest);"
+            },
+            {
+              "line": 230,
+              "text": "public static void TickWorldQuests()"
+            },
+            {
+              "line": 239,
+              "text": "public static void TickMapQuests(AsyncTimeComp mapAsyncTimeComp)"
+            },
+            {
+              "line": 264,
+              "text": "private static AsyncTimeComp TryGetQuestMap(Quest quest)"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Client\\Networking\\HostUtil.cs",
+          "relative_path": "Source/Client/Networking/HostUtil.cs",
+          "size": 10303,
+          "sha256": "35A5CF1CF24AEF1FC462AA38F439D28D04EEB4DD7A8F0267F7A9D47E6FB6073F",
+          "line_count": 256,
+          "anchors": [
+            {
+              "line": 110,
+              "text": "return SaveLoad.CreateGameDataSnapshot(SaveLoad.SaveAndReload(), Multiplayer.GameComp.multifaction);"
+            },
+            {
+              "line": 182,
+              "text": "StartArbiter();"
+            },
+            {
+              "line": 214,
+              "text": "private static void StartArbiter()"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Common\\LiteNetManager.cs",
+          "relative_path": "Source/Common/LiteNetManager.cs",
+          "size": 5766,
+          "sha256": "0E0AED4A2DD1345E29D605E8E19966B29F70DE86A412628E38B0BACB76100516",
+          "line_count": 165,
+          "anchors": [
+            {
+              "line": 55,
+              "text": "public void Tick()"
+            },
+            {
+              "line": 80,
+              "text": "public class LiteNetArbiterManager : INetManager"
+            },
+            {
+              "line": 94,
+              "text": "public void Tick() => arbiter.PollEvents();"
+            },
+            {
+              "line": 125,
+              "text": "public void Tick()"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Server\\Server.cs",
+          "relative_path": "Source/Server/Server.cs",
+          "size": 4690,
+          "sha256": "273237AB9500429C7E255A39886BE9D4292F2D61139A1E96214BDDDC54E1CE69",
+          "line_count": 164,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Client\\Patches\\ArbiterPatches.cs",
+          "relative_path": "Source/Client/Patches/ArbiterPatches.cs",
+          "size": 3576,
+          "sha256": "7E9F9768E4C1B0CEA2ABF39F1168D661EE0C148BF575C3208857F566DD4B5ACB",
+          "line_count": 97,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Client\\Util\\ArbiterWindowFix.cs",
+          "relative_path": "Source/Client/Util/ArbiterWindowFix.cs",
+          "size": 736,
+          "sha256": "86E278680F804C8D55D6C6C3A4A30C821D175D04B7FF63FB60275C2638E8CF0B",
+          "line_count": 27,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Client\\Saving\\SaveLoad.cs",
+          "relative_path": "Source/Client/Saving/SaveLoad.cs",
+          "size": 9096,
+          "sha256": "65916957D1B76D060C6D59EBA51347AE04D3581526A378A78DA05A7A9E189623",
+          "line_count": 245,
+          "anchors": [
+            {
+              "line": 75,
+              "text": "LoadInMainThread(gameData);"
+            },
+            {
+              "line": 110,
+              "text": "public static void LoadInMainThread(TempGameData gameData)"
+            },
+            {
+              "line": 112,
+              "text": "DeepProfiler.Start(\"Multiplayer LoadInMainThread\");"
+            },
+            {
+              "line": 146,
+              "text": "var gameDoc = SaveGameToDoc();"
+            },
+            {
+              "line": 151,
+              "text": "public static XmlDocument SaveGameToDoc()"
+            },
+            {
+              "line": 180,
+              "text": "public static GameDataSnapshot CreateGameDataSnapshot(TempGameData data, bool removeCurrentMapId)"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Client\\Saving\\Loader.cs",
+          "relative_path": "Source/Client/Saving/Loader.cs",
+          "size": 3229,
+          "sha256": "7E621198ED2FD9361925FB78B8E79CC676C42E793B5767A60F33D4E18D5D7271",
+          "line_count": 97,
+          "anchors": [
+            {
+              "line": 22,
+              "text": "var gameDoc = DataSnapshotToXml(Multiplayer.session.dataSnapshot, mapsToLoad);"
+            },
+            {
+              "line": 54,
+              "text": "SaveLoad.LoadInMainThread(LoadPatch.gameToLoad);"
+            },
+            {
+              "line": 83,
+              "text": "private static XmlDocument DataSnapshotToXml(GameDataSnapshot dataSnapshot, List<int> mapsToLoad)"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Client\\Saving\\SharedCrossRefs.cs",
+          "relative_path": "Source/Client/Saving/SharedCrossRefs.cs",
+          "size": 1253,
+          "sha256": "E043134B8461E288171785B7CA198FB3F6A66ACD1B3FD38834D913DA9C08FA8E",
+          "line_count": 50,
+          "anchors": [
+            {
+              "line": 26,
+              "text": "public List<ILoadReferenceable> UnregisterAllFrom(Map map)"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Client\\Saving\\CrossRefs.cs",
+          "relative_path": "Source/Client/Saving/CrossRefs.cs",
+          "size": 11010,
+          "sha256": "B76F3E62B070DA6409E01D6E4BB8F42FD68A168949C096D95499ABF10CE770C1",
+          "line_count": 337,
+          "anchors": [
+            {
+              "line": 175,
+              "text": "ScribeUtil.sharedCrossRefs.UnregisterAllFrom(map);"
+            },
+            {
+              "line": 176,
+              "text": "Multiplayer.ThingsById.UnregisterAllFrom(map);"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Common\\MultiplayerServer.cs",
+          "relative_path": "Source/Common/MultiplayerServer.cs",
+          "size": 11403,
+          "sha256": "0390E6905C023B7077101411FD178DAC312A97651F8ECF995C99AE88A80CD0B3",
+          "line_count": 297,
+          "anchors": [
+            {
+              "line": 114,
+              "text": "freezeManager.Tick();"
+            },
+            {
+              "line": 116,
+              "text": "netManagers.ForEach(manager => manager.Tick());"
+            },
+            {
+              "line": 234,
+              "text": "public bool CanUseStandaloneMapStreaming(int mapId) => false;"
+            },
+            {
+              "line": 238,
+              "text": "if (!CanUseStandaloneMapStreaming(mapId))"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Common\\CommandHandler.cs",
+          "relative_path": "Source/Common/CommandHandler.cs",
+          "size": 3413,
+          "sha256": "7F6E5FBB5CAAD380F1C7C4FD7BFA33F41B259E195A8F4FEF911831FAA60D9F2E",
+          "line_count": 95,
+          "anchors": [
+            {
+              "line": 53,
+              "text": "if (server.CanUseStandaloneMapStreaming(mapId))"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Common\\ScheduledCommand.cs",
+          "relative_path": "Source/Common/ScheduledCommand.cs",
+          "size": 2382,
+          "sha256": "17D2E667876C5BF6B587D0CFE6E2AE9D4A9D9A3BA9C9EC8E865C6A07EE5727A5",
+          "line_count": 69,
+          "anchors": [
+            {
+              "line": 5,
+              "text": "public class ScheduledCommand(CommandType type, int ticks, int factionId, int mapId, int playerId, byte[] data)"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Client\\Networking\\State\\ClientPlayingState.cs",
+          "relative_path": "Source/Client/Networking/State/ClientPlayingState.cs",
+          "size": 9107,
+          "sha256": "E5600BC4DC134AFF56DE6BA831F869ED96AF90C6EF5E18155657B26B87194FD0",
+          "line_count": 222,
+          "anchors": [
+            {
+              "line": 139,
+              "text": "public void HandleMapResponse(ByteReader data)"
+            },
+            {
+              "line": 171,
+              "text": "Multiplayer.game?.sync.AddClientOpinionAndCheckDesync(ClientSyncOpinion.FromNet(packet.SyncOpinion));"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Client\\MultiplayerData.cs",
+          "relative_path": "Source/Client/MultiplayerData.cs",
+          "size": 6280,
+          "sha256": "FB3A0CCA020940A8B0CB746D88C6C4E733D68526DE9A6C7B77B545002A51AD16",
+          "line_count": 161,
+          "anchors": [
+            {
+              "line": 117,
+              "text": "internal static void CollectDefInfos()"
+            },
+            {
+              "line": 152,
+              "text": "internal static DefInfo GetDefInfo<T>(IEnumerable<T> types, Func<T, int> hash)"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Common\\Util\\DefInfo.cs",
+          "relative_path": "Source/Common/Util/DefInfo.cs",
+          "size": 124,
+          "sha256": "A24384A7122AC8071743DE187ADECC13EBD7B813F3EA274E93A288542C242C4B",
+          "line_count": 8,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Client\\Desyncs\\SyncCoordinator.cs",
+          "relative_path": "Source/Client/Desyncs/SyncCoordinator.cs",
+          "size": 10656,
+          "sha256": "A5015E851869621E33521D6847BBA1B7F2DC19F608092CEBB0269FE17F007B33",
+          "line_count": 268,
+          "anchors": [
+            {
+              "line": 47,
+              "text": "public void AddClientOpinionAndCheckDesync(ClientSyncOpinion newOpinion)"
+            },
+            {
+              "line": 117,
+              "text": "/// Called by <see cref=\"AddClientOpinionAndCheckDesync\"/> if the newly added opinion doesn't match with what other ones."
+            },
+            {
+              "line": 120,
+              "text": "/// <param name=\"newOpinion\">The opinion passed to <see cref=\"AddClientOpinionAndCheckDesync\"/> that disagreed with the currently known opinions.</param>"
+            },
+            {
+              "line": 185,
+              "text": "public void TryAddMapRandomState(int map, ulong state)"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Client\\Desyncs\\ClientSyncOpinion.cs",
+          "relative_path": "Source/Client/Desyncs/ClientSyncOpinion.cs",
+          "size": 6488,
+          "sha256": "1504DBED0178D3108267643C711BF757B6ADAD9434FFD535E386B7C341CD7285",
+          "line_count": 173,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Client\\Desyncs\\MapRandomStateData.cs",
+          "relative_path": "Source/Client/Desyncs/MapRandomStateData.cs",
+          "size": 310,
+          "sha256": "397EEF3A5B5ED709196F4993E4FEB3EDBDBA2D21E1BBDAA94FB8960E6BA8C5D0",
+          "line_count": 13,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Client\\Saving\\Replay.cs",
+          "relative_path": "Source/Client/Saving/Replay.cs",
+          "size": 6015,
+          "sha256": "CDCAB71F8D66BB68D6CF10802D6C34346C413F954EFB9613CE122FB265D0B267",
+          "line_count": 159,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Client\\Factions\\FactionContext.cs",
+          "relative_path": "Source/Client/Factions/FactionContext.cs",
+          "size": 1002,
+          "sha256": "242CED5639F24D40C2CE2F08144C607A83754D6F8434D7B3F70F525790071A80",
+          "line_count": 45,
+          "anchors": [
+            {
+              "line": 7,
+              "text": "public static class FactionContext"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Client\\Factions\\FactionContextSetters.cs",
+          "relative_path": "Source/Client/Factions/FactionContextSetters.cs",
+          "size": 4689,
+          "sha256": "3B9ED6D5414184F73C34129C5B5EB04E583C8632F23F76530860A01F1B34216A",
+          "line_count": 167,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Common\\FreezeManager.cs",
+          "relative_path": "Source/Common/FreezeManager.cs",
+          "size": 1444,
+          "sha256": "47855AE5B5A65729DF443E747E52660D9B450F31C8314A81398A4F089523EA2E",
+          "line_count": 51,
+          "anchors": [
+            {
+              "line": 7,
+              "text": "public class FreezeManager"
+            },
+            {
+              "line": 30,
+              "text": "public void Tick()"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Client\\Patches\\Determinism.cs",
+          "relative_path": "Source/Client/Patches/Determinism.cs",
+          "size": 30639,
+          "sha256": "40FF68D0F621325D0D9776ABE78B7A807A5DEE879257DD911A23B3133AE6E098",
+          "line_count": 754,
+          "anchors": [
+            {
+              "line": 289,
+              "text": "// In MP only allow updates from MultiplayerWorldComp:Tick()"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Tests\\StandaloneMapStreamingTest.cs",
+          "relative_path": "Source/Tests/StandaloneMapStreamingTest.cs",
+          "size": 5200,
+          "sha256": "9F719EDBCDD6A1FB29D13D26D40F8A0882B4A7B21107007AFDFBDE611DC1CC4A",
+          "line_count": 143,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Tests\\TimeControlFallbackTest.cs",
+          "relative_path": "Source/Tests/TimeControlFallbackTest.cs",
+          "size": 4520,
+          "sha256": "2997AE7641B25F9028B570988FF1ECFCD738D4CFA8778E6DF685CB0EAE2AAC32",
+          "line_count": 135,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Tests\\FreezeManagerTest.cs",
+          "relative_path": "Source/Tests/FreezeManagerTest.cs",
+          "size": 4077,
+          "sha256": "00CA4BA309718A0AA196D3D7D3C53D64EA9FBD7203B2FA47667AD3CA6439FE95",
+          "line_count": 144,
+          "anchors": [
+            {
+              "line": 6,
+              "text": "public class FreezeManagerTest"
+            },
+            {
+              "line": 54,
+              "text": "server.freezeManager.Tick();"
+            },
+            {
+              "line": 65,
+              "text": "server.freezeManager.Tick();"
+            },
+            {
+              "line": 80,
+              "text": "server.freezeManager.Tick();"
+            },
+            {
+              "line": 87,
+              "text": "server.freezeManager.Tick();"
+            },
+            {
+              "line": 98,
+              "text": "server.freezeManager.Tick();"
+            },
+            {
+              "line": 103,
+              "text": "server.freezeManager.Tick();"
+            },
+            {
+              "line": 113,
+              "text": "server.freezeManager.Tick();"
+            },
+            {
+              "line": 124,
+              "text": "server.freezeManager.Tick();"
+            },
+            {
+              "line": 130,
+              "text": "server.freezeManager.Tick();"
+            },
+            {
+              "line": 136,
+              "text": "server.freezeManager.Tick();"
+            },
+            {
+              "line": 141,
+              "text": "server.freezeManager.Tick();"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Tests\\ServerTest.cs",
+          "relative_path": "Source/Tests/ServerTest.cs",
+          "size": 4289,
+          "sha256": "54DB1AB9BB23166A9753763BA9FE449175BAE81CD2D5DB7AFCBB8EAE71BE029D",
+          "line_count": 154,
+          "anchors": [
+            {
+              "line": 73,
+              "text": "public void LoadingStateHandlesKeepAliveWhileWaitingForJoinPoint()"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\Tests\\Helper\\RecordingConnection.cs",
+          "relative_path": "Source/Tests/Helper/RecordingConnection.cs",
+          "size": 632,
+          "sha256": "08D948E479FD78F923AF5B194F1BA8BD4BBF52D567C53CAAD6786A189B767011",
+          "line_count": 27,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Multiplayer-master\\Multiplayer-master\\Source\\TestsOnMono\\Program.cs",
+          "relative_path": "Source/TestsOnMono/Program.cs",
+          "size": 3353,
+          "sha256": "DD6A9E958907827E47E5012CB9D8A79013ABAA7A690A3346488903C58D5B44D8",
+          "line_count": 136,
+          "anchors": []
+        }
+      ]
+    },
+    "RT": {
+      "root": "C:\\Users\\user\\Desktop\\RimMulti\\Rimworld-Together-development\\Rimworld-Together-development",
+      "git_present": false,
+      "upstream_commit": "UNVERIFIED",
+      "source_cs_file_count": 82,
+      "csproj_paths": [
+        "C:\\Users\\user\\Desktop\\RimMulti\\Rimworld-Together-development\\Rimworld-Together-development\\Source\\Server\\RTServer.csproj"
+      ],
+      "files": [
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Rimworld-Together-development\\Rimworld-Together-development\\LICENSE",
+          "relative_path": "LICENSE",
+          "size": 19126,
+          "sha256": "F7F28B8C7A1AF76B9874CA6D040E8B1EB6768FD1043106C9D315090EA96754E7",
+          "line_count": 402,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Rimworld-Together-development\\Rimworld-Together-development\\About\\Licenses\\LICENSE.txt",
+          "relative_path": "About/Licenses/LICENSE.txt",
+          "size": 19125,
+          "sha256": "CB6303892198AFB24723A78E59BE37222FFD7494690FCA00D9307347DF50E0B6",
+          "line_count": 402,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Rimworld-Together-development\\Rimworld-Together-development\\README.md",
+          "relative_path": "README.md",
+          "size": 2486,
+          "sha256": "E3615945772083DAB3357839F8503C4DB347AE0EE307C2C0BE12D388320EF5CE",
+          "line_count": 45,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Rimworld-Together-development\\Rimworld-Together-development\\About\\About.xml",
+          "relative_path": "About/About.xml",
+          "size": 1271,
+          "sha256": "1984F9F24432168DFE503D67A33209798227F3CB479B6022BCD2F11CFA60536F",
+          "line_count": 34,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Rimworld-Together-development\\Rimworld-Together-development\\Source\\Server\\RTServer.csproj",
+          "relative_path": "Source/Server/RTServer.csproj",
+          "size": 1001,
+          "sha256": "45AEE000A7780D649A0B82D9DAEDE719B22236702C774C367A7E042ECAA4995E",
+          "line_count": 29,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Rimworld-Together-development\\Rimworld-Together-development\\Source\\Server\\PacketManagers\\PM_Saves.cs",
+          "relative_path": "Source/Server/PacketManagers/PM_Saves.cs",
+          "size": 3931,
+          "sha256": "7F39379920A48DF032542372EB37D3FAD0BBE91C5D344664D836ECB2CAF89A7A",
+          "line_count": 107,
+          "anchors": [
+            {
+              "line": 24,
+              "text": "ReceiveSaveFromClient(client, data);"
+            },
+            {
+              "line": 98,
+              "text": "private static void ReceiveSaveFromClient(ServerClient client, PKT_Save data)"
+            },
+            {
+              "line": 101,
+              "text": "File.WriteAllBytes(savePath, data.FileBytes);"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Rimworld-Together-development\\Rimworld-Together-development\\Source\\Server\\PacketManagers\\PM_Map.cs",
+          "relative_path": "Source/Server/PacketManagers/PM_Map.cs",
+          "size": 2042,
+          "sha256": "B76E3E1326345873A98E378E4B657395D19827E838B3DEC9DFB46D67D83B8AE0",
+          "line_count": 56,
+          "anchors": [
+            {
+              "line": 36,
+              "text": "File.WriteAllBytes(Path.Combine(Master.MapsPath, data.Tile + CommonValues.DefaultSaveFormat), data.Bytes);"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Rimworld-Together-development\\Rimworld-Together-development\\Source\\Server\\PacketManagers\\PM_Raid.cs",
+          "relative_path": "Source/Server/PacketManagers/PM_Raid.cs",
+          "size": 1635,
+          "sha256": "F8CBF12AAE91B6ACD3EF5077A84A963780C98042302A357CDF93137B147C7645",
+          "line_count": 49,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Rimworld-Together-development\\Rimworld-Together-development\\Source\\Server\\PacketManagers\\PM_Synchronous.cs",
+          "relative_path": "Source/Server/PacketManagers/PM_Synchronous.cs",
+          "size": 4221,
+          "sha256": "6EF94EFE1F44CB787FD113F4D524F7FC8069C765CB91FBDF15F2A7304F168123",
+          "line_count": 102,
+          "anchors": [
+            {
+              "line": 22,
+              "text": "TryStartSynchronousSession(client, data);"
+            },
+            {
+              "line": 49,
+              "text": "private static void TryStartSynchronousSession(ServerClient client, PKT_Synchronous data)"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Rimworld-Together-development\\Rimworld-Together-development\\Source\\Server\\PacketManagers\\PM_Transfers.cs",
+          "relative_path": "Source/Server/PacketManagers/PM_Transfers.cs",
+          "size": 6787,
+          "sha256": "C4C698A42F6803FEAC555DB2107CC885B60A67EAD57ABB3D841CB049799FA834",
+          "line_count": 157,
+          "anchors": [
+            {
+              "line": 60,
+              "text": "packet.CurrentStepMode = TransferStepMode.Recover;"
+            },
+            {
+              "line": 91,
+              "text": "transferData.CurrentStepMode = TransferStepMode.Recover;"
+            },
+            {
+              "line": 128,
+              "text": "transferData.CurrentStepMode = TransferStepMode.Recover;"
+            },
+            {
+              "line": 146,
+              "text": "transferData.CurrentStepMode = TransferStepMode.Recover;"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Rimworld-Together-development\\Rimworld-Together-development\\Source\\Server\\PacketManagers\\PM_Market.cs",
+          "relative_path": "Source/Server/PacketManagers/PM_Market.cs",
+          "size": 6118,
+          "sha256": "225BEB172BF3EC5D6CF4FC2D22839131F82B9F8787710FDD059D8D59B9247250",
+          "line_count": 148,
+          "anchors": [
+            {
+              "line": 38,
+              "text": "OnBuy(client, packet);"
+            },
+            {
+              "line": 93,
+              "text": "private static void OnBuy(ServerClient client, PKT_Market packet)"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Rimworld-Together-development\\Rimworld-Together-development\\Source\\Server\\PacketManagers\\PM_Mods.cs",
+          "relative_path": "Source/Server/PacketManagers/PM_Mods.cs",
+          "size": 6411,
+          "sha256": "9BABFB82E5032AF36185716A604B3A5A17E04139C7354DF17DBFBC458ECD2958",
+          "line_count": 164,
+          "anchors": [
+            {
+              "line": 56,
+              "text": "if (Master.ModConfig.AllowAllMods) return false;"
+            },
+            {
+              "line": 69,
+              "text": "FL_ModData toFind = file.ModConfigs.Find(fetch => fetch.ModName == config.ModName);"
+            },
+            {
+              "line": 80,
+              "text": "FL_ModData toFind = Master.ModConfig.ModConfigs.Find(fetch => fetch.ModName == config.ModName"
+            },
+            {
+              "line": 102,
+              "text": "if (Master.ModConfig.AllowAllMods) return false;"
+            },
+            {
+              "line": 114,
+              "text": "FL_ModData toFind = file.ModConfigs.FirstOrDefault(fetch => fetch.ModName == config.ModName);"
+            },
+            {
+              "line": 127,
+              "text": "FL_ModData toFind = Master.ModConfig.ModConfigs.Find(fetch => fetch.ModName == config.ModName);"
+            },
+            {
+              "line": 144,
+              "text": "if (Master.ModConfig.AllowAllMods) return false;"
+            }
+          ]
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Rimworld-Together-development\\Rimworld-Together-development\\Source\\Server\\PacketManagers\\PM_Caravan.cs",
+          "relative_path": "Source/Server/PacketManagers/PM_Caravan.cs",
+          "size": 2422,
+          "sha256": "8AC16C168A047130FE3DD202B8DD6F1B742494194E5E7BFE25B98C4901719545",
+          "line_count": 70,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Rimworld-Together-development\\Rimworld-Together-development\\Source\\Server\\PacketManagers\\PM_Settlements.cs",
+          "relative_path": "Source/Server/PacketManagers/PM_Settlements.cs",
+          "size": 6830,
+          "sha256": "7D78DF13986AAC46A66EA504B65997C352AD128A7D711355F9FB929101A7BF85",
+          "line_count": 170,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Rimworld-Together-development\\Rimworld-Together-development\\Source\\Server\\PacketManagers\\PM_Guilds.cs",
+          "relative_path": "Source/Server/PacketManagers/PM_Guilds.cs",
+          "size": 12755,
+          "sha256": "F21D54D7C6084186246D081A3CB96E674D26CB798E5D5132B286496801C4B69C",
+          "line_count": 295,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Rimworld-Together-development\\Rimworld-Together-development\\Source\\Server\\PacketManagers\\PM_Sites.cs",
+          "relative_path": "Source/Server/PacketManagers/PM_Sites.cs",
+          "size": 7685,
+          "sha256": "FDA333B73F367B272469FFF42319006DCA6B14B8CBBC1CFABD5303EDCAE8B670",
+          "line_count": 204,
+          "anchors": []
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Rimworld-Together-development\\Rimworld-Together-development\\Source\\Assemblies\\RTClient.dll",
+          "relative_path": "Source/Assemblies/RTClient.dll",
+          "size": 393728,
+          "sha256": "998FB178C206F2BB303207C5C8F505D2420D2414964601E4591A758956D61A1F"
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Rimworld-Together-development\\Rimworld-Together-development\\Source\\Assemblies\\RTShared.dll",
+          "relative_path": "Source/Assemblies/RTShared.dll",
+          "size": 65024,
+          "sha256": "EF42C2C5C0F6781219F96AF0BE421CB20F97FDBEF0F61578BF5871F77FD00990"
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\Rimworld-Together-development\\Rimworld-Together-development\\Source\\Assemblies\\RTNetwork.dll",
+          "relative_path": "Source/Assemblies/RTNetwork.dll",
+          "size": 44544,
+          "sha256": "BA9EEB2DD025507299F578758D87FD65FBAD9F477D72388BE83F98672167AF21"
+        }
+      ]
+    }
+  },
+  "missing": []
+}

@@ -1,0 +1,295 @@
+{
+  "decision_checkpoint": "2026-10-06",
+  "produced_date": "2026-10-07",
+  "self_excluded": "PACKAGE_MANIFEST.json",
+  "files": [
+    {
+      "path": "00_START_HERE.md",
+      "size_bytes": 2464,
+      "sha256": "122ef036e71c34e287374480c5d46eaccc3366dc4e9c4c2ea3c2898bfa035a61",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "ADR_ACCEPTANCE_AND_AUTHORITY_MAP.md",
+      "size_bytes": 1174,
+      "sha256": "6c46b8583b33073cc54783d77a249c85cbb73c4886ae2954679db1dc22465e80",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "AGENTS.md",
+      "size_bytes": 2367,
+      "sha256": "ae56e5a975508d776ee8708e0b88b6aef002134e9c2e2c92f481e193d6c7af09",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "C_REVIEW_CORRECTIONS_CONSOLIDATED.md",
+      "size_bytes": 6091,
+      "sha256": "f5ac1b1c5f36ef73ece2dbc416659e8913b1e9593be65a2f3aa2b71a86e37370",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "C_REVIEW_HISTORY_EXTRACTS.md",
+      "size_bytes": 94401,
+      "sha256": "8708b3e7ad4ed40f4a0f5292fdf9bdcc12938751ad2b1e1425d6e757088d4230",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "C_SOURCE_DISPOSITION_REGISTER.md",
+      "size_bytes": 1421,
+      "sha256": "ea40a17ca2522fd4b4bee5776b68b5d2c89dabb1811fb82c00a2117dbc6e9187",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "DISPATCHER_INSTRUCTIONS.md",
+      "size_bytes": 1735,
+      "sha256": "9847b4b9e32b370b413b82b692c1b3d725ca8a0795ebe7a74a70776187fc392d",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "DISPATCHER_STATE.json",
+      "size_bytes": 722,
+      "sha256": "847049a2a95fa83adc82ce6d8fa78a26c5a8ddf6dcf88efa5e2a90ae5f809a39",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "GQ1_RUNTIME_PROBE_CONTRACT_MASTER_CORRECTED.md",
+      "size_bytes": 2691,
+      "sha256": "a31637d629fdde546eea3ea27820b87f266a4c0f440bb6d2b5a977a18cdaf45a",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "IDE_MASTER_BOOTSTRAP_PROMPT.md",
+      "size_bytes": 1711,
+      "sha256": "76bea234d78f6b64d2142243a48d94d865fca92c0c1419251fc43cfac967e590",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "LOCAL_RECONCILIATION_CHECKLIST.md",
+      "size_bytes": 1488,
+      "sha256": "256c8cf73aa8c57a6cee9c9062bdc59629e51c3890ec9c693f156724191fb583",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "MASTER_AGENT_DISPATCH_BOARD.md",
+      "size_bytes": 1014,
+      "sha256": "4c67971cacb7b00603bbe0f14d63bf082900f53f8d0325aad6146f40ce84f65d",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "MASTER_DECISION_LOG.md",
+      "size_bytes": 2052,
+      "sha256": "9c57648e29b0a8950aca4ccdc9ceb93775bc0c264d3e09147cd31e31efba6a74",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "MASTER_HANDOFF.md",
+      "size_bytes": 3105,
+      "sha256": "714a016a1140c64ca5817cfeac78542958e357a52f16523766dcee17571c1b90",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "MASTER_MIGRATION_COMPLETE.md",
+      "size_bytes": 45810,
+      "sha256": "79621263fde97ea82b12224992fa33e7a2b562bc3e4f9ce8bc7f4660294a539f",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "MASTER_PROJECT_STATE.md",
+      "size_bytes": 2211,
+      "sha256": "084ec91df6d02a827b81dd8b8805118a59376903fe6edcf9a364d51d845a2734",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "MASTER_REVIEW_ENGINE_GATE05_E1.md",
+      "size_bytes": 1639,
+      "sha256": "ad6933322b05002804533916c42309ecd93baa573fcfc9328623625c730502cd",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "MASTER_REVIEW_PIPELINE_REV5_E2.md",
+      "size_bytes": 1766,
+      "sha256": "4787f783e65a77a03a0e0dc2619ff528c9cb066b48dee67872806ea205b60a95",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "PACKAGE_CONTENTS.md",
+      "size_bytes": 4282,
+      "sha256": "3dca26ae66449c92b172a74d40ec9a0ae95cf89e63fb2e448eda64193bf1dc1d",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "QA_DEFECT_LEDGER.md",
+      "size_bytes": 1229,
+      "sha256": "9b7fd9fed686b2bc9fbda3bfb60475b7cbd2327e2ad71b01042a1d73f63aecae",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "SOURCE_REGISTER.md",
+      "size_bytes": 6330,
+      "sha256": "1bfbb803800afab9d167d30ae8b89cbce0dd383458bc6c298d4054d5ab1f4130",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "VALIDATION_REPORT.md",
+      "size_bytes": 634,
+      "sha256": "2d7ca9bb7fa96c32b2e05489d26423e830d84b6c52c0a5c2f63eab4c9df1908e",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "WP_PIPELINE_REV6.md",
+      "size_bytes": 2127,
+      "sha256": "788986c7696f30004224e3cee93d315dd72a5cff32e048ea0e6c5da514e3da7a",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "WP_QA_ENGINE_GATE05.md",
+      "size_bytes": 2162,
+      "sha256": "71f236fb116b474ed69849e46a58611c12ebb0c0f8f1b7172bad512334529bf8",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "history/MASTER_AGENT_DISPATCH_BOARD_MADB-024.md",
+      "size_bytes": 1512,
+      "sha256": "77f6127a72020ba43d5c0ca967397b0e17e6bcf20f0fbfe05119e46bd2aba56c",
+      "kind": "preserved_source"
+    },
+    {
+      "path": "history/MASTER_DECISION_LOG_MDR-067.md",
+      "size_bytes": 103410,
+      "sha256": "5e188d9cdd1c79e3666dc12ae647b6adac87ce1050afa811cc717ee0ae68f6f4",
+      "kind": "preserved_source"
+    },
+    {
+      "path": "history/MASTER_PROJECT_STATE_MSR-067.md",
+      "size_bytes": 207802,
+      "sha256": "b5ce6e3bae59aaae078a01e15212bf1aae88002437c6e7d67555506df3ddccdd",
+      "kind": "preserved_source"
+    },
+    {
+      "path": "history/MASTER_REVIEW_PLAYERGLOBAL_SHAREDWORLD_TEMPORAL_BOUNDARY_01.md",
+      "size_bytes": 1135,
+      "sha256": "b8bce9703c9dc33c561752091295a950e602f2aa4bee445e4b96054a17c0fe17",
+      "kind": "preserved_source"
+    },
+    {
+      "path": "history/NOTICE_HISTORY.md",
+      "size_bytes": 279,
+      "sha256": "da773f89a24b9beb61ea2a1e3c53b509df5b0d5350a46fc96f16e07c5190df6b",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "history/QA_DEFECT_LEDGER_QDL-064.md",
+      "size_bytes": 75943,
+      "sha256": "8c5387a0cc7cbaad36bbbe5c3a9170a704677902c7398e609835b1aed1759aaf",
+      "kind": "preserved_source"
+    },
+    {
+      "path": "reference_adrs/ADR-001_Authenticated_Identity_Central_Authority_Persistent_State.md",
+      "size_bytes": 4171,
+      "sha256": "9ce1f33842a9d3fa0a46a8811db80fb1294c12f71de6689d9045135d5487cc86",
+      "kind": "preserved_source"
+    },
+    {
+      "path": "reference_adrs/ADR-002_Tactical_Session_Offline_Combat_Authority.md",
+      "size_bytes": 4278,
+      "sha256": "99a5849e134a1b27ce9c012486f8b7abc0da1b56fafcc3bb15c0845e2be67997",
+      "kind": "preserved_source"
+    },
+    {
+      "path": "reference_adrs/ADR-003_Canonical_Settlement_State_Entity_Identity_Save_Provenance_v3.md",
+      "size_bytes": 5950,
+      "sha256": "4bf52e85ef0a7e5ec04902b09532556e62213420635d10c8a49cb5957bc0f015",
+      "kind": "preserved_source"
+    },
+    {
+      "path": "reference_adrs/ADR-004_Distributed_Ownership_Transaction_Repair_v2.md",
+      "size_bytes": 15349,
+      "sha256": "83605b985d5c5f8e80f652b17258ff7ba4fbd6364c00cf2f3d5e4752df2eb2c9",
+      "kind": "preserved_source"
+    },
+    {
+      "path": "reference_adrs/ADR-005_Intent_Betrayal_Domain_Simulation_Event_Contract_v2.md",
+      "size_bytes": 14359,
+      "sha256": "462e2e9fcbbd5e556fc8e0624447a77ea60f55f0499abe60db3359deeb38250b",
+      "kind": "preserved_source"
+    },
+    {
+      "path": "reference_adrs/ADR-006A_Temporal_Authority_ACCEPTED.md",
+      "size_bytes": 7311,
+      "sha256": "8044b431a10b4965efcdee7a02747ef06dcff016d494420a230cc20c1ee53ac6",
+      "kind": "preserved_source"
+    },
+    {
+      "path": "reference_adrs/ADR-006B_Configuration_Content_Manifest_v2.md",
+      "size_bytes": 10262,
+      "sha256": "d68ce6d758ad5c93450bd6767a8d3416dbd3e1946eeb0d464ff45b8caa79fcd4",
+      "kind": "preserved_source"
+    },
+    {
+      "path": "reference_adrs/ADR-007_Ordinary_Settlement_Simulation_Authority_v4.md",
+      "size_bytes": 6171,
+      "sha256": "4e29479d74ec8a55a2d6c0640217514502c08436e764da0b9324c7c687387d24",
+      "kind": "preserved_source"
+    },
+    {
+      "path": "reference_adrs/ADR-008_Shared_World_Layer_Transit_World_Projection_v2.md",
+      "size_bytes": 11742,
+      "sha256": "5652fe5ca47af9b963a8ec6ffd8cb3035a6424eacbb3e227afd79ddbe481fca7",
+      "kind": "preserved_source"
+    },
+    {
+      "path": "reference_adrs/NOTICE_ACCEPTANCE.md",
+      "size_bytes": 290,
+      "sha256": "3d3bf2aefec6d81aaeb4e790057b0efd2e6b8738f421b06cdb6a2f26d7a39d80",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "source_reports/GQ1_Decisive_Runtime_Probe_Contract_01.md",
+      "size_bytes": 9087,
+      "sha256": "be82fc7583c84111c34fde69ba437e516fbe453492af0f907d7e11e54f853416",
+      "kind": "preserved_source"
+    },
+    {
+      "path": "source_reports/GQ1_Temporal_Topology_Decision_Brief_REV2.md",
+      "size_bytes": 9503,
+      "sha256": "f8674c838356e9f9fb7690c818e76e8ff164e163742ff4645c3aa6ac56390bec",
+      "kind": "preserved_source"
+    },
+    {
+      "path": "source_reports/NOTICE_C_ANALYSIS.md",
+      "size_bytes": 405,
+      "sha256": "7404ebf9d6808ad4f79161ea4ef86ac1cbe5e2f124f08735d902c16bef3dfff5",
+      "kind": "generated_handoff"
+    },
+    {
+      "path": "source_reports/POC_EngineHost_Semantic_Authority_Gate_05(2).md",
+      "size_bytes": 29563,
+      "sha256": "8749d510d794aa08b7b0482d377c0d72eab65cb51c58e692898eedd01a2fc168",
+      "kind": "preserved_source"
+    },
+    {
+      "path": "source_reports/PlayerGlobal_SharedWorld_Temporal_Boundary_01.md",
+      "size_bytes": 9913,
+      "sha256": "37c506be149eef606f562be29d2c9f86d100b8c30b67c804d1282dd3e7ccb351",
+      "kind": "preserved_source"
+    },
+    {
+      "path": "source_reports/Production_Transaction_Pipeline_Slice_01_REV5.md",
+      "size_bytes": 22362,
+      "sha256": "aa4dedc234bdb29b8ec952ba15feba35082a1c51b850eb4d7d9dd2f03e495c8e",
+      "kind": "preserved_source"
+    },
+    {
+      "path": "source_reports/QA_EngineHost_Semantic_Authority_Gate_04.md",
+      "size_bytes": 36099,
+      "sha256": "8cb8f52d9c3338de26a2829cc4b92c4cc5a512ede9523c608aa6da1ee2727e1e",
+      "kind": "preserved_source"
+    },
+    {
+      "path": "source_reports/QA_Production_Transaction_Pipeline_01_REV5.md",
+      "size_bytes": 34769,
+      "sha256": "77605d27cd041758bf7181c3a40673e172a3e270b5ea3ebd66e58000e242bcf9",
+      "kind": "preserved_source"
+    }
+  ]
+}

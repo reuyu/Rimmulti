@@ -1,0 +1,12 @@
+{
+  "actual_release_tool": {
+    "chunk_id": "9c71d1",
+    "wall_time_seconds": 0.0000477,
+    "exit_code": 0,
+    "original_token_count": 118,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R27-S2-COMPLETE-NEXT-20261012-01\", \"pid\r\n\u001b[23;80Hd\": 2728, \"locked_at\": \"2026-10-12T04:29:03.736620+09:00\", \"mechanism\": \"Windows \r\n\u001b[23;80H msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\"\r\n\u001b[23;80H\": \"2026-10-12T04:48:50.127362+09:00\", \"renewal_count\": 5, \"release_reason\": \"REL\r\n\u001b[23;80HLEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-12T04:51:17.577850+09:00\"}       \r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "run_id": "MASTER-R27-S2-COMPLETE-NEXT-20261012-01",
+  "session": 76245,
+  "all_child_commands_completed_before_release": true
+}

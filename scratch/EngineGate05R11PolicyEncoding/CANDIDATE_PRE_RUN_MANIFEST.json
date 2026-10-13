@@ -1,0 +1,92 @@
+{
+    "schema_version": "ADR-006B-v5",
+    "run_id": "GATE05-R11-POLICY-ENCODING-PRE-RUN-01",
+    "dispatch_id": "WE-A-ENGINE-GATE05-R11-POLICY-ENCODING-20261009-DIRECT-bec3d350",
+    "wp_id": "WP_ENGINE_GATE05_R11_POLICY_ENCODING",
+    "wp_revision": "GATE05-R11-POLICY-ENCODING",
+    "created_at": "2026-10-09T06:22:00+09:00",
+    "selected_candidate": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+        "sha256": "133348C3FBC20215B9C4E0E9CA25D731781FCE9AD8CBE91F5A145BDB3620F98D",
+        "size": 236544,
+        "role": "candidate_binary",
+        "mvid": "e6c6f6fd-2915-4493-8ef9-dc5d87de1c6b",
+        "matching_pdb": {
+            "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+            "sha256": "BA3027651BA59976BBEC6E1D2454AA0A2F5D964862809618AD80C9F2C6647BDE",
+            "size": 59468
+        }
+    },
+    "alternate_release_candidate": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+        "sha256": "A550896516C02F45F5CB4C30D39E35BC6F7ECABF07FBB595C5FCCE5D9EA66101",
+        "size": 225280,
+        "role": "candidate_binary",
+        "mvid": "35dfe68f-6a6f-44cc-a648-7c8153f6a2ad",
+        "matching_pdb": {
+            "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+            "sha256": "B20543F66D0AE5068D43C5F7C6E6D192963A831AC87D570491488709DDF716C7",
+            "size": 43548
+        }
+    },
+    "deployed_mod_assemblies": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+        "sha256": "133348C3FBC20215B9C4E0E9CA25D731781FCE9AD8CBE91F5A145BDB3620F98D",
+        "size": 236544,
+        "role": "deployed_mod_binary",
+        "mvid": "e6c6f6fd-2915-4493-8ef9-dc5d87de1c6b",
+        "matching_pdb": {
+            "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+            "sha256": "BA3027651BA59976BBEC6E1D2454AA0A2F5D964862809618AD80C9F2C6647BDE",
+            "size": 59468
+        }
+    },
+    "sources": {
+        "engine_host_census": {
+            "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+            "sha256": "FA3E1EF5BB9E1B5EB94D001EC6A7B7B239C12A94F3105A388E553CC62BA5E2CA",
+            "size": 155483
+        },
+        "prefix_verification": {
+            "byte_count": 72547,
+            "sha256": "F3C4F865F1E2A898BF240A2D096195870D77A52408CF2D93664FE15092A2A887",
+            "marker": "    public static class ContentProfileProvider",
+            "status": "IMMUTABLE_VERIFIED"
+        },
+        "worker_bridge_cs": {
+            "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+            "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+            "size": 156431
+        },
+        "worker_bridge_csproj": {
+            "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+            "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+            "size": 1774
+        }
+    },
+    "content_schema_profile": {
+        "schema_version": "ADR-006B-v5",
+        "content_contract_version": "ADR-006B-v5-R11",
+        "supported_coverage_profile": "POC_SUPPORTED_CORE_DLC_ASSEMBLIES_V5",
+        "mod_patch_support_status": "TYPED_OBSERVATION_EXPLICIT_DISPOSITION_V1",
+        "package_policy_status": "TYPED_CANONICAL_PACKAGE_POLICY_ENCODING_V1",
+        "capability_flag": "GATE05_R11_POLICY_ENCODING",
+        "version_semantics": "VERSION_MEANING_DISTINCT_COMPATIBILITY_AND_MOD_VERSION_V1",
+        "patch_disposition": "COUNT_OBSERVED_RAW_AST_EXCLUDED",
+        "settings_disposition": "USER_MOD_SETTINGS_EXCLUDED",
+        "def_families_count": 8
+    },
+    "runtime_candidate_proof": {
+        "debug_codeview_pdb": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+        "release_codeview_pdb": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb"
+    },
+    "tooling_environment": {
+        "dotnet_sdk": "10.0.201",
+        "compiler": "Roslyn C# 10+",
+        "target_framework": "net472",
+        "os": "Microsoft Windows 11 / 10 x64",
+        "build_configuration_selected": "Debug",
+        "build_configuration_alternate": "Release",
+        "harness_dependencies": "FROZEN_MANAGED_QA_DEPENDENCIES_V1"
+    }
+}

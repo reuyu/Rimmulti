@@ -1,0 +1,16 @@
+{
+  "guard_run": "MASTER-SOL-R15-COMPLETE-CONTINUE-20261010-01",
+  "guard_session": 58943,
+  "guard_pid": 16944,
+  "all_returned_child_sessions_settled_before_finally": true,
+  "release_tool_result": {
+    "chunk_id": "b77b6c",
+    "wall_time_seconds": 0.0000343,
+    "exit_code": 0,
+    "original_token_count": 120,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-SOL-R15-COMPLETE-CONTINUE-20261010-01\",\r\n\u001b[23;80H, \"pid\": 16944, \"locked_at\": \"2026-10-10T02:29:35.451287+09:00\", \"mechanism\": \"Wi\r\n\u001b[23;80Hindows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renew\r\n\u001b[23;80Hwed_at\": \"2026-10-10T02:48:42.518621+09:00\", \"renewal_count\": 8, \"release_reason\"\r\n\u001b[23;80H\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-10T02:49:20.012906+09:00\"} \u001b[24;1H\n\u001b[?9001l\u001b[?1004l"
+  },
+  "status": "ACTUAL_RELEASED",
+  "coordination_mutations_before_release": true,
+  "historic_gaps_not_retroclaimed": true
+}

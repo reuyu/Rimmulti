@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-09T08:29:20.190354+09:00",
+  "event_id": "SOL-R11-PREP-USAGE-RESUME-ACK-20261009-01",
+  "type": "ORIGINAL_SOL_SAME_WP_RESUME_ACK_VERIFIED",
+  "delivery_id": "SOL-GATE05-R11-POLICY-ENCODING-PREP-S1-20261009-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R11_POLICY_ENCODING_PREPARATION",
+  "result_id": "SOL-GATE05-R11-POLICY-ENCODING-PREP-S1-20261009-661be88f72724c34b7185bdcf48b2861",
+  "actual_turn_id": "01a11dd4-3687-7831-83ff-78900f2f64fe",
+  "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:71",
+  "status": "ACK_VERIFIED_SAME_WP_RESUMED_PREPARATION_IN_PROGRESS",
+  "resume_ack_sha256": "9D1A3EDDD3880CE60EC18A15AAA079C95F813E437927C3C76D63FB4AE741D4D2",
+  "original_ack_preserved": true,
+  "protected_paths_master_rehashed": 4047,
+  "prior_usage_failure": "HISTORICAL_FAILED_NOT_COMPLETED",
+  "prior_ack_message": "FAILED_REVIEW_ACTION_NOT_EXECUTED;NOT_SENT",
+  "fresh_independent_wp": "PREPARED_NOT_SENT_WAIT_PREPARATION_TERMINAL_IDLE",
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "monitor": "ACTUAL_PAUSED60MIN"
+}

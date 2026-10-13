@@ -1,0 +1,71 @@
+{
+  "at": "2026-10-11T22:46:40.957434+09:00",
+  "guard_run": "MASTER-R25-QA-ACK-20261011-01",
+  "guard_session": 76616,
+  "guard_pid": 29832,
+  "delivery_id": "SOL-GATE05-R25-ROLE_USERDATA-INDEPENDENT-S1-20261011-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R25_ROLE_USERDATA_INDEPENDENT",
+  "wp_revision": "S1",
+  "result_id": "SOL-GATE05-R25-ROLE_USERDATA-INDEPENDENT-S1-20261011-d7ea2f5481e84f7eb9d0f718220793ec",
+  "ack_path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R25-ROLE_USERDATA-INDEPENDENT-S1-20261011\\ACK_INITIAL.json",
+  "ack_sha256": "EEA939C67DBF72C67AE96CD02026B81A201D1D4C012054DD9D03786CE9F163AA",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:156",
+    "revision": 156,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a12b32-7616-7e90-9eb3-dc5c1706dc46",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791726089,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acb9214321487d0b43c18f460a18741",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016acb9214321487d0b43c18f460a18741",
+      "turnId": "01a12b32-7616-7e90-9eb3-dc5c1706dc46",
+      "phase": "commentary",
+      "text": "새 R25 QA 지시를 접수했습니다. 동결 후보와 보호 목록을 확인하고, 승인된 정상 4개 사례만 새 실행기로 검증하겠습니다. 실제 전역 getter·Awake·native 경로는 실행하지 않고 정적으로 검토하겠습니다."
+    },
+    "latestToolMarkerId": "exec-f4786536-20a5-4d32-82f3-6ea6f794aa00",
+    "latestToolMarker": {
+      "id": "exec-f4786536-20a5-4d32-82f3-6ea6f794aa00",
+      "turnId": "01a12b32-7616-7e90-9eb3-dc5c1706dc46",
+      "type": "fileChange",
+      "name": "fileChange",
+      "status": "completed"
+    }
+  },
+  "snapshot_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R25_ROLE_USERDATA_INDEPENDENT_ACK_SNAPSHOT_20261011.json",
+  "snapshot_sha256": "039FAF6BFAD9558AF3F4FA0977F6536FB6E88785D10DCC5AAC19738E089C91F9",
+  "protected_paths_master_rehashed": 13220,
+  "baseline_sha256": "3325336A57511B7F8A4702136771A7CCA52E5D134EC7D3D5C4CA5A68F25607F8",
+  "qa_lineage_path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R25-ROLE_USERDATA-INDEPENDENT-S1-20261011\\R25_FROZEN_LINEAGE.json",
+  "qa_lineage_sha256": "83EA7215C6BCACEFEE1EC58CFC374D188427CBBC101F429ACC7C3C7DAA8095C9",
+  "master_metadata_comparison": "DebugReleaseSHA-MVID-CodeView-PDB-source4/4matched",
+  "three_span_scope_admission_path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R25-ROLE_USERDATA-INDEPENDENT-S1-20261011\\THREE_SPAN_SCOPE_ADMISSION_BEFORE_CALLS.json",
+  "three_span_scope_admission_sha256": "744F2A0B70EC944FB8B56ABCB988E4536C6AAAE32698DB2A2649C990E2401893",
+  "four_fixed_segments_matched": 4,
+  "current_production_package_identity_checked": 9,
+  "A_terminal_completion_deduped_unchanged": true,
+  "verdict": "ACK_VERIFIED_INDEPENDENT_R25_STATIC_NORMAL_ROLE_USERDATA_QA_IN_PROGRESS",
+  "initial_ACK_execution_statement": "InitialACKnotbuilt;currentQAexecutionverdictPENDING;notanobservationoflaterongoingexecution",
+  "QA_metadata_helper_schema_failure": "Historicallegacyworker_before_sha256lookupfailedbeforewrites;actualsource_before/authorized_spans/byteshandled;candidateexecution0there",
+  "qa_owned_runner_build_allowed": true,
+  "master_candidate_build_execute": 0,
+  "new_wp": false,
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "monitor_actual_status": "PAUSED60MIN173CHAR_SAME_TARGET",
+  "foundation": "HOLD"
+}

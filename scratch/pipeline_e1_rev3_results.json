@@ -1,0 +1,150 @@
+{
+  "WorkOrder": "WP-PROD-TRANSACTION-PIPELINE-01-REV3",
+  "TimestampUtc": "2026-10-03T03:37:20.4113009Z",
+  "OverallSuccess": true,
+  "TotalTests": 20,
+  "PassedTests": 20,
+  "FailedTests": 0,
+  "Results": [
+    {
+      "Id": 1,
+      "Name": "InvalidSurrogateReject",
+      "Success": true,
+      "Details": "Unpaired and reversed UTF-16 surrogates rejected with typed INVALID_REQUEST upon admission across all string fields.",
+      "DurationMs": 398
+    },
+    {
+      "Id": 2,
+      "Name": "NumericOverflowNonFiniteReject",
+      "Success": true,
+      "Details": "Numeric overflow (1e309) and non-finite numbers (Infinity, -Infinity, NaN) rejected with typed INVALID_REQUEST without string token conversion.",
+      "DurationMs": 42
+    },
+    {
+      "Id": 3,
+      "Name": "CanonicalJsonRetryMatrix",
+      "Success": true,
+      "Details": "Verified canonical JSON retry matrix: sorted object keys exact retry, preserved array order collision rejection, decimal normalization, and 28-digit precision preservation.",
+      "DurationMs": 82
+    },
+    {
+      "Id": 4,
+      "Name": "RawTerminalAttacks",
+      "Success": true,
+      "Details": "Raw UPDATE, DELETE, INSERT OR REPLACE, and UPSERT attacks on COMMITTED and ABORTED records were 100% rejected by triggers and connection pragma recursive_triggers.",
+      "DurationMs": 48
+    },
+    {
+      "Id": 5,
+      "Name": "NoOpTriggerSchemaTamperReject",
+      "Success": true,
+      "Details": "Schema validator inspected trigger behavior and canonical signature; rejected no-op same-name trigger.",
+      "DurationMs": 42
+    },
+    {
+      "Id": 6,
+      "Name": "WrongUniqueFkCheckIndexReject",
+      "Success": true,
+      "Details": "Strict Schema V4 canonical signature verified exact UNIQUE columns/order, FK ON DELETE RESTRICT actions, CHECK constraints, and explicit indexes.",
+      "DurationMs": 121
+    },
+    {
+      "Id": 7,
+      "Name": "InitialAggregateConstraintStorageFailure",
+      "Success": true,
+      "Details": "Initial aggregate insert constraint violation correctly bubbled up as STORAGE_FAILURE without false STALE_REVISION conversion.",
+      "DurationMs": 35
+    },
+    {
+      "Id": 8,
+      "Name": "FullQueueImmediateBackpressureZeroOrphans",
+      "Success": true,
+      "Details": "Submitted 1205 items to queue capacity 1000. Excess items immediately returned STORAGE_BUSY_RETRYABLE with 0 orphan waiters.",
+      "DurationMs": 62
+    },
+    {
+      "Id": 9,
+      "Name": "ShutdownLockedBoundedCallerTerminalNoPostDispose",
+      "Success": true,
+      "Details": "Shutdown safely completed all callers with terminal status during locked database, and writer thread exited cleanly before Dispose returned.",
+      "DurationMs": 5379
+    },
+    {
+      "Id": 10,
+      "Name": "NullEmptyBlankIncarnationReject",
+      "Success": true,
+      "Details": "Null, empty, and whitespace StoreIncarnationId strictly rejected with INVALID_REQUEST; no automatic filling from active incarnation.",
+      "DurationMs": 39
+    },
+    {
+      "Id": 11,
+      "Name": "OldExplicitIncarnationRotationRaceReject",
+      "Success": true,
+      "Details": "Old explicit incarnation 'fad7f2c208ec47a8b903b4fbd338efbc' rejected with INCARNATION_MISMATCH after store rotated to 'ROTATED_TEST_INC_11'.",
+      "DurationMs": 40
+    },
+    {
+      "Id": 12,
+      "Name": "StartupCrossTableTamperReject",
+      "Success": true,
+      "Details": "Startup consistency audit verified cross-table integrity: receipt hash mismatch and event payload tamper both rejected startup.",
+      "DurationMs": 59
+    },
+    {
+      "Id": 13,
+      "Name": "ActualWriterExistsBeforePipelineReady",
+      "Success": true,
+      "Details": "Production startup binds service-lifetime PipelineTransactionCoordinator and confirms dedicated writer is alive before declaring PIPELINE_READY.",
+      "DurationMs": 40
+    },
+    {
+      "Id": 14,
+      "Name": "TwoPrincipalsSameOpIdCommitIndependently",
+      "Success": true,
+      "Details": "Two different principals with identical OperationId ('SHARED_OPERATION_ID') both committed independently on their respective scopes.",
+      "DurationMs": 46
+    },
+    {
+      "Id": 15,
+      "Name": "GlobalReceiptIdEventIdUnique",
+      "Success": true,
+      "Details": "Derivative ReceiptId and EventId are globally scoped by PrincipalId and remain unique across distinct callers using the same OperationId.",
+      "DurationMs": 46
+    },
+    {
+      "Id": 16,
+      "Name": "ProcessCasSameIdHardKillRegressions",
+      "Success": true,
+      "Details": "Preserved regressions: exactly 1-winner CAS (1 SUCCESS / 24 STALE), exactly 1-winner same-ID (1 SUCCESS / 11 ALREADY_COMMITTED).",
+      "DurationMs": 154
+    },
+    {
+      "Id": 17,
+      "Name": "WalFullRecursiveTriggersRegression",
+      "Success": true,
+      "Details": "Verified connection durability contract: WAL journal mode, FULL synchronous (2), recursive_triggers=1, and foreign_keys=1 on every connection.",
+      "DurationMs": 36
+    },
+    {
+      "Id": 18,
+      "Name": "LegacyV1V2V3FailClosedPreservation",
+      "Success": true,
+      "Details": "Legacy V1, V2, and V3 databases with records fail closed with LEGACY_SCHEMA_REQUIRES_OFFLINE_MIGRATION_OR_RESET and preserve all rows.",
+      "DurationMs": 190
+    },
+    {
+      "Id": 19,
+      "Name": "NoGenericConsumerDelivery",
+      "Success": true,
+      "Details": "P1 pipeline architecture verified: zero consumer cursors, zero durable ack tables, zero background subscriber delivery threads.",
+      "DurationMs": 2
+    },
+    {
+      "Id": 20,
+      "Name": "NoGameplayMaterialMutation",
+      "Success": true,
+      "Details": "Pipeline slice is strictly isolated: operates purely on ProbeAggregates/ProbeRevision with zero settlement, pawn, inventory, or market gameplay mutations.",
+      "DurationMs": 29
+    }
+  ]
+}

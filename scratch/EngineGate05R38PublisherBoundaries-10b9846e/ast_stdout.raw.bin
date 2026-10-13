@@ -1,0 +1,122 @@
+{
+  "status": "AST_PARSED_SUCCESS",
+  "target_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+  "sha256": "940CF77220C272D117CDBC278B64858EFB3077267141CC548A0105B47D6E1306",
+  "size_bytes": 43666,
+  "has_module_docstring": true,
+  "docstring_len": 5397,
+  "total_ast_nodes": 4926,
+  "top_level_function_count": 18,
+  "top_level_class_count": 0,
+  "import_statement_count": 8,
+  "functions": [
+    {
+      "name": "is_leap_year",
+      "lineno": 142,
+      "end_lineno": 143,
+      "arg_count": 1
+    },
+    {
+      "name": "validate_iso_utc_date",
+      "lineno": 146,
+      "end_lineno": 175,
+      "arg_count": 2
+    },
+    {
+      "name": "compute_sha256_bytes",
+      "lineno": 178,
+      "end_lineno": 179,
+      "arg_count": 1
+    },
+    {
+      "name": "compute_sha256_file",
+      "lineno": 182,
+      "end_lineno": 184,
+      "arg_count": 1
+    },
+    {
+      "name": "check_no_duplicate_keys",
+      "lineno": 187,
+      "end_lineno": 195,
+      "arg_count": 1
+    },
+    {
+      "name": "check_opaque_non_blank",
+      "lineno": 198,
+      "end_lineno": 210,
+      "arg_count": 2
+    },
+    {
+      "name": "identity_boundary_trim",
+      "lineno": 213,
+      "end_lineno": 219,
+      "arg_count": 1
+    },
+    {
+      "name": "structural_ascii_strip",
+      "lineno": 222,
+      "end_lineno": 232,
+      "arg_count": 1
+    },
+    {
+      "name": "structural_ascii_upper",
+      "lineno": 235,
+      "end_lineno": 248,
+      "arg_count": 1
+    },
+    {
+      "name": "check_supported_local_dos_path",
+      "lineno": 251,
+      "end_lineno": 311,
+      "arg_count": 2
+    },
+    {
+      "name": "verify_path_ancestry",
+      "lineno": 314,
+      "end_lineno": 404,
+      "arg_count": 4
+    },
+    {
+      "name": "read_once_file_and_stat",
+      "lineno": 407,
+      "end_lineno": 459,
+      "arg_count": 1
+    },
+    {
+      "name": "is_exact_64_ascii_hex_no_trim",
+      "lineno": 462,
+      "end_lineno": 465,
+      "arg_count": 1
+    },
+    {
+      "name": "is_64_ascii_hex_trimmed",
+      "lineno": 468,
+      "end_lineno": 474,
+      "arg_count": 1
+    },
+    {
+      "name": "validate_declaration",
+      "lineno": 477,
+      "end_lineno": 523,
+      "arg_count": 3
+    },
+    {
+      "name": "validate_config",
+      "lineno": 526,
+      "end_lineno": 661,
+      "arg_count": 4
+    },
+    {
+      "name": "publish_pair",
+      "lineno": 664,
+      "end_lineno": 864,
+      "arg_count": 8
+    },
+    {
+      "name": "main",
+      "lineno": 867,
+      "end_lineno": 932,
+      "arg_count": 0
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-14T00:46:40.361241+09:00",
+  "files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review.py",
+      "sha256": "435DBA9DB5C1BB22D9C9266203E9EEAC81670491D14A87FD9BF06B4B2F4A6C69",
+      "bytes": 19936
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\log.py",
+      "sha256": "4E02F7BACC78F25D44E7AA5AE5AB308E2311FBA5F48A508CB8610A7C14DC5DCE",
+      "bytes": 1815
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\common.py",
+      "sha256": "2FEFDC8CE1D3F66E58BCC17EBAFF67EC4943FB8D16B0F2FBFE96C616F72F74AB",
+      "bytes": 2506
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review.INPUT.json",
+      "sha256": "84FE070C909A13B468D19D8867A38EE23CFD1092BB16A395C658E71135DC7006",
+      "bytes": 29536
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review.TOOL.json",
+      "sha256": "0E5900F76A0DCEBBF7BBD0C4D718196DFB36F9749716005FF3C01D054586A672",
+      "bytes": 1018
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review.STDOUT.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\review.STDERR.txt",
+      "sha256": "5E7357B744AF59427439B06C91818A52AB8D82D5A7D033E248077A65E0A40968",
+      "bytes": 745
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\OWN_METADATA_SYNTAX_LIMITATION.json",
+      "sha256": "DDA5DC26371B2EE482F698A17B65AB06B3F13A510FB121D58E136EE4870D7CEE",
+      "bytes": 909
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\OPTIONAL_DISPLAY_LIMITATION.json",
+      "sha256": "BF1D0D4787B6A037E902BF5330BEFCC1E263E95E0FCBA00D3DA9511D26645812",
+      "bytes": 895
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\ACK_INITIAL.json",
+      "sha256": "038FA117B1B2EEED468A622A98D1E49C861D913C40A6A6ED63DF8F5AE191E4AC",
+      "bytes": 2071
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\ACK.json",
+      "sha256": "038FA117B1B2EEED468A622A98D1E49C861D913C40A6A6ED63DF8F5AE191E4AC",
+      "bytes": 2071
+    }
+  ],
+  "old_failure_originals_immutable": true,
+  "candidate_runtime_failure": false
+}

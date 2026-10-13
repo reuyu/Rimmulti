@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-08T23:10:14.906728+09:00",
+  "operation_id": "SOL-R7-CONTENT-ADMISSION-INDEPENDENT-S1-SEND-20261008-01",
+  "type": "SOL_DIRECT_DELIVERY_PENDING",
+  "delivery_id": "SOL-GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R7_CONTENT_ADMISSION_INDEPENDENT",
+  "wp_revision": "S1",
+  "wp_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R7_CONTENT_ADMISSION_INDEPENDENT_S1.md",
+  "wp_sha256": "F447D47696E2196C96EA256D88F7079B639AC0500A179678BB1C1C5A67C24921",
+  "message_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R7_CONTENT_ADMISSION_INDEPENDENT_S1_EXACT_MESSAGE_20261008.txt",
+  "message_sha256": "1645DFA32F3E5C3B94AEC8B3371255CC7AA444CF430ECE65A87BB7CE589B7A91",
+  "message": "Master 승인 신규 QA: SOL-GATE05-R7-CONTENT-ADMISSION-INDEPENDENT-S1-20261008-01 / WP_QA_ENGINE_GATE05_R7_CONTENT_ADMISSION_INDEPENDENT / S1. C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R7_CONTENT_ADMISSION_INDEPENDENT_S1.md 전체(SHA F447D47696E2196C96EA256D88F7079B639AC0500A179678BB1C1C5A67C24921)를 읽고 원래 Sol의 독립 QA로 수행하세요. R7 frozen110 manifest DE49655C30976C254F59B022C7DD768806B90EB6F566055936B05EAFFE3F13CF,선택 Debug223B4055C0AFAA6F30488C9787AE6F68D65D62F395CFCA722EDA83674975CD2A/MVIDbdf94567-be4d-4270-9a70-dbf2df9b5b4a 기준입니다. 방어적 정적 리뷰와 정상 pure DTO/Serialize/Deserialize/CanonicalNormalize/positive ValidateContract 및 새 positive TryAdmitManifest만 승인합니다. 새 QA 소유 managed runner 빌드만 허용하고 production 수정/재빌드,provider/cache/game/native/operator/거부·adverse/기존 runner 실행은 금지합니다. Master R7 연결 개선 인정과 잔여 결함 판정도 독립 검토하세요. 보호2701 실제 baseline C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R7_QA_PROTECTED_BASELINE_20261008.json의 SHA/size를 전후 확인하세요. 고유 ACK/결과/원문/manifest/raw/oracle/prepost를 기록하고 완료 즉시 사용자 승인된 direct thread tools로 Master01a1156b-97ec-7ce0-9e4a-dfc4a3acb174(local)에 보고하세요. 전체 E2 미허가/Foundation HOLD,예약은 PAUSED입니다.",
+  "status": "NOT_YET_SUBMITTED",
+  "predispatch": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R7_CONTENT_ADMISSION_INDEPENDENT_S1_PREDISPATCH_20261008.json",
+  "predispatch_sha256": "5542E8D35D2331C9B48169E0735924A1BEB6297FA59488EFC1AEE81191A28C0E",
+  "before_cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:44",
+  "before_turn": "01a11b98-8302-7a03-9334-4025a3bb2c5d",
+  "baseline_sha256": "5B68231D84C68F6A6FBFFF6EB38A45A68A77DFD7848FF5CE85BAA27F3B5848F0",
+  "baseline_unique_paths_verified": 2701,
+  "guard_run": "MASTER-HOURLY-R7-20261008-225713-01",
+  "guard_session": 26688,
+  "unknown_delivery_must_not_retry": true
+}

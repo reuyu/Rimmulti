@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-10-07T17:28:12.088820+09:00",
+  "checks": {
+    "migration_bootstrap_verified": true,
+    "bootstrap_report_current_sha_match": true,
+    "original_bootstrap_report_sha_match": true,
+    "journal_unique_event_ids": true,
+    "sol_single_delivery_record": true,
+    "sol_in_progress": true,
+    "a_not_sent": true,
+    "automation_disabled": true,
+    "manual_submission_active_run_cleared": true,
+    "original_wp_unchanged": true,
+    "agents_original_prefix_preserved": true,
+    "pipeline_identities_unchanged": true,
+    "prior_353_production_files_unchanged": true,
+    "engine_local_freeze_unchanged": true
+  },
+  "wp_checks": {
+    "WP_PIPELINE_REV6.md": true,
+    "WP_QA_ENGINE_GATE05.md": true
+  },
+  "pipeline_changed": [],
+  "production_changed": [],
+  "engine_changed": [],
+  "scope": "local recovery records/frozen artifacts; no runtime E1/E2 rerun or new closure",
+  "current_governance_hashes": {
+    "IDE_BOOTSTRAP_VERIFICATION.md": "F21CCF456E2EAFD5AD7310D1AAB128451AB847214B1CC09745366D60EA0E8D5B",
+    "MASTER_PROJECT_STATE.md": "49F5BB99F11319E91B591043136634B54EDEC0610FC02EAEC518EA7CA1FDC4DF",
+    "MASTER_DECISION_LOG.md": "670E9705B2ED22FB217971AC0A9112B033EDCABD56AAFC6BC4B659BBB30B18EA",
+    "QA_DEFECT_LEDGER.md": "90D44ECD243B076B669A512A101E0FAD1D52503B1BB116545A0D5D838C2CC271",
+    "MASTER_AGENT_DISPATCH_BOARD.md": "4BC1CC44ECCEC082E6C69BA6575EC1D7C28244C5D22E61E65EDDF57858CA6D6D",
+    "DISPATCHER_STATE.json": "5B00DEAC6A1146587EAA4E5AB61A0B0A37F13DEFDD0A6D3897F292DB48484243",
+    "DISPATCH_JOURNAL.jsonl": "339E9528BE4F3E9BD4CED7E058F31619EC544BFC6AEDEEF6CF484A69645799C8"
+  }
+}

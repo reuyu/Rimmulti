@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":false,\"wake\":{\"reason\":\"turnCompleted\",\"turnId\":\"01a127a4-7461-7ad2-b63a-2664cbc5be8e\",\"threadId\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\"},\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:131\",\"revision\":131,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"idle\"}},\"latestTurn\":{\"id\":\"01a127a4-7461-7ad2-b63a-2664cbc5be8e\",\"status\":\"completed\",\"error\":null,\"startedAt\":1791666451,\"completedAt\":1791666506,\"durationMs\":55124},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016acaa949aad487d0806f047665ca0c31\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016acaa949aad487d0806f047665ca0c31\",\"turnId\":\"01a127a4-7461-7ad2-b63a-2664cbc5be8e\",\"phase\":\"final_answer\",\"text\":\"R20 판정을 읽고 수신 기록을 한 번 남겼습니다. UTC 원문 literal 보존 계약을 확인했으며, 기존 증거와 terminal을 보존하고 새 QA WP를 기다리겠습니다.\"},\"latestToolMarkerId\":\"exec-754df6fc-d11b-48ae-a069-9e058404f0ca\",\"latestToolMarker\":{\"id\":\"exec-754df6fc-d11b-48ae-a069-9e058404f0ca\",\"turnId\":\"01a127a4-7461-7ad2-b63a-2664cbc5be8e\",\"type\":\"fileChange\",\"name\":\"fileChange\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

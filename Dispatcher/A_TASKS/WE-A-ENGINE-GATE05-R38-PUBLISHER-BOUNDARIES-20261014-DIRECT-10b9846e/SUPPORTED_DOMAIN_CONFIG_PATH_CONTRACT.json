@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "we-operator-config-binding-contract/v4",
+  "contract_authority": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R38_PUBLISHER_BOUNDARIES_IMPLEMENTATION_CONTRACT_20261014.md",
+  "contract_sha256": "BFE455E5E3A9C1C7D52F179EDDC96068694086E64B01B7A490FA3E817BD03D14",
+  "config14_properties": [
+    "schemaVersion",
+    "configId",
+    "role",
+    "admittedValidatorExecutablePath",
+    "admittedValidatorExecutableSha256",
+    "validatorArguments",
+    "workerUserDataDirectory",
+    "validatorUserDataDirectory",
+    "workerCwd",
+    "validatorCwd",
+    "capabilityBoundary",
+    "issuedAtUtc",
+    "expectedContentProfileFingerprint",
+    "expectedPackagePolicyDeclaration"
+  ],
+  "decl7_properties": [
+    "originId",
+    "expectedConfigId",
+    "expectedRole",
+    "expectedCapabilityBoundary",
+    "launchPlanId",
+    "expectedConfigPath",
+    "expectedConfigSha256"
+  ],
+  "binding_rules": {
+    "schema_version": {
+      "rule": "schemaVersion must strictly equal 'WE-OPERATOR-BOOTSTRAP-V1'.",
+      "fail_closed": true
+    },
+    "role_binding": {
+      "parent": {
+        "expectedRole": "SIMULATION",
+        "rule": "Parent raw role must strictly equal 'SIMULATION' without strip or case normalization."
+      },
+      "child": {
+        "expectedRole": "READ_ONLY",
+        "rule": "Child raw role must strictly equal 'READ_ONLY' without strip or case normalization."
+      },
+      "fail_closed": true
+    },
+    "config_id_matching": {
+      "rule": "rawConfigId must equal original untrimmed descriptor expectedConfigId, and snapshot-supported identity_boundary_trim(configId) must equal the SAME untrimmed descriptor expectedConfigId. Do NOT trim both.",
+      "fail_closed": true
+    },
+    "capability_boundary_matching": {
+      "rule": "raw config capabilityBoundary must match factory-cloned/trimmed descriptor expectedCapabilityBoundary case-insensitively BEFORE snapshot; raw config capabilityBoundary is never stripped.",
+      "fail_closed": true
+    },
+    "structural_vs_opaque": {
+      "rule": "Separate opaque NONBLANK checks from structural ASCII trim and identity boundary trim. Opaque fields (originId, launchPlanId, operatorPairId, fingerprint, policy) retain supplied Unicode content verbatim without applying structural ASCII non-ASCII whitespace rejection.",
+      "fail_closed": true
+    },
+    "descriptor_formatting_preservation": {
+      "rule": "Original descriptor expectedRole and expectedCapabilityBoundary padding and lowercase are preserved verbatim in output bundle.",
+      "fail_closed": true
+    },
+    "descriptor_sha256": {
+      "rule": "Descriptor expectedConfigSha256 must be strictly 64 ASCII hex characters without padding or trimming.",
+      "fail_closed": true
+    },
+    "executable_sha256": {
+      "rule": "Executable SHA256 must be 64 ASCII hex characters allowing trim.",
+      "fail_closed": true
+    },
+    "path_normal_form": {
+      "rule": "Fully-qualified local DOS drive paths only. Explicit slash handling rejecting repeated separators (//, \\\\, \\/, /\\), empty interior segments, and ambiguous aliases. Preserves valid drive-root (C:\\) and normal segments (spaces, Omega).",
+      "fail_closed": true
+    },
+    "required_windows_attributes": {
+      "rule": "Existing root, ancestor, input, output directory, and leaf direct lstat requires usable Windows st_file_attributes integer (bool excluded). Missing, None, or non-integer st_file_attributes fails closed.",
+      "fail_closed": true
+    },
+    "direct_ancestry_guard": {
+      "rule": "Direct nofollow lstat ancestry guard checks drive root (C:\\) and every actual component with os.lstat without lexists/isdir/isfile error-masking; rejects reparse points (0x400) and symlinks; catches only FileNotFoundError for new output leaf.",
+      "fail_closed": true
+    },
+    "read_once_provenance": {
+      "rule": "Common readonce helper captures prior lstat, handle fstat, raw bytes, and SHA-256 for spec and configs; linked into PROVENANCE_MANIFEST.json.",
+      "fail_closed": true
+    },
+    "userdata_isolation": {
+      "rule": "workerUserDataDirectory and validatorUserDataDirectory must be distinct when normalized.",
+      "fail_closed": true
+    },
+    "content_profile_fingerprint": {
+      "rule": "expectedContentProfileFingerprint must be an opaque non-blank string (not constrained to 64 hex characters).",
+      "fail_closed": true
+    },
+    "package_policy_declaration": {
+      "rule": "Object containing schemaVersion, policyId, revision, and admittedPackageIds; revision admits string or integer with explicit boolean exclusion; admittedPackageIds retains order.",
+      "fail_closed": true
+    },
+    "timestamp_format": {
+      "rule": "issuedAtUtc must be a valid Gregorian UTC ISO 8601 string validated with full consumption regex _ISO_UTC_REGEX.fullmatch(val) (ASCII digits [0-9], calendar/leap/time validity), preserving exact raw fractional digits (Parent .1234567Z, Child .0000000Z).",
+      "fail_closed": true
+    },
+    "cli_invocation": {
+      "rule": "Strict --spec <absoluteSpecPath> CLI invocation with exact argc 3; closed 6 required keys + optional bundleFilename fixed to 'operator_startup_pair.json'. Inline mode rejected fail-closed.",
+      "fail_closed": true
+    }
+  }
+}

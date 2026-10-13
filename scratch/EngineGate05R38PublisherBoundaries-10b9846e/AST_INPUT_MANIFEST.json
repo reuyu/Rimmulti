@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "we-ast-input-manifest/v1",
+  "pinnedAtUtc": "2026-10-13T17:33:28.376056+00:00",
+  "targetPublisher": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+    "size_bytes": 43666,
+    "sha256": "940CF77220C272D117CDBC278B64858EFB3077267141CC548A0105B47D6E1306"
+  },
+  "childScript": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\ast_checker.py",
+    "size_bytes": 2406,
+    "sha256": "D63FD91C7B9C6ABEC3876EC1E380F5992589D44E29F1AEDF0D4022B6FD636D2C"
+  },
+  "launcherScript": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\run_ast_verification.py",
+    "size_bytes": 6771,
+    "sha256": "9822A44802B931B2DF55D1FE6DEE0D066C208E75B223DFFDAA571972C0B9A953"
+  },
+  "pythonInterpreter": {
+    "executablePath": "C:\\Users\\user\\anaconda3\\python.exe",
+    "sizeBytes": 104264,
+    "sha256": "388FE2CFFDA8A134E7D7DC4E978F7C478857ECE6B69694DAECBED25E51EC633A",
+    "version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]"
+  },
+  "plannedExecution": {
+    "argv": [
+      "C:\\Users\\user\\anaconda3\\python.exe",
+      "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\ast_checker.py",
+      "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py"
+    ],
+    "cwd": "C:\\Users\\user\\Desktop\\RimMulti",
+    "selectedEnv": {
+      "PYTHONIOENCODING": "N/A",
+      "PYTHONUTF8": "N/A"
+    }
+  },
+  "launcherModuleObservationsCount": 65,
+  "launcherModuleObservations": [
+    {
+      "module": "__editable___tribev2_0_1_0_finder",
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\site-packages\\__editable___tribev2_0_1_0_finder.py",
+      "size_bytes": 3400,
+      "sha256": "B028E3ECA70347255EA14C9EEE5524C5AC055C13EDBD2174E7B7429F6A08F893"
+    },
+    {
+      "module": "__future__",
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\__future__.py",
+      "size_bytes": 5218,
+      "sha256": "981D4C398849F9EBCAB72300D9C1FE288FD6D7F28957B3B3FA3A493A5836D95C"
+    },
+    {
+      "module": "__main__",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\run_ast_verification.py",
+      "size_bytes": 6771,
+      "sha256": "9822A44802B931B2DF55D1FE6DEE0D066C208E75B223DFFDAA571972C0B9A953"
+    },
+    {
+      "module": "_collections_abc",
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\_collections_abc.py",
+      "size_bytes": 32264,
+      "sha256": "2CFE340C4CF54077F054CD366A2C7A515E9EE8DA7D8B3FA071251F280034756D"
+    },
+    {
+      "module": "_distutils_hack",
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\site-packages\\_distutils_hack\\__init__.py",
+      "size_bytes": 6715,
+      "sha256": "1542E30B6D07156F447AB4BCAEC4A3A330FEB93167D5DCAF548F6D6B2CDB852C"
+    },
+    {
+      "module": "_frozen_importlib",
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\importlib\\_bootstrap.py",
+      "size_bytes": 57082,
+      "sha256": "B84488F731914F6DA30607E10F6F8D4C5C2FF7F4B0E913060AA66999C04F6252"
+    },
+    {
+      "module": "_frozen_importlib_external",
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\importlib\\_bootstrap_external.py",
+      "size_bytes": 73147,
+      "sha256": "BF2A271EE85FC78A28C08E919894785C04B7DA3F6A6DCA9534470144F6B34A4E"
+    },
+    {
+      "module": "_hashlib",
+      "path": "C:\\Users\\user\\anaconda3\\DLLs\\_hashlib.pyd",
+      "size_bytes": 64328,
+      "sha256": "E719A2BDB8B36A902C3CF91657FCE6C64032EA628C6B07B661774FA8A3F2D167"
+    },
+    {
+      "module": "_sitebuiltins",
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\_sitebuiltins.py",
+      "size_bytes": 3128,
+      "sha256": "B9388BC1D6D12ED6BE12DA420AB1FECA40F99C0E33EC315D92B1E01CB69B25BC"
+    },
+    {
+      "module": "_weakrefset",
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\_weakrefset.py",
+      "size_bytes": 5893,
+      "sha256": "91895A451D06E9F521A1171B31B9B19BC9740F35AF00D4FA106338AB7167C9AC"
+    },
+    {
+      "module": "abc",
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\abc.py",
+      "size_bytes": 6538,
+      "sha256": "E558702A95CDCE3FEBD289DA021715D2B92BC43995B8A1BC58DFA1C3D8010287"
+    },
+    {
+      "module": "ast",
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\ast.py",
+      "size_bytes": 65339,
+      "sha256": "7514EB7DF98B1B76EAB160CA2A83E6E9A9F3219A4659808CD9FD278B524EDE1B"
+    },
+    {
+      "module": "codecs",
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\codecs.py",
+      "size_bytes": 36928,
+      "sha256": "514B00FE93120B4FACE4508351AA9F1246ECC808C4DA3E599DFEE7430FE459F9"
+    },
+    {
+      "module": "collections",
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\collections\\__init__.py",
+      "size_bytes": 52500,
+      "sha256": "2347F647577B6C11B82FC48FA4A1744F7AF1AF87F15942F92B7CC4410F0A817B"
+    },
+    {
+      "module": "collections.abc",
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\_collections_abc.py",
+      "size_bytes": 32264,
+      "sha256": "2CFE340C4CF54077F054CD366A2C7A515E9EE8DA7D8B3FA071251F280034756D"
+    },
+    {
+      "module": "contextlib",
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\contextlib.py",
+      "size_bytes": 27801,
+      "sha256": "C1E0D67B2007DE11AE93CD36CF6FAF38D9AB32656A832D592A49325EEC579F96"
+    },
+    {
+      "module": "copyreg",
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\copyreg.py",
+      "size_bytes": 7614,
+      "sha256": "C8EDA41F05C6BF95A4DA4726A530409D2485AE060B8D019B3A8034389A15D3E9"
+    },
+    {
+      "module": "datetime",
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\datetime.py",
+      "size_bytes": 268,
+      "sha256": "EF20DC6B3554CD585DDDFFDC573F1F9A7A54C522F2A3FB4576C44EDBB1E14238"
+    },
+    {
+      "module": "encodings",
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\encodings\\__init__.py",
+      "size_bytes": 5884,
+      "sha256": "78C4744D407690F321565488710B5AAF6486B5AFA8D185637AA1E7633AB59CD8"
+    },
+    {
+      "module": "encodings.aliases",
+      "path": "C:\\Users\\user\\anaconda3\\Lib\\encodings\\aliases.py",
+      "size_bytes": 15713,
+      "sha256": "CAC92D68C7EA5BC0F05B448B9144E3BDF236D0B7D27AB66112E96D43AAD15B3F"
+    }
+  ]
+}

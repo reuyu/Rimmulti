@@ -1,0 +1,30 @@
+﻿======================================================================
+WarEconomy PoC EngineHost Gate05-R9 Positive Pure Normal Unit Runner
+Task: WP_ENGINE_GATE05_R9_VERSION_MEANING (Envelope 12)
+Timestamp: 2026-10-08T17:35:39.0479402Z
+======================================================================
+Loaded Candidate DLL: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R9VersionMeaning\Harness\bin\Debug\net472\WarEconomy.WorkerBridge.PoC.dll
+Candidate SHA256: 02815FF8A20CB971AD716BBA75417E5FFAD9FADEB358078A785253124FEF4BF5
+Target Contract: ADR-006B-v5-R9
+[PASS] TC01_Lossless_Roundtrip: Canonical JSON serialization and deserialization preserves all fields losslessly
+[PASS] TC02_Canonical_Determinism: Serializing the same manifest multiple times produces byte-identical results
+[PASS] TC03_DefFamilies_8_Count_And_Integrity: Manifest correctly projects and contains exactly 8 supported Def families
+[PASS] TC04_Floating_Point_Lossless_Precision: Verify floats serialize and roundtrip without floating point drift or cultural decimal comma
+[PASS] TC05_Unicode_And_Cultural_Invariance: Verify non-ASCII strings and culture switching produce identical output
+[PASS] TC06_Null_And_Empty_Distinction: Verify empty list vs null list distinction is maintained
+[PASS] TC07_Verbs_Stages_Comps_Order_And_Multiplicity: Verify verbs, stages, and comps maintain author order and multiplicity without deduplication or sorting
+[PASS] TC08_Stable_Sorting_Determinism: Verify Def family lists sort deterministically by defName ordinal via CanonicalNormalize
+[PASS] TC09_Unordered_Input_Normalization_Equivalence: Manifest with shuffled unordered collections produces exact identical JSON and digest as pre-sorted instance
+  Validated 8 Def families, DLCs, mods, assemblies and headers successfully with 0 contract errors.
+[PASS] TC10_ValidateContract_Positive_Compliant: ValidateContract returns true with empty failureReason on representative compliant manifest
+  Successfully admitted manifest with canonical JSON (3894 bytes).
+[PASS] TC11_TryAdmitManifest_Positive_Admission: TryAdmitManifest successfully validates and admits compliant manifest producing non-empty canonical JSON
+[PASS] TC12_Distinct_Manifests_Distinct_Digests: Changing a single scalar value must produce a distinct JSON and digest
+[PASS] TC13_Schema_Contract_Versions_And_Capability_Flags: Verify MANIFEST_SCHEMA_VERSION is ADR-006B-v5, CONTENT_CONTRACT_VERSION is ADR-006B-v5-R9, and GATE05_R9_VERSION_MEANING capability flag is present
+[PASS] TC14_Deterministic_Tie_Breaking: Verify assemblies and stats sort deterministically using secondary tie-breaking keys
+[PASS] TC15_Typed_Patch_And_Settings_Disposition: Verify ModPatchSettingsDispositionRecord and activeMods patch/settings dispositions are properly validated and serialized
+  Verified distinct version semantics: optional unknown modVersion (null) preserved across InvariantCulture, en-US, and de-DE without cross-inference in Normalize, Serialize(false), Serialize(true), or Deserialize.
+[PASS] TC16_Distinct_Version_Meaning_And_Optional_Unknown_Preservation: Verify compatibilityVersionRange and modVersion are distinct; optional unknown modVersion (null) remains null after CanonicalNormalize and both Serialize(false) and Serialize(true) across cultures
+======================================================================
+Total Tests: 16, Passed: 16, Failed: 0, Verdict: PASS
+======================================================================

@@ -1,0 +1,25 @@
+{
+  "thread": {
+    "id": "01a10fd9-2f90-79e2-a1c4-a1079c99f3ac",
+    "kind": "codex",
+    "hostId": "local",
+    "title": "Review WarEconomyMod QA",
+    "preview": "# Files pasted by the user:\n\n## \"WORK ORDER — WP-QA-PROD-TRANSACTION-PIPELINE-01-REV5 Role: GPT-6.1 Sol — Indepe…\": C:\\Users\\user\\.codex/attachments/edad21be-cb9f-4d6c-9858-4e9363ff7292/붙여넣은 텍스트.txt\n\n## My request:\nMASTER RELEASE — Pipeline REV5 Independent E2\r\nStatus:\r\nAUTHORIZED\r\nSol has completed Engine Gate04 E2 and is now released to the frozen Pipeline REV5 candidate.\r\nSol executes:\r\nWP_QA_PROD_TRANSACTION_PIPELINE_01_REV5_QUEUED.md\r\nTreat the queued WP as ACTIVE on delivery.\r\nDo not modify/rebuild the candidate.",
+    "status": {
+      "type": "active",
+      "activeFlags": []
+    },
+    "cwd": "C:\\Users\\user\\Desktop\\RimMulti",
+    "createdAt": 1791267254,
+    "updatedAt": 1791361489
+  },
+  "turns": [
+    {
+      "id": "01a11577-1a0d-7c30-9e57-9f09aaa9f695",
+      "status": "inProgress",
+      "startedAt": 1791361489,
+      "completedAt": null,
+      "items": []
+    }
+  ]
+}

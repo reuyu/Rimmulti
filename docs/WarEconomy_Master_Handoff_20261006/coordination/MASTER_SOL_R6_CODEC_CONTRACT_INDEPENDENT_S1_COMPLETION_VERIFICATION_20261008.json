@@ -1,0 +1,120 @@
+{
+  "at": "2026-10-08T21:52:02.696424+09:00",
+  "type": "SOL_R6_CODEC_CONTRACT_INDEPENDENT_MASTER_REVIEW",
+  "result_id": "SOL-GATE05-R6-CODEC-CONTRACT-INDEPENDENT-S1-20261008-562ad497021b4c36bd59c08df730b7ed",
+  "delivery_id": "SOL-GATE05-R6-CODEC-CONTRACT-INDEPENDENT-S1-20261008-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R6_CODEC_CONTRACT_INDEPENDENT",
+  "wp_revision": "S1",
+  "completion_sha256": "95A205969E9BA30588DECFA1BF46E8E3FD32A4EEB79855C70811D19C0F5BAC19",
+  "report_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R6_Codec_Contract_Independent_S1_20261008.md",
+  "report_sha256": "3D5ECE6ED8AE27B3D8CC200B00B93163FE8A4292260B5CC8E6D744E7B497C627",
+  "evidence_manifest_path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R6-CODEC-CONTRACT-INDEPENDENT-S1-20261008\\EVIDENCE_MANIFEST.json",
+  "evidence_manifest_sha256": "5CC5406D907FB35E30144D851C8CB0212295F45B73C4D5AAA7E16BC2DD5B4508",
+  "result_index_sha256": "AEEE01EFDCCCA0C595CADF4019B4B866377AB80017B4CED3264E87BFB80E9884",
+  "evidence_files": 147,
+  "protected_unique_paths_master_rehashed": 2453,
+  "runs": [
+    {
+      "run_id": "RUN_SOL_R6_CODEC_S1_20261008_36ffe4b98bc44adb8913f6f2c53dc8ab",
+      "culture": "en-US",
+      "prepost_files": 141,
+      "tool_exit": 0,
+      "assertions": 25,
+      "runner_sha256": "5C6EDF0D694A03507AFE5E6F3900DB6E9B6047F197557AF53852941A09044ADE",
+      "runner_mvid": "45ac1035-12ad-426b-95b6-86cc7bb4f486"
+    },
+    {
+      "run_id": "RUN_SOL_R6_CODEC_S1_20261008_776e1386d66f48ceadc35070e9955dc3",
+      "culture": "de-DE",
+      "prepost_files": 141,
+      "tool_exit": 0,
+      "assertions": 25,
+      "runner_sha256": "5C6EDF0D694A03507AFE5E6F3900DB6E9B6047F197557AF53852941A09044ADE",
+      "runner_mvid": "45ac1035-12ad-426b-95b6-86cc7bb4f486"
+    }
+  ],
+  "cases": [
+    {
+      "case": "BASE",
+      "canonical_sha256": "458997E27E6BC1262592015203E80CCB756A46B8B1A1FBAC84A24EFE2624B79F",
+      "semantic_leaves": 149,
+      "cross_process_bytes_match": true
+    },
+    {
+      "case": "OPTIONAL_NULL",
+      "canonical_sha256": "FC27DBE341FBAED0AAF5B821FC916A60DE2EF346ED8E934ED734D55484CF24D6",
+      "semantic_leaves": 90,
+      "cross_process_bytes_match": true
+    },
+    {
+      "case": "OPTIONAL_EMPTY",
+      "canonical_sha256": "DC64DA6E7A7BA4E5B25A83C6543C4D33336B536389DFF35F552B9C64B7D20FD0",
+      "semantic_leaves": 90,
+      "cross_process_bytes_match": true
+    },
+    {
+      "case": "NORMAL_REVISION_B",
+      "canonical_sha256": "8C3A85DE6ECC35C74D9A4413F6FC8328AED70BD7523C78E77EC9A14349D69C44",
+      "semantic_leaves": 149,
+      "cross_process_bytes_match": true
+    },
+    {
+      "case": "NORMAL_SET_ORDER",
+      "canonical_sha256": "458997E27E6BC1262592015203E80CCB756A46B8B1A1FBAC84A24EFE2624B79F",
+      "semantic_leaves": 149,
+      "cross_process_bytes_match": true
+    },
+    {
+      "case": "OPTIONAL_MISSING",
+      "canonical_sha256": "FC27DBE341FBAED0AAF5B821FC916A60DE2EF346ED8E934ED734D55484CF24D6",
+      "semantic_leaves": 88,
+      "cross_process_bytes_match": true
+    }
+  ],
+  "historical_leaf_semantics": 65,
+  "positive_helper_cases_per_run": 2,
+  "actual_thread": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:42",
+    "revision": 42,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a11b78-ed00-7da3-a6f4-3a4e17abbe05",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791462272,
+      "completedAt": 1791463742,
+      "durationMs": 1470467
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ac7913be28887d097b95b9b800eef55",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016ac7913be28887d097b95b9b800eef55",
+      "turnId": "01a11b78-ed00-7da3-a6f4-3a4e17abbe05",
+      "phase": "final_answer",
+      "text": "R6 독립 QA를 완료하고 마스터에게 보고했습니다. 정상 codec 범위는 PASS이며, 정적 계약 수정과 native 검증은 남아 있습니다. QA 보고서 기존 증거를 보존하고 다음 지시를 기다리겠습니다."
+    },
+    "latestToolMarkerId": "exec-12d6fbcb-b3a6-43b9-b788-42777b65f78b",
+    "latestToolMarker": {
+      "id": "exec-12d6fbcb-b3a6-43b9-b788-42777b65f78b",
+      "turnId": "01a11b78-ed00-7da3-a6f4-3a4e17abbe05",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "direct_transport_verified": true,
+  "master_execution_builds": 0,
+  "master_review_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R6_CODEC_CONTRACT_INDEPENDENT_S1_20261008.md",
+  "master_review_sha256": "51E33C1D9810860C21F25E27E69C8AD9AACD2BD1017EFF3286D078519002E6FE",
+  "master_verdict": "ACCEPTED_SCOPED_R6_POSITIVE_CODEC_HELPER_PASS_STATIC_REVISION_REQUIRED_NATIVE_UNTESTED",
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD"
+}

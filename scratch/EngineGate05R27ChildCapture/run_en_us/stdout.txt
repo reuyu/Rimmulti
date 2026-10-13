@@ -1,0 +1,18 @@
+[GATE05-R27-RUNNER] Starting Gate05-R27 OperatorChildLaunchInputs Capture Pure Unit Suite
+[GATE05-R27-RUNNER] Culture: en-US, RunDir: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R27ChildCapture\run_en_us
+
+[TEST-CASE-1] Executing pair: PLAIN_PLAIN
+[TEST-CASE-1] PASS: All 15 getters, caller isolation, and detached isolation verified.
+
+[TEST-CASE-2] Executing pair: OPAQUE_OPAQUE
+[TEST-CASE-2] PASS: All 15 getters, caller isolation, and detached isolation verified.
+
+[TEST-CASE-3] Executing pair: PLAIN_OPAQUE_PADDED
+[TEST-CASE-3] PASS: All 15 getters, caller isolation, and detached isolation verified.
+
+[TEST-CASE-4] Executing pair: OPAQUE_PLAIN_PADDED
+[TEST-CASE-4] PASS: All 15 getters, caller isolation, and detached isolation verified.
+
+[GATE05-R27-RUNNER] Completed pure unit suite. Verdict: PASS
+[GATE05-R27-RUNNER] IssueAdmissionReceiptFromBytes Calls: 8 (Expected: 8)
+[GATE05-R27-RUNNER] OperatorChildLaunchInputs.Capture Calls: 4 (Expected: 4)

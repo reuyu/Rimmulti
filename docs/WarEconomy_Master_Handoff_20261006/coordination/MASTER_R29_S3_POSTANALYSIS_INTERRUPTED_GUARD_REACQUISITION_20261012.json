@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-12T17:07:57.158576+09:00",
+  "prior_guard_run": "MASTER-R29-S3-POSTRUN-ANALYSIS-20261012-01",
+  "prior_session": 84920,
+  "prior_locked_at": "2026-10-12T10:38:33.523632+09:00",
+  "original_max_hold_seconds": 1800,
+  "renewal_attempt": "write_stdin failed: Unknown process id 84920",
+  "prior_release_or_full_invocation_coverage": "UNVERIFIED_NO_RETROACTIVE_CLAIM",
+  "work_before_interruption": "read-only inspection only; no new notice/state/dispatch mutation",
+  "new_guard_run": "MASTER-R29-S3-POSTRUN-ANALYSIS-20261012-02",
+  "new_session": 2351,
+  "new_pid": 34332,
+  "new_actual_LOCKED_at": "2026-10-12T17:05:52.350855+09:00",
+  "active_operation_reconfirmed": null,
+  "Sol_actual_previous_turn": "failed usage limit; notLoaded; no COMPLETION",
+  "no_unknown_delivery_before_recovery": true
+}

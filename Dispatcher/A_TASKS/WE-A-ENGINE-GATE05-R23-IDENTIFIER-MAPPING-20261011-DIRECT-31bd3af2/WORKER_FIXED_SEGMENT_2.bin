@@ -1,0 +1,103 @@
+            if (string.IsNullOrWhiteSpace(desc.originId))
+            {
+                return (false, "Operator launch descriptor originId cannot be null or whitespace.", null);
+            }
+            if (string.IsNullOrWhiteSpace(desc.launchPlanId))
+            {
+                return (false, "Operator launch descriptor launchPlanId cannot be null or whitespace.", null);
+            }
+            if (string.IsNullOrWhiteSpace(desc.expectedConfigId))
+            {
+                return (false, "Operator launch descriptor expectedConfigId cannot be null or whitespace.", null);
+            }
+            if (string.IsNullOrWhiteSpace(desc.expectedRole))
+            {
+                return (false, "Operator launch descriptor expectedRole cannot be null or whitespace.", null);
+            }
+            if (string.IsNullOrWhiteSpace(desc.expectedCapabilityBoundary))
+            {
+                return (false, "Operator launch descriptor expectedCapabilityBoundary cannot be null or whitespace.", null);
+            }
+            if (string.IsNullOrWhiteSpace(desc.expectedConfigPath))
+            {
+                return (false, "Operator launch descriptor expectedConfigPath cannot be null or whitespace.", null);
+            }
+            if (!IsFullyQualifiedWindowsPath(desc.expectedConfigPath))
+            {
+                return (false, $"Descriptor expectedConfigPath '{desc.expectedConfigPath}' must be fully-qualified.", null);
+            }
+            if (string.IsNullOrWhiteSpace(desc.expectedConfigSha256))
+            {
+                return (false, "Operator launch descriptor expectedConfigSha256 cannot be null or whitespace.", null);
+            }
+            if (!Is64AsciiHex(desc.expectedConfigSha256))
+            {
+                return (false, $"Descriptor expectedConfigSha256 '{desc.expectedConfigSha256}' is not a valid 64-character hex string.", null);
+            }
+
+            if (string.IsNullOrWhiteSpace(configPath))
+            {
+                return (false, "Config path cannot be null or whitespace.", null);
+            }
+            if (!IsFullyQualifiedWindowsPath(configPath))
+            {
+                return (false, $"Config path '{configPath}' must be a fully-qualified Windows path.", null);
+            }
+
+            string normalizedConfigPath;
+            try
+            {
+                normalizedConfigPath = Path.GetFullPath(configPath.Trim());
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Failed to normalize config path '{configPath}': {ex.Message}", null);
+            }
+
+            if (!File.Exists(normalizedConfigPath))
+            {
+                return (false, $"Operator config file not found at '{normalizedConfigPath}'.", null);
+            }
+
+            string normDescPath = Path.GetFullPath(desc.expectedConfigPath.Trim());
+            if (!string.Equals(normalizedConfigPath, normDescPath, StringComparison.OrdinalIgnoreCase))
+            {
+                return (false, $"Config path '{normalizedConfigPath}' does not match descriptor expectedConfigPath '{normDescPath}'.", null);
+            }
+
+            if (string.IsNullOrWhiteSpace(expectedConfigSha256))
+            {
+                return (false, "Expected config SHA cannot be null or whitespace.", null);
+            }
+            if (!Is64AsciiHex(expectedConfigSha256))
+            {
+                return (false, $"Expected config SHA '{expectedConfigSha256}' is not a valid 64-character hex string.", null);
+            }
+            if (!string.Equals(expectedConfigSha256.Trim(), desc.expectedConfigSha256.Trim(), StringComparison.OrdinalIgnoreCase))
+            {
+                return (false, $"Expected config SHA '{expectedConfigSha256}' does not match descriptor expectedConfigSha256 '{desc.expectedConfigSha256}'.", null);
+            }
+
+            byte[] rawBytes;
+            try
+            {
+                rawBytes = File.ReadAllBytes(normalizedConfigPath);
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Failed to read operator config file: {ex.Message}", null);
+            }
+
+            return IssueAdmissionReceiptFromBytes(rawBytes, normalizedConfigPath, expectedConfigSha256, desc);
+        }
+
+        public static (bool isValid, string error, OperatorStartupAdmissionReceipt? receipt) IssueAdmissionReceiptFromBytes(
+            byte[] rawBytes,
+            string configPath,
+            string expectedConfigSha256,
+            OperatorLaunchDescriptor descriptor)
+        {
+            if (descriptor == null)
+            {
+                return (false, "Operator launch descriptor cannot be null.", null);
+            }

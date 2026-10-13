@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-14T04:32:28.457199+09:00",
+  "old_run": "MASTER-SOL-R37-COMPLETE-NEXT-20261014-01",
+  "old_session": 22307,
+  "old_pid": 31956,
+  "last_renewed_at": "2026-10-14T02:26:17.339860+09:00",
+  "actual_TTL_EXPIRED_release_at": "2026-10-14T02:56:17.338815+09:00",
+  "expiry_observed_tool_chunk": "7c1702",
+  "interruption_resume_first_actions_readonly": true,
+  "new_run": "MASTER-R38-TERMINAL-RECOVERY-20261014-01",
+  "new_session": 26686,
+  "new_pid": 504,
+  "new_locked_at": "2026-10-14T04:27:23.566863+09:00",
+  "A_R38_actual_CU_SENT_and_status_recorded_before_expiry": true,
+  "active_operation_now_None": true,
+  "unknown_delivery_now_false": true,
+  "current19598_checker_actual_exit0_chunk": "4e2214",
+  "guarded_previous_scheduled_execution_not_asserted": true,
+  "no_other_process_terminated": true
+}

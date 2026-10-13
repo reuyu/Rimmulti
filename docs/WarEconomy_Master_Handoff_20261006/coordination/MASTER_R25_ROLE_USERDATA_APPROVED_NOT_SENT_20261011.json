@@ -1,0 +1,36 @@
+{
+  "at": "2026-10-11T21:27:49.983604+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R25-ROLE-USERDATA-20261011-DIRECT-dd341868",
+  "instruction": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R25-ROLE-USERDATA-20261011-DIRECT-dd341868\\INSTRUCTIONS.md",
+    "sha256": "E2E1A51539FFA9651E080D8BBE6502AD4E3A07644010B5A0226A85A9A4E75A65",
+    "bytes": 1404
+  },
+  "WP": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_ENGINE_GATE05_R25_ROLE_USERDATA_SELECTION.md",
+    "sha256": "BEA5CC6D09892B56F685A34D355214D029C5013F39A4B6FDA7B1C89464AB69CC",
+    "bytes": 7402
+  },
+  "release": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\RELEASE_ENGINE_GATE05_R25_ROLE_USERDATA_20261011.md",
+    "sha256": "723BE6747BAD5003E3683197DF86609D92E3898AD6E123A17F803DBD0181BB24",
+    "bytes": 522
+  },
+  "scope": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R25-ROLE-USERDATA-20261011-DIRECT-dd341868\\MASTER_R25_SCOPE_BASELINE.json",
+    "sha256": "371E4B39B3561F45F3BA672A9EB16A770AD80356044BB70A4B1EA6364A419BB5",
+    "bytes": 63496
+  },
+  "protected_baseline": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R25_PROTECTED_IMMUTABLE_BASELINE_20261011.json",
+    "sha256": "796CD486C6F0E2BE5E5139AAEC07C1343B5C38A4A8E5DC880763ECC1FF4BB545",
+    "bytes": 4005018
+  },
+  "protected_paths": 13055,
+  "mutable_exclusions": [],
+  "status": "APPROVED_NOT_SENT",
+  "guard_run": "MASTER-R24-RESUME-20261011T121945Z-01",
+  "guard_session": 37601,
+  "guard_pid": 11696,
+  "actualpause": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R24_TERMINAL_PAUSED_CONFIG_VERIFICATION_20261011.json"
+}

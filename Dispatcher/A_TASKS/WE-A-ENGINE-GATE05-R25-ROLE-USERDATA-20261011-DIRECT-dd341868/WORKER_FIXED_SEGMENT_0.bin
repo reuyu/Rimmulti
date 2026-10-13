@@ -1,0 +1,441 @@
+using System;
+using System.IO;
+using System.Net;
+using System.Net.Sockets;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Xml;
+using System.Security.Cryptography;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using HarmonyLib;
+using UnityEngine;
+using Verse;
+using RimWorld;
+using RimWorld.Planet;
+
+namespace WarEconomy.WorkerBridge
+{
+    public class WorkerBridgeMod : Mod
+    {
+        public WorkerBridgeMod(ModContentPack content) : base(content)
+        {
+            Log.Message("[WorkerBridge] Mod constructor initialized. Applying Harmony patches...");
+            try
+            {
+                var harmony = new Harmony("wareconomy.workerbridge.poc");
+                harmony.PatchAll();
+                Log.Message("[WorkerBridge] All Harmony patches applied successfully.");
+            }
+            catch (Exception ex)
+            {
+                Log.Error("[WorkerBridge] Failed to apply Harmony patches: " + ex);
+            }
+        }
+    }
+
+    [StaticConstructorOnStartup]
+    public static class WorkerBridgeBootstrapper
+    {
+        static WorkerBridgeBootstrapper()
+        {
+            try
+            {
+                // Gate05-R22: Explicit 7-field declaration startup gate (M01)
+                bool hasConfigArg = GenCommandLine.TryGetCommandLineArg("operatorconfig", out string configPath) && !string.IsNullOrWhiteSpace(configPath);
+                if (!hasConfigArg)
+                {
+                    Log.Warning("[WorkerBridge] Missing required '-operatorconfig' CLI argument for operator config (Fail-Closed). Component will NOT attach.");
+                    return;
+                }
+
+                bool hasShaArg = GenCommandLine.TryGetCommandLineArg("operatorconfigsha", out string expectedSha) && !string.IsNullOrWhiteSpace(expectedSha);
+                if (!hasShaArg)
+                {
+                    Log.Error("[WorkerBridge] Missing required '-operatorconfigsha' CLI argument for operator config (Fail-Closed). Component will NOT attach.");
+                    return;
+                }
+
+                bool hasOriginArg = GenCommandLine.TryGetCommandLineArg("operatororigin", out string origin) && !string.IsNullOrWhiteSpace(origin);
+                if (!hasOriginArg)
+                {
+                    Log.Error("[WorkerBridge] Missing required '-operatororigin' CLI argument for operator config (Fail-Closed). Component will NOT attach.");
+                    return;
+                }
+
+                bool hasPlanArg = GenCommandLine.TryGetCommandLineArg("operatorlaunchplan", out string plan) && !string.IsNullOrWhiteSpace(plan);
+                if (!hasPlanArg)
+                {
+                    Log.Error("[WorkerBridge] Missing required '-operatorlaunchplan' CLI argument for operator config (Fail-Closed). Component will NOT attach.");
+                    return;
+                }
+
+                bool hasConfigIdArg = GenCommandLine.TryGetCommandLineArg("operatorconfigid", out string cfgId) && !string.IsNullOrWhiteSpace(cfgId);
+                if (!hasConfigIdArg)
+                {
+                    Log.Error("[WorkerBridge] Missing required '-operatorconfigid' CLI argument for operator config (Fail-Closed). Component will NOT attach.");
+                    return;
+                }
+
+                bool hasRoleArg = GenCommandLine.TryGetCommandLineArg("operatorrole", out string role) && !string.IsNullOrWhiteSpace(role);
+                if (!hasRoleArg)
+                {
+                    Log.Error("[WorkerBridge] Missing required '-operatorrole' CLI argument for operator config (Fail-Closed). Component will NOT attach.");
+                    return;
+                }
+
+                bool hasCapArg = GenCommandLine.TryGetCommandLineArg("operatorcapability", out string cap) && !string.IsNullOrWhiteSpace(cap);
+                if (!hasCapArg)
+                {
+                    Log.Error("[WorkerBridge] Missing required '-operatorcapability' CLI argument for operator config (Fail-Closed). Component will NOT attach.");
+                    return;
+                }
+
+                var descriptor = new OperatorLaunchDescriptor
+                {
+                    originId = origin,
+                    launchPlanId = plan,
+                    expectedConfigId = cfgId,
+                    expectedRole = role.Trim(),
+                    expectedCapabilityBoundary = cap.Trim(),
+                    expectedConfigPath = configPath.Trim(),
+                    expectedConfigSha256 = expectedSha.Trim()
+                };
+
+                var admissionResult = OperatorStartupConfigAdmissionFactory.IssueAdmissionReceipt(configPath, expectedSha, descriptor);
+                if (!admissionResult.isValid || admissionResult.receipt == null)
+                {
+                    Log.Error($"[WorkerBridge] Operator config admission receipt issuance failed (Fail-Closed): {admissionResult.error}. Component will NOT attach.");
+                    return;
+                }
+
+                bool installed = WorkerBridgeComponent.TryInstallOperatorStartupConfig(admissionResult.receipt);
+                if (!installed)
+                {
+                    Log.Error("[WorkerBridge] Failed to install operator startup admission receipt (already installed or sealed). Component will NOT attach.");
+                    return;
+                }
+
+                Log.Message($"[WorkerBridge] Successfully admitted and installed operator startup config from '{configPath}' (Id='{admissionResult.receipt.Snapshot.ConfigId}', Role='{admissionResult.receipt.Snapshot.Role}')");
+
+                Log.Message("[WorkerBridge] StaticConstructorOnStartup fired. Attaching GameObject...");
+                var go = new GameObject("WorkerBridgeController");
+                UnityEngine.Object.DontDestroyOnLoad(go);
+                go.AddComponent<WorkerBridgeComponent>();
+                Log.Message("[WorkerBridge] Controller GameObject attached.");
+            }
+            catch (Exception ex)
+            {
+                Log.Error("[WorkerBridge] Bootstrapper error: " + ex);
+            }
+        }
+    }
+
+
+    public static class ScopedTacticalSession
+    {
+        public static bool IsActive = false;
+        public static Map? TargetMap = null;
+        public static int TargetMapIndex = -1;
+        public static long TicksSimulated = 0;
+
+        public static void Activate(Map targetMap)
+        {
+            TargetMap = targetMap;
+            TargetMapIndex = targetMap?.Index ?? -1;
+            IsActive = true;
+            TicksSimulated = 0;
+            Log.Message($"[WorkerBridge] ScopedTacticalSession ACTIVATED on Map[{TargetMapIndex}] (Tile={targetMap?.Tile})");
+        }
+
+        public static void Deactivate()
+        {
+            IsActive = false;
+            TargetMap = null;
+            TargetMapIndex = -1;
+            Log.Message("[WorkerBridge] ScopedTacticalSession DEACTIVATED.");
+        }
+    }
+
+    #region Harmony Patches for Tactical Isolation & Suppression
+
+    // QA-ENGINE-007 Mechanical Scope Fence: Disable vanilla autonomous frame ticking.
+    // In WorkerBridge, ticks are cooperatively driven by WorkerBridge via DoSingleTick().
+    [HarmonyPatch(typeof(TickManager), nameof(TickManager.TickManagerUpdate))]
+    public static class Patch_TickManager_TickManagerUpdate
+    {
+        public static bool Prefix()
+        {
+            return false;
+        }
+    }
+
+    // QA-ENGINE-005: Reject fastEcology debug bypass in DoSingleTick
+    [HarmonyPatch(typeof(TickManager), nameof(TickManager.DoSingleTick))]
+    public static class Patch_TickManager_DoSingleTick
+    {
+        public static void Prefix()
+        {
+            if (DebugSettings.fastEcology)
+            {
+                Log.WarningOnce("[WorkerBridge] fastEcology is unsupported in Tactical Worker. Forcing false in DoSingleTick.", 98125);
+                DebugSettings.fastEcology = false;
+            }
+        }
+    }
+
+    // QA-ENGINE-005: Reject fastEcology debug bypass in TickList.Tick
+    [HarmonyPatch(typeof(TickList), nameof(TickList.Tick))]
+    public static class Patch_TickList_Tick
+    {
+        public static void Prefix()
+        {
+            if (DebugSettings.fastEcology)
+            {
+                Log.WarningOnce("[WorkerBridge] fastEcology is unsupported in Tactical Worker. Forcing false in TickList.Tick.", 98126);
+                DebugSettings.fastEcology = false;
+            }
+        }
+    }
+
+    // QA-ENGINE-007: Mechanical Pause immediately upon Game initialization
+    [HarmonyPatch(typeof(Game), nameof(Game.FinalizeInit))]
+    public static class Patch_Game_FinalizeInit
+    {
+        public static void Postfix(Game __instance)
+        {
+            if (__instance.tickManager != null)
+            {
+                __instance.tickManager.CurTimeSpeed = TimeSpeed.Paused;
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(Map), nameof(Map.MapPreTick))]
+    public static class Patch_MapPreTick
+    {
+        public static bool Prefix(Map __instance)
+        {
+            if (!ScopedTacticalSession.IsActive) return true;
+            return __instance == ScopedTacticalSession.TargetMap;
+        }
+    }
+
+    [HarmonyPatch(typeof(Map), nameof(Map.MapPostTick))]
+    public static class Patch_MapPostTick
+    {
+        public static bool Prefix(Map __instance)
+        {
+            if (!ScopedTacticalSession.IsActive) return true;
+            return __instance == ScopedTacticalSession.TargetMap;
+        }
+    }
+
+    [HarmonyPatch(typeof(Thing), nameof(Thing.DoTick))]
+    public static class Patch_Thing_DoTick
+    {
+        public static bool Prefix(Thing __instance)
+        {
+            if (!ScopedTacticalSession.IsActive) return true;
+            Map m = __instance.Map ?? __instance.MapHeld;
+            if (m != null)
+            {
+                return m == ScopedTacticalSession.TargetMap;
+            }
+            // Skip world pawns, caravans, unspawned things during tactical session
+            return false;
+        }
+    }
+
+    [HarmonyPatch(typeof(World), nameof(World.WorldTick))]
+    public static class Patch_World_WorldTick
+    {
+        public static bool Prefix()
+        {
+            if (!ScopedTacticalSession.IsActive) return true;
+            return false;
+        }
+    }
+
+    [HarmonyPatch(typeof(WorldObjectsHolder), nameof(WorldObjectsHolder.WorldObjectsHolderTick))]
+    public static class Patch_WorldObjectsHolderTick
+    {
+        public static bool Prefix()
+        {
+            if (!ScopedTacticalSession.IsActive) return true;
+            return false;
+        }
+    }
+
+    [HarmonyPatch(typeof(Storyteller), nameof(Storyteller.StorytellerTick))]
+    public static class Patch_StorytellerTick
+    {
+        public static bool Prefix()
+        {
+            if (!ScopedTacticalSession.IsActive) return true;
+            return false;
+        }
+    }
+
+    [HarmonyPatch(typeof(IncidentQueue), nameof(IncidentQueue.IncidentQueueTick))]
+    public static class Patch_IncidentQueueTick
+    {
+        public static bool Prefix()
+        {
+            if (!ScopedTacticalSession.IsActive) return true;
+            return false;
+        }
+    }
+
+    [HarmonyPatch(typeof(LetterStack), nameof(LetterStack.LetterStackTick))]
+    public static class Patch_LetterStackTick
+    {
+        public static bool Prefix()
+        {
+            if (!ScopedTacticalSession.IsActive) return true;
+            return false;
+        }
+    }
+
+    [HarmonyPatch(typeof(Autosaver), nameof(Autosaver.AutosaverTick))]
+    public static class Patch_AutosaverTick
+    {
+        public static bool Prefix()
+        {
+            if (!ScopedTacticalSession.IsActive) return true;
+            return false;
+        }
+    }
+
+    [HarmonyPatch(typeof(TaleManager), nameof(TaleManager.TaleManagerTick))]
+    public static class Patch_TaleManagerTick
+    {
+        public static bool Prefix()
+        {
+            if (!ScopedTacticalSession.IsActive) return true;
+            return false;
+        }
+    }
+
+    [HarmonyPatch(typeof(QuestManager), nameof(QuestManager.QuestManagerTick))]
+    public static class Patch_QuestManagerTick
+    {
+        public static bool Prefix()
+        {
+            if (!ScopedTacticalSession.IsActive) return true;
+            return false;
+        }
+    }
+
+    [HarmonyPatch(typeof(FactionManager), nameof(FactionManager.FactionManagerTick))]
+    public static class Patch_FactionManagerTick
+    {
+        public static bool Prefix()
+        {
+            if (!ScopedTacticalSession.IsActive) return true;
+            return false;
+        }
+    }
+
+    [HarmonyPatch(typeof(History), nameof(History.HistoryTick))]
+    public static class Patch_HistoryTick
+    {
+        public static bool Prefix()
+        {
+            if (!ScopedTacticalSession.IsActive) return true;
+            return false;
+        }
+    }
+
+    [HarmonyPatch(typeof(StoryWatcher), nameof(StoryWatcher.StoryWatcherTick))]
+    public static class Patch_StoryWatcherTick
+    {
+        public static bool Prefix()
+        {
+            if (!ScopedTacticalSession.IsActive) return true;
+            return false;
+        }
+    }
+
+    [HarmonyPatch(typeof(GameEnder), nameof(GameEnder.GameEndTick))]
+    public static class Patch_GameEndTick
+    {
+        public static bool Prefix()
+        {
+            if (!ScopedTacticalSession.IsActive) return true;
+            return false;
+        }
+    }
+
+    #endregion
+
+    public class BridgeRequest
+    {
+        public string Command = "";
+        public string Argument = "";
+        public TaskCompletionSource<string> ResponseTcs = new TaskCompletionSource<string>();
+        public DateTime QueuedTime = DateTime.UtcNow;
+    }
+
+    public enum WorkerLifecycleState
+    {
+        NO_GAME,
+        LOAD_REQUESTED,
+        VALIDATING,
+        LOADING,
+        READY,
+        LOAD_FAILED,
+        SHUTTING_DOWN
+    }
+
+    public enum SemanticApprovalState
+    {
+        NONE,
+        LOADED_UNTRUSTED,
+        VALIDATION_REQUIRED,
+        VALIDATION_FAILED,
+        INPUT_VALIDATED,
+        RESULT_SEALED,
+        STAGED_PENDING_VALIDATION,
+        STAGED_VALIDATED,
+        ARTIFACT_APPROVED
+    }
+
+    public class WorkerBridgeComponent : MonoBehaviour
+    {
+        public static string? CustomSaveDataPathOverride = null;
+
+        // Gate05-R18 / Gate05-R20: Sealed operator-owned startup configuration and admission receipt (M01..M03)
+        private static OperatorStartupAdmissionReceipt? _activeAdmissionReceipt = null;
+        private static OperatorStartupConfigSnapshot? _activeStartupConfig = null;
+        private static bool _operatorConfigSealed = false;
+        private static readonly object _configLock = new object();
+
+        public static OperatorStartupAdmissionReceipt? ActiveAdmissionReceipt => _activeAdmissionReceipt;
+        public static OperatorStartupConfigSnapshot? ActiveStartupConfig => _activeStartupConfig;
+
+        internal static bool TryInstallOperatorStartupConfig(OperatorStartupAdmissionReceipt receipt)
+        {
+            if (receipt == null || !receipt.IsValid()) return false;
+            lock (_configLock)
+            {
+                if (_operatorConfigSealed || _activeAdmissionReceipt != null)
+                {
+                    return false;
+                }
+                _activeAdmissionReceipt = receipt;
+                _activeStartupConfig = receipt.Snapshot;
+                _operatorConfigSealed = true;
+                return true;
+            }
+        }
+
+        public static string SafeSaveDataFolderPath
+        {
+            get
+            {

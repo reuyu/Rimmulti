@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":false,\"wake\":{\"reason\":\"turnCompleted\",\"turnId\":\"01a11c8b-19b3-7291-a997-bb9063accb6a\",\"threadId\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\"},\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:54\",\"revision\":54,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"idle\"}},\"latestTurn\":{\"id\":\"01a11c8b-19b3-7291-a997-bb9063accb6a\",\"status\":\"completed\",\"error\":null,\"startedAt\":1791480240,\"completedAt\":1791480250,\"durationMs\":10247},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ac7d1b846c087d09da70fa5e1b6761d\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ac7d1b846c087d09da70fa5e1b6761d\",\"turnId\":\"01a11c8b-19b3-7291-a997-bb9063accb6a\",\"phase\":\"final_answer\",\"text\":\"마스터의 R8 의미 회귀 FAIL 채택과 High 결함 OPEN을 확인했습니다. 원문·FAIL·기대값·후보를 보존하고, R9의 별도 frozen 후보 QA 지시가 올 때까지 대기하겠습니다.\"},\"latestToolMarkerId\":null,\"latestToolMarker\":null}]}"
+    }
+  ],
+  "isError": false
+}

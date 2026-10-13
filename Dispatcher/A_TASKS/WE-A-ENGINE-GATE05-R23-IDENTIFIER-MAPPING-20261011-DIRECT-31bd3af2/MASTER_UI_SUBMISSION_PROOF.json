@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-11T16:52:53.955055+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R23-IDENTIFIER-MAPPING-20261011-DIRECT-31bd3af2",
+  "exact_message": "Master 승인 R23입니다. C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R23-IDENTIFIER-MAPPING-20261011-DIRECT-31bd3af2\\INSTRUCTIONS.md 전체와 WP/release를 읽고 진행하세요. R22 독립 정상 데이터 경로 PASS는 인정했습니다. 남은 M01은 CLI 식별자 3개의 Trim 제거와 두 factory의 private Clone role/capability Trim 일관성 수정뿐입니다. 허용 3구간·고정 4구간 외 코드 보존. 새 정상 PURE 20receipt·16snapshot 및 사전 결속 증거/후보와 지정 ACK·COMPLETION을 기록하세요. 부정 probe/global/native/Process 실행 금지.",
+  "one_actual_submit": true,
+  "new_exact_message": true,
+  "composer_empty": true,
+  "working_cancel": true,
+  "post_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R23-IDENTIFIER-MAPPING-20261011-DIRECT-31bd3af2\\MASTER_UI_SUBMITTED.json",
+  "post_sha256": "73568378473445C838F0574E386AB2AA2AB194D1EB4B59E3348E038E1E201FFB",
+  "send_tool": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R23-IDENTIFIER-MAPPING-20261011-DIRECT-31bd3af2\\MASTER_UI_SEND_TOOL.json",
+  "send_tool_sha256": "0BA9029C1B25F67AA7AB64408D4BD2DA0009823898F9FA01FECE33347BBDFF63",
+  "draft": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R23-IDENTIFIER-MAPPING-20261011-DIRECT-31bd3af2\\MASTER_UI_DRAFT.json",
+  "idle": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R23_CU_IDLE_BEFORE_INPUT_20261011.json",
+  "focus_qualification": "RootWebArea UIA; observed screenshot caret in composer, then exact inputValue. Immediate typing accessibility stale,reobserved no duplicate type/submit."
+}

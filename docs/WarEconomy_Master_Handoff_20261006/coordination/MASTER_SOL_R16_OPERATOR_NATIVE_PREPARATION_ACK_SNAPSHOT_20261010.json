@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:104\",\"revision\":104,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a121c7-2f56-7c83-bc63-4676a55a0dd7\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791568064,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ac9293593ec87d0a17812e0593d3e97\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ac9293593ec87d0a17812e0593d3e97\",\"turnId\":\"01a121c7-2f56-7c83-bc63-4676a55a0dd7\",\"phase\":\"commentary\",\"text\":\"R16 보호 대상 8,932개가 일치했고 ACK를 전달했습니다. RuntimeCopy에는 기존 7개 파일만 있으며 게임 data·managed 자산이 빠져 있습니다. 소스의 task 발급과 내부 receipt 경로를 16개 context 차원별로 추적하고, 아직 미관측인 운영자·native 근거를 구분하겠습니다.\"},\"latestToolMarkerId\":\"exec-056b583d-3b81-4727-b3e5-e07e4a13993b\",\"latestToolMarker\":{\"id\":\"exec-056b583d-3b81-4727-b3e5-e07e4a13993b\",\"turnId\":\"01a121c7-2f56-7c83-bc63-4676a55a0dd7\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

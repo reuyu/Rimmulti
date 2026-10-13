@@ -1,0 +1,265 @@
+{
+  "schema_version": "ADR-006B-v5",
+  "run_id": "GATE05-R13-POLICY-CACHE-LIFECYCLE-RUN-01",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R13-POLICY-CACHE-LIFECYCLE-20261009-DIRECT-2661a749",
+  "wp_id": "WP_ENGINE_GATE05_R13_POLICY_CACHE_LIFECYCLE",
+  "wp_revision": "GATE05-R13-POLICY-CACHE-LIFECYCLE",
+  "execution_timestamp": "2026-10-09T08:15:48.1921049Z",
+  "culture": "ko-KR",
+  "total_tests": 24,
+  "passed_tests": 24,
+  "failed_tests": 0,
+  "overall_verdict": "PASS",
+  "e1_verdict": "SCOPED_POSITIVE_NORMAL_PASS",
+  "limitations": [
+    "STATIC_MANAGED_NORMAL_EVIDENCE_ONLY",
+    "PURE_INSTANCE_CORE_AND_NORMAL_CONFIGURATION_LIFECYCLE_EVIDENCE_ONLY",
+    "NATIVE_ACTUAL_COMPUTATION_PROHIBITED_AND_UNTESTED",
+    "PRODUCER_GLOBAL_PROVIDER_REAL_ENTRY_STATIC_UNTESTED",
+    "MOD_PATCH_SETTINGS_DYNAMIC_EVALUATION_SEPARATE_OPEN",
+    "NATIVE_PROMOTION_FULL_E2_NOT_RELEASED",
+    "FINAL_DOMAIN_AUTHORITY_REMAINS_DEDICATED_SERVER"
+  ],
+  "test_cases": [
+    {
+      "id": "TC01_GlobalProvider_InitialStateDiagnostics",
+      "name": "TC01_GlobalProvider_InitialStateDiagnostics",
+      "category": "Category1_GlobalProviderLifecycle",
+      "status": "PASS",
+      "description": "Verifies unconfigured empty cache diagnostics on ContentProfileProvider global provider.",
+      "durationMs": 1,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC02_GlobalProvider_ConfigurePolicyA_DeclarationAndRecord",
+      "name": "TC02_GlobalProvider_ConfigurePolicyA_DeclarationAndRecord",
+      "category": "Category1_GlobalProviderLifecycle",
+      "status": "PASS",
+      "description": "Verifies valid current-v1 ConfigureExpectedPackagePolicy overloads (Declaration and Record) on global provider.",
+      "durationMs": 8,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC03_GlobalProvider_CallerOwnershipAndImmutability",
+      "name": "TC03_GlobalProvider_CallerOwnershipAndImmutability",
+      "category": "Category1_GlobalProviderLifecycle",
+      "status": "PASS",
+      "description": "Verifies caller list mutation on input or returned snapshot does not corrupt global provider state.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC04_GlobalProvider_GenerationAdvanceOnReconfigure",
+      "name": "TC04_GlobalProvider_GenerationAdvanceOnReconfigure",
+      "category": "Category1_GlobalProviderLifecycle",
+      "status": "PASS",
+      "description": "Verifies legitimate reconfigure advances configuration generation and keeps cache unpopulated.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC05_GlobalProvider_ClearConfiguredPolicy_ResetsAndAdvancesGeneration",
+      "name": "TC05_GlobalProvider_ClearConfiguredPolicy_ResetsAndAdvancesGeneration",
+      "category": "Category1_GlobalProviderLifecycle",
+      "status": "PASS",
+      "description": "Verifies ClearConfiguredExpectedPackagePolicy removes configured policy and advances generation.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC06_GlobalProvider_ExplicitInvalidateCache",
+      "name": "TC06_GlobalProvider_ExplicitInvalidateCache",
+      "category": "Category1_GlobalProviderLifecycle",
+      "status": "PASS",
+      "description": "Verifies explicit InvalidateCache retains configured policy while ensuring empty cache state.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC07_StandaloneCore_InitialStateDiagnostics",
+      "name": "TC07_StandaloneCore_InitialStateDiagnostics",
+      "category": "Category2_StandaloneCacheCoreLifecycle",
+      "status": "PASS",
+      "description": "Verifies standalone core initializes with generation 0 and empty unconfigured state.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC08_StandaloneCore_ConfigurePolicyA_AdvancesGeneration",
+      "name": "TC08_StandaloneCore_ConfigurePolicyA_AdvancesGeneration",
+      "category": "Category2_StandaloneCacheCoreLifecycle",
+      "status": "PASS",
+      "description": "Verifies configuring policy A on core advances generation to 1 and stores immutable snapshot.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC09_StandaloneCore_PublishCoherentEntryA_Success",
+      "name": "TC09_StandaloneCore_PublishCoherentEntryA_Success",
+      "category": "Category2_StandaloneCacheCoreLifecycle",
+      "status": "PASS",
+      "description": "Verifies publishing coherent entry matching generation and policy succeeds and populates cache.",
+      "durationMs": 32,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC10_StandaloneCore_CoherentEntryQueryRepeatAndDefensiveCopy",
+      "name": "TC10_StandaloneCore_CoherentEntryQueryRepeatAndDefensiveCopy",
+      "category": "Category2_StandaloneCacheCoreLifecycle",
+      "status": "PASS",
+      "description": "Verifies repeated queries return identical results and mutating returned CachedManifest does not corrupt cache.",
+      "durationMs": 2,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC11_StandaloneCore_ReconfigureToPolicyB_ClearsOldCache",
+      "name": "TC11_StandaloneCore_ReconfigureToPolicyB_ClearsOldCache",
+      "category": "Category2_StandaloneCacheCoreLifecycle",
+      "status": "PASS",
+      "description": "Verifies reconfiguring core with policy B advances generation to 2 and atomically invalidates entry A.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC12_StandaloneCore_PublishCoherentEntryB_Success",
+      "name": "TC12_StandaloneCore_PublishCoherentEntryB_Success",
+      "category": "Category2_StandaloneCacheCoreLifecycle",
+      "status": "PASS",
+      "description": "Verifies publishing entry B at generation 2 populates core with entry B.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC13_StandaloneCore_StaleGenerationPublication_Rejected",
+      "name": "TC13_StandaloneCore_StaleGenerationPublication_Rejected",
+      "category": "Category2_StandaloneCacheCoreLifecycle",
+      "status": "PASS",
+      "description": "Verifies publishing with stale generation or mismatched policy is rejected without modifying cache.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC14_StandaloneCore_SamePolicyReconfigure_DeterministicAdvanceAndInvalidate",
+      "name": "TC14_StandaloneCore_SamePolicyReconfigure_DeterministicAdvanceAndInvalidate",
+      "category": "Category2_StandaloneCacheCoreLifecycle",
+      "status": "PASS",
+      "description": "Verifies same-policy reconfigure deterministically advances generation and invalidates cache.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC15_StandaloneCore_ClearConfiguredPolicy_InvalidatesEntryAndClearsPolicy",
+      "name": "TC15_StandaloneCore_ClearConfiguredPolicy_InvalidatesEntryAndClearsPolicy",
+      "category": "Category2_StandaloneCacheCoreLifecycle",
+      "status": "PASS",
+      "description": "Verifies ClearConfiguredExpectedPackagePolicy on populated core advances generation and invalidates entry.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC16_StandaloneCore_InvalidateCache_PreservesConfiguration",
+      "name": "TC16_StandaloneCore_InvalidateCache_PreservesConfiguration",
+      "category": "Category2_StandaloneCacheCoreLifecycle",
+      "status": "PASS",
+      "description": "Verifies InvalidateCache clears stored entry while preserving configured policy.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC17_R12_CheckPackagePolicy_ZeroBasedContiguousOrder_CopiedView",
+      "name": "TC17_R12_CheckPackagePolicy_ZeroBasedContiguousOrder_CopiedView",
+      "category": "Category3_Regressions",
+      "status": "PASS",
+      "description": "Verifies R12 CheckPackagePolicy validates 0-based contiguous loadOrder using copied view without mutating caller.",
+      "durationMs": 1,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC18_R12_PhysicalPermutation_CanonicalAdmittedContent",
+      "name": "TC18_R12_PhysicalPermutation_CanonicalAdmittedContent",
+      "category": "Category3_Regressions",
+      "status": "PASS",
+      "description": "Verifies R12 physical permutation invariance: permuted array yields identical canonical JSON and digest.",
+      "durationMs": 6,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC19_R12_DistinctValidExecutionOrders_MatchingDistinctPolicies",
+      "name": "TC19_R12_DistinctValidExecutionOrders_MatchingDistinctPolicies",
+      "category": "Category3_Regressions",
+      "status": "PASS",
+      "description": "Verifies R12 distinct execution sequences match their separate policies and retain distinct canonical content.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC20_R12_FreshOriginal_SerializeTrue_BeforeAdmission",
+      "name": "TC20_R12_FreshOriginal_SerializeTrue_BeforeAdmission",
+      "category": "Category3_Regressions",
+      "status": "PASS",
+      "description": "Verifies R12 fresh-original manifest serializes with canonicalNormalize=true before external admission.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC21_R11_PolicyDeclaration_Encoding_Whitespace_Unicode_Digest",
+      "name": "TC21_R11_PolicyDeclaration_Encoding_Whitespace_Unicode_Digest",
+      "category": "Category3_Regressions",
+      "status": "PASS",
+      "description": "Verifies R11 policy declaration compact JSON, whitespace/Unicode preservation, and SHA-256 digest.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC22_R9_VersionMeaningSemantics",
+      "name": "TC22_R9_VersionMeaningSemantics",
+      "category": "Category3_Regressions",
+      "status": "PASS",
+      "description": "Regresses R9 version meaning: modVersion null/empty values preserved without overwrite.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC23_ContractVersion_And_CapabilityFlag",
+      "name": "TC23_ContractVersion_And_CapabilityFlag",
+      "category": "Category3_Regressions",
+      "status": "PASS",
+      "description": "Verifies ADR-006B-v5-R13 contract version and GATE05_R13_POLICY_CACHE_LIFECYCLE capability flag.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "id": "TC24_DefFamiliesAndCanonicalSorting",
+      "name": "TC24_DefFamiliesAndCanonicalSorting",
+      "category": "Category3_Regressions",
+      "status": "PASS",
+      "description": "Regresses 8 Def families presence and canonical sorting order.",
+      "durationMs": 0,
+      "metadata": {},
+      "error": null
+    }
+  ]
+}

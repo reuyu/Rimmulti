@@ -1,0 +1,181 @@
+{
+  "schemaVersion": "we-operator-durable-lifecycle-flow/v1",
+  "generated_at": "2026-10-12T20:55:00+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10",
+  "wp_id": "WP_ENGINE_GATE05_R31_LIFECYCLE",
+  "wp_revision": "GATE05-R31-LIFECYCLE",
+  "envelope": 34,
+  "defect_fixed": "ENGINE-G05-R30-LIFECYCLE-20261012-01",
+  "target_source": "scratch/WorkerBridgeMod/Source/WorkerBridge.cs",
+  "lifecycle_phases": [
+    {
+      "phase_index": 1,
+      "phase_name": "BOOTSTRAP_PARENT_INSTALL",
+      "authorized_span_id": "BOOTSTRAP_MODE_AND_HANDOFF",
+      "span_range": [
+        7573,
+        10738
+      ],
+      "description": "WorkerBridgeComponent.TryInstallOperatorStartupConfig installs active parent receipt into _activeAdmissionReceipt and _activeStartupConfig.",
+      "invariants": [
+        "Seals parent operator config monotonically.",
+        "If install fails, logs error and returns fail-closed without creating controller GameObject."
+      ]
+    },
+    {
+      "phase_index": 2,
+      "phase_name": "BOOTSTRAP_DURABLE_MODE_AND_HANDOFF_REGISTRATION",
+      "authorized_span_id": "BOOTSTRAP_MODE_AND_HANDOFF",
+      "span_range": [
+        7573,
+        10738
+      ],
+      "description": "WorkerBridgeComponent.SetPendingStartupHandoff binds GameObject owner, sets _staticPairModeRequired = true and _staticHandoffRegistrationSpent = true.",
+      "invariants": [
+        "Atomic registration inside lock(_startupHandoffLock).",
+        "Rejects lifetime re-registration if _staticHandoffRegistrationSpent is already true.",
+        "Rejects live overwrite if _registeredHandoffOwner != null.",
+        "Verifies cohort equality against _activeAdmissionReceipt and _activeStartupConfig.",
+        "On failure, returns false; bootstrap destroys go and returns fail-closed without calling AddComponent."
+      ]
+    },
+    {
+      "phase_index": 3,
+      "phase_name": "CONTROLLER_COMPONENT_ATTACHMENT",
+      "authorized_span_id": "BOOTSTRAP_MODE_AND_HANDOFF",
+      "span_range": [
+        7573,
+        10738
+      ],
+      "description": "try { go.AddComponent<WorkerBridgeComponent>(); } catch (Exception ex) { CleanupEscapingAddComponentFailure(go); Destroy(go); return; }",
+      "invariants": [
+        "Guards escaping component addition or synchronous Awake failures.",
+        "Calls CleanupEscapingAddComponentFailure(go) to mark _staticStartupAborted = true and clear _pendingPairPayload.",
+        "Destroys go and returns fail-closed."
+      ]
+    },
+    {
+      "phase_index": 4,
+      "phase_name": "AWAKE_REQUIRED_MODE_ENTRY",
+      "authorized_span_id": "AWAKE_REQUIRED_MODE_ENTRY",
+      "span_range": [
+        36246,
+        36980
+      ],
+      "description": "Awake entry retains managed GameObject reference in _retainedOwner, establishes _isPairRequiredMode if _staticPairModeRequired is true, and executes fail-closed early abort if acquisition fails.",
+      "invariants": [
+        "_retainedOwner = this.gameObject safely stored before any operations.",
+        "If _staticPairModeRequired == true, instance _isPairRequiredMode is set to true immediately.",
+        "TryAcquirePendingStartupHandoff consumes _pendingPairPayload atomically on matching owner.",
+        "If _isPairRequiredMode is true and _privatePairProfile is null, logs error and returns immediately before fastEcology, log callbacks, policy, or listeners."
+      ]
+    },
+    {
+      "phase_index": 5,
+      "phase_name": "AWAKE_SUCCESS_AND_CATCH_TAIL",
+      "authorized_span_id": "AWAKE_SUCCESS_AND_FAILURE_TAIL",
+      "span_range": [
+        38914,
+        40388
+      ],
+      "description": "Awake completion sets _startupInitializationComplete = true. Internal catch sets _startupInitializationComplete = false, _staticStartupAborted = true, cleans partially initialized resources, and calls CleanupOwnerPendingHandoff(_retainedOwner).",
+      "invariants": [
+        "Successful initialization marks _startupInitializationComplete = true.",
+        "Any caught exception marks initialization incomplete and aborted.",
+        "Cleans partially initialized log callbacks, policy, and listener threads safely.",
+        "Calls CleanupOwnerPendingHandoff(_retainedOwner) to release pending payload."
+      ]
+    },
+    {
+      "phase_index": 6,
+      "phase_name": "UPDATE_REQUIRED_MODE_EARLY_GUARD",
+      "authorized_span_id": "UPDATE_REQUIRED_MODE_EARLY_GUARD",
+      "span_range": [
+        40833,
+        41144
+      ],
+      "description": "Update entry guard checks: if ((_isPairRequiredMode && (!_startupInitializationComplete || _privatePairProfile == null)) || _staticStartupAborted) return;",
+      "invariants": [
+        "Blocks Update execution completely if required pair mode was uninitialized or aborted.",
+        "Placed immediately at entry of Update() before fastEcology suppression, tick processing, or domain actions."
+      ]
+    },
+    {
+      "phase_index": 7,
+      "phase_name": "OWNER_SCOPED_DESTROY_AND_M05_HOLD",
+      "authorized_span_id": "OWNER_SCOPED_DESTROY_WHOLE_METHOD",
+      "span_range": [
+        183522,
+        184000
+      ],
+      "description": "OnDestroy() invokes CleanupOwnerPendingHandoff(_retainedOwner) inside try/catch, preserving mode and spent flags, and cleans instance resources. LaunchChildValidatorTask holds M05 if _isPairRequiredMode || _staticPairModeRequired || _privatePairProfile != null || _staticStartupAborted.",
+      "invariants": [
+        "Does not call unsafe this.gameObject property on destroyed native object during OnDestroy.",
+        "Cleans only matching owner payload.",
+        "Preserves _staticPairModeRequired and _staticHandoffRegistrationSpent flags.",
+        "Child launch returns ERROR: M05_NOT_ADMITTED unconditionally."
+      ]
+    }
+  ],
+  "source_only_lifetime_scenarios": [
+    {
+      "scenario_id": "valid_owner_first_admission",
+      "claim_type": "SOURCE_ANALYSIS",
+      "description": "First SetPendingStartupHandoff by legitimate owner with matching cohort establishes _staticPairModeRequired = true, _staticHandoffRegistrationSpent = true, and populates _pendingPairPayload. Returns true."
+    },
+    {
+      "scenario_id": "absent_payload",
+      "claim_type": "SOURCE_ANALYSIS",
+      "description": "TryAcquirePendingStartupHandoff when _pendingPairPayload == null returns false. If _staticPairModeRequired == true, _isPairRequiredMode remains true, Awake aborts fail-closed, and Update is blocked."
+    },
+    {
+      "scenario_id": "wrong_owner",
+      "claim_type": "SOURCE_ANALYSIS",
+      "description": "TryAcquirePendingStartupHandoff called from a different GameObject (!ReferenceEquals(_registeredHandoffOwner, this.gameObject)) returns false without clearing pending payload."
+    },
+    {
+      "scenario_id": "consumed_cleaned_slot",
+      "claim_type": "SOURCE_ANALYSIS",
+      "description": "TryAcquirePendingStartupHandoff on a consumed slot (_pendingPairPayload == null) returns false. Registration spent flag _staticHandoffRegistrationSpent remains true; cannot re-register."
+    },
+    {
+      "scenario_id": "repeated_set_same_owner_cohort",
+      "claim_type": "SOURCE_ANALYSIS",
+      "description": "Repeated call to SetPendingStartupHandoff returns false because _staticHandoffRegistrationSpent is already true (lifetime one-registration guard)."
+    },
+    {
+      "scenario_id": "matched_cohort_failure",
+      "claim_type": "SOURCE_ANALYSIS",
+      "description": "If cohort verification fails during Set (e.g. parentReceipt != _activeAdmissionReceipt), returns false, does not set pair mode, caller destroys go."
+    },
+    {
+      "scenario_id": "early_awake_failure_and_internal_catch",
+      "claim_type": "SOURCE_ANALYSIS",
+      "description": "If an exception occurs inside Awake, the internal catch tail sets _startupInitializationComplete = false, _staticStartupAborted = true, cleans partial resources, and calls CleanupOwnerPendingHandoff(_retainedOwner)."
+    },
+    {
+      "scenario_id": "profile_cleared_m05_hold",
+      "claim_type": "SOURCE_ANALYSIS",
+      "description": "Even if profile is null or cleared, if _isPairRequiredMode || _staticPairModeRequired || _staticStartupAborted, child launch returns ERROR: M05_NOT_ADMITTED: Child launch execution withheld in R31."
+    },
+    {
+      "scenario_id": "dead_native_but_managed_owner_cleanup",
+      "claim_type": "SOURCE_ANALYSIS",
+      "description": "In OnDestroy(), _retainedOwner (captured at Awake entry) is passed to CleanupOwnerPendingHandoff(_retainedOwner) rather than evaluating this.gameObject on a destroyed native peer."
+    },
+    {
+      "scenario_id": "repeated_other_component_destruction",
+      "claim_type": "SOURCE_ANALYSIS",
+      "description": "Calling CleanupOwnerPendingHandoff with null or a different owner does not clear _pendingPairPayload. Calling OnDestroy multiple times safely handles null payload."
+    },
+    {
+      "scenario_id": "failed_component_update_block",
+      "claim_type": "SOURCE_ANALYSIS",
+      "description": "If _isPairRequiredMode and (!_startupInitializationComplete || _privatePairProfile == null) or _staticStartupAborted, Update() returns immediately before executing any simulation or clock work."
+    }
+  ],
+  "limitations": [
+    "SOURCE_ONLY_BRANCH_REASONING: The above scenarios are static source-level verification only. Native Unity lifecycle, actual component destruction, and C# Process APIs were strictly unexecuted.",
+    "NATIVE_AWAKE_PROPAGATION_UNTESTED: Synchronous vs asynchronous Awake invocation and native exception propagation remain unobserved in this managed test environment."
+  ]
+}

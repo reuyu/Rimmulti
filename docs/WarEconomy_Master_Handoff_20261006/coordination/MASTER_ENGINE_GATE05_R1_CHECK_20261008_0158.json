@@ -1,0 +1,1070 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R1-20261008-DIRECT-971a4780",
+  "task_status": "IN_PROGRESS",
+  "ack": {
+    "sha256": "DCFF37E1A96B7FC9026D8F75EEFBEE7C11D9551D7A7ECEB12AAD4B2DEFE3773D",
+    "status": "IN_PROGRESS",
+    "identity_errors": []
+  },
+  "completion_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R1-20261008-DIRECT-971a4780\\COMPLETION.json",
+  "completion_sha256": "5CB5114DBBD6544A073105BB9D4DD98031E3BACE1CE26BFCF957EF2F9B65B96C",
+  "result_id": "WE-A-ENGINE-GATE05-R1-RESULT-20261008-01",
+  "reported_status": "COMPLETED",
+  "reported_e1_verdict": "PASS",
+  "artifact_checks": [
+    {
+      "role": "implementation_report",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_EngineHost_Semantic_Authority_Gate_05_R1.md",
+      "actual_sha256": "CF91F79AD025483205254EA8F3248A39D514448BBBFF221E7D40BCC1B79CF465",
+      "matched": true
+    },
+    {
+      "role": "release_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R1.json",
+      "actual_sha256": "375616431DBEEBD42181C272590ED1A81665776935748D8B118C9812348673D9",
+      "matched": true
+    },
+    {
+      "role": "results",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R1\\results.json",
+      "actual_sha256": "D044FA0F96287F3D0652672BE57FDD495FB1C7F0A61E4C74105B3AB1B014CF21",
+      "matched": true
+    },
+    {
+      "role": "raw_evidence",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R1\\raw_console.txt",
+      "actual_sha256": "E56BEF36E2CC679204AE6003594C8C23D5A88C2203018EF1EE0FF220443C8E45",
+      "matched": true
+    },
+    {
+      "role": "engine_freeze_before",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\ENGINE_GATE05_BASELINE_BEFORE_R1_20261008\\ARCHIVE_MANIFEST.json",
+      "actual_sha256": "B6AD0A70EA4C13F5040A3BAEE690DBCDDEB8735842FCB482D66352A8FB05F0F1",
+      "matched": true
+    },
+    {
+      "role": "engine_freeze_after",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\MASTER_ENGINE_FREEZE_AFTER_GATE05_R1.json",
+      "actual_sha256": "A1F01B4460D8C069AF63A882B476937557902598916520581B56055ADD9FC75A",
+      "matched": true
+    },
+    {
+      "role": "harness",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R1\\bin\\Release\\net472\\Gate05R1TestRunner.exe",
+      "actual_sha256": "279440C2C1F990890E903A8E8F690927FB5208838E0F68F27442E0B1B029449F",
+      "matched": true
+    },
+    {
+      "role": "candidate_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "actual_sha256": "620F7A7BB9D6BF45F149F31662CBD79B369152B2B7F2C67882BFF84240BA86AC",
+      "matched": true
+    },
+    {
+      "role": "candidate_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "actual_sha256": "C7B0A9F427C33CA20DA00EDD944E888AD643D392F3A81B875067D989A61E93A8",
+      "matched": true
+    },
+    {
+      "role": "pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "actual_sha256": "7E3CB7DBCBA9D0020C9801B3CB0150973DC61868E8B1E78EAF1A16F3DE112FC1",
+      "matched": true
+    },
+    {
+      "role": "pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "actual_sha256": "FBAEEE9870D24FB1FADBADC9D1F4BD9672B36393B7F6D7ADDC63664D6C8B1127",
+      "matched": true
+    },
+    {
+      "role": "pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R1\\bin\\Release\\net472\\Gate05R1TestRunner.pdb",
+      "actual_sha256": "92441BF2CA9A6C1579211209AD75B1B61012244F1C2DBFE83765D1C0EF30D84C",
+      "matched": true
+    },
+    {
+      "role": "source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "actual_sha256": "F80B966B087DEFA0027451005EC8499F24447C98B04FA901CDBC84A1FFE32B46",
+      "matched": true
+    },
+    {
+      "role": "source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "actual_sha256": "E86B54B2077B36D1E8D24879B9CB88B58E79725BAEBD8BCCDDD8DA5930961235",
+      "matched": true
+    },
+    {
+      "role": "source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "actual_sha256": "B3CF8D675F1041625E9BF1D71463D1F2822A38D1719995E62A5551E28A869492",
+      "matched": true
+    },
+    {
+      "role": "source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R1\\Program.cs",
+      "actual_sha256": "5242767FC464A91F2479774EBA7468B30CD1F198D66516D3CB72B5E47AE25C00",
+      "matched": true
+    },
+    {
+      "role": "source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R1\\Gate05R1TestRunner.csproj",
+      "actual_sha256": "320CF5CDE99EE98628077DA3DE8A0C5433FE2BBF8171739A9C50A052418B31F4",
+      "matched": true
+    },
+    {
+      "role": "pipeline_preservation",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\COMPLETION.json",
+      "actual_sha256": "09057D2719830251C8C741506FBA8F38713830EE5496C563B9709C7AF9C13B0A",
+      "matched": true
+    }
+  ],
+  "evidence_errors": [],
+  "engine_freeze_errors": [],
+  "status": "READY_FOR_MASTER_REVIEW",
+  "master_verdict": null,
+  "preservation_errors": [],
+  "authorized_engine_changes": [
+    {
+      "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "before_sha256": "BC9FD8DAA608892E97903BA56114B7186BABF29157ADAE45658238C3DD497549",
+      "actual_sha256": "E86B54B2077B36D1E8D24879B9CB88B58E79725BAEBD8BCCDDD8DA5930961235"
+    },
+    {
+      "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "before_sha256": "954C12F7500EC0BF4AE8265D2F66EFA39369A69F2C9DF3D1DBA20A9F54CBD024",
+      "actual_sha256": "F80B966B087DEFA0027451005EC8499F24447C98B04FA901CDBC84A1FFE32B46"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "before_sha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+      "actual_sha256": "C7B0A9F427C33CA20DA00EDD944E888AD643D392F3A81B875067D989A61E93A8"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "before_sha256": "F526ED47B505EC4D2F7436E700CAD58B01F9CE8FFEC2DFD8425B07C76EB9FC93",
+      "actual_sha256": "C7B0A9F427C33CA20DA00EDD944E888AD643D392F3A81B875067D989A61E93A8"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "before_sha256": "660FD9389331FAA1DC7497512334AFDD3762DBDAFEA18FBD483F0AB73635F27A",
+      "actual_sha256": "FBAEEE9870D24FB1FADBADC9D1F4BD9672B36393B7F6D7ADDC63664D6C8B1127"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "before_sha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+      "actual_sha256": "620F7A7BB9D6BF45F149F31662CBD79B369152B2B7F2C67882BFF84240BA86AC"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "before_sha256": "4B86A8634C8B13D2A20EA51D27B5A9F7B067FA976A8C0503107C18C5A7656862",
+      "actual_sha256": "7E3CB7DBCBA9D0020C9801B3CB0150973DC61868E8B1E78EAF1A16F3DE112FC1"
+    }
+  ],
+  "engine_archive_checks": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\ENGINE_GATE05_BASELINE_BEFORE_R1_20261008\\FILES\\scratch\\semantic_authority_gate_05_results.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\ENGINE_GATE05_BASELINE_BEFORE_R1_20261008\\FILES\\scratch\\run_semantic_authority_gate_05.py",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\ENGINE_GATE05_BASELINE_BEFORE_R1_20261008\\FILES\\EXTERNAL_ENGINE_REFERENCE\\C\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64.exe",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\ENGINE_GATE05_BASELINE_BEFORE_R1_20261008\\FILES\\EXTERNAL_ENGINE_REFERENCE\\C\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\Assembly-CSharp.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\ENGINE_GATE05_BASELINE_BEFORE_R1_20261008\\FILES\\EXTERNAL_ENGINE_REFERENCE\\C\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\WarEconomy.WorkerBridge.PoC\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\ENGINE_GATE05_BASELINE_BEFORE_R1_20261008\\FILES\\EXTERNAL_ENGINE_REFERENCE\\C\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ProbeMod\\1.6\\Assemblies\\QA.Engine02.Probe.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\ENGINE_GATE05_BASELINE_BEFORE_R1_20261008\\FILES\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\ENGINE_GATE05_BASELINE_BEFORE_R1_20261008\\FILES\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\ENGINE_GATE05_BASELINE_BEFORE_R1_20261008\\FILES\\scratch\\TargetSettlement_Clean_ContextB.rws",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\ENGINE_GATE05_BASELINE_BEFORE_R1_20261008\\FILES\\scratch\\TargetSettlement_Clean_ContextB.v4.census.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\ENGINE_GATE05_BASELINE_BEFORE_R1_20261008\\FILES\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\ENGINE_GATE05_BASELINE_BEFORE_R1_20261008\\FILES\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\ENGINE_GATE05_BASELINE_BEFORE_R1_20261008\\FILES\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\ENGINE_GATE05_BASELINE_BEFORE_R1_20261008\\FILES\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\ENGINE_GATE05_BASELINE_BEFORE_R1_20261008\\FILES\\scratch\\WarEconomy.WorkerBridge.PoC.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\ENGINE_GATE05_BASELINE_BEFORE_R1_20261008\\FILES\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\ENGINE_GATE05_BASELINE_BEFORE_R1_20261008\\FILES\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\ENGINE_GATE05_BASELINE_BEFORE_R1_20261008\\FILES\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\ENGINE_GATE05_BASELINE_BEFORE_R1_20261008\\FILES\\docs\\POC_EngineHost_Semantic_Authority_Gate_05.md",
+      "matched": true
+    }
+  ],
+  "pipeline_preservation_checks": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\COMPLETION.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\COMPLETION.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\MASTER_ENGINE_FREEZE_BEFORE.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\MASTER_ENGINE_FREEZE_BEFORE.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_Production_Transaction_Pipeline_01_REV6_R1.md",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\docs\\POC_Production_Transaction_Pipeline_01_REV6_R1.md",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_PIPELINE_REV6_R1.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\docs\\RELEASE_MANIFEST_PIPELINE_REV6_R1.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.deps.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.deps.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.exe",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.exe",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.pdb",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.pdb",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.runtimeconfig.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.runtimeconfig.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\Microsoft.Data.Sqlite.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\Microsoft.Data.Sqlite.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\Newtonsoft.Json.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\Newtonsoft.Json.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\pipeline_e1_rev6_r1_results.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\pipeline_e1_rev6_r1_results.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\runtimes\\win-arm\\native\\e_sqlite3.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\runtimes\\win-arm\\native\\e_sqlite3.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\runtimes\\win-arm64\\native\\e_sqlite3.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\runtimes\\win-arm64\\native\\e_sqlite3.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\runtimes\\win-x64\\native\\e_sqlite3.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\runtimes\\win-x64\\native\\e_sqlite3.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\runtimes\\win-x86\\native\\e_sqlite3.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\runtimes\\win-x86\\native\\e_sqlite3.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\SQLitePCLRaw.batteries_v2.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\SQLitePCLRaw.batteries_v2.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\SQLitePCLRaw.core.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\SQLitePCLRaw.core.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\SQLitePCLRaw.provider.e_sqlite3.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\SQLitePCLRaw.provider.e_sqlite3.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Common.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Common.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Common.pdb",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Common.pdb",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Server.deps.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Server.deps.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Server.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Server.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Server.exe",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Server.exe",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Server.pdb",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Server.pdb",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Server.runtimeconfig.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\WarEconomy.Server.runtimeconfig.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\E1_Rev6_R1_Runner.csproj",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\E1_Rev6_R1_Runner.csproj",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\obj\\Release\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\obj\\Release\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\obj\\Release\\net8.0\\E1_Rev6_R1_Runner.AssemblyInfo.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\obj\\Release\\net8.0\\E1_Rev6_R1_Runner.AssemblyInfo.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\Program.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\E1_Rev6_R1_Runner\\Program.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\MASTER_ENGINE_FREEZE_AFTER_REV6_R1.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\MASTER_ENGINE_FREEZE_AFTER_REV6_R1.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\pipeline_e1_rev6_r1_raw_console.txt",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\pipeline_e1_rev6_r1_raw_console.txt",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\pipeline_e1_rev6_r1_results.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\scratch\\pipeline_e1_rev6_r1_results.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\bin\\Release\\netstandard2.0\\WarEconomy.Common.deps.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\bin\\Release\\netstandard2.0\\WarEconomy.Common.deps.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\bin\\Release\\netstandard2.0\\WarEconomy.Common.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\bin\\Release\\netstandard2.0\\WarEconomy.Common.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\bin\\Release\\netstandard2.0\\WarEconomy.Common.pdb",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\bin\\Release\\netstandard2.0\\WarEconomy.Common.pdb",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Models\\DynamicMarketState.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Models\\DynamicMarketState.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Models\\Enums\\FactionTier.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Models\\Enums\\FactionTier.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Models\\Enums\\NobilityTitle.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Models\\Enums\\NobilityTitle.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Models\\FogOfWarTileCache.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Models\\FogOfWarTileCache.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Models\\SettlementData.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Models\\SettlementData.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Models\\TaxDelinquencyState.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Models\\TaxDelinquencyState.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Models\\VisitRequestData.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Models\\VisitRequestData.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Models\\WarDeclarationData.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Models\\WarDeclarationData.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\obj\\Debug\\netstandard2.0\\.NETStandard,Version=v2.0.AssemblyAttributes.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\obj\\Debug\\netstandard2.0\\.NETStandard,Version=v2.0.AssemblyAttributes.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\obj\\Debug\\netstandard2.0\\WarEconomy.Common.AssemblyInfo.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\obj\\Debug\\netstandard2.0\\WarEconomy.Common.AssemblyInfo.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\obj\\Release\\netstandard2.0\\.NETStandard,Version=v2.0.AssemblyAttributes.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\obj\\Release\\netstandard2.0\\.NETStandard,Version=v2.0.AssemblyAttributes.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\obj\\Release\\netstandard2.0\\WarEconomy.Common.AssemblyInfo.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\obj\\Release\\netstandard2.0\\WarEconomy.Common.AssemblyInfo.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\Auth\\PKT_PlayerHandshake.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\Auth\\PKT_PlayerHandshake.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\Diplomacy\\PKT_AllianceAndBetrayal.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\Diplomacy\\PKT_AllianceAndBetrayal.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\Diplomacy\\PKT_WarDeclaration.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\Diplomacy\\PKT_WarDeclaration.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\Economy\\PKT_DynamicMarketSync.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\Economy\\PKT_DynamicMarketSync.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\Feudal\\PKT_FiefTransfer.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\Feudal\\PKT_FiefTransfer.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\Feudal\\PKT_TaxCaravan.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\Feudal\\PKT_TaxCaravan.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\PacketHeader.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\PacketHeader.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\PacketReceiver.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\PacketReceiver.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\PacketSerializer.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\PacketSerializer.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\Vision\\PKT_FogOfWarSync.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\Vision\\PKT_FogOfWarSync.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\Visit\\PKT_VisitProtocol.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\Visit\\PKT_VisitProtocol.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\World\\PKT_SettlementListSync.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\World\\PKT_SettlementListSync.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\World\\PKT_SettlementRegister.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\World\\PKT_SettlementRegister.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Packets\\World\\PKT_WorldTickSync.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Packets\\World\\PKT_WorldTickSync.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\Time\\WorldTimeConstants.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\Time\\WorldTimeConstants.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\WarEconomy.Common.csproj",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Common\\WarEconomy.Common.csproj",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\Microsoft.Data.Sqlite.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\Microsoft.Data.Sqlite.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\Newtonsoft.Json.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\Newtonsoft.Json.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\runtimes\\win-arm\\native\\e_sqlite3.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\runtimes\\win-arm\\native\\e_sqlite3.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\runtimes\\win-arm64\\native\\e_sqlite3.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\runtimes\\win-arm64\\native\\e_sqlite3.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\runtimes\\win-x64\\native\\e_sqlite3.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\runtimes\\win-x64\\native\\e_sqlite3.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\runtimes\\win-x86\\native\\e_sqlite3.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\runtimes\\win-x86\\native\\e_sqlite3.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\SQLitePCLRaw.batteries_v2.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\SQLitePCLRaw.batteries_v2.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\SQLitePCLRaw.core.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\SQLitePCLRaw.core.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\SQLitePCLRaw.provider.e_sqlite3.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\SQLitePCLRaw.provider.e_sqlite3.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Common.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Common.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Common.pdb",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Common.pdb",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.deps.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.deps.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.dll",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.exe",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.exe",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.pdb",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.pdb",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.runtimeconfig.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.runtimeconfig.json",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Managers\\DiplomacyManager.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Managers\\DiplomacyManager.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Managers\\DynamicMarketManager.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Managers\\DynamicMarketManager.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Managers\\FeudalManager.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Managers\\FeudalManager.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Network\\ServerClientSession.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Network\\ServerClientSession.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Network\\TcpNetworkServer.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Network\\TcpNetworkServer.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\obj\\Debug\\net8.0\\WarEconomy.Server.AssemblyInfo.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\obj\\Debug\\net8.0\\WarEconomy.Server.AssemblyInfo.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\obj\\Release\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\obj\\Release\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\obj\\Release\\net8.0\\WarEconomy.Server.AssemblyInfo.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\obj\\Release\\net8.0\\WarEconomy.Server.AssemblyInfo.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Coordinator\\PipelineTransactionCoordinator.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Pipeline\\Coordinator\\PipelineTransactionCoordinator.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Data\\Migrations\\PipelineSchemaMigration.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Pipeline\\Data\\Migrations\\PipelineSchemaMigration.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Data\\SqliteDatabaseContext.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Pipeline\\Data\\SqliteDatabaseContext.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Models\\PipelineProbeModels.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Pipeline\\Models\\PipelineProbeModels.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Recovery\\RecoveryReconciler.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Pipeline\\Recovery\\RecoveryReconciler.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Security\\InternalProbeTestSurface.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Pipeline\\Security\\InternalProbeTestSurface.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Storage\\AuditLogRepository.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Pipeline\\Storage\\AuditLogRepository.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Storage\\CommitReceiptRepository.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Pipeline\\Storage\\CommitReceiptRepository.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Storage\\OperationJournal.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Pipeline\\Storage\\OperationJournal.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Storage\\ProbeAggregateStore.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Pipeline\\Storage\\ProbeAggregateStore.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Storage\\PublicationEventStore.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Pipeline\\Storage\\PublicationEventStore.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Program.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Program.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Time\\WorldTickManager.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\Time\\WorldTickManager.cs",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\WarEconomy.Server.csproj",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\FROZEN_REV6_R1\\WarEconomyMod\\Source\\Server\\WarEconomy.Server.csproj",
+      "matched": true
+    }
+  ]
+}

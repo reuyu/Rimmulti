@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-12T23:27:30.339451+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2",
+  "protected_paths": 15903,
+  "old_R31_frozen_files": 131,
+  "actual_project_reference_files": 6,
+  "old_outside_helpers": 2,
+  "installed_known_unchanged_OPEN_actorUNKNOWN": {
+    "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\WarEconomy.WorkerBridge.PoC\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+    "sha256": "BB3B52F39F7B53B70BC9FB4CE039E7455D08B24B17B8DABB8295E0FF4584DD61",
+    "bytes": 110080
+  },
+  "originals_or_baselines_normalized": false,
+  "only_allowed_current_source_build_paths_mutable": true,
+  "no_broad_repeated_tests": true,
+  "SolR31": "COMPLETED_MASTER_ACCEPTED_IDLE",
+  "A": "SENT_WORKING_ACK_PENDING",
+  "scheduler": "ACTUAL_ACTIVE_HOURLY",
+  "Foundation": "HOLD",
+  "native_E2": "NOT_RELEASED"
+}

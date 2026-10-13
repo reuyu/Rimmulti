@@ -1,0 +1,146 @@
+--- FrozenR13
++++ R14
+@@ -1533,7 +1533,7 @@
+     public static class ContentProfileProvider
+     {
+         public const string MANIFEST_SCHEMA_VERSION = "ADR-006B-v5";
+-        public const string CONTENT_CONTRACT_VERSION = "ADR-006B-v5-R13";
++        public const string CONTENT_CONTRACT_VERSION = "ADR-006B-v5-R14";
+         public const string SUPPORTED_COVERAGE_PROFILE = "POC_SUPPORTED_CORE_DLC_ASSEMBLIES_V5";
+         public const string MOD_PATCH_SUPPORT_STATUS = "TYPED_OBSERVATION_EXPLICIT_DISPOSITION_V1";
+ 
+@@ -2165,7 +2165,7 @@
+                 "TACTICAL_PROBE_V4",
+                 "READ_ONLY",
+                 "SIMULATION",
+-                "GATE05_R13_POLICY_CACHE_LIFECYCLE",
++                "GATE05_R14_POLICY_CAPTURE_PUBLICATION",
+                 "ADR006B_LOSSLESS_CANONICAL_CONTENT_V5"
+             };
+             foreach (var flag in requiredFlags)
+@@ -2467,6 +2467,21 @@
+ 
+         public static ContentProfileManifest ComputeActualContentProfileManifest()
+         {
++            var snapshot = _globalCache.CaptureStateSnapshot();
++            if (snapshot.policy == null)
++            {
++                throw new InvalidOperationException("ContentProfile computation requires an explicit expected package policy to be configured before trusted actual fingerprint success. Status: UNCONFIGURED (BLOCKED_NO_POLICY).");
++            }
++            return ComputeActualContentProfileManifest(snapshot.policy);
++        }
++
++        public static ContentProfileManifest ComputeActualContentProfileManifest(ExpectedPackagePolicyRecord capturedPolicy)
++        {
++            if (capturedPolicy == null)
++            {
++                throw new ArgumentNullException(nameof(capturedPolicy), "ContentProfile computation requires a non-null captured expected package policy.");
++            }
++
+             var manifest = new ContentProfileManifest();
+             manifest.schemaVersion = MANIFEST_SCHEMA_VERSION;
+             manifest.contentContractVersion = CONTENT_CONTRACT_VERSION;
+@@ -2959,36 +2974,30 @@
+             }
+             manifest.defFamilies.researchDefs.Sort((a, b) => string.CompareOrdinal(a.defName, b.defName));
+ 
+-            // Capability flags (aligned with semantic V4 scope and ADR-006B-v5-R13)
++            // Capability flags (aligned with semantic V4 scope and ADR-006B-v5-R14)
+             manifest.capabilityFlags = new List<string>
+             {
+                 "TACTICAL_PROBE_V4",
+                 "READ_ONLY",
+                 "SIMULATION",
+-                "GATE05_R13_POLICY_CACHE_LIFECYCLE",
++                "GATE05_R14_POLICY_CAPTURE_PUBLICATION",
+                 "ADR006B_LOSSLESS_CANONICAL_CONTENT_V5"
+             };
+ 
+-            // Package Policy Enforcement Seam (ADR-006B-v5-R10/R13)
+-            var configuredPolicy = _globalCache.ConfiguredExpectedPackagePolicy;
+-            if (configuredPolicy == null)
+-            {
+-                throw new InvalidOperationException("ContentProfile computation requires an explicit expected package policy to be configured before trusted actual fingerprint success. Status: UNCONFIGURED (BLOCKED_NO_POLICY).");
+-            }
+-
+-            if (!CheckPackagePolicy(configuredPolicy, manifest, out var checkResult, out string policyFailure))
+-            {
+-                throw new InvalidOperationException($"ContentProfile computation failed package policy check against '{configuredPolicy.policyId}:{configuredPolicy.revision}': {policyFailure}");
++            // Package Policy Enforcement Seam (ADR-006B-v5-R14: Single immutable captured policy pass-through)
++            if (!CheckPackagePolicy(capturedPolicy, manifest, out var checkResult, out string policyFailure))
++            {
++                throw new InvalidOperationException($"ContentProfile computation failed package policy check against '{capturedPolicy.policyId}:{capturedPolicy.revision}': {policyFailure}");
+             }
+ 
+             manifest.packagePolicyDisposition = new PackagePolicyDispositionRecord
+             {
+-                policyId = configuredPolicy.policyId,
+-                revision = configuredPolicy.revision,
+-                policyDigest = configuredPolicy.policyDigest,
++                policyId = capturedPolicy.policyId,
++                revision = capturedPolicy.revision,
++                policyDigest = capturedPolicy.policyDigest,
+                 status = "ADMITTED"
+             };
+-            manifest.patchSettingsDisposition.supportedModBoundary = $"CHECKED_POLICY:{configuredPolicy.policyId}:{configuredPolicy.revision}";
++            manifest.patchSettingsDisposition.supportedModBoundary = $"CHECKED_POLICY:{capturedPolicy.policyId}:{capturedPolicy.revision}";
+ 
+             // Enforce Admission Contract on newly computed manifest before release
+             if (!ValidateContract(manifest, out string failureReason))
+@@ -3005,7 +3014,12 @@
+             {
+                 _globalCache.ClearComputationError();
+                 var snapshot = _globalCache.CaptureStateSnapshot();
+-                var manifest = ComputeActualContentProfileManifest();
++                if (snapshot.policy == null)
++                {
++                    throw new InvalidOperationException("ContentProfile computation requires an explicit expected package policy to be configured before trusted actual fingerprint success. Status: UNCONFIGURED (BLOCKED_NO_POLICY).");
++                }
++
++                var manifest = ComputeActualContentProfileManifest(snapshot.policy);
+                 string canonicalJson = SerializeCanonicalJson(manifest, canonicalNormalize: true);
+ 
+                 string fingerprint;
+@@ -3017,7 +3031,9 @@
+ 
+                 if (!_globalCache.TryPublishComputedEntry(snapshot.generation, snapshot.policy, manifest, canonicalJson, fingerprint, out string? rejectionReason))
+                 {
+-                    Log.Warning($"[ContentProfileProvider] Computed content profile entry could not be published to cache: {rejectionReason}");
++                    string errMsg = $"Computed content profile entry could not be published to cache: {rejectionReason}";
++                    Log.Error($"[ContentProfileProvider] {errMsg}");
++                    throw new InvalidOperationException(errMsg);
+                 }
+ 
+                 return fingerprint;
+@@ -3026,7 +3042,7 @@
+             {
+                 _globalCache.SetComputationError(ex.ToString());
+                 Log.Error($"[ContentProfileProvider] Failed to compute ContentProfileFingerprint: {ex}");
+-                throw new InvalidOperationException($"ContentProfile computation failed: {ex.Message}", ex);
++                throw;
+             }
+         }
+     }
+@@ -3244,6 +3260,7 @@
+         {
+             lock (_sync)
+             {
++                _generation++;
+                 _entry = null;
+                 _lastError = null;
+             }
+@@ -3288,7 +3305,13 @@
+                     return false;
+                 }
+ 
+-                string currentDigest = _configuredPolicy?.policyDigest ?? "";
++                if (_configuredPolicy == null)
++                {
++                    rejectionReason = "No configured package policy present in cache state.";
++                    return false;
++                }
++
++                string currentDigest = _configuredPolicy.policyDigest ?? "";
+                 string capturedDigest = capturedPolicy?.policyDigest ?? "";
+                 if (!string.Equals(currentDigest, capturedDigest, StringComparison.OrdinalIgnoreCase))
+                 {

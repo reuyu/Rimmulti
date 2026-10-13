@@ -1,0 +1,65 @@
+{
+  "at": "2026-10-13T01:11:19.558859+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5",
+  "wp_id": "WP_ENGINE_GATE05_R33_RESOURCE_COMMIT",
+  "wp_revision": "GATE05-R33-RESOURCE-COMMIT",
+  "envelope": 36,
+  "ACK_INITIAL": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5\\ACK_INITIAL.json",
+    "sha256": "794D5F9C27D196714E1776E6B097FFF6B227F297494FB89B8B33D5F8402E1521",
+    "bytes": 4451
+  },
+  "ACK_mirror_same": true,
+  "actual_reference_rows": {
+    "instructions": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5\\INSTRUCTIONS.md",
+      "sha256": "8D99193AC32E42511E08924641A89968BCC22CC8ECD3A9A57C739EEBF767FF97",
+      "bytes": 1318
+    },
+    "wp": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_ENGINE_GATE05_R33_RESOURCE_COMMIT.md",
+      "sha256": "6F99F513646ECBE6D5650D8436BA59F06244DFE345BC7D4ABD6C04A884BF8594",
+      "bytes": 6118
+    },
+    "release": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\RELEASE_ENGINE_GATE05_R33_RESOURCE_COMMIT_20261013.md",
+      "sha256": "8E741C5A5B056D9D7C85181798B0AE21B3DBB7AC55DBAE3BA688C457538E6A8D",
+      "bytes": 587
+    },
+    "contract": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R33_RESOURCE_ADMISSION_ORDERING_CONTRACT_20261013.md",
+      "sha256": "5F8E1A32DB32B3E71FCE5AF134DFE432CE6AAFC7F36182AD0A7EAA2EC78F6011",
+      "bytes": 4211
+    },
+    "scope": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5\\MASTER_R33_AUTHORIZED_SOURCE_SCOPE.json",
+      "sha256": "4B46ADECDE261CF83DA53E5226EF7D88A5382161780D9D4D45EF4E974D6F7947",
+      "bytes": 7945
+    },
+    "protected_baseline": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R33_RESOURCE_COMMIT_PROTECTED_BASELINE_20261013.json",
+      "sha256": "DAE9DE6DE5AA170BF62476412EE5C0F4078357DE074164BEDC66F9894DBC4D1E",
+      "bytes": 5163514
+    },
+    "master_review": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R32_INDEPENDENT_S1_20261013.md",
+      "sha256": "89382017EF2DEB7363B869C7070837D367B5149725224422C97C47D5892F5DE7",
+      "bytes": 4919
+    },
+    "refobservation": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R33-RESOURCE-COMMIT-20261013-DIRECT-d19c64a5\\MASTER_EXISTING_FULL_COMPILER_REFERENCE_OBSERVATION.json",
+      "sha256": "64F985576570F823DC765AC01E156A4ADEAA8CDBF4517F51233AF3D89EE94A4A",
+      "bytes": 32915
+    }
+  },
+  "actual_SentWorking": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_GATE05_R33_ACTUAL_DELIVERY_VERIFICATION_20261013.json",
+    "sha256": "7F3FDC1062D44E2D81A92903D3E6CC5B7EB578F5BCE38A0B7DCE6D18D7E52858",
+    "bytes": 1725
+  },
+  "status": "ACK_VERIFIED_R33_IN_PROGRESS_NO_COMPLETION_NATIVE_E2_NOT_RELEASED",
+  "monitor": "ACTUAL_ACTIVE_HOURLY",
+  "Sol": "R33_RESOURCE_NATIVE_PREPARATION_ACTUAL_NEW_ACTIVE_TURN_ACK_PENDING",
+  "Foundation": "HOLD",
+  "guard_session": 65470
+}

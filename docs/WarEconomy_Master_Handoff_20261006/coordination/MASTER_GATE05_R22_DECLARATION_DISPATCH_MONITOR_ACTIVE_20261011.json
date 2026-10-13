@@ -1,0 +1,71 @@
+{
+  "at": "2026-10-11T07:33:12.926130+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R22-DECLARATION-20261011-DIRECT-9be1579a",
+  "wp_id": "WP_ENGINE_GATE05_R22_EXPLICIT_DECLARATION",
+  "wp_revision": "GATE05-R22-DECLARATION",
+  "envelope": 25,
+  "status": "SENT_IN_PROGRESS_ACK_PENDING",
+  "one_submit": true,
+  "ui_submission_proof": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R22-DECLARATION-20261011-DIRECT-9be1579a\\MASTER_UI_SUBMISSION_PROOF.json",
+  "ack": null,
+  "ack_sha256": null,
+  "ack_parse_error": null,
+  "automation_actual_config": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "ACTIVE",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791671565491
+  },
+  "automation_tool": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R22_MONITOR_RESUME_TOOL_20261011.json",
+  "postsent_preservation": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R22-DECLARATION-20261011-DIRECT-9be1579a\\MASTER_POSTSENT_PRESERVATION.json",
+  "counts": {
+    "engine_archive_checks": 19,
+    "prior_candidate_checks": 2074,
+    "pipeline_preservation_checks": 206,
+    "qa_preservation_checks": 9041
+  },
+  "known_installed_incident": "UNCHANGED_OPEN_ACTOR_UNKNOWN",
+  "original_Sol_receipt_notice_actual": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:136",
+    "revision": 136,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a127f2-e33e-7212-bc77-525350e8a11b",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791671591,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "new_QA_WP": false,
+  "future_R22_scheduled_run_observed": false,
+  "guard_run": "MASTER-SOL-R21-COMPLETE-20261011-01",
+  "guard_session": 26221,
+  "guard_pid": 27436,
+  "native_permissions": 0,
+  "full_runtime_e2_released": false,
+  "R21_disposition": "SCOPED_UTC_LITERAL_FULL_GRAPH_BYTES_PASS_CLOSED",
+  "broader_gate_closure": false,
+  "foundation": "HOLD",
+  "R22_source_scope": "M01_EXPLICIT7_PRIVATE_CAPTURE_FOUR_REGIONS_FIXED_SEGMENTS"
+}

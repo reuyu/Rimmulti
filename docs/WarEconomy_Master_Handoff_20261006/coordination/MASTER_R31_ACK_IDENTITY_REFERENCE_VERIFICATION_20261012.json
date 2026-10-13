@@ -1,0 +1,55 @@
+{
+  "at": "2026-10-12T20:41:14.974888+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10",
+  "ACK": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10\\ACK.json",
+    "sha256": "F951574AC187E54AF3BB6E5888A80F51914046D1EB02AA0CD5EF0DFBE7913480",
+    "bytes": 4063
+  },
+  "verified_references": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10\\INSTRUCTIONS.md",
+      "sha256": "9F1F35F37067665DA940627B642DDD628E6904A688F72373897CCA2B26597841",
+      "bytes": 1122
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_ENGINE_GATE05_R31_LIFECYCLE.md",
+      "sha256": "9B52CC319DE03D100125CA6FB6231CAFF216EA3C3604761BC2DD1E756959EC2D",
+      "bytes": 9223
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\RELEASE_ENGINE_GATE05_R31_LIFECYCLE_20261012.md",
+      "sha256": "510A2A73E60B1B7460AFD42432EC1E5068580031E89A3519C61EAE774EBE0AED",
+      "bytes": 1016
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R31_DURABLE_STARTUP_LIFECYCLE_CONTRACT_20261012.md",
+      "sha256": "1E448002782ECCAEDCF096BFD42C049444E4A607854C41DD5DAB1C0945CDE34F",
+      "bytes": 4724
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10\\MASTER_R31_AUTHORIZED_SOURCE_SCOPE.json",
+      "sha256": "BD2F7A924D6889C06E47DE8A4A47D844AF1ECAD8DA0DAC94C0F475CCD67D3081",
+      "bytes": 10024
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R31_LIFECYCLE_PROTECTED_BASELINE_20261012.json",
+      "sha256": "58225B20E29E50B48B172B180745696EFEA9B7D54D4931E2E0D406B331DA2525",
+      "bytes": 4765639
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R30_HANDOFF_INDEPENDENT_STATIC_S1_20261012.md",
+      "sha256": "890FC883BF7B26ABB2EB3C6746DAADCB26B633E630666326EF72E97B9788C12B",
+      "bytes": 4688
+    }
+  ],
+  "identity_and_seven_reference_hashes_matched": true,
+  "source_permissions": "MASTER_SCOPE_SEVEN_SPANS_PLUS_EXACT15_BUILD_INTERMEDIATES_CONTROLS",
+  "actual_Sent": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_GATE05_R31_ACTUAL_DELIVERY_VERIFICATION_20261012.json",
+    "sha256": "C60BC2DB10E954EEA8FC4625407EEFF6DE7F08498DF23918F3CD5E0D14872204",
+    "bytes": 1507
+  },
+  "runtime_E2": "NOT_RELEASED",
+  "Foundation": "HOLD"
+}

@@ -1,0 +1,7 @@
+{
+  "chunk_id": "e7cfdb",
+  "wall_time_seconds": 0.0000207,
+  "exit_code": 0,
+  "original_token_count": 115,
+  "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R33-CONTINUE-20261013-02\", \"pid\": 27552\r\n\u001b[23;80H2, \"locked_at\": \"2026-10-13T12:15:50.694923+09:00\", \"mechanism\": \"Windows msvcrt \r\n\u001b[23;80H exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026\r\n\u001b[23;80H6-10-13T12:35:37.279672+09:00\", \"renewal_count\": 5, \"release_reason\": \"RELEASE_OR\r\n\u001b[23;80HR_STDIN_CLOSED\", \"released_at\": \"2026-10-13T12:39:18.409465+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+}

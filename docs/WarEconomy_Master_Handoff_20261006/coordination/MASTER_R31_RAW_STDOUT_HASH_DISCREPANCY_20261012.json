@@ -1,0 +1,36 @@
+{
+  "at": "2026-10-12T22:32:54.287758+09:00",
+  "rows": [
+    {
+      "culture": "en-US",
+      "actual": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\run_en_us\\stdout.txt",
+        "sha256": "67DBD6CC0109086CC27B1C25C90A7968B9938DF106D9405BE961E515C7D8AB17",
+        "bytes": 1973
+      },
+      "declared_sha256": "871A63B6489DCB8EEBD9A4811338228BFBFD19B4F7ACAF00EE5C29F307F78980",
+      "actual_matched_declared": false,
+      "CRCRLF_count": 20,
+      "read_only_CRCRLF_to_CRLF_matches_declared": false
+    },
+    {
+      "culture": "de-DE",
+      "actual": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R31Lifecycle-b8d47a10\\run_de_de\\stdout.txt",
+        "sha256": "690CC19135D9A63FEB4806343C8F230EA2211F68FF9E18B9838114BF9256608F",
+        "bytes": 1973
+      },
+      "declared_sha256": "7C332152758E8A4E110258B45ACF0BB766A98B05FE8068B22E0EBDC7D93B1748",
+      "actual_matched_declared": false,
+      "CRCRLF_count": 20,
+      "read_only_CRCRLF_to_CRLF_matches_declared": false
+    }
+  ],
+  "producer_originals_unchanged": true,
+  "host_text_write_newline_translation_observed_in_source": true,
+  "raw_binary_stdout_not_prospectively_pinned": true,
+  "Master_first_collector_exit1": "AssertionError at existing raw stdout declaration comparison; genuine producer hash discrepancy recorded, not repaired/normalized",
+  "Master_collector_metadata_continuation": "Replaced fatal assertion with discrepancy collection; protected/frozen verification retained; no candidate build/run",
+  "initial_passive_locator_error": "nullable field declaration, corrected actual rg locator; no candidate mutation",
+  "prior_guard27640": "TTL_EXPIRED after user interruption, outside-lock read-only checks not covered, new actual guard29837 before all mutations"
+}

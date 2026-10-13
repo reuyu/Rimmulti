@@ -1,0 +1,91 @@
+{
+  "at": "2026-10-09T02:24:34.701209+09:00",
+  "type": "A_R9_VERSION_MEANING_SENT_HOURLY_ACTIVE",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R9-VERSION-MEANING-20261009-DIRECT-fbe8a43b",
+  "wp_id": "WP_ENGINE_GATE05_R9_VERSION_MEANING",
+  "wp_revision": "GATE05-R9-VERSION-MEANING",
+  "envelope": 12,
+  "status": "SENT_ACK_PENDING",
+  "actual_ui_proof": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R9-VERSION-MEANING-20261009-DIRECT-fbe8a43b\\MASTER_UI_SUBMISSION_CONFIRMED.json",
+  "actual_ui_sha256": "EBF6C73ADCAA3A39AE59A360003329EF3B65DE3A05251D1060A2D6624FC72A68",
+  "trees": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R9-VERSION-MEANING-20261009-DIRECT-fbe8a43b\\MASTER_UI_PREDISPATCH_TREE.txt",
+      "sha256": "5FAF9131A0F5280ADD76C554DB71A74D2FF9180B1D1B86EAB700050FEE3F3C02"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R9-VERSION-MEANING-20261009-DIRECT-fbe8a43b\\MASTER_UI_EXACT_DRAFT_TREE.txt",
+      "sha256": "1DB456F628E3F065DF0FF60CF06409C4AFB901E5EDBA03248A7CB21E8F7DFC5A"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R9-VERSION-MEANING-20261009-DIRECT-fbe8a43b\\MASTER_UI_SUBMITTED_TREE.txt",
+      "sha256": "454F316B247DAADCF07709A48D8BB5624DFFEF4CB36A7835F3AAF0E84E852D77"
+    }
+  ],
+  "ack_verified": false,
+  "ack_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R9-VERSION-MEANING-20261009-DIRECT-fbe8a43b\\ACK.json",
+  "ack_sha256": null,
+  "ack_status": null,
+  "preservation_before": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R9-VERSION-MEANING-20261009-DIRECT-fbe8a43b\\MASTER_FRESH_PREDISPATCH_PRESERVATION.json",
+  "preservation_before_sha256": "94A04F2E5162326E17F0F0CAEC7D810792A069DDA9882C417717A4BCB94BC529",
+  "counts": {
+    "archive": 19,
+    "prior": 1029,
+    "pipeline": 206,
+    "qa": 1834
+  },
+  "installed_actual_sha256": "BB3B52F39F7B53B70BC9FB4CE039E7455D08B24B17B8DABB8295E0FF4584DD61",
+  "installed_incident": "UNCHANGED_OPEN_ACTOR_UNKNOWN_NO_RESTORE",
+  "automation_actual_config": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "ACTIVE",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791480258317
+  },
+  "future_r9_scheduled_run_observed": false,
+  "guard_run": "MASTER-R9-CONTINUE-20261009-01",
+  "guard_session": 25013,
+  "previous_expired_guard_not_reused": true,
+  "contender_lock_busy_verified": true,
+  "historical_r4_lease_gap_unverified": true,
+  "sol_notice_proof": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R8_VERSION_MEANING_DISPOSITION_NOTICE_TOOL_20261009.json",
+  "sol_notice_sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+  "sol_post_notice": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:53",
+    "revision": 53,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a11c8b-19b3-7291-a997-bb9063accb6a",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791480240,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "sol_new_qa_wp": false,
+  "defect": "ENGINE-CONTENT-VERSION-SEMANTIC-20261009-01 OPEN",
+  "scope": "ONE version inference/projection meaning repair;other supported boundary/native gates separate",
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD"
+}

@@ -1,0 +1,63 @@
+{
+  "captured_at": "2026-10-08T16:07:30+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R4-20261008-DIRECT-825ae8a1",
+  "wp_id": "WP_ENGINE_GATE05_R4",
+  "wp_revision": "GATE05-R4",
+  "note": "Preservation baseline captured immediately before R4 modifications. Matches MASTER_PRESERVATION_BEFORE_DISPATCH.json actual hashes.",
+  "authorized_engine_paths": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "4BC9B3449A706123663D19AF465C09ADDB769BC4039FA1C1ED294ADDE1CD4E4E",
+      "size": 151218
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "A91257D2439CB983EB39B3D6C2FA37C7B0481F2342C671D359A010744E4B56F7",
+      "size": 92468
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "size": 2210
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "9851351B4F3E8DD14D16AB5BBC5932F6A0F71E34ABF49648FA7366945516B1BB",
+      "size": 103936
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "3B93B64C62CE37E7D5856846562A30448E574619A0D1E8C96B9025974ADEB9BE",
+      "size": 175616
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "CC675EC3D7933C7A163D43FDD1941AADE3B53BC1A6A2575D3096C170FA678217",
+      "size": 89088
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "895350A2D329DE6EDFB2BB0C671223B82B3391F69BCF0248455B35084CF4689C",
+      "size": 175616
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "CC675EC3D7933C7A163D43FDD1941AADE3B53BC1A6A2575D3096C170FA678217",
+      "size": 89088
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "895350A2D329DE6EDFB2BB0C671223B82B3391F69BCF0248455B35084CF4689C",
+      "size": 175616
+    }
+  ],
+  "protected_baselines": {
+    "engine_archive_19": "PROTECTED",
+    "prior_frozen_r1_147": "PROTECTED",
+    "prior_frozen_r2_107": "PROTECTED",
+    "prior_frozen_r3_133": "PROTECTED",
+    "pipeline_original_and_frozen_206": "PROTECTED",
+    "qa_prior_evidence_1205": "PROTECTED",
+    "steam_installed_unapproved_bb3b": "UNKNOWN_OPEN_INCIDENT_PROTECTED"
+  }
+}

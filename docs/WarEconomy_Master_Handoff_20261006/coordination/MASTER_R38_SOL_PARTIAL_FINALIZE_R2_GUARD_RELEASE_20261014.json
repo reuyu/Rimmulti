@@ -1,0 +1,15 @@
+{
+  "run_id": "MASTER-SOL-R38-PARTIAL-FINALIZE-R2-20261014-01",
+  "session_id": 11480,
+  "pid": 10776,
+  "release_tool_result": {
+    "chunk_id": "450f3a",
+    "wall_time_seconds": 0.000031,
+    "exit_code": 0,
+    "original_token_count": 107,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-SOL-R38-PARTIAL-FINALIZE-R2-20261014-01\", \"pid\": 10776, \"locked_at\": \"2026-10-14T04:56:17.123687+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-14T04:59:16.300211+09:00\", \"renewal_count\": 2, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-14T04:59:31.232709+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "full19676_checker_completed_before_release": true,
+  "same_WP_R2_actual_direct_sent_newactive_verified": true,
+  "no_old_review_replay": true
+}

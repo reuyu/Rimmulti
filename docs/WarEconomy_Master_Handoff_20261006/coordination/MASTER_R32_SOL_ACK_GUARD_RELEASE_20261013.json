@@ -1,0 +1,13 @@
+{
+  "run_id": "MASTER-R32-SOL-ACK-20261013-01",
+  "guard_session": 98776,
+  "actual_release_tool": {
+    "chunk_id": "ed7646",
+    "wall_time_seconds": 0.0000334,
+    "exit_code": 0,
+    "original_token_count": 103,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R32-SOL-ACK-20261013-01\", \"pid\": 15800, \"locked_at\": \"2026-10-13T00:38:12.596584+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-13T00:39:43.397043+09:00\", \"renewal_count\": 1, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-13T00:40:05.191886+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "ACK_verified": true,
+  "no_new_WP_or_candidate_execution": true
+}

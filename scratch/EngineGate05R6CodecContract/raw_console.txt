@@ -1,0 +1,27 @@
+﻿======================================================================
+WarEconomy Engine Gate05-R6 Codec Contract Verification Battery (Developer E1)
+Timestamp: 2026-10-08T10:35:00.8984006Z
+Target: ContentProfileProvider ADR-006B-v5-R6 Typed Lossless Codec & Contract
+======================================================================
+Loaded Candidate DLL: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R6CodecContract\Harness\bin\Debug\net472\WarEconomy.WorkerBridge.PoC.dll
+Candidate DLL SHA256: 721807FF00245B5B56DD94220531DB5DF620933E5905ADF692FC6336DD402E9B
+  JSON Length: 3294 bytes, SHA256: 425049BD7F578EFECBD4CFCE6924B7B3A8B71E888CC97C8C770199EB39FCA83F
+[PASS] TC01_RoundTrip_Canonical_Lossless: Serialize manifest -> deserialize -> re-serialize and compare exact SHA256 digests
+[PASS] TC02_Deterministic_Identical_Input: Two separate instances with identical values must produce identical JSON and SHA256
+[PASS] TC03_All_Eight_Def_Families_No_Sentinels: Verify all 8 Def families are present and free of legacy sentinel/delimiter strings
+[PASS] TC04_Floating_Point_Lossless_Precision: Verify float boundary and fractional values preserve exact precision across round-trip
+[PASS] TC05_Unicode_SpecialChars_Lossless: Verify Korean, Japanese, German umlauts, quotes, tabs, newlines round-trip without corruption
+[PASS] TC06_Null_Missing_Empty_Distinction: Verify null fields remain null in JSON and do not collapse to empty string or sentinel
+[PASS] TC07_Ordered_Collections_Preservation: Verify activeMods loadOrder, Verbs list order, Hediff stages sequence, and Comps order are preserved
+[PASS] TC08_Stable_Sorting_Determinism: Verify Def family lists sort deterministically by defName ordinal via CanonicalNormalize
+[PASS] TC09_Unordered_Input_Normalization_Equivalence: Manifest with shuffled unordered collections produces exact identical JSON and digest as pre-sorted instance
+  Validated 8 Def families and headers successfully with 0 contract errors.
+[PASS] TC10_ValidateContract_Valid_Manifest: ValidateContract returns true with empty failureReason on representative compliant manifest
+  Confirmed expected fail-closed contract violation caught: 'ThingDef has null or empty defName.'
+[PASS] TC11_ValidateContract_FailClosed_Violations: ValidateContract detects missing defName mandatory field
+[PASS] TC12_Distinct_Manifests_Distinct_Digests: Changing a single scalar value must produce a distinct JSON and digest
+[PASS] TC13_Cache_Invalidation_Lifecycle: Verify InvalidateCache clears all cached properties and error state
+[PASS] TC14_Schema_Version_And_Capability_Flags: Verify MANIFEST_SCHEMA_VERSION is ADR-006B-v5, CONTENT_CONTRACT_VERSION is ADR-006B-v5-R6, and required flags present
+======================================================================
+Total Tests: 14, Passed: 14, Failed: 0, Verdict: PASS
+======================================================================

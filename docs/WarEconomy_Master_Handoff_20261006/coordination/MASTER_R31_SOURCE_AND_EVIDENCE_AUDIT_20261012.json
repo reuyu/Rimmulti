@@ -1,0 +1,503 @@
+{
+  "at": "2026-10-12T22:30:28.059363+09:00",
+  "actual_source_spans": [
+    {
+      "span_id": "BOOTSTRAP_MODE_AND_HANDOFF",
+      "orig_range": [
+        7573,
+        9856
+      ],
+      "new_range": [
+        7573,
+        10098
+      ],
+      "new_bytes": 2525,
+      "new_sha256": "E0FF46AF14A2FDE93354026529BB1526BD8A3D372D356375AF826705F9412396"
+    },
+    {
+      "span_id": "PRIVATE_DURABLE_MODE_OWNER_CONSUMED_STATE",
+      "orig_range": [
+        27017,
+        31076
+      ],
+      "new_range": [
+        27259,
+        33326
+      ],
+      "new_bytes": 6067,
+      "new_sha256": "C23C50C247450A29E2F4AB49936F885065F4AEA65197B780BAF7BE79F8C21FD9"
+    },
+    {
+      "span_id": "AWAKE_REQUIRED_MODE_ENTRY",
+      "orig_range": [
+        35881,
+        36536
+      ],
+      "new_range": [
+        38131,
+        39339
+      ],
+      "new_bytes": 1208,
+      "new_sha256": "35F2F4D7A5F1EC4B293ECE769FA3E771D343FB32C077A29BF02F840D0523FB28"
+    },
+    {
+      "span_id": "AWAKE_SUCCESS_AND_FAILURE_TAIL",
+      "orig_range": [
+        38470,
+        38677
+      ],
+      "new_range": [
+        41273,
+        42068
+      ],
+      "new_bytes": 795,
+      "new_sha256": "4E4CBB22B5EEBDC21B5148ADA208EBE9A51D489DB13EE73CC552BBEB05431364"
+    },
+    {
+      "span_id": "UPDATE_REQUIRED_MODE_EARLY_GUARD",
+      "orig_range": [
+        39122,
+        39122
+      ],
+      "new_range": [
+        42513,
+        42762
+      ],
+      "new_bytes": 249,
+      "new_sha256": "7EE1542454AD06BE220C7D5EE7FB978AF2993513B0DB5AA7091AAC63EA7D07E5"
+    },
+    {
+      "span_id": "PAIR_MODE_LAUNCH_HOLD",
+      "orig_range": [
+        114473,
+        114691
+      ],
+      "new_range": [
+        118113,
+        118383
+      ],
+      "new_bytes": 270,
+      "new_sha256": "B11B56A4E1F19152E87EB487E60C3CFFD7355F3D32FAD10C5D7062674F2615AA"
+    },
+    {
+      "span_id": "OWNER_SCOPED_DESTROY_WHOLE_METHOD",
+      "orig_range": [
+        181437,
+        181801
+      ],
+      "new_range": [
+        185129,
+        185705
+      ],
+      "new_bytes": 576,
+      "new_sha256": "481B343E4532CC0B88FC369C2E65169F4887914686085FCC8B4E466208575D52"
+    }
+  ],
+  "outside_segments": [
+    {
+      "old_range": [
+        0,
+        7573
+      ],
+      "new_range": [
+        0,
+        7573
+      ],
+      "bytes": 7573
+    },
+    {
+      "old_range": [
+        9856,
+        27017
+      ],
+      "new_range": [
+        10098,
+        27259
+      ],
+      "bytes": 17161,
+      "sha256": "5561A4EF11F5F0389F4832D7B4C1DAA325F009EED6556445856CF30051F90100"
+    },
+    {
+      "old_range": [
+        31076,
+        35881
+      ],
+      "new_range": [
+        33326,
+        38131
+      ],
+      "bytes": 4805,
+      "sha256": "54E45F3ACB59975CE45E6A49456F2017A5067401F0352A117E93664DAFFC3289"
+    },
+    {
+      "old_range": [
+        36536,
+        38470
+      ],
+      "new_range": [
+        39339,
+        41273
+      ],
+      "bytes": 1934,
+      "sha256": "BFA661E1FF42606F5C0E9168BF70AB98962720B73E54B523A023D9581D08276D"
+    },
+    {
+      "old_range": [
+        38677,
+        39122
+      ],
+      "new_range": [
+        42068,
+        42513
+      ],
+      "bytes": 445,
+      "sha256": "AE122A9DDBA20B99ED5CABEA342C92A4D3B49E449183CD3D7A44F2494E213A4C"
+    },
+    {
+      "old_range": [
+        39122,
+        114473
+      ],
+      "new_range": [
+        42762,
+        118113
+      ],
+      "bytes": 75351,
+      "sha256": "EF1A99298EA1DB19B63E3E671621C53F8D19A859C90F1BE340126A8FEBFD1709"
+    },
+    {
+      "old_range": [
+        114691,
+        181437
+      ],
+      "new_range": [
+        118383,
+        185129
+      ],
+      "bytes": 66746,
+      "sha256": "A25598B57453080793602F57D0140F9D2A3556908DACFF4AA61F42F4849D6CE2"
+    },
+    {
+      "old_range": [
+        181801,
+        268703
+      ],
+      "new_range": [
+        185705,
+        272607
+      ],
+      "bytes": 86902,
+      "sha256": "478020DCB31A4AB45E686CB3D9AECC2E8F0D3309A13218F3009B3D74401D8B70"
+    }
+  ],
+  "outside_bytes": 260917,
+  "producer_scope_rows_wrong": [
+    {
+      "actual": {
+        "span_id": "BOOTSTRAP_MODE_AND_HANDOFF",
+        "orig_range": [
+          7573,
+          9856
+        ],
+        "new_range": [
+          7573,
+          10098
+        ],
+        "new_bytes": 2525,
+        "new_sha256": "E0FF46AF14A2FDE93354026529BB1526BD8A3D372D356375AF826705F9412396"
+      },
+      "declared": {
+        "span_id": "BOOTSTRAP_MODE_AND_HANDOFF",
+        "orig_range": [
+          7573,
+          9856
+        ],
+        "orig_bytes": 2283,
+        "orig_sha256": "ECB17D1969888A82A071FF96FD078938D3080C532FB342431DFB445DD01FE75D",
+        "new_range": [
+          7573,
+          10738
+        ],
+        "new_bytes": 3165,
+        "new_sha256": "72B7F700CC8E2F05B4074791A80CEFE78CF5A180BE4A5EB1184D224496F9E5E4"
+      }
+    },
+    {
+      "actual": {
+        "span_id": "PRIVATE_DURABLE_MODE_OWNER_CONSUMED_STATE",
+        "orig_range": [
+          27017,
+          31076
+        ],
+        "new_range": [
+          27259,
+          33326
+        ],
+        "new_bytes": 6067,
+        "new_sha256": "C23C50C247450A29E2F4AB49936F885065F4AEA65197B780BAF7BE79F8C21FD9"
+      },
+      "declared": {
+        "span_id": "PRIVATE_DURABLE_MODE_OWNER_CONSUMED_STATE",
+        "orig_range": [
+          27017,
+          31076
+        ],
+        "orig_bytes": 4059,
+        "orig_sha256": "DCFB555BFA9042AEBCE99D15ECADAD3131D8B2E63675772B70E983E37CEA9C44",
+        "new_range": [
+          27899,
+          31441
+        ],
+        "new_bytes": 3542,
+        "new_sha256": "68134BB837603A7B5C52CC93336B51E8202F16362C2AEABB2751B6D5E2001D88"
+      }
+    },
+    {
+      "actual": {
+        "span_id": "AWAKE_REQUIRED_MODE_ENTRY",
+        "orig_range": [
+          35881,
+          36536
+        ],
+        "new_range": [
+          38131,
+          39339
+        ],
+        "new_bytes": 1208,
+        "new_sha256": "35F2F4D7A5F1EC4B293ECE769FA3E771D343FB32C077A29BF02F840D0523FB28"
+      },
+      "declared": {
+        "span_id": "AWAKE_REQUIRED_MODE_ENTRY",
+        "orig_range": [
+          35881,
+          36536
+        ],
+        "orig_bytes": 655,
+        "orig_sha256": "175529E44C78109F5D70FFC75A29C0D56114B9A673A7AF248BDE4E7D676D4EEF",
+        "new_range": [
+          36246,
+          36980
+        ],
+        "new_bytes": 734,
+        "new_sha256": "358552DC136AA50D336522359647EA0067641283A62C531C467A12147056E39B"
+      }
+    },
+    {
+      "actual": {
+        "span_id": "AWAKE_SUCCESS_AND_FAILURE_TAIL",
+        "orig_range": [
+          38470,
+          38677
+        ],
+        "new_range": [
+          41273,
+          42068
+        ],
+        "new_bytes": 795,
+        "new_sha256": "4E4CBB22B5EEBDC21B5148ADA208EBE9A51D489DB13EE73CC552BBEB05431364"
+      },
+      "declared": {
+        "span_id": "AWAKE_SUCCESS_AND_FAILURE_TAIL",
+        "orig_range": [
+          38470,
+          38677
+        ],
+        "orig_bytes": 207,
+        "orig_sha256": "F1A3C4404E61C77B561D72A7C5A574DF09C04A037ACC06494C0F334FA1C05DA7",
+        "new_range": [
+          38914,
+          40388
+        ],
+        "new_bytes": 1474,
+        "new_sha256": "7C9CF7BD0706146A0E38188AA05CE094838F195762A1D60D4BB5FFEE47A88E17"
+      }
+    },
+    {
+      "actual": {
+        "span_id": "UPDATE_REQUIRED_MODE_EARLY_GUARD",
+        "orig_range": [
+          39122,
+          39122
+        ],
+        "new_range": [
+          42513,
+          42762
+        ],
+        "new_bytes": 249,
+        "new_sha256": "7EE1542454AD06BE220C7D5EE7FB978AF2993513B0DB5AA7091AAC63EA7D07E5"
+      },
+      "declared": {
+        "span_id": "UPDATE_REQUIRED_MODE_EARLY_GUARD",
+        "orig_range": [
+          39122,
+          39122
+        ],
+        "orig_bytes": 0,
+        "orig_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "new_range": [
+          40833,
+          41144
+        ],
+        "new_bytes": 311,
+        "new_sha256": "E57B51849013117CFA5B70C292BDF916604241F502777259D515344C0C7C6B3A"
+      }
+    },
+    {
+      "actual": {
+        "span_id": "PAIR_MODE_LAUNCH_HOLD",
+        "orig_range": [
+          114473,
+          114691
+        ],
+        "new_range": [
+          118113,
+          118383
+        ],
+        "new_bytes": 270,
+        "new_sha256": "B11B56A4E1F19152E87EB487E60C3CFFD7355F3D32FAD10C5D7062674F2615AA"
+      },
+      "declared": {
+        "span_id": "PAIR_MODE_LAUNCH_HOLD",
+        "orig_range": [
+          114473,
+          114691
+        ],
+        "orig_bytes": 218,
+        "orig_sha256": "8B1B8DFEB7467C43B78B32C87BF1BEC82D03BC2F888EED4984959B4FDB012117",
+        "new_range": [
+          116495,
+          116776
+        ],
+        "new_bytes": 281,
+        "new_sha256": "073B129D38FBC87E966D7A10DCC793C9E064E66223DE34625CAA091F09D77158"
+      }
+    },
+    {
+      "actual": {
+        "span_id": "OWNER_SCOPED_DESTROY_WHOLE_METHOD",
+        "orig_range": [
+          181437,
+          181801
+        ],
+        "new_range": [
+          185129,
+          185705
+        ],
+        "new_bytes": 576,
+        "new_sha256": "481B343E4532CC0B88FC369C2E65169F4887914686085FCC8B4E466208575D52"
+      },
+      "declared": {
+        "span_id": "OWNER_SCOPED_DESTROY_WHOLE_METHOD",
+        "orig_range": [
+          181437,
+          181801
+        ],
+        "orig_bytes": 364,
+        "orig_sha256": "2A00871ECC3555B376F5DBB27AC7DEFBCA9B661D01D411E3A08A0B424F295A2C",
+        "new_range": [
+          183522,
+          184000
+        ],
+        "new_bytes": 478,
+        "new_sha256": "9770CE9787F306206DA03C02DAE3413C8663245CAE92F9B70FDE12365E586ADF"
+      }
+    }
+  ],
+  "build_input_dependency_rows_wrong": [
+    {
+      "declared": {
+        "name": "Assembly-CSharp.dll",
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\Assembly-CSharp.dll",
+        "bytes": 24203776,
+        "sha256": "806A32EAA58043B4E387920A615D1C59190BE664FE60BE7E6B202DBCFD968038"
+      },
+      "actual": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\Assembly-CSharp.dll",
+        "sha256": "5CF1B5BE399D5B1C9C56CA72C9D35B4ECF307FEACF5859D04AC5A1AA5926356A",
+        "bytes": 15777280
+      }
+    },
+    {
+      "declared": {
+        "name": "UnityEngine.CoreModule.dll",
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\UnityEngine.CoreModule.dll",
+        "bytes": 1478144,
+        "sha256": "EFBFBDE392F8A4B02EAF418FD5B9B0A352342BEFCFE8DEACF03A5812A292D5F9"
+      },
+      "actual": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\UnityEngine.CoreModule.dll",
+        "sha256": "C5C58EA254834291780A1D6C388C241443D07167B4A4B890A23C9494F626DDBA",
+        "bytes": 1386688
+      }
+    },
+    {
+      "declared": {
+        "name": "UnityEngine.dll",
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\UnityEngine.dll",
+        "bytes": 44544,
+        "sha256": "42F856525946DF79C813D0CE78D24838F5FDFB395FD7145FFD6F971AC2D38A3A"
+      },
+      "actual": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\UnityEngine.dll",
+        "sha256": "0422FF282130458380D2FB4B63A718465D3BD2D5738F1532F60798B0D35DFF0D",
+        "bytes": 125120
+      }
+    },
+    {
+      "declared": {
+        "name": "0Harmony.dll",
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\0Harmony.dll",
+        "bytes": 105984,
+        "sha256": "1B8756E398935AFBF91A06BA3B62CF7743A0F8F126DA0A1EE0042ED8CF3FD6A3"
+      },
+      "actual": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\FROZEN_MANAGED_QA_DEPENDENCIES\\0Harmony.dll",
+        "sha256": "353DAAFEC180BB8E7BBE4DA78F2A7CDC78067392E3A4E79DC8E7AF295F2371E6",
+        "bytes": 2456064
+      }
+    },
+    {
+      "declared": {
+        "name": "Newtonsoft.Json.dll",
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\1.6\\Assemblies\\Newtonsoft.Json.dll",
+        "bytes": 712704,
+        "sha256": "9C22C0AC6DE1F3FF0C696B20D0BEBEE6D2B7E35E5B5377DA2BA9EC86C2EB3847"
+      },
+      "actual": {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\1.6\\Assemblies\\Newtonsoft.Json.dll",
+        "sha256": "E1E27AF7B07EEEDF5CE71A9255F0422816A6FC5849A483C6714E1B472044FA9D",
+        "bytes": 711952
+      }
+    }
+  ],
+  "raw_runs": [
+    {
+      "culture": "en-US",
+      "pid": 18656,
+      "exit_code": 0,
+      "runtime_dispatch": "WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10",
+      "runtime_timestamp": "2026-10-12T11:48:31.0549914Z"
+    },
+    {
+      "culture": "de-DE",
+      "pid": 9624,
+      "exit_code": 0,
+      "runtime_dispatch": "WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10",
+      "runtime_timestamp": "2026-10-12T11:48:31.1386166Z"
+    }
+  ],
+  "manifest_declared_generated_at": "2026-10-12T20:55:00+09:00",
+  "actual_loaded_SHA_MVID_CLR_before_after_in_raw": false,
+  "complete_typed_raw_copy_oracle_output_graph": false,
+  "normal_unchanged_PURE_API_only": true,
+  "new_owned_E1_root_used": true,
+  "old_E1_current_drift_files_preserved": true,
+  "source_custody_uses_Unity_null_shortcircuit": true,
+  "Awake_owner_getter_before_durable_mode": true,
+  "Awake_catch_isRunning_not_stopped": true,
+  "Master_candidate_execution_build": 0,
+  "read_only_locator_failure": "Own initial text locator assumed nonnullable field; actual rg found nullable declaration; no candidate execution or mutation",
+  "old_guard_session27640_expired_on_user_interruption": true,
+  "no_mutation_before_new_guard": true,
+  "prior_outside_guard_thread_snapshot_not_claimed_locked": true
+}

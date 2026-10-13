@@ -1,0 +1,153 @@
+{
+  "at": "2026-10-08T17:36:29.403256+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046",
+  "policy": {
+    "kind": "ENGINE_REPAIR_ARCHIVED_BASELINE",
+    "engine_archive_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\ENGINE_GATE05_BASELINE_BEFORE_R1_20261008\\ARCHIVE_MANIFEST.json",
+    "engine_archive_manifest_sha256": "B6AD0A70EA4C13F5040A3BAEE690DBCDDEB8735842FCB482D66352A8FB05F0F1",
+    "pipeline_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\MASTER_REV6_R1_FREEZE_MANIFEST.json",
+    "pipeline_manifest_sha256": "EBCDDBB9340DECBC9ED436845A231412B9003F42663E29D3EE767450319E53A0",
+    "allowed_changed_engine_paths": [
+      "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj"
+    ],
+    "installed_gate05_immutable": true,
+    "pipeline_original_frozen_immutable": true,
+    "prior_candidate_freeze_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R4-20261008-DIRECT-825ae8a1\\MASTER_GATE05_R4_REVIEW_FREEZE_MANIFEST.json",
+    "prior_candidate_freeze_manifest_sha256": "D047D0095CEDDA8E5F0FB6871EA4C24AF0866CA569514049FFAD7E91B7C1460C",
+    "additional_preserved_candidate_manifests": [
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R1-20261008-DIRECT-971a4780\\MASTER_GATE05_R1_REJECTED_FREEZE_MANIFEST.json",
+        "sha256": "1196930576154C11351387B10EAB017C51D6BB027A1686317AB8DF8DAB73022E",
+        "lineage": "R1_REJECTED147"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R2-20261008-DIRECT-2af10708\\MASTER_GATE05_R2_REJECTED_FREEZE_MANIFEST.json",
+        "sha256": "110A796F5699495998D61503016F8F7C0430B9EC988DD20220D51416AACD421C",
+        "lineage": "R2_REJECTED107"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa\\MASTER_GATE05_R3_REVIEW_FREEZE_MANIFEST.json",
+        "sha256": "124C6AA900CB50ECE5C2F31B75BC197ACA194995BB90BDEDBD7EDA6B830E0972",
+        "lineage": "R3_REVIEW133"
+      }
+    ],
+    "prior_candidate_lineage": "R4_REVIEW232",
+    "known_installed_incident": {
+      "id": "ENGINE-INSTALLED-IDENTITY-20261008-01",
+      "status": "OPEN",
+      "expected_old_sha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+      "observed_sha256_at_dispatch": "BB3B52F39F7B53B70BC9FB4CE039E7455D08B24B17B8DABB8295E0FF4584DD61",
+      "not_new_approval_to_modify_or_restore": true
+    },
+    "qa_preserved_manifests": [
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\SEMANTIC-AUTHORITY05-E2-20261007\\qa-evidence-manifest.json",
+        "sha256": "504F3D59AF10151B4CE6A8F373A88C639DA76945B6BA5F67239DE88021CBC864"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-20261007\\EVIDENCE_MANIFEST.json",
+        "sha256": "D2AC8C184A7E79D8FEB98FDBB427C08B2B1C1D40FC4F0216506B345787C7BA08"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S1-20261007\\EVIDENCE_MANIFEST.json",
+        "sha256": "394E4F72E4487CB0E24055470098FB120BCB26D2B27F19A3D36A6CB7FCA4100D"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-S2-20261007\\EVIDENCE_MANIFEST.json",
+        "sha256": "07C5D67D3FB4946E3C65C97817ABC3B2E447A23C8625806F9BA730B4FD624897"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R3-QA-PREP-S1-20261008\\EVIDENCE_MANIFEST.json",
+        "sha256": "CA4177F0A12A65C47DB3D0A7DD6659EE195B1AF6D264E70ABDD44AAFB010BEE6"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R3-INDEPENDENT-REVIEW-S1-20261008\\EVIDENCE_MANIFEST.json",
+        "sha256": "D144F88571A9A2F8BC51DBF993FDA1847C177CDC40ABF07BA8FC45E926E685F4"
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R4-INDEPENDENT-REVIEW-S1-20261008\\EVIDENCE_MANIFEST.json",
+        "sha256": "379A0E34AEB05CFE7238BD99DDDAA7C0AC1C1A22DE102B34AD0FD7C01C13FF68"
+      }
+    ],
+    "fixed_current_files": [
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+        "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+        "size": 156431
+      },
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+        "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+        "size": 1774
+      }
+    ],
+    "fixed_current_prefixes": [
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+        "marker": "    public static class ContentProfileProvider",
+        "sha256": "F3C4F865F1E2A898BF240A2D096195870D77A52408CF2D93664FE15092A2A887"
+      }
+    ],
+    "historical_allowlist_is_not_r5_source_scope": true
+  },
+  "baseline": [
+    {
+      "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+      "size": 156431
+    },
+    {
+      "path": "c:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "09D57DF883576733C2BD4F40FBDE2C616E374FF1EFCCA50A4466C26DD6AA1333",
+      "size": 93212
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "7532FF152314892A4AB95A0117107C0845B0D7BAD170C3B840BA24F3EADA270B",
+      "size": 195584
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "53E33B734E2BF25110DC190FB461E5F011E808DF541742E1A56F52421E61EBDB",
+      "size": 37232
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "7532FF152314892A4AB95A0117107C0845B0D7BAD170C3B840BA24F3EADA270B",
+      "size": 195584
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "53E33B734E2BF25110DC190FB461E5F011E808DF541742E1A56F52421E61EBDB",
+      "size": 37232
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "4F5663FDBBFA09A8B2BE460D09950FD22B9567459F7116E69D0B1C558F189B9E",
+      "size": 204800
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "CC796E68C592C94345DF41D64609B5D207933B8F5FE805146875D9E61B8D12C4",
+      "size": 49264
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "size": 1774
+    }
+  ],
+  "exact_mutable_source": "EngineHostCensus.cs ContentProfileProvider suffix only; prefix,WorkerBridge.cs,csproj fixed",
+  "qa_count": 1222,
+  "prior_frozen_count": 619,
+  "archive_count": 19,
+  "pipeline_count": 206
+}

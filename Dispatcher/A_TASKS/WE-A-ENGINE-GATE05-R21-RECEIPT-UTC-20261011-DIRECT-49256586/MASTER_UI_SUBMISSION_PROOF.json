@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-11T06:06:39.552073+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R21-RECEIPT-UTC-20261011-DIRECT-49256586",
+  "exact_message": "Master 승인 R21입니다. C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R21-RECEIPT-UTC-20261011-DIRECT-49256586\\INSTRUCTIONS.md 전체와 WP/release를 읽고 진행하세요. R20 독립 QA 실패는 receipt 중첩 UTC 원문 문자열만입니다. ToRedactedJson 안에서 날짜 자동 변환을 막아 원문을 보존하고 다른 Worker bytes는 고정하세요. 새 정상 PURE 증거·후보와 지정 ACK/COMPLETION 기록. Global/native/Process/invalid probe 실행 금지.",
+  "one_actual_submit": true,
+  "new_exact_message": true,
+  "composer_empty": true,
+  "working_cancel": true,
+  "post_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R21-RECEIPT-UTC-20261011-DIRECT-49256586\\MASTER_UI_SUBMITTED.json",
+  "post_sha256": "65C35069239BF398788FC4E6E25446C9FCA1378843BCA45E47E9591A55983B82",
+  "send_tool": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R21-RECEIPT-UTC-20261011-DIRECT-49256586\\MASTER_UI_SEND_TOOL.json",
+  "send_tool_sha256": "626B37DE00C575FB8EE01BDB36EB3A0D79D678E50174069AC4607AB02111A3B1",
+  "draft": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R21-RECEIPT-UTC-20261011-DIRECT-49256586\\MASTER_UI_DRAFT.json",
+  "idle": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R21_CU_IDLE_BEFORE_INPUT_20261011.json",
+  "focus_qualification": "RootWebArea UIA; observed screenshot caret in composer, then exact inputValue. Immediate typing accessibility stale,reobserved no duplicate type/submit."
+}

@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":false,\"wake\":{\"reason\":\"turnCompleted\",\"turnId\":\"01a12438-4f1f-7062-8e0e-5d3dc18c5bf7\",\"threadId\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\"},\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:110\",\"revision\":110,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"idle\"}},\"latestTurn\":{\"id\":\"01a12438-4f1f-7062-8e0e-5d3dc18c5bf7\",\"status\":\"completed\",\"error\":null,\"startedAt\":1791609032,\"completedAt\":1791610113,\"durationMs\":1080999},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ac9ccffacec87d0b6856820f2b74f6b\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ac9ccffacec87d0b6856820f2b74f6b\",\"turnId\":\"01a12438-4f1f-7062-8e0e-5d3dc18c5bf7\",\"phase\":\"final_answer\",\"text\":\"R17 독립 QA를 완료하고 Master에 보고했습니다. 정상 helper 검증: 두 프로세스 각각 29개 PASS 실제 bootstrap: 정적 수정 필요 Native·전체 E2 미검증, Foundation HOLD 유지 QA 보고서\"},\"latestToolMarkerId\":\"exec-42b94716-9061-4ce0-9d56-67a6e6cbcb43\",\"latestToolMarker\":{\"id\":\"exec-42b94716-9061-4ce0-9d56-67a6e6cbcb43\",\"turnId\":\"01a12438-4f1f-7062-8e0e-5d3dc18c5bf7\",\"type\":\"fileChange\",\"name\":\"fileChange\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

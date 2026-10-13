@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"bcc76e72-e33d-4898-bc7b-b558cfab470c:20\",\"revision\":20,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a130e0-90fb-7081-a63d-f5b066809c53\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791821386,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016acd065117bc87d0acbfa51243fd95f3\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016acd065117bc87d0acbfa51243fd95f3\",\"turnId\":\"01a130e0-90fb-7081-a63d-f5b066809c53\",\"phase\":\"commentary\",\"text\":\"R33 native 준비 QA를 시작하겠습니다. 새 WP와 R32 채택 판정을 읽고, frozen R32와 지정된 불변 경로만 확인하겠습니다. 실행 없이 abort/resource commit·unknown owner·legacy/native 관측 계획을 작성해 마스터에게 보고하겠습니다.\"},\"latestToolMarkerId\":\"exec-49c60431-cf6d-43e4-8443-06fa0fde1f03\",\"latestToolMarker\":{\"id\":\"exec-49c60431-cf6d-43e4-8443-06fa0fde1f03\",\"turnId\":\"01a130e0-90fb-7081-a63d-f5b066809c53\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

@@ -1,0 +1,339 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a",
+  "wp_id": "WP_ENGINE_GATE05_R29_STARTUP_PAIR",
+  "wp_revision": "GATE05-R29-STARTUP-PAIR",
+  "envelope": 32,
+  "evaluated_at": "2026-10-12T00:27:59.381927+00:00",
+  "overall_status": "PASS",
+  "e1_verdict": "IMPLEMENTED_STARTUP_PAIR_PASS_NATIVE_UNTESTED",
+  "test_summary": {
+    "cultures_tested": [
+      "en-US",
+      "de-DE"
+    ],
+    "pair_admission_cases_per_run": 6,
+    "r27_regression_cases_per_run": 4,
+    "total_admit_pair_calls_per_run": 6,
+    "total_issue_receipt_calls_per_run": 8,
+    "total_capture_calls_per_run": 4,
+    "process_api_calls_executed": 0,
+    "negative_rejection_probes_executed": 0,
+    "in_engine_native_calls_executed": 0
+  },
+  "runs": [
+    {
+      "culture": "en-US",
+      "pid": 34228,
+      "exit_code": 0,
+      "duration_seconds": 0.151531,
+      "argv": [
+        "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\Harness\\bin\\Debug\\net472\\Gate05R29StartupPairRunner.exe",
+        "--rundir",
+        "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_en_us",
+        "--culture",
+        "en-US"
+      ],
+      "cwd": "C:\\Users\\user\\Desktop\\RimMulti",
+      "run_directory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_en_us",
+      "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_en_us\\stdout.txt",
+      "stdout_sha256": "1A608C68A8A17CFD90B8A8EA806FD0FC1419175937021D431964F842CB9FD84C",
+      "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_en_us\\stderr.txt",
+      "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "execution_report_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_en_us\\E1_EXECUTION_REPORT.json",
+      "execution_report_sha256": "8E9929F1701DC552DCDF582D453157612A16D2BB0BEB33FD183F25261E3CC3EE",
+      "report_summary": {
+        "wp_id": "WP_ENGINE_GATE05_R29_STARTUP_PAIR",
+        "wp_revision": "GATE05-R29-STARTUP-PAIR",
+        "dispatch_id": "WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a",
+        "envelope": 32,
+        "culture": "en-US",
+        "timestamp_utc": "2026-10-12T00:27:59.2507685Z",
+        "pair_cases": [
+          {
+            "case_index": 1,
+            "case_id": "PLAIN_PLAIN",
+            "operatorPairId": "WE-PAIR-DEV-R29-PLAIN-PLAIN-01",
+            "scope": "DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY",
+            "parent_config_id": "qa.R29.parent.cfg.1",
+            "parent_role": "SIMULATION",
+            "parent_origin_id": "qa.R29.parent.origin.plain",
+            "child_config_id": "qa.R29.child.cfg.1",
+            "child_role": "READ_ONLY",
+            "child_origin_id": "qa.R29.child.origin.plain",
+            "status": "PASS",
+            "detached_mutation_isolated": true,
+            "caller_array_mutation_isolated": true
+          },
+          {
+            "case_index": 2,
+            "case_id": "OPAQUE_OPAQUE",
+            "operatorPairId": "WE-PAIR-DEV-R29-OPAQUE-OPAQUE-02",
+            "scope": "DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY",
+            "parent_config_id": "qa.R29.parent.cfg.2",
+            "parent_role": "SIMULATION",
+            "parent_origin_id": "  qa.R29.parent.origin.opaque.Ω  ",
+            "child_config_id": "qa.R29.child.cfg.2",
+            "child_role": "READ_ONLY",
+            "child_origin_id": "  qa.R29.child.origin.opaque.Ω  ",
+            "status": "PASS",
+            "detached_mutation_isolated": true,
+            "caller_array_mutation_isolated": true
+          },
+          {
+            "case_index": 3,
+            "case_id": "PLAIN_OPAQUE_PADDED",
+            "operatorPairId": "WE-PAIR-DEV-R29-PLAIN-OPAQUE-03",
+            "scope": "DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY",
+            "parent_config_id": "qa.R29.parent.cfg.3",
+            "parent_role": "SIMULATION",
+            "parent_origin_id": "qa.R29.parent.origin.plain3",
+            "child_config_id": "qa.R29.child.cfg.3",
+            "child_role": "READ_ONLY",
+            "child_origin_id": "  qa.R29.child.origin.opaque3.Ω  ",
+            "status": "PASS",
+            "detached_mutation_isolated": true,
+            "caller_array_mutation_isolated": true
+          },
+          {
+            "case_index": 4,
+            "case_id": "OPAQUE_PLAIN_PADDED",
+            "operatorPairId": "WE-PAIR-DEV-R29-OPAQUE-PLAIN-04",
+            "scope": "DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY",
+            "parent_config_id": "qa.R29.parent.cfg.4",
+            "parent_role": "SIMULATION",
+            "parent_origin_id": "  qa.R29.parent.origin.opaque4.Ω  ",
+            "child_config_id": "qa.R29.child.cfg.4",
+            "child_role": "READ_ONLY",
+            "child_origin_id": "qa.R29.child.origin.plain4",
+            "status": "PASS",
+            "detached_mutation_isolated": true,
+            "caller_array_mutation_isolated": true
+          },
+          {
+            "case_index": 5,
+            "case_id": "PAIR_ID_WITH_EQUALS",
+            "operatorPairId": "WE=PAIR=DEV=R29=EQUALS=05",
+            "scope": "DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY",
+            "parent_config_id": "qa.R29.parent.cfg.5",
+            "parent_role": "SIMULATION",
+            "parent_origin_id": "qa.R29.parent.origin.eq",
+            "child_config_id": "qa.R29.child.cfg.5",
+            "child_role": "READ_ONLY",
+            "child_origin_id": "qa.R29.child.origin.eq",
+            "status": "PASS",
+            "detached_mutation_isolated": true,
+            "caller_array_mutation_isolated": true
+          },
+          {
+            "case_index": 6,
+            "case_id": "UNICODE_BACKSLASH_QUOTE_EQUALS",
+            "operatorPairId": "WE-PAIR-DEV-R29-Ω-\"QUOTE\"=\\BACKSLASH\\-06",
+            "scope": "DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY",
+            "parent_config_id": "qa.R29.parent.cfg.6",
+            "parent_role": "SIMULATION",
+            "parent_origin_id": "qa.R29.parent.origin.Ω-\"quoted\"=\\path\\-06",
+            "child_config_id": "qa.R29.child.cfg.6",
+            "child_role": "READ_ONLY",
+            "child_origin_id": "qa.R29.child.origin.Ω-\"quoted\"=\\path\\-06",
+            "status": "PASS",
+            "detached_mutation_isolated": true,
+            "caller_array_mutation_isolated": true
+          }
+        ],
+        "r27_regression_cases": [
+          {
+            "case_index": 1,
+            "case_id": "PLAIN_PLAIN",
+            "status": "PASS",
+            "15_getters_verified": true,
+            "scope": "DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED"
+          },
+          {
+            "case_index": 2,
+            "case_id": "OPAQUE_OPAQUE",
+            "status": "PASS",
+            "15_getters_verified": true,
+            "scope": "DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED"
+          },
+          {
+            "case_index": 3,
+            "case_id": "PLAIN_OPAQUE_PADDED",
+            "status": "PASS",
+            "15_getters_verified": true,
+            "scope": "DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED"
+          },
+          {
+            "case_index": 4,
+            "case_id": "OPAQUE_PLAIN_PADDED",
+            "status": "PASS",
+            "15_getters_verified": true,
+            "scope": "DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED"
+          }
+        ],
+        "admit_pair_calls": 6,
+        "issue_receipt_calls": 8,
+        "capture_calls": 4,
+        "process_api_calls": 0,
+        "negative_probes": 0,
+        "status": "SUCCESS"
+      }
+    },
+    {
+      "culture": "de-DE",
+      "pid": 12948,
+      "exit_code": 0,
+      "duration_seconds": 0.080305,
+      "argv": [
+        "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\Harness\\bin\\Debug\\net472\\Gate05R29StartupPairRunner.exe",
+        "--rundir",
+        "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_de_de",
+        "--culture",
+        "de-DE"
+      ],
+      "cwd": "C:\\Users\\user\\Desktop\\RimMulti",
+      "run_directory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_de_de",
+      "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_de_de\\stdout.txt",
+      "stdout_sha256": "432F76BBE8455D64BE6C1410E9D81EE779B95598452E796D5C83BA65E8149EBE",
+      "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_de_de\\stderr.txt",
+      "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "execution_report_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\run_de_de\\E1_EXECUTION_REPORT.json",
+      "execution_report_sha256": "C78743237CA554B0D2C41227CDA954BDEE93A41DD34B6C6A62B53C72E62659D9",
+      "report_summary": {
+        "wp_id": "WP_ENGINE_GATE05_R29_STARTUP_PAIR",
+        "wp_revision": "GATE05-R29-STARTUP-PAIR",
+        "dispatch_id": "WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a",
+        "envelope": 32,
+        "culture": "de-DE",
+        "timestamp_utc": "2026-10-12T00:27:59.3332056Z",
+        "pair_cases": [
+          {
+            "case_index": 1,
+            "case_id": "PLAIN_PLAIN",
+            "operatorPairId": "WE-PAIR-DEV-R29-PLAIN-PLAIN-01",
+            "scope": "DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY",
+            "parent_config_id": "qa.R29.parent.cfg.1",
+            "parent_role": "SIMULATION",
+            "parent_origin_id": "qa.R29.parent.origin.plain",
+            "child_config_id": "qa.R29.child.cfg.1",
+            "child_role": "READ_ONLY",
+            "child_origin_id": "qa.R29.child.origin.plain",
+            "status": "PASS",
+            "detached_mutation_isolated": true,
+            "caller_array_mutation_isolated": true
+          },
+          {
+            "case_index": 2,
+            "case_id": "OPAQUE_OPAQUE",
+            "operatorPairId": "WE-PAIR-DEV-R29-OPAQUE-OPAQUE-02",
+            "scope": "DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY",
+            "parent_config_id": "qa.R29.parent.cfg.2",
+            "parent_role": "SIMULATION",
+            "parent_origin_id": "  qa.R29.parent.origin.opaque.Ω  ",
+            "child_config_id": "qa.R29.child.cfg.2",
+            "child_role": "READ_ONLY",
+            "child_origin_id": "  qa.R29.child.origin.opaque.Ω  ",
+            "status": "PASS",
+            "detached_mutation_isolated": true,
+            "caller_array_mutation_isolated": true
+          },
+          {
+            "case_index": 3,
+            "case_id": "PLAIN_OPAQUE_PADDED",
+            "operatorPairId": "WE-PAIR-DEV-R29-PLAIN-OPAQUE-03",
+            "scope": "DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY",
+            "parent_config_id": "qa.R29.parent.cfg.3",
+            "parent_role": "SIMULATION",
+            "parent_origin_id": "qa.R29.parent.origin.plain3",
+            "child_config_id": "qa.R29.child.cfg.3",
+            "child_role": "READ_ONLY",
+            "child_origin_id": "  qa.R29.child.origin.opaque3.Ω  ",
+            "status": "PASS",
+            "detached_mutation_isolated": true,
+            "caller_array_mutation_isolated": true
+          },
+          {
+            "case_index": 4,
+            "case_id": "OPAQUE_PLAIN_PADDED",
+            "operatorPairId": "WE-PAIR-DEV-R29-OPAQUE-PLAIN-04",
+            "scope": "DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY",
+            "parent_config_id": "qa.R29.parent.cfg.4",
+            "parent_role": "SIMULATION",
+            "parent_origin_id": "  qa.R29.parent.origin.opaque4.Ω  ",
+            "child_config_id": "qa.R29.child.cfg.4",
+            "child_role": "READ_ONLY",
+            "child_origin_id": "qa.R29.child.origin.plain4",
+            "status": "PASS",
+            "detached_mutation_isolated": true,
+            "caller_array_mutation_isolated": true
+          },
+          {
+            "case_index": 5,
+            "case_id": "PAIR_ID_WITH_EQUALS",
+            "operatorPairId": "WE=PAIR=DEV=R29=EQUALS=05",
+            "scope": "DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY",
+            "parent_config_id": "qa.R29.parent.cfg.5",
+            "parent_role": "SIMULATION",
+            "parent_origin_id": "qa.R29.parent.origin.eq",
+            "child_config_id": "qa.R29.child.cfg.5",
+            "child_role": "READ_ONLY",
+            "child_origin_id": "qa.R29.child.origin.eq",
+            "status": "PASS",
+            "detached_mutation_isolated": true,
+            "caller_array_mutation_isolated": true
+          },
+          {
+            "case_index": 6,
+            "case_id": "UNICODE_BACKSLASH_QUOTE_EQUALS",
+            "operatorPairId": "WE-PAIR-DEV-R29-Ω-\"QUOTE\"=\\BACKSLASH\\-06",
+            "scope": "DECLARED_OPERATOR_STARTUP_PAIR_CONSISTENCY_ONLY",
+            "parent_config_id": "qa.R29.parent.cfg.6",
+            "parent_role": "SIMULATION",
+            "parent_origin_id": "qa.R29.parent.origin.Ω-\"quoted\"=\\path\\-06",
+            "child_config_id": "qa.R29.child.cfg.6",
+            "child_role": "READ_ONLY",
+            "child_origin_id": "qa.R29.child.origin.Ω-\"quoted\"=\\path\\-06",
+            "status": "PASS",
+            "detached_mutation_isolated": true,
+            "caller_array_mutation_isolated": true
+          }
+        ],
+        "r27_regression_cases": [
+          {
+            "case_index": 1,
+            "case_id": "PLAIN_PLAIN",
+            "status": "PASS",
+            "15_getters_verified": true,
+            "scope": "DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED"
+          },
+          {
+            "case_index": 2,
+            "case_id": "OPAQUE_OPAQUE",
+            "status": "PASS",
+            "15_getters_verified": true,
+            "scope": "DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED"
+          },
+          {
+            "case_index": 3,
+            "case_id": "PLAIN_OPAQUE_PADDED",
+            "status": "PASS",
+            "15_getters_verified": true,
+            "scope": "DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED"
+          },
+          {
+            "case_index": 4,
+            "case_id": "OPAQUE_PLAIN_PADDED",
+            "status": "PASS",
+            "15_getters_verified": true,
+            "scope": "DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED"
+          }
+        ],
+        "admit_pair_calls": 6,
+        "issue_receipt_calls": 8,
+        "capture_calls": 4,
+        "process_api_calls": 0,
+        "negative_probes": 0,
+        "status": "SUCCESS"
+      }
+    }
+  ]
+}

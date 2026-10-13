@@ -1,0 +1,122 @@
+[
+  {
+    "relative_path": "CFG-READ_ONLY-OPAQUE-Bytes.json",
+    "size_bytes": 1381,
+    "sha256": "76FFEAB113B1333813746E5A549BFB8545309ADA58E7B34C8CFEC9571CF29C15"
+  },
+  {
+    "relative_path": "CFG-READ_ONLY-OPAQUE-File.json",
+    "size_bytes": 1380,
+    "sha256": "821C5752B85303168D94C78E9054EC5087468883CA6A862E7612191BDFCC6367"
+  },
+  {
+    "relative_path": "CFG-READ_ONLY-PLAIN-Bytes.json",
+    "size_bytes": 1339,
+    "sha256": "9274D48254511A5EC6EBE72E76358A296CA99268ADF56A7204A5DDFD79DC0874"
+  },
+  {
+    "relative_path": "CFG-READ_ONLY-PLAIN-File.json",
+    "size_bytes": 1338,
+    "sha256": "E924C8422E3AFDEC3A928F8EB51BA1D7C9DB096E4AAFE64E99250C9D7A4C56AA"
+  },
+  {
+    "relative_path": "CFG-ROLECAP-EQUIV-READ_ONLY-Bytes.json",
+    "size_bytes": 1350,
+    "sha256": "79F0AD06A2E87882B68AC96737636F1653175F5C8E86BB4A8B468D46E80265ED"
+  },
+  {
+    "relative_path": "CFG-ROLECAP-EQUIV-READ_ONLY-File.json",
+    "size_bytes": 1349,
+    "sha256": "87DB8F7C50003E8BCAEDF92385D6AE482073E95A9872FEF7F6BDC1E32EA7DE53"
+  },
+  {
+    "relative_path": "CFG-ROLECAP-EQUIV-SIMULATION-Bytes.json",
+    "size_bytes": 1352,
+    "sha256": "B08453DD973CB563E82569CAF40433F43B1D7192BBBA4A343197C5847851D696"
+  },
+  {
+    "relative_path": "CFG-ROLECAP-EQUIV-SIMULATION-File.json",
+    "size_bytes": 1351,
+    "sha256": "587CA7D152292990E1C60509AB4CF6ABD7482E271570FD46483522B82BD9A67D"
+  },
+  {
+    "relative_path": "CFG-SIMULATION-OPAQUE-Bytes.json",
+    "size_bytes": 1383,
+    "sha256": "585E9C50D2B590285EA146D3922963B782E646705F73107C25E8A1234B05053C"
+  },
+  {
+    "relative_path": "CFG-SIMULATION-OPAQUE-File.json",
+    "size_bytes": 1382,
+    "sha256": "843805A8F661300D806AF3726C655986119AC019A059E5C88065A76665762C29"
+  },
+  {
+    "relative_path": "CFG-SIMULATION-PLAIN-Bytes.json",
+    "size_bytes": 1341,
+    "sha256": "45E61137C692DCCD23C3A965802CC513A0D2B5D29E0AB1EA3EC32CC75F912B5F"
+  },
+  {
+    "relative_path": "CFG-SIMULATION-PLAIN-File.json",
+    "size_bytes": 1340,
+    "sha256": "E7BAD6A3B91DCA1D2BF7680101534DE0B752539A4E2F803E9A1AEE6440C95670"
+  },
+  {
+    "relative_path": "CFG-UTC-FractionalSeven-READ_ONLY-3.json",
+    "size_bytes": 1324,
+    "sha256": "93759A30BCB618B4AF0ADD5681A8546726F4E38C7BD8F8DCE64D57EA6974E756"
+  },
+  {
+    "relative_path": "CFG-UTC-FractionalSeven-SIMULATION-2.json",
+    "size_bytes": 1326,
+    "sha256": "B96D17057F4C4ACF5A1667AB421BEA95AC37AAE9D603DC93B6391DB4B9FF9BC5"
+  },
+  {
+    "relative_path": "CFG-UTC-SevenZeros-READ_ONLY-1.json",
+    "size_bytes": 1319,
+    "sha256": "C40820AF5CDF8A84E3041A0A553615ECA7A1CB2DC77ED6C88233F51CF983A1C4"
+  },
+  {
+    "relative_path": "CFG-UTC-SevenZeros-SIMULATION-0.json",
+    "size_bytes": 1321,
+    "sha256": "A60796E9F618819A09B8A529BD3AEABF382BA2A572B7471762B433EEBB3FB20D"
+  },
+  {
+    "relative_path": "CFG-UTC-SevenZeros2-READ_ONLY-7.json",
+    "size_bytes": 1320,
+    "sha256": "68F8B2199C38B856B41263F1B196A7D98C9AF9180263E372389898F9E46D1BB8"
+  },
+  {
+    "relative_path": "CFG-UTC-SevenZeros2-SIMULATION-6.json",
+    "size_bytes": 1322,
+    "sha256": "C4F35CD4583064154CA39EC47A19253923C616096B872494189F3516F6975368"
+  },
+  {
+    "relative_path": "CFG-UTC-WholeSeconds-READ_ONLY-5.json",
+    "size_bytes": 1313,
+    "sha256": "341054A5009CB3F6E5B0046318C6D8A9DB2562C5EE481DCAA34FEB329F70C0AD"
+  },
+  {
+    "relative_path": "CFG-UTC-WholeSeconds-SIMULATION-4.json",
+    "size_bytes": 1315,
+    "sha256": "CCAF4ADA162C7D51EB0AE3670A58456B2F5F1212D6E76049D95BE66129D79F01"
+  },
+  {
+    "relative_path": "E1_EXECUTION_REPORT.json",
+    "size_bytes": 2377,
+    "sha256": "5031F7E6DEC3AB1911C1804EF4F9610AC6473178605F65C9853C26792DBA5BEF"
+  },
+  {
+    "relative_path": "SimulatedAdmittedValidator.exe",
+    "size_bytes": 48,
+    "sha256": "03A1CC8829DD0D8E6F7DF402E6FC4CDF47B52C99EC17E12EB15B1200071E0D3B"
+  },
+  {
+    "relative_path": "stderr.txt",
+    "size_bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "relative_path": "stdout.txt",
+    "size_bytes": 1513,
+    "sha256": "4358B99734CC3E5E4ACAFF6F8F53052465818C0C60F4A202703209D161B67E4B"
+  }
+]

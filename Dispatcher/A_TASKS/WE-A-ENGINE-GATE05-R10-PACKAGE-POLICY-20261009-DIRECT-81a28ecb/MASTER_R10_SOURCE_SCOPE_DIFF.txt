@@ -1,0 +1,464 @@
+--- Frozen R9
++++ R10
+@@ -1533,7 +1533,7 @@
+     public static class ContentProfileProvider
+     {
+         public const string MANIFEST_SCHEMA_VERSION = "ADR-006B-v5";
+-        public const string CONTENT_CONTRACT_VERSION = "ADR-006B-v5-R9";
++        public const string CONTENT_CONTRACT_VERSION = "ADR-006B-v5-R10";
+         public const string SUPPORTED_COVERAGE_PROFILE = "POC_SUPPORTED_CORE_DLC_ASSEMBLIES_V5";
+         public const string MOD_PATCH_SUPPORT_STATUS = "TYPED_OBSERVATION_EXPLICIT_DISPOSITION_V1";
+ 
+@@ -1542,10 +1542,65 @@
+         private static ContentProfileManifest? _cachedManifest = null;
+         private static string? _lastComputationError = null;
+ 
++        private static readonly object _policyLock = new object();
++        private static ExpectedPackagePolicyRecord? _configuredExpectedPackagePolicy = null;
++
+         public static bool IsCached => _cachedFingerprint != null;
+         public static string? LastComputationError => _lastComputationError;
+         public static string? CachedCanonicalJson => _cachedCanonicalJson;
+         public static ContentProfileManifest? CachedManifest => _cachedManifest;
++
++        public static bool HasConfiguredExpectedPackagePolicy
++        {
++            get { lock (_policyLock) { return _configuredExpectedPackagePolicy != null; } }
++        }
++
++        public static ExpectedPackagePolicyRecord? ConfiguredExpectedPackagePolicy
++        {
++            get
++            {
++                lock (_policyLock)
++                {
++                    if (_configuredExpectedPackagePolicy == null) return null;
++                    return new ExpectedPackagePolicyRecord
++                    {
++                        policyId = _configuredExpectedPackagePolicy.policyId,
++                        revision = _configuredExpectedPackagePolicy.revision,
++                        policyDigest = _configuredExpectedPackagePolicy.policyDigest,
++                        admittedPackageIds = new List<string>(_configuredExpectedPackagePolicy.admittedPackageIds)
++                    };
++                }
++            }
++        }
++
++        public static void ConfigureExpectedPackagePolicy(ExpectedPackagePolicyRecord policy)
++        {
++            if (policy == null) throw new ArgumentNullException(nameof(policy));
++            string digest = ComputePackagePolicyDigest(policy);
++            if (!string.IsNullOrEmpty(policy.policyDigest) && !string.Equals(policy.policyDigest, digest, StringComparison.OrdinalIgnoreCase))
++            {
++                throw new ArgumentException($"Supplied policyDigest '{policy.policyDigest}' does not match computed digest '{digest}'.");
++            }
++            var clone = new ExpectedPackagePolicyRecord
++            {
++                policyId = policy.policyId,
++                revision = policy.revision,
++                policyDigest = digest,
++                admittedPackageIds = new List<string>(policy.admittedPackageIds ?? new List<string>())
++            };
++            lock (_policyLock)
++            {
++                _configuredExpectedPackagePolicy = clone;
++            }
++        }
++
++        public static void ClearConfiguredExpectedPackagePolicy()
++        {
++            lock (_policyLock)
++            {
++                _configuredExpectedPackagePolicy = null;
++            }
++        }
+ 
+         public static string FormatLossless(float val)
+         {
+@@ -1626,7 +1681,7 @@
+                 });
+             }
+ 
+-            // 4. Patch/Settings Disposition Summary synchronization
++            // 4. Patch/Settings Disposition Summary synchronization & Package Policy string trimming
+             if (manifest.patchSettingsDisposition != null && manifest.activeMods != null)
+             {
+                 int totalPatches = 0;
+@@ -1638,6 +1693,13 @@
+                     }
+                 }
+                 manifest.patchSettingsDisposition.totalObservedPatches = totalPatches;
++            }
++            if (manifest.packagePolicyDisposition != null)
++            {
++                manifest.packagePolicyDisposition.policyId = manifest.packagePolicyDisposition.policyId?.Trim() ?? "";
++                manifest.packagePolicyDisposition.revision = manifest.packagePolicyDisposition.revision?.Trim() ?? "";
++                manifest.packagePolicyDisposition.policyDigest = manifest.packagePolicyDisposition.policyDigest?.Trim() ?? "";
++                manifest.packagePolicyDisposition.status = manifest.packagePolicyDisposition.status?.Trim() ?? "";
+             }
+ 
+             // 5. Def Families
+@@ -1748,6 +1810,192 @@
+         {
+             if (string.IsNullOrEmpty(json)) return null;
+             return JsonConvert.DeserializeObject<ContentProfileManifest>(json);
++        }
++
++        public static string ComputePackagePolicyDigest(ExpectedPackagePolicyRecord policy)
++        {
++            if (policy == null) throw new ArgumentNullException(nameof(policy));
++            return ComputePackagePolicyDigest(policy.policyId, policy.revision, policy.admittedPackageIds);
++        }
++
++        public static string ComputePackagePolicyDigest(string policyId, string revision, IEnumerable<string>? admittedPackageIds)
++        {
++            var sb = new StringBuilder();
++            sb.Append(policyId ?? "").Append('|');
++            sb.Append(revision ?? "").Append('|');
++            if (admittedPackageIds != null)
++            {
++                bool first = true;
++                foreach (var pkg in admittedPackageIds)
++                {
++                    if (!first) sb.Append(',');
++                    sb.Append((pkg ?? "").ToLowerInvariant());
++                    first = false;
++                }
++            }
++            using (var sha = SHA256.Create())
++            {
++                byte[] bytes = Encoding.UTF8.GetBytes(sb.ToString());
++                return BitConverter.ToString(sha.ComputeHash(bytes)).Replace("-", "").ToUpperInvariant();
++            }
++        }
++
++        public static bool CheckPackagePolicy(
++            ExpectedPackagePolicyRecord policy,
++            ContentProfileManifest manifest,
++            out PackagePolicyCheckResult checkResult,
++            out string failureReason)
++        {
++            checkResult = new PackagePolicyCheckResult();
++            failureReason = "";
++
++            if (policy == null)
++            {
++                failureReason = "Expected package policy is null.";
++                checkResult.failureReason = failureReason;
++                return false;
++            }
++            if (manifest == null)
++            {
++                failureReason = "Manifest is null.";
++                checkResult.failureReason = failureReason;
++                return false;
++            }
++            if (string.IsNullOrEmpty(policy.policyId))
++            {
++                failureReason = "Policy policyId is missing or empty.";
++                checkResult.failureReason = failureReason;
++                return false;
++            }
++            if (string.IsNullOrEmpty(policy.revision))
++            {
++                failureReason = "Policy revision is missing or empty.";
++                checkResult.failureReason = failureReason;
++                return false;
++            }
++            if (policy.admittedPackageIds == null)
++            {
++                failureReason = "Policy admittedPackageIds list is null.";
++                checkResult.failureReason = failureReason;
++                return false;
++            }
++
++            string computedDigest = ComputePackagePolicyDigest(policy);
++            checkResult.policyId = policy.policyId;
++            checkResult.revision = policy.revision;
++            checkResult.policyDigest = computedDigest;
++            checkResult.expectedPackages = new List<string>(policy.admittedPackageIds);
++
++            if (!string.IsNullOrEmpty(policy.policyDigest) &&
++                !string.Equals(policy.policyDigest, computedDigest, StringComparison.OrdinalIgnoreCase))
++            {
++                failureReason = $"Policy policyDigest mismatch: declared '{policy.policyDigest}' != computed '{computedDigest}'.";
++                checkResult.status = "DIGEST_MISMATCH";
++                checkResult.failureReason = failureReason;
++                return false;
++            }
++
++            if (manifest.activeMods == null)
++            {
++                failureReason = "Manifest activeMods list is null.";
++                checkResult.status = "MISSING_ACTIVE_MODS";
++                checkResult.failureReason = failureReason;
++                return false;
++            }
++
++            checkResult.observedPackages = new List<string>();
++            foreach (var m in manifest.activeMods)
++            {
++                if (m == null || string.IsNullOrEmpty(m.packageId))
++                {
++                    failureReason = "Manifest activeMods contains null or empty packageId record.";
++                    checkResult.status = "INVALID_MOD_RECORD";
++                    checkResult.failureReason = failureReason;
++                    return false;
++                }
++                checkResult.observedPackages.Add(m.packageId.ToLowerInvariant());
++            }
++
++            if (checkResult.observedPackages.Count != policy.admittedPackageIds.Count)
++            {
++                failureReason = $"Package count mismatch: observed {checkResult.observedPackages.Count} mods, policy expected {policy.admittedPackageIds.Count}.";
++                checkResult.status = "COUNT_MISMATCH";
++                checkResult.failureReason = failureReason;
++                return false;
++            }
++
++            for (int i = 0; i < policy.admittedPackageIds.Count; i++)
++            {
++                string expectedPkg = policy.admittedPackageIds[i]?.ToLowerInvariant() ?? "";
++                string observedPkg = checkResult.observedPackages[i];
++                if (!string.Equals(expectedPkg, observedPkg, StringComparison.Ordinal))
++                {
++                    failureReason = $"Package mismatch at index {i}: expected '{expectedPkg}', observed '{observedPkg}'.";
++                    checkResult.status = "ORDER_OR_PACKAGE_MISMATCH";
++                    checkResult.failureReason = failureReason;
++                    return false;
++                }
++            }
++
++            checkResult.isAdmitted = true;
++            checkResult.status = "ADMITTED";
++            return true;
++        }
++
++        public static bool CheckPackagePolicy(
++            ExpectedPackagePolicyRecord policy,
++            ContentProfileManifest manifest,
++            out string failureReason)
++        {
++            return CheckPackagePolicy(policy, manifest, out _, out failureReason);
++        }
++
++        public static bool TryAdmitWithPackagePolicy(
++            ContentProfileManifest manifest,
++            ExpectedPackagePolicyRecord policy,
++            out string canonicalJson,
++            out string failureReason)
++        {
++            canonicalJson = "";
++            if (manifest == null)
++            {
++                failureReason = "Manifest is null.";
++                return false;
++            }
++            if (policy == null)
++            {
++                failureReason = "Expected policy is null.";
++                return false;
++            }
++
++            if (!CheckPackagePolicy(policy, manifest, out var checkResult, out failureReason))
++            {
++                return false;
++            }
++
++            manifest.packagePolicyDisposition = new PackagePolicyDispositionRecord
++            {
++                policyId = policy.policyId,
++                revision = policy.revision,
++                policyDigest = checkResult.policyDigest,
++                status = "ADMITTED"
++            };
++
++            if (manifest.patchSettingsDisposition == null)
++            {
++                manifest.patchSettingsDisposition = new ModPatchSettingsDispositionRecord();
++            }
++            manifest.patchSettingsDisposition.supportedModBoundary = $"CHECKED_POLICY:{policy.policyId}:{policy.revision}";
++
++            CanonicalNormalize(manifest);
++
++            if (!ValidateContract(manifest, out failureReason))
++            {
++                return false;
++            }
++
++            canonicalJson = SerializeCanonicalJson(manifest, canonicalNormalize: true);
++            return true;
+         }
+ 
+         /// <summary>
+@@ -1812,7 +2060,7 @@
+                 "TACTICAL_PROBE_V4",
+                 "READ_ONLY",
+                 "SIMULATION",
+-                "GATE05_R9_VERSION_MEANING",
++                "GATE05_R10_PACKAGE_POLICY",
+                 "ADR006B_LOSSLESS_CANONICAL_CONTENT_V5"
+             };
+             foreach (var flag in requiredFlags)
+@@ -1843,6 +2091,48 @@
+             if (manifest.patchSettingsDisposition.totalObservedPatches < 0)
+             {
+                 failureReason = "patchSettingsDisposition.totalObservedPatches cannot be negative.";
++                return false;
++            }
++            if (manifest.patchSettingsDisposition.supportedModBoundary == "POC_DECLARED_PACKAGES_ONLY")
++            {
++                failureReason = "patchSettingsDisposition.supportedModBoundary cannot be legacy 'POC_DECLARED_PACKAGES_ONLY'. Must be 'UNCONFIGURED' or 'CHECKED_POLICY:{policyId}:{revision}'.";
++                return false;
++            }
++            if (manifest.packagePolicyDisposition != null)
++            {
++                if (string.IsNullOrEmpty(manifest.packagePolicyDisposition.policyId))
++                {
++                    failureReason = "Required packagePolicyDisposition.policyId is missing or empty.";
++                    return false;
++                }
++                if (string.IsNullOrEmpty(manifest.packagePolicyDisposition.revision))
++                {
++                    failureReason = "Required packagePolicyDisposition.revision is missing or empty.";
++                    return false;
++                }
++                if (string.IsNullOrEmpty(manifest.packagePolicyDisposition.policyDigest))
++                {
++                    failureReason = "Required packagePolicyDisposition.policyDigest is missing or empty.";
++                    return false;
++                }
++                if (string.IsNullOrEmpty(manifest.packagePolicyDisposition.status))
++                {
++                    failureReason = "Required packagePolicyDisposition.status is missing or empty.";
++                    return false;
++                }
++                if (manifest.packagePolicyDisposition.status == "ADMITTED")
++                {
++                    string expectedBoundary = $"CHECKED_POLICY:{manifest.packagePolicyDisposition.policyId}:{manifest.packagePolicyDisposition.revision}";
++                    if (manifest.patchSettingsDisposition.supportedModBoundary != expectedBoundary)
++                    {
++                        failureReason = $"patchSettingsDisposition.supportedModBoundary '{manifest.patchSettingsDisposition.supportedModBoundary}' does not match admitted policy '{expectedBoundary}'.";
++                        return false;
++                    }
++                }
++            }
++            else if (manifest.patchSettingsDisposition.supportedModBoundary.StartsWith("CHECKED_POLICY:"))
++            {
++                failureReason = "patchSettingsDisposition.supportedModBoundary declares 'CHECKED_POLICY' but packagePolicyDisposition is null.";
+                 return false;
+             }
+ 
+@@ -2210,7 +2500,7 @@
+                 {
+                     patchPolicy = "COUNT_OBSERVED_RAW_AST_EXCLUDED",
+                     settingsPolicy = "USER_MOD_SETTINGS_EXCLUDED",
+-                    supportedModBoundary = "POC_DECLARED_PACKAGES_ONLY",
++                    supportedModBoundary = "UNCONFIGURED",
+                     totalObservedPatches = totalPatchesSum
+                 };
+             }
+@@ -2219,7 +2509,7 @@
+                 throw new InvalidOperationException($"Active Mods / Assemblies query failed in ContentProfileProvider: {ex.Message}", ex);
+             }
+ 
+-            // 5. Eight Def Families Projection (ADR-006B-v5-R9)
++            // 5. Eight Def Families Projection (ADR-006B-v5-R10)
+             // A. ThingDef
+             if (DefDatabase<ThingDef>.AllDefsListForReading == null)
+             {
+@@ -2556,15 +2846,38 @@
+             }
+             manifest.defFamilies.researchDefs.Sort((a, b) => string.CompareOrdinal(a.defName, b.defName));
+ 
+-            // Capability flags (aligned with semantic V4 scope and ADR-006B-v5-R9)
++            // Capability flags (aligned with semantic V4 scope and ADR-006B-v5-R10)
+             manifest.capabilityFlags = new List<string>
+             {
+                 "TACTICAL_PROBE_V4",
+                 "READ_ONLY",
+                 "SIMULATION",
+-                "GATE05_R9_VERSION_MEANING",
++                "GATE05_R10_PACKAGE_POLICY",
+                 "ADR006B_LOSSLESS_CANONICAL_CONTENT_V5"
+             };
++
++            // Package Policy Enforcement Seam (ADR-006B-v5-R10)
++            lock (_policyLock)
++            {
++                if (_configuredExpectedPackagePolicy == null)
++                {
++                    throw new InvalidOperationException("ContentProfile computation requires an explicit expected package policy to be configured before trusted actual fingerprint success. Status: UNCONFIGURED (BLOCKED_NO_POLICY).");
++                }
++
++                if (!CheckPackagePolicy(_configuredExpectedPackagePolicy, manifest, out var checkResult, out string policyFailure))
++                {
++                    throw new InvalidOperationException($"ContentProfile computation failed package policy check against '{_configuredExpectedPackagePolicy.policyId}:{_configuredExpectedPackagePolicy.revision}': {policyFailure}");
++                }
++
++                manifest.packagePolicyDisposition = new PackagePolicyDispositionRecord
++                {
++                    policyId = _configuredExpectedPackagePolicy.policyId,
++                    revision = _configuredExpectedPackagePolicy.revision,
++                    policyDigest = _configuredExpectedPackagePolicy.policyDigest,
++                    status = "ADMITTED"
++                };
++                manifest.patchSettingsDisposition.supportedModBoundary = $"CHECKED_POLICY:{_configuredExpectedPackagePolicy.policyId}:{_configuredExpectedPackagePolicy.revision}";
++            }
+ 
+             // Enforce Admission Contract on newly computed manifest before release
+             if (!ValidateContract(manifest, out string failureReason))
+@@ -2600,7 +2913,7 @@
+         }
+     }
+ 
+-    // Supported Typed Canonical Records (ADR-006B-v5-R9)
++    // Supported Typed Canonical Records (ADR-006B-v5-R10)
+     public class DlcExpansionRecord
+     {
+         public string defName = "";
+@@ -2625,8 +2938,36 @@
+     {
+         public string patchPolicy = "COUNT_OBSERVED_RAW_AST_EXCLUDED";
+         public string settingsPolicy = "USER_MOD_SETTINGS_EXCLUDED";
+-        public string supportedModBoundary = "POC_DECLARED_PACKAGES_ONLY";
++        public string supportedModBoundary = "UNCONFIGURED";
+         public int totalObservedPatches = 0;
++    }
++
++    public class ExpectedPackagePolicyRecord
++    {
++        public string policyId = "";
++        public string revision = "";
++        public List<string> admittedPackageIds = new List<string>();
++        public string policyDigest = "";
++    }
++
++    public class PackagePolicyDispositionRecord
++    {
++        public string policyId = "";
++        public string revision = "";
++        public string policyDigest = "";
++        public string status = "";
++    }
++
++    public class PackagePolicyCheckResult
++    {
++        public bool isAdmitted = false;
++        public string policyId = "";
++        public string revision = "";
++        public string policyDigest = "";
++        public string status = "UNCHECKED";
++        public string failureReason = "";
++        public List<string> expectedPackages = new List<string>();
++        public List<string> observedPackages = new List<string>();
+     }
+ 
+     public class LoadedAssemblyRecord
+@@ -2797,5 +3138,6 @@
+         public SupportedDefFamiliesRecord defFamilies = new SupportedDefFamiliesRecord();
+         public List<string> capabilityFlags = new List<string>();
+         public ModPatchSettingsDispositionRecord patchSettingsDisposition = new ModPatchSettingsDispositionRecord();
++        public PackagePolicyDispositionRecord? packagePolicyDisposition = null;
+     }
+ }

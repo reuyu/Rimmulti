@@ -1,0 +1,105 @@
+{
+  "at": "2026-10-08T19:20:13.718729+09:00",
+  "type": "SOL_R5_CODEC_INDEPENDENT_MASTER_REVIEW",
+  "result_id": "SOL-GATE05-R5-CODEC-INDEPENDENT-S1-20261008-2b7ccd63bcd44eb5ab0c2bd9adb4b959",
+  "delivery_id": "SOL-GATE05-R5-CODEC-INDEPENDENT-S1-20261008-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R5_CODEC_INDEPENDENT",
+  "wp_revision": "S1",
+  "completion_sha256": "724CBD6E216AE9B2CBFC39536A5437871147D18FD699E972CC19684DE52C8DFC",
+  "report_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R5_Codec_Independent_S1_20261008.md",
+  "report_sha256": "4F7E2D97B8D596573B8C1F4E5B2C78A5EE1A132B38C08480DFA2070E84C19372",
+  "evidence_manifest_path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R5-CODEC-INDEPENDENT-S1-20261008\\EVIDENCE_MANIFEST.json",
+  "evidence_manifest_sha256": "2F65297F86497ED9406B446C95C717FA8F8AFE85568831F48DE77CE9CDDF9EC8",
+  "result_index_sha256": "7B6114D7B38303AC1C0BE6299678FC8C869F8CDFAE273DA0E9BA210F5FF86257",
+  "evidence_files": 101,
+  "protected_unique_paths_master_rehashed": 2233,
+  "final_pre_post_files": 140,
+  "actual_exit_code": 0,
+  "normal_cases": [
+    {
+      "case": "BASE",
+      "sha256": "588D7D435137E8ADAD4BED73228DCD2525567CFBAE6286DCCDD7E52C9F643C35",
+      "semantic_leaves": 102,
+      "across_process_bytes_matched": true
+    },
+    {
+      "case": "OPTIONAL_NULL",
+      "sha256": "3DB4F419A2FA0403C656983875257BB214831F2DE8D028FE01E4177C3E507DDB",
+      "semantic_leaves": 78,
+      "across_process_bytes_matched": true
+    },
+    {
+      "case": "OPTIONAL_EMPTY",
+      "sha256": "33DE0AFE19795D285165ABF009A3FCB86DBBBEC86945CE230DE06A3C6C6F6251",
+      "semantic_leaves": 78,
+      "across_process_bytes_matched": true
+    },
+    {
+      "case": "NORMAL_REVISION_B",
+      "sha256": "E7E8E84BC99A036614A29D868783F7FD9E5AAED52968A35E5F4ACD3B42B04029",
+      "semantic_leaves": 102,
+      "across_process_bytes_matched": true
+    },
+    {
+      "case": "NORMAL_SET_ORDER",
+      "sha256": "30E11E659BB57928A41415012BA31124AFE44F84DDC5E6D3DD38461333290728",
+      "semantic_leaves": 102,
+      "across_process_bytes_matched": true
+    },
+    {
+      "case": "OPTIONAL_MISSING",
+      "sha256": "3DB4F419A2FA0403C656983875257BB214831F2DE8D028FE01E4177C3E507DDB",
+      "semantic_leaves": 76,
+      "across_process_bytes_matched": true
+    }
+  ],
+  "historical_leaf_semantics": 65,
+  "assertions_per_run": 17,
+  "qa_runner_builds": 1,
+  "qa_codec_runs": 2,
+  "master_candidate_and_runner_execution_builds": 0,
+  "actual_thread": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:38",
+    "revision": 38,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a11ae8-7f1c-7953-9081-2bd07fb7602b",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791452806,
+      "completedAt": 1791454397,
+      "durationMs": 1590665
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ac76cbab1a487d0a5012b539a2a45ea",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016ac76cbab1a487d0a5012b539a2a45ea",
+      "turnId": "01a11ae8-7f1c-7953-9081-2bd07fb7602b",
+      "phase": "final_answer",
+      "text": "R5 독립 QA 보고서를 완료하고 마스터에게 전달했습니다. 순수 codec의 정상 데이터 검증은 관측 범위에서 PASS입니다. 정적 계약은 수정 필요, native 검증은 UNTESTED로 유지하며 다음 지시를 기다립니다."
+    },
+    "latestToolMarkerId": "exec-bcec37eb-8708-4962-9a54-e6267d6c2ddb",
+    "latestToolMarker": {
+      "id": "exec-bcec37eb-8708-4962-9a54-e6267d6c2ddb",
+      "turnId": "01a11ae8-7f1c-7953-9081-2bd07fb7602b",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "direct_report_transport_verified": true,
+  "master_review_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R5_CODEC_INDEPENDENT_S1_20261008.md",
+  "master_review_sha256": "E67C52C657B85E0CA08E2C5D8153C13C0964843248ED0A10345D2F52D5D89EDE",
+  "master_verdict": "ACCEPTED_SCOPED_NORMAL_CODEC_UNIT_PASS_STATIC_REVISION_REQUIRED_NATIVE_UNTESTED",
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD",
+  "upstream_correction": "JobDef.checkOverrideOnDamage=Verse.CheckJobOverrideOnDamageMode enum;provisional prep boolean superseded without original modification"
+}

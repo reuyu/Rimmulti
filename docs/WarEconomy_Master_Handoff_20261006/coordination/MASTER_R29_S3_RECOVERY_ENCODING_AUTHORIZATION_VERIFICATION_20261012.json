@@ -1,0 +1,75 @@
+{
+  "at": "2026-10-12T10:33:15.200529+09:00",
+  "guard_run": "MASTER-R29-S3-RECOVERY-ENCODING-20261012-01",
+  "guard_session": 8833,
+  "guard_pid": 31792,
+  "delivery_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012-01",
+  "result_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012-8d682aff4ebd4996a12529142c0d7431",
+  "wp_revision": "S3",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:192",
+    "revision": 192,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a12da7-4e7b-7352-ad70-4efa4aa792ac",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791767301,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acc3801794487d08634f7c7afe14ce3",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016acc3801794487d08634f7c7afe14ce3",
+      "turnId": "01a12da7-4e7b-7352-ad70-4efa4aa792ac",
+      "phase": "commentary",
+      "text": "복구 문서를 출력하던 자체 도구가 Windows 문자 인코딩 오류로 멈췄습니다. 승인된 선택자 실행과 빌드·후보 실행은 아직 시작하지 않았습니다. 오류 원문을 보존하고, 재시도 금지 지침에 따라 마스터에게 재개 판단을 요청하겠습니다."
+    },
+    "latestToolMarkerId": "exec-607ef1a2-343c-4325-99e5-1d15d4038b93",
+    "latestToolMarker": {
+      "id": "exec-607ef1a2-343c-4325-99e5-1d15d4038b93",
+      "turnId": "01a12da7-4e7b-7352-ad70-4efa4aa792ac",
+      "type": "mcpToolCall",
+      "name": "wait_threads",
+      "status": "completed"
+    }
+  },
+  "original_encoding_stop": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\RECOVERY_OUTPUT_ENCODING_STOP_20261012.json",
+    "sha256": "2DE20D2FA48E08326DE8AC770F9A2B96FFA7985693DA033B0752B0B8EF36B4C2",
+    "bytes": 1535
+  },
+  "original_tool_stream_capture_limit_preserved": true,
+  "initial_static_and_prospective_preservation": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R29_S3_STATIC_STOP_INITIAL_PROSPECTIVE_PRESERVATION_20261012.json",
+    "sha256": "1DA122680BCAB148BAA129807E3F2D2688057866F88499BDD89C24AB1B8F28EC",
+    "bytes": 5251
+  },
+  "same_S3_initial_ACK": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\ACK_INITIAL.json",
+    "sha256": "E62D7A47248E015DBB1C293723108E8368D544F0221B6CC3028122AFB382FE31",
+    "bytes": 2892
+  },
+  "notice": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R29_S3_RECOVERY_OUTPUT_ENCODING_AUTHORIZATION_20261012.md",
+    "sha256": "C5D0FFD0B6789DD25F27B50CC7985963B11D452BC406C0979A204BC8768313BA",
+    "bytes": 3408
+  },
+  "static_R1_allowance_used": 0,
+  "QA_compiler_runner_candidate_execution": 0,
+  "Master_candidate_execution": 0,
+  "notice_status": "APPROVED_NOT_SENT",
+  "routine_operational_exception": "PASSIVE_APPROVED_LOCAL_DOCUMENT_DISPLAY_ENCODING_FRAMING_ONLY",
+  "normal_verdict": "PENDING",
+  "native_E2": "NOT_RELEASED",
+  "Foundation": "HOLD"
+}

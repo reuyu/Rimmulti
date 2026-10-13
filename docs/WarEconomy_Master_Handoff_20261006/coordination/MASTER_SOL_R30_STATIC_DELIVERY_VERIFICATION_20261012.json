@@ -1,0 +1,70 @@
+{
+  "at": "2026-10-12T19:17:26.236126+09:00",
+  "delivery_id": "SOL-GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R30_HANDOFF_INDEPENDENT_STATIC",
+  "wp_revision": "S1",
+  "delivery_status": "DIRECT_TOOL_SENT_NEW_ACTUAL_ACTIVE_TURN_VERIFIED",
+  "delivery_tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R30_STATIC_TOOL_DELIVERY_20261012.json",
+    "sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+    "bytes": 149
+  },
+  "snapshot": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R30_STATIC_NEW_TURN_20261012.json",
+    "sha256": "39EAAA76681DCD2B92C43DD32334DC6096A933BB805B60A1A0EA1D5FF36430DB",
+    "bytes": 1390
+  },
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:10",
+    "revision": 10,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a12f9d-0902-7591-aa71-a7bd40dc9105",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791800183,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016accb384db8887d090dd1c37a97ecac9",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016accb384db8887d090dd1c37a97ecac9",
+      "turnId": "01a12f9d-0902-7591-aa71-a7bd40dc9105",
+      "phase": "commentary",
+      "text": "새 R30 독립 정적 검토를 시작하겠습니다. WP 전체와 frozen 후보의 SHA·PDB·소스 결속을 먼저 확인하고, 실행 없이 handoff 분기·custody·원본 증거 drift를 검토하겠습니다. R29의 PASS는 이번 후보에 상속하지 않겠습니다."
+    },
+    "latestToolMarkerId": "exec-685003f6-7c13-48fb-9bd3-83aacac6de69",
+    "latestToolMarker": {
+      "id": "exec-685003f6-7c13-48fb-9bd3-83aacac6de69",
+      "turnId": "01a12f9d-0902-7591-aa71-a7bd40dc9105",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "original_endpoint_only": true,
+  "no_substitute": true,
+  "ACK": "PENDING",
+  "qa_root": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012",
+  "baseline_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R30_STATIC_QA_PROTECTED_BASELINE_20261012.json",
+  "protected_unique_paths": 15549,
+  "frozen_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\MASTER_GATE05_R30_HANDOFF_REVIEW_FREEZE_MANIFEST.json",
+  "selected_sha256": "9142C63AF18E2AE028D9E44AC36277F2FEBFFBB7AE8B6AF2437D12CED288C706",
+  "selected_mvid": "71b83cb9-f67f-4520-b611-6b8d0d4d2860",
+  "scope": "READ_ONLY_INDEPENDENT_STATIC_AND_METADATA_ONLY_NO_QA_COMPILER_OR_CANDIDATE_OR_NATIVE_EXECUTION",
+  "native_E2": "NOT_RELEASED",
+  "Foundation": "HOLD",
+  "existing_hourly_monitor": "ACTUAL_PAUSED_AFTER_R30_TERMINAL",
+  "guard_run": "MASTER-R30-HOURLY-20261012-1905-01",
+  "guard_session": 4089,
+  "actual_R30_hourly_heartbeat_observed_at_UTC": "2026-10-12T10:05:19.605Z"
+}

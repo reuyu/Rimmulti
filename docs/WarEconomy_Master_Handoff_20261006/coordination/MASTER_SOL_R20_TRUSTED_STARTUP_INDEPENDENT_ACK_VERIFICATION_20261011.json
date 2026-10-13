@@ -1,0 +1,67 @@
+{
+  "at": "2026-10-11T05:50:54.897191+09:00",
+  "guard_run": "MASTER-SOL-R20-ACK-20261011-01",
+  "guard_session": 10927,
+  "guard_pid": 26084,
+  "delivery_id": "SOL-GATE05-R20-TRUSTED-STARTUP-INDEPENDENT-S1-20261011-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R20_TRUSTED_STARTUP_INDEPENDENT",
+  "wp_revision": "S1",
+  "result_id": "SOL-GATE05-R20-TRUSTED-STARTUP-INDEPENDENT-S1-20261011-4245a7b9c3a8434993de3c5f411b762a",
+  "ack_path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R20-TRUSTED-STARTUP-INDEPENDENT-S1-20261011\\ACK_INITIAL.json",
+  "ack_sha256": "15A298ABAD39A6D61EC92A46CD4506497DF438B4D256FC6F826145E54A10855D",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:127",
+    "revision": 127,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a12791-68d7-7433-ae1f-b5a7305c676c",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791665203,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acaa43843dc87d0bdabe85847b51791",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016acaa43843dc87d0bdabe85847b51791",
+      "turnId": "01a12791-68d7-7433-ae1f-b5a7305c676c",
+      "phase": "commentary",
+      "text": "R20의 새 WP와 동결 후보를 대조하겠습니다. 새 admission receipt의 전체 필드와 nested snapshot을 정상 입력으로 검증하고, producer가 실행한 부정 경로는 원문 검토로만 다루겠습니다."
+    },
+    "latestToolMarkerId": "exec-66c011c0-8e10-4fbb-aced-9b4492f020fc",
+    "latestToolMarker": {
+      "id": "exec-66c011c0-8e10-4fbb-aced-9b4492f020fc",
+      "turnId": "01a12791-68d7-7433-ae1f-b5a7305c676c",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "failed"
+    }
+  },
+  "snapshot_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R20_TRUSTED_STARTUP_INDEPENDENT_ACK_SNAPSHOT_20261011.json",
+  "snapshot_sha256": "741F3E3DFF064C27A4865B6D2123AC9501BF657AC047176D775B5FE9587C9F40",
+  "protected_paths_master_rehashed": 10346,
+  "baseline_sha256": "FD284886A8E6F08D063D845BE8962A6A06CE526C70B34562F8370B380DB9D1E4",
+  "qa_lineage_path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R20-TRUSTED-STARTUP-INDEPENDENT-S1-20261011\\R20_FROZEN_LINEAGE.json",
+  "qa_lineage_sha256": "7462BCFA76A1965D7058902B0D9492666098D27911A7490FB202358CA622B4D5",
+  "master_metadata_comparison": "DebugReleaseSHA-MVID-CodeView-PDB-source4/4 matched",
+  "A_terminal_completion_deduped_unchanged": true,
+  "current_production_package_identity_checked": 9,
+  "verdict": "ACK_VERIFIED_INDEPENDENT_R20_STATIC_POSITIVE_PURE_TRUSTED_STARTUP_QA_IN_PROGRESS",
+  "initial_ACK_execution_count_statement": "Historical initial ACK runner notbuilt;current QA execution verdict PENDING",
+  "qa_owned_runner_build_allowed": true,
+  "master_candidate_build_execute": 0,
+  "new_wp": false,
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "monitor_actual_status": "PAUSED60MIN173CHAR_SAME_TARGET",
+  "foundation": "HOLD"
+}

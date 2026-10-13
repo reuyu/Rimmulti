@@ -1,0 +1,18 @@
+{
+  "recorded_at": "2026-10-14T05:54:36.847086+09:00",
+  "user_authorization": "Upload project files to https://github.com/reuyu/Rimmulti",
+  "repository_root": "C:\\Users\\user\\Desktop\\RimMulti",
+  "previous_git_state": "No .git; remote ls-remote success with no refs",
+  "remote": "https://github.com/reuyu/Rimmulti.git",
+  "branch": "main",
+  "publication_status": "PREPARED_NOT_PUSHED",
+  "scope": "Source, project/config files, design and governance, Master scripts/task records and QA source/reports",
+  "excluded_local_only": "Build output, game/third-party binaries, frozen candidate copies under Dispatcher/CANDIDATES, raw QA evidence, saves/databases/logs, upstream reference checkouts, credential files, individually listed files >5 MiB",
+  "exclusions_delete_local_files": false,
+  "candidate_builds_or_execution": 0,
+  "git_normalization": "core.autocrlf=false; existing file bytes unchanged",
+  "staged_file_count_before_record": 6027,
+  "staged_bytes_before_record": 519432652,
+  "ongoing_work": "A R39 IN_PROGRESS; existing hourly monitor preserved; no new dispatch, candidate admission or closure inferred",
+  "limitations": "Local absolute evidence paths refer to excluded local evidence. Clone is a source/document snapshot, not complete raw evidence backup."
+}

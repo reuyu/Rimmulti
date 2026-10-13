@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "freeze_time": "2026-10-08T13:06:03.549046+00:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-20261008-DIRECT-8524bf02",
+  "phase": "POST_RUN_FREEZE_AFTER",
+  "files": {
+    "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs": {
+      "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+      "size": 156431
+    },
+    "scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs": {
+      "sha256": "D980225D8DBE04F9CAE95AD100DCF6640252A24A14599346E3B7F81CA8B9AF98",
+      "size": 124817
+    },
+    "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj": {
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "size": 1774
+    },
+    "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll": {
+      "sha256": "223B4055C0AFAA6F30488C9787AE6F68D65D62F395CFCA722EDA83674975CD2A",
+      "size": 220672,
+      "mvid": "bdf94567-be4d-4270-9a70-dbf2df9b5b4a"
+    },
+    "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb": {
+      "sha256": "146C5667DF4BB3C4C3F48328FD054A6C4BC87D22FEB5F010534A4428C8DA1579",
+      "size": 54604
+    },
+    "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll": {
+      "sha256": "E9E409E95E225552B59D34FA1DE9D5AB021764988F1FADD25FDC11235CF87F35",
+      "size": 209920,
+      "mvid": "db8d92c1-a284-4e67-8bcc-708e279944c1"
+    },
+    "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb": {
+      "sha256": "07C79C3C651EEB32BC0EFE56F552E90F414ED7F3AFFBDCCD8541B5CA49980188",
+      "size": 40312
+    },
+    "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll": {
+      "sha256": "223B4055C0AFAA6F30488C9787AE6F68D65D62F395CFCA722EDA83674975CD2A",
+      "size": 220672,
+      "mvid": "bdf94567-be4d-4270-9a70-dbf2df9b5b4a"
+    },
+    "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb": {
+      "sha256": "146C5667DF4BB3C4C3F48328FD054A6C4BC87D22FEB5F010534A4428C8DA1579",
+      "size": 54604
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "dispatch_id": "WE-A-ENGINE-GATE05-R39-PUBLISHER-GENERAL-20261014-DIRECT-42e1f0cc",
+  "wp_id": "WP_ENGINE_GATE05_R39_PUBLISHER_GENERAL",
+  "envelope": 42,
+  "pre_pinned_at_utc": "2026-10-13T20:47:01.151797+00:00",
+  "target_file": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+    "bytes": 46246,
+    "sha256": "242FB7399C118A1BD3DE588BA99671616ED41E614369142F006E93B889C64242"
+  },
+  "checker_script": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R39PublisherGeneral-42e1f0cc\\ast_checker.py",
+    "bytes": 2741,
+    "sha256": "CCAB294131C79AC9E418B2549857DB749F552A47F17CCC716B4334053D1B1D26"
+  },
+  "python_interpreter": {
+    "executable": "C:\\Users\\user\\anaconda3\\python.exe",
+    "bytes": 104264,
+    "sha256": "388FE2CFFDA8A134E7D7DC4E978F7C478857ECE6B69694DAECBED25E51EC633A",
+    "version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+    "version_info": [
+      3,
+      13,
+      5,
+      "final",
+      0
+    ]
+  },
+  "execution_plan": {
+    "argv": [
+      "C:\\Users\\user\\anaconda3\\python.exe",
+      "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R39PublisherGeneral-42e1f0cc\\ast_checker.py",
+      "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py"
+    ],
+    "cwd": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R39PublisherGeneral-42e1f0cc",
+    "selected_env": {
+      "PYTHONHOME": "",
+      "PYTHONPATH": "",
+      "PYTHONIOENCODING": "",
+      "PYTHONUTF8": "",
+      "PATH_SAMPLE": "C:/Users/user/.gemini/antigravity-ide/bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.0\\bin\\x64;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.0\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\Window..."
+    },
+    "launcher_modules_total_count": 94,
+    "launcher_modules_sample_count": 25,
+    "launcher_modules_sample": [
+      "__editable___tribev2_0_1_0_finder",
+      "__future__",
+      "__main__",
+      "_abc",
+      "_blake2",
+      "_codecs",
+      "_codecs_kr",
+      "_collections",
+      "_collections_abc",
+      "_datetime",
+      "_distutils_hack",
+      "_frozen_importlib",
+      "_frozen_importlib_external",
+      "_functools",
+      "_hashlib",
+      "_imp",
+      "_io",
+      "_json",
+      "_locale",
+      "_multibytecodec",
+      "_operator",
+      "_signal",
+      "_sitebuiltins",
+      "_sre",
+      "_stat"
+    ],
+    "sample_label": "FIRST_25_LAUNCHER_MODULES_SAMPLE"
+  }
+}

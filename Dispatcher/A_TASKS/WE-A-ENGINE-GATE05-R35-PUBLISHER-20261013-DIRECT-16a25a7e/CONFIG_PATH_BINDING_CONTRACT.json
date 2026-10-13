@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "we-operator-config-binding-contract/v1",
+  "contract_authority": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R35_PLAN_ONLY_PUBLISHER_SAFETY_CONTRACT_20261013.md",
+  "config14_properties": [
+    "schemaVersion",
+    "configId",
+    "role",
+    "admittedValidatorExecutablePath",
+    "admittedValidatorExecutableSha256",
+    "validatorArguments",
+    "workerUserDataDirectory",
+    "validatorUserDataDirectory",
+    "workerCwd",
+    "validatorCwd",
+    "capabilityBoundary",
+    "issuedAtUtc",
+    "expectedContentProfileFingerprint",
+    "expectedPackagePolicyDeclaration"
+  ],
+  "decl7_properties": [
+    "originId",
+    "expectedConfigId",
+    "expectedRole",
+    "expectedCapabilityBoundary",
+    "launchPlanId",
+    "expectedConfigPath",
+    "expectedConfigSha256"
+  ],
+  "binding_rules": {
+    "path_equality": {
+      "rule": "Declared Windows path equality without rewriting opaque originaldecl fields.",
+      "implementation": "os.path.normcase(os.path.abspath(supplied_path)).rstrip('\\\\/') == os.path.normcase(os.path.abspath(decl['expectedConfigPath'])).rstrip('\\\\/')",
+      "fail_closed": true
+    },
+    "raw_sha256_equality": {
+      "rule": "SHA-256 of raw config file bytes must equal descriptor expectedConfigSha256 (64 hex characters, case-insensitive).",
+      "implementation": "compute_sha256_bytes(raw_bytes) == decl['expectedConfigSha256'].strip().upper()",
+      "fail_closed": true
+    },
+    "config_id_equality": {
+      "rule": "Config configId must equal descriptor expectedConfigId (exact ordinal string match).",
+      "implementation": "config['configId'] == decl['expectedConfigId']",
+      "fail_closed": true
+    },
+    "role_admissibility": {
+      "parent": {
+        "expectedRole": "SIMULATION",
+        "descriptor_match": "decl['expectedRole'].strip().upper() == 'SIMULATION'",
+        "config_match": "config['role'].strip().upper() == 'SIMULATION'"
+      },
+      "child": {
+        "expectedRole": "READ_ONLY",
+        "descriptor_match": "decl['expectedRole'].strip().upper() == 'READ_ONLY'",
+        "config_match": "config['role'].strip().upper() == 'READ_ONLY'"
+      }
+    },
+    "capability_boundary_equality": {
+      "rule": "Config capabilityBoundary must match descriptor expectedCapabilityBoundary (case-insensitive string comparison).",
+      "implementation": "config['capabilityBoundary'].strip().upper() == decl['expectedCapabilityBoundary'].strip().upper()",
+      "fail_closed": true
+    },
+    "validator_arguments_blank_rule": {
+      "rule": "actual ValidatorArguments of BOTH raw configs must be blank in paired mode (not unused CLI flag).",
+      "implementation": "config['validatorArguments'].strip() == ''",
+      "fail_closed": true
+    },
+    "package_policy_declaration_rule": {
+      "required_keys": [
+        "schemaVersion",
+        "policyId",
+        "revision",
+        "admittedPackageIds"
+      ],
+      "admitted_packages_type": "list of strings",
+      "fail_closed": true
+    }
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "verificationSuite": "Engine Gate05-R2 E1 Verification",
+  "executionTimeUtc": "2026-10-08T01:23:04.5818355Z",
+  "selectedCandidate": {
+    "configuration": "Debug",
+    "dllPath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "dllSha256": "57A4C8B75ABC2AD43E9A3E4215A23A35741E0E5B203CB57A63AA30BB59CBF54F",
+    "pdbPath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdbSha256": "E0A7EC813C52AF3206DA6D0AE6122453027FF6CC1CB2A509AF9B80134CCFCA6E",
+    "mvid": "8292a8ec-4a02-49dc-88e9-2c3d93e969f5"
+  },
+  "alternateCandidate": {
+    "configuration": "Release",
+    "dllPath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "dllSha256": "25DEE284AC85F22031614541A4335FD78D1C0490DBB95BC77A28CED5329966C7",
+    "pdbPath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdbSha256": "5FD9E821CF86429D418D1D44BCFF52C3A5209D91340002DD077EFB751F6CD1B5"
+  },
+  "summary": {
+    "totalCheckpoints": 24,
+    "pass": 23,
+    "fail": 0,
+    "blocked": 1,
+    "untested": 0,
+    "e1Verdict": "PASS_WITH_DECLARED_LIMITS"
+  },
+  "checkpoints": [
+    {
+      "id": "PROV-01",
+      "category": "Provenance",
+      "description": "Selected Debug Candidate DLL Exists & Hashed",
+      "status": "PASS",
+      "details": "Path=C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll, SHA256=57A4C8B75ABC2AD43E9A3E4215A23A35741E0E5B203CB57A63AA30BB59CBF54F, Size=192000"
+    },
+    {
+      "id": "PROV-02",
+      "category": "Provenance",
+      "description": "Selected Debug Matching PDB Exists & Hashed",
+      "status": "PASS",
+      "details": "Path=C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb, SHA256=E0A7EC813C52AF3206DA6D0AE6122453027FF6CC1CB2A509AF9B80134CCFCA6E"
+    },
+    {
+      "id": "PROV-03",
+      "category": "Provenance",
+      "description": "Candidate MVID Cryptographically Bound",
+      "status": "PASS",
+      "details": "MVID=8292a8ec-4a02-49dc-88e9-2c3d93e969f5"
+    },
+    {
+      "id": "PROV-04",
+      "category": "Provenance",
+      "description": "Release Candidate Separately Tracked (Non-Selected Alternate)",
+      "status": "PASS",
+      "details": "Path=C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll, SHA256=25DEE284AC85F22031614541A4335FD78D1C0490DBB95BC77A28CED5329966C7"
+    },
+    {
+      "id": "G05-S01-01",
+      "category": "G05-S01",
+      "description": "Prohibit Public Caller REGISTER_VALIDATOR_PROCESS (MD-126/127)",
+      "status": "PASS",
+      "details": "Response: 'ERROR: REGISTER_VALIDATOR_PROCESS by public caller is prohibited under Gate05-R2 (MD-126/MD-127). Validator process must be launched and owned by operator/simulator directly.'"
+    },
+    {
+      "id": "G05-S01-02",
+      "category": "G05-S01",
+      "description": "Prohibit Public Caller SUBMIT_STAGE_VALIDATION_RECEIPT (MD-127)",
+      "status": "PASS",
+      "details": "Response: 'STAGE_VALIDATION_REJECTED: Public/caller receipt submission is deprecated and prohibited under Gate05-R1 / MD-127. Authority must originate from registered operator-owned validator task and protected channel.'"
+    },
+    {
+      "id": "G05-S01-03",
+      "category": "G05-S01",
+      "description": "Reject Caller-Supplied Payload in COMPLETE_STAGE_VALIDATION",
+      "status": "PASS",
+      "details": "Response: 'STAGE_VALIDATION_REJECTED: Caller-supplied payload prohibited under MD-127.'"
+    },
+    {
+      "id": "G05-S01-04",
+      "category": "G05-S01",
+      "description": "Public GET_ACTIVE_VALIDATOR_TASK Redacts Nonce & Channel Secret",
+      "status": "PASS",
+      "details": "NonceRedacted=True, SecretRedacted=True, ChannelExposed=True"
+    },
+    {
+      "id": "G05-S01-05",
+      "category": "G05-S01",
+      "description": "Operator Launches and Owns Fresh Validator Process Handle",
+      "status": "PASS",
+      "details": "Response: 'OPERATOR_VALIDATOR_LAUNCHED: TaskId=VT_G05R2_S01_05_5652ab5b, Pid=16164, StartTime=2026-10-08T01:23:04.4776748Z, Exe='powershell.exe'', PID=16164"
+    },
+    {
+      "id": "G05-S01-06",
+      "category": "G05-S01",
+      "description": "Reject Self-PID Validator Binding (Simulator != Validator)",
+      "status": "PASS",
+      "details": "Response: 'ERROR: Self-validation prohibited.'"
+    },
+    {
+      "id": "G05-S01-07",
+      "category": "G05-S01",
+      "description": "Reject Tampered Nonce in Task Execution",
+      "status": "PASS",
+      "details": "Response: 'VALIDATION_FAILED: CapabilityNonce mismatch. Unauthorized task execution.'"
+    },
+    {
+      "id": "G05-S01-08",
+      "category": "G05-S01",
+      "description": "Reject Tampered / Forged Channel Secret Token (Channel Protection)",
+      "status": "PASS",
+      "details": "Response: 'STAGE_VALIDATION_REJECTED: Channel secret token mismatch.'"
+    },
+    {
+      "id": "G05-S01-09",
+      "category": "G05-S01",
+      "description": "Reject Validator Result with Unregistered PID",
+      "status": "PASS",
+      "details": "Response: 'STAGE_VALIDATION_REJECTED: Unregistered validator PID.'"
+    },
+    {
+      "id": "G05-S01-10",
+      "category": "G05-S01",
+      "description": "Accept Genuine Operator Result & Consume Result File (MD-128)",
+      "status": "PASS",
+      "details": "Response: 'STAGE_VALIDATION_ACCEPTED: ReceiptId=VR_20261008_012304_23f8858e86454bc3b9ac3402e857802a, ValidatorPid=5520, TaskId=VT_G05R2_S01_10_479e2ea7', ResultConsumed=True"
+    },
+    {
+      "id": "G05-S01-11",
+      "category": "G05-S01",
+      "description": "Prevent Replay of Consumed ValidatorTask",
+      "status": "PASS",
+      "details": "Response: 'STAGE_VALIDATION_REJECTED: ValidatorTask already consumed. Replay prohibited.'"
+    },
+    {
+      "id": "G05-S02-01",
+      "category": "G05-S02",
+      "description": "Content Profile Schema Version is ADR-006B-v2",
+      "status": "PASS",
+      "details": "SchemaVersion=ADR-006B-v2"
+    },
+    {
+      "id": "G05-S02-02",
+      "category": "G05-S02",
+      "description": "Lossless Invariant Float/Double Formatting (CultureInfo.InvariantCulture)",
+      "status": "PASS",
+      "details": "MethodExists=True, CorrectInvariant=True"
+    },
+    {
+      "id": "G05-S02-03",
+      "category": "G05-S02",
+      "description": "ThingDef StatBases Lossless Encoding with DefName and Exact Values",
+      "status": "PASS",
+      "details": "Verified statBases serializes DefName=Value list instead of count-only"
+    },
+    {
+      "id": "G05-S02-04",
+      "category": "G05-S02",
+      "description": "Strict Non-Empty/Uninitialized Gate for All 8 Def Families",
+      "status": "PASS",
+      "details": "All 8 Def families throw InvalidOperationException when uninitialized"
+    },
+    {
+      "id": "G05-S02-05",
+      "category": "G05-S02",
+      "description": "Complete Elimination of Display-Only :F Float Rounding",
+      "status": "PASS",
+      "details": "All float/double fields use FormatLossless rather than display roundings"
+    },
+    {
+      "id": "G05-S02-06",
+      "category": "G05-S02",
+      "description": "ContentProfileProvider Cache Invalidation & Revalidation",
+      "status": "PASS",
+      "details": "IsCachedAfterInvalidate=False"
+    },
+    {
+      "id": "NAT-01",
+      "category": "Native Isolation",
+      "description": "Steam Licensed Base Game Exists (Read-Only Input)",
+      "status": "PASS",
+      "details": "SteamExe='C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64.exe', Exists=True"
+    },
+    {
+      "id": "NAT-02",
+      "category": "Native Isolation",
+      "description": "Gate05 Baseline DLL Preserved Immutable in Archive",
+      "status": "PASS",
+      "details": "ArchivedBaselineSHA=2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C (Matches 2D64FF9C...), InstalledSteamSHA=BB3B52F39F7B53B70BC9FB4CE039E7455D08B24B17B8DABB8295E0FF4584DD61 (Preserved untouched; overwriting Steam Mods prohibited by policy)"
+    },
+    {
+      "id": "NAT-03",
+      "category": "Native Isolation",
+      "description": "Independent Project-Owned Runtime Execution Feasibility",
+      "status": "BLOCKED",
+      "details": "Steam DRM wrapper present (False). Standalone execution requires licensed Steam runtime context. Overwriting Steam Mods prohibited by preservation policy. Reported honestly as BLOCKED/UNTESTED boundary."
+    }
+  ]
+}

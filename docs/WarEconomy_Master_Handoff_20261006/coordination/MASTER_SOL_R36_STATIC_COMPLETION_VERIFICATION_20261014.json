@@ -1,0 +1,65 @@
+{
+  "at": "2026-10-14T00:55:39.604801+09:00",
+  "guard_session": 64707,
+  "delivery_id": "SOL-GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014-01",
+  "result_id": "SOL-GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014-6ed51db08e3540c9b6b98a6a96f57e1d",
+  "completion": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014\\COMPLETION.json",
+    "sha256": "B8404DD48622DC030373C3752B12793A30D47484452E6506004358904669FC4D",
+    "bytes": 3318
+  },
+  "verdict": "ACCEPTED_R36_INDEPENDENT_STATIC_ORIGINAL6_SOURCE_REPRESENTABLE_RECEIPT_ANCESTRY_TIME_PROVENANCE_REVISION_REQUIRED_NATIVE_UNTESTED",
+  "review": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R36_INDEPENDENT_STATIC_S1_20261014.md",
+    "sha256": "1FF06D43C72F1DDBB8D167F8C3B615B270EAB4C7F1F8CFAAA6FDCA6565951F24",
+    "bytes": 3981
+  },
+  "verification": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R36_STATIC_FINAL_INDEPENDENT_EVIDENCE_VERIFICATION_20261014.json",
+    "sha256": "C502705B9FE8FFD44CA48374511A19F67AEDBCE2D7CF5A4DE21BDAE800EAD46E",
+    "bytes": 20320
+  },
+  "terminal": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R36_INDEPENDENT_STATIC_TERMINAL_PRESERVATION_20261014.json",
+    "sha256": "DA2856534BB0493FE6CF6B3EB5481EF5374536B058EEFFB1096A80AEE742CE15",
+    "bytes": 18909
+  },
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:47",
+    "revision": 47,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a135e6-e62b-73a1-a02d-0794937f58ea",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791905687,
+      "completedAt": 1791906644,
+      "durationMs": 957486
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ace5351649487d0952e95a990489c70",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016ace5351649487d0952e95a990489c70",
+      "turnId": "01a135e6-e62b-73a1-a02d-0794937f58ea",
+      "phase": "final_answer",
+      "text": "R36 독립 정적 QA를 완료하고 마스터에게 보고했습니다. 설정 바인딩·경로 검사·날짜·출처 증거는 추가 수정이 필요합니다. 게임·publisher 실행은 없었으며 Foundation HOLD를 유지합니다. QA 보고서 다음 마스터 지시를 기다리겠습니다."
+    },
+    "latestToolMarkerId": "exec-ccf91a6d-bd02-4dc8-a64a-0ae4e63ff1c9",
+    "latestToolMarker": {
+      "id": "exec-ccf91a6d-bd02-4dc8-a64a-0ae4e63ff1c9",
+      "turnId": "01a135e6-e62b-73a1-a02d-0794937f58ea",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "runtime_E2": "NOT_RELEASED",
+  "Foundation": "HOLD"
+}

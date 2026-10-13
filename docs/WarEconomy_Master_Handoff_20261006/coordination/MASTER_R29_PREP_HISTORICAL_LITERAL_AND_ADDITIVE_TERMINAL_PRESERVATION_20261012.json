@@ -1,0 +1,310 @@
+{
+  "at": "2026-10-12T09:32:57.173239+09:00",
+  "files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\ACK.json",
+      "sha256": "8B801439D5857404F93E99C343328F1881980E751112705F940B5322AD3FF97A",
+      "bytes": 2268
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\ACK_COMPLETION_BINDING.json",
+      "sha256": "321431BDB69683AFCBDE78A017E34F33D75CD2A13CF21BBB6128D335F4401640",
+      "bytes": 1463
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\ACK_INITIAL.json",
+      "sha256": "8B801439D5857404F93E99C343328F1881980E751112705F940B5322AD3FF97A",
+      "bytes": 2268
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\ACK_RETURN_TOOL_PROOF.json",
+      "sha256": "1BDBDAEDF47B1E073B486C226791B0D58C64465E7AA4F1929F261E843A9CCC8E",
+      "bytes": 149
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\bootstrap_review.py",
+      "sha256": "C4A62A1581D020AE883DF0DF1F4E76215C32B0A117E4F6F6FF834FD0AFED0286",
+      "bytes": 4447
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\COMPLETION.json",
+      "sha256": "BF302C6946EA61832E0976CEF489E9D6886B42CA08C3B9C3B099E2FFA6EA6E22",
+      "bytes": 4531
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\DELIVERY_STATUS.json",
+      "sha256": "BA236A09D70D8E0DCABCC4791D216AC8CF4FB7F39DDB15C15A2448043922BC2D",
+      "bytes": 644
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\EVIDENCE_MANIFEST.json",
+      "sha256": "34008C000D09B8D2E7AAF8C7D8C5BACF8FA594DB5200CF9A85226CA6ADAD0185",
+      "bytes": 15217
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\FIELD_AND_API_MATRIX.json",
+      "sha256": "84972B1C5964BE7B2B2DE67E4024D3622A292950BD09E0378B102D125BEC55FA",
+      "bytes": 8547
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\finalize_preparation.py",
+      "sha256": "B3292F3610126015523E38A87F595307CABD49A006C4377790ECFF24324915E7",
+      "bytes": 6520
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\FINAL_SCOPE_AND_REQUIREMENT_BINDING.json",
+      "sha256": "C6E79E307CC1BBD27C2CBB6FB22BF7771B1F128E685765AC9F4F0C77EAE80611",
+      "bytes": 2700
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\FROZEN_SOURCE_FIELD_BINDING.json",
+      "sha256": "18EFC52EAD9D237EC303FAE4CBC9AFD27BC24BC1824EC8593CCEE11ECFCE63A5",
+      "bytes": 41949
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\NORMAL_DATA_CONSISTENCY_AUDIT.json",
+      "sha256": "47F9D8C878A5F58ECC4769F3B285DE8D5C6D8790A4EB64152CDAF86CC12AB808",
+      "bytes": 2433
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\OWN_MATRIX_METADATA_FAILURE.json",
+      "sha256": "19C93F0F751A68E254A4541612691B90747EADA7BA54627DF9D66873D59016A2",
+      "bytes": 862
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\OWN_METADATA_CORRECTION.json",
+      "sha256": "39B9FCE330E99B5D66CF5DECA0931DB59A36FF893A05AA0C519C8EAF649BDFD6",
+      "bytes": 488
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\prepare_matrix_provenance.py",
+      "sha256": "B455B2EC801C8992AEE6E4C5522ADEAD949AAEEA6D7429B3AA74FCBA4293FF79",
+      "bytes": 13014
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\prepare_matrix_provenance_corrected.py",
+      "sha256": "3BEB527684400A89CAF5F28DC687FC2972161041D82749D64B3EFA256180BD4D",
+      "bytes": 13024
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\prepare_oracle.py",
+      "sha256": "B5ADEC9B4BA7A872C324C439C60DE68B78D73EEB5F0B99A8451DB4B4555FC77A",
+      "bytes": 13670
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\PRESERVATION_AFTER.json",
+      "sha256": "89432DB6A919D315BD1D2C1A40C5AC746C4BEBE97000BADEED03ECCFC2F25AD5",
+      "bytes": 4269149
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\PRESERVATION_BEFORE.json",
+      "sha256": "807B1AA2B07069B92DA3031C39131FE5B6A929B153502D481F0535AEF884FECC",
+      "bytes": 4269149
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\PRESERVATION_HASH_SCOPE_NOTE.json",
+      "sha256": "B4DCEF563F8F2BF4726DBE419E19A3DAA6D60D67ABED1E641AB90B39244A049D",
+      "bytes": 1599
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\PRE_RUN_EXPECTED_ORACLE.json",
+      "sha256": "7371185E68771EA8613373E3948344B988D86C361421EE9DAF681036CBD95D02",
+      "bytes": 1030401
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\PROSPECTIVE_INPUT_LITERAL_MANIFEST.json",
+      "sha256": "E4D14957A8D91B7F36CEFD26262AC78BEA0065203CB842EA316EE74A95660750",
+      "bytes": 8781
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\PROVENANCE_AND_NATIVE_BOUNDARY_CRITERIA.json",
+      "sha256": "5D1F3EEEB0A11E653C805CB31153564605FB3CD9D908E30DF15F23E3C89387B4",
+      "bytes": 5928
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\RECOVERY_DELTA_AND_MASTER_BINDING.json",
+      "sha256": "83413ABC57C4E2663368C9439EBB144F4E9E08601D4909A96D776CE92358E087",
+      "bytes": 2536
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\RESULT_INDEX.json",
+      "sha256": "C31FD046439FF7E16683E36C8F784288117DCCEA2FAAF2F46B90DC67F96FDFFA",
+      "bytes": 3634
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\RETURN_PENDING.json",
+      "sha256": "ABE1E438508EACCBE9B56668DAA5D536828C60DBE971FE505AA2F3747B3AF26B",
+      "bytes": 326
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\RETURN_TOOL_PROOF.json",
+      "sha256": "1BDBDAEDF47B1E073B486C226791B0D58C64465E7AA4F1929F261E843A9CCC8E",
+      "bytes": 149
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\validate_preparation.py",
+      "sha256": "AB1609B0713A690973AC908AF5B449E80C0CEF5FA775298F5528518307E4DC6D",
+      "bytes": 3775
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\OPAQUE_EQ_QUOTE_BACKSLASH\\child.approved7.json",
+      "sha256": "8D77FDF7DCAA028B71704AFF09283E4D116C75A4F14D33E9D523D4130B817608",
+      "bytes": 529
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\OPAQUE_EQ_QUOTE_BACKSLASH\\child.config.json",
+      "sha256": "871D13EB216C404A74F65A4603BE913B8AFB7919EE6CE6E236D03874C1270516",
+      "bytes": 940
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\OPAQUE_EQ_QUOTE_BACKSLASH\\expected.bundle.json",
+      "sha256": "A1B1475503F0C9C8A9128B882278B1BDE4ED6A0D9B4B82B01A64152199CC7CB5",
+      "bytes": 1185
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\OPAQUE_EQ_QUOTE_BACKSLASH\\parent.approved7.json",
+      "sha256": "F36E4A057811F712C165EF8A0C2B3F14740474F408D94A43CD1DA892352E05EB",
+      "bytes": 509
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\OPAQUE_EQ_QUOTE_BACKSLASH\\parent.config.json",
+      "sha256": "B0CB65941E0548E7809829F2B198EEA5CAA58F4C94A945DFAA207FF4A1B11CE0",
+      "bytes": 914
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\OPAQUE_EQ_QUOTE_BACKSLASH_PADDED\\child.approved7.json",
+      "sha256": "13ED4ACEFD78D0EA81F538FA3A66050C1FBB8D3C57C2F9231AD2B9FD103A76F9",
+      "bytes": 544
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\OPAQUE_EQ_QUOTE_BACKSLASH_PADDED\\child.config.json",
+      "sha256": "E1F0E41C784D7767D661588DAD839A3B9B547EBDBA89260484A62F5C964AC26A",
+      "bytes": 962
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\OPAQUE_EQ_QUOTE_BACKSLASH_PADDED\\expected.bundle.json",
+      "sha256": "95815A88236611B388684C2D6558B66CC1A31763E6F1C3CF1109BD8A3264065D",
+      "bytes": 1215
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\OPAQUE_EQ_QUOTE_BACKSLASH_PADDED\\parent.approved7.json",
+      "sha256": "695F1622DDD0D17391FBB30C2674F9902F2271AF2CB0F80FA959236CD752C110",
+      "bytes": 524
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\OPAQUE_EQ_QUOTE_BACKSLASH_PADDED\\parent.config.json",
+      "sha256": "E647B4CE8F245E4270C38DC2EAC25DF0092CE6FF58E9415906A7FFD10E1A10C6",
+      "bytes": 936
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\OPAQUE_OPAQUE\\child.approved7.json",
+      "sha256": "757A8680925849A75B46130BD1B300228D97CF330F036E9076D73C01656ED58A",
+      "bytes": 453
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\OPAQUE_OPAQUE\\child.config.json",
+      "sha256": "DAA3A0F16906EBF54B0A4CA8D2040B8BE9FE75A785DE1CD28573D17E8A5ACADA",
+      "bytes": 931
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\OPAQUE_OPAQUE\\expected.bundle.json",
+      "sha256": "014321C594C4DB45708BD97B7C1294982D268FD69CCF883737C62861517F151B",
+      "bytes": 1040
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\OPAQUE_OPAQUE\\parent.approved7.json",
+      "sha256": "09F1352DE83EAEA7A1A29AD02A4412EBF980B8381CE484807866B4E8C958D0E5",
+      "bytes": 458
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\OPAQUE_OPAQUE\\parent.config.json",
+      "sha256": "5077C839A2EFD38495FF553AD2F16F1B5C50F9CDA4A5D673E5014CEC2552124B",
+      "bytes": 919
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\OPAQUE_PLAIN_PADDED\\child.approved7.json",
+      "sha256": "277C6D03DE65468EF7E102A660D7C5B67224A35B6580F3753D88C08B4932B908",
+      "bytes": 467
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\OPAQUE_PLAIN_PADDED\\child.config.json",
+      "sha256": "D6E345FEB30873C6002102E4C13BC5815A781C7177233B2DF64D82E49DD2A6CD",
+      "bytes": 909
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\OPAQUE_PLAIN_PADDED\\expected.bundle.json",
+      "sha256": "C3D178CA55DFD173FE0D02FBE8FFF0C746C7939C69D92F5087AB4793F44F8CE7",
+      "bytes": 1068
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\OPAQUE_PLAIN_PADDED\\parent.approved7.json",
+      "sha256": "B00F3F465092A2A86EF225B9AD59BA2F746772AEC927059044FFF758DAB8A944",
+      "bytes": 472
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\OPAQUE_PLAIN_PADDED\\parent.config.json",
+      "sha256": "5077C839A2EFD38495FF553AD2F16F1B5C50F9CDA4A5D673E5014CEC2552124B",
+      "bytes": 919
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\PLAIN_OPAQUE_PADDED\\child.approved7.json",
+      "sha256": "F5F62640588B83474A1CC3A4BEAA7EF52496C46CC1597BF947BC65A34BB15649",
+      "bytes": 467
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\PLAIN_OPAQUE_PADDED\\child.config.json",
+      "sha256": "DAA3A0F16906EBF54B0A4CA8D2040B8BE9FE75A785DE1CD28573D17E8A5ACADA",
+      "bytes": 931
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\PLAIN_OPAQUE_PADDED\\expected.bundle.json",
+      "sha256": "DB661DEF18B8571CBA7423ABAE65BB01711215C124897D7607D74C0063E71F89",
+      "bytes": 1068
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\PLAIN_OPAQUE_PADDED\\parent.approved7.json",
+      "sha256": "58AC140DEAD0ED5A21FDDA8FFAAB18435AF1C6276718C4003F4F6CFFF7CAF53D",
+      "bytes": 472
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\PLAIN_OPAQUE_PADDED\\parent.config.json",
+      "sha256": "25D3B88B03B708772B8C1B6CE9AAF66E4250EE84D3AAB6C53CBEC7BF9EE75A21",
+      "bytes": 897
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\PLAIN_PLAIN\\child.approved7.json",
+      "sha256": "15A2D1963535824BD9BA4DFF25CE3730233ABF8DA610F0BBD57EA06330C5D0AD",
+      "bytes": 451
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\PLAIN_PLAIN\\child.config.json",
+      "sha256": "D6E345FEB30873C6002102E4C13BC5815A781C7177233B2DF64D82E49DD2A6CD",
+      "bytes": 909
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\PLAIN_PLAIN\\expected.bundle.json",
+      "sha256": "605029D308419D31738F7B3D407D6ADD7947F5D7591BB63DA6684B740CAA9712",
+      "bytes": 1036
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\PLAIN_PLAIN\\parent.approved7.json",
+      "sha256": "AE5358E7FACF1D576C79E5A7491B1CF8083C0131EEE2A79A887220B1BFC7579F",
+      "bytes": 456
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012\\inputs\\PLAIN_PLAIN\\parent.config.json",
+      "sha256": "25D3B88B03B708772B8C1B6CE9AAF66E4250EE84D3AAB6C53CBEC7BF9EE75A21",
+      "bytes": 897
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R29_Startup_Pair_Preparation_S1_20261012.md",
+      "sha256": "1011B52665468DE3AAB057E4805D8753E3C7D5FBD383DC1DEEC797ACB263819B",
+      "bytes": 12849
+    }
+  ],
+  "historical_first4_both_raw14_bytes_original7_and_snapshot15_match": true,
+  "receipt11_equals_prior_except_explicit_new_BoundConfigPath": true,
+  "future_R29_candidate_not_reviewed": true,
+  "new_QA_terminal_RETURN_tool_index_own_failed_metadata_raw_preserved": true,
+  "initial_sent_WP_and_scope_baseline_unchanged": true
+}

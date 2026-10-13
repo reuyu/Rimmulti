@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-08T21:55:17.762372+09:00",
+  "event_id": "WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-20261008-DIRECT-8524bf02-PREPARED",
+  "type": "A_R7_CONTENT_ADMISSION_APPROVED_PREPARED",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-20261008-DIRECT-8524bf02",
+  "status": "NOT_SENT",
+  "task_root": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-20261008-DIRECT-8524bf02",
+  "instruction_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-20261008-DIRECT-8524bf02\\INSTRUCTIONS.md",
+  "counts": {
+    "archive": 19,
+    "prior_candidates": 844,
+    "pipeline": 206,
+    "qa": 1489,
+    "managed_dependencies": 4
+  },
+  "preservation_proof": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R7-CONTENT-ADMISSION-20261008-DIRECT-8524bf02\\MASTER_PRESERVATION_BEFORE_DISPATCH.json",
+  "known_installed_incident": "UNCHANGED_OPEN",
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "monitor": "PAUSED60MIN"
+}

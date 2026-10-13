@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":false,\"wake\":{\"reason\":\"inactiveStatus\",\"threadId\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\"},\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:98\",\"revision\":98,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"notLoaded\"}},\"latestTurn\":{\"id\":\"01a120cd-940b-7561-8c58-454439174272\",\"status\":\"completed\",\"error\":null,\"startedAt\":1791551706,\"completedAt\":1791553522,\"durationMs\":1816773},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ac8eff1ea5487d0b4cc28259201aaea\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ac8eff1ea5487d0b4cc28259201aaea\",\"turnId\":\"01a120cd-940b-7561-8c58-454439174272\",\"phase\":\"final_answer\",\"text\":\"R14 독립 QA를 완료하고 마스터에게 보고했습니다. 두 실행에서 각각 339개 검증이 통과했습니다. 정상 무효화·캐시·코덱은 PASS이며, 공개 manifest 경로에는 정적 수정 요구가 남아 있습니다. 전체 런타임 검증·릴리스는 보류입니다. QA 보고서\"},\"latestToolMarkerId\":\"exec-885eea86-1fa7-4865-9120-b1321f95184f\",\"latestToolMarker\":{\"id\":\"exec-885eea86-1fa7-4865-9120-b1321f95184f\",\"turnId\":\"01a120cd-940b-7561-8c58-454439174272\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

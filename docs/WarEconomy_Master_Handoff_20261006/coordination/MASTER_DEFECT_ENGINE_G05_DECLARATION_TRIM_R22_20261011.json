@@ -1,0 +1,31 @@
+{
+  "at": "2026-10-11T16:26:55.493001+09:00",
+  "defect_id": "ENGINE-G05-DECLARATION-TRIM-R22-20261011-01",
+  "status": "CLOSED_SCOPED_SOURCE_AND_NORMAL_FACTORY_REGRESSION",
+  "candidate_sha256": "278DA55F46B3646F981E79EF83D764F19959B6FEFAD6EEC83AFD4DAB0020864D",
+  "source_sha256": "6AA281259A5760BFFFA432E392AC4480807E16C044EE599A7D31AD4BF6C10F1E",
+  "source_lines": [
+    101,
+    102,
+    103
+  ],
+  "controlling_requirement": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_ENGINE_GATE05_R22_EXPLICIT_DECLARATION.md",
+  "issue": "CLI origin/launchPlan/configId Trim loses original declared identifier codepoints;M01 cannot close",
+  "observation": "STATIC_SOURCE_ONLY_BOOTSTRAP_UNEXECUTED",
+  "required_followup": "Actual native CLI/bootstrap/operator authority separately OPEN;no full Gate E2 release",
+  "role_boundary_normalization": "MASTER_ADOPTS_PRIVATE_COPY_TRIM_AND_ORDINALIGNORECASE_MISSING_FAILCLOSED_R23",
+  "full_gate_e2_released": false,
+  "independent_source_confirmation": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R22-DECLARATION-INDEPENDENT-S1-20261011\\INDEPENDENT_REVIEW_FINDINGS.json",
+  "master_review": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R23_IDENTIFIER_MAPPING_INDEPENDENT_S1_20261011.md",
+  "normal_factory_DATA": "FRESH_SCOPED_PASS",
+  "updated_at": "2026-10-11T18:17:10.376509+09:00",
+  "R23_source_fix": "CREDITED_EXACT_SOURCE_ONLY_PENDING_FRESH_QA",
+  "R23_selected_sha256": "4379BE35700337F797BB17F25D5BAC2A8014FAA9332D9878E587A12E5758A9C4",
+  "R23_master_review": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R23_IDENTIFIER_MAPPING_E1_20261011.md",
+  "closed_at": "2026-10-11T18:17:10.376509+09:00",
+  "closure_candidate_sha256": "4379BE35700337F797BB17F25D5BAC2A8014FAA9332D9878E587A12E5758A9C4",
+  "closure_candidate_mvid": "5bdada93-1f00-40e3-ab4d-7b23f4b2d086",
+  "closure_source_sha256": "2076E3A88B57A55CDDB5F25950ED26EB2310224A43A91C8917EEC6588CD5983F",
+  "targeted_regression_result": "SOL-GATE05-R23-IDENTIFIER_MAPPING-INDEPENDENT-S1-20261011-6676d9031f23400b975339ea0a56f0ea",
+  "native_cli": "UNTESTED_OPEN_SEPARATE"
+}

@@ -1,0 +1,20 @@
+{
+  "run_id": "MASTER-R25-HEARTBEAT-20261011T132716Z-01",
+  "guard_session": 72947,
+  "guard_pid": 26592,
+  "final_renewal_tool": {
+    "chunk_id": "f131d6",
+    "wall_time_seconds": 0.2642039,
+    "session_id": 72947,
+    "original_token_count": 45,
+    "output": "RENEW\r\n{\"status\": \"LOCK_RENEWED\", \"run_id\": \"MASTER-R25-HEARTBEAT-20261011T132716Z-01\", \"pid\": 26592, \"renewed_at\": \"2026-10-11T22:42:25.147005+09:00\", \"max_hold_seconds\": 1800}\r\n"
+  },
+  "actual_release_tool": {
+    "chunk_id": "918c32",
+    "wall_time_seconds": 0.000049,
+    "exit_code": 0,
+    "original_token_count": 118,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R25-HEARTBEAT-20261011T132716Z-01\", \"pi\r\n\u001b[23;80Hid\": 26592, \"locked_at\": \"2026-10-11T22:27:27.299565+09:00\", \"mechanism\": \"Window\r\n\u001b[23;80Hws msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_a\r\n\u001b[23;80Hat\": \"2026-10-11T22:42:25.147005+09:00\", \"renewal_count\": 5, \"release_reason\": \"R\r\n\u001b[23;80HRELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-11T22:42:25.519707+09:00\"}     \r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "all_child_commands_completed_before_release": true
+}

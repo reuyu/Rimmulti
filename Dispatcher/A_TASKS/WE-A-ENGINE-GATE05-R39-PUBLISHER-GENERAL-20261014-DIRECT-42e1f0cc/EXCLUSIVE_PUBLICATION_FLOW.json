@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "dispatch_id": "WE-A-ENGINE-GATE05-R39-PUBLISHER-GENERAL-20261014-DIRECT-42e1f0cc",
+  "wp_id": "WP_ENGINE_GATE05_R39_PUBLISHER_GENERAL",
+  "envelope": 42,
+  "captured_at_utc": "2026-10-13T20:48:56.156568+00:00",
+  "steps": [
+    {
+      "step": 1,
+      "name": "EXCLUSIVE_ROOT_PRE_VERIFY",
+      "action": "verify_path_ancestry on output_dir with is_new_leaf=True",
+      "safety": "Ensures all ancestor directories exist, have valid Windows st_file_attributes, are not reparse points, and the leaf does NOT exist (os.lstat catches only FileNotFoundError)."
+    },
+    {
+      "step": 2,
+      "name": "EXCLUSIVE_ROOT_MKDIR",
+      "action": "os.mkdir(output_dir)",
+      "safety": "Creates owned root directory exclusively."
+    },
+    {
+      "step": 3,
+      "name": "EXCLUSIVE_ROOT_POST_VERIFY",
+      "action": "verify_path_ancestry on output_dir with is_new_leaf=False, require_dir=True",
+      "safety": "Re-inspects newly created directory ensuring attributes integer and no reparse points."
+    },
+    {
+      "step": 4,
+      "name": "EXCLUSIVE_STAGING_WRITE",
+      "action": "open(staging_bundle_path, 'xb') and write compact UTF-8 bundle bytes",
+      "safety": "O_EXCL ensures staging file does not preexist."
+    },
+    {
+      "step": 5,
+      "name": "EXCLUSIVE_SIDECAR_WRITE",
+      "action": "open(out_sha_path, 'xb') and write 64 uppercase ASCII hex characters",
+      "safety": "O_EXCL sidecar creation."
+    },
+    {
+      "step": 6,
+      "name": "EXCLUSIVE_PROVENANCE_WRITE",
+      "action": "open(out_manifest_path, 'xb') and write PROVENANCE_MANIFEST.json",
+      "safety": "Binds captured read-once stats and SHA-256 for spec, parent config, child config, bundle, and publisher."
+    },
+    {
+      "step": 7,
+      "name": "EXCLUSIVE_ROOT_FINAL_VERIFY",
+      "action": "verify_path_ancestry on output_dir before final link",
+      "safety": "Ensures root remains valid and non-reparse."
+    },
+    {
+      "step": 8,
+      "name": "ATOMIC_ENTRY_LINK",
+      "action": "os.link(staging_bundle_path, out_bundle_path)",
+      "safety": "Atomic directory entry creation on NTFS. Zero destructive overwrites, fallbacks, or renames. Partial outputs preserved on error."
+    }
+  ],
+  "guarantees_and_limits": {
+    "directory_entry_creation_atomic": true,
+    "hardlink_contents_shared_mutable": true,
+    "multi_file_transactional_atomicity_unsupported": true,
+    "crash_durability_unproven": true,
+    "protected_owner_assumed": true,
+    "no_hostile_concurrent_writers_assumed": true
+  }
+}

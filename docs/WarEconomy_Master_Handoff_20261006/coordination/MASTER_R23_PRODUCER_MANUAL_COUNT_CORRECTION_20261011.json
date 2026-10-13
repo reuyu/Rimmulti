@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-11T18:17:10.376509+09:00",
+  "controlling_review": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R23_IDENTIFIER_MAPPING_INDEPENDENT_S1_20261011.md",
+    "sha256": "9DE551557EFB7FB1961B195390749A8634EA3CB609A5460EED81E4154ED90614",
+    "bytes": 4849
+  },
+  "correction": "MASTER_E1_WP71_ANNOTATION_SUPERSEDED_BY_ACTUAL66",
+  "actual_two_raw_sums": [
+    66,
+    66
+  ],
+  "original_raw_unchanged": true,
+  "qa_correction": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R23-IDENTIFIER_MAPPING-INDEPENDENT-S1-20261011\\PRODUCER_COUNTER_RECONCILIATION.json",
+    "sha256": "190C6DD3F630B900653B38AB1ECB380A3B2002CBCF015F4E040782611E8F95E1",
+    "bytes": 5602
+  }
+}

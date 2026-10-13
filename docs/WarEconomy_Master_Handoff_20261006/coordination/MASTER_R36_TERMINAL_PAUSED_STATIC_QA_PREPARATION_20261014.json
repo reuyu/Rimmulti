@@ -1,0 +1,55 @@
+{
+  "at": "2026-10-14T00:34:02.100037+09:00",
+  "guard_session": 63464,
+  "review": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R36_PUBLISHER_CONTRACT_E1_20261014.md",
+    "sha256": "EAC7AAEA51F183A9BC7F6540A7E2EB8C483AF8CC3AF4653D6598A84B674DF150",
+    "bytes": 5250
+  },
+  "verification": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_GATE05_R36_PUBLISHER_CONTRACT_E1_VERIFICATION_20261014.json",
+    "sha256": "7A7E55E4F454E2DB97606E4C04A612BB44852BC5A0666FDABF4A7206867376BB",
+    "bytes": 13914
+  },
+  "automation_config": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "PAUSED",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791905500067
+  },
+  "automation_file": {
+    "path": "C:\\Users\\user\\.codex\\automations\\wareconomy-master\\automation.toml",
+    "sha256": "8466026E83A506F7471E06EA605AD7A85EE5F130252FFBF99BA03722D700D662",
+    "bytes": 590
+  },
+  "QA": {
+    "delivery_id": "SOL-GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014-01",
+    "wp_id": "WP_QA_ENGINE_GATE05_R36_PUBLISHER_INDEPENDENT_STATIC",
+    "wp_revision": "S1",
+    "wp_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R36_PUBLISHER_INDEPENDENT_STATIC_S1.md",
+    "wp_sha256": "A0BBF3587CFD0050F6B9FE030410C789AEB5036EAF2D78C1FEAF624582E0AF00",
+    "qa_root": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R36-PUBLISHER-INDEPENDENT-STATIC-S1-20261014",
+    "report_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R36_Publisher_Independent_Static_S1_20261014.md",
+    "baseline_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R36_INDEPENDENT_STATIC_PROTECTED_BASELINE_20261014.json",
+    "baseline_sha256": "4BD2C7789721BBA4DBB61A8F57B289837B9496CB104FA83CB5BFA70CA967554E",
+    "protected_unique_paths": 19380,
+    "frozen_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R36-PUBLISHER-CONTRACT-20261013-DIRECT-d2d6556b\\MASTER_GATE05_R36_PUBLISHER_CONTRACT_REVIEW_FREEZE_MANIFEST.json",
+    "frozen_manifest_sha256": "3F60458A4303F0B9CB8F1C0003D3E0E39E37F80E002B5FA06CACA4A3D197D130",
+    "selected_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R36-d2d6556b\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+    "selected_sha256": "F60CBC184C6627F0FE15A5A904D0C45A026E20C5138973066BB8174DD8FBFD3F",
+    "selected_bytes": 31689,
+    "delivery_status": "NOT_SENT",
+    "status": "APPROVED_NOT_SENT",
+    "submission_attempts": 0,
+    "unknown_delivery": false,
+    "scope": "FROZEN_R36_TEXT_STATIC_ONLY_NO_PUBLICATION_OR_NATIVE_EXECUTION"
+  },
+  "native_E2": "NOT_RELEASED",
+  "Foundation": "HOLD"
+}

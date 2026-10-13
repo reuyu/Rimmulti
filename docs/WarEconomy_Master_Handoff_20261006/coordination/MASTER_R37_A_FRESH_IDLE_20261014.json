@@ -1,0 +1,16 @@
+{
+  "observed_at": "2026-10-13T15:57:39.599Z",
+  "window": {
+    "app": "process:C:\\Users\\user\\AppData\\Local\\Programs\\Antigravity IDE\\Antigravity IDE.exe",
+    "id": 2885616,
+    "title": "RimMulti - Antigravity IDE - WarEconomy.Server.pdb"
+  },
+  "lines": [
+    "\t\t\t\t\t\t\t\t\t\t\t\t\t215 텍스트 WarEconomy 컨텍스트 복구 및 수행",
+    "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t749 목록 항목 최종 인덱스 및 완료 토큰:• RESULT_INDEX.json (7,038 Bytes, 20개 아티팩트 색인)• COMPLETION.json (11,225 Bytes, result_id: WE-A-ENGINE-GATE05-R36-PUBLISHER-CONTRACT-RESULT-01, e1_verdict: SOURCE_SYNTAX_ONLY_PUBLICATION_NOT_EXECUTED, 21개 아티팩트 바이트 및 해시 100% 매칭 검증 완료)",
+    "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t755 목록 항목 COMPLETION.json (11,225 Bytes, result_id: WE-A-ENGINE-GATE05-R36-PUBLISHER-CONTRACT-RESULT-01, e1_verdict: SOURCE_SYNTAX_ONLY_PUBLICATION_NOT_EXECUTED, 21개 아티팩트 바이트 및 해시 100% 매칭 검증 완료)",
+    "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t759 텍스트 WE-A-ENGINE-GATE05-R36-PUBLISHER-CONTRACT-RESULT-01",
+    "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t876 콤보 상자 (settable, string) Message input"
+  ],
+  "screenshot_observed": "Exact WarEconomy conversation; R36 final response; no Working/Cancel; empty composer; no review controls acted on"
+}

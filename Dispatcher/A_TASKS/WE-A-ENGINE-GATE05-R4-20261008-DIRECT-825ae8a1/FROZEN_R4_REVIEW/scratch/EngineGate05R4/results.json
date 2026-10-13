@@ -1,0 +1,353 @@
+{
+  "test_run_utc": "2026-10-08T07:29:10.6481025Z",
+  "total_tests": 43,
+  "passed": 43,
+  "failed": 0,
+  "verdict": "PASS",
+  "results": [
+    {
+      "id": "PROV-01",
+      "category": "Provenance",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Selected Debug Candidate DLL Exists & Cryptographically Bound",
+      "status": "PASS",
+      "details": "Path=C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll, SHA256=4F5663FDBBFA09A8B2BE460D09950FD22B9567459F7116E69D0B1C558F189B9E, Size=204800"
+    },
+    {
+      "id": "PROV-02",
+      "category": "Provenance",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Selected Debug Matching PDB Exists & Cryptographically Bound",
+      "status": "PASS",
+      "details": "Path=C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb, SHA256=CC796E68C592C94345DF41D64609B5D207933B8F5FE805146875D9E61B8D12C4"
+    },
+    {
+      "id": "PROV-03",
+      "category": "Provenance",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Candidate Assembly MVID Cryptographically Extracted",
+      "status": "PASS",
+      "details": "MVID=ed98e6f9-aa63-47ee-ae21-84f59465d2bb"
+    },
+    {
+      "id": "PROV-04",
+      "category": "Provenance",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Release Candidate Separately Tracked (Non-Selected Alternate Lineage)",
+      "status": "PASS",
+      "details": "Path=C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll, SHA256=7532FF152314892A4AB95A0117107C0845B0D7BAD170C3B840BA24F3EADA270B"
+    },
+    {
+      "id": "GEN-01",
+      "category": "GENUINE_OPERATOR_FLOW",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Issue ValidatorTask with complete 16 authority dimensions & result channel path",
+      "status": "PASS",
+      "details": "TaskId=VT_R4_2265bebb, ResultChannel='C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\MockSaveData\\Tasks\\VT_R4_2265bebb.protected_result.json', Role=READ_ONLY"
+    },
+    {
+      "id": "GEN-02",
+      "category": "GENUINE_OPERATOR_FLOW",
+      "execution_class": "GENUINE_SUBPROCESS",
+      "description": "Launch genuine child process via LAUNCH_OPERATOR_VALIDATOR with admitted executable and verified StartTime",
+      "status": "PASS",
+      "details": "Resp='OPERATOR_VALIDATOR_LAUNCHED: TaskId=VT_R4_2265bebb, Pid=15820, StartTime=2026-10-08T07:29:10.3376942Z, Exe='C:\\WINDOWS\\system32\\cmd.exe'', ChildPid=15820, SimulatorPid=17532, StartTime=2026-10-08T07:29:10.3376942Z"
+    },
+    {
+      "id": "GEN-03",
+      "category": "GENUINE_OPERATOR_FLOW",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Validator writes ValidatorResult with 16 authority dimensions (allowedMode=READ_ONLY) to protected result channel",
+      "status": "PASS",
+      "details": "ResultFile='C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\MockSaveData\\Tasks\\VT_R4_2265bebb.protected_result.json', Size=1316, Mode=READ_ONLY"
+    },
+    {
+      "id": "GEN-04",
+      "category": "GENUINE_OPERATOR_FLOW",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "COMPLETE_STAGE_VALIDATION accepts verified result binding SIMULATION grant & READ_ONLY validator",
+      "status": "PASS",
+      "details": "Resp='STAGE_VALIDATION_ACCEPTED: ReceiptId=VR_20261008_072910_fbd429d8b3d9455d937582922dc81bc5, ValidatorPid=15820, TaskId=VT_R4_2265bebb'"
+    },
+    {
+      "id": "GEN-05",
+      "category": "GENUINE_OPERATOR_FLOW",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Atomic result channel consumption: original vanished and .consumed created (Fail-Closed)",
+      "status": "PASS",
+      "details": "OriginalExists=False, ConsumedExists=True"
+    },
+    {
+      "id": "GEN-06",
+      "category": "GENUINE_OPERATOR_FLOW",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "StageValidationReceipt dual-role binding verified (allowedMode=READ_ONLY, simulatorOperationMode=SIMULATION)",
+      "status": "PASS",
+      "details": "ReceiptId=VR_20261008_072910_fbd429d8b3d9455d937582922dc81bc5, BoundExe='C:\\WINDOWS\\system32\\cmd.exe', BoundMode='READ_ONLY', SimMode='SIMULATION'"
+    },
+    {
+      "id": "GEN-07",
+      "category": "GENUINE_OPERATOR_FLOW",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "PROMOTE_STAGED successfully promotes validated staged save",
+      "status": "PASS",
+      "details": "Resp='ARTIFACT_APPROVED: File='C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\Saves\\FinalSave.rws', Name='FinalSave', Size=66 bytes, SHA256=FE248F38BF8B5F7C34F360FC6C959020B14C6D4F7D40652C9261021C80F9D884, SealedManifestHash=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA, Epoch=1, ReceiptId=VR_20261008_072910_fbd429d8b3d9455d937582922dc81bc5'"
+    },
+    {
+      "id": "MODE-01",
+      "category": "ROLE_ESCALATION_PREVENTION",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Reject ValidatorResult attempting SIMULATION write authority escalation",
+      "status": "PASS",
+      "details": "Resp='STAGE_VALIDATION_REJECTED: ValidatorResult role must be READ_ONLY.'"
+    },
+    {
+      "id": "MODE-02",
+      "category": "ROLE_ESCALATION_PREVENTION",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Reject ValidatorTask mutated to non-READ_ONLY role",
+      "status": "PASS",
+      "details": "Resp='STAGE_VALIDATION_REJECTED: ValidatorTask role must be READ_ONLY.'"
+    },
+    {
+      "id": "MODE-03",
+      "category": "ROLE_ESCALATION_PREVENTION",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Reject AuthorityBundle proposal operation mode when not SIMULATION",
+      "status": "PASS",
+      "details": "Resp='STAGE_VALIDATION_REJECTED: Proposal operation mode mismatch in AuthorityBundle.'"
+    },
+    {
+      "id": "MODE-04",
+      "category": "ROLE_ESCALATION_PREVENTION",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Reject SimulationGrant proposal operation mode when not SIMULATION",
+      "status": "PASS",
+      "details": "Resp='STAGE_VALIDATION_REJECTED: Proposal operation mode mismatch in SimulationGrant.'"
+    },
+    {
+      "id": "MODE-05",
+      "category": "ROLE_ESCALATION_PREVENTION",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Reject mismatch between ValidatorTask and ValidatorResult allowedMode",
+      "status": "PASS",
+      "details": "Resp='STAGE_VALIDATION_REJECTED: ValidatorResult role must be READ_ONLY.'"
+    },
+    {
+      "id": "SEC-01",
+      "category": "ATTACK_SURFACE_ISOLATION",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Public requester invocation of LAUNCH_OPERATOR_VALIDATOR without capabilityNonce rejected",
+      "status": "PASS",
+      "details": "Resp='ERROR: Unauthorized: CapabilityNonce mismatch.'"
+    },
+    {
+      "id": "SEC-02",
+      "category": "ATTACK_SURFACE_ISOLATION",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Public requester invocation with wrong capabilityNonce rejected",
+      "status": "PASS",
+      "details": "Resp='ERROR: Unauthorized: CapabilityNonce mismatch.'"
+    },
+    {
+      "id": "SEC-03",
+      "category": "ATTACK_SURFACE_ISOLATION",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Caller attempt to nominate unadmitted validator executable rejected",
+      "status": "PASS",
+      "details": "Resp='ERROR: Caller cannot nominate arbitrary validator executable (MD-126/127).'"
+    },
+    {
+      "id": "SEC-04",
+      "category": "ATTACK_SURFACE_ISOLATION",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Self-validation prohibited (Validator PID == Simulator PID rejected)",
+      "status": "PASS",
+      "details": "Resp='STAGE_VALIDATION_REJECTED: Fresh independent validator required (Self-PID prohibited).'"
+    },
+    {
+      "id": "SEC-05",
+      "category": "ATTACK_SURFACE_ISOLATION",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Result channel fallback search removed (Missing configured channel rejects without fallback)",
+      "status": "PASS",
+      "details": "Resp='STAGE_VALIDATION_REJECTED: Protected validator result channel file not found.'"
+    },
+    {
+      "id": "SEC-06",
+      "category": "ATTACK_SURFACE_ISOLATION",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Process start time mismatch rejected (Unregistered or reused process instance rejected)",
+      "status": "PASS",
+      "details": "Resp='STAGE_VALIDATION_REJECTED: Validator process start time mismatch.'"
+    },
+    {
+      "id": "SEC-07",
+      "category": "ATTACK_SURFACE_ISOLATION",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Caller-supplied inline JSON payload rejected (MD-127)",
+      "status": "PASS",
+      "details": "Resp='STAGE_VALIDATION_REJECTED: Caller-supplied payload prohibited under MD-127.'"
+    },
+    {
+      "id": "SEC-08",
+      "category": "ATTACK_SURFACE_ISOLATION",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Unauthorized BindOperatorLaunchedProcess overload without nonce is eliminated",
+      "status": "PASS",
+      "details": "OverloadExists=False"
+    },
+    {
+      "id": "CLAMP-01",
+      "category": "TARGET_CLAMPING_PROHIBITION",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Reject targetMapIndex < 0 without clamping under MD-128",
+      "status": "PASS",
+      "details": "Resp='VALIDATION_FAILED: Target map index -1 out of range. Target clamping is strictly prohibited under MD-128.'"
+    },
+    {
+      "id": "CLAMP-02",
+      "category": "TARGET_CLAMPING_PROHIBITION",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Reject targetMapIndex >= MapCount without clamping under MD-128",
+      "status": "PASS",
+      "details": "Resp='VALIDATION_FAILED: Target map index 9999 out of range (Maps.Count=1). Target clamping is strictly prohibited under MD-128.'"
+    },
+    {
+      "id": "CLAMP-03",
+      "category": "TARGET_CLAMPING_PROHIBITION",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Valid targetMapIndex passes boundary guard without clamping error",
+      "status": "PASS",
+      "details": "Resp='VALIDATION_FAILED: Validator exception: 개체 참조가 개체의 인스턴스로 설정되지 않았습니다.'"
+    },
+    {
+      "id": "DIM-01",
+      "category": "16_DIMENSION_EQUALITY",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Authority dimension 'AuthorityId' mismatch rejected",
+      "status": "PASS",
+      "details": "Resp='STAGE_VALIDATION_REJECTED: AuthorityId mismatch.'"
+    },
+    {
+      "id": "DIM-02",
+      "category": "16_DIMENSION_EQUALITY",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Authority dimension 'StoreIncarnation' mismatch rejected",
+      "status": "PASS",
+      "details": "Resp='STAGE_VALIDATION_REJECTED: StoreIncarnation mismatch.'"
+    },
+    {
+      "id": "DIM-03",
+      "category": "16_DIMENSION_EQUALITY",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Authority dimension 'BaseLineage' mismatch rejected",
+      "status": "PASS",
+      "details": "Resp='STAGE_VALIDATION_REJECTED: BaseLineage mismatch.'"
+    },
+    {
+      "id": "DIM-04",
+      "category": "16_DIMENSION_EQUALITY",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Authority dimension 'GrantId' mismatch rejected",
+      "status": "PASS",
+      "details": "Resp='STAGE_VALIDATION_REJECTED: GrantId mismatch.'"
+    },
+    {
+      "id": "DIM-05",
+      "category": "16_DIMENSION_EQUALITY",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Authority dimension 'WorkerGeneration' mismatch rejected",
+      "status": "PASS",
+      "details": "Resp='STAGE_VALIDATION_REJECTED: WorkerGeneration mismatch.'"
+    },
+    {
+      "id": "DIM-06",
+      "category": "16_DIMENSION_EQUALITY",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Authority dimension 'ScopeId' mismatch rejected",
+      "status": "PASS",
+      "details": "Resp='STAGE_VALIDATION_REJECTED: ScopeId mismatch.'"
+    },
+    {
+      "id": "DIM-07",
+      "category": "16_DIMENSION_EQUALITY",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Authority dimension 'TargetMapIndex' mismatch rejected",
+      "status": "PASS",
+      "details": "Resp='STAGE_VALIDATION_REJECTED: TargetMapIndex mismatch.'"
+    },
+    {
+      "id": "DIM-08",
+      "category": "16_DIMENSION_EQUALITY",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Authority dimension 'AllowedMode' mismatch rejected",
+      "status": "PASS",
+      "details": "Resp='STAGE_VALIDATION_REJECTED: ValidatorResult role must be READ_ONLY.'"
+    },
+    {
+      "id": "DIM-09",
+      "category": "16_DIMENSION_EQUALITY",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Authority dimension 'ManifestVersion' mismatch rejected",
+      "status": "PASS",
+      "details": "Resp='STAGE_VALIDATION_REJECTED: ManifestVersion mismatch.'"
+    },
+    {
+      "id": "DIM-10",
+      "category": "16_DIMENSION_EQUALITY",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Authority dimension 'SealedResultId' mismatch rejected",
+      "status": "PASS",
+      "details": "Resp='STAGE_VALIDATION_REJECTED: SealedResultId mismatch.'"
+    },
+    {
+      "id": "DIM-11",
+      "category": "16_DIMENSION_EQUALITY",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Authority dimension 'ResultEpoch' mismatch rejected",
+      "status": "PASS",
+      "details": "Resp='STAGE_VALIDATION_REJECTED: ResultEpoch mismatch.'"
+    },
+    {
+      "id": "DIM-12",
+      "category": "16_DIMENSION_EQUALITY",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Authority dimension 'SourceArtifactHash' mismatch rejected",
+      "status": "PASS",
+      "details": "Resp='STAGE_VALIDATION_REJECTED: SourceArtifactHash mismatch.'"
+    },
+    {
+      "id": "DIM-13",
+      "category": "16_DIMENSION_EQUALITY",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Authority dimension 'ContentProfileFingerprint' mismatch rejected",
+      "status": "PASS",
+      "details": "Resp='STAGE_VALIDATION_REJECTED: ContentProfileFingerprint mismatch.'"
+    },
+    {
+      "id": "DIM-14",
+      "category": "16_DIMENSION_EQUALITY",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "Authority dimension 'ActualManifestHash' mismatch rejected",
+      "status": "PASS",
+      "details": "Resp='STAGE_VALIDATION_REJECTED: Manifest hash mismatch.'"
+    },
+    {
+      "id": "PROF-01",
+      "category": "CONTENT_PROFILE_INTEGRITY",
+      "execution_class": "HARNESS_FIXTURE_ASSERTION",
+      "description": "ContentProfileProvider schema upgraded to ADR-006B-v4 with DLC expansion binding",
+      "status": "PASS",
+      "details": "SchemaVersion='ADR-006B-v4'"
+    },
+    {
+      "id": "PROF-02",
+      "category": "CONTENT_PROFILE_INTEGRITY",
+      "execution_class": "GENUINE_CONTROL_FLOW",
+      "description": "InvalidateCache() cleanly clears fingerprint and manifest cache for re-admission",
+      "status": "PASS",
+      "details": "IsCached=False"
+    }
+  ]
+}

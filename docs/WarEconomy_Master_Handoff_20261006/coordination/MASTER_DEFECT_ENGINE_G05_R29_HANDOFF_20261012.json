@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-12T09:41:24.472945+09:00",
+  "id": "ENGINE-G05-R29-HANDOFF-20261012-01",
+  "severity": "High",
+  "status": "OPEN",
+  "scope": "EXACT_FROZEN_R29_STARTUP_PAIR_SOURCE_NO_NATIVE_REPRODUCTION",
+  "summary": "Receipt versus snapshot ReferenceEquals alwaysfalse plus missing explicitpairmode early gate/owner-scoped oneuse cleanup",
+  "selected_sha256": "084C58CCD770AF90D2F2AE162FF5456C8CD2F0DB3167AE13394635BF8E567E7A",
+  "source_sha256": "55441CE93DF32F5E5940D99A4A9CA8449B3F7839840CA3A3832C9DB31396FBDE",
+  "review": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R29_STARTUP_PAIR_E1_20261012.md",
+    "sha256": "935D7C10676E965A8C370F63E3ADF357E9CB63D05D9D8DD381E4EACEEFDDE4FA",
+    "bytes": 6636
+  },
+  "frozen_manifest": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a\\MASTER_GATE05_R29_STARTUP_PAIR_REVIEW_FREEZE_MANIFEST.json",
+    "sha256": "006DE41FCB6EC9C9E183C877BD6E3D5C3FB48047454F4AF3902673C0B08D447E",
+    "bytes": 80352
+  },
+  "adverse_execution": 0,
+  "closure_requires": "Correctiveimplementation + targeted normal regression + independent exactcandidate static/requiredruntime evidence + Masterdisposition; no handoffnativegate closure fromPUREPASS"
+}

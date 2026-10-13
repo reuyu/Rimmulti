@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "producer": "A",
+  "task_id": "WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa",
+  "work_package_id": "WP_ENGINE_GATE05_R3",
+  "report_kind": "E1",
+  "result_id": "GATE05-R3-E1-COMPLETION-20261008-01",
+  "status": "COMPLETED",
+  "completed_at_utc": "2026-10-08T04:12:00Z",
+  "verdict": "PASS_WITH_DECLARED_LIMITS",
+  "summary": "WP_ENGINE_GATE05_R3 / GATE05-R3 implementation and E1 developer verification completed. Remediated R2-M01~08 review blockers: operator capability nonce validation enforced, 16 authority dimensions included in ValidatorResult DTO with strict 1:1 equality, ADR-006B-v3 schema upgraded with lossless typed material Def coverage, genuine subprocess/control-flow and harness fixtures separated in 32/32 tests PASS. Disclosed native execution limits as NATIVE_UNTESTED / BLOCKER_UNKNOWN and installed DLL discrepancy as UNKNOWN OPEN incident.",
+  "artifacts": [
+    {
+      "role": "selected_candidate_debug_dll",
+      "path": "scratch/WorkerBridgeMod/Source/bin/Debug/net472/WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "9851351B4F3E8DD14D16AB5BBC5932F6A0F71E34ABF49648FA7366945516B1BB",
+      "size_bytes": 199168,
+      "mvid": "501e64f4-2135-42b0-b997-8829c99f5001"
+    },
+    {
+      "role": "selected_candidate_debug_pdb",
+      "path": "scratch/WorkerBridgeMod/Source/bin/Debug/net472/WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "3B93B64C62CE37E7D5856846562A30448E574619A0D1E8C96B9025974ADEB9BE",
+      "size_bytes": 48620
+    },
+    {
+      "role": "alternate_candidate_release_dll",
+      "path": "scratch/WorkerBridgeMod/Source/bin/Release/net472/WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "CC675EC3D7933C7A163D43FDD1941AADE3B53BC1A6A2575D3096C170FA678217",
+      "size_bytes": 190464,
+      "mvid": "355d01bf-ea8e-4f09-a547-4038e9bbf46e"
+    },
+    {
+      "role": "alternate_candidate_release_pdb",
+      "path": "scratch/WorkerBridgeMod/Source/bin/Release/net472/WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "895350A2D329DE6EDFB2BB0C671223B82B3391F69BCF0248455B35084CF4689C",
+      "size_bytes": 36860
+    },
+    {
+      "role": "e1_report",
+      "path": "docs/POC_EngineHost_Semantic_Authority_Gate_05_R3.md",
+      "sha256": "D3E00B6B24BB4667E9DF615AD557EB0821E7B327D77FBB6C73E090D14BE9FA11",
+      "size_bytes": 14100
+    },
+    {
+      "role": "release_manifest",
+      "path": "docs/RELEASE_MANIFEST_ENGINE_GATE05_R3.json",
+      "sha256": "E85133908E3733E1CE326A8E65A362D243966FE5512DD933E293DC12C3AB715E",
+      "size_bytes": 3601
+    },
+    {
+      "role": "harness_results_json",
+      "path": "scratch/EngineGate05R3/results.json",
+      "sha256": "A066741953794E6F9256D7794A0DEBF0BC867BF8BDFDAF9535737C07653721EA",
+      "size_bytes": 11650
+    },
+    {
+      "role": "harness_raw_console",
+      "path": "scratch/EngineGate05R3/raw_console.txt",
+      "sha256": "2EBC5561DEF7ACDB6B46B749CE479F024438216129C094A347294FF80AD81E48",
+      "size_bytes": 10822
+    },
+    {
+      "role": "work_log",
+      "path": "Dispatcher/A_TASKS/WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa/A_WORK_LOG.md",
+      "sha256": "B8CBECD6BAE6938D63FF09533FA9B2855687DEE2D61898AFDBB2ABE4A8DC0B0E",
+      "size_bytes": 4629
+    },
+    {
+      "role": "recovery_ack",
+      "path": "Dispatcher/A_TASKS/WE-A-ENGINE-GATE05-R3-20261008-DIRECT-756d5bfa/A_RECOVERY_ACK.md",
+      "sha256": "A83B41593F00DC9AF3F34715D25F126BFA2F3B012CE3D95935EDABC1E013BBEC",
+      "size_bytes": 4384
+    }
+  ],
+  "disclosures": {
+    "native_execution_observation": "NATIVE_UNTESTED / BLOCKER_UNKNOWN (Standalone execution outside active Steam launcher observed with PID=16436 and clean kill)",
+    "installed_dll_incident": "UNKNOWN OPEN INCIDENT (Steam installed DLL BB3B52... differs from baseline archive 2D64FF...; preserved unmodified per Master policy)",
+    "authority_disposition": "Defects remain OPEN pending Master review and independent E2 verification by Sol QA. Developer A does not self-declare closure."
+  }
+}

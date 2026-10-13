@@ -1,0 +1,32 @@
+{
+  "source": "list_threads read-only snapshot",
+  "relevant_threads": [
+    {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "kind": "codex",
+      "projectId": null,
+      "hostId": "local",
+      "status": "active",
+      "cwd": "C:\\Users\\user\\Desktop\\RimMulti",
+      "updatedAt": 1791363330,
+      "title": "Review WarEconomyMod QA",
+      "summary": "마스터 에이전트 지시 대기; Review WarEconomyMod QA",
+      "isUnread": false
+    },
+    {
+      "id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+      "kind": "codex",
+      "projectId": null,
+      "hostId": "local",
+      "status": "active",
+      "cwd": "C:\\Users\\user\\Desktop\\RimMulti",
+      "updatedAt": 1791363327,
+      "title": "rimworld mod dev IDE Master",
+      "summary": "Mandatory recovery, C guard, Foundation HOLD, Pipeline E2, Dispatcher",
+      "isUnread": false
+    }
+  ],
+  "retired_endpoint_present": false,
+  "scope": "No other active QA WP in this new thread; local listed RimMulti threads only. Does not certify unrelated remote agents.",
+  "runtime_process_observation": "Get-Process -Name RimWorldWin64 returned no process in recovery observation."
+}

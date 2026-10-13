@@ -1,0 +1,67 @@
+{
+  "at": "2026-10-12T04:05:06.609461+09:00",
+  "run_id": "MASTER-R27-QA-DEPENDENCY-REPAIR-20261012-01",
+  "guard_pid": 26572,
+  "guard_session": 44434,
+  "S1_receipt_deduped": 1,
+  "S1_stop": "NOT_EXECUTED_NO_BUILD_NO_CANDIDATE_FAIL_OR_PASS",
+  "S2_actual": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:170",
+    "revision": 170,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a12c59-16c6-7df1-8b63-4643d43b1833",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791745398,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "selected_SHA": "68BFE5105FA0471AAAF7943009703BB2599B39C5B572833507D6733BCE63CF64",
+  "selected_MVID": "44ba753c-6570-49d8-8068-4edf87a4e5d0",
+  "frozen83_manifest_SHA": "1FD4B9EFB368EE03F327241418C5CC0ACC08F9210E6E1BD271AECC373D219EE3",
+  "admitted_actual_Newtonsoft": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R27-cdc223f3\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\Newtonsoft.Json.dll",
+    "sha256": "E1E27AF7B07EEEDF5CE71A9255F0422816A6FC5849A483C6714E1B472044FA9D",
+    "bytes": 711952,
+    "mvid": "dd21e087-47d9-4bce-bed8-b56112226337"
+  },
+  "protected": 13674,
+  "corrected_S2_new_report": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R27_Child_Capture_Independent_S2_20261012.md",
+  "S1_original_report_preserved": true,
+  "S2_exact_message_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R27_CHILD_CAPTURE_INDEPENDENT_S2_EXACT_MESSAGE_20261012.json",
+  "scheduler_actual": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "PAUSED",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791743979168
+  },
+  "candidate_modify_rebuild": 0,
+  "defect": "OPEN_CORRECTION_ADOPTED_FRESH_EXECUTION_PENDING",
+  "next_A": "NONE_NOT_SENT_PENDING_QA",
+  "closure_changed": false,
+  "full_native_e2_released": false,
+  "foundation": "HOLD",
+  "guard_release_status": "PENDING_ACTUAL_FINALLY",
+  "metadata_tool_source_parse_error": "functions JS parser rejected raw-template backticks before any nested calls; corrected delimiter only; UI/thread delivery0 on rejected cell"
+}

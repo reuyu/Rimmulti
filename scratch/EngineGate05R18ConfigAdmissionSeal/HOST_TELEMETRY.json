@@ -1,0 +1,38 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R18-CONFIG-ADMISSION-SEAL-20261010-DIRECT-befc4fba",
+  "wp_id": "WP_ENGINE_GATE05_R18_CONFIG_ADMISSION_SEAL",
+  "wp_revision": "GATE05-R18-CONFIG-ADMISSION-SEAL",
+  "envelope": 21,
+  "orchestrator": "Python Host Subprocess",
+  "timestamp_utc": "2026-10-10T05:53:16.838503+00:00",
+  "pinned_runner": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R18ConfigAdmissionSeal\\Harness\\bin\\Debug\\net472\\Gate05R18ConfigAdmissionSealRunner.exe",
+    "sha256": "78BCA617F5C22460DF9F628F2B73E7D6B1745BBC45B28801AC41BD7860A6AF68",
+    "size": 43520
+  },
+  "runs": [
+    {
+      "run_name": "run_en_us",
+      "culture": "en-US",
+      "child_pid": 11984,
+      "exit_code": 0,
+      "duration_seconds": 0.468641996383667,
+      "output_directory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R18ConfigAdmissionSeal\\run_en_us",
+      "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R18ConfigAdmissionSeal\\run_en_us\\stdout.txt",
+      "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R18ConfigAdmissionSeal\\run_en_us\\stderr.txt",
+      "inventory_count": 8
+    },
+    {
+      "run_name": "run_de_de",
+      "culture": "de-DE",
+      "child_pid": 25640,
+      "exit_code": 0,
+      "duration_seconds": 0.10196542739868164,
+      "output_directory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R18ConfigAdmissionSeal\\run_de_de",
+      "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R18ConfigAdmissionSeal\\run_de_de\\stdout.txt",
+      "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R18ConfigAdmissionSeal\\run_de_de\\stderr.txt",
+      "inventory_count": 7
+    }
+  ],
+  "isolation_verified": true
+}

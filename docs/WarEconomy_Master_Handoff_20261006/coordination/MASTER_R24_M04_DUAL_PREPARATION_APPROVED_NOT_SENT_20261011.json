@@ -1,0 +1,75 @@
+{
+  "at": "2026-10-11T18:17:10.376509+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404",
+  "task_root": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404",
+  "A_WP": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_ENGINE_GATE05_R24_ROLE_LAUNCH_CONTRACT_PREPARATION.md",
+    "sha256": "E4EE981067D4AB5778EB215460603C4FB0E339B0360EF787804D4412612BEA21",
+    "bytes": 6316
+  },
+  "A_message": "Master 승인 R24입니다. C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404\\INSTRUCTIONS.md 전체와 WP/release를 읽고 수행하세요. R23 독립 QA 정상20receipt·16snapshot PASS/식별자 결함 좁은 CLOSED를 인정했습니다. 다음 M04 역할별 UserData와 validator frontend·기동 계약을 현재 R23 동결 코드로 읽기 전용 분석하세요. 코드·빌드·실행·설치·복사 금지/ALL9 고정. 최소 정확한 구현 구간과 정상 oracle·실제 frontend 선행 조건을 지정 ACK·COMPLETION에 보고하세요.",
+  "Sol_delivery_id": "SOL-GATE05-R24-M04-PREPARATION-S1-20261011-01",
+  "Sol_WP": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R24_M04_PREPARATION_S1.md",
+    "sha256": "DDF2EDFEC85EFAE0DB005B226C334238678CA729B7B618CE540E8EF216BA0234",
+    "bytes": 6324
+  },
+  "Sol_qa_root": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R24-M04-PREPARATION-S1-20261011",
+  "protected_baseline": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R24_M04_PREPARATION_PROTECTED_BASELINE_20261011.json",
+    "sha256": "F02B2EA7360767393EBE679638FFDC548E43BC500B4B2EA0702E91BD50C88050",
+    "bytes": 3989811
+  },
+  "protected_paths": 13002,
+  "status": "BOTH_APPROVED_NOT_SENT",
+  "current_all9_fixed": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "2076E3A88B57A55CDDB5F25950ED26EB2310224A43A91C8917EEC6588CD5983F",
+      "bytes": 227009
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "bytes": 170135
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "4379BE35700337F797BB17F25D5BAC2A8014FAA9332D9878E587A12E5758A9C4",
+      "bytes": 303104
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "2309CEC04514B58E23FC1885DDED87FAAF30F1BDEECA4CA48AD667C4DE2B18B4",
+      "bytes": 72628
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "D46BD31D61B45950AFB8F9717CC4444C0C0C4CF6D1E12FB3E20AF99BCBE9FCBD",
+      "bytes": 286720
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "4DCD674C11CF0BBA593C5EC13B826C58219387FB766EBA4CA88E8484C5719D50",
+      "bytes": 53096
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "4379BE35700337F797BB17F25D5BAC2A8014FAA9332D9878E587A12E5758A9C4",
+      "bytes": 303104
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "2309CEC04514B58E23FC1885DDED87FAAF30F1BDEECA4CA48AD667C4DE2B18B4",
+      "bytes": 72628
+    }
+  ],
+  "guard_run": "MASTER-SOL-R23-COMPLETE-20261011-01",
+  "guard_session": 34592,
+  "guard_pid": 34628
+}

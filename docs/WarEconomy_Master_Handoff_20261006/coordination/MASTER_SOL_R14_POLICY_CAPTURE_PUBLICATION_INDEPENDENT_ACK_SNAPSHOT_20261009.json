@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:96\",\"revision\":96,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a120cd-940b-7561-8c58-454439174272\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791551706,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ac8e8fe28d487d0bbcca78cf3672750\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ac8e8fe28d487d0bbcca78cf3672750\",\"turnId\":\"01a120cd-940b-7561-8c58-454439174272\",\"phase\":\"commentary\",\"text\":\"마스터가 동결한 R14 후보의 독립 QA를 시작하겠습니다. 실제 소스에서 무효화 시 세대 증가와 정책 캡처·게시 규칙을 확인하고, 새 기준을 고정한 뒤 정상 캐시·코덱 회귀를 검증하겠습니다. 실제 내용 수집 경로의 권한·stamp 문제는 정적 리뷰로 판정합니다.\"},\"latestToolMarkerId\":\"exec-0957ad17-f2f9-49f7-a335-257fdf5d0178\",\"latestToolMarker\":{\"id\":\"exec-0957ad17-f2f9-49f7-a335-257fdf5d0178\",\"turnId\":\"01a120cd-940b-7561-8c58-454439174272\",\"type\":\"fileChange\",\"name\":\"fileChange\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

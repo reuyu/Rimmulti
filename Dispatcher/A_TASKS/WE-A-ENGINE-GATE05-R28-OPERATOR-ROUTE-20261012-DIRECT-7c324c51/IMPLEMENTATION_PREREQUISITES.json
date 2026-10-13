@@ -1,0 +1,39 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R28-OPERATOR-ROUTE-20261012-DIRECT-7c324c51",
+  "wp_id": "WP_ENGINE_GATE05_R28_OPERATOR_ROUTE",
+  "wp_revision": "GATE05-R28-OPERATOR-ROUTE",
+  "envelope": 31,
+  "generated_at": "2026-10-12T04:57:30+09:00",
+  "implementation_prerequisites": [
+    {
+      "prerequisite_id": "PREREQ-01-MASTER-CARRIER-ADOPTION",
+      "category": "Governance & Schema",
+      "description": "Master explicit adoption of the paired child CLI carrier (-childoperatorconfig, -childoperatorconfigsha, -childoperatororigin, -childoperatorlaunchplan, -childoperatorconfigid, -childoperatorrole, -childoperatorcapability) or an equivalent operator bundle.",
+      "threat_model_rationale": "Prevents invention of ad-hoc unadmitted CLI schemas. Binding is validated against SHA-256 digest and descriptor fields at bootstrap."
+    },
+    {
+      "prerequisite_id": "PREREQ-02-ROLE-PAIRING-POLICY",
+      "category": "Admission Policy",
+      "description": "Confirmation of strict pairing invariant: Parent MUST be role 'SIMULATION', Paired Child MUST be role 'READ_ONLY'. Any attempt to pair identical roles (SIMULATION-SIMULATION) or invert roles must be fail-closed rejected.",
+      "threat_model_rationale": "Prevents recursive simulation launches, privilege escalation, and self-validation loops."
+    },
+    {
+      "prerequisite_id": "PREREQ-03-VALIDATOR-ARGUMENTS-ALLOWLIST",
+      "category": "Frontend Command Line Safety",
+      "description": "Definition of an explicit allowlist for optional ValidatorArguments in the child config (e.g. allowing only '-batchmode', '-nographics', '-logFile <path>'). Blind concatenation or splitting without an allowlist is prohibited.",
+      "threat_model_rationale": "Mitigates arbitrary argument injection into the native process invocation."
+    },
+    {
+      "prerequisite_id": "PREREQ-04-SINGLE-USE-LAUNCH-LIFETIME",
+      "category": "Task Lifecycle & Revocation",
+      "description": "Enforcement of single-use task consumption: once HandleLaunchOperatorValidator successfully spawns the child process, the ValidatorTask must be marked as consumed or bound to the active process PID/StartTime, preventing replay.",
+      "threat_model_rationale": "Maintains M05 task identity binding and prevents concurrent launch abuse under the same capability nonce."
+    },
+    {
+      "prerequisite_id": "PREREQ-05-ZERO-ADDITIONAL-PKI-INVENTIONS",
+      "category": "Cryptographic Boundary",
+      "description": "Maintain existing unguessable capability nonce and SHA-256 digest architecture per ADR-006B / MD126. No external public-key infrastructure (PKI) or mutual certificate pinning is required for the local loopback child invocation.",
+      "threat_model_rationale": "Adheres strictly to Master instructions and prevents scope inflation."
+    }
+  ]
+}

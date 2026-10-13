@@ -1,0 +1,10 @@
+{
+  "dispatch_id": "WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01",
+  "wp_id": "WP_PIPELINE_REV6_R1",
+  "wp_revision": "REV6-R1",
+  "recipient": "A",
+  "acknowledged_at": "2026-10-07T19:13:00+09:00",
+  "status": "IN_PROGRESS",
+  "current_wp": "WP_PIPELINE_REV6_R1",
+  "message": "Acknowledged WP_PIPELINE_REV6_R1. Starting REV6-R1 narrow repair: historical decision witness ordering, OS child-process and kill coverage, DDL/report alignment, and freeze preservation."
+}

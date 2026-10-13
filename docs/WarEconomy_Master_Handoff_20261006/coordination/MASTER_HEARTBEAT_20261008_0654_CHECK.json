@@ -1,0 +1,20 @@
+{
+  "event_id": "MASTER-HEARTBEAT-20261008-0654-CHECK",
+  "type": "SCHEDULED_MONITOR_NO_NEW_RESULT",
+  "at": "2026-10-08T06:55:27.742231+09:00",
+  "heartbeat_at": "2026-10-07T21:54:29.357Z",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R2-20261008-DIRECT-2af10708",
+  "ack_present": false,
+  "recovery_ack_present": false,
+  "completion_present": false,
+  "a_progress_attention_id": "A-R2-RECOVERY-POSSIBLE-STALL-20261008-01",
+  "attention_repeated": false,
+  "new_ui_observation": false,
+  "sol_cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:19",
+  "sol_state": "notLoaded",
+  "sol_latest_turn": "completed",
+  "sol_new_result": false,
+  "automation": "ACTIVE30MIN",
+  "new_dispatch": false,
+  "closure_changed": false
+}

@@ -1,0 +1,242 @@
+        public bool IsValid()
+        {
+            return OperatorStartupConfigAdmissionFactory.ValidateAdmissionReceipt(this).isValid;
+        }
+
+        public string ToRedactedJson()
+        {
+            Newtonsoft.Json.Linq.JObject? snapshotObject = null;
+            if (Snapshot != null)
+            {
+                using (var stringReader = new System.IO.StringReader(Snapshot.ToRedactedJson()))
+                using (var jsonReader = new Newtonsoft.Json.JsonTextReader(stringReader))
+                {
+                    jsonReader.DateParseHandling = Newtonsoft.Json.DateParseHandling.None;
+                    snapshotObject = Newtonsoft.Json.Linq.JObject.Load(jsonReader);
+                }
+            }
+
+            var redacted = new
+            {
+                receiptSchemaVersion = ReceiptSchemaVersion,
+                isTrusted = IsTrusted,
+                boundOriginId = BoundOriginId,
+                boundLaunchPlanId = BoundLaunchPlanId,
+                boundConfigId = BoundConfigId,
+                boundRole = BoundRole,
+                boundCapabilityBoundary = BoundCapabilityBoundary,
+                boundConfigPath = BoundConfigPath,
+                boundConfigSha256 = BoundConfigSha256,
+                admittedAtUtc = AdmittedAtUtc,
+                snapshot = snapshotObject
+            };
+            return JsonConvert.SerializeObject(redacted, Newtonsoft.Json.Formatting.Indented);
+        }
+    }
+
+    public static class OperatorStartupConfigAdmissionFactory
+    {
+        public static bool Is64AsciiHex(string? s)
+        {
+            if (s == null || s.Length != 64) return false;
+            for (int i = 0; i < s.Length; i++)
+            {
+                char c = s[i];
+                bool isHex = (c >= '0' && c <= '9') || (c >= 'a' && c <= 'f') || (c >= 'A' && c <= 'F');
+                if (!isHex) return false;
+            }
+            return true;
+        }
+
+        public static bool IsFullyQualifiedWindowsPath(string? path)
+        {
+            if (string.IsNullOrWhiteSpace(path)) return false;
+            string trimmed = path!.Trim();
+            if (trimmed.IndexOfAny(Path.GetInvalidPathChars()) >= 0) return false;
+
+            // Standard DOS drive root: e.g. C:\ or C:/
+            if (trimmed.Length >= 3 && char.IsLetter(trimmed[0]) && trimmed[1] == ':' && (trimmed[2] == '\\' || trimmed[2] == '/'))
+            {
+                return true;
+            }
+
+            // UNC root: \\server\share\...
+            if (trimmed.StartsWith(@"\\") && trimmed.Length > 2)
+            {
+                string unc = trimmed.Substring(2);
+                int slashIdx = unc.IndexOf('\\');
+                if (slashIdx > 0 && slashIdx < unc.Length - 1)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public static (bool isValid, string error, OperatorStartupConfigSnapshot? snapshot) AdmitConfigFile(
+            string configPath,
+            string expectedConfigSha256,
+            OperatorLaunchDescriptor? descriptor = null)
+        {
+            if (string.IsNullOrWhiteSpace(configPath))
+            {
+                return (false, "Config path cannot be null or whitespace.", null);
+            }
+            if (!IsFullyQualifiedWindowsPath(configPath))
+            {
+                return (false, "Config path must be a fully-qualified Windows path.", null);
+            }
+            string normalizedPath;
+            try
+            {
+                normalizedPath = Path.GetFullPath(configPath.Trim());
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Invalid config path: {ex.Message}", null);
+            }
+            if (!File.Exists(normalizedPath))
+            {
+                return (false, $"Operator config file not found at '{normalizedPath}'.", null);
+            }
+
+            byte[] rawBytes;
+            try
+            {
+                rawBytes = File.ReadAllBytes(normalizedPath);
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Failed to read operator config file: {ex.Message}", null);
+            }
+
+            return AdmitConfigBytes(rawBytes, normalizedPath, expectedConfigSha256, descriptor);
+        }
+
+        public static (bool isValid, string error, OperatorStartupConfigSnapshot? snapshot) AdmitConfigBytes(
+            byte[] rawBytes,
+            string configPath,
+            string expectedConfigSha256,
+            OperatorLaunchDescriptor? descriptor = null)
+        {
+            if (rawBytes == null || rawBytes.Length == 0)
+            {
+                return (false, "Raw config bytes cannot be null or empty.", null);
+            }
+            if (string.IsNullOrWhiteSpace(configPath))
+            {
+                return (false, "Config path cannot be null or whitespace.", null);
+            }
+            if (!IsFullyQualifiedWindowsPath(configPath))
+            {
+                return (false, "Config path must be a fully-qualified Windows path.", null);
+            }
+            if (string.IsNullOrWhiteSpace(expectedConfigSha256) || expectedConfigSha256.Trim().Length != 64)
+            {
+                return (false, "Expected config SHA256 must be a 64-character hex string.", null);
+            }
+            if (!Is64AsciiHex(expectedConfigSha256.Trim()))
+            {
+                return (false, "Expected config SHA256 contains invalid hex characters.", null);
+            }
+
+            // 1. Verify byte SHA256 BEFORE deserialization
+            string actualSha;
+            using (var sha = SHA256.Create())
+            {
+                byte[] hash = sha.ComputeHash(rawBytes);
+                var sb = new StringBuilder(hash.Length * 2);
+                for (int i = 0; i < hash.Length; i++)
+                {
+                    sb.Append(hash[i].ToString("X2"));
+                }
+                actualSha = sb.ToString();
+            }
+
+            if (!string.Equals(actualSha, expectedConfigSha256.Trim(), StringComparison.OrdinalIgnoreCase))
+            {
+                return (false, $"Config byte SHA256 mismatch before admission. Expected='{expectedConfigSha256.Trim().ToUpperInvariant()}', Observed='{actualSha}'.", null);
+            }
+
+            // 2. Strict parse UTF-8 JSON
+            string json;
+            try
+            {
+                if (rawBytes.Length >= 3 && rawBytes[0] == 0xEF && rawBytes[1] == 0xBB && rawBytes[2] == 0xBF)
+                {
+                    json = Encoding.UTF8.GetString(rawBytes, 3, rawBytes.Length - 3);
+                }
+                else
+                {
+                    json = Encoding.UTF8.GetString(rawBytes);
+                }
+                json = json.TrimStart('\uFEFF');
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Failed to decode config bytes as UTF-8: {ex.Message}", null);
+            }
+
+            var parseResult = ParseStrict(json);
+            if (!parseResult.isValid || parseResult.config == null)
+            {
+                return (false, $"Strict config parsing failed: {parseResult.error}", null);
+            }
+
+            var config = parseResult.config;
+
+            // 3. Bind launch descriptor if provided
+            if (descriptor != null)
+            {
+                if (!string.IsNullOrEmpty(descriptor.expectedRole) &&
+                    !string.Equals(config.role, descriptor.expectedRole, StringComparison.OrdinalIgnoreCase))
+                {
+                    return (false, $"Launch descriptor role mismatch. Expected='{descriptor.expectedRole}', Observed='{config.role}'.", null);
+                }
+                if (!string.IsNullOrEmpty(descriptor.expectedConfigId) &&
+                    !string.Equals(config.configId, descriptor.expectedConfigId, StringComparison.Ordinal))
+                {
+                    return (false, $"Launch descriptor configId mismatch. Expected='{descriptor.expectedConfigId}', Observed='{config.configId}'.", null);
+                }
+                if (!string.IsNullOrEmpty(descriptor.expectedCapabilityBoundary) &&
+                    !string.Equals(config.capabilityBoundary, descriptor.expectedCapabilityBoundary, StringComparison.OrdinalIgnoreCase))
+                {
+                    return (false, $"Launch descriptor capabilityBoundary mismatch. Expected='{descriptor.expectedCapabilityBoundary}', Observed='{config.capabilityBoundary}'.", null);
+                }
+                if (!string.IsNullOrEmpty(descriptor.expectedConfigPath))
+                {
+                    if (!IsFullyQualifiedWindowsPath(descriptor.expectedConfigPath))
+                    {
+                        return (false, $"Launch descriptor expectedConfigPath '{descriptor.expectedConfigPath}' is not fully-qualified.", null);
+                    }
+                    string normDescPath = Path.GetFullPath(descriptor.expectedConfigPath.Trim());
+                    string normCfgPath = Path.GetFullPath(configPath.Trim());
+                    if (!string.Equals(normCfgPath, normDescPath, StringComparison.OrdinalIgnoreCase))
+                    {
+                        return (false, $"Config path '{normCfgPath}' does not match descriptor expectedConfigPath '{normDescPath}'.", null);
+                    }
+                }
+                if (!string.IsNullOrEmpty(descriptor.expectedConfigSha256))
+                {
+                    if (!string.Equals(actualSha, descriptor.expectedConfigSha256.Trim(), StringComparison.OrdinalIgnoreCase))
+                    {
+                        return (false, $"Config byte SHA '{actualSha}' does not match descriptor expectedConfigSha256 '{descriptor.expectedConfigSha256}'.", null);
+                    }
+                }
+            }
+
+            // 4. Construct deeply immutable snapshot with semantic validation
+            OperatorStartupConfigSnapshot snapshot;
+            try
+            {
+                snapshot = new OperatorStartupConfigSnapshot(config);
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Snapshot construction validation failed: {ex.Message}", null);
+            }
+
+            return (true, string.Empty, snapshot);
+        }
+

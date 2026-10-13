@@ -1,0 +1,27 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R36-PUBLISHER-CONTRACT-20261013-DIRECT-d2d6556b",
+  "envelope": 39,
+  "evaluated_at": "2026-10-13T14:40:23.550380+00:00",
+  "wp_id": "WP_ENGINE_GATE05_R36_PUBLISHER_CONTRACT",
+  "wp_revision": "GATE05-R36-PUBLISHER-CONTRACT",
+  "single_authorized_source": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+    "before": {
+      "bytes": 22371,
+      "sha256": "9CAEA2DF0B8F3517DFCBEF080F7D26EC4343CDF4D2FD761453EFA2E4F3B86B4A"
+    },
+    "after": {
+      "bytes": 31689,
+      "sha256": "F60CBC184C6627F0FE15A5A904D0C45A026E20C5138973066BB8174DD8FBFD3F"
+    },
+    "byte_delta": 9318,
+    "mutation_authorized": true
+  },
+  "all_Engine9_and_generated_fixed": {
+    "all_match": true,
+    "count": 9,
+    "builder_executions": 0,
+    "rebuild_performed": false
+  },
+  "summary": "Updated standalone publisher to enforce R36 publisher contract corrections: schemaVersion exact WE-OPERATOR-BOOTSTRAP-V1, raw role exact SIMULATION/READ_ONLY, configId non-blank/raw & trimmed ordinal match, descriptor SHA strictly 64-hex ASCII, local DOS path lexical validations with distinct UserData dirs, expectedContentProfileFingerprint non-blank, policy revision string/int with explicit boolean exclusion, issuedAtUtc Gregorian UTC ISO 8601 with 1..7 fractional digits preserved, reusable whole-ancestry guard rejecting reparse points/symlinks fail-closed, and strict --spec CLI invocation mode. Engine9 files remain 100% bit-exact."
+}

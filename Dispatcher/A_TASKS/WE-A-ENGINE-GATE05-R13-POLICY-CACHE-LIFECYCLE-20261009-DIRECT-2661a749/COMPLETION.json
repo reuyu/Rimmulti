@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "producer": "A",
+  "report_kind": "E1",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R13-POLICY-CACHE-LIFECYCLE-20261009-DIRECT-2661a749",
+  "wp_id": "WP_ENGINE_GATE05_R13_POLICY_CACHE_LIFECYCLE",
+  "wp_revision": "GATE05-R13-POLICY-CACHE-LIFECYCLE",
+  "result_id": "WE-A-ENGINE-GATE05-R13-POLICY-CACHE-LIFECYCLE-RESULT-01",
+  "run_id": "GATE05-R13-POLICY-CACHE-LIFECYCLE-RUN-01",
+  "status": "COMPLETED",
+  "completed_at": "2026-10-09T08:20:59.8203714Z",
+  "summary": "WP_ENGINE_GATE05_R13_POLICY_CACHE_LIFECYCLE / GATE05-R13-POLICY-CACHE-LIFECYCLE single technical objective POLICY_CACHE_LIFECYCLE implementation completed and developer E1 verification recorded. Successfully resolved cache retention and invalidation defects observed in R12 by introducing monotonic process-local configuration generation tracking (ConfigurationGeneration), atomic generation advance on ConfigureExpectedPackagePolicy (record/declaration), ClearConfiguredExpectedPackagePolicy, and same-policy reconfigure, with coherent entry binding (CoherentContentProfileCacheEntry) verifying generation, policy digest, contract version, and timestamp. The cache entry owns an immutable JSON snapshot of the manifest, returning defensive clones via CreateManifestSnapshot() to eliminate external mutation leaks. Isolated the cache state machine into pure instance-owned ContentProfileCacheCore, enabling fully independent, non-polluting unit testing of populated cache lifecycle without provider seeding or native collection. Global ContentProfileProvider delegates to internal _globalCache instance and prohibits synthetic seeding, override, reflection, or bypass. Published entries in ComputeActualContentProfileFingerprint are guarded by generation checks. Updated content contract version to ADR-006B-v5-R13 and capability flag to GATE05_R13_POLICY_CACHE_LIFECYCLE. Preserved R12 independent scoped 265 PASS, R11 encoding, R9 version meaning semantics, Def family sorting, and immutable baselines (WorkerBridge.cs, WorkerBridge.csproj, EngineHostCensus.cs prefix 72,547 bytes SHA F3C4F865...). Executed pure positive normal managed runner controls (24/24 PASS) across multiple cultures (ko-KR, en-US, de-DE) with 0 provider compute calls, 0 game/native/operator execution, and 0 negative/adverse tests. Bound PE MVIDs for Debug (48adef37-...) and Release (94055e10-...) candidates. Steam installed DLL incident remains UNKNOWN OPEN INCIDENT. Full Gate05 and Foundation remain HOLD pending independent Sol QA review and Master governance disposition.",
+  "e1_verdict": "SCOPED_POSITIVE_NORMAL_PASS",
+  "limitations": [
+    "STATIC_MANAGED_NORMAL_EVIDENCE_ONLY: Verification conducted strictly via isolated positive pure normal managed runner controls (24/24 PASS) on pure instance core and normal lifecycle calls with Master-approved frozen dependencies.",
+    "PURE_INSTANCE_CORE_AND_NORMAL_CONFIGURATION_LIFECYCLE_EVIDENCE_ONLY: Cache population, invalidation, and defensive copy immutability verified on standalone ContentProfileCacheCore instances; global provider actual compute and entry publication untested in managed harness.",
+    "NATIVE_ACTUAL_COMPUTATION_PROHIBITED_AND_UNTESTED: In-engine, game runtime, native execution, and operator promotion were strictly prohibited and not executed.",
+    "INSTALLED_DLL_INCIDENT_OPEN: Steam installed DLL (BB3B52...) discrepancy against archive baseline (2D64FF...) remains an UNKNOWN OPEN INCIDENT, preserved unmodified per Master policy.",
+    "MOD_PATCH_SETTINGS_DYNAMIC_EVALUATION_SEPARATE_OPEN: Dynamic evaluation of user mod settings/patches and real operator provenance remain separate OPEN gates.",
+    "NO_SELF_CLOSURE: Developer A does not self-declare candidate release, E2 verification, or defect closure. Dedicated Server remains final Domain Authority; Master governs release."
+  ],
+  "artifacts": [
+    {
+      "role": "implementation_report",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_EngineHost_Content_Codec_Gate05_R13.md",
+      "sha256": "56FC265385C9D6140FCD606085C55CA41FCD0634B7A8BF8DDCA987A38D70649D",
+      "size": 13045
+    },
+    {
+      "role": "release_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R13_POLICY_CACHE_LIFECYCLE.json",
+      "sha256": "D2E5CF48EF767EAB83C065F10E06BE55C54A6478EF2BF13684F894FCD44F51F8",
+      "size": 5802
+    },
+    {
+      "role": "harness",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\Program.cs",
+      "sha256": "9C5255408F7D4B748C8A6C1B72D9205CC9D8E24023384227C0240918A5B5014C",
+      "size": 50671
+    },
+    {
+      "role": "harness_project",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\Harness\\Gate05R13CacheRunner.csproj",
+      "sha256": "635684C1B78FF97A55162654B92383ACC505F5E56D67C492B59A50EC3ECA06FB",
+      "size": 1616
+    },
+    {
+      "role": "results",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\results.json",
+      "sha256": "C88F293439F5765673273BF7C8A8D60EAA09481ADCED207BB28D0E2DC579DC1F",
+      "size": 11205
+    },
+    {
+      "role": "raw_evidence",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\raw_console.txt",
+      "sha256": "1E941A131C9086BEC48284FFE6267E6267B751743651C945E06F370BF7264815",
+      "size": 4866
+    },
+    {
+      "role": "candidate_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "EC04C539E4B6F057238F2D1A454B517333C3C11C4307C3CB73DD623A65FE044D",
+      "size": 242688,
+      "mvid": "48adef37-dea2-41e0-aee6-b293e329a2b5"
+    },
+    {
+      "role": "pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "1EE3A671782F56B66346914160EFB00524695EDFFBC75262A249055C84D409DD",
+      "size": 61852
+    },
+    {
+      "role": "alternate_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "B066F3C6B4C6FA4E94E7E9AB86FE7AE5121183B76E789AAC52149F8614E94324",
+      "size": 230400,
+      "mvid": "94055e10-b349-4c49-a37c-cb1338d83425"
+    },
+    {
+      "role": "alternate_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "5F6B73E03A769D74F54B21E1A8A898D44171094871C3054331C063F2B5C3346D",
+      "size": 45380
+    },
+    {
+      "role": "deployed_assembly",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "EC04C539E4B6F057238F2D1A454B517333C3C11C4307C3CB73DD623A65FE044D",
+      "size": 242688,
+      "mvid": "48adef37-dea2-41e0-aee6-b293e329a2b5"
+    },
+    {
+      "role": "deployed_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "1EE3A671782F56B66346914160EFB00524695EDFFBC75262A249055C84D409DD",
+      "size": 61852
+    },
+    {
+      "role": "source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+      "size": 156431
+    },
+    {
+      "role": "source_census",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "94A3FC201EEB10A11F25967B7BE2E6BBB5E8E3060282C760709AD83F2127773B",
+      "size": 166574
+    },
+    {
+      "role": "source_csproj",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "size": 1774
+    },
+    {
+      "role": "pre_run_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\CANDIDATE_PRE_RUN_MANIFEST.json",
+      "sha256": "D913A239AC21EB8745D81D35218CA7981374B0B5CBBFE076ABDD0D77864D23D1",
+      "size": 9980
+    },
+    {
+      "role": "engine_freeze_before",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\ENGINE_FREEZE_BEFORE.json",
+      "sha256": "461387A047224B9672EE003B7F08D506871BF65C48CBAB0A564377F7BF0E829A",
+      "size": 3069
+    },
+    {
+      "role": "engine_freeze_after",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R13PolicyCacheLifecycle\\ENGINE_FREEZE_AFTER.json",
+      "sha256": "5255C5C1C8509733F168F728AFF74962E5F8E4C8432832044EF980354C3A3C34",
+      "size": 3069
+    },
+    {
+      "role": "work_log",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R13-POLICY-CACHE-LIFECYCLE-20261009-DIRECT-2661a749\\A_WORK_LOG.md",
+      "sha256": "C546D3F1C77D9B94ABB60EE2909FE71431A9B95EAEF8AE9F529D254DE29D8BF8",
+      "size": 4900
+    },
+    {
+      "role": "recovery_ack",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R13-POLICY-CACHE-LIFECYCLE-20261009-DIRECT-2661a749\\A_RECOVERY_ACK.md",
+      "sha256": "7491C5717C88AAE97D4900BC6F79A4260BBEF8C05F1E4B29616DADA171CDDCD0",
+      "size": 4179
+    },
+    {
+      "role": "ack_json",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R13-POLICY-CACHE-LIFECYCLE-20261009-DIRECT-2661a749\\ACK.json",
+      "sha256": "A7C7D6B890CAB9774C581EDF18B02C87C82587E096FE305BCDDD5148F63C4587",
+      "size": 1587
+    }
+  ]
+}

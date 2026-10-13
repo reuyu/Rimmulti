@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-09T21:04:52.816658+09:00",
+  "A": "SENT_IN_PROGRESS_ACK_PENDING",
+  "dispatch": "WE-A-ENGINE-GATE05-R14-POLICY-CAPTURE-PUBLICATION-20261009-DIRECT-ff285a3b",
+  "actual_Sol": "R13COMPLETED_IDLE94",
+  "r13_qa_result_deduped_once": true,
+  "r14_monitor": "ACTUAL_ACTIVE60MIN",
+  "unknown_delivery": false,
+  "active_operation": null,
+  "new_e2_closure": false,
+  "guard_run": "MASTER-SOL-R13-INDEPENDENT-COMPLETE-20261009-01",
+  "guard_session": 77102,
+  "guard_pid": 25976,
+  "release_follows_in_finally": false,
+  "actual_release_observed": {
+    "run_id": "MASTER-SOL-R13-INDEPENDENT-COMPLETE-20261009-01",
+    "pid": 25976,
+    "session": 77102,
+    "status": "RELEASED",
+    "release_reason": "RELEASE_OR_STDIN_CLOSED",
+    "released_at": "2026-10-09T21:04:52.863808+09:00",
+    "wrapper": "Direct awaited release after completed audit;not a JavaScript try/finally wrapper. Earlier intent flag is corrected;actual live-lock ownership/release evidence unchanged."
+  }
+}

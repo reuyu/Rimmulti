@@ -1,0 +1,27 @@
+{
+  "at": "2026-10-13T01:08:52.345958+09:00",
+  "delivery": {
+    "delivery_id": "SOL-GATE05-R33-RESOURCE-NATIVE-PREP-S1-20261013-01",
+    "wp_id": "WP_QA_ENGINE_GATE05_R33_RESOURCE_NATIVE_PREPARATION",
+    "wp_revision": "S1",
+    "wp_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R33_RESOURCE_NATIVE_PREPARATION_S1.md",
+    "wp_sha256": "02C1FC967D0F467F3D5D552F691C2825CFEBD90C33D7D6DF9104593870649C1E",
+    "qa_root": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013",
+    "report_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R33_Resource_Native_Preparation_S1_20261013.md",
+    "baseline_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R33_RESOURCE_COMMIT_PROTECTED_BASELINE_20261013.json",
+    "baseline_sha256": "DAE9DE6DE5AA170BF62476412EE5C0F4078357DE074164BEDC66F9894DBC4D1E",
+    "protected_unique_paths": 16929,
+    "additional_preservation": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R32_OUTSIDE_OWNED_HELPER_DISCOVERY_20261013.json",
+    "frozen_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2\\MASTER_GATE05_R32_CUSTODY_REVIEW_FREEZE_MANIFEST.json",
+    "frozen_manifest_sha256": "F5EDD5DCBC021407B3598DEBCF80276F39C158EC38FABD37D10AD15E6098E6BF",
+    "selected_sha256": "0B23C358E8C8FC16FCD02DDE654AD8AE763EA177460BB15F5F1E1B1F0CB67E26",
+    "selected_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R32-64ad38e2\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "selected_mvid": "7d436c98-659a-4df1-a085-06fe9e55a0bc",
+    "delivery_status": "APPROVED_NOT_SENT",
+    "unknown_delivery": false,
+    "scope": "FROZEN_R32_TEXT_PASSIVE_NATIVE_RESOURCE_PREPARATION_NO_R33_CANDIDATE_VERDICT_NO_EXECUTION"
+  },
+  "A_R33": "ACTUAL_SENT_WORKING",
+  "Master_candidate_execution": 0,
+  "guard_session": 65470
+}

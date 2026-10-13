@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-14T02:24:39.560270+09:00",
+  "checker": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\Tools\\master_check_r38_publisher_boundaries_status_20261014.py",
+    "sha256": "043696269E281262866B5FBCD5B764EA63B49DE4EB3AB980A904F4793A278DF0",
+    "bytes": 2346
+  },
+  "actual_exec_chunk": "dfa430",
+  "actual_exit_code": 0,
+  "protected19598_actual_rehash": true,
+  "allEngine9_generated_and_known_installed_match": true,
+  "reference11_all_SHA_size_match": true,
+  "task": "WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e",
+  "mutable_publisher_before": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+    "sha256": "8F31D69A26A364BF727ABD029E096C0416B3C7B6BA54AC29A6A6E246FF537FD9",
+    "bytes": 40358
+  }
+}

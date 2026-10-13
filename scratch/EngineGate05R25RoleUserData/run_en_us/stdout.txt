@@ -1,0 +1,17 @@
+[GATE05-R25-RUNNER] Starting Gate05-R25 Role UserData Selection Pure Unit Suite
+[GATE05-R25-RUNNER] Culture: en-US, RunDir: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R25RoleUserData\run_en_us
+
+--- EXECUTING CASE 1: Role=SIMULATION, Policy=PLAIN ---
+CASE 1: PASS (Selected: 'C:\WarEconomy\Data R25\작업자 01\UserData')
+
+--- EXECUTING CASE 2: Role=SIMULATION, Policy=OPAQUE ---
+CASE 2: PASS (Selected: 'C:\WarEconomy\Data R25\작업자 02 Ω\UserData')
+
+--- EXECUTING CASE 3: Role=READ_ONLY, Policy=PLAIN ---
+CASE 3: PASS (Selected: 'C:\WarEconomy\Data R25\검증자 03\UserData')
+
+--- EXECUTING CASE 4: Role=READ_ONLY, Policy=OPAQUE ---
+CASE 4: PASS (Selected: 'C:\WarEconomy\Data R25\검증자 04 Ω\UserData')
+
+[GATE05-R25-RUNNER] Completed with verdict: PASS
+[GATE05-R25-RUNNER] Snapshot calls: 4/4, SelectUserData calls: 8/8

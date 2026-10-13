@@ -1,0 +1,30 @@
+﻿{
+  "parent_config_id": "qa.R26.parent.Ω",
+  "child_config_id": "qa.R26.child.Ω",
+  "approved_origin_id": "  qa.R26.child origin Ω  ",
+  "approved_launch_plan_id": "  qa.R26.child plan Ω  ",
+  "task_id": "qa.R26.VT.literal.Ω",
+  "task_nonce": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+  "task_file_path": "C:\\QA R26 Ω\\Parent Worker UserData\\Tasks\\qa.R26.VT.literal.Ω.json",
+  "executable_path": "C:\\QA R26 Ω\\Synthetic Frontend.exe",
+  "executable_expected_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+  "working_directory": "C:\\QA R26 Ω\\Child Validator Cwd",
+  "selected_user_data_directory": "C:\\QA R26 Ω\\Child Validator UserData",
+  "operator_option_values": [
+    "C:\\QA R26 Ω\\Declarations\\child original.json",
+    "D6E345FEB30873C6002102E4C13BC5815A781C7177233B2DF64D82E49DD2A6CD",
+    "  qa.R26.child origin Ω  ",
+    "  qa.R26.child plan Ω  ",
+    "qa.R26.child.Ω",
+    "read_only",
+    "local_sandboxed"
+  ],
+  "task_invocation_values": [
+    "C:\\QA R26 Ω\\Parent Worker UserData\\Tasks\\qa.R26.VT.literal.Ω.json",
+    "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+  ],
+  "result_channel_path": "C:\\QA R26 Ω\\Parent Worker UserData\\Tasks\\owned.protected_result.json",
+  "staged_file_path": "C:\\QA R26 Ω\\Parent Worker UserData\\Saves\\owned stage Ω.rws",
+  "staged_sha": "1111111111111111111111111111111111111111111111111111111111111111",
+  "scope": "DATA_ONLY_NOT_REGISTERED_NOT_ISSUER_AUTHENTICATED"
+}

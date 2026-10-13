@@ -1,0 +1,13 @@
+{
+  "run_id": "MASTER-R25-QA-ACK-20261011-01",
+  "guard_session": 76616,
+  "guard_pid": 29832,
+  "actual_release_tool": {
+    "chunk_id": "67ed62",
+    "wall_time_seconds": 0.0000281,
+    "exit_code": 0,
+    "original_token_count": 114,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R25-QA-ACK-20261011-01\", \"pid\": 29832, \r\n\u001b[23;80H \"locked_at\": \"2026-10-11T22:44:59.676863+09:00\", \"mechanism\": \"Windows msvcrt ex\r\n\u001b[23;80Hxclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-1\r\n\u001b[23;80H10-11T22:46:39.826378+09:00\", \"renewal_count\": 1, \"release_reason\": \"RELEASE_OR_S\r\n\u001b[23;80HSTDIN_CLOSED\", \"released_at\": \"2026-10-11T22:46:57.316952+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "all_child_commands_completed_before_release": true
+}

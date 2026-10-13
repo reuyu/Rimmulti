@@ -1,0 +1,104 @@
+{
+  "DispatchId": "WE-A-ENGINE-GATE05-R20-TRUSTED-STARTUP-20261011-DIRECT-e35ff656",
+  "WpId": "WP_ENGINE_GATE05_R20_TRUSTED_STARTUP_ORIGIN",
+  "Revision": "GATE05-R20-TRUSTED-STARTUP",
+  "Envelope": 23,
+  "RunId": "5bb60ef268aa4b0c99835d1fc448cdf5",
+  "TimestampUtc": "2026-10-10T19:46:40.9136101Z",
+  "ProcessId": 0,
+  "Culture": "en-US",
+  "CommandLineArgs": [
+    "--rundir",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R20TrustedStartup\\run_en_us",
+    "--culture",
+    "en-US"
+  ],
+  "WorkingDirectory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R20TrustedStartup",
+  "LoadedCandidateDllPath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R20TrustedStartup\\Harness\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+  "LoadedCandidateSha256": "482166A77BF90569626A5CB27D83A4D949BD57DA85BA660F03067C833FB777F0",
+  "LoadedCandidateMvid": "9e516c44-35c8-49b8-b3ec-f73ec58ba12f",
+  "ApiLedger": {
+    "ParseStrictCalls": 4,
+    "AdmitConfigBytesCalls": 4,
+    "AdmitConfigFileCalls": 4,
+    "IssueAdmissionReceiptCalls": 6,
+    "IssueAdmissionReceiptFromBytesCalls": 4,
+    "ValidateAdmissionReceiptCalls": 8,
+    "IsFullyQualifiedWindowsPathCalls": 12,
+    "ToSnapshotCalls": 4,
+    "ToRedactedJsonSnapshotCalls": 0,
+    "ToRedactedJsonReceiptCalls": 1,
+    "GetExpectedPackagePolicyDeclarationCalls": 16,
+    "ComputeFileSha256Calls": 0,
+    "VerifyAdmittedExecutableCalls": 0,
+    "ToRedactedJsonValidatorResultCalls": 1,
+    "SerializePackagePolicyCalls": 1,
+    "DeserializePackagePolicyCalls": 1,
+    "ComputePackagePolicyDigestCalls": 17,
+    "ProcessApiCalls": 0,
+    "VerifyProcessIdentityCalls": 0,
+    "WorkerBridgeGlobalConfigureResetCalls": 0,
+    "TryInstallOperatorStartupConfigCalls": 0,
+    "AwakeCalls": 0,
+    "HarmonyCalls": 0
+  },
+  "Tests": [
+    {
+      "TestName": "TEST_01_OPAQUE_POLICY_LOSSLESS_PRESERVATION",
+      "Status": "PASS",
+      "Details": "Verified exact preservation of untrimmed opaque policyId ('  qa.R18 정책 Ω  ') and revision ('  007 café Ω  ') yielding lossless digest 8A9C3381A041F79F300710D6EA93A5D8E08564C692AA5059337853825E1749BF across all 16 role/route combinations.",
+      "MatrixPassedCount": 16,
+      "TotalMatrixCount": 16
+    },
+    {
+      "TestName": "TEST_02_ADMISSION_RECEIPT_ISSUANCE_AND_BOUND_PROVENANCE",
+      "Status": "PASS",
+      "Details": "Verified factory-issued immutable OperatorStartupAdmissionReceipt across SIMULATION/READ_ONLY, PLAIN/OPAQUE, file/bytes routes with 100% bound provenance fields verified.",
+      "ReceiptSuccessCount": 8,
+      "TotalReceiptChecks": 8
+    },
+    {
+      "TestName": "TEST_03_DECLARATION_AND_RECEIPT_DEFENSIVE_IMMUTABILITY",
+      "Status": "PASS",
+      "Details": "Verified that mutating caller launch descriptor, cloned descriptor, or returned snapshot declarations has zero effect on the factory-issued admission receipt.",
+      "ReceiptOriginImmune": true,
+      "ReceiptPlanImmune": true,
+      "ReceiptPathImmune": true,
+      "SnapshotIsolation": true
+    },
+    {
+      "TestName": "TEST_04_RECEIPT_REDACTED_JSON_REPRESENTATION",
+      "Status": "PASS",
+      "Details": "Verified receipt.ToRedactedJson() emits exact 11 receipt properties, preserves provenance fields, and contains snapshot with preserved opaque policy strings.",
+      "PropertyCount": 11,
+      "SchemaVersion": "WE-OPERATOR-RECEIPT-V1",
+      "IsTrusted": true
+    },
+    {
+      "TestName": "TEST_05_FULLY_QUALIFIED_WINDOWS_PATH_HELPER",
+      "Status": "PASS",
+      "Details": "Verified OperatorStartupConfigAdmissionFactory.IsFullyQualifiedWindowsPath correctly admits DOS drive roots and UNC shares, while rejecting drive-relative, root-relative, and local relative paths.",
+      "ValidChecksPassed": 5,
+      "TotalValidChecks": 5,
+      "NonFullChecksPassed": 7,
+      "TotalNonFullChecks": 7
+    },
+    {
+      "TestName": "TEST_06_VALIDATOR_RESULT_REDACTION_REGRESSION",
+      "Status": "PASS",
+      "Details": "Verified public ValidatorResult redaction replaces capabilityNonce and channelSecretToken with protected placeholders.",
+      "NonceMasked": true,
+      "SecretMasked": true
+    },
+    {
+      "TestName": "TEST_07_CENSUS_PACKAGE_POLICY_REGRESSION",
+      "Status": "PASS",
+      "Details": "Verified unchanged Census ContentProfileProvider package policy serialization, roundtrip deserialization, and deterministic digest calculation.",
+      "Digest": "0954900EBBD398AA85BA50EB7F39B018B910AB88A3D0D1BEE5D674CBFA2FCDC3"
+    }
+  ],
+  "TotalTests": 7,
+  "PassedTests": 7,
+  "FailedTests": 0,
+  "NumericExitCode": 0
+}

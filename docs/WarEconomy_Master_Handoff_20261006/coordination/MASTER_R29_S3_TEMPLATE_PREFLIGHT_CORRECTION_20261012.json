@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-12T10:07:26.557114+09:00",
+  "kind": "MASTER_OWN_TEMPLATE_PREFLIGHT_STOP",
+  "helper_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\Tools\\master_r29_s2_stop_prepare_s3_20261012.py",
+  "failed_helper_sha256": "D3F60BC462087F0489237C774A9DE6DF3E4F526EE986F9E21414C3919027841D",
+  "original_error": "AssertionError at inverse replacement count: short replacement bytes token also existed in unchanged baseline loop",
+  "exit_code": 1,
+  "already_created": [
+    "S2 terminal preservation manifest",
+    "S3 protected baseline"
+  ],
+  "template_written": false,
+  "WP_written": false,
+  "governance_disposition_written": false,
+  "candidate_QA_execution": 0,
+  "repair": "use complete unique frozen-row line anchor; reuse previously created exact preservation/baseline after verification; no unconditional inverse short-token replacement"
+}

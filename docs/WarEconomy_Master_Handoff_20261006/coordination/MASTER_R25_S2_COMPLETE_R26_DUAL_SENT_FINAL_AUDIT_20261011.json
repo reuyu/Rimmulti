@@ -1,0 +1,57 @@
+{
+  "at": "2026-10-11T23:32:12.961212+09:00",
+  "guard_run": "MASTER-R25-S2-COMPLETE-NEXT-20261011-01",
+  "guard_session": 35120,
+  "guard_pid": 24636,
+  "R25S2receipt_deduped": 1,
+  "R25S1rawFAIL": "PRESERVED",
+  "QAnewline_defect": "CLOSED_SCOPED",
+  "A_actual_delivery": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R26-CHILD-REG-PREP-20261011-DIRECT-4d660e9b\\MASTER_UI_SUBMISSION_PROOF.json",
+  "A_ACK": "PENDING",
+  "Sol_actual": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:161",
+    "revision": 161,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a12b60-ddcd-7980-8470-acdf2663cb15",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791729131,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "Sol_ACK": "PENDING",
+  "protected": 13419,
+  "production9fixed": true,
+  "read_only_nonoverlap": "BOTH_SOURCE_READS_ONLY_NO_WRITER",
+  "scheduler_actual": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "ACTIVE",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791728997839
+  },
+  "future_R26run": "UNOBSERVED",
+  "full_runtime_e2_released": false,
+  "foundation": "HOLD",
+  "release_status": "PENDING_ACTUAL_FINALLY"
+}

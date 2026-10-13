@@ -1,0 +1,20 @@
+[
+  {
+    "type": "commandExecution",
+    "id": "exec-e54dd155-bd14-4ce0-bc03-97724c53a86d",
+    "command": "\"C:\\\\Users\\\\user\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command '$qaRunOutput = & '\"'.\\\\runner\\\\QaCodecRunner.exe' 'C:\\\\Users\\\\user\\\\Desktop\\\\RimMulti\\\\QA-Tactical-Engine\\\\GATE05-R9-VERSION-MEANING-INDEPENDENT-S1-20261009' 'RUN_SOL_R9_CODEC_S1_20261009_5257487934fd483da44c5bab60214867' 'en-US' 2>&1\n\"'$qaRunExit=$LASTEXITCODE\n$qaRunOutput | Set-Content -LiteralPath '\"'RUN1_RAW.txt' -Encoding utf8\nWrite-Output \\\"QA_RUN_EXIT=\"'$qaRunExit; culture en-US; full raw in RUN1_RAW.txt\"\nGet-Content -LiteralPath '\"'RUN1_RAW.txt' -Tail 12\nexit \"'$qaRunExit'",
+    "cwd": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R9-VERSION-MEANING-INDEPENDENT-S1-20261009",
+    "status": "completed",
+    "exitCode": 0,
+    "durationMs": 1182
+  },
+  {
+    "type": "commandExecution",
+    "id": "exec-ade08cc6-b605-407e-b5a2-302351c49a57",
+    "command": "\"C:\\\\Users\\\\user\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\powershell\\\\pwsh.exe\" -Command '$qaRunOutput = & '\"'.\\\\runner\\\\QaCodecRunner.exe' 'C:\\\\Users\\\\user\\\\Desktop\\\\RimMulti\\\\QA-Tactical-Engine\\\\GATE05-R9-VERSION-MEANING-INDEPENDENT-S1-20261009' 'RUN_SOL_R9_CODEC_S1_20261009_108b7a11eb4942b6ace644fc3dbe7328' 'de-DE' 2>&1\n\"'$qaRunExit=$LASTEXITCODE\n$qaRunOutput | Set-Content -LiteralPath '\"'RUN2_RAW.txt' -Encoding utf8\nWrite-Output \\\"QA_RUN_EXIT=\"'$qaRunExit; culture de-DE; full raw in RUN2_RAW.txt\"\nGet-Content -LiteralPath '\"'RUN2_RAW.txt' -Tail 12\nexit \"'$qaRunExit'",
+    "cwd": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R9-VERSION-MEANING-INDEPENDENT-S1-20261009",
+    "status": "completed",
+    "exitCode": 0,
+    "durationMs": 1034
+  }
+]

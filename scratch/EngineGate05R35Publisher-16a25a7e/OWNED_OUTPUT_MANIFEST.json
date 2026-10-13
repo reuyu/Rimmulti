@@ -1,0 +1,85 @@
+{
+  "owned_root": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R35Publisher-16a25a7e",
+  "generated_at_utc": "2026-10-13T10:36:51.988194+00:00",
+  "file_count": 13,
+  "files": [
+    {
+      "relative_path": "AST_HOST_TOOL_PROOF.json",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R35Publisher-16a25a7e\\AST_HOST_TOOL_PROOF.json",
+      "bytes": 2248,
+      "sha256": "9D75143E1BB7685B31804DD440F0CCF2FF2568534508CCC6F2CCD65AF3D68B05"
+    },
+    {
+      "relative_path": "AST_INPUT_MANIFEST.json",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R35Publisher-16a25a7e\\AST_INPUT_MANIFEST.json",
+      "bytes": 1103,
+      "sha256": "AFC21148CAC2953BD6E6BFB5D0C933DA4A920189B01A40D0BDB6822ECD516293"
+    },
+    {
+      "relative_path": "ast_checker.py",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R35Publisher-16a25a7e\\ast_checker.py",
+      "bytes": 1761,
+      "sha256": "22AF8C5DB5D10D9D5C16926CE383E97A8FDFB94D79CBAB709E5D3240EDC2CD2F"
+    },
+    {
+      "relative_path": "ast_stderr.raw.bin",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R35Publisher-16a25a7e\\ast_stderr.raw.bin",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "relative_path": "ast_stdout.raw.bin",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R35Publisher-16a25a7e\\ast_stdout.raw.bin",
+      "bytes": 750,
+      "sha256": "6D33EB8394CF10CDA62AC27F9043F3A0E14F594E47307646F2862A7C336EA3B5"
+    },
+    {
+      "relative_path": "create_task_manifests.py",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R35Publisher-16a25a7e\\create_task_manifests.py",
+      "bytes": 18504,
+      "sha256": "6C0C790FFE6E070D710AA7BF6454C00C85EF4BBD0C212C280461E09B70F9BAC0"
+    },
+    {
+      "relative_path": "generate_final_completion_and_index.py",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R35Publisher-16a25a7e\\generate_final_completion_and_index.py",
+      "bytes": 8812,
+      "sha256": "B7C1854B4D424008C084BFACF1A7ACCD33EBA4D7E02DC0DF41C972A51C27C89D"
+    },
+    {
+      "relative_path": "generate_owned_manifest.py",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R35Publisher-16a25a7e\\generate_owned_manifest.py",
+      "bytes": 1313,
+      "sha256": "8A2C32CBC1B1B6509FA312ACFBCAF9D2FE187B51602D066D6B65611CC4B0416F"
+    },
+    {
+      "relative_path": "generate_publisher.py",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R35Publisher-16a25a7e\\generate_publisher.py",
+      "bytes": 26972,
+      "sha256": "3B22823C6646F6355C24EAC36BE79DF86610C6646141BF349BE09B27AFE76248"
+    },
+    {
+      "relative_path": "hash_refs.py",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R35Publisher-16a25a7e\\hash_refs.py",
+      "bytes": 1503,
+      "sha256": "F1DC8901709E8972E734ADED9FF9EA292DCB9560CE2FE3F90D9C407E693EC799"
+    },
+    {
+      "relative_path": "run_ast_verification.py",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R35Publisher-16a25a7e\\run_ast_verification.py",
+      "bytes": 3792,
+      "sha256": "C7142AB178538D3FECB8AEDA0D70FB472F84B6CB6408F293FC418861F9BA0121"
+    },
+    {
+      "relative_path": "verify_baseline_and_ack.py",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R35Publisher-16a25a7e\\verify_baseline_and_ack.py",
+      "bytes": 7523,
+      "sha256": "2AD931040841793748100740640ABBBB0279B567FE19AF03C723648EDACE024A"
+    },
+    {
+      "relative_path": "verify_engine_immutability.py",
+      "absolute_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R35Publisher-16a25a7e\\verify_engine_immutability.py",
+      "bytes": 2199,
+      "sha256": "81C0216B567E2615F0DC0AE63CAF02DB9014F3C436E91BE90C4869A5BD9BC3DE"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# Canonical expected-policy oracle boundary
+
+Preparation only;no R10 candidate/API/framing/digest has been reviewed or executed.
+
+The independent semantic declaration consists of a policy schema/version,opaque policyId,typed revision,and the complete ordered logical package ID sequence. ID/revision/sequence must be represented unambiguously in the declared canonical bytes;no ambiguous delimiter concatenation or sorting of this ordered list. The concrete R10 property names,integer width,encoding/framing and digest algorithm are UNOBSERVED here and must be reconciled from the Master-admitted frozen implementation specification before any future final oracle/build/run. This preparation does not freeze a product protocol or fabricate a candidate digest.
+
+INDEPENDENT_POLICY_ORACLE_PLAN.json contains separate handwritten expected policy and actual inventory literals. Construct future independent reference bytes from the expected declaration under the adopted framing,not from production outputs or whatever actual mods were observed. Compare the entire decoded policy and actual binding,then exact canonical UTF8/framed bytes and digest. Equal independent declarations must match;normal revision/identity/list/order changes must be represented and yield corresponding identities. Digest differences when both order and revision change do not alone prove order inclusion;explicit expected sequence in the framing and decoded representation is required. A few normal differences do not prove general collision resistance.
+
+Lowercase ASCII qa.fixture.* IDs are synthetic normal fixtures,not a worldwide mod catalogue or approved runtime profile. Production case/identity normalization must be declared rather than inferred or broadened by QA. Core,DLC and mods are ordinary entries in the bounded logical policy. Full native content/dependency closure remains unobserved.
+
+Distinct expected-policy input/configured snapshot must stay separate from observed manifest data. Carrying or hashing an embedded policy cannot establish trusted origin. The future policy installation seam and cached/native/operator/worker-validator paths require defensive static accounting and separate runtime admission. No configuration setter or new helper is automatically authorized for execution by this preparation;Master must first admit exact pure methods on a frozen R10 candidate.
+
+R9 version unknown/null/empty/known-distinct/reverse semantics remain scoped CLOSED for exact R9 only. The old R8 FAIL is immutable. Generic optional version transport is not required-profile rejection. Package match does not approve patch/settings exclusions,assembly/material support,operator-origin or fullGate closure. None of these controls were run.

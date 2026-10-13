@@ -1,0 +1,27 @@
+{
+  "case_index": 4,
+  "case_id": "OPAQUE_PLAIN_PADDED",
+  "operatorPairId": "WE-PAIR-DEV-R29-OPAQUE-PLAIN-04",
+  "parentDeclaration": {
+    "originId": "  qa.R29.parent.origin.opaque4.Ω  ",
+    "expectedConfigId": "qa.R29.parent.cfg.4",
+    "expectedRole": "SIMULATION",
+    "expectedCapabilityBoundary": "LOCAL_SANDBOXED",
+    "launchPlanId": "  qa.R29.parent.plan.opaque4.Ω  ",
+    "expectedConfigPath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\Fixtures\\parent_config_04.json",
+    "expectedConfigSha256": "984A63C5CD1875EE34853E4665A27D1A4F7892108FC8406D123477916C57D3BE"
+  },
+  "childDeclaration": {
+    "originId": "qa.R29.child.origin.plain4",
+    "expectedConfigId": "qa.R29.child.cfg.4",
+    "expectedRole": "READ_ONLY",
+    "expectedCapabilityBoundary": "LOCAL_SANDBOXED",
+    "launchPlanId": "qa.R29.child.plan.plain4",
+    "expectedConfigPath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\Fixtures\\child_config_04.json",
+    "expectedConfigSha256": "449341BEFD83ECFCD409F09C3AEF5AD866AF500EC7F6C58610614844826B7C6D"
+  },
+  "parentConfigPath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\Fixtures\\parent_config_04.json",
+  "childConfigPath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\Fixtures\\child_config_04.json",
+  "outputDir": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R29StartupPair\\PublishedPairs\\case_04",
+  "bundleFilename": "operator_startup_pair.json"
+}

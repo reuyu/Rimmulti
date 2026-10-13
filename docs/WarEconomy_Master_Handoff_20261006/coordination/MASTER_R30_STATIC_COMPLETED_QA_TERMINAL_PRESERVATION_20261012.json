@@ -1,0 +1,353 @@
+{
+  "at": "2026-10-12T19:59:48.002265+09:00",
+  "files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\ACK.json",
+      "sha256": "841A3138544C824775152EEB48F5F21218700393ECB141560E1647B353F2F472",
+      "bytes": 2165
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\ACK_COMPLETION_BINDING.json",
+      "sha256": "3161760882A20ABC1D827A98D95707B8FD8E9254F20F7B11AFE3434B89D6E4ED",
+      "bytes": 1174
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\ACK_INITIAL.json",
+      "sha256": "841A3138544C824775152EEB48F5F21218700393ECB141560E1647B353F2F472",
+      "bytes": 2165
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\ACK_RETURN_TOOL_PROOF.json",
+      "sha256": "A133F01105304AE223FBB7266DECCFB9F7E1C889E419FE8ADF53BF50CA3FB81D",
+      "bytes": 420
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\bootstrap.py",
+      "sha256": "38727F84B2C4CB7FBBCD3F5365AD6DE3BF7B59DA0E41F3557D02DBDC96AF118A",
+      "bytes": 3557
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\bootstrap.STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\bootstrap.STDOUT.txt",
+      "sha256": "FAF83BB0F7935ADAC1696BE3205CF53F417FA26A65129A3F695BB761E665068C",
+      "bytes": 36635
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\bootstrap.TOOL.json",
+      "sha256": "0BB21FD4378BB6F05785FFAA86204E8D551008D5D8D2621DD1423795D1D3BB57",
+      "bytes": 1232
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\CLAIM_EVIDENCE_MATRIX.json",
+      "sha256": "2F96A5C0D0CA77D8D42D62C6406D2B54BCA6EF51DDAA1B4A9CB6DC93DB02EEEA",
+      "bytes": 9484
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\CLAIMS_REVIEW_STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\CLAIMS_REVIEW_STDOUT.txt",
+      "sha256": "895B90CF57D1CD8DA2AF8A76E0B8D617FE0C9A36818FBA178A331EB30FB7B6D1",
+      "bytes": 210
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\CLAIMS_REVIEW_TOOL.json",
+      "sha256": "41B21002AD81B3F75CF2A80821C372E9F84B42452979D58972B1AA95D3CD557C",
+      "bytes": 912
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\COMPLETION.json",
+      "sha256": "E1602AD6B429C6E0D370AA0B060DCEAAA1E51DF4730350E01C226C9104420FA1",
+      "bytes": 6958
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\DELIVERY_STATUS.json",
+      "sha256": "8F4671A7EC55496B88FF1F9E655743AFFCF1C4BE5A7CD0B72DBDED7165BACCA3",
+      "bytes": 535
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\EVIDENCE_MANIFEST.json",
+      "sha256": "D7F50B270CD549EBC660EC336CCAF8ECE133633DD9C8929E1AAC6CFBD566CD84",
+      "bytes": 16939
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\EVIDENCE_REVIEW_branches_STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\EVIDENCE_REVIEW_branches_STDOUT.txt",
+      "sha256": "4BE90FA720DEFB3DDCC3382E245932C2D2E1AF0B63219989BD1EA9DF77E26BB2",
+      "bytes": 229
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\EVIDENCE_REVIEW_branches_TOOL.json",
+      "sha256": "E90A9F36C8A5FB17FEE1B1B9A91653E6FB28CCC1D1E316A0CB5B96FD6A27C970",
+      "bytes": 1012
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\EVIDENCE_REVIEW_provenance_STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\EVIDENCE_REVIEW_provenance_STDOUT.txt",
+      "sha256": "915A3FB1F6295FE1E46E8951ED0C1216F5DC5E79E96B2F6B4BBCE42947412151",
+      "bytes": 3681
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\EVIDENCE_REVIEW_provenance_TOOL.json",
+      "sha256": "C5A7FDDE0FA4B5B2FBA5A1FD4C94507AFDE038E8B5BA997BE606EC6E502FC35B",
+      "bytes": 1019
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\FINAL_REVIEW_VALIDATION.json",
+      "sha256": "487530837C0517402C7F7169695486BC8D4DDB3142A3E3D077F03A35601877A1",
+      "bytes": 1365
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\finalize.py",
+      "sha256": "0971FBD72830EEB3F725DBDC0241E0DFA6A22C37073FE4591195B38D012C2642",
+      "bytes": 7684
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\finalize_prepare.STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\finalize_prepare.STDOUT.txt",
+      "sha256": "7300310CE16F9C423BBA51D68AEC17DB626BBC8770F3A096323EA1162B7C6A26",
+      "bytes": 458
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\finalize_prepare.TOOL.json",
+      "sha256": "FC6C438E3E6D85C1545BAE5051467C33639EF081AAD67C473ECDDA189220E954",
+      "bytes": 1257
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\finalize_seal.STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\finalize_seal.STDOUT.txt",
+      "sha256": "AD7977892EDBE89EE444DCDF786A6FC3E22F38EFA1A42F0DC7330A6DCA62B3D4",
+      "bytes": 794
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\finalize_seal.TOOL.json",
+      "sha256": "2E5444A48ADBA0EA5D4711A4EE5F6AE56694305AF91E8654F79508B4676E0C8F",
+      "bytes": 1248
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\INDEPENDENT_FROZEN_PE_PDB_IDENTITY.json",
+      "sha256": "BBEF8775AE00423E7E488085452963E78008AD255B6EF762B7ADF84C8B8E71E6",
+      "bytes": 8369
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\log_stage.py",
+      "sha256": "9C2F628E1D100E8BC0804F024A86519D9FD13F496ED5C1BD58849E46720398E4",
+      "bytes": 1560
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\log_stage_r1.py",
+      "sha256": "5D054E5A505783CDF222A0038A6D3A013E18CCAC8AD6CBA9EE3EE3B6F83C7C63",
+      "bytes": 1582
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\make_claims.py",
+      "sha256": "27B01E7A667DE8AEC88A3708601AFAF32E8B372FC90A751D81452ACDA3BDCE66",
+      "bytes": 13282
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\METADATA_SCHEMA_R1_CORRECTION.json",
+      "sha256": "A16337DB47176F0173F2DE80FE276AE80695DA03D3DD9952BE479B2633D50548",
+      "bytes": 2874
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\METADATA_SCHEMA_R1_EXACT_DIFF.txt",
+      "sha256": "B6D1FA650C80E948D59D5A23EF83F837C86A877BF6F44A6D159B7A379EB17156",
+      "bytes": 1110
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\METADATA_SCHEMA_R1_PREPARE_STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\METADATA_SCHEMA_R1_PREPARE_STDOUT.txt",
+      "sha256": "917FF17231C3464F20230FDF860D86630CD950A06F291E251C8B3406B046ECD5",
+      "bytes": 354
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\METADATA_SCHEMA_R1_PREPARE_TOOL.json",
+      "sha256": "209C94781AE63BA6A1B27E44250E07601BBD51C6DDE3D1EF91275BCEFF42B73E",
+      "bytes": 917
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\NEXT_MINIMAL_REPAIR.md",
+      "sha256": "CC6A547AF18F805B66D5FB5B43C8679FC353D1A9FED580D817F8C861C756E3B8",
+      "bytes": 3012
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\pe_pdb_reader.py",
+      "sha256": "65C2FBA7681AA05394C80B982DD5EA9962C0CA681ABD98605F57B2033FDAE915",
+      "bytes": 4044
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\prepare_metadata_r1.py",
+      "sha256": "816977F9A933F83FDDD968A4864821412502A58E1FEAF36CF5BB6D844D36A86F",
+      "bytes": 2815
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\PRESERVATION_AFTER.json",
+      "sha256": "6A9C7AF990921AE5EA61BE092027371CC4407E17D739DFF739786EBF34EE4B8B",
+      "bytes": 4709359
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\PRESERVATION_BEFORE.json",
+      "sha256": "E127CEB6705ABF5E3C444C660DBA01C7DB4AB4A0D6BD1BFA57354AF68EDA029A",
+      "bytes": 4709359
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\PRESERVATION_POLICY_PATH_COVERAGE_REVIEW.json",
+      "sha256": "2578B5E762D812741B2D477AEB879AFCBB2C5BD0E41D18EB7D96FDCC1C82A174",
+      "bytes": 3572
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\PRODUCER_FROZEN_TEXT_READ_AUDIT.json",
+      "sha256": "A6F719AEDED985410893D6012E092E5795EFD24F422F90508A75A6E08959BD20",
+      "bytes": 6457986
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\PROVENANCE_AND_ORIGINAL_DRIFT_REVIEW.json",
+      "sha256": "57C43C59DFEFC20288005B01D195325FA51B7F97A8DFB6CBFE05AAC9AD4658B8",
+      "bytes": 64089
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\qa_common.py",
+      "sha256": "627397ABCB9E468BE029499FE7F7F8BF82AC4428F50F377E11F3C545BEF3CE2C",
+      "bytes": 1963
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\RECOVERY_AND_AUTHORITY_AUDIT.json",
+      "sha256": "FD9E418C8FA2E33B066C51A98EEBB5E631B88F74C4BC85FF57C2E58295AD7369",
+      "bytes": 6349
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\RESULT_INDEX.json",
+      "sha256": "B453310F336AA99D24DA3AEF1E525460EA5736C75F5A6C16B487F52BE1197BD9",
+      "bytes": 5999
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\RETURN_PENDING.json",
+      "sha256": "CAE276B10720FEC49425DD972F7468C2BD9AB9F442F76488DDE738797FCA5B6D",
+      "bytes": 285
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\RETURN_TOOL_PROOF.json",
+      "sha256": "C2CAA085EEBE9AF06AC7BE2E82CADC7F368CA64AE19F5A3E02A209D07DA8D2D5",
+      "bytes": 4068
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\review_evidence.py",
+      "sha256": "E41183BD94B589E1B400C36E4710AA668758484F038821BEE10A51CEEB10422A",
+      "bytes": 17630
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\review_static.py",
+      "sha256": "4F5F1E8B105571E08799E320C26B870A0183D206C20DAF9552AE1A806650DD5A",
+      "bytes": 4491
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\review_static_r1.py",
+      "sha256": "97293CDD41463DF434C05CEA67EC8F6572148A669320255831B4779F102874ED",
+      "bytes": 4490
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\review_static_r1_references.STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\review_static_r1_references.STDOUT.txt",
+      "sha256": "CCE59FC3FE119295CA931BA5D83F1B73F2850861462710865206B6609264B417",
+      "bytes": 1306
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\review_static_r1_references.TOOL.json",
+      "sha256": "BBD93C56975944B353AD56EF09C25EE471F81EA73E9481C66F7BE389113F61F3",
+      "bytes": 1299
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\review_static_r1_source.STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\review_static_r1_source.STDOUT.txt",
+      "sha256": "E4DD16E319A7F5FA812D1F14D604D083DD630D324B34BC0BB83B1548ACCCCB12",
+      "bytes": 954
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\review_static_r1_source.TOOL.json",
+      "sha256": "63E248977A39EAE39F2A0F09937FC52DCCDF31D85E569B8A651E7FFCE61FE05C",
+      "bytes": 1286
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\review_static_references.STDERR.txt",
+      "sha256": "C895252ECA50FEC9B6DC406B5C3F3F29AC15687968F86E2CC10139601E765C01",
+      "bytes": 825
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\review_static_references.STDOUT.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\review_static_references.TOOL.json",
+      "sha256": "6E0033EF70BB5A3B8E5DA7509AB22ED91F3CD69AFE289E4E79AFDA8AEDD7ADC6",
+      "bytes": 1286
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\SOURCE_BRANCH_CUSTODY_REVIEW.json",
+      "sha256": "77A6DE500AE806BD20694671D5266E7765B62BDA8FA39A1AA3242C5D241044BF",
+      "bytes": 28825
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\SOURCE_BYTE_MAP_AND_FULL_CHANGED_SPANS.json",
+      "sha256": "9AAF1B0C627431CE68B20C7B9D9BE3B9842673BF621E06CC128E9D2A12FC9332",
+      "bytes": 14710
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\UNITY_METADATA_READER_INPUT_PIN.json",
+      "sha256": "20F512D2A86DADDAA8DB27689C2336F37383B02574232289256ED56B797CE250",
+      "bytes": 1018
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\unity_reference_metadata.py",
+      "sha256": "0855ABC12B4DE0089126B2293266DD85386D65F16D5B47548EE8B25906057252",
+      "bytes": 5412
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012\\UNITY_REFERENCE_NULL_AND_ADDCOMPONENT_IL.json",
+      "sha256": "668812EE9914DA04DFB1E07CCA44ABE925F65147748E1930921E5B00D79A28A9",
+      "bytes": 16393
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R30_Handoff_Independent_Static_S1_20261012.md",
+      "sha256": "776E0E0C20CFB94E60DD7C7A00F86BC91E6EBCBB3C142D7D71F13458F2978D97",
+      "bytes": 15703
+    }
+  ],
+  "protected_unique_paths": 69,
+  "result_id": "SOL-GATE05-R30-HANDOFF-INDEPENDENT-STATIC-S1-20261012-7705b91d0779465387a937a18e35405b",
+  "initial_ACK_and_failed_raw_terminal_postseal_RETURN_all_preserved": true
+}

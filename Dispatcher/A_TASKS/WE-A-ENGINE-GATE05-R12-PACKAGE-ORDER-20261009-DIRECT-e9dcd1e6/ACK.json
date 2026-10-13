@@ -1,0 +1,18 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R12-PACKAGE-ORDER-20261009-DIRECT-e9dcd1e6",
+  "wp_id": "WP_ENGINE_GATE05_R12_PACKAGE_ORDER",
+  "wp_revision": "GATE05-R12-PACKAGE-ORDER",
+  "envelope": 15,
+  "producer": "A",
+  "acknowledged_at": "2026-10-09T16:05:00+09:00",
+  "status": "IN_PROGRESS",
+  "scope": "Narrow ContentProfileProvider suffix/typed policy DTO-helpers repair: implement declared contiguous 0-based package loadOrder consistency for pure package-policy comparison and canonical admission. CheckPackagePolicy compares independently declared expected IDs against observed activeMods ordered by loadOrder using a copied view without mutating caller activeMods. Physical transport permutation retaining ordinals preserves effective execution sequence, matching decision, canonical admitted content, and policy binding. Equal-sized valid inventories declaring different execution sequences retain distinct matching independent policy meaning. Static source-only guards for null/duplicate/negative/tied/gapped ordinals. Valid serializer-generated JSON release manifest and aligned pre-run/results/raw graph. Positive pure normal managed runner only; no provider/cache/configuration/game/native/operator/old/negative/rejection/adverse execution.",
+  "constraints": {
+    "source_scope": "Only EngineHostCensus.cs ContentProfileProvider suffix and typed policy DTO/helpers",
+    "prefix_immutability": "Fixed prefix 72547 bytes SHA F3C4F865F1E2A898BF240A2D096195870D77A52408CF2D93664FE15092A2A887 strictly preserved",
+    "workerbridge_immutability": "WorkerBridge.cs and WorkerBridge.csproj fixed current hashes preserved",
+    "execution_restrictions": "Positive pure normal runner only; no provider/compute/getter/cache properties/InvalidateCache/configuration/game/native/operator/old runners/negative/rejection/adverse execution",
+    "historical_preservation": "Archive 19, Prior candidates 1251, Pipeline 206, QA 3335, managed dependencies 4, and installed Steam DLL (OPEN incident) preserved",
+    "closure_authority": "Master sole domain authority; Dedicated Server final runtime Domain Authority; no self-declared defect closure or whole-gate E2 release"
+  }
+}

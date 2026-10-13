@@ -1,0 +1,55 @@
+{
+  "type": "SOL_R13_POLICY_CACHE_LIFECYCLE_PREPARATION",
+  "delivery_id": "SOL-GATE05-R13-POLICY-CACHE-LIFECYCLE-PREP-S1-20261009-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R13_POLICY_CACHE_LIFECYCLE_PREPARATION",
+  "delivery_status": "SENT_ACTUAL_TOOL_NEW_ACTIVE_TURN",
+  "unknown_delivery": false,
+  "wp_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R13_POLICY_CACHE_LIFECYCLE_PREPARATION_S1.md",
+  "wp_sha256": "3DDA11D7B4B7D9117947BB8ADC8A5C861CC51522E842158F1D96D2993EE74989",
+  "baseline_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R13_QA_PREP_PROTECTED_BASELINE_20261009.json",
+  "protected_unique_paths": 5901,
+  "guard_run": "MASTER-R13-HEARTBEAT-20261009T110931Z-01",
+  "guard_session": 32118,
+  "guard_pid": 864,
+  "reconciliation_proof": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R13_HEARTBEAT_RECONCILIATION_20261009.json",
+  "at": "2026-10-09T20:16:20.815670+09:00",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:84",
+    "revision": 84,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a12060-1350-7d40-b1d9-52fd57aa1f00",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791544529,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "ack_status": "PENDING",
+  "baseline_sha256": "873F3E2F715A0A52B58E80198A5A7DDD07672498B944DF7A667319C04196ECD7",
+  "pre_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R13_POLICY_CACHE_LIFECYCLE_PREP_PREDISPATCH_CURRENT_20261009.json",
+  "pre_sha256": "C6B9758E9FCD2F989F28D62A92BA468917333D09EC781F0DBE34B9DA730B4431",
+  "send_tool_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R13_POLICY_CACHE_LIFECYCLE_PREP_SEND_TOOL_20261009.json",
+  "send_tool_sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+  "post_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R13_POLICY_CACHE_LIFECYCLE_PREP_POSTSEND_20261009.json",
+  "post_sha256": "BA8E66DF05156AC5167DF4E092C433E65A0441CCECB95EE2C00515D42E7EDA67",
+  "execution_builds": 0,
+  "r13_candidate": "NOT_REVIEWED",
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD"
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "document_type": "ACTUAL_PREPARATION_SCOPE",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R24-M04-PREP-20261011-DIRECT-bccd2404",
+  "timestamp_utc": "2026-10-11T09:28:00Z",
+  "milestone": "M04_ROLE_USERDATA_AND_LAUNCH_CONTRACT",
+  "in_scope_m04": [
+    {
+      "area": "SafeSaveDataFolderPath_Role_Awareness",
+      "description": "Select ValidatorUserDataDirectory when Role == READ_ONLY, WorkerUserDataDirectory when Role == SIMULATION."
+    },
+    {
+      "area": "Awake_Role_Aware_Logging",
+      "description": "Accurately log the active UserData directory reflecting the admitted role."
+    },
+    {
+      "area": "Child_Process_UserData_Isolation_CLI",
+      "description": "Inject -savedatafolder=\"<ValidatorUserDataDirectory>\" into child validator launch arguments to isolate native engine data paths."
+    },
+    {
+      "area": "Prospective_Test_Oracle",
+      "description": "Define positive pure unit test cases covering SIMULATION and READ_ONLY across File and Bytes routes."
+    }
+  ],
+  "out_of_scope_deferred": [
+    {
+      "milestone": "M05",
+      "area": "ValidatorTask_Tuple_And_Channel_Protocol",
+      "description": "Formalizing the 16-dimension task tuple, atomic channel file consume/move (.consumed), and secret token verification."
+    },
+    {
+      "milestone": "M06",
+      "area": "Content_Context_And_Census_Validation",
+      "description": "Live XML save file census parsing, content profile fingerprint comparison, and mod package policy enforcement."
+    },
+    {
+      "milestone": "M07",
+      "area": "Control_Plane_Authority_And_Promotion",
+      "description": "Promotion boundary gating, same-volume atomic rename, and control plane synchronization with Dedicated Server."
+    },
+    {
+      "milestone": "ALL",
+      "area": "Native_Process_Execution",
+      "description": "Live in-game execution, Process.Start of game binaries, and Awake event loop execution remain strictly UNTESTED and HOLD."
+    }
+  ],
+  "immutability_enforcement": {
+    "production_files_modified": 0,
+    "candidate_rebuilds": 0,
+    "native_processes_launched": 0,
+    "all_9_engine_artifacts_frozen": true
+  }
+}

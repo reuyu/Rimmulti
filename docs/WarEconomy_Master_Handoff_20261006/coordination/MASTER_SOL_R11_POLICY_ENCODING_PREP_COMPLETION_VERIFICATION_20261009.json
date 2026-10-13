@@ -1,0 +1,232 @@
+{
+  "at": "2026-10-09T08:33:48.226582+09:00",
+  "result_id": "SOL-GATE05-R11-POLICY-ENCODING-PREP-S1-20261009-661be88f72724c34b7185bdcf48b2861",
+  "delivery_id": "SOL-GATE05-R11-POLICY-ENCODING-PREP-S1-20261009-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R11_POLICY_ENCODING_PREPARATION",
+  "wp_revision": "S1",
+  "completion_sha256": "9476707B60E88CAC2FBFC299C812D9311D062096E7A9E8B037E59DA92C13DECD",
+  "evidence_manifest_sha256": "F036A7A688AACBB7B76B68C1708C82D35277C466DD6C67F849E30DC1099F4083",
+  "report_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R11_Policy_Encoding_Preparation_S1_20261009.md",
+  "report_sha256": "C18B012F2340FA8B4CAB2E53D0E9261F032EE360541A5E21A2520DBCE7E2047D",
+  "evidence_files": 54,
+  "protected_unique_paths_master_rehashed": 4047,
+  "reference_bytes_and_typed_fields_master_verified": [
+    {
+      "case": "BASE",
+      "variant": "LITERAL_UNICODE_MINIMAL",
+      "sha256": "8824FAAB259D8AC8B1F63F7B6A89DA2A7B20A64263D7F16BE8A94EDCEB3D5BFC",
+      "bytes": 143
+    },
+    {
+      "case": "BASE",
+      "variant": "ASCII_UNICODE_ESCAPED",
+      "sha256": "8824FAAB259D8AC8B1F63F7B6A89DA2A7B20A64263D7F16BE8A94EDCEB3D5BFC",
+      "bytes": 143
+    },
+    {
+      "case": "EQUAL_SEPARATE",
+      "variant": "LITERAL_UNICODE_MINIMAL",
+      "sha256": "8824FAAB259D8AC8B1F63F7B6A89DA2A7B20A64263D7F16BE8A94EDCEB3D5BFC",
+      "bytes": 143
+    },
+    {
+      "case": "EQUAL_SEPARATE",
+      "variant": "ASCII_UNICODE_ESCAPED",
+      "sha256": "8824FAAB259D8AC8B1F63F7B6A89DA2A7B20A64263D7F16BE8A94EDCEB3D5BFC",
+      "bytes": 143
+    },
+    {
+      "case": "ID_ONLY",
+      "variant": "LITERAL_UNICODE_MINIMAL",
+      "sha256": "1E02A2803199B7DC11F801E964AB8D3ADE345A81D8F52ADE802C6695A0E13C92",
+      "bytes": 145
+    },
+    {
+      "case": "ID_ONLY",
+      "variant": "ASCII_UNICODE_ESCAPED",
+      "sha256": "1E02A2803199B7DC11F801E964AB8D3ADE345A81D8F52ADE802C6695A0E13C92",
+      "bytes": 145
+    },
+    {
+      "case": "REV_ONLY",
+      "variant": "LITERAL_UNICODE_MINIMAL",
+      "sha256": "347B324649305DB223F717FE8E0FCA87B9C27BBF2174A4EF49F2FF83F0A1C622",
+      "bytes": 143
+    },
+    {
+      "case": "REV_ONLY",
+      "variant": "ASCII_UNICODE_ESCAPED",
+      "sha256": "347B324649305DB223F717FE8E0FCA87B9C27BBF2174A4EF49F2FF83F0A1C622",
+      "bytes": 143
+    },
+    {
+      "case": "ORDER_ONLY",
+      "variant": "LITERAL_UNICODE_MINIMAL",
+      "sha256": "04446900D60D0314B09740AEDE9FD130D11B92BE36D5BC8BC5DC11100DF55326",
+      "bytes": 143
+    },
+    {
+      "case": "ORDER_ONLY",
+      "variant": "ASCII_UNICODE_ESCAPED",
+      "sha256": "04446900D60D0314B09740AEDE9FD130D11B92BE36D5BC8BC5DC11100DF55326",
+      "bytes": 143
+    },
+    {
+      "case": "UNICODE_ID",
+      "variant": "LITERAL_UNICODE_MINIMAL",
+      "sha256": "2FFA7971211E575FA6A45E9118D2C72C0E67436507C2A9657601906107FF2959",
+      "bytes": 140
+    },
+    {
+      "case": "UNICODE_ID",
+      "variant": "ASCII_UNICODE_ESCAPED",
+      "sha256": "D3E7EA67F1AD577E352031BE29631FCC19825E9F64ECB5F8EA24DB0A4EB6B7FC",
+      "bytes": 158
+    },
+    {
+      "case": "UNICODE_REV",
+      "variant": "LITERAL_UNICODE_MINIMAL",
+      "sha256": "8D294D2DAFC4FEA050F9EF3F57FA7D09C5D5DF4A6E8044AF11186AE90D912F95",
+      "bytes": 160
+    },
+    {
+      "case": "UNICODE_REV",
+      "variant": "ASCII_UNICODE_ESCAPED",
+      "sha256": "0F9449D8EB41F7668CF7873EF418676D666CD99D411499020434DF0D9009434E",
+      "bytes": 182
+    },
+    {
+      "case": "DISPLAY_ID",
+      "variant": "LITERAL_UNICODE_MINIMAL",
+      "sha256": "F4B7CC5FB68E21AA2D1C770BE6602E18289F2B67E1604E40D43635E528B6E352",
+      "bytes": 165
+    },
+    {
+      "case": "DISPLAY_ID",
+      "variant": "ASCII_UNICODE_ESCAPED",
+      "sha256": "4CDE29C601916DDBAE19BD36872A662850A65525512159DFEAEDB1E2A5DFF9B0",
+      "bytes": 180
+    },
+    {
+      "case": "DISPLAY_REV",
+      "variant": "LITERAL_UNICODE_MINIMAL",
+      "sha256": "9B6F4C7C281449CA4B98F710C73FEEDC13FC8C9FA541D789906E3A1767E47413",
+      "bytes": 176
+    },
+    {
+      "case": "DISPLAY_REV",
+      "variant": "ASCII_UNICODE_ESCAPED",
+      "sha256": "CA300E66A1AE59898CD09A6CA5ECA2980F2B9B1B3EA65C4B2387602EDCF009B5",
+      "bytes": 185
+    },
+    {
+      "case": "SPACED_ID",
+      "variant": "LITERAL_UNICODE_MINIMAL",
+      "sha256": "A3F679DD3CAEC1AAB2E4EF18ED790B1D39F41827CCF2DF363A172BF243C6839D",
+      "bytes": 145
+    },
+    {
+      "case": "SPACED_ID",
+      "variant": "ASCII_UNICODE_ESCAPED",
+      "sha256": "A3F679DD3CAEC1AAB2E4EF18ED790B1D39F41827CCF2DF363A172BF243C6839D",
+      "bytes": 145
+    },
+    {
+      "case": "SPACED_REV",
+      "variant": "LITERAL_UNICODE_MINIMAL",
+      "sha256": "4A82C8D0BDFD74966B0B1DFEDFBDF56761EB1CE717A607B56E2659A13EEF63FD",
+      "bytes": 147
+    },
+    {
+      "case": "SPACED_REV",
+      "variant": "ASCII_UNICODE_ESCAPED",
+      "sha256": "4A82C8D0BDFD74966B0B1DFEDFBDF56761EB1CE717A607B56E2659A13EEF63FD",
+      "bytes": 147
+    },
+    {
+      "case": "CASE_ID",
+      "variant": "LITERAL_UNICODE_MINIMAL",
+      "sha256": "8584D1A577DE3B070BD5454C691546272455D23EDE17F3DA98AF71CB8F2D6650",
+      "bytes": 143
+    },
+    {
+      "case": "CASE_ID",
+      "variant": "ASCII_UNICODE_ESCAPED",
+      "sha256": "8584D1A577DE3B070BD5454C691546272455D23EDE17F3DA98AF71CB8F2D6650",
+      "bytes": 143
+    },
+    {
+      "case": "REV_NUMERIC_TEXT",
+      "variant": "LITERAL_UNICODE_MINIMAL",
+      "sha256": "CCE0386BE7CD83725AEA6D16BE00C92D5C420FDF57F45B7A284C5F337A2523D2",
+      "bytes": 145
+    },
+    {
+      "case": "REV_NUMERIC_TEXT",
+      "variant": "ASCII_UNICODE_ESCAPED",
+      "sha256": "CCE0386BE7CD83725AEA6D16BE00C92D5C420FDF57F45B7A284C5F337A2523D2",
+      "bytes": 145
+    },
+    {
+      "case": "PACKAGE_CASE_LOWER",
+      "variant": "LITERAL_UNICODE_MINIMAL",
+      "sha256": "8824FAAB259D8AC8B1F63F7B6A89DA2A7B20A64263D7F16BE8A94EDCEB3D5BFC",
+      "bytes": 143
+    },
+    {
+      "case": "PACKAGE_CASE_LOWER",
+      "variant": "ASCII_UNICODE_ESCAPED",
+      "sha256": "8824FAAB259D8AC8B1F63F7B6A89DA2A7B20A64263D7F16BE8A94EDCEB3D5BFC",
+      "bytes": 143
+    }
+  ],
+  "normal_criteria": 14,
+  "static_criteria": 14,
+  "frozen_source_constraints": 12,
+  "controls_build_runs": 0,
+  "master_verdict": "ACCEPTED_R11_REFERENCE_CRITERIA_PREPARATION_NO_CANDIDATE_VERDICT",
+  "r11_candidate": "NOT_REVIEWED",
+  "actual_thread": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:74",
+    "revision": 74,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a11dd4-3687-7831-83ff-78900f2f64fe",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791501809,
+      "completedAt": 1791502326,
+      "durationMs": 516814
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ac827f3e0cc87d09862b98f783af0e9",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016ac827f3e0cc87d09862b98f783af0e9",
+      "turnId": "01a11dd4-3687-7831-83ff-78900f2f64fe",
+      "phase": "final_answer",
+      "text": "기존 R11 QA 준비 작업을 재개해 완료하고 마스터에게 보고했습니다. 정상·정적 기준 각 14개와 reference 파일 28개를 준비했습니다. 후보 빌드·실행은 수행하지 않았습니다. QA 준비 보고서"
+    },
+    "latestToolMarkerId": "exec-c08021f9-b6a4-4fbc-87e6-21dd217a554d",
+    "latestToolMarker": {
+      "id": "exec-c08021f9-b6a4-4fbc-87e6-21dd217a554d",
+      "turnId": "01a11dd4-3687-7831-83ff-78900f2f64fe",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "original_failed_turn_retained": "01a11d5f-555e-7c20-87bc-d741f1940a93",
+  "same_WP_result_resumed": true,
+  "master_review": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R11_POLICY_ENCODING_QA_PREPARATION_S1_20261009.md",
+  "master_review_sha256": "BE7F15A333A2CA6624258E12C451D5F06BE75F5AFD1EFFE6120C310BE4D252CB",
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "Foundation": "HOLD"
+}

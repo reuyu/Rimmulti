@@ -1,0 +1,12 @@
+from review_setup import *
+if __name__=='__main__':
+    assert not (Q/'runner/QaCodecRunner.exe').exists()
+    insert='''var cacheApi=new List<object>();foreach(var ct in new[]{typeof(ContentProfileCacheCore),typeof(CoherentContentProfileCacheEntry)}){foreach(var prop in ct.GetProperties(BindingFlags.Public|BindingFlags.Instance|BindingFlags.DeclaredOnly))cacheApi.Add(new{type=ct.FullName,kind="property",name=prop.Name,clr_type=prop.PropertyType.FullName,has_public_setter=prop.GetSetMethod()!=null});foreach(var method in ct.GetMethods(BindingFlags.Public|BindingFlags.Instance|BindingFlags.DeclaredOnly))cacheApi.Add(new{type=ct.FullName,kind="method",name=method.Name,return_type=method.ReturnType.FullName,parameters=method.GetParameters().Select(p=>p.ParameterType.FullName).ToArray()});}Save("PUBLIC_CACHE_API_METADATA.json",JsonConvert.SerializeObject(cacheApi,Formatting.Indented));
+    '''
+    for name in ['Program.cs','RunnerTemplate.cs.txt']:
+        p=Q/name;s=p.read_text(encoding='utf-8-sig');needle='Save("DTO_FIELD_METADATA.json",';assert needle in s and 'PUBLIC_CACHE_API_METADATA.json' not in s;p.write_text(s.replace(needle,insert+needle),encoding='utf-8')
+    o=load(Q/'ORACLE_BEFORE_BUILD.json');o['final_runner_source']=row(Q/'Program.cs');o['final_source_audit_at']=now();write(Q/'ORACLE_BEFORE_BUILD.json',o)
+    program=(Q/'Program.cs').read_text(encoding='utf-8-sig')
+    forbidden=['GetActualContentProfile','ComputeActualContentProfile','SetComputationError','ClearComputationError','BindingFlags.NonPublic','_globalCache','TryPublishComputedEntry(stamp.generation-','crossA','crossB']
+    assert not any(x in program for x in forbidden)
+    write(Q/'PROSPECTIVE_SOURCE_EXECUTION_SCOPE.json',dict(at=now(),source=row(Q/'Program.cs'),cache_control_source=row(Q/'CacheChecks.cs.txt'),provider_call_names=sorted(set(__import__('re').findall(r'ContentProfileProvider\.(\w+)\s*\(',program))),standalone_publication_source='PublishMatching uses freshcurrentCaptureStateSnapshot then independentfullmanifest/referenceJSON/hash only',global_publication_source_sites=0,private_reflection_writes=0,adverse_source_sites=0,actual_calls_not_yet_executed=True,full_cache_lifecycle_runtime_ledger='ACTUAL_CACHE_LIFECYCLE_CALL_LEDGER.json records explicit observednormal stages/groupedgetterinvocations,not nestedinternalcallcounts',public_metadata_read_only=True,prospective_source_finalized_before_build=True))

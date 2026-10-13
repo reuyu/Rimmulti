@@ -1,0 +1,229 @@
+--- FrozenR13
++++ R14
+@@ -1533,7 +1533,7 @@
+     public static class ContentProfileProvider
+     {
+         public const string MANIFEST_SCHEMA_VERSION = "ADR-006B-v5";
+-        public const string CONTENT_CONTRACT_VERSION = "ADR-006B-v5-R14";
++        public const string CONTENT_CONTRACT_VERSION = "ADR-006B-v5-R15";
+         public const string SUPPORTED_COVERAGE_PROFILE = "POC_SUPPORTED_CORE_DLC_ASSEMBLIES_V5";
+         public const string MOD_PATCH_SUPPORT_STATUS = "TYPED_OBSERVATION_EXPLICIT_DISPOSITION_V1";
+ 
+@@ -2165,7 +2165,7 @@
+                 "TACTICAL_PROBE_V4",
+                 "READ_ONLY",
+                 "SIMULATION",
+-                "GATE05_R14_POLICY_CAPTURE_PUBLICATION",
++                "GATE05_R15_PUBLIC_MANIFEST_BOUNDARY",
+                 "ADR006B_LOSSLESS_CANONICAL_CONTENT_V5"
+             };
+             foreach (var flag in requiredFlags)
+@@ -2465,17 +2465,7 @@
+             return true;
+         }
+ 
+-        public static ContentProfileManifest ComputeActualContentProfileManifest()
+-        {
+-            var snapshot = _globalCache.CaptureStateSnapshot();
+-            if (snapshot.policy == null)
+-            {
+-                throw new InvalidOperationException("ContentProfile computation requires an explicit expected package policy to be configured before trusted actual fingerprint success. Status: UNCONFIGURED (BLOCKED_NO_POLICY).");
+-            }
+-            return ComputeActualContentProfileManifest(snapshot.policy);
+-        }
+-
+-        public static ContentProfileManifest ComputeActualContentProfileManifest(ExpectedPackagePolicyRecord capturedPolicy)
++        private static ContentProfileManifest CollectActualContentProfileManifestInternal(ExpectedPackagePolicyRecord capturedPolicy)
+         {
+             if (capturedPolicy == null)
+             {
+@@ -2974,13 +2964,13 @@
+             }
+             manifest.defFamilies.researchDefs.Sort((a, b) => string.CompareOrdinal(a.defName, b.defName));
+ 
+-            // Capability flags (aligned with semantic V4 scope and ADR-006B-v5-R14)
++            // Capability flags (aligned with semantic V4 scope and ADR-006B-v5-R15)
+             manifest.capabilityFlags = new List<string>
+             {
+                 "TACTICAL_PROBE_V4",
+                 "READ_ONLY",
+                 "SIMULATION",
+-                "GATE05_R14_POLICY_CAPTURE_PUBLICATION",
++                "GATE05_R15_PUBLIC_MANIFEST_BOUNDARY",
+                 "ADR006B_LOSSLESS_CANONICAL_CONTENT_V5"
+             };
+ 
+@@ -3008,18 +2998,40 @@
+             return manifest;
+         }
+ 
+-        public static string ComputeActualContentProfileFingerprint()
+-        {
++        private sealed class ComputedContentProfileResult
++        {
++            public ContentProfileManifest Manifest { get; }
++            public string CanonicalJson { get; }
++            public string Fingerprint { get; }
++            public CoherentContentProfileCacheEntry PublishedEntry { get; }
++
++            public ComputedContentProfileResult(
++                ContentProfileManifest manifest,
++                string canonicalJson,
++                string fingerprint,
++                CoherentContentProfileCacheEntry publishedEntry)
++            {
++                Manifest = manifest ?? throw new ArgumentNullException(nameof(manifest));
++                CanonicalJson = canonicalJson ?? throw new ArgumentNullException(nameof(canonicalJson));
++                Fingerprint = fingerprint ?? throw new ArgumentNullException(nameof(fingerprint));
++                PublishedEntry = publishedEntry ?? throw new ArgumentNullException(nameof(publishedEntry));
++            }
++        }
++
++        private static ComputedContentProfileResult ComputeAndPublishActualContentProfile()
++        {
++            long capturedGen = -1;
+             try
+             {
+                 _globalCache.ClearComputationError();
+                 var snapshot = _globalCache.CaptureStateSnapshot();
++                capturedGen = snapshot.generation;
+                 if (snapshot.policy == null)
+                 {
+-                    throw new InvalidOperationException("ContentProfile computation requires an explicit expected package policy to be configured before trusted actual fingerprint success. Status: UNCONFIGURED (BLOCKED_NO_POLICY).");
+-                }
+-
+-                var manifest = ComputeActualContentProfileManifest(snapshot.policy);
++                    throw new InvalidOperationException("ContentProfile computation requires an explicit expected package policy to be configured before trusted actual content profile success. Status: UNCONFIGURED (BLOCKED_NO_POLICY).");
++                }
++
++                var manifest = CollectActualContentProfileManifestInternal(snapshot.policy);
+                 string canonicalJson = SerializeCanonicalJson(manifest, canonicalNormalize: true);
+ 
+                 string fingerprint;
+@@ -3029,21 +3041,45 @@
+                     fingerprint = BitConverter.ToString(sha.ComputeHash(jsonBytes)).Replace("-", "").ToUpperInvariant();
+                 }
+ 
+-                if (!_globalCache.TryPublishComputedEntry(snapshot.generation, snapshot.policy, manifest, canonicalJson, fingerprint, out string? rejectionReason))
+-                {
+-                    string errMsg = $"Computed content profile entry could not be published to cache: {rejectionReason}";
++                if (!_globalCache.TryPublishComputedEntry(
++                    snapshot.generation,
++                    snapshot.policy,
++                    manifest,
++                    canonicalJson,
++                    fingerprint,
++                    out string? rejectionReason,
++                    out CoherentContentProfileCacheEntry? publishedEntry))
++                {
++                    string errMsg = $"Computed content profile entry could not be published or validated against current state stamp: {rejectionReason}";
+                     Log.Error($"[ContentProfileProvider] {errMsg}");
+                     throw new InvalidOperationException(errMsg);
+                 }
+ 
+-                return fingerprint;
++                return new ComputedContentProfileResult(manifest, canonicalJson, fingerprint, publishedEntry!);
+             }
+             catch (Exception ex)
+             {
+-                _globalCache.SetComputationError(ex.ToString());
+-                Log.Error($"[ContentProfileProvider] Failed to compute ContentProfileFingerprint: {ex}");
++                if (capturedGen >= 0)
++                {
++                    _globalCache.SetComputationError(capturedGen, ex.ToString());
++                }
++                else
++                {
++                    _globalCache.SetComputationError(ex.ToString());
++                }
++                Log.Error($"[ContentProfileProvider] Failed to compute ContentProfile: {ex}");
+                 throw;
+             }
++        }
++
++        public static ContentProfileManifest ComputeActualContentProfileManifest()
++        {
++            return ComputeAndPublishActualContentProfile().Manifest;
++        }
++
++        public static string ComputeActualContentProfileFingerprint()
++        {
++            return ComputeAndPublishActualContentProfile().Fingerprint;
+         }
+     }
+ 
+@@ -3205,6 +3241,17 @@
+             }
+         }
+ 
++        public void SetComputationError(long capturedGeneration, string? error)
++        {
++            lock (_sync)
++            {
++                if (_generation == capturedGeneration)
++                {
++                    _lastError = error;
++                }
++            }
++        }
++
+         public void ClearComputationError()
+         {
+             lock (_sync)
+@@ -3293,6 +3340,25 @@
+             string fingerprint,
+             out string? rejectionReason)
+         {
++            return TryPublishComputedEntry(
++                expectedGeneration,
++                capturedPolicy,
++                manifest,
++                canonicalJson,
++                fingerprint,
++                out rejectionReason,
++                out _);
++        }
++
++        public bool TryPublishComputedEntry(
++            long expectedGeneration,
++            ExpectedPackagePolicyRecord? capturedPolicy,
++            ContentProfileManifest manifest,
++            string canonicalJson,
++            string fingerprint,
++            out string? rejectionReason,
++            out CoherentContentProfileCacheEntry? publishedEntry)
++        {
+             if (manifest == null) throw new ArgumentNullException(nameof(manifest));
+             if (string.IsNullOrEmpty(canonicalJson)) throw new ArgumentException("canonicalJson cannot be null or empty", nameof(canonicalJson));
+             if (string.IsNullOrEmpty(fingerprint)) throw new ArgumentException("fingerprint cannot be null or empty", nameof(fingerprint));
+@@ -3302,12 +3368,14 @@
+                 if (_generation != expectedGeneration)
+                 {
+                     rejectionReason = $"Stale configuration generation: captured was {expectedGeneration}, but current is {_generation}.";
++                    publishedEntry = null;
+                     return false;
+                 }
+ 
+                 if (_configuredPolicy == null)
+                 {
+                     rejectionReason = "No configured package policy present in cache state.";
++                    publishedEntry = null;
+                     return false;
+                 }
+ 
+@@ -3316,6 +3384,7 @@
+                 if (!string.Equals(currentDigest, capturedDigest, StringComparison.OrdinalIgnoreCase))
+                 {
+                     rejectionReason = $"Policy digest mismatch: captured was '{capturedDigest}', but current is '{currentDigest}'.";
++                    publishedEntry = null;
+                     return false;
+                 }
+ 
+@@ -3335,6 +3404,7 @@
+ 
+                 _lastError = null;
+                 rejectionReason = null;
++                publishedEntry = _entry;
+                 return true;
+             }
+         }

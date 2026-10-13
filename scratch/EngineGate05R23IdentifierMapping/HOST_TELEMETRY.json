@@ -1,0 +1,42 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R23-IDENTIFIER-MAPPING-20261011-DIRECT-31bd3af2",
+  "wp_id": "WP_ENGINE_GATE05_R23_IDENTIFIER_MAPPING",
+  "wp_revision": "GATE05-R23-IDENTIFIER-MAPPING",
+  "envelope": 26,
+  "orchestrator": "Python Host Subprocess",
+  "timestamp_utc": "2026-10-11T08:02:17.592175+00:00",
+  "pinned_runner": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\Harness\\bin\\Debug\\net472\\Gate05R23IdentifierMappingRunner.exe",
+    "sha256": "6AB6C5263BB0D0BBD0B6DE4E702C58298B73EF0DF99E9A3C23798C70C19F6C3E",
+    "size": 38912
+  },
+  "runs": [
+    {
+      "run_index": 1,
+      "culture": "en-US",
+      "child_pid": 16744,
+      "exit_code": 0,
+      "duration_seconds": 0.3128170967102051,
+      "run_dir": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_en_us",
+      "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_en_us\\stdout.txt",
+      "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_en_us\\stderr.txt",
+      "output_inventory_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_en_us\\OUTPUT_INVENTORY.json",
+      "output_count": 24
+    },
+    {
+      "run_index": 2,
+      "culture": "de-DE",
+      "child_pid": 22248,
+      "exit_code": 0,
+      "duration_seconds": 0.1990187168121338,
+      "run_dir": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_de_de",
+      "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_de_de\\stdout.txt",
+      "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_de_de\\stderr.txt",
+      "output_inventory_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R23IdentifierMapping\\run_de_de\\OUTPUT_INVENTORY.json",
+      "output_count": 24
+    }
+  ],
+  "isolation_verified": true,
+  "runner_unmodified": true,
+  "overall_success": true
+}

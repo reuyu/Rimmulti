@@ -1,0 +1,43 @@
+# WP_QA_ENGINE_GATE05_R22_DECLARATION_INDEPENDENT / S1
+
+Delivery SOL-GATE05-R22-DECLARATION-INDEPENDENT-S1-20261011-01. Original Sol 01a11583-ff90-73e0-8916-d021e2bb038d/local. Master가 새 후보에 대한 독립 defensive STATIC + 정상 positive PURE 검증을 승인한다. 완료 후 사용자 continue를 기다리지 않고 Master에게 직접 보고한다.
+
+## controlling 자료와 정확한 대상
+
+먼저 C:\Users\user\Desktop\RimMulti\docs\WarEconomy_Master_Handoff_20261006\MASTER_REVIEW_ENGINE_GATE05_R22_DECLARATION_E1_20261011.md SHAC6F35C842B75B84CD6A6C7A5726A916C1BA30688DACF96E83A1974683BF4B648, C:\Users\user\Desktop\RimMulti\docs\WarEconomy_Master_Handoff_20261006\coordination\MASTER_GATE05_R22_DECLARATION_E1_VERIFICATION_20261011.json, root AGENTS·현재 governance·mandatory handoff/C정정/역사·canonical SRS·accepted ADR006B와 MD125..132를 읽는다. Production 후보 수정/재빌드 금지, final authority는 Dedicated Server, closure/release는 Master다.
+
+Frozen root C:\Users\user\Desktop\RimMulti\Dispatcher\CANDIDATES\G05R22-9be1579a, manifest C:\Users\user\Desktop\RimMulti\Dispatcher\A_TASKS\WE-A-ENGINE-GATE05-R22-DECLARATION-20261011-DIRECT-9be1579a\MASTER_GATE05_R22_DECLARATION_REVIEW_FREEZE_MANIFEST.json SHA8BD9FD9363549891703A3E5696FB44E4B2D806547E3B51CC87EC7142C7756BB5,114files. SELECTED Debug SHA278DA55F46B3646F981E79EF83D764F19959B6FEFAD6EEC83AFD4DAB0020864D/303104/MVID3d7d7cf7-541a-42ec-a642-b31539cc3f3f/PDB75C81993FEB72294789BB69E611FD3AFE7647D733568D405F1A672CF1DA74D84/72608/CodeView GUID35fc949d-90a4-415c-a8bc-fd377c16b02e/source4of4. Release BF170758FE5998919A860A17A33F04A36780D5419D735D95D8518DF631783955/MVID0ad5d962-8354-4049-9f25-6851185a3b8c/PDBA4C0947FDD7CC7901C20951F11DF82B38FE6DF6CF73E48CB0ABD22C6E54BDEC1/53076 metadata only. Worker6AA281259A5760BFFFA432E392AC4480807E16C044EE599A7D31AD4BF6C10F1E/226714. 新source/PDB은 이전 R21 identity가 아니다.
+
+Managed metadata dependencies C:\Users\user\Desktop\RimMulti\Dispatcher\A_TASKS\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\MASTER_R5_MANAGED_QA_DEPENDENCIES_MANIFEST.json SHA7FCB91EEB8489365E4304AFFDC601CCD0CCE2259365FD861A785AD658C183481, Newtonsoft exact frozen R22 dependency copy; compiler/framework/all resolved refs 별도 pin. Protected baseline C:\Users\user\Desktop\RimMulti\docs\WarEconomy_Master_Handoff_20261006\coordination\MASTER_R22_QA_INDEPENDENT_PROTECTED_BASELINE_20261011.json SHA0BA31AF369F34D1238E54DDE4173799614FC9547AD20924EB42E1D48BFA7D06E,11639 actual Master-rehashed unique paths. 모든 비교/실행은 exact frozen R22를 사용한다. Mutable source/bin/obj·Steam·Workshop·UserData·save/native runtime을 실행/변경하거나 old manifests를 정상화하지 않는다.
+
+## 독립 source 리뷰
+
+R21→R22 변경은 sent R22 WP와 C:\Users\user\Desktop\RimMulti\Dispatcher\A_TASKS\WE-A-ENGINE-GATE05-R22-DECLARATION-20261011-DIRECT-9be1579a\MASTER_R22_SCOPE_BASELINE.json의 FOUR spans only. FIVE fixed segments는 offset 변화와 무관하게 original raw byte boundaries로 대조한다. R21 ToRedactedJson/11public schema/IsValid/Snapshot/ParseStrict/data-only AdmitBytesFile/pathhelper/global installer/Awake/Census/csproj는 fixed다.
+
+7개 CLI 명시 필수 검사가 attach/file admission 전에 있는지, factory에서 caller.Clone과 7필드 완전성/path/SHA/rawbyte 검증이 승인 전에 있는지, 검증된 copy만 계속 사용하는지, private readonly7scalar가 receipt/snapshot/originalrawSHA에 결속되는지 독립 검토한다. 파일 API→bytes API의 두 번째 Clone은 첫 검증 copy에서 이뤄짐을 구분한다. Scalar internal getters는 mutable DTO leak와 다르며 public11 schema는 고정이다. Private constructor/IsTrusted bool은 factory-exclusive crypto/native operator 인증이 아니다.
+
+Master가 실제 source101~103에서 찾은 origin.Trim()/plan.Trim()/cfgId.Trim()의 원문 손실은 SOURCEONLY로 확인하고 M01 closure 미달로 분류한다. Factory 직접 origin/plan 보존과 CLI bootstrap 보존을 구분한다. Role/capability의 issuance Trim 및 approved capture/validation 비교 일관성도 SOURCEONLY 검토한다. ConfigId 기존 Snapshot.Trim은 fixed/canonical contract이며 임의 수정 허가는 아니다. ALL fail-closed/default/missing/null/invalid/mismatch/unknown/rejection branches는 SOURCEONLY, 실행0.
+
+Producer7labels/hostPID25356,29248 exit0/18nonselfeach/manual54partial ledger를 원문 검토한다. Main8redacted selected fields,UTC6fileleaf,normal16snapshot0,defaultDTOmetadataconstruction과 source-only defaultprobe 경계,plain32CBD...sample과 opaque8A9C...분리,prospective compiler/all refs/load/prepost oracle gaps를 독립 확인한다. Original report/harness/results는 증거이고 새 실행 허가가 아니다. Producer runner·old QA runner/output 재실행0.
+
+## 새로운 정상 PURE 실행 범위
+
+QA-owned NEW managed runner 최종 build1, en-US/de-DE fresh normal children2만 승인. 외부 host는 이 owned compiler/runner의 argv/cwd/PID/numeric OS exit/전체 streams 수집만 한다. Candidate 빌드/변경0. Primitive JsonNET string escaping을 공통 사용한다면 한계를 명시하고 구조/순서/token/string original codepoints와 full UTF8 bytes를 독립 oracle로 비교한다. Expected/input/callplan/schema는 BEFORE final build AND calls에 pin, output-derived oracle수정/재빌드/재실행 금지. Unexpected normal FAIL은 원본 source/oracle/runner/raw를 보존한 채 보고한다.
+
+Main8receipt: both SIMULATION/READ_ONLY×PLAIN/OPAQUE×file/bytes. Fully specified nondefault seven-field descriptor와 valid canonical configId/uppercase role/LOCAL_SANDBOXED/path/SHA. Origin/plan은 정상 nonwhitespace original Unicode 문자열과 앞뒤 공백을 가진 명시 선언으로 선정하고 원문 ordinal oracle를 사전 pin한다. 이는 factory DATA 정상 경로이며 bootstrap/native CLI 실행 허가가 아니다. Invalid role/capability/configId/emptydefault DTO probe 없음. Path fullyqualified Windows owned paths/existing normalized OrdinalIgnoreCase contract/SHA64ASCIIhex originalraw byte binding.
+
+Receipt full11getter + full11redacted, nested15snapshot/13snapshotredacted, descriptor7, original policy record/digest/array order/null/token types/whole UTF8 bytes와 raw fileSHA를 비교한다. Main8의 issuedAt original .0000000Z 보존; additional8 positive UTCfraction7(.1234567Z)/wholeZ×bothroles×file/bytes×OPAQUE=총16receipt fullgraph. AdmittedAtUtc는 config timestamp복사,actualclock/nativeidentity proof아님. Original R21/R19 PASS는 새 candidate로 승계하지 않고 새 회귀를 관측한다.
+
+Valid issuance에 실제 사용한 caller DTO와 Clone DTO를 구분하여 발급 뒤 caller scalar7/usedClone7 변화에 영향받지 않는지 fullgraph와 normal ValidateAdmissionReceipt/IsValid로 확인한다. 반환된 detached policycopy를 변경하고 원 receipt/snapshot의 graph·digest가 보존되는지 검증한다. 내부 constructor 호출/privatecapture/reflection mutation/global receipt 설치/forgery 실행0. Private fields의 read-only metadata source inspection 허용, 불필요한 private getter execution 없음.
+
+기존 normal16snapshot routes(bothroles×PLAINOPAQUE×constructor/ToSnapshot/AdmitBytes/AdmitFile) full15/13graph + connectedcallerconfigcopy8 + detachedpolicycopy + full25ValidatorResult/fileSHA + limited unchanged normal codec/current valid ConfigureClear만 의미 있게 회귀한다. Historical65전체 battery로 넓히지 않는다. OPAQUE ID '  qa.R18 정책 Ω  ',revision '  007 café Ω  ',digest8A9C3381A041F79F300710D6EA93A5D8E08564C692AA5059337853825E1749BF;PLAIN은 별도 original record/oracle/digest. Current syntheticprofile/PID/nonces/fixture executable은 authority/native proof가 아님.
+
+허용 PURE APIs는 valid ParseStrict/Snapshot/ToSnapshot/AdmitBytesFile/IssueAdmissionReceiptFileBytes/ValidateAdmissionReceipt/receipt.IsValid/fully specified descriptor.Clone/publicmetadata/valid owned pathhelper/valid64hex/limited codec ConfigureClear뿐이다. ALL C#Process/PInvoke/GetCurrentProcess/VerifyProcessIdentity/global Worker constructor/TryInstall/ActiveReceipt/ActiveStartup/Bootstrapper/Awake/Harmony/listener/HandleValidateInput/readiness/native/game/operator/providercompute/cacheInvalidate/invalid-empty-null-defaultdescriptor-mismatch-relativepath-unknownbadUTF8EOF/rejection/adverse 실행0. 정책 조건이 필요하면 bounded blocker로 보고하고 조용히 범위를 넓히지 않는다.
+
+## 증거와 완료
+
+QAroot C:\Users\user\Desktop\RimMulti\QA-Tactical-Engine\GATE05-R22-DECLARATION-INDEPENDENT-S1-20261011; report C:\Users\user\Desktop\RimMulti\docs\QA_EngineHost_Gate05_R22_Declaration_Independent_S1_20261011.md. Input/oracle/callplan/toolchain/candidate-sourcePDB/newrunner/compiler/all resolvedrefs 사전 pin, actual managed loadedSHA + independently decoded PE MVID, all prepost, explicit direct/grouped ledger(count는 nested profiler아님), newunique runIDs, compiler와 run 전체 stdout/stderr를 truncation 전에 durable files로 저장한다. Firstrecursive output inventory를 second 전에 seal하고 이후 ALL first/second rows+extra output completeness를 rehash한다. Self-cycle 제외만 명시한다. 모든 preparation/buildattempt를 공개하고 실패를 숨겨 PASS로 바꾸지 않는다.
+
+Unique resultID/immutable initialACK/baseline-beforeafter/report→EVIDENCE_MANIFEST→RESULT_INDEX→ACK_COMPLETION_BINDING→COMPLETION last를 기록한다. ACK와 완료는 Master01a1156b-97ec-7ce0-9e4a-dfc4a3acb174/local에게 직접 thread tools로 즉시 보고한다. 사용자가 routine Master↔Sol 보고를 명시 승인했다. 실제 return tool proof/unknown delivery 확인 전 retry금지. A/QAdispatch/governance/closure/scheduler/model/account 변경 없음.
+
+M01 CLI trim/source normalization은 OPEN/REVISION_REQUIRED; M04..07/native 별도 OPEN. Historical R19opaque/R21UTC narrow CLOSED 유지, 새 R22 regression은 결과 pending. Full Engine002006/Pipeline007/currentschema/G-Q1 OPEN/FoundationHOLD/full native E2 NOT_RELEASED. QA 이후 Master가 근거로 다음 bounded A 수정·전달을 자동 진행한다.

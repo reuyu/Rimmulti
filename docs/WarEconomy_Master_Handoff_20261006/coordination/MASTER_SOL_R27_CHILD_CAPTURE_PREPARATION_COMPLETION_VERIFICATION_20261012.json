@@ -1,0 +1,81 @@
+{
+  "at": "2026-10-12T03:32:35.382591+09:00",
+  "guard_run": "MASTER-R27-SOL-PREP-COMPLETE-20261012-01",
+  "guard_pid": 11168,
+  "guard_session": 8532,
+  "delivery_id": "SOL-GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R27_CHILD_CAPTURE_PREPARATION",
+  "wp_revision": "S1",
+  "result_id": "SOL-GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011-bc67d273756f4bda89475a4fcf4d6da9",
+  "completion_sha256": "DD4E5312832B548A92B85EA47E8497044C098A9536D4BE03C93FBD6E01C3959E",
+  "evidence_count": 23,
+  "protected_paths": 13458,
+  "source_spans": 8,
+  "Master_typed_rows": 976,
+  "Master_raw_value_sets": 40,
+  "Master_task_edits": 216,
+  "normal_preparation_pairs": 4,
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:166",
+    "revision": 166,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a12c2a-2ea3-72d0-84a3-c614903da878",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791742324,
+      "completedAt": 1791743296,
+      "durationMs": 971731
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acbd53e3da887d0ba20b3b0320fcda8",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016acbd53e3da887d0ba20b3b0320fcda8",
+      "turnId": "01a12c2a-2ea3-72d0-84a3-c614903da878",
+      "phase": "final_answer",
+      "text": "R27 독립 QA 준비를 완료하고 마스터에게 보고했습니다. 15개 getter의 정상 기대값과 소유권·실행 증거 계획을 작성했습니다. 코드 변경·빌드·후보 실행은 없었습니다. QA 보고서 다음 지시를 기다리겠습니다."
+    },
+    "latestToolMarkerId": "exec-c8276f21-a05e-4295-96b5-1a8ed9c023b2",
+    "latestToolMarker": {
+      "id": "exec-c8276f21-a05e-4295-96b5-1a8ed9c023b2",
+      "turnId": "01a12c2a-2ea3-72d0-84a3-c614903da878",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "snapshot": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R27_CHILD_CAPTURE_PREPARATION_COMPLETION_SNAPSHOT_20261012.json",
+    "sha256": "38D3AEA5484EFEF7F75387B3CAF1D78671B66EE6DAD4A226C06A7A1BA66D29CB",
+    "bytes": 1528
+  },
+  "master_verdict": "ACCEPTED_INDEPENDENT_R27_CAPTURE15_NORMAL_TYPED_RAW_COPY_PROVENANCE_PREPARATION_NO_CANDIDATE_VERDICT",
+  "master_review_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R27_CHILD_CAPTURE_QA_PREPARATION_S1_20261012.md",
+  "master_review_sha256": "2073A7CA21DA6F025228CD5EE672241CD25EF12D4B881F8E9812B9EFC2525E59",
+  "candidate_build_execute": 0,
+  "actual_R27_candidate_verdict": "NOT_REVIEWED",
+  "A_completion_exists": true,
+  "scheduler_actual": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "ACTIVE",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791742269353
+  },
+  "new_WP": false,
+  "closure_changed": false,
+  "runtime_e2_released": false,
+  "foundation": "HOLD"
+}

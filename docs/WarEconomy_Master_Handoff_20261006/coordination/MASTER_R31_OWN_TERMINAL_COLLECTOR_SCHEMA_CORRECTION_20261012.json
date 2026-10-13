@@ -1,0 +1,12 @@
+{
+  "scope": "Master passive terminal collector only; no QA/candidate source, hash or expected-value changes",
+  "first_observed_exit_code": 1,
+  "first_observed_exception": "KeyError: 'path' at preservation['additive_original_reference_observations'] m.check(v)",
+  "actual_schema": "Each observation contains before and after file rows, initial_baseline_coverage=false, prospective_compile_reference_proof=false",
+  "correction": "Check before and after independently; assert equal rows and retain both false coverage qualifiers",
+  "first_attempt_before_any_disposition_mutation": true,
+  "corrected_collector_exit_code": 0,
+  "candidate_build_execution": 0,
+  "qa_originals_modified": false,
+  "evidence_discrepancies_repaired_or_normalized": false
+}

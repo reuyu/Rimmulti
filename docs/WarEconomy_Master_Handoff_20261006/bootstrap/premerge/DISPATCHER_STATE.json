@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "checkpoint_date": "2026-10-06",
+  "package_produced_date": "2026-10-07",
+  "timezone": "Asia/Seoul",
+  "automation_enabled": false,
+  "migration_bootstrap_verified": false,
+  "project_root": null,
+  "endpoints": {
+    "master": null,
+    "a": null,
+    "sol": null
+  },
+  "c_mode": "on_demand_only",
+  "non_overlap_mechanism": null,
+  "active_run": null,
+  "deliveries": [],
+  "queued_work": [
+    {
+      "recipient": "a",
+      "work_package": "WP_PIPELINE_REV6",
+      "status": "NOT_SENT",
+      "prerequisites_verified": false
+    },
+    {
+      "recipient": "sol",
+      "work_package": "WP_QA_ENGINE_GATE05",
+      "status": "NOT_SENT",
+      "prerequisites_verified": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "WE-OPERATOR-BOOTSTRAP-V1",
+  "configId": "CFG-UTC-SevenZeros-SIMULATION-0",
+  "role": "SIMULATION",
+  "admittedValidatorExecutablePath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\run_de_de\\SimulatedAdmittedValidator.exe",
+  "admittedValidatorExecutableSha256": "03A1CC8829DD0D8E6F7DF402E6FC4CDF47B52C99EC17E12EB15B1200071E0D3B",
+  "validatorArguments": "--batchmode",
+  "workerUserDataDirectory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\run_de_de\\WorkerUserData",
+  "validatorUserDataDirectory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\run_de_de\\ValidatorUserData",
+  "workerCwd": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\run_de_de\\WorkerCwd",
+  "validatorCwd": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\run_de_de\\ValidatorCwd",
+  "capabilityBoundary": "LOCAL_SANDBOXED",
+  "issuedAtUtc": "2026-10-11T04:00:00.0000000Z",
+  "expectedContentProfileFingerprint": "FINGERPRINT-01",
+  "expectedPackagePolicyDeclaration": {
+    "schemaVersion": "WE-PACKAGE-POLICY-V1",
+    "policyId": "POLICY-UTC-REGRESSION",
+    "revision": "1",
+    "admittedPackageIds": [
+      "core"
+    ]
+  }
+}

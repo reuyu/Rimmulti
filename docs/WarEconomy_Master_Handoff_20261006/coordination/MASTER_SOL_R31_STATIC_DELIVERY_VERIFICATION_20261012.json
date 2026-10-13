@@ -1,0 +1,78 @@
+{
+  "at": "2026-10-12T22:34:17.021269+09:00",
+  "delivery": {
+    "delivery_id": "SOL-GATE05-R31-LIFECYCLE-INDEPENDENT-STATIC-S1-20261012-01",
+    "wp_id": "WP_QA_ENGINE_GATE05_R31_LIFECYCLE_INDEPENDENT_STATIC",
+    "wp_revision": "S1",
+    "wp_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R31_LIFECYCLE_INDEPENDENT_STATIC_S1.md",
+    "wp_sha256": "3206ADCD19A8904FAB50A16AB9231AE8684A6BDF95E6B7DBE86FECBDB7B959A7",
+    "qa_root": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R31-LIFECYCLE-INDEPENDENT-STATIC-S1-20261012",
+    "report_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R31_Lifecycle_Independent_Static_S1_20261012.md",
+    "baseline_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R31_STATIC_QA_PROTECTED_BASELINE_20261012.json",
+    "baseline_sha256": "6BB19CD4A32ADE5F013A317C2741B712102C800BF5C5CD1212D1E8D3F96DA425",
+    "protected_unique_paths": 15854,
+    "frozen_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10\\MASTER_GATE05_R31_LIFECYCLE_REVIEW_FREEZE_MANIFEST.json",
+    "frozen_manifest_sha256": "F8770090C7CB2D03077A9A7336D13F7F9F61E9F0D2DABB442BA62669B24EA3E4",
+    "selected_sha256": "F6C06D6B1392C5CF90483D047150D53A80193DED655850BF1A06FE65A72A52CE",
+    "selected_mvid": "f8c7c77e-e2c5-4d3e-9371-a4e349d433c9",
+    "selected_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R31-b8d47a10\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "delivery_status": "SENT",
+    "unknown_delivery": false,
+    "status": "INDEPENDENT_STATIC_IN_PROGRESS_ACK_PENDING",
+    "sent_at": "2026-10-12T22:34:17.021243+09:00",
+    "actual_new_turn_id": "01a13051-b4c9-7570-9678-234e7db2f314",
+    "actual_cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:13"
+  },
+  "send_tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R31_STATIC_SEND_TOOL_20261012.json",
+    "sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+    "bytes": 149
+  },
+  "exact_message": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R31_STATIC_EXACT_MESSAGE_20261012.json",
+    "sha256": "3D65E94385546E824E3D17BC33F106C74A677D650485325265379B49C048BDA4",
+    "bytes": 1601
+  },
+  "actual_new_turn": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:13",
+    "revision": 13,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a13051-b4c9-7570-9678-234e7db2f314",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791812023,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acce1cf44e087d0b08fcfcdadadfc63",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016acce1cf44e087d0b08fcfcdadadfc63",
+      "turnId": "01a13051-b4c9-7570-9678-234e7db2f314",
+      "phase": "commentary",
+      "text": "새 R31 독립 정적 QA를 시작하겠습니다. WP 전체와 보호 경로·frozen 후보의 SHA/PDB 결속을 확인한 뒤, 실행 없이 lifecycle·custody 분기와 producer 증거 불일치를 검토하겠습니다. 이전 후보의 PASS는 승계하지 않겠습니다."
+    },
+    "latestToolMarkerId": "exec-242bc0d3-efcf-444f-9ee3-974d311fbb70",
+    "latestToolMarker": {
+      "id": "exec-242bc0d3-efcf-444f-9ee3-974d311fbb70",
+      "turnId": "01a13051-b4c9-7570-9678-234e7db2f314",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "guard_session": 29837,
+  "monitor": "ACTUAL_PAUSED_HOURLY",
+  "Master_candidate_execution": 0,
+  "Foundation": "HOLD",
+  "native_E2": "NOT_RELEASED"
+}

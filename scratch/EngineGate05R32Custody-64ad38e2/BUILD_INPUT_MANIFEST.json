@@ -1,0 +1,139 @@
+{
+  "manifest_version": "we-r32-build-input-manifest/v1",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2",
+  "wp_id": "WP_ENGINE_GATE05_R32_CUSTODY",
+  "envelope": 35,
+  "pinned_at": "2026-10-12T14:29:22.113727+00:00",
+  "new_candidates_exist_before_build": false,
+  "input_source_files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "bytes": 275573,
+      "sha256": "214F1F95C6BF7F547ED47FD91B787A70B2E52DFF129A882DCD8C1AC1471A24E8"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "bytes": 170135,
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "bytes": 1774,
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052"
+    }
+  ],
+  "generated_cs_documents": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.AssemblyInfo.cs",
+      "bytes": 1029,
+      "sha256": "8C7180C5E4D3004DE53926C1039C107C3059053C470CF73F82CF974EAF7D5681"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+      "bytes": 214,
+      "sha256": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.AssemblyInfo.cs",
+      "bytes": 1031,
+      "sha256": "80492D41167FD5D58508DFC29A09E3624EC6374EF4048B2FF2D2C5EE86562743"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+      "bytes": 214,
+      "sha256": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70"
+    }
+  ],
+  "actual_resolved_compile_references": [
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\Assembly-CSharp.dll",
+      "sha256": "5CF1B5BE399D5B1C9C56CA72C9D35B4ECF307FEACF5859D04AC5A1AA5926356A",
+      "bytes": 15777280
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\UnityEngine.CoreModule.dll",
+      "sha256": "C5C58EA254834291780A1D6C388C241443D07167B4A4B890A23C9494F626DDBA",
+      "bytes": 1386688
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\UnityEngine.dll",
+      "sha256": "0422FF282130458380D2FB4B63A718465D3BD2D5738F1532F60798B0D35DFF0D",
+      "bytes": 125120
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\UnityEngine.IMGUIModule.dll",
+      "sha256": "C6C39327211BE8299E2E9FFDEE7A979F228736C99B84FD54BC73F563456865D9",
+      "bytes": 188608
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\294100\\2009463077\\Current\\Assemblies\\0Harmony.dll",
+      "sha256": "353DAAFEC180BB8E7BBE4DA78F2A7CDC78067392E3A4E79DC8E7AF295F2371E6",
+      "bytes": 2456064
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\1.6\\Assemblies\\Newtonsoft.Json.dll",
+      "sha256": "E1E27AF7B07EEEDF5CE71A9255F0422816A6FC5849A483C6714E1B472044FA9D",
+      "bytes": 711952
+    }
+  ],
+  "toolchain_executables_and_compiler_dlls": [
+    {
+      "path": "C:\\Program Files\\dotnet\\dotnet.exe",
+      "bytes": 167696,
+      "sha256": "B3CC37E128B832146EC3A8DD467476FFA84021C4F92684261AB035AFEFF2DE7E"
+    },
+    {
+      "path": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\Roslyn\\bincore\\csc.exe",
+      "bytes": 173312,
+      "sha256": "5593EF0312432E52D52322D7D748AB7E20A76C2302C0CE02A3347D9EAD2098D7"
+    },
+    {
+      "path": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\Roslyn\\bincore\\csc.dll",
+      "bytes": 145680,
+      "sha256": "149FD48D7AD64C5BA9658572C8C59AB27A1B40E0834F764AB54F4584B7E8AC1A"
+    },
+    {
+      "path": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\Roslyn\\bincore\\VBCSCompiler.exe",
+      "bytes": 173376,
+      "sha256": "50995E8198F70F4DE97FA4FBF31DBAC7C82E5AEF4653335FFEF0C0615C06CC8B"
+    },
+    {
+      "path": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\Roslyn\\bincore\\VBCSCompiler.dll",
+      "bytes": 235832,
+      "sha256": "A14FE589820F05938E3D9A8EA173F4154E39AE121288C861483D6AA5C4F6AAA5"
+    },
+    {
+      "path": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\MSBuild.dll",
+      "bytes": 973064,
+      "sha256": "EE4DD71648F7BA91B5AFD161EEB5ADB11B5F0F8D69F6BFC3CA5958008A8152C7"
+    }
+  ],
+  "build_commands": [
+    {
+      "configuration": "Debug",
+      "command": [
+        "dotnet",
+        "build",
+        "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+        "-c",
+        "Debug",
+        "--no-restore",
+        "-v:diag"
+      ],
+      "cwd": "C:\\Users\\user\\Desktop\\RimMulti"
+    },
+    {
+      "configuration": "Release",
+      "command": [
+        "dotnet",
+        "build",
+        "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+        "-c",
+        "Release",
+        "--no-restore",
+        "-v:diag"
+      ],
+      "cwd": "C:\\Users\\user\\Desktop\\RimMulti"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "we-operator-config-binding-contract/v2",
+  "contract_authority": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R36_PUBLISHER_CONTRACT_SUPPORTED_DOMAIN_20261013.md",
+  "contract_sha256": "73CDCB9B57752C0149B906CC6A1CA81BA6310E9E2A83B1B36DFB0280F5A36F7A",
+  "config14_properties": [
+    "schemaVersion",
+    "configId",
+    "role",
+    "admittedValidatorExecutablePath",
+    "admittedValidatorExecutableSha256",
+    "validatorArguments",
+    "workerUserDataDirectory",
+    "validatorUserDataDirectory",
+    "workerCwd",
+    "validatorCwd",
+    "capabilityBoundary",
+    "issuedAtUtc",
+    "expectedContentProfileFingerprint",
+    "expectedPackagePolicyDeclaration"
+  ],
+  "decl7_properties": [
+    "originId",
+    "expectedConfigId",
+    "expectedRole",
+    "expectedCapabilityBoundary",
+    "launchPlanId",
+    "expectedConfigPath",
+    "expectedConfigSha256"
+  ],
+  "binding_rules": {
+    "schema_version": {
+      "rule": "schemaVersion must strictly equal 'WE-OPERATOR-BOOTSTRAP-V1'.",
+      "fail_closed": true
+    },
+    "role_binding": {
+      "parent": {
+        "expectedRole": "SIMULATION",
+        "rule": "Parent raw role must strictly equal 'SIMULATION' without strip or case normalization."
+      },
+      "child": {
+        "expectedRole": "READ_ONLY",
+        "rule": "Child raw role must strictly equal 'READ_ONLY' without strip or case normalization."
+      },
+      "fail_closed": true
+    },
+    "config_id_matching": {
+      "rule": "configId must be non-blank and match descriptor expectedConfigId under both raw ordinal string comparison and snapshot-trimmed ordinal comparison.",
+      "fail_closed": true
+    },
+    "descriptor_sha256": {
+      "rule": "Descriptor expectedConfigSha256 must be strictly 64 ASCII hex characters without padding or trimming.",
+      "fail_closed": true
+    },
+    "executable_sha256": {
+      "rule": "Executable SHA256 must be trimmed 64 ASCII hex characters.",
+      "fail_closed": true
+    },
+    "path_equality": {
+      "rule": "Declared Windows path equality verified under DOS comparison domain (normcase(abspath(p)).rstrip('\\/')).",
+      "fail_closed": true
+    },
+    "path_ancestry_verification": {
+      "rule": "Reusable whole-ancestry guard checks all existing ancestor directories via os.lstat without following symlinks/junctions; rejects reparse points (0x400), invalid control chars, ADS colons, reserved DOS devices, and trailing dots/spaces; fails closed on any inspection error.",
+      "fail_closed": true
+    },
+    "userdata_isolation": {
+      "rule": "workerUserDataDirectory and validatorUserDataDirectory must be distinct when normalized.",
+      "fail_closed": true
+    },
+    "content_profile_fingerprint": {
+      "rule": "expectedContentProfileFingerprint must be a non-blank string (not constrained to 64 hex characters).",
+      "fail_closed": true
+    },
+    "package_policy_declaration": {
+      "rule": "Object containing schemaVersion, policyId, policyRevision, and admittedPackageIds; policyRevision admits string or integer with explicit boolean exclusion (not isinstance(val, bool)); admittedPackageIds retains order; no constant policy schema or package uniqueness mandated.",
+      "fail_closed": true
+    },
+    "timestamp_format": {
+      "rule": "issuedAtUtc must be a valid Gregorian UTC ISO 8601 string (YYYY-MM-DDTHH:mm:ss[.1..7digits]Z) with calendar/time validity and exact raw fractional digits preserved without roundoff to 6 digits.",
+      "fail_closed": true
+    },
+    "cli_invocation": {
+      "rule": "Strict --spec <absoluteSpecPath> CLI invocation with exact argc 3; closed 6 required keys (operatorPairId, parentDeclaration, childDeclaration, parentConfigPath, childConfigPath, outputDir) + optional bundleFilename fixed to 'operator_startup_pair.json'. Inline mode rejected fail-closed.",
+      "fail_closed": true
+    }
+  }
+}

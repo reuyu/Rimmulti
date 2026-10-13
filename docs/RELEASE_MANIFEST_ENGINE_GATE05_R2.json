@@ -1,0 +1,82 @@
+{
+  "manifest_version": "1.0",
+  "work_package": "WP_ENGINE_GATE05_R2",
+  "candidate_lineage": "GATE05-R2",
+  "created_at_utc": "2026-10-08T01:23:04Z",
+  "agent_role": "Antigravity A",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R2-20261008-DIRECT-2af10708",
+  "selected_candidate": {
+    "configuration": "Debug",
+    "target_framework": "net472",
+    "dll_path": "scratch/WorkerBridgeMod/Source/bin/Debug/net472/WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "57A4C8B75ABC2AD43E9A3E4215A23A35741E0E5B203CB57A63AA30BB59CBF54F",
+    "dll_bytes": 192000,
+    "pdb_path": "scratch/WorkerBridgeMod/Source/bin/Debug/net472/WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "E0A7EC813C52AF3206DA6D0AE6122453027FF6CC1CB2A509AF9B80134CCFCA6E",
+    "pdb_bytes": 47500,
+    "mvid": "8292a8ec-4a02-49dc-88e9-2c3d93e969f5"
+  },
+  "alternate_candidate": {
+    "configuration": "Release",
+    "target_framework": "net472",
+    "dll_path": "scratch/WorkerBridgeMod/Source/bin/Release/net472/WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "25DEE284AC85F22031614541A4335FD78D1C0490DBB95BC77A28CED5329966C7",
+    "dll_bytes": 182784,
+    "pdb_path": "scratch/WorkerBridgeMod/Source/bin/Release/net472/WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "5FD9E821CF86429D418D1D44BCFF52C3A5209D91340002DD077EFB751F6CD1B5",
+    "pdb_bytes": 36052
+  },
+  "source_files": [
+    {
+      "path": "scratch/WorkerBridgeMod/Source/WorkerBridge.cs",
+      "sha256": "E50F299AC5D9410730CDFDD8C206B0BB45630E7C2734A49964FA447A0194B7BF",
+      "bytes": 143299
+    },
+    {
+      "path": "scratch/WorkerBridgeMod/Source/EngineHostCensus.cs",
+      "sha256": "DEB835473EC501525364FCB64BFE8D8D8BFE519A1B844F59AA516802C250411D",
+      "bytes": 90285
+    },
+    {
+      "path": "scratch/WorkerBridgeMod/Source/WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    }
+  ],
+  "verification_evidence": {
+    "runner_project": {
+      "path": "scratch/EngineGate05R2/Gate05R2TestRunner.csproj",
+      "sha256": "60A655E6AEC21F2AFAA976F091622B96D36D409CC3015AC0CF44992B71FE5475",
+      "bytes": 1645
+    },
+    "runner_source": {
+      "path": "scratch/EngineGate05R2/Program.cs",
+      "sha256": "D11BB645E7F700012F3DF2F75A0F702DD8E875E5BF13AE7AE0907391565F1720",
+      "bytes": 37785
+    },
+    "results_json": {
+      "path": "scratch/EngineGate05R2/results.json",
+      "sha256": "9D81FC9E2FE7736918CDDF6659F7836F3DAAE6C78D59E23280FC8A61C1A1047B",
+      "bytes": 8939
+    },
+    "raw_console_log": {
+      "path": "scratch/EngineGate05R2/raw_console.txt",
+      "sha256": "416ABF51D0B16F8C1F40527DFAF1BC0AFC388F79114909FDAC4E072305AF9AB2",
+      "bytes": 5541
+    },
+    "report_markdown": {
+      "path": "docs/POC_EngineHost_Semantic_Authority_Gate_05_R2.md",
+      "sha256": "4592C7AC37B8382E49D0A169D9AEA9A125521F4EAD181C606240571D3649F75C",
+      "bytes": 14184
+    }
+  },
+  "summary": {
+    "total_checkpoints": 24,
+    "pass": 23,
+    "fail": 0,
+    "blocked": 1,
+    "untested": 0,
+    "e1_verdict": "PASS_WITH_DECLARED_LIMITS",
+    "disposition_note": "Defects remain OPEN pending Master review and independent E2 verification by Sol QA. Native isolation limitations disclosed honestly as BLOCKED."
+  }
+}

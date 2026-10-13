@@ -1,0 +1,351 @@
+{
+  "at": "2026-10-09T20:55:41.717374+09:00",
+  "guard_run": "MASTER-SOL-R13-INDEPENDENT-COMPLETE-20261009-01",
+  "guard_session": 77102,
+  "guard_pid": 25976,
+  "result_id": "SOL-GATE05-R13-POLICY-CACHE-LIFECYCLE-INDEPENDENT-S1-20261009-a59c76c5155a49a094a044837a5e6099",
+  "delivery_id": "SOL-GATE05-R13-POLICY-CACHE-LIFECYCLE-INDEPENDENT-S1-20261009-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R13_POLICY_CACHE_LIFECYCLE_INDEPENDENT",
+  "completion_sha256": "9CC5B6B2B73C5C2F8CB9272B5F72C160274153670124ADF113A30E4784F0C36F",
+  "report_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R13_Policy_Cache_Lifecycle_Independent_S1_20261009.md",
+  "report_sha256": "A48DAD92E90E78EFEB50C20122A040A0EC0532F936B5DBB37E71E7CDF4C6909B",
+  "evidence_manifest_sha256": "A0B5FEF8B174AF061C77F433C58284069FC6ACC8124EE51B2310C2B672A21ACF",
+  "result_index_sha256": "4DEE4212FCEF470ACB5E703B002FD34603042A692312FA78FFCCE14751E3E4AB",
+  "evidence_files": 902,
+  "protected_paths_rehashed": 6021,
+  "runs": [
+    {
+      "run_id": "R13-f5968d6f204b4b01",
+      "pid": 10776,
+      "culture": "en-US",
+      "exit": 0,
+      "pass": 339,
+      "fail": 0,
+      "prepost": 150,
+      "loaded": 12,
+      "output_files": 411,
+      "stage_ledger": 72,
+      "root": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R13-POLICY-CACHE-LIFECYCLE-INDEPENDENT-S1-20261009\\runs\\R13-f5968d6f204b4b01"
+    },
+    {
+      "run_id": "R13-068ffe98d97f4f13",
+      "pid": 23900,
+      "culture": "de-DE",
+      "exit": 0,
+      "pass": 339,
+      "fail": 0,
+      "prepost": 150,
+      "loaded": 12,
+      "output_files": 411,
+      "stage_ledger": 72,
+      "root": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R13-POLICY-CACHE-LIFECYCLE-INDEPENDENT-S1-20261009\\runs\\R13-068ffe98d97f4f13"
+    }
+  ],
+  "typed_rows": 78682,
+  "canonical_pairs": 115,
+  "reference_pairs": 68,
+  "reference_bindings": 278,
+  "runner_metadata_master": {
+    "assembly": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R13-POLICY-CACHE-LIFECYCLE-INDEPENDENT-S1-20261009\\runner\\QaCodecRunner.exe",
+    "pdb": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R13-POLICY-CACHE-LIFECYCLE-INDEPENDENT-S1-20261009\\runner\\QaCodecRunner.pdb",
+    "mvid": "3a58a920-cdae-49dd-bdeb-a4415a0649ac",
+    "codeviewGuid": "399cb252-6580-456e-aacc-daf437c5c8da",
+    "pdbGuid": "399cb252-6580-456e-aacc-daf437c5c8da",
+    "codeviewMatched": true,
+    "documents": [
+      {
+        "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R13-POLICY-CACHE-LIFECYCLE-INDEPENDENT-S1-20261009\\Program.cs",
+        "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+        "expected": "C2261871465325FA86A059F20CEBD5BE5BE4EFEBEFF4BD2965DDD6BF1A255A5B",
+        "actual": "C2261871465325FA86A059F20CEBD5BE5BE4EFEBEFF4BD2965DDD6BF1A255A5B",
+        "matched": true
+      }
+    ]
+  },
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:94",
+    "revision": 94,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a1206c-833a-7530-97ab-66ebd84e494e",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791545344,
+      "completedAt": 1791546760,
+      "durationMs": 1415479
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ac8d585a7a087d0ae5f168e42319fe9",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016ac8d585a7a087d0ae5f168e42319fe9",
+      "turnId": "01a1206c-833a-7530-97ab-66ebd84e494e",
+      "phase": "final_answer",
+      "text": "R13 독립 QA를 완료하고 마스터에게 보고했습니다. 두 실행에서 각각 339개 검증이 통과했습니다. 정상 캐시 코어·코덱은 PASS이며, 실제 계산 경로에는 정적 수정 요구가 남아 있습니다. 전체 런타임 검증·릴리스는 보류입니다. QA 보고서"
+    },
+    "latestToolMarkerId": "exec-2ad4a2c9-f2b9-40cf-9251-153792b3ad92",
+    "latestToolMarker": {
+      "id": "exec-2ad4a2c9-f2b9-40cf-9251-153792b3ad92",
+      "turnId": "01a1206c-833a-7530-97ab-66ebd84e494e",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "actual_thread_read": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R13_QA_ACTUAL_THREAD_READ_20261009.json",
+  "scope_correction": {
+    "at": "2026-10-09T20:46:31.167488+09:00",
+    "rows": [
+      {
+        "run_id": "R13-f5968d6f204b4b01",
+        "actual_runtime_ledger": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R13-POLICY-CACHE-LIFECYCLE-INDEPENDENT-S1-20261009\\runs\\R13-f5968d6f204b4b01\\ACTUAL_CACHE_LIFECYCLE_CALL_LEDGER.json",
+          "sha256": "544629FEF2AE4AB6A129A9415CF8978659234780032BF043658F39CC0DB67476",
+          "bytes": 12783
+        },
+        "actual_logged_stages": 72,
+        "counts": [
+          {
+            "scope": "global_empty_only",
+            "api": "ClearConfiguredExpectedPackagePolicy",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "global_empty_only",
+            "api": "ConfigurationGeneration/HasConfigured/Configured/IsCached/CachedFingerprint/CachedCanonicalJson/CachedManifest/LastComputationError",
+            "observed_logged_count": 7
+          },
+          {
+            "scope": "global_empty_only",
+            "api": "ConfigureExpectedPackagePolicy_DECLARATION",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "global_empty_only",
+            "api": "ConfigureExpectedPackagePolicy_RECORD",
+            "observed_logged_count": 2
+          },
+          {
+            "scope": "global_empty_only",
+            "api": "ConfiguredExpectedPackagePolicy",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "global_empty_only",
+            "api": "InvalidateCache",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "standalone",
+            "api": "CachedManifest",
+            "observed_logged_count": 5
+          },
+          {
+            "scope": "standalone",
+            "api": "CaptureStateSnapshot",
+            "observed_logged_count": 5
+          },
+          {
+            "scope": "standalone",
+            "api": "ClearConfiguredExpectedPackagePolicy",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "standalone",
+            "api": "CoherentEntry.CreateManifestSnapshot",
+            "observed_logged_count": 5
+          },
+          {
+            "scope": "standalone",
+            "api": "ConfigurationGeneration/HasConfigured/Configured/IsCached/CachedFingerprint/CachedCanonicalJson/CachedManifest/LastComputationError/TryGetCoherentEntry",
+            "observed_logged_count": 8
+          },
+          {
+            "scope": "standalone",
+            "api": "ConfigureExpectedPackagePolicy_DECLARATION",
+            "observed_logged_count": 2
+          },
+          {
+            "scope": "standalone",
+            "api": "ConfigureExpectedPackagePolicy_RECORD",
+            "observed_logged_count": 2
+          },
+          {
+            "scope": "standalone",
+            "api": "ConfiguredExpectedPackagePolicy",
+            "observed_logged_count": 8
+          },
+          {
+            "scope": "standalone",
+            "api": "ContentProfileCacheCore.constructor",
+            "observed_logged_count": 2
+          },
+          {
+            "scope": "standalone",
+            "api": "InvalidateCache",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "standalone",
+            "api": "TryGetCoherentEntry/CreateManifestSnapshot/CachedManifest/CachedFingerprint/CachedCanonicalJson/IsCached/ConfigurationGeneration",
+            "observed_logged_count": 15
+          },
+          {
+            "scope": "standalone",
+            "api": "TryPublishComputedEntry_CURRENT_MATCHING_ONLY",
+            "observed_logged_count": 5
+          }
+        ],
+        "matching_standalone_publications": 5,
+        "source_scope": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R13-POLICY-CACHE-LIFECYCLE-INDEPENDENT-S1-20261009\\PROSPECTIVE_SOURCE_EXECUTION_SCOPE.json",
+          "sha256": "1237A62C2C41D1D979E94C1FC27155E074CCC640FEB983F3A30EF493C9AA8767",
+          "bytes": 1598
+        },
+        "pure_codec_order_coverage": {
+          "generic_cases": 12,
+          "order_cases": 14,
+          "historical_leaf_count": 65
+        },
+        "counter_limit": "Ledger records direct normal API stages/groupedgetter invocations,not every nestedinternal codec/gettercall",
+        "inherited_raw_cache_calls_zero_statement": "INACCURATE_DO_NOT_ADOPT;authorized normal cache/global configuration calls actuallyexecuted andlisted above",
+        "actual_global_publication_getactual_compute_native_adverse_source_sites": 0
+      },
+      {
+        "run_id": "R13-068ffe98d97f4f13",
+        "actual_runtime_ledger": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R13-POLICY-CACHE-LIFECYCLE-INDEPENDENT-S1-20261009\\runs\\R13-068ffe98d97f4f13\\ACTUAL_CACHE_LIFECYCLE_CALL_LEDGER.json",
+          "sha256": "80EC9C15475263763B51E4A83B6E37A9AB5B38B131073F6CC8FA4D114F6FB293",
+          "bytes": 12783
+        },
+        "actual_logged_stages": 72,
+        "counts": [
+          {
+            "scope": "global_empty_only",
+            "api": "ClearConfiguredExpectedPackagePolicy",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "global_empty_only",
+            "api": "ConfigurationGeneration/HasConfigured/Configured/IsCached/CachedFingerprint/CachedCanonicalJson/CachedManifest/LastComputationError",
+            "observed_logged_count": 7
+          },
+          {
+            "scope": "global_empty_only",
+            "api": "ConfigureExpectedPackagePolicy_DECLARATION",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "global_empty_only",
+            "api": "ConfigureExpectedPackagePolicy_RECORD",
+            "observed_logged_count": 2
+          },
+          {
+            "scope": "global_empty_only",
+            "api": "ConfiguredExpectedPackagePolicy",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "global_empty_only",
+            "api": "InvalidateCache",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "standalone",
+            "api": "CachedManifest",
+            "observed_logged_count": 5
+          },
+          {
+            "scope": "standalone",
+            "api": "CaptureStateSnapshot",
+            "observed_logged_count": 5
+          },
+          {
+            "scope": "standalone",
+            "api": "ClearConfiguredExpectedPackagePolicy",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "standalone",
+            "api": "CoherentEntry.CreateManifestSnapshot",
+            "observed_logged_count": 5
+          },
+          {
+            "scope": "standalone",
+            "api": "ConfigurationGeneration/HasConfigured/Configured/IsCached/CachedFingerprint/CachedCanonicalJson/CachedManifest/LastComputationError/TryGetCoherentEntry",
+            "observed_logged_count": 8
+          },
+          {
+            "scope": "standalone",
+            "api": "ConfigureExpectedPackagePolicy_DECLARATION",
+            "observed_logged_count": 2
+          },
+          {
+            "scope": "standalone",
+            "api": "ConfigureExpectedPackagePolicy_RECORD",
+            "observed_logged_count": 2
+          },
+          {
+            "scope": "standalone",
+            "api": "ConfiguredExpectedPackagePolicy",
+            "observed_logged_count": 8
+          },
+          {
+            "scope": "standalone",
+            "api": "ContentProfileCacheCore.constructor",
+            "observed_logged_count": 2
+          },
+          {
+            "scope": "standalone",
+            "api": "InvalidateCache",
+            "observed_logged_count": 1
+          },
+          {
+            "scope": "standalone",
+            "api": "TryGetCoherentEntry/CreateManifestSnapshot/CachedManifest/CachedFingerprint/CachedCanonicalJson/IsCached/ConfigurationGeneration",
+            "observed_logged_count": 15
+          },
+          {
+            "scope": "standalone",
+            "api": "TryPublishComputedEntry_CURRENT_MATCHING_ONLY",
+            "observed_logged_count": 5
+          }
+        ],
+        "matching_standalone_publications": 5,
+        "source_scope": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R13-POLICY-CACHE-LIFECYCLE-INDEPENDENT-S1-20261009\\PROSPECTIVE_SOURCE_EXECUTION_SCOPE.json",
+          "sha256": "1237A62C2C41D1D979E94C1FC27155E074CCC640FEB983F3A30EF493C9AA8767",
+          "bytes": 1598
+        },
+        "pure_codec_order_coverage": {
+          "generic_cases": 12,
+          "order_cases": 14,
+          "historical_leaf_count": 65
+        },
+        "counter_limit": "Ledger records direct normal API stages/groupedgetter invocations,not every nestedinternal codec/gettercall",
+        "inherited_raw_cache_calls_zero_statement": "INACCURATE_DO_NOT_ADOPT;authorized normal cache/global configuration calls actuallyexecuted andlisted above",
+        "actual_global_publication_getactual_compute_native_adverse_source_sites": 0
+      }
+    ],
+    "raw_source_unchanged": true,
+    "corrective_qualification": "Old final console says Actual...cache calls0,which is false for authorized standalone/globalempty lifecycle. NORMAL_RESULTS forbidden...calls0 can onlydescribe prohibited native/globalactual/adverse paths,not allcache calls. Actualruntimeledger/source/passingcache control IDs govern. No runner/oracle modification or rerun."
+  },
+  "selected_sha256": "EC04C539E4B6F057238F2D1A454B517333C3C11C4307C3CB73DD623A65FE044D",
+  "selected_mvid": "48adef37-dea2-41e0-aee6-b293e329a2b5",
+  "verification_status": "MASTER_DISPOSED",
+  "master_execute_builds": 0,
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD",
+  "master_verdict": "ACCEPTED_R13_SCOPED_NORMAL_LIFECYCLE_OWNERSHIP_CORE_CODEC_PASS_STATIC_REVISION_REQUIRED_NATIVE_UNTESTED",
+  "master_disposition_at": "2026-10-09T20:57:34.551225+09:00",
+  "review_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R13_POLICY_CACHE_LIFECYCLE_INDEPENDENT_S1_20261009.md",
+  "review_sha256": "85C13BDE8F11710E0B312F1D7F17529128DDBD87AB4DE222785F2C00F2ED1E9F",
+  "next_technical_direction": "R14_POLICY_CAPTURE_PUBLICATION_APPROVED_PREPARE_NOT_SENT"
+}

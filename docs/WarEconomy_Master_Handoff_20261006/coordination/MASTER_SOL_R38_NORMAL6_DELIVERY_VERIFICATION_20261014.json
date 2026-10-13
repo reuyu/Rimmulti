@@ -1,0 +1,58 @@
+{
+  "at": "2026-10-14T05:14:41.832053+09:00",
+  "guard_session": 44442,
+  "delivery_id": "SOL-GATE05-R38-PUBLISHER-NORMAL6-S1-20261014-01",
+  "exact_message": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R38_NORMAL6_EXACT_MESSAGE_20261014.txt",
+    "sha256": "3613120A5D4416BE187E9021DC12C903637B9212B077CC2272C5371A138C2DEF",
+    "bytes": 1107
+  },
+  "send_tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R38_NORMAL6_SEND_TOOL_20261014.json",
+    "sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+    "bytes": 149
+  },
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:62",
+    "revision": 62,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a136e7-25ff-79d2-ad5a-af463c194eb9",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791922480,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "delivery_status": "SENT",
+  "submit_count": 1,
+  "initial_ACK": "PENDING",
+  "scope_admission": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R38_NORMAL6_EXACT_CANDIDATE_ADMISSION_20261014.json",
+    "sha256": "2044BAFFAB9BC46521E3F9855724276BB40CA0739006084ADF59F813047177AE",
+    "bytes": 2720
+  },
+  "expected_oracle": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R38_NORMAL6_PREFROZEN_EXPECTED_ORACLE_20261014.json",
+    "sha256": "C2D667CC372D605FDEC680B5663A62636DEF81DFCD6133689055C2FB86D343CB",
+    "bytes": 138444
+  },
+  "publisher_calls_admitted_max": 6,
+  "Engine_native_adverse_builds_admitted": 0,
+  "whole_runtime_E2": "NOT_RELEASED",
+  "Foundation": "HOLD"
+}

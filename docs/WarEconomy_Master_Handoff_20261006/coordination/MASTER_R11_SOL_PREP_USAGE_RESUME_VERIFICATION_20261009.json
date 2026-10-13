@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-09T08:23:58.951982+09:00",
+  "event_id": "SOL-R11-PREP-USAGE-RESUME-20261009-01",
+  "type": "SAME_APPROVED_SOL_WP_RESUMED_AFTER_USAGE_FAILURE",
+  "delivery_id": "SOL-GATE05-R11-POLICY-ENCODING-PREP-S1-20261009-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R11_POLICY_ENCODING_PREPARATION",
+  "result_id": "SOL-GATE05-R11-POLICY-ENCODING-PREP-S1-20261009-661be88f72724c34b7185bdcf48b2861",
+  "initial_ack_sha256": "A6816D3450D320F826B5278BAF6F2F2BE4BA6E75D84610B35E8DF9575CDCFE96",
+  "protected_paths_rehashed": 4047,
+  "failed_turn": "01a11d5f-555e-7c20-87bc-d741f1940a93",
+  "actual_resume_turn": "01a11dd4-3687-7831-83ff-78900f2f64fe",
+  "actual_cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:70",
+  "status": "SAME_WP_RESUME_SENT_ACTIVE_ACK_PENDING",
+  "usage_allowed_observed": true,
+  "substitute_agent": false,
+  "model_changed": false,
+  "credits_or_account_changed": false,
+  "completion_missing": true,
+  "runtime_e2_released": false,
+  "closure_changed": false
+}

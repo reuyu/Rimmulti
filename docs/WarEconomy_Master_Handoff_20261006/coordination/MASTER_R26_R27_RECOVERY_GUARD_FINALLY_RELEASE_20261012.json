@@ -1,0 +1,10 @@
+{
+  "actual_release_tool": {
+    "chunk_id": "36cbe0",
+    "wall_time_seconds": 0.0000356,
+    "exit_code": 0,
+    "original_token_count": 116,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R26-R27-RECOVERY-20261012-01\", \"pid\": 2\r\n\u001b[23;80H20116, \"locked_at\": \"2026-10-12T03:05:17.036020+09:00\", \"mechanism\": \"Windows msv\r\n\u001b[23;80Hvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"\r\n\u001b[23;80H\"2026-10-12T03:12:38.174122+09:00\", \"renewal_count\": 6, \"release_reason\": \"RELEAS\r\n\u001b[23;80HSE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-12T03:13:48.038050+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "all_child_commands_completed_before_release": true
+}

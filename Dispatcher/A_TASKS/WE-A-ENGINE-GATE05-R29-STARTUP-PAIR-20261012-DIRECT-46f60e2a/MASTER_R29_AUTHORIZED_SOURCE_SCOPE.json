@@ -1,0 +1,142 @@
+{
+  "at": "2026-10-12T09:10:33.245160+09:00",
+  "all9_before": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "B292AB846F78568F74333F58C5967ED38CAAA2F59B07393FC846F4329583E388",
+      "bytes": 239574
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "bytes": 170135
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "68BFE5105FA0471AAAF7943009703BB2599B39C5B572833507D6733BCE63CF64",
+      "bytes": 308224
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "F0BC1B7D92F67593EA967F56A90EE302C76B920A46B98EF77219F7B884C47814",
+      "bytes": 73776
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "C874B1F4CD2DFC7482D5CB93B38782140CCCE6F20F39228046FCA637C1CEF42A",
+      "bytes": 291840
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "DCBC5EC03C4DD640F37821A877BE7ADFE30DE8C8B5B456CB9EEDF07E22C59FA0",
+      "bytes": 54016
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "68BFE5105FA0471AAAF7943009703BB2599B39C5B572833507D6733BCE63CF64",
+      "bytes": 308224
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "F0BC1B7D92F67593EA967F56A90EE302C76B920A46B98EF77219F7B884C47814",
+      "bytes": 73776
+    }
+  ],
+  "fixed_current_files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "bytes": 170135
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    }
+  ],
+  "allowed_mutable_paths": [
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb"
+  ],
+  "allowed_new_source_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+  "new_source_before": "NOT_PRESENT",
+  "Worker_original": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+    "sha256": "B292AB846F78568F74333F58C5967ED38CAAA2F59B07393FC846F4329583E388",
+    "bytes": 239574
+  },
+  "allowed_byte_spans": [
+    {
+      "id": "BOOTSTRAP_CLASS",
+      "start": 1126,
+      "end": 6269,
+      "permission": "Replace class only; legacy self7 semantics retained; explicit auxiliary pair mode+private ownerbound oneusehandoff beforeAddComponent",
+      "before_sha256": "7BA3C23FFCAC61E095B341D39BE66C803122D39B6B8449F0E6BD6DA124A876B9",
+      "context_before_sha256": "714E1BC9924F97E14B94D5480DA9C424212DE6C75C241348EC3765214E6C42A5",
+      "context_after_sha256": "33DF294B52123EF2A5445B17C8C63D0AF04E4991266BC2B44EB076252AC9AC43"
+    },
+    {
+      "id": "INSTANCE_PRIVATE_PROFILE",
+      "start": 16357,
+      "end": 16357,
+      "permission": "Insert private instance startup pair storage and private/internal owneracquisition helpers; no publicchildgetter/globalregistry",
+      "context_before_sha256": "3FE9374B2E48FC74E742988B74313B7B0187C4CAB93B1CFF2C71E16770627E9D",
+      "context_after_sha256": "FF0C24CD792495D9AAD697F15AA50BA0FDB60B3DBB66F6079CEAE6D1AA4ADD8F"
+    },
+    {
+      "id": "AWAKE_EARLY_ACQUIRE",
+      "start": 21162,
+      "end": 21162,
+      "permission": "Insert acquisition/gate inside try BEFORE fastEcology/logcallback/policy/listener sideeffects; no oldbody edits",
+      "context_before_sha256": "616497474420F1681A7247C8FBB86669002D4AC4FF96E7F68F370ABD22C4B80D",
+      "context_after_sha256": "E0DAEFADC78822F33F996354A49FFDE5F1F66B066A1F8156A84B3EA4CA9096DF"
+    },
+    {
+      "id": "ONDESTROY_PRIVATE_PROFILE_CLEAR",
+      "start": 165893,
+      "end": 165893,
+      "permission": "Insert privateprofile/pendingownerhandoff cleanup only; existing task/process cleanup bytefixed",
+      "context_before_sha256": "9A48D0C04F6279A84FC4E8FAFC08B2CF43917543878A30D914DB5BFEBA568AF9",
+      "context_after_sha256": "8CDA6BF61D21FE9514DB1FEF5E71D92FB01E1284659E175EFFC3B4DE4DBCA676"
+    },
+    {
+      "id": "NEW_PAIR_MODE_LAUNCH_HOLD",
+      "start": 99112,
+      "end": 99112,
+      "permission": "Insert guard returning explicit NEW_PAIR_MODE_M05_NOT_ADMITTED before oldlaunch body; no currenttask/Revoke mutation/Process-start",
+      "context_before_sha256": "C63CD55D0830B8E21258B12E57AE7BB85E32B73C090DB6A39C99C9FCB0B54BBA",
+      "context_after_sha256": "2E7ED85AA0FB7A3963BB2379E510CDDCDF12F92C1A4B0DB26C4EA0089E44E523"
+    },
+    {
+      "id": "PURE_PAIR_ADMISSION_TYPES",
+      "start": 178847,
+      "end": 178847,
+      "permission": "Insert immutablepair data and closed PURE pair admission helper; existingR27/factory/classes bytefixed",
+      "context_before_sha256": "24AD280FAB1D4FF6C2097A8C3430C1B975810D86ED4EC2F7B0A0640D8A99E9D1",
+      "context_after_sha256": "2DF5274776F4ADEE1C24145276D3D04DBF9622DFEC849A164FC2D6017C2CEB5F"
+    }
+  ],
+  "outside_spans_entirebytes_fixed": true,
+  "existing_R27_capture_roleSelector_factory_Census_csproj_and_currenttask_unchanged": true,
+  "controlled_contract": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R29_OPERATOR_STARTUP_PAIR_CONTRACT_20261012.md",
+    "sha256": "2EEE68E2E3B6D0FD3777D8F1F13EDDE3239D7697CD9339B03B324D108CE9A531",
+    "bytes": 6219
+  },
+  "protected_baseline": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R29_STARTUP_PAIR_PROTECTED_BASELINE_20261012.json",
+    "sha256": "FA0A09D459C03127301504251BF0188CEC04A3C5415A61F466DEC357298D95C3",
+    "bytes": 4314181
+  },
+  "no_new_native_launch_or_currenttask_registration": true
+}

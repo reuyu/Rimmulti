@@ -1,0 +1,27 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10",
+  "wp_id": "WP_ENGINE_GATE05_R31_LIFECYCLE",
+  "wp_revision": "GATE05-R31-LIFECYCLE",
+  "envelope": 34,
+  "result_id": "WE-A-ENGINE-GATE05-R31-LIFECYCLE-RESULT-01",
+  "status": "COMPLETED",
+  "e1_verdict": "IMPLEMENTED_LIFECYCLE_REPAIR_PASS_NATIVE_UNTESTED",
+  "generated_at": "2026-10-12T20:55:00+09:00",
+  "index": {
+    "task_ack": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10\\ACK.json",
+    "preservation_before": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10\\PRESERVATION_BEFORE.json",
+    "before_after_preservation": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10\\BEFORE_AFTER_PRESERVATION.json",
+    "source_scope_diff": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10\\SOURCE_SCOPE_DIFF.json",
+    "durable_mode_custody_and_failure_flow": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10\\DURABLE_MODE_CUSTODY_AND_FAILURE_FLOW.json",
+    "candidate_identity": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10\\CANDIDATE_IDENTITY.json",
+    "build_input_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10\\BUILD_INPUT_MANIFEST.json",
+    "pre_run_manifest_1": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10\\PRE_RUN_MANIFEST_1.json",
+    "pre_run_manifest_2": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10\\PRE_RUN_MANIFEST_2.json",
+    "full_typed_raw_copy_binding": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10\\FULL_TYPED_RAW_COPY_BINDING.json",
+    "e1_normal_results": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10\\E1_NORMAL_RESULTS.json",
+    "release_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10\\RELEASE_MANIFEST.json",
+    "implementation_report": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10\\IMPLEMENTATION_REPORT.md",
+    "technical_report": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\A_ENGINE_GATE05_R31_LIFECYCLE_REPORT_20261012.md",
+    "completion": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R31-LIFECYCLE-20261012-DIRECT-b8d47a10\\COMPLETION.json"
+  }
+}

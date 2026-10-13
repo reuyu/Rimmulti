@@ -1,0 +1,7 @@
+{
+  "chunk_id": "bbfa2d",
+  "wall_time_seconds": 0.000036,
+  "exit_code": 0,
+  "original_token_count": 106,
+  "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R29-S3-STATIC-SELECTOR-20261012-01\", \"pid\": 35372, \"locked_at\": \"2026-10-12T10:20:50.005633+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-12T10:23:15.287728+09:00\", \"renewal_count\": 1, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-12T10:25:16.087791+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+}

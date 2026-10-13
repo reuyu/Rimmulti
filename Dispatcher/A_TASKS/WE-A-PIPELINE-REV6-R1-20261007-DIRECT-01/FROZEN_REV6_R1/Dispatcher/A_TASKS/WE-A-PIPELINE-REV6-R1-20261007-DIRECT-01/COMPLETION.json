@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "dispatch_id": "WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01",
+  "wp_id": "WP_PIPELINE_REV6_R1",
+  "wp_revision": "REV6-R1",
+  "result_id": "WE-A-PIPELINE-REV6-R1-RESULT-20261007-01",
+  "producer": "A",
+  "status": "COMPLETED",
+  "report_kind": "E1",
+  "completed_at": "2026-10-07T19:28:00+09:00",
+  "e1_verdict": "PASS",
+  "summary": "Pipeline REV6-R1 narrow repairs completed and verified with 25/25 batteries passing (100% PASS). Historical decision order (REV6-M01) established via shared OperationRecords.rowid sequence joining ProbeRevisionHistory on composite foreign keys, eliminating cross-table rowid comparisons and wall-clock vulnerability. Multi-process concurrency and hard-kill coverage (REV6-M02) proven via dedicated CLI worker sub-processes (Battery 4 spawned 10 real OS child processes; Battery 19 spawned 8 sequential OS child processes; Battery 20 executed owned-process forced kill mid-transaction verifying WAL crash recovery with 0 cut records). DDL, rowid, and foreign key semantics (REV6-M03) strictly aligned with actual migration code. Strict fail-closed extra-key and duplicate-key policy enforced for typed audit records. Gate05 Engine candidate verified bit-identical (19/19 files untouched).",
+  "limitations": [
+    "E1 PASS is internal agent verification by Agent A and does not substitute for independent E2 verification by GPT-6.1 Sol or Master disposition.",
+    "Process kill controls test OS-level process crash recovery and SQLite WAL rollback; power-loss / hardware pull represents a distinct storage controller / hardware barrier boundary.",
+    "Threat boundary protects logical transactional consistency within SQLite persistence; direct out-of-band raw disk binary corruption requires OS ACLs and BitLocker volume encryption.",
+    "Legacy schemas v1-v6 fail closed on startup requiring offline reset or migration."
+  ],
+  "artifacts": [
+    {
+      "role": "implementation_report",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_Production_Transaction_Pipeline_01_REV6_R1.md",
+      "sha256": "1ED12B4F81A954FA80B3AB5F94E70F9CDA6D6959987FE7EBA250F9D30256E311"
+    },
+    {
+      "role": "release_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_PIPELINE_REV6_R1.json",
+      "sha256": "1267E28C3235E5053B6B8C88BB5DC7C89CA9D2F44F3D73BE9A36877712E2DE50"
+    },
+    {
+      "role": "results",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\pipeline_e1_rev6_r1_results.json",
+      "sha256": "65360FAC6456B451D729E13A6BD27A7FBA8AD2BDE13AE5FB7FE6D8349E2D2C20"
+    },
+    {
+      "role": "raw_evidence",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\pipeline_e1_rev6_r1_raw_console.txt",
+      "sha256": "C47181D67AC03679A67DD8B15564DA6C33DC8AF3ACCADFFC74AEA8D9D35C5991"
+    },
+    {
+      "role": "engine_freeze_before",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-PIPELINE-REV6-R1-20261007-DIRECT-01\\MASTER_ENGINE_FREEZE_BEFORE.json",
+      "sha256": "2E7BB27EBF2E64287C3919E84A470B92371A99560832A2C7BBFB0FA611E72099"
+    },
+    {
+      "role": "engine_freeze_after",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\MASTER_ENGINE_FREEZE_AFTER_REV6_R1.json",
+      "sha256": "43F64F513255574C4FD2B224BC80DDD06AE36A2C2A0EA37D05F429404A39F9FC"
+    },
+    {
+      "role": "harness",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.exe",
+      "sha256": "D39C7CEF8209F93E8F2C01EC725919CB0676C357D840D9D3EFB01E7C52EBEF7C"
+    },
+    {
+      "role": "harness",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.dll",
+      "sha256": "22D0E5561409813B02FB9EF2C0D23FC3AA5F42E3F3BBE96426C7A493B0CB0CCE"
+    },
+    {
+      "role": "candidate_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.dll",
+      "sha256": "65FD5E73DBBE9A5F1454305A61C2E63022BEB4553F7A1BAE96E48CAE4B187F78"
+    },
+    {
+      "role": "candidate_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\bin\\Release\\netstandard2.0\\WarEconomy.Common.dll",
+      "sha256": "2711A366D3108DE42EB5CD07EE4874DB6B332B86A63F38B36E79611CFE110BCB"
+    },
+    {
+      "role": "candidate_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.exe",
+      "sha256": "0C1B14510C3CDC7396848E7228660456F7F127F97E680B785A7B62665765378C"
+    },
+    {
+      "role": "pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\bin\\Release\\net8.0\\WarEconomy.Server.pdb",
+      "sha256": "7A99DAD44A6F32A7FDAFABA2534C5914C73C958B1F86E27A21CEBAE7F6A4A239"
+    },
+    {
+      "role": "pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Common\\bin\\Release\\netstandard2.0\\WarEconomy.Common.pdb",
+      "sha256": "5119FE41A0FD3BB6B6DCA299B85FD3EEF0F91D4FB7B1AC77DAEDA762E9B2D0F0"
+    },
+    {
+      "role": "pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\bin\\Release\\net8.0\\E1_Rev6_R1_Runner.pdb",
+      "sha256": "1C03ADAB86DA50E7E212F00D5FC67F282EA76B8A843CC209CCBD1300D334740B"
+    },
+    {
+      "role": "source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Recovery\\RecoveryReconciler.cs",
+      "sha256": "2CD07966F64B8AC05C1DB86E18C4D363802A20F4E0A5B26160BAAF4F95C37F12"
+    },
+    {
+      "role": "source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\Source\\Server\\Pipeline\\Data\\Migrations\\PipelineSchemaMigration.cs",
+      "sha256": "7A5AAA86DBDB447558936B38C68E95678BEA637D474184FA5F6AF5A3A29556B2"
+    },
+    {
+      "role": "source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\E1_Rev6_R1_Runner\\Program.cs",
+      "sha256": "CF0B531A60FE678DC0DFD4AE7EB8758AF760CB9FE6EA0202C553057AB6E9410C"
+    }
+  ]
+}

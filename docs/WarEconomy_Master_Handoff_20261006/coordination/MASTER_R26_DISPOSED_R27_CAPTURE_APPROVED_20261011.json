@@ -1,0 +1,51 @@
+{
+  "at": "2026-10-12T03:06:15.531299+09:00",
+  "guard_run": "MASTER-R26-R27-RECOVERY-20261012-01",
+  "guard_pid": 20116,
+  "guard_session": 83680,
+  "R26review": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R26_DUAL_CHILD_REG_PREPARATION_20261011.md",
+    "sha256": "535B7C951DF14D491F78B5BE1A954BCBB130771F741F8CD60CCE4D0946E65F4A",
+    "bytes": 5834
+  },
+  "R26verification": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R26_DUAL_CHILD_REG_PREPARATION_COMPLETION_VERIFICATION_20261011.json",
+    "sha256": "D410D155A2BDEE89F489ED936F543B577A64EE7D008A3CD3E013AEBD97D1B038",
+    "bytes": 3789
+  },
+  "A_dispatch_id": "WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3",
+  "A_WP": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_ENGINE_GATE05_R27_CHILD_CAPTURE.md",
+    "sha256": "F3C21DA71DCA1C32AE9A4F6BCA44669F0EFB4F2A7536B8BAA778B24147E4FB32",
+    "bytes": 11005
+  },
+  "A_release": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\RELEASE_ENGINE_GATE05_R27_CHILD_CAPTURE_20261011.md",
+    "sha256": "6A2098B34D2B5A5EEA5D7E8DF071A0E1B38EFD9EF6C1CB1C09A508E2727E7A33",
+    "bytes": 847
+  },
+  "A_instructions": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\INSTRUCTIONS.md",
+    "sha256": "E12468C093F9941566378DEDEFB3DED216EADEB2DFA8B7F3547A8EF86A16520F",
+    "bytes": 1480
+  },
+  "A_scope": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_R27_AUTHORIZED_INSERTION_SCOPE.json",
+    "sha256": "4C289AF4FC68F860246683992302735A62B5B0C268E768BA8B0B418A2AFB6F91",
+    "bytes": 5186
+  },
+  "A_status": "APPROVED_NOT_SENT",
+  "Sol_WP": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R27_CHILD_CAPTURE_PREPARATION_S1.md",
+    "sha256": "7A17440B4598743EF214E0A08C81CB282F917BB081314B51D5CEB1D537FE07B9",
+    "bytes": 4011
+  },
+  "Sol_status": "APPROVED_NOT_SENT",
+  "protected": 13458,
+  "baseline": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R27_CHILD_CAPTURE_PROTECTED_BASELINE_20261011.json",
+    "sha256": "FA99693BBED8427FA88B671A6140A1971A7A064C5856BED4E5826FE2682FD788",
+    "bytes": 4120626
+  },
+  "scheduler": "ACTUAL_PAUSED60MIN_UNTIL_A_SENT"
+}

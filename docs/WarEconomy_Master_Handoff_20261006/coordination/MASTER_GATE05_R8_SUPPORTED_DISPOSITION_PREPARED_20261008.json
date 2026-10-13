@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-08T23:30:56.298424+09:00",
+  "event_id": "WE-A-ENGINE-GATE05-R8-SUPPORTED-DISPOSITION-20261008-DIRECT-41abc692-PREPARED",
+  "type": "A_R8_SUPPORTED_DISPOSITION_APPROVED_PREPARED",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R8-SUPPORTED-DISPOSITION-20261008-DIRECT-41abc692",
+  "status": "NOT_SENT",
+  "task_root": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R8-SUPPORTED-DISPOSITION-20261008-DIRECT-41abc692",
+  "instruction_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R8-SUPPORTED-DISPOSITION-20261008-DIRECT-41abc692\\INSTRUCTIONS.md",
+  "counts": {
+    "archive": 19,
+    "prior_candidates": 954,
+    "pipeline": 206,
+    "qa": 1652,
+    "managed_dependencies": 4
+  },
+  "preservation_proof": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R8-SUPPORTED-DISPOSITION-20261008-DIRECT-41abc692\\MASTER_PRESERVATION_BEFORE_DISPATCH.json",
+  "known_installed_incident": "UNCHANGED_OPEN",
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "monitor": "PAUSED60MIN"
+}

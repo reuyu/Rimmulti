@@ -1,0 +1,68 @@
+{
+  "at": "2026-10-11T07:19:47.505659+09:00",
+  "guard_run": "MASTER-SOL-R21-ACK-20261011-01",
+  "guard_session": 43291,
+  "guard_pid": 35076,
+  "delivery_id": "SOL-GATE05-R21-RECEIPT-UTC-INDEPENDENT-S1-20261011-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R21_RECEIPT_UTC_INDEPENDENT",
+  "wp_revision": "S1",
+  "result_id": "SOL-GATE05-R21-RECEIPT-UTC-INDEPENDENT-S1-20261011-af67dd4d2d454bba926c4f3c8cf14d6f",
+  "ack_path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R21-RECEIPT-UTC-INDEPENDENT-S1-20261011\\ACK_INITIAL.json",
+  "ack_sha256": "4F78658360AFC95D841EE66DE0BA08F19C70E370D308722F273B194B7DD0661D",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:134",
+    "revision": 134,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a127e2-3320-7490-bea2-1a620a4579ae",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791670498,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acab9af347c87d089310f4f836a4cf1",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016acab9af347c87d089310f4f836a4cf1",
+      "turnId": "01a127e2-3320-7490-bea2-1a620a4579ae",
+      "phase": "commentary",
+      "text": "새 후보는 receipt의 ToRedactedJson 메서드만 변경됐으며, 그 밖의 Worker bytes와 Census·csproj는 동일합니다. 메서드 안에서 날짜 자동 변환을 끈 것을 확인했습니다. 원래 UTC 입력의 8개 receipt와 승인된 UTC 변형 8개에 대해 독립 기대값을 준비했습니다."
+    },
+    "latestToolMarkerId": "exec-165a2740-35da-4779-96c3-77d6a6511412",
+    "latestToolMarker": {
+      "id": "exec-165a2740-35da-4779-96c3-77d6a6511412",
+      "turnId": "01a127e2-3320-7490-bea2-1a620a4579ae",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "snapshot_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R21_RECEIPT_UTC_INDEPENDENT_ACK_SNAPSHOT_20261011.json",
+  "snapshot_sha256": "5283984E8D9418A0697E22332A6544F995BB3B45005B4CFC9522897783B280BA",
+  "protected_paths_master_rehashed": 10939,
+  "baseline_sha256": "B3A4F1CC59D73E9774580216A03647336687A43637AA30F3FC6FBECED1421B6F",
+  "qa_lineage_path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R21-RECEIPT-UTC-INDEPENDENT-S1-20261011\\R21_FROZEN_LINEAGE.json",
+  "qa_lineage_sha256": "5DB9D6C45707D0A519FD7ED1C2BAEF8F8AE710EC6D9DA25217DFF6F64AAD378B",
+  "master_metadata_comparison": "DebugReleaseSHA-MVID-CodeView-PDB-source4/4 matched",
+  "A_terminal_completion_deduped_unchanged": true,
+  "current_production_package_identity_checked": 9,
+  "verdict": "ACK_VERIFIED_INDEPENDENT_R21_STATIC_POSITIVE_PURE_RECEIPT_UTC_QA_IN_PROGRESS",
+  "initial_ACK_scope_qualification": "Generic config scope label partial; exact frozen R21 sent WP controls receipt+literal scope. Raw ACK unchanged.",
+  "initial_ACK_execution_count_statement": "Historical initial ACK runner notbuilt;current QA execution verdict PENDING",
+  "qa_owned_runner_build_allowed": true,
+  "master_candidate_build_execute": 0,
+  "new_wp": false,
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "monitor_actual_status": "PAUSED60MIN173CHAR_SAME_TARGET",
+  "foundation": "HOLD"
+}

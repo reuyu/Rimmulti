@@ -1,0 +1,41 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e",
+  "wp_id": "WP_ENGINE_GATE05_R38_PUBLISHER_BOUNDARIES",
+  "wp_revision": "GATE05-R38-PUBLISHER-BOUNDARIES",
+  "delivery_envelope_revision": 41,
+  "received_at": "2026-10-13T17:27:45.890474+00:00",
+  "status": "ACKNOWLEDGED",
+  "recipient": "A",
+  "route": "MASTER_DIRECT_COMPUTER_USE_ANTIGRAVITY",
+  "instruction_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_ENGINE_GATE05_R38_PUBLISHER_BOUNDARIES.md",
+  "instruction_sha256": "358ACCF0717BAF257CEF8C80BB821570568698DCA987916C98B054719D1A1BBC",
+  "work_package_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_ENGINE_GATE05_R38_PUBLISHER_BOUNDARIES.md",
+  "work_package_sha256": "358ACCF0717BAF257CEF8C80BB821570568698DCA987916C98B054719D1A1BBC",
+  "release_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\RELEASE_ENGINE_GATE05_R38_PUBLISHER_BOUNDARIES_20261014.md",
+  "release_sha256": "14DDA63751DD1E417589BC39806DF702394CD677E3D4C2F1499ABC4C95EF319E",
+  "contract_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R38_PUBLISHER_BOUNDARIES_IMPLEMENTATION_CONTRACT_20261014.md",
+  "contract_sha256": "BFE455E5E3A9C1C71735AFEDB8732BD3A8AA444E1F03B9DE1FD348E6FC2B69B6",
+  "scope_baseline_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R38-PUBLISHER-BOUNDARIES-20261014-DIRECT-10b9846e\\MASTER_R38_AUTHORIZED_SOURCE_SCOPE.json",
+  "scope_baseline_sha256": "1DB85C95377C1FA573445453A5672045A6D218F8B7A24A2B53E3B89536E186C9",
+  "allowed_mutable_paths": [
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py"
+  ],
+  "new_owned_E1_root": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e",
+  "current_publisher_before": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+    "bytes": 40358,
+    "sha256": "8F31D69A26A364BF727ABD029E096C0416B3C7B6BA54AC29A6A6E246FF537FD9",
+    "expected_sha256": "8F31D69A26A364BF727ABD029E096C0416B3C7B6BA54AC29A6A6E246FF537FD9",
+    "expected_bytes": 40358
+  },
+  "all9_engine_bit_exact": true,
+  "governance_commitments": {
+    "dedicated_server_authority": true,
+    "foundation_hold": true,
+    "zero_engine_builds": true,
+    "zero_publisher_executions": true,
+    "zero_native_unit_executions": true,
+    "zero_1_7_migrations": true,
+    "standalone_ast_verification_only": true
+  }
+}

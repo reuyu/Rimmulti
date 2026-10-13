@@ -1,0 +1,527 @@
+--- Frozen R12
++++ R13
+@@ -1533,79 +1533,35 @@
+     public static class ContentProfileProvider
+     {
+         public const string MANIFEST_SCHEMA_VERSION = "ADR-006B-v5";
+-        public const string CONTENT_CONTRACT_VERSION = "ADR-006B-v5-R12";
++        public const string CONTENT_CONTRACT_VERSION = "ADR-006B-v5-R13";
+         public const string SUPPORTED_COVERAGE_PROFILE = "POC_SUPPORTED_CORE_DLC_ASSEMBLIES_V5";
+         public const string MOD_PATCH_SUPPORT_STATUS = "TYPED_OBSERVATION_EXPLICIT_DISPOSITION_V1";
+ 
+-        private static string? _cachedFingerprint = null;
+-        private static string? _cachedCanonicalJson = null;
+-        private static ContentProfileManifest? _cachedManifest = null;
+-        private static string? _lastComputationError = null;
+-
+-        private static readonly object _policyLock = new object();
+-        private static ExpectedPackagePolicyRecord? _configuredExpectedPackagePolicy = null;
+-
+-        public static bool IsCached => _cachedFingerprint != null;
+-        public static string? LastComputationError => _lastComputationError;
+-        public static string? CachedCanonicalJson => _cachedCanonicalJson;
+-        public static ContentProfileManifest? CachedManifest => _cachedManifest;
+-
+-        public static bool HasConfiguredExpectedPackagePolicy
+-        {
+-            get { lock (_policyLock) { return _configuredExpectedPackagePolicy != null; } }
+-        }
+-
+-        public static ExpectedPackagePolicyRecord? ConfiguredExpectedPackagePolicy
+-        {
+-            get
+-            {
+-                lock (_policyLock)
+-                {
+-                    if (_configuredExpectedPackagePolicy == null) return null;
+-                    return new ExpectedPackagePolicyRecord
+-                    {
+-                        policyId = _configuredExpectedPackagePolicy.policyId,
+-                        revision = _configuredExpectedPackagePolicy.revision,
+-                        policyDigest = _configuredExpectedPackagePolicy.policyDigest,
+-                        admittedPackageIds = new List<string>(_configuredExpectedPackagePolicy.admittedPackageIds)
+-                    };
+-                }
+-            }
+-        }
++        private static readonly ContentProfileCacheCore _globalCache = new ContentProfileCacheCore();
++
++        public static long ConfigurationGeneration => _globalCache.ConfigurationGeneration;
++        public static bool IsCached => _globalCache.IsCached;
++        public static string? CachedFingerprint => _globalCache.CachedFingerprint;
++        public static string? CachedCanonicalJson => _globalCache.CachedCanonicalJson;
++        public static ContentProfileManifest? CachedManifest => _globalCache.CachedManifest;
++        public static string? LastComputationError => _globalCache.LastComputationError;
++
++        public static bool HasConfiguredExpectedPackagePolicy => _globalCache.HasConfiguredExpectedPackagePolicy;
++        public static ExpectedPackagePolicyRecord? ConfiguredExpectedPackagePolicy => _globalCache.ConfiguredExpectedPackagePolicy;
+ 
+         public static void ConfigureExpectedPackagePolicy(ExpectedPackagePolicyRecord policy)
+         {
+-            if (policy == null) throw new ArgumentNullException(nameof(policy));
+-            string digest = ComputePackagePolicyDigest(policy);
+-            if (!string.IsNullOrEmpty(policy.policyDigest) && !string.Equals(policy.policyDigest, digest, StringComparison.OrdinalIgnoreCase))
+-            {
+-                throw new ArgumentException($"Supplied policyDigest '{policy.policyDigest}' does not match computed digest '{digest}'.");
+-            }
+-            var clone = new ExpectedPackagePolicyRecord
+-            {
+-                policyId = policy.policyId,
+-                revision = policy.revision,
+-                policyDigest = digest,
+-                admittedPackageIds = new List<string>(policy.admittedPackageIds ?? new List<string>())
+-            };
+-            lock (_policyLock)
+-            {
+-                _configuredExpectedPackagePolicy = clone;
+-            }
++            _globalCache.ConfigureExpectedPackagePolicy(policy);
+         }
+ 
+         public static void ConfigureExpectedPackagePolicy(ExpectedPackagePolicyDeclaration declaration)
+         {
+-            if (declaration == null) throw new ArgumentNullException(nameof(declaration));
+-            ConfigureExpectedPackagePolicy(declaration.ToRecord());
++            _globalCache.ConfigureExpectedPackagePolicy(declaration);
+         }
+ 
+         public static void ClearConfiguredExpectedPackagePolicy()
+         {
+-            lock (_policyLock)
+-            {
+-                _configuredExpectedPackagePolicy = null;
+-            }
++            _globalCache.ClearConfiguredExpectedPackagePolicy();
+         }
+ 
+         public static string FormatLossless(float val)
+@@ -1620,17 +1576,14 @@
+ 
+         public static string GetActualContentProfileFingerprint()
+         {
+-            if (_cachedFingerprint != null) return _cachedFingerprint;
+-            _cachedFingerprint = ComputeActualContentProfileFingerprint();
+-            return _cachedFingerprint;
++            string? cached = _globalCache.CachedFingerprint;
++            if (cached != null) return cached;
++            return ComputeActualContentProfileFingerprint();
+         }
+ 
+         public static void InvalidateCache()
+         {
+-            _cachedFingerprint = null;
+-            _cachedCanonicalJson = null;
+-            _cachedManifest = null;
+-            _lastComputationError = null;
++            _globalCache.InvalidateCache();
+         }
+ 
+         /// <summary>
+@@ -2212,7 +2165,7 @@
+                 "TACTICAL_PROBE_V4",
+                 "READ_ONLY",
+                 "SIMULATION",
+-                "GATE05_R12_PACKAGE_ORDER",
++                "GATE05_R13_POLICY_CACHE_LIFECYCLE",
+                 "ADR006B_LOSSLESS_CANONICAL_CONTENT_V5"
+             };
+             foreach (var flag in requiredFlags)
+@@ -3006,38 +2959,36 @@
+             }
+             manifest.defFamilies.researchDefs.Sort((a, b) => string.CompareOrdinal(a.defName, b.defName));
+ 
+-            // Capability flags (aligned with semantic V4 scope and ADR-006B-v5-R12)
++            // Capability flags (aligned with semantic V4 scope and ADR-006B-v5-R13)
+             manifest.capabilityFlags = new List<string>
+             {
+                 "TACTICAL_PROBE_V4",
+                 "READ_ONLY",
+                 "SIMULATION",
+-                "GATE05_R12_PACKAGE_ORDER",
++                "GATE05_R13_POLICY_CACHE_LIFECYCLE",
+                 "ADR006B_LOSSLESS_CANONICAL_CONTENT_V5"
+             };
+ 
+-            // Package Policy Enforcement Seam (ADR-006B-v5-R10)
+-            lock (_policyLock)
+-            {
+-                if (_configuredExpectedPackagePolicy == null)
+-                {
+-                    throw new InvalidOperationException("ContentProfile computation requires an explicit expected package policy to be configured before trusted actual fingerprint success. Status: UNCONFIGURED (BLOCKED_NO_POLICY).");
+-                }
+-
+-                if (!CheckPackagePolicy(_configuredExpectedPackagePolicy, manifest, out var checkResult, out string policyFailure))
+-                {
+-                    throw new InvalidOperationException($"ContentProfile computation failed package policy check against '{_configuredExpectedPackagePolicy.policyId}:{_configuredExpectedPackagePolicy.revision}': {policyFailure}");
+-                }
+-
+-                manifest.packagePolicyDisposition = new PackagePolicyDispositionRecord
+-                {
+-                    policyId = _configuredExpectedPackagePolicy.policyId,
+-                    revision = _configuredExpectedPackagePolicy.revision,
+-                    policyDigest = _configuredExpectedPackagePolicy.policyDigest,
+-                    status = "ADMITTED"
+-                };
+-                manifest.patchSettingsDisposition.supportedModBoundary = $"CHECKED_POLICY:{_configuredExpectedPackagePolicy.policyId}:{_configuredExpectedPackagePolicy.revision}";
+-            }
++            // Package Policy Enforcement Seam (ADR-006B-v5-R10/R13)
++            var configuredPolicy = _globalCache.ConfiguredExpectedPackagePolicy;
++            if (configuredPolicy == null)
++            {
++                throw new InvalidOperationException("ContentProfile computation requires an explicit expected package policy to be configured before trusted actual fingerprint success. Status: UNCONFIGURED (BLOCKED_NO_POLICY).");
++            }
++
++            if (!CheckPackagePolicy(configuredPolicy, manifest, out var checkResult, out string policyFailure))
++            {
++                throw new InvalidOperationException($"ContentProfile computation failed package policy check against '{configuredPolicy.policyId}:{configuredPolicy.revision}': {policyFailure}");
++            }
++
++            manifest.packagePolicyDisposition = new PackagePolicyDispositionRecord
++            {
++                policyId = configuredPolicy.policyId,
++                revision = configuredPolicy.revision,
++                policyDigest = configuredPolicy.policyDigest,
++                status = "ADMITTED"
++            };
++            manifest.patchSettingsDisposition.supportedModBoundary = $"CHECKED_POLICY:{configuredPolicy.policyId}:{configuredPolicy.revision}";
+ 
+             // Enforce Admission Contract on newly computed manifest before release
+             if (!ValidateContract(manifest, out string failureReason))
+@@ -3052,23 +3003,330 @@
+         {
+             try
+             {
+-                _lastComputationError = null;
++                _globalCache.ClearComputationError();
++                var snapshot = _globalCache.CaptureStateSnapshot();
+                 var manifest = ComputeActualContentProfileManifest();
+                 string canonicalJson = SerializeCanonicalJson(manifest, canonicalNormalize: true);
+-                _cachedCanonicalJson = canonicalJson;
+-                _cachedManifest = manifest;
+-
++
++                string fingerprint;
+                 using (var sha = SHA256.Create())
+                 {
+                     byte[] jsonBytes = Encoding.UTF8.GetBytes(canonicalJson);
+-                    return BitConverter.ToString(sha.ComputeHash(jsonBytes)).Replace("-", "").ToUpperInvariant();
+-                }
++                    fingerprint = BitConverter.ToString(sha.ComputeHash(jsonBytes)).Replace("-", "").ToUpperInvariant();
++                }
++
++                if (!_globalCache.TryPublishComputedEntry(snapshot.generation, snapshot.policy, manifest, canonicalJson, fingerprint, out string? rejectionReason))
++                {
++                    Log.Warning($"[ContentProfileProvider] Computed content profile entry could not be published to cache: {rejectionReason}");
++                }
++
++                return fingerprint;
+             }
+             catch (Exception ex)
+             {
+-                _lastComputationError = ex.ToString();
++                _globalCache.SetComputationError(ex.ToString());
+                 Log.Error($"[ContentProfileProvider] Failed to compute ContentProfileFingerprint: {ex}");
+                 throw new InvalidOperationException($"ContentProfile computation failed: {ex.Message}", ex);
++            }
++        }
++    }
++
++    /// <summary>
++    /// Represents an immutable, coherent content profile cache entry.
++    /// Bound to a specific configuration generation, policy snapshot/digest, and content contract version.
++    /// Owns its snapshot and prevents external caller mutation from affecting cached state.
++    /// </summary>
++    public sealed class CoherentContentProfileCacheEntry
++    {
++        public long ConfigurationGeneration { get; }
++        public string PolicyDigest { get; }
++        public string PolicyId { get; }
++        public string PolicyRevision { get; }
++        public string Fingerprint { get; }
++        public string CanonicalJson { get; }
++        public string ContentContractVersion { get; }
++        public DateTime CachedAtUtc { get; }
++
++        private readonly string _serializedManifestSnapshot;
++
++        public CoherentContentProfileCacheEntry(
++            long configurationGeneration,
++            string policyDigest,
++            string policyId,
++            string policyRevision,
++            string fingerprint,
++            string canonicalJson,
++            ContentProfileManifest manifest,
++            string contentContractVersion,
++            DateTime cachedAtUtc)
++        {
++            ConfigurationGeneration = configurationGeneration;
++            PolicyDigest = policyDigest ?? "";
++            PolicyId = policyId ?? "";
++            PolicyRevision = policyRevision ?? "";
++            Fingerprint = fingerprint ?? "";
++            CanonicalJson = canonicalJson ?? "";
++            ContentContractVersion = contentContractVersion ?? "";
++            CachedAtUtc = cachedAtUtc;
++
++            _serializedManifestSnapshot = ContentProfileProvider.SerializeCanonicalJson(manifest, canonicalNormalize: false);
++        }
++
++        public ContentProfileManifest? CreateManifestSnapshot()
++        {
++            if (string.IsNullOrEmpty(_serializedManifestSnapshot)) return null;
++            return ContentProfileProvider.DeserializeCanonicalJson(_serializedManifestSnapshot);
++        }
++    }
++
++    /// <summary>
++    /// Pure instance-owned cache state and lifecycle core.
++    /// Isolates configuration generation, coherent entry publishing, and invalidation semantics.
++    /// May be instantiated standalone for isolated unit testing without touching global provider state.
++    /// </summary>
++    public sealed class ContentProfileCacheCore
++    {
++        private readonly object _sync = new object();
++        private long _generation = 0;
++        private ExpectedPackagePolicyRecord? _configuredPolicy = null;
++        private CoherentContentProfileCacheEntry? _entry = null;
++        private string? _lastError = null;
++
++        public long ConfigurationGeneration
++        {
++            get { lock (_sync) { return _generation; } }
++        }
++
++        public bool HasConfiguredExpectedPackagePolicy
++        {
++            get { lock (_sync) { return _configuredPolicy != null; } }
++        }
++
++        public ExpectedPackagePolicyRecord? ConfiguredExpectedPackagePolicy
++        {
++            get
++            {
++                lock (_sync)
++                {
++                    if (_configuredPolicy == null) return null;
++                    return new ExpectedPackagePolicyRecord
++                    {
++                        policyId = _configuredPolicy.policyId,
++                        revision = _configuredPolicy.revision,
++                        policyDigest = _configuredPolicy.policyDigest,
++                        admittedPackageIds = new List<string>(_configuredPolicy.admittedPackageIds ?? new List<string>())
++                    };
++                }
++            }
++        }
++
++        public bool IsCached
++        {
++            get
++            {
++                lock (_sync)
++                {
++                    return _entry != null && _entry.ConfigurationGeneration == _generation;
++                }
++            }
++        }
++
++        public string? CachedFingerprint
++        {
++            get
++            {
++                lock (_sync)
++                {
++                    if (_entry != null && _entry.ConfigurationGeneration == _generation)
++                    {
++                        return _entry.Fingerprint;
++                    }
++                    return null;
++                }
++            }
++        }
++
++        public string? CachedCanonicalJson
++        {
++            get
++            {
++                lock (_sync)
++                {
++                    if (_entry != null && _entry.ConfigurationGeneration == _generation)
++                    {
++                        return _entry.CanonicalJson;
++                    }
++                    return null;
++                }
++            }
++        }
++
++        public ContentProfileManifest? CachedManifest
++        {
++            get
++            {
++                lock (_sync)
++                {
++                    if (_entry != null && _entry.ConfigurationGeneration == _generation)
++                    {
++                        return _entry.CreateManifestSnapshot();
++                    }
++                    return null;
++                }
++            }
++        }
++
++        public string? LastComputationError
++        {
++            get { lock (_sync) { return _lastError; } }
++        }
++
++        public void SetComputationError(string? error)
++        {
++            lock (_sync)
++            {
++                _lastError = error;
++            }
++        }
++
++        public void ClearComputationError()
++        {
++            lock (_sync)
++            {
++                _lastError = null;
++            }
++        }
++
++        public void ConfigureExpectedPackagePolicy(ExpectedPackagePolicyRecord policy)
++        {
++            if (policy == null) throw new ArgumentNullException(nameof(policy));
++            string digest = ContentProfileProvider.ComputePackagePolicyDigest(policy);
++            if (!string.IsNullOrEmpty(policy.policyDigest) && !string.Equals(policy.policyDigest, digest, StringComparison.OrdinalIgnoreCase))
++            {
++                throw new ArgumentException($"Supplied policyDigest '{policy.policyDigest}' does not match computed digest '{digest}'.");
++            }
++
++            var clone = new ExpectedPackagePolicyRecord
++            {
++                policyId = policy.policyId,
++                revision = policy.revision,
++                policyDigest = digest,
++                admittedPackageIds = new List<string>(policy.admittedPackageIds ?? new List<string>())
++            };
++
++            lock (_sync)
++            {
++                _configuredPolicy = clone;
++                _generation++;
++                _entry = null;
++                _lastError = null;
++            }
++        }
++
++        public void ConfigureExpectedPackagePolicy(ExpectedPackagePolicyDeclaration declaration)
++        {
++            if (declaration == null) throw new ArgumentNullException(nameof(declaration));
++            ConfigureExpectedPackagePolicy(declaration.ToRecord());
++        }
++
++        public void ClearConfiguredExpectedPackagePolicy()
++        {
++            lock (_sync)
++            {
++                _configuredPolicy = null;
++                _generation++;
++                _entry = null;
++                _lastError = null;
++            }
++        }
++
++        public void InvalidateCache()
++        {
++            lock (_sync)
++            {
++                _entry = null;
++                _lastError = null;
++            }
++        }
++
++        public (long generation, ExpectedPackagePolicyRecord? policy) CaptureStateSnapshot()
++        {
++            lock (_sync)
++            {
++                ExpectedPackagePolicyRecord? policyClone = null;
++                if (_configuredPolicy != null)
++                {
++                    policyClone = new ExpectedPackagePolicyRecord
++                    {
++                        policyId = _configuredPolicy.policyId,
++                        revision = _configuredPolicy.revision,
++                        policyDigest = _configuredPolicy.policyDigest,
++                        admittedPackageIds = new List<string>(_configuredPolicy.admittedPackageIds ?? new List<string>())
++                    };
++                }
++                return (_generation, policyClone);
++            }
++        }
++
++        public bool TryPublishComputedEntry(
++            long expectedGeneration,
++            ExpectedPackagePolicyRecord? capturedPolicy,
++            ContentProfileManifest manifest,
++            string canonicalJson,
++            string fingerprint,
++            out string? rejectionReason)
++        {
++            if (manifest == null) throw new ArgumentNullException(nameof(manifest));
++            if (string.IsNullOrEmpty(canonicalJson)) throw new ArgumentException("canonicalJson cannot be null or empty", nameof(canonicalJson));
++            if (string.IsNullOrEmpty(fingerprint)) throw new ArgumentException("fingerprint cannot be null or empty", nameof(fingerprint));
++
++            lock (_sync)
++            {
++                if (_generation != expectedGeneration)
++                {
++                    rejectionReason = $"Stale configuration generation: captured was {expectedGeneration}, but current is {_generation}.";
++                    return false;
++                }
++
++                string currentDigest = _configuredPolicy?.policyDigest ?? "";
++                string capturedDigest = capturedPolicy?.policyDigest ?? "";
++                if (!string.Equals(currentDigest, capturedDigest, StringComparison.OrdinalIgnoreCase))
++                {
++                    rejectionReason = $"Policy digest mismatch: captured was '{capturedDigest}', but current is '{currentDigest}'.";
++                    return false;
++                }
++
++                string policyId = _configuredPolicy?.policyId ?? "";
++                string policyRevision = _configuredPolicy?.revision ?? "";
++
++                _entry = new CoherentContentProfileCacheEntry(
++                    _generation,
++                    currentDigest,
++                    policyId,
++                    policyRevision,
++                    fingerprint,
++                    canonicalJson,
++                    manifest,
++                    manifest.contentContractVersion ?? ContentProfileProvider.CONTENT_CONTRACT_VERSION,
++                    DateTime.UtcNow);
++
++                _lastError = null;
++                rejectionReason = null;
++                return true;
++            }
++        }
++
++        public bool TryGetCoherentEntry(out CoherentContentProfileCacheEntry? entry)
++        {
++            lock (_sync)
++            {
++                if (_entry != null && _entry.ConfigurationGeneration == _generation)
++                {
++                    entry = _entry;
++                    return true;
++                }
++                entry = null;
++                return false;
+             }
+         }
+     }

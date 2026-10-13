@@ -1,0 +1,39 @@
+{
+    "wp_id": "WP_ENGINE_GATE05_R27_CHILD_CAPTURE",
+    "dispatch_id": "WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3",
+    "runner_exe": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\Harness\\bin\\Debug\\net472\\Gate05R27ChildCaptureRunner.exe",
+    "runner_sha256": "D16EFBB75FF1213A618EF057F6D5FBFB33885E528044060644706226BC8FA2BD",
+    "runner_bytes": 45568,
+    "runs": [
+        {
+            "run_key": "en_US",
+            "culture": "en-US",
+            "pid": 18872,
+            "exit_code": 0,
+            "start_time": "2026-10-12T03:22:19.948681+09:00",
+            "end_time": "2026-10-12T03:22:20.170279+09:00",
+            "duration_seconds": 0.22157549858093262,
+            "stdout_bytes": 962,
+            "stderr_bytes": 0,
+            "stdout_sha256": "D0CFAAC9E71F4EFF8FDB6D52E938DBAA2769DE753CED1B34A0057B171941A15A",
+            "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+            "report_file": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_en_us\\E1_EXECUTION_REPORT.json",
+            "inventory_file": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_en_us\\OUTPUT_INVENTORY.json"
+        },
+        {
+            "run_key": "de_DE",
+            "culture": "de-DE",
+            "pid": 6972,
+            "exit_code": 0,
+            "start_time": "2026-10-12T03:22:20.176646+09:00",
+            "end_time": "2026-10-12T03:22:20.260497+09:00",
+            "duration_seconds": 0.08383655548095703,
+            "stdout_bytes": 962,
+            "stderr_bytes": 0,
+            "stdout_sha256": "068550CDF176359FD4AF268B78178B35F92AD961198B0ED7FC350B35D94B13A0",
+            "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+            "report_file": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_de_de\\E1_EXECUTION_REPORT.json",
+            "inventory_file": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R27ChildCapture\\run_de_de\\OUTPUT_INVENTORY.json"
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-13T20:05:23.909259+09:00",
+  "resume_id": "SOL-R35-STATIC-PASSIVE-LOCATOR-R1-20261013-01",
+  "same_delivery": "SOL-GATE05-R35-PUBLISHER-INDEPENDENT-STATIC-S1-20261013-01",
+  "same_result": "SOL-GATE05-R35-PUBLISHER-INDEPENDENT-STATIC-S1-20261013-dd261024fa244f6d80c2ac57e8e9a299",
+  "actual_one_send": true,
+  "actual_tools": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R35_STATIC_PASSIVE_R1_ACTUAL_TOOLS_20261013.json",
+    "sha256": "D789AB3AC9D1FE6445D304FE9D66AFB8E00B3D7178FF69BE60E79E2249DF3B70",
+    "bytes": 899
+  },
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:38",
+    "revision": 38,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a134ef-897c-7833-8214-1cc6ff7d64ce",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791889475,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "original_SCOPE_unchanged": true,
+  "new_WP": false,
+  "additional_candidate_execution_admitted": false,
+  "resume_ACK_pending": true,
+  "guard_session": 79169
+}

@@ -1,0 +1,85 @@
+{
+  "at": "2026-10-12T03:13:26.355338+09:00",
+  "run_id": "MASTER-R26-R27-RECOVERY-20261012-01",
+  "guard_pid": 20116,
+  "guard_session": 83680,
+  "R26_result_receipts_each": 1,
+  "A_R27_actual_submission": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_UI_SUBMISSION_PROOF.json",
+    "sha256": "BFFA6BD25D774529C9650FA60046D15CB4BEEA0BD616A2DAB3C36F5001E904B2",
+    "bytes": 921
+  },
+  "A_exact_scope": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_R27_AUTHORIZED_INSERTION_SCOPE.json",
+    "sha256": "4C289AF4FC68F860246683992302735A62B5B0C268E768BA8B0B418A2AFB6F91",
+    "bytes": 5186
+  },
+  "A_ACK": "VERIFIED",
+  "Sol_R27_delivery": "SOL-GATE05-R27-CHILD_CAPTURE-PREPARATION-S1-20261011-01",
+  "Sol_actual": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:164",
+    "revision": 164,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a12c2a-2ea3-72d0-84a3-c614903da878",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791742324,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "Sol_ACK": "PENDING",
+  "Sol_exact_message": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R27_CHILD_CAPTURE_PREPARATION_EXACT_MESSAGE_20261012.json",
+    "sha256": "0BAC0EEDC84B0C6D36326EF353C4FC1DC28AF26B933976718EC63A5CC7A050CA",
+    "bytes": 1635
+  },
+  "api_name_correction": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R27_CAPTURE_API_NAME_CORRECTION_20261012.md",
+    "sha256": "AA38D50D9B6EC9E2B74327BAB8348E1DEDD4EFB87BC0A2AECF0C85B27C39B7A3",
+    "bytes": 1841
+  },
+  "protected": 13458,
+  "single_writer": "A exact current7 only; Sol frozen-R25 source/read-only-preparation only",
+  "current_obj_in_protected_baseline": 0,
+  "contender_actual": "MASTER-R27-CONTENDER-20261012-01 LOCK_BUSY/exit1",
+  "actual_scheduler": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "ACTIVE",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791742269353
+  },
+  "future_R27_scheduled_run_observed": false,
+  "old_invocation_full_lock_coverage": "UNVERIFIED_TTL_EXPIRED_NOT_RETROCLAIMED",
+  "reconciliation": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R26_R27_INTERRUPTED_PREPARATION_RECONCILIATION_20261012.json",
+    "sha256": "B491B23D42B0FC9A30BE9D6E73CC7B512749A0D1607F14D5467F831B5C9A27A0",
+    "bytes": 972
+  },
+  "A_completion_exists_now": false,
+  "production_native_execution_by_Master": 0,
+  "full_native_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD",
+  "release_status": "PENDING_ACTUAL_FINALLY"
+}

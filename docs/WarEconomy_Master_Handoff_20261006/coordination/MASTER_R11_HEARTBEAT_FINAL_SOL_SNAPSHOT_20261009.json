@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":true,\"wake\":null,\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:73\",\"revision\":73,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"active\",\"activeFlags\":[]}},\"latestTurn\":{\"id\":\"01a11dd4-3687-7831-83ff-78900f2f64fe\",\"status\":\"inProgress\",\"error\":null,\"startedAt\":1791501809,\"completedAt\":null,\"durationMs\":null},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ac82788378087d09021e72a73cf3f3d\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ac82788378087d09021e72a73cf3f3d\",\"turnId\":\"01a11dd4-3687-7831-83ff-78900f2f64fe\",\"phase\":\"commentary\",\"text\":\"정상 검증 기준 14개와 정적 리뷰 기준 14개, 동결 R10의 필드·콜사이트 제약 12개를 문서화했습니다. R11의 실제 API와 반환 필드, escape convention은 새 동결 후보에서 확인하도록 남겼습니다. 기존 result와 ACK를 유지한 채 보존 검사와 완료 증거 연결을 마무리하겠습니다.\"},\"latestToolMarkerId\":\"exec-8585e88e-b83b-4c28-8aa1-fecbbb75d4cd\",\"latestToolMarker\":{\"id\":\"exec-8585e88e-b83b-4c28-8aa1-fecbbb75d4cd\",\"turnId\":\"01a11dd4-3687-7831-83ff-78900f2f64fe\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

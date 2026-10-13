@@ -1,0 +1,13 @@
+{
+  "mechanism": "Actual JS try/finally after all command/tool operations settled",
+  "run_id": "MASTER-R14-QA-DISPATCH-ENCODING-REPAIR-20261009-01",
+  "session_id": 66706,
+  "pid": 31792,
+  "actual_release_tool_result": {
+    "chunk_id": "b55d65",
+    "wall_time_seconds": 0.0000954,
+    "exit_code": 0,
+    "original_token_count": 108,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R14-QA-DISPATCH-ENCODING-REPAIR-20261009-01\", \"pid\": 31792, \"locked_at\": \"2026-10-09T22:13:36.220170+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-09T22:14:56.192656+09:00\", \"renewal_count\": 1, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-09T22:15:07.969156+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  }
+}

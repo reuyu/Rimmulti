@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-13T19:23:37.187351+09:00",
+  "operation_id": "WE-A-ENGINE-GATE05-R35-PUBLISHER-20261013-DIRECT-16a25a7e",
+  "recipient": "A",
+  "status": "PRE_INPUT_INTENT_NOT_SUBMITTED",
+  "submission_attempts": 0,
+  "message": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R35-PUBLISHER-20261013-DIRECT-16a25a7e\\UI_MESSAGE.txt",
+    "sha256": "AE5960D642E7D6CA54EBCE5D6BAF9F160E9C30CAC5E7920C89BF1D2BAD4F1CFF",
+    "bytes": 677
+  },
+  "guard_run": "MASTER-R34-QA-COMPLETE-20261013-01",
+  "guard_session": 58500
+}

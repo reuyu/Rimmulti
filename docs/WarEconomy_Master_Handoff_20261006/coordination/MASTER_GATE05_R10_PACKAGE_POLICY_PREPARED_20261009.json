@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-09T05:20:20.093878+09:00",
+  "event_id": "WE-A-ENGINE-GATE05-R10-PACKAGE-POLICY-20261009-DIRECT-81a28ecb-PREPARED",
+  "type": "A_R10_PACKAGE_POLICY_APPROVED_PREPARED",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R10-PACKAGE-POLICY-20261009-DIRECT-81a28ecb",
+  "status": "NOT_SENT",
+  "task_root": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R10-PACKAGE-POLICY-20261009-DIRECT-81a28ecb",
+  "counts": {
+    "archive": 19,
+    "prior_candidates": 1101,
+    "pipeline": 206,
+    "qa": 2160,
+    "managed_dependencies": 4
+  },
+  "prior_version_defect": "CLOSED_SCOPED_R9_ONLY",
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "monitor": "PAUSED60MIN"
+}

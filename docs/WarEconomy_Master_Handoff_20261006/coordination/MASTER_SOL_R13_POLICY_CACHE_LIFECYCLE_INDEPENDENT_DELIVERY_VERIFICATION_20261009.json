@@ -1,0 +1,84 @@
+{
+  "type": "SOL_R13_POLICY_CACHE_LIFECYCLE_INDEPENDENT",
+  "delivery_id": "SOL-GATE05-R13-POLICY-CACHE-LIFECYCLE-INDEPENDENT-S1-20261009-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R13_POLICY_CACHE_LIFECYCLE_INDEPENDENT",
+  "delivery_status": "SENT_ACTUAL_TOOL_NEW_ACTIVE_TURN",
+  "unknown_delivery": false,
+  "wp_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R13_POLICY_CACHE_LIFECYCLE_INDEPENDENT_S1.md",
+  "wp_sha256": "2D096CF2AF8775815994AD9D3DFFAB7DCB06A7CA3A600FA137C09BA1C3BF8A26",
+  "baseline_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R13_QA_INDEPENDENT_PROTECTED_BASELINE_20261009.json",
+  "baseline_sha256": "D90EA84C24A979DDAE347AB3CD132329694BDDA884E5BF869ED1F0637B035A5E",
+  "protected_unique_paths": 6021,
+  "guard_run": "MASTER-R13-HEARTBEAT-20261009T110931Z-01",
+  "guard_session": 32118,
+  "guard_pid": 864,
+  "at": "2026-10-09T20:30:04.917715+09:00",
+  "wp_revision": "S1",
+  "status": "SENT_IN_PROGRESS_ACK_PENDING",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:91",
+    "revision": 91,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a1206c-833a-7530-97ab-66ebd84e494e",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791545344,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "actual_predispatch": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:90",
+    "revision": 90,
+    "changed": false,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a12060-1350-7d40-b1d9-52fd57aa1f00",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791544529,
+      "completedAt": 1791545150,
+      "durationMs": 620725
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ac8cf3bda0487d09d538b4cf32ac35e",
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": "exec-ae26b12e-2472-4bc9-9fdc-e55f89ad4a88",
+    "latestToolMarker": null
+  },
+  "protected_paths_master_rehashed": 6021,
+  "normal_execution_verdict": "PENDING",
+  "production_modify_builds": 0,
+  "qa_runner_builds_allowed": true,
+  "scope": "FROZEN_R13_STATIC_AND_POSITIVE_NORMAL_LIFECYCLE_STANDALONE_CORE_CODEC_ONLY",
+  "full_runtime_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD",
+  "monitor": "ACTUAL_PAUSED60MIN",
+  "pre_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R13_POLICY_CACHE_LIFECYCLE_INDEPENDENT_PREDISPATCH_20261009.json",
+  "pre_sha256": "DC3BDF1D483BAB03D030F0440C1D2966C5ACAE45E0306BCD97A6AADB2B6C3F39",
+  "tool_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R13_POLICY_CACHE_LIFECYCLE_INDEPENDENT_SEND_TOOL_20261009.json",
+  "tool_sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+  "post_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R13_POLICY_CACHE_LIFECYCLE_INDEPENDENT_POSTSEND_20261009.json",
+  "post_sha256": "57D04DF5751485BEB1E764F253188EE7EDEA4D3CCD5544D9F611AD91DC06C11D"
+}

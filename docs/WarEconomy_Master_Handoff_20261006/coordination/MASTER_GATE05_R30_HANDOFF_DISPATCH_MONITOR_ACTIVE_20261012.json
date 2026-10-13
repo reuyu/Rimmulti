@@ -1,0 +1,78 @@
+{
+  "at": "2026-10-12T18:04:24.449637+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f",
+  "wp_id": "WP_ENGINE_GATE05_R30_HANDOFF",
+  "wp_revision": "GATE05-R30-HANDOFF",
+  "delivery_envelope_revision": 33,
+  "delivery_status": "ACTUAL_CU_SENT",
+  "submission_attempts": 1,
+  "submission_proof": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R30_A_SUBMITTED_OBSERVATION_20261012.json",
+    "sha256": "2B33094EDFDE9E32D6522F9368AE8BBE038DF1A6109237BA5D74C26A9F1A9A4C",
+    "bytes": 56489
+  },
+  "initial_idle": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R30_A_IDLE_OBSERVATION_20261012.json",
+    "sha256": "EA0E9D43B3534FF1B8C6D416E8368573F8BCBEE42C5B274096FC651A1D69C798",
+    "bytes": 85510
+  },
+  "draft": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R30_A_DRAFT_OBSERVATION_20261012.json",
+    "sha256": "C57B29039B747E28F4705CE9CE82CB390D81BB81A97BDE30AD3752986BABA5F2",
+    "bytes": 87302
+  },
+  "ack": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\ACK.json",
+    "sha256": "556C8A7D22EE2C2275D4F83BB7AF1B18DCD2CDBD1DB54BB4C5424F65958FD7F8",
+    "bytes": 3908
+  },
+  "ack_identity_verified": true,
+  "ack_all_reference_hashes_verified": false,
+  "ack_scope_hash_attention": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R30_ACK_SCOPE_REFERENCE_HASH_ATTENTION_20261012.json",
+    "sha256": "4982F0E9953F81BB37C4BC21D674BC579DABA9BF3FD2CE1877B63EA27278C548",
+    "bytes": 3225
+  },
+  "same_wp_notice": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\MASTER_SAME_WP_ACK_REFERENCE_HASH_CORRECTION.md",
+    "sha256": "DD4B2DC517AFD9706702B37FE5096367A86C366784413F91BD89F7D4B9E12A7B",
+    "bytes": 1057
+  },
+  "same_wp_notice_delivery_status": "PREPARED_NOT_SENT_PENDING_EXISTING_TASK_TERMINAL_RECONCILIATION",
+  "ack_status": "ACKNOWLEDGED",
+  "task_state": "IN_PROGRESS",
+  "protected_paths": 15296,
+  "all_fixed3_matched": true,
+  "known_installed_incident": "OPEN_UNCHANGED_ACTOR_UNKNOWN",
+  "monitor_actual_configuration": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "ACTIVE",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791795624000
+  },
+  "monitor_tool_return": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R30_MONITOR_ACTIVE_TOOL_RETURN_20261012.json",
+    "sha256": "339DE508C3280FFFA7128F062C1A2ACAB6D48E217E3478485F049BE501E1F343",
+    "bytes": 258
+  },
+  "monitor_config_file": {
+    "path": "C:\\Users\\user\\.codex\\automations\\wareconomy-master\\automation.toml",
+    "sha256": "67608AA867116883499327DFBA43C03E8C6CFC069B01C1BF1C53C2848F995279",
+    "bytes": 590
+  },
+  "actual_future_R30_hourly_execution": "NOT_YET_OBSERVED",
+  "Sol": "R29_ORIGINAL_COMPLETED_IDLE_SCOPED_NORMAL_PASS_NO_NEW_QA_WP",
+  "native_e2": "NOT_RELEASED",
+  "Foundation": "HOLD",
+  "source_High3": "OPEN_PENDING_NEW_CANDIDATE",
+  "guard_run": "MASTER-R29-S3-POSTRUN-ANALYSIS-20261012-02",
+  "guard_session": 2351,
+  "UI_recovery": "UIA focus/value did not reflect draft. Fresh visual caret after one kernel reset/ShiftTab +one type_text/exactdraft observed before one Submit. No model/account change or duplicate prompt.",
+  "full_reference_assertion_stop": "Master finalize stopped read-only before mutations on actual ACK scope hash mismatch; no fabricated all-reference acceptance."
+}

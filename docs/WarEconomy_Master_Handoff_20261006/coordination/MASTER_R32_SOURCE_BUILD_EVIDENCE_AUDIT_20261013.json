@@ -1,0 +1,1504 @@
+{
+  "at": "2026-10-13T00:32:04.949186+09:00",
+  "actual_source_spans": [
+    {
+      "span_id": "PRIVATE_DURABLE_MODE_OWNER_CONSUMED_STATE",
+      "orig_range": [
+        27259,
+        33326
+      ],
+      "new_range": [
+        27259,
+        34312
+      ],
+      "new_bytes": 7053,
+      "new_sha256": "6DB889723928BFF1DF7F7468C42ADF9FC8F413DC1042E68371259A91FBD6AC54"
+    },
+    {
+      "span_id": "AWAKE_REQUIRED_MODE_ENTRY",
+      "orig_range": [
+        38131,
+        39339
+      ],
+      "new_range": [
+        39117,
+        41821
+      ],
+      "new_bytes": 2704,
+      "new_sha256": "EEB1CD46DC71ADCA0EDEEA02C5CBB2BADAB84C499CF9D78EE186435A9B8E5009"
+    },
+    {
+      "span_id": "AWAKE_SUCCESS_AND_FAILURE_TAIL",
+      "orig_range": [
+        41273,
+        42068
+      ],
+      "new_range": [
+        43755,
+        44736
+      ],
+      "new_bytes": 981,
+      "new_sha256": "6F43345D05F347EDA9CFB141049BC40376D434FF9CE900279EFFD4B369465AF3"
+    },
+    {
+      "span_id": "OWNER_SCOPED_DESTROY_WHOLE_METHOD",
+      "orig_range": [
+        185129,
+        185705
+      ],
+      "new_range": [
+        187797,
+        188671
+      ],
+      "new_bytes": 874,
+      "new_sha256": "FA2B5AF80519A39DDB22B507A55A2B994E02BA2C0AB0AB818A76326EFECB911C"
+    }
+  ],
+  "outside_segments": [
+    {
+      "old_range": [
+        0,
+        27259
+      ],
+      "new_range": [
+        0,
+        27259
+      ],
+      "bytes": 27259
+    },
+    {
+      "old_range": [
+        33326,
+        38131
+      ],
+      "new_range": [
+        34312,
+        39117
+      ],
+      "bytes": 4805,
+      "sha256": "54E45F3ACB59975CE45E6A49456F2017A5067401F0352A117E93664DAFFC3289"
+    },
+    {
+      "old_range": [
+        39339,
+        41273
+      ],
+      "new_range": [
+        41821,
+        43755
+      ],
+      "bytes": 1934,
+      "sha256": "BFA661E1FF42606F5C0E9168BF70AB98962720B73E54B523A023D9581D08276D"
+    },
+    {
+      "old_range": [
+        42068,
+        185129
+      ],
+      "new_range": [
+        44736,
+        187797
+      ],
+      "bytes": 143061,
+      "sha256": "A9ABDADE5A75B6F0EF3FA0128E5A2FF2240CA9CC667C068E2E8315C3A5E2F182"
+    },
+    {
+      "old_range": [
+        185705,
+        272607
+      ],
+      "new_range": [
+        188671,
+        275573
+      ],
+      "bytes": 86902,
+      "sha256": "478020DCB31A4AB45E686CB3D9AECC2E8F0D3309A13218F3009B3D74401D8B70"
+    }
+  ],
+  "outside_bytes": 263961,
+  "producer_maps_matched": true,
+  "producer_build_inputs_matched": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "214F1F95C6BF7F547ED47FD91B787A70B2E52DFF129A882DCD8C1AC1471A24E8",
+      "bytes": 275573
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "bytes": 170135
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.AssemblyInfo.cs",
+      "sha256": "8C7180C5E4D3004DE53926C1039C107C3059053C470CF73F82CF974EAF7D5681",
+      "bytes": 1029
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+      "sha256": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+      "bytes": 214
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WorkerBridge.AssemblyInfo.cs",
+      "sha256": "80492D41167FD5D58508DFC29A09E3624EC6374EF4048B2FF2D2C5EE86562743",
+      "bytes": 1031
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+      "sha256": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+      "bytes": 214
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\Assembly-CSharp.dll",
+      "sha256": "5CF1B5BE399D5B1C9C56CA72C9D35B4ECF307FEACF5859D04AC5A1AA5926356A",
+      "bytes": 15777280
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\UnityEngine.CoreModule.dll",
+      "sha256": "C5C58EA254834291780A1D6C388C241443D07167B4A4B890A23C9494F626DDBA",
+      "bytes": 1386688
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\UnityEngine.dll",
+      "sha256": "0422FF282130458380D2FB4B63A718465D3BD2D5738F1532F60798B0D35DFF0D",
+      "bytes": 125120
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\UnityEngine.IMGUIModule.dll",
+      "sha256": "C6C39327211BE8299E2E9FFDEE7A979F228736C99B84FD54BC73F563456865D9",
+      "bytes": 188608
+    },
+    {
+      "path": "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\294100\\2009463077\\Current\\Assemblies\\0Harmony.dll",
+      "sha256": "353DAAFEC180BB8E7BBE4DA78F2A7CDC78067392E3A4E79DC8E7AF295F2371E6",
+      "bytes": 2456064
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\1.6\\Assemblies\\Newtonsoft.Json.dll",
+      "sha256": "E1E27AF7B07EEEDF5CE71A9255F0422816A6FC5849A483C6714E1B472044FA9D",
+      "bytes": 711952
+    },
+    {
+      "path": "C:\\Program Files\\dotnet\\dotnet.exe",
+      "sha256": "B3CC37E128B832146EC3A8DD467476FFA84021C4F92684261AB035AFEFF2DE7E",
+      "bytes": 167696
+    },
+    {
+      "path": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\Roslyn\\bincore\\csc.exe",
+      "sha256": "5593EF0312432E52D52322D7D748AB7E20A76C2302C0CE02A3347D9EAD2098D7",
+      "bytes": 173312
+    },
+    {
+      "path": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\Roslyn\\bincore\\csc.dll",
+      "sha256": "149FD48D7AD64C5BA9658572C8C59AB27A1B40E0834F764AB54F4584B7E8AC1A",
+      "bytes": 145680
+    },
+    {
+      "path": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\Roslyn\\bincore\\VBCSCompiler.exe",
+      "sha256": "50995E8198F70F4DE97FA4FBF31DBAC7C82E5AEF4653335FFEF0C0615C06CC8B",
+      "bytes": 173376
+    },
+    {
+      "path": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\Roslyn\\bincore\\VBCSCompiler.dll",
+      "sha256": "A14FE589820F05938E3D9A8EA173F4154E39AE121288C861483D6AA5C4F6AAA5",
+      "bytes": 235832
+    },
+    {
+      "path": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\MSBuild.dll",
+      "sha256": "EE4DD71648F7BA91B5AFD161EEB5ADB11B5F0F8D69F6BFC3CA5958008A8152C7",
+      "bytes": 973064
+    }
+  ],
+  "actual_build_raw": [
+    {
+      "configuration": "Debug",
+      "producer_host_pid": 34256,
+      "exit_code": 0,
+      "argv": [
+        "dotnet",
+        "build",
+        "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+        "-c",
+        "Debug",
+        "--no-restore",
+        "-v:diag"
+      ],
+      "cwd": "C:\\Users\\user\\Desktop\\RimMulti",
+      "duration": 2.284256,
+      "streams": {
+        "stdout": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R32Custody-64ad38e2\\build_debug_stdout.raw.txt",
+          "sha256": "0C1B1D054E586AA41D8D2D054CEBC7E0F5201EE560AFACD554B630DA23E74F95",
+          "bytes": 1308578
+        },
+        "stderr": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R32Custody-64ad38e2\\build_debug_stderr.raw.txt",
+          "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+          "bytes": 0
+        }
+      },
+      "actual_csc_command": "                     C:\\Program Files\\dotnet\\sdk\\10.0.201\\Roslyn\\bincore\\csc.exe /noconfig /unsafe- /checked- /nowarn:1701,1702,1701,1702 /fullpaths /nostdlib+ /errorreport:prompt /warn:4 /define:TRACE;DEBUG;NETFRAMEWORK;NET472;NET20_OR_GREATER;NET30_OR_GREATER;NET35_OR_GREATER;NET40_OR_GREATER;NET45_OR_GREATER;NET451_OR_GREATER;NET452_OR_GREATER;NET46_OR_GREATER;NET461_OR_GREATER;NET462_OR_GREATER;NET47_OR_GREATER;NET471_OR_GREATER;NET472_OR_GREATER /highentropyva+ /nullable:enable /reference:\"C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\294100\\2009463077\\Current\\Assemblies\\0Harmony.dll\" /reference:\"C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\Assembly-CSharp.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\mscorlib.dll\" /reference:C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\1.6\\Assemblies\\Newtonsoft.Json.dll /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Core.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Data.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Drawing.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.IO.Compression.FileSystem.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Numerics.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Runtime.Serialization.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Xml.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Xml.Linq.dll\" /reference:\"C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\UnityEngine.CoreModule.dll\" /reference:\"C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\UnityEngine.dll\" /reference:\"C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\UnityEngine.IMGUIModule.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\Microsoft.Win32.Primitives.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\netstandard.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.AppContext.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Collections.Concurrent.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Collections.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Collections.NonGeneric.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Collections.Specialized.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ComponentModel.Annotations.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ComponentModel.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ComponentModel.EventBasedAsync.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ComponentModel.Primitives.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ComponentModel.TypeConverter.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Console.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Data.Common.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.Contracts.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.Debug.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.FileVersionInfo.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.Process.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.StackTrace.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.TextWriterTraceListener.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.Tools.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.TraceSource.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Drawing.Primitives.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Dynamic.Runtime.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Globalization.Calendars.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Globalization.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Globalization.Extensions.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.Compression.ZipFile.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.FileSystem.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.FileSystem.DriveInfo.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.FileSystem.Primitives.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.FileSystem.Watcher.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.IsolatedStorage.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.MemoryMappedFiles.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.Pipes.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.UnmanagedMemoryStream.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Linq.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Linq.Expressions.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Linq.Parallel.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Linq.Queryable.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.Http.Rtc.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.NameResolution.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.NetworkInformation.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.Ping.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.Primitives.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.Requests.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.Security.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.Sockets.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.WebHeaderCollection.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.WebSockets.Client.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.WebSockets.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ObjectModel.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Reflection.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Reflection.Emit.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Reflection.Emit.ILGeneration.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Reflection.Emit.Lightweight.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Reflection.Extensions.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Reflection.Primitives.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Resources.Reader.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Resources.ResourceManager.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Resources.Writer.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.CompilerServices.VisualC.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Extensions.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Handles.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.InteropServices.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.InteropServices.RuntimeInformation.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.InteropServices.WindowsRuntime.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Numerics.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Serialization.Formatters.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Serialization.Json.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Serialization.Primitives.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Serialization.Xml.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Claims.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Cryptography.Algorithms.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Cryptography.Csp.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Cryptography.Encoding.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Cryptography.Primitives.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Cryptography.X509Certificates.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Principal.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.SecureString.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ServiceModel.Duplex.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ServiceModel.Http.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ServiceModel.NetTcp.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ServiceModel.Primitives.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ServiceModel.Security.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Text.Encoding.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Text.Encoding.Extensions.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Text.RegularExpressions.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.Overlapped.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.Tasks.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.Tasks.Parallel.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.Thread.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.ThreadPool.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.Timer.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ValueTuple.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Xml.ReaderWriter.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Xml.XDocument.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Xml.XmlDocument.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Xml.XmlSerializer.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Xml.XPath.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Xml.XPath.XDocument.dll\" /debug+ /debug:portable /filealign:512 /optimize- /out:obj\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output /deterministic+ /langversion:latest /analyzerconfig:obj\\Debug\\net472\\WorkerBridge.GeneratedMSBuildEditorConfig.editorconfig EngineHostCensus.cs WorkerBridge.cs \"obj\\Debug\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs\" obj\\Debug\\net472\\WorkerBridge.AssemblyInfo.cs /warnaserror+:NU1605(작업 ID:46)",
+      "actual_csc_command_sha256": "06A0AD5B8CAC2E1F2AF4F23FBA59C84E5AA3E6841AA36BD64BC530B061BD7F52",
+      "compiler_references_observed_now": [
+        {
+          "path": "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\294100\\2009463077\\Current\\Assemblies\\0Harmony.dll",
+          "sha256": "353DAAFEC180BB8E7BBE4DA78F2A7CDC78067392E3A4E79DC8E7AF295F2371E6",
+          "bytes": 2456064
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\Assembly-CSharp.dll",
+          "sha256": "5CF1B5BE399D5B1C9C56CA72C9D35B4ECF307FEACF5859D04AC5A1AA5926356A",
+          "bytes": 15777280
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\mscorlib.dll",
+          "sha256": "A69849CF0B433664B14DBAEB82385EC043449F71F7C69559CBA4BE0DD3E8BE8D",
+          "bytes": 2727056
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\1.6\\Assemblies\\Newtonsoft.Json.dll",
+          "sha256": "E1E27AF7B07EEEDF5CE71A9255F0422816A6FC5849A483C6714E1B472044FA9D",
+          "bytes": 711952
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Core.dll",
+          "sha256": "F9C65F2D44F244E1195802A68F5D8F3457CAEEF2E385CF28C534218749ADBE7F",
+          "bytes": 256664
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Data.dll",
+          "sha256": "05E52F1129985102E1EC22CB8664246AF2D9C1737B0D8EF556278503A23AA430",
+          "bytes": 1278104
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.dll",
+          "sha256": "541C6067CC69A43660D06A4F0F6EAB0FEBCD33DF9089F209D99B7EA36682A0A5",
+          "bytes": 1475208
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Drawing.dll",
+          "sha256": "3952F3C019EF595A60B813E718E9DE716E311C09CB78B64F3DE131DD9CEB946A",
+          "bytes": 189608
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.IO.Compression.FileSystem.dll",
+          "sha256": "06F159DB143A3EAF9D20321535428325C9B157CECB4999FA567C7019F1258A8E",
+          "bytes": 23792
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Numerics.dll",
+          "sha256": "716C1BE731F82272CEED7D90D1E17D5874EA2D905DC909E97C17340EEEA08D31",
+          "bytes": 42664
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Runtime.Serialization.dll",
+          "sha256": "A8A8240FC53A5E26A1E6160A39D1D2728B4A1E9652C67740CCB1E349865E7624",
+          "bytes": 425696
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Xml.dll",
+          "sha256": "A01C28F804DCA406D6D5D1EACFA9D8D435755FBEF58F6673BCE40EFB789717F3",
+          "bytes": 925336
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Xml.Linq.dll",
+          "sha256": "D37CB2217485518942B3E3D7E8FC914E09B3F8FB596EF99792204A90392A1443",
+          "bytes": 45736
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\UnityEngine.CoreModule.dll",
+          "sha256": "C5C58EA254834291780A1D6C388C241443D07167B4A4B890A23C9494F626DDBA",
+          "bytes": 1386688
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\UnityEngine.dll",
+          "sha256": "0422FF282130458380D2FB4B63A718465D3BD2D5738F1532F60798B0D35DFF0D",
+          "bytes": 125120
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\UnityEngine.IMGUIModule.dll",
+          "sha256": "C6C39327211BE8299E2E9FFDEE7A979F228736C99B84FD54BC73F563456865D9",
+          "bytes": 188608
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\Microsoft.Win32.Primitives.dll",
+          "sha256": "422C576324C24813055D4F3A4A3D6CB2AE93138BAA88923F9DCB715A143F6280",
+          "bytes": 20696
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\netstandard.dll",
+          "sha256": "9F12554DDF1FA4EF8BEFABBB8616173A3BF020B7512ADA39F21E746DDD1D18FC",
+          "bytes": 97944
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.AppContext.dll",
+          "sha256": "AEB0C192DED623192885A4CC029C4277A174A73AA4E20F8D097F1CEE7D17101C",
+          "bytes": 20144
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Collections.Concurrent.dll",
+          "sha256": "43BC5789C568606E028EDE6FDF4D7EEF55948F213184DC89B7E4D34D94EAA370",
+          "bytes": 20704
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Collections.dll",
+          "sha256": "AF67FF9881668E32D1557185C3996ECCFD060CCB64FAA6D0182F2C48D3E9535E",
+          "bytes": 21176
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Collections.NonGeneric.dll",
+          "sha256": "254652680321F2CC61D7FDFBA046C6E8A912A4C681AE3A4653375FEBE277ABBD",
+          "bytes": 20704
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Collections.Specialized.dll",
+          "sha256": "DE59D3145E4D31B28089A96DE57DAEFB84B0E35C547147317CAC7086A4553BFD",
+          "bytes": 20712
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ComponentModel.Annotations.dll",
+          "sha256": "86E28BB43126741DD1988A537AA82BE701315B2198170D1FEE695D97CA49B5A4",
+          "bytes": 21744
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ComponentModel.dll",
+          "sha256": "19D1AF8356A77BC96C8F433A5CBC621A6274B4B75B2F5BF42F5908207DA33DAF",
+          "bytes": 20672
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ComponentModel.EventBasedAsync.dll",
+          "sha256": "9B4B2B4E51CB4FD1B8026E4668E12FF94B4884A6500859E26F89CDF7DD2B51D9",
+          "bytes": 20736
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ComponentModel.Primitives.dll",
+          "sha256": "BDBA0426827452B4DA821134C3684E9F4A8707F1DE1790E960FF9E7D2D210512",
+          "bytes": 21232
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ComponentModel.TypeConverter.dll",
+          "sha256": "24772D08A1C9D73BA0D8BF7C443347283C9565A344A3C56505F443A170DAEB73",
+          "bytes": 22264
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Console.dll",
+          "sha256": "64175D5A1D370E9A42FBE294A7C872B0120DE7AE410AF91E8ED1287A472D5CE6",
+          "bytes": 20648
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Data.Common.dll",
+          "sha256": "7F465AA7F039EFFA5D0FC09A289F45C7F57D46B4143ADE934210ECD34366BAC1",
+          "bytes": 25272
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.Contracts.dll",
+          "sha256": "0E78FC6D67C617A8AACB3B16CF7E559B162A7A0D8591546F41192FBEBF61F9F8",
+          "bytes": 21216
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.Debug.dll",
+          "sha256": "3C3F7CAB9A0A30AB3A8FD12E748D70E0453E4491D59BC0B1F24BDE7BC1430066",
+          "bytes": 20688
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.FileVersionInfo.dll",
+          "sha256": "14ACB343DC7E02D6663341EF74A6BDE4B478EA68EC08DFA4054FCA4320EE5194",
+          "bytes": 20728
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.Process.dll",
+          "sha256": "03D2951DC644AC3B19AE27D832B432227BF28BEA9D73DA252B9099A9F48A294C",
+          "bytes": 20696
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.StackTrace.dll",
+          "sha256": "9397E515DF958B565C1A828A07BCAF1614103E5E11AD839BA024B1FE3F975EA6",
+          "bytes": 21216
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.TextWriterTraceListener.dll",
+          "sha256": "8329F22CA6DD6F86A9FB3D937C957D9E5FE3DE1CF8FD0CA1186302D78957C1D5",
+          "bytes": 20760
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.Tools.dll",
+          "sha256": "ADF05606FB2695C58F575873F4D75E05DCAB8BEB7D8F34507017D600DD8FFBC6",
+          "bytes": 20688
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.TraceSource.dll",
+          "sha256": "C3546409E08AD7EAEFDD4C15E0FD710CA4A1A9755DE125B3CC95482DAF16E20B",
+          "bytes": 20712
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Drawing.Primitives.dll",
+          "sha256": "101204D45B0D21DAE05C45126AB185740D3791866DA373B0C7D822DA31EC3141",
+          "bytes": 20688
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Dynamic.Runtime.dll",
+          "sha256": "A71056EF924B62BCE7E926D96B914C8C84A3F84D8C8F6EE19D31EE73F1E0DC6E",
+          "bytes": 21192
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Globalization.Calendars.dll",
+          "sha256": "8B83DF271FE266E7BDA8E5C255E67F7665B291CE42D9B2797AAB581EF6DD04DA",
+          "bytes": 21224
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Globalization.dll",
+          "sha256": "A7748F2E16A3CDD0D624008588E0092CC78F105770F5B6EF02102118B0DAC620",
+          "bytes": 20672
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Globalization.Extensions.dll",
+          "sha256": "CED974159ED13665CA712658DC79CF98A160BCC2DA5C6CD32EA43AFA8C214742",
+          "bytes": 20712
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.Compression.ZipFile.dll",
+          "sha256": "8815553168D05B68EE3267BDED602E50A9D3710C7995B882B22A0061333D0B4B",
+          "bytes": 20192
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.dll",
+          "sha256": "C7C68EB6D9CB6D83B0EA61CE036A41BF6614E566690A98D9C410DE8EA9AE69EC",
+          "bytes": 20624
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.FileSystem.dll",
+          "sha256": "F768C4B1CA9355EA02A048732850B127FD77067C5C71C851485620BFC0C57D4F",
+          "bytes": 20672
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.FileSystem.DriveInfo.dll",
+          "sha256": "874D314EB22BDCA513E376844CF73F19FD99D3E6A1C2D0ADED8604B03090E953",
+          "bytes": 20712
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.FileSystem.Primitives.dll",
+          "sha256": "D2A465C68C92235482F9658736CCA2FDFD4D011DE051C247DD3E6BA7BB912EB6",
+          "bytes": 20712
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.FileSystem.Watcher.dll",
+          "sha256": "B4218F8EECDD5603CD3D5856CCDFE0BEC0F696C5BEEB08CEEEE2D52F6A5ABE20",
+          "bytes": 20704
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.IsolatedStorage.dll",
+          "sha256": "F985EA228254A0B0EEB6420A165B394DD341E5497062997F8649CBFC850656CF",
+          "bytes": 20688
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.MemoryMappedFiles.dll",
+          "sha256": "953378EDB624F6A454E748356629468EBD4B5EFBCF59CCC221175DBF0AFCF7F3",
+          "bytes": 20696
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.Pipes.dll",
+          "sha256": "0117D5612C930998C1F3D47572E9410EB6E4DAC03C07A277BDAFD08D6CADCE51",
+          "bytes": 20648
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.UnmanagedMemoryStream.dll",
+          "sha256": "7AFCE03561A18722A35AD01CC06BB941B653790FAD661062EF10B52039133E59",
+          "bytes": 20712
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Linq.dll",
+          "sha256": "4248987837AF56488A5B04CD54D488AB4DE3281339ECEF360076CF7827C3C882",
+          "bytes": 20632
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Linq.Expressions.dll",
+          "sha256": "DB69A278466074747CFAAA4FB7F3C18C2F129C68B3B87493E744ED528423273C",
+          "bytes": 21704
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Linq.Parallel.dll",
+          "sha256": "B096BA2FF76DEC30714BB7FEA725EE92084F9E4EAB7500C49A5DF64438A86AE8",
+          "bytes": 20672
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Linq.Queryable.dll",
+          "sha256": "C93EBBBDEB5F0DADFE1D4677D9D7E333CC1D83319EE204D7401827F86558EAB9",
+          "bytes": 20672
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.Http.Rtc.dll",
+          "sha256": "851F30AA79EBDBEA6E6B755C0F7EE854290E6BD1897127259DBAF6F2E8EEC915",
+          "bytes": 20664
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.NameResolution.dll",
+          "sha256": "112BFD417F73ABDD69D629A136F8CDA40F9444C5F25E1BBFD6332DDCD0E73D00",
+          "bytes": 20688
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.NetworkInformation.dll",
+          "sha256": "E53192390660DB0EFDF3641B3994FA21F96C3BB3CC1DDCED0ACDC9C7CC73BFB7",
+          "bytes": 21728
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.Ping.dll",
+          "sha256": "A2A2F93D4B1D817F3B1203C483FC44916AB4CBC48D028A0DD7364C94BBA40E13",
+          "bytes": 20648
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.Primitives.dll",
+          "sha256": "6555340A9CFBBE7AD090CDF1FD017B9D8CA9F5CF6588B2D5498E51D12E277AB0",
+          "bytes": 21184
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.Requests.dll",
+          "sha256": "BD6788CA971B7E7EAC3B731F2A539FEFC9A3AC7D0A0A80D912CC30B072F996FD",
+          "bytes": 20664
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.Security.dll",
+          "sha256": "DE8CB7FB351048A9E9BA356EF7204A27C2511B05BE2D99044FDE27BD6CF9A64E",
+          "bytes": 21176
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.Sockets.dll",
+          "sha256": "0D8990DCE31236B9A8874EA4B26C27079FC21F728DD1D3CE180D01C34BABE964",
+          "bytes": 21176
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.WebHeaderCollection.dll",
+          "sha256": "254CCB0BA11DC43D6B2FCFE3A5BEC2545E74CFD49DA699865A9CDAE7217F9EF4",
+          "bytes": 20704
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.WebSockets.Client.dll",
+          "sha256": "44CF0814B0A9F1F98DB229FA4AB27EAD8F297FD1DCD9B5A2E85A071ED04B32D9",
+          "bytes": 20704
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.WebSockets.dll",
+          "sha256": "97E5B02092673EF2BC6F0DEA25744CFA9EF32C78ECDD8F45F4835410D94FF6AF",
+          "bytes": 20672
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ObjectModel.dll",
+          "sha256": "EB2632388987AC6D9C1B8845A249F05EE49B3EABCCFE4E426841CF2AF7F100D3",
+          "bytes": 21176
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Reflection.dll",
+          "sha256": "9AAE49D6E06218A2A599DB0E4C6883058E02AD65812481DA0A4889E8CFA88098",
+          "bytes": 21168
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Reflection.Emit.dll",
+          "sha256": "7BBE588E2D57FC83AAC8404D40F657285DE59517E86BF4370312FBB760E4AF04",
+          "bytes": 20680
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Reflection.Emit.ILGeneration.dll",
+          "sha256": "4C41C9FAE4FC797014576A20CBFD8CB3F32700A84F2637C0261F392882FE020F",
+          "bytes": 20728
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Reflection.Emit.Lightweight.dll",
+          "sha256": "C8F5EFCDEC7EF8F34E1243B6F9A97902EF32E9FCF1C57CD4984ED948C662BE5F",
+          "bytes": 20728
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Reflection.Extensions.dll",
+          "sha256": "D0E5A644966DFA2BE568C8595A930230C0A2B490D0070B24D49FD56E98471014",
+          "bytes": 20704
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Reflection.Primitives.dll",
+          "sha256": "75A03E5D42C83DFD948CCA28B2DEA6680E7DD8B3FD84886C20BB0CC6F8CD593F",
+          "bytes": 20704
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Resources.Reader.dll",
+          "sha256": "ABC4E7B9FBCC9CE5D04ABB7EF31D9BD1E43F5B8212A0A68D8C3885C02E096049",
+          "bytes": 20680
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Resources.ResourceManager.dll",
+          "sha256": "727D30B0CE764DC4C7CD485D6757D100117AEA3B419496F446EDAFF484C03A26",
+          "bytes": 20712
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Resources.Writer.dll",
+          "sha256": "40D22D96EF4C914C554B6E543AAED6253812414A138B34298F70A65866EBDFD9",
+          "bytes": 20680
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.CompilerServices.VisualC.dll",
+          "sha256": "6AA86E1323629D16EB2D82B9705906663E0BF8AF25270A311BB6F582DA55A6A9",
+          "bytes": 20752
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.dll",
+          "sha256": "0DB3FD1A1A59793C26D97EA989F7D347CA38A64370DCD09C893F45B7426E6E53",
+          "bytes": 28840
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Extensions.dll",
+          "sha256": "3DF76EE0ABF099A3DD818A252C3CCA998C2373240B29761051CEA5A8A5D15DD9",
+          "bytes": 20688
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Handles.dll",
+          "sha256": "0399D09B1723B2D16A7938BA84536AB00A7A54C01E9A44FCCCB4BE86CF629866",
+          "bytes": 20680
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.InteropServices.dll",
+          "sha256": "EF477238E98818A2F437B652DC5C6A0BA76F29532F2426D39262726D5617A2CC",
+          "bytes": 23784
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.InteropServices.RuntimeInformation.dll",
+          "sha256": "7EC6A13884BCC9393C0A9186496FB7A6C9FDD328F4C01CE8AD3C1704533D6AEE",
+          "bytes": 20792
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.InteropServices.WindowsRuntime.dll",
+          "sha256": "813551BB988BF6FB101FFB51468A3BBBC70C1E7896892B459ACA1512BCD597B4",
+          "bytes": 20776
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Numerics.dll",
+          "sha256": "79B7CC597A352E21FC9FA001A4C3AA780A07EDE101FDB98278C35662B9B8270E",
+          "bytes": 20680
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Serialization.Formatters.dll",
+          "sha256": "8627878266F320A1CA6E3CDE01CDB4BC541FC9F053C88773FAAC28482553668F",
+          "bytes": 20752
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Serialization.Json.dll",
+          "sha256": "F5F266FACDF60C6914DCF900B17CE860DE8AAC479EDE7B3DEDE1F6C82156E61C",
+          "bytes": 20720
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Serialization.Primitives.dll",
+          "sha256": "075D45612936A5AA854653F95907C38CCCDA4E9F34EB86E0369955B6277BEC62",
+          "bytes": 21264
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Serialization.Xml.dll",
+          "sha256": "0A63BCD65F5F7D219A2FB18B15E6A63754EB59135743C271CBD4A00818526AB8",
+          "bytes": 21232
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Claims.dll",
+          "sha256": "7489B9245F16ED589B82E61CF6E1A837C120188454FEF825ACDC280F415D7A9F",
+          "bytes": 20680
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Cryptography.Algorithms.dll",
+          "sha256": "06A395BBB252B421F4FB0646E23FAE6DB0D9D30B42215110DBCC74F54FD5CC98",
+          "bytes": 22288
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Cryptography.Csp.dll",
+          "sha256": "1040EBDA9719826B2A522D522D32ED5DF642035330B719022E2BF8CD33433347",
+          "bytes": 20720
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Cryptography.Encoding.dll",
+          "sha256": "B17C3690AAA9C6D366C1F9F9CD0BE476BFFB9985C3702423F9DF225A2C6FAA06",
+          "bytes": 20736
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Cryptography.Primitives.dll",
+          "sha256": "3A170E6E7A7AB9F8D72A732A8A6462CC619C813591FF7062ABD0C524AF1B40C9",
+          "bytes": 20752
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Cryptography.X509Certificates.dll",
+          "sha256": "029EF4AFA7D766664DED620F22388BF9A14DB4721DE69EFF71B2B1616648947E",
+          "bytes": 21800
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Principal.dll",
+          "sha256": "E41D1EDD09860BD9F38766996C47352E6CF5EB1B5B745B4C64E60266692E459E",
+          "bytes": 20688
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.SecureString.dll",
+          "sha256": "CB849AC7393B5757E1301CD70C22CA11C09F616D88471C336EAEE70719A259A6",
+          "bytes": 20704
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ServiceModel.Duplex.dll",
+          "sha256": "6CB33155F94FAC960CE57B6C851BEFAD76DD50B6AA0A299E7ABB99D1E356F348",
+          "bytes": 20696
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ServiceModel.Http.dll",
+          "sha256": "0C1F0AE577AB401217D1C473E20232EC794C8F71C28F7535D161EC74BCA3D2E8",
+          "bytes": 21200
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ServiceModel.NetTcp.dll",
+          "sha256": "12EC3C84646518A2EE0D33F7993FE43F9A0E918AD0F16BA0BB1D8AC761BE78A3",
+          "bytes": 21200
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ServiceModel.Primitives.dll",
+          "sha256": "22FD62FD58A31914098D2F86EE5C2C239F29EF74DB7F7B11B39DDAEE5082C4B8",
+          "bytes": 25320
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ServiceModel.Security.dll",
+          "sha256": "B886672774BB566FE2062E94F2C2EB4A3D20FD1920495409AC4AEEC59A60E2CC",
+          "bytes": 21216
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Text.Encoding.dll",
+          "sha256": "C4C7BC45DD19A7E6DCE621792D8C38A2260E95DFF009981F94762BA2247028B4",
+          "bytes": 20672
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Text.Encoding.Extensions.dll",
+          "sha256": "5F5C2AF78D0B78B5340F434913391347FCF14203EDAAB762750B3FC437C5431A",
+          "bytes": 20712
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Text.RegularExpressions.dll",
+          "sha256": "1F826D4A5A9B21A14053BF1664DD5AE0CED693C4686CD5F687245AE55250A15D",
+          "bytes": 20712
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.dll",
+          "sha256": "3AD700ED870023F5124ACE6F5807212ED51885F8BA6E7ECDB9D27209A62192C2",
+          "bytes": 21168
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.Overlapped.dll",
+          "sha256": "E2358E2DA77E85FB16B862CE252AEF697392DCE2CA355A99B0871044F1F39B29",
+          "bytes": 20696
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.Tasks.dll",
+          "sha256": "EF502FC69295F9A2D9D8133CB7E84F4C48ADD68074B4D5D7A27BC3AC7364D718",
+          "bytes": 21704
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.Tasks.Parallel.dll",
+          "sha256": "09BA8778E1649E96CB4887B10C2257AFD01E06929D49A9B0D18E9FADF2072206",
+          "bytes": 20712
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.Thread.dll",
+          "sha256": "180903FC274DB0DFD009C29FCFCABEB148F6C0733A4FBB467FDEA6F030B95D1B",
+          "bytes": 20680
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.ThreadPool.dll",
+          "sha256": "F75192D385D112B6FC7DB78C64B02501E941ADDF6F066EF7E4852897D4ABA04C",
+          "bytes": 20696
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.Timer.dll",
+          "sha256": "AEE0EECB6D120E0715A380D2C610E17D7827C4DFDC7E371D47B132FAC9E2FE55",
+          "bytes": 20680
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ValueTuple.dll",
+          "sha256": "DFD94C589CF9FE188922E9370406E5BB57F474520A6159F8CAC973BEBDE05095",
+          "bytes": 20656
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Xml.ReaderWriter.dll",
+          "sha256": "9FE8F881DB3639BC43F0AF5B00768BB59424006001412A3099BF43333B0741DE",
+          "bytes": 21192
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Xml.XDocument.dll",
+          "sha256": "60DF9E02969C9F9F9D81BA27FDEBF9E69F88ECD16DA6E1BD29E32DA41AEBC12F",
+          "bytes": 21184
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Xml.XmlDocument.dll",
+          "sha256": "E21EE61844B7065D869AEA73481EDCAE4585C1B6AA3216737C127756BBC1AFC8",
+          "bytes": 21192
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Xml.XmlSerializer.dll",
+          "sha256": "0763EB17035CDF39CA062EEA96B08A43481E3A0F298937BA6C904C7BF476292D",
+          "bytes": 21200
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Xml.XPath.dll",
+          "sha256": "57A33C14B59DFEA29DFBEB31C39C8D7A0C1AEC6F617139741A6B23BF8DB8D180",
+          "bytes": 20656
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Xml.XPath.XDocument.dll",
+          "sha256": "16C19CA6E0B49B928886E0EFD16FD928AFA28D0A02B0051BD96824A041CBACE8",
+          "bytes": 20696
+        }
+      ],
+      "compiler_server_lines": [
+        "CompilerServer: server - server processed compilation - WorkerBridge (net472)(작업 ID:46)"
+      ]
+    },
+    {
+      "configuration": "Release",
+      "producer_host_pid": 12188,
+      "exit_code": 0,
+      "argv": [
+        "dotnet",
+        "build",
+        "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+        "-c",
+        "Release",
+        "--no-restore",
+        "-v:diag"
+      ],
+      "cwd": "C:\\Users\\user\\Desktop\\RimMulti",
+      "duration": 1.278215,
+      "streams": {
+        "stdout": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R32Custody-64ad38e2\\build_release_stdout.raw.txt",
+          "sha256": "8833683B5E7D88BCF91C0C0B6E55AE34D6170D2732E66D28784570F5561DF347",
+          "bytes": 1308727
+        },
+        "stderr": {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R32Custody-64ad38e2\\build_release_stderr.raw.txt",
+          "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+          "bytes": 0
+        }
+      },
+      "actual_csc_command": "                     C:\\Program Files\\dotnet\\sdk\\10.0.201\\Roslyn\\bincore\\csc.exe /noconfig /unsafe- /checked- /nowarn:1701,1702,1701,1702 /fullpaths /nostdlib+ /errorreport:prompt /warn:4 /define:TRACE;RELEASE;NETFRAMEWORK;NET472;NET20_OR_GREATER;NET30_OR_GREATER;NET35_OR_GREATER;NET40_OR_GREATER;NET45_OR_GREATER;NET451_OR_GREATER;NET452_OR_GREATER;NET46_OR_GREATER;NET461_OR_GREATER;NET462_OR_GREATER;NET47_OR_GREATER;NET471_OR_GREATER;NET472_OR_GREATER /highentropyva+ /nullable:enable /reference:\"C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\294100\\2009463077\\Current\\Assemblies\\0Harmony.dll\" /reference:\"C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\Assembly-CSharp.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\mscorlib.dll\" /reference:C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\1.6\\Assemblies\\Newtonsoft.Json.dll /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Core.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Data.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Drawing.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.IO.Compression.FileSystem.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Numerics.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Runtime.Serialization.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Xml.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Xml.Linq.dll\" /reference:\"C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\UnityEngine.CoreModule.dll\" /reference:\"C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\UnityEngine.dll\" /reference:\"C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\UnityEngine.IMGUIModule.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\Microsoft.Win32.Primitives.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\netstandard.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.AppContext.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Collections.Concurrent.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Collections.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Collections.NonGeneric.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Collections.Specialized.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ComponentModel.Annotations.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ComponentModel.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ComponentModel.EventBasedAsync.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ComponentModel.Primitives.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ComponentModel.TypeConverter.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Console.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Data.Common.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.Contracts.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.Debug.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.FileVersionInfo.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.Process.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.StackTrace.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.TextWriterTraceListener.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.Tools.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.TraceSource.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Drawing.Primitives.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Dynamic.Runtime.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Globalization.Calendars.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Globalization.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Globalization.Extensions.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.Compression.ZipFile.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.FileSystem.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.FileSystem.DriveInfo.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.FileSystem.Primitives.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.FileSystem.Watcher.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.IsolatedStorage.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.MemoryMappedFiles.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.Pipes.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.UnmanagedMemoryStream.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Linq.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Linq.Expressions.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Linq.Parallel.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Linq.Queryable.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.Http.Rtc.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.NameResolution.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.NetworkInformation.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.Ping.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.Primitives.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.Requests.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.Security.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.Sockets.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.WebHeaderCollection.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.WebSockets.Client.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.WebSockets.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ObjectModel.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Reflection.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Reflection.Emit.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Reflection.Emit.ILGeneration.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Reflection.Emit.Lightweight.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Reflection.Extensions.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Reflection.Primitives.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Resources.Reader.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Resources.ResourceManager.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Resources.Writer.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.CompilerServices.VisualC.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Extensions.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Handles.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.InteropServices.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.InteropServices.RuntimeInformation.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.InteropServices.WindowsRuntime.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Numerics.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Serialization.Formatters.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Serialization.Json.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Serialization.Primitives.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Serialization.Xml.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Claims.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Cryptography.Algorithms.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Cryptography.Csp.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Cryptography.Encoding.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Cryptography.Primitives.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Cryptography.X509Certificates.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Principal.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.SecureString.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ServiceModel.Duplex.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ServiceModel.Http.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ServiceModel.NetTcp.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ServiceModel.Primitives.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ServiceModel.Security.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Text.Encoding.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Text.Encoding.Extensions.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Text.RegularExpressions.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.Overlapped.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.Tasks.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.Tasks.Parallel.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.Thread.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.ThreadPool.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.Timer.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ValueTuple.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Xml.ReaderWriter.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Xml.XDocument.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Xml.XmlDocument.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Xml.XmlSerializer.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Xml.XPath.dll\" /reference:\"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Xml.XPath.XDocument.dll\" /debug- /debug:portable /filealign:512 /optimize+ /out:obj\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output /deterministic+ /langversion:latest /analyzerconfig:obj\\Release\\net472\\WorkerBridge.GeneratedMSBuildEditorConfig.editorconfig EngineHostCensus.cs WorkerBridge.cs \"obj\\Release\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs\" obj\\Release\\net472\\WorkerBridge.AssemblyInfo.cs /warnaserror+:NU1605(작업 ID:46)",
+      "actual_csc_command_sha256": "EC2D5D56FA551D1C8F0B2B5250BECCF5C8F700F2117856F7448F9819FF301477",
+      "compiler_references_observed_now": [
+        {
+          "path": "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\294100\\2009463077\\Current\\Assemblies\\0Harmony.dll",
+          "sha256": "353DAAFEC180BB8E7BBE4DA78F2A7CDC78067392E3A4E79DC8E7AF295F2371E6",
+          "bytes": 2456064
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\Assembly-CSharp.dll",
+          "sha256": "5CF1B5BE399D5B1C9C56CA72C9D35B4ECF307FEACF5859D04AC5A1AA5926356A",
+          "bytes": 15777280
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\mscorlib.dll",
+          "sha256": "A69849CF0B433664B14DBAEB82385EC043449F71F7C69559CBA4BE0DD3E8BE8D",
+          "bytes": 2727056
+        },
+        {
+          "path": "C:\\Users\\user\\Desktop\\RimMulti\\WarEconomyMod\\1.6\\Assemblies\\Newtonsoft.Json.dll",
+          "sha256": "E1E27AF7B07EEEDF5CE71A9255F0422816A6FC5849A483C6714E1B472044FA9D",
+          "bytes": 711952
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Core.dll",
+          "sha256": "F9C65F2D44F244E1195802A68F5D8F3457CAEEF2E385CF28C534218749ADBE7F",
+          "bytes": 256664
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Data.dll",
+          "sha256": "05E52F1129985102E1EC22CB8664246AF2D9C1737B0D8EF556278503A23AA430",
+          "bytes": 1278104
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.dll",
+          "sha256": "541C6067CC69A43660D06A4F0F6EAB0FEBCD33DF9089F209D99B7EA36682A0A5",
+          "bytes": 1475208
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Drawing.dll",
+          "sha256": "3952F3C019EF595A60B813E718E9DE716E311C09CB78B64F3DE131DD9CEB946A",
+          "bytes": 189608
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.IO.Compression.FileSystem.dll",
+          "sha256": "06F159DB143A3EAF9D20321535428325C9B157CECB4999FA567C7019F1258A8E",
+          "bytes": 23792
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Numerics.dll",
+          "sha256": "716C1BE731F82272CEED7D90D1E17D5874EA2D905DC909E97C17340EEEA08D31",
+          "bytes": 42664
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Runtime.Serialization.dll",
+          "sha256": "A8A8240FC53A5E26A1E6160A39D1D2728B4A1E9652C67740CCB1E349865E7624",
+          "bytes": 425696
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Xml.dll",
+          "sha256": "A01C28F804DCA406D6D5D1EACFA9D8D435755FBEF58F6673BCE40EFB789717F3",
+          "bytes": 925336
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Xml.Linq.dll",
+          "sha256": "D37CB2217485518942B3E3D7E8FC914E09B3F8FB596EF99792204A90392A1443",
+          "bytes": 45736
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\UnityEngine.CoreModule.dll",
+          "sha256": "C5C58EA254834291780A1D6C388C241443D07167B4A4B890A23C9494F626DDBA",
+          "bytes": 1386688
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\UnityEngine.dll",
+          "sha256": "0422FF282130458380D2FB4B63A718465D3BD2D5738F1532F60798B0D35DFF0D",
+          "bytes": 125120
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64_Data\\Managed\\UnityEngine.IMGUIModule.dll",
+          "sha256": "C6C39327211BE8299E2E9FFDEE7A979F228736C99B84FD54BC73F563456865D9",
+          "bytes": 188608
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\Microsoft.Win32.Primitives.dll",
+          "sha256": "422C576324C24813055D4F3A4A3D6CB2AE93138BAA88923F9DCB715A143F6280",
+          "bytes": 20696
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\netstandard.dll",
+          "sha256": "9F12554DDF1FA4EF8BEFABBB8616173A3BF020B7512ADA39F21E746DDD1D18FC",
+          "bytes": 97944
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.AppContext.dll",
+          "sha256": "AEB0C192DED623192885A4CC029C4277A174A73AA4E20F8D097F1CEE7D17101C",
+          "bytes": 20144
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Collections.Concurrent.dll",
+          "sha256": "43BC5789C568606E028EDE6FDF4D7EEF55948F213184DC89B7E4D34D94EAA370",
+          "bytes": 20704
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Collections.dll",
+          "sha256": "AF67FF9881668E32D1557185C3996ECCFD060CCB64FAA6D0182F2C48D3E9535E",
+          "bytes": 21176
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Collections.NonGeneric.dll",
+          "sha256": "254652680321F2CC61D7FDFBA046C6E8A912A4C681AE3A4653375FEBE277ABBD",
+          "bytes": 20704
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Collections.Specialized.dll",
+          "sha256": "DE59D3145E4D31B28089A96DE57DAEFB84B0E35C547147317CAC7086A4553BFD",
+          "bytes": 20712
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ComponentModel.Annotations.dll",
+          "sha256": "86E28BB43126741DD1988A537AA82BE701315B2198170D1FEE695D97CA49B5A4",
+          "bytes": 21744
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ComponentModel.dll",
+          "sha256": "19D1AF8356A77BC96C8F433A5CBC621A6274B4B75B2F5BF42F5908207DA33DAF",
+          "bytes": 20672
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ComponentModel.EventBasedAsync.dll",
+          "sha256": "9B4B2B4E51CB4FD1B8026E4668E12FF94B4884A6500859E26F89CDF7DD2B51D9",
+          "bytes": 20736
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ComponentModel.Primitives.dll",
+          "sha256": "BDBA0426827452B4DA821134C3684E9F4A8707F1DE1790E960FF9E7D2D210512",
+          "bytes": 21232
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ComponentModel.TypeConverter.dll",
+          "sha256": "24772D08A1C9D73BA0D8BF7C443347283C9565A344A3C56505F443A170DAEB73",
+          "bytes": 22264
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Console.dll",
+          "sha256": "64175D5A1D370E9A42FBE294A7C872B0120DE7AE410AF91E8ED1287A472D5CE6",
+          "bytes": 20648
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Data.Common.dll",
+          "sha256": "7F465AA7F039EFFA5D0FC09A289F45C7F57D46B4143ADE934210ECD34366BAC1",
+          "bytes": 25272
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.Contracts.dll",
+          "sha256": "0E78FC6D67C617A8AACB3B16CF7E559B162A7A0D8591546F41192FBEBF61F9F8",
+          "bytes": 21216
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.Debug.dll",
+          "sha256": "3C3F7CAB9A0A30AB3A8FD12E748D70E0453E4491D59BC0B1F24BDE7BC1430066",
+          "bytes": 20688
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.FileVersionInfo.dll",
+          "sha256": "14ACB343DC7E02D6663341EF74A6BDE4B478EA68EC08DFA4054FCA4320EE5194",
+          "bytes": 20728
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.Process.dll",
+          "sha256": "03D2951DC644AC3B19AE27D832B432227BF28BEA9D73DA252B9099A9F48A294C",
+          "bytes": 20696
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.StackTrace.dll",
+          "sha256": "9397E515DF958B565C1A828A07BCAF1614103E5E11AD839BA024B1FE3F975EA6",
+          "bytes": 21216
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.TextWriterTraceListener.dll",
+          "sha256": "8329F22CA6DD6F86A9FB3D937C957D9E5FE3DE1CF8FD0CA1186302D78957C1D5",
+          "bytes": 20760
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.Tools.dll",
+          "sha256": "ADF05606FB2695C58F575873F4D75E05DCAB8BEB7D8F34507017D600DD8FFBC6",
+          "bytes": 20688
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Diagnostics.TraceSource.dll",
+          "sha256": "C3546409E08AD7EAEFDD4C15E0FD710CA4A1A9755DE125B3CC95482DAF16E20B",
+          "bytes": 20712
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Drawing.Primitives.dll",
+          "sha256": "101204D45B0D21DAE05C45126AB185740D3791866DA373B0C7D822DA31EC3141",
+          "bytes": 20688
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Dynamic.Runtime.dll",
+          "sha256": "A71056EF924B62BCE7E926D96B914C8C84A3F84D8C8F6EE19D31EE73F1E0DC6E",
+          "bytes": 21192
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Globalization.Calendars.dll",
+          "sha256": "8B83DF271FE266E7BDA8E5C255E67F7665B291CE42D9B2797AAB581EF6DD04DA",
+          "bytes": 21224
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Globalization.dll",
+          "sha256": "A7748F2E16A3CDD0D624008588E0092CC78F105770F5B6EF02102118B0DAC620",
+          "bytes": 20672
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Globalization.Extensions.dll",
+          "sha256": "CED974159ED13665CA712658DC79CF98A160BCC2DA5C6CD32EA43AFA8C214742",
+          "bytes": 20712
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.Compression.ZipFile.dll",
+          "sha256": "8815553168D05B68EE3267BDED602E50A9D3710C7995B882B22A0061333D0B4B",
+          "bytes": 20192
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.dll",
+          "sha256": "C7C68EB6D9CB6D83B0EA61CE036A41BF6614E566690A98D9C410DE8EA9AE69EC",
+          "bytes": 20624
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.FileSystem.dll",
+          "sha256": "F768C4B1CA9355EA02A048732850B127FD77067C5C71C851485620BFC0C57D4F",
+          "bytes": 20672
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.FileSystem.DriveInfo.dll",
+          "sha256": "874D314EB22BDCA513E376844CF73F19FD99D3E6A1C2D0ADED8604B03090E953",
+          "bytes": 20712
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.FileSystem.Primitives.dll",
+          "sha256": "D2A465C68C92235482F9658736CCA2FDFD4D011DE051C247DD3E6BA7BB912EB6",
+          "bytes": 20712
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.FileSystem.Watcher.dll",
+          "sha256": "B4218F8EECDD5603CD3D5856CCDFE0BEC0F696C5BEEB08CEEEE2D52F6A5ABE20",
+          "bytes": 20704
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.IsolatedStorage.dll",
+          "sha256": "F985EA228254A0B0EEB6420A165B394DD341E5497062997F8649CBFC850656CF",
+          "bytes": 20688
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.MemoryMappedFiles.dll",
+          "sha256": "953378EDB624F6A454E748356629468EBD4B5EFBCF59CCC221175DBF0AFCF7F3",
+          "bytes": 20696
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.Pipes.dll",
+          "sha256": "0117D5612C930998C1F3D47572E9410EB6E4DAC03C07A277BDAFD08D6CADCE51",
+          "bytes": 20648
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.IO.UnmanagedMemoryStream.dll",
+          "sha256": "7AFCE03561A18722A35AD01CC06BB941B653790FAD661062EF10B52039133E59",
+          "bytes": 20712
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Linq.dll",
+          "sha256": "4248987837AF56488A5B04CD54D488AB4DE3281339ECEF360076CF7827C3C882",
+          "bytes": 20632
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Linq.Expressions.dll",
+          "sha256": "DB69A278466074747CFAAA4FB7F3C18C2F129C68B3B87493E744ED528423273C",
+          "bytes": 21704
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Linq.Parallel.dll",
+          "sha256": "B096BA2FF76DEC30714BB7FEA725EE92084F9E4EAB7500C49A5DF64438A86AE8",
+          "bytes": 20672
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Linq.Queryable.dll",
+          "sha256": "C93EBBBDEB5F0DADFE1D4677D9D7E333CC1D83319EE204D7401827F86558EAB9",
+          "bytes": 20672
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.Http.Rtc.dll",
+          "sha256": "851F30AA79EBDBEA6E6B755C0F7EE854290E6BD1897127259DBAF6F2E8EEC915",
+          "bytes": 20664
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.NameResolution.dll",
+          "sha256": "112BFD417F73ABDD69D629A136F8CDA40F9444C5F25E1BBFD6332DDCD0E73D00",
+          "bytes": 20688
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.NetworkInformation.dll",
+          "sha256": "E53192390660DB0EFDF3641B3994FA21F96C3BB3CC1DDCED0ACDC9C7CC73BFB7",
+          "bytes": 21728
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.Ping.dll",
+          "sha256": "A2A2F93D4B1D817F3B1203C483FC44916AB4CBC48D028A0DD7364C94BBA40E13",
+          "bytes": 20648
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.Primitives.dll",
+          "sha256": "6555340A9CFBBE7AD090CDF1FD017B9D8CA9F5CF6588B2D5498E51D12E277AB0",
+          "bytes": 21184
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.Requests.dll",
+          "sha256": "BD6788CA971B7E7EAC3B731F2A539FEFC9A3AC7D0A0A80D912CC30B072F996FD",
+          "bytes": 20664
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.Security.dll",
+          "sha256": "DE8CB7FB351048A9E9BA356EF7204A27C2511B05BE2D99044FDE27BD6CF9A64E",
+          "bytes": 21176
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.Sockets.dll",
+          "sha256": "0D8990DCE31236B9A8874EA4B26C27079FC21F728DD1D3CE180D01C34BABE964",
+          "bytes": 21176
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.WebHeaderCollection.dll",
+          "sha256": "254CCB0BA11DC43D6B2FCFE3A5BEC2545E74CFD49DA699865A9CDAE7217F9EF4",
+          "bytes": 20704
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.WebSockets.Client.dll",
+          "sha256": "44CF0814B0A9F1F98DB229FA4AB27EAD8F297FD1DCD9B5A2E85A071ED04B32D9",
+          "bytes": 20704
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Net.WebSockets.dll",
+          "sha256": "97E5B02092673EF2BC6F0DEA25744CFA9EF32C78ECDD8F45F4835410D94FF6AF",
+          "bytes": 20672
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ObjectModel.dll",
+          "sha256": "EB2632388987AC6D9C1B8845A249F05EE49B3EABCCFE4E426841CF2AF7F100D3",
+          "bytes": 21176
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Reflection.dll",
+          "sha256": "9AAE49D6E06218A2A599DB0E4C6883058E02AD65812481DA0A4889E8CFA88098",
+          "bytes": 21168
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Reflection.Emit.dll",
+          "sha256": "7BBE588E2D57FC83AAC8404D40F657285DE59517E86BF4370312FBB760E4AF04",
+          "bytes": 20680
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Reflection.Emit.ILGeneration.dll",
+          "sha256": "4C41C9FAE4FC797014576A20CBFD8CB3F32700A84F2637C0261F392882FE020F",
+          "bytes": 20728
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Reflection.Emit.Lightweight.dll",
+          "sha256": "C8F5EFCDEC7EF8F34E1243B6F9A97902EF32E9FCF1C57CD4984ED948C662BE5F",
+          "bytes": 20728
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Reflection.Extensions.dll",
+          "sha256": "D0E5A644966DFA2BE568C8595A930230C0A2B490D0070B24D49FD56E98471014",
+          "bytes": 20704
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Reflection.Primitives.dll",
+          "sha256": "75A03E5D42C83DFD948CCA28B2DEA6680E7DD8B3FD84886C20BB0CC6F8CD593F",
+          "bytes": 20704
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Resources.Reader.dll",
+          "sha256": "ABC4E7B9FBCC9CE5D04ABB7EF31D9BD1E43F5B8212A0A68D8C3885C02E096049",
+          "bytes": 20680
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Resources.ResourceManager.dll",
+          "sha256": "727D30B0CE764DC4C7CD485D6757D100117AEA3B419496F446EDAFF484C03A26",
+          "bytes": 20712
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Resources.Writer.dll",
+          "sha256": "40D22D96EF4C914C554B6E543AAED6253812414A138B34298F70A65866EBDFD9",
+          "bytes": 20680
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.CompilerServices.VisualC.dll",
+          "sha256": "6AA86E1323629D16EB2D82B9705906663E0BF8AF25270A311BB6F582DA55A6A9",
+          "bytes": 20752
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.dll",
+          "sha256": "0DB3FD1A1A59793C26D97EA989F7D347CA38A64370DCD09C893F45B7426E6E53",
+          "bytes": 28840
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Extensions.dll",
+          "sha256": "3DF76EE0ABF099A3DD818A252C3CCA998C2373240B29761051CEA5A8A5D15DD9",
+          "bytes": 20688
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Handles.dll",
+          "sha256": "0399D09B1723B2D16A7938BA84536AB00A7A54C01E9A44FCCCB4BE86CF629866",
+          "bytes": 20680
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.InteropServices.dll",
+          "sha256": "EF477238E98818A2F437B652DC5C6A0BA76F29532F2426D39262726D5617A2CC",
+          "bytes": 23784
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.InteropServices.RuntimeInformation.dll",
+          "sha256": "7EC6A13884BCC9393C0A9186496FB7A6C9FDD328F4C01CE8AD3C1704533D6AEE",
+          "bytes": 20792
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.InteropServices.WindowsRuntime.dll",
+          "sha256": "813551BB988BF6FB101FFB51468A3BBBC70C1E7896892B459ACA1512BCD597B4",
+          "bytes": 20776
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Numerics.dll",
+          "sha256": "79B7CC597A352E21FC9FA001A4C3AA780A07EDE101FDB98278C35662B9B8270E",
+          "bytes": 20680
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Serialization.Formatters.dll",
+          "sha256": "8627878266F320A1CA6E3CDE01CDB4BC541FC9F053C88773FAAC28482553668F",
+          "bytes": 20752
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Serialization.Json.dll",
+          "sha256": "F5F266FACDF60C6914DCF900B17CE860DE8AAC479EDE7B3DEDE1F6C82156E61C",
+          "bytes": 20720
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Serialization.Primitives.dll",
+          "sha256": "075D45612936A5AA854653F95907C38CCCDA4E9F34EB86E0369955B6277BEC62",
+          "bytes": 21264
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Runtime.Serialization.Xml.dll",
+          "sha256": "0A63BCD65F5F7D219A2FB18B15E6A63754EB59135743C271CBD4A00818526AB8",
+          "bytes": 21232
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Claims.dll",
+          "sha256": "7489B9245F16ED589B82E61CF6E1A837C120188454FEF825ACDC280F415D7A9F",
+          "bytes": 20680
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Cryptography.Algorithms.dll",
+          "sha256": "06A395BBB252B421F4FB0646E23FAE6DB0D9D30B42215110DBCC74F54FD5CC98",
+          "bytes": 22288
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Cryptography.Csp.dll",
+          "sha256": "1040EBDA9719826B2A522D522D32ED5DF642035330B719022E2BF8CD33433347",
+          "bytes": 20720
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Cryptography.Encoding.dll",
+          "sha256": "B17C3690AAA9C6D366C1F9F9CD0BE476BFFB9985C3702423F9DF225A2C6FAA06",
+          "bytes": 20736
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Cryptography.Primitives.dll",
+          "sha256": "3A170E6E7A7AB9F8D72A732A8A6462CC619C813591FF7062ABD0C524AF1B40C9",
+          "bytes": 20752
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Cryptography.X509Certificates.dll",
+          "sha256": "029EF4AFA7D766664DED620F22388BF9A14DB4721DE69EFF71B2B1616648947E",
+          "bytes": 21800
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.Principal.dll",
+          "sha256": "E41D1EDD09860BD9F38766996C47352E6CF5EB1B5B745B4C64E60266692E459E",
+          "bytes": 20688
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Security.SecureString.dll",
+          "sha256": "CB849AC7393B5757E1301CD70C22CA11C09F616D88471C336EAEE70719A259A6",
+          "bytes": 20704
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ServiceModel.Duplex.dll",
+          "sha256": "6CB33155F94FAC960CE57B6C851BEFAD76DD50B6AA0A299E7ABB99D1E356F348",
+          "bytes": 20696
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ServiceModel.Http.dll",
+          "sha256": "0C1F0AE577AB401217D1C473E20232EC794C8F71C28F7535D161EC74BCA3D2E8",
+          "bytes": 21200
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ServiceModel.NetTcp.dll",
+          "sha256": "12EC3C84646518A2EE0D33F7993FE43F9A0E918AD0F16BA0BB1D8AC761BE78A3",
+          "bytes": 21200
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ServiceModel.Primitives.dll",
+          "sha256": "22FD62FD58A31914098D2F86EE5C2C239F29EF74DB7F7B11B39DDAEE5082C4B8",
+          "bytes": 25320
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ServiceModel.Security.dll",
+          "sha256": "B886672774BB566FE2062E94F2C2EB4A3D20FD1920495409AC4AEEC59A60E2CC",
+          "bytes": 21216
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Text.Encoding.dll",
+          "sha256": "C4C7BC45DD19A7E6DCE621792D8C38A2260E95DFF009981F94762BA2247028B4",
+          "bytes": 20672
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Text.Encoding.Extensions.dll",
+          "sha256": "5F5C2AF78D0B78B5340F434913391347FCF14203EDAAB762750B3FC437C5431A",
+          "bytes": 20712
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Text.RegularExpressions.dll",
+          "sha256": "1F826D4A5A9B21A14053BF1664DD5AE0CED693C4686CD5F687245AE55250A15D",
+          "bytes": 20712
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.dll",
+          "sha256": "3AD700ED870023F5124ACE6F5807212ED51885F8BA6E7ECDB9D27209A62192C2",
+          "bytes": 21168
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.Overlapped.dll",
+          "sha256": "E2358E2DA77E85FB16B862CE252AEF697392DCE2CA355A99B0871044F1F39B29",
+          "bytes": 20696
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.Tasks.dll",
+          "sha256": "EF502FC69295F9A2D9D8133CB7E84F4C48ADD68074B4D5D7A27BC3AC7364D718",
+          "bytes": 21704
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.Tasks.Parallel.dll",
+          "sha256": "09BA8778E1649E96CB4887B10C2257AFD01E06929D49A9B0D18E9FADF2072206",
+          "bytes": 20712
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.Thread.dll",
+          "sha256": "180903FC274DB0DFD009C29FCFCABEB148F6C0733A4FBB467FDEA6F030B95D1B",
+          "bytes": 20680
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.ThreadPool.dll",
+          "sha256": "F75192D385D112B6FC7DB78C64B02501E941ADDF6F066EF7E4852897D4ABA04C",
+          "bytes": 20696
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Threading.Timer.dll",
+          "sha256": "AEE0EECB6D120E0715A380D2C610E17D7827C4DFDC7E371D47B132FAC9E2FE55",
+          "bytes": 20680
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.ValueTuple.dll",
+          "sha256": "DFD94C589CF9FE188922E9370406E5BB57F474520A6159F8CAC973BEBDE05095",
+          "bytes": 20656
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Xml.ReaderWriter.dll",
+          "sha256": "9FE8F881DB3639BC43F0AF5B00768BB59424006001412A3099BF43333B0741DE",
+          "bytes": 21192
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Xml.XDocument.dll",
+          "sha256": "60DF9E02969C9F9F9D81BA27FDEBF9E69F88ECD16DA6E1BD29E32DA41AEBC12F",
+          "bytes": 21184
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Xml.XmlDocument.dll",
+          "sha256": "E21EE61844B7065D869AEA73481EDCAE4585C1B6AA3216737C127756BBC1AFC8",
+          "bytes": 21192
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Xml.XmlSerializer.dll",
+          "sha256": "0763EB17035CDF39CA062EEA96B08A43481E3A0F298937BA6C904C7BF476292D",
+          "bytes": 21200
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Xml.XPath.dll",
+          "sha256": "57A33C14B59DFEA29DFBEB31C39C8D7A0C1AEC6F617139741A6B23BF8DB8D180",
+          "bytes": 20656
+        },
+        {
+          "path": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Facades\\System.Xml.XPath.XDocument.dll",
+          "sha256": "16C19CA6E0B49B928886E0EFD16FD928AFA28D0A02B0051BD96824A041CBACE8",
+          "bytes": 20696
+        }
+      ],
+      "compiler_server_lines": [
+        "CompilerServer: server - server processed compilation - WorkerBridge (net472)(작업 ID:46)"
+      ]
+    }
+  ],
+  "compiler_reference_unique_paths": 120,
+  "framework_references_prospective_in_producer_input": false,
+  "compiler_server_PID_start_end_unobserved": true,
+  "producer_pin_chronology_internally_consistent": true,
+  "Master_observed_before_compile": false,
+  "build_metadata_csc_version_not_independently_claimed": true,
+  "all_unit_native_execution": 0,
+  "known_installed": {
+    "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\WarEconomy.WorkerBridge.PoC\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+    "sha256": "BB3B52F39F7B53B70BC9FB4CE039E7455D08B24B17B8DABB8295E0FF4584DD61",
+    "bytes": 110080
+  },
+  "Master_candidate_build_run": 0,
+  "guard_run": "MASTER-R32-HOURLY-20261013-0022-01",
+  "guard_session": 86751
+}

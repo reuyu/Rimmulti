@@ -1,0 +1,73 @@
+{
+  "type": "SOL_R24_M04_READ_ONLY_PREPARATION",
+  "delivery_id": "SOL-GATE05-R24-M04-PREPARATION-S1-20261011-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R24_M04_PREPARATION",
+  "wp_revision": "S1",
+  "qa_root": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R24-M04-PREPARATION-S1-20261011",
+  "wp_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R24_M04_PREPARATION_S1.md",
+  "wp_sha256": "DDF2EDFEC85EFAE0DB005B226C334238678CA729B7B618CE540E8EF216BA0234",
+  "baseline_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R24_M04_PREPARATION_PROTECTED_BASELINE_20261011.json",
+  "baseline_sha256": "F02B2EA7360767393EBE679638FFDC548E43BC500B4B2EA0702E91BD50C88050",
+  "protected_unique_paths": 13002,
+  "delivery_status": "SENT_ACTUAL_TOOL_NEW_ACTIVE_TURN",
+  "unknown_delivery": false,
+  "actual_predispatch": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:147",
+    "revision": 147,
+    "changed": false,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a12a32-901e-7522-b19d-544a1fb6061a",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791709319,
+      "completedAt": 1791709854,
+      "durationMs": 535140
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acb529c09e087d0b0d39311b37eac88",
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": "exec-373ccb32-6065-452f-ad1a-9e5d870825f0",
+    "latestToolMarker": null
+  },
+  "guard_run": "MASTER-SOL-R23-COMPLETE-20261011-01",
+  "guard_session": 34592,
+  "guard_pid": 34628,
+  "at": "2026-10-11T18:21:56.451215+09:00",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:148",
+    "revision": 148,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a12a44-cf57-7350-8bbb-fea4be724e29",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791710515,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "production_modify_build_execution": 0,
+  "qa_owned_runner_build_allowed": false,
+  "scope": "READ_ONLY_M04_PREPARATION_ALL9FIXED_NO_CANDIDATE_RUN",
+  "foundation": "HOLD"
+}

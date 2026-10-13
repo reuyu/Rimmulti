@@ -1,0 +1,29 @@
+--- FrozenR20Worker
++++ R21Worker
+@@ -3738,6 +3738,17 @@
+ 
+         public string ToRedactedJson()
+         {
++            Newtonsoft.Json.Linq.JObject? snapshotObject = null;
++            if (Snapshot != null)
++            {
++                using (var stringReader = new System.IO.StringReader(Snapshot.ToRedactedJson()))
++                using (var jsonReader = new Newtonsoft.Json.JsonTextReader(stringReader))
++                {
++                    jsonReader.DateParseHandling = Newtonsoft.Json.DateParseHandling.None;
++                    snapshotObject = Newtonsoft.Json.Linq.JObject.Load(jsonReader);
++                }
++            }
++
+             var redacted = new
+             {
+                 receiptSchemaVersion = ReceiptSchemaVersion,
+@@ -3750,7 +3761,7 @@
+                 boundConfigPath = BoundConfigPath,
+                 boundConfigSha256 = BoundConfigSha256,
+                 admittedAtUtc = AdmittedAtUtc,
+-                snapshot = Snapshot != null ? JObject.Parse(Snapshot.ToRedactedJson()) : null
++                snapshot = snapshotObject
+             };
+             return JsonConvert.SerializeObject(redacted, Newtonsoft.Json.Formatting.Indented);
+         }

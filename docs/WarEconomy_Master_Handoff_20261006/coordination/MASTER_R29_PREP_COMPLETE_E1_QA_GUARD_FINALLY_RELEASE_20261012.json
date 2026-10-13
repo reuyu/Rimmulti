@@ -1,0 +1,12 @@
+{
+  "actual_release_tool": {
+    "chunk_id": "9b5895",
+    "wall_time_seconds": 0.0000266,
+    "exit_code": 0,
+    "original_token_count": 110,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R29-SOL-PREP-COMPLETE-20261012-01\", \"pid\": 27876, \"locked_at\": \"2026-10-12T09:27:54.748569+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-12T09:42:25.694930+09:00\", \"renewal_count\": 4, \"release_reason\": \"R\r\n\u001b[23;80HRELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-12T09:45:27.530612+09:00\"}     \r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "run_id": "MASTER-R29-SOL-PREP-COMPLETE-20261012-01",
+  "session": 7127,
+  "all_child_commands_completed_before_release": true
+}

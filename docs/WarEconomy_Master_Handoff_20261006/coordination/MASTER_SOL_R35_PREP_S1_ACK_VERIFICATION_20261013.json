@@ -1,0 +1,65 @@
+{
+  "at": "2026-10-13T19:32:13.796104+09:00",
+  "delivery_id": "SOL-GATE05-R35-PUBLISHER-PREP-S1-20261013-01",
+  "result_id": "SOL-GATE05-R35-PUBLISHER-PREP-S1-20261013-9fc07f8b22b24848a8680d9bb666f2e1",
+  "ACK": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R35-PUBLISHER-PREPARATION-S1-20261013\\ACK_INITIAL.json",
+    "sha256": "324F15D40478C42268B20BAF2C170D77AA5116F775B3EF85C02BDCAF46FC8C03",
+    "bytes": 2881
+  },
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:32",
+    "revision": 32,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a134cd-ceea-7472-bfc7-c7e3bd5abc24",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791887265,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ace085a305487d0a2e90068ad40c714",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016ace085a305487d0a2e90068ad40c714",
+      "turnId": "01a134cd-ceea-7472-bfc7-c7e3bd5abc24",
+      "phase": "commentary",
+      "text": "보호 경로 19,103개, 추가 R34 helper 1개, frozen 75개가 모두 일치했고 초기 ACK를 보고했습니다. 고정된 옛 publisher에서 삭제·덮어쓰기 경로를 확인했습니다. 현재 R35 구현에 대한 판정은 하지 않고, config14·decl7·실제 경로·raw SHA 관계를 독립 기대값으로 준비하겠습니다."
+    },
+    "latestToolMarkerId": "exec-65f47dac-ed69-499d-82af-b502757efa55",
+    "latestToolMarker": {
+      "id": "exec-65f47dac-ed69-499d-82af-b502757efa55",
+      "turnId": "01a134cd-ceea-7472-bfc7-c7e3bd5abc24",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "master_verdict": "ACK_VERIFIED_R35_FROZEN_R34_PUBLISHER_PREPARATION_IN_PROGRESS_NO_EXECUTION",
+  "protected_actual_rehash": 19103,
+  "additional_helper": 1,
+  "frozen_actual_rehash": 75,
+  "bootstrap_exit0": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R35-PUBLISHER-PREPARATION-S1-20261013\\bootstrap.TOOL.json",
+    "sha256": "320F7592D7F4E0BA37C58F744323F89D63B870783B7FC20BCDE7CEF1787E8284",
+    "bytes": 1096
+  },
+  "mutable_R35_not_read_for_QA_review": true,
+  "R35": "NOT_REVIEWED",
+  "execution_admitted": false,
+  "all_execution0_initial": true,
+  "Foundation": "HOLD",
+  "nativeE2": "NOT_RELEASED",
+  "scheduler": "ACTIVE_HOURLY_A_R35_PROCESSING",
+  "no_duplicateWP": true,
+  "guard_session": 36190
+}

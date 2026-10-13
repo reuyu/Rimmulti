@@ -1,0 +1,106 @@
+{
+  "at": "2026-10-07T23:34:51.432495+09:00",
+  "result_id": "SOL-PIPELINE-REV6-R1-E2-20261007-3287b9606acc47cc877f04d8c7d64ab1",
+  "index_sha256": "6880D4984CAACD0FF0104C4B5EF32BBF9946A871E55135E674FFB511FD56E8FF",
+  "report_sha256": "1E8C880617FA1547A000C2D936E88F084977F7E51EC9534157CAEC7A6BF404AF",
+  "manifest_sha256": "D2AC8C184A7E79D8FEB98FDBB427C08B2B1C1D40FC4F0216506B345787C7BA08",
+  "checks": {
+    "qa_inventory": 297,
+    "master_frozen": 103,
+    "master_original": 103,
+    "qa_after_frozen103": 103,
+    "qa_after_original103": 103,
+    "qa_after_qa_copy103": 103,
+    "qa_after_engine19": 19,
+    "qa_before": 103,
+    "master_engine19": 19
+  },
+  "changed_or_missing": [],
+  "readonly_oracle_mode": "reviewed QA function AST; no main/import; evidence-write no-op; SQLite mode=ro; no candidate execution/rebuild",
+  "readonly_oracle_databases": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-20261007\\Databases\\r2-natural-history.db",
+      "counts": {
+        "COMMITTED": 64,
+        "ABORTED": 5
+      },
+      "typed_operations": 69,
+      "head": {
+        "NaturalScope0": 20,
+        "NaturalScope1": 20,
+        "NaturalScope2": 20,
+        "CaseS": 2,
+        "cases": 2
+      },
+      "same_epoch_groups": []
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-20261007\\Databases\\r2-concurrent.db",
+      "counts": {
+        "COMMITTED": 1,
+        "ABORTED": 7
+      },
+      "typed_operations": 8,
+      "head": {
+        "ConcurrentScope": 1
+      },
+      "same_epoch_groups": []
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-20261007\\Databases\\r2-ordered-process.db",
+      "counts": {
+        "COMMITTED": 6
+      },
+      "typed_operations": 6,
+      "head": {
+        "OrderedScope": 5,
+        "IdentityScope": 1
+      },
+      "same_epoch_groups": []
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-20261007\\Databases\\r2-unknown.db",
+      "counts": {
+        "COMMITTED": 1
+      },
+      "typed_operations": 1,
+      "head": {
+        "UnknownScope": 1
+      },
+      "same_epoch_groups": []
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-20261007\\Databases\\r2-lifetime.db",
+      "counts": {
+        "COMMITTED": 1
+      },
+      "typed_operations": 1,
+      "head": {
+        "LifeScope": 1
+      },
+      "same_epoch_groups": []
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Transaction-Pipeline\\PIPELINE01-REV6-R1-E2-20261007\\Databases\\r2-supplement.db",
+      "counts": {
+        "COMMITTED": 2
+      },
+      "typed_operations": 2,
+      "head": {
+        "SupplementScope": 2
+      },
+      "same_epoch_groups": []
+    }
+  ],
+  "typed_operations": 87,
+  "actual_descriptor_sha256": "079CFBAC4246592B4E2300630BBB39528C44CCAA6C1199C9811E9B1DB9C4B63C",
+  "descriptor_equal": true,
+  "process_count": 28,
+  "process_exit_counts": {
+    "0": 26,
+    "2": 2
+  },
+  "qa_tooling_first_binary_provenance_complete": false,
+  "closure_changed": false,
+  "master_engine_changes": []
+}

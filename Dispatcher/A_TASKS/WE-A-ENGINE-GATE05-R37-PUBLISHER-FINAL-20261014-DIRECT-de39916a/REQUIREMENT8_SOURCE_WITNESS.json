@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "we-r37-requirement8-source-witness/v1",
+  "witnessed_at_utc": "2026-10-13T16:06:55.745604+00:00",
+  "target_file": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+  "requirements": [
+    {
+      "id": "R37-1",
+      "title": "Actual ConfigId & Capability Boundary Binding with Structural ASCII Guards",
+      "source_witness": {
+        "configId_raw_match": "Lines 357-367: cfg_id == expected_id and ascii_strip(cfg_id) == expected_id (matches same untrimmed expectedConfigId).",
+        "capability_boundary_match": "Lines 369-378: raw_cfg_cap == cloned_trimmed_desc_cap (raw config cap compared against cloned-trimmed desc case-insensitively; raw config cap is never stripped).",
+        "structural_ascii_helpers": "Lines 176-189: ascii_strip() and ascii_upper() reject non-ASCII whitespace and perform bounded ASCII operations.",
+        "descriptor_preservation": "Lines 270-293, 531-536: ordered_parent_decl and ordered_child_decl preserve original padding and lowercase in output bundle."
+      },
+      "disposition": "IMPLEMENTED_VERIFIED_IN_SOURCE"
+    },
+    {
+      "id": "R37-2",
+      "title": "Timestamp ASCII Digits, Full Consumption, Calendar Validity, Verbatim Fractional Preservation",
+      "source_witness": {
+        "regex_ascii_digits": "Lines 119-121: _ISO_UTC_REGEX = r'^([0-9]{4})-([0-9]{2})-([0-9]{2})T([0-9]{2}):([0-9]{2}):([0-9]{2})(?:\\.([0-9]{1,7}))?Z$'.",
+        "calendar_time_checks": "Lines 130-158: validate_iso_utc_date() validates year 1..9999, month 1..12, day 1..max_days with leap year handling, hour/min/sec 0..59.",
+        "fractional_preservation": "Config and output bundle preserve original raw string without 6-digit rounding or invented .0000000Z."
+      },
+      "disposition": "IMPLEMENTED_VERIFIED_IN_SOURCE"
+    },
+    {
+      "id": "R37-3",
+      "title": "Real Filesystem Direct Nofollow Lstat Ancestry Guard",
+      "source_witness": {
+        "dos_path_check": "Lines 191-229: check_supported_local_dos_path() validates drive letter [A-Za-z]:[\\\\/], rejects UNC, device, ADS, traversal, control chars, reserved DOS devices, trailing dots/spaces; normal Omega segments allowed.",
+        "direct_lstat_ancestry": "Lines 231-306: verify_path_ancestry() inspects root (C:\\) and every actual component directly via os.lstat without lexists/isdir/isfile guards.",
+        "fail_closed_inspection": "Lines 262-266, 281-285: Any unexpected OSError stops and fails closed.",
+        "leaf_permission": "Lines 269-278: New output leaf catches ONLY FileNotFoundError; preexisting leaf raises FileExistsError."
+      },
+      "disposition": "IMPLEMENTED_VERIFIED_IN_SOURCE"
+    },
+    {
+      "id": "R37-4",
+      "title": "Common Read-Once Helper with Handle Fstat Observation & Provenance Binding",
+      "source_witness": {
+        "read_once_helper": "Lines 308-348: read_once_file_and_stat() captures prior lstat, opens handle, observes fstat, reads bytes once, verifies handle size, computes SHA-256.",
+        "provenance_binding": "Lines 560-600: Provenance manifest links specFile, parentConfig, childConfig witnesses (path, sha256, bytes, prior_stat, handle_stat).",
+        "protected_assumptions": "Lines 593-600: Explicitly documents protected owner, non-hostile writer assumptions, hardlink mutability, and TOCTOU limits."
+      },
+      "disposition": "IMPLEMENTED_VERIFIED_IN_SOURCE"
+    },
+    {
+      "id": "R37-5",
+      "title": "Strict CLI Mode, Exclusive Creation, Atomic Hardlink, Non-Destructive Failure Policy",
+      "source_witness": {
+        "strict_cli": "Lines 632-680: main() enforces exact argc 3 (sys.argv == 3 and sys.argv[1] == '--spec').",
+        "exclusive_creation": "Lines 520-555: os.mkdir(), mode 'xb' for staging bundle, sha file, and provenance manifest.",
+        "atomic_hardlink": "Line 608: os.link(staging_bundle_path, out_bundle_path) atomically creates directory entry without overwrite.",
+        "zero_destructive_cleanups": "Zero calls to os.remove, os.unlink, shutil.rmtree, os.replace, os.rename, or mode 'wb'; partial outputs preserved for forensic analysis."
+      },
+      "disposition": "IMPLEMENTED_VERIFIED_IN_SOURCE"
+    },
+    {
+      "id": "R37-6",
+      "title": "Exact Original Six Normal Literal Compatibility & Oracle Binding",
+      "source_witness": {
+        "exact_case_ids": "PLAIN_PLAIN, OPAQUE_OPAQUE, PLAIN_OPAQUE_PADDED, OPAQUE_PLAIN_PADDED, OPAQUE_EQ_QUOTE_BACKSLASH, OPAQUE_EQ_QUOTE_BACKSLASH_PADDED.",
+        "oracle_binding": "Hash-linked to NORMAL_PUBLISHER_EXPECTATION_ORACLE.json (SHA E68672E66E88195CAA25E185446FA1EE44C4399ED18F1211824B496B3DE7D3E0).",
+        "raw_values_retained": "Parent 2026-10-11T00:00:00.1234567Z, child 2026-10-11T00:00:01Z, padded lowercase declarations, and opaque Omega/quotes/backslash/= preserved verbatim."
+      },
+      "disposition": "IMPLEMENTED_VERIFIED_IN_SOURCE"
+    },
+    {
+      "id": "R37-7",
+      "title": "Packaging Prospective & Standalone AST Telemetry",
+      "source_witness": {
+        "pre_pinned_manifest": "AST_INPUT_MANIFEST.json pinned before execution (target source, interpreter, checker script, argv, cwd, loaded modules).",
+        "isolated_child": "ast_checker.py executed as child process (PID 15208, exit code 0, raw stdout 3022 B, raw stderr 0 B, verdict SYNTAX_PASS).",
+        "observed_ast": "36 AST body nodes, 16 functions, 0 classes, stdlib imports only."
+      },
+      "disposition": "IMPLEMENTED_VERIFIED_IN_SOURCE"
+    },
+    {
+      "id": "R37-8",
+      "title": "Submission Scope, Immutability & Governance Bounds",
+      "source_witness": {
+        "single_mutable_source": "Only scratch/OperatorStartupPairR29/publish_operator_pair.py modified.",
+        "engine9_immutability": "All 9 Engine baseline files 100% bit-exact (0 builds).",
+        "execution_boundaries": "Zero publisher runtime executions, zero native/unit executions, zero 1.7 migrations.",
+        "authority": "Dedicated Server remains final Domain Authority; Foundation HOLD."
+      },
+      "disposition": "IMPLEMENTED_VERIFIED_IN_SOURCE"
+    }
+  ]
+}

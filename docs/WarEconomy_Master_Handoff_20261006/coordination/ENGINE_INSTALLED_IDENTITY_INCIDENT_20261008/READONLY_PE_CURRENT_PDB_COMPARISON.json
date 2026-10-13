@@ -1,0 +1,42 @@
+{
+  "assembly": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\ENGINE_INSTALLED_IDENTITY_INCIDENT_20261008\\OBSERVED_INSTALLED_WorkerBridge.dll",
+  "pdb": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+  "mvid": "db87c2b0-d2f7-4e1f-b1b3-f4556aa482f1",
+  "codeviewGuid": "0ad73631-cde0-4142-a6eb-613ffb1c04c5",
+  "pdbGuid": "f7ea70e7-de78-4868-801c-010355257030",
+  "codeviewMatched": false,
+  "documents": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+      "expected": "DF53246C9F77738FB11FC885E018A8C1610855051B80DD0D16F0A8F1B5233E2F",
+      "actual": "DF53246C9F77738FB11FC885E018A8C1610855051B80DD0D16F0A8F1B5233E2F",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+      "expected": "067E847241DFD944FD02818EF28FF3ACADB04D4486F987293F5ABBC03A815950",
+      "actual": "067E847241DFD944FD02818EF28FF3ACADB04D4486F987293F5ABBC03A815950",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs",
+      "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+      "expected": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+      "actual": "621199557E90FB1661E401CC9A973163C850B4B7E65BBC8D100F67F6699EEF70",
+      "matched": true
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WorkerBridge.AssemblyInfo.cs",
+      "algorithm": "8829d00f-11b8-4213-878b-770e8597ac16",
+      "expected": "8C7180C5E4D3004DE53926C1039C107C3059053C470CF73F82CF974EAF7D5681",
+      "actual": "8C7180C5E4D3004DE53926C1039C107C3059053C470CF73F82CF974EAF7D5681",
+      "matched": true
+    }
+  ],
+  "observed_at": "2026-10-08T10:14:10.955188+09:00",
+  "assembly_sha256": "BB3B52F39F7B53B70BC9FB4CE039E7455D08B24B17B8DABB8295E0FF4584DD61",
+  "pdb_sha256": "F3CE68A99A70B9E95C39F6EDCE71738FC91E05C69A25551668384F31B6651A39",
+  "master_interpretation": "PE MVID/CodeView observed read-only. Current mutable Debug PDB does NOT match this installed snapshot; its source checksums cannot establish the installed binary source lineage. No candidate execution."
+}

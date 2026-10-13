@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-09T01:06:09.272296+09:00",
+  "event_id": "WE-A-ENGINE-GATE05-R9-VERSION-MEANING-20261009-DIRECT-fbe8a43b-PREPARED",
+  "type": "A_R9_VERSION_MEANING_APPROVED_PREPARED",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R9-VERSION-MEANING-20261009-DIRECT-fbe8a43b",
+  "status": "NOT_SENT",
+  "task_root": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R9-VERSION-MEANING-20261009-DIRECT-fbe8a43b",
+  "counts": {
+    "archive": 19,
+    "prior_candidates": 1029,
+    "pipeline": 206,
+    "qa": 1834,
+    "managed_dependencies": 4
+  },
+  "defect": "OPEN",
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "monitor": "PAUSED60MIN"
+}

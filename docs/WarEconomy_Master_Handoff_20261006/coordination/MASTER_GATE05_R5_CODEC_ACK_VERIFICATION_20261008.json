@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-08T17:41:26.904619+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046",
+  "wp_id": "WP_ENGINE_GATE05_R5_CODEC",
+  "wp_revision": "GATE05-R5-CODEC",
+  "ack_sha256": "73E8DDCF3E8AE106187E2122C5C507158E09980247C3F8D0F06793F2B1376CBD",
+  "ack_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\ACK.json",
+  "acknowledged_at": "2026-10-08T17:38:30+09:00",
+  "status": "ACK_VERIFIED_IN_PROGRESS",
+  "actual_ui_delivery_proof": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\MASTER_UI_SUBMISSION_CONFIRMED.json",
+  "fixed_current_file_and_census_prefix_matched": true,
+  "preservation_counts": {
+    "archive": 19,
+    "prior": 619,
+    "pipeline": 206,
+    "qa": 1222
+  },
+  "preservation_proof": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\MASTER_R5_ACK_PRESERVATION.json",
+  "known_installed_incident": "UNCHANGED_OPEN",
+  "runtime_e2_released": false,
+  "closure_changed": false
+}

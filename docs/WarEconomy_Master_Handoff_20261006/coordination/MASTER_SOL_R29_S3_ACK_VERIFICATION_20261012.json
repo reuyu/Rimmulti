@@ -1,0 +1,142 @@
+{
+  "at": "2026-10-12T10:13:57.905660+09:00",
+  "guard_run": "MASTER-R29-S3-ACK-20261012-01",
+  "guard_session": 52418,
+  "guard_pid": 35528,
+  "delivery_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R29_STARTUP_PAIR_INDEPENDENT",
+  "wp_revision": "S3",
+  "result_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012-8d682aff4ebd4996a12529142c0d7431",
+  "ACK_INITIAL": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\ACK_INITIAL.json",
+    "sha256": "E62D7A47248E015DBB1C293723108E8368D544F0221B6CC3028122AFB382FE31",
+    "bytes": 2892
+  },
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:187",
+    "revision": 187,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a12da7-4e7b-7352-ad70-4efa4aa792ac",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791767301,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acc33e7c38c87d0ac504424c9677736",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016acc33e7c38c87d0ac504424c9677736",
+      "turnId": "01a12da7-4e7b-7352-ad70-4efa4aa792ac",
+      "phase": "commentary",
+      "text": "S3 사전 검사와 초기 metadata 검증이 성공했습니다. 보호 경로 14,365개, 동결 파일 132개, 지정 Debug MVID와 양쪽 PDB source 4/4가 일치합니다. 이제 독립 runner의 기대값·호출 계획·컴파일 입력을 사전에 봉인하겠습니다."
+    },
+    "latestToolMarkerId": "exec-05716b18-0708-4001-9aa0-7f3be77a5ea9",
+    "latestToolMarker": {
+      "id": "exec-05716b18-0708-4001-9aa0-7f3be77a5ea9",
+      "turnId": "01a12da7-4e7b-7352-ad70-4efa4aa792ac",
+      "type": "fileChange",
+      "name": "fileChange",
+      "status": "completed"
+    }
+  },
+  "evidence": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\ACK_INITIAL.json",
+      "sha256": "E62D7A47248E015DBB1C293723108E8368D544F0221B6CC3028122AFB382FE31",
+      "bytes": 2892
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\review_setup.py",
+      "sha256": "2878AE853B4B271A615EFA56A7E0C0568466F9FC4A1EE33B4E1DA3D7DA034EC7",
+      "bytes": 4775
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\PREFLIGHT_PROOF.json",
+      "sha256": "BEE89B75067B17078D5F411A79FC64F6F54395367372E400B0ADAB754B8534C8",
+      "bytes": 401
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\PREFLIGHT_STDOUT.txt",
+      "sha256": "67B9ED7E09A21AC76B29370D39F1E8026CC8A5F00EADF5368D20B9375F6A68E5",
+      "bytes": 378
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\PREFLIGHT_STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\INITIAL_TOOL_EXIT_PROOF.json",
+      "sha256": "D73B295E260F1E28A9DFC47D35D099E4C3E30E7905E489B3C3141878256D9328",
+      "bytes": 447
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\INITIAL_METADATA_STDOUT.txt",
+      "sha256": "3F7C4A5806D5A3C5D66262FE4CD0E83790DCDC9F353AE37F16444959DA867D22",
+      "bytes": 446
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\INITIAL_METADATA_STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\PRESERVATION_BEFORE.json",
+      "sha256": "006857AB6F9843D00A67AED49F67E3B3BDA3ADB81E0EC3627CFA751C63CFC647",
+      "bytes": 4356621
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012\\R29_FROZEN_LINEAGE.json",
+      "sha256": "8CDE364D52CC5D3CB1F06087518068FB5979183552E4933C7D9F8F594B13D292",
+      "bytes": 6223
+    }
+  ],
+  "protected_paths": 14365,
+  "frozen_files": 132,
+  "metadata_pe_pdb": [
+    {
+      "mode": "DEBUG",
+      "mvid": "5c410658-e435-4ae4-8aa3-d074fbcf4f5d",
+      "source_documents": 4,
+      "CodeView_PDB_match": true
+    },
+    {
+      "mode": "RELEASE",
+      "mvid": "3bf83c4d-c38b-43b4-8f9c-520e3e277200",
+      "source_documents": 4,
+      "CodeView_PDB_match": true
+    }
+  ],
+  "master_verdict": "ACK_VERIFIED_R29_S3_BYTE_EXACT_METADATA_INITIAL_IDENTITY_PASS_NORMAL_QA_IN_PROGRESS",
+  "initial_QA_compiler_runner_candidate_calls": 0,
+  "current_normal_verdict": "PENDING",
+  "not_final_normal_or_native_PASS": true,
+  "Master_candidate_execution": 0,
+  "native_E2": "NOT_RELEASED",
+  "Foundation": "HOLD",
+  "new_WP_sent": false,
+  "duplicate_sent": false,
+  "closure_changed": false,
+  "scheduler_actual": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "PAUSED",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791765745222
+  }
+}

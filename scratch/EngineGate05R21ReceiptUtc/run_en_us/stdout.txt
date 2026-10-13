@@ -1,0 +1,25 @@
+[Runner] Starting Gate05 R21 Receipt UTC Literal Pure Runner
+[Runner] Run Directory: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R21ReceiptUtc\run_en_us
+[Runner] Culture: en-US
+[Runner] Loaded Candidate: C:\Users\user\Desktop\RimMulti\scratch\EngineGate05R21ReceiptUtc\Harness\bin\Debug\net472\WarEconomy.WorkerBridge.PoC.dll
+[Runner] Candidate SHA256: 31D7A2508ACFADE1B9430F43E6F3D2ACF3E9822C787D00DAF55C9E44CF8E5AC4
+[Runner] Candidate MVID: 7a8b444a-3a07-4dee-9d37-4fa7ed3c461c
+
+--- TEST 01: 16-ROUTE LOSSLESS MATRIX REGRESSION ---
+[Runner] 16-Route Matrix: 16/16 PASSED
+
+--- TEST 02: ADMISSION RECEIPT ISSUANCE & BOUND PROVENANCE ---
+[Runner] Receipt Issuance Battery: 8/8 PASSED
+
+--- TEST 03: RECEIPT REDACTED JSON EXACT LITERAL UTC PRESERVATION ---
+[Runner] UTC Literal Preservation: 3/3 PASSED
+
+--- TEST 04: DECLARATION AND RECEIPT DEFENSIVE IMMUTABILITY ---
+
+--- TEST 05: FULLY QUALIFIED WINDOWS PATH POSITIVE HELPER ---
+
+--- TEST 06: VALIDATOR RESULT REDACTION REGRESSION ---
+
+--- TEST 07: CENSUS PACKAGE POLICY CODEC REGRESSION ---
+
+[Runner] FINISHED: Total=7, Passed=7, ExitCode=0

@@ -1,0 +1,46 @@
+--- immutable-S1-original
++++ Master-S3-metadata-template
+@@ -4,8 +4,8 @@
+ TASK=ROOT/'Dispatcher/A_TASKS/WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a'
+ MAN=TASK/'MASTER_GATE05_R29_STARTUP_PAIR_REVIEW_FREEZE_MANIFEST.json'
+ FROZEN=ROOT/'Dispatcher/CANDIDATES/G05R29-46f60e2a'
+-BASELINE=PKG/'coordination/MASTER_R29_FRESH_PAIR_QA_PROTECTED_BASELINE_20261012.json'
+-WP=PKG/'WP_QA_ENGINE_GATE05_R29_STARTUP_PAIR_INDEPENDENT_S1.md'
++BASELINE=PKG/'coordination/MASTER_R29_S3_PAIR_QA_PROTECTED_BASELINE_20261012.json'
++WP=PKG/'WP_QA_ENGINE_GATE05_R29_STARTUP_PAIR_INDEPENDENT_S3.md'
+ ADMISSION=PKG/'MASTER_REVIEW_ENGINE_GATE05_R29_STARTUP_PAIR_E1_20261012.md'
+ DEP=ROOT/'Dispatcher/A_TASKS/WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046/MASTER_R5_MANAGED_QA_DEPENDENCIES_MANIFEST.json'
+ PREP=ROOT/'QA-Tactical-Engine/GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012'
+@@ -24,18 +24,18 @@
+     assert not p.exists(),str(p);p.parent.mkdir(parents=True,exist_ok=True)
+     p.write_bytes((json.dumps(x,ensure_ascii=False,indent=2)+'\n').encode('utf-8'))
+ def preservation():
+-    for p,e in [(BASELINE,'E323F00F917EC3873EDADE006D358C104C2C198C5779A135D101867D9CE52E37'),(MAN,'006DE41FCB6EC9C9E183C877BD6E3D5C3FB48047454F4AF3902673C0B08D447E'),(ADMISSION,'935D7C10676E965A8C370F63E3ADF357E9CB63D05D9D8DD381E4EACEEFDDE4FA'),(PREP/'PRE_RUN_EXPECTED_ORACLE.json','7371185E68771EA8613373E3948344B988D86C361421EE9DAF681036CBD95D02')]:assert sha(p)==e,str(p)
++    for p,e in [(BASELINE,'99DD177CB985F4D5985DD711A13ADD3303E6B52A7D1A8665FBEC4493DA11B0D0'),(MAN,'006DE41FCB6EC9C9E183C877BD6E3D5C3FB48047454F4AF3902673C0B08D447E'),(ADMISSION,'935D7C10676E965A8C370F63E3ADF357E9CB63D05D9D8DD381E4EACEEFDDE4FA'),(PREP/'PRE_RUN_EXPECTED_ORACLE.json','7371185E68771EA8613373E3948344B988D86C361421EE9DAF681036CBD95D02')]:assert sha(p)==e,str(p)
+     out=[]
+     for r in load(BASELINE)['files']:
+         p=Path(r['path']);assert p.is_relative_to(ROOT);v=row(p);assert v['sha256']==r['sha256'] and v['bytes']==r['bytes'],str(p);out.append(v)
+     fs=[]
+     for r in load(MAN)['files']:
+-        p=Path(r['frozen_path']);v=row(p);assert v['sha256']==r['sha256'] and v['bytes']==r['size'];fs.append(v)
+-    assert len(out)==14332 and len(fs)==132
++        p=Path(r['frozen_path']);v=row(p);assert v['sha256']==r['sha256'] and v['bytes']==r['bytes'];fs.append(v)
++    assert len(out)==14365 and len(fs)==132
+     assert sha(SELECTED)=='084C58CCD770AF90D2F2AE162FF5456C8CD2F0DB3167AE13394635BF8E567E7A'
+     assert sha(SELECTED.with_suffix('.pdb'))=='7E76C8CEE38F98FB5B33639AAFB1AA9B4321D563DD483C35A1469A32229C1F3F'
+     assert sha(NJ)=='E1E27AF7B07EEEDF5CE71A9255F0422816A6FC5849A483C6714E1B472044FA9D'
+-    return dict(at=now(),protected_unique_paths=14332,protected_files=out,frozen_files=fs,all_matched=True,current_production_rebuild_modify=0,publisher_execution=0,game_native=0)
++    return dict(at=now(),protected_unique_paths=14365,protected_files=out,frozen_files=fs,all_matched=True,current_production_rebuild_modify=0,publisher_execution=0,game_native=0)
+ def identity():
+     old=ROOT/'QA-Tactical-Engine/GATE05-R3-INDEPENDENT-REVIEW-S1-20261008/review_setup.py'
+     fn=next(n for n in ast.parse(old.read_text(encoding='utf-8-sig')).body if isinstance(n,ast.FunctionDef) and n.name=='identity')
+@@ -46,7 +46,7 @@
+     Q.mkdir(parents=True,exist_ok=True)
+     write(Q/'PRESERVATION_BEFORE.json',preservation());ids=identity()
+     assert ids[0]['mvid']=='5c410658-e435-4ae4-8aa3-d074fbcf4f5d'
+-    a=dict(schema_version=1,at=now(),wp_id='WP_QA_ENGINE_GATE05_R29_STARTUP_PAIR_INDEPENDENT',wp_revision='S1',delivery_id='SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S1-20261012-01',result_id='SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S1-20261012-'+uuid.uuid4().hex,status='ACKNOWLEDGED_SCOPED_STATIC_AND_NORMAL_PURE_QA',wp=row(WP),master_admission=row(ADMISSION),baseline=row(BASELINE),frozen_manifest=row(MAN),selected=row(SELECTED),selected_mvid=ids[0]['mvid'],matching_PDB=row(SELECTED.with_suffix('.pdb')),exact_newtonsoft=row(NJ),protected_paths=14332,frozen_files=132,source_PDB_docs_both_modes='4/4',initial_QA_builds_candidate_calls=0,publisher_bootstrap_Awake_native_Process_adverse_calls=0,normal_verdict='PENDING',report_hash='PENDING',manifest_hash='PENDING',completion_hash='PENDING',Foundation='HOLD',native_E2='NOT_RELEASED')
++    a=dict(schema_version=1,at=now(),wp_id='WP_QA_ENGINE_GATE05_R29_STARTUP_PAIR_INDEPENDENT',wp_revision='S3',delivery_id='SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012-01',result_id='SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012-'+uuid.uuid4().hex,status='ACKNOWLEDGED_SCOPED_STATIC_AND_NORMAL_PURE_QA',wp=row(WP),master_admission=row(ADMISSION),baseline=row(BASELINE),frozen_manifest=row(MAN),selected=row(SELECTED),selected_mvid=ids[0]['mvid'],matching_PDB=row(SELECTED.with_suffix('.pdb')),exact_newtonsoft=row(NJ),protected_paths=14365,frozen_files=132,source_PDB_docs_both_modes='4/4',initial_QA_builds_candidate_calls=0,publisher_bootstrap_Awake_native_Process_adverse_calls=0,normal_verdict='PENDING',report_hash='PENDING',manifest_hash='PENDING',completion_hash='PENDING',Foundation='HOLD',native_E2='NOT_RELEASED')
+     write(Q/'ACK_INITIAL.json',a);write(Q/'ACK.json',a)
+-    print(json.dumps(dict(result_id=a['result_id'],ack=row(Q/'ACK_INITIAL.json'),protected=14332,frozen=132,mvid=ids[0]['mvid'],PDB_documents=[len(i['documents']) for i in ids])))
++    print(json.dumps(dict(result_id=a['result_id'],ack=row(Q/'ACK_INITIAL.json'),protected=14365,frozen=132,mvid=ids[0]['mvid'],PDB_documents=[len(i['documents']) for i in ids])))
+ 

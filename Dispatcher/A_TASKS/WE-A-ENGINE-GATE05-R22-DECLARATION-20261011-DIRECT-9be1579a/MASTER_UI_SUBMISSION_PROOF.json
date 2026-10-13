@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-11T07:32:43.444886+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R22-DECLARATION-20261011-DIRECT-9be1579a",
+  "exact_message": "Master 승인 R22입니다. C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R22-DECLARATION-20261011-DIRECT-9be1579a\\INSTRUCTIONS.md 전체와 WP/release를 읽고 진행하세요. R21 UTC 원문 결함은 새 독립 QA로 좁은 CLOSED. 이번은 명시적 7필드 기동 선언의 기본값·선택 검사를 제거하고 승인 시 복사한 선언과 receipt를 결속하는 M01 수정만입니다. R21 UTC 메서드·11필드 schema·다른 고정 구간 보존. 새 정상 PURE 증거·후보와 지정 ACK/COMPLETION 기록. 부정 probe/global/native/Process 실행 금지.",
+  "one_actual_submit": true,
+  "new_exact_message": true,
+  "composer_empty": true,
+  "working_cancel": true,
+  "post_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R22-DECLARATION-20261011-DIRECT-9be1579a\\MASTER_UI_SUBMITTED.json",
+  "post_sha256": "85FA3494F2D473777D1F7B0832625E459D8116ACD1EDADDD4CDD57A90D9BAEFC",
+  "send_tool": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R22-DECLARATION-20261011-DIRECT-9be1579a\\MASTER_UI_SEND_TOOL.json",
+  "send_tool_sha256": "D373EEA17844DB825CAD4881275569BFAD979838A3CCC6D05F652CBC5F92B493",
+  "draft": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R22-DECLARATION-20261011-DIRECT-9be1579a\\MASTER_UI_DRAFT.json",
+  "idle": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R22_CU_IDLE_BEFORE_INPUT_20261011.json",
+  "focus_qualification": "RootWebArea UIA; observed screenshot caret in composer, then exact inputValue. Immediate typing accessibility stale,reobserved no duplicate type/submit."
+}

@@ -1,0 +1,29 @@
+from review_setup import *
+import copy,re
+if __name__=='__main__':
+    assert not (Q/'Program.cs').exists()
+    cases={};base=r'C:\QA R25 Ω';mapping={'schemaVersion':'SchemaVersion','configId':'ConfigId','admittedValidatorExecutablePath':'AdmittedValidatorExecutablePath','admittedValidatorExecutableSha256':'AdmittedValidatorExecutableSha256','validatorArguments':'ValidatorArguments','workerUserDataDirectory':'WorkerUserDataDirectory','validatorUserDataDirectory':'ValidatorUserDataDirectory','workerCwd':'WorkerCwd','validatorCwd':'ValidatorCwd','expectedPackagePolicyDeclaration':'ExpectedPackagePolicyDeclaration','expectedContentProfileFingerprint':'ExpectedContentProfileFingerprint','role':'Role','capabilityBoundary':'CapabilityBoundary','issuedAtUtc':'IssuedAtUtc'}
+    for role in ['SIMULATION','READ_ONLY']:
+        for kind in ['PLAIN','OPAQUE']:
+            name=role+'_'+kind;pol=dict(schemaVersion='WE-PACKAGE-POLICY-V1',policyId='qa.R25.plain' if kind=='PLAIN' else '  qa.R18 정책 Ω  ',revision='25' if kind=='PLAIN' else '  007 café Ω  ',admittedPackageIds=['ludeon.rimworld','example.qa.normal']);canonical=json.dumps(pol,ensure_ascii=False,separators=(',',':'));digest=hashlib.sha256(canonical.encode()).hexdigest().upper()
+            if kind=='OPAQUE':assert digest=='8A9C3381A041F79F300710D6EA93A5D8E08564C692AA5059337853825E1749BF'
+            cfg=dict(schemaVersion='WE-OPERATOR-BOOTSTRAP-V1',configId='qa.R25.'+name,admittedValidatorExecutablePath=base+r'\Synthetic Frontend.exe',admittedValidatorExecutableSha256='a'*64,validatorArguments='--normal-owned-literal "Ω café"',workerUserDataDirectory=base+r'\Worker UserData',validatorUserDataDirectory=base+r'\Validator UserData',workerCwd=base+r'\Worker Cwd',validatorCwd=base+r'\Validator Cwd',expectedPackagePolicyDeclaration=copy.deepcopy(pol),expectedContentProfileFingerprint='B'*64,role=role,capabilityBoundary='LOCAL_SANDBOXED',issuedAtUtc='2026-10-11T00:00:00.1234567Z')
+            props={mapping[k]:copy.deepcopy(v) for k,v in cfg.items()};props['AdmittedValidatorExecutableSha256']='A'*64;props['PolicyAdmittedPackageIds']=copy.deepcopy(pol['admittedPackageIds'])
+            red={k:copy.deepcopy(v) for k,v in cfg.items() if k!='validatorArguments'};red['admittedValidatorExecutableSha256']='A'*64;red={'schemaVersion':red['schemaVersion'],'configId':red['configId'],'role':red['role'],**{k:v for k,v in red.items() if k not in ['schemaVersion','configId','role']}}
+            record={k:copy.deepcopy(pol[k]) for k in ['policyId','revision','admittedPackageIds']};record['policyDigest']=digest
+            graph=dict(properties=props,declaration=pol,record=record,readOnlyPackageIds=pol['admittedPackageIds'])
+            assert len(cfg)==14 and len(props)==15 and len(red)==13
+            cases[name]=dict(input=cfg,expected_graph=graph,expected_redacted=red,expected_redacted_utf8_text=json.dumps(red,ensure_ascii=False,indent=2),expected_selected=cfg['workerUserDataDirectory' if role=='SIMULATION' else 'validatorUserDataDirectory'],normal_only=True,syntheticpaths_noIO=True,expected_roots_literal_beforecalls=True,expected_policy_json=canonical,expected_digest=digest)
+    write(Q/'NORMAL_EXPECTED_ORACLE.json',dict(at=now(),cases=cases,ToSnapshot_per_run=4,SelectUserData_per_run=8,normal_only=True,output_derived=False,syntheticpaths_not_created_read_or_executed=True,policy_digest_independentPythoncanonical=True,primitive_JsonNETescaping_limit=True))
+    candidate=FROZEN/'scratch/WorkerBridgeMod/Source/bin/Debug/net472/WarEconomy.WorkerBridge.PoC.dll';newton=FROZEN/'scratch/EngineGate05R25RoleUserData/Harness/bin/Debug/net472/Newtonsoft.Json.dll';allowed=[candidate,newton]+[Path(r['frozen_path']) for r in load(DEP)['files']]
+    write(Q/'QA_RUNNER_CONFIG.json',dict(selected=row(candidate),selected_mvid='5553a632-0557-433f-8840-bb12875cf577',allowed_managed=[row(p) for p in allowed]))
+    program=(Q/'Program.cs.txt').read_text(encoding='utf-8').replace('%%Q%%',str(Q)).replace('%%CANDIDATE%%',str(candidate)).replace('%%NEWTON%%',str(newton))
+    resolver=','.join('{"'+n+'",@"'+str(p)+'"}' for n,p in zip(['WarEconomy.WorkerBridge.PoC','Newtonsoft.Json','Assembly-CSharp','UnityEngine.CoreModule','UnityEngine','0Harmony'],allowed));program=program.replace('%%RESOLVER%%',resolver)
+    assert not re.search(r'\bProcess\s*\.|GetCurrentProcess|VerifyProcessIdentity|DllImport|WorkerBridgeComponent\s*\.|SafeSaveDataFolderPath|Awake\s*\(|IssueAdmissionReceipt|ParseStrict\s*\(|AdmitConfig|ConfigureExpected|InvalidateCache',program)
+    (Q/'Program.cs').write_text(program,encoding='utf-8');(Q/'runner').mkdir()
+    fw=Path(r'C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2');args=['-noconfig','-nostdlib+','-target:exe','-langversion:latest','-nullable:enable','-deterministic+','-debug:portable','-out:"'+str(Q/'runner/QaPureRunner.exe')+'"','-pdb:"'+str(Q/'runner/QaPureRunner.pdb')+'"']+['-r:"'+str(p)+'"' for p in [fw/'mscorlib.dll',fw/'System.dll',fw/'System.Core.dll',candidate,newton]]+['"'+str(Q/'Program.cs')+'"'];(Q/'build.rsp').write_text('\n'.join(args)+'\n',encoding='utf-8')
+    allocations=[]
+    for stage,culture in [(1,'en-US'),(2,'de-DE')]:
+        rid='R25-'+uuid.uuid4().hex[:16];out=Q/'runs'/rid;out.mkdir(parents=True);allocations.append(dict(stage=stage,run_id=rid,culture=culture,output_root=str(out)))
+    write(Q/'RUN_ALLOCATION_PLAN.json',dict(allocations=allocations));write(Q/'ORACLE_BEFORE_BUILD.json',dict(source=row(Q/'Program.cs'),oracle=row(Q/'NORMAL_EXPECTED_ORACLE.json'),explicit_calls=dict(ToSnapshot=4,SelectUserData=8),candidate_calls=0,builds=0,full_graph_policy_UTC_originalstrings=True,expected_normalized_roots_literal_notcandidate_PathGetFullPath=True))
+    print('Fresh normal4 fullconfig14/snapshot15/redaction13/policy-digest-UTC original-value oracle ready;no fixturepathIO/candidatecall')

@@ -1,0 +1,39 @@
+{
+  "at": "2026-10-13T01:03:42.737991+09:00",
+  "source": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R33_A_IDLE_FRESH_20261013.json",
+    "sha256": "D11B457FB3D2CACC507F556829DD8173B6931B862B7B7BA1E744ADB802D26625",
+    "bytes": 80022
+  },
+  "files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\apply_r32_patch.py",
+      "sha256": "11A8008520FB8072E206CC0B03242894E3A87BE4B88179F94DF89E35448AF6E3",
+      "bytes": 13818
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\perform_r32_build.py",
+      "sha256": "5382CA3DF3BD5555A16DD5D27659EBBBB22EAD2ACDEA8BD558F061A215F24585",
+      "bytes": 14896
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\verify_spans_r32.py",
+      "sha256": "D484BB773916555283298D356CB68057A4D34627624F7F565804F833F0945F72",
+      "bytes": 1568
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\generate_all_r32_artifacts.py",
+      "sha256": "7CD773609A08862513A653B72DDB8D15B8AF3EA3E00C9A0D5F9B4B4BC394FF90",
+      "bytes": 41600
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\verify_r32_completion.py",
+      "sha256": "82DD4077CB8556E78BDD142CE9B71A35577CC3D644D2CC8E17164AE20EA5865B",
+      "bytes": 904
+    }
+  ],
+  "exception": "Five existing R32 producer helper files placed outside explicit owned E1 root; discovered from actual A UI after terminal source/unit reviews, no new execution or candidate changes inferred",
+  "originals_unchanged": true,
+  "no_prospective_build_proof_retroclaim": true,
+  "QA_scoped_normal_PASS_not_invalidated_by_placement_alone": true
+}

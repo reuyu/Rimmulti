@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-13T19:30:52.934632+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R35-PUBLISHER-20261013-DIRECT-16a25a7e",
+  "actual_checker_exit": 0,
+  "actual_checker_tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\Tools\\master_check_r35_publisher_status_20261013.py",
+    "sha256": "287EAE82ECDCE03500969087C121108A2DA85E7D4144C1A65C4E1631C5C63634",
+    "bytes": 2311
+  },
+  "protected_paths_actually_rehashed": 19103,
+  "additional_R34_helper": 1,
+  "ALL9_Engine_and_generated_fixed": true,
+  "installed_known_unchanged_OPEN_actorUNKNOWN": true,
+  "completion_present": false,
+  "observed_mutable_publisher_sha256": "0204609D1D9D8A697B1A0B88537419D78B9E506558C771CA3EDD4C50FD49D470",
+  "unknown_delivery": false,
+  "Sol": "R35_PREPARATION_ACTUAL_ACTIVE31_ACK_PENDING",
+  "same_hourly": "ACTUAL_ACTIVE60MIN",
+  "Foundation": "HOLD",
+  "nativeE2": "NOT_RELEASED",
+  "guard_run": "MASTER-R34-QA-COMPLETE-20261013-01",
+  "guard_session": 58500
+}

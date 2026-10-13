@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-12T09:15:17.904266+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a",
+  "status": "ACK_VERIFIED_IN_PROGRESS",
+  "ack": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a\\ACK.json",
+    "sha256": "E841AD04D3E506DD2FF3151D017C538805303122AE6886E4AE9EA11961C14CF3",
+    "bytes": 5446
+  },
+  "exact_submission": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a\\MASTER_UI_SUBMISSION_PROOF.json",
+    "sha256": "1C623D7DB9284E248CB9D2581F25D8D123F8E529968209F84E06FA7A1B3EFE2B",
+    "bytes": 918
+  },
+  "current_fixed2_matched": true,
+  "protected14105_matched": true,
+  "normal_E1_and_source_completion": "PENDING_NOT_RELEASE"
+}

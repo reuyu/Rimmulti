@@ -1,0 +1,103 @@
+{
+  "at": "2026-10-11T16:45:43.182985+09:00",
+  "guard_run": "MASTER-SOL-R22-COMPLETE-20261011-01",
+  "guard_session": 97421,
+  "guard_pid": 19552,
+  "result_id": "SOL-GATE05-R22-DECLARATION-INDEPENDENT-S1-20261011-f555312829e4454ea4d3e254fcfc054d",
+  "delivery_id": "SOL-GATE05-R22-DECLARATION-INDEPENDENT-S1-20261011-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R22_DECLARATION_INDEPENDENT",
+  "completion_sha256": "823D25293FF027F9E6FF962C5C775F214B2789E71AE782ACA860D01C173FDB19",
+  "report_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R22_Declaration_Independent_S1_20261011.md",
+  "report_sha256": "C40BB7F945C2A2CACD699AAC6E4BC2A080D5C5201A10730D5C96E0ADB47D76A8",
+  "evidence_manifest_path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R22-DECLARATION-INDEPENDENT-S1-20261011\\EVIDENCE_MANIFEST.json",
+  "evidence_manifest_sha256": "F84F738D0A488E5EB75C854C2B817D3FBE521C133D25C8CFF625CC7285524954",
+  "result_index_sha256": "C935B850BCF483976A41F483C7623DF0B4AF7FBB5B51C595AB67A28F9D8100CF",
+  "evidence_files": 578,
+  "protected_paths_rehashed": 11639,
+  "runs": [
+    {
+      "run_id": "R22-3a0724a1aef54ae0",
+      "pid": 9436,
+      "culture": "en-US",
+      "exit": 0,
+      "pass": 261,
+      "fail": 0,
+      "prepost": 208,
+      "loaded": 10,
+      "output_files": 249,
+      "direct_calls": 410,
+      "grouped_reads": 208
+    },
+    {
+      "run_id": "R22-a3aba3ed1e684f57",
+      "pid": 24760,
+      "culture": "de-DE",
+      "exit": 0,
+      "pass": 261,
+      "fail": 0,
+      "prepost": 208,
+      "loaded": 10,
+      "output_files": 249,
+      "direct_calls": 410,
+      "grouped_reads": 208
+    }
+  ],
+  "typed_rows": 11080,
+  "typed_mismatch_rows": 0,
+  "repeatability_pairs": 114,
+  "reference_pairs": 4,
+  "reference_bindings": 84,
+  "reference_bindings_failed": 0,
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:141",
+    "revision": 141,
+    "changed": false,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "idle"
+      }
+    },
+    "latestTurn": {
+      "id": "01a129dc-f64c-70a2-81fc-dbdee7e42083",
+      "status": "completed",
+      "error": null,
+      "startedAt": 1791703709,
+      "completedAt": 1791704626,
+      "durationMs": 917459
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acb3e30b44c87d0b86f4367658ffce0",
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": "exec-199f272d-2b33-4e0e-9ff2-e07808cf7ceb",
+    "latestToolMarker": null
+  },
+  "actual_thread_read": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R22_INDEPENDENT_TERMINAL_READ_20261011.json",
+  "scope_metadata_reconciliation": {
+    "four_mutable_spans_five_fixed_segments": true,
+    "producer18_nonself_each_all_SHA_size_match": true,
+    "producer_normal16_snapshot_direct_calls": 0,
+    "original_reports_unmodified": true,
+    "M01_CLI_original_identifier_Trim": "REVISION_REQUIRED_SOURCEONLY",
+    "role_capability_normalization": "OPEN_SOURCEONLY_CANONICAL_INPUTS_PASS"
+  },
+  "compiler_warning_stream": "COMPLETE_OWNED_RAW_24321_BYTES_EXIT0",
+  "thread_operational_status": "COMPLETED_IDLE",
+  "terminal_delivery_status": "ONE_ACTUAL_TERMINAL_SEND_ACCEPTED",
+  "artifact_terminal_status": "COMPLETED_VERIFIED_ACTUAL_THREAD_MATCHED",
+  "selected_sha256": "278DA55F46B3646F981E79EF83D764F19959B6FEFAD6EEC83AFD4DAB0020864D",
+  "selected_mvid": "3d7d7cf7-541a-42ec-a642-b31539cc3f3f",
+  "verification_status": "MASTER_DISPOSED",
+  "master_execute_builds": 0,
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "fresh_R22_receipt_declaration_UTC_regression": "PASS_PENDING_MASTER_DISPOSITION;M01_CLI_TRIM_REVISION_REQUIRED",
+  "receipt_cases": 16,
+  "foundation": "HOLD",
+  "master_verdict": "ACCEPTED_R22_FRESH_NORMAL_EXPLICIT_DECLARATION_USEDCLONE_FULLGRAPH_STRING_BYTES_PASS_M01_CLI_TRIM_REVISION_REQUIRED_NATIVE_UNTESTED",
+  "master_review_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R22_DECLARATION_INDEPENDENT_S1_20261011.md",
+  "master_review_sha256": "99FBCA80A79B665FD7A5A0A41C6984BDBCB0842E5854CF1CBC58730ACCE9C44A",
+  "master_disposition_at": "2026-10-11T16:48:58.963784+09:00",
+  "new_closure": false
+}

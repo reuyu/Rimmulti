@@ -1,0 +1,58 @@
+{
+  "defect_id": "ENGINE-G05-OPAQUE-R18-20261010-01",
+  "at": "2026-10-10T16:26:16.412365+09:00",
+  "status": "CLOSED",
+  "severity": "HIGH",
+  "scope": "Normal opaque policyId/revision losslessstring invariant across4snapshotroutes/bothroles;separatefromwholeEngine002006",
+  "candidate_sha256": "AE7B2FB6FF3BDFD449D43CB055B85768557E872D4985017E71E2E5655F8F6073",
+  "candidate_mvid": "9e8501fc-d16e-413b-8682-17ba8550d9bf",
+  "independent_result_id": "SOL-GATE05-R18-CONFIG-ADMISSION-SEAL-INDEPENDENT-S1-20261010-be5a988c6f01410f88b5769c0c555322",
+  "actual_runs": [
+    {
+      "run_id": "R18-4128efc98bb54024",
+      "pid": 18256,
+      "culture": "en-US",
+      "exit": 1,
+      "pass": 101,
+      "fail": 24,
+      "prepost": 167,
+      "loaded": 10,
+      "output_files": 147,
+      "direct_calls": 202,
+      "grouped_reads": 96
+    },
+    {
+      "run_id": "R18-e5a55581829e477c",
+      "pid": 2928,
+      "culture": "de-DE",
+      "exit": 1,
+      "pass": 101,
+      "fail": 24,
+      "prepost": 167,
+      "loaded": 10,
+      "output_files": 147,
+      "direct_calls": 202,
+      "grouped_reads": 96
+    }
+  ],
+  "cause": "WorkerSnapshot3612..3613 Trim removes normalleading/trailingspaces,changescanonicalpolicy digest",
+  "Master_verification": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R18_CONFIG_ADMISSION_SEAL_INDEPENDENT_COMPLETION_VERIFICATION_20261010.json",
+  "report": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\QA_EngineHost_Gate05_R18_Config_Admission_Seal_Independent_S1_20261010.md",
+  "corrective_dispatch_id": "WE-A-ENGINE-GATE05-R19-OPAQUE-POLICY-20261010-DIRECT-5415a675",
+  "corrective_scope": "TWO_ASSIGNMENTS_ONLY;otherWorkerbytesfixed",
+  "closure_requires": [
+    "Exactnewcandidatehash-MVID-source-PDB+manifest",
+    "Independentnewnormalfulltypedoriginalopaque policygraph/digest regression",
+    "Scope/preservation matched",
+    "Masterdisposition;no inference fromE1"
+  ],
+  "broader_gate_closure": false,
+  "foundation": "HOLD",
+  "closed_at": "2026-10-11T04:34:21.703249+09:00",
+  "closure_scope": "Normal opaque ID/revision lossless original graph/digest acrossbothroles/fourroutes only",
+  "closed_candidate_sha256": "FB69CB8385CF665AEBAFA1913A8A02CC7887F48F8BBA6FCDEE85CF67C8CB646D",
+  "closed_candidate_mvid": "4969ba0f-2bdf-4a27-b4f8-d7fa217f0b70",
+  "independent_closure_result_id": "SOL-GATE05-R19-OPAQUE-POLICY-INDEPENDENT-S1-20261010-2c4a145f15334594bba451900223477a",
+  "closure_review": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R19_OPAQUE_POLICY_INDEPENDENT_S1_20261011.md",
+  "closure_proof": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R19_OPAQUE_POLICY_INDEPENDENT_COMPLETION_VERIFICATION_20261011.json"
+}

@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-10-07T18:01:32.568195+09:00",
+  "recovery_ack_id": "SOL-RECOVERY-20261007-01",
+  "ack_sha256": "48AB58A997EF26FF4F3040599F4C001778C4BFC783DF9F01A1D1707DD99EED05",
+  "ready": true,
+  "idle_verified_by_thread_snapshot": true,
+  "candidate_changes": [],
+  "restart_attempt_id": "SOL-GATE05-E2-RESTART-8f58fb41362f4934a502e604a65f5896",
+  "old_attempt": "LOCAL-SOL-GATE05-SUBMISSION-01",
+  "same_scope_wp": "WP_QA_ENGINE_GATE05",
+  "runtime_battery_completed": false
+}

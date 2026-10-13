@@ -1,0 +1,201 @@
+        public static (bool isValid, string error, OperatorStartupAdmissionReceipt? receipt) IssueAdmissionReceipt(
+            string configPath,
+            string expectedConfigSha256,
+            OperatorLaunchDescriptor descriptor)
+        {
+            if (descriptor == null)
+            {
+                return (false, "Operator launch descriptor cannot be null for receipt issuance.", null);
+            }
+            if (string.IsNullOrWhiteSpace(descriptor.originId))
+            {
+                return (false, "Operator launch descriptor originId cannot be null or whitespace.", null);
+            }
+            if (string.IsNullOrWhiteSpace(descriptor.launchPlanId))
+            {
+                return (false, "Operator launch descriptor launchPlanId cannot be null or whitespace.", null);
+            }
+            if (string.IsNullOrWhiteSpace(configPath))
+            {
+                return (false, "Config path cannot be null or whitespace.", null);
+            }
+            if (!IsFullyQualifiedWindowsPath(configPath))
+            {
+                return (false, $"Config path '{configPath}' must be a fully-qualified Windows path.", null);
+            }
+
+            string normalizedConfigPath;
+            try
+            {
+                normalizedConfigPath = Path.GetFullPath(configPath.Trim());
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Failed to normalize config path '{configPath}': {ex.Message}", null);
+            }
+
+            if (!File.Exists(normalizedConfigPath))
+            {
+                return (false, $"Operator config file not found at '{normalizedConfigPath}'.", null);
+            }
+
+            if (!string.IsNullOrWhiteSpace(descriptor.expectedConfigPath))
+            {
+                if (!IsFullyQualifiedWindowsPath(descriptor.expectedConfigPath))
+                {
+                    return (false, $"Descriptor expectedConfigPath '{descriptor.expectedConfigPath}' must be fully-qualified.", null);
+                }
+                string normDescPath = Path.GetFullPath(descriptor.expectedConfigPath.Trim());
+                if (!string.Equals(normalizedConfigPath, normDescPath, StringComparison.OrdinalIgnoreCase))
+                {
+                    return (false, $"Config path '{normalizedConfigPath}' does not match descriptor expectedConfigPath '{normDescPath}'.", null);
+                }
+            }
+
+            if (!string.IsNullOrWhiteSpace(descriptor.expectedConfigSha256))
+            {
+                if (!string.Equals(expectedConfigSha256.Trim(), descriptor.expectedConfigSha256.Trim(), StringComparison.OrdinalIgnoreCase))
+                {
+                    return (false, $"Expected config SHA '{expectedConfigSha256}' does not match descriptor expectedConfigSha256 '{descriptor.expectedConfigSha256}'.", null);
+                }
+            }
+
+            byte[] rawBytes;
+            try
+            {
+                rawBytes = File.ReadAllBytes(normalizedConfigPath);
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Failed to read operator config file: {ex.Message}", null);
+            }
+
+            return IssueAdmissionReceiptFromBytes(rawBytes, normalizedConfigPath, expectedConfigSha256, descriptor);
+        }
+
+        public static (bool isValid, string error, OperatorStartupAdmissionReceipt? receipt) IssueAdmissionReceiptFromBytes(
+            byte[] rawBytes,
+            string configPath,
+            string expectedConfigSha256,
+            OperatorLaunchDescriptor descriptor)
+        {
+            if (descriptor == null)
+            {
+                return (false, "Operator launch descriptor cannot be null.", null);
+            }
+            if (string.IsNullOrWhiteSpace(descriptor.originId))
+            {
+                return (false, "Descriptor originId cannot be null or whitespace.", null);
+            }
+            if (string.IsNullOrWhiteSpace(descriptor.launchPlanId))
+            {
+                return (false, "Descriptor launchPlanId cannot be null or whitespace.", null);
+            }
+            if (!IsFullyQualifiedWindowsPath(configPath))
+            {
+                return (false, $"Config path '{configPath}' must be a fully-qualified Windows path.", null);
+            }
+
+            var admission = AdmitConfigBytes(rawBytes, configPath, expectedConfigSha256, descriptor);
+            if (!admission.isValid || admission.snapshot == null)
+            {
+                return (false, admission.error, null);
+            }
+
+            var snapshot = admission.snapshot;
+
+            if (!string.IsNullOrEmpty(descriptor.expectedConfigId) &&
+                !string.Equals(snapshot.ConfigId, descriptor.expectedConfigId.Trim(), StringComparison.Ordinal))
+            {
+                return (false, $"Descriptor expectedConfigId mismatch. Expected='{descriptor.expectedConfigId}', Observed='{snapshot.ConfigId}'.", null);
+            }
+            if (!string.IsNullOrEmpty(descriptor.expectedRole) &&
+                !string.Equals(snapshot.Role, descriptor.expectedRole.Trim(), StringComparison.OrdinalIgnoreCase))
+            {
+                return (false, $"Descriptor expectedRole mismatch. Expected='{descriptor.expectedRole}', Observed='{snapshot.Role}'.", null);
+            }
+            if (!string.IsNullOrEmpty(descriptor.expectedCapabilityBoundary) &&
+                !string.Equals(snapshot.CapabilityBoundary, descriptor.expectedCapabilityBoundary.Trim(), StringComparison.OrdinalIgnoreCase))
+            {
+                return (false, $"Descriptor expectedCapabilityBoundary mismatch. Expected='{descriptor.expectedCapabilityBoundary}', Observed='{snapshot.CapabilityBoundary}'.", null);
+            }
+
+            string actualByteSha;
+            using (var sha = SHA256.Create())
+            {
+                actualByteSha = BitConverter.ToString(sha.ComputeHash(rawBytes)).Replace("-", "").ToUpperInvariant();
+            }
+
+            var receipt = new OperatorStartupAdmissionReceipt(
+                snapshot: snapshot,
+                boundConfigPath: Path.GetFullPath(configPath.Trim()),
+                boundConfigSha256: actualByteSha,
+                boundOriginId: descriptor.originId.Trim(),
+                boundLaunchPlanId: descriptor.launchPlanId.Trim(),
+                boundConfigId: snapshot.ConfigId,
+                boundRole: snapshot.Role,
+                boundCapabilityBoundary: snapshot.CapabilityBoundary,
+                admittedAtUtc: snapshot.IssuedAtUtc,
+                isTrusted: true
+            );
+
+            return (true, string.Empty, receipt);
+        }
+
+        public static (bool isValid, string error) ValidateAdmissionReceipt(OperatorStartupAdmissionReceipt? receipt)
+        {
+            if (receipt == null)
+            {
+                return (false, "Admission receipt is null.");
+            }
+            if (receipt.ReceiptSchemaVersion != OperatorStartupAdmissionReceipt.RECEIPT_SCHEMA_VERSION)
+            {
+                return (false, $"Receipt schema version mismatch: '{receipt.ReceiptSchemaVersion}'. Expected '{OperatorStartupAdmissionReceipt.RECEIPT_SCHEMA_VERSION}'.");
+            }
+            if (!receipt.IsTrusted)
+            {
+                return (false, "Admission receipt IsTrusted flag is false.");
+            }
+            if (receipt.Snapshot == null)
+            {
+                return (false, "Receipt Snapshot is null.");
+            }
+            if (string.IsNullOrWhiteSpace(receipt.BoundOriginId))
+            {
+                return (false, "Receipt BoundOriginId is null or whitespace.");
+            }
+            if (string.IsNullOrWhiteSpace(receipt.BoundLaunchPlanId))
+            {
+                return (false, "Receipt BoundLaunchPlanId is null or whitespace.");
+            }
+            if (string.IsNullOrWhiteSpace(receipt.BoundConfigId))
+            {
+                return (false, "Receipt BoundConfigId is null or whitespace.");
+            }
+            if (!string.Equals(receipt.BoundConfigId, receipt.Snapshot.ConfigId, StringComparison.Ordinal))
+            {
+                return (false, $"Receipt BoundConfigId mismatch against snapshot. Receipt='{receipt.BoundConfigId}', Snapshot='{receipt.Snapshot.ConfigId}'.");
+            }
+            if (!string.Equals(receipt.BoundRole, receipt.Snapshot.Role, StringComparison.OrdinalIgnoreCase))
+            {
+                return (false, $"Receipt BoundRole mismatch against snapshot. Receipt='{receipt.BoundRole}', Snapshot='{receipt.Snapshot.Role}'.");
+            }
+            if (!string.Equals(receipt.BoundCapabilityBoundary, receipt.Snapshot.CapabilityBoundary, StringComparison.OrdinalIgnoreCase))
+            {
+                return (false, $"Receipt BoundCapabilityBoundary mismatch against snapshot. Receipt='{receipt.BoundCapabilityBoundary}', Snapshot='{receipt.Snapshot.CapabilityBoundary}'.");
+            }
+            if (!IsFullyQualifiedWindowsPath(receipt.BoundConfigPath))
+            {
+                return (false, $"Receipt BoundConfigPath '{receipt.BoundConfigPath}' is not a fully-qualified Windows path.");
+            }
+            if (!Is64AsciiHex(receipt.BoundConfigSha256))
+            {
+                return (false, $"Receipt BoundConfigSha256 '{receipt.BoundConfigSha256}' is not a valid 64-character hex string.");
+            }
+            if (string.IsNullOrWhiteSpace(receipt.AdmittedAtUtc))
+            {
+                return (false, "Receipt AdmittedAtUtc is null or whitespace.");
+            }
+            return (true, string.Empty);
+        }
+

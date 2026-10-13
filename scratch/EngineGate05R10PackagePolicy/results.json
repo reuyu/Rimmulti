@@ -1,0 +1,126 @@
+﻿{
+  "run_id": "RUN_GATE05_R10_PACKAGE_POLICY_20261009_01",
+  "timestamp": "2026-10-08T20:38:26.3669799Z",
+  "candidate_dll": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R10PackagePolicy\\Harness\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+  "candidate_sha256": "1772DFBD1674B7CF8450CAF42FDE7AC6F92FD3A22183B7DDE5AA705CCEC24721",
+  "total_tests": 19,
+  "passed": 19,
+  "failed": 0,
+  "verdict": "PASS",
+  "results": [
+    {
+      "test_id": "TC01_Lossless_Float_Double_Formatting",
+      "description": "Verify FormatLossless outputs IEEE 754 'R' roundtrip representation with InvariantCulture",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC02_Canonical_Normalize_ActiveMods_Preserved",
+      "description": "CanonicalNormalize preserves loadOrder sequence and multiplicity in activeMods",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC03_Canonical_Normalize_DefFamilies_Sorting",
+      "description": "CanonicalNormalize sorts unordered Def families by defName ordinal",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC04_Canonical_JSON_Serialization_Roundtrip",
+      "description": "SerializeCanonicalJson and DeserializeCanonicalJson preserve all typed records faithfully",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC05_Patch_Settings_Disposition_Sync",
+      "description": "CanonicalNormalize synchronizes totalObservedPatches from activeMods patchCounts",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC06_Culture_Invariance_Serialization",
+      "description": "SerializeCanonicalJson produces byte-for-byte identical output under InvariantCulture, en-US, and de-DE",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC07_Assemblies_Ordinal_MultiKey_Sorting",
+      "description": "Loaded assemblies sort by packageId -> assemblyName -> mvid -> sha256",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC08_Verbs_And_Comps_Material_Sequence_Preserved",
+      "description": "CanonicalNormalize preserves verbs and comps declaration order and duplicates",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC09_Hediff_Stages_minSeverity_Preserved",
+      "description": "CanonicalNormalize preserves HediffDef stages defined minSeverity sequence",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC10_DefDatabase_8_Families_Structure_Validation",
+      "description": "Verify all 8 Def families are populated and validated without contract errors",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC11_TryAdmitManifest_Positive_Admission",
+      "description": "TryAdmitManifest successfully validates and admits compliant manifest producing non-empty canonical JSON",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC12_Distinct_Manifests_Distinct_Digests",
+      "description": "Changing a single scalar value must produce a distinct JSON and digest",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC13_Schema_Contract_Versions_And_Capability_Flags",
+      "description": "Verify MANIFEST_SCHEMA_VERSION is ADR-006B-v5, CONTENT_CONTRACT_VERSION is ADR-006B-v5-R10, and GATE05_R10_PACKAGE_POLICY capability flag is present",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC14_Deterministic_Tie_Breaking",
+      "description": "Verify assemblies and stats sort deterministically using secondary tie-breaking keys",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC15_Typed_Patch_And_Settings_Disposition",
+      "description": "Verify ModPatchSettingsDispositionRecord defaults to UNCONFIGURED and rejects legacy POC_DECLARED_PACKAGES_ONLY",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC16_Distinct_Version_Meaning_And_Optional_Unknown_Preservation",
+      "description": "Verify compatibilityVersionRange and modVersion are distinct; optional unknown modVersion (null) remains null after CanonicalNormalize and both Serialize(false) and Serialize(true) across cultures",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC17_Deterministic_Policy_Digest_And_Instance_Equality",
+      "description": "Verify ComputePackagePolicyDigest produces deterministic canonical digests; two equal instances yield identical digest and canonical serialization; ordered list permutations and field alterations yield distinct digests",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC18_Pure_Package_Comparison_And_Admission_Helper",
+      "description": "Verify CheckPackagePolicy and TryAdmitWithPackagePolicy with matching policy, alternate policy, and order mismatch",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    },
+    {
+      "test_id": "TC19_Configuration_Seam_Lifecycle_And_Defensive_Unconfigured",
+      "description": "Verify ConfigureExpectedPackagePolicy, ClearConfiguredExpectedPackagePolicy, and HasConfiguredExpectedPackagePolicy thread-safe lifecycle",
+      "status": "PASS",
+      "details": "Assertion succeeded."
+    }
+  ]
+}

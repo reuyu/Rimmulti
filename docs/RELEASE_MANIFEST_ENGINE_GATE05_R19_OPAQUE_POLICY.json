@@ -1,0 +1,139 @@
+{
+  "manifest_version": "1.0",
+  "work_package": "WP_ENGINE_GATE05_R19_OPAQUE_POLICY_LOSSLESS",
+  "candidate_lineage": "GATE05-R19-OPAQUE-POLICY",
+  "created_at_utc": "2026-10-10T07:35:00Z",
+  "agent_role": "Antigravity A",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R19-OPAQUE-POLICY-20261010-DIRECT-5415a675",
+  "run_id": "28ecb2a9f07f4b2c9e688eaf6bea339f",
+  "selected_candidate": {
+    "configuration": "Debug",
+    "target_framework": "net472",
+    "dll_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "FB69CB8385CF665AEBAFA1913A8A02CC7887F48F8BBA6FCDEE85CF67C8CB646D",
+    "dll_bytes": 282112,
+    "pdb_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "CB5B0A3DB8D292249BBC5B8027D22271797DC01BF362AC0F36EFD9BE044BA45E",
+    "pdb_bytes": 68652,
+    "mvid": "4969ba0f-2bdf-4a27-b4f8-d7fa217f0b70",
+    "codeview_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "codeview_guid": "c0ed6449-f5bd-420f-8fb0-1934f1e416f0",
+    "codeview_age": 1
+  },
+  "alternate_candidate": {
+    "configuration": "Release",
+    "target_framework": "net472",
+    "dll_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "C86FEC892A57B57C02A6895EAF6698BC3D504CB7228D2C18778CCE613ABD3AA2",
+    "dll_bytes": 267264,
+    "pdb_path": "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "68A9E5BC578EAE47CAB9D7332FA57CA9AD3C04A9A11BC27F7C96C3588D95FAB9",
+    "pdb_bytes": 50400,
+    "mvid": "4804693e-29fc-4acd-b51d-1c74046b417f",
+    "codeview_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\obj\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "codeview_guid": "c2fd6f47-86e9-4dea-916c-b831ad6317ef",
+    "codeview_age": 1
+  },
+  "deployed_mod_assemblies": {
+    "dll_path": "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "FB69CB8385CF665AEBAFA1913A8A02CC7887F48F8BBA6FCDEE85CF67C8CB646D",
+    "dll_bytes": 282112,
+    "pdb_path": "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "CB5B0A3DB8D292249BBC5B8027D22271797DC01BF362AC0F36EFD9BE044BA45E",
+    "pdb_bytes": 68652
+  },
+  "source_files": [
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "AE55E5A6DC0802728A41DE661F825F8734699B82E9F1A21657DA5B83758616CE",
+      "bytes": 196532
+    },
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "391F9645A519CA86B69856B09A564F16B1DCEB5E9E6E92126827E18A069A2EB1",
+      "bytes": 170135,
+      "prefix_marker": "    public static class ContentProfileProvider",
+      "prefix_length": 72547,
+      "prefix_sha256": "F3C4F865F1E2A898BF240A2D096195870D77A52408CF2D93664FE15092A2A887"
+    },
+    {
+      "path": "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "bytes": 1774
+    }
+  ],
+  "verification_evidence": {
+    "runner_project": {
+      "path": "scratch\\EngineGate05R19OpaquePolicy\\Harness\\Gate05R19OpaquePolicyRunner.csproj",
+      "sha256": "FEE00F4C45F9FA082EC4AD0AFCBA5EE3A9D8546D6B4694916944D545A6643D2C",
+      "bytes": 1659
+    },
+    "runner_source": {
+      "path": "scratch\\EngineGate05R19OpaquePolicy\\Harness\\Program.cs",
+      "sha256": "49F06BAB3A585A25704ADFBAB7BA37A7A1BE9D2665872D9210B12B326D963C78",
+      "bytes": 37903
+    },
+    "runner_binary": {
+      "path": "scratch\\EngineGate05R19OpaquePolicy\\Harness\\bin\\Debug\\net472\\Gate05R19OpaquePolicyRunner.exe",
+      "sha256": "6B4A8C339B52988E51506EE9344ADE7FD5A737A9C3876A0AFD586951BB120B62",
+      "bytes": 36352
+    },
+    "runner_pdb": {
+      "path": "scratch\\EngineGate05R19OpaquePolicy\\Harness\\bin\\Debug\\net472\\Gate05R19OpaquePolicyRunner.pdb",
+      "sha256": "3B193D6711F94D418CBC02D0BDBC72CDDCF0679E32B96D3677A03F3B9F4259F8",
+      "bytes": 7712
+    },
+    "freeze_before": {
+      "path": "Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R19-OPAQUE-POLICY-20261010-DIRECT-5415a675\\ENGINE_FREEZE_BEFORE.json",
+      "sha256": "7B944CCD90721ED2986E7618AC9AE739DF0DF1B7254352B0A3F02C6BB0CA3479",
+      "bytes": 2270
+    },
+    "freeze_after": {
+      "path": "Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R19-OPAQUE-POLICY-20261010-DIRECT-5415a675\\ENGINE_FREEZE_AFTER.json",
+      "sha256": "5F37CD18C275D16183BC3F32A7A4207669B6419A539FC921884AFB308C245EB9",
+      "bytes": 2270
+    },
+    "host_telemetry": {
+      "path": "scratch\\EngineGate05R19OpaquePolicy\\HOST_TELEMETRY.json",
+      "sha256": "2C52EBC55F4CE07585FF986DBBA02F0656BABD547951A64147BECE6EC23DC2A2",
+      "bytes": 1755
+    },
+    "test_results_en_us": {
+      "path": "scratch\\EngineGate05R19OpaquePolicy\\run_en_us\\RESULTS.json",
+      "sha256": "0B917664853D3D87A0DBD3BC6B53312D84DFA08DD50164BBA528771EEF20C336",
+      "bytes": 3927
+    },
+    "test_results_de_de": {
+      "path": "scratch\\EngineGate05R19OpaquePolicy\\run_de_de\\RESULTS.json",
+      "sha256": "56D66B96B2C136FE969AA6A79C75DAF1909BCB03EC0C8C8370E050AD3BECCEEC",
+      "bytes": 3927
+    },
+    "api_ledger": {
+      "path": "scratch\\EngineGate05R19OpaquePolicy\\run_en_us\\API_LEDGER.json",
+      "sha256": "27049A23D2A481F2872F4B4AB25CA1B4D22B01890953457B68DEDBA8E1C23F8D",
+      "bytes": 586
+    },
+    "e1_report": {
+      "path": "docs\\POC_EngineHost_Semantic_Authority_Gate_05_R19.md",
+      "sha256": "DA8E6109D2C7F3B9E9FF4E4B610FBAA33B69DD9F48620801640A66AC6A853A8E",
+      "bytes": 11296
+    }
+  },
+  "execution_summary": {
+    "total_tests": 7,
+    "passed_tests": 7,
+    "failed_tests": 0,
+    "verdict": "IMPLEMENTED_SCOPED_NORMAL_OPAQUE_LOSSLESS_PASS_NATIVE_UNTESTED",
+    "execution_scope": "PURE_POSITIVE_NORMAL_MANAGED_DETACHED_ONLY"
+  },
+  "limitations": [
+    "STATIC_MANAGED_NORMAL_EVIDENCE_ONLY",
+    "ZERO_PROCESS_API_CALLS_IN_MANAGED_TESTS",
+    "HOST_PYTHON_TELEMETRY_CHILD_PID_AND_EXIT_CODE_ONLY",
+    "NATIVE_ACTUAL_COMPUTATION_PROHIBITED_AND_UNTESTED",
+    "PROCESS_START_AND_LIVE_BINDING_UNTESTED",
+    "NO_CAUSAL_OVERCLAIMS",
+    "FINAL_DOMAIN_AUTHORITY_REMAINS_DEDICATED_SERVER",
+    "FOUNDATION_HOLD"
+  ]
+}

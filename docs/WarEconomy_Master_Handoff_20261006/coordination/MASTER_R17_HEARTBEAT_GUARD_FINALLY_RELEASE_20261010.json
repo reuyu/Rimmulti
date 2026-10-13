@@ -1,0 +1,20 @@
+{
+  "guard_run": "MASTER-HEARTBEAT-R17-20261009T191508Z-01",
+  "guard_session": 31503,
+  "guard_pid": 30996,
+  "status": "ACTUAL_RELEASED",
+  "all_returned_child_sessions_settled_before_finally": true,
+  "release_tool_result": {
+    "chunk_id": "b4bf00",
+    "wall_time_seconds": 0.0000348,
+    "exit_code": 0,
+    "original_token_count": 110,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-HEARTBEAT-R17-20261009T191508Z-01\", \"pid\": 30996, \"locked_at\": \"2026-10-10T04:15:20.354372+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-10T04:23:01.706006+09:00\", \"renewal_count\": 4, \"release_reason\": \"R\r\n\u001b[23;80HRELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-10T04:23:35.348026+09:00\"}     \r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "A_R17_terminal_reviewed": true,
+  "Sol_R17_fresh_scoped_independent_QA_actual_sent": true,
+  "monitor_actual": "PAUSED60MIN",
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD"
+}

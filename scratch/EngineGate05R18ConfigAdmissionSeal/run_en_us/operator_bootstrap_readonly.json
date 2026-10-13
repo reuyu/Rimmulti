@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "WE-OPERATOR-BOOTSTRAP-V1",
+  "configId": "CFG-BOOTSTRAP-READONLY-03",
+  "role": "READ_ONLY",
+  "admittedValidatorExecutablePath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R18ConfigAdmissionSeal\\run_en_us\\SimulatedAdmittedValidator.exe",
+  "admittedValidatorExecutableSha256": "FE6E251C5F501C282B67315DDCAB2C9D67F3395FACE61D7721DA1DC85413D9B7",
+  "validatorArguments": "--diagnostic",
+  "workerUserDataDirectory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R18ConfigAdmissionSeal\\run_en_us\\WorkerUserData",
+  "validatorUserDataDirectory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R18ConfigAdmissionSeal\\run_en_us\\ValidatorUserData",
+  "workerCwd": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R18ConfigAdmissionSeal\\run_en_us\\WorkerCwd",
+  "validatorCwd": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R18ConfigAdmissionSeal\\run_en_us\\ValidatorCwd",
+  "capabilityBoundary": "LOCAL_SANDBOXED",
+  "issuedAtUtc": "2026-10-10T14:40:00.0000000Z",
+  "expectedContentProfileFingerprint": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+  "expectedPackagePolicyDeclaration": {
+    "schemaVersion": "WE-PACKAGE-POLICY-V1",
+    "policyId": "POLICY-BOOTSTRAP-READONLY-03",
+    "revision": "REV-03",
+    "admittedPackageIds": [
+      "ludeon.rimworld",
+      "ludeon.rimworld.biotech"
+    ]
+  }
+}

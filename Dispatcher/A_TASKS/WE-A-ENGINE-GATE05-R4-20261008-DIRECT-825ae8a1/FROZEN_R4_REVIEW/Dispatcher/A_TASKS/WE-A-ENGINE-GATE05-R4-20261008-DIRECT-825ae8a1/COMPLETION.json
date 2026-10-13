@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "producer": "A",
+  "report_kind": "E1",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R4-20261008-DIRECT-825ae8a1",
+  "wp_id": "WP_ENGINE_GATE05_R4",
+  "wp_revision": "GATE05-R4",
+  "result_id": "WE-A-ENGINE-GATE05-R4-RESULT-01",
+  "status": "COMPLETED",
+  "completed_at": "2026-10-08T16:36:00+09:00",
+  "summary": "WP_ENGINE_GATE05_R4 / GATE05-R4 implementation and E1 developer verification completed. Remediated Sol S1 QA review findings: separated SIMULATION proposal operation mode from READ_ONLY validator execution role without contradiction, enforced operator-admitted fixed validator executable, removed process StartTime UtcNow fallback with fail-closed rejection, eliminated unauthorized overload without nonce, prohibited targetMapIndex clamping under MD-128, verified MD-128 complete 16 authority dimensions equality, upgraded ContentProfileProvider to ADR-006B-v4 with DLC expansion binding and cache invalidation lifecycle. Verified 43/43 tests PASS in test harness. Conducted isolated native runtime observation in scratch RuntimeCopy, declaring limitations as IMPLEMENTATION_PARTIAL with NATIVE_UNTESTED / BLOCKER_UNKNOWN and installed DLL discrepancy as UNKNOWN OPEN incident.",
+  "e1_verdict": "IMPLEMENTATION_PARTIAL",
+  "limitations": {
+    "native_execution_observation": "NATIVE_UNTESTED / BLOCKER_UNKNOWN (Standalone execution in scratch RuntimeCopy observed with PID=18816, StartTimeUtc=2026-10-08T07:31:20.8191595Z, and clean process termination after 5000ms. In-engine semantic loop not fully executed due to isolated asset directory boundary)",
+    "installed_dll_incident": "UNKNOWN OPEN INCIDENT (Steam installed DLL BB3B52... differs from baseline archive 2D64FF...; preserved unmodified per Master policy)",
+    "authority_disposition": "Defects remain OPEN pending Master review and independent E2 verification by Sol QA. Developer A does not self-declare closure or E2 release."
+  },
+  "artifacts": [
+    {
+      "role": "implementation_report",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\POC_EngineHost_Semantic_Authority_Gate_05_R4.md",
+      "sha256": "0D35218842D957BB6755224E1359CE27AC7578EA0E30F27E6C36C7CADE4F4CE6",
+      "size": 16683
+    },
+    {
+      "role": "release_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R4.json",
+      "sha256": "5E6B5225018AA5EBDA228E4E3C25B19929450D7AED6B8DBA83D7717A667C0FA6",
+      "size": 3736
+    },
+    {
+      "role": "harness",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\Harness\\Program.cs",
+      "sha256": "62C61BE6AA6FD71CA1815F30C571D5BBB825B2DEE51C949E1C854AB38979B7AF",
+      "size": 55548
+    },
+    {
+      "role": "results",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\results.json",
+      "sha256": "588F3FB401C8E7DD2364C9A264A96E72B97DDABAF4BD35217D17C29BC3CDE2BB",
+      "size": 15941
+    },
+    {
+      "role": "raw_evidence",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\raw_console.txt",
+      "sha256": "5442BB1E6E9E18EFA662B58D89651625D342416F7E2773CCE0AAA9DCD0B38F02",
+      "size": 15030
+    },
+    {
+      "role": "candidate_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "4F5663FDBBFA09A8B2BE460D09950FD22B9567459F7116E69D0B1C558F189B9E",
+      "size": 204800,
+      "mvid": "ed98e6f9-aa63-47ee-ae21-84f59465d2bb"
+    },
+    {
+      "role": "source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+      "size": 156431
+    },
+    {
+      "role": "pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "CC796E68C592C94345DF41D64609B5D207933B8F5FE805146875D9E61B8D12C4",
+      "size": 49264
+    },
+    {
+      "role": "engine_freeze_before",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\ENGINE_FREEZE_BEFORE.json",
+      "sha256": "8BD0D96C0DAD13F92AB25CE18EBC850C6007DB7727F4BAB1D992306CC698C676",
+      "size": 2909
+    },
+    {
+      "role": "engine_freeze_after",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\ENGINE_FREEZE_AFTER.json",
+      "sha256": "970958F59B7C7C70FAFA1580E19D6CDFCD273EDA95970A48A329D0F470E625A7",
+      "size": 3492
+    },
+    {
+      "role": "alternate_binary",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "7532FF152314892A4AB95A0117107C0845B0D7BAD170C3B840BA24F3EADA270B",
+      "size": 195584,
+      "mvid": "d602525d-4248-442a-8f51-77e22f8484bf"
+    },
+    {
+      "role": "alternate_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "53E33B734E2BF25110DC190FB461E5F011E808DF541742E1A56F52421E61EBDB",
+      "size": 37232
+    },
+    {
+      "role": "source_census",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+      "sha256": "09D57DF883576733C2BD4F40FBDE2C616E374FF1EFCCA50A4466C26DD6AA1333",
+      "size": 93212
+    },
+    {
+      "role": "source_csproj",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj",
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "size": 1774
+    },
+    {
+      "role": "pre_run_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\CANDIDATE_PRE_RUN_MANIFEST.json",
+      "sha256": "0B71EA0CB4D0AB8EB3772292D3C7CA73CCA6EAABC1E1F7E941188A0B277A1C40",
+      "size": 3238
+    },
+    {
+      "role": "native_log",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\native_execution_observation.txt",
+      "sha256": "6241825FA3D0E8D99BE7EE5AC6F7CA0D54D99C8BCC31BF539D5B01394FD43804",
+      "size": 2547
+    },
+    {
+      "role": "work_log",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R4-20261008-DIRECT-825ae8a1\\A_WORK_LOG.md",
+      "sha256": "62D53DB9C2D28652C0A8A54E22B061567D593A99AB5BFBE37F2B239C757C6D03",
+      "size": 4872
+    },
+    {
+      "role": "recovery_ack",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R4-20261008-DIRECT-825ae8a1\\A_RECOVERY_ACK.md",
+      "sha256": "B674C669E961EAB1086D06DBF7B3E8B053765FCB555C6E52B561ABE65BD63769",
+      "size": 2625
+    }
+  ]
+}

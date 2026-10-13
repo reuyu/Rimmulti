@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-09T00:44:05.569176+09:00",
+  "operation_id": "SOL-R8-SUPPORTED-DISPOSITION-INDEPENDENT-S1-SEND-20261009-01",
+  "type": "SOL_DIRECT_DELIVERY_PENDING",
+  "delivery_id": "SOL-GATE05-R8-SUPPORTED-DISPOSITION-INDEPENDENT-S1-20261009-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R8_SUPPORTED_DISPOSITION_INDEPENDENT",
+  "wp_revision": "S1",
+  "wp_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R8_SUPPORTED_DISPOSITION_INDEPENDENT_S1.md",
+  "wp_sha256": "D02B902592D6318BEB8EE199CBE60259E0C16481BC8F10A7104FC286C60F9E4C",
+  "message_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R8_SUPPORTED_DISPOSITION_INDEPENDENT_S1_EXACT_MESSAGE_20261009.txt",
+  "message_sha256": "8A9426E610623FF5742AE582A76CB9304E889870EB9C780235D1697AC6909B36",
+  "message": "Master 승인 신규 독립 QA SOL-GATE05-R8-SUPPORTED-DISPOSITION-INDEPENDENT-S1-20261009-01 / WP_QA_ENGINE_GATE05_R8_SUPPORTED_DISPOSITION_INDEPENDENT / S1입니다. C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R8_SUPPORTED_DISPOSITION_INDEPENDENT_S1.md 전체(SHA D02B902592D6318BEB8EE199CBE60259E0C16481BC8F10A7104FC286C60F9E4C)를 읽고 original Sol로 수행하세요. 정확한 frozen75 manifest E7D9096EB7C4A9B074079952D550506C9259F733F64EC1A66FD4DBAA85D16FB4,selected DebugF82F3B08FF8D7D129F520DE054E7BAB666728B9909D9C9C2E955E5E583EBE9D5/MVID348b49f3-74f8-4643-9a2f-4a1dc5fb9a41만 사용합니다. 방어적 정적 리뷰와 정상 pure DTO/Serialize/Deserialize/CanonicalNormalize/positive ValidateContract/TryAdmit만 승인하며 새 QA-owned managed runner build만 허용합니다. R8 child observation/key 개선과 잔여 실제 support boundary/normalization/version 의미를 독립 확인하세요. Compatibility range와 실제 modVersion은 별도 의미입니다. 정상 optional unknown version을 compatibility에서 만들어내는 producer TC16 cross-fill을 expected oracle에 복사하거나 PASS로 강제하지 말고 정상 semantic regression이 있으면 실제 FAIL을 보존하세요. Production 수정/재빌드/provider/cache/game/native/operator/old runners/missing-required rejection/tied/adverse 실행은 금지합니다. C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R8_QA_PROTECTED_BASELINE_20261009.json의 실제 보호2944 SHA/size를 전후 확인하고 새 root에 ACK/원문/oracle/raw/prepost/manifest/index/COMPLETION을 결속하세요. 완료 즉시 user-approved direct tools로 Master01a1156b-97ec-7ce0-9e4a-dfc4a3acb174(local)에 보고하세요. FullGate E2 미승인/Foundation HOLD,monitor PAUSED입니다.",
+  "status": "NOT_YET_SUBMITTED",
+  "predispatch": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R8_SUPPORTED_DISPOSITION_INDEPENDENT_S1_PREDISPATCH_20261009.json",
+  "predispatch_sha256": "B2D380236BC84951F78F75300AE6BA4D26464C94A3B02D5FDE2C2F402BD006AF",
+  "before_cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:49",
+  "before_turn": "01a11bf1-8ad6-7212-af06-891d5e731d3e",
+  "baseline_sha256": "7EDE36308098BEC1149342BE67C56E45DB16692989B25C96FA9D14E40B0697C2",
+  "baseline_unique_paths_master_verified": 2944,
+  "guard_run": "MASTER-HOURLY-R8-20261009-003544-01",
+  "guard_session": 83368,
+  "unknown_delivery_no_retry": true
+}

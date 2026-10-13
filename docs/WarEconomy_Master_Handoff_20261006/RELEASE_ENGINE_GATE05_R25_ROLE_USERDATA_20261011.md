@@ -1,0 +1,2 @@
+# R25 boundedimplementationrelease
+2026-10-11T21:27:49.983604+09:00;WE-A-ENGINE-GATE05-R25-ROLE-USERDATA-20261011-DIRECT-dd341868/envelope28/WPC:\Users\user\Desktop\RimMulti\docs\WarEconomy_Master_Handoff_20261006\WP_ENGINE_GATE05_R25_ROLE_USERDATA_SELECTION.mdSHABEA5CC6D09892B56F685A34D355214D029C5013F39A4B6FDA7B1C89464AB69CC. ONLYPURESelectUserData+activeSafeRootbranch+DeclaredRoleUserData log/3spans4fixedsegments/6DLLPDB. Launcher-native-cwd-configschema fixed/newnormalPURE4cases/freshfreezeQA. NOT_SENTuntilCU.

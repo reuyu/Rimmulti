@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "dispatch_id": "WE-A-ENGINE-GATE05-R34-ROLLBACK-20261013-DIRECT-a4d6866c",
+  "wp_id": "WP_ENGINE_GATE05_R34_ROLLBACK",
+  "target_file": "scratch/WorkerBridgeMod/Source/WorkerBridge.cs",
+  "target_span": {
+    "id": "AWAKE_WHOLE_FAILURE_PUBLICATION_AND_OUTSIDE_LOCK_CLEANUP",
+    "start_byte": 39056,
+    "end_byte": 45687,
+    "original_bytes": 6631,
+    "original_sha256": "D56AEC9B4464D6F0EB277C33B04E1D71A748489A8FA63BB3CF09ECDE61CC0DF4"
+  },
+  "rollback_sequence": [
+    {
+      "step": 1,
+      "location": "Within _startupHandoffLock critical admission section",
+      "action": "Immediate failure state publication",
+      "operations": [
+        "_startupInitializationComplete = false",
+        "isRunning = false",
+        "_staticStartupAborted = true"
+      ],
+      "lock_status": "LOCKED (_startupHandoffLock)",
+      "teardown_performed": "NONE - Zero Stop/Abort/Unsubscribe/Log inside lock"
+    },
+    {
+      "step": 2,
+      "location": "Inner exception rethrow",
+      "action": "Unwind and lock release",
+      "operations": [
+        "throw;"
+      ],
+      "lock_status": "RELEASING (_startupHandoffLock unwinds via Monitor.Exit)"
+    },
+    {
+      "step": 3,
+      "location": "Outer catch block entry",
+      "action": "Ensure failure publication prior to logging or teardown",
+      "operations": [
+        "_startupInitializationComplete = false",
+        "isRunning = false",
+        "lock (_startupHandoffLock) { _staticStartupAborted = true; }"
+      ],
+      "lock_status": "Brief atomic lock acquisition for sticky marker if not already set, then UNLOCKED"
+    },
+    {
+      "step": 4,
+      "location": "Outer catch block guarded logging",
+      "action": "Protected diagnostic logging",
+      "operations": [
+        "try { Log.Error(\"[WorkerBridge] Awake initialization failed (Fail-Closed): \" + ex); } catch { }"
+      ],
+      "lock_status": "UNLOCKED"
+    },
+    {
+      "step": 5,
+      "location": "Outer catch block consolidated teardown",
+      "action": "Independent single-invocation cleanup of all partially initialized owned resources",
+      "operations": [
+        "try { Application.logMessageReceived -= HandleUnityLogMessage; } catch { }",
+        "try { listener?.Stop(); } catch { }",
+        "try { listenerThread?.Abort(); } catch { }",
+        "try { CleanupOwnerPendingHandoff(_retainedOwner); } catch { }"
+      ],
+      "lock_status": "UNLOCKED (CleanupOwnerPendingHandoff acquires internal lock safely without lock inversion)"
+    }
+  ],
+  "invariants": {
+    "zero_duplicate_stops": true,
+    "zero_teardown_inside_startup_lock": true,
+    "immediate_abort_publication": true,
+    "independent_resource_cleanup": true
+  }
+}

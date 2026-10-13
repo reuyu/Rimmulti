@@ -1,0 +1,25 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f",
+  "wp_id": "WP_ENGINE_GATE05_R30_HANDOFF",
+  "wp_revision": "GATE05-R30-HANDOFF",
+  "envelope": 33,
+  "result_id": "WE-A-ENGINE-GATE05-R30-HANDOFF-RESULT-01",
+  "status": "COMPLETED",
+  "e1_verdict": "IMPLEMENTED_HANDOFF_REPAIR_PASS_NATIVE_UNTESTED",
+  "generated_at": "2026-10-12T18:14:00+09:00",
+  "index": {
+    "task_ack": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\ACK.json",
+    "preservation_before": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\PRESERVATION_BEFORE.json",
+    "before_after_preservation": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\BEFORE_AFTER_PRESERVATION.json",
+    "source_scope_diff": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\SOURCE_SCOPE_DIFF.json",
+    "handoff_control_flow_and_custody": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\HANDOFF_CONTROL_FLOW_AND_CUSTODY.json",
+    "candidate_identity": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\CANDIDATE_IDENTITY.json",
+    "final_pre_run_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\FINAL_PRE_RUN_MANIFEST.json",
+    "full_typed_raw_copy_binding": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\FULL_TYPED_RAW_COPY_BINDING.json",
+    "e1_normal_results": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\E1_NORMAL_RESULTS.json",
+    "release_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\RELEASE_MANIFEST.json",
+    "implementation_report": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\IMPLEMENTATION_REPORT.md",
+    "technical_report": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\A_ENGINE_GATE05_R30_HANDOFF_REPORT_20261012.md",
+    "completion": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R30-HANDOFF-20261012-DIRECT-16ce928f\\COMPLETION.json"
+  }
+}

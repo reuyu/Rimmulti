@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "we-ast-host-tool-proof/v1",
+  "createdAtUtc": "2026-10-13T17:33:28.469139+00:00",
+  "inputManifestPath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\AST_INPUT_MANIFEST.json",
+  "inputManifestSha256": "D44BD20E4BF7919CC0754C204D48E9FC8EDE6DB26D1442357F2D8A5EEAD02AC3",
+  "targetPublisher": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+    "size_bytes": 43666,
+    "sha256": "940CF77220C272D117CDBC278B64858EFB3077267141CC548A0105B47D6E1306"
+  },
+  "childExecution": {
+    "pid": 9668,
+    "exitCode": 0,
+    "startedAtUtc": "2026-10-13T17:33:28.376793+00:00",
+    "completedAtUtc": "2026-10-13T17:33:28.469139+00:00",
+    "durationMs": 92,
+    "stdoutRawPath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\ast_stdout.raw.bin",
+    "stdoutRawBytes": 2699,
+    "stdoutRawSha256": "6CE2917E748D7C67F7337FFDE6C5542797973FCBF1E58B8AFF259C3FE59BB56F",
+    "stderrRawPath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R38PublisherBoundaries-10b9846e\\ast_stderr.raw.bin",
+    "stderrRawBytes": 0,
+    "stderrRawSha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "childVerdict": "AST_PARSED_SUCCESS"
+  },
+  "astVerificationSummary": {
+    "status": "AST_PARSED_SUCCESS",
+    "target_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+    "sha256": "940CF77220C272D117CDBC278B64858EFB3077267141CC548A0105B47D6E1306",
+    "size_bytes": 43666,
+    "has_module_docstring": true,
+    "docstring_len": 5397,
+    "total_ast_nodes": 4926,
+    "top_level_function_count": 18,
+    "top_level_class_count": 0,
+    "import_statement_count": 8,
+    "functions": [
+      {
+        "name": "is_leap_year",
+        "lineno": 142,
+        "end_lineno": 143,
+        "arg_count": 1
+      },
+      {
+        "name": "validate_iso_utc_date",
+        "lineno": 146,
+        "end_lineno": 175,
+        "arg_count": 2
+      },
+      {
+        "name": "compute_sha256_bytes",
+        "lineno": 178,
+        "end_lineno": 179,
+        "arg_count": 1
+      },
+      {
+        "name": "compute_sha256_file",
+        "lineno": 182,
+        "end_lineno": 184,
+        "arg_count": 1
+      },
+      {
+        "name": "check_no_duplicate_keys",
+        "lineno": 187,
+        "end_lineno": 195,
+        "arg_count": 1
+      },
+      {
+        "name": "check_opaque_non_blank",
+        "lineno": 198,
+        "end_lineno": 210,
+        "arg_count": 2
+      },
+      {
+        "name": "identity_boundary_trim",
+        "lineno": 213,
+        "end_lineno": 219,
+        "arg_count": 1
+      },
+      {
+        "name": "structural_ascii_strip",
+        "lineno": 222,
+        "end_lineno": 232,
+        "arg_count": 1
+      },
+      {
+        "name": "structural_ascii_upper",
+        "lineno": 235,
+        "end_lineno": 248,
+        "arg_count": 1
+      },
+      {
+        "name": "check_supported_local_dos_path",
+        "lineno": 251,
+        "end_lineno": 311,
+        "arg_count": 2
+      },
+      {
+        "name": "verify_path_ancestry",
+        "lineno": 314,
+        "end_lineno": 404,
+        "arg_count": 4
+      },
+      {
+        "name": "read_once_file_and_stat",
+        "lineno": 407,
+        "end_lineno": 459,
+        "arg_count": 1
+      },
+      {
+        "name": "is_exact_64_ascii_hex_no_trim",
+        "lineno": 462,
+        "end_lineno": 465,
+        "arg_count": 1
+      },
+      {
+        "name": "is_64_ascii_hex_trimmed",
+        "lineno": 468,
+        "end_lineno": 474,
+        "arg_count": 1
+      },
+      {
+        "name": "validate_declaration",
+        "lineno": 477,
+        "end_lineno": 523,
+        "arg_count": 3
+      },
+      {
+        "name": "validate_config",
+        "lineno": 526,
+        "end_lineno": 661,
+        "arg_count": 4
+      },
+      {
+        "name": "publish_pair",
+        "lineno": 664,
+        "end_lineno": 864,
+        "arg_count": 8
+      },
+      {
+        "name": "main",
+        "lineno": 867,
+        "end_lineno": 932,
+        "arg_count": 0
+      }
+    ]
+  }
+}

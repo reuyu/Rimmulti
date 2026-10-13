@@ -1,0 +1,57 @@
+{
+  "manifest_version": "we-r32-build-output-manifest/v1",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2",
+  "wp_id": "WP_ENGINE_GATE05_R32_CUSTODY",
+  "envelope": 35,
+  "generated_at": "2026-10-12T23:31:00+09:00",
+  "build_status": "SUCCESS",
+  "outputs": [
+    {
+      "role": "debug_candidate_dll",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "bytes": 325632,
+      "sha256": "0B23C358E8C8FC16FCD02DDE654AD8AE763EA177460BB15F5F1E1B1F0CB67E26",
+      "mvid": "7d436c98-659a-4df1-a085-06fe9e55a0bc",
+      "codeview_guid": "0155713e-2a25-4b6e-94e4-e0a9897f8d46"
+    },
+    {
+      "role": "debug_candidate_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "bytes": 79124,
+      "sha256": "226DF5428AB94D48E0B08DC237AF3FC2E9F193315FE4D2F6EE2A8654B512E90D"
+    },
+    {
+      "role": "release_candidate_dll",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "bytes": 308224,
+      "sha256": "19F2CA8D466B10E99B86C8F5DD380102CCA14555B1FC7052AAB2B5DCFA98806F",
+      "mvid": "cee8068e-e814-4203-8135-8c0fd5107005",
+      "codeview_guid": "feca9121-d053-4f9b-b835-591428998f7c"
+    },
+    {
+      "role": "release_candidate_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "bytes": 57712,
+      "sha256": "A0F37D4437406AFF7FC329B8286B921ADE82F6C3F788D1C89FE4486D0C739347"
+    },
+    {
+      "role": "mod_1_6_synchronized_dll",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "bytes": 325632,
+      "sha256": "0B23C358E8C8FC16FCD02DDE654AD8AE763EA177460BB15F5F1E1B1F0CB67E26",
+      "mvid": "7d436c98-659a-4df1-a085-06fe9e55a0bc"
+    },
+    {
+      "role": "mod_1_6_synchronized_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "bytes": 79124,
+      "sha256": "226DF5428AB94D48E0B08DC237AF3FC2E9F193315FE4D2F6EE2A8654B512E90D"
+    },
+    {
+      "role": "patched_worker_source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "bytes": 275573,
+      "sha256": "214F1F95C6BF7F547ED47FD91B787A70B2E52DFF129A882DCD8C1AC1471A24E8"
+    }
+  ]
+}

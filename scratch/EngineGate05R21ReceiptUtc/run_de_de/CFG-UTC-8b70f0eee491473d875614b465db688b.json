@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "WE-OPERATOR-BOOTSTRAP-V1",
+  "configId": "CFG-UTC-8b70f0eee491473d875614b465db688b",
+  "role": "SIMULATION",
+  "admittedValidatorExecutablePath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_de_de\\SimulatedAdmittedValidator.exe",
+  "admittedValidatorExecutableSha256": "03A1CC8829DD0D8E6F7DF402E6FC4CDF47B52C99EC17E12EB15B1200071E0D3B",
+  "validatorArguments": "--batchmode --nographics",
+  "workerUserDataDirectory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_de_de\\WorkerUserData",
+  "validatorUserDataDirectory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_de_de\\ValidatorUserData",
+  "workerCwd": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_de_de\\WorkerCwd",
+  "validatorCwd": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_de_de\\ValidatorCwd",
+  "capabilityBoundary": "LOCAL_SANDBOXED",
+  "issuedAtUtc": "2026-10-11T05:30:15.1234567Z",
+  "expectedContentProfileFingerprint": "FINGERPRINT-UTC",
+  "expectedPackagePolicyDeclaration": {
+    "schemaVersion": "WE-PACKAGE-POLICY-V1",
+    "policyId": "  qa.R18 정책 Ω  ",
+    "revision": "  007 café Ω  ",
+    "admittedPackageIds": [
+      "ludeon.rimworld",
+      "example.qa.normal"
+    ]
+  }
+}

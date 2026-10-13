@@ -1,0 +1,11 @@
+{
+  "guard_session": 81798,
+  "release_tool": {
+    "chunk_id": "622f91",
+    "wall_time_seconds": 0.0000337,
+    "exit_code": 0,
+    "original_token_count": 107,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-SOL-R36-STATIC-METADATA-R1-20261014-01\", \"pid\": 30464, \"locked_at\": \"2026-10-14T00:45:03.931869+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-14T00:46:39.159715+09:00\", \"renewal_count\": 1, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-14T00:47:50.260972+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "mutation_after_release": false
+}

@@ -1,0 +1,12 @@
+{
+  "active_operation": null,
+  "Sol": "R14_INDEPENDENT_NORMAL_LIFECYCLE_CORE_CODEC_QA_SENT_IN_PROGRESS_ACK_PENDING",
+  "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:95",
+  "scheduler": "PAUSED",
+  "rrule": "FREQ=HOURLY;INTERVAL=1",
+  "prompt_length": 173,
+  "guard_run": "MASTER-R14-QA-DISPATCH-ENCODING-REPAIR-20261009-01",
+  "guard_session": 66706,
+  "guard_pid": 31792,
+  "guard_release": "PENDING_ACTUAL_FINALLY"
+}

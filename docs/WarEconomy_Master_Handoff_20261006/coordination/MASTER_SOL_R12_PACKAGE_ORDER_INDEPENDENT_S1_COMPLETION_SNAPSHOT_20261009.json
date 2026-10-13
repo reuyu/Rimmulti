@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":false,\"wake\":{\"reason\":\"turnCompleted\",\"turnId\":\"01a11f91-bdee-7ae0-93a4-991c80034899\",\"threadId\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\"},\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:83\",\"revision\":83,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"idle\"}},\"latestTurn\":{\"id\":\"01a11f91-bdee-7ae0-93a4-991c80034899\",\"status\":\"completed\",\"error\":null,\"startedAt\":1791531007,\"completedAt\":1791532305,\"durationMs\":1297932},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ac89d0f0f0487d09c09061ca4d483a9\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ac89d0f0f0487d09c09061ca4d483a9\",\"turnId\":\"01a11f91-bdee-7ae0-93a4-991c80034899\",\"phase\":\"final_answer\",\"text\":\"R12 독립 QA를 완료하고 마스터에게 보고했습니다. 두 실행에서 각각 265개 검증이 모두 통과했습니다. 증거 보관 제한은 보고서에 명시했으며, 전체 런타임 검증·릴리스는 보류 상태입니다. QA 보고서\"},\"latestToolMarkerId\":\"exec-5a599970-434c-4a1f-8324-90abd9b921f2\",\"latestToolMarker\":{\"id\":\"exec-5a599970-434c-4a1f-8324-90abd9b921f2\",\"turnId\":\"01a11f91-bdee-7ae0-93a4-991c80034899\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

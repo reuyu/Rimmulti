@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":false,\"wake\":{\"reason\":\"turnCompleted\",\"turnId\":\"01a127e2-3320-7490-bea2-1a620a4579ae\",\"threadId\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\"},\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:135\",\"revision\":135,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"idle\"}},\"latestTurn\":{\"id\":\"01a127e2-3320-7490-bea2-1a620a4579ae\",\"status\":\"completed\",\"error\":null,\"startedAt\":1791670498,\"completedAt\":1791671070,\"durationMs\":572527},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016acabb1cb86487d0a7fd198ae62ed05c\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016acabb1cb86487d0a7fd198ae62ed05c\",\"turnId\":\"01a127e2-3320-7490-bea2-1a620a4579ae\",\"phase\":\"final_answer\",\"text\":\"R21 QA를 완료하고 Master에게 보고했습니다. 두 실행 모두 245 PASS / 0 FAIL입니다. UTC 원문·receipt 전체 JSON/bytes 보존을 확인했습니다. Native 미검증과 Foundation HOLD는 유지합니다. QA 보고서\"},\"latestToolMarkerId\":\"exec-23642ae8-213d-46a4-8085-4eab9c2f26f6\",\"latestToolMarker\":{\"id\":\"exec-23642ae8-213d-46a4-8085-4eab9c2f26f6\",\"turnId\":\"01a127e2-3320-7490-bea2-1a620a4579ae\",\"type\":\"fileChange\",\"name\":\"fileChange\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

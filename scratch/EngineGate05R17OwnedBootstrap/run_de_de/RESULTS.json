@@ -1,0 +1,89 @@
+{
+  "DispatchId": "WE-A-ENGINE-GATE05-R17-OWNED-BOOTSTRAP-20261010-DIRECT-57163c71",
+  "WpId": "WP_ENGINE_GATE05_R17_OWNED_BOOTSTRAP",
+  "Revision": "GATE05-R17-OWNED-BOOTSTRAP",
+  "Envelope": 20,
+  "RunId": "d64d8ada22b244d49c13526409285e41",
+  "TimestampUtc": "2026-10-09T18:36:51.1336303Z",
+  "ProcessId": 3568,
+  "Culture": "ko-KR",
+  "CommandLineArgs": [
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R17OwnedBootstrap\\run_de_de"
+  ],
+  "WorkingDirectory": "C:\\Users\\user\\Desktop\\RimMulti",
+  "LoadedCandidateDllPath": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R17OwnedBootstrap\\Harness\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+  "LoadedCandidateSha256": "F7946FED1F4FB896DD8F46B7C253C4DB24E6CF2AA6D9C0528CD5B59CD05DBAA3",
+  "LoadedCandidateMvid": "d5a25e43-567c-414f-b7bd-4d4aa0b47050",
+  "ApiLedger": {
+    "ConfigureOperatorStartupCalls": 1,
+    "ResetOperatorStartupConfigCalls": 1,
+    "SafeSaveDataFolderPathCalls": 1,
+    "AdmittedExecutablePropertyCalls": 1,
+    "AdmittedShaPropertyCalls": 1,
+    "ComputeFileSha256Calls": 2,
+    "VerifyAdmittedExecutableCalls": 2,
+    "VerifyProcessIdentityCalls": 1,
+    "ConfigureExpectedPackagePolicyCalls": 1,
+    "ClearConfiguredExpectedPackagePolicyCalls": 1,
+    "ToRedactedJsonValidatorResultCalls": 1,
+    "ToRedactedJsonSnapshotCalls": 1
+  },
+  "Tests": [
+    {
+      "TestName": "TEST_01_OPERATOR_STARTUP_CONFIG_SNAPSHOT_IMMUTABLE",
+      "Status": "PASS",
+      "Details": "Verified snapshot deep-clone, schema validation, isolated userdata routing, and read-only property binding.",
+      "Artifacts": {
+        "ConfigId": "CFG-BOOTSTRAP-TEST-01",
+        "RoutedWorkerUserData": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R17OwnedBootstrap\\run_de_de\\WorkerUserData",
+        "AdmittedExecutable": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\RuntimeCopy\\UnityCrashHandler64.exe",
+        "AdmittedSha": "6DA75361F0EDDBE3492DF3C495AF7A1BA90FA6AE8C91D30BC857930F7DF63726"
+      }
+    },
+    {
+      "TestName": "TEST_02_ADMITTED_EXECUTABLE_SHA_PATH_VALIDATION",
+      "Status": "PASS",
+      "Details": "Verified file existence and 64-hex SHA256 integrity against real project runtime binaries on disk without execution.",
+      "Artifacts": {
+        "Binary1_Path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\RuntimeCopy\\UnityCrashHandler64.exe",
+        "Binary1_SHA256": "6DA75361F0EDDBE3492DF3C495AF7A1BA90FA6AE8C91D30BC857930F7DF63726",
+        "Binary2_Path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R4\\RuntimeCopy\\RimWorldWin64.exe",
+        "Binary2_SHA256": "4C30E2105B49F2D0130F5D861947FBE82B866042299DA48EF1C8CF6979A8564D"
+      }
+    },
+    {
+      "TestName": "TEST_03_PROCESS_IDENTITY_BINDING_HELPER",
+      "Status": "PASS",
+      "Details": "Verified fail-closed self-PID prohibition and process identity integrity checking logic.",
+      "Artifacts": {
+        "CurrentPid": 3568,
+        "SelfCheck_Rejected": true,
+        "RejectionReason": "Self-validation prohibited. Target PID cannot match simulator PID."
+      }
+    },
+    {
+      "TestName": "TEST_04_PACKAGE_POLICY_LIFECYCLE",
+      "Status": "PASS",
+      "Details": "Verified ContentProfileProvider.ConfigureExpectedPackagePolicy(declaration) and ClearConfiguredExpectedPackagePolicy lifecycle without global cache corruption.",
+      "Artifacts": {
+        "PolicyId": "POLICY-BOOTSTRAP-NORMAL-02",
+        "Revision": "REV-02",
+        "AdmittedPackagesCount": 2
+      }
+    },
+    {
+      "TestName": "TEST_05_SECRET_REDACTION_PUBLIC_VIEW",
+      "Status": "PASS",
+      "Details": "Verified zero secret leakage: capabilityNonce and channelSecretToken strictly redacted from public views.",
+      "Artifacts": {
+        "TaskId": "VT_20261010_TEST01",
+        "HasRedactedCapability": true,
+        "HasRedactedChannelSecret": true
+      }
+    }
+  ],
+  "TotalTests": 5,
+  "PassedTests": 5,
+  "FailedTests": 0,
+  "NumericExitCode": 0
+}

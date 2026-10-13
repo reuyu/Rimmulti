@@ -1,0 +1,55 @@
+{
+  "at": "2026-10-14T04:59:22.319941+09:00",
+  "guard_session": 11480,
+  "delivery_id": "SOL-GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014-01",
+  "result_id": "SOL-GATE05-R38-PUBLISHER-INDEPENDENT-STATIC-S1-20261014-c19c6459fa484d5bbee9c08ffe13caa4",
+  "same_WP": true,
+  "new_WP": false,
+  "notice": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R38_SAME_WP_PARTIAL_REVIEW_FINALIZATION_R2_20261014.md",
+    "sha256": "E6639D033B9EA368F4252721C775448B2E5F28365EA5AABA5AA93397AB1021D3",
+    "bytes": 4649
+  },
+  "exact_message": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R38_FINALIZE_R2_EXACT_MESSAGE_20261014.txt",
+    "sha256": "260CCEEA86BCADB72110A4FF1D304DD298EDAF7C86435564B5938DE0D656FF74",
+    "bytes": 958
+  },
+  "send_tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R38_FINALIZE_R2_SEND_TOOL_20261014.json",
+    "sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+    "bytes": 149
+  },
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:60",
+    "revision": 60,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a136d9-1e3b-7641-9510-90cf5665960c",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791921561,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "previous_stopped_turn": "01a136c9-418d-7781-83d0-90d2df9b7565",
+  "initial_ACK_unchanged": "1EE34CC318E4FC50B6BBA7F4EE08CE604D8870630601C1F27E0D77651802A3E9",
+  "old_failed_review_not_replayed": true,
+  "scope": "NEW_OWN_PASSIVE_METADATA_FINALIZATION_ONLY",
+  "runtime_E2": "NOT_RELEASED",
+  "Foundation": "HOLD"
+}

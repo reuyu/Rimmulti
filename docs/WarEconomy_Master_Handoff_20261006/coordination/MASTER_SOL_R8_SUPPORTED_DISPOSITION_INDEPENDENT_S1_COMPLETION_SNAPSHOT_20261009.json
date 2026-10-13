@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":false,\"wake\":{\"reason\":\"turnCompleted\",\"turnId\":\"01a11c2f-b048-73b0-a61d-a1eccf88b883\",\"threadId\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\"},\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:52\",\"revision\":52,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"idle\"}},\"latestTurn\":{\"id\":\"01a11c2f-b048-73b0-a61d-a1eccf88b883\",\"status\":\"completed\",\"error\":null,\"startedAt\":1791474249,\"completedAt\":1791475113,\"durationMs\":863218},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016ac7bda605c887d09ddaf4d63b53b2d5\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016ac7bda605c887d09ddaf4d63b53b2d5\",\"turnId\":\"01a11c2f-b048-73b0-a61d-a1eccf88b883\",\"phase\":\"final_answer\",\"text\":\"R8 QA를 완료하고 마스터에게 보고했습니다. 정상 입력에서 compatibility 값이 미확인 실제 버전으로 채워지는 의미 회귀 FAIL을 확인했습니다. Positive helper는 통과했습니다. QA 보고서 후보와 기존 증거를 보존하고 다음 지시를 기다리겠습니다.\"},\"latestToolMarkerId\":\"exec-e6bc54c6-df5b-4d57-a403-76172c8cea05\",\"latestToolMarker\":{\"id\":\"exec-e6bc54c6-df5b-4d57-a403-76172c8cea05\",\"turnId\":\"01a11c2f-b048-73b0-a61d-a1eccf88b883\",\"type\":\"commandExecution\",\"name\":\"commandExecution\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

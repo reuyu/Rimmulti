@@ -1,0 +1,45 @@
+{
+  "at": "2026-10-13T23:02:19.206581+09:00",
+  "same_delivery": "SOL-GATE05-R35-PUBLISHER-INDEPENDENT-STATIC-S1-20261013-01",
+  "same_result": "SOL-GATE05-R35-PUBLISHER-INDEPENDENT-STATIC-S1-20261013-dd261024fa244f6d80c2ac57e8e9a299",
+  "notice": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R35_STATIC_R2_SKIP_OPTIONAL_QUERY_FINALIZE_20261013.md",
+    "sha256": "20E2DB6E27AA790DEFEBE93079C687EE7692E2A9502DA976C25EEEADA6D9B074",
+    "bytes": 2167
+  },
+  "actual_tools": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R35_R2_SKIP_QUERY_ACTUAL_TOOLS_20261013.json",
+    "sha256": "0BB7F03E7A5C19C79091BC0321CF20A85D973424DDCD7CED97243A55FC824449",
+    "bytes": 899
+  },
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:41",
+    "revision": 41,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a13591-5437-7a41-9fa2-6c034fa5a7ee",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791900079,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "one_sameWP_notice": true,
+  "newWP": false,
+  "scope": "SKIP_OPTIONAL_LINE_QUERY_NO_RETRY_FINALIZE_ALREADY_COMPLETED_STATIC_REVIEW",
+  "guard_session": 7761
+}

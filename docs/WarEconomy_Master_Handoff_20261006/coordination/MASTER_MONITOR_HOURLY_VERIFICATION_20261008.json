@@ -1,0 +1,23 @@
+{
+  "event_id": "MASTER-MONITOR-HOURLY-20261008-01",
+  "type": "USER_MONITOR_INTERVAL_CHANGED",
+  "at": "2026-10-08T08:24:12.570407+09:00",
+  "user_instruction": "예약 간격 1시간 단위로 변경해",
+  "automation_id": "wareconomy-master",
+  "previous_interval_minutes": 30,
+  "interval_minutes": 60,
+  "status": "ACTIVE",
+  "actual_configuration_verified": true,
+  "preserved_name_prompt_target_status": true,
+  "prompt_chars": 173,
+  "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+  "tool_proof": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_MONITOR_HOURLY_UPDATE_TOOL_PROOF_20261008.json",
+  "config_before": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_MONITOR_HOURLY_CONFIG_BEFORE_20261008.json",
+  "config_after": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_MONITOR_HOURLY_CONFIG_AFTER_20261008.json",
+  "future_hourly_run_observed": false,
+  "new_automation_created": false,
+  "new_dispatch": false,
+  "closure_changed": false,
+  "a_task": "WE-A-ENGINE-GATE05-R2-20261008-DIRECT-2af10708",
+  "a_attention_unchanged": "A-R2-RECOVERY-POSSIBLE-STALL-20261008-01"
+}

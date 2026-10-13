@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"timedOut\":false,\"wake\":{\"reason\":\"turnCompleted\",\"turnId\":\"01a12da0-3577-75d0-b25f-20c9c1b9d1c5\",\"threadId\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\"},\"polls\":[{\"schemaVersion\":1,\"cursor\":\"2745552a-f142-41a1-8eaf-3fe7b2d500ca:185\",\"revision\":185,\"changed\":true,\"thread\":{\"id\":\"01a11583-ff90-73e0-8916-d021e2bb038d\",\"hostId\":\"local\",\"status\":{\"type\":\"idle\"}},\"latestTurn\":{\"id\":\"01a12da0-3577-75d0-b25f-20c9c1b9d1c5\",\"status\":\"completed\",\"error\":null,\"startedAt\":1791766836,\"completedAt\":1791767086,\"durationMs\":250176},\"latestAssistantMessageId\":\"msg_0c6b28ae575c2341016acc322b5b4487d09b190190818ddf80\",\"latestAssistantMessage\":{\"id\":\"msg_0c6b28ae575c2341016acc322b5b4487d09b190190818ddf80\",\"turnId\":\"01a12da0-3577-75d0-b25f-20c9c1b9d1c5\",\"phase\":\"final_answer\",\"text\":\"S2도 제 metadata 경로 치환 오류로 중단됐습니다. 오류와 전체 diff를 보존해 마스터에게 보고했으며, 빌드·후보 호출은 0입니다. 중단 보고서 재시도 금지 지시에 따라 새 승인을 기다립니다.\"},\"latestToolMarkerId\":\"exec-be4868a2-8788-45ea-a557-8ebd7b7a4dd4\",\"latestToolMarker\":{\"id\":\"exec-be4868a2-8788-45ea-a557-8ebd7b7a4dd4\",\"turnId\":\"01a12da0-3577-75d0-b25f-20c9c1b9d1c5\",\"type\":\"fileChange\",\"name\":\"fileChange\",\"status\":\"completed\"}}]}"
+    }
+  ],
+  "isError": false
+}

@@ -1,0 +1,74 @@
+{
+  "at": "2026-10-10T03:06:39.828728+09:00",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00",
+  "kind": "POSTCOMPLETION_PREPARATION_ARTIFACTS_NO_NEW_PRODUCTION_CANDIDATE",
+  "files": [
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00\\OPERATOR_AUTHORITY_CALLGRAPH.md",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R16PREP-7972af00\\OPERATOR_AUTHORITY_CALLGRAPH.md",
+      "sha256": "88E9BC47814A4EB311CE4E0DF688A1793861F6618648231B27B4D11BCCB687F6",
+      "size": 20099
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00\\OPERATOR_CONTEXT_MATRIX.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R16PREP-7972af00\\OPERATOR_CONTEXT_MATRIX.json",
+      "sha256": "3ACCF3371833F3E6C9BFDE5670B37C0FBF4C6AE4FF090EBA01637EBF42F5AB09",
+      "size": 26414
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00\\RUNTIME_READINESS_INVENTORY.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R16PREP-7972af00\\RUNTIME_READINESS_INVENTORY.json",
+      "sha256": "3A13D3F0490A1226E2F46EB250FD07D3D93629AF3CA96C39D0A1137986FD3C76",
+      "size": 8967
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00\\RUNTIME_READINESS.md",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R16PREP-7972af00\\RUNTIME_READINESS.md",
+      "sha256": "7C228438C2E8A9E4D9A1244056DFC513EEFD5B12C74E2ED696431F21296EA0EA",
+      "size": 9853
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00\\NORMAL_NATIVE_SLICE_PLAN.md",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R16PREP-7972af00\\NORMAL_NATIVE_SLICE_PLAN.md",
+      "sha256": "C611BB3E9D94A17256143E71F9F8610457214E29DEB683B968492A57803EED83",
+      "size": 8366
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00\\NEXT_IMPLEMENTATION_WRITESET.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R16PREP-7972af00\\NEXT_IMPLEMENTATION_WRITESET.json",
+      "sha256": "27ED9FAD0C79C55204A73408CACC351E594F23E198298FCF8BB3DBC95B26E4D4",
+      "size": 4105
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00\\READINESS_GAPS.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R16PREP-7972af00\\READINESS_GAPS.json",
+      "sha256": "5F87108D86D0F39590A159ABBD48AD01B33A1161C998CC63C52FEB8300C0B87C",
+      "size": 5175
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00\\A_WORK_LOG.md",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R16PREP-7972af00\\A_WORK_LOG.md",
+      "sha256": "F14910C8167C78956802D7FC43FF5940410AB52DF8AE1203E9C479A20A7D4A3A",
+      "size": 5597
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00\\A_RECOVERY_ACK.md",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R16PREP-7972af00\\A_RECOVERY_ACK.md",
+      "sha256": "98AAB0662D026C79C1F6E8277C14868D1F583C6AD18CB6992F89E0946D18CCA3",
+      "size": 3420
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00\\ACK.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R16PREP-7972af00\\ACK.json",
+      "sha256": "9B95C0DB6E63AC241D9FC250CE039141C5F42553183B852652AE36EEDCCDD8FB",
+      "size": 1209
+    },
+    {
+      "original_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R16-OPERATOR-NATIVE-PREP-20261010-DIRECT-7972af00\\COMPLETION.json",
+      "frozen_path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R16PREP-7972af00\\COMPLETION.json",
+      "sha256": "6BD41EE4654D7FD9969ABC0A175F841CB7D46EB3EB01EDF3C61E012469D48346",
+      "size": 10574
+    }
+  ],
+  "runtime_e2_released": false
+}

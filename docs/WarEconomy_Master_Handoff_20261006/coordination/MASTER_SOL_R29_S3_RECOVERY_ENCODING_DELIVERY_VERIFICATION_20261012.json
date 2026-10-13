@@ -1,0 +1,87 @@
+{
+  "at": "2026-10-12T10:34:18.732095+09:00",
+  "guard_run": "MASTER-R29-S3-RECOVERY-ENCODING-20261012-01",
+  "guard_session": 8833,
+  "guard_pid": 31792,
+  "delivery_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012-01",
+  "result_id": "SOL-GATE05-R29-STARTUP_PAIR-INDEPENDENT-S3-20261012-8d682aff4ebd4996a12529142c0d7431",
+  "notice_id": "R29-S3-RECOVERY-UTF8",
+  "notice_status": "SENT_TOOL_CONFIRMED_ACK_PENDING",
+  "actual_same_turn_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:193",
+    "revision": 193,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a12da7-4e7b-7352-ad70-4efa4aa792ac",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791767301,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016acc3895228887d099a000f7ab92a260",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016acc3895228887d099a000f7ab92a260",
+      "turnId": "01a12da7-4e7b-7352-ad70-4efa4aa792ac",
+      "phase": "commentary",
+      "text": "마스터도 이번 오류가 복구 로그 출력 단계에서 발생했음을 확인하고 정정 범위를 검토 중입니다. UTF-8로 stdout·stderr를 처음부터 보존할 복구 스크립트를 준비했으며, 승인 후 실행하겠습니다."
+    },
+    "latestToolMarkerId": "exec-9ee50a34-a2a7-44d9-94fa-7d940e76e191",
+    "latestToolMarker": {
+      "id": "exec-9ee50a34-a2a7-44d9-94fa-7d940e76e191",
+      "turnId": "01a12da7-4e7b-7352-ad70-4efa4aa792ac",
+      "type": "commandExecution",
+      "name": "commandExecution",
+      "status": "completed"
+    }
+  },
+  "send_tool": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R29_S3_RECOVERY_ENCODING_SEND_TOOL_20261012.json",
+    "sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+    "bytes": 149
+  },
+  "exact_message": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R29_S3_RECOVERY_ENCODING_EXACT_MESSAGE_20261012.json",
+    "sha256": "004088BC3549BA7EF4470833C4E1A9F72900525008303AFDF7CF371281B0BC0C",
+    "bytes": 1859
+  },
+  "notice": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R29_S3_RECOVERY_OUTPUT_ENCODING_AUTHORIZATION_20261012.md",
+    "sha256": "C5D0FFD0B6789DD25F27B50CC7985963B11D452BC406C0979A204BC8768313BA",
+    "bytes": 3408
+  },
+  "preservation": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R29_S3_RECOVERY_ENCODING_STOP_PRESERVATION_20261012.json",
+    "sha256": "A60CD3E54085CA8A90295711F52984715D68BF4553228CA312484ECC5E1183BB",
+    "bytes": 5761
+  },
+  "original_partial_QA_and_encoding_error_files": 21,
+  "static_R1_allowance_used": 0,
+  "Master_candidate_execution": 0,
+  "normal_verdict": "PENDING",
+  "native_E2": "NOT_RELEASED",
+  "Foundation": "HOLD",
+  "new_WP": false,
+  "closure": false,
+  "scheduler_actual": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "PAUSED",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791765745222
+  }
+}

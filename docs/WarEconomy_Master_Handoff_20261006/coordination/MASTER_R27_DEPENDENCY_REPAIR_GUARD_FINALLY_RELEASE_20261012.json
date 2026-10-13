@@ -1,0 +1,10 @@
+{
+  "actual_release_tool": {
+    "chunk_id": "045e31",
+    "wall_time_seconds": 0.0000967,
+    "exit_code": 0,
+    "original_token_count": 107,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R27-QA-DEPENDENCY-REPAIR-20261012-01\", \"pid\": 26572, \"locked_at\": \"2026-10-12T03:56:15.649498+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-12T04:02:21.968679+09:00\", \"renewal_count\": 3, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-12T04:05:06.656363+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "all_child_commands_completed_before_release": true
+}

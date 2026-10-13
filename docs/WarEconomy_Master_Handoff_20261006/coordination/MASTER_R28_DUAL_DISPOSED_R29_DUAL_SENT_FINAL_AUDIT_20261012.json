@@ -1,0 +1,60 @@
+{
+  "at": "2026-10-12T09:15:17.904266+09:00",
+  "guard_run": "MASTER-R28-DUAL-COMPLETE-20261012-01",
+  "guard_session": 99760,
+  "guard_pid": 33196,
+  "A": {
+    "dispatch_id": "WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a",
+    "SENT": true,
+    "one_actual_submission": true,
+    "ACK": "VERIFIED",
+    "proof": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R29_STARTUP_PAIR_ACK_OR_PENDING_VERIFICATION_20261012.json",
+      "sha256": "087690D391F38820E760F5BBB906666757D6112D02E12344D01D6D5FF19D023F",
+      "bytes": 867
+    },
+    "scope": {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R29-STARTUP-PAIR-20261012-DIRECT-46f60e2a\\MASTER_R29_AUTHORIZED_SOURCE_SCOPE.json",
+      "sha256": "4B17C3573ACF504E203F83E47084490FCC6D26108CCFDB508E0A21AA8D913303",
+      "bytes": 7648
+    }
+  },
+  "Sol": {
+    "delivery_id": "SOL-GATE05-R29-STARTUP_PAIR-PREP-S1-20261012-01",
+    "actual_new_active_turn": "01a12d75-c04e-7103-b1eb-6195f19791cd",
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:176",
+    "ACK": "PENDING",
+    "prior_R28_runtime": "FAILED_USAGE_INACTIVE175_NOT_REPLACED",
+    "current_operational": "NEW_ORIGINAL_ACTIVE_TURN176_PROVEN",
+    "scope": "FROZEN_R27_NEWCONTRACT_NORMALORACLE_PREPARATION_NO_MUTABLE_R29_OR_RUNS"
+  },
+  "protected_unique_paths": 14105,
+  "currentmutable7_excluded": true,
+  "oldR27_candidate_frozen83_andQAraw_preserved": true,
+  "currentfixedCensus_csproj": true,
+  "R28_source_IL_disposition": "INDEPENDENT_EVIDENCE_ACCEPTED_A10CORRECTIONS_CONTROLLING",
+  "new_auxiliary_contract": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_R29_OPERATOR_STARTUP_PAIR_CONTRACT_20261012.md",
+    "sha256": "2EEE68E2E3B6D0FD3777D8F1F13EDDE3239D7697CD9339B03B324D108CE9A531",
+    "bytes": 6219
+  },
+  "scheduler_actual": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "ACTIVE",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791764008142
+  },
+  "future_R29_scheduled_execution": "UNOBSERVED",
+  "closure_changed": false,
+  "nativeE2": "NOT_RELEASED",
+  "Foundation": "HOLD",
+  "Engine002006_Pipeline007_schema_GQ1_PlayerGlobal_physicalsplit": "OPEN",
+  "Master_candidate_build_calls": 0,
+  "knowninstalled": "OPEN_UNCHANGED_ACTOR_UNKNOWN"
+}

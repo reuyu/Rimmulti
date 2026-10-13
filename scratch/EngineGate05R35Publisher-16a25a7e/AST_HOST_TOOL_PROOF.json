@@ -1,0 +1,62 @@
+{
+  "tool_name": "ast_checker.py",
+  "executed_at_utc": "2026-10-13T10:33:57.903517+00:00",
+  "completed_at_utc": "2026-10-13T10:33:57.972482+00:00",
+  "duration_seconds": 0.06895929994061589,
+  "pid": 11312,
+  "exit_code": 0,
+  "command": [
+    "C:\\Users\\user\\anaconda3\\python.exe",
+    "-B",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R35Publisher-16a25a7e\\ast_checker.py",
+    "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py"
+  ],
+  "cwd": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R35Publisher-16a25a7e",
+  "input_source": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+    "bytes": 22371,
+    "sha256": "9CAEA2DF0B8F3517DFCBEF080F7D26EC4343CDF4D2FD761453EFA2E4F3B86B4A"
+  },
+  "stdout": {
+    "raw_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R35Publisher-16a25a7e\\ast_stdout.raw.bin",
+    "bytes": 750,
+    "sha256": "6D33EB8394CF10CDA62AC27F9043F3A0E14F594E47307646F2862A7C336EA3B5",
+    "parsed": {
+      "status": "AST_PARSE_SUCCESS",
+      "target_file": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+      "source_bytes": 22371,
+      "source_lines": 539,
+      "root_node": "Module",
+      "body_node_count": 24,
+      "functions_found": [
+        "compute_sha256_bytes",
+        "compute_sha256_file",
+        "check_no_duplicate_keys",
+        "is_fully_qualified_windows_path",
+        "is_reparse_point",
+        "is_64_ascii_hex",
+        "validate_declaration",
+        "validate_config",
+        "publish_pair",
+        "main"
+      ],
+      "classes_found": [],
+      "imports_found": [
+        "os",
+        "sys",
+        "json",
+        "stat",
+        "hashlib",
+        "datetime.datetime",
+        "datetime.timezone",
+        "collections.OrderedDict"
+      ]
+    }
+  },
+  "stderr": {
+    "raw_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R35Publisher-16a25a7e\\ast_stderr.raw.bin",
+    "bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  "ast_verdict": "SYNTAX_PASS"
+}

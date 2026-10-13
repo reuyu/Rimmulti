@@ -1,0 +1,50 @@
+{
+  "delivery_id": "SOL-GATE05-R29-STARTUP_PAIR-PREP-S1-20261012-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R29_STARTUP_PAIR_PREPARATION",
+  "wp_revision": "S1",
+  "wp_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\WP_QA_ENGINE_GATE05_R29_STARTUP_PAIR_PREPARATION_S1.md",
+  "wp_sha256": "7A3C740AA1E370B250DEF71516A74F6A92B5D39854FEA9C52F93D9F7A0D2E98F",
+  "baseline_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R29_STARTUP_PAIR_PROTECTED_BASELINE_20261012.json",
+  "baseline_sha256": "FA0A09D459C03127301504251BF0188CEC04A3C5415A61F466DEC357298D95C3",
+  "protected_unique_paths": 14105,
+  "qa_root": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R29-STARTUP_PAIR-PREPARATION-S1-20261012",
+  "delivery_status": "SENT",
+  "unknown_delivery": false,
+  "frozen_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R27-CHILD-CAPTURE-20261011-DIRECT-cdc223f3\\MASTER_GATE05_R27_CHILD_CAPTURE_REVIEW_FREEZE_MANIFEST.json",
+  "frozen_manifest_sha256": "1FD4B9EFB368EE03F327241418C5CC0ACC08F9210E6E1BD271AECC373D219EE3",
+  "sent_at": "2026-10-12T09:14:20.504351+09:00",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:176",
+    "revision": 176,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a12d75-c04e-7103-b1eb-6195f19791cd",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791764054,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": null,
+    "latestAssistantMessage": null,
+    "latestToolMarkerId": null,
+    "latestToolMarker": null
+  },
+  "at": "2026-10-12T09:14:20.504351+09:00",
+  "tool_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_SOL_R29_STARTUP_PAIR_PREPARATION_SEND_TOOL_20261012.json",
+  "tool_sha256": "A94D905E4406F8D0E7430B4E9C37751A74A7EA4F3E33497162A2609A70E06D72",
+  "guard_run": "MASTER-R28-DUAL-COMPLETE-20261012-01",
+  "guard_pid": 33196,
+  "guard_session": 99760,
+  "no_substitute_agent": true,
+  "scope": "FROZEN_R27_NEW_AUXILIARY_CONTRACT_NORMAL_ORACLE_PREPARATION_NO_MUTABLE_R29_READ_OR_BUILD_CALLS_NATIVE"
+}

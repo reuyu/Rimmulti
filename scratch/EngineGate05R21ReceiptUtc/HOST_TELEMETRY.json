@@ -1,0 +1,40 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R21-RECEIPT-UTC-20261011-DIRECT-49256586",
+  "wp_id": "WP_ENGINE_GATE05_R21_RECEIPT_UTC_LITERAL",
+  "wp_revision": "GATE05-R21-RECEIPT-UTC",
+  "envelope": 24,
+  "orchestrator": "Python Host Subprocess",
+  "timestamp_utc": "2026-10-10T21:16:08.589833+00:00",
+  "pinned_runner": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\Harness\\bin\\Debug\\net472\\Gate05R21ReceiptUtcRunner.exe",
+    "sha256": "B5FC0260440B29E5631148F1682BF952B35CF96B6C2C5204C66F1DB73D83F6E9",
+    "size": 40448
+  },
+  "runs": [
+    {
+      "run_name": "run_en_us",
+      "culture": "en-US",
+      "child_pid": 15684,
+      "exit_code": 0,
+      "duration_seconds": 0.27637767791748047,
+      "output_directory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_en_us",
+      "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_en_us\\stdout.txt",
+      "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_en_us\\stderr.txt",
+      "inventory_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_en_us\\OUTPUT_INVENTORY.json",
+      "inventory_count": 17
+    },
+    {
+      "run_name": "run_de_de",
+      "culture": "de-DE",
+      "child_pid": 32936,
+      "exit_code": 0,
+      "duration_seconds": 0.16508030891418457,
+      "output_directory": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_de_de",
+      "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_de_de\\stdout.txt",
+      "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_de_de\\stderr.txt",
+      "inventory_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R21ReceiptUtc\\run_de_de\\OUTPUT_INVENTORY.json",
+      "inventory_count": 17
+    }
+  ],
+  "isolation_verified": true
+}

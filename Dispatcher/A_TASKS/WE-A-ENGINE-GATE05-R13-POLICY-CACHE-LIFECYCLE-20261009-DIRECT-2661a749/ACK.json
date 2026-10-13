@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "producer": "A",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R13-POLICY-CACHE-LIFECYCLE-20261009-DIRECT-2661a749",
+  "wp_id": "WP_ENGINE_GATE05_R13_POLICY_CACHE_LIFECYCLE",
+  "wp_revision": "GATE05-R13-POLICY-CACHE-LIFECYCLE",
+  "envelope": 16,
+  "received_at": "2026-10-09T17:04:30+09:00",
+  "status": "ACKNOWLEDGED",
+  "technical_objective": "POLICY_CACHE_LIFECYCLE",
+  "commitments": {
+    "source_scope": "scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs suffix (ContentProfileProvider marker onwards) only",
+    "prefix_fixed": "EngineHostCensus.cs 72547 bytes prefix SHA F3C4F865F1E2A898BF240A2D096195870D77A52408CF2D93664FE15092A2A887 immutable",
+    "worker_bridge_fixed": "WorkerBridge.cs and WorkerBridge.csproj strictly untouched",
+    "execution_permission_r13": "Valid current-v1 ConfigureExpectedPackagePolicy, Configured/HasConfigured snapshots, ClearConfiguredExpectedPackagePolicy, InvalidateCache, pure cached diagnostics and standalone pure cache core unit execution only",
+    "prohibitions": "No GetActualContentProfileFingerprint/ComputeActual*, no game/native/operator/controlplane/promotion, no global cache seeding/override/reflection, no negative/rejection/adverse tests, no self-closure",
+    "packaging_requirements": "Separate immutable directory per process, explicit output inventory, valid serializer-generated release JSON, consistent run_id across pre-run, results, raw console, release manifest, and completion",
+    "authority": "Dedicated Server remains final Domain Authority; Master governs release; Foundation HOLD"
+  }
+}

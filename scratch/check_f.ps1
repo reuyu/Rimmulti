@@ -1,0 +1,6 @@
+$raw = [System.IO.File]::ReadAllText("C:\Users\user\Desktop\RimMulti\scratch\WorkerBridgeMod\Source\EngineHostCensus.cs")
+Write-Output ("Length: " + $raw.Length)
+Write-Output ("Has :F1} -> " + $raw.Contains(":F1}"))
+Write-Output ("Has :F2} -> " + $raw.Contains(":F2}"))
+Write-Output ("Has :F1 -> " + $raw.Contains(":F1"))
+Write-Output ("Has :F2 -> " + $raw.Contains(":F2"))

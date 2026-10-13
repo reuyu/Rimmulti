@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "run_id": "MASTER-HEARTBEAT-20261007T180918",
+  "observed_at": "2026-10-07T18:12:53.462493+09:00",
+  "trigger_time": "2026-10-07T09:09:18.112Z",
+  "automation_id": "wareconomy-master",
+  "guard": {
+    "status": "LOCKED",
+    "run_id": "MASTER-HEARTBEAT-20261007T180918",
+    "pid": 31500,
+    "locked_at": "2026-10-07T18:09:38.386427+09:00",
+    "mechanism": "Windows msvcrt exclusive byte-range lock, byte0",
+    "max_hold_seconds": 1800
+  },
+  "sol": {
+    "thread_id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+    "host_id": "local",
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:9",
+    "thread_status": "active",
+    "turn_id": "01a11598-cbe3-7160-ae39-0e16e3a00e62",
+    "turn_status": "inProgress",
+    "latest_message_id": "msg_0c6b28ae575c2341016ac60becfd1087d0a9ab4e400b368bd5",
+    "latest_message_phase": "commentary",
+    "progress_summary": "QA before freeze inventory 2255 files and bootstrap 19 matches reported. Static validator execution binding and content fingerprint coverage concerns reported; independent runtime testing still in progress. No Master verdict from interim commentary.",
+    "result_index_exists": false
+  },
+  "a_dispatcher_files": {
+    "A_TO_MASTER_INBOX.jsonl": false,
+    "DISPATCHER_JOURNAL.jsonl": false,
+    "DISPATCHER_STATE.json": false
+  },
+  "actions": {
+    "wp_sent": false,
+    "closure_changed": false,
+    "new_result_processed": false,
+    "duplicate_delivery": false
+  },
+  "disposition": "SOL_IN_PROGRESS_NO_DUPLICATE; A_NOT_SENT_RUNTIME_UNVERIFIED"
+}

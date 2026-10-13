@@ -1,0 +1,12 @@
+{
+  "actual_release_tool": {
+    "chunk_id": "aa3d19",
+    "wall_time_seconds": 0.0000413,
+    "exit_code": 0,
+    "original_token_count": 103,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R28-SOL-ACK-20261012-01\", \"pid\": 31636, \"locked_at\": \"2026-10-12T04:55:18.482651+09:00\", \"mechanism\": \"Windows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed_at\": \"2026-10-12T04:56:18.032771+09:00\", \"renewal_count\": 1, \"release_reason\": \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-12T04:56:51.198405+09:00\"}\r\n\u001b[?9001l\u001b[?1004l"
+  },
+  "run_id": "MASTER-R28-SOL-ACK-20261012-01",
+  "session": 34847,
+  "all_child_commands_completed_before_release": true
+}

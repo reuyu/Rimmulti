@@ -1,0 +1,240 @@
+﻿{
+  "schemaVersion": 1,
+  "task_id": "WE-A-ENGINE-GATE05-R1-20261008-DIRECT-971a4780",
+  "wp_id": "WP_ENGINE_GATE05_R1",
+  "wp_revision": "GATE05-R1",
+  "timestamp_utc": "2026-10-07T16:23:02.3421062Z",
+  "candidate_lineage": {
+    "dll_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+    "dll_sha256": "620F7A7BB9D6BF45F149F31662CBD79B369152B2B7F2C67882BFF84240BA86AC",
+    "dll_size": 184320,
+    "dll_mvid": "6e080986-9595-4d50-83f2-bc8f84994d6d",
+    "pdb_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+    "pdb_sha256": "7E3CB7DBCBA9D0020C9801B3CB0150973DC61868E8B1E78EAF1A16F3DE112FC1",
+    "configuration": "Debug",
+    "targetFramework": "net472"
+  },
+  "native_runtime_status": {
+    "execution_verdict": "UNTESTED_BY_FROZEN_INSTALLED_BOUNDARY",
+    "reason": "RimWorld engine hardcodes Mods folder to Steam installation directory. Installed mod DLL is strictly frozen at historical SHA 2D64FF9C... per Master invariant. Modifying frozen installation is prohibited. Candidate is verified via dedicated .NET E1 suite; native execution is honestly reported as UNTESTED.",
+    "installed_dll_sha256": "2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C",
+    "installed_dll_frozen_match": true
+  },
+  "test_summary": {
+    "total": 30,
+    "passed": 30,
+    "failed": 0
+  },
+  "results": [
+    {
+      "id": "PROV-01",
+      "category": "Provenance",
+      "description": "Candidate DLL Built and Exists",
+      "status": "PASS",
+      "details": "Path=C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll, SHA256=620F7A7BB9D6BF45F149F31662CBD79B369152B2B7F2C67882BFF84240BA86AC, Size=184320"
+    },
+    {
+      "id": "PROV-02",
+      "category": "Provenance",
+      "description": "Candidate PDB Exists and Matches Debug Lineage",
+      "status": "PASS",
+      "details": "Path=C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb, SHA256=7E3CB7DBCBA9D0020C9801B3CB0150973DC61868E8B1E78EAF1A16F3DE112FC1"
+    },
+    {
+      "id": "PROV-03",
+      "category": "Provenance",
+      "description": "Candidate MVID Bound to Module",
+      "status": "PASS",
+      "details": "MVID=6e080986-9595-4d50-83f2-bc8f84994d6d"
+    },
+    {
+      "id": "G05-S01-01",
+      "category": "G05-S01",
+      "description": "Reject Invalid Negative PID",
+      "status": "PASS",
+      "details": "Response: 'ERROR: Malformed validator PID.'"
+    },
+    {
+      "id": "G05-S01-02",
+      "category": "G05-S01",
+      "description": "Reject Non-Existent Dead PID",
+      "status": "PASS",
+      "details": "Response: 'ERROR: Validator process inspection failed: ID가 999999인 프로세스가 실행되고 있지 않습니다.'"
+    },
+    {
+      "id": "G05-S01-03",
+      "category": "G05-S01",
+      "description": "Reject Self-PID Validator Registration",
+      "status": "PASS",
+      "details": "Response: 'ERROR: Self-validation prohibited. Validator PID cannot equal simulator PID.'"
+    },
+    {
+      "id": "G05-S01-04",
+      "category": "G05-S01",
+      "description": "Successful Operator Validator Process Registration",
+      "status": "PASS",
+      "details": "Response: 'VALIDATOR_PROCESS_REGISTERED: TaskId=task-gate05-r1-7f430755, Pid=32284, StartTime=2026-10-07T16:23:01.9914715Z' (PID=32284)"
+    },
+    {
+      "id": "G05-S01-05",
+      "category": "G05-S01",
+      "description": "STAGE_SAVE Public Response Nonce Leakage Removed",
+      "status": "PASS",
+      "details": "Verified STAGED_OK return string format omits CapabilityNonce secret"
+    },
+    {
+      "id": "G05-S01-06",
+      "category": "G05-S01",
+      "description": "GET_ACTIVE_VALIDATOR_TASK Nonce Redacted in Public Query",
+      "status": "PASS",
+      "details": "RedactedInJson=True"
+    },
+    {
+      "id": "G05-S01-07",
+      "category": "G05-S01",
+      "description": "Reject Tampered Nonce in Task Execution",
+      "status": "PASS",
+      "details": "Response: 'VALIDATION_FAILED: CapabilityNonce mismatch. Unauthorized task execution.'"
+    },
+    {
+      "id": "G05-S01-08",
+      "category": "G05-S01",
+      "description": "Validator Result Written to Protected Task Channel File",
+      "status": "PASS",
+      "details": "Path=C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R1\\MockSaveData\\Tasks\\task-gate05-r1-7f430755.result.json, Exists=True"
+    },
+    {
+      "id": "G05-S01-09",
+      "category": "G05-S01",
+      "description": "COMPLETE_STAGE_VALIDATION Atomic Single-Use Consumption",
+      "status": "PASS",
+      "details": "Response: 'STAGE_VALIDATION_ACCEPTED: ReceiptId=VR_20261007_162302_25e17d3466ee4840b9eea30b36b10e4a, ValidatorPid=32284, TaskId=task-gate05-r1-7f430755', MovedToConsumed=True"
+    },
+    {
+      "id": "G05-S01-10",
+      "category": "G05-S01",
+      "description": "Reject Replay of Consumed Task Result",
+      "status": "PASS",
+      "details": "Response: 'STAGE_VALIDATION_REJECTED: ValidatorTask already consumed. Replay prohibited.'"
+    },
+    {
+      "id": "G05-S01-11",
+      "category": "G05-S01",
+      "description": "Deprecate and Reject Public Caller Receipt Submission",
+      "status": "PASS",
+      "details": "Response: 'STAGE_VALIDATION_REJECTED: Public/caller receipt submission is deprecated and prohibited under Gate05-R1 / MD-127. Authority must originate from registered operator-owned validator task and protected channel.'"
+    },
+    {
+      "id": "G05-S02-01",
+      "category": "G05-S02",
+      "description": "Manifest Schema ADR-006B-v3 Versioning",
+      "status": "PASS",
+      "details": "SchemaVersion=ADR-006B-v3"
+    },
+    {
+      "id": "G05-S02-02",
+      "category": "G05-S02",
+      "description": "Fail-Closed Fatal Exception on Uninitialized Components",
+      "status": "PASS",
+      "details": "ThrewInvalidOperationException=True, Msg='ContentProfile computation failed: LoadedModManager.RunningModsListForReading is null or empty. Runtime content is unadmitted.'"
+    },
+    {
+      "id": "G05-S02-03",
+      "category": "G05-S02",
+      "description": "REGISTER_AUTHORITY Rejection of UNKNOWN_PROFILE",
+      "status": "PASS",
+      "details": "Response: 'ERROR: UNKNOWN_PROFILE is unadmitted. Full content profile required.'"
+    },
+    {
+      "id": "G05-S02-04",
+      "category": "G05-S02",
+      "description": "REGISTER_AUTHORITY Rejection of Invalid Hash Format",
+      "status": "PASS",
+      "details": "Response: 'ERROR: contentProfileFingerprint must be 64-char SHA256.'"
+    },
+    {
+      "id": "G05-S02-05",
+      "category": "G05-S02",
+      "description": "ContentProfileProvider Explicit Cache Invalidation",
+      "status": "PASS",
+      "details": "PostInvalidateCache=''"
+    },
+    {
+      "id": "G05-S02-06",
+      "category": "G05-S02",
+      "description": "RESET_WORKER Triggers Profile Cache Invalidation",
+      "status": "PASS",
+      "details": "PostResetCache=''"
+    },
+    {
+      "id": "G05-S02-07",
+      "category": "G05-S02",
+      "description": "Expanded 8 Def Families & Deep Gameplay Census Implemented",
+      "status": "PASS",
+      "details": "Has8Families=True, HasDeepGameplayFields=True"
+    },
+    {
+      "id": "MD128-01",
+      "category": "Defensive",
+      "description": "StageValidationReceipt Bound with Validator Process Instance",
+      "status": "PASS",
+      "details": "PID=32284, Time=2026-10-07T16:23:01.9914715Z, Result=PASS"
+    },
+    {
+      "id": "MD129-01",
+      "category": "Defensive",
+      "description": "Control-Plane Revocation on RESET_WORKER",
+      "status": "PASS",
+      "details": "SemanticState=NONE"
+    },
+    {
+      "id": "MD131-01",
+      "category": "Defensive",
+      "description": "Result Epoch Monotonicity and Reset Tracking",
+      "status": "PASS",
+      "details": "EpochVal=0"
+    },
+    {
+      "id": "NATIVE-01",
+      "category": "NativeEnv",
+      "description": "Game Executable Exists",
+      "status": "PASS",
+      "details": "Path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\RimWorldWin64.exe"
+    },
+    {
+      "id": "NATIVE-02",
+      "category": "NativeEnv",
+      "description": "Steam Installed DLL Frozen at Historical Gate05 SHA",
+      "status": "PASS",
+      "details": "InstalledSha=2D64FF9C56E4F5CB5E3395D10FCFDB1E56B6767F00CC351FBA93F9F132254A4C"
+    },
+    {
+      "id": "NATIVE-03",
+      "category": "NativeEnv",
+      "description": "RimWorld Mod Folder Loading Restriction Observed",
+      "status": "PASS",
+      "details": "RimWorld hardcodes Mods folder path; custom mods dir CLI is unsupported on Windows without modifying Steam installation"
+    },
+    {
+      "id": "NATIVE-04",
+      "category": "NativeEnv",
+      "description": "Native Candidate Execution Honestly Documented as UNTESTED/BLOCKED",
+      "status": "PASS",
+      "details": "Preservation invariant strictly enforced; old installed DLL not claimed as candidate execution"
+    },
+    {
+      "id": "PRESERV-01",
+      "category": "Preservation",
+      "description": "Pipeline REV6-R1 Candidates 17/17 Bit-Identical",
+      "status": "PASS",
+      "details": "Checked=17, Preserved=True"
+    },
+    {
+      "id": "PRESERV-02",
+      "category": "Preservation",
+      "description": "Historical Gate05 Baseline Archive 19/19 Bit-Identical",
+      "status": "PASS",
+      "details": "Checked=19, Preserved=True"
+    }
+  ]
+}

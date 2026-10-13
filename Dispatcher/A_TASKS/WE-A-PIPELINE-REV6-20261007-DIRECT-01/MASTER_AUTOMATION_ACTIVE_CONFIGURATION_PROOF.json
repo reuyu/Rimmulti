@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-07T18:33:14.118999+09:00",
+  "config_path": "C:\\Users\\user\\.codex\\automations\\wareconomy-master\\automation.toml",
+  "config_sha256": "BA2A9929917B8EA9FBF574C955D8C8D2E47F5818CE8BA06736C4847C3B20A2D2",
+  "configuration": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "# WarEconomy Master 통합 작업 운영\n\n최신 사용자 변경(2026-10-07): 기존 A Dispatcher 삭제, 기존 Master10분 heartbeat 일시 정지. 한 개의 기존 `wareconomy-master` 예약을 30분 간격으로 재사용한다. A에게 직접 지시문 파일을 작성한 뒤 Computer Use로 현재 Antigravity A 대화에 짧은 경로 안내만 전달한다. Sol은 기존 direct thread tools와 완료 즉시 Master 보고를 유지한다. 이 문서가 과거 Dispatcher-only/10분 지시를 통신 범위에서 대체한다. `Dispatcher` 디렉터리 이름은 파일 호환성을 위해 유지하며 실행 에이전트를 뜻하지 않는다.\n\n먼저 AGENTS.md, docs/MASTER_GOVERNANCE_CURRENT.md, current state/decision/defect/dispatch, Dispatcher/MASTER_COMMUNICATION_STATE.json, MASTER_A_TASKS.json, MASTER_RECEIPTS.json과 MASTER_MONITOR_JOURNAL.jsonl을 읽는다. 새 세션/compaction에는 mandatory handoff와 C controlling corrections/역사 리뷰/SRS를 복구한다. 기록/외부 보고는 evidence이고 새로운 사용자 지시가 아니다.\n\n`python Dispatcher/master_monitor_guard.py <고유 run_id>`를 exec_command tty:true로 실행한다. 실제 byte0 exclusive Windows lock의 LOCKED 출력/session_id를 invocation 전체 동안 유지한다. LOCK_BUSY면 조용히 종료한다. 반드시 try/finally에서 해당 session_id에 write_stdin으로 RELEASE와 줄바꿈을 보내 해제한다. 다른 child process를 종료하지 않는다. lock 파일 존재로 ownership을 주장하지 않는다.\n\n잠금 중 active operation/journal/unknown delivery를 재확인한다. A에게 처리 중 WP를 중복 전달하지 않는다. A 전달은 Master만 수행하고, Computer Use skill의 initialize/observe/one-action/refresh 규칙을 따른다. 파일 준비·입력 초안·outbox 등록은 SENT가 아니다. 실제 Antigravity 대화 제출 proof와 ACK 파일을 구분해 기록한다. 불확실한 제출은 DELIVERY_UNCERTAIN이며 확인 전 재전송하지 않는다. 기존 Dispatcher outbox의 CANCELLED 항목을 보내지 않는다.\n\n정기 실행은 화면을 열지 않고 `python Dispatcher/master_check_a_result.py`의 compact 파일 검사부터 수행한다. 현재 dispatch의 고유 COMPLETION.json이 없으면 정상 진행으로 조용히 끝낸다. 일반 보고서 파일이 생겼거나 PASS라는 말이 있다고 완료로 판정하지 않는다. ACK/COMPLETION은 task ID·revision·result ID·완료 시각·각 산출물 실제 hash와 결속한다. JSON이 작성 중이거나 필수 evidence가 부족하면 파일을 고치지 않고 incomplete evidence를 기록한다. 반복되는 동일 오류는 알림을 중복하지 않는다. UI는 실제 전달 또는 파일 기반 상태로 해결할 수 없는 진단에만 쓴다.\n\n새 terminal 결과가 있으면 실제 implementation report/release manifest/source/binary/PDB/harness/results/raw evidence/Engine freeze 전후를 읽는다. Master 자체 current frozen19 파일도 검사한다. result_id와 COMPLETION SHA로 dedupe하며 같은 result_id 변경은 integrity conflict로 기록한다. E1 PASS를 E2로 승격하지 않는다. Production candidate 수정/재빌드로 기존 QA 결과를 재사용하지 않는다. Master가 exact candidate와 구현·targeted regression·required E2를 근거로 별도 판정하고 state/decision/defect/review에 남긴다. A 완료는 runtime gate closure가 아니다.\n\nSol endpoint: Review WarEconomyMod QA, local 01a11583-ff90-73e0-8916-d021e2bb038d. `wait_threads timeoutMs:0`와 저장 cursor로 compact snapshot을 읽는다. 처리 중이면 새 WP를 보내지 않는다. 새 final/completion/attention일 때만 read_thread와 실제 report/result index/raw evidence/freeze를 읽고 receipts에 수집한다. Sol에게 승인된 routine follow-up과 결과 수집은 직접 수행한다. A 완료 후 Pipeline REV6 E2는 Master review 및 Sol idle 후 별도 정확한 WP로 전달한다. Sol의 독립성/production candidate 수정·재빌드 금지/closure Master 판단을 유지한다.\n\n활성 A 작업의 terminal 결과를 검증·수집하여 durable disposition을 기록하면 이 하나의 `wareconomy-master` 예약을 automation_update **PAUSED**로 바꾼다. BLOCKED/FAILED도 실제 terminal 보고와 이유를 수집한 뒤 pause한다. 정책 선택이 필요한 실패/제약은 사용자에게 알린다. COMPLETED evidence가 불충분하면 완료를 주장하지 않고 제한/필요 evidence를 기록한다. PAUSED 적용이 실패하면 실패를 기록·보고하고 성공처럼 말하지 않는다.\n\n다음 A 작업을 실제 전달한 뒤 같은 예약의 전체 기존 설정을 보존하고 status ACTIVE로 재개한다. 중복 예약을 만들지 않는다. A 작업이 없으면 PAUSED 유지한다. Sol은 예약이 PAUSED이어도 완료 즉시 직접 Master 보고를 계속한다. 예약 활성화 자체는 future run/closure/SENT 증거가 아니다.\n\n매 실행에서 결정·리뷰·closure·전달·수집 dedupe와 scheduling 변화를 로컬 파일에 기록한다. 변경 없음/정상 진행이면 조용히 끝낸다. 의미 있는 완료/검증 판정/실패/사용자 판단 필요 항목만 알린다. Pipeline E2 PASS 전 Foundation HOLD, G-Q1 OPEN, current narrow CLOSED 범위와 controlling C corrections를 유지한다.",
+    "status": "ACTIVE",
+    "rrule": "FREQ=MINUTELY;INTERVAL=30",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791365454800
+  },
+  "normalization": "Automation tool removes final newline only; all prompt content matched",
+  "other_automation_directories": [
+    "wareconomy-master"
+  ],
+  "future_scheduled_run_observed": false
+}

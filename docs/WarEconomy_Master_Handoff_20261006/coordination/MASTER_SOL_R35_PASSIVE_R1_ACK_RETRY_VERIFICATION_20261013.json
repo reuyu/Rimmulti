@@ -1,0 +1,70 @@
+{
+  "at": "2026-10-13T22:53:22.106452+09:00",
+  "result_id": "SOL-GATE05-R35-PUBLISHER-INDEPENDENT-STATIC-S1-20261013-dd261024fa244f6d80c2ac57e8e9a299",
+  "delivery_id": "SOL-GATE05-R35-PUBLISHER-INDEPENDENT-STATIC-S1-20261013-01",
+  "resume_ACK": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R35-PUBLISHER-INDEPENDENT-STATIC-S1-20261013\\RESUME_R1_ACK.json",
+    "sha256": "12D0CF2982CA17990F8E8A4F1E9503E7B605CE2A64AC9B63E6742B89732C50E2",
+    "bytes": 6138
+  },
+  "failed_first_return": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R35-PUBLISHER-INDEPENDENT-STATIC-S1-20261013\\RESUME_R1_MASTER_RETURN_TOOL_PROOF.json",
+    "sha256": "35734CD3BE90773B0F6F948447229E667640D57DC384AB98F99987F3286D7805",
+    "bytes": 541
+  },
+  "actual_retry_return": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R35-PUBLISHER-INDEPENDENT-STATIC-S1-20261013\\RESUME_R1_MASTER_RETURN_RETRY1_TOOL_PROOF.json",
+    "sha256": "1BDBDAEDF47B1E073B486C226791B0D58C64465E7AA4F1929F261E843A9CCC8E",
+    "bytes": 149
+  },
+  "transport_retry_success": true,
+  "partial16_allmatched": true,
+  "new_frozen34_matched": true,
+  "originalACK_unchanged": true,
+  "source_reader_raw_toolnames": [
+    "resume_r1.TOOL.json"
+  ],
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "bcc76e72-e33d-4898-bc7b-b558cfab470c:39",
+    "revision": 39,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a13587-b04c-70f2-b090-e41e5e9f4a1f",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791899447,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ace374c791487d0a77a35cd05231c18",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016ace374c791487d0a77a35cd05231c18",
+      "turnId": "01a13587-b04c-70f2-b090-e41e5e9f4a1f",
+      "phase": "commentary",
+      "text": "같은 R35 정적 WP와 result ID로 이어가겠습니다. R1 reader는 exit0으로 끝났고 partial 16개와 ACK도 보존되어 있습니다. 실패했던 복구 ACK 전달을 한 번 재시도하겠습니다. 앞선 전달은 사용량 한도로 자동 승인 검토를 완료하지 못해 실행되지 않았습니다. 안전성 거절은 아니었으며, 실패 반환을 보존했습니다."
+    },
+    "latestToolMarkerId": "exec-ecb5eb7f-8342-4ab2-8af6-36b58b379366",
+    "latestToolMarker": {
+      "id": "exec-ecb5eb7f-8342-4ab2-8af6-36b58b379366",
+      "turnId": "01a13587-b04c-70f2-b090-e41e5e9f4a1f",
+      "type": "fileChange",
+      "name": "fileChange",
+      "status": "completed"
+    }
+  },
+  "source_review_findings_not_yet_final_disposition": true,
+  "tentative_policy_schema_exactvalue_requirement_not_adopted": true,
+  "no_new_WP_or_execution": true,
+  "Foundation": "HOLD",
+  "nativeE2": "NOT_RELEASED",
+  "guard_session": 95118
+}

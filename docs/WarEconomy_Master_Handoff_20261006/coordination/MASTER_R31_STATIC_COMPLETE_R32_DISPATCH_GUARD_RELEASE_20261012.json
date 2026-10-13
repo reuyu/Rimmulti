@@ -1,0 +1,11 @@
+{
+  "guard_session": 75967,
+  "guard_run": "MASTER-R31-SOL-STATIC-COMPLETE-20261012-01",
+  "actual_release": {
+    "chunk_id": "7f61dc",
+    "wall_time_seconds": 0.0000527,
+    "exit_code": 0,
+    "original_token_count": 118,
+    "output": "RELEASE\r\n{\"status\": \"RELEASED\", \"run_id\": \"MASTER-R31-SOL-STATIC-COMPLETE-20261012-01\", \"\r\n\u001b[23;80H\"pid\": 22388, \"locked_at\": \"2026-10-12T23:13:17.869002+09:00\", \"mechanism\": \"Wind\r\n\u001b[23;80Hdows msvcrt exclusive byte-range lock, byte0\", \"max_hold_seconds\": 1800, \"renewed\r\n\u001b[23;80Hd_at\": \"2026-10-12T23:27:22.021542+09:00\", \"renewal_count\": 6, \"release_reason\": \r\n\u001b[23;80H \"RELEASE_OR_STDIN_CLOSED\", \"released_at\": \"2026-10-12T23:28:10.801760+09:00\"}   \r\n\u001b[?9001l\u001b[?1004l"
+  }
+}

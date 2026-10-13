@@ -1,0 +1,137 @@
+{
+  "at": "2026-10-13T12:20:50.120465+09:00",
+  "files": [
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\ACK.json",
+      "sha256": "2662A780B57BF625F77A64B22724E068215A9EF1153CBF9432A9BFB37F3446C8",
+      "bytes": 2684
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\ACK_INITIAL.json",
+      "sha256": "2662A780B57BF625F77A64B22724E068215A9EF1153CBF9432A9BFB37F3446C8",
+      "bytes": 2684
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\ACK_RETURN_TOOL_PROOF.json",
+      "sha256": "1BDBDAEDF47B1E073B486C226791B0D58C64465E7AA4F1929F261E843A9CCC8E",
+      "bytes": 149
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\bootstrap.py",
+      "sha256": "72B18D8CB13C1C1F71518DDCC86F41CC5DB1A39779F999A1E8743680326A31B4",
+      "bytes": 4053
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\bootstrap.STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\bootstrap.STDOUT.txt",
+      "sha256": "217237AE0381D00280A7D74A152C1B9DD2D54FC0B533062ED21ED7A028F3C447",
+      "bytes": 5779851
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\bootstrap.TOOL.json",
+      "sha256": "CDC26E1A4669B9FDB4C720ECC51FE93C00B09D664071919B526CC8582A4BCAD2",
+      "bytes": 1248
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\common.py",
+      "sha256": "D4538419156FAF68B7D7245D393CB6F2A92D2AB58BBAC54602A4050ADB919573",
+      "bytes": 2653
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\FROZEN_R32_PASSIVE_IDENTITY.json",
+      "sha256": "25A4C941B7925DCB15C53F4B1E140E7E83EF24D36EA0274466759C5ADBBD492F",
+      "bytes": 4075
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\FROZEN_R32_SOURCE_TEXT_READ.json",
+      "sha256": "1F6314B0CDCE352F939E5CD72EA2F990EAE6E2B84F3E4D6A34F8C7DE4A97D424",
+      "bytes": 286095
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\HISTORICAL_CONTEXT_OBSERVATION_REQUIREMENTS.json",
+      "sha256": "928B4F251CD9827FB60EC83C227CE52A6A5DC9A9D8715945079B40D4747639D9",
+      "bytes": 2735
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\log.py",
+      "sha256": "E654A9D1F9920D56B6F9C1A76DE4695B5113B632927AB2F08E2B8F4025039AB0",
+      "bytes": 1475
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\NATIVE_LOCAL_ASSET_STATUS.json",
+      "sha256": "C264F2C465A9F3DE50287C97BB41A8120A294240FFFC01BD04D9DD3ED7D41F1C",
+      "bytes": 11439
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\NATIVE_POSITIVE_OBSERVATION_PLAN.json",
+      "sha256": "E91F858F5897A224C5AC779C52DE4369FF17AD595E7A10ED6C0CFB179722D48B",
+      "bytes": 5688
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\NORMAL_RESOURCE_OWNERSHIP_CHECKLIST.json",
+      "sha256": "773B46B02167851217250FE08A86706EEFDB19810EFA145B5AE824CD6382253A",
+      "bytes": 3436
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\PASSIVE_READER_INPUT_PIN.json",
+      "sha256": "F61A41BEE897BC44236D44DC9F2C7BE549B86825C6F9C9123AD8ABEBD58A2A50",
+      "bytes": 1070
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\pe_pdb_reader.py",
+      "sha256": "65C2FBA7681AA05394C80B982DD5EA9962C0CA681ABD98605F57B2033FDAE915",
+      "bytes": 4044
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\prepare.py",
+      "sha256": "E0F1E9C67B64BAD06636A14D8F32AD5214640E12E9368970B49CBBD2280CEE37",
+      "bytes": 20877
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\prepare.STDERR.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\prepare.STDOUT.txt",
+      "sha256": "A76A3035D67ECF89892827E2EE74946079C117FC4DF433C2C2DEE659441F3A16",
+      "bytes": 286
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\prepare.TOOL.json",
+      "sha256": "6DEF0DF9256032375B76099AB90BEF288181CF37CD65CB0968A03E8CD944D0C2",
+      "bytes": 1237
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\PRESERVATION_BEFORE.json",
+      "sha256": "0C847C7112501B55506FEFA1F58DA72581CFA53F9C4FDDC165EF2446B4436945",
+      "bytes": 5096152
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\PROPOSED_NEXT_QA_ADMISSION.json",
+      "sha256": "093889A1C81164ABBB602745517646F64FE8B4E1B41A8DAD80AC17C0D4D66982",
+      "bytes": 1776
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\READINESS_BLOCKERS.json",
+      "sha256": "520CC5D69DA8CC43C02A0B5895ECB6E2FD5EF467C24308A54B4ECC70A60DC65F",
+      "bytes": 10554
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\RECOVERY_AND_PREPARATION_INPUT_AUDIT.json",
+      "sha256": "132E7CAC3D7E5047BE03C5155E54564CEA4A5313F047F471D4321422DBE1327F",
+      "bytes": 14605
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R33-RESOURCE-NATIVE-PREPARATION-S1-20261013\\RESOURCE_COMMIT_SOURCE_OBLIGATION_MATRIX.json",
+      "sha256": "8829706A6516E38F2F2A85D27262BA95DBE925BEC97344DC002B35C3777AA581",
+      "bytes": 6643
+    }
+  ],
+  "scope": "Existing completed initial/passive preparation outputs before usage-failed inactive resume; new metadata finalize-only files allowed, old files immutable",
+  "candidate_execution": 0
+}

@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "producer": "A",
+  "report_kind": "E1",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2",
+  "wp_id": "WP_ENGINE_GATE05_R32_CUSTODY",
+  "wp_revision": "GATE05-R32-CUSTODY",
+  "envelope": 35,
+  "result_id": "WE-A-ENGINE-GATE05-R32-CUSTODY-RESULT-01",
+  "status": "COMPLETED",
+  "completed_at": "2026-10-12T14:32:39.046864+00:00",
+  "summary": "WP_ENGINE_GATE05_R32_CUSTODY / GATE05-R32-CUSTODY (Envelope 35) implementation and prospective build verification completed. Corrected Defect ENGINE-G05-R31-CUSTODY-20261012-01 across exact 4 authorized byte spans in scratch/WorkerBridgeMod/Source/WorkerBridge.cs: (1) PRIVATE_DURABLE_MODE_OWNER_CONSUMED_STATE: replaced overloaded Unity null comparison with strict object.ReferenceEquals in cleanup and acquire methods so native-null wrappers on destroyed GameObjects cannot bypass matching managed payload cleanup, and checked _staticStartupAborted under lock before transfer to clear matching payload and fail-closed; (2) AWAKE_REQUIRED_MODE_ENTRY: established _isPairRequiredMode from durable static marker BEFORE reading this.gameObject, safely retained managed owner in try/catch, and checked prior abort (_staticStartupAborted) under lock before resource creation, setting _startupInitializationComplete = false, isRunning = false, and returning fail-closed; (3) AWAKE_SUCCESS_AND_FAILURE_TAIL: success marks _startupInitializationComplete = true; catch sets _startupInitializationComplete = false, isRunning = false, _staticStartupAborted = true, protects error logging in try/catch, and independently executes teardown for log handler, listener, thread, and CleanupOwnerPendingHandoff(_retainedOwner); (4) OWNER_SCOPED_DESTROY_WHOLE_METHOD: passes retained owner to CleanupOwnerPendingHandoff, guards error logging, and executes isRunning = false and resource teardown inside an unconditional finally block. Verified all 5 outside segments (263,961 bytes total) 100% bit-exact against R31 baseline. Preserved EngineHostCensus.cs, WorkerBridge.csproj, and publish_operator_pair.py immutable. Pinned BUILD_INPUT_MANIFEST.json with actual compile references and toolchain binaries before build. Executed prospective Debug and Release builds (both exit code 0) capturing full raw stdout/stderr logs and host telemetry. Rebuilt Debug candidate DLL (325,632 B, SHA 0B23C358..., MVID 7d436c98-659a-4df1-a085-06fe9e55a0bc), Release candidate DLL (308,224 B, SHA 19F2CA8D..., MVID cee8068e-e814-4203-8135-8c0fd5107005), and synchronized 1.6 Assemblies with Debug candidate. Zero unit runner and zero native runtime tests executed per build-only work package boundaries. Dedicated Server remains final Domain Authority; Foundation HOLD.",
+  "e1_verdict": "BUILT_SOURCE_CORRECTION_RUNTIME_NOT_EXECUTED",
+  "test_counts": {
+    "total_cases": 0,
+    "passed_cases": 0,
+    "failed_cases": 0,
+    "runtime_unit_runner_executions": 0,
+    "prohibited_calls_executed": 0
+  },
+  "limitations": [
+    "BUILD_ONLY_PROSPECTIVE_EVIDENCE: Verification conducted strictly via source inspection, pre-build input pinning, and prospective toolchain compiler builds (Debug and Release both exit 0). No unit runner execution was performed.",
+    "ZERO_RUNTIME_RUNNER_EXECUTIONS: Unit test execution and runner regression were intentionally zeroed per R32 task authorization; independent positive PURE regression is reserved for Sol.",
+    "ZERO_PROCESS_API_CALLS: All C# Process APIs, GetCurrentProcess, and process identity verification were strictly excluded.",
+    "NATIVE_ACTUAL_COMPUTATION_PROHIBITED_AND_UNTESTED: In-engine, game runtime, native execution, Awake event loops, and operator promotion were strictly prohibited and not executed.",
+    "STEAM_INSTALLED_INCIDENT_OPEN: Steam installed DLL discrepancy against archive baseline remains an UNKNOWN OPEN INCIDENT, preserved unmodified.",
+    "FINAL_DOMAIN_AUTHORITY_REMAINS_DEDICATED_SERVER: Dedicated Server remains final Domain Authority; Engine/Client produces bounded simulation proposals.",
+    "FOUNDATION_HOLD: Foundation remains HOLD pending Pipeline independent E2 PASS."
+  ],
+  "artifacts": [
+    {
+      "role": "korean_report",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\A_ENGINE_GATE05_R32_CUSTODY_REPORT_20261012.md",
+      "sha256": "AF200889EC179898409D379FE986252B7EC2CBED6D0555F83E7420E3D0E139E4",
+      "size": 5157,
+      "mvid": ""
+    },
+    {
+      "role": "implementation_report",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2\\IMPLEMENTATION_REPORT.md",
+      "sha256": "12942B915953A92AC956E2C2B1F7F780C660CE107B2D310ACDB3134B5F749ABE",
+      "size": 5254,
+      "mvid": ""
+    },
+    {
+      "role": "release_manifest_docs",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R32_CUSTODY.json",
+      "sha256": "1C70FAF563C09438CD7CF797EF4105C18B9965CB4D8C1D6FD2F08C28D37AFAED",
+      "size": 3223,
+      "mvid": ""
+    },
+    {
+      "role": "release_manifest_task",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2\\RELEASE_MANIFEST.json",
+      "sha256": "1C70FAF563C09438CD7CF797EF4105C18B9965CB4D8C1D6FD2F08C28D37AFAED",
+      "size": 3223,
+      "mvid": ""
+    },
+    {
+      "role": "candidate_identity",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2\\CANDIDATE_IDENTITY.json",
+      "sha256": "E2584A6D22FDDE0AAF3641865D064A3C4D478756EC4472DD6B581E71C040CD03",
+      "size": 4666,
+      "mvid": ""
+    },
+    {
+      "role": "source_scope_diff",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2\\SOURCE_SCOPE_DIFF.json",
+      "sha256": "28E556D7EFC48DF142471E27CD49E3F8B7C9AB653028698A22ADEFE896A00B1A",
+      "size": 3481,
+      "mvid": ""
+    },
+    {
+      "role": "source_custody_resource_flow",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2\\SOURCE_CUSTODY_RESOURCE_FLOW.json",
+      "sha256": "7EE52DE75494596BCEF38C0CFF5190B8FF3B794A7C3B5F0E7AF1040DEF705FAD",
+      "size": 3329,
+      "mvid": ""
+    },
+    {
+      "role": "before_after_preservation",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2\\BEFORE_AFTER_PRESERVATION.json",
+      "sha256": "5056AF782F019D02FE829927D90C928FCAAA29AF54F78E8B76ED04A9D18CAFBB",
+      "size": 4510,
+      "mvid": ""
+    },
+    {
+      "role": "preservation_before",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2\\PRESERVATION_BEFORE.json",
+      "sha256": "BE82DA79E618963B9E647D9AB0C946494A1B7E40108CDDF8A40D8AED86643C55",
+      "size": 2464,
+      "mvid": ""
+    },
+    {
+      "role": "build_input_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2\\BUILD_INPUT_MANIFEST.json",
+      "sha256": "1F2BF9E599B11471A35207C394B109D977DDB71B91A350FE7CD55F3AC1768939",
+      "size": 5612,
+      "mvid": ""
+    },
+    {
+      "role": "actual_reference_binding",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2\\ACTUAL_REFERENCE_BINDING.json",
+      "sha256": "36DF681C5A6AD13BA446567AC18B37C2D380FA65A97FB133440FC18758F62722",
+      "size": 2032,
+      "mvid": ""
+    },
+    {
+      "role": "build_host_tool_telemetry",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2\\BUILD_HOST_TOOL_TELEMETRY.json",
+      "sha256": "8FD4D978128469EF2F552C96BAE0B3AB8657AF06DCAB279C6CFBEFBE564CA878",
+      "size": 2007,
+      "mvid": ""
+    },
+    {
+      "role": "build_output_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2\\BUILD_OUTPUT_MANIFEST.json",
+      "sha256": "66D78094D3BDD2E08C07511FC8BDDC70A8B9D257D089199A5824CCC12A64EE55",
+      "size": 2659,
+      "mvid": ""
+    },
+    {
+      "role": "result_index",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R32-CUSTODY-20261012-DIRECT-64ad38e2\\RESULT_INDEX.json",
+      "sha256": "153718E4E57ABD200F914FEA560EAD664151FE079FD2FAEB0ED6788F5EC45858",
+      "size": 2926,
+      "mvid": ""
+    },
+    {
+      "role": "debug_candidate_dll",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "0B23C358E8C8FC16FCD02DDE654AD8AE763EA177460BB15F5F1E1B1F0CB67E26",
+      "size": 325632,
+      "mvid": "7d436c98-659a-4df1-a085-06fe9e55a0bc"
+    },
+    {
+      "role": "debug_candidate_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "226DF5428AB94D48E0B08DC237AF3FC2E9F193315FE4D2F6EE2A8654B512E90D",
+      "size": 79124,
+      "mvid": ""
+    },
+    {
+      "role": "release_candidate_dll",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "19F2CA8D466B10E99B86C8F5DD380102CCA14555B1FC7052AAB2B5DCFA98806F",
+      "size": 308224,
+      "mvid": "cee8068e-e814-4203-8135-8c0fd5107005"
+    },
+    {
+      "role": "release_candidate_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "A0F37D4437406AFF7FC329B8286B921ADE82F6C3F788D1C89FE4486D0C739347",
+      "size": 57712,
+      "mvid": ""
+    },
+    {
+      "role": "mod_1_6_dll",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll",
+      "sha256": "0B23C358E8C8FC16FCD02DDE654AD8AE763EA177460BB15F5F1E1B1F0CB67E26",
+      "size": 325632,
+      "mvid": "7d436c98-659a-4df1-a085-06fe9e55a0bc"
+    },
+    {
+      "role": "mod_1_6_pdb",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb",
+      "sha256": "226DF5428AB94D48E0B08DC237AF3FC2E9F193315FE4D2F6EE2A8654B512E90D",
+      "size": 79124,
+      "mvid": ""
+    },
+    {
+      "role": "patched_worker_cs",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs",
+      "sha256": "214F1F95C6BF7F547ED47FD91B787A70B2E52DFF129A882DCD8C1AC1471A24E8",
+      "size": 275573,
+      "mvid": ""
+    },
+    {
+      "role": "build_debug_stdout_raw",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R32Custody-64ad38e2\\build_debug_stdout.raw.txt",
+      "sha256": "0C1B1D054E586AA41D8D2D054CEBC7E0F5201EE560AFACD554B630DA23E74F95",
+      "size": 1308578,
+      "mvid": ""
+    },
+    {
+      "role": "build_release_stdout_raw",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R32Custody-64ad38e2\\build_release_stdout.raw.txt",
+      "sha256": "8833683B5E7D88BCF91C0C0B6E55AE34D6170D2732E66D28784570F5561DF347",
+      "size": 1308727,
+      "mvid": ""
+    }
+  ]
+}

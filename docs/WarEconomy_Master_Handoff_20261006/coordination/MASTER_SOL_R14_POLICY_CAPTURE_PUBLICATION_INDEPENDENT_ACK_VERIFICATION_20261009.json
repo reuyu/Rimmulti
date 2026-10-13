@@ -1,0 +1,61 @@
+{
+  "at": "2026-10-09T22:19:51.689536+09:00",
+  "result_id": "SOL-GATE05-R14-POLICY-CAPTURE-PUBLICATION-INDEPENDENT-S1-20261009-39d2285260ab486b85ea99cd8db0bffa",
+  "delivery_id": "SOL-GATE05-R14-POLICY-CAPTURE-PUBLICATION-INDEPENDENT-S1-20261009-01",
+  "wp_id": "WP_QA_ENGINE_GATE05_R14_POLICY_CAPTURE_PUBLICATION_INDEPENDENT",
+  "ack_path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R14-POLICY-CAPTURE-PUBLICATION-INDEPENDENT-S1-20261009\\ACK.json",
+  "ack_sha256": "79A9CCF3D0CB30847DC7704E0BF47078A0C116FE478D470CF30E38B59EFFBD31",
+  "actual_snapshot": {
+    "schemaVersion": 1,
+    "cursor": "2745552a-f142-41a1-8eaf-3fe7b2d500ca:96",
+    "revision": 96,
+    "changed": true,
+    "thread": {
+      "id": "01a11583-ff90-73e0-8916-d021e2bb038d",
+      "hostId": "local",
+      "status": {
+        "type": "active",
+        "activeFlags": []
+      }
+    },
+    "latestTurn": {
+      "id": "01a120cd-940b-7561-8c58-454439174272",
+      "status": "inProgress",
+      "error": null,
+      "startedAt": 1791551706,
+      "completedAt": null,
+      "durationMs": null
+    },
+    "latestAssistantMessageId": "msg_0c6b28ae575c2341016ac8e8fe28d487d0bbcca78cf3672750",
+    "latestAssistantMessage": {
+      "id": "msg_0c6b28ae575c2341016ac8e8fe28d487d0bbcca78cf3672750",
+      "turnId": "01a120cd-940b-7561-8c58-454439174272",
+      "phase": "commentary",
+      "text": "마스터가 동결한 R14 후보의 독립 QA를 시작하겠습니다. 실제 소스에서 무효화 시 세대 증가와 정책 캡처·게시 규칙을 확인하고, 새 기준을 고정한 뒤 정상 캐시·코덱 회귀를 검증하겠습니다. 실제 내용 수집 경로의 권한·stamp 문제는 정적 리뷰로 판정합니다."
+    },
+    "latestToolMarkerId": "exec-0957ad17-f2f9-49f7-a335-257fdf5d0178",
+    "latestToolMarker": {
+      "id": "exec-0957ad17-f2f9-49f7-a335-257fdf5d0178",
+      "turnId": "01a120cd-940b-7561-8c58-454439174272",
+      "type": "fileChange",
+      "name": "fileChange",
+      "status": "completed"
+    }
+  },
+  "protected_paths_master_rehashed": 7003,
+  "baseline_sha256": "00978F869BF9483253A2AF0DA39564C006AB17D574934A21A4369FCA6A54E1F9",
+  "qa_lineage_path": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R14-POLICY-CAPTURE-PUBLICATION-INDEPENDENT-S1-20261009\\R14_LINEAGE.json",
+  "qa_lineage_sha256": "3FBBB79707A5346FF2F7ED8B93CAE65B8AEE7AEC3B9FAE32A630A37DFE71B44B",
+  "qa_pdb_sources_against_master_own_metadata": "Debug4/4,Release4/4",
+  "selected_sha256": "1A19B47232F86C3BA3A8238783EA66ED71AE61E2DB16CF3B3C5162B0F7A6FC5F",
+  "selected_mvid": "acab0270-bc98-4d17-b920-9941950ff024",
+  "verdict": "ACK_VERIFIED_INDEPENDENT_NORMAL_QA_IN_PROGRESS_EXECUTION_PENDING",
+  "guard_run": "MASTER-SOL-R14-INDEPENDENT-ACK-20261009-01",
+  "guard_session": 99072,
+  "guard_pid": 23048,
+  "automation": "ACTUAL_PAUSED60MIN",
+  "master_build_execute": 0,
+  "runtime_e2_released": false,
+  "closure_changed": false,
+  "foundation": "HOLD"
+}

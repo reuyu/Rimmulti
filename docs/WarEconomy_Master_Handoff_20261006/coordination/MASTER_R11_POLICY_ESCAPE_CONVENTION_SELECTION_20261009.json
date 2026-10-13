@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-09T08:34:28.194049+09:00",
+  "decision": "LITERAL_UNICODE_MINIMAL_PROSPECTIVE_SUPPORTED_CURRENT_POLICY_REFERENCE",
+  "supported_schema_version": "WE-PACKAGE-POLICY-V1",
+  "basis": "Exact frozen R11 EscapeJsonString/SerializePackagePolicy source1821-1874 and declared reportescape convention,not candidateexecutionoutput",
+  "frozen_source": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\CANDIDATES\\G05R11-bec3d350\\scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs",
+  "frozen_source_sha256": "FA3E1EF5BB9E1B5EB94D001EC6A7B7B239C12A94F3105A388E553CC62BA5E2CA",
+  "policy_reference_oracle": "C:\\Users\\user\\Desktop\\RimMulti\\QA-Tactical-Engine\\GATE05-R11-POLICY-ENCODING-PREP-S1-20261009\\NORMAL_REFERENCE_ORACLE.json",
+  "policy_reference_oracle_sha256": "7976089DAFABE59FCCCD0CF106393AC76EB53B4235875F770EF08E370C64BCAF",
+  "reference_variant": "LITERAL_UNICODE_MINIMAL",
+  "candidate_calls_before_selection": 0,
+  "master_candidate_execute_build": 0,
+  "schema_generalization": "STATIC_ONLY_UNKNOWN_VERSION_NOT_EXECUTED",
+  "order_cache_native": "SEPARATE_OPEN",
+  "closure_changed": false,
+  "runtime_e2_released": false
+}

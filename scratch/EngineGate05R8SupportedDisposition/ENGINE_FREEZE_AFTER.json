@@ -1,0 +1,45 @@
+{
+  "freeze_time": "2026-10-08T23:50:30+09:00",
+  "phase": "AFTER_R8_TESTS",
+  "files": {
+    "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.cs": {
+      "sha256": "BA28C2234B2F77C6E50558825B3C9FB9D54DA7B7853D06D8DF4740366A59C718",
+      "size": 156431
+    },
+    "scratch\\WorkerBridgeMod\\Source\\EngineHostCensus.cs": {
+      "sha256": "28651CE9461694C5BBA8DC57ECC6D1982329A9BF6775D9FBE420C0FFDCB98D0E",
+      "size": 134392
+    },
+    "scratch\\WorkerBridgeMod\\Source\\WorkerBridge.csproj": {
+      "sha256": "571A58F599FB13761EE426F7DC547A94AE8FAC27CBBC408F0C6BCBEB7DEAC052",
+      "size": 1774
+    },
+    "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.dll": {
+      "sha256": "F82F3B08FF8D7D129F520DE054E7BAB666728B9909D9C9C2E955E5E583EBE9D5",
+      "size": 226816,
+      "mvid": "348b49f3-74f8-4643-9a2f-4a1dc5fb9a41"
+    },
+    "scratch\\WorkerBridgeMod\\Source\\bin\\Debug\\net472\\WarEconomy.WorkerBridge.PoC.pdb": {
+      "sha256": "04CC496EE2D0B2D052813BA0824A222563D7462CADDCE7E9AE53629679533E6A",
+      "size": 56080
+    },
+    "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.dll": {
+      "sha256": "10A36A809B41DCB0AF158D5D2EEC2760B9F2D60EC2DBAFF089798242A5FA9742",
+      "size": 216064,
+      "mvid": "f3ab51a3-2c77-423c-adde-806782360d8f"
+    },
+    "scratch\\WorkerBridgeMod\\Source\\bin\\Release\\net472\\WarEconomy.WorkerBridge.PoC.pdb": {
+      "sha256": "46F3CC376A18E94453DD3CCED681360FB59B097143C1834C79DD0B98C8FF3EC0",
+      "size": 41200
+    },
+    "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.dll": {
+      "sha256": "F82F3B08FF8D7D129F520DE054E7BAB666728B9909D9C9C2E955E5E583EBE9D5",
+      "size": 226816,
+      "mvid": "348b49f3-74f8-4643-9a2f-4a1dc5fb9a41"
+    },
+    "scratch\\WorkerBridgeMod\\1.6\\Assemblies\\WarEconomy.WorkerBridge.PoC.pdb": {
+      "sha256": "04CC496EE2D0B2D052813BA0824A222563D7462CADDCE7E9AE53629679533E6A",
+      "size": 56080
+    }
+  }
+}

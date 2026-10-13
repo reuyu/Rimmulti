@@ -1,0 +1,42 @@
+{
+  "at": "2026-10-08T21:23:44.441554+09:00",
+  "automation_actual_config": {
+    "version": 1,
+    "id": "wareconomy-master",
+    "kind": "heartbeat",
+    "name": "WarEconomy Master 통합 작업 확인",
+    "prompt": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\MASTER_UNIFIED_MONITOR_INSTRUCTIONS.md를 실행할 때마다 읽고 그 절차에 따라 승인된 작업을 확인한다. 파일을 읽을 수 없으면 실행을 멈추고 제약을 기록한다. 변경이 없거나 정상 진행 중이면 조용히 끝낸다.",
+    "status": "PAUSED",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1156b-97ec-7ce0-9e4a-dfc4a3acb174",
+    "created_at": 1791363256401,
+    "updated_at": 1791462113619
+  },
+  "tool_proof": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_R6_CODEC_CONTRACT_MONITOR_PAUSE_TOOL_20261008.json",
+  "terminal_review": {
+    "dispatch_id": "WE-A-ENGINE-GATE05-R6-CODEC-CONTRACT-20261008-DIRECT-1f657abe",
+    "wp_id": "WP_ENGINE_GATE05_R6_CODEC_CONTRACT",
+    "wp_revision": "GATE05-R6-CODEC-CONTRACT",
+    "result_id": "WE-A-ENGINE-GATE05-R6-CODEC-CONTRACT-RESULT-01",
+    "completion_sha256": "C0166519CBE176E15852C2FDB2672FB5F57B516B5FCB9BC8022CB9C325C41763",
+    "master_verdict": "CANONICAL_BOUNDARY_IMPROVEMENTS_CREDITED_REVISION_REQUIRED_FULL_GATE_E2_NOT_RELEASED",
+    "frozen_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R6-CODEC-CONTRACT-20261008-DIRECT-1f657abe\\MASTER_GATE05_R6_CODEC_CONTRACT_REVIEW_FREEZE_MANIFEST.json",
+    "frozen_manifest_sha256": "61BCABD85920C84B978FD9E826DEB672B45F0935D5CC329C33A88F002A90CEEA",
+    "frozen_files": 112,
+    "master_review_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\MASTER_REVIEW_ENGINE_GATE05_R6_CODEC_CONTRACT_E1_20261008.md",
+    "master_review_sha256": "59E73CA3A74922B8A4B3A6963265B35F589C3DAA11F3987F1B57D6362CEA08DF",
+    "scoped_admission": "EXACT_SELECTED_DEBUG_DEFENSIVE_STATIC_AND_POSITIVE_PURE_CODEC_HELPER_QA_ONLY",
+    "managed_dependency_manifest": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R5-CODEC-20261008-DIRECT-5b5e6046\\MASTER_R5_MANAGED_QA_DEPENDENCIES_MANIFEST.json",
+    "managed_dependency_manifest_sha256": "7FCB91EEB8489365E4304AFFDC601CCD0CCE2259365FD861A785AD658C183481",
+    "at": "2026-10-08T21:21:51.675100+09:00",
+    "type": "A_R6_CODEC_CONTRACT_E1_MASTER_REVIEW",
+    "verification_path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\coordination\\MASTER_GATE05_R6_CODEC_CONTRACT_E1_VERIFICATION_20261008.json",
+    "verification_sha256": "ACA50BC31F95EB407609F45484DF43A6FDCA7A87BE14A2997110528F8D0F0A8F",
+    "runtime_e2_released": false,
+    "closure_changed": false,
+    "foundation": "HOLD"
+  },
+  "status": "PAUSED60MIN_ACTUAL_VERIFIED",
+  "sol_direct_continues": true,
+  "new_a_wp": "NOT_SENT_PENDING_QA"
+}

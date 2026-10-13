@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "producer": "A",
+  "report_kind": "E1",
+  "dispatch_id": "WE-A-ENGINE-GATE05-R35-PUBLISHER-20261013-DIRECT-16a25a7e",
+  "wp_id": "WP_ENGINE_GATE05_R35_PUBLISHER",
+  "wp_revision": "GATE05-R35-PUBLISHER",
+  "envelope": 38,
+  "result_id": "WE-A-ENGINE-GATE05-R35-PUBLISHER-RESULT-01",
+  "status": "COMPLETED",
+  "completed_at": "2026-10-13T10:36:52.001947+00:00",
+  "summary": "WP_ENGINE_GATE05_R35_PUBLISHER / GATE05-R35-PUBLISHER (Envelope 38) plan-only publisher safety hardening and AST syntax verification completed. Single authorized Python publisher (scratch/OperatorStartupPairR29/publish_operator_pair.py) updated to enforce strict R35 safety contracts: (1) Non-overwrite exclusive owned root: output root must not preexist (os.path.lexists check), created via os.mkdir, rejecting relative paths, traversal ('..'), and unsafe reparse points/junctions; (2) Fixed one basename: 'operator_startup_pair.json' only, rejecting custom/traversing filenames; (3) Non-destructive failure policy: zero occurrences of os.remove, os.unlink, rmtree, os.replace, or os.rename; partial outputs on error remain raw forensic evidence without deletion or retry; (4) Exclusive creation & atomic publication: staging bundle, sha sidecar, and provenance manifest written exclusively with mode 'xb'; published atomically into final bundle via os.link on Windows NTFS, retaining staging bundle as immutable audit evidence; (5) Strict config14 and decl7 binding: reads config files ONCE and validates raw SHA-256 against descriptor expectedConfigSha256; enforces declared Windows path equality without mutating opaque declaration fields; enforces strict UTF-8 without BOM and duplicate property rejection; enforces exact 14 properties of OperatorStartupConfig; enforces that validatorArguments is strictly blank in paired mode (fail-closed); enforces role binding (parent SIMULATION, child READ_ONLY). Maintained all 9 Engine baseline files (WorkerBridge.cs, EngineHostCensus.cs, WorkerBridge.csproj, Debug/Release assemblies, and 1.6/Assemblies) 100% bit-exact against baseline. Standalone AST syntax verification executed via ast_checker.py (PID 11312, exit code 0, raw stdout 750 B, raw stderr 0 B, 24 AST body nodes, 10 functions). Zero publisher executions, zero Engine builds, and zero unit/native tests conducted per work package boundaries. Dedicated Server remains final Domain Authority; Foundation HOLD.",
+  "e1_verdict": "SOURCE_SYNTAX_ONLY_PUBLICATION_NOT_EXECUTED",
+  "test_counts": {
+    "total_cases": 0,
+    "passed_cases": 0,
+    "failed_cases": 0,
+    "runtime_publish_executions": 0,
+    "engine_build_executions": 0,
+    "unit_native_executions": 0
+  },
+  "limitations": [
+    "SOURCE_AND_AST_SYNTAX_ONLY: Verification conducted strictly via source inspection and stdlib ast.parse AST syntax validation (exit code 0). The publisher script was NOT executed.",
+    "ZERO_PUBLISHER_EXECUTIONS: publish_operator_pair.py was not imported, executed, or invoked with test arguments per R35 work package boundaries; independent normal publication testing is reserved for Sol.",
+    "ZERO_ENGINE_BUILDS: All 9 Engine baseline files remain bit-exact and immutable; no compile or C# project modification was performed.",
+    "ZERO_NATIVE_EXECUTION: In-engine, game runtime, native execution, Awake event loops, and operator promotion were strictly prohibited and not executed.",
+    "DEDICATED_SERVER_AUTHORITY: Dedicated Server remains final Domain Authority; Engine/Client produces bounded simulation proposals.",
+    "STEAM_INSTALLED_INCIDENT_OPEN: Steam installed DLL discrepancy against archive baseline remains an UNKNOWN OPEN INCIDENT, preserved unmodified.",
+    "FOUNDATION_HOLD: Foundation remains HOLD pending Pipeline independent E2 PASS."
+  ],
+  "artifacts": [
+    {
+      "role": "korean_report",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\WarEconomy_Master_Handoff_20261006\\A_ENGINE_GATE05_R35_PUBLISHER_REPORT_20261013.md",
+      "sha256": "6438F6D078B92048008EF6A2709F0D53BE7E0C7F00D723258A05DD89C6DA5200",
+      "size": 3856,
+      "mvid": ""
+    },
+    {
+      "role": "implementation_report",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R35-PUBLISHER-20261013-DIRECT-16a25a7e\\IMPLEMENTATION_REPORT.md",
+      "sha256": "E8FAA1BE25D01E3AC0BD2BB90DE929373A62E3D2FF8C0B6E7CD50BBED4F8F64A",
+      "size": 6812,
+      "mvid": ""
+    },
+    {
+      "role": "release_manifest_docs",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\docs\\RELEASE_MANIFEST_ENGINE_GATE05_R35_PUBLISHER.json",
+      "sha256": "93ACA7E09061784706D6B0D98BD836F61567482E750B8C6D1DBC4389EA8CF96F",
+      "size": 813,
+      "mvid": ""
+    },
+    {
+      "role": "release_manifest_task",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R35-PUBLISHER-20261013-DIRECT-16a25a7e\\RELEASE_MANIFEST.json",
+      "sha256": "93ACA7E09061784706D6B0D98BD836F61567482E750B8C6D1DBC4389EA8CF96F",
+      "size": 813,
+      "mvid": ""
+    },
+    {
+      "role": "publisher_identity",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R35-PUBLISHER-20261013-DIRECT-16a25a7e\\PUBLISHER_IDENTITY.json",
+      "sha256": "7424D3ECC25AE52344B6D5D13C93F3DA40CD191D19AAFC6F080757953EE87ED4",
+      "size": 377,
+      "mvid": ""
+    },
+    {
+      "role": "source_scope_diff",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R35-PUBLISHER-20261013-DIRECT-16a25a7e\\SOURCE_SCOPE_DIFF.json",
+      "sha256": "2E5DC9C00A66697DCE3BD98DA485130A42A0636C799BC95722860562124B1580",
+      "size": 1053,
+      "mvid": ""
+    },
+    {
+      "role": "config_path_binding_contract",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R35-PUBLISHER-20261013-DIRECT-16a25a7e\\CONFIG_PATH_BINDING_CONTRACT.json",
+      "sha256": "31F22201128E5DD9670AED917B268D8248F3999CD549EFD06CF41B372533A8DD",
+      "size": 3112,
+      "mvid": ""
+    },
+    {
+      "role": "exclusive_publication_flow",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R35-PUBLISHER-20261013-DIRECT-16a25a7e\\EXCLUSIVE_PUBLICATION_FLOW.json",
+      "sha256": "1B5C6E4D07E1A48C4734C05B37C031E76A4BC1A1563AFA2EF06000D257F4A070",
+      "size": 3045,
+      "mvid": ""
+    },
+    {
+      "role": "rejection_source_matrix",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R35-PUBLISHER-20261013-DIRECT-16a25a7e\\REJECTION_SOURCE_MATRIX.json",
+      "sha256": "9C5640CA69261355DF03D074A38E220999BD59601032F7465B141DD8C2E5A30F",
+      "size": 4436,
+      "mvid": ""
+    },
+    {
+      "role": "before_after_preservation",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R35-PUBLISHER-20261013-DIRECT-16a25a7e\\BEFORE_AFTER_PRESERVATION.json",
+      "sha256": "5D7B67A83525CDC96D7E0931D2930A51805402A0D6D05784572A8B5625173036",
+      "size": 4263,
+      "mvid": ""
+    },
+    {
+      "role": "preservation_before",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R35-PUBLISHER-20261013-DIRECT-16a25a7e\\PRESERVATION_BEFORE.json",
+      "sha256": "6C5C507D4125B2A13F425E2669E91B70DB65FEF19320AE13BAD34975111EC889",
+      "size": 2598,
+      "mvid": ""
+    },
+    {
+      "role": "ack_initial",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R35-PUBLISHER-20261013-DIRECT-16a25a7e\\ACK_INITIAL.json",
+      "sha256": "C51225EC7CEA5CD41396FD2B575CE7C66EFB5872953FC18C92E02561620865B0",
+      "size": 5394,
+      "mvid": ""
+    },
+    {
+      "role": "ack",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R35-PUBLISHER-20261013-DIRECT-16a25a7e\\ACK.json",
+      "sha256": "C51225EC7CEA5CD41396FD2B575CE7C66EFB5872953FC18C92E02561620865B0",
+      "size": 5394,
+      "mvid": ""
+    },
+    {
+      "role": "ast_input_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R35Publisher-16a25a7e\\AST_INPUT_MANIFEST.json",
+      "sha256": "AFC21148CAC2953BD6E6BFB5D0C933DA4A920189B01A40D0BDB6822ECD516293",
+      "size": 1103,
+      "mvid": ""
+    },
+    {
+      "role": "ast_host_tool_proof",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R35Publisher-16a25a7e\\AST_HOST_TOOL_PROOF.json",
+      "sha256": "9D75143E1BB7685B31804DD440F0CCF2FF2568534508CCC6F2CCD65AF3D68B05",
+      "size": 2248,
+      "mvid": ""
+    },
+    {
+      "role": "ast_stdout_raw",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R35Publisher-16a25a7e\\ast_stdout.raw.bin",
+      "sha256": "6D33EB8394CF10CDA62AC27F9043F3A0E14F594E47307646F2862A7C336EA3B5",
+      "size": 750,
+      "mvid": ""
+    },
+    {
+      "role": "ast_stderr_raw",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R35Publisher-16a25a7e\\ast_stderr.raw.bin",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+      "size": 0,
+      "mvid": ""
+    },
+    {
+      "role": "owned_output_manifest",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R35Publisher-16a25a7e\\OWNED_OUTPUT_MANIFEST.json",
+      "sha256": "AEA72F3C24EBF3DD4E3998445421867887378AAF3A3DD3A157F5534F2C223706",
+      "size": 4132,
+      "mvid": ""
+    },
+    {
+      "role": "modified_publisher_source",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\OperatorStartupPairR29\\publish_operator_pair.py",
+      "sha256": "9CAEA2DF0B8F3517DFCBEF080F7D26EC4343CDF4D2FD761453EFA2E4F3B86B4A",
+      "size": 22371,
+      "mvid": ""
+    },
+    {
+      "role": "result_index",
+      "path": "C:\\Users\\user\\Desktop\\RimMulti\\Dispatcher\\A_TASKS\\WE-A-ENGINE-GATE05-R35-PUBLISHER-20261013-DIRECT-16a25a7e\\RESULT_INDEX.json",
+      "sha256": "1F8595F6F8338FA63F6F28CB4E4685178AA66A87E969FEEB94B4EFB21CE01F7E",
+      "size": 6426,
+      "mvid": ""
+    }
+  ]
+}

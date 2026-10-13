@@ -1,0 +1,42 @@
+{
+  "dispatch_id": "WE-A-ENGINE-GATE05-R22-DECLARATION-20261011-DIRECT-9be1579a",
+  "wp_id": "WP_ENGINE_GATE05_R22_EXPLICIT_DECLARATION",
+  "wp_revision": "GATE05-R22-DECLARATION",
+  "envelope": 25,
+  "orchestrator": "Python Host Subprocess",
+  "timestamp_utc": "2026-10-10T22:48:19.260994+00:00",
+  "pinned_runner": {
+    "path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\Harness\\bin\\Debug\\net472\\Gate05R22DeclarationRunner.exe",
+    "sha256": "12F5C2D4D8D110669C83CD8C52CB5DE02123111F355BF9A9D9AEF21AA4225FB4",
+    "size": 37376
+  },
+  "runs": [
+    {
+      "run_index": 1,
+      "culture": "en-US",
+      "child_pid": 25356,
+      "exit_code": 0,
+      "duration_seconds": 0.23035693168640137,
+      "run_dir": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\run_en_us",
+      "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\run_en_us\\stdout.txt",
+      "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\run_en_us\\stderr.txt",
+      "output_inventory_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\run_en_us\\OUTPUT_INVENTORY.json",
+      "output_count": 18
+    },
+    {
+      "run_index": 2,
+      "culture": "de-DE",
+      "child_pid": 29248,
+      "exit_code": 0,
+      "duration_seconds": 0.13179469108581543,
+      "run_dir": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\run_de_de",
+      "stdout_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\run_de_de\\stdout.txt",
+      "stderr_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\run_de_de\\stderr.txt",
+      "output_inventory_path": "C:\\Users\\user\\Desktop\\RimMulti\\scratch\\EngineGate05R22Declaration\\run_de_de\\OUTPUT_INVENTORY.json",
+      "output_count": 18
+    }
+  ],
+  "isolation_verified": true,
+  "runner_unmodified": true,
+  "overall_success": true
+}
