@@ -1,0 +1,15 @@
+{
+  "recorded_at": "2026-10-14T05:55:33.164119+09:00",
+  "remote": "https://github.com/reuyu/Rimmulti.git",
+  "branch": "main",
+  "local_initial_commit": "4b98494bd9a29111c4e8364f05736badacc2f339",
+  "tracked_files": 6028,
+  "selected_bytes_approx": 519436288,
+  "secret_pattern_scan": "No private-key/GitHub/OpenAI/AWS token patterns found; four assignment matches were two original test harnesses and their copies generating Guid test strings",
+  "status": "LOCAL_COMMIT_COMPLETE_PUSH_BLOCKED_AUTO_REVIEW",
+  "actual_push_attempt": "Tool rejected before command execution; no SENT/pushed claim",
+  "reason": "495 MiB internal governance/task/QA upload and destination public/private trust scope requires explicit payload approval per automatic reviewer",
+  "required_user_action": "Approve upload of the prepared source, documents, governance, task records and QA tooling to the specified repository, or select source-only scope",
+  "local_preservation": "Excluded raw evidence/binaries/candidates/upstream reference trees remain unchanged on disk",
+  "ongoing_A_QA": "No new task, completion, candidate admission, gate closure or scheduler change inferred"
+}
